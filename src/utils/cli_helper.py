@@ -1,6 +1,7 @@
 from datetime import datetime 
 
 from src.config.settings import SUPABASE_CLIENT
+from src.config.settings import LOGGER
 
 import typer
 
@@ -20,5 +21,20 @@ def normalize_datetime(date: str) -> str:
         )
     
 
-def push_to_db(sgx_buback_payload):
-    pass 
+def push_to_db(sgx_buyback_payload: list[dict[str]]):
+    if not sgx_buyback_payload:
+        LOGGER.info(f'[SGX_BUYBACK] is empty, skipping push to DB')
+
+    try:
+        response = (
+            SUPABASE_CLIENT
+            .table('sgx_buybacks')
+            .insert(sgx_buyback_payload)
+            .execute()
+        )
+        LOGGER.info(f"[SGX_BUYBACK] Successfully pushed {len(sgx_buyback_payload)} records to DB")
+        return response
+    
+    except Exception as error:
+        LOGGER.error(f"[SGX_BUYBACK] Failed to push data: {error}")
+        return None

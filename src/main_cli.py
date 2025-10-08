@@ -1,7 +1,7 @@
 from dataclasses import asdict
 
 from src.config.settings import LOGGER
-from src.utils.cli_helper import normalize_datetime
+from src.utils.cli_helper import normalize_datetime, push_to_db
 from src.fetch_sgx_buyback.scraper_sgx_api import get_auth, run_scrape_api
 from src.fetch_sgx_buyback.scraper_sgx_detail import get_sgx_announcements
 
@@ -9,6 +9,8 @@ import json
 import typer 
 import os 
 import time 
+import random 
+
 
 app = typer.Typer(
     help='A CLI for managing scraper sgx buybacks and filings',
@@ -31,6 +33,8 @@ def run_sgx_buyback_scraper(
     period_start: str = typer.Option(..., help="Start period in format YYYYMMDD_HHMMSS"),
     period_end: str = typer.Option(..., help="End period in format YYYYMMDD_HHMMSS"),
     page_size: int = typer.Option(20, help="Number of records per page"),
+    is_saved_json: bool = typer.Option(True, help='Flag to write to json or not'),
+    is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
 ):
     api_url = "https://api.sgx.com/announcements/v1.1/"
     headers = get_auth(proxy=None)
@@ -65,25 +69,23 @@ def run_sgx_buyback_scraper(
                 LOGGER.info("No more announcements found on this page — stopping pagination.")
                 break
 
-            LOGGER.info(f"[SGX BUYBACK]Total data need to process: {len(sgx_announcements)}")
-
-            for sgx_announcement in sgx_announcements:
+            for sgx_announcement in sgx_announcements[:2]:
                 detail_url = sgx_announcement.get('url', None)
                 issuer_name = sgx_announcement.get("issuer_name")
 
                 if not detail_url:
                     LOGGER.info(
                         f'[SGX BUYBACK] Skipping extracting data in details for issuer name: {issuer_name}'
-                        )
+                    )
                     continue
 
                 sgx_announcement_details = get_sgx_announcements(detail_url)
                 sgx_announcement_details = asdict(sgx_announcement_details)
-                time.sleep(1.5)
                 payload_sgx_announcements.append(sgx_announcement_details)
+                time.sleep(random.uniform(1, 6))
 
             page_start += 1
-            time.sleep(2)
+            time.sleep(random.uniform(1, 8))
 
         except Exception as error:
             LOGGER.error(f'[SGX BUYBACK] Unexpected error on page {page_start}: {error}', exc_info=True)
@@ -91,11 +93,15 @@ def run_sgx_buyback_scraper(
 
     LOGGER.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_announcements)}")
 
-    os.makedirs('data/scraper_output', exist_ok=True)
-    with open("data/scraper_output/sgx_buybacks.json", "w", encoding="utf-8") as file:
-        json.dump(payload_sgx_announcements, file, ensure_ascii=False, indent=2)
+    if is_saved_json:
+        os.makedirs('data/scraper_output', exist_ok=True)
+        with open("data/scraper_output/sgx_buybacks.json", "w", encoding="utf-8") as file:
+            json.dump(payload_sgx_announcements, file, ensure_ascii=False, indent=2)
 
-    LOGGER.info("Saved all announcements to data/scraper_output/sgx_buybacks.json")
+        LOGGER.info("Saved all announcements to data/scraper_output/sgx_buybacks.json")
+
+    if is_push_db:
+        push_to_db(payload_sgx_announcements)
 
 
 if __name__ == '__main__':
