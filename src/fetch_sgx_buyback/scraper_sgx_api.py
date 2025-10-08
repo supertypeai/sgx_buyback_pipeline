@@ -14,7 +14,7 @@ import json
 import time
 import traceback
 
-API_URL = 'https://api.sgx.com/announcements/v1.1/?periodstart=20051005_160000&periodend=20251006_155959&cat=ANNC&sub=ANNC13&pagestart=0&pagesize=20'
+API_URL = 'https://api.sgx.com/announcements/v1.1/?periodstart=20051007_160000&periodend=20251008_155959&cat=ANNC&sub=ANNC13&pagestart=5&pagesize=20'
 
 
 def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdriver.Chrome:
@@ -200,7 +200,15 @@ def get_json(headers: dict[str, str] | None, proxy: str | None = None):
         response = requests.get(API_URL, headers=headers, proxies=proxies, verify=False, timeout=30)
         response.raise_for_status()
         
+        print(f"Response status: {response.status_code}")
+        print(f"Response content type: {response.headers.get('content-type')}")
+        print(f"Response text preview: {response.text[:200]}")
+
         data = response.json()
+        if data is None:
+            print("WARNING: API returned null/None")
+            return None
+        
         print(f"Fetched {len(data.get('data', []))} announcements")
         return data
 
@@ -208,6 +216,11 @@ def get_json(headers: dict[str, str] | None, proxy: str | None = None):
         print(f"API request failed: {error}")
         if 'response' in locals():
             print(f"Response: {response.text[:200]}")
+        return None
+    
+    except json.JSONDecodeError as error:
+        print(f"JSON decode error: {error}")
+        print(f"Response text: {response.text}")
         return None
 
 
