@@ -31,4 +31,19 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
-          uv run python -m src.fetch_sgx_buyback.scraper_sgx_api    
+          uv run python -m src.main_cli scraper_buybacks \ 
+          --period-start 20241007 \ 
+          --period-end 20251008
+
+      - name: Pull Latest Changes
+        run: git pull origin main
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -m "sgx_buyback: scraped data and push" --allow-empty)
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

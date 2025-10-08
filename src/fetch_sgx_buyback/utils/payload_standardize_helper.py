@@ -1,6 +1,6 @@
 from datetime import datetime 
 
-from src.config.settings import SUPABASE_CLIENT
+from src.fetch_sgx_buyback.utils.symbol_matching_helper import match_company_name
 
 import re 
 
@@ -14,7 +14,7 @@ def safe_convert_datetime(date: str) -> str:
         return None
 
 
-def safe_convert_float(number_value: str) -> float:
+def safe_convert_float(url: str, number_value: str) -> float:
     if not number_value:
         return None 
     
@@ -27,22 +27,42 @@ def safe_convert_float(number_value: str) -> float:
             return None
         
     except Exception as error:
-        print(f"[safe_convert_float] Error: {error} for value '{number_value}'")
+        print(f"[safe_convert_float] Error: {error} for value '{number_value} url: {url}'")
         return None
 
 
 def build_price_per_share(
-        price_paid_per_share: str, highest_per_share: str, lowest_per_share: str
+        url, price_paid_per_share: str, highest_per_share: str, lowest_per_share: str
 ) -> dict[str, float]:
     price_per_share = {}
     
     if price_paid_per_share and not highest_per_share and not lowest_per_share: 
-        price_per_share['price_paid_per_share'] = safe_convert_float(price_paid_per_share)
+        price_per_share['price_paid_per_share'] = safe_convert_float(url, price_paid_per_share)
     elif not price_paid_per_share and highest_per_share and lowest_per_share:
-        price_per_share['highest'] = safe_convert_float(highest_per_share)
-        price_per_share['lowest'] = safe_convert_float(lowest_per_share) 
+        price_per_share['highest'] = safe_convert_float(url, highest_per_share)
+        price_per_share['lowest'] = safe_convert_float(url, lowest_per_share) 
 
     return price_per_share
+
+
+def extract_symbol(issuer_security: str):
+    try:
+        parts = issuer_security.split('-')
+        if len(parts) > 1:
+            symbol = parts[-1].strip()
+            if symbol:  
+                return symbol
+    except Exception as error:
+        print(f"Failed to extract symbol from split: {error}")
+
+    try:
+        company_matched = match_company_name(issuer_security)
+        if company_matched:
+            return company_matched.get('symbol')
+    except Exception as error:
+        print(f"Fallback matching symbol failed: {error}")
+
+    return None
 
 
 def safe_extract_value(value: str | list) -> str:  

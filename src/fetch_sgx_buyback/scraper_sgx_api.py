@@ -14,8 +14,6 @@ import json
 import time
 import traceback
 
-API_URL = 'https://api.sgx.com/announcements/v1.1/?periodstart=20250930_160000&periodend=20251008_155959&cat=ANNC&sub=ANNC13&pagestart=5&pagesize=20'
-
 
 def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdriver.Chrome:
     options = webdriver.ChromeOptions()
@@ -91,7 +89,7 @@ def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdr
         return None
 
 
-def get_auth(proxy: str | None = None) -> dict[str, str] | None:
+def get_auth(proxy: str | None = PROXY) -> dict[str, str] | None:
     headers = {
         'accept': '*/*',
         'accept-language': 'en-US,en;q=0.9',
@@ -183,9 +181,13 @@ def get_auth(proxy: str | None = None) -> dict[str, str] | None:
             driver.quit()
 
 
-def get_json(headers: dict[str, str] | None, proxy: str | None = None):
+def run_scrape_api(
+        api_url: str, 
+        headers: dict[str, str] | None, 
+        proxy: str | None = None
+) -> list[dict] | None:
     if not headers:
-        print("Cannot fetch JSON, headers missing.")
+        LOGGER.info("Cannot fetch JSON, headers missing.")
         return None
     
     proxies = None
@@ -196,38 +198,36 @@ def get_json(headers: dict[str, str] | None, proxy: str | None = None):
         }
     
     try:
-        print("Fetching data from API...")
-        response = requests.get(API_URL, headers=headers, proxies=proxies, verify=False, timeout=30)
+        LOGGER.info("Fetching data from API SGX Buy Back...")
+        response = requests.get(api_url, headers=headers, proxies=proxies, verify=False, timeout=30)
         response.raise_for_status()
         
-        print(f"Response status: {response.status_code}")
-        print(f"Response content type: {response.headers.get('content-type')}")
-        print(f"Response text preview: {response.text[:200]}")
-
+        LOGGER.info(f"Response status: {response.status_code}")
+    
         data = response.json()
-        if data is None:
-            print("WARNING: API returned null/None")
+        if data.get('data') is None:
+            LOGGER.warning("WARNING: API returned None")
             return None
         
-        print(f"Fetched {len(data.get('data', []))} announcements")
-        return data
+        LOGGER.info(f"Fetched {len(data.get('data', []))} announcements")
+        return data.get('data', [])
 
     except requests.exceptions.RequestException as error:
-        print(f"API request failed: {error}")
+        LOGGER.error(f"API request failed: {error}")
         if 'response' in locals():
-            print(f"Response: {response.text[:200]}")
+            LOGGER.error(f"Response: {response.text[:200]}")
         return None
     
     except json.JSONDecodeError as error:
-        print(f"JSON decode error: {error}")
-        print(f"Response text: {response.text}")
+        LOGGER.error(f"JSON decode error: {error}")
+        LOGGER.error(f"Response text: {response.text}")
         return None
 
 
 if __name__ == '__main__':
+    api = 'https://api.sgx.com/announcements/v1.1/?periodstart=20250930_160000&periodend=20251001_155959&cat=ANNC&sub=ANNC13&pagestart=2&pagesize=20'
     headers = get_auth(proxy=None)
-    print(headers)
-    data = get_json(headers=headers, proxy=None)
+    data = run_scrape_api(api_url=api, headers=headers, proxy=None)
+    if not data:
+        print(json.dumps(data, indent=2))
     print(data)
-    announcements = data.get('data', [])
-    print(json.dumps(announcements, indent=2))

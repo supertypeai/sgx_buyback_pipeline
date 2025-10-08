@@ -25,7 +25,7 @@ def get_sgx_companies():
 def refresh_master_company_data(force_refresh: bool = True): 
     if os.path.exists(CACHE_PATH) and not force_refresh:
         modified_time = datetime.fromtimestamp(os.path.getmtime(CACHE_PATH))
-        if datetime.now() - modified_time < timedelta(days=1):
+        if datetime.now() - modified_time < timedelta(days=30):
             print("Using cached sgx_companies.json")
             return
         
