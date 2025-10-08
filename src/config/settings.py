@@ -24,6 +24,6 @@ LOGGER.info("Init Global Variable")
 
 SUPABASE_URL = os.getenv('SUPABASE_URL')
 SUPABASE_KEY = os.getenv('SUPABASE_KEY')
-PROXY = os.getenv('proxy')
+PROXY = os.getenv('PROXY')
 
 SUPABASE_CLIENT = create_client(SUPABASE_URL, SUPABASE_KEY)
