@@ -6,19 +6,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
-from dotenv import load_dotenv
+
+from src.config.settings import LOGGER, PROXY
 
 import requests
 import json 
-import os
 import time
 import traceback
 
-
-load_dotenv(override=True)
-PROXY = os.getenv('proxy')
-
-URL = 'https://api.sgx.com/announcements/v1.1/?periodstart=20051005_160000&periodend=20251006_155959&cat=ANNC&sub=ANNC13&pagestart=0&pagesize=20'
+API_URL = 'https://api.sgx.com/announcements/v1.1/?periodstart=20051005_160000&periodend=20251006_155959&cat=ANNC&sub=ANNC13&pagestart=0&pagesize=20'
 
 
 def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdriver.Chrome:
@@ -201,7 +197,7 @@ def get_json(headers: dict[str, str] | None, proxy: str | None = None):
     
     try:
         print("Fetching data from API...")
-        response = requests.get(URL, headers=headers, proxies=proxies, verify=False, timeout=30)
+        response = requests.get(API_URL, headers=headers, proxies=proxies, verify=False, timeout=30)
         response.raise_for_status()
         
         data = response.json()
@@ -217,6 +213,8 @@ def get_json(headers: dict[str, str] | None, proxy: str | None = None):
 
 if __name__ == '__main__':
     headers = get_auth(proxy=None)
+    print(headers)
     data = get_json(headers=headers, proxy=None)
+    print(data)
     announcements = data.get('data', [])
     print(json.dumps(announcements, indent=2))

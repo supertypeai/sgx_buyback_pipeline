@@ -31,7 +31,12 @@ def refresh_master_company_data(force_refresh: bool = True):
         
     data = get_sgx_companies()
 
+    os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
     with open(CACHE_PATH, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=2)
+        
     print(f"Saved {len(data)} companies to company_data.json")
 
+
+if __name__ == '__main__':
+    refresh_master_company_data()
