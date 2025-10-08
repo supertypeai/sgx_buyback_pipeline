@@ -31,9 +31,7 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
-          uv run python -m src.main_cli scraper_buybacks \ 
-          --period-start 20241007 \ 
-          --period-end 20251008
+          uv run python -m src.main_cli scraper_buybacks --period-start 20241007 --period-end 20251008
 
       - name: Pull Latest Changes
         run: git pull origin main
