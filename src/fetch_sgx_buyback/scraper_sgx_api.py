@@ -14,7 +14,7 @@ import json
 import time
 import traceback
 
-API_URL = 'https://api.sgx.com/announcements/v1.1/?periodstart=20051007_160000&periodend=20251008_155959&cat=ANNC&sub=ANNC13&pagestart=5&pagesize=20'
+API_URL = 'https://api.sgx.com/announcements/v1.1/?periodstart=20250930_160000&periodend=20251008_155959&cat=ANNC&sub=ANNC13&pagestart=5&pagesize=20'
 
 
 def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdriver.Chrome:
