@@ -69,7 +69,7 @@ def run_sgx_buyback_scraper(
                 LOGGER.info("No more announcements found on this page — stopping pagination.")
                 break
 
-            for sgx_announcement in sgx_announcements[:2]:
+            for sgx_announcement in sgx_announcements:
                 detail_url = sgx_announcement.get('url', None)
                 issuer_name = sgx_announcement.get("issuer_name")
 
