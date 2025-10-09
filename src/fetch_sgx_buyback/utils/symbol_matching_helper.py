@@ -14,7 +14,7 @@ with open(CACHE_PATH, "r", encoding="utf-8") as file:
 SGX_COMPANY_NAMES = [company_name.get('name').lower() for company_name in SGX_COMPANIES]
 
 
-def match_company_name(input_name: str, threshold: int = 90):
+def match_company_name(input_name: str, threshold: int = 93):
     input_name_lower = input_name.lower()
     if 'limited' in input_name_lower:
         input_name_lower = input_name_lower.replace('limited', 'ltd').strip()

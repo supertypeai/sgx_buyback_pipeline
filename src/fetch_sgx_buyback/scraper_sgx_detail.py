@@ -1,12 +1,11 @@
 from bs4 import BeautifulSoup 
-from datetime import datetime
 from dataclasses import asdict
 
 from src.fetch_sgx_buyback.models import SGXAnnouncement
 from src.fetch_sgx_buyback.utils.payload_standardize_helper import (
     build_price_per_share, safe_convert_float,
     safe_extract_value, safe_convert_datetime,
-    extract_symbol
+    extract_symbol, safe_extract_fallback
 )
 from src.config.settings import LOGGER
 
@@ -94,6 +93,9 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
         # Get symbol
         issuer_security = issuer_section.get('Securities', None)
         symbol = extract_symbol(issuer_security)
+        if not symbol:
+            issuer_name = issuer_section.get('Issuer/ Manager')
+            symbol = extract_symbol(issuer_name)
         
         # Get type of buy back 
         on_market = section_a.get('Purchase made by way of market acquisition', None)
@@ -105,8 +107,7 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
             buy_back_type = 'Off Market' 
         
         # Get purchase date 
-        purchase_date_raw = section_a.get('Date of Purchase', None)
-        purchase_date = safe_extract_value(purchase_date_raw)
+        purchase_date = safe_extract_fallback('Date of Purchase', section_a, section_b)
         purchase_date = safe_convert_datetime(purchase_date)
 
         # Get start date 
@@ -114,17 +115,18 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
         start_date = safe_convert_datetime(start_date_raw)
 
         # Get price per share
-        price_paid_per_share = section_a.get('Price Paid per share', None)
-        highest_per_share = section_a.get('Highest Price per share', None) 
-        lowest_per_share = section_a.get('Lowest Price per share', None)
+        price_paid_per_share = safe_extract_fallback('Price Paid per share', section_a, section_b)
+        if not price_paid_per_share:
+            price_paid_per_share = safe_extract_fallback('Price Paid or Payable per Share', section_a, section_b)
+        highest_per_share = safe_extract_fallback('Highest Price per share', section_a, section_b) 
+        lowest_per_share = safe_extract_fallback('Lowest Price per share', section_a, section_b)
 
         price_per_share = build_price_per_share(
             url, price_paid_per_share, highest_per_share, lowest_per_share
         )                           
      
         # Get total number of shares purchased 
-        total_share_purchased_raw = section_a.get('Total Number of shares purchased', None) 
-        total_share_purchased = safe_extract_value(total_share_purchased_raw)
+        total_share_purchased= safe_extract_fallback('Total Number of shares purchased', section_a, section_b) 
         total_share_purchased = safe_convert_float(url, total_share_purchased)
 
         # Get Cumulative No. of shares purchased to date
@@ -133,8 +135,7 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
         cumulative_share_purchased = safe_convert_float(url, cumulative_share_purchased)
 
         # Get total consideration 
-        total_consideration_raw = section_a.get('Total Consideration', None) 
-        total_consideration = safe_extract_value(total_consideration_raw)
+        total_consideration = safe_extract_fallback('Total Consideration', section_a, section_b) 
         total_consideration = safe_convert_float(url, total_consideration)
 
         # Get Number of treasury shares held after purchase
@@ -161,7 +162,7 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
         return
     
     except Exception as error:
-        LOGGER.error(f"Unexpected Error extracting SGX details: {error}")
+        LOGGER.error(f"Unexpected Error extracting SGX details: {error}", exc_info=True)
         raise
 
 

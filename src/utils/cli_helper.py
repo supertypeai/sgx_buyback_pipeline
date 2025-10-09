@@ -3,8 +3,6 @@ from datetime import datetime
 from src.config.settings import SUPABASE_CLIENT
 from src.config.settings import LOGGER
 
-import typer
-
 
 def normalize_datetime(date: str | datetime) -> str: 
     if isinstance(date, datetime):
@@ -19,15 +17,14 @@ def normalize_datetime(date: str | datetime) -> str:
         return dt.strftime("%Y%m%d") 
     
     except ValueError:
-        raise typer.BadParameter(
-            "Invalid date format. Use YYYY-MM-DD or YYYYMMDD."
-        )
+        LOGGER.error("Invalid date format. Use YYYY-MM-DD or YYYYMMDD.")
     
 
 def push_to_db(sgx_buyback_payload: list[dict[str]]):
     if not sgx_buyback_payload:
         LOGGER.info(f'[SGX_BUYBACK] is empty, skipping push to DB')
-
+        return 
+    
     try:
         response = (
             SUPABASE_CLIENT
