@@ -1,12 +1,13 @@
 from bs4 import BeautifulSoup 
 from dataclasses import asdict
 
-from src.fetch_sgx_buyback.models import SGXAnnouncement
+from src.fetch_sgx_buyback.models import SGXBuyback
 from src.fetch_sgx_buyback.utils.payload_standardize_helper import (
     build_price_per_share, safe_convert_float,
     safe_extract_value, safe_convert_datetime,
-    extract_symbol, safe_extract_fallback
+    safe_extract_fallback
 )
+from src.utils.sgx_parser_helper import extract_symbol
 from src.config.settings import LOGGER
 
 import requests
@@ -73,7 +74,7 @@ def extract_section_data(soup: BeautifulSoup, section_title: str) -> dict[str, s
     return section_data
 
 
-def get_sgx_announcements(url: str) -> SGXAnnouncement: 
+def get_sgx_announcements(url: str) -> SGXBuyback: 
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -142,7 +143,7 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
         treasury_shares_after_purchase_raw = section_d.get('Number of treasury shares held after purchase', None)
         treasury_shares_after_purchase = safe_convert_float(url, treasury_shares_after_purchase_raw)
 
-        announcement = SGXAnnouncement(
+        announcement = SGXBuyback(
             url=url,
             symbol=symbol,
             purchase_date=purchase_date,

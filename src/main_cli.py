@@ -112,8 +112,13 @@ def run_sgx_buyback_scraper(
 
         LOGGER.info("Saved all announcements to data/scraper_output/sgx_buybacks.json")
 
-    if is_push_db:
-        push_to_db(payload_sgx_announcements)
+    # if is_push_db:
+    #     push_to_db(payload_sgx_announcements)
+
+
+@app.command(name='scraper_filings')
+def run_sgx_filings_scraper():
+    pass 
 
 
 if __name__ == '__main__':

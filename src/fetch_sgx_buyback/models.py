@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 
 @dataclass
-class SGXAnnouncement:
+class SGXBuyback:
     url: str
     symbol: str = ''
     purchase_date: str = ''
