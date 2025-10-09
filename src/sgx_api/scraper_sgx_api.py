@@ -225,9 +225,10 @@ def run_scrape_api(
 
 
 if __name__ == '__main__':
-    api = 'https://api.sgx.com/announcements/v1.1/?periodstart=20250930_160000&periodend=20251001_155959&cat=ANNC&sub=ANNC13&pagestart=2&pagesize=20'
+    api_buyback = 'https://api.sgx.com/announcements/v1.1/?periodstart=20250930_160000&periodend=20251001_155959&cat=ANNC&sub=ANNC13&pagestart=2&pagesize=20'
+    api_filings = 'https://api.sgx.com/announcements/v1.1/?periodstart=20251007_160000&periodend=20251009_155959&cat=ANNC&sub=ANNC14&pagestart=0&pagesize=20'
     headers = get_auth(proxy=None)
-    data = run_scrape_api(api_url=api, headers=headers, proxy=None)
+    data = run_scrape_api(api_url=api_filings, headers=headers, proxy=None)
     if not data:
         print(json.dumps(data, indent=2))
     print(data)

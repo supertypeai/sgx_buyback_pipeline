@@ -38,3 +38,19 @@ def push_to_db(sgx_buyback_payload: list[dict[str]]):
     except Exception as error:
         LOGGER.error(f"[SGX_BUYBACK] Failed to push data: {error}")
         return None
+    
+
+def clean_payload(payload: list[dict]) -> list[dict]:
+    for row in payload:
+        for key in [
+            "total_shares_purchased",
+            "cumulative_purchased",
+            "treasury_shares_after_purchase"
+        ]:
+            if key in row and row[key] is not None:
+                try:
+                    row[key] = int(float(row[key]))
+                except (ValueError, TypeError):
+                    LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
+                    row[key] = None
+    return payload

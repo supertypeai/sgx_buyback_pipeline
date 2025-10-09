@@ -154,7 +154,7 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
             cumulative_purchased=cumulative_share_purchased,
             treasury_shares_after_purchase=treasury_shares_after_purchase,
         )
-
+        print(json.dumps(asdict(announcement), indent=2))
         return announcement
     
     except requests.RequestException as error:

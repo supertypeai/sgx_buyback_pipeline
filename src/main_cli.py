@@ -2,9 +2,9 @@ from dataclasses import asdict
 from datetime import datetime, timedelta
 
 from src.config.settings import LOGGER
-from src.utils.cli_helper import normalize_datetime, push_to_db
-from src.fetch_sgx_buyback.scraper_sgx_api import get_auth, run_scrape_api
-from src.fetch_sgx_buyback.scraper_sgx_detail import get_sgx_announcements
+from src.utils.cli_helper import normalize_datetime, push_to_db, clean_payload
+from src.sgx_api.scraper_sgx_api import get_auth, run_scrape_api
+from src.fetch_sgx_buyback.parser_sgx_buyback import get_sgx_announcements
 
 import json 
 import typer 
@@ -102,7 +102,9 @@ def run_sgx_buyback_scraper(
             break 
 
     LOGGER.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_announcements)}")
-
+    
+    payload_sgx_announcements = clean_payload(payload_sgx_announcements)
+    
     if is_saved_json:
         os.makedirs('data/scraper_output', exist_ok=True)
         with open("data/scraper_output/sgx_buybacks.json", "w", encoding="utf-8") as file:
