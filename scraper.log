@@ -13,3 +13,17 @@
 2025-10-09 09:20:50 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
 2025-10-09 09:20:50 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
 2025-10-09 09:20:50 [INFO] - [SGX_BUYBACK] is empty, skipping push to DB
+2025-10-09 10:22:38 [INFO] - Init Global Variable
+2025-10-09 10:23:01 [INFO] - Scraping from None to None...
+2025-10-09 10:23:01 [INFO] - Start scraping from start date: 20251008 to 20251009
+2025-10-09 10:23:01 [INFO] - page_start: 0
+2025-10-09 10:23:01 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-09 10:23:06 [ERROR] - API request failed: 401 Client Error:  for url: https://api.sgx.com/announcements/v1.1/?periodstart=20251008_160000&periodend=20251009_155959&cat=ANNC&sub=ANNC13&pagestart=0&pagesize=20
+2025-10-09 10:23:06 [ERROR] - Response: {"message":"Unauthorized"}
+2025-10-09 10:23:06 [INFO] - No more announcements found — stopping pagination.
+2025-10-09 10:23:17 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-09 10:23:24 [ERROR] - API request failed: 401 Client Error: Unauthorized for url: https://api.sgx.com/announcements/v1.1/?periodstart=20251008_160000&periodend=20251009_155959&cat=ANNC&sub=ANNC13&pagestart=0&pagesize=20
+2025-10-09 10:23:24 [ERROR] - Response: {"message":"Unauthorized"}
+2025-10-09 10:23:24 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-09 10:23:24 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
+2025-10-09 10:23:24 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
