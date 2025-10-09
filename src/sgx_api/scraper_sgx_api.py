@@ -184,7 +184,7 @@ def get_auth(proxy: str | None = PROXY) -> dict[str, str] | None:
 def run_scrape_api(
         api_url: str, 
         headers: dict[str, str] | None, 
-        proxy: str | None = PROXY
+        proxy: str | None = None
 ) -> list[dict] | None:
     if not headers:
         LOGGER.info("Cannot fetch JSON, headers missing.")
