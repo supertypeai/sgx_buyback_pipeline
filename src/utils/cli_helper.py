@@ -6,7 +6,10 @@ from src.config.settings import LOGGER
 import typer
 
 
-def normalize_datetime(date: str) -> str: 
+def normalize_datetime(date: str | datetime) -> str: 
+    if isinstance(date, datetime):
+        return date.strftime("%Y%m%d")
+     
     try:
         if '-' in date: 
             dt = datetime.strptime(date, "%Y-%m-%d")

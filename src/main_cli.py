@@ -1,4 +1,5 @@
 from dataclasses import asdict
+from datetime import datetime, timedelta
 
 from src.config.settings import LOGGER
 from src.utils.cli_helper import normalize_datetime, push_to_db
@@ -30,8 +31,8 @@ def main():
 
 @app.command(name='scraper_buybacks')
 def run_sgx_buyback_scraper(
-    period_start: str = typer.Option(..., help="Start period in format YYYYMMDD_HHMMSS"),
-    period_end: str = typer.Option(..., help="End period in format YYYYMMDD_HHMMSS"),
+    period_start: str = typer.Option(None, help="Start period in format YYYYMMDD_HHMMSS"),
+    period_end: str = typer.Option(None, help="End period in format YYYYMMDD_HHMMSS"),
     page_size: int = typer.Option(20, help="Number of records per page"),
     is_saved_json: bool = typer.Option(True, help='Flag to write to json or not'),
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
@@ -44,15 +45,24 @@ def run_sgx_buyback_scraper(
     page_start = 0
     payload_sgx_announcements = []
 
-    period_start = normalize_datetime(period_start)
-    period_end = normalize_datetime(period_end)
+    today = datetime.now()
+    yesterday = today - timedelta(days=1)
+
+    start_date_source = period_start if period_start is not None else yesterday
+    end_date_source = period_end if period_end is not None else today
+
+    normalized_start = normalize_datetime(start_date_source)
+    normalized_end = normalize_datetime(end_date_source)
+
+    LOGGER.info(f"Start scraping from start date: {normalized_start} to {normalized_end}")
 
     while True:
-        typer.echo(f'page_start: {page_start}')
+        LOGGER.info(f'page_start: {page_start}')
+        typer.echo(f'page start: {page_start}')
         try:
             url = (
-                f"{api_url}?periodstart={period_start}_160000"
-                f"&periodend={period_end}_155959"
+                f"{api_url}?periodstart={normalized_start}_160000"
+                f"&periodend={normalized_end}_155959"
                 f"&cat=ANNC&sub=ANNC13"
                 f"&pagestart={page_start}"
                 f"&pagesize={page_size}"

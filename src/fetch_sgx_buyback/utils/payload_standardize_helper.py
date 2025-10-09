@@ -34,6 +34,10 @@ def safe_convert_float(url: str, number_value: str) -> float:
 def build_price_per_share(
         url, price_paid_per_share: str, highest_per_share: str, lowest_per_share: str
 ) -> dict[str, float]:
+    price_paid_per_share = safe_extract_value(price_paid_per_share)
+    highest_per_share = safe_extract_value(highest_per_share)
+    lowest_per_share = safe_extract_value(lowest_per_share)
+
     price_per_share = {}
     
     if price_paid_per_share and not highest_per_share and not lowest_per_share: 

@@ -1,9 +1,8 @@
 name: Scrape SGX BuyBack
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 7 * *' # At 00:00 on day-of-month 7.
+    - cron: '0 9 * * *' # At 09:00 every day (UTC)
 
 jobs:
   scrape:
@@ -31,7 +30,7 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
-          uv run python -m src.main_cli scraper_buybacks --period-start 20241007 --period-end 20251008
+          uv run python -m src.main_cli scraper_buybacks 
 
       - name: Pull Latest Changes
         run: git pull origin main

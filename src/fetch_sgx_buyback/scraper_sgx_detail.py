@@ -134,7 +134,8 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
 
         # Get total consideration 
         total_consideration_raw = section_a.get('Total Consideration', None) 
-        total_consideration = safe_convert_float(url, total_consideration_raw)
+        total_consideration = safe_extract_value(total_consideration_raw)
+        total_consideration = safe_convert_float(url, total_consideration)
 
         # Get Number of treasury shares held after purchase
         treasury_shares_after_purchase_raw = section_d.get('Number of treasury shares held after purchase', None)
@@ -165,11 +166,8 @@ def get_sgx_announcements(url: str) -> SGXAnnouncement:
 
 
 if __name__ == '__main__':
-    test_url = 'https://links.sgx.com/1.0.0/corporate-announcements/HZ9DTI92NDMJ7P38/be71e31a63ee4cb10f397f2a6488310c036a2feafda10bb4ea553a1e4728cb14'
-    test_url2 = 'https://links.sgx.com/1.0.0/corporate-announcements/JLBE8Z6N8I6ULAUA/9ed94150ff45f589cfb616081586a00d7d4955024b88d74d4798f2c50a673118'
-    test_url3 = 'https://links.sgx.com/1.0.0/corporate-announcements/CUF9USLIQ2TIJI41/f09101b4983c39a6444c0c5b050706912108f2c011dcb47eb8b11ee0d5ebe85a'
-    test_url4 = 'https://links.sgx.com/1.0.0/corporate-announcements/FJ6J6SPUITM29J2T/47890869fe6d5e2a38506ac65b2ec391d40ff0a2679e692bb8fb5f459cc42d3c'
-    result = get_sgx_announcements(test_url4)
+    test_url = 'https://links.sgx.com/1.0.0/corporate-announcements/TWVRNZJLN1NIW9AC/381e0dd5a56206e480e57e449a11481600a986867bd4e8b4b57151013bfc0602'
+    result = get_sgx_announcements(test_url)
     print(json.dumps(asdict(result), indent=2))
 
 
