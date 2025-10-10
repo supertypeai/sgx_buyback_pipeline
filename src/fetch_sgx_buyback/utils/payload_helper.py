@@ -1,39 +1,10 @@
-from datetime import datetime 
-
-from src.utils.symbol_matching_helper import match_company_name
 from src.config.settings import LOGGER
-
-import re 
-
-
-def safe_convert_datetime(date: str) -> str: 
-    try:
-        parsed_date = datetime.strptime(date.strip(), "%d/%m/%Y")
-        return parsed_date.strftime("%Y-%m-%d")
-    except Exception as error:
-        LOGGER.error(f"[safe_convert_datetime] Error: {error} for value '{date}'")
-        return None
-
-
-def safe_convert_float(url: str, number_value: str) -> float:
-    if not number_value:
-        return None 
-    
-    try:
-        match = re.search(r"([\d,.]+)", number_value)
-        if match:
-            cleaned = match.group(1).replace(",", "")
-            return float(cleaned)
-        else:
-            return None
-        
-    except Exception as error:
-        LOGGER.error(f"[safe_convert_float] Error: {error} for value '{number_value} url: {url}'")
-        return None
+from src.utils.sgx_parser_helper import safe_convert_float
 
 
 def build_price_per_share(
-        url, price_paid_per_share: str, highest_per_share: str, lowest_per_share: str
+        url: str, price_paid_per_share: str, 
+        highest_per_share: str, lowest_per_share: str
 ) -> dict[str, float]:
     price_per_share = {}
     

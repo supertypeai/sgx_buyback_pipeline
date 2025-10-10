@@ -2,12 +2,17 @@ from bs4 import BeautifulSoup
 from dataclasses import asdict
 
 from src.fetch_sgx_buyback.models import SGXBuyback
-from src.fetch_sgx_buyback.utils.payload_standardize_helper import (
-    build_price_per_share, safe_convert_float,
-    safe_extract_value, safe_convert_datetime,
+from src.fetch_sgx_buyback.utils.payload_helper import (
+    build_price_per_share,
+    safe_extract_value,
     safe_extract_fallback
 )
-from src.utils.sgx_parser_helper import extract_symbol
+from src.utils.sgx_parser_helper import (
+    extract_symbol, 
+    matching_symbol,
+    safe_convert_datetime, 
+    safe_convert_float
+)
 from src.config.settings import LOGGER
 
 import requests
@@ -74,7 +79,7 @@ def extract_section_data(soup: BeautifulSoup, section_title: str) -> dict[str, s
     return section_data
 
 
-def get_sgx_announcements(url: str) -> SGXBuyback: 
+def get_sgx_buybacks(url: str) -> SGXBuyback: 
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -94,9 +99,10 @@ def get_sgx_announcements(url: str) -> SGXBuyback:
         # Get symbol
         issuer_security = issuer_section.get('Securities', None)
         symbol = extract_symbol(issuer_security)
+    
         if not symbol:
             issuer_name = issuer_section.get('Issuer/ Manager')
-            symbol = extract_symbol(issuer_name)
+            symbol = matching_symbol(issuer_name)
         
         # Get type of buy back 
         on_market = section_a.get('Purchase made by way of market acquisition', None)
@@ -143,7 +149,7 @@ def get_sgx_announcements(url: str) -> SGXBuyback:
         treasury_shares_after_purchase_raw = section_d.get('Number of treasury shares held after purchase', None)
         treasury_shares_after_purchase = safe_convert_float(url, treasury_shares_after_purchase_raw)
 
-        announcement = SGXBuyback(
+        sgx_buybacks = SGXBuyback(
             url=url,
             symbol=symbol,
             purchase_date=purchase_date,
@@ -155,21 +161,22 @@ def get_sgx_announcements(url: str) -> SGXBuyback:
             cumulative_purchased=cumulative_share_purchased,
             treasury_shares_after_purchase=treasury_shares_after_purchase,
         )
-        print(json.dumps(asdict(announcement), indent=2))
-        return announcement
+
+        print(json.dumps(asdict(sgx_buybacks), indent=2))
+        return sgx_buybacks
     
     except requests.RequestException as error:
-        LOGGER.error(f"Error fetching SGX announcements for url {url}: {error}", exc_info=True)
+        LOGGER.error(f"[sgx buyback] Error fetching SGX buyback for url {url}: {error}", exc_info=True)
         return
     
     except Exception as error:
-        LOGGER.error(f"Unexpected Error extracting SGX details: {error}", exc_info=True)
+        LOGGER.error(f"[sgx buyback] Unexpected Error extracting SGX buyback: {error}", exc_info=True)
         raise
 
 
 if __name__ == '__main__':
     test_url = 'https://links.sgx.com/1.0.0/corporate-announcements/TWVRNZJLN1NIW9AC/381e0dd5a56206e480e57e449a11481600a986867bd4e8b4b57151013bfc0602'
-    result = get_sgx_announcements(test_url)
+    result = get_sgx_buybacks(test_url)
     print(json.dumps(asdict(result), indent=2))
 
 

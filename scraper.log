@@ -45,3 +45,229 @@
 2025-10-09 10:26:18 [INFO] - No more announcements found on this page â€” stopping pagination.
 2025-10-09 10:26:18 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 9
 2025-10-09 10:26:18 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
+2025-10-10 09:03:48 [INFO] - Init Global Variable
+2025-10-10 09:10:29 [INFO] - Init Global Variable
+2025-10-10 09:11:10 [INFO] - Init Global Variable
+2025-10-10 09:11:56 [INFO] - Init Global Variable
+2025-10-10 09:14:16 [INFO] - Init Global Variable
+2025-10-10 09:16:55 [INFO] - Init Global Variable
+2025-10-10 09:16:56 [ERROR] - [safe_convert_datetime] Error: time data '03-Oct-2025' does not match format '%d/%m/%Y' for value '03-Oct-2025'
+2025-10-10 09:18:35 [INFO] - Init Global Variable
+2025-10-10 09:18:37 [ERROR] - [safe_convert_datetime] Error: time data '03-Oct-2025' does not match format '%d/%m/%Y' for value '03-Oct-2025'
+2025-10-10 09:21:13 [INFO] - Init Global Variable
+2025-10-10 09:22:26 [INFO] - Init Global Variable
+2025-10-10 09:22:35 [INFO] - Init Global Variable
+2025-10-10 09:25:27 [INFO] - Init Global Variable
+2025-10-10 09:29:03 [INFO] - Init Global Variable
+2025-10-10 09:53:34 [INFO] - Init Global Variable
+2025-10-10 09:54:00 [INFO] - Init Global Variable
+2025-10-10 09:54:31 [INFO] - Init Global Variable
+2025-10-10 09:56:12 [INFO] - Init Global Variable
+2025-10-10 09:58:26 [INFO] - Init Global Variable
+2025-10-10 09:59:56 [INFO] - Init Global Variable
+2025-10-10 10:00:23 [INFO] - Init Global Variable
+2025-10-10 10:00:45 [INFO] - Init Global Variable
+2025-10-10 10:01:11 [INFO] - Init Global Variable
+2025-10-10 10:06:38 [INFO] - Init Global Variable
+2025-10-10 10:07:09 [INFO] - Init Global Variable
+2025-10-10 10:07:10 [ERROR] - [sgx_filings] Failed to extract HTML content: 'str' object has no attribute 'get'
+2025-10-10 10:07:10 [WARNING] - [sgx_filings] Date of acquisition not found, url: None
+2025-10-10 10:08:04 [INFO] - Init Global Variable
+2025-10-10 10:08:05 [ERROR] - [sgx_filings] Failed to extract HTML content: 'str' object has no attribute 'get'
+2025-10-10 10:08:05 [WARNING] - [sgx_filings] Date of acquisition not found, url: None
+2025-10-10 10:08:36 [INFO] - Init Global Variable
+2025-10-10 10:09:08 [INFO] - Init Global Variable
+2025-10-10 10:13:27 [INFO] - Init Global Variable
+2025-10-10 10:13:56 [INFO] - Init Global Variable
+2025-10-10 10:14:19 [INFO] - Init Global Variable
+2025-10-10 10:14:49 [INFO] - Init Global Variable
+2025-10-10 10:16:33 [INFO] - Init Global Variable
+2025-10-10 10:16:57 [INFO] - Init Global Variable
+2025-10-10 10:17:19 [INFO] - Init Global Variable
+2025-10-10 10:18:10 [INFO] - Init Global Variable
+2025-10-10 10:19:24 [INFO] - Init Global Variable
+2025-10-10 10:19:43 [INFO] - Init Global Variable
+2025-10-10 10:20:06 [INFO] - Init Global Variable
+2025-10-10 10:20:27 [INFO] - Init Global Variable
+2025-10-10 10:22:59 [INFO] - Init Global Variable
+2025-10-10 10:30:34 [INFO] - Init Global Variable
+2025-10-10 10:30:56 [INFO] - Init Global Variable
+2025-10-10 10:36:01 [INFO] - Init Global Variable
+2025-10-10 10:36:27 [INFO] - Init Global Variable
+2025-10-10 10:38:01 [INFO] - Init Global Variable
+2025-10-10 10:38:22 [INFO] - Init Global Variable
+2025-10-10 10:38:24 [ERROR] - [sgx_filings] Error extracting share before after: no such group url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/860944__eFORM1V2%20-%20Final.pdf
+2025-10-10 10:38:24 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 213, in get_sgx_filings
+    shares_before_raw, shares_after_raw = extract_shares_data(pdf_url, pdf_texts)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-10-10 10:38:48 [INFO] - Init Global Variable
+2025-10-10 10:42:05 [INFO] - Init Global Variable
+2025-10-10 10:42:07 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: '<' not supported between instances of 'NoneType' and 'float'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 228, in get_sgx_filings
+    transaction_type = extract_transaction_type(shares_before_percentage, shares_after_percentage)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\utils\payload_helper.py", line 34, in extract_transaction_type
+    if shares_before_percentage < shares_after_percentage:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-10 10:42:33 [INFO] - Init Global Variable
+2025-10-10 10:42:34 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: '<' not supported between instances of 'NoneType' and 'float'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 228, in get_sgx_filings
+    transaction_type = extract_transaction_type(shares_before_percentage, shares_after_percentage)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\utils\payload_helper.py", line 34, in extract_transaction_type
+    if shares_before_percentage < shares_after_percentage:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-10 10:43:04 [INFO] - Init Global Variable
+2025-10-10 10:43:06 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: '<' not supported between instances of 'NoneType' and 'float'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 228, in get_sgx_filings
+    transaction_type = extract_transaction_type(shares_before_percentage, shares_after_percentage)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\utils\payload_helper.py", line 34, in extract_transaction_type
+    if shares_before_percentage < shares_after_percentage:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-10 10:43:36 [INFO] - Init Global Variable
+2025-10-10 10:43:38 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: '<' not supported between instances of 'NoneType' and 'float'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 230, in get_sgx_filings
+    transaction_type = extract_transaction_type(shares_before_percentage, shares_after_percentage)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\utils\payload_helper.py", line 34, in extract_transaction_type
+    if shares_before_percentage < shares_after_percentage:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-10 10:44:31 [INFO] - Init Global Variable
+2025-10-10 10:44:34 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: '<' not supported between instances of 'NoneType' and 'float'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 230, in get_sgx_filings
+    transaction_type = extract_transaction_type(shares_before_percentage, shares_after_percentage)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\utils\payload_helper.py", line 34, in extract_transaction_type
+    if shares_before_percentage < shares_after_percentage:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-10 10:46:07 [INFO] - Init Global Variable
+2025-10-10 10:48:11 [INFO] - Init Global Variable
+2025-10-10 10:49:16 [INFO] - Init Global Variable
+2025-10-10 10:53:23 [INFO] - Init Global Variable
+2025-10-10 10:53:33 [INFO] - Init Global Variable
+2025-10-10 11:00:40 [INFO] - Init Global Variable
+2025-10-10 11:00:41 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: safe_convert_float() missing 1 required positional argument: 'number_value'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 263, in get_sgx_filings
+    price_per_share = build_price_per_share(raw_value, raw_number_of_stock)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\utils\payload_helper.py", line 48, in build_price_per_share
+    return safe_convert_float(raw_value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: safe_convert_float() missing 1 required positional argument: 'number_value'
+2025-10-10 11:02:16 [INFO] - Init Global Variable
+2025-10-10 11:02:17 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: extract_shares_data() missing 1 required positional argument: 'text'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 245, in get_sgx_filings
+    shares_before_raw, shares_after_raw = extract_shares_data(pdf_texts)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: extract_shares_data() missing 1 required positional argument: 'text'
+2025-10-10 11:02:54 [INFO] - Init Global Variable
+2025-10-10 11:10:15 [INFO] - Init Global Variable
+2025-10-10 11:10:17 [ERROR] - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431: can't multiply sequence by non-int of type 'float'
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\parser_sgx_filings.py", line 242, in get_sgx_filings
+    value = build_value(raw_value, number_of_stock)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_filings\utils\payload_helper.py", line 60, in build_value
+    return number_of_stock * raw_value
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: can't multiply sequence by non-int of type 'float'
+2025-10-10 11:10:43 [INFO] - Init Global Variable
+2025-10-10 11:16:19 [INFO] - Init Global Variable
+2025-10-10 11:16:49 [INFO] - Scraping from None to None...
+2025-10-10 11:16:49 [INFO] - Start scraping from start date: 20251009 to 20251010
+2025-10-10 11:16:49 [INFO] - page_start: 0
+2025-10-10 11:16:49 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:16:49 [INFO] - Response status: 200
+2025-10-10 11:16:49 [WARNING] - WARNING: API returned None
+2025-10-10 11:16:49 [INFO] - No more announcements found — stopping pagination.
+2025-10-10 11:17:08 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:17:08 [INFO] - Response status: 200
+2025-10-10 11:17:08 [WARNING] - WARNING: API returned None
+2025-10-10 11:17:08 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-10 11:17:08 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
+2025-10-10 11:17:08 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
+2025-10-10 11:17:08 [INFO] - [SGX_BUYBACK] is empty, skipping push to DB
+2025-10-10 11:31:24 [INFO] - Init Global Variable
+2025-10-10 11:31:47 [INFO] - Scraping from 20251008 to 20251009...
+2025-10-10 11:31:47 [INFO] - Start scraping from start date: 20251008 to 20251009
+2025-10-10 11:31:47 [INFO] - page_start: 0
+2025-10-10 11:31:47 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:31:47 [INFO] - Response status: 200
+2025-10-10 11:31:47 [INFO] - Fetched 13 announcements
+2025-10-10 11:31:49 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:31:49 [ERROR] - [extract transaction type] Error: '<' not supported between instances of 'NoneType' and 'NoneType'
+2025-10-10 11:31:49 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:31:53 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:31:53 [ERROR] - [extract transaction type] Error: '<' not supported between instances of 'NoneType' and 'NoneType'
+2025-10-10 11:31:53 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:31:56 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:31:56 [ERROR] - [extract transaction type] Error: '<' not supported between instances of 'NoneType' and 'NoneType'
+2025-10-10 11:31:56 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:32:02 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:32:02 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:35:36 [INFO] - Init Global Variable
+2025-10-10 11:36:00 [INFO] - Scraping from 20251008 to 20251009...
+2025-10-10 11:36:00 [INFO] - Start scraping from start date: 20251008 to 20251009
+2025-10-10 11:36:00 [INFO] - page_start: 0
+2025-10-10 11:36:00 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:36:01 [INFO] - Response status: 200
+2025-10-10 11:36:01 [INFO] - Fetched 13 announcements
+2025-10-10 11:36:02 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:02 [ERROR] - [extract transaction type] Error: '<' not supported between instances of 'NoneType' and 'NoneType'
+2025-10-10 11:36:02 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:04 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:04 [ERROR] - [extract transaction type] Error: '<' not supported between instances of 'NoneType' and 'NoneType'
+2025-10-10 11:36:04 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:09 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:09 [ERROR] - [extract transaction type] Error: '<' not supported between instances of 'NoneType' and 'NoneType'
+2025-10-10 11:36:09 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:16 [ERROR] - [build value] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:16 [ERROR] - [build price per share] Error: 'NoneType' object has no attribute 'lower'
+2025-10-10 11:36:22 [ERROR] - [extract transaction type] Error: '<' not supported between instances of 'NoneType' and 'NoneType'
+2025-10-10 11:36:34 [INFO] - page_start: 1
+2025-10-10 11:36:34 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:36:35 [INFO] - Response status: 200
+2025-10-10 11:36:35 [WARNING] - WARNING: API returned None
+2025-10-10 11:36:35 [INFO] - No more announcements found — stopping pagination.
+2025-10-10 11:37:00 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:37:01 [INFO] - Response status: 200
+2025-10-10 11:37:01 [WARNING] - WARNING: API returned None
+2025-10-10 11:37:01 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-10 11:37:01 [INFO] - [SGX FILINGS] Scraping completed. Total records: 5
+2025-10-10 11:37:01 [INFO] - Saved all announcements to data/scraper_output/sgx_filings.json
+2025-10-10 11:37:01 [ERROR] - [SGX_BUYBACK] Failed to push data: {'message': "Column 'number_of_stock' of relation 'sgx_buybacks' does not exist", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-10-10 11:40:28 [INFO] - Init Global Variable
+2025-10-10 11:40:50 [INFO] - Scraping from 20251008 to 20251009...
+2025-10-10 11:40:50 [INFO] - Start scraping from start date: 20251008 to 20251009
+2025-10-10 11:40:50 [INFO] - page_start: 0
+2025-10-10 11:40:50 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:40:51 [INFO] - Response status: 200
+2025-10-10 11:40:51 [INFO] - Fetched 13 announcements
+2025-10-10 11:41:07 [INFO] - page_start: 1
+2025-10-10 11:41:07 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:41:08 [INFO] - Response status: 200
+2025-10-10 11:41:08 [WARNING] - WARNING: API returned None
+2025-10-10 11:41:08 [INFO] - No more announcements found — stopping pagination.
+2025-10-10 11:41:28 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-10 11:41:30 [INFO] - Response status: 200
+2025-10-10 11:41:30 [WARNING] - WARNING: API returned None
+2025-10-10 11:41:30 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-10 11:41:30 [INFO] - [SGX FILINGS] Scraping completed. Total records: 5
+2025-10-10 11:41:30 [INFO] - Saved all announcements to data/scraper_output/sgx_filings.json
+2025-10-10 11:41:30 [ERROR] - [SGX_BUYBACK] Failed to push data: {'message': "Column 'number_of_stock' of relation 'sgx_buybacks' does not exist", 'code': 'PGRST204', 'hint': None, 'details': None}

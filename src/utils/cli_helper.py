@@ -20,7 +20,7 @@ def normalize_datetime(date: str | datetime) -> str:
         LOGGER.error("Invalid date format. Use YYYY-MM-DD or YYYYMMDD.")
     
 
-def push_to_db(sgx_buyback_payload: list[dict[str]]):
+def push_to_db(sgx_buyback_payload: list[dict[str]], table_name: str):
     if not sgx_buyback_payload:
         LOGGER.info(f'[SGX_BUYBACK] is empty, skipping push to DB')
         return 
@@ -28,7 +28,7 @@ def push_to_db(sgx_buyback_payload: list[dict[str]]):
     try:
         response = (
             SUPABASE_CLIENT
-            .table('sgx_buybacks')
+            .table(table_name)
             .insert(sgx_buyback_payload)
             .execute()
         )
@@ -40,7 +40,7 @@ def push_to_db(sgx_buyback_payload: list[dict[str]]):
         return None
     
 
-def clean_payload(payload: list[dict]) -> list[dict]:
+def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
     for row in payload:
         for key in [
             "total_shares_purchased",
@@ -54,3 +54,7 @@ def clean_payload(payload: list[dict]) -> list[dict]:
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
     return payload
+
+
+def clean_payload_sgx_filings():
+    pass 
