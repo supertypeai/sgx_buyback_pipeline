@@ -60,55 +60,18 @@
 2025-10-10 02:57:44 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
 2025-10-10 02:57:44 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
 2025-10-10 02:57:44 [INFO] - [SGX_BUYBACK] is empty, skipping push to DB
-2025-10-11 17:07:23 [INFO] - Init Global Variable
-2025-10-11 17:07:54 [INFO] - Scraping from 20251001 to 20251002...
-2025-10-11 17:07:54 [INFO] - Start scraping from start date: 20251001 to 20251002
-2025-10-11 17:07:54 [INFO] - page_start: 0
-2025-10-11 17:07:54 [INFO] - Fetching data from API SGX Buy Back...
-2025-10-11 17:07:54 [INFO] - Response status: 200
-2025-10-11 17:07:54 [INFO] - Fetched 6 announcements
-2025-10-11 17:08:13 [INFO] - Init Global Variable
-2025-10-11 17:08:33 [INFO] - Scraping from 20251001 to 20251002...
-2025-10-11 17:08:33 [INFO] - Start scraping from start date: 20251001 to 20251002
-2025-10-11 17:08:33 [INFO] - page_start: 0
-2025-10-11 17:08:33 [INFO] - Fetching data from API SGX Buy Back...
-2025-10-11 17:08:33 [INFO] - Response status: 200
-2025-10-11 17:08:33 [INFO] - Fetched 13 announcements
-2025-10-11 17:08:34 [ERROR] - [build price per share] Error: safe_convert_float() takes 1 positional argument but 2 were given
-2025-10-11 17:08:34 [ERROR] - [sgx buyback] Unexpected Error extracting SGX buyback: safe_convert_float() takes 1 positional argument but 2 were given
-Traceback (most recent call last):
-  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_buyback\parser_sgx_buyback.py", line 137, in get_sgx_buybacks
-    total_share_purchased = safe_convert_float(url, total_share_purchased)
-                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: safe_convert_float() takes 1 positional argument but 2 were given
-2025-10-11 17:08:34 [ERROR] - [SGX BUYBACK] Unexpected error on page 0: safe_convert_float() takes 1 positional argument but 2 were given
-Traceback (most recent call last):
-  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\main_cli.py", line 96, in run_sgx_buyback_scraper
-    sgx_announcement_details = get_sgx_buybacks(detail_url)
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\Documents\GitHub\sgx_buy_back\src\fetch_sgx_buyback\parser_sgx_buyback.py", line 137, in get_sgx_buybacks
-    total_share_purchased = safe_convert_float(url, total_share_purchased)
-                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: safe_convert_float() takes 1 positional argument but 2 were given
-2025-10-11 17:08:34 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
-2025-10-11 17:08:34 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
-2025-10-11 17:08:34 [INFO] - [SGX_BUYBACK] is empty, skipping push to DB
-2025-10-11 17:08:54 [INFO] - Init Global Variable
-2025-10-11 17:09:30 [INFO] - Init Global Variable
-2025-10-11 17:09:50 [INFO] - Scraping from 20251001 to 20251002...
-2025-10-11 17:09:50 [INFO] - Start scraping from start date: 20251001 to 20251002
-2025-10-11 17:09:50 [INFO] - page_start: 0
-2025-10-11 17:09:50 [INFO] - Fetching data from API SGX Buy Back...
-2025-10-11 17:09:51 [INFO] - Response status: 200
-2025-10-11 17:09:51 [INFO] - Fetched 13 announcements
-2025-10-11 17:09:52 [ERROR] - [build price per share] Error: safe_convert_float() takes 1 positional argument but 2 were given
-2025-10-11 17:09:54 [ERROR] - [build price per share] Error: safe_convert_float() takes 1 positional argument but 2 were given
-2025-10-11 17:09:56 [ERROR] - [build price per share] Error: safe_convert_float() takes 1 positional argument but 2 were given
-2025-10-11 17:10:01 [ERROR] - [build price per share] Error: safe_convert_float() takes 1 positional argument but 2 were given
-2025-10-11 17:10:27 [INFO] - Init Global Variable
-2025-10-11 17:10:48 [INFO] - Scraping from 20251001 to 20251002...
-2025-10-11 17:10:48 [INFO] - Start scraping from start date: 20251001 to 20251002
-2025-10-11 17:10:48 [INFO] - page_start: 0
-2025-10-11 17:10:48 [INFO] - Fetching data from API SGX Buy Back...
-2025-10-11 17:10:48 [INFO] - Response status: 200
-2025-10-11 17:10:48 [INFO] - Fetched 13 announcements
+2025-10-11 02:49:20 [INFO] - Init Global Variable
+2025-10-11 02:49:45 [INFO] - Scraping from None to None...
+2025-10-11 02:49:45 [INFO] - Start scraping from start date: 20251010 to 20251011
+2025-10-11 02:49:45 [INFO] - page_start: 0
+2025-10-11 02:49:45 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-11 02:49:46 [INFO] - Response status: 200
+2025-10-11 02:49:46 [WARNING] - WARNING: API returned None
+2025-10-11 02:49:46 [INFO] - No more announcements found — stopping pagination.
+2025-10-11 02:49:58 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-11 02:49:58 [INFO] - Response status: 200
+2025-10-11 02:49:58 [WARNING] - WARNING: API returned None
+2025-10-11 02:49:58 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-11 02:49:58 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
+2025-10-11 02:49:58 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
+2025-10-11 02:49:58 [INFO] - [SGX_BUYBACK] is empty, skipping push to DB
