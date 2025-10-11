@@ -10,11 +10,11 @@ def build_price_per_share(
     
     try:
         if price_paid_per_share and not highest_per_share and not lowest_per_share: 
-            price_per_share['price_paid_per_share'] = safe_convert_float(url, price_paid_per_share)
+            price_per_share['price_paid_per_share'] = safe_convert_float(price_paid_per_share)
         
         elif not price_paid_per_share and highest_per_share and lowest_per_share:
-            price_per_share['highest'] = safe_convert_float(url, highest_per_share)
-            price_per_share['lowest'] = safe_convert_float(url, lowest_per_share) 
+            price_per_share['highest'] = safe_convert_float(highest_per_share)
+            price_per_share['lowest'] = safe_convert_float(lowest_per_share) 
     
     except Exception as error:
         LOGGER.error(f'[build price per share] Error: {error}')

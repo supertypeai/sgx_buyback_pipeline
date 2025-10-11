@@ -134,20 +134,20 @@ def get_sgx_buybacks(url: str) -> SGXBuyback:
      
         # Get total number of shares purchased 
         total_share_purchased= safe_extract_fallback('Total Number of shares purchased', section_a, section_b) 
-        total_share_purchased = safe_convert_float(url, total_share_purchased)
+        total_share_purchased = safe_convert_float(total_share_purchased)
 
         # Get Cumulative No. of shares purchased to date
         cumulative_raw = section_c.get('Total', None)
         cumulative_share_purchased = safe_extract_value(cumulative_raw)
-        cumulative_share_purchased = safe_convert_float(url, cumulative_share_purchased)
+        cumulative_share_purchased = safe_convert_float(cumulative_share_purchased)
 
         # Get total consideration 
         total_consideration = safe_extract_fallback('Total Consideration', section_a, section_b) 
-        total_consideration = safe_convert_float(url, total_consideration)
+        total_consideration = safe_convert_float(total_consideration)
 
         # Get Number of treasury shares held after purchase
         treasury_shares_after_purchase_raw = section_d.get('Number of treasury shares held after purchase', None)
-        treasury_shares_after_purchase = safe_convert_float(url, treasury_shares_after_purchase_raw)
+        treasury_shares_after_purchase = safe_convert_float(treasury_shares_after_purchase_raw)
 
         sgx_buybacks = SGXBuyback(
             url=url,
