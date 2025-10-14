@@ -105,3 +105,18 @@
 2025-10-13 03:06:33 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
 2025-10-13 03:06:33 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
 2025-10-13 03:06:33 [INFO] - [SGX_BUYBACK] is empty, skipping push to DB
+2025-10-14 02:56:56 [INFO] - Init Global Variable
+2025-10-14 02:57:21 [INFO] - Scraping from None to None...
+2025-10-14 02:57:21 [INFO] - Start scraping from start date: 20251013 to 20251014
+2025-10-14 02:57:21 [INFO] - page_start: 0
+2025-10-14 02:57:21 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-14 02:57:22 [INFO] - Response status: 200
+2025-10-14 02:57:22 [WARNING] - WARNING: API returned None
+2025-10-14 02:57:22 [INFO] - No more announcements found — stopping pagination.
+2025-10-14 02:57:34 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-14 02:57:34 [INFO] - Response status: 200
+2025-10-14 02:57:34 [WARNING] - WARNING: API returned None
+2025-10-14 02:57:34 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-14 02:57:34 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
+2025-10-14 02:57:34 [INFO] - Saved all announcements to data/scraper_output/sgx_buybacks.json
+2025-10-14 02:57:34 [INFO] - [SGX_BUYBACK] is empty, skipping push to DB
