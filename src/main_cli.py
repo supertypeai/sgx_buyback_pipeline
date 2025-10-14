@@ -4,7 +4,8 @@ from datetime import datetime, timedelta
 from src.config.settings import LOGGER
 from src.utils.cli_helper import (
     normalize_datetime, push_to_db, 
-    clean_payload_sgx_buyback, clean_payload_sgx_filings
+    clean_payload_sgx_buyback, clean_payload_sgx_filings, 
+    write_to_json, remove_duplicate
 )
 from src.sgx_api.scraper_sgx_api import get_auth, run_scrape_api
 from src.fetch_sgx_buyback.parser_sgx_buyback import get_sgx_buybacks
@@ -38,7 +39,6 @@ def run_sgx_buyback_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(20, help="Number of records per page"),
-    is_saved_json: bool = typer.Option(True, help='Flag to write to json or not'),
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
 ):
     api_url = "https://api.sgx.com/announcements/v1.1/"
@@ -47,10 +47,10 @@ def run_sgx_buyback_scraper(
     LOGGER.info(f"Scraping from {period_start} to {period_end}...")
 
     page_start = 0
-    payload_sgx_announcements = []
+    payload_sgx_buybacks = []
 
     today = datetime.now()
-    yesterday = today - timedelta(days=1)
+    yesterday = today - timedelta(days=2)
 
     start_date_source = period_start if period_start is not None else yesterday
     end_date_source = period_end if period_end is not None else today
@@ -95,7 +95,7 @@ def run_sgx_buyback_scraper(
 
                 sgx_announcement_details = get_sgx_buybacks(detail_url)
                 sgx_announcement_details = asdict(sgx_announcement_details)
-                payload_sgx_announcements.append(sgx_announcement_details)
+                payload_sgx_buybacks.append(sgx_announcement_details)
                 time.sleep(random.uniform(1, 6))
 
             page_start += 1
@@ -105,19 +105,23 @@ def run_sgx_buyback_scraper(
             LOGGER.error(f'[SGX BUYBACK] Unexpected error on page {page_start}: {error}', exc_info=True)
             break 
 
-    LOGGER.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_announcements)}")
+    LOGGER.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_buybacks)}")
     
-    payload_sgx_announcements = clean_payload_sgx_buyback(payload_sgx_announcements)
+    os.makedirs('data/scraper_output/sgx_buyback', exist_ok=True)
+    path_today = "data/scraper_output/sgx_buyback/sgx_buybacks_today.json"
+    path_yesterday = "data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json"
+
+    write_to_json(path_today, payload_sgx_buybacks)
+
+    if os.path.exists(path_yesterday):    
+        payload_sgx_buybacks = remove_duplicate(path_today, path_yesterday)
     
-    if is_saved_json:
-        os.makedirs('data/scraper_output', exist_ok=True)
-        with open("data/scraper_output/sgx_buybacks.json", "w", encoding="utf-8") as file:
-            json.dump(payload_sgx_announcements, file, ensure_ascii=False, indent=2)
-
-        LOGGER.info("Saved all announcements to data/scraper_output/sgx_buybacks.json")
-
+    payload_sgx_buybacks = clean_payload_sgx_buyback(payload_sgx_buybacks)
+   
+    write_to_json(path_yesterday, payload_sgx_buybacks)
+        
     if is_push_db:
-        push_to_db(payload_sgx_announcements, 'sgx_buybacks')
+        push_to_db(payload_sgx_buybacks, 'sgx_buybacks')
 
 
 @app.command(name='scraper_filings')
@@ -125,7 +129,6 @@ def run_sgx_filings_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(20, help="Number of records per page"),
-    is_saved_json: bool = typer.Option(True, help='Flag to write to json or not'),
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
 ):
     api_url = "https://api.sgx.com/announcements/v1.1/"
@@ -170,7 +173,7 @@ def run_sgx_filings_scraper(
                 LOGGER.info("No more announcements found on this page — stopping pagination.")
                 break
 
-            for sgx_announcement in sgx_announcements[:5]:
+            for sgx_announcement in sgx_announcements[:7]:
                 detail_url = sgx_announcement.get('url', None)
                 issuer_name = sgx_announcement.get("issuer_name")
 
@@ -181,6 +184,11 @@ def run_sgx_filings_scraper(
                     continue
 
                 sgx_announcement_details = get_sgx_filings(detail_url)
+
+                if not sgx_announcement_details:
+                    LOGGER.info( f'[SGX FILINGS] Data not valid found for issuer name: {issuer_name} detail url: {detail_url}')
+                    continue
+
                 sgx_announcement_details = asdict(sgx_announcement_details)
                 payload_sgx_filings.append(sgx_announcement_details)
                 time.sleep(random.uniform(1, 6))
@@ -194,14 +202,18 @@ def run_sgx_filings_scraper(
 
     LOGGER.info(f"[SGX FILINGS] Scraping completed. Total records: {len(payload_sgx_filings)}")
     
-    # payload_sgx_filings = clean_payload_sgx_filings(payload_sgx_filings)
-    
-    if is_saved_json:
-        os.makedirs('data/scraper_output', exist_ok=True)
-        with open("data/scraper_output/sgx_filings.json", "w", encoding="utf-8") as file:
-            json.dump(payload_sgx_filings, file, ensure_ascii=False, indent=2)
+    os.makedirs('data/scraper_output/sgx_filing', exist_ok=True)
+    path_today = "data/scraper_output/sgx_filing/sgx_filings_today.json"
+    path_yesterday = "data/scraper_output/sgx_filing/sgx_filings_yesterday.json"
 
-        LOGGER.info("Saved all announcements to data/scraper_output/sgx_filings.json")
+    write_to_json(path_today, payload_sgx_filings)
+
+    if os.path.exists(path_yesterday):    
+        payload_sgx_filings = remove_duplicate(path_today, path_yesterday)
+    
+    payload_sgx_filings = clean_payload_sgx_filings(payload_sgx_filings)
+   
+    write_to_json(path_yesterday, payload_sgx_filings)
 
     if is_push_db:
         push_to_db(payload_sgx_filings, 'sgx_filings') 
