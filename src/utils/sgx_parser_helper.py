@@ -37,7 +37,17 @@ def safe_convert_float(number_value: str) -> float | None:
         return None 
     
     try:
-        match = re.search(r"([\d,.]+)", number_value)
+        # Remove leading numbering (e.g., "5. ", "6. ")
+        value = re.sub(r'^\d+\.\s*', '', number_value)
+        
+        # Remove trailing numbering that appears on its own line or after whitespace
+        value = re.sub(r'\s*\n\s*\d+\.\s*$', '', value)
+        
+        # If remains is just "N/A" or similar, return None
+        if value.upper() in ['N/A', 'NA', 'NIL', 'NONE', '-']:
+            return None
+        
+        match = re.search(r"([\d,.]+)", value)
         if match:
             cleaned = match.group(1).replace(",", "")
             return float(cleaned)

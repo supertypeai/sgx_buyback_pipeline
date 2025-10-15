@@ -3,6 +3,8 @@ from datetime import datetime
 from src.config.settings import SUPABASE_CLIENT
 from src.config.settings import LOGGER
 
+import json 
+
 
 def normalize_datetime(date: str | datetime) -> str: 
     if isinstance(date, datetime):
@@ -56,5 +58,45 @@ def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
     return payload
 
 
-def clean_payload_sgx_filings():
-    pass 
+def clean_payload_sgx_filings(payload: list[dict]) -> list[dict]:
+    for row in payload:
+        for key in [
+            "number_of_stock",
+            "shares_before",
+            "shares_after"
+        ]:
+            if key in row and row[key] is not None:
+                try:
+                    row[key] = int(float(row[key]))
+                except (ValueError, TypeError):
+                    LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
+                    row[key] = None
+    return payload 
+
+
+def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
+    sgx_today_datas = open_json(path_today)
+    sgx_yesterday_datas = open_json(path_yesterday) 
+
+    urls_yesterday = {item.get("url") for item in sgx_yesterday_datas}
+
+    unique_data_today = [
+        item for item in sgx_today_datas
+        if item.get('url') not in urls_yesterday
+    ]
+
+    return unique_data_today
+
+
+def write_to_json(path: str, payload_sgx: dict[str, any]):
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump(payload_sgx, file, ensure_ascii=False, indent=2)
+    
+    LOGGER.info(f"Saved all announcements to {path}")
+
+
+def open_json(path: str, payload_sgx: dict[str, any]):
+    with open(path, "r", encoding="utf-8") as file:
+        sgx_data = json.load(payload_sgx)
+    return sgx_data
+    
