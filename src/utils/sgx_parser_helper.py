@@ -8,7 +8,7 @@ import re
 
 def extract_symbol(issuer_security: str) -> str | None:
     try:
-        parts = issuer_security.split('-')
+        parts = issuer_security.split(' - ')
         if len(parts) > 1 and len(parts) <=3:
             symbol = parts[-1].strip()
             if symbol:  

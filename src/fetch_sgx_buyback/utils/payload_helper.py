@@ -3,7 +3,7 @@ from src.utils.sgx_parser_helper import safe_convert_float
 
 
 def build_price_per_share(
-        url: str, price_paid_per_share: str, 
+        price_paid_per_share: str, 
         highest_per_share: str, lowest_per_share: str
 ) -> dict[str, float]:
     price_per_share = {}

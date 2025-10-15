@@ -123,7 +123,7 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         highest_per_share = safe_extract_fallback("Highest Price per share", section_a, section_b)
         lowest_per_share = safe_extract_fallback("Lowest Price per share", section_a, section_b)
 
-        price_per_share = build_price_per_share(url, price_paid_per_share, highest_per_share, lowest_per_share)
+        price_per_share = build_price_per_share(price_paid_per_share, highest_per_share, lowest_per_share)
 
         # Total shares purchased
         total_share_purchased = safe_extract_fallback("Total Number of shares purchased", section_a, section_b)
@@ -186,7 +186,7 @@ def get_sgx_buybacks(url: str) -> SGXBuyback:
 
 
 if __name__ == '__main__':
-    test_url = 'https://links.sgx.com/1.0.0/corporate-announcements/TWVRNZJLN1NIW9AC/381e0dd5a56206e480e57e449a11481600a986867bd4e8b4b57151013bfc0602'
+    test_url = 'https://links.sgx.com/1.0.0/corporate-announcements/IZHHDYW20N2Q5EPO/632276817f55ea1bc49fb3b9137351ce3117adca0630b958cb5c5e6d76b90dd8'
     result = get_sgx_buybacks(test_url)
     print(json.dumps(asdict(result), indent=2))
 
