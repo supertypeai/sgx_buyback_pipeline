@@ -95,8 +95,8 @@ def write_to_json(path: str, payload_sgx: dict[str, any]):
     LOGGER.info(f"Saved all announcements to {path}")
 
 
-def open_json(path: str, payload_sgx: dict[str, any]):
+def open_json(path: str):
     with open(path, "r", encoding="utf-8") as file:
-        sgx_data = json.load(payload_sgx)
+        sgx_data = json.load(file)
     return sgx_data
     
