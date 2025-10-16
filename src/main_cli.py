@@ -11,7 +11,6 @@ from src.sgx_api.scraper_sgx_api import get_auth, run_scrape_api
 from src.fetch_sgx_buyback.parser_sgx_buyback import get_sgx_buybacks
 from src.fetch_sgx_filings.parser_sgx_filings import get_sgx_filings
 
-import json 
 import typer 
 import os 
 import time 
@@ -113,7 +112,8 @@ def run_sgx_buyback_scraper(
 
     write_to_json(path_today, payload_sgx_buybacks)
 
-    if os.path.exists(path_yesterday):    
+    if os.path.exists(path_yesterday):   
+        LOGGER.info('Processing remove duplicate data') 
         payload_sgx_buybacks = remove_duplicate(path_today, path_yesterday)
     
     payload_sgx_buybacks = clean_payload_sgx_buyback(payload_sgx_buybacks)
@@ -173,7 +173,7 @@ def run_sgx_filings_scraper(
                 LOGGER.info("No more announcements found on this page — stopping pagination.")
                 break
 
-            for sgx_announcement in sgx_announcements[:7]:
+            for sgx_announcement in sgx_announcements:
                 detail_url = sgx_announcement.get('url', None)
                 issuer_name = sgx_announcement.get("issuer_name")
 
@@ -183,14 +183,16 @@ def run_sgx_filings_scraper(
                     )
                     continue
 
-                sgx_announcement_details = get_sgx_filings(detail_url)
+                sgx_filings_details = get_sgx_filings(detail_url)
 
-                if not sgx_announcement_details:
+                if not sgx_filings_details:
                     LOGGER.info( f'[SGX FILINGS] Data not valid found for issuer name: {issuer_name} detail url: {detail_url}')
                     continue
-
-                sgx_announcement_details = asdict(sgx_announcement_details)
-                payload_sgx_filings.append(sgx_announcement_details)
+                
+                for sgx_filing_detail in sgx_filings_details:
+                    sgx_filing_data = asdict(sgx_filing_detail)
+                    payload_sgx_filings.append(sgx_filing_data)
+                
                 time.sleep(random.uniform(1, 6))
 
             page_start += 1
@@ -209,6 +211,7 @@ def run_sgx_filings_scraper(
     write_to_json(path_today, payload_sgx_filings)
 
     if os.path.exists(path_yesterday):    
+        LOGGER.info('Processing remove duplicate data') 
         payload_sgx_filings = remove_duplicate(path_today, path_yesterday)
     
     payload_sgx_filings = clean_payload_sgx_filings(payload_sgx_filings)

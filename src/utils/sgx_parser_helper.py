@@ -38,7 +38,7 @@ def safe_convert_float(number_value: str) -> float | None:
     
     try:
         # Remove leading numbering (e.g., "5. ", "6. ")
-        value = re.sub(r'^\d+\.\s*', '', number_value)
+        value = re.sub(r'^\d+\.\s+(?!\d)', '', number_value)
         
         # Remove trailing numbering that appears on its own line or after whitespace
         value = re.sub(r'\s*\n\s*\d+\.\s*$', '', value)
@@ -47,12 +47,22 @@ def safe_convert_float(number_value: str) -> float | None:
         if value.upper() in ['N/A', 'NA', 'NIL', 'NONE', '-']:
             return None
         
-        match = re.search(r"([\d,.]+)", value)
-        if match:
-            cleaned = match.group(1).replace(",", "")
-            return float(cleaned)
-        else:
+        pattern = r'([\d,]+(?:\.\d+)?)\s*(?:shares?|units?|securities|stocks?)'
+        matches = re.findall(pattern, value, re.IGNORECASE)
+        
+        if not matches:
+            LOGGER.warning(f"[safe_convert_float] Using fallback pattern for: '{value}'")
+            matches = re.findall(r"([\d,]+(?:\.\d+)?)", value)
+
+        if not matches:
             return None
+        
+        total = 0.0
+        for match in matches:
+            cleaned = match.replace(",", "")
+            total += float(cleaned)
+        
+        return total
         
     except Exception as error:
         LOGGER.error(f"[safe_convert_float] Error: {error} for value '{number_value}'")
