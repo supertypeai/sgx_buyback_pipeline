@@ -3,9 +3,9 @@ import requests
 from src.config.settings import LOGGER
 
 
-def get_latest_currency() -> float | None:
+def get_latest_currency(currency_from: str) -> float | None:
     try:
-        response = requests.get("https://api.frankfurter.app/latest?from=USD&to=SGD", timeout=10)
+        response = requests.get(f"https://api.frankfurter.app/latest?from={currency_from.upper()}&to=SGD", timeout=10)
         response.raise_for_status()
         
         data = response.json()
@@ -21,9 +21,9 @@ def get_latest_currency() -> float | None:
         return None
 
 
-def calculate_currency_to_sgd(rate_us: float, rate_sgd: float) -> float | None:
+def calculate_currency_to_sgd(currency_from: float, rate_sgd: float) -> float | None:
     try:
-        converted = rate_us * rate_sgd
+        converted = currency_from * rate_sgd
         converted = f"{converted:.2f}"
         return converted 
     except Exception as error:
