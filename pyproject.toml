@@ -1,7 +1,7 @@
 [project]
 name = "sgx-filing"
 version = "0.1.0"
-description = "Add your description here"
+description = "Scraper for SGX BuyBacks and Filings"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

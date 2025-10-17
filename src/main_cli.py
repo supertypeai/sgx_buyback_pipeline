@@ -115,11 +115,11 @@ def run_sgx_buyback_scraper(
     if os.path.exists(path_yesterday):   
         LOGGER.info('Processing remove duplicate data') 
         payload_sgx_buybacks = remove_duplicate(path_today, path_yesterday)
-    
-    payload_sgx_buybacks = clean_payload_sgx_buyback(payload_sgx_buybacks)
    
     write_to_json(path_yesterday, payload_sgx_buybacks)
-        
+    
+    payload_sgx_buybacks = clean_payload_sgx_buyback(payload_sgx_buybacks)
+    
     if is_push_db:
         push_to_db(payload_sgx_buybacks, 'sgx_buybacks')
 
@@ -207,19 +207,24 @@ def run_sgx_filings_scraper(
     os.makedirs('data/scraper_output/sgx_filing', exist_ok=True)
     path_today = "data/scraper_output/sgx_filing/sgx_filings_today.json"
     path_yesterday = "data/scraper_output/sgx_filing/sgx_filings_yesterday.json"
+    path_payload_nan = "data/scraper_output/sgx_filing/sgx_filings_nan.json"
+    path_payload_clean = "data/scraper_output/sgx_filing/sgx_filings_clean.json"
 
     write_to_json(path_today, payload_sgx_filings)
 
     if os.path.exists(path_yesterday):    
         LOGGER.info('Processing remove duplicate data') 
         payload_sgx_filings = remove_duplicate(path_today, path_yesterday)
-    
-    payload_sgx_filings = clean_payload_sgx_filings(payload_sgx_filings)
    
     write_to_json(path_yesterday, payload_sgx_filings)
 
+    payload_sgx_filings_clean, payload_sgx_filings_nan = clean_payload_sgx_filings(payload_sgx_filings)
+    
+    write_to_json(path_payload_nan, payload_sgx_filings_nan)
+    write_to_json(path_payload_clean, payload_sgx_filings_clean)
+
     if is_push_db:
-        push_to_db(payload_sgx_filings, 'sgx_filings') 
+        push_to_db(payload_sgx_filings_clean, 'sgx_filings') 
 
 
 if __name__ == '__main__':

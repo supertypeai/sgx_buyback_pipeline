@@ -329,11 +329,14 @@ def extract_share_tables(
     matching_tables = []
     for item in found_tables:
         table = item['table']
+        # LOGGER.info(f"table on loop: {json.dumps(table, indent=2)}")
         if table and contains_share_rule(table):
             matching_tables.append(item)
             
     if matching_tables:
+        # LOGGER.info(f"matching tables: {json.dumps(matching_tables, indent=2)}")
         merged = merge_tables(matching_tables)
+        # LOGGER.info(f'merged tables: {json.dumps(merged, indent=2)}')
         return merged
         
     return None
@@ -347,15 +350,28 @@ def contains_share_rule(table):
     
     clean_text = ' '.join(table_text.split())
     
+    if 'rights/options/warrants held' in clean_text or 'rights/options/warrants over' in clean_text:
+        # Only exclude if it doesn't also mention voting shares/units
+        if 'voting shares/units' not in clean_text and 'ordinary voting units' not in clean_text:
+            return False
+    
+    if ('immediately before' in clean_text or 'immediately after' in clean_text) and \
+       'direct interest' in clean_text and 'deemed interest' in clean_text:
+        # But only if it's about voting shares, not just rights/options/warrants
+        if 'voting shares/units' in clean_text or 'ordinary voting units' in clean_text:
+            return True
+    
+        # Check if it has the rights/options/warrants exclusion keywords
+        if 'rights/options/warrants held' in clean_text or 'rights/options/warrants over' in clean_text:
+            return False
+        return True 
+        
     # Match voting shares/units (with or without "ordinary")
     if 'voting shares/units' in clean_text or 'ordinary voting units' in clean_text:
-        # Exclude pure rights/options/warrants tables
-        if 'rights/options/warrants held:' in clean_text and 'voting shares/units held' not in clean_text:
-            return False
         return True
     
     # Match convertible debentures pattern
-    if 'convertible debentures' in clean_text and 'voting shares/units' in clean_text or 'ordinary voting units' in clean_text:
+    if 'convertible debentures' in clean_text and ('voting shares/units' in clean_text or 'ordinary voting units' in clean_text):
         return True
     
     return False
@@ -372,7 +388,6 @@ def merge_tables(table_items):
         prev_page = table_items[index-1]['page']
         curr_page = table_items[index]['page']
         
-        print(f"\nChecking table {index}:")
         print(f"Pages: {prev_page} -> {curr_page}")
         print(f"First row: {current[0] if current else 'empty'}")
         
@@ -398,76 +413,70 @@ def merge_tables(table_items):
     return merged
 
 
-def find_shareholder_sections(pdf_path: str) -> list[dict]:
-    anchor_texts = [
+def find_shareholder_sections(pdf_object: pdfplumber.PDF) -> list[dict]:
+    primary_anchors = [
         "Quantum of interests in securities held by Trustee-Manager",
         "Name of Substantial Shareholder/Unitholder:",
         "Part II - Substantial Shareholder/Unitholder and Transaction(s) Details",
         "Name of Director/CEO:"
     ]
+    
+    # Regex to find "Transaction A", "Transaction B", etc
+    transaction_anchor_pattern = re.compile(r"^Transaction [A-Z]$", re.MULTILINE)
 
-    try:
-        if pdf_path.startswith('http'):
-            response = requests.get(pdf_path)
-            pdf_file = io.BytesIO(response.content)
-            pdf = pdfplumber.open(pdf_file)
-        else:
-            pdf = pdfplumber.open(pdf_path)
+    found_primary = []
+    found_transactions = []
 
-        with pdf:
-            found_anchors = []
-            page_width = pdf.pages[0].width if pdf.pages else 0
+    for index, page in enumerate(pdf_object.pages):
+        # Find primary anchors
+        for anchor_text in primary_anchors:
+            found = page.search(anchor_text, case=False)
+            for item in found:
+                found_primary.append({'text':anchor_text, 'page_number': index, 'top': item['top']})
+        
+        # Find transaction anchors
+        page_text = page.extract_text()
+        if page_text:
+            for match in transaction_anchor_pattern.finditer(page_text):
+                # Find the coordinates of this text match
+                bbox = page.search(match.group(0), case=True)
+                if bbox:
+                    found_transactions.append({'page_number': index, 'top': bbox[0]['top']})
 
-            for index, page in enumerate(pdf.pages):
-                for anchor_text in anchor_texts:
-                    found = page.search(anchor_text, case=False)
-                    for item in found:
-                        found_anchors.append({
-                            'text': anchor_text,
-                            'page_number': index,
-                            'top': item['top']
-                        })
-                        
+    # Sort all found anchors to process them in order
+    found_primary.sort(key=lambda x: (x['page_number'], x['top']))
+    found_transactions.sort(key=lambda x: (x['page_number'], x['top']))
 
-            if not found_anchors:
-                return []
-            
-            # Single shareholder
-            if len(found_anchors) == 1:
-                anchor = found_anchors[0]
-                page = pdf.pages[anchor['page_number']]
-                
-                # Return the bounding box for the entire page
-                whole_page_bbox = (0, 0, page.width, page.height)
-                
-                return [{
-                    'page_number': anchor['page_number'],
-                    'bbox': whole_page_bbox
-                }]
+    final_anchors = []
+    if len(found_primary) > 1 and "Name of Substantial Shareholder/Unitholder:" in [a['text'] for a in found_primary]:
+        # Case: Multi-shareholder document. Use the primary anchors
+        final_anchors = found_primary
+    elif len(found_transactions) > 1:
+        # Case: Multi-transaction document. Use the "Transaction A/B" anchors
+        final_anchors = found_transactions
+    else:
+        # Case: Simple single-filer document. Use the single primary anchor found
+        final_anchors = found_primary
 
-            # Multiple shareholders
-            else:
-                shareholder_sections = []
-                for index, anchor in enumerate(found_anchors):
-                    page = pdf.pages[anchor['page_number']]
-                    
-                    # The bounding box starts at the anchor
-                    section_top = anchor['top']
-                    # Defaults to the bottom of the page
-                    section_bottom = page.height
-                    
-                    # If the next anchor is on the same page, end this section there
-                    if index + 1 < len(found_anchors) and found_anchors[index+1]['page_number'] == anchor['page_number']:
-                        section_bottom = found_anchors[index+1]['top']
-                    
-                    section_bbox = (0, section_top, page_width, section_bottom)
+    # Build the sections based on the chosen final anchors 
+    shareholder_sections = []
+    if not final_anchors:
+        return []
+        
+    page_width = pdf_object.pages[0].width
+    for index, anchor in enumerate(final_anchors):
+        page = pdf_object.pages[anchor['page_number']]
+        section_top = anchor['top']
+        section_bottom = page.height
+        
+        if index + 1 < len(final_anchors) and final_anchors[index+1]['page_number'] == anchor['page_number']:
+            section_bottom = final_anchors[index+1]['top']
+        
+        section_bbox = (0, section_top, page_width, section_bottom)
+        shareholder_sections.append({
+            'page_number': anchor['page_number'],
+            'bbox': section_bbox
+        })
 
-                    shareholder_sections.append({
-                        'page_number': anchor['page_number'],
-                        'bbox': section_bbox
-                    })
-                return shareholder_sections
-            
-    except Exception as error:
-        LOGGER.error(f"[find_shareholder_sections] Error {pdf_path}: {error}", exc_info=True)
-        return None
+    return shareholder_sections
+    

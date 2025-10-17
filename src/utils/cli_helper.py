@@ -58,7 +58,10 @@ def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
     return payload
 
 
-def clean_payload_sgx_filings(payload: list[dict]) -> list[dict]:
+def clean_payload_sgx_filings(payload: list[dict]) -> tuple[list[dict], list[dict]]:
+    payload_contains_null = []
+    payload_clean = []
+
     for row in payload:
         for key in [
             "number_of_stock",
@@ -71,7 +74,14 @@ def clean_payload_sgx_filings(payload: list[dict]) -> list[dict]:
                 except (ValueError, TypeError):
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
-    return payload 
+        
+        if any(value is None for value in row.values()):
+            payload_contains_null.append(row)
+        else:
+            payload_clean.append(row)
+    
+    LOGGER.info(f"{len(payload_contains_null)} rows contain null values | {len(payload_clean)} rows cleaned")
+    return payload_clean, payload_contains_null
 
 
 def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:

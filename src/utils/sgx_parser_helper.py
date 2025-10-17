@@ -44,14 +44,19 @@ def safe_convert_float(number_value: str) -> float | None:
         value = re.sub(r'\s*\n\s*\d+\.\s*$', '', value)
         
         # If remains is just "N/A" or similar, return None
-        if value.upper() in ['N/A', 'NA', 'NIL', 'NONE', '-']:
+        if value.upper() in ['N/A', 'NA', 'NIL', 'NONE', '-', 'NOT APPLICABLE.', 'N.A.']:
             return None
+        
+        currency_pattern = r'([\d,]+(?:\.\d+)?)\s*(?:USD|SGD|\$|US\$|S\$)'
+        matches = re.findall(currency_pattern, value, re.IGNORECASE)
+        if matches:
+            return float(matches[0].replace(',', ''))
         
         pattern = r'([\d,]+(?:\.\d+)?)\s*(?:shares?|units?|securities|stocks?)'
         matches = re.findall(pattern, value, re.IGNORECASE)
         
         if not matches:
-            LOGGER.warning(f"[safe_convert_float] Using fallback pattern for: '{value}'")
+            # LOGGER.warning(f"[safe_convert_float] Using fallback pattern for: '{number_value}'")
             matches = re.findall(r"([\d,]+(?:\.\d+)?)", value)
 
         if not matches:

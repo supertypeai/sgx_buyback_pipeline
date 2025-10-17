@@ -51,7 +51,6 @@ TRANSACTION_KEYWORDS = {
         'acquisition',
         "exercise of options", 
         "rights allotment", 
-        "placement",
         "share buy-back"
     ],
 
@@ -70,7 +69,6 @@ TRANSACTION_KEYWORDS = {
     ]
 }
 
-
 TYPE_SECURITIES_OPTIONS = {
     "Voting shares/units": r"(?:Ordinary\s+)?voting\s+(?:shares|units)",
     "Rights/Options/Warrants over voting shares/units": r"Rights/Options/Warrants\s+over\s+(?:voting\s+)?(?:shares/)?units",
@@ -78,25 +76,3 @@ TYPE_SECURITIES_OPTIONS = {
     "Others": r"Others.*(?:specify|:)"
 }
 
-
-# TRANSFER_KEYWORDS = [
-#     'transfer', 'family members', 'inheritance', 'gift', 'scheme of arrangement'
-# ]
-
-# SELL_KEYWORDS = [
-#     'disposal', 'sell', 'dilution', 'force-sell', 'margin call', 
-#     'acceptance of take-over offer', 'placement shares', 'new ordinary shares', 
-#     'consideration shares'
-# ]
-
-# BUY_KEYWORDS = [
-#     'acquisition', 'buy', 'share buy-back', 'repurchase', 'treasury shares',
-#     'exercise of employee share options', 'vesting of share awards', 
-#     'conversion of', 'exercise of rights'
-# ]
-
-
-# EXTRACT_SHARE_DATA_RULE = [
-#     'ordinary voting shares/units', 
-#     'including voting shares/units underlying rights/options/warrants/convertible debentures'
-# ]

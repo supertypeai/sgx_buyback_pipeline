@@ -11,7 +11,9 @@ def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
         return None
     
     try:
-        if 'share' in raw_value.lower().strip():
+        cleaned_value = raw_value.lower().strip()
+
+        if 'share' in cleaned_value or 'per unit' in cleaned_value:
             return safe_convert_float(raw_value)
         
         value = safe_convert_float(raw_value)
@@ -27,18 +29,20 @@ def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
 
 
 def build_value(raw_value: str, number_of_stock: float) -> float | None:
+    print(f"[build_value] Input - raw_value: {repr(raw_value)}, number_of_stock: {number_of_stock}")
+    
     if raw_value is None and number_of_stock is None:
         return None
     
     try:
         clean_value = raw_value.lower().strip()
-        
+
         if 'us'in clean_value:
             sgd_rate = get_latest_currency('usd')
             usd_value = safe_convert_float(raw_value)
             value = calculate_currency_to_sgd(usd_value, sgd_rate)
             
-            if 'share' in clean_value:
+            if 'share' in clean_value or 'per unit':
                 value = number_of_stock * value
             return value 
         
@@ -47,11 +51,11 @@ def build_value(raw_value: str, number_of_stock: float) -> float | None:
             hk_value = safe_convert_float(raw_value)
             value = calculate_currency_to_sgd(hk_value, sgd_rate)
             
-            if 'share' in clean_value:
+            if 'share' in clean_value or 'per unit':
                 value = number_of_stock * value
             return value 
         
-        if 'share' in clean_value:
+        if 'share' in clean_value or 'per unit':
             return number_of_stock * safe_convert_float(raw_value)
         
         return safe_convert_float(raw_value)
