@@ -180,3 +180,69 @@
 2025-10-16 03:00:48 [INFO] - Saved all announcements to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
 2025-10-16 03:00:48 [INFO] - Saved all announcements to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-10-16 03:00:49 [INFO] - [SGX_BUYBACK] Successfully pushed 10 records to DB
+2025-10-17 03:42:17 [INFO] - Init Global Variable
+2025-10-17 03:42:51 [INFO] - Scraping from None to None...
+2025-10-17 03:42:51 [INFO] - Start scraping from start date: 20251015 to 20251017
+2025-10-17 03:42:51 [INFO] - page_start: 0
+2025-10-17 03:42:51 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-17 03:42:51 [INFO] - Response status: 200
+2025-10-17 03:42:51 [INFO] - Fetched 8 announcements
+2025-10-17 03:42:52 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.31'
+2025-10-17 03:42:52 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.305'
+2025-10-17 03:42:52 [WARNING] - [safe_convert_float] Using fallback pattern for: '30,000'
+2025-10-17 03:42:52 [WARNING] - [safe_convert_float] Using fallback pattern for: '589,900'
+2025-10-17 03:42:52 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 9,293.18'
+2025-10-17 03:42:52 [WARNING] - [safe_convert_float] Using fallback pattern for: '15,823,074'
+2025-10-17 03:42:57 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.36'
+2025-10-17 03:42:57 [WARNING] - [safe_convert_float] Using fallback pattern for: '100'
+2025-10-17 03:42:57 [WARNING] - [safe_convert_float] Using fallback pattern for: '377,200'
+2025-10-17 03:42:57 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 36.05'
+2025-10-17 03:42:57 [WARNING] - [safe_convert_float] Using fallback pattern for: '5,677,534'
+2025-10-17 03:42:58 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.47'
+2025-10-17 03:42:58 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.46'
+2025-10-17 03:42:58 [WARNING] - [safe_convert_float] Using fallback pattern for: '475,500'
+2025-10-17 03:42:58 [WARNING] - [safe_convert_float] Using fallback pattern for: '6,107,000'
+2025-10-17 03:42:58 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 223,035.9'
+2025-10-17 03:42:58 [WARNING] - [safe_convert_float] Using fallback pattern for: '20,568,881'
+2025-10-17 03:43:01 [WARNING] - [safe_convert_float] Using fallback pattern for: 'EUR 1.52'
+2025-10-17 03:43:01 [WARNING] - [safe_convert_float] Using fallback pattern for: 'EUR 1.5'
+2025-10-17 03:43:01 [WARNING] - [safe_convert_float] Using fallback pattern for: '200,900'
+2025-10-17 03:43:01 [WARNING] - [safe_convert_float] Using fallback pattern for: '1,787,200'
+2025-10-17 03:43:01 [WARNING] - [safe_convert_float] Using fallback pattern for: 'EUR 302,940.4'
+2025-10-17 03:43:01 [WARNING] - [safe_convert_float] Using fallback pattern for: '0'
+2025-10-17 03:43:03 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 34.82'
+2025-10-17 03:43:03 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 34.46'
+2025-10-17 03:43:03 [WARNING] - [safe_convert_float] Using fallback pattern for: '100,000'
+2025-10-17 03:43:03 [WARNING] - [safe_convert_float] Using fallback pattern for: '15,166,400'
+2025-10-17 03:43:03 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 3,458,570.9'
+2025-10-17 03:43:03 [WARNING] - [safe_convert_float] Using fallback pattern for: '15,243,008'
+2025-10-17 03:43:06 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 1.2'
+2025-10-17 03:43:06 [WARNING] - [safe_convert_float] Using fallback pattern for: '115,000'
+2025-10-17 03:43:06 [WARNING] - [safe_convert_float] Using fallback pattern for: '5,149,800'
+2025-10-17 03:43:06 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 138,210.97'
+2025-10-17 03:43:06 [WARNING] - [safe_convert_float] Using fallback pattern for: '24,606,900'
+2025-10-17 03:43:08 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.225'
+2025-10-17 03:43:08 [WARNING] - [safe_convert_float] Using fallback pattern for: '1,206,100'
+2025-10-17 03:43:08 [WARNING] - [safe_convert_float] Using fallback pattern for: '13,357,300'
+2025-10-17 03:43:08 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 271,846.16'
+2025-10-17 03:43:08 [WARNING] - [safe_convert_float] Using fallback pattern for: '11,048,100'
+2025-10-17 03:43:10 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.455'
+2025-10-17 03:43:10 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 0.45'
+2025-10-17 03:43:10 [WARNING] - [safe_convert_float] Using fallback pattern for: '111,000'
+2025-10-17 03:43:10 [WARNING] - [safe_convert_float] Using fallback pattern for: '3,180,000'
+2025-10-17 03:43:10 [WARNING] - [safe_convert_float] Using fallback pattern for: 'SGD 50,481.69'
+2025-10-17 03:43:10 [WARNING] - [safe_convert_float] Using fallback pattern for: '17,702,300'
+2025-10-17 03:43:18 [INFO] - page_start: 1
+2025-10-17 03:43:18 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-17 03:43:18 [INFO] - Response status: 200
+2025-10-17 03:43:18 [WARNING] - WARNING: API returned None
+2025-10-17 03:43:18 [INFO] - No more announcements found — stopping pagination.
+2025-10-17 03:43:31 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-17 03:43:31 [INFO] - Response status: 200
+2025-10-17 03:43:31 [WARNING] - WARNING: API returned None
+2025-10-17 03:43:31 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-17 03:43:31 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 8
+2025-10-17 03:43:31 [INFO] - Saved all announcements to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-10-17 03:43:31 [INFO] - Processing remove duplicate data
+2025-10-17 03:43:31 [INFO] - Saved all announcements to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-10-17 03:43:32 [INFO] - [SGX_BUYBACK] Successfully pushed 8 records to DB
