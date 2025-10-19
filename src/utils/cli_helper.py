@@ -88,6 +88,10 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
     sgx_today_datas = open_json(path_today)
     sgx_yesterday_datas = open_json(path_yesterday) 
 
+    if not sgx_yesterday_datas:
+        LOGGER.info('Skip removing duplicate, sgx yesterday data is empty')
+        return 
+    
     urls_yesterday = {item.get("url") for item in sgx_yesterday_datas}
 
     unique_data_today = [
