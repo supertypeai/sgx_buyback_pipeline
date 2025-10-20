@@ -22,27 +22,31 @@ def normalize_datetime(date: str | datetime) -> str:
         LOGGER.error("Invalid date format. Use YYYY-MM-DD or YYYYMMDD.")
     
 
-def push_to_db(sgx_buyback_payload: list[dict[str]], table_name: str):
-    if not sgx_buyback_payload:
-        LOGGER.info(f'[SGX_BUYBACK] is empty, skipping push to DB')
+def push_to_db(sgx_payload: list[dict[str]], table_name: str):
+    if not sgx_payload:
+        LOGGER.info(f'[sgx_payload] is empty, skipping push to DB')
         return 
     
     try:
         response = (
             SUPABASE_CLIENT
             .table(table_name)
-            .insert(sgx_buyback_payload)
+            .insert(sgx_payload)
             .execute()
         )
-        LOGGER.info(f"[SGX_BUYBACK] Successfully pushed {len(sgx_buyback_payload)} records to DB")
+        LOGGER.info(f"[sgx_payload] Successfully pushed {len(sgx_payload)} records to DB, table: {table_name}")
         return response
     
     except Exception as error:
-        LOGGER.error(f"[SGX_BUYBACK] Failed to push data: {error}")
+        LOGGER.error(f"[push_to_db] Failed to push data: {error}")
         return None
     
 
 def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
+    if not payload:
+        LOGGER.info(f'[sgx_buyback] is empty, skipping clean payload')
+        return None 
+    
     for row in payload:
         for key in [
             "total_shares_purchased",
@@ -55,6 +59,7 @@ def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
                 except (ValueError, TypeError):
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
+    
     return payload
 
 
@@ -75,7 +80,7 @@ def clean_payload_sgx_filings(payload: list[dict]) -> tuple[list[dict], list[dic
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
         
-        if any(value is None for value in row.values()):
+        if row.get('transaction_type') is None:
             payload_contains_null.append(row)
         else:
             payload_clean.append(row)
