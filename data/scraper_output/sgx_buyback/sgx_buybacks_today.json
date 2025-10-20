@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/O9GRDE7JKQ05WHYX/6031b235a38d3f5d71e59045ee2253c0325332ae79fd1f5a51d0a58782c423c1",
+    "symbol": "U77",
+    "purchase_date": "2025-10-17",
+    "type": "On Market",
+    "start_date": "2025-04-24",
+    "price_per_share": {
+      "price_paid_per_share": 0.315
+    },
+    "total_value": 3187.36,
+    "total_shares_purchased": 10000.0,
+    "cumulative_purchased": 599900.0,
+    "treasury_shares_after_purchase": 15833074.0
+  }
+]
