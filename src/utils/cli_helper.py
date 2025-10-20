@@ -104,6 +104,7 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
         if item.get('url') not in urls_yesterday
     ]
 
+    LOGGER.info(f'Length data after duplicate removing: {len(unique_data_today)}')
     return unique_data_today
 
 
