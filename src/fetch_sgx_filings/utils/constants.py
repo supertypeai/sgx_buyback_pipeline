@@ -33,17 +33,7 @@ TRANSACTION_KEYWORDS = {
     # For compensation-related acquisitions
     "award": [
         "award", 
-        "vesting", 
-        "incentive plan", 
         "grant",
-        "management fee" 
-    ],
-    
-    # For acquisitions via corporate actions
-    "reinvestment": [
-        "reinvestment plan", 
-        "scrip dividend", 
-        "distribution" 
     ],
     
     # For acquisitions through special rights

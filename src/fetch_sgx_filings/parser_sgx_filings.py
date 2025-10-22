@@ -16,7 +16,9 @@ from src.fetch_sgx_filings.utils.payload_pdf_helper import (
     extract_circumstance_interest_checkbox,
     extract_type_securities_checkbox,
     extract_share_tables,
-    find_shareholder_sections
+    find_shareholder_sections,
+    extract_shareholder_name, 
+    extract_checkbox_fallback
 )
 from src.fetch_sgx_filings.utils.payload_html_helper import extract_section_data
 from src.fetch_sgx_filings.models import SGXFilings
@@ -30,7 +32,7 @@ import pdfplumber
 import io 
 
 
-def open_pdf(pdf_url: str):
+def open_pdf(pdf_url: str) -> fitz.Document:
     if not pdf_url:
         return ''
 
@@ -102,8 +104,9 @@ def extract_html_content(soup: BeautifulSoup) -> dict[str, str]:
 
         # Get symbol
         issuer_security = issuer_section.get('Securities', None)
+       
         symbol = extract_symbol(issuer_security)
-    
+     
         if not symbol:
             issuer_name = issuer_section.get('Issuer/ Manager')
             symbol = matching_symbol(issuer_name)
@@ -200,6 +203,7 @@ def parse_share_table_values(pdf_object: pdfplumber.PDF, page_number: int, bbox:
             # Get value from "Total" column
             share_value = table[3]  
             table_values.append(share_value)
+
     except Exception as error:
         LOGGER.error(f"[sgx_filings] Error while parsing tables: {error}")
         return None 
@@ -242,7 +246,86 @@ def build_individual_share_record(pdf_object: pdfplumber.PDF, page_number: int, 
     }
 
 
-def extract_share_records_from_pdf(pdf_url: str, static_records: dict) -> list[dict] | None:
+def fallback_extract_transaction_detail(page, transaction_date):
+    page_text = page.extract_text(x_tolerance=2)
+    
+    date = transaction_date
+    if not date:
+        date = safe_convert_datetime(extract_date(page_text))
+    
+    raw_number_of_stock = extract_number_of_stock(page_text)
+    number_of_stock = safe_convert_float(raw_number_of_stock)
+    
+    raw_value = extract_value(page_text)
+    value = build_value(raw_value, number_of_stock)
+    
+    return date, number_of_stock, value, raw_value
+
+
+def extract_transaction_details(pdf_object, page_number, bbox) -> dict[str, any] | None:
+    try:
+        details = {
+            "transaction_date": None,
+            "number_of_stock": None,
+            "value": None,
+            "price_per_share": None,
+        }
+        
+        page = pdf_object.pages[page_number]
+        cropped_view = page.crop(bbox)
+        section_text = cropped_view.extract_text(x_tolerance=2)
+        
+        if not section_text:
+            return details
+
+        # Transaction date
+        transaction_date = extract_date(section_text)
+        transaction_date = safe_convert_datetime(transaction_date)
+
+        # Number of stock
+        raw_number_of_stock = extract_number_of_stock(section_text)
+        number_of_stock = safe_convert_float(raw_number_of_stock)
+
+        # Value 
+        raw_value = extract_value(section_text)
+        value = build_value(raw_value, number_of_stock)
+       
+        # Fallback with next page
+        if not value and not number_of_stock:
+            for page_index in range(page_number, page_number+2):
+                transaction_date, number_of_stock, value, raw_value = \
+                    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                
+                if value or number_of_stock:
+                    break 
+        
+        # Fallback for previous page
+        if not value and not number_of_stock:
+            for page_index in range(page_number -1, page_number - 3, -1):
+                transaction_date, number_of_stock, value, raw_value = \
+                    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                
+                if value or number_of_stock:
+                    break 
+
+        # Price per share 
+        price_per_share = build_price_per_share(raw_value, number_of_stock)
+
+        details.update({
+            "transaction_date": transaction_date,
+            "number_of_stock": number_of_stock,
+            "value": value,
+            "price_per_share": price_per_share,
+        })
+
+        return details 
+    
+    except Exception as error:
+        LOGGER.error(f'[sgx_filings] Error while extracting static fields: {error}', exc_info=True) 
+        return None 
+
+
+def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
     try:
         response = requests.get(pdf_url, timeout=15)
         response.raise_for_status()
@@ -251,6 +334,7 @@ def extract_share_records_from_pdf(pdf_url: str, static_records: dict) -> list[d
         with pdfplumber.open(pdf_file) as pdf:
             shareholder_sections = find_shareholder_sections(pdf)
             print(f'raw section: {shareholder_sections}')
+
             all_records = []
             for shareholder_section in shareholder_sections:
                 individual_share_data = build_individual_share_record(
@@ -262,13 +346,43 @@ def extract_share_records_from_pdf(pdf_url: str, static_records: dict) -> list[d
                 if not individual_share_data:
                     continue
 
+                # Extract shareholder name 
+                shareholder_name = extract_shareholder_name(
+                    pdf, shareholder_section['page_number'],
+                    shareholder_section['bbox']
+                )
+
+                # Extract additional fields 
+                transaction_details = extract_transaction_details(
+                    pdf,
+                    shareholder_section['page_number'],
+                    shareholder_section['bbox']
+                )
+
+                # Extract transaction type
+                circumstance_interest_raw = extract_circumstance_interest_checkbox(
+                    doc_fitz, 
+                    shareholder_section['page_number'],
+                    shareholder_section['bbox']
+                )
+                transaction_type = build_transaction_type(circumstance_interest_raw)
+
                 final_record = {
-                    **static_records,
+                    'shareholder_name': shareholder_name if shareholder_name else None,
+                    'transaction_type': transaction_type if transaction_type else None,
+                    **transaction_details,
                     **individual_share_data
                 }
+
                 all_records.append(final_record)
 
-            if len(all_records) > 1:
+            if all_records and len(all_records) == 1: 
+                record = all_records[0]
+                if record.get('shares_before') == record.get('shares_after'):
+                    LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Single record with no share change")
+                    return None 
+
+            if all_records and len(all_records) > 1:
                 seen_share_data = set()
                 for record in all_records:
                     share_data = (
@@ -276,9 +390,9 @@ def extract_share_records_from_pdf(pdf_url: str, static_records: dict) -> list[d
                         record.get('shares_after')
                     )
                     seen_share_data.add(share_data)
-                print(f'length: {len(seen_share_data)}')
+                
                 if len(seen_share_data) == 1:
-                    LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Multiple shareholders with identical share data.")
+                    LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Multiple shareholders with identical share data")
                     return None
 
             return all_records
@@ -289,52 +403,6 @@ def extract_share_records_from_pdf(pdf_url: str, static_records: dict) -> list[d
     except Exception as error:
         LOGGER.error(f"[sgx_filings] Error extracting share records from {pdf_url}: {error}", exc_info=True)
         return None
-
-
-def extract_static_fields(doc_fitz: fitz.Document) -> dict[str, any] | None:
-    try:
-        # Extract transaction type
-        circumstance_interest_raw = extract_circumstance_interest_checkbox(
-            doc_fitz, r"Circumstance giving rise to.*?interest"
-        )
-
-        # print(f'\nraw circumstance: {circumstance_interest_raw}\n')
-        transaction_type = build_transaction_type(circumstance_interest_raw)
-
-        # Parse pdf to texts
-        pdf_texts = parse_pdf(doc_fitz)
-    
-        # Transaction date
-        transaction_date = extract_date(pdf_texts)
-        transaction_date = safe_convert_datetime(transaction_date)
-
-        # Number of stock
-        raw_number_of_stock = extract_number_of_stock(pdf_texts)
-        print(f'raw stock: {raw_number_of_stock}')
-        number_of_stock = safe_convert_float(raw_number_of_stock)
-        print(f'after convert stock: {number_of_stock}')
-
-        # Value 
-        raw_value = extract_value(pdf_texts)
-        print(f'raw value: {raw_value}')
-
-        value = build_value(raw_value, number_of_stock)
-        print(f'value: {value}')
-
-        # Price per share 
-        price_per_share = build_price_per_share(raw_value, number_of_stock)
-
-        return {
-            "transaction_type": transaction_type,
-            "transaction_date": transaction_date,
-            "number_of_stock": number_of_stock,
-            "value": value,
-            "price_per_share": price_per_share,
-        }
-    
-    except Exception as error:
-        LOGGER.error(f'[sgx_filings] Error while extracting static fields: {error}', exc_info=True) 
-        return None 
     
 
 def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
@@ -346,13 +414,24 @@ def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
         
         if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
             return None  
-
-        # Extract static data 
-        static_records = extract_static_fields(doc_fitz)
-
-        # Orchestrate share-record extraction and combine with static record
-        all_records = extract_share_records_from_pdf(pdf_url, static_records)
         
+        # Orchestrate record extraction 
+        all_records = extract_records(pdf_url, doc_fitz)
+
+        # Add transaction type fallback
+        if all_records:
+            circumstance_interest_raw = extract_checkbox_fallback(
+                doc_fitz, r"Circumstance giving rise to.*?interest"
+            )
+            print(f'\nraw circumstance fallback: {circumstance_interest_raw}')
+            transaction_type = build_transaction_type(circumstance_interest_raw)
+
+            for record in all_records:
+                transaction_type = record.get('transaction_type')
+                if not transaction_type:
+                    print('\nUsed transaction type fallback')
+                    record['transaction_type'] = transaction_type
+
         return all_records
         
     except Exception as error:
@@ -362,15 +441,15 @@ def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
 
 def get_sgx_filings(url: str) -> list[SGXFilings] | None:
     try:
-        print(f"Extracting detail filing for {url}")
-        
         response = requests.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
-
         payload_html = extract_html_content(soup)
+
         pdf_url = payload_html.get('url')
         symbol = payload_html.get('symbol')
+
+        LOGGER.info(f"Extracting detail filing for url: {url} pdf_url: {pdf_url}")
 
         doc_fitz = open_pdf(pdf_url)
         
@@ -399,20 +478,15 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
 
 if __name__ == '__main__':
     test_clean_data = 'https://links.sgx.com/1.0.0/corporate-announcements/L7QIXIV1LZ9CQR8X/d159e63ab68b983fa8f0e286519b84185c47cc3891f0c7a5fb778e529f448a38'
-    test_nan_data = 'https://links.sgx.com/1.0.0/corporate-announcements/BMBITXAZI1YQF9G0/2801545bc221a503942782defacc7daba12e6f19d13cfd5fa4aa3a574706481a'
-    test_multiple = 'https://links.sgx.com/1.0.0/corporate-announcements/FI2V1DZBQ5O2101M/c37a39864c1f4f847d7a7ce3cb1231babe596d80265cb53e4b5278f099df7852'
-    test_value_share = 'https://links.sgx.com/1.0.0/corporate-announcements/I87MUTXD0WEHJ0U1/41091f8b6048d633651f59c319eeb16eeab959c71f25d6f226e9593c1f8ae431'
-    test_other_circumstance = 'https://links.sgx.com/1.0.0/corporate-announcements/LOCRN665G3RH5B7X/dde642cff64d558552a329e8662bfb7f014f9d7bfd6492a9b7cc8f1ab3aaa30c'
-    test_new_table = 'https://links.sgx.com/1.0.0/corporate-announcements/X8XJZMOQBPABY73A/c7edbbb1ca0cabd332994589a635c66e59700c9b3937b529a49ca4e6de68405e'
-    new_test = 'https://links.sgx.com/1.0.0/corporate-announcements/OIN7HMELNIZHXG0B/f69ce5db7f5b2badb47f354ebe015a122c7c211cf293087461ce290bf394f7cb'
-    test_failed = 'https://links.sgx.com/1.0.0/corporate-announcements/2QL6D332RYU7A0AM/6c2045604d7c2b64c42d0efb9663703f98dda8b98e846092d32810900ee4a823'
-    double_stock = 'https://links.sgx.com/1.0.0/corporate-announcements/MNI7K7H4SFCTGNE5/898de377ffe98b071a9386e71af68cebc55868ecdfa154a3b7163f806f7b4cdd'
-    test_one_name = 'https://links.sgx.com/1.0.0/corporate-announcements/5ZHD05TE1ME0LZ9U/005ed223acb7bea11598526edf2853c100e6c229ab30a340ab36b778470ee365'
-    per_unit = 'https://links.sgx.com/1.0.0/corporate-announcements/W2ODUS7O886TF8J9/d58762cc3d0c7d5c385c676d7a9aab157b4c9b761e3748cd7fe7af13d5c11fb7'
+    test_one_name_multiple_shareholder = 'https://links.sgx.com/1.0.0/corporate-announcements/07KOA264E5YBKSP7/59c7b3af10cf9d7ec43bb98a405d2959cce4a0f956347332522f4ab342f96967'
+    one_shareholder_multiple_transaction = 'https://links.sgx.com/1.0.0/corporate-announcements/ZRDG6JTOQA9IX1UQ/134eebb9a8481b75613b22790996293908ef214e3c3bcd16c98f057bf9e4528b'
+    new_double = 'https://links.sgx.com/1.0.0/corporate-announcements/6ZDS9YD83AME1ZQ7/f24c3e283a79e827f88e05e079445c60e69cf24beb7ee0531d80780e6d84522f'
 
-    result_sgx_filing = get_sgx_filings(per_unit)
+    result_sgx_filing = get_sgx_filings(new_double)
     
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:
     #     for result in result_sgx_filing:
     #         print(json.dumps(asdict(result), indent=2))
+
+    # uv run -m src.fetch_sgx_filings.parser_sgx_filings

@@ -24,7 +24,7 @@ def get_latest_currency(currency_from: str) -> float | None:
 def calculate_currency_to_sgd(currency_from: float, rate_sgd: float) -> float | None:
     try:
         converted = currency_from * rate_sgd
-        converted = f"{converted:.2f}"
+        converted = round(converted, 2)
         return converted 
     except Exception as error:
         LOGGER.error(f"[calculate_currency_to_sgd] Error converting currency: {error}")

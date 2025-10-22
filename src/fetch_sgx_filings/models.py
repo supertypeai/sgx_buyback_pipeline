@@ -6,6 +6,7 @@ class SGXFilings:
     url: str
     symbol: str = ''
     transaction_date: str = ''
+    shareholder_name: str = ''
     number_of_stock: float = 0.0
     value: float = 0.0
     price_per_share: float = 0.0
