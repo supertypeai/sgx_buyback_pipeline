@@ -47,23 +47,46 @@ def safe_convert_float(number_value: str) -> float | None:
         if value.upper() in ['N/A', 'NA', 'NIL', 'NONE', '-', 'NOT APPLICABLE.', 'N.A.']:
             return None
         
+        # Check for reference phrases that indicate no actual value
+        reference_patterns = [
+            r'refer\s+to\s+(?:paragraph|section|item|page|note|schedule|appendix|exhibit)',
+            r'see\s+(?:paragraph|section|item|page|note|schedule|appendix|exhibit)',
+            r'as\s+(?:described|stated|mentioned)\s+in',
+            r'please\s+refer',
+            r'refer\s+to\s+the\s+(?:above|below|attached)',
+        ]
+        
+        for pattern in reference_patterns:
+            if re.search(pattern, value, re.IGNORECASE):
+                return None
+        
+        # Handle currency pattern first - if found, return immediately
         currency_pattern = r'([\d,]+(?:\.\d+)?)\s*(?:USD|SGD|\$|US\$|S\$)'
-        matches = re.findall(currency_pattern, value, re.IGNORECASE)
-        if matches:
-            return float(matches[0].replace(',', ''))
+        currency_matches = re.findall(currency_pattern, value, re.IGNORECASE)
+        if currency_matches:
+            return float(currency_matches[0].replace(',', ''))
         
-        pattern = r'([\d,]+(?:\.\d+)?)\s*(?:shares?|units?|securities|stocks?)'
-        matches = re.findall(pattern, value, re.IGNORECASE)
+        # Handle shares/units pattern
+        shares_pattern = r'([\d,]+(?:\.\d+)?)\s*(?:shares?|units?|securities|stocks?)'
+        shares_matches = re.findall(shares_pattern, value, re.IGNORECASE)
+        if shares_matches:
+            total = 0.0
+            for match in shares_matches:
+                cleaned = match.replace(",", "")
+                total += float(cleaned)
+            return total
         
-        if not matches:
-            # LOGGER.warning(f"[safe_convert_float] Using fallback pattern for: '{number_value}'")
-            matches = re.findall(r"([\d,]+(?:\.\d+)?)", value)
-
-        if not matches:
+        # Fallback: extract all numbers (but avoid dates in parentheses)
+        value_without_dates = re.sub(r'\([^)]*\d{2}/\d{2}/\d{4}[^)]*\)', '', value)
+        
+        fallback_matches = re.findall(r"([\d,]+(?:\.\d+)?)", value_without_dates)
+        
+        if not fallback_matches:
             return None
         
+        # Sum all numbers found
         total = 0.0
-        for match in matches:
+        for match in fallback_matches:
             cleaned = match.replace(",", "")
             total += float(cleaned)
         

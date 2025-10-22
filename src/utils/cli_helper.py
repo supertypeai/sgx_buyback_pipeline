@@ -22,20 +22,27 @@ def normalize_datetime(date: str | datetime) -> str:
         LOGGER.error("Invalid date format. Use YYYY-MM-DD or YYYYMMDD.")
     
 
-def push_to_db(sgx_payload: list[dict[str]], table_name: str):
+def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
     if not sgx_payload:
         LOGGER.info(f'[sgx_payload] is empty, skipping push to DB')
         return 
     
     try:
+        is_succes = False 
+
         response = (
             SUPABASE_CLIENT
             .table(table_name)
             .insert(sgx_payload)
             .execute()
         )
-        LOGGER.info(f"[sgx_payload] Successfully pushed {len(sgx_payload)} records to DB, table: {table_name}")
-        return response
+
+        if response.data:
+            LOGGER.info(f"[sgx_payload] Successfully pushed {len(sgx_payload)} records to DB, table: {table_name}")
+            is_succes = True 
+            return is_succes 
+        
+        return is_succes
     
     except Exception as error:
         LOGGER.error(f"[push_to_db] Failed to push data: {error}")
@@ -45,7 +52,7 @@ def push_to_db(sgx_payload: list[dict[str]], table_name: str):
 def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
     if not payload:
         LOGGER.info(f'[sgx_buyback] is empty, skipping clean payload')
-        return None 
+        return []
     
     for row in payload:
         for key in [
@@ -64,6 +71,10 @@ def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
 
 
 def clean_payload_sgx_filings(payload: list[dict]) -> tuple[list[dict], list[dict]]:
+    if not payload:
+        LOGGER.info(f'[sgx_filings] is empty, skipping clean payload')
+        return [], []
+     
     payload_contains_null = []
     payload_clean = []
 
@@ -112,7 +123,7 @@ def write_to_json(path: str, payload_sgx: dict[str, any]):
     with open(path, "w", encoding="utf-8") as file:
         json.dump(payload_sgx, file, ensure_ascii=False, indent=2)
     
-    LOGGER.info(f"Saved all announcements to {path}")
+    LOGGER.info(f"Saved all sgx scraped to {path}")
 
 
 def open_json(path: str):

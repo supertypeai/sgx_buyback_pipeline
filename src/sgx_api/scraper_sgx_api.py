@@ -199,7 +199,10 @@ def run_scrape_api(
     
     try:
         LOGGER.info("Fetching data from API SGX Buy Back...")
-        response = requests.get(api_url, headers=headers, proxies=proxies, verify=False, timeout=30)
+        response = requests.get(
+            api_url, headers=headers, 
+            proxies=proxies, verify=False, timeout=30
+        )
         response.raise_for_status()
         
         LOGGER.info(f"Response status: {response.status_code}")
