@@ -4,12 +4,13 @@ from io import BytesIO
 
 from src.fetch_sgx_filings.utils.payload_helper import (
     build_transaction_type, 
-    build_price_per_share, build_value,
+    build_price_per_share, 
+    build_value,
+    safe_convert_float
 )
 from src.utils.sgx_parser_helper import (
     extract_symbol, 
     matching_symbol,
-    safe_convert_float, 
     safe_convert_datetime
 )
 from src.fetch_sgx_filings.utils.payload_pdf_helper import (
@@ -259,6 +260,8 @@ def fallback_extract_transaction_detail(page, transaction_date):
     raw_value = extract_value(page_text)
     value = build_value(raw_value, number_of_stock)
     
+    print(f'\nraw value: {raw_value}, value: {value}, number_of_stock: {number_of_stock}')
+    
     return date, number_of_stock, value, raw_value
 
 
@@ -289,7 +292,8 @@ def extract_transaction_details(pdf_object, page_number, bbox) -> dict[str, any]
         # Value 
         raw_value = extract_value(section_text)
         value = build_value(raw_value, number_of_stock)
-       
+        print(f'\nraw value: {raw_value}, value: {value}, number_of_stock: {number_of_stock}')
+
         # Fallback with next page
         if not value and not number_of_stock:
             for page_index in range(page_number, page_number+2):
@@ -417,13 +421,12 @@ def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
         
         # Orchestrate record extraction 
         all_records = extract_records(pdf_url, doc_fitz)
-
+    
         # Add transaction type fallback
         if all_records:
             circumstance_interest_raw = extract_checkbox_fallback(
                 doc_fitz, r"Circumstance giving rise to.*?interest"
             )
-            print(f'\nraw circumstance fallback: {circumstance_interest_raw}')
             transaction_type = build_transaction_type(circumstance_interest_raw)
 
             for record in all_records:
@@ -481,8 +484,13 @@ if __name__ == '__main__':
     test_one_name_multiple_shareholder = 'https://links.sgx.com/1.0.0/corporate-announcements/07KOA264E5YBKSP7/59c7b3af10cf9d7ec43bb98a405d2959cce4a0f956347332522f4ab342f96967'
     one_shareholder_multiple_transaction = 'https://links.sgx.com/1.0.0/corporate-announcements/ZRDG6JTOQA9IX1UQ/134eebb9a8481b75613b22790996293908ef214e3c3bcd16c98f057bf9e4528b'
     new_double = 'https://links.sgx.com/1.0.0/corporate-announcements/6ZDS9YD83AME1ZQ7/f24c3e283a79e827f88e05e079445c60e69cf24beb7ee0531d80780e6d84522f'
+    incorrect = 'https://links.sgx.com/1.0.0/corporate-announcements/JOVUNNO3SJ2ZW2BB/f125cff1f89e58d884623c084940ceaca7fe629bd476ebef10a873620e1d7b64'
+    weird = 'https://links.sgx.com/1.0.0/corporate-announcements/DSB74GRNHDT3R2X1/1e1cbb2f3afc38fd9b851281e351eb9592f9e6705e85d6dc568567566b0b40c7'
+    one = 'https://links.sgx.com/1.0.0/corporate-announcements/M3HZMK1YUCY48CIB/92b1f60a58c8c0024141f6c5fd4cc934852678cd4dc224f02e1b48c6deedee62'
+    check = 'https://links.sgx.com/1.0.0/corporate-announcements/EYIXV43R5KHHSIN4/cae5142fe305537984e638610a46eab870b8cf82e70ceaab1fba0526de742821'
+    incorrect_price = 'https://links.sgx.com/1.0.0/corporate-announcements/4N0C2LH74C11DMKS/c1d127763b94bf3be70e97a793cbd24c6f92f1dacb6cfdd6cf9214819459d354'
 
-    result_sgx_filing = get_sgx_filings(new_double)
+    result_sgx_filing = get_sgx_filings(incorrect_price)
     
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:

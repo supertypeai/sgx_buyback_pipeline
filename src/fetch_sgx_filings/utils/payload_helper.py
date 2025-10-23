@@ -1,4 +1,3 @@
-from src.utils.sgx_parser_helper import safe_convert_float
 from src.fetch_sgx_filings.utils.converter_helper import get_latest_currency, calculate_currency_to_sgd
 from src.config.settings import LOGGER
 from src.fetch_sgx_filings.utils.constants import (
@@ -8,6 +7,73 @@ from src.fetch_sgx_filings.utils.constants import (
 import re 
 
 
+def safe_convert_float(number_value: str) -> float | None:
+    if not number_value:
+        return None 
+    
+    try:
+        # Remove leading numbering like 5. or trailing numbering
+        value = re.sub(r'^\d+\.\s+(?!\d)', '', number_value)
+        value = re.sub(r'\s*\n\s*\d+\.\s*$', '', value)
+        
+        # If remains is just "N/A" or similar, return None
+        if value.upper() in ['N/A', 'NA', 'NIL', 'NONE', '-', 'NOT APPLICABLE.', 'N.A.']:
+            return None
+        
+        # Check for reference phrases that indicate no actual value
+        reference_patterns = [
+            r'(refer\s+to\s+(?:paragraph|section|item|page|note|schedule|appendix|exhibit).*)',
+            r'(see\s+(?:paragraph|section|item|page|note|schedule|appendix|exhibit).*)',
+            r'(as\s+(?:described|stated|mentioned)\s+in.*)',
+            r'(please\s+refer.*)',
+            r'(refer\s+to\s+the\s+(?:above|below|attached).*)',
+        ]
+
+        for pattern in reference_patterns:
+            value = re.sub(pattern, '', value, flags=re.IGNORECASE)
+        
+        # Handle currency pattern first - if found, return immediately
+        currency_pattern = currency_pattern = r'(?:(?:USD|SGD|US\$|S\$|\$)\s*)?([\d,]+(?:\.\d+)?)(?:\s*(?:USD|SGD|US\$|S\$|\$))?'
+        currency_matches = re.findall(currency_pattern, value, re.IGNORECASE)
+        if currency_matches:
+            return float(currency_matches[0].replace(',', ''))
+        
+        # Handle shares/units pattern
+        shares_pattern = r'([\d,]+(?:\.\d+)?)\s*(?:shares?|units?|securities|stocks?)'
+        shares_matches = re.findall(shares_pattern, value, re.IGNORECASE)
+        if shares_matches:
+            total = 0.0
+            for match in shares_matches:
+                cleaned = match.replace(",", "")
+                total += float(cleaned)
+            return total
+        
+        # Handle malformed numeric formats like 68.640.19, only if no letters/currency symbols are present
+        malformed_pattern = r'\b\d{1,3}(?:\.\d{3})+\.\d{2}\b'
+        if re.search(malformed_pattern, value) and not re.search(r'[a-zA-Z$]', value):
+            value = re.sub(r'\.(?=\d{3}\.)', '', value)
+
+        # Fallback: extract all numbers (but avoid dates in parentheses)
+        value_without_dates = re.sub(r'\([^)]*\d{2}/\d{2}/\d{4}[^)]*\)', '', value)
+        
+        fallback_matches = re.findall(r"([\d,]+(?:\.\d+)?)", value_without_dates)
+        
+        if not fallback_matches:
+            return None
+        
+        # Sum all numbers found
+        total = 0.0
+        for match in fallback_matches:
+            cleaned = match.replace(",", "")
+            total += float(cleaned)
+        
+        return total
+        
+    except Exception as error:
+        LOGGER.error(f"[safe_convert_float] Error: {error} for value '{number_value}'")
+        return None
+    
+
 def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
     if raw_value is None or number_of_stock is None:
         return None
@@ -16,7 +82,7 @@ def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
         cleaned_value = raw_value.lower().strip()
       
         # Handle "at a price per share of X" - e.g., "at a price per share of S$0.22"
-        at_price_pattern = r'at\s+a?\s*price\s+per\s+(?:share|unit|security|stapled\s+security)\s+of\s+(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)'
+        at_price_pattern = r'at\s+a?\s*price\s+per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))\s+of\s+(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)'
         at_price_match = re.search(at_price_pattern, cleaned_value, re.IGNORECASE)
         
         if at_price_match:
@@ -24,7 +90,7 @@ def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
             return safe_convert_float(per_share_value)
         
         # Handle "@" separator - e.g., "SGD167,958 @ SGD0.042 per share"
-        at_pattern = r'@\s*(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/share|/unit|per\s+(?:share|unit))'
+        at_pattern = r'@\s*(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/shares?|/units?|per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies)))'
         at_match = re.search(at_pattern, cleaned_value, re.IGNORECASE)
         
         if at_match:
@@ -32,7 +98,7 @@ def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
             return safe_convert_float(per_share_value)
         
         # Handle Explicit per-share in parentheses with currency - e.g., "(being s$0.2649 per share)"
-        explicit_per_share_pattern = r'\((?:being|at|@)?\s*(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)\s*per\s+(?:share|unit)\)'
+        explicit_per_share_pattern = r'\((?:being|at|@)?\s*(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)\s*per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))\)'
         explicit_match = re.search(explicit_per_share_pattern, cleaned_value, re.IGNORECASE)
         
         if explicit_match:
@@ -40,7 +106,7 @@ def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
             return safe_convert_float(per_share_value)
 
         # Handle "or" separator - e.g., "S$140,114 or S$1.3205/share"
-        or_pattern = r'or\s+(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/share|/unit|per\s+(?:share|unit))'
+        or_pattern = r'or\s+(?:s\$|usd|sgd|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/shares?|/units?|per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies)))'
         or_match = re.search(or_pattern, cleaned_value, re.IGNORECASE)
         
         if or_match:
