@@ -1,6 +1,24 @@
 from src.config.settings import LOGGER
-from src.utils.sgx_parser_helper import safe_convert_float
 
+import re 
+
+
+def safe_convert_float(number_value: str) -> float:
+    if not number_value:
+        return None 
+    
+    try:
+        match = re.search(r"([\d,.]+)", number_value)
+        if match:
+            cleaned = match.group(1).replace(",", "")
+            return float(cleaned)
+        else:
+            return None
+        
+    except Exception as error:
+        LOGGER.error(f"[safe_convert_float] Error: {error} for value '{number_value}'")
+        return None
+    
 
 def build_price_per_share(
         price_paid_per_share: str, 

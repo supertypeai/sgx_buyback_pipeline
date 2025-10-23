@@ -6,13 +6,13 @@ from src.fetch_sgx_buyback.models import SGXBuyback
 from src.fetch_sgx_buyback.utils.payload_helper import (
     build_price_per_share,
     safe_extract_value,
-    safe_extract_fallback
+    safe_extract_fallback,
+    safe_convert_float
 )
 from src.utils.sgx_parser_helper import (
     extract_symbol, 
     matching_symbol,
     safe_convert_datetime, 
-    safe_convert_float
 )
 from src.config.settings import LOGGER
 
