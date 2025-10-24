@@ -30,7 +30,7 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
-          uv run python -m src.main_cli scraper_buybacks 
+          uv run python -m sgx_scraper.main_cli scraper_buybacks 
 
       - name: Pull Latest Changes
         run: git pull origin main
