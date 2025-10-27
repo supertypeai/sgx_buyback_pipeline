@@ -55,6 +55,10 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
 
 
 def get_data_alert(payload_sgx_filings: list[dict[str, any]]) -> tuple[list[dict[str, any]], list[dict[str, any]]]:
+    if not payload_sgx_filings:
+        LOGGER.info("No SGX filings data to filter.")
+        return [], []
+
     data_insertable = []
     data_not_insertable = []
 

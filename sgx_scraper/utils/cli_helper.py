@@ -4,6 +4,7 @@ from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.config.settings import LOGGER
 
 import json 
+import os 
 
 
 def normalize_datetime(date: str | datetime) -> str: 
@@ -73,7 +74,7 @@ def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
 def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
     if not payload:
         LOGGER.info(f'[sgx_filings] is empty, skipping clean payload')
-        return [], []
+        return []
 
     for row in payload:
         shareholder_name = row.get('shareholder_name')
@@ -99,7 +100,7 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
     sgx_today_datas = open_json(path_today)
     sgx_yesterday_datas = open_json(path_yesterday) 
 
-    if not sgx_yesterday_datas:
+    if sgx_yesterday_datas is None or len(sgx_yesterday_datas) == 0:
         LOGGER.info('Skip removing duplicate, sgx yesterday data is empty, returning sgx today')
         return sgx_today_datas
     
@@ -121,8 +122,12 @@ def write_to_json(path: str, payload_sgx: list[dict[str, any]]):
     LOGGER.info(f"Saved all sgx scraped to {path}")
 
 
-def open_json(path: str) -> list[dict[str, any]]:
-    with open(path, "r", encoding="utf-8") as file:
-        sgx_data = json.load(file)
-    return sgx_data
-    
+def open_json(path: str):
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        return []
+    try:
+        with open(path, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except json.JSONDecodeError:
+        LOGGER.warning(f"Failed to decode JSON from {path}, returning empty list")
+        return []
