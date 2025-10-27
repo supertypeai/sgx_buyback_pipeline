@@ -145,7 +145,7 @@ def run_sgx_filings_scraper(
     payload_sgx_filings = []
 
     today = datetime.now()
-    yesterday = today - timedelta(days=1)
+    yesterday = today - timedelta(days=2)
 
     start_date_source = period_start if period_start is not None else yesterday
     end_date_source = period_end if period_end is not None else today
