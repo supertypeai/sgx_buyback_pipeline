@@ -212,10 +212,10 @@ def run_sgx_filings_scraper(
     base_dir = Path("data/scraper_output/sgx_filing")
     base_dir.mkdir(parents=True, exist_ok=True)
 
-    path_today = base_dir / "sgx_filings_today_alert.json"
-    path_yesterday = base_dir / "sgx_filings_yesterday_alert.json"
-    path_insertable = base_dir / "sgx_filings_insertable_alert.json"
-    path_not_insertable = base_dir / "sgx_filings_not_insertable_alert.json"
+    path_today = base_dir / "sgx_filings_today.json"
+    path_yesterday = base_dir / "sgx_filings_yesterday.json"
+    path_insertable = base_dir / "sgx_filings_insertable.json"
+    path_not_insertable = base_dir / "sgx_filings_not_insertable.json"
 
     payload_sgx_filings_clean = clean_payload_sgx_filings(payload_sgx_filings)
     
