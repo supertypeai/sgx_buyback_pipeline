@@ -17,6 +17,10 @@ def send_sgx_filings_alert(
         payload_alert: list[dict[str, any]],
         attachments_path: list[str] | None = None
 ):
+    if not payload_alert:
+        LOGGER.info("No SGX filings alerts to send.")
+        return
+        
     subject, body_text, body_html = (
         render_email_content(payload_alert, title="SGX Non-Insertable Transaction Alerts")
     )
