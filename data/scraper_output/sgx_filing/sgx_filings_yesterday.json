@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/391LM1SFEJC86WZ1/864961__Form%206%20-%2027%20Oct%202025%20FINAL.pdf",
+    "symbol": "J69U",
+    "transaction_date": "2025-10-27",
+    "shareholder_name": "Frasers Centrepoint Asset Management Ltd",
+    "number_of_stock": 5562764,
+    "value": 13001294.94,
+    "price_per_share": 2.3372,
+    "transaction_type": "buy",
+    "shares_before": 111531086,
+    "shares_before_percentage": 5.5,
+    "shares_after": 117093850,
+    "shares_after_percentage": 5.75
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/7T97RUPBN0KXLP9E/864951__eFORM3V2_GRACE%20HOW_20251027.pdf",
+    "symbol": "5OX",
+    "transaction_date": "2025-10-24",
+    "shareholder_name": "Grace How Pei Yen",
+    "number_of_stock": 5400000,
+    "value": 196958.8,
+    "price_per_share": 0.0365,
+    "transaction_type": "sell",
+    "shares_before": 19090266,
+    "shares_before_percentage": 5.82,
+    "shares_after": 13690266,
+    "shares_after_percentage": 4.17
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/A9W76H351BNMBHHG/864921__eFORM1_ChengWK_271025_Final.pdf",
+    "symbol": "W05",
+    "transaction_date": "2025-10-27",
+    "shareholder_name": "Cheng Wai Keung",
+    "number_of_stock": null,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "buy",
+    "shares_before": 473785859,
+    "shares_before_percentage": 62.02,
+    "shares_after": 473845859,
+    "shares_after_percentage": 62.03
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/864919__20251023%20CapitaLand%20India%20Trust%20Aberdeen%20Group%20plc%20Form%203%20Final.pdf",
+    "symbol": "CY6U",
+    "transaction_date": "2025-10-23",
+    "shareholder_name": "abrdn Holdings Limited",
+    "number_of_stock": 192300,
+    "value": 226984.76,
+    "price_per_share": 1.1804,
+    "transaction_type": "buy",
+    "shares_before": 81193050,
+    "shares_before_percentage": 5.997,
+    "shares_after": 81385350,
+    "shares_after_percentage": 6.012
+  }
+]

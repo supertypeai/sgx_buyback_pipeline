@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/A9W76H351BNMBHHG/864921__eFORM1_ChengWK_271025_Final.pdf",
+    "symbol": "W05",
+    "transaction_date": "2025-10-27",
+    "shareholder_name": "Cheng Wai Keung",
+    "number_of_stock": null,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "buy",
+    "shares_before": 473785859,
+    "shares_before_percentage": 62.02,
+    "shares_after": 473845859,
+    "shares_after_percentage": 62.03
+  }
+]

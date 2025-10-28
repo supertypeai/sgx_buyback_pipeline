@@ -479,3 +479,58 @@
 2025-10-27 03:16:59 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-10-27 03:16:59 [INFO] - [sgx_buyback] is empty, skipping clean payload
 2025-10-27 03:16:59 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-10-28 03:02:50 [INFO] - Init Global Variable
+2025-10-28 03:03:32 [INFO] - Scraping from None to None...
+2025-10-28 03:03:32 [INFO] - Start scraping from start date: 20251026 to 20251028
+2025-10-28 03:03:32 [INFO] - page_start: 0
+2025-10-28 03:03:32 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-28 03:03:33 [INFO] - Response status: 200
+2025-10-28 03:03:33 [INFO] - Fetched 8 announcements
+2025-10-28 03:03:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S3SP8Z4JTH76414Q/7806d916941b148e90c6dcc89e16379b58d4cee474d19565f28032c82ebf48a9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S3SP8Z4JTH76414Q/864987__eForm3-Tan%20Kok%20Huat.pdf
+2025-10-28 03:03:37 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-28 03:03:37 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/S3SP8Z4JTH76414Q/864987__eForm3-Tan%20Kok%20Huat.pdf: Single record with no share change
+2025-10-28 03:03:37 [INFO] - [SGX FILINGS] Data not valid found for issuer name: RECLAIMS GLOBAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/S3SP8Z4JTH76414Q/7806d916941b148e90c6dcc89e16379b58d4cee474d19565f28032c82ebf48a9
+2025-10-28 03:03:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0HIV84F4A7GF4X3A/0b125601415d0a8e4be2a73ccfcbd28880f9378eed76ccf70ee6188e56787e83 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0HIV84F4A7GF4X3A/864985__eForm3-Chan%20Chew%20Leh.pdf
+2025-10-28 03:03:39 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-28 03:03:39 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/0HIV84F4A7GF4X3A/864985__eForm3-Chan%20Chew%20Leh.pdf: Single record with no share change
+2025-10-28 03:03:39 [INFO] - [SGX FILINGS] Data not valid found for issuer name: RECLAIMS GLOBAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0HIV84F4A7GF4X3A/0b125601415d0a8e4be2a73ccfcbd28880f9378eed76ccf70ee6188e56787e83
+2025-10-28 03:03:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QC3SE0BEDPC6YPVA/90cb51881cba11b82c0dc33516f4c750c4fb02b0edd8bbf1922ceb5672df8ee4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QC3SE0BEDPC6YPVA/864963__Form%201_Tony%20_27Oct2025.pdf
+2025-10-28 03:03:41 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:41 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-28 03:03:41 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'On 27 October 2025, 500,000 shares were returned to the Director under the securities borrowing and lending agreement. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-10-28 03:03:41 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/QC3SE0BEDPC6YPVA/864963__Form%201_Tony%20_27Oct2025.pdf: Single record with no share change
+2025-10-28 03:03:41 [INFO] - [SGX FILINGS] Data not valid found for issuer name: PC PARTNER GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/QC3SE0BEDPC6YPVA/90cb51881cba11b82c0dc33516f4c750c4fb02b0edd8bbf1922ceb5672df8ee4
+2025-10-28 03:03:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/391LM1SFEJC86WZ1/e6a821b01875d120bd00bb027496c5f0771434026cfdafe105f71c36036fc68b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/391LM1SFEJC86WZ1/864961__Form%206%20-%2027%20Oct%202025%20FINAL.pdf
+2025-10-28 03:03:43 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:43 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:43 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:43 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7T97RUPBN0KXLP9E/1faa70e148602f533a56dd6bc56b182b7478d99d18722142b44f2ad752e2ad6c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7T97RUPBN0KXLP9E/864951__eFORM3V2_GRACE%20HOW_20251027.pdf
+2025-10-28 03:03:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5YW81FL4SIQ0PD8U/8790ecbf58505d3befc2e57c95b69167b68b035ccb059f01df2b21c55a918d40 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5YW81FL4SIQ0PD8U/864948__Form%201-PTML-YYC.pdf
+2025-10-28 03:03:53 [INFO] - [SGX FILINGS] Data not valid found for issuer name: PARKWAY TRUST MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/5YW81FL4SIQ0PD8U/8790ecbf58505d3befc2e57c95b69167b68b035ccb059f01df2b21c55a918d40
+2025-10-28 03:03:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/A9W76H351BNMBHHG/260310937564ce640be1d8e095f4d3f56563f7bd656b83d5b43e1d4158f4a790 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/A9W76H351BNMBHHG/864921__eFORM1_ChengWK_271025_Final.pdf
+2025-10-28 03:03:56 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:56 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-28 03:03:56 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-28 03:03:56 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-28 03:04:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/c2c6966fb8ed3562b3d5b3736c96d1b21837954db7ec864a101cb1558e5dd874 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/864919__20251023%20CapitaLand%20India%20Trust%20Aberdeen%20Group%20plc%20Form%203%20Final.pdf
+2025-10-28 03:04:10 [INFO] - page_start: 1
+2025-10-28 03:04:10 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-28 03:04:10 [INFO] - Response status: 200
+2025-10-28 03:04:10 [WARNING] - WARNING: API returned None
+2025-10-28 03:04:10 [INFO] - No more announcements found — stopping pagination.
+2025-10-28 03:04:22 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-28 03:04:22 [INFO] - Response status: 200
+2025-10-28 03:04:22 [WARNING] - WARNING: API returned None
+2025-10-28 03:04:22 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-28 03:04:22 [INFO] - [SGX FILINGS] Scraping completed. Total records: 4
+2025-10-28 03:04:22 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-10-28 03:04:22 [INFO] - Processing remove duplicate data
+2025-10-28 03:04:22 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-10-28 03:04:22 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-10-28 03:04:22 [INFO] - Filtering completed. Insertable: 1 | Not insertable: 3
+2025-10-28 03:04:22 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-10-28 03:04:22 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-10-28 03:04:23 [INFO] - Email sent! Message ID: 011c019a28c61bfc-91745da5-e85d-491b-9676-8900868e50e0-000000
+2025-10-28 03:04:24 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
