@@ -534,3 +534,25 @@
 2025-10-28 03:04:22 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2025-10-28 03:04:23 [INFO] - Email sent! Message ID: 011c019a28c61bfc-91745da5-e85d-491b-9676-8900868e50e0-000000
 2025-10-28 03:04:24 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
+2025-10-28 06:01:01 [INFO] - Init Global Variable
+2025-10-28 06:01:34 [INFO] - Scraping from None to None...
+2025-10-28 06:01:34 [INFO] - Start scraping from start date: 20251026 to 20251028
+2025-10-28 06:01:34 [INFO] - page_start: 0
+2025-10-28 06:01:34 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-28 06:01:34 [INFO] - Response status: 200
+2025-10-28 06:01:34 [INFO] - Fetched 3 announcements
+2025-10-28 06:01:50 [INFO] - page_start: 1
+2025-10-28 06:01:50 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-28 06:01:50 [INFO] - Response status: 200
+2025-10-28 06:01:50 [WARNING] - WARNING: API returned None
+2025-10-28 06:01:50 [INFO] - No more announcements found — stopping pagination.
+2025-10-28 06:02:02 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-28 06:02:02 [INFO] - Response status: 200
+2025-10-28 06:02:02 [WARNING] - WARNING: API returned None
+2025-10-28 06:02:02 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-28 06:02:02 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 3
+2025-10-28 06:02:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-10-28 06:02:02 [INFO] - Processing remove duplicate data
+2025-10-28 06:02:02 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-10-28 06:02:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-10-28 06:02:03 [ERROR] - [push_to_db] Failed to push data: {'message': 'duplicate key value violates unique constraint "unique_symbol_url"', 'code': '23505', 'hint': None, 'details': 'Key (symbol, url)=(U77, https://links.sgx.com/1.0.0/corporate-announcements/W663FGZVGKT67OPA/6a8a809696e11b57c8372f51594196f11752acbca309a29e6dabb24a9377fda8) already exists.'}
