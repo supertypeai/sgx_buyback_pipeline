@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 2 * * *'  # 09:00 AM WIB (UTC+7)
+concurrency:
+  group: sgx-scraper-main
+  cancel-in-progress: false
 
 jobs:
   scrape:
@@ -32,8 +35,12 @@ jobs:
         run: |
           uv run python -m sgx_scraper.main_cli scraper_buybacks 
 
-      - name: Pull Latest Changes
-        run: git pull origin main
+      - name: Pull Latest Changes (safe)
+        run: |
+          git fetch origin main
+          git stash push -m "temp-scraper-log" || true
+          git merge origin/main --strategy-option=theirs || true
+          git stash pop || true
 
       - name: Commit and push changes
         run: |
