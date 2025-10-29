@@ -556,3 +556,52 @@
 2025-10-28 06:02:02 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-10-28 06:02:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-10-28 06:02:03 [ERROR] - [push_to_db] Failed to push data: {'message': 'duplicate key value violates unique constraint "unique_symbol_url"', 'code': '23505', 'hint': None, 'details': 'Key (symbol, url)=(U77, https://links.sgx.com/1.0.0/corporate-announcements/W663FGZVGKT67OPA/6a8a809696e11b57c8372f51594196f11752acbca309a29e6dabb24a9377fda8) already exists.'}
+2025-10-29 03:10:29 [INFO] - Init Global Variable
+2025-10-29 03:10:53 [INFO] - Scraping from None to None...
+2025-10-29 03:10:53 [INFO] - Start scraping from start date: 20251027 to 20251029
+2025-10-29 03:10:53 [INFO] - page_start: 0
+2025-10-29 03:10:53 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-29 03:10:54 [INFO] - Response status: 200
+2025-10-29 03:10:54 [INFO] - Fetched 5 announcements
+2025-10-29 03:10:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BNWBTPW2TTXKY61H/e16262a0f5aa60afc520e1b556a3388cade06bc1dc72502a7f0d9f5e84e30c22 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BNWBTPW2TTXKY61H/865194__eFORM3V2_Acer%20Inc.pdf
+2025-10-29 03:10:57 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BNWBTPW2TTXKY61H/865194__eFORM3V2_Acer%20Inc.pdf: Single record with no share change
+2025-10-29 03:10:57 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WINKING STUDIOS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BNWBTPW2TTXKY61H/e16262a0f5aa60afc520e1b556a3388cade06bc1dc72502a7f0d9f5e84e30c22
+2025-10-29 03:10:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/B0QQN4TKOCB2C0I4/160c11db8dc85418b8d4a2ece90a987bf28b5141fd7932368daef3f5fea4b787 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/B0QQN4TKOCB2C0I4/865192__eFORM1v1_Johnny.pdf
+2025-10-29 03:10:59 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:10:59 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:10:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/B0QQN4TKOCB2C0I4/865192__eFORM1v1_Johnny.pdf: Single record with no share change
+2025-10-29 03:10:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WINKING STUDIOS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/B0QQN4TKOCB2C0I4/160c11db8dc85418b8d4a2ece90a987bf28b5141fd7932368daef3f5fea4b787
+2025-10-29 03:10:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/W8OOM8OJV4B5ID4X/dc6ceb0d5b40b675be5cfe1f688535f27f78f97f0eecc50c647c8504c0bd2a98 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/W8OOM8OJV4B5ID4X/865137__MEH_eFORM3_AGP_27%20Oct%202025.pdf
+2025-10-29 03:11:01 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-10-29 03:11:01 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:11:01 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:11:01 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-10-29 03:11:01 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/W8OOM8OJV4B5ID4X/865137__MEH_eFORM3_AGP_27%20Oct%202025.pdf: Multiple shareholders with identical share data
+2025-10-29 03:11:01 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MOOREAST HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/W8OOM8OJV4B5ID4X/dc6ceb0d5b40b675be5cfe1f688535f27f78f97f0eecc50c647c8504c0bd2a98
+2025-10-29 03:11:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UWCDIKB2JHGQHLAS/a33fc070d31d2d791b1eb77cde7f603da15d2cca9fa78d63bff28c92daeba669 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UWCDIKB2JHGQHLAS/865125__eFORM1V2_KKL_28102025.pdf
+2025-10-29 03:11:03 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:11:03 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:11:06 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Q23VGP2W8MNFFANL/5649f99e5583c081767e93dbf9d7822bd6430b6ab753b373f5a9a0a4e5c8f132 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Q23VGP2W8MNFFANL/865099__eFORM1_ChengWK_281025_Final.pdf
+2025-10-29 03:11:08 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:11:08 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-29 03:11:08 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-29 03:11:08 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-29 03:11:12 [INFO] - page_start: 1
+2025-10-29 03:11:12 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-29 03:11:12 [INFO] - Response status: 200
+2025-10-29 03:11:12 [WARNING] - WARNING: API returned None
+2025-10-29 03:11:12 [INFO] - No more announcements found — stopping pagination.
+2025-10-29 03:11:40 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-29 03:11:40 [INFO] - Response status: 200
+2025-10-29 03:11:40 [WARNING] - WARNING: API returned None
+2025-10-29 03:11:40 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-29 03:11:40 [INFO] - [SGX FILINGS] Scraping completed. Total records: 2
+2025-10-29 03:11:40 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-10-29 03:11:40 [INFO] - Processing remove duplicate data
+2025-10-29 03:11:40 [INFO] - Length data after duplicate removing: 2
+2025-10-29 03:11:40 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-10-29 03:11:41 [INFO] - Filtering completed. Insertable: 2 | Not insertable: 0
+2025-10-29 03:11:41 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-10-29 03:11:41 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-10-29 03:11:41 [INFO] - No SGX filings alerts to send.
+2025-10-29 03:11:42 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_filings
