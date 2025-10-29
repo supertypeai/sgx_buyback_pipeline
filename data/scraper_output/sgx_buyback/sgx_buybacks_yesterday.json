@@ -1,46 +1,45 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/W663FGZVGKT67OPA/6a8a809696e11b57c8372f51594196f11752acbca309a29e6dabb24a9377fda8",
-    "symbol": "U77",
-    "purchase_date": "2025-10-27",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/O12K0P4ESBFIMW67/e6605fcc2c29afbfd307661c2ab9f8c2c0717953b7e697e4d5eab9f75e76b921",
+    "symbol": "QC7",
+    "purchase_date": "2025-10-28",
+    "type": "On Market",
+    "start_date": "2025-04-28",
+    "price_per_share": {
+      "highest": 0.52,
+      "lowest": 0.52
+    },
+    "total_value": 83690.09,
+    "total_shares_purchased": 160000.0,
+    "cumulative_purchased": 6858700.0,
+    "treasury_shares_after_purchase": 21320081.0
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/2MVMO8Z59G6G655D/1d927ddb2a00f2cda28278be708ded30b01a11a686a916fb9d3db59c389e8b45",
+    "symbol": "LVR",
+    "purchase_date": "2025-10-28",
+    "type": "On Market",
+    "start_date": "2025-04-28",
+    "price_per_share": {
+      "price_paid_per_share": 0.975
+    },
+    "total_value": 28817.15,
+    "total_shares_purchased": 29500.0,
+    "cumulative_purchased": 4988700.0,
+    "treasury_shares_after_purchase": 6588500.0
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ITNNN235OYWVFZWQ/6e98f387f7631a7d0d3d4177b5ce55835d0e043b0aa1eccf37cbced2c3de14fe",
+    "symbol": "I06",
+    "purchase_date": "2025-10-28",
     "type": "On Market",
     "start_date": "2025-04-24",
     "price_per_share": {
-      "highest": 0.3,
-      "lowest": 0.295
+      "price_paid_per_share": 0.37
     },
-    "total_value": 6012.11,
-    "total_shares_purchased": 20000.0,
-    "cumulative_purchased": 654900.0,
-    "treasury_shares_after_purchase": 15888074.0
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/99DLN5BA1I3W6QEU/721bd4ed7462417b6ec18c5d05e55e21b5693582cea5e343c755111376a1e43f",
-    "symbol": "LVR",
-    "purchase_date": "2025-10-27",
-    "type": "On Market",
-    "start_date": "2025-04-28",
-    "price_per_share": {
-      "highest": 0.96,
-      "lowest": 0.955
-    },
-    "total_value": 9593.19,
-    "total_shares_purchased": 10000.0,
-    "cumulative_purchased": 4959200.0,
-    "treasury_shares_after_purchase": 6559000.0
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/SXYNIHGSW1CK6APA/a8ab4f0b37a0e35d90166bd2bd7fd6bb94872bd2a5447afd9909f63cd8fb95ce",
-    "symbol": "XJB",
-    "purchase_date": "2025-10-27",
-    "type": "On Market",
-    "start_date": "2025-04-28",
-    "price_per_share": {
-      "price_paid_per_share": 0.15263
-    },
-    "total_value": 149.77,
-    "total_shares_purchased": 800.0,
-    "cumulative_purchased": 611700.0,
-    "treasury_shares_after_purchase": 4729900.0
+    "total_value": 55065.9,
+    "total_shares_purchased": 148600.0,
+    "cumulative_purchased": 525800.0,
+    "treasury_shares_after_purchase": 5826134.0
   }
 ]
