@@ -1,45 +1,45 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/O12K0P4ESBFIMW67/e6605fcc2c29afbfd307661c2ab9f8c2c0717953b7e697e4d5eab9f75e76b921",
-    "symbol": "QC7",
-    "purchase_date": "2025-10-28",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/SSIKQ4ETB8W0RUI6/aec440ecbdf991fb53cc779ea092e9cc03817d7a2c8a90da5b28c79106d160aa",
+    "symbol": "YK9",
+    "purchase_date": "2025-10-29",
     "type": "On Market",
-    "start_date": "2025-04-28",
+    "start_date": "2025-04-25",
     "price_per_share": {
-      "highest": 0.52,
-      "lowest": 0.52
+      "price_paid_per_share": 0.1555
     },
-    "total_value": 83690.09,
-    "total_shares_purchased": 160000.0,
-    "cumulative_purchased": 6858700.0,
-    "treasury_shares_after_purchase": 21320081.0
+    "total_value": 15599.16,
+    "total_shares_purchased": 100000.0,
+    "cumulative_purchased": 3816900.0,
+    "treasury_shares_after_purchase": 3816900.0
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/2MVMO8Z59G6G655D/1d927ddb2a00f2cda28278be708ded30b01a11a686a916fb9d3db59c389e8b45",
-    "symbol": "LVR",
-    "purchase_date": "2025-10-28",
-    "type": "On Market",
-    "start_date": "2025-04-28",
-    "price_per_share": {
-      "price_paid_per_share": 0.975
-    },
-    "total_value": 28817.15,
-    "total_shares_purchased": 29500.0,
-    "cumulative_purchased": 4988700.0,
-    "treasury_shares_after_purchase": 6588500.0
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ITNNN235OYWVFZWQ/6e98f387f7631a7d0d3d4177b5ce55835d0e043b0aa1eccf37cbced2c3de14fe",
-    "symbol": "I06",
-    "purchase_date": "2025-10-28",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/PD10Z4Z5DQZX0WTG/f7634dc965726d5188befac03a08c41c8079ddc7b550e52c96d2459e43fb2fac",
+    "symbol": "U77",
+    "purchase_date": "2025-10-29",
     "type": "On Market",
     "start_date": "2025-04-24",
     "price_per_share": {
-      "price_paid_per_share": 0.37
+      "price_paid_per_share": 0.305
     },
-    "total_value": 55065.9,
-    "total_shares_purchased": 148600.0,
-    "cumulative_purchased": 525800.0,
-    "treasury_shares_after_purchase": 5826134.0
+    "total_value": 3087.19,
+    "total_shares_purchased": 10000.0,
+    "cumulative_purchased": 664900.0,
+    "treasury_shares_after_purchase": 15898074.0
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/VK8OA6WM5VPP63SW/4714749038fe561e5e31e670789fb56f386a838a16dc89baec5171b932da9470",
+    "symbol": "LVR",
+    "purchase_date": "2025-10-29",
+    "type": "On Market",
+    "start_date": "2025-04-28",
+    "price_per_share": {
+      "highest": 0.99,
+      "lowest": 0.985
+    },
+    "total_value": 87223.81,
+    "total_shares_purchased": 88000.0,
+    "cumulative_purchased": 5076700.0,
+    "treasury_shares_after_purchase": 6676500.0
   }
 ]
