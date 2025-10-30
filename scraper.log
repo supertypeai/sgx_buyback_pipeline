@@ -630,3 +630,96 @@
 2025-10-29 03:13:14 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-10-29 03:13:15 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-10-30 03:06:03 [INFO] - Init Global Variable
+2025-10-30 03:06:29 [INFO] - Scraping from None to None...
+2025-10-30 03:06:29 [INFO] - Start scraping from start date: 20251028 to 20251030
+2025-10-30 03:06:29 [INFO] - page_start: 0
+2025-10-30 03:06:29 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-30 03:06:29 [INFO] - Response status: 200
+2025-10-30 03:06:29 [INFO] - Fetched 9 announcements
+2025-10-30 03:06:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/258bfd6cbb64aa7380250e2d8086db3b412b064015253ce99cf684ab8ff154c0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/865357__F6-MRM.2025%201030%20F.pdf
+2025-10-30 03:06:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:33 [ERROR] - [sgx_filings] Error: list index out of range
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 553, in extract_transaction_details
+    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-10-30 03:06:33 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/865357__F6-MRM.2025%201030%20F.pdf: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 626, in extract_records
+    transaction_details, is_special_value = extract_transaction_details(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-10-30 03:06:33 [INFO] - [SGX FILINGS] Data not valid found for issuer name: M&C REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/258bfd6cbb64aa7380250e2d8086db3b412b064015253ce99cf684ab8ff154c0
+2025-10-30 03:06:33 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/865355__F6-MBTM.2025%201030%20F.pdf
+2025-10-30 03:06:35 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:35 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:35 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:35 [ERROR] - [sgx_filings] Error: list index out of range
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 553, in extract_transaction_details
+    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-10-30 03:06:35 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/865355__F6-MBTM.2025%201030%20F.pdf: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 626, in extract_records
+    transaction_details, is_special_value = extract_transaction_details(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-10-30 03:06:35 [INFO] - [SGX FILINGS] Data not valid found for issuer name: M&C REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19
+2025-10-30 03:06:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2BVVZJ9DUUYJVD8E/4b1eddc286883a94efb4ea1968031ea37fb94680a8ce9740c5d543aaf6531418 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2BVVZJ9DUUYJVD8E/865315__eFORM1V2-29102025-Dr%20Ng.pdf
+2025-10-30 03:06:38 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:38 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:06:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:06:39 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 3,210,900 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 29 October 2025 for a total consideration of S$1,717,414.08 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-10-30 03:06:39 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 3,210,900 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 29 October 2025 for a total consideration of S$1,717,414.08 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-10-30 03:06:39 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:06:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UKJZIK641DAT70CR/56b40f2fb68c1097fc65fa174c476920666d500bfd8d71bd16cbf564c815e5a0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UKJZIK641DAT70CR/865313__eFORM3V2-29102025-QMH.pdf
+2025-10-30 03:06:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/724BZ9LNKKYOBUCA/0ef321f71facd9347518cbd2c2d35200b1380dc827b12be1d94546f27759792e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/724BZ9LNKKYOBUCA/865308__Form%203%20KC_Final.pdf
+2025-10-30 03:06:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:06:50 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:06:50 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:06:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:06:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7TAVTXCAOJR4SCX5/6410418a1e6db06ce064c514240934bec99dc9aca071f1b74b86f8e25579dff0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7TAVTXCAOJR4SCX5/865305__Form%203%20The%20estate%20of%20KWS%20Final.pdf
+2025-10-30 03:06:56 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:06:56 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:06:56 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:06:56 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:06:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3EHVYE78LYH1S27G/6db4ada1250b9944fd5cda10baf73068fee4207f5c2fc962bd56f72657f9901a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3EHVYE78LYH1S27G/865303__Form%203%20TCC%20Assets_Final.pdf
+2025-10-30 03:07:00 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:07:00 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:07:00 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:07:00 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:07:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7NUQK3T84ALMJ05Q/8fe8d9d239f39a78b32e519ccab5107348a5227c00b07ecb8a5513b91d0a99a4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7NUQK3T84ALMJ05Q/865301__FORM%203%20-%20FPL.pdf
+2025-10-30 03:07:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:07:06 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:07:06 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Issuance of 5,562,764 new ordinary units in FCT ("New Units") to FCAM as payment of its management fee, resulting in an increase in the deemed interest of the substantial shareholder in the number of units in FCT in issue. Please refer to Item 10 and Item 13 for further details.'
+2025-10-30 03:07:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:07:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WJZ6XCPU9OWULTFQ/53a23d31585d27b8efebb3dbbdca109c1f3de3fd4f0da42615f08a299b311dd7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WJZ6XCPU9OWULTFQ/865259__eFORM1_ChengWK_291025_Final.pdf
+2025-10-30 03:07:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:07:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-30 03:07:11 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:07:11 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-30 03:07:17 [INFO] - page_start: 1
+2025-10-30 03:07:17 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-30 03:07:17 [INFO] - Response status: 200
+2025-10-30 03:07:17 [WARNING] - WARNING: API returned None
+2025-10-30 03:07:17 [INFO] - No more announcements found — stopping pagination.
+2025-10-30 03:07:29 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-30 03:07:29 [INFO] - Response status: 200
+2025-10-30 03:07:29 [WARNING] - WARNING: API returned None
+2025-10-30 03:07:29 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-30 03:07:29 [INFO] - [SGX FILINGS] Scraping completed. Total records: 7
+2025-10-30 03:07:29 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-10-30 03:07:29 [INFO] - Processing remove duplicate data
+2025-10-30 03:07:29 [INFO] - Length data after duplicate removing: 7
+2025-10-30 03:07:29 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-10-30 03:07:30 [INFO] - Filtering completed. Insertable: 1 | Not insertable: 6
+2025-10-30 03:07:30 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-10-30 03:07:30 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-10-30 03:07:31 [INFO] - Email sent! Message ID: 011c019a3315b1a2-73644e19-14c2-4e33-8363-0aa017c71a9d-000000
+2025-10-30 03:07:32 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
