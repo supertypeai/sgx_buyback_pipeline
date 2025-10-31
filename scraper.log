@@ -748,3 +748,134 @@ TypeError: cannot unpack non-iterable NoneType object
 2025-10-30 03:08:54 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-10-30 03:08:55 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-10-31 03:05:50 [INFO] - Init Global Variable
+2025-10-31 03:06:25 [INFO] - Scraping from None to None...
+2025-10-31 03:06:25 [INFO] - Start scraping from start date: 20251029 to 20251031
+2025-10-31 03:06:25 [INFO] - page_start: 0
+2025-10-31 03:06:25 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-31 03:06:25 [INFO] - Response status: 200
+2025-10-31 03:06:25 [INFO] - Fetched 16 announcements
+2025-10-31 03:06:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S8MDURSCT2QY0S3V/7ebc777248480ec70df78c12e024fab977cccc3724294a1aa33301c9180e3c3d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S8MDURSCT2QY0S3V/865547__eFORM3V2_Valiant.pdf
+2025-10-31 03:06:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/B7IDJOGV34EP874V/2104fa4c772a15085fc6a8229dfd969a7dd92da25c7267c8e86fb8ad6166355e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/B7IDJOGV34EP874V/865531__eFORM1V2-30102025-Dr%20Ng.pdf
+2025-10-31 03:06:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:33 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-31 03:06:33 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 3,400,000 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 30 October 2025 for a total consideration of S$1,862,248.00 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-10-31 03:06:33 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 3,400,000 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 30 October 2025 for a total consideration of S$1,862,248.00 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-10-31 03:06:33 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-31 03:06:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/79L1KMBMEHTMDWKH/c64aec44651d88b73eaaf78bf50c682b2da4b93d6bd861b8cc54aefa8846512b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/79L1KMBMEHTMDWKH/865529__eFORM3V2-30102025-QMH.pdf
+2025-10-31 03:06:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PVOV6LAHPJDAF3SE/3ed968d65cd13bef0b4b0e37be0dab0fbe0fddc9d1800d0038a9ec28f4ac6763 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PVOV6LAHPJDAF3SE/865471__eFORM6V2%20-%20Final.pdf
+2025-10-31 03:06:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:47 [ERROR] - [sgx_filings] Error: list index out of range
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 553, in extract_transaction_details
+    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-10-31 03:06:47 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/PVOV6LAHPJDAF3SE/865471__eFORM6V2%20-%20Final.pdf: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 626, in extract_records
+    transaction_details, is_special_value = extract_transaction_details(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-10-31 03:06:47 [INFO] - [SGX FILINGS] Data not valid found for issuer name: YTL STARHILL GLOBAL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/PVOV6LAHPJDAF3SE/3ed968d65cd13bef0b4b0e37be0dab0fbe0fddc9d1800d0038a9ec28f4ac6763
+2025-10-31 03:06:47 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QPFDA7TTTIZ8E5SX/c00e3c6eeb966649dcdc83345462e74819e3ff4b163b21cda5246bfd7f20391d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QPFDA7TTTIZ8E5SX/865435__MAS%20Form%203_Notification%20Form_30102025_final.pdf
+2025-10-31 03:06:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-10-31 03:06:49 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:49 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-10-31 03:06:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-10-31 03:06:50 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/QPFDA7TTTIZ8E5SX/865435__MAS%20Form%203_Notification%20Form_30102025_final.pdf: Multiple shareholders with identical share data
+2025-10-31 03:06:50 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/QPFDA7TTTIZ8E5SX/c00e3c6eeb966649dcdc83345462e74819e3ff4b163b21cda5246bfd7f20391d
+2025-10-31 03:06:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LXXG9AOMUNHFCT59/2461aa41b1558bf229cb2288cea4942c4b896db702feac2149f13b2fe8eeeaab pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LXXG9AOMUNHFCT59/865432__eFORM1%20MLM%2030%20Oct%2024A%2017%20Series%201.pdf
+2025-10-31 03:06:50 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INTRACO LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LXXG9AOMUNHFCT59/2461aa41b1558bf229cb2288cea4942c4b896db702feac2149f13b2fe8eeeaab
+2025-10-31 03:06:51 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RPSX99YPJZ1JXLE0/874be77de6658f52e9bc278a263ff62afc03da291017e287343184d019c0379e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RPSX99YPJZ1JXLE0/865429__MAS%20Form%206%20Notification%20Form_301025_final.pdf
+2025-10-31 03:06:53 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:53 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:53 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:06:53 [ERROR] - [sgx_filings] Error: list index out of range
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 553, in extract_transaction_details
+    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-10-31 03:06:53 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/RPSX99YPJZ1JXLE0/865429__MAS%20Form%206%20Notification%20Form_301025_final.pdf: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 626, in extract_records
+    transaction_details, is_special_value = extract_transaction_details(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-10-31 03:06:53 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/RPSX99YPJZ1JXLE0/874be77de6658f52e9bc278a263ff62afc03da291017e287343184d019c0379e
+2025-10-31 03:06:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K3QK1SZI4GWW7RCT/aa417a8597d5d739de1a9cf47b7861e51bbdd90e243ea2bd14be95b5f664423c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K3QK1SZI4GWW7RCT/865424__2025%2010%2029_Wee%20Hur_Form%201_GYG.pdf
+2025-10-31 03:06:54 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WEE HUR HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/K3QK1SZI4GWW7RCT/aa417a8597d5d739de1a9cf47b7861e51bbdd90e243ea2bd14be95b5f664423c
+2025-10-31 03:06:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/17C0MR4EEJEHZD3L/c74cd653f8a01bf01115a008011d1c645f87414e0f2e0aff60d33cbe67d865d1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/17C0MR4EEJEHZD3L/865422__2025%2010%2029%20-%20Wee%20Hur%20-%20Form%201%20-%20GYH.pdf
+2025-10-31 03:06:55 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WEE HUR HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/17C0MR4EEJEHZD3L/c74cd653f8a01bf01115a008011d1c645f87414e0f2e0aff60d33cbe67d865d1
+2025-10-31 03:06:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ILYJ1K8Y9NV5SRL3/12dfb6e472d8f9433966b36be1e88143dd5c3004a90142de08e2ff7e6c23c3c7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ILYJ1K8Y9NV5SRL3/865420__2025%2010%2029_Wee%20Hur_Form%201_GYT.pdf
+2025-10-31 03:06:56 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WEE HUR HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/ILYJ1K8Y9NV5SRL3/12dfb6e472d8f9433966b36be1e88143dd5c3004a90142de08e2ff7e6c23c3c7
+2025-10-31 03:06:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K1K5SHIP35BJ930V/b13ecbc2cf5745be2f23a47d306db7a92384e6e6415c3cf4a849103e0ab417bf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K1K5SHIP35BJ930V/865418__2025%2010%2029_Wee%20Hur_Form%201_GYL.pdf
+2025-10-31 03:06:57 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WEE HUR HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/K1K5SHIP35BJ930V/b13ecbc2cf5745be2f23a47d306db7a92384e6e6415c3cf4a849103e0ab417bf
+2025-10-31 03:06:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EU3T32A5YOB77VHT/bcc6dcb53b1a02de1b440964fe324bdaba15b9cb63f6fa87a899ce3dbbb84063 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EU3T32A5YOB77VHT/865416__eFORM1%20Soh.CH%2030%20Oct%2024A%20Series%201%2017.pdf
+2025-10-31 03:06:58 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INTRACO LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/EU3T32A5YOB77VHT/bcc6dcb53b1a02de1b440964fe324bdaba15b9cb63f6fa87a899ce3dbbb84063
+2025-10-31 03:06:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3WK1SMF7CJD5681A/2da2dc63246f2c265c23ae115427d679f7d8511b1405de1808da2c6ff39ab0d4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3WK1SMF7CJD5681A/865410__Frank_eFORM1V2.pdf
+2025-10-31 03:07:00 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:00 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HM6O12EKK76978JH/ef554fb2c56b941f17fee504a222170fc458c8efdb54b59fcbd547bb0bed4fc6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HM6O12EKK76978JH/865403__eFORM1_ChengWK_301025_Final.pdf
+2025-10-31 03:07:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-31 03:07:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-10-31 03:07:11 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/258bfd6cbb64aa7380250e2d8086db3b412b064015253ce99cf684ab8ff154c0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/865357__F6-MRM.2025%201030%20F.pdf
+2025-10-31 03:07:13 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:13 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:13 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:13 [ERROR] - [sgx_filings] Error: list index out of range
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 553, in extract_transaction_details
+    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-10-31 03:07:13 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/865357__F6-MRM.2025%201030%20F.pdf: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 626, in extract_records
+    transaction_details, is_special_value = extract_transaction_details(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-10-31 03:07:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: M&C REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0IJWPB2DZGMIT1E4/258bfd6cbb64aa7380250e2d8086db3b412b064015253ce99cf684ab8ff154c0
+2025-10-31 03:07:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/865355__F6-MBTM.2025%201030%20F.pdf
+2025-10-31 03:07:15 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:15 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:15 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-10-31 03:07:15 [ERROR] - [sgx_filings] Error: list index out of range
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 553, in extract_transaction_details
+    fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
+                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-10-31 03:07:15 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/865355__F6-MBTM.2025%201030%20F.pdf: cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 626, in extract_records
+    transaction_details, is_special_value = extract_transaction_details(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2025-10-31 03:07:15 [INFO] - [SGX FILINGS] Data not valid found for issuer name: M&C REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19
+2025-10-31 03:07:23 [INFO] - page_start: 1
+2025-10-31 03:07:23 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-31 03:07:23 [INFO] - Response status: 200
+2025-10-31 03:07:23 [WARNING] - WARNING: API returned None
+2025-10-31 03:07:23 [INFO] - No more announcements found — stopping pagination.
+2025-10-31 03:07:35 [INFO] - Fetching data from API SGX Buy Back...
+2025-10-31 03:07:35 [INFO] - Response status: 200
+2025-10-31 03:07:35 [WARNING] - WARNING: API returned None
+2025-10-31 03:07:35 [INFO] - No more announcements found on this page — stopping pagination.
+2025-10-31 03:07:35 [INFO] - [SGX FILINGS] Scraping completed. Total records: 5
+2025-10-31 03:07:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-10-31 03:07:35 [INFO] - Processing remove duplicate data
+2025-10-31 03:07:35 [INFO] - Length data after duplicate removing: 5
+2025-10-31 03:07:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-10-31 03:07:35 [INFO] - Filtering completed. Insertable: 1 | Not insertable: 4
+2025-10-31 03:07:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-10-31 03:07:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-10-31 03:07:36 [INFO] - Email sent! Message ID: 011c019a383c232e-4b5bd105-e64d-49a2-a24f-9ce6f1a5aa47-000000
+2025-10-31 03:07:37 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
