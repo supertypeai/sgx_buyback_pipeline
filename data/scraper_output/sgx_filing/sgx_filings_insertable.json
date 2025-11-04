@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/EZ4VRU5SZ2ULS1LW/865828__FORM1_CKK.pdf",
+    "symbol": "AU8U",
+    "transaction_date": "2025-10-30",
+    "shareholder_name": "Chua Keng Kim",
+    "number_of_stock": 100000,
+    "value": 80000.0,
+    "price_per_share": 0.8,
+    "transaction_type": "buy",
+    "shares_before": 0,
+    "shares_before_percentage": 0.0,
+    "shares_after": 100000,
+    "shares_after_percentage": 0.006
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/EZ4VRU5SZ2ULS1LW/865828__FORM1_CKK.pdf",
+    "symbol": "AU8U",
+    "transaction_date": "2025-10-31",
+    "shareholder_name": "Chua Keng Kim",
+    "number_of_stock": 80000,
+    "value": 63200.0,
+    "price_per_share": 0.79,
+    "transaction_type": "buy",
+    "shares_before": 100000,
+    "shares_before_percentage": 0.006,
+    "shares_after": 180000,
+    "shares_after_percentage": 0.01
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/KVBAU970MVU9UANU/865818__eFORM1_ChengWK_031125_Final.pdf",
+    "symbol": "W05",
+    "transaction_date": "2025-11-03",
+    "shareholder_name": "Cheng Wai Keung",
+    "number_of_stock": null,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "buy",
+    "shares_before": 474329859,
+    "shares_before_percentage": 62.09,
+    "shares_after": 474389859,
+    "shares_after_percentage": 62.1
+  }
+]
