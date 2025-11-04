@@ -86,11 +86,21 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
     # Value and price inconsistency
     if value and number_of_stock and price_per_share:
         calculated_price = value / number_of_stock 
-        if not math.isclose(calculated_price, price_per_share):
+        if not math.isclose(calculated_price, price_per_share, rel_tol=0.05):
             payload.update({
                 'reason': (
                     f'Calculated price (value/number_of_stock={calculated_price:.2f}) '
                     f'does not match reported price_per_share={price_per_share}'
+                )
+            })
+            return True
+        
+        expected_value = number_of_stock * price_per_share
+        if not math.isclose(expected_value, value, rel_tol=0.05):
+            payload.update({
+                'reason': (
+                    f'Inconsistent total value: expected {expected_value:.2f} '
+                    f'(number_of_stock * price_per_share), but got {value:.2f}'
                 )
             })
             return True
@@ -124,5 +134,5 @@ if __name__ == '__main__':
     print(len(data))
     data_insertable, data_not_insertable = get_data_alert(data)
     # print(f'check data not insertable sample: {data_not_insertable[:2]} | \ndata insertable sample: {data_insertable[:2]}')
-
+    
     # uv run -m src.alerting.filter_data_alert
