@@ -183,6 +183,7 @@ def get_auth(proxy: str | None = PROXY) -> dict[str, str] | None:
 
 def run_scrape_api(
         api_url: str, 
+        flag_log: str,
         headers: dict[str, str] | None, 
         proxy: str | None = None
 ) -> list[dict] | None:
@@ -198,7 +199,7 @@ def run_scrape_api(
         }
     
     try:
-        LOGGER.info("Fetching data from API SGX Buy Back...")
+        LOGGER.info(f"Fetching data from API {flag_log}...")
         response = requests.get(
             api_url, headers=headers, 
             proxies=proxies, verify=False, timeout=30

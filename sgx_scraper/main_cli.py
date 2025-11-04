@@ -74,12 +74,12 @@ def run_sgx_buyback_scraper(
                 f"&pagesize={page_size}"
             )
             
-            sgx_announcements = run_scrape_api(api_url=url,headers=headers)
+            sgx_announcements = run_scrape_api(api_url=url, flag_log='Buybacks', headers=headers)
            
             if sgx_announcements is None:
                 LOGGER.info("No more announcements found — stopping pagination.")
                 headers = get_auth(proxy=None)
-                sgx_announcements = run_scrape_api(api_url=url, headers=headers)
+                sgx_announcements = run_scrape_api(api_url=url, flag_log='Buybacks', headers=headers)
                 
             if sgx_announcements is None:
                 LOGGER.info("No more announcements found on this page — stopping pagination.")
@@ -167,12 +167,12 @@ def run_sgx_filings_scraper(
                 f"&pagesize={page_size}"
             )
             
-            sgx_announcements = run_scrape_api(api_url=url,headers=headers)
+            sgx_announcements = run_scrape_api(api_url=url, flag_log='Filings', headers=headers)
            
             if sgx_announcements is None:
                 LOGGER.info("No more announcements found — stopping pagination.")
                 headers = get_auth(proxy=None)
-                sgx_announcements = run_scrape_api(api_url=url, headers=headers)
+                sgx_announcements = run_scrape_api(api_url=url, flag_log='Filings', headers=headers)
                 
             if sgx_announcements is None:
                 LOGGER.info("No more announcements found on this page — stopping pagination.")
