@@ -546,18 +546,18 @@ def extract_transaction_details(
         value = build_value(raw_value, number_of_stock)
         print(f'\nraw value: {raw_value}, value: {value}, number_of_stock: {raw_number_of_stock}')
 
-        # Fallback with next 2 pages 
+        # Fallback for previous page
         if not value and not number_of_stock:
-            for page_index in range(page_number, page_number + 3):
+            for page_index in range(page_number -1, page_number - 3, -1):
                 transaction_date, number_of_stock, value, raw_value, raw_number_of_stock = \
                     fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
                 
                 if value or number_of_stock:
                     break 
-        
-        # Fallback for previous page
+
+        # Fallback with next 2 pages 
         if not value and not number_of_stock:
-            for page_index in range(page_number -1, page_number - 3, -1):
+            for page_index in range(page_number, page_number + 3):
                 transaction_date, number_of_stock, value, raw_value, raw_number_of_stock = \
                     fallback_extract_transaction_detail(pdf_object.pages[page_index], transaction_date)
                 
@@ -746,8 +746,9 @@ if __name__ == '__main__':
     test_clean_data = 'https://links.sgx.com/1.0.0/corporate-announcements/L7QIXIV1LZ9CQR8X/d159e63ab68b983fa8f0e286519b84185c47cc3891f0c7a5fb778e529f448a38'
     test_one_name_multiple_shareholder = 'https://links.sgx.com/1.0.0/corporate-announcements/07KOA264E5YBKSP7/59c7b3af10cf9d7ec43bb98a405d2959cce4a0f956347332522f4ab342f96967'
     multiples = 'https://links.sgx.com/1.0.0/corporate-announcements/UQETVC6UVOBCI39D/c7d80525b311a0e0134c87602df7c340edbfd5468b271338eee4cba6812b347f'
+    failed = 'https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19'
 
-    result_sgx_filing = get_sgx_filings(multiples)
+    result_sgx_filing = get_sgx_filings(test_one_name_multiple_shareholder)
 
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:
