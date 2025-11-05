@@ -16,6 +16,8 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
     symbol = payload.get('symbol')
     transaction_date = payload.get('transaction_date')
 
+    reasons = []
+
     required_fields = [
         symbol, transaction_date, shares_before,
         shares_after, transaction_type
@@ -23,88 +25,82 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
 
     # Missing required field
     if any(field is None for field in required_fields):
-        payload.update({
-            'reason': f'Missing one or more required fields: '
-                      f'symbol={symbol}, transaction_date={transaction_date}, '
-                      f'shares_before={shares_before}, shares_after={shares_after}, '
-                      f'transaction_type={transaction_type}'
-        })
-        return True
+        reasons.append(
+            f'Missing one or more required fields: '
+            f'symbol={symbol}, transaction_date={transaction_date}, '
+            f'shares_before={shares_before}, shares_after={shares_after}, '
+            f'transaction_type={transaction_type}'
+        )
+       
 
     diff_shares = shares_after - shares_before
 
     # Inconsistent share count
     if number_of_stock:
-        if diff_shares != number_of_stock:
-            payload.update({
-                'reason': (
-                    f'Difference in shares (after - before = {diff_shares}) '
-                    f'does not match reported number_of_stock={number_of_stock}'
-                )
-            })
-            return True
-
+        if abs(diff_shares) != number_of_stock:
+            reasons.append(
+                f'Difference in shares (after - before = {abs(diff_shares)}) '
+                f'does not match reported number_of_stock={number_of_stock}'
+            )
+           
     # Invalid transaction type for share movement
-    if transaction_type:
-        if diff_shares > 0 and transaction_type != 'buy':
-            payload.update({
-                'reason': (
-                    f'Share difference is positive ({diff_shares}), '
-                    f'but transaction_type="{transaction_type}" instead of "buy"'
-                )
-            })
-            return True
-        if diff_shares < 0 and transaction_type != 'sell':
-            payload.update({
-                'reason': (
-                    f'Share difference is negative ({diff_shares}), '
-                    f'but transaction_type="{transaction_type}" instead of "sell"'
-                )
-            })
-            return True
+    # if transaction_type:
+    #     if diff_shares > 0 and transaction_type != 'buy':
+    #         payload.update({
+    #             'reason': (
+    #                 f'Share difference is positive ({diff_shares}), '
+    #                 f'but transaction_type="{transaction_type}" instead of "buy"'
+    #             )
+    #         })
+    #         return True
+    #     if diff_shares < 0 and transaction_type != 'sell':
+    #         payload.update({
+    #             'reason': (
+    #                 f'Share difference is negative ({diff_shares}), '
+    #                 f'but transaction_type="{transaction_type}" instead of "sell"'
+    #             )
+    #         })
+    #         return True
     
     # Unrealistic or inconsistent price
     if price_per_share:
         if price_per_share > 200:
-            payload.update({
-                'reason': f'Unrealistic price_per_share={price_per_share} (>200)'
-            })
-            return True
+            reasons.append(
+                f'Unrealistic price_per_share={price_per_share} (>200)'
+            )
+         
         else:
             market_price_yfinance = get_price(symbol, transaction_date)
             if market_price_yfinance:
                 deviation = abs(price_per_share - market_price_yfinance) / market_price_yfinance
                 if deviation > 0.4:
-                    payload.update({
-                        'reason': (
-                            f'Price deviation too large: filing price={price_per_share}, '
-                            f'market price={market_price_yfinance}, deviation={deviation:.2%}'
-                        )
-                    })
-                    return True
+                    reasons.append(
+                        f'Price deviation too large: filing price={price_per_share}, '
+                        f'market price={market_price_yfinance}, deviation={deviation:.2%}'
+                    )
+                    
                 
     # Value and price inconsistency
     if value and number_of_stock and price_per_share:
         calculated_price = value / number_of_stock 
         if not math.isclose(calculated_price, price_per_share, rel_tol=0.05):
-            payload.update({
-                'reason': (
-                    f'Calculated price (value/number_of_stock={calculated_price:.2f}) '
-                    f'does not match reported price_per_share={price_per_share}'
-                )
-            })
-            return True
+            reasons.append(
+                f'Calculated price (value/number_of_stock={calculated_price:.2f}) '
+                f'does not match reported price_per_share={price_per_share}'
+            )
+           
         
         expected_value = number_of_stock * price_per_share
         if not math.isclose(expected_value, value, rel_tol=0.05):
-            payload.update({
-                'reason': (
-                    f'Inconsistent total value: expected {expected_value:.2f} '
-                    f'(number_of_stock * price_per_share), but got {value:.2f}'
-                )
-            })
-            return True
-
+            reasons.append( 
+                f'Inconsistent total value: expected {expected_value:.2f} '
+                f'(number_of_stock * price_per_share), but got {value:.2f}'
+            )
+           
+    if reasons:
+        payload['reasons'] = reasons 
+        return True 
+    
     return False
 
 
