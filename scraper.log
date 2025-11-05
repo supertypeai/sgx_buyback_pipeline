@@ -1051,3 +1051,82 @@ TypeError: cannot unpack non-iterable NoneType object
 2025-11-04 03:08:08 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-04 03:08:09 [INFO] - [sgx_payload] Successfully pushed 5 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-05 03:06:28 [INFO] - Init Global Variable
+2025-11-05 03:06:52 [INFO] - Scraping from None to None...
+2025-11-05 03:06:52 [INFO] - Start scraping from start date: 20251103 to 20251105
+2025-11-05 03:06:52 [INFO] - page_start: 0
+2025-11-05 03:06:52 [INFO] - Fetching data from API Filings...
+2025-11-05 03:06:53 [INFO] - Response status: 200
+2025-11-05 03:06:53 [INFO] - Fetched 15 announcements
+2025-11-05 03:06:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QJXV7WMN8WPA6Z5X/fae4d5be36e58c26086e17e343ba4926229ac93aae1197bd7041731056dae62d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QJXV7WMN8WPA6Z5X/865975__HLGE%20-%20Form%203%20for%20HLTS%20and%20HLC%20and%20WSIL%20and%20HLA%20and%20HLCH%20and%20HLE%20and%20HLIH.pdf
+2025-11-05 03:06:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:06:57 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:06:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:06:57 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:06:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:06:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:06:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:06:58 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:06:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:06:58 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:06:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:06:58 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/QJXV7WMN8WPA6Z5X/865975__HLGE%20-%20Form%203%20for%20HLTS%20and%20HLC%20and%20WSIL%20and%20HLA%20and%20HLCH%20and%20HLE%20and%20HLIH.pdf: Multiple shareholders with identical share data
+2025-11-05 03:06:58 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HL GLOBAL ENTERPRISES LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/QJXV7WMN8WPA6Z5X/fae4d5be36e58c26086e17e343ba4926229ac93aae1197bd7041731056dae62d
+2025-11-05 03:06:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XWRKBI6US7BO2COW/1a2fa339ee7de28622755bbe3681ae8713e203207bb9d838832d947d6112a8b6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XWRKBI6US7BO2COW/865973__HLGE%20-%20Form%203%20for%20GSS%20and%20CSH%20and%20CYI.pdf
+2025-11-05 03:07:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:00 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:07:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:00 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/XWRKBI6US7BO2COW/865973__HLGE%20-%20Form%203%20for%20GSS%20and%20CSH%20and%20CYI.pdf: Multiple shareholders with identical share data
+2025-11-05 03:07:00 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HL GLOBAL ENTERPRISES LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/XWRKBI6US7BO2COW/1a2fa339ee7de28622755bbe3681ae8713e203207bb9d838832d947d6112a8b6
+2025-11-05 03:07:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KASVP25PJN38PK64/8e1e6ae85add4ac3911300d79693b501b1b7592a90c6a4b84125e553be10f8dd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KASVP25PJN38PK64/865956__eFORM1V2_CHIA_final.pdf
+2025-11-05 03:07:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NXFXYQ69DFLX6LI0/f26c8276a2581a2b13f81da2e6ef407b1215c713c37f3f12a1abf218f5dfff4d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NXFXYQ69DFLX6LI0/865943__MPACTM_Form%206_4Nov2025.pdf
+2025-11-05 03:07:10 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:07:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/03PKFVMTRX22G158/616b3e945749e0b0b4979a22caebe29b1710f5c7bf93c804cc2007fc9b66dc92 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/03PKFVMTRX22G158/865938__CSCH%20-%20eFORM3%20-%20Success%20More%20XCQ%20-%20Final.pdf
+2025-11-05 03:07:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:14 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:07:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8736YBEQDFG37ZF7/2ef7149600009c364c096beb5006e90b3fdea72667f6c54f1b15c090b5bddd8e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8736YBEQDFG37ZF7/865936__Form%203%20-%20Silchester%20-%20Comfortdelgro%20-%2020251103.pdf
+2025-11-05 03:07:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4LZ2EKBZMWD2SBIS/a6b401115c3414c157525a376740e53a8cd824d5a7f0afed7cab52724a3582ff pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4LZ2EKBZMWD2SBIS/865932__FORM1_CKK.pdf
+2025-11-05 03:07:24 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CXP9JW8LSTXSXEBA/2f26c57db3b9e213bc8855743123b2fec284cffed3d91aa8728e02aaa26184b1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CXP9JW8LSTXSXEBA/865927__20251104%20-%20XMH_Form%201_TGL.pdf
+2025-11-05 03:07:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-05 03:07:33 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0N8PYFHQVFF192QS/3cb25da225c6f7d046e43c0673d50831e559034bee264c61f5d47a00054fcbca pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0N8PYFHQVFF192QS/865920__eFORM1_ChengWK_041125_Final.pdf
+2025-11-05 03:07:34 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:07:34 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:07:34 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:07:34 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-05 03:07:34 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-05 03:07:34 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-05 03:07:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EH8C35QM9ETLTJ34/169d3af33c6305a4353f00b4ff8fec289998a4cbe58abd02fcb2cb31f97d7ec0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EH8C35QM9ETLTJ34/865912__05%20Cielo%20Holding%20Form%203.pdf
+2025-11-05 03:07:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4ITDMTMN0L77JD7R/aaec9ff2a3b15832a055bdd115764e46faea921641d91b54fd93cfb021d5e0ea pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4ITDMTMN0L77JD7R/865910__04%20Cielo%20Holding%20Form%203.pdf
+2025-11-05 03:07:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/P3EK73S5DEVE7QTO/22bb679b70670a26ebe99645d30531b919d29440b3ae495ed8b92b903e76dd8f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/P3EK73S5DEVE7QTO/865908__02%20Cielo%20Holding%20Form%203.pdf
+2025-11-05 03:07:47 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: '109,612,132 units acquired from the acceptance of the Voluntary Conditional Cash Partial Offer by Volare Group AG in 2023.'
+2025-11-05 03:07:47 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: '109,612,132 units acquired from the acceptance of the Voluntary Conditional Cash Partial Offer by Volare Group AG in 2023.'
+2025-11-05 03:07:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/T836DB0ASXCN57JL/d54061e1f2eef539ad536580e50ede8c057d17a24b818fa77c0e3aceaad882ad pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/T836DB0ASXCN57JL/865906__03%20Cielo%20Holding%20Form%203.pdf
+2025-11-05 03:07:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RY7H5E34LVGBHN4M/d65496729e03dbd9a7e1653660944c14ab4b308e9f697003218c165784816865 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RY7H5E34LVGBHN4M/865901__01%20Cielo%20Holding%20Form%203.pdf
+2025-11-05 03:08:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BHRBJYDNEKPLWDL2/4735393540a57ae09c27caf880714e8511a8ea933617aeba7f005fcf98e0d606 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BHRBJYDNEKPLWDL2/865897__YANGZIJIANG%20SHIPBUILDING%20HOLDINGS%20LTD%2031.10.25%20Form%203_final.pdf
+2025-11-05 03:08:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-05 03:08:06 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Change in position due to a decrease in shares held as collateral.'
+2025-11-05 03:08:06 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Change in position due to a decrease in shares held as collateral.'
+2025-11-05 03:08:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-05 03:08:15 [INFO] - page_start: 1
+2025-11-05 03:08:15 [INFO] - Fetching data from API Filings...
+2025-11-05 03:08:15 [INFO] - Response status: 200
+2025-11-05 03:08:15 [WARNING] - WARNING: API returned None
+2025-11-05 03:08:15 [INFO] - No more announcements found — stopping pagination.
+2025-11-05 03:08:27 [INFO] - Fetching data from API Filings...
+2025-11-05 03:08:27 [INFO] - Response status: 200
+2025-11-05 03:08:27 [WARNING] - WARNING: API returned None
+2025-11-05 03:08:27 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-05 03:08:27 [INFO] - [SGX FILINGS] Scraping completed. Total records: 18
+2025-11-05 03:08:27 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-05 03:08:27 [INFO] - Processing remove duplicate data
+2025-11-05 03:08:27 [INFO] - Length data after duplicate removing: 18
+2025-11-05 03:08:27 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-05 03:08:28 [INFO] - Filtering completed. Insertable: 9 | Not insertable: 9
+2025-11-05 03:08:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-05 03:08:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-05 03:08:29 [INFO] - Email sent! Message ID: 011c019a51fcbe37-73113336-16f0-401b-a954-2494edd193e8-000000
+2025-11-05 03:08:30 [INFO] - [sgx_payload] Successfully pushed 9 records to DB, table: sgx_filings
