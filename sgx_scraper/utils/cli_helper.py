@@ -145,6 +145,7 @@ def filter_top_70_companies(clean_payload: list[dict[str]]) -> tuple:
             else:
                  not_top_70_payload.append(payload)
 
+        LOGGER.info(f'Length data top_70: {len(top_70_payload)} | Length data not top_70: {len(not_top_70_payload)}')
         return top_70_payload, not_top_70_payload
 
     except Exception as error:
