@@ -79,7 +79,6 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                         f'market price={market_price_yfinance}, deviation={deviation:.2%}'
                     )
                     
-                
     # Value and price inconsistency
     if value and number_of_stock and price_per_share:
         calculated_price = value / number_of_stock 
@@ -88,7 +87,6 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                 f'Calculated price (value/number_of_stock={calculated_price:.2f}) '
                 f'does not match reported price_per_share={price_per_share}'
             )
-           
         
         expected_value = number_of_stock * price_per_share
         if not math.isclose(expected_value, value, rel_tol=0.05):

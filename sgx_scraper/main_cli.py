@@ -6,7 +6,8 @@ from sgx_scraper.config.settings import LOGGER
 from sgx_scraper.utils.cli_helper import (
     normalize_datetime, push_to_db, 
     clean_payload_sgx_buyback, clean_payload_sgx_filings, 
-    write_to_json, remove_duplicate
+    write_to_json, remove_duplicate, 
+    filter_top_70_companies, write_to_csv
 )
 from sgx_scraper.sgx_api.scraper_sgx_api import get_auth, run_scrape_api
 from sgx_scraper.fetch_sgx_buyback.parser_sgx_buyback import get_sgx_buybacks
@@ -114,19 +115,26 @@ def run_sgx_buyback_scraper(
 
     path_today = base_dir / "sgx_buybacks_today.json"
     path_yesterday = base_dir / "sgx_buybacks_yesterday.json"
+    path_data_not_top_70 = base_dir / "sgx_buybacks_not_top_70.csv"
 
-    write_to_json(path_today, payload_sgx_buybacks)
+    payload_sgx_buybacks_clean = clean_payload_sgx_buyback(payload_sgx_buybacks)
+    
+    payload_top_70, payload_not_top_70 = filter_top_70_companies(payload_sgx_buybacks_clean)
+    write_to_csv(path_data_not_top_70, payload_not_top_70)
+
+    write_to_json(path_today, payload_top_70)
 
     if os.path.exists(path_yesterday):   
         LOGGER.info('Processing remove duplicate data') 
-        payload_sgx_buybacks = remove_duplicate(path_today, path_yesterday)
-   
-    write_to_json(path_yesterday, payload_sgx_buybacks)
-    
-    payload_sgx_buybacks = clean_payload_sgx_buyback(payload_sgx_buybacks)
-    
+        new_payload_sgx_buybacks = remove_duplicate(path_today, path_yesterday)
+    else: 
+        LOGGER.info('First run detected, all Top 70 filings are new')
+        new_payload_sgx_buybacks = payload_top_70
+
+    write_to_json(path_yesterday, payload_top_70)
+
     if is_push_db:
-        push_to_db(payload_sgx_buybacks, 'sgx_buybacks')
+        push_to_db(new_payload_sgx_buybacks, 'sgx_buybacks')
 
 
 @app.command(name='scraper_filings')
@@ -216,18 +224,25 @@ def run_sgx_filings_scraper(
     path_yesterday = base_dir / "sgx_filings_yesterday.json"
     path_insertable = base_dir / "sgx_filings_insertable.json"
     path_not_insertable = base_dir / "sgx_filings_not_insertable.json"
+    path_not_top_70 = base_dir / "sgx_filings_not_top_70.csv"
 
     payload_sgx_filings_clean = clean_payload_sgx_filings(payload_sgx_filings)
-    
-    write_to_json(path_today, payload_sgx_filings_clean)
+
+    payload_top_70, payload_not_top_70 = filter_top_70_companies(payload_sgx_filings_clean)
+    write_to_csv(path_not_top_70, payload_not_top_70)
+
+    write_to_json(path_today, payload_top_70)
 
     if os.path.exists(path_yesterday):    
         LOGGER.info('Processing remove duplicate data') 
-        payload_sgx_filings = remove_duplicate(path_today, path_yesterday)
-    
-    write_to_json(path_yesterday, payload_sgx_filings)
+        new_payload_sgx_filings = remove_duplicate(path_today, path_yesterday)
+    else:
+        LOGGER.info('First run detected, all Top 70 filings are new')
+        new_payload_sgx_filings = payload_top_70
 
-    sgx_filings_insertable, sgx_filings_not_insertable = get_data_alert(payload_sgx_filings)
+    write_to_json(path_yesterday, payload_top_70)
+
+    sgx_filings_insertable, sgx_filings_not_insertable = get_data_alert(new_payload_sgx_filings)
 
     write_to_json(path_not_insertable, sgx_filings_not_insertable)
     write_to_json(path_insertable, sgx_filings_insertable)

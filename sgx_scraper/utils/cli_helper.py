@@ -5,6 +5,7 @@ from sgx_scraper.config.settings import LOGGER
 
 import json 
 import os 
+import pandas as pd 
 
 
 def normalize_datetime(date: str | datetime) -> str: 
@@ -113,6 +114,54 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
 
     LOGGER.info(f'Length data after duplicate removing: {len(unique_data_today)}')
     return unique_data_today
+
+
+def filter_top_70_companies(clean_payload: list[dict[str]]) -> tuple:
+    try:
+        response = (
+            SUPABASE_CLIENT
+            .table('sgx_companies')
+            .select('symbol, name, market_cap')
+            .execute()
+        )
+
+        if not response:
+            LOGGER.warning('Data sgx_companies not found')
+            return [], clean_payload
+        
+        df_sgx_companies = pd.DataFrame(response.data)
+
+        df_top_sgx = df_sgx_companies.sort_values("market_cap", ascending=False).head(70)
+        top_70_symbols = set(df_top_sgx['symbol'].tolist())
+
+        top_70_payload = []
+        not_top_70_payload = []
+
+        for payload in clean_payload:
+            symbol = payload.get('symbol')
+            
+            if symbol in top_70_symbols:
+                 top_70_payload.append(payload)
+            else:
+                 not_top_70_payload.append(payload)
+
+        return top_70_payload, not_top_70_payload
+
+    except Exception as error:
+        LOGGER.error(f'[filter_top_50_companies] Error: {error}')
+        return [], [] 
+
+
+def write_to_csv(path: str, payload_not_top_70: list[dict[str]]):
+    df = pd.DataFrame(payload_not_top_70)
+    
+    if df.empty:
+        return
+
+    file_exists = os.path.isfile(path)
+    df.to_csv(path, mode='a', index=False, header=not file_exists)
+
+    LOGGER.info(f'Saved payload to {path}')
 
 
 def write_to_json(path: str, payload_sgx: list[dict[str, any]]):
