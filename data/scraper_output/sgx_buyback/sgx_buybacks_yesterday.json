@@ -1,74 +1,46 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/UD70YHKG5P879E92/20916a956a1a95a5b9383013a65feffd0b1356fa7126cc32560602ab35952a3e",
-    "symbol": "C33",
-    "purchase_date": "2025-11-05",
-    "type": "On Market",
-    "start_date": "2025-10-28",
-    "price_per_share": {
-      "price_paid_per_share": 0.2237
-    },
-    "total_value": 28443.89,
-    "total_shares_purchased": 126900.0,
-    "cumulative_purchased": 614800.0,
-    "treasury_shares_after_purchase": 14253400.0
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/Y95TVDHADBVPB22T/7dbefceafe1265c01670438ec8367ea3294b6b7db2467a69ef9ff21dcaec74a0",
-    "symbol": "LVR",
-    "purchase_date": "2025-11-05",
-    "type": "On Market",
-    "start_date": "2025-04-28",
-    "price_per_share": {
-      "highest": 1.04,
-      "lowest": 1.0
-    },
-    "total_value": 103325.95,
-    "total_shares_purchased": 100000.0,
-    "cumulative_purchased": 5506000.0,
-    "treasury_shares_after_purchase": 7105800.0
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/4UEDL9JWZ72WV0TW/309846f7ebc7f615fecc98fb1aa20ac1fba38bce7445ddec9b1c9eca0f48f69b",
-    "symbol": "I06",
-    "purchase_date": "2025-11-05",
-    "type": "On Market",
-    "start_date": "2025-04-24",
-    "price_per_share": {
-      "price_paid_per_share": 0.37
-    },
-    "total_value": 2742.19,
-    "total_shares_purchased": 7400.0,
-    "cumulative_purchased": 546500.0,
-    "treasury_shares_after_purchase": 5846834.0
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ZL6VXO87TUY56F5H/69f42c6355772fd63bfdc73ff75a2a5888214e238cda458d5e334597571a5aa9",
-    "symbol": "U96",
-    "purchase_date": "2025-11-05",
-    "type": "On Market",
-    "start_date": "2025-04-25",
-    "price_per_share": {
-      "price_paid_per_share": 6.27271
-    },
-    "total_value": 1067668.33,
-    "total_shares_purchased": 170000.0,
-    "cumulative_purchased": 3060000.0,
-    "treasury_shares_after_purchase": 11439824.0
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/1XN3CKBLMKNEJWVY/41d4aab826b6530c31f792470d1c9258f0c9b4cdb573a99b28fcef6c040efbd4",
-    "symbol": "BN4",
-    "purchase_date": "2025-11-05",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/I36FTZ9SPR970KYP/b52787cae467c5ac72b43fa758b6fe0282c1fd1d17675b5f084ffec9acdd367d",
+    "symbol": "U11",
+    "purchase_date": "2025-11-06",
     "type": "On Market",
     "start_date": "2025-04-21",
     "price_per_share": {
-      "highest": 9.98,
-      "lowest": 9.9
+      "highest": 33.9,
+      "lowest": 33.69
     },
-    "total_value": 497291.45,
-    "total_shares_purchased": 50000.0,
-    "cumulative_purchased": 11220000.0,
-    "treasury_shares_after_purchase": 16912246.0
+    "total_value": 8115045.16,
+    "total_shares_purchased": 240000,
+    "cumulative_purchased": 15706400,
+    "treasury_shares_after_purchase": 15243008
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/QTLQNP1EQRNU92TO/c38d5888f730d30bbd907217c3c0a4d62b32cdc5b88bd310a2a5d780eb65b394",
+    "symbol": "U96",
+    "purchase_date": "2025-11-06",
+    "type": "On Market",
+    "start_date": "2025-04-25",
+    "price_per_share": {
+      "price_paid_per_share": 6.40265
+    },
+    "total_value": 1089785.22,
+    "total_shares_purchased": 170000,
+    "cumulative_purchased": 3230000,
+    "treasury_shares_after_purchase": 11609824
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/BGUWSJSK11FX6ZAH/7f69f8ad597a468d463fbc43993b02247c1777dff5d182cf060b0cd3c5165e77",
+    "symbol": "BN4",
+    "purchase_date": "2025-11-06",
+    "type": "On Market",
+    "start_date": "2025-04-21",
+    "price_per_share": {
+      "highest": 10.3,
+      "lowest": 10.26
+    },
+    "total_value": 514560.26,
+    "total_shares_purchased": 50000,
+    "cumulative_purchased": 11270000,
+    "treasury_shares_after_purchase": 16962246
   }
 ]

@@ -1,0 +1,4 @@
+url,symbol,purchase_date,type,start_date,price_per_share,total_value,total_shares_purchased,cumulative_purchased,treasury_shares_after_purchase
+https://links.sgx.com/1.0.0/corporate-announcements/LCONF6LNU7IDPJ7H/c554e8ec8b7bc10f19b748a337922eb51344f83edc9012e13db5c49603533966,U77,2025-11-06,On Market,2025-04-24,{'price_paid_per_share': 0.305},3087.19,10000,684900,15918074
+https://links.sgx.com/1.0.0/corporate-announcements/6Z39OLA2ZLJ5TSVR/e3d0dd33688153b29b12e4a1ef949b306f4863b177ba9aaf7d17516a17247225,LVR,2025-11-06,On Market,2025-04-28,"{'highest': 1.07, 'lowest': 1.04}",89578.46,84300,5590300,7190100
+https://links.sgx.com/1.0.0/corporate-announcements/H763ZM86LN9OILY7/b89238cd057195a4007e26745a4e56f7e0f6987ca1647250a5dc94750ddad3df,C33,2025-11-06,On Market,2025-10-28,{'price_paid_per_share': 0.225},753351.94,3342400,3957200,17595800
