@@ -1233,3 +1233,65 @@ TypeError: cannot unpack non-iterable NoneType object
 2025-11-06 03:11:31 [INFO] - Length data after duplicate removing: 5
 2025-11-06 03:11:31 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-06 03:11:31 [INFO] - [sgx_payload] Successfully pushed 5 records to DB, table: sgx_buybacks
+2025-11-07 03:05:50 [INFO] - Init Global Variable
+2025-11-07 03:06:15 [INFO] - Scraping from None to None...
+2025-11-07 03:06:15 [INFO] - Start scraping from start date: 20251105 to 20251107
+2025-11-07 03:06:15 [INFO] - page_start: 0
+2025-11-07 03:06:15 [INFO] - Fetching data from API Filings...
+2025-11-07 03:06:16 [INFO] - Response status: 200
+2025-11-07 03:06:16 [INFO] - Fetched 8 announcements
+2025-11-07 03:06:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EUJB7EY04A11ZQSE/192bcb27800c5ea22aad66b538fa388ed036dc8b99acde1a62848ebfedebdb82 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EUJB7EY04A11ZQSE/866203__20251106%20-%20XMH_Form%201_TGL.pdf
+2025-11-07 03:06:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/B661F21JUVDGYVVY/d21511f23f35f1459a3451302d70a86ac663ecff05b121e4ffd6bbd1cd29ed93 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/B661F21JUVDGYVVY/866186__MEH_eForm3_Toe%20Teow%20Heng_5%20Nov%202025.pdf
+2025-11-07 03:06:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M82H9AZ21V9QS9GG/077615651e7245505ddf6d9c40aab10d5e0ecc9b15f5e28fee625e8ca6d0a2a9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M82H9AZ21V9QS9GG/866181__HLGE%20-%20Form%203%20for%20KH.pdf
+2025-11-07 03:06:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-07 03:06:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-07 03:06:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6AOYH7MOKHBJKTK8/626850395ad542fe7aeaf0c1371b65218052d448208e4fd26539be8d6a442e07 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6AOYH7MOKHBJKTK8/866172__HLGE%20-%20Form%203%20for%20Davos.pdf
+2025-11-07 03:06:36 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-07 03:06:36 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-07 03:06:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UZ9DYARFB3H9PJV5/46f6f4105e342cdb72d32df197a9f0f3670bb63a469e39708f48684005101487 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UZ9DYARFB3H9PJV5/866159__First_REIT_Form_3_OUEH_TIHPL.pdf
+2025-11-07 03:06:40 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-07 03:06:40 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:40 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-07 03:06:40 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/UZ9DYARFB3H9PJV5/866159__First_REIT_Form_3_OUEH_TIHPL.pdf: Multiple shareholders with identical share data
+2025-11-07 03:06:40 [INFO] - [SGX FILINGS] Data not valid found for issuer name: FIRST REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/UZ9DYARFB3H9PJV5/46f6f4105e342cdb72d32df197a9f0f3670bb63a469e39708f48684005101487
+2025-11-07 03:06:40 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0YH039W09QUOHCBS/db708d5daaeac1f117a6a949bcd1e6f80e5aa117521ee70aa25847292d71ec23 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0YH039W09QUOHCBS/866157__First_REIT_FORM_6_6_November_2025.pdf
+2025-11-07 03:06:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YTBTYESAL1QHRHCN/46cec123919234a2fa4b360b97f767da81b5ab08822e9b9b886cdfbf2cb23fdb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YTBTYESAL1QHRHCN/866152__eFORM1_ChengWK_061125_Final.pdf
+2025-11-07 03:06:46 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:46 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:46 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:46 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-07 03:06:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-07 03:06:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-07 03:06:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/W5D4ZNE22WJ4PIWZ/5308155f071af29f57f7fca9bfb9aeee9202f0244672aa5484eadc1b0165e433 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/W5D4ZNE22WJ4PIWZ/866127__eFORM1V2-Tan%20Yong%20Hwa-20251105.pdf
+2025-11-07 03:06:50 [ERROR] - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/W5D4ZNE22WJ4PIWZ/866127__eFORM1V2-Tan%20Yong%20Hwa-20251105.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 687, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-11-07 03:06:50 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TAI SIN ELECTRIC LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/W5D4ZNE22WJ4PIWZ/5308155f071af29f57f7fca9bfb9aeee9202f0244672aa5484eadc1b0165e433
+2025-11-07 03:06:57 [INFO] - page_start: 1
+2025-11-07 03:06:57 [INFO] - Fetching data from API Filings...
+2025-11-07 03:06:58 [INFO] - Response status: 200
+2025-11-07 03:06:58 [WARNING] - WARNING: API returned None
+2025-11-07 03:06:58 [INFO] - No more announcements found — stopping pagination.
+2025-11-07 03:07:09 [INFO] - Fetching data from API Filings...
+2025-11-07 03:07:09 [INFO] - Response status: 200
+2025-11-07 03:07:09 [WARNING] - WARNING: API returned None
+2025-11-07 03:07:09 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-07 03:07:09 [INFO] - [SGX FILINGS] Scraping completed. Total records: 7
+2025-11-07 03:07:10 [INFO] - Length data top_70: 0 | Length data not top_70: 7
+2025-11-07 03:07:10 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-07 03:07:10 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-07 03:07:10 [INFO] - Processing remove duplicate data
+2025-11-07 03:07:10 [INFO] - Length data after duplicate removing: 0
+2025-11-07 03:07:10 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-07 03:07:10 [INFO] - No SGX filings data to filter.
+2025-11-07 03:07:10 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-07 03:07:10 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-07 03:07:10 [INFO] - No SGX filings alerts to send.
+2025-11-07 03:07:10 [INFO] - [sgx_payload] is empty, skipping push to DB
