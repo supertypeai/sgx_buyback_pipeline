@@ -1414,3 +1414,126 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-10 03:16:12 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-11-10 03:16:12 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-10 03:16:12 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-11-11 03:08:27 [INFO] - Init Global Variable
+2025-11-11 03:08:55 [INFO] - Scraping from None to None...
+2025-11-11 03:08:55 [INFO] - Start scraping from start date: 20251109 to 20251111
+2025-11-11 03:08:55 [INFO] - page_start: 0
+2025-11-11 03:08:55 [INFO] - Fetching data from API Filings...
+2025-11-11 03:08:56 [INFO] - Response status: 200
+2025-11-11 03:08:56 [INFO] - Fetched 15 announcements
+2025-11-11 03:08:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FM3BBC4WWI9E0LAU/14298091c9f2cae80a19767b876f07b78d1124e12e7492051c9819cce14d59ab pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FM3BBC4WWI9E0LAU/866545__LHN%20-%20Form%203%20-%20Lim%20Bee%20Li.pdf
+2025-11-11 03:08:58 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:08:58 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'With effect upon the voluntary withdrawal of listing of LHN Limited on the Main Board of The Stock Exchange of Hong Kong Limited, Ms. Lim Bee Li (Lin Meili) ceased to be considered as a controlling shareholder of LHN Limited.'
+2025-11-11 03:08:58 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'With effect upon the voluntary withdrawal of listing of LHN Limited on the Main Board of The Stock Exchange of Hong Kong Limited, Ms. Lim Bee Li (Lin Meili) ceased to be considered as a controlling shareholder of LHN Limited.'
+2025-11-11 03:08:58 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QYRHCC677HOKGAGQ/9130eb63a4c23baf70f88fd671252d58809a222db76190f39622dcf3cfea56fe pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QYRHCC677HOKGAGQ/866543__CHL%20-%20Form%203%20-%20Lim%20Bee%20Li.pdf
+2025-11-11 03:09:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:04 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'With effect upon the voluntary withdrawal of listing of LHN Limited on the Main Board of The Stock Exchange of Hong Kong Limited, Ms. Lim Bee Li ceased to be considered as a controlling shareholder of LHN Limited, and ceased to be deemed to have an interest in the issued and paid-up share capital of Coliwoo Holdings Limited held by LHN Group Pte. Ltd. by virtue of her position as controlling shareholder of LHN Limited.'
+2025-11-11 03:09:04 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'With effect upon the voluntary withdrawal of listing of LHN Limited on the Main Board of The Stock Exchange of Hong Kong Limited, Ms. Lim Bee Li ceased to be considered as a controlling shareholder of LHN Limited, and ceased to be deemed to have an interest in the issued and paid-up share capital of Coliwoo Holdings Limited held by LHN Group Pte. Ltd. by virtue of her position as controlling shareholder of LHN Limited.'
+2025-11-11 03:09:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WLY3XYTE636C7T01/da0ca2088fa4a2e0f4bbd8584371ca53942c326cd8a635ad874a7a41248d9306 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WLY3XYTE636C7T01/866536__CHL%20-%20Form%201%20-%20YSC%20-%2006.11.2025.pdf
+2025-11-11 03:09:08 [ERROR] - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/WLY3XYTE636C7T01/866536__CHL%20-%20Form%201%20-%20YSC%20-%2006.11.2025.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 687, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:08 [INFO] - [SGX FILINGS] Data not valid found for issuer name: COLIWOO HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/WLY3XYTE636C7T01/da0ca2088fa4a2e0f4bbd8584371ca53942c326cd8a635ad874a7a41248d9306
+2025-11-11 03:09:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/30AIEWNTG6865NDU/86f461926f04c2dadb972c0cd86ce5bfba507e005e9a92e39acee75d986ffe05 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/30AIEWNTG6865NDU/866534__CHL%20-%20Form%203%20-%20LHN%20-%2006.11.2025.pdf
+2025-11-11 03:09:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:14 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/30AIEWNTG6865NDU/866534__CHL%20-%20Form%203%20-%20LHN%20-%2006.11.2025.pdf: Multiple shareholders with identical share data
+2025-11-11 03:09:14 [INFO] - [SGX FILINGS] Data not valid found for issuer name: COLIWOO HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/30AIEWNTG6865NDU/86f461926f04c2dadb972c0cd86ce5bfba507e005e9a92e39acee75d986ffe05
+2025-11-11 03:09:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Y0XYSE1K3OPG0FKT/23eda563af866220c4a9f5b329253696fa8905633fde9591322238c4e5c52f2e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Y0XYSE1K3OPG0FKT/866532__CHL%20-%20Form%201%20-%20Kelvin%20-%2006.11.2025.pdf
+2025-11-11 03:09:16 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:16 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:16 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:16 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:17 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:17 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is made pursuant to the listing of Coliwoo Holdings Limited on the Mainboard of the Singapore Exchange Securities Trading Limited on 6 November 2025. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-11 03:09:17 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is made pursuant to the listing of Coliwoo Holdings Limited on the Mainboard of the Singapore Exchange Securities Trading Limited on 6 November 2025. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-11 03:09:17 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BXDKX08O7GPIYLWI/61201a57e9605765640e68c0fb0484f2bc8dff21c8f8ceb3890a3456655951ba pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BXDKX08O7GPIYLWI/866528__eFORM1V2_SLC_dd%2010%20Nov%202025_Final.pdf
+2025-11-11 03:09:24 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:24 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:24 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:24 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:24 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:24 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:28 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/U1ORYKDSPAT98CYF/719ff2119054438744af3d92f72888862930fc7d6731c83e3dae39d2412cfcf6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/U1ORYKDSPAT98CYF/866524__SSC%20-%20FORM1V2%20-%20OCK.pdf
+2025-11-11 03:09:30 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:30 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:30 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:30 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:30 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:30 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UKZX0THOFWRAZOAR/09306b3472557c25b6c1380eea45b86f30ddb27c71a16d3e8276dd4469ba8ad5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UKZX0THOFWRAZOAR/866513__20251110%20-%20AAL_Form%201_NYM.pdf
+2025-11-11 03:09:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-11 03:09:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IM2I4R6UDT2LEUUK/ab2c78b16b65c2682037c968e6f3f2195ff662dec7a2d3dd9a21e162b1740513 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IM2I4R6UDT2LEUUK/866498__eFORM1V2%20-%20Gary%20Final.pdf
+2025-11-11 03:09:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VXY3PNW64KH125FR/538da4f5cd9d740a23ebaaf76c652a18670cf48bfe35ee85f67dc5f44c138d57 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VXY3PNW64KH125FR/866492__Form%203%20-%20Sam%20Goi%20-%20Tat%20Seng%20dd%2010.11.25.pdf
+2025-11-11 03:09:54 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:09:54 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VXY3PNW64KH125FR/866492__Form%203%20-%20Sam%20Goi%20-%20Tat%20Seng%20dd%2010.11.25.pdf: Single record with no share change
+2025-11-11 03:09:54 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TAT SENG PACKAGING GROUP LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/VXY3PNW64KH125FR/538da4f5cd9d740a23ebaaf76c652a18670cf48bfe35ee85f67dc5f44c138d57
+2025-11-11 03:09:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZXZ0HIYVFHZF8M0M/37584bf34347482d2d7f3cd2aae2d105ac3a9887daa4841d16029cd96606f478 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZXZ0HIYVFHZF8M0M/866489__FORM1_CKK.pdf
+2025-11-11 03:09:56 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:56 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:56 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:09:56 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FGKSG0VLF4731COD/3b530ae966b104113d9495219e30501b6982fc0151105e3334494e1ad6251819 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FGKSG0VLF4731COD/866479__Form%201%20-%20Sam%20Goi%20dd%2010.11.25.pdf
+2025-11-11 03:10:03 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:03 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:03 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:03 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UNE321TTLS6NIOW9/fa200442a61c67b85df66d7547de1d15d6ac3b99a3441665d866ea66ac3d0ee0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UNE321TTLS6NIOW9/866471__eFORM1_ChengWK_101125_Final.pdf
+2025-11-11 03:10:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:10:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-11 03:10:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/F73K050MQQF9YLOG/3a88728add87eb7484b76433863e9e08db33756a974ef8d1e373ceda73d23687 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/F73K050MQQF9YLOG/866465__20251110%20-%20Form%206%20-%20CLINTMPL%20-%20Final.pdf
+2025-11-11 03:10:09 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-11 03:10:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ISP4KWKQX6SIFSK5/7b6e88e790f53bc79bf57dbcc260d1b614fed8bd263c7c223c05923d50d3eb80 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ISP4KWKQX6SIFSK5/866450__eFORM1_TWL%20disposed%20of%20shares_4%20to%206%20Nov%2025.pdf
+2025-11-11 03:10:18 [INFO] - page_start: 1
+2025-11-11 03:10:18 [INFO] - Fetching data from API Filings...
+2025-11-11 03:10:18 [INFO] - Response status: 200
+2025-11-11 03:10:18 [WARNING] - WARNING: API returned None
+2025-11-11 03:10:18 [INFO] - No more announcements found — stopping pagination.
+2025-11-11 03:10:30 [INFO] - Fetching data from API Filings...
+2025-11-11 03:10:30 [INFO] - Response status: 200
+2025-11-11 03:10:30 [WARNING] - WARNING: API returned None
+2025-11-11 03:10:30 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-11 03:10:30 [INFO] - [SGX FILINGS] Scraping completed. Total records: 24
+2025-11-11 03:10:31 [INFO] - Length data top_70: 3 | Length data not top_70: 21
+2025-11-11 03:10:31 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-11 03:10:31 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-11 03:10:31 [INFO] - Processing remove duplicate data
+2025-11-11 03:10:31 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-11-11 03:10:31 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-11 03:10:32 [INFO] - Filtering completed. Insertable: 3 | Not insertable: 0
+2025-11-11 03:10:32 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-11 03:10:32 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-11 03:10:32 [INFO] - No SGX filings alerts to send.
+2025-11-11 03:10:32 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_filings
