@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/6AV6TVLF2S1GB0D8/007c788f6e093b0bafe5ecf2a9db61a20677eb64a1e6c35bcb7d751c13bc8be5",
+    "symbol": "U11",
+    "purchase_date": "2025-11-10",
+    "type": "On Market",
+    "start_date": "2025-04-21",
+    "price_per_share": {
+      "highest": 33.86,
+      "lowest": 33.51
+    },
+    "total_value": 8073968.45,
+    "total_shares_purchased": 240000,
+    "cumulative_purchased": 16186400,
+    "treasury_shares_after_purchase": 15243008
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/8ERC9UGS8MM9LV4H/94456e70f4c5e47f0f9cf6b03b3d44cd0075b9fc0d6a33f007bc906bff90d426",
+    "symbol": "BN4",
+    "purchase_date": "2025-11-10",
+    "type": "On Market",
+    "start_date": "2025-04-21",
+    "price_per_share": {
+      "highest": 10.11,
+      "lowest": 10.06
+    },
+    "total_value": 504967.81,
+    "total_shares_purchased": 50000,
+    "cumulative_purchased": 11370000,
+    "treasury_shares_after_purchase": 17062246
+  }
+]
