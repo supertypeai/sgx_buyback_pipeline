@@ -1564,3 +1564,65 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-11 03:12:27 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-11 03:12:27 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-12 03:07:04 [INFO] - Init Global Variable
+2025-11-12 03:07:32 [INFO] - Scraping from None to None...
+2025-11-12 03:07:32 [INFO] - Start scraping from start date: 20251110 to 20251112
+2025-11-12 03:07:32 [INFO] - page_start: 0
+2025-11-12 03:07:32 [INFO] - Fetching data from API Filings...
+2025-11-12 03:07:33 [INFO] - Response status: 200
+2025-11-12 03:07:33 [INFO] - Fetched 5 announcements
+2025-11-12 03:07:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Y7PLB9096VHY6L0H/7a9c24dc0abb5b4c1b78eb7de8d52dbb35c5f3f285fc0327671a776d761d49ba pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Y7PLB9096VHY6L0H/866651__eFORM1-Tan%20Kok%20Huat.pdf
+2025-11-12 03:07:37 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:37 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:37 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:37 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EIO49ML8P65PQ50A/65c73ee1b9c1e1171607f2e8ca07f07dee50c1c5aab324d73bfe376cf75ad3e6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EIO49ML8P65PQ50A/866638__eform3v2_FIL_final-20251110.pdf
+2025-11-12 03:07:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:47 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:07:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-12 03:07:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CNBO7J5A1BQZJ8Y7/37c3728b95ba6c904e86df74ae2d2cd2919fee563c1a5119b4e8fd721fc09c50 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CNBO7J5A1BQZJ8Y7/866595__20251107%20CapitaLand%20India%20Trust%20Aberdeen%20Group%20plc%20Form%203%20Final.pdf
+2025-11-12 03:08:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NFRNBKS1KYVRF16C/deb9809b1adb0b9b6c4ef6adc47a5739efbd19be5b04fb8355fb3a7aed72f5c7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NFRNBKS1KYVRF16C/866588__FORM%203%20-%20UOB.pdf
+2025-11-12 03:08:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EJ4624WSFQQV3RE9/894962c73bb26ec2703736aa366e254bb24e6c62ca794bfcf426b9cbad598414 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EJ4624WSFQQV3RE9/866580__eFORM1_ChengWK_111125_Final.pdf
+2025-11-12 03:08:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:08:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:08:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:08:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-12 03:08:11 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-12 03:08:11 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-12 03:08:19 [INFO] - page_start: 1
+2025-11-12 03:08:19 [INFO] - Fetching data from API Filings...
+2025-11-12 03:08:19 [INFO] - Response status: 200
+2025-11-12 03:08:19 [WARNING] - WARNING: API returned None
+2025-11-12 03:08:19 [INFO] - No more announcements found — stopping pagination.
+2025-11-12 03:08:31 [INFO] - Fetching data from API Filings...
+2025-11-12 03:08:31 [INFO] - Response status: 200
+2025-11-12 03:08:31 [WARNING] - WARNING: API returned None
+2025-11-12 03:08:31 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-12 03:08:31 [INFO] - [SGX FILINGS] Scraping completed. Total records: 14
+2025-11-12 03:08:33 [INFO] - Length data top_70: 0 | Length data not top_70: 14
+2025-11-12 03:08:33 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-12 03:08:33 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-12 03:08:33 [INFO] - Processing remove duplicate data
+2025-11-12 03:08:33 [INFO] - Length data after duplicate removing: 0
+2025-11-12 03:08:33 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-12 03:08:33 [INFO] - No SGX filings data to filter.
+2025-11-12 03:08:33 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-12 03:08:33 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-12 03:08:33 [INFO] - No SGX filings alerts to send.
+2025-11-12 03:08:33 [INFO] - [sgx_payload] is empty, skipping push to DB
