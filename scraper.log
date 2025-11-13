@@ -1653,3 +1653,121 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-12 03:10:09 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-12 03:10:09 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-13 03:09:20 [INFO] - Init Global Variable
+2025-11-13 03:09:54 [INFO] - Scraping from None to None...
+2025-11-13 03:09:54 [INFO] - Start scraping from start date: 20251111 to 20251113
+2025-11-13 03:09:54 [INFO] - page_start: 0
+2025-11-13 03:09:54 [INFO] - Fetching data from API Filings...
+2025-11-13 03:09:55 [INFO] - Response status: 200
+2025-11-13 03:09:55 [INFO] - Fetched 17 announcements
+2025-11-13 03:09:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PJ0UBDU0UO103FFF/4f1e4e1c668ad8886413d43898f116778c1633fa7b28933caa4c0c59f7e1de62 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PJ0UBDU0UO103FFF/866821__Form%206_Disclosure%20of%20Interests%20SEBT.pdf
+2025-11-13 03:09:59 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:05 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/L4K3CG0H839VITZ1/f2b4ca6dd1e1f8c425069f16f8ea5e47a37069eca63ebd2079fd0ea615f6768f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/L4K3CG0H839VITZ1/866816__Form1_HPY.pdf
+2025-11-13 03:10:07 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:07 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:07 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:07 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:07 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/L4K3CG0H839VITZ1/866816__Form1_HPY.pdf: Single record with no share change
+2025-11-13 03:10:07 [INFO] - [SGX FILINGS] Data not valid found for issuer name: FUXING CHINA GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/L4K3CG0H839VITZ1/f2b4ca6dd1e1f8c425069f16f8ea5e47a37069eca63ebd2079fd0ea615f6768f
+2025-11-13 03:10:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C8F0V97FM35RUI8P/f79643a573ee96d3421976f20174cda4eeefbbd710c951d05bbb141a75a97aed pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C8F0V97FM35RUI8P/866814__Form1_HQL.pdf
+2025-11-13 03:10:10 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:10 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:10 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:10 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:10 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/C8F0V97FM35RUI8P/866814__Form1_HQL.pdf: Single record with no share change
+2025-11-13 03:10:10 [INFO] - [SGX FILINGS] Data not valid found for issuer name: FUXING CHINA GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/C8F0V97FM35RUI8P/f79643a573ee96d3421976f20174cda4eeefbbd710c951d05bbb141a75a97aed
+2025-11-13 03:10:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/329ZGCSRQPEDG6VW/e80a1e08653917ce79f3733130c0567f3eeac2638ee2bbec28e9fe8c25d5364a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/329ZGCSRQPEDG6VW/866807__20251112%20-%20XMH_Form%201_TGL.pdf
+2025-11-13 03:10:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KNT6QBYBWTXQYP1Y/af2cc9620629ae03c0fdafa4fafadb32c2c9730b08a1fc5b875efc622d7f9495 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KNT6QBYBWTXQYP1Y/866796__FORM%201.pdf
+2025-11-13 03:10:17 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:17 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:17 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:17 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:17 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-13 03:10:17 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'REFER TO BOX 9 Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-13 03:10:17 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'REFER TO BOX 9 Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-13 03:10:17 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-13 03:10:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TF7J0XUVPYIKI607/ceb2a588a13c13aa0b42d235bd0b7fedc942010abe83bbf4e92e440d91f6a8a0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TF7J0XUVPYIKI607/866791__FORM%203.pdf
+2025-11-13 03:10:21 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-13 03:10:21 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:21 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-13 03:10:21 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/TF7J0XUVPYIKI607/866791__FORM%203.pdf: Multiple shareholders with identical share data
+2025-11-13 03:10:21 [INFO] - [SGX FILINGS] Data not valid found for issuer name: AIMS APAC REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/TF7J0XUVPYIKI607/ceb2a588a13c13aa0b42d235bd0b7fedc942010abe83bbf4e92e440d91f6a8a0
+2025-11-13 03:10:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/L084AGJXIKCQUC1D/afa57187e2126e1b8a8c68210bd50fabb6443e726bebf7db2cebc9fa59a9f1ca pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/L084AGJXIKCQUC1D/866784__FORM6.pdf
+2025-11-13 03:10:23 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:25 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7S6VNGFFD50ZT46Z/d96ea9c18d628506cbb4f751bd45e4a57f7941485c8979e2109bea5d4a097c65 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7S6VNGFFD50ZT46Z/866775__Form%201_%20Yeoh%20Oon%20Jin.pdf
+2025-11-13 03:10:27 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:27 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:27 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:27 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CJMB79N6SI61O0U6/b5340816559d0671e8f89dc31c37c50ddf771f745957da55f74b33680dc471af pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CJMB79N6SI61O0U6/866772__Form%201_Tony%20_12%20Nov%202025.pdf
+2025-11-13 03:10:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-13 03:10:31 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'On 12 November 2025, 300,000 shares were returned to the Director under the securities borrowing and lending agreement. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-13 03:10:31 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/CJMB79N6SI61O0U6/866772__Form%201_Tony%20_12%20Nov%202025.pdf: Single record with no share change
+2025-11-13 03:10:31 [INFO] - [SGX FILINGS] Data not valid found for issuer name: PC PARTNER GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/CJMB79N6SI61O0U6/b5340816559d0671e8f89dc31c37c50ddf771f745957da55f74b33680dc471af
+2025-11-13 03:10:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/L27MZDCKIOR5Y01P/b2ed1e07eb398de67f3e1135e2a67de26430e194b6765fecdf8bf9886fb2c180 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/L27MZDCKIOR5Y01P/866768__Form%201_Samuel%20Tsien.pdf
+2025-11-13 03:10:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:33 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:40 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OO3E3BIZKMTHIZV8/ce2cee95500933e28f39050685863f520d1dc2c8b41ad4b48a0f49ff2b91c682 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OO3E3BIZKMTHIZV8/866764__Form%201_Datuk%20Maimoonah%20Binte%20Mohamed%20Hussain.pdf
+2025-11-13 03:10:42 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:42 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:42 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:42 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:47 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AHTASKLIKCBSVCYL/3e70c48a789c2c9680d0f970eaf90298caf7e8d713c17a707dfd1bd837d0f1fd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AHTASKLIKCBSVCYL/866760__Form%201_Lin%20Huey%20Ru.pdf
+2025-11-13 03:10:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5DVL8PLB5FJA4SYC/869d64290372db6cc790af5e82a9065ca42d5c801303e027766737500f445e91 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5DVL8PLB5FJA4SYC/866746__Form%201_%20Lim%20Chin%20Hu.pdf
+2025-11-13 03:10:55 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:55 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:55 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:10:55 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9ZH4IVUKQXXOKPNZ/1393a6aa683f824de2743922f58d5c5dcc6673f85a37aab55cbdace80535b2c0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9ZH4IVUKQXXOKPNZ/866742__Form%201_Stuart%20Wilson%20Lewis.pdf
+2025-11-13 03:11:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5HC1BG0GOW8FTFNY/4cbbc7f00f0db6d815555a066ff40ae49a826029a9470acbce120af05361b489 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5HC1BG0GOW8FTFNY/866740__Form%201_Koh%20Boon%20Hwee.pdf
+2025-11-13 03:11:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:11 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/G5H235HQJ72W4JLY/ad0214199271e4f98f9a7852df0f2c202f2d586bf5e11edf49062cef14b6171d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/G5H235HQJ72W4JLY/866734__Form%201_Julie%20Gao.pdf
+2025-11-13 03:11:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:18 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:25 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3RG7V073QYGJN5JU/15b29d4e1ba00d937d927864c73fbc778b46f66827c5a935bd22e57fd752cc1c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3RG7V073QYGJN5JU/866725__eFORM1_ChengWK_121125_Final.pdf
+2025-11-13 03:11:28 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:28 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:28 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:28 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-13 03:11:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-13 03:11:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-13 03:11:36 [INFO] - page_start: 1
+2025-11-13 03:11:36 [INFO] - Fetching data from API Filings...
+2025-11-13 03:11:37 [INFO] - Response status: 200
+2025-11-13 03:11:37 [WARNING] - WARNING: API returned None
+2025-11-13 03:11:37 [INFO] - No more announcements found — stopping pagination.
+2025-11-13 03:11:50 [INFO] - Fetching data from API Filings...
+2025-11-13 03:11:50 [INFO] - Response status: 200
+2025-11-13 03:11:50 [WARNING] - WARNING: API returned None
+2025-11-13 03:11:50 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-13 03:11:50 [INFO] - [SGX FILINGS] Scraping completed. Total records: 14
+2025-11-13 03:11:52 [INFO] - Length data top_70: 8 | Length data not top_70: 6
+2025-11-13 03:11:52 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-13 03:11:52 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-13 03:11:52 [INFO] - Processing remove duplicate data
+2025-11-13 03:11:52 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-11-13 03:11:52 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-13 03:11:52 [INFO] - Filtering completed. Insertable: 8 | Not insertable: 0
+2025-11-13 03:11:52 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-13 03:11:52 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-13 03:11:52 [INFO] - No SGX filings alerts to send.
+2025-11-13 03:11:52 [INFO] - [sgx_payload] Successfully pushed 8 records to DB, table: sgx_filings
