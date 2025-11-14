@@ -1798,3 +1798,99 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-13 03:13:36 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-13 03:13:37 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-14 03:07:44 [INFO] - Init Global Variable
+2025-11-14 03:08:17 [INFO] - Scraping from None to None...
+2025-11-14 03:08:17 [INFO] - Start scraping from start date: 20251112 to 20251114
+2025-11-14 03:08:17 [INFO] - page_start: 0
+2025-11-14 03:08:17 [INFO] - Fetching data from API Filings...
+2025-11-14 03:08:17 [INFO] - Response status: 200
+2025-11-14 03:08:17 [INFO] - Fetched 12 announcements
+2025-11-14 03:08:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/N5H4SA4OIPUOME7H/88f816c5d163d51ef652cad50d4bf85aee81b822aedcc9785f221b7c4dc2f7e9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/N5H4SA4OIPUOME7H/867052__Form%206_FLCAM.pdf
+2025-11-14 03:08:21 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The REIT Manager has announced the issuance of 9,973,861 Units payable to FLCAM as payment of 100% of the base management fees and 47.9% of the performance management fees in respect of FLCT, FCOT and FS1T and 2,604,587 Units payable to FLT Australia Management, a wholly-owned subsidiary of FLCAM, as payment of 100% of base  and 74.7% of performance fees in respect of the HAUT. Each of FLCAM and FLT Australia Management has nominated FPITH II to receive the Units payable to it and has received cash in consideration for such nomination. Table 1. Change in respect of  ordinary voting units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total 29,174,068 2,604,587 31,778,655'
+2025-11-14 03:08:27 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NXCFY5710SZJ6HHO/9388ba17611118a89f24e9e17c8f8535b1c718a94a63ffebcae03198afc5a6ed pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NXCFY5710SZJ6HHO/867032__Form%203_KM%20TKC%20PN_final.pdf
+2025-11-14 03:08:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-14 03:08:29 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-14 03:08:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-14 03:08:29 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/NXCFY5710SZJ6HHO/867032__Form%203_KM%20TKC%20PN_final.pdf: Multiple shareholders with identical share data
+2025-11-14 03:08:29 [INFO] - [SGX FILINGS] Data not valid found for issuer name: JUMBO GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/NXCFY5710SZJ6HHO/9388ba17611118a89f24e9e17c8f8535b1c718a94a63ffebcae03198afc5a6ed
+2025-11-14 03:08:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HZB4FED4JW2DUZPD/3755fa4b1fcc87611fd438b509041cb649b62dc0895f3e3a073d4b37137e0e7d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HZB4FED4JW2DUZPD/867024__Form%201%20Ooi%20Shu%20Geok.pdf
+2025-11-14 03:08:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:31 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DRR9VEKY9SNB79KK/7332e667ba5fcf0a959de11c374e6453cd443c8ffb568fc1af74f0f3f951c8a6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DRR9VEKY9SNB79KK/867022__eFORM1V2-Chong%20Eng%20Wee.pdf
+2025-11-14 03:08:38 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:38 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:38 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:38 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4IHPTAQHJGJEZAFB/b90f62ea64e24a68d5e1365f1037a53e5245e775ad2ce42f942a0291a2be8416 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4IHPTAQHJGJEZAFB/867019__Form%201%20Chong%20Moi%20Me.pdf
+2025-11-14 03:08:45 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:45 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:45 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:45 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:45 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:45 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BTWTEROFNOWXLKGU/fd2fb96c3f7d31d0c1fe9be97ab04b05e3143b122340bf3f4ec4ac1624e13816 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BTWTEROFNOWXLKGU/867017__eFORM1V2-Tan%20Lye%20Heng%20Paul.pdf
+2025-11-14 03:08:51 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:51 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:51 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:51 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KGARDL1MMO3Z1XC4/a3246d1a37d591bcbf6bc553db753d76c7f87a0355ab68a29d7216dd6c492754 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KGARDL1MMO3Z1XC4/867015__eFORM1V2-Dr%20Toh%20Lim%20Kai.pdf
+2025-11-14 03:08:57 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:57 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:57 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:57 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:08:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:08:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:09:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/G1CXB4BOEU66EP2P/debde4f7d55d3ca571463c8b60f01865f6c7c0c4e91284c049e7269cc3e11631 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/G1CXB4BOEU66EP2P/867013__eFORM1V2-Dr%20Zhang%20Jian.pdf
+2025-11-14 03:09:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:04 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:09:04 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/G1CXB4BOEU66EP2P/867013__eFORM1V2-Dr%20Zhang%20Jian.pdf: Single record with no share change
+2025-11-14 03:09:04 [INFO] - [SGX FILINGS] Data not valid found for issuer name: AJJ MEDTECH HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/G1CXB4BOEU66EP2P/debde4f7d55d3ca571463c8b60f01865f6c7c0c4e91284c049e7269cc3e11631
+2025-11-14 03:09:05 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TD45G3QMUNWJ4NV5/a43e8c18795d07d8c2089ae1892ab5ec958d3f4947cb8132a9ae4653cb0ede3b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TD45G3QMUNWJ4NV5/867011__eFORM1V2-Zhao%20Xin.pdf
+2025-11-14 03:09:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:06 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:09:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:09:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GPVK4736XHSQMTGT/d0073f0eac0866b6c910b05b20fc175b6e475ea6493d3d321de8e638cb67bc5b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GPVK4736XHSQMTGT/866962__eFORM3V2%20-%20Tian%20Yuan%20-%20Final.pdf
+2025-11-14 03:09:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/N1ZUJSEME9XXO28P/3a681abbd59c6ccc8010f8fcc3b0160cdd7388967c92869467931f2e40a5a3b8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/N1ZUJSEME9XXO28P/866950__eFORM3V2_Dr%20Ong.pdf
+2025-11-14 03:09:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZWB1PNY4D9GL5YE8/08ec77f835e74c338824f971a5ad7fed0535a4ac014d34fc56e090412d5f09e0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZWB1PNY4D9GL5YE8/866944__eFORM1_ChengWK_131125_Final.pdf
+2025-11-14 03:09:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-14 03:09:22 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:09:22 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-14 03:09:31 [INFO] - page_start: 1
+2025-11-14 03:09:31 [INFO] - Fetching data from API Filings...
+2025-11-14 03:09:32 [INFO] - Response status: 200
+2025-11-14 03:09:32 [WARNING] - WARNING: API returned None
+2025-11-14 03:09:32 [INFO] - No more announcements found — stopping pagination.
+2025-11-14 03:09:44 [INFO] - Fetching data from API Filings...
+2025-11-14 03:09:44 [INFO] - Response status: 200
+2025-11-14 03:09:44 [WARNING] - WARNING: API returned None
+2025-11-14 03:09:44 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-14 03:09:44 [INFO] - [SGX FILINGS] Scraping completed. Total records: 12
+2025-11-14 03:09:45 [INFO] - Length data top_70: 2 | Length data not top_70: 10
+2025-11-14 03:09:45 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-14 03:09:45 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-14 03:09:45 [INFO] - Processing remove duplicate data
+2025-11-14 03:09:45 [INFO] - Length data after duplicate removing: 2
+2025-11-14 03:09:45 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-14 03:09:46 [INFO] - Filtering completed. Insertable: 2 | Not insertable: 0
+2025-11-14 03:09:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-14 03:09:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-14 03:09:46 [INFO] - No SGX filings alerts to send.
+2025-11-14 03:09:46 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_filings
