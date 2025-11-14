@@ -1798,6 +1798,7 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-13 03:13:36 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-13 03:13:37 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 2025-11-14 03:07:44 [INFO] - Init Global Variable
 2025-11-14 03:08:17 [INFO] - Scraping from None to None...
 2025-11-14 03:08:17 [INFO] - Start scraping from start date: 20251112 to 20251114
@@ -1894,3 +1895,29 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-14 03:09:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2025-11-14 03:09:46 [INFO] - No SGX filings alerts to send.
 2025-11-14 03:09:46 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_filings
+=======
+2025-11-14 03:10:21 [INFO] - Init Global Variable
+2025-11-14 03:10:56 [INFO] - Scraping from None to None...
+2025-11-14 03:10:56 [INFO] - Start scraping from start date: 20251112 to 20251114
+2025-11-14 03:10:56 [INFO] - page_start: 0
+2025-11-14 03:10:56 [INFO] - Fetching data from API Buybacks...
+2025-11-14 03:10:56 [INFO] - Response status: 200
+2025-11-14 03:10:56 [INFO] - Fetched 12 announcements
+2025-11-14 03:11:49 [INFO] - page_start: 1
+2025-11-14 03:11:49 [INFO] - Fetching data from API Buybacks...
+2025-11-14 03:11:50 [INFO] - Response status: 200
+2025-11-14 03:11:50 [WARNING] - WARNING: API returned None
+2025-11-14 03:11:50 [INFO] - No more announcements found — stopping pagination.
+2025-11-14 03:12:01 [INFO] - Fetching data from API Buybacks...
+2025-11-14 03:12:01 [INFO] - Response status: 200
+2025-11-14 03:12:01 [WARNING] - WARNING: API returned None
+2025-11-14 03:12:01 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-14 03:12:01 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 12
+2025-11-14 03:12:02 [INFO] - Length data top_70: 4 | Length data not top_70: 8
+2025-11-14 03:12:02 [INFO] - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2025-11-14 03:12:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-11-14 03:12:02 [INFO] - Processing remove duplicate data
+2025-11-14 03:12:02 [INFO] - Length data after duplicate removing: 4
+2025-11-14 03:12:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-11-14 03:12:02 [INFO] - [sgx_payload] Successfully pushed 4 records to DB, table: sgx_buybacks
+>>>>>>> Stashed changes
