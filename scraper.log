@@ -1921,3 +1921,27 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-14 03:12:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-14 03:12:02 [INFO] - [sgx_payload] Successfully pushed 4 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-15 03:02:56 [INFO] - Init Global Variable
+2025-11-15 03:03:22 [INFO] - Scraping from None to None...
+2025-11-15 03:03:22 [INFO] - Start scraping from start date: 20251113 to 20251115
+2025-11-15 03:03:22 [INFO] - page_start: 0
+2025-11-15 03:03:22 [INFO] - Fetching data from API Buybacks...
+2025-11-15 03:03:22 [INFO] - Response status: 200
+2025-11-15 03:03:22 [INFO] - Fetched 5 announcements
+2025-11-15 03:03:47 [INFO] - page_start: 1
+2025-11-15 03:03:47 [INFO] - Fetching data from API Buybacks...
+2025-11-15 03:03:48 [INFO] - Response status: 200
+2025-11-15 03:03:48 [WARNING] - WARNING: API returned None
+2025-11-15 03:03:48 [INFO] - No more announcements found — stopping pagination.
+2025-11-15 03:04:01 [INFO] - Fetching data from API Buybacks...
+2025-11-15 03:04:01 [INFO] - Response status: 200
+2025-11-15 03:04:01 [WARNING] - WARNING: API returned None
+2025-11-15 03:04:01 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-15 03:04:01 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 5
+2025-11-15 03:04:02 [INFO] - Length data top_70: 3 | Length data not top_70: 2
+2025-11-15 03:04:02 [INFO] - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2025-11-15 03:04:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-11-15 03:04:02 [INFO] - Processing remove duplicate data
+2025-11-15 03:04:02 [INFO] - Length data after duplicate removing: 3
+2025-11-15 03:04:02 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-11-15 03:04:03 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
