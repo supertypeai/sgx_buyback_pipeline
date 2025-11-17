@@ -6,6 +6,8 @@ from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     build_transaction_type, 
     build_price_per_share, 
     build_value,
+    # build_shareholder_name_transfer,
+    shares_percentage_to_decimal,
     safe_convert_float
 )
 from sgx_scraper.utils.sgx_parser_helper import (
@@ -280,15 +282,17 @@ def build_individual_share_record(pdf_object: pdfplumber.PDF, page_number: int, 
 
     shares_before = safe_convert_float(shares_before_raw.get("total_shares"))
     shares_before_percentage = safe_convert_float(shares_before_raw.get("percentage"))
+    shares_before_decimal = shares_percentage_to_decimal(shares_before_percentage)
 
     shares_after = safe_convert_float(shares_after_raw.get("total_shares"))
     shares_after_percentage = safe_convert_float(shares_after_raw.get("percentage"))
+    shares_after_decimal = shares_percentage_to_decimal(shares_after_percentage)
 
     return {
         "shares_before": shares_before,
-        "shares_before_percentage": shares_before_percentage,
+        "shares_before_percentage": shares_before_decimal,
         "shares_after": shares_after,
-        "shares_after_percentage": shares_after_percentage,
+        "shares_after_percentage": shares_after_decimal,
     }
 
 
@@ -345,9 +349,11 @@ def apply_fallback_for_multiple_shareholder(all_records: list[dict], doc_fitz: f
                     'value': value,
                     'price_per_share': price_per_share
                 })
+
     except Exception as error:
         LOGGER.error(f"[apply_fallback_for_multiple_shareholder] Error in fallback for multiple shareholders: {error}")
-
+        return None 
+    
 
 def extract_symbol_fallback(doc_fits: fitz.Document, start_page: int = 1, end_page: int = 4) -> str:
     pdf_text = parse_pdf(doc_fits, end_page=end_page, start_page=start_page)
@@ -517,7 +523,7 @@ def extract_transaction_details(
     pdf_object: pdfplumber.PDF, 
     page_number: int, 
     bbox: tuple
-) -> list[dict] | None:
+) -> tuple[list[dict], bool]:
     try:
         base_details = {
             "transaction_date": None,
@@ -637,6 +643,11 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
                 )
                 transaction_type = build_transaction_type(circumstance_interest_raw)
                 
+                # Special case shareholder name if transaction type is transfer
+                # if transaction_type == 'transfer':
+                #     shareholder_name = build_shareholder_name_transfer(circumstance_interest_raw) 
+                #     # pass 
+
                 for transaction_detail in transaction_details:
                     final_record = {
                         'shareholder_name': shareholder_name if shareholder_name else None,
@@ -747,12 +758,13 @@ if __name__ == '__main__':
     test_one_name_multiple_shareholder = 'https://links.sgx.com/1.0.0/corporate-announcements/07KOA264E5YBKSP7/59c7b3af10cf9d7ec43bb98a405d2959cce4a0f956347332522f4ab342f96967'
     multiples = 'https://links.sgx.com/1.0.0/corporate-announcements/UQETVC6UVOBCI39D/c7d80525b311a0e0134c87602df7c340edbfd5468b271338eee4cba6812b347f'
     failed = 'https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19'
+    test = 'https://links.sgx.com/1.0.0/corporate-announcements/YTBTYESAL1QHRHCN/46cec123919234a2fa4b360b97f767da81b5ab08822e9b9b886cdfbf2cb23fdb'
 
-    result_sgx_filing = get_sgx_filings(test_one_name_multiple_shareholder)
+    result_sgx_filing = get_sgx_filings(test)
 
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:
     #     for result in result_sgx_filing:
     #         print(json.dumps(asdict(result), indent=2))
 
-    # uv run -m src.fetch_sgx_filings.parser_sgx_filings
+    # uv run -m sgx_scraper.fetch_sgx_filings.parser_sgx_filings

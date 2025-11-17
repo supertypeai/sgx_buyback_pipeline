@@ -77,8 +77,18 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
         LOGGER.info(f'[sgx_filings] is empty, skipping clean payload')
         return []
 
+    cleaned_payload = []
+
     for row in payload:
         shareholder_name = row.get('shareholder_name')
+        price_per_share = row.get('price_per_share')
+        number_of_stock = row.get('number_of_stock')
+        value = row.get('value')
+
+        if not (price_per_share and number_of_stock and value):
+            LOGGER.info(f'Dropping row with missing values:\n{json.dumps(row, indent=2)}')
+            continue
+
         if shareholder_name.isupper():
             row['shareholder_name'] = shareholder_name.title()
 
@@ -93,8 +103,10 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
                 except (ValueError, TypeError):
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
-    
-    return payload 
+        
+        cleaned_payload.append(row)
+
+    return cleaned_payload 
 
 
 def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:

@@ -150,7 +150,21 @@ def safe_round(value, context="", digits=4):
     except Exception as error:
         LOGGER.error(f"[safe_round] Rounding failed for {value} {context}: {error}")
         return None
+
+
+def shares_percentage_to_decimal(share_percentage: float) -> float:
+    try:
+        if share_percentage is None or share_percentage == "":
+            return None
+        
+        decimal_share_before = float(share_percentage) / 100
+        decimal_share_before = float(f"{decimal_share_before:.5f}")
+        return decimal_share_before
     
+    except ValueError as error:
+        LOGGER.error(f"[shares_percentage_to_decimal] Error: {error}")
+        return None 
+
 
 def build_value(raw_value: str, number_of_stock: float) -> float | None:
     print(f"[build_value] Input - raw_value: {raw_value}, number_of_stock: {number_of_stock}")
@@ -282,7 +296,7 @@ def get_circumstance_interest(circumstance_interest: dict[str, any]) -> dict[str
         return None 
 
 
-def get_transaction_type_from_desc(description: str) -> str:
+def get_transaction_type_from_desc(description: str) -> str: #value: float | None) -> str:
     try:
         if not description:
             LOGGER.info(f'[get_transaction_type_from_desc] description is None')
@@ -295,6 +309,10 @@ def get_transaction_type_from_desc(description: str) -> str:
             if any(value.lower() in desc_lower for value in values)),
             None
         )
+        
+        # if transaction_type == 'transfer' and value is not None:
+        #     LOGGER.info(f'[get_transaction_type_from_desc] transfer ignore due to value is not None')
+        #     return None 
 
         if not transaction_type:
             LOGGER.warning(f"[get_transaction_type_from_desc] No keywords matched for description: '{description}'")
@@ -306,8 +324,15 @@ def get_transaction_type_from_desc(description: str) -> str:
         return None
 
 
-def build_transaction_type(circumstance_interest_raw: dict[str, any]) -> str:
+def build_transaction_type(
+    circumstance_interest_raw: dict[str, any],
+    # transaction_details: list[dict[str, any]]
+) -> str:
     try:
+        # get total value 
+        # value = [value_detail.get('value', None) for value_detail in transaction_details]  
+        # value = value[0]
+
         circumstance_interest = circumstance_interest_raw.get('results')
         circumstance_interest = get_circumstance_interest(circumstance_interest)
     
@@ -334,3 +359,15 @@ def build_transaction_type(circumstance_interest_raw: dict[str, any]) -> str:
         LOGGER.error(f"[build_transaction_type] Error: {error}")
         return None
                 
+
+# def build_shareholder_name_transfer(
+#     circumstance_interest_raw: dict[str, any],
+# ):
+#     try:
+#         circumstance_interest = circumstance_interest_raw.get('results')
+#         circumstance_interest = get_circumstance_interest(circumstance_interest)
+#         description = circumstance_interest.get('description', None)
+
+
+#     except Exception as error:
+#         pass 
