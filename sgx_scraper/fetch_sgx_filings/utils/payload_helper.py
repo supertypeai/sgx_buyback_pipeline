@@ -1,3 +1,5 @@
+from typing import Optional
+
 from sgx_scraper.fetch_sgx_filings.utils.converter_helper import get_latest_currency, calculate_currency_to_sgd
 from sgx_scraper.config.settings import LOGGER
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
@@ -296,7 +298,7 @@ def get_circumstance_interest(circumstance_interest: dict[str, any]) -> dict[str
         return None 
 
 
-def get_transaction_type_from_desc(description: str) -> str: #value: float | None) -> str:
+def get_transaction_type_from_desc(description: str, value: float | None) -> str:
     try:
         if not description:
             LOGGER.info(f'[get_transaction_type_from_desc] description is None')
@@ -310,9 +312,9 @@ def get_transaction_type_from_desc(description: str) -> str: #value: float | Non
             None
         )
         
-        # if transaction_type == 'transfer' and value is not None:
-        #     LOGGER.info(f'[get_transaction_type_from_desc] transfer ignore due to value is not None')
-        #     return None 
+        if transaction_type == 'transfer' and value is not None:
+            LOGGER.info(f'[get_transaction_type_from_desc] transfer ignore due to value is not None')
+            return None 
 
         if not transaction_type:
             LOGGER.warning(f"[get_transaction_type_from_desc] No keywords matched for description: '{description}'")
@@ -326,16 +328,20 @@ def get_transaction_type_from_desc(description: str) -> str: #value: float | Non
 
 def build_transaction_type(
     circumstance_interest_raw: dict[str, any],
-    # transaction_details: list[dict[str, any]]
+    transaction_details: list[dict[str, any]] | float
 ) -> str:
     try:
         # get total value 
-        # value = [value_detail.get('value', None) for value_detail in transaction_details]  
-        # value = value[0]
+        if isinstance(transaction_details, list):
+            value = [value_detail.get('value', None) for value_detail in transaction_details]  
+            value = value[0]
+        else:
+            value = transaction_details 
 
         circumstance_interest = circumstance_interest_raw.get('results')
         circumstance_interest = get_circumstance_interest(circumstance_interest)
-    
+        print(f'\ncircumstance_interest processed: {circumstance_interest}')
+
         transaction_type = None 
         key = circumstance_interest.get('key')
         checked = circumstance_interest.get('checked')
@@ -344,7 +350,7 @@ def build_transaction_type(
         if checked:
             if key == 'others_specify':
                 description = circumstance_interest.get('description', None)
-                transaction_type = get_transaction_type_from_desc(description)
+                transaction_type = get_transaction_type_from_desc(description, value)
             elif key == 'acquisition':
                 transaction_type = 'buy'
             elif key == 'disposal':
@@ -356,18 +362,94 @@ def build_transaction_type(
         return transaction_type
 
     except Exception as error:
-        LOGGER.error(f"[build_transaction_type] Error: {error}")
+        LOGGER.error(f"[build_transaction_type] Error: {error}", exc_info=True)
         return None
                 
 
-# def build_shareholder_name_transfer(
-#     circumstance_interest_raw: dict[str, any],
-# ):
-#     try:
-#         circumstance_interest = circumstance_interest_raw.get('results')
-#         circumstance_interest = get_circumstance_interest(circumstance_interest)
-#         description = circumstance_interest.get('description', None)
+def build_shareholder_name_transfer(
+    circumstance_interest_raw: dict[str, any],
+    shareholder_name: str
+) -> str:
+    try:
+        circumstance_interest = circumstance_interest_raw.get('results')
+        circumstance_interest = get_circumstance_interest(circumstance_interest)
+        description = circumstance_interest.get('description', None)
 
+        print(f'\ndescription for transfer: {description}, shareholder name: {shareholder_name}') 
 
-#     except Exception as error:
-#         pass 
+        if not description:
+            return shareholder_name 
+        
+        description_lower = description.lower().strip()
+
+        # Matches: "treasury shares" or "transfer of treasury shares"
+        if re.search(r'treasury\s+shares?', description_lower):
+            return f"Company Treasury [->] {shareholder_name}"
+        
+        # Matches: "Tan Sri Datuk Tiong Su Kouk transfer 7,900,000 ordinary shares to his family member"
+        name_first_pattern = r'^([A-Z][a-zA-Z\s\.\,]+?)\s+transfer(?:red)?\s+[\d,]+\s+(?:ordinary\s+)?shares?\s+to\s+(?:his|her|their)?\s*(.+?)(?:\.|$)'
+        match = re.search(name_first_pattern, description)
+        
+        if match:
+            from_person = match.group(1).strip()
+            to_person = match.group(2).strip()
+            
+            # Keep the original "to_person" text (like "family member")
+            return f"{from_person} [->] {to_person}"
+        
+        # Matches: "from Mr John to Mr Smith", "by Mr John to his son Mr Smith"
+        from_to_pattern = r'(?:from|by)\s+([^,]+?)\s+to\s+(?:his|her|their)?\s*(?:son|daughter|spouse|wife|husband|child|children|family|relative)?\s*,?\s*([^,\.]+?)(?:\s+by\s+way|,|\.|\s+pursuant|\s+under)'
+        match = re.search(from_to_pattern, description, re.IGNORECASE)
+        
+        if match:
+            from_person = match.group(1).strip()
+            to_person = match.group(2).strip()
+            
+            # Clean up common prefixes/titles (but keep honorifics)
+            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', from_person, flags=re.IGNORECASE).strip()
+            to_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', to_person, flags=re.IGNORECASE).strip()
+            
+            return f"{from_person} [->] {to_person}"
+        
+        # Matches: "Transfer of 35,000,000 shares by Mr Goh Kim San to his son, Mr Goh Yi Shun, Joshua"
+        transfer_by_to_pattern = r'transfer\s+of\s+[\d,]+\s+shares?\s+by\s+([^,]+?)\s+to\s+(?:his|her|their)?\s*(?:son|daughter|spouse|wife|husband|child|children|family|relative)?\s*,?\s*([^,\.]+?)(?:\s+by\s+way|,|\.|\s+pursuant|\s+under)'
+        match = re.search(transfer_by_to_pattern, description, re.IGNORECASE)
+        
+        if match:
+            from_person = match.group(1).strip()
+            to_person = match.group(2).strip()
+            
+            # Clean up
+            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', from_person, flags=re.IGNORECASE).strip()
+            to_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', to_person, flags=re.IGNORECASE).strip()
+            
+            return f"{from_person} [->] {to_person}"
+        
+        # Matches: "John transferred to Smith", "shares by John to Smith"
+        transfer_pattern = r'(?:shares?\s+)?(?:transferred\s+)?(?:by\s+)?([A-Z][a-zA-Z\s\.]+?)\s+to\s+([A-Z][a-zA-Z\s\.]+?)(?:\s+by\s+way|,|\.|\s+pursuant|\s+under)'
+        match = re.search(transfer_pattern, description)
+        
+        if match:
+            from_person = match.group(1).strip()
+            to_person = match.group(2).strip()
+            
+            # Clean up
+            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', from_person, flags=re.IGNORECASE).strip()
+            to_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', to_person, flags=re.IGNORECASE).strip()
+            
+            return f"{from_person} [->] {to_person}"
+        
+        # Matches: "transfer from Company" -> "Company [->] shareholder_name"
+        from_pattern = r'transfer\s+(?:of\s+shares?\s+)?from\s+([^,\.]+?)(?:\s+to\s+me|,|\.)'
+        match = re.search(from_pattern, description, re.IGNORECASE)
+        
+        if match:
+            from_person = match.group(1).strip()
+            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor|the)\s+', '', from_person, flags=re.IGNORECASE).strip()
+            return f"{from_person} [->] {shareholder_name}"
+        
+        return None
+
+    except Exception as error:
+        LOGGER.error(f"[build_shareholder_name_transfer] Error: {error}")
+        return None 

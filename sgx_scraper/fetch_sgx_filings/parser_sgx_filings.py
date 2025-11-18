@@ -6,7 +6,7 @@ from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     build_transaction_type, 
     build_price_per_share, 
     build_value,
-    # build_shareholder_name_transfer,
+    build_shareholder_name_transfer,
     shares_percentage_to_decimal,
     safe_convert_float
 )
@@ -142,7 +142,6 @@ def extract_date(text: str) -> str | None:
         if match:
             return match.group(1)
         else:
-            LOGGER.warning(f"[sgx_filings] Date of acquisition not found")
             return None
         
     except Exception as error:
@@ -305,7 +304,7 @@ def fallback_extract_transaction_detail(
     date = transaction_date
     if not date:
         date = safe_convert_datetime(extract_date(page_text))
-    
+
     raw_number_of_stock = extract_number_of_stock(page_text)
     number_of_stock = safe_convert_float(raw_number_of_stock)
     
@@ -321,9 +320,9 @@ def apply_fallback_for_multiple_shareholder(all_records: list[dict], doc_fitz: f
     circumstance_interest_raw = extract_checkbox_fallback(
         doc_fitz, r"Circumstance giving rise to.*?interest"
     )
-    fallback_transaction_type = build_transaction_type(circumstance_interest_raw)
 
     pdf_text = parse_pdf(doc_fitz)
+    logged = False
 
     try:
         for record in all_records:
@@ -331,7 +330,12 @@ def apply_fallback_for_multiple_shareholder(all_records: list[dict], doc_fitz: f
             number_of_stock = record.get('number_of_stock')
             value = record.get('value')
 
-            if not transaction_type or not number_of_stock or not value:
+            if not transaction_type and not number_of_stock and not value:
+                # Log only once 
+                if not logged:
+                    LOGGER.info(f'Processing fallback for multiple shareholders with one transaction')
+                    logged = True 
+
                 # Number of stock
                 raw_number_of_stock = extract_number_of_stock(pdf_text)
                 number_of_stock = safe_convert_float(raw_number_of_stock)
@@ -339,6 +343,9 @@ def apply_fallback_for_multiple_shareholder(all_records: list[dict], doc_fitz: f
                 # Value
                 raw_value = extract_value(pdf_text)
                 value = build_value(raw_value, number_of_stock)
+
+                # Transaction type
+                fallback_transaction_type = build_transaction_type(circumstance_interest_raw, value)
 
                 # Price per share
                 price_per_share = build_price_per_share(raw_value, number_of_stock)
@@ -641,12 +648,17 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
                     shareholder_section['page_number'],
                     shareholder_section['bbox']
                 )
-                transaction_type = build_transaction_type(circumstance_interest_raw)
+                print(f'\nraw circumstance interest: {circumstance_interest_raw}')
+                transaction_type = build_transaction_type(circumstance_interest_raw, transaction_details)
                 
                 # Special case shareholder name if transaction type is transfer
-                # if transaction_type == 'transfer':
-                #     shareholder_name = build_shareholder_name_transfer(circumstance_interest_raw) 
-                #     # pass 
+                if transaction_type == 'transfer':
+                    original_shareholder_name = shareholder_name
+                    shareholder_name = build_shareholder_name_transfer(circumstance_interest_raw, shareholder_name) 
+
+                    # Log transformation 
+                    if shareholder_name != original_shareholder_name:
+                        LOGGER.info(f'Transfer detected - transformed shareholder: {original_shareholder_name} -> {shareholder_name}')
 
                 for transaction_detail in transaction_details:
                     final_record = {
@@ -665,18 +677,22 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
                         LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Single record with no share change")
                         return None 
 
-                if all_records and len(all_records) > 1:
-                    seen_share_data = set()
-                    for record in all_records:
-                        share_data = (
-                            record.get('shares_before'),
-                            record.get('shares_after')
-                        )
-                        seen_share_data.add(share_data)
+                if all(record.get('shares_before') == record.get('shares_after') for record in all_records):
+                    LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: All transactions have no share change")
+                    return None
+
+                # if all_records and len(all_records) > 1:
+                #     seen_share_data = set()
+                #     for record in all_records:
+                #         share_data = (
+                #             record.get('shares_before'),
+                #             record.get('shares_after')
+                #         )
+                #         seen_share_data.add(share_data)
                     
-                    if len(seen_share_data) == 1:
-                        LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Multiple shareholders with identical share data")
-                        return None
+                #     if len(seen_share_data) == 1:
+                #         LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Multiple shareholders with identical share data")
+                #         return None
 
             return all_records
 
@@ -759,8 +775,11 @@ if __name__ == '__main__':
     multiples = 'https://links.sgx.com/1.0.0/corporate-announcements/UQETVC6UVOBCI39D/c7d80525b311a0e0134c87602df7c340edbfd5468b271338eee4cba6812b347f'
     failed = 'https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19'
     test = 'https://links.sgx.com/1.0.0/corporate-announcements/YTBTYESAL1QHRHCN/46cec123919234a2fa4b360b97f767da81b5ab08822e9b9b886cdfbf2cb23fdb'
+    double = 'https://links.sgx.com/1.0.0/corporate-announcements/4L30DFCB3DFLCMNP/1b96579fa316d719251bdcab545fef62e112faf1fd8a5a6a847ab6a279c557f6'
+    test_pdf = 'https://links.sgx.com/FileOpen/_Form%206_FLCAM.ashx?App=Announcement&FileID=867052'
+    duplicate = 'https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/c2c6966fb8ed3562b3d5b3736c96d1b21837954db7ec864a101cb1558e5dd874'
 
-    result_sgx_filing = get_sgx_filings(test)
+    result_sgx_filing = get_sgx_filings(duplicate)
 
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:
