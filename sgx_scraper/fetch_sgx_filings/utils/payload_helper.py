@@ -1,5 +1,3 @@
-from typing import Optional
-
 from sgx_scraper.fetch_sgx_filings.utils.converter_helper import get_latest_currency, calculate_currency_to_sgd
 from sgx_scraper.config.settings import LOGGER
 from sgx_scraper.fetch_sgx_filings.utils.constants import (

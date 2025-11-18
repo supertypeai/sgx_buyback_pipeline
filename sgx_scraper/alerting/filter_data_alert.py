@@ -15,6 +15,7 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
     price_per_share = payload.get('price_per_share') 
     symbol = payload.get('symbol')
     transaction_date = payload.get('transaction_date')
+    shareholder_name = payload.get('shareholder_name')
 
     reasons = []
 
@@ -32,7 +33,6 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
             f'transaction_type={transaction_type}'
         )
        
-
     diff_shares = shares_after - shares_before
 
     # Inconsistent share count
@@ -44,23 +44,25 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
             )
            
     # Invalid transaction type for share movement
-    # if transaction_type:
-    #     if diff_shares > 0 and transaction_type != 'buy':
-    #         payload.update({
-    #             'reason': (
-    #                 f'Share difference is positive ({diff_shares}), '
-    #                 f'but transaction_type="{transaction_type}" instead of "buy"'
-    #             )
-    #         })
-    #         return True
-    #     if diff_shares < 0 and transaction_type != 'sell':
-    #         payload.update({
-    #             'reason': (
-    #                 f'Share difference is negative ({diff_shares}), '
-    #                 f'but transaction_type="{transaction_type}" instead of "sell"'
-    #             )
-    #         })
-    #         return True
+    if transaction_type:
+        # Double check shareholder name if type is transfer
+        if transaction_type == 'transfer':
+            reasons.append(
+                f'Please verify the shareholder name for transfer type. ' 
+                f'The format {shareholder_name} may not always match the current regex.'
+            )
+        if diff_shares > 0 and transaction_type != 'buy':
+            reasons.append(
+                f'Share difference is positive ({diff_shares}), '
+                f'but transaction_type="{transaction_type}" instead of "buy"'
+            )
+            return True
+        if diff_shares < 0 and transaction_type != 'sell':
+            reasons.append(
+                f'Share difference is negative ({diff_shares}), '
+                f'but transaction_type="{transaction_type}" instead of "sell"'
+            )
+            return True
     
     # Unrealistic or inconsistent price
     if price_per_share:
