@@ -2009,3 +2009,151 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-17 03:12:46 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-11-17 03:12:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-17 03:12:46 [INFO] - [sgx_payload] is empty, skipping push to DB
+<<<<<<< Updated upstream
+2025-11-18 03:07:05 [INFO] - Init Global Variable
+2025-11-18 03:07:30 [INFO] - Scraping from None to None...
+2025-11-18 03:07:30 [INFO] - Start scraping from start date: 20251116 to 20251118
+2025-11-18 03:07:30 [INFO] - page_start: 0
+2025-11-18 03:07:30 [INFO] - Fetching data from API Filings...
+2025-11-18 03:07:30 [INFO] - Response status: 200
+2025-11-18 03:07:30 [INFO] - Fetched 11 announcements
+2025-11-18 03:07:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UEKWMOKKU8EVPUUP/e7b3cf1cfe194f11a4813f1751fa742fbbc150d98c5578b6ad7d0ce02f81192d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UEKWMOKKU8EVPUUP/867364__Form%203%20-%20Vimesh%202025-11-17%20Final.pdf
+2025-11-18 03:07:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2Z8TI56K3431YJXX/78037d53d8c11bbe81cafbf3193d1243686675966e0a044f145cbcccd66f20d8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2Z8TI56K3431YJXX/867356__eFORM3-SINCOM.pdf
+2025-11-18 03:07:39 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:39 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:07:39 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RZXMD2XLYNPW9RV2/8a63bba57e6e929274336d3b58590bc8d0202c8cf4f06ba22a31780a50f20a30 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RZXMD2XLYNPW9RV2/867348__20251117-MLT-Form6_final.pdf
+2025-11-18 03:07:43 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'MLT has issued 7,593,355 new units payable to MLTM and 1,063,123 new units payable to MPM on 17 November 2025. Both MLTM and MPM have nominated Mulberry Pte. Ltd. to receive the aggregate of 8,656,478 new units payable to them and have received cash in consideration of such nomination. Following this nomination, the Manager has a direct interest in 6,290,361 units.'
+2025-11-18 03:07:43 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'MLT has issued 7,593,355 new units payable to MLTM and 1,063,123 new units payable to MPM on 17 November 2025. Both MLTM and MPM have nominated Mulberry Pte. Ltd. to receive the aggregate of 8,656,478 new units payable to them and have received cash in consideration of such nomination. Following this nomination, the Manager has a direct interest in 6,290,361 units.'
+2025-11-18 03:07:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/9dc3586f0ef9038964cfbe3c2e75e2c5e9789e9803971a015c23a623ecbbcab0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/867337__eFORM3V2%20-%20Protocol%20Capital%20W.L.L.%20-%20final.pdf
+2025-11-18 03:07:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:48 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:07:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:48 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/867337__eFORM3V2%20-%20Protocol%20Capital%20W.L.L.%20-%20final.pdf: Multiple shareholders with identical share data
+2025-11-18 03:07:48 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRITECH GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/9dc3586f0ef9038964cfbe3c2e75e2c5e9789e9803971a015c23a623ecbbcab0
+2025-11-18 03:07:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7WORJRSQS0YCJUTG/ea2de14127af0fa0fd0de7bfb26502b39f34a1e885f94f670903ecb11aa65967 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7WORJRSQS0YCJUTG/867335__eFORM3V2%20-%20Adonis%20Investment%20Holdings%20Pte.%20Ltd.%20-%20final.pdf
+2025-11-18 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:51 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-18 03:07:51 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/7WORJRSQS0YCJUTG/867335__eFORM3V2%20-%20Adonis%20Investment%20Holdings%20Pte.%20Ltd.%20-%20final.pdf: Multiple shareholders with identical share data
+2025-11-18 03:07:51 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRITECH GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/7WORJRSQS0YCJUTG/ea2de14127af0fa0fd0de7bfb26502b39f34a1e885f94f670903ecb11aa65967
+2025-11-18 03:07:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/THJFUU5Z18I39FPR/8f911a96c533bdd7fb9e6b186d9b6c550e84fc454e8d9c69626b9de5f0924d12 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/THJFUU5Z18I39FPR/867333__eFORM3V2%20-%20Lee%20Sui%20Hee%20-%20final.pdf
+2025-11-18 03:08:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZAMIUJQ82G5CRA92/d0345ed7c5365c9eb267493b54af695d5cb8dc02ea5ea81426514726aba78651 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZAMIUJQ82G5CRA92/867331__eFORM3V2%20-%20Jeffrey%20Wang%20-%20final.pdf
+2025-11-18 03:08:02 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:02 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ZAMIUJQ82G5CRA92/867331__eFORM3V2%20-%20Jeffrey%20Wang%20-%20final.pdf: Single record with no share change
+2025-11-18 03:08:02 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRITECH GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ZAMIUJQ82G5CRA92/d0345ed7c5365c9eb267493b54af695d5cb8dc02ea5ea81426514726aba78651
+2025-11-18 03:08:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XWPTS4ZKBEKUBH6S/d852c58e9d39ba4e5e7204fc52623da4576331cf3c4caebfbf24678715d25f74 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XWPTS4ZKBEKUBH6S/867304__CICT%20-%20Form%206_CICTML.pdf
+2025-11-18 03:08:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VFNRP8CRYSUXNZX3/4454f9993a3b0a63332d1a4e73db0bc193f9a34f431f2af15484208b2b1fb124 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VFNRP8CRYSUXNZX3/867300__eFORM3V2-LLC.pdf
+2025-11-18 03:08:09 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:09 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VFNRP8CRYSUXNZX3/867300__eFORM3V2-LLC.pdf: Single record with no share change
+2025-11-18 03:08:09 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LENDLEASE GLOBAL COMMERCIAL TRUST MANAGEMENT PTE. LTD.  detail url: https://links.sgx.com/1.0.0/corporate-announcements/VFNRP8CRYSUXNZX3/4454f9993a3b0a63332d1a4e73db0bc193f9a34f431f2af15484208b2b1fb124
+2025-11-18 03:08:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2EOQMEWB3QW0C4YC/1498351926f030be02054ef3f3d987a524585cbaf53845fd51c0fa2412e2f76a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2EOQMEWB3QW0C4YC/867295__eFORM1V2%20DQ%2017112025.pdf
+2025-11-18 03:08:12 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:12 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:12 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:12 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YDZRUW9TF58PXZOX/6e197d27080360325b67373154f269b54314831656fc599e70071a458fc6fe0e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YDZRUW9TF58PXZOX/867289__eFORM1_ChengWK_171125_Final.pdf
+2025-11-18 03:08:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:22 [WARNING] - [sgx_filings] Date of acquisition not found
+2025-11-18 03:08:22 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:22 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-18 03:08:26 [INFO] - page_start: 1
+2025-11-18 03:08:26 [INFO] - Fetching data from API Filings...
+2025-11-18 03:08:27 [INFO] - Response status: 200
+2025-11-18 03:08:27 [WARNING] - WARNING: API returned None
+2025-11-18 03:08:27 [INFO] - No more announcements found — stopping pagination.
+2025-11-18 03:08:40 [INFO] - Fetching data from API Filings...
+2025-11-18 03:08:40 [INFO] - Response status: 200
+2025-11-18 03:08:40 [WARNING] - WARNING: API returned None
+2025-11-18 03:08:40 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-18 03:08:40 [INFO] - [SGX FILINGS] Scraping completed. Total records: 10
+2025-11-18 03:08:40 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/XWPTS4ZKBEKUBH6S/867304__CICT%20-%20Form%206_CICTML.pdf",
+  "symbol": "C38U",
+  "transaction_date": "2025-11-17",
+  "shareholder_name": "CapitaLand Integrated Commercial Trust Management Limited",
+  "number_of_stock": 2955400.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 75357466.0,
+  "shares_before_percentage": 0.0099,
+  "shares_after": 78312866.0,
+  "shares_after_percentage": 0.0103
+}
+2025-11-18 03:08:40 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/XWPTS4ZKBEKUBH6S/867304__CICT%20-%20Form%206_CICTML.pdf",
+  "symbol": "C38U",
+  "transaction_date": "2025-11-17",
+  "shareholder_name": "CapitaLand Integrated Commercial Trust Management Limited",
+  "number_of_stock": 2955400.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 78312866.0,
+  "shares_before_percentage": 0.0103,
+  "shares_after": 75357466.0,
+  "shares_after_percentage": 0.0099
+}
+2025-11-18 03:08:40 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/YDZRUW9TF58PXZOX/867289__eFORM1_ChengWK_171125_Final.pdf",
+  "symbol": "W05",
+  "transaction_date": "2025-11-17",
+  "shareholder_name": "Cheng Wai Keung",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 475135859.0,
+  "shares_before_percentage": 0.622,
+  "shares_after": 475185859.0,
+  "shares_after_percentage": 0.622
+}
+2025-11-18 03:08:41 [INFO] - Length data top_70: 2 | Length data not top_70: 5
+2025-11-18 03:08:41 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-18 03:08:41 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-18 03:08:41 [INFO] - Processing remove duplicate data
+2025-11-18 03:08:41 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-11-18 03:08:41 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-18 03:08:42 [INFO] - Filtering completed. Insertable: 0 | Not insertable: 2
+2025-11-18 03:08:42 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-18 03:08:42 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-18 03:08:43 [INFO] - Email sent! Message ID: 011c019a94ef9e72-e7f80bf3-0345-4098-a081-a7d0d3d9548c-000000
+2025-11-18 03:08:43 [INFO] - [sgx_payload] is empty, skipping push to DB
+=======
+2025-11-18 03:09:11 [INFO] - Init Global Variable
+2025-11-18 03:09:29 [INFO] - Scraping from None to None...
+2025-11-18 03:09:29 [INFO] - Start scraping from start date: 20251116 to 20251118
+2025-11-18 03:09:29 [INFO] - page_start: 0
+2025-11-18 03:09:29 [INFO] - Fetching data from API Buybacks...
+2025-11-18 03:09:30 [INFO] - Response status: 200
+2025-11-18 03:09:30 [INFO] - Fetched 10 announcements
+2025-11-18 03:10:17 [INFO] - page_start: 1
+2025-11-18 03:10:17 [INFO] - Fetching data from API Buybacks...
+2025-11-18 03:10:18 [INFO] - Response status: 200
+2025-11-18 03:10:18 [WARNING] - WARNING: API returned None
+2025-11-18 03:10:18 [INFO] - No more announcements found — stopping pagination.
+2025-11-18 03:10:31 [INFO] - Fetching data from API Buybacks...
+2025-11-18 03:10:31 [INFO] - Response status: 200
+2025-11-18 03:10:31 [WARNING] - WARNING: API returned None
+2025-11-18 03:10:31 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-18 03:10:31 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 10
+2025-11-18 03:10:32 [INFO] - Length data top_70: 3 | Length data not top_70: 7
+2025-11-18 03:10:32 [INFO] - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2025-11-18 03:10:32 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-11-18 03:10:32 [INFO] - Processing remove duplicate data
+2025-11-18 03:10:32 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-11-18 03:10:32 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-11-18 03:10:33 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
+>>>>>>> Stashed changes
