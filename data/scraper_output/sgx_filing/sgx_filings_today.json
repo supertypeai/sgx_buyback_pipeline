@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RZXMD2XLYNPW9RV2/867348__20251117-MLT-Form6_final.pdf",
+    "symbol": "M44U",
+    "transaction_date": "2025-11-17",
+    "shareholder_name": "Mapletree Logistics Trust Management Ltd",
+    "number_of_stock": 7593355,
+    "value": 9479544.382,
+    "price_per_share": 1.2484,
+    "transaction_type": null,
+    "shares_before": 6290361,
+    "shares_before_percentage": 0.0012,
+    "shares_after": 13883716,
+    "shares_after_percentage": 0.0027
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RZXMD2XLYNPW9RV2/867348__20251117-MLT-Form6_final.pdf",
+    "symbol": "M44U",
+    "transaction_date": "2025-11-17",
+    "shareholder_name": "Mapletree Logistics Trust Management Ltd",
+    "number_of_stock": 7593355,
+    "value": 9479544.382,
+    "price_per_share": 1.2484,
+    "transaction_type": null,
+    "shares_before": 13883716,
+    "shares_before_percentage": 0.0027,
+    "shares_after": 6290361,
+    "shares_after_percentage": 0.0012
+  }
+]
