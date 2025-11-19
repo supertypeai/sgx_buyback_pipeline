@@ -78,6 +78,7 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
         return []
 
     cleaned_payload = []
+    seen_keys = set()
 
     for row in payload:
         shareholder_name = row.get('shareholder_name')
@@ -85,6 +86,7 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
         number_of_stock = row.get('number_of_stock')
         value = row.get('value')
 
+        # Exclude missing data
         if not (price_per_share and number_of_stock and value):
             LOGGER.info(f'Dropping row with missing values:\n{json.dumps(row, indent=2)}')
             continue
@@ -92,6 +94,7 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
         if shareholder_name.isupper():
             row['shareholder_name'] = shareholder_name.title()
 
+        # Convert share counts to int
         for key in [
             "number_of_stock",
             "shares_before",
@@ -104,6 +107,20 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
         
+        # Check duplicate data with composite keys
+        unique_key = {
+            row.get('url'),
+            row.get('shareholder_name'),
+            row.get('transaction_date'),
+            row.get('shares_before'),
+            row.get('shares_after')
+        }
+
+        if unique_key in seen_keys:
+            LOGGER.info(f"Dropping duplicate record found in payload: \n{json.dumps(row, indent=2)}")
+            continue
+        
+        seen_keys.add(unique_key)
         cleaned_payload.append(row)
 
     return cleaned_payload 

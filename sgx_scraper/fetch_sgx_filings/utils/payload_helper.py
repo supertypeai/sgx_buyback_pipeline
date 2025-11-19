@@ -360,7 +360,7 @@ def build_transaction_type(
         return transaction_type
 
     except Exception as error:
-        LOGGER.error(f"[build_transaction_type] Error: {error}", exc_info=True)
+        LOGGER.error(f"[build_transaction_type] Error: {error}")
         return None
                 
 
