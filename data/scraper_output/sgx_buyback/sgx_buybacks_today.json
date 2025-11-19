@@ -1,46 +1,32 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/9ILIZM7Z7PHV3ZDN/caa4cf44b50c8b02f52b6b1a7b78df59a7d343b57bdcec46bc04a4fca199375d",
-    "symbol": "V03",
-    "purchase_date": "2025-11-17",
-    "type": "On Market",
-    "start_date": "2025-04-24",
-    "price_per_share": {
-      "price_paid_per_share": 14.44
-    },
-    "total_value": 72294.45,
-    "total_shares_purchased": 5000,
-    "cumulative_purchased": 60000,
-    "treasury_shares_after_purchase": 1420000
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/03GX7MA0CKQM9IIR/2b200a87b83f23c579c347f2316edd5cc247aee886f620be369f7214b96e6dc0",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/NSSOBS23SEH9BTL4/39eda3aa85dbb15cf022fec3df82a3ff2f8f4eb6d572cfeef2777371024a9095",
     "symbol": "U11",
-    "purchase_date": "2025-11-17",
+    "purchase_date": "2025-11-18",
     "type": "On Market",
     "start_date": "2025-04-21",
     "price_per_share": {
-      "highest": 34.14,
-      "lowest": 33.95
+      "highest": 34.34,
+      "lowest": 34.0
     },
-    "total_value": 5549321.3,
-    "total_shares_purchased": 162700,
-    "cumulative_purchased": 17181000,
+    "total_value": 8189824.36,
+    "total_shares_purchased": 240000,
+    "cumulative_purchased": 17421000,
     "treasury_shares_after_purchase": 15243008
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/IQ5SU3DMWHRE54V1/b3d6e7da445c285eb05abf78fd65e22a1744399a0565b0c9d850048f80125809",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/KAGQA1S7WHR0ZB4A/c78f9ac6772eff6ea9444a37f80454d6466f6b7a784044fbccefb043dc698c3a",
     "symbol": "BN4",
-    "purchase_date": "2025-11-17",
+    "purchase_date": "2025-11-18",
     "type": "On Market",
     "start_date": "2025-04-21",
     "price_per_share": {
-      "highest": 10.11,
-      "lowest": 10.06
+      "highest": 10.06,
+      "lowest": 10.0
     },
-    "total_value": 504809.64,
+    "total_value": 502306.93,
     "total_shares_purchased": 50000,
-    "cumulative_purchased": 11620000,
-    "treasury_shares_after_purchase": 17312246
+    "cumulative_purchased": 11670000,
+    "treasury_shares_after_purchase": 17362246
   }
 ]
