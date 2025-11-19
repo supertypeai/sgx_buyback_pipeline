@@ -51,6 +51,11 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                 f'Please verify the shareholder name for transfer type. ' 
                 f'The format {shareholder_name} may not always match the current regex.'
             )
+        if transaction_type == 'award':
+            reasons.append(
+                f'Please double check the transaction type: {transaction_type}. ' 
+                f'The document may contain multiple descriptions that affect the classification.'
+            )
         if diff_shares > 0 and transaction_type != 'buy':
             reasons.append(
                 f'Share difference is positive ({diff_shares}), '
