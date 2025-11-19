@@ -2181,3 +2181,194 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-19 03:10:08 [INFO] - Length data after duplicate removing: 2
 2025-11-19 03:10:08 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-19 03:10:09 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
+2025-11-19 03:29:53 [INFO] - Init Global Variable
+2025-11-19 03:30:14 [INFO] - Scraping from None to None...
+2025-11-19 03:30:14 [INFO] - Start scraping from start date: 20251117 to 20251119
+2025-11-19 03:30:14 [INFO] - page_start: 0
+2025-11-19 03:30:14 [INFO] - Fetching data from API Filings...
+2025-11-19 03:30:14 [INFO] - Response status: 200
+2025-11-19 03:30:14 [INFO] - Fetched 11 announcements
+2025-11-19 03:30:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7NUNSYDIDC70DQXB/997d7508d25d69a22287c8c9d3aebf96a92a75f1b48f4df771e517231393f5d3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7NUNSYDIDC70DQXB/867464__eFORM3%20SS%20OBS-18Nov25.final.pdf
+2025-11-19 03:30:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/D63YNDWNJCFO9CO5/f0923e8646194e5989535037635e5db21e61e05a4ddc0964faeeac26a55ec192 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/D63YNDWNJCFO9CO5/867462__eFORM1%20Dir%20OBC-18Nov25.final.pdf
+2025-11-19 03:30:22 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HWEGWLWF2UB45C2D/35b427a1f1c1a3fce260613ac8b8cee63d4080f75e98126657dd7f5ad65f1fe3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HWEGWLWF2UB45C2D/867460__eFORM3%20SS%20BCS-18Nov25.final.pdf
+2025-11-19 03:30:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NCMRFPOE2CLD5EQT/7674d9c5c14ebd15d2235d0653e46fee440b60d74619a4b06841a0e9109daafc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NCMRFPOE2CLD5EQT/867454__eFORM3V2%20FEOC%20final.pdf
+2025-11-19 03:30:33 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:33 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:33 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-19 03:30:33 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:33 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/H3KM92X71GGYLMG6/dba867cfcc0d18e26d4dec7cd10ce06c477cf0f981be42af034ad9571bad5ce0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/H3KM92X71GGYLMG6/867452__eFORM3V2%20PN%20final.pdf
+2025-11-19 03:30:39 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:39 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:39 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-19 03:30:39 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:39 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6N27VVXCO73IZSYR/018f0074f53a0ae499714d494f162a577ee75debaf2a29fd0ff397e739ce9bab pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6N27VVXCO73IZSYR/867450__eFORM3V2%20RN%20final.pdf
+2025-11-19 03:30:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:46 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:46 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-19 03:30:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:46 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8ZOMY3E4AKVEHOQF/5b061dcf31223e3f14db61310638e490325ae28c639bb9eae18f8d80df941a02 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8ZOMY3E4AKVEHOQF/867448__eFORM3V2%20Estate%20of%20NTF%20final.pdf
+2025-11-19 03:30:52 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-19 03:30:52 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-19 03:30:52 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-19 03:30:52 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:52 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:52 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:30:52 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 605,400 shares via open market transaction.'
+2025-11-19 03:30:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PEE8F5LXF6DQ5WCC/89d9e0104c18fff6386e040a66ef652862ed73284f8b66ba302e458d87a99e2a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PEE8F5LXF6DQ5WCC/867446__eFORM3V2%20Goodview%20final.pdf
+2025-11-19 03:31:05 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JCN1XK1YGN2S3FJP/e1aba1d959b5a616087736f303083f57dffce2dafdec031396bfca3d0cdc3d5d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JCN1XK1YGN2S3FJP/867435__FORM%201_CKK.pdf
+2025-11-19 03:31:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K67N2ZQJ9GA8EUQF/236c14807669d7870c60cf44a37ee34b184c316aa4c4638d7887cfe2434a9ced pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K67N2ZQJ9GA8EUQF/867428__eForm1_Benjamin%20Teo%20Jong%20Hian.pdf
+2025-11-19 03:31:10 [ERROR] - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/K67N2ZQJ9GA8EUQF/867428__eForm1_Benjamin%20Teo%20Jong%20Hian.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 714, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-11-19 03:31:10 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ENVICTUS INTERNATIONAL HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/K67N2ZQJ9GA8EUQF/236c14807669d7870c60cf44a37ee34b184c316aa4c4638d7887cfe2434a9ced
+2025-11-19 03:31:11 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JXV23422FDG22H7Z/ac014ed545c3686107646e81c3a6991d0615d163bf227bc9dcc29a015d821db2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JXV23422FDG22H7Z/867407__eFORM1_ChengWK_181125_Final.pdf
+2025-11-19 03:31:13 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-19 03:31:22 [INFO] - page_start: 1
+2025-11-19 03:31:22 [INFO] - Fetching data from API Filings...
+2025-11-19 03:31:23 [INFO] - Response status: 200
+2025-11-19 03:31:23 [WARNING] - WARNING: API returned None
+2025-11-19 03:31:23 [INFO] - No more announcements found — stopping pagination.
+2025-11-19 03:31:35 [INFO] - Fetching data from API Filings...
+2025-11-19 03:31:35 [INFO] - Response status: 200
+2025-11-19 03:31:35 [WARNING] - WARNING: API returned None
+2025-11-19 03:31:35 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-19 03:31:35 [INFO] - [SGX FILINGS] Scraping completed. Total records: 11
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/7NUNSYDIDC70DQXB/867464__eFORM3%20SS%20OBS-18Nov25.final.pdf",
+  "symbol": "OTS",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "ONG BEE SONG",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 160589670.0,
+  "shares_before_percentage": 0.7504,
+  "shares_after": 160860970.0,
+  "shares_after_percentage": 0.7517
+}
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/D63YNDWNJCFO9CO5/867462__eFORM1%20Dir%20OBC-18Nov25.final.pdf",
+  "symbol": "OTS",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "ONG BEE CHIP",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 169522278.0,
+  "shares_before_percentage": 0.7921,
+  "shares_after": 169793578.0,
+  "shares_after_percentage": 0.7934
+}
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/NCMRFPOE2CLD5EQT/867454__eFORM3V2%20FEOC%20final.pdf",
+  "symbol": "B58",
+  "transaction_date": "2025-11-14",
+  "shareholder_name": "Far East Organization Centre Pte. Ltd",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 51922000.0,
+  "shares_before_percentage": 0.0599,
+  "shares_after": 52527400.0,
+  "shares_after_percentage": 0.0606
+}
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/H3KM92X71GGYLMG6/867452__eFORM3V2%20PN%20final.pdf",
+  "symbol": "B58",
+  "transaction_date": "2025-11-14",
+  "shareholder_name": "Ng Chee Tat Philip",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 51922000.0,
+  "shares_before_percentage": 0.0599,
+  "shares_after": 52527400.0,
+  "shares_after_percentage": 0.0606
+}
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/6N27VVXCO73IZSYR/867450__eFORM3V2%20RN%20final.pdf",
+  "symbol": "B58",
+  "transaction_date": "2025-11-14",
+  "shareholder_name": "Ng Chee Siong",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 51922000.0,
+  "shares_before_percentage": 0.0599,
+  "shares_after": 52527400.0,
+  "shares_after_percentage": 0.0606
+}
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/8ZOMY3E4AKVEHOQF/867448__eFORM3V2%20Estate%20of%20NTF%20final.pdf",
+  "symbol": "B58",
+  "transaction_date": "2025-11-14",
+  "shareholder_name": "Ng Chee Siong, as Joint Executor of Estate of Ng Teng Fong",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 51922000.0,
+  "shares_before_percentage": 0.0599,
+  "shares_after": 52527400.0,
+  "shares_after_percentage": 0.0606
+}
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/8ZOMY3E4AKVEHOQF/867448__eFORM3V2%20Estate%20of%20NTF%20final.pdf",
+  "symbol": "B58",
+  "transaction_date": "2025-11-14",
+  "shareholder_name": "Ng Chee Tat Philip, as Joint Executor of Estate of Ng Teng Fong",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 51922000.0,
+  "shares_before_percentage": 0.0599,
+  "shares_after": 52527400.0,
+  "shares_after_percentage": 0.0606
+}
+2025-11-19 03:31:35 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/JXV23422FDG22H7Z/867407__eFORM1_ChengWK_181125_Final.pdf",
+  "symbol": "W05",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Cheng Wai Keung",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 475185859.0,
+  "shares_before_percentage": 0.622,
+  "shares_after": 475245859.0,
+  "shares_after_percentage": 0.6221
+}
+2025-11-19 03:31:36 [INFO] - Length data top_70: 0 | Length data not top_70: 3
+2025-11-19 03:31:36 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-19 03:31:36 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-19 03:31:36 [INFO] - Processing remove duplicate data
+2025-11-19 03:31:36 [INFO] - Length data after duplicate removing: 0
+2025-11-19 03:31:36 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-19 03:31:36 [INFO] - No SGX filings data to filter.
+2025-11-19 03:31:36 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-19 03:31:36 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-19 03:31:36 [INFO] - No SGX filings alerts to send.
+2025-11-19 03:31:36 [INFO] - [sgx_payload] is empty, skipping push to DB
