@@ -108,13 +108,13 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
                     row[key] = None
         
         # Check duplicate data with composite keys
-        unique_key = {
+        unique_key = (
             row.get('url'),
             row.get('shareholder_name'),
             row.get('transaction_date'),
             row.get('shares_before'),
             row.get('shares_after')
-        }
+        )
 
         if unique_key in seen_keys:
             LOGGER.info(f"Dropping duplicate record found in payload: \n{json.dumps(row, indent=2)}")
