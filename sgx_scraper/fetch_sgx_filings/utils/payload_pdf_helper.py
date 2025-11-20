@@ -244,15 +244,28 @@ def find_subsection_blocks(
         
         for block in combined_text_blocks:
             if block["y0"] >= search_start:
-                if re.search(r"^Acquisition\s+of\s*:\s*$", block["text"], re.IGNORECASE):
+                # Find Acquisition - only if not already found
+                if not acquisition_block and re.search(r"^Acquisition\s+of\s*:\s*$", block["text"], re.IGNORECASE):
                     acquisition_block = block
-                elif re.search(r"^Disposal\s+of\s*:\s*$", block["text"], re.IGNORECASE):
+                
+                # Find Disposal - only if not already found
+                elif not disposal_block and re.search(r"^Disposal\s+of\s*:\s*$", block["text"], re.IGNORECASE):
                     disposal_block = block
-                elif re.search(r"^Other\s+circumstances\s*:\s*$", block["text"], re.IGNORECASE):
+                
+                # Find Other circumstances - only if not already found
+                elif not other_circumstances_block and re.search(r"^Other\s+circumstances\s*:\s*$", block["text"], re.IGNORECASE):
                     other_circumstances_block = block
-                elif re.search(r"Others\s*\(\s*please\s+specify\s*\)", block["text"], re.IGNORECASE):
+                
+                # Find Others specify - only if not already found
+                elif not others_specify_block and re.search(r"Others\s*\(\s*please\s+specify\s*\)", block["text"], re.IGNORECASE):
                     others_specify_block = block
-                    
+                
+                # Break when found all blocks for this transaction
+                if (acquisition_block and disposal_block and 
+                    other_circumstances_block and others_specify_block):
+                    print(f"All subsection blocks found, stopping search")
+                    break
+
         return acquisition_block, disposal_block, other_circumstances_block, others_specify_block
     
     except Exception as error:

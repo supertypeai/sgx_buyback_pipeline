@@ -681,19 +681,6 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
                     LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: All transactions have no share change")
                     return None
 
-                # if all_records and len(all_records) > 1:
-                #     seen_share_data = set()
-                #     for record in all_records:
-                #         share_data = (
-                #             record.get('shares_before'),
-                #             record.get('shares_after')
-                #         )
-                #         seen_share_data.add(share_data)
-                    
-                #     if len(seen_share_data) == 1:
-                #         LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Multiple shareholders with identical share data")
-                #         return None
-
             return all_records
 
     except requests.RequestException as error:
@@ -778,8 +765,9 @@ if __name__ == '__main__':
     double = 'https://links.sgx.com/1.0.0/corporate-announcements/4L30DFCB3DFLCMNP/1b96579fa316d719251bdcab545fef62e112faf1fd8a5a6a847ab6a279c557f6'
     test_pdf = 'https://links.sgx.com/FileOpen/_Form%206_FLCAM.ashx?App=Announcement&FileID=867052'
     duplicate = 'https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/c2c6966fb8ed3562b3d5b3736c96d1b21837954db7ec864a101cb1558e5dd874'
+    new_test = 'https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/9dc3586f0ef9038964cfbe3c2e75e2c5e9789e9803971a015c23a623ecbbcab0'
 
-    result_sgx_filing = get_sgx_filings(duplicate)
+    result_sgx_filing = get_sgx_filings(new_test)
 
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:
