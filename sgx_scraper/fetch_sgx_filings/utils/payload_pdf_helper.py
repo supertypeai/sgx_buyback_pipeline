@@ -662,7 +662,8 @@ def get_shareholder_name(name_patterns: list[str], section_text: str) -> str:
             potential_name = match.group(1).strip()
             
             # Remove parenthetical abbreviations like ("FCAML") and trailing
-            potential_name = re.sub(r'\s*\([^)]*\)\s*', '', potential_name).strip()
+            potential_name = re.sub(r'\s*\([^)]*\)\s*', ' ', potential_name).strip()
+            potential_name = re.sub(r'\s+', ' ', potential_name).strip()
             potential_name = potential_name.rstrip('.')
             
             if potential_name and potential_name != ':' and not potential_name.startswith('('):
