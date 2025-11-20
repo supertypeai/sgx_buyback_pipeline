@@ -2372,3 +2372,269 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-19 03:31:36 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2025-11-19 03:31:36 [INFO] - No SGX filings alerts to send.
 2025-11-19 03:31:36 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-11-20 03:04:51 [INFO] - Init Global Variable
+2025-11-20 03:05:19 [INFO] - Scraping from None to None...
+2025-11-20 03:05:19 [INFO] - Start scraping from start date: 20251118 to 20251120
+2025-11-20 03:05:19 [INFO] - page_start: 0
+2025-11-20 03:05:19 [INFO] - Fetching data from API Filings...
+2025-11-20 03:05:19 [INFO] - Response status: 200
+2025-11-20 03:05:19 [INFO] - Fetched 12 announcements
+2025-11-20 03:05:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2ZEC7K072O0TCHKV/d8031a0a7803a020da49a36f384baf24b2d62c8113f76dd34db20f83b274c8a3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2ZEC7K072O0TCHKV/867565__Form%201%20-%20Dr%20Terence%20Tea%20-%2019%20November%202025.pdf
+2025-11-20 03:05:25 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/B8QSPODRM1EU5YKG/9f73eba31546db1bfcac304c5f00eb344d30193acf96625ff5db21f77ca7245e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/B8QSPODRM1EU5YKG/867559__20251119%20eFORM3V2_YIHL_JBTCS_JBIL_JB%20Group_final.pdf
+2025-11-20 03:05:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:05:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:05:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:05:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:05:28 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-20 03:05:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:28 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of the Company on the Main Board of the Singapore Exchange Securities Trading Limited on 18 November 2025.'
+2025-11-20 03:05:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:28 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of the Company on the Main Board of the Singapore Exchange Securities Trading Limited on 18 November 2025.'
+2025-11-20 03:05:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:28 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of the Company on the Main Board of the Singapore Exchange Securities Trading Limited on 18 November 2025.'
+2025-11-20 03:05:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:28 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of the Company on the Main Board of the Singapore Exchange Securities Trading Limited on 18 November 2025.'
+2025-11-20 03:05:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QBMBXH9G4EOELCLA/c57e165c5dcde2f49d99b53110fb921524bfe0956025d0d02d7abc2f61ebb809 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QBMBXH9G4EOELCLA/867557__20251119%20eFORM3V2_RQF_final.pdf
+2025-11-20 03:05:34 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:34 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Ms. Ren Qifan is a beneficiary of the YZJ Settlement. Yangzi International Holdings Limited ("YIHL") holds 852,845,825 shares in the Company as assets of the YZJ Settlement.  Julius Baer Trust Company (Singapore) Limited ("JBTCS") is the trustee of the YZJ Settlement. As Ren Qifan is a minor (under the age of 21) as at the date of this notification, JBTCS is submitting this form as the trustee on her behalf.'
+2025-11-20 03:05:34 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-20 03:05:34 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:34 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Ms. Ren Qifan is a beneficiary of the YZJ Settlement. Yangzi International Holdings Limited ("YIHL") holds 852,845,825 shares in the Company as assets of the YZJ Settlement.  Julius Baer Trust Company (Singapore) Limited ("JBTCS") is the trustee of the YZJ Settlement. As Ren Qifan is a minor (under the age of 21) as at the date of this notification, JBTCS is submitting this form as the trustee on her behalf.'
+2025-11-20 03:05:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2X2M9YEU81N4FUXF/e441eb1fee5954c05462f477dc53dd992f99948a3189ed59f07b83c133c8107b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2X2M9YEU81N4FUXF/867555__20251118%20eFORM3V2_Lido%20Point_SS_Zedra_final.pdf
+2025-11-20 03:05:38 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:05:38 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:05:38 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:05:38 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-20 03:05:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:38 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of the Company on the Main Board of the Singapore Exchange Securities Trading Limited on 18 November 2025.'
+2025-11-20 03:05:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:38 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of the Company on the Main Board of the Singapore Exchange Securities Trading Limited on 18 November 2025.'
+2025-11-20 03:05:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:38 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of the Company on the Main Board of the Singapore Exchange Securities Trading Limited on 18 November 2025.'
+2025-11-20 03:05:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AU8R3716WD3P7DQ4/805c46c0971975a034bfa2de8c56343f561dc1e477a89b94273086353bafbbd2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AU8R3716WD3P7DQ4/867553__20251118%20eFORM3V2_RLT_final.pdf
+2025-11-20 03:05:44 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:44 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Mr. Ren Letian is a beneficiary of the YZJ Settlement, and is accordingly deemed to be interested in the assets thereof, i.e. 852,845,825 shares in the Company held by Yangzi International Holdings Limited ("YIHL") by virtue of Section 4 of the Securities and Futures Act 2001 of Singapore ("SFA"). Additionally, Mr. Ren Letian is deemed to be interested in 165,797,370 shares in YZJ Maritime held by Hengyuan Asset Investment Limited ("Hengyuan") through his interests in Hengyuan by virtue of Section 4 of the SFA.'
+2025-11-20 03:05:44 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-20 03:05:44 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:44 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Mr. Ren Letian is a beneficiary of the YZJ Settlement, and is accordingly deemed to be interested in the assets thereof, i.e. 852,845,825 shares in the Company held by Yangzi International Holdings Limited ("YIHL") by virtue of Section 4 of the Securities and Futures Act 2001 of Singapore ("SFA"). Additionally, Mr. Ren Letian is deemed to be interested in 165,797,370 shares in YZJ Maritime held by Hengyuan Asset Investment Limited ("Hengyuan") through his interests in Hengyuan by virtue of Section 4 of the SFA.'
+2025-11-20 03:05:47 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RGN2UAI7TW95BY3M/1082eb258d282d726d7f6b74cd4418a9c2dcc78c5fdd3dd4d5b0fc0e8168bf4a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RGN2UAI7TW95BY3M/867549__20251118%20eFORM1V2_RYL_final.pdf
+2025-11-20 03:05:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:49 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Under the terms of the YZJ Settlement, Mr. Ren Yuanlin has the powers, as settlor, to direct Julius Baer Trust Company (Singapore) Limited ("JBTCS"), as trustee, as to the investment in the shares in the capital of the Company ("Shares") which form the assets of the YZJ Settlement.  JBTCS wholly owns Yangzi International Holdings Limited ("YIHL"). Accordingly, Mr. Ren Yuanlin is deemed to be interested in the 852,845,825 Shares directly held by YIHL by virtue of Section 4 of the Securities and Futures Act 2001 of Singapore. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-20 03:05:49 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-20 03:05:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:49 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Under the terms of the YZJ Settlement, Mr. Ren Yuanlin has the powers, as settlor, to direct Julius Baer Trust Company (Singapore) Limited ("JBTCS"), as trustee, as to the investment in the shares in the capital of the Company ("Shares") which form the assets of the YZJ Settlement.  JBTCS wholly owns Yangzi International Holdings Limited ("YIHL"). Accordingly, Mr. Ren Yuanlin is deemed to be interested in the 852,845,825 Shares directly held by YIHL by virtue of Section 4 of the Securities and Futures Act 2001 of Singapore. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-20 03:05:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Y9MRXJN6176VLZJD/6c0000e8495c03d7a5a8a6629dab8f2b4b5c01448ee4a32bbb481280071404ca pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Y9MRXJN6176VLZJD/867533__Form%201%20-%20Liang%20Chengwang.pdf
+2025-11-20 03:05:53 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ZIXIN GROUP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/Y9MRXJN6176VLZJD/6c0000e8495c03d7a5a8a6629dab8f2b4b5c01448ee4a32bbb481280071404ca
+2025-11-20 03:05:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SLT45Y426QQMOYYL/d5cea5f992545a6120b77a07b046cfd0e57900a3df610dd527b2c3ef2dcd5df8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SLT45Y426QQMOYYL/867518__eFORM3V2%20-%20Dato%20Ng%20Tian%20Sang%20-%2018%20Nov%202025%20-%20final.pdf
+2025-11-20 03:05:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:05:55 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/SLT45Y426QQMOYYL/867518__eFORM3V2%20-%20Dato%20Ng%20Tian%20Sang%20-%2018%20Nov%202025%20-%20final.pdf: Single record with no share change
+2025-11-20 03:05:55 [INFO] - [SGX FILINGS] Data not valid found for issuer name: BEVERLY WILSHIRE LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/SLT45Y426QQMOYYL/d5cea5f992545a6120b77a07b046cfd0e57900a3df610dd527b2c3ef2dcd5df8
+2025-11-20 03:05:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7T1454Y5QGL6MD59/375ae3b2f202235fa6a8028fe695dfca715f356a47c39d21834d8165d7b3d097 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7T1454Y5QGL6MD59/867505__eFORM1_ChengWK_191125_Final.pdf
+2025-11-20 03:05:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:06:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LK62KQCM7FV5A3N0/1a5156d99f894986e51d2f5c1344979528244602a5f5b6c95da665bd5e752772 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LK62KQCM7FV5A3N0/867499__Form1-LFM19Nov2025.pdf
+2025-11-20 03:06:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-20 03:06:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ESHQHYOOVPGAXGCO/51169b237cb2e8fa1518825525ce1beeb9764d3842df739d2ed5b19f52050fb3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ESHQHYOOVPGAXGCO/867489__CICT%2020251118%20FORM%203_BlackRock.pdf
+2025-11-20 03:06:10 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-20 03:06:10 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Change in position due to an increase in shares held as collateral.'
+2025-11-20 03:06:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RSK04SZFIB7KRDES/abce9900bdc35858f210cb54e5e8c07d3eee3ea17681ec4df63d59736c03d96a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RSK04SZFIB7KRDES/867487__Form%201_Yovav%2018Nov.pdf
+2025-11-20 03:06:21 [INFO] - page_start: 1
+2025-11-20 03:06:21 [INFO] - Fetching data from API Filings...
+2025-11-20 03:06:21 [INFO] - Response status: 200
+2025-11-20 03:06:21 [WARNING] - WARNING: API returned None
+2025-11-20 03:06:21 [INFO] - No more announcements found — stopping pagination.
+2025-11-20 03:06:33 [INFO] - Fetching data from API Filings...
+2025-11-20 03:06:33 [INFO] - Response status: 200
+2025-11-20 03:06:33 [WARNING] - WARNING: API returned None
+2025-11-20 03:06:33 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-20 03:06:33 [INFO] - [SGX FILINGS] Scraping completed. Total records: 16
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/B8QSPODRM1EU5YKG/867559__20251119%20eFORM3V2_YIHL_JBTCS_JBIL_JB%20Group_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Yangzi International Holdings Limited",
+  "number_of_stock": 852845825.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 852845825.0,
+  "shares_after_percentage": 0.2444
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/B8QSPODRM1EU5YKG/867559__20251119%20eFORM3V2_YIHL_JBTCS_JBIL_JB%20Group_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Julius Baer Trust Company Limited",
+  "number_of_stock": 852845825.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 1002845825.0,
+  "shares_after_percentage": 0.2874
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/B8QSPODRM1EU5YKG/867559__20251119%20eFORM3V2_YIHL_JBTCS_JBIL_JB%20Group_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Julius Baer Investment Ltd",
+  "number_of_stock": 852845825.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 1002845825.0,
+  "shares_after_percentage": 0.2874
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/B8QSPODRM1EU5YKG/867559__20251119%20eFORM3V2_YIHL_JBTCS_JBIL_JB%20Group_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Julius Baer Group Ltd",
+  "number_of_stock": 852845825.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 1002845825.0,
+  "shares_after_percentage": 0.2874
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/QBMBXH9G4EOELCLA/867557__20251119%20eFORM3V2_RQF_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Ren Qifan",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 852845825.0,
+  "shares_after_percentage": 0.2444
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/2X2M9YEU81N4FUXF/867555__20251118%20eFORM3V2_Lido%20Point_SS_Zedra_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Lido Point Investments Ltd",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 449661500.0,
+  "shares_after_percentage": 0.129
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/2X2M9YEU81N4FUXF/867555__20251118%20eFORM3V2_Lido%20Point_SS_Zedra_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Sapphire Skye Holdings Limited",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 449661500.0,
+  "shares_after_percentage": 0.129
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/2X2M9YEU81N4FUXF/867555__20251118%20eFORM3V2_Lido%20Point_SS_Zedra_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "ZEDRA TRUST COMPANY LIMITED",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 449661500.0,
+  "shares_after_percentage": 0.129
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/AU8R3716WD3P7DQ4/867553__20251118%20eFORM3V2_RLT_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Ren Letian",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 1018643195.0,
+  "shares_after_percentage": 0.292
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/RGN2UAI7TW95BY3M/867549__20251118%20eFORM1V2_RYL_final.pdf",
+  "symbol": "8YZ",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "Ren Yuanlin",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 0.0,
+  "shares_before_percentage": 0.0,
+  "shares_after": 852845825.0,
+  "shares_after_percentage": 0.2444
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/7T1454Y5QGL6MD59/867505__eFORM1_ChengWK_191125_Final.pdf",
+  "symbol": "W05",
+  "transaction_date": "2025-11-19",
+  "shareholder_name": "Cheng Wai Keung",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 475245859.0,
+  "shares_before_percentage": 0.6221,
+  "shares_after": 475295859.0,
+  "shares_after_percentage": 0.6222
+}
+2025-11-20 03:06:33 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/ESHQHYOOVPGAXGCO/867489__CICT%2020251118%20FORM%203_BlackRock.pdf",
+  "symbol": "C38U",
+  "transaction_date": "2025-11-17",
+  "shareholder_name": "BlackRock, Inc",
+  "number_of_stock": 8756000.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 526830382.0,
+  "shares_before_percentage": 0.0692,
+  "shares_after": 535586382.0,
+  "shares_after_percentage": 0.0704
+}
+2025-11-20 03:06:34 [INFO] - Length data top_70: 0 | Length data not top_70: 4
+2025-11-20 03:06:34 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-20 03:06:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-20 03:06:34 [INFO] - Processing remove duplicate data
+2025-11-20 03:06:34 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-11-20 03:06:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-20 03:06:34 [INFO] - No SGX filings data to filter.
+2025-11-20 03:06:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-20 03:06:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-20 03:06:34 [INFO] - No SGX filings alerts to send.
+2025-11-20 03:06:34 [INFO] - [sgx_payload] is empty, skipping push to DB
