@@ -2665,3 +2665,235 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-20 03:08:50 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-20 03:08:51 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-21 03:05:34 [INFO] - Init Global Variable
+2025-11-21 03:06:00 [INFO] - Scraping from None to None...
+2025-11-21 03:06:00 [INFO] - Start scraping from start date: 20251119 to 20251121
+2025-11-21 03:06:00 [INFO] - page_start: 0
+2025-11-21 03:06:00 [INFO] - Fetching data from API Filings...
+2025-11-21 03:06:01 [INFO] - Response status: 200
+2025-11-21 03:06:01 [INFO] - Fetched 15 announcements
+2025-11-21 03:06:02 [ERROR] - [extract symbol] Failed to extract symbol from split: 'NoneType' object has no attribute 'split'
+2025-11-21 03:06:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GPNLX6F72LTFLD0A/dfb1f4dcfabc5b4ca277076189717708cbcc04226fe30c1d3dcc39e74beb11d6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GPNLX6F72LTFLD0A/867674__30723311_Form%203_Forjet_ZhangGuofeng.pdf
+2025-11-21 03:06:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:05 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-21 03:06:09 [ERROR] - [extract symbol] Failed to extract symbol from split: 'NoneType' object has no attribute 'split'
+2025-11-21 03:06:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YUQU25EYO43Z5K20/ab66834fbab5130b3ee3a507e2804ac219acfcb9c23475f9d8547c319d09d77b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YUQU25EYO43Z5K20/867672__30723318_Form%203_Claremont_Tournan_Ma.pdf
+2025-11-21 03:06:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:12 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-21 03:06:15 [ERROR] - [extract symbol] Failed to extract symbol from split: 'NoneType' object has no attribute 'split'
+2025-11-21 03:06:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CN7H73YGIWJYJY2D/4a382231441efe38e05516f39ac7d8c917525e499772374128c57677a564d9b7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CN7H73YGIWJYJY2D/867670__30723965_Form%203_Xiamen%20Kaijie_Chen%20Yan_Hu%20Yingmei.pdf
+2025-11-21 03:06:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:06:18 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-21 03:06:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8QMGQGAFN3HCS5EH/5e918040c118399c15b3d30f03b59b236391b6e7f08151e622a8d20cb9f86f00 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8QMGQGAFN3HCS5EH/867665__eFORM1V2-20112025-Dr%20Ng.pdf
+2025-11-21 03:06:25 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/F9HZ5O4Y8L70R2S9/a2748524f69f826a0a8c54b85a27d61a7eb59eb3dfbe17b0137e09e46ed507ad pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/F9HZ5O4Y8L70R2S9/867663__eFORM3V2-20112025-QMH.pdf
+2025-11-21 03:06:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OSFM0SR3FYI8BZ0J/0f43606107f4d182ba105fe33717d5cfa8bfe95f914592ef63ed5c7dfb5386d5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OSFM0SR3FYI8BZ0J/867661__eFORM1_ChengWK_201125_Final.pdf
+2025-11-21 03:06:36 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IKAURO9031R1X6B9/f5665f27df4810df98a8c4565c6906d19af53ba289cdbbe1d40af7667e116222 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IKAURO9031R1X6B9/867659__eFORM3%20SS%20OBS-19%20and%2020Nov25%20Final.pdf
+2025-11-21 03:06:40 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:40 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:40 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:40 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4VUNF25LURBCQDEV/c9b2ca083aa89a564d173a036d239a85e465fdd2067e6cf78e73d96f19ec0713 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4VUNF25LURBCQDEV/867657__eFORM1%20Dir%20OBC-19%20and%2020Nov25%20Final.pdf
+2025-11-21 03:06:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:06:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SYRXD2ODT2QZ6KSI/4bc2cddc86efd473c8328ea40b088c842dcd69e1a9ea3e1264ad5fe1c8e09ce1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SYRXD2ODT2QZ6KSI/867655__eFORM3%20SS%20BCS-19%20and%2020Nov25%20Final.pdf
+2025-11-21 03:07:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DU1SINROV4DHYF0I/efbdedf14c3a8f982e7c526149eee1e8f171ad4533432b67af211bb34cf47135 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DU1SINROV4DHYF0I/867651__Form%203%20-%20PTS%20Capital%20and%20Yu%20Lei.pdf
+2025-11-21 03:07:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:07:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-21 03:07:03 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/DU1SINROV4DHYF0I/867651__Form%203%20-%20PTS%20Capital%20and%20Yu%20Lei.pdf: All transactions have no share change
+2025-11-21 03:07:03 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ZIXIN GROUP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/DU1SINROV4DHYF0I/efbdedf14c3a8f982e7c526149eee1e8f171ad4533432b67af211bb34cf47135
+2025-11-21 03:07:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/A8IQA235LHLNFTY0/967cc18ff5628a596988bc78de36c0ffdf6846e209377212c83b3c53ae30ef1c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/A8IQA235LHLNFTY0/867649__Form%203%20-%20Khoo%20Thomas%20Clive.pdf
+2025-11-21 03:07:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:07:06 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/A8IQA235LHLNFTY0/867649__Form%203%20-%20Khoo%20Thomas%20Clive.pdf: Single record with no share change
+2025-11-21 03:07:06 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ZIXIN GROUP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/A8IQA235LHLNFTY0/967cc18ff5628a596988bc78de36c0ffdf6846e209377212c83b3c53ae30ef1c
+2025-11-21 03:07:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C673M95BMR4Y9X1F/fa500a868706fbdb947635024d4eb4421a0f3fd4b391484a0482576ad705ed0c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C673M95BMR4Y9X1F/867645__Form%203%20-%20Liang%20Chengwang.pdf
+2025-11-21 03:07:09 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:07:09 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/C673M95BMR4Y9X1F/867645__Form%203%20-%20Liang%20Chengwang.pdf: Single record with no share change
+2025-11-21 03:07:09 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ZIXIN GROUP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/C673M95BMR4Y9X1F/fa500a868706fbdb947635024d4eb4421a0f3fd4b391484a0482576ad705ed0c
+2025-11-21 03:07:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/E9705OIJA0C6NOY2/0265ab8e2dbb441f93d594ea76462eafed1bdae1d9a2c2f16fdd32dcbdf1e1a6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/E9705OIJA0C6NOY2/867642__Form_3_Silchester-19.11.25_final.pdf
+2025-11-21 03:07:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VYJVSB6M049T2GAH/a14160958da546ae5df9f8d55c5ce22aff7698d1d08373cc2d9131d93425fc4e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VYJVSB6M049T2GAH/867636__eFORM1V2%20-Terence.pdf
+2025-11-21 03:07:24 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K365TH58RNMA67MI/1f4c33347544ce490e5d4f17ee9e7fe6c8c82bcfbaba5f3296b9bfc54f9ba5e5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K365TH58RNMA67MI/867618__CICT%2020251119%20FORM%203_BlackRock.pdf
+2025-11-21 03:07:26 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-21 03:07:26 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Change in position due to a decrease in shares held as collateral.'
+2025-11-21 03:07:34 [INFO] - page_start: 1
+2025-11-21 03:07:34 [INFO] - Fetching data from API Filings...
+2025-11-21 03:07:35 [INFO] - Response status: 200
+2025-11-21 03:07:35 [WARNING] - WARNING: API returned None
+2025-11-21 03:07:35 [INFO] - No more announcements found — stopping pagination.
+2025-11-21 03:07:47 [INFO] - Fetching data from API Filings...
+2025-11-21 03:07:47 [INFO] - Response status: 200
+2025-11-21 03:07:47 [WARNING] - WARNING: API returned None
+2025-11-21 03:07:47 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-21 03:07:47 [INFO] - [SGX FILINGS] Scraping completed. Total records: 20
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/CN7H73YGIWJYJY2D/867670__30723965_Form%203_Xiamen%20Kaijie_Chen%20Yan_Hu%20Yingmei.pdf",
+  "symbol": "5GD",
+  "transaction_date": "2025-11-19",
+  "shareholder_name": "Xiamen Kaijie Investment Co., Ltd",
+  "number_of_stock": 123509737.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "sell",
+  "shares_before": 123509737.0,
+  "shares_before_percentage": 0.1552,
+  "shares_after": 0.0,
+  "shares_after_percentage": 0.0
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/CN7H73YGIWJYJY2D/867670__30723965_Form%203_Xiamen%20Kaijie_Chen%20Yan_Hu%20Yingmei.pdf",
+  "symbol": "5GD",
+  "transaction_date": "2025-11-19",
+  "shareholder_name": "Chen Yan",
+  "number_of_stock": 123509737.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "sell",
+  "shares_before": 123509737.0,
+  "shares_before_percentage": 0.1552,
+  "shares_after": 0.0,
+  "shares_after_percentage": 0.0
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/CN7H73YGIWJYJY2D/867670__30723965_Form%203_Xiamen%20Kaijie_Chen%20Yan_Hu%20Yingmei.pdf",
+  "symbol": "5GD",
+  "transaction_date": "2025-11-19",
+  "shareholder_name": "Hu Yingmei",
+  "number_of_stock": 123509737.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "sell",
+  "shares_before": 123509737.0,
+  "shares_before_percentage": 0.1552,
+  "shares_after": 0.0,
+  "shares_after_percentage": 0.0
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/8QMGQGAFN3HCS5EH/867665__eFORM1V2-20112025-Dr%20Ng.pdf",
+  "symbol": "QC7",
+  "transaction_date": "2025-11-20",
+  "shareholder_name": "Dr. Ng Chin Siau",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "sell",
+  "shares_before": 536213389.0,
+  "shares_before_percentage": 0.5677,
+  "shares_after": 527213389.0,
+  "shares_after_percentage": 0.5582
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/OSFM0SR3FYI8BZ0J/867661__eFORM1_ChengWK_201125_Final.pdf",
+  "symbol": "W05",
+  "transaction_date": "2025-11-20",
+  "shareholder_name": "Cheng Wai Keung",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 475295859.0,
+  "shares_before_percentage": 0.6222,
+  "shares_after": 475445859.0,
+  "shares_after_percentage": 0.6224
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/IKAURO9031R1X6B9/867659__eFORM3%20SS%20OBS-19%20and%2020Nov25%20Final.pdf",
+  "symbol": "OTS",
+  "transaction_date": "2025-11-19",
+  "shareholder_name": "ONG BEE SONG",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 160860970.0,
+  "shares_before_percentage": 0.7517,
+  "shares_after": 161349670.0,
+  "shares_after_percentage": 0.754
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/IKAURO9031R1X6B9/867659__eFORM3%20SS%20OBS-19%20and%2020Nov25%20Final.pdf",
+  "symbol": "OTS",
+  "transaction_date": "2025-11-20",
+  "shareholder_name": "ONG BEE SONG",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 161349670.0,
+  "shares_before_percentage": 0.754,
+  "shares_after": 161694670.0,
+  "shares_after_percentage": 0.7556
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/4VUNF25LURBCQDEV/867657__eFORM1%20Dir%20OBC-19%20and%2020Nov25%20Final.pdf",
+  "symbol": "OTS",
+  "transaction_date": "2025-11-19",
+  "shareholder_name": "ONG BEE CHIP",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 169793578.0,
+  "shares_before_percentage": 0.7934,
+  "shares_after": 170282278.0,
+  "shares_after_percentage": 0.7957
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/4VUNF25LURBCQDEV/867657__eFORM1%20Dir%20OBC-19%20and%2020Nov25%20Final.pdf",
+  "symbol": "OTS",
+  "transaction_date": "2025-11-20",
+  "shareholder_name": "ONG BEE CHIP",
+  "number_of_stock": null,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": "buy",
+  "shares_before": 170282278.0,
+  "shares_before_percentage": 0.7957,
+  "shares_after": 170627278.0,
+  "shares_after_percentage": 0.7973
+}
+2025-11-21 03:07:47 [INFO] - Dropping row with missing values:
+{
+  "url": "https://links.sgx.com/1.0.0/corporate-announcements/K365TH58RNMA67MI/867618__CICT%2020251119%20FORM%203_BlackRock.pdf",
+  "symbol": "C38U",
+  "transaction_date": "2025-11-18",
+  "shareholder_name": "BlackRock, Inc",
+  "number_of_stock": 9362599.0,
+  "value": null,
+  "price_per_share": null,
+  "transaction_type": null,
+  "shares_before": 534753239.0,
+  "shares_before_percentage": 0.0703,
+  "shares_after": 525390640.0,
+  "shares_after_percentage": 0.069
+}
+2025-11-21 03:07:49 [INFO] - Length data top_70: 1 | Length data not top_70: 9
+2025-11-21 03:07:49 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-21 03:07:49 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-21 03:07:49 [INFO] - Processing remove duplicate data
+2025-11-21 03:07:49 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-11-21 03:07:49 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-21 03:07:49 [INFO] - Filtering completed. Insertable: 1 | Not insertable: 0
+2025-11-21 03:07:49 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-21 03:07:49 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-21 03:07:49 [INFO] - No SGX filings alerts to send.
+2025-11-21 03:07:50 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
