@@ -19,21 +19,32 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
 
     reasons = []
 
-    required_fields = [
+    basic_fields = [
         symbol, transaction_date, shares_before,
-        shares_after, transaction_type
+        shares_after
     ]
 
     # Missing required field
-    if any(field is None for field in required_fields):
+    if any(field is None for field in basic_fields):
         reasons.append(
             f'Missing one or more required fields: '
             f'symbol={symbol}, transaction_date={transaction_date}, '
             f'shares_before={shares_before}, shares_after={shares_after}, '
-            f'transaction_type={transaction_type}'
         )
        
-    diff_shares = shares_after - shares_before
+    if transaction_type is None: 
+        reasons.append(f'Missing transaction_type')
+    
+    if transaction_type:
+        if not all([value, number_of_stock, price_per_share]):
+            reasons.append(
+                f'Transaction type is "{transaction_type}" but missing financial data: '
+                f'value={value}, number_of_stock={number_of_stock}, '
+                f'price_per_share={price_per_share}'
+            )
+
+    if shares_after and shares_before:
+        diff_shares = shares_after - shares_before
 
     # Inconsistent share count
     if number_of_stock:
@@ -61,13 +72,11 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                 f'Share difference is positive ({diff_shares}), '
                 f'but transaction_type="{transaction_type}" instead of "buy"'
             )
-            return True
         if diff_shares < 0 and transaction_type != 'sell':
             reasons.append(
                 f'Share difference is negative ({diff_shares}), '
                 f'but transaction_type="{transaction_type}" instead of "sell"'
             )
-            return True
     
     # Unrealistic or inconsistent price
     if price_per_share:
@@ -124,7 +133,6 @@ def get_data_alert(payload_sgx_filings: list[dict[str, any]]) -> tuple[list[dict
             data_insertable.append(payload)
     
     LOGGER.info(f'Filtering completed. Insertable: {len(data_insertable)} | Not insertable: {len(data_not_insertable)}')
-    print(f'Filtering completed. Insertable: {len(data_insertable)} | Not insertable: {len(data_not_insertable)}')
     return data_insertable, data_not_insertable
 
 
@@ -134,6 +142,6 @@ if __name__ == '__main__':
         data = json.load(file)
     print(len(data))
     data_insertable, data_not_insertable = get_data_alert(data)
-    # print(f'check data not insertable sample: {data_not_insertable[:2]} | \ndata insertable sample: {data_insertable[:2]}')
+    print(f'check data not insertable sample: {data_not_insertable[:2]} | \ndata insertable sample: {data_insertable[:2]}')
     
     # uv run -m src.alerting.filter_data_alert
