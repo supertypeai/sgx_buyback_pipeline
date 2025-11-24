@@ -74,3 +74,16 @@ def safe_extract_fallback(key_name: str, section_a: dict | list, section_b) -> s
         LOGGER.error(f"[safe extract fallback] Error: {error}")
 
     return None 
+
+
+def compute_mandate_remaining(total_mandate: float, cumulative_purchased: float) -> float:
+    try: 
+        if not total_mandate or not cumulative_purchased:
+            return None
+        
+        mandate_remaining = total_mandate - cumulative_purchased
+        return mandate_remaining
+     
+    except Exception as error:
+        LOGGER.error(f"[compute_mandate_remaining] Error: {error}") 
+        return None  

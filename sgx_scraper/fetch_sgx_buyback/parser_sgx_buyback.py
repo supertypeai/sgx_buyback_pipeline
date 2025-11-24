@@ -1,10 +1,13 @@
 from bs4 import BeautifulSoup 
 from dataclasses import asdict
 from bs4.element import Tag
+from dateutil.relativedelta import relativedelta
+from datetime import datetime
 
 from sgx_scraper.fetch_sgx_buyback.models import SGXBuyback
 from sgx_scraper.fetch_sgx_buyback.utils.payload_helper import (
     build_price_per_share,
+    compute_mandate_remaining,
     safe_extract_value,
     safe_extract_fallback,
     safe_convert_float
@@ -142,6 +145,10 @@ def parse_total_value(
         section_a: dict[str], section_b: dict[str], 
         section_c: dict[str], section_d: dict[str]
 ) -> tuple:
+    # Total mandate 
+    total_mandate = section_a.get('Maximum number of shares authorised for purchase')
+    total_mandate = safe_convert_float(total_mandate)
+
     # Total shares purchased
     total_share_purchased = safe_extract_fallback("Total Number of shares purchased", section_a, section_b)
     total_share_purchased = safe_convert_float(total_share_purchased)
@@ -159,7 +166,7 @@ def parse_total_value(
     treasury_shares_after_purchase_raw = section_d.get("Number of treasury shares held after purchase")
     treasury_shares_after_purchase = safe_convert_float(treasury_shares_after_purchase_raw)
 
-    return total_share_purchased, cumulative_share_purchased, total_consideration, treasury_shares_after_purchase
+    return total_share_purchased, cumulative_share_purchased, total_consideration, treasury_shares_after_purchase, total_mandate
 
 
 def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
@@ -185,23 +192,40 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         # Prices
         price_per_share = parse_prices(section_a, section_b)
 
-        # Total shares purchased, Cumulative shares purchased, Total consideration, Treasury shares after purchase
-        total_share_purchased, cumulative_share_purchased, total_consideration, treasury_shares_after_purchase = parse_total_value(
+        # Total shares purchased, Cumulative shares purchased, 
+        # Total consideration, Treasury shares after purchase, Total Mandate
+        buy_total, buy_cum, cost_total, treasury_after, mandate_total = parse_total_value(
             section_a, section_b, section_c, section_d
         )
 
-        return {
+        # Computer mandate remaining 
+        mandate_remaining = compute_mandate_remaining(mandate_total, buy_cum)
+
+        # Mandate end 
+        start_date_object = datetime.strptime(start_date, "%Y-%m-%d")
+        mandate_end = start_date_object + relativedelta(years=1)
+        mandate_end = mandate_end.strftime("%Y-%m-%d")
+
+        buyback_payload = {
             "symbol": symbol,
             "purchase_date": purchase_date,
             "type": buy_back_type,
-            "start_date": start_date,
             "price_per_share": price_per_share,
-            "total_value": total_consideration,
-            "total_shares_purchased": total_share_purchased,
-            "cumulative_purchased": cumulative_share_purchased,
-            "treasury_shares_after_purchase": treasury_shares_after_purchase,
+            "total_value": cost_total,
+            "total_shares_purchased": buy_total,
+            "treasury_shares_after_purchase": treasury_after,
         }
 
+        buyback_payload['mandate'] = {
+            "mandate_total": mandate_total,
+            "cumulative_purchased": buy_cum, 
+            "mandate_remaining": mandate_remaining, 
+            "mandate_start": start_date,
+            "mandate_end": mandate_end
+        }
+
+        return buyback_payload
+ 
     except Exception as error:
         LOGGER.error(f"[extract_buyback_fields] Error parsing SGX buyback at {url}: {error}", exc_info=True)
         return None
@@ -236,11 +260,6 @@ def get_sgx_buybacks(url: str) -> SGXBuyback:
 if __name__ == '__main__':
     test_url = 'https://links.sgx.com/1.0.0/corporate-announcements/IZHHDYW20N2Q5EPO/632276817f55ea1bc49fb3b9137351ce3117adca0630b958cb5c5e6d76b90dd8'
     result = get_sgx_buybacks(test_url)
-    print(json.dumps(asdict(result), indent=2))
+    # print(json.dumps(asdict(result), indent=2))
 
-
-
-
-
-
-
+    # uv run -m sgx_scraper.fetch_sgx_buyback.parser_sgx_buyback

@@ -49,17 +49,26 @@ def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
     except Exception as error:
         LOGGER.error(f"[push_to_db] Failed to push data: {error}")
         return None
-    
 
-def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
+
+def clean_payload_sgx_buyback(payload: list[dict[str, any]]) -> list[dict[str, any]]:
     if not payload:
         LOGGER.info(f'[sgx_buyback] is empty, skipping clean payload')
         return []
     
     for row in payload:
+        mandate = row.get('mandate')
+        if mandate:
+            for key_mandate in ['cumulative_purchased', 'mandate_remaining', 'mandate_total']:
+                if key_mandate in mandate and mandate[key_mandate] is not None:
+                    try:
+                        mandate[key_mandate] = int(float(mandate[key_mandate]))
+                    except (ValueError, TypeError):
+                        LOGGER.error(f"Failed to convert {key_mandate} with value {mandate[key_mandate]} to int.")
+                        mandate[key_mandate] = None
+
         for key in [
             "total_shares_purchased",
-            "cumulative_purchased",
             "treasury_shares_after_purchase"
         ]:
             if key in row and row[key] is not None:
@@ -68,7 +77,7 @@ def clean_payload_sgx_buyback(payload: list[dict]) -> list[dict]:
                 except (ValueError, TypeError):
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
-    
+
     return payload
 
 
@@ -82,14 +91,6 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
 
     for row in payload:
         shareholder_name = row.get('shareholder_name')
-        price_per_share = row.get('price_per_share')
-        number_of_stock = row.get('number_of_stock')
-        value = row.get('value')
-
-        # Exclude missing data
-        if not (price_per_share and number_of_stock and value):
-            LOGGER.info(f'Dropping row with missing values:\n{json.dumps(row, indent=2)}')
-            continue
 
         if shareholder_name.isupper():
             row['shareholder_name'] = shareholder_name.title()
