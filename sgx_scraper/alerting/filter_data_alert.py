@@ -67,16 +67,16 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                 f'Please double check the transaction type: {transaction_type}. ' 
                 f'The document may contain multiple descriptions that affect the classification.'
             )
-        if diff_shares > 0 and transaction_type != 'buy':
-            reasons.append(
-                f'Share difference is positive ({diff_shares}), '
-                f'but transaction_type="{transaction_type}" instead of "buy"'
-            )
-        if diff_shares < 0 and transaction_type != 'sell':
-            reasons.append(
-                f'Share difference is negative ({diff_shares}), '
-                f'but transaction_type="{transaction_type}" instead of "sell"'
-            )
+        # if diff_shares > 0 and transaction_type != 'buy':
+        #     reasons.append(
+        #         f'Share difference is positive ({diff_shares}), '
+        #         f'but transaction_type="{transaction_type}" instead of "buy"'
+        #     )
+        # if diff_shares < 0 and transaction_type != 'sell':
+        #     reasons.append(
+        #         f'Share difference is negative ({diff_shares}), '
+        #         f'but transaction_type="{transaction_type}" instead of "sell"'
+        #     )
     
     # Unrealistic or inconsistent price
     if price_per_share:
