@@ -3139,3 +3139,94 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-25 03:12:57 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-25 03:12:57 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-26 03:09:21 [INFO] - Init Global Variable
+2025-11-26 03:09:46 [INFO] - Scraping from None to None...
+2025-11-26 03:09:46 [INFO] - Start scraping from start date: 20251124 to 20251126
+2025-11-26 03:09:46 [INFO] - page_start: 0
+2025-11-26 03:09:46 [INFO] - Fetching data from API Filings...
+2025-11-26 03:09:46 [INFO] - Response status: 200
+2025-11-26 03:09:46 [INFO] - Fetched 14 announcements
+2025-11-26 03:09:47 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ERUWEWIG2PO5YJXR/60fd8fc7385460d60b2fb080f6756b54c2c22e41599fc97019023838679da1cc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ERUWEWIG2PO5YJXR/868111__eFORM3V2_LCI_final.pdf
+2025-11-26 03:09:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:09:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:09:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:09:50 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-26 03:09:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:09:50 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'RMDV Investments Pte. Ltd ("RMDV") had distributed all of its shareholding interests in LCH (123,803,290) equally to Beverian Holdings Pte. Ltd. ("Beverian") (61,901,645) and Lum Chang Investments Pte. Ltd. ("LCI") (61,901,645) resulting in LCI holding more than 20% of LCH's Shares and becoming a substantial shareholder of the Issuer ("Share Distribution"). The Share Distribution was settled against the outstanding loans owing from RMDV to Beverian and LCI.'
+2025-11-26 03:09:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:09:50 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'RMDV Investments Pte. Ltd ("RMDV") had distributed all of its shareholding interests in LCH (123,803,290) equally to Beverian Holdings Pte. Ltd. ("Beverian") (61,901,645) and Lum Chang Investments Pte. Ltd. ("LCI") (61,901,645) resulting in LCI holding more than 20% of LCH's Shares and becoming a substantial shareholder of the Issuer ("Share Distribution"). The Share Distribution was settled against the outstanding loans owing from RMDV to Beverian and LCI.'
+2025-11-26 03:09:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:09:50 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'RMDV Investments Pte. Ltd ("RMDV") had distributed all of its shareholding interests in LCH (123,803,290) equally to Beverian Holdings Pte. Ltd. ("Beverian") (61,901,645) and Lum Chang Investments Pte. Ltd. ("LCI") (61,901,645) resulting in LCI holding more than 20% of LCH's Shares and becoming a substantial shareholder of the Issuer ("Share Distribution"). The Share Distribution was settled against the outstanding loans owing from RMDV to Beverian and LCI.'
+2025-11-26 03:09:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DCCMGPR7FA7VD1SH/499e42d9e6790113b3702dbd6c8b1dac71e420526095e4b70b4aad0c90826066 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DCCMGPR7FA7VD1SH/868109__eFORM3V2_Beverian_final.pdf
+2025-11-26 03:09:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:09:57 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'RMDV Investments Pte. Ltd ("RMDV") had distributed all of its shareholding interests in LCH (123,803,290) equally to Beverian Holdings Pte. Ltd. ("Beverian") (61,901,645) and Lum Chang Investments Pte. Ltd. ("LCI") (61,901,645) resulting in Beverian holding more than 20% of LCH's shares and becoming a substantial shareholder of the Issuer ("Share Distribution"). The Share Distribution was settled against the outstanding loans owing from RMDV to Beverian and LCI.'
+2025-11-26 03:10:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/B9UQY7UY9WT76G3T/b53731b4d8889b27bea1ba9802914df1f4210b4d2d80da75e6d66bbe81055a02 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/B9UQY7UY9WT76G3T/868107__eFORM3V2_RMDV_LCC_final.pdf
+2025-11-26 03:10:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:04 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'RMDV Investments Pte. Ltd ("RMDV") had distributed all of its shareholding interests in LCH (123,803,290) equally to Beverian Holdings Pte. Ltd. ("Beverian") (61,901,645) and Lum Chang Investments Pte. Ltd. ("LCI") (61,901,645) resulting in RMDV ceasing to be a shareholder of LCH and thereby ceased to be deemed interested in the Shares of the Issuer held by LCH (the "Share Distribution"). The Share Distribution was settled against the outstanding loans owing from RMDV to Beverian and LCI.'
+2025-11-26 03:10:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Z2IB3OT6AU9B00SB/848a223f405ca57240febbfa12203b4688e796706fbb5ad1f5ef8aa5f5458c1d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Z2IB3OT6AU9B00SB/868006__Form%203%20-%20UHPL%20and%20Teo%20Yi-Dar.pdf
+2025-11-26 03:10:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:12 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-26 03:10:12 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:12 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/THHCOCDS0XZDJHMO/4a2ea26f7227cac7b537708a52417ef73608be18b541434a436c408d6297d3df pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/THHCOCDS0XZDJHMO/868004__Form%203%20-%20Substantial%20Shareholders.pdf
+2025-11-26 03:10:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:18 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/THHCOCDS0XZDJHMO/868004__Form%203%20-%20Substantial%20Shareholders.pdf: All transactions have no share change
+2025-11-26 03:10:18 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GREEN BUILD TECHNOLOGY LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/THHCOCDS0XZDJHMO/4a2ea26f7227cac7b537708a52417ef73608be18b541434a436c408d6297d3df
+2025-11-26 03:10:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/50YUFT0G375UUORP/5010168124caa36dec7d97182ad8e89e7595553b18b2ff7c5d4d5d84933ff471 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/50YUFT0G375UUORP/868002__eFORM1V2%20-%20Terence.pdf
+2025-11-26 03:10:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TKRULCHT0V8IMBAO/c578cec1851776390da2f79a33e7979b1cd6466906d9343a38b46f0e5ff3e5da pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TKRULCHT0V8IMBAO/867997__Form%201%20-%20Tang%20Chun%20Meng.pdf
+2025-11-26 03:10:24 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:24 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/TKRULCHT0V8IMBAO/867997__Form%201%20-%20Tang%20Chun%20Meng.pdf: Single record with no share change
+2025-11-26 03:10:24 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GREEN BUILD TECHNOLOGY LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/TKRULCHT0V8IMBAO/c578cec1851776390da2f79a33e7979b1cd6466906d9343a38b46f0e5ff3e5da
+2025-11-26 03:10:24 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UTCGYBH9O00DIRTI/272e57c833490208b33119f14464ac0b354af2aafbf63590e7f32357d2f576bb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UTCGYBH9O00DIRTI/867993__Form%203-Temasek.pdf
+2025-11-26 03:10:26 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:26 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Decrease in the total number of issued Shares (excluding treasury shares) from 175,974,032 Shares to 175,874,032 Shares (as announced by the Listed Issuer on 20 November 2025).'
+2025-11-26 03:10:26 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/UTCGYBH9O00DIRTI/867993__Form%203-Temasek.pdf: Single record with no share change
+2025-11-26 03:10:26 [INFO] - [SGX FILINGS] Data not valid found for issuer name: 17LIVE GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/UTCGYBH9O00DIRTI/272e57c833490208b33119f14464ac0b354af2aafbf63590e7f32357d2f576bb
+2025-11-26 03:10:27 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FCT3W1IVLG1JNP3N/18897840574fa8dff7444aaf54c994925c83a831cf6d27fc8134837f95d8ae39 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FCT3W1IVLG1JNP3N/867983__eform3v2_FIL_final_24112025.pdf
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-26 03:10:31 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-26 03:10:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9ZLA7P1P2NR12VZN/a94a410d18a9174a3310ad0fdca5c9874347b3e6867536a43f585722ce49c20d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9ZLA7P1P2NR12VZN/867971__Form%201%20-%20LHL.pdf
+2025-11-26 03:10:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:38 [INFO] - Transfer detected - transformed shareholder: Lim Hock Leng -> Lim Hock Leng [->] by way of gift
+2025-11-26 03:10:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XY6YOSTCNE7WGHO0/52861238d74ab729e0297c553f43fdbb126fc00aa5af4d181c9486559bd4bf7c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XY6YOSTCNE7WGHO0/867969__Form%201%20-%20LHC.pdf
+2025-11-26 03:10:44 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:44 [INFO] - Transfer detected - transformed shareholder: Lim Hock Chee -> Lim Hock Leng [->] by way of gift
+2025-11-26 03:10:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SOGFAZPZOHG6CJY9/986cd8a4e4310628891b622d04fbbf5f5f894670e741b2857058218ce5f4a4d3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SOGFAZPZOHG6CJY9/867967__eFORM1_ChengWK_251125_Final.pdf
+2025-11-26 03:10:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PPPN9EANW7R876L6/a0770493b82205daeb52daa6f11f4a3deaab611948221a0517c09cb0d1dbd873 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PPPN9EANW7R876L6/867965__Form%201%20-%20LHE.pdf
+2025-11-26 03:10:54 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-26 03:10:54 [INFO] - Transfer detected - transformed shareholder: Lim Hock Eng -> Lim Hock Leng [->] by way of gift
+2025-11-26 03:10:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9PESTZVF4SQR9JVB/7e0a1461dc3bdd2f4057874f603457b909569b3a54fe0e2492fe03b68d4adb63 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9PESTZVF4SQR9JVB/867963__Gilbert%20-%20Form%201%20-%2025112025.pdf
+2025-11-26 03:11:10 [INFO] - page_start: 1
+2025-11-26 03:11:10 [INFO] - Fetching data from API Filings...
+2025-11-26 03:11:11 [INFO] - Response status: 200
+2025-11-26 03:11:11 [WARNING] - WARNING: API returned None
+2025-11-26 03:11:11 [INFO] - No more announcements found — stopping pagination.
+2025-11-26 03:11:22 [INFO] - Fetching data from API Filings...
+2025-11-26 03:11:23 [INFO] - Response status: 200
+2025-11-26 03:11:23 [WARNING] - WARNING: API returned None
+2025-11-26 03:11:23 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-26 03:11:23 [INFO] - [SGX FILINGS] Scraping completed. Total records: 23
+2025-11-26 03:11:24 [INFO] - Length data top_70: 3 | Length data not top_70: 20
+2025-11-26 03:11:24 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-26 03:11:24 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-26 03:11:24 [INFO] - Processing remove duplicate data
+2025-11-26 03:11:24 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-11-26 03:11:24 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-26 03:11:24 [INFO] - Filtering completed. Insertable: 0 | Not insertable: 3
+2025-11-26 03:11:24 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-26 03:11:24 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-26 03:11:25 [INFO] - Email sent! Message ID: 011c019abe24f7ec-fae04d66-8010-4dc9-ad69-c64027b06ee8-000000
+2025-11-26 03:11:25 [INFO] - [sgx_payload] is empty, skipping push to DB
