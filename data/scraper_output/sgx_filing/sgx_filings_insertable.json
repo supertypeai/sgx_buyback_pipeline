@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/FKLF8DS2ALURPQ3Z/868156__CICT%2020251126%20FORM%203_BlackRock.pdf",
+    "symbol": "C38U",
+    "transaction_date": "2025-11-24",
+    "shareholder_name": "BlackRock, Inc",
+    "number_of_stock": 157600,
+    "value": 371936.0,
+    "price_per_share": 2.36,
+    "transaction_type": "buy",
+    "shares_before": 532749469,
+    "shares_before_percentage": 0.0699,
+    "shares_after": 532907069,
+    "shares_after_percentage": 0.07
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/F90U43VAF2O1IEUV/868150__Form%201-Trade%2024Nov25%20HLMC%20n%20HLX%20Final.pdf",
+    "symbol": "F17",
+    "transaction_date": "2025-11-24",
+    "shareholder_name": "Quek Leng Chan",
+    "number_of_stock": 171000,
+    "value": 340290.0,
+    "price_per_share": 1.99,
+    "transaction_type": "sell",
+    "shares_before": 850467037,
+    "shares_before_percentage": 0.7187,
+    "shares_after": 850296037,
+    "shares_after_percentage": 0.7185
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/F90U43VAF2O1IEUV/868150__Form%201-Trade%2024Nov25%20HLMC%20n%20HLX%20Final.pdf",
+    "symbol": "F17",
+    "transaction_date": "2025-11-24",
+    "shareholder_name": "Quek Leng Chan",
+    "number_of_stock": 171000,
+    "value": 340290.0,
+    "price_per_share": 1.99,
+    "transaction_type": "buy",
+    "shares_before": 850296037,
+    "shares_before_percentage": 0.7185,
+    "shares_after": 850467037,
+    "shares_after_percentage": 0.7187
+  }
+]
