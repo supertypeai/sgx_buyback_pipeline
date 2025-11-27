@@ -3257,3 +3257,28 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-26 03:13:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-26 03:13:19 [INFO] - [sgx_payload] Successfully pushed 4 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-11-27 03:08:41 [INFO] - Init Global Variable
+2025-11-27 03:09:09 [INFO] - Scraping from None to None...
+2025-11-27 03:09:09 [INFO] - Start scraping from start date: 20251125 to 20251127
+2025-11-27 03:09:09 [INFO] - page_start: 0
+2025-11-27 03:09:09 [INFO] - Fetching data from API Buybacks...
+2025-11-27 03:09:10 [INFO] - Response status: 200
+2025-11-27 03:09:10 [INFO] - Fetched 10 announcements
+2025-11-27 03:09:28 [ERROR] - [extract symbol] Failed to extract symbol from split: 'NoneType' object has no attribute 'split'
+2025-11-27 03:10:01 [INFO] - page_start: 1
+2025-11-27 03:10:01 [INFO] - Fetching data from API Buybacks...
+2025-11-27 03:10:02 [INFO] - Response status: 200
+2025-11-27 03:10:02 [WARNING] - WARNING: API returned None
+2025-11-27 03:10:02 [INFO] - No more announcements found — stopping pagination.
+2025-11-27 03:10:16 [INFO] - Fetching data from API Buybacks...
+2025-11-27 03:10:16 [INFO] - Response status: 200
+2025-11-27 03:10:16 [WARNING] - WARNING: API returned None
+2025-11-27 03:10:16 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-27 03:10:16 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 10
+2025-11-27 03:10:17 [INFO] - Length data top_70: 4 | Length data not top_70: 6
+2025-11-27 03:10:17 [INFO] - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2025-11-27 03:10:17 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-11-27 03:10:17 [INFO] - Processing remove duplicate data
+2025-11-27 03:10:17 [INFO] - Length data after duplicate removing: 4
+2025-11-27 03:10:17 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-11-27 03:10:17 [INFO] - [sgx_payload] Successfully pushed 4 records to DB, table: sgx_buybacks
