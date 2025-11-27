@@ -92,7 +92,7 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
     for row in payload:
         shareholder_name = row.get('shareholder_name')
 
-        if shareholder_name.isupper():
+        if shareholder_name and shareholder_name.isupper():
             row['shareholder_name'] = shareholder_name.title()
 
         # Convert share counts to int
