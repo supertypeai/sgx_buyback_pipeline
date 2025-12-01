@@ -3627,3 +3627,4 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-01 03:46:40 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-12-01 03:46:40 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-01 03:46:40 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-12-01 21:16:28 [INFO] - Init Global Variable
