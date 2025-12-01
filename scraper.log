@@ -3282,3 +3282,348 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-11-27 03:10:17 [INFO] - Length data after duplicate removing: 4
 2025-11-27 03:10:17 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-11-27 03:10:17 [INFO] - [sgx_payload] Successfully pushed 4 records to DB, table: sgx_buybacks
+2025-11-27 04:09:01 [INFO] - Init Global Variable
+2025-11-27 04:09:37 [INFO] - Scraping from None to None...
+2025-11-27 04:09:37 [INFO] - Start scraping from start date: 20251125 to 20251127
+2025-11-27 04:09:37 [INFO] - page_start: 0
+2025-11-27 04:09:37 [INFO] - Fetching data from API Filings...
+2025-11-27 04:09:37 [INFO] - Response status: 200
+2025-11-27 04:09:37 [INFO] - Fetched 15 announcements
+2025-11-27 04:09:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NI35W1S2XC6DVTVF/7cd29c59cfadd2eb9a12ea88da4df2fd273b0f39edc14818ac7de5b0c0f82313 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NI35W1S2XC6DVTVF/868220__eFORM3%20SS%20OBS-25%20and%2026Nov25%20Final.pdf
+2025-11-27 04:09:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7RFQ5IBDYS1V26HI/1eec5ba2f14eb669c859e01eb1207a9cd3166769df9c0f73defb2f99d1a35c3a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7RFQ5IBDYS1V26HI/868218__eFORM1%20Dir%20OBC-25%20and%2026Nov25%20Final.pdf
+2025-11-27 04:09:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FGHCRWOTXYUD46XE/2164ef0ec786cd84968278c3959c00620a2c2026f615fd3488aa42e0e42b2e32 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FGHCRWOTXYUD46XE/868216__eFORM3%20SS%20BCS-25%20and%2026Nov25%20Final.pdf
+2025-11-27 04:09:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ONGE2B38B7MVL1RJ/29dd0ed90f034423b3461ac75ab938803546be179b8193dc332050bf67e7cb3a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ONGE2B38B7MVL1RJ/868208__eFORM3V2_26112025.pdf
+2025-11-27 04:09:58 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:09:58 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ONGE2B38B7MVL1RJ/868208__eFORM3V2_26112025.pdf: Single record with no share change
+2025-11-27 04:09:58 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ONGE2B38B7MVL1RJ/29dd0ed90f034423b3461ac75ab938803546be179b8193dc332050bf67e7cb3a
+2025-11-27 04:09:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9Y6897JAPXTLMA10/9f02d8f28973f99f680a9751cf6718d37b4cfb8b2641cf70013ac5bab486903d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9Y6897JAPXTLMA10/868205__FORM1_TSS_24Nov25_ADJUST%20UNVESTED_FINAL.pdf
+2025-11-27 04:09:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: DBS GROUP HOLDINGS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/9Y6897JAPXTLMA10/9f02d8f28973f99f680a9751cf6718d37b4cfb8b2641cf70013ac5bab486903d
+2025-11-27 04:09:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZKDBWHPB6ZLRQUJW/90826986e29901948cce107f3d5cec69b002994bbecb17f4de73a7fff27f2fd2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZKDBWHPB6ZLRQUJW/868195__MT_FORM1_25Nov25.pdf
+2025-11-27 04:10:02 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:10:02 [INFO] - Transfer detected - transformed shareholder: Tay Wee Jin Michael -> None
+2025-11-27 04:10:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VD59MTQE827O308F/ecc9fb9d547d41f9b7f3f232c9a60006c689e52bbb029f7a7f9d82a6c5d125a9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VD59MTQE827O308F/868185__HT_FORM1_25Nov25.pdf
+2025-11-27 04:10:10 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:10:10 [INFO] - Transfer detected - transformed shareholder: Dr Henry Tay Yun Chwan -> None
+2025-11-27 04:10:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5OUK84LDKUPN3VS4/4ee4a35fee3bc5021c8dde98d70532ed334cf70bc5c4952c4ec0170bf956d020 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5OUK84LDKUPN3VS4/868183__eFORM1V2%20-%20Terence.pdf
+2025-11-27 04:10:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XTY24Q0R9WYW0PO9/d9ef325c8b4964e9a9fcb49ae914e2a4c614a6ad5dc56d6f39481edcc61cce85 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XTY24Q0R9WYW0PO9/868171__eFORM1_ChengWK_261125_Final.pdf
+2025-11-27 04:10:22 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:10:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FKLF8DS2ALURPQ3Z/fe1c5670e80b46df0101de41355ec0d3191859f600470604a3933de9eb56c3d2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FKLF8DS2ALURPQ3Z/868156__CICT%2020251126%20FORM%203_BlackRock.pdf
+2025-11-27 04:10:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/F90U43VAF2O1IEUV/326702982e8cc75c312224461c5adcca7814a5bedeee4a06b536294f0ce9b605 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/F90U43VAF2O1IEUV/868150__Form%201-Trade%2024Nov25%20HLMC%20n%20HLX%20Final.pdf
+2025-11-27 04:10:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SIU3EOPBSTTODFIF/45a5d0f8c9ec9944ffce695654db138f734842ef4d18a152886632fcf71b9446 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SIU3EOPBSTTODFIF/868146__Project%20Raffles%20Form%203.pdf
+2025-11-27 04:10:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:48 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-27 04:10:51 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2ZIYC6TZHZ92OH1G/71a9621cbbc43db9cad84f7efdacba4032ffea607c41a592b55e583c3a9984ac pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2ZIYC6TZHZ92OH1G/868144__eFORM3V2%20-%20PN.pdf
+2025-11-27 04:10:53 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:10:53 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/2ZIYC6TZHZ92OH1G/868144__eFORM3V2%20-%20PN.pdf: Single record with no share change
+2025-11-27 04:10:53 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/2ZIYC6TZHZ92OH1G/71a9621cbbc43db9cad84f7efdacba4032ffea607c41a592b55e583c3a9984ac
+2025-11-27 04:10:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/H8K0TGKH40QD31KX/0f03cb195aaf8faeae4327a0c5f59df1be24a78fca9b2fbb4e793039a72a632e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/H8K0TGKH40QD31KX/868142__eFORM3V2%20-%20RN.pdf
+2025-11-27 04:10:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-27 04:10:55 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/H8K0TGKH40QD31KX/868142__eFORM3V2%20-%20RN.pdf: Single record with no share change
+2025-11-27 04:10:55 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/H8K0TGKH40QD31KX/0f03cb195aaf8faeae4327a0c5f59df1be24a78fca9b2fbb4e793039a72a632e
+2025-11-27 04:10:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/13SX8YA271GUYLPD/ea30fed3336cb419d6a7247ce970eee7026bde30767e591d4253672a9260a294 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/13SX8YA271GUYLPD/868140__eFORM3V2%20-%20Goodview%20FEOC%20Estate.pdf
+2025-11-27 04:10:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:58 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-27 04:10:58 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/13SX8YA271GUYLPD/868140__eFORM3V2%20-%20Goodview%20FEOC%20Estate.pdf: All transactions have no share change
+2025-11-27 04:10:58 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/13SX8YA271GUYLPD/ea30fed3336cb419d6a7247ce970eee7026bde30767e591d4253672a9260a294
+2025-11-27 04:11:02 [INFO] - page_start: 1
+2025-11-27 04:11:02 [INFO] - Fetching data from API Filings...
+2025-11-27 04:11:03 [INFO] - Response status: 200
+2025-11-27 04:11:03 [WARNING] - WARNING: API returned None
+2025-11-27 04:11:03 [INFO] - No more announcements found — stopping pagination.
+2025-11-27 04:11:15 [INFO] - Fetching data from API Filings...
+2025-11-27 04:11:15 [INFO] - Response status: 200
+2025-11-27 04:11:15 [WARNING] - WARNING: API returned None
+2025-11-27 04:11:15 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-27 04:11:15 [INFO] - [SGX FILINGS] Scraping completed. Total records: 18
+2025-11-27 04:11:16 [INFO] - Length data top_70: 3 | Length data not top_70: 15
+2025-11-27 04:11:16 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-27 04:11:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-27 04:11:16 [INFO] - Processing remove duplicate data
+2025-11-27 04:11:16 [INFO] - Length data after duplicate removing: 3
+2025-11-27 04:11:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-27 04:11:18 [INFO] - Filtering completed. Insertable: 3 | Not insertable: 0
+2025-11-27 04:11:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-27 04:11:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-27 04:11:18 [INFO] - No SGX filings alerts to send.
+2025-11-27 04:11:18 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_filings
+<<<<<<< Updated upstream
+2025-11-28 03:06:00 [INFO] - Init Global Variable
+2025-11-28 03:06:26 [INFO] - Scraping from None to None...
+2025-11-28 03:06:26 [INFO] - Start scraping from start date: 20251126 to 20251128
+2025-11-28 03:06:26 [INFO] - page_start: 0
+2025-11-28 03:06:26 [INFO] - Fetching data from API Filings...
+2025-11-28 03:06:27 [INFO] - Response status: 200
+2025-11-28 03:06:27 [INFO] - Fetched 20 announcements
+2025-11-28 03:06:28 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/79NBWJBTY5FFNH79/d6efc2055146ca96e0d5c52c41dc389cce4b292cde8de9791bbd5d855d936223 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/79NBWJBTY5FFNH79/868361__CHL%20-%20Form%203%20-%20LHN%20-%2025.11.25.pdf
+2025-11-28 03:06:34 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:06:35 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/56BO867GMM4SKJUG/2dc03027a0b1af781de3f89f1c7b54b92b3305e4f879cd3d4c9865f273cddf04 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/56BO867GMM4SKJUG/868359__CHL%20-%20Form%201%20-%20Kelvin%20-%2025.11.25.pdf
+2025-11-28 03:06:44 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:44 [INFO] - Transfer detected - transformed shareholder: Lim Lung Tieng -> LHNGPL up [->] an aggregate of 16
+2025-11-28 03:06:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OY481FS1FG0LEOVV/0dfb5941764944f5b93ac3298bba9c87365efeabf502405e35eef7f43827480a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OY481FS1FG0LEOVV/868356__eFORM1V2%20-%20Terence.pdf
+2025-11-28 03:06:51 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SKOMP1HN591B4JO3/f2a49cc05c0853f7f0dd68f1cf7d662dd03bab71c15271539f2fd6318972afaf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SKOMP1HN591B4JO3/868345__eFORM3V2_final.pdf
+2025-11-28 03:06:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4MPH2MHOOE6KH5YK/91100663749435a02850c8053f3f924935bfa463bdad157bfd1f4dcd070b4206 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4MPH2MHOOE6KH5YK/868339__eFORM3V2_27112025.pdf
+2025-11-28 03:06:58 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:06:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4MPH2MHOOE6KH5YK/868339__eFORM3V2_27112025.pdf: Single record with no share change
+2025-11-28 03:06:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/4MPH2MHOOE6KH5YK/91100663749435a02850c8053f3f924935bfa463bdad157bfd1f4dcd070b4206
+2025-11-28 03:06:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VE8TI1IX22JQX509/29377f7a7e17b9fc8ef119084e7ea6c93996adec71079ec3fe6d0faadc8b14dd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VE8TI1IX22JQX509/868337__Form%203%20-%20UMPL%20and%20Others_Final.pdf
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:04 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/STOKH7AEDK5C8UDZ/de384de7af2d68efda02bac0e1d040de3316b6e43fa11e7d9d9cdcfe27766b16 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/STOKH7AEDK5C8UDZ/868332__AIH_Form%201_DFY.pdf
+2025-11-28 03:07:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LNMR32GA5PODN9P8/83599bd4db1cbcd32b050c894600963e9b5e7386c901451372be871ce1e3984e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LNMR32GA5PODN9P8/868321__Form%203-Fullerton_Ellensburg.pdf
+2025-11-28 03:07:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:13 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/LNMR32GA5PODN9P8/868321__Form%203-Fullerton_Ellensburg.pdf: All transactions have no share change
+2025-11-28 03:07:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: 17LIVE GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LNMR32GA5PODN9P8/83599bd4db1cbcd32b050c894600963e9b5e7386c901451372be871ce1e3984e
+2025-11-28 03:07:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/44RGLUBT2L874B9P/a0004fb5e87c199ad400795f8b2f76a25f41eb8ec4856b54a78fbba9305229b8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/44RGLUBT2L874B9P/868315__Form%203%20-%20PTS%20Capital%20and%20Yu%20Lei.pdf
+2025-11-28 03:07:15 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:15 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:15 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/44RGLUBT2L874B9P/868315__Form%203%20-%20PTS%20Capital%20and%20Yu%20Lei.pdf: All transactions have no share change
+2025-11-28 03:07:15 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ZIXIN GROUP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/44RGLUBT2L874B9P/a0004fb5e87c199ad400795f8b2f76a25f41eb8ec4856b54a78fbba9305229b8
+2025-11-28 03:07:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Q234XIWMYFXD0GR1/d09981cbba812a2d05b26fa494ff12bf7e4469210a2291f423db78066d77d889 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Q234XIWMYFXD0GR1/868313__Form%203%20-%20Khoo%20Thomas%20Clive.pdf
+2025-11-28 03:07:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:18 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/Q234XIWMYFXD0GR1/868313__Form%203%20-%20Khoo%20Thomas%20Clive.pdf: Single record with no share change
+2025-11-28 03:07:18 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ZIXIN GROUP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/Q234XIWMYFXD0GR1/d09981cbba812a2d05b26fa494ff12bf7e4469210a2291f423db78066d77d889
+2025-11-28 03:07:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FJMVFOJ6FPKZMWFH/61acfd34c1e3aa2fba66aa6b2cd301ca06cedea6e07ef422f9971f51dcdf00f3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FJMVFOJ6FPKZMWFH/868311__Form%201%20-%20Liang%20Chengwang.pdf
+2025-11-28 03:07:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BEHFW5GTNVXCCIBO/b8e94b44ec3e214e2aa6bf4b4bbd10e3364fe5b7ce471b50611192a0216ef049 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BEHFW5GTNVXCCIBO/868299__eFORM6V2%20DHLT%203Q2025.pdf
+2025-11-28 03:07:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YC8SCAS54VX1NAZG/1a992ba028845762ce2947e62d822e0caa8e95500bf2b1d977fb3e7fd6adb4c6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YC8SCAS54VX1NAZG/868281__eFORM1_ChengWK_271125_Final.pdf
+2025-11-28 03:07:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C4DNE527B5MNV8I6/295a154ef3ecf0bd87c7e75499b941ca3b3aa95df85482572b767aa5d79a7f83 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C4DNE527B5MNV8I6/868272__Form%201%20VL_Final.pdf
+2025-11-28 03:07:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/038SWW2I07DNG7B2/ba146e9fba8b3298c35faadecd3dbfb23d9c012625fa6728f2ebf15c823e4d58 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/038SWW2I07DNG7B2/868265__eFORM3V2-SYP.pdf
+2025-11-28 03:07:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:41 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'See Item 10 for details.'
+2025-11-28 03:07:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Z4QQMVAMXBOSCUCR/65b4eee90f5bfdb751ba776e7ce9fef2f94bc144762b29b2174a9f563ae37f34 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Z4QQMVAMXBOSCUCR/868263__eFORM1V2-MM.pdf
+2025-11-28 03:07:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:46 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'See Item 9 for details. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-28 03:07:46 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/Z4QQMVAMXBOSCUCR/868263__eFORM1V2-MM.pdf: Single record with no share change
+2025-11-28 03:07:46 [INFO] - [SGX FILINGS] Data not valid found for issuer name: AZTECH GLOBAL LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/Z4QQMVAMXBOSCUCR/65b4eee90f5bfdb751ba776e7ce9fef2f94bc144762b29b2174a9f563ae37f34
+2025-11-28 03:07:47 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K2Q3X0H5FO4HA46H/3f75d7226628288b13aa73c0c3265e35989d7d7bc85791fe6f8d1d46b97bcb2e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K2Q3X0H5FO4HA46H/868261__Dr%20Goi%20-%20Form%201%20-%2027%20Nov%202025.pdf
+2025-11-28 03:07:48 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/K2Q3X0H5FO4HA46H/3f75d7226628288b13aa73c0c3265e35989d7d7bc85791fe6f8d1d46b97bcb2e
+2025-11-28 03:07:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VIRJUGQBDZTNKQXC/5b1a8f8b884a25a5026c271edbba83b8a296eefab660461268e624ff7847c252 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VIRJUGQBDZTNKQXC/868258__Lippo%20-%20Form%203%20-%20271125.pdf
+2025-11-28 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-11-28 03:07:51 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VIRJUGQBDZTNKQXC/868258__Lippo%20-%20Form%203%20-%20271125.pdf: All transactions have no share change
+2025-11-28 03:07:51 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VIRJUGQBDZTNKQXC/5b1a8f8b884a25a5026c271edbba83b8a296eefab660461268e624ff7847c252
+2025-11-28 03:07:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FZ144LZOEQCCKLS1/d665765a7eef0f50a3a0a38e5bee0c2d29ab874463d73ea235ec2111bf9be158 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FZ144LZOEQCCKLS1/868256__Gilbert%20-%20Form%201%20-%20271125.pdf
+2025-11-28 03:07:54 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:54 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification relates to a percentage level reduction in shareholding interest arising from the issuance of new shares by GSH Corporation Limited, following the completion of the Proposed Subscription of an aggregate of 447,468,880 new ordinary shares at an issue price of S$0.25 per Subscription Share. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-28 03:07:54 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/FZ144LZOEQCCKLS1/868256__Gilbert%20-%20Form%201%20-%20271125.pdf: Single record with no share change
+2025-11-28 03:07:54 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/FZ144LZOEQCCKLS1/d665765a7eef0f50a3a0a38e5bee0c2d29ab874463d73ea235ec2111bf9be158
+2025-11-28 03:07:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/X4AD84JAYCAZD9NE/d8ea1b7d10b27893fad413669c5ac11d4ba96bf3d78b923177abc7e895d0974d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/X4AD84JAYCAZD9NE/868254__Dr%20Goi%20-%20Form%201%20-%20271125.pdf
+2025-11-28 03:07:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-11-28 03:07:57 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification relates to a percentage level reduction in shareholding interest arising from the issuance of new shares by GSH Corporation Limited, following the completion of the Proposed Subscription of an aggregate of 447,468,880 new ordinary shares at an issue price of S$0.25 per Subscription Share. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-11-28 03:07:57 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/X4AD84JAYCAZD9NE/868254__Dr%20Goi%20-%20Form%201%20-%20271125.pdf: Single record with no share change
+2025-11-28 03:07:57 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/X4AD84JAYCAZD9NE/d8ea1b7d10b27893fad413669c5ac11d4ba96bf3d78b923177abc7e895d0974d
+2025-11-28 03:08:02 [INFO] - page_start: 1
+2025-11-28 03:08:02 [INFO] - Fetching data from API Filings...
+2025-11-28 03:08:02 [INFO] - Response status: 200
+2025-11-28 03:08:02 [WARNING] - WARNING: API returned None
+2025-11-28 03:08:02 [INFO] - No more announcements found — stopping pagination.
+2025-11-28 03:08:15 [INFO] - Fetching data from API Filings...
+2025-11-28 03:08:15 [INFO] - Response status: 200
+2025-11-28 03:08:15 [WARNING] - WARNING: API returned None
+2025-11-28 03:08:15 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-28 03:08:15 [INFO] - [SGX FILINGS] Scraping completed. Total records: 40
+2025-11-28 03:08:16 [INFO] - Length data top_70: 0 | Length data not top_70: 40
+2025-11-28 03:08:16 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-11-28 03:08:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-11-28 03:08:16 [INFO] - Processing remove duplicate data
+2025-11-28 03:08:16 [INFO] - Length data after duplicate removing: 0
+2025-11-28 03:08:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-11-28 03:08:16 [INFO] - No SGX filings data to filter.
+2025-11-28 03:08:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-11-28 03:08:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-11-28 03:08:16 [INFO] - No SGX filings alerts to send.
+2025-11-28 03:08:16 [INFO] - [sgx_payload] is empty, skipping push to DB
+=======
+2025-11-28 03:08:47 [INFO] - Init Global Variable
+2025-11-28 03:09:12 [INFO] - Scraping from None to None...
+2025-11-28 03:09:12 [INFO] - Start scraping from start date: 20251126 to 20251128
+2025-11-28 03:09:12 [INFO] - page_start: 0
+2025-11-28 03:09:12 [INFO] - Fetching data from API Buybacks...
+2025-11-28 03:09:12 [INFO] - Response status: 200
+2025-11-28 03:09:12 [INFO] - Fetched 12 announcements
+2025-11-28 03:10:05 [INFO] - page_start: 1
+2025-11-28 03:10:05 [INFO] - Fetching data from API Buybacks...
+2025-11-28 03:10:16 [INFO] - Response status: 200
+2025-11-28 03:10:16 [WARNING] - WARNING: API returned None
+2025-11-28 03:10:16 [INFO] - No more announcements found — stopping pagination.
+2025-11-28 03:10:27 [INFO] - Fetching data from API Buybacks...
+2025-11-28 03:10:27 [INFO] - Response status: 200
+2025-11-28 03:10:27 [WARNING] - WARNING: API returned None
+2025-11-28 03:10:27 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-28 03:10:27 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 12
+2025-11-28 03:10:29 [INFO] - Length data top_70: 3 | Length data not top_70: 9
+2025-11-28 03:10:29 [INFO] - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2025-11-28 03:10:29 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-11-28 03:10:29 [INFO] - Processing remove duplicate data
+2025-11-28 03:10:29 [INFO] - Length data after duplicate removing: 3
+2025-11-28 03:10:29 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-11-28 03:10:29 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
+>>>>>>> Stashed changes
+2025-11-29 03:07:25 [INFO] - Init Global Variable
+2025-11-29 03:07:44 [INFO] - Scraping from None to None...
+2025-11-29 03:07:44 [INFO] - Start scraping from start date: 20251127 to 20251129
+2025-11-29 03:07:44 [INFO] - page_start: 0
+2025-11-29 03:07:44 [INFO] - Fetching data from API Buybacks...
+2025-11-29 03:07:45 [INFO] - Response status: 200
+2025-11-29 03:07:45 [INFO] - Fetched 9 announcements
+2025-11-29 03:08:30 [INFO] - page_start: 1
+2025-11-29 03:08:30 [INFO] - Fetching data from API Buybacks...
+2025-11-29 03:08:31 [INFO] - Response status: 200
+2025-11-29 03:08:31 [WARNING] - WARNING: API returned None
+2025-11-29 03:08:31 [INFO] - No more announcements found — stopping pagination.
+2025-11-29 03:08:44 [INFO] - Fetching data from API Buybacks...
+2025-11-29 03:08:44 [INFO] - Response status: 200
+2025-11-29 03:08:44 [WARNING] - WARNING: API returned None
+2025-11-29 03:08:44 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-29 03:08:44 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 9
+2025-11-29 03:08:45 [INFO] - Length data top_70: 3 | Length data not top_70: 6
+2025-11-29 03:08:45 [INFO] - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2025-11-29 03:08:45 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-11-29 03:08:45 [INFO] - Processing remove duplicate data
+2025-11-29 03:08:45 [INFO] - Length data after duplicate removing: 3
+2025-11-29 03:08:45 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-11-29 03:08:45 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
+2025-11-30 03:22:37 [INFO] - Init Global Variable
+2025-11-30 03:23:23 [INFO] - Scraping from None to None...
+2025-11-30 03:23:23 [INFO] - Start scraping from start date: 20251128 to 20251130
+2025-11-30 03:23:23 [INFO] - page_start: 0
+2025-11-30 03:23:23 [INFO] - Fetching data from API Buybacks...
+2025-11-30 03:23:23 [INFO] - Response status: 200
+2025-11-30 03:23:23 [WARNING] - WARNING: API returned None
+2025-11-30 03:23:23 [INFO] - No more announcements found — stopping pagination.
+2025-11-30 03:23:35 [INFO] - Fetching data from API Buybacks...
+2025-11-30 03:23:36 [INFO] - Response status: 200
+2025-11-30 03:23:36 [WARNING] - WARNING: API returned None
+2025-11-30 03:23:36 [INFO] - No more announcements found on this page — stopping pagination.
+2025-11-30 03:23:36 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
+2025-11-30 03:23:36 [INFO] - [sgx_buyback] is empty, skipping clean payload
+2025-11-30 03:23:37 [INFO] - Length data top_70: 0 | Length data not top_70: 0
+2025-11-30 03:23:37 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-11-30 03:23:37 [INFO] - Processing remove duplicate data
+2025-11-30 03:23:37 [INFO] - Length data after duplicate removing: 0
+2025-11-30 03:23:37 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-11-30 03:23:37 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-12-01 03:44:26 [INFO] - Init Global Variable
+2025-12-01 03:44:58 [INFO] - Scraping from None to None...
+2025-12-01 03:44:58 [INFO] - Start scraping from start date: 20251129 to 20251201
+2025-12-01 03:44:58 [INFO] - page_start: 0
+2025-12-01 03:44:58 [INFO] - Fetching data from API Filings...
+2025-12-01 03:44:58 [INFO] - Response status: 200
+2025-12-01 03:44:58 [WARNING] - WARNING: API returned None
+2025-12-01 03:44:58 [INFO] - No more announcements found — stopping pagination.
+2025-12-01 03:45:10 [INFO] - Fetching data from API Filings...
+2025-12-01 03:45:10 [INFO] - Response status: 200
+2025-12-01 03:45:10 [WARNING] - WARNING: API returned None
+2025-12-01 03:45:10 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-01 03:45:10 [INFO] - [SGX FILINGS] Scraping completed. Total records: 0
+2025-12-01 03:45:10 [INFO] - [sgx_filings] is empty, skipping clean payload
+2025-12-01 03:45:11 [INFO] - Length data top_70: 0 | Length data not top_70: 0
+2025-12-01 03:45:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-01 03:45:11 [INFO] - Processing remove duplicate data
+2025-12-01 03:45:11 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-01 03:45:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-01 03:45:11 [INFO] - No SGX filings data to filter.
+2025-12-01 03:45:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-01 03:45:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-01 03:45:11 [INFO] - No SGX filings alerts to send.
+2025-12-01 03:45:11 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-12-01 03:46:08 [INFO] - Init Global Variable
+2025-12-01 03:46:27 [INFO] - Scraping from None to None...
+2025-12-01 03:46:27 [INFO] - Start scraping from start date: 20251129 to 20251201
+2025-12-01 03:46:27 [INFO] - page_start: 0
+2025-12-01 03:46:27 [INFO] - Fetching data from API Buybacks...
+2025-12-01 03:46:27 [INFO] - Response status: 200
+2025-12-01 03:46:27 [WARNING] - WARNING: API returned None
+2025-12-01 03:46:27 [INFO] - No more announcements found — stopping pagination.
+2025-12-01 03:46:39 [INFO] - Fetching data from API Buybacks...
+2025-12-01 03:46:39 [INFO] - Response status: 200
+2025-12-01 03:46:39 [WARNING] - WARNING: API returned None
+2025-12-01 03:46:39 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-01 03:46:39 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
+2025-12-01 03:46:39 [INFO] - [sgx_buyback] is empty, skipping clean payload
+2025-12-01 03:46:40 [INFO] - Length data top_70: 0 | Length data not top_70: 0
+2025-12-01 03:46:40 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2025-12-01 03:46:40 [INFO] - Processing remove duplicate data
+2025-12-01 03:46:40 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-01 03:46:40 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2025-12-01 03:46:40 [INFO] - [sgx_payload] is empty, skipping push to DB
