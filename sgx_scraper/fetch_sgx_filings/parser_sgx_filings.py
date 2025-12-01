@@ -686,11 +686,12 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
             # Skip if direct interest before and after are the same
             all_records = [ 
                 record for record in all_records
-                if record.get('direct_interest_before') != record.get('direct_interest_after')
+                if (record.get('direct_interest_before') != record.get('direct_interest_after')
+                and record.get('shares_before') != record.get('shares_after'))
             ]
             
             if not all_records:
-                LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: All transactions have no direct interest change")
+                LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: All transactions have no direct interest change and total shares change")
                 return None
 
             # Pop direct interest fields before returning
