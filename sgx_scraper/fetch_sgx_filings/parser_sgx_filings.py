@@ -236,6 +236,8 @@ def parse_share_table_values(pdf_object: pdfplumber.PDF, page_number: int, bbox:
     shares_before = {}
     shares_after = {}
     table_values = []
+    table_direct_values = []
+
     table_with_values_index = [1, 2, 4, 5]
     
     try:
@@ -251,21 +253,32 @@ def parse_share_table_values(pdf_object: pdfplumber.PDF, page_number: int, bbox:
             share_value = table[3]  
             table_values.append(share_value)
 
+            # Get value from 'Direct Interest' column
+            direct_interest_value = table[1]
+            table_direct_values.append(direct_interest_value)
+
     except Exception as error:
         LOGGER.error(f"[sgx_filings] Error while parsing tables: {error}")
         return None 
     
+    # Get total interest
     total_share_before = table_values[0] if len(table_values) > 0 else None
     total_share_before_percentage = table_values[1] if len(table_values) > 1 else None
     total_share_after = table_values[2] if len(table_values) > 2 else None
     total_share_after_percentage = table_values[3] if len(table_values) > 3 else None
 
+    #  Get direct interest for filtering later 
+    direct_interest_before = table_direct_values[0] if len(table_direct_values) > 0 else None
+    direct_interest_after = table_direct_values[2] if len(table_direct_values) > 2 else None
+
     shares_before.update({
+        'direct_interest_before': direct_interest_before,
         'total_shares': total_share_before,
         'percentage': total_share_before_percentage
     })
 
     shares_after.update({
+        'direct_interest_after': direct_interest_after,
         'total_shares': total_share_after,
         'percentage': total_share_after_percentage
     })
@@ -279,19 +292,24 @@ def build_individual_share_record(pdf_object: pdfplumber.PDF, page_number: int, 
     if not shares_before_raw and not shares_after_raw:
         return None
 
+    # Get total interest and direct interest for comparison
     shares_before = safe_convert_float(shares_before_raw.get("total_shares"))
     shares_before_percentage = safe_convert_float(shares_before_raw.get("percentage"))
     shares_before_decimal = shares_percentage_to_decimal(shares_before_percentage)
+    direct_interest_before = safe_convert_float(shares_before_raw.get("direct_interest_before"))
 
     shares_after = safe_convert_float(shares_after_raw.get("total_shares"))
     shares_after_percentage = safe_convert_float(shares_after_raw.get("percentage"))
     shares_after_decimal = shares_percentage_to_decimal(shares_after_percentage)
+    direct_interest_after = safe_convert_float(shares_after_raw.get("direct_interest_after"))
 
     return {
         "shares_before": shares_before,
         "shares_before_percentage": shares_before_decimal,
         "shares_after": shares_after,
         "shares_after_percentage": shares_after_decimal,
+        "direct_interest_before": direct_interest_before,
+        "direct_interest_after": direct_interest_after,
     }
 
 
@@ -383,11 +401,9 @@ def extract_symbol_fallback(doc_fits: fitz.Document, start_page: int = 1, end_pa
         return None
 
 
-def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> tuple[list[dict[str, any]], bool]:
+def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> list[dict[str, any]]:
     if not raw_value:
         return [base_record], False
-
-    is_special_case = False 
 
     multi_transaction_pattern = r"""
         ([\d,]+(?:\.\d+)?)              # Capture number (e.g., "3,844,078")
@@ -431,11 +447,10 @@ def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> tup
                 print(f"Transaction {index+1}: {value}.{price_per_share} = {value}")
                 new_records.append(copy_record)
             
-            is_special_case = True 
-            return new_records, is_special_case
+            return new_records
         
         list_all_record =  [base_record]
-        return list_all_record, is_special_case
+        return list_all_record
 
     except Exception as error:
         LOGGER.error(f"[build_special_case_value] Error processing special case value: {error}")
@@ -446,11 +461,9 @@ def build_special_case_multiple_dates(
     raw_number_of_stock: str, 
     raw_value: str, 
     base_record: dict[str, any]
-) -> tuple[list[dict[str, any]], bool]:
+) -> list[dict[str, any]]:
     if not raw_number_of_stock or not raw_value:
         return [base_record], False 
-
-    is_special_case = False 
 
     # Pattern to extract number + date from number_of_stock field
     number_date_pattern = r"""
@@ -499,6 +512,7 @@ def build_special_case_multiple_dates(
                 if number_stock_date in value_by_date:
                     number_of_stock = number_by_date[number_stock_date]
                     price_per_share = value_by_date[number_stock_date]
+
                     new_value = number_of_stock * price_per_share
                     new_value = round(new_value, 2)
 
@@ -514,12 +528,11 @@ def build_special_case_multiple_dates(
                     
                     print(f"Matched: {number_stock_date} → {number_of_stock} x {price_per_share} = {new_value}")
                     new_records.append(copy_record)
-            
-            is_special_case = True 
-            return new_records, is_special_case
+             
+            return new_records
 
         list_all_record =  [base_record]
-        return list_all_record, is_special_case
+        return list_all_record
 
     except Exception as error:
         LOGGER.error(f"[build_special_case_multiple_dates] Error: {error}")
@@ -530,7 +543,7 @@ def extract_transaction_details(
     pdf_object: pdfplumber.PDF, 
     page_number: int, 
     bbox: tuple
-) -> tuple[list[dict], bool]:
+) -> list[dict]:
     try:
         base_details = {
             "transaction_date": None,
@@ -588,20 +601,20 @@ def extract_transaction_details(
         })
 
         # Special case for value have two data with price per share 
-        details_list, is_special_value = build_special_case_value(raw_value, base_details)
+        details_list = build_special_case_value(raw_value, base_details)
         if len(details_list) > 1: 
-            return details_list, is_special_value
+            return details_list
         
         # Special case for value have two data with price per share with two date 
-        details_list, is_special_value = build_special_case_multiple_dates(
+        details_list = build_special_case_multiple_dates(
             raw_number_of_stock, 
             raw_value, 
             base_details
         )
         if len(details_list) > 1:
-            return details_list, is_special_value
+            return details_list
         
-        return [base_details], is_special_value
+        return [base_details]
     
     except Exception as error:
         LOGGER.error(f'[sgx_filings] Error: {error}', exc_info=True) 
@@ -636,7 +649,7 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
                 )
 
                 # Extract additional fields 
-                transaction_details, is_special_value = extract_transaction_details(
+                transaction_details = extract_transaction_details(
                     pdf,
                     shareholder_section['page_number'],
                     shareholder_section['bbox']
@@ -670,16 +683,20 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
 
                     all_records.append(final_record)
 
-            if not is_special_value:
-                if all_records and len(all_records) == 1: 
-                    record = all_records[0]
-                    if record.get('shares_before') == record.get('shares_after'):
-                        LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: Single record with no share change")
-                        return None 
+            # Skip if direct interest before and after are the same
+            all_records = [ 
+                record for record in all_records
+                if record.get('direct_interest_before') != record.get('direct_interest_after')
+            ]
+            
+            if not all_records:
+                LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: All transactions have no direct interest change")
+                return None
 
-                if all(record.get('shares_before') == record.get('shares_after') for record in all_records):
-                    LOGGER.info(f"[sgx_filings] Skipping {pdf_url}: All transactions have no share change")
-                    return None
+            # Pop direct interest fields before returning
+            for record in all_records:
+                record.pop('direct_interest_before', None)
+                record.pop('direct_interest_after', None)
 
             return all_records
 
@@ -767,7 +784,7 @@ if __name__ == '__main__':
     duplicate = 'https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/c2c6966fb8ed3562b3d5b3736c96d1b21837954db7ec864a101cb1558e5dd874'
     new_test = 'https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/9dc3586f0ef9038964cfbe3c2e75e2c5e9789e9803971a015c23a623ecbbcab0'
 
-    result_sgx_filing = get_sgx_filings(new_test)
+    result_sgx_filing = get_sgx_filings(failed)
 
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:

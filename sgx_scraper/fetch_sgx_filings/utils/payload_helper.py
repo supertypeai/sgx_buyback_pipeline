@@ -351,6 +351,8 @@ def build_transaction_type(
                 transaction_type = get_transaction_type_from_desc(description, value)
             elif key == 'acquisition':
                 transaction_type = 'buy'
+                if specific_key == 'Securities as part of management':
+                    transaction_type = 'others'
             elif key == 'disposal':
                 transaction_type = 'sell'
             elif key == 'other_circumstances':
