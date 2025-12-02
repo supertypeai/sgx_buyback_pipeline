@@ -1,255 +1,1139 @@
 [
   {
-    "name": "5E Resources",
-    "symbol": "NLC"
+    "name": "V2Y Corp Ltd",
+    "symbol": "V2Y"
   },
   {
-    "name": "CFM Holdings Ltd",
-    "symbol": "5EB"
-  },
-  {
-    "name": "Abundance International Ltd",
-    "symbol": "541"
-  },
-  {
-    "name": "SLB Development Ltd",
-    "symbol": "1J0"
-  },
-  {
-    "name": "MSM International Ltd",
-    "symbol": "5QR"
-  },
-  {
-    "name": "Japfa Ltd",
-    "symbol": "UD2"
-  },
-  {
-    "name": "KTL Global Ltd",
-    "symbol": "EB7"
-  },
-  {
-    "name": "First Sponsor Group Ltd",
-    "symbol": "ADN"
-  },
-  {
-    "name": "Sinarmas Land Ltd",
-    "symbol": "A26"
-  },
-  {
-    "name": "YHI International Ltd",
-    "symbol": "BPF"
-  },
-  {
-    "name": "Hotung Investment Holdings Ltd",
-    "symbol": "BLS"
-  },
-  {
-    "name": "Sin Heng Heavy Machinery Ltd",
-    "symbol": "BKA"
-  },
-  {
-    "name": "Hong Leong Asia Ltd",
-    "symbol": "H22"
-  },
-  {
-    "name": "Hyflux",
-    "symbol": "600"
-  },
-  {
-    "name": "Fu Yu Corp Ltd",
-    "symbol": "F13"
-  },
-  {
-    "name": "DBS Group Holdings Ltd",
-    "symbol": "D05"
-  },
-  {
-    "name": "China Yuanbang Property Holdings Ltd",
-    "symbol": "BCD"
-  },
-  {
-    "name": "Soilbuild Construction Group Ltd",
-    "symbol": "S7P"
-  },
-  {
-    "name": "AGV Group",
-    "symbol": "1A4"
-  },
-  {
-    "name": "ABR Holdings Ltd",
-    "symbol": "533"
-  },
-  {
-    "name": "Sincap Group Ltd",
-    "symbol": "XZB"
-  },
-  {
-    "name": "Brook Crompton Holdings Ltd",
-    "symbol": "AWC"
-  },
-  {
-    "name": "Ntegrator Holdings Ltd",
-    "symbol": "WVJ"
-  },
-  {
-    "name": "PC Partner Group Ltd",
-    "symbol": "PCT"
-  },
-  {
-    "name": "United Overseas Bank Ltd",
-    "symbol": "U11"
-  },
-  {
-    "name": "Acrophyte Hospitality Trust",
-    "symbol": "XZL"
+    "name": "Ban Leong Technologies Ltd",
+    "symbol": "B26"
   },
   {
     "name": "PEC Ltd",
     "symbol": "IX2"
   },
   {
-    "name": "Hoe Leong Corp Ltd",
-    "symbol": "H20"
+    "name": "City Developments Ltd Pref",
+    "symbol": "C70"
   },
   {
-    "name": "Captii Ltd",
-    "symbol": "AWV"
+    "name": "5E Resources",
+    "symbol": "NLC"
   },
   {
-    "name": "Japan Foods Holding Ltd",
-    "symbol": "5OI"
+    "name": "Incredible Holdings Ltd",
+    "symbol": "RDR"
   },
   {
-    "name": "China Medical System Holdings Ltd",
-    "symbol": "8A8"
+    "name": "SLB Development Ltd",
+    "symbol": "1J0"
   },
   {
-    "name": "Azeus Systems Holdings Ltd",
-    "symbol": "BBW"
+    "name": "Japfa Ltd",
+    "symbol": "UD2"
   },
   {
-    "name": "Teho International Inc Ltd",
-    "symbol": "5OQ"
+    "name": "MSM International Ltd",
+    "symbol": "5QR"
   },
   {
-    "name": "TIH Ltd",
-    "symbol": "T55"
+    "name": "KTL Global Ltd",
+    "symbol": "EB7"
   },
   {
-    "name": "TeleChoice International Ltd",
-    "symbol": "T41"
+    "name": "Valuetronics Holdings Ltd",
+    "symbol": "BN2"
   },
   {
-    "name": "Dyna Mac Holdings Ltd",
-    "symbol": "NO4"
+    "name": "Hyflux",
+    "symbol": "600"
   },
   {
-    "name": "Samudera Shipping Line Ltd",
-    "symbol": "S56"
+    "name": "Credit Bureau Asia Ltd",
+    "symbol": "TCU"
   },
   {
-    "name": "Bromat Holdings Ltd",
-    "symbol": "9I7"
-  },
-  {
-    "name": "Hong Leong Finance Ltd",
-    "symbol": "S41"
-  },
-  {
-    "name": "Geo Energy Resources Ltd",
-    "symbol": "RE4"
-  },
-  {
-    "name": "Cortina Holdings Ltd",
-    "symbol": "C41"
+    "name": "Sinarmas Land Ltd",
+    "symbol": "A26"
   },
   {
     "name": "Charisma Energy Services Ltd",
     "symbol": "5QT"
   },
   {
-    "name": "Nam Lee Pressed Metal Industries Ltd",
-    "symbol": "G0I"
+    "name": "China Aviation Oil (Singapore) Corp Ltd",
+    "symbol": "G92"
   },
   {
-    "name": "Vibrant Group Ltd",
-    "symbol": "BIP"
+    "name": "United Overseas Bank Ltd",
+    "symbol": "U11"
   },
   {
-    "name": "Union Steel Holdings Ltd",
-    "symbol": "ZB9"
+    "name": "IREIT Global",
+    "symbol": "8U7U"
   },
   {
-    "name": "Riverstone Holdings Ltd",
-    "symbol": "AP4"
+    "name": "Raffles Infrastructure Holdings Ltd",
+    "symbol": "LUY"
   },
   {
-    "name": "LHN Ltd",
-    "symbol": "41O"
+    "name": "Soilbuild Construction Group Ltd",
+    "symbol": "S7P"
   },
   {
-    "name": "Del Monte Pacific Ltd",
-    "symbol": "D03"
+    "name": "Noontalk Media Ltd",
+    "symbol": "SEJ"
   },
   {
-    "name": "New Toyo International Holdings Ltd",
-    "symbol": "N08"
+    "name": "AGV Group",
+    "symbol": "1A4"
   },
   {
-    "name": "Samko Timber Ltd",
-    "symbol": "E6R"
+    "name": "Sincap Group Ltd",
+    "symbol": "XZB"
   },
   {
-    "name": "Sri Trang Gloves Thailand PCL",
-    "symbol": "STG"
+    "name": "SIIC Environment Holdings Ltd",
+    "symbol": "BHK"
   },
   {
-    "name": "Mandarin Oriental International Ltd",
-    "symbol": "M04"
+    "name": "Ocean Sky International Ltd",
+    "symbol": "1B6"
   },
   {
-    "name": "Silverlake Axis Ltd",
-    "symbol": "5CP"
+    "name": "Lms Compliance Ltd",
+    "symbol": "LMS"
   },
   {
-    "name": "Nomura Holdings Inc",
-    "symbol": "N33"
+    "name": "Amcorp Global Ltd",
+    "symbol": "S9B"
   },
   {
-    "name": "CSE Global Ltd",
-    "symbol": "544"
+    "name": "Yongnam Holdings Ltd",
+    "symbol": "AXB"
   },
   {
-    "name": "NTT DC REIT",
-    "symbol": "NTDU"
+    "name": "UOL Group Ltd",
+    "symbol": "U14"
+  },
+  {
+    "name": "Digilife Technologies Ltd",
+    "symbol": "BAI"
+  },
+  {
+    "name": "Dezign Format Group Ltd",
+    "symbol": "UZF"
+  },
+  {
+    "name": "Aedge Group Ltd",
+    "symbol": "XVG"
+  },
+  {
+    "name": "Ntegrator Holdings Ltd",
+    "symbol": "WVJ"
+  },
+  {
+    "name": "Winking Studios Ltd",
+    "symbol": "WKS"
+  },
+  {
+    "name": "Coolan Group Ltd",
+    "symbol": "BMT"
+  },
+  {
+    "name": "A-Smart Holdings Ltd",
+    "symbol": "BQC"
+  },
+  {
+    "name": "Alpha DX Group Ltd",
+    "symbol": "VVL"
+  },
+  {
+    "name": "Dyna Mac Holdings Ltd",
+    "symbol": "NO4"
+  },
+  {
+    "name": "Acrophyte Hospitality Trust",
+    "symbol": "XZL"
+  },
+  {
+    "name": "Zhongmin Baihui Retail Group Ltd",
+    "symbol": "5SR"
+  },
+  {
+    "name": "Shangri-La Asia Ltd",
+    "symbol": "S07"
+  },
+  {
+    "name": "Penguin International Ltd",
+    "symbol": "BTM"
+  },
+  {
+    "name": "Delfi Ltd",
+    "symbol": "P34"
+  },
+  {
+    "name": "Haw Par Corp Ltd",
+    "symbol": "H02"
+  },
+  {
+    "name": "AEM Holdings Ltd",
+    "symbol": "AWX"
+  },
+  {
+    "name": "Metis Energy Ltd",
+    "symbol": "L02"
+  },
+  {
+    "name": "Lion Asiapac Ltd",
+    "symbol": "BAZ"
+  },
+  {
+    "name": "Khong Guan Ltd",
+    "symbol": "K03"
   },
   {
     "name": "AVJennings Ltd",
     "symbol": "A05"
   },
   {
+    "name": "Tuan Sing Holdings Ltd",
+    "symbol": "T24"
+  },
+  {
+    "name": "Yangzijiang Maritime Development Ltd",
+    "symbol": "8YZ"
+  },
+  {
+    "name": "Thai Beverage PLC",
+    "symbol": "Y92"
+  },
+  {
+    "name": "Singapore Airlines Ltd",
+    "symbol": "C6L"
+  },
+  {
+    "name": "Suntar Eco-City Ltd",
+    "symbol": "BKZ"
+  },
+  {
+    "name": "Memiontec Holdings Ltd",
+    "symbol": "TWL"
+  },
+  {
+    "name": "Paragon REIT",
+    "symbol": "SK6U"
+  },
+  {
+    "name": "GP Industries Ltd",
+    "symbol": "G20"
+  },
+  {
+    "name": "Silverlake Axis Ltd",
+    "symbol": "5CP"
+  },
+  {
+    "name": "Y Ventures Group Ltd",
+    "symbol": "1F1"
+  },
+  {
+    "name": "Nomura Holdings Inc",
+    "symbol": "N33"
+  },
+  {
+    "name": "OxPay Financial Ltd",
+    "symbol": "TVV"
+  },
+  {
+    "name": "OneApex Ltd",
+    "symbol": "5SY"
+  },
+  {
+    "name": "Captii Ltd",
+    "symbol": "AWV"
+  },
+  {
+    "name": "Nam Cheong Ltd",
+    "symbol": "1MZ"
+  },
+  {
     "name": "Advanced Systems Automation Ltd",
     "symbol": "5TY"
   },
   {
-    "name": "Boldtek Holdings Ltd",
-    "symbol": "5VI"
+    "name": "CP All PCL DRC",
+    "symbol": "TCPD"
+  },
+  {
+    "name": "KSH Holdings Ltd",
+    "symbol": "ER0"
+  },
+  {
+    "name": "Great Eastern Holdings Ltd",
+    "symbol": "G07"
+  },
+  {
+    "name": "Wilmar International Ltd",
+    "symbol": "F34"
+  },
+  {
+    "name": "Aoxin Q & M Dental Group Ltd",
+    "symbol": "1D4"
+  },
+  {
+    "name": "China Yuanbang Property Holdings Ltd",
+    "symbol": "BCD"
+  },
+  {
+    "name": "AsiaPhos Ltd",
+    "symbol": "5WV"
+  },
+  {
+    "name": "Bumitama Agri Ltd",
+    "symbol": "P8Z"
+  },
+  {
+    "name": "HL Global Enterprises Ltd",
+    "symbol": "AVX"
+  },
+  {
+    "name": "Venture Corp Ltd",
+    "symbol": "V03"
+  },
+  {
+    "name": "First Sponsor Group Ltd",
+    "symbol": "ADN"
+  },
+  {
+    "name": "The Hour Glass Ltd",
+    "symbol": "AGS"
+  },
+  {
+    "name": "Seatrium Ltd",
+    "symbol": "5E2"
+  },
+  {
+    "name": "Annica Holdings Ltd",
+    "symbol": "5AL"
+  },
+  {
+    "name": "VCPlus Ltd",
+    "symbol": "43E"
+  },
+  {
+    "name": "Starhill Global Real Estate Investment Trust",
+    "symbol": "P40U"
+  },
+  {
+    "name": "17LIVE Group Ltd",
+    "symbol": "LVR"
+  },
+  {
+    "name": "Boustead Singapore Ltd",
+    "symbol": "F9D"
+  },
+  {
+    "name": "First Resources Ltd",
+    "symbol": "EB5"
+  },
+  {
+    "name": "Kingsmen Creatives Ltd",
+    "symbol": "5MZ"
+  },
+  {
+    "name": "AusGroup Ltd",
+    "symbol": "5GJ"
+  },
+  {
+    "name": "Karin Technology Holdings Ltd",
+    "symbol": "K29"
+  },
+  {
+    "name": "Keppel REIT",
+    "symbol": "K71U"
+  },
+  {
+    "name": "RE&S",
+    "symbol": "1G1"
+  },
+  {
+    "name": "Fuxing China Group Ltd",
+    "symbol": "AWK"
+  },
+  {
+    "name": "Q & M Dental Group (Singapore) Ltd",
+    "symbol": "QC7"
+  },
+  {
+    "name": "Centurion Accommodation REIT",
+    "symbol": "8C8U"
+  },
+  {
+    "name": "ES Group (Holdings) Ltd",
+    "symbol": "5RC"
+  },
+  {
+    "name": "IPS Securex Holdings Ltd",
+    "symbol": "42N"
+  },
+  {
+    "name": "Del Monte Pacific Ltd",
+    "symbol": "D03"
+  },
+  {
+    "name": "Stamford Land Corp Ltd",
+    "symbol": "H07"
+  },
+  {
+    "name": "Elite UK REIT",
+    "symbol": "MXNU"
+  },
+  {
+    "name": "Azeus Systems Holdings Ltd",
+    "symbol": "BBW"
+  },
+  {
+    "name": "Food Empire Holdings Ltd",
+    "symbol": "F03"
   },
   {
     "name": "MetaOptics Ltd",
     "symbol": "9MT"
   },
   {
-    "name": "Far East Hospitality Trust",
-    "symbol": "Q5T"
+    "name": "China Shenshan Orchard Holdings Co Ltd",
+    "symbol": "BKV"
+  },
+  {
+    "name": "CFM Holdings Ltd",
+    "symbol": "5EB"
+  },
+  {
+    "name": "CSC Holdings Ltd",
+    "symbol": "C06"
+  },
+  {
+    "name": "Soup Holdings Ltd",
+    "symbol": "5KI"
+  },
+  {
+    "name": "Mooreast Holdings Ltd",
+    "symbol": "1V3"
+  },
+  {
+    "name": "CNMC Goldmine Holdings Ltd",
+    "symbol": "5TP"
+  },
+  {
+    "name": "Frasers Centrepoint Trust",
+    "symbol": "J69U"
+  },
+  {
+    "name": "Tai Sin Electric Ltd",
+    "symbol": "500"
+  },
+  {
+    "name": "CDL Hospitality Trusts",
+    "symbol": "J85"
+  },
+  {
+    "name": "Tosei Corp",
+    "symbol": "S2D"
+  },
+  {
+    "name": "CapitaLand Integrated Commercial Trust",
+    "symbol": "C38U"
+  },
+  {
+    "name": "Leader Environmental Technologies Ltd",
+    "symbol": "LS9"
+  },
+  {
+    "name": "Hoe Leong Corp Ltd",
+    "symbol": "H20"
+  },
+  {
+    "name": "MTQ Corp Ltd",
+    "symbol": "M05"
+  },
+  {
+    "name": "Willas-Array Electronics Holdings Ltd",
+    "symbol": "BDR"
+  },
+  {
+    "name": "Embracing Future Holdings Ltd",
+    "symbol": "8YY"
+  },
+  {
+    "name": "Pasture Holdings Ltd",
+    "symbol": "UUK"
+  },
+  {
+    "name": "Far East Orchard Ltd",
+    "symbol": "O10"
+  },
+  {
+    "name": "Combine Will International Holdings Ltd",
+    "symbol": "N0Z"
+  },
+  {
+    "name": "Beverly Wilshire Ltd",
+    "symbol": "9QX"
+  },
+  {
+    "name": "Singapore Technologies Engineering Ltd",
+    "symbol": "S63"
+  },
+  {
+    "name": "Ascent Bridge Ltd",
+    "symbol": "AWG"
+  },
+  {
+    "name": "Edition Ltd",
+    "symbol": "5HG"
+  },
+  {
+    "name": "Bromat Holdings Ltd",
+    "symbol": "9I7"
+  },
+  {
+    "name": "Vicplas International Ltd",
+    "symbol": "569"
+  },
+  {
+    "name": "Soon Hock Enterprise Holding Ltd",
+    "symbol": "SHE"
+  },
+  {
+    "name": "TalkMed Group Ltd",
+    "symbol": "5G3"
+  },
+  {
+    "name": "Darco Water Technologies Ltd",
+    "symbol": "BLR"
+  },
+  {
+    "name": "Hafary Holdings Ltd",
+    "symbol": "5VS"
+  },
+  {
+    "name": "Bonvests Holdings Ltd",
+    "symbol": "B28"
+  },
+  {
+    "name": "Parkson retail Asia Ltd",
+    "symbol": "O9E"
+  },
+  {
+    "name": "Fu Yu Corp Ltd",
+    "symbol": "F13"
+  },
+  {
+    "name": "Aspial Lifestyle Ltd",
+    "symbol": "5UF"
+  },
+  {
+    "name": "MSM International Ltd",
+    "symbol": "51O"
+  },
+  {
+    "name": "Heeton Holdings Ltd",
+    "symbol": "5DP"
+  },
+  {
+    "name": "PNE Industries Ltd",
+    "symbol": "BDA"
+  },
+  {
+    "name": "Stoneweg Europe Stapled Trust",
+    "symbol": "CWCU"
+  },
+  {
+    "name": "Creative Technology Ltd",
+    "symbol": "C76"
+  },
+  {
+    "name": "Samudera Shipping Line Ltd",
+    "symbol": "S56"
+  },
+  {
+    "name": "GuocoLand Ltd",
+    "symbol": "F17"
+  },
+  {
+    "name": "Tat Seng Packaging Group Ltd",
+    "symbol": "T12"
+  },
+  {
+    "name": "Japan Foods Holding Ltd",
+    "symbol": "5OI"
+  },
+  {
+    "name": "MeGroup Ltd",
+    "symbol": "SJY"
+  },
+  {
+    "name": "British and Malayan Holdings Ltd",
+    "symbol": "CJN"
+  },
+  {
+    "name": "Golden Agri-Resources Ltd",
+    "symbol": "E5H"
+  },
+  {
+    "name": "NutryFarm International Ltd",
+    "symbol": "AZT"
+  },
+  {
+    "name": "Don Agro International Ltd",
+    "symbol": "GRQ"
+  },
+  {
+    "name": "Lum Chang Holdings Ltd",
+    "symbol": "L19"
+  },
+  {
+    "name": "Emerging Towns & Cities Singapore Ltd",
+    "symbol": "1C0"
+  },
+  {
+    "name": "Top Glove Corp Bhd",
+    "symbol": "BVA"
+  },
+  {
+    "name": "Hotung Investment Holdings Ltd",
+    "symbol": "BLS"
+  },
+  {
+    "name": "iFAST Corp Ltd",
+    "symbol": "AIY"
+  },
+  {
+    "name": "Koda Ltd",
+    "symbol": "BJZ"
+  },
+  {
+    "name": "Cortina Holdings Ltd",
+    "symbol": "C41"
+  },
+  {
+    "name": "Sembcorp Industries Ltd",
+    "symbol": "U96"
+  },
+  {
+    "name": "CapitaLand China Trust",
+    "symbol": "AU8U"
+  },
+  {
+    "name": "ABR Holdings Ltd",
+    "symbol": "533"
+  },
+  {
+    "name": "Singapore Exchange Ltd",
+    "symbol": "S68"
+  },
+  {
+    "name": "Choo Chiang Holdings Ltd",
+    "symbol": "42E"
+  },
+  {
+    "name": "OIO Holdings Ltd",
+    "symbol": "KUX"
+  },
+  {
+    "name": "Tritech Group Ltd",
+    "symbol": "5G9"
+  },
+  {
+    "name": "Vicom Ltd",
+    "symbol": "WJP"
+  },
+  {
+    "name": "Tan Chong International Ltd",
+    "symbol": "T15"
+  },
+  {
+    "name": "Joyas International Holdings Ltd",
+    "symbol": "E9L"
+  },
+  {
+    "name": "Riverstone Holdings Ltd",
+    "symbol": "AP4"
+  },
+  {
+    "name": "Goodland Group Ltd",
+    "symbol": "5PC"
+  },
+  {
+    "name": "NTT DC REIT",
+    "symbol": "NTDU"
+  },
+  {
+    "name": "Amplefield Ltd",
+    "symbol": "AOF"
+  },
+  {
+    "name": "Trans-China Automotive Holdings Ltd",
+    "symbol": "VI2"
+  },
+  {
+    "name": "Frencken Group Ltd",
+    "symbol": "E28"
+  },
+  {
+    "name": "Hong Leong Asia Ltd",
+    "symbol": "H22"
+  },
+  {
+    "name": "IFS Capital Ltd",
+    "symbol": "I49"
+  },
+  {
+    "name": "Lippo Malls Indonesia Retail Trust",
+    "symbol": "D5IU"
+  },
+  {
+    "name": "Keppel Ltd",
+    "symbol": "BN4"
+  },
+  {
+    "name": "Coliwoo Holdings Ltd",
+    "symbol": "W8W"
+  },
+  {
+    "name": "Keppel Pacific Oak US REIT",
+    "symbol": "CMOU"
+  },
+  {
+    "name": "SBS Transit Ltd",
+    "symbol": "S61"
+  },
+  {
+    "name": "Alpha Integrated REIT",
+    "symbol": "M1GU"
+  },
+  {
+    "name": "United Overseas Australia Ltd",
+    "symbol": "EH5"
+  },
+  {
+    "name": "Micro-Mechanics (Holdings) Ltd",
+    "symbol": "5DD"
+  },
+  {
+    "name": "Mandarin Oriental International Ltd",
+    "symbol": "M04"
+  },
+  {
+    "name": "Mercurius Capital Investments Ltd",
+    "symbol": "5RF"
+  },
+  {
+    "name": "OKP Holdings Ltd",
+    "symbol": "5CF"
+  },
+  {
+    "name": "Keppel Infrastructure Trust",
+    "symbol": "A7RU"
+  },
+  {
+    "name": "Spackman Entertainment Group Ltd",
+    "symbol": "9VW"
+  },
+  {
+    "name": "PC Partner Group Ltd",
+    "symbol": "PCT"
+  },
+  {
+    "name": "Abundance International Ltd",
+    "symbol": "541"
+  },
+  {
+    "name": "iWOW Technology Ltd",
+    "symbol": "NXR"
+  },
+  {
+    "name": "ValueMax Group Ltd",
+    "symbol": "T6I"
+  },
+  {
+    "name": "Mewah International Inc",
+    "symbol": "MV4"
+  },
+  {
+    "name": "Asia Enterprises Holding Ltd",
+    "symbol": "A55"
+  },
+  {
+    "name": "JB Foods Ltd",
+    "symbol": "BEW"
+  },
+  {
+    "name": "Oversea-Chinese Banking Corp Ltd",
+    "symbol": "O39"
+  },
+  {
+    "name": "Pan-United Corp Ltd",
+    "symbol": "P52"
+  },
+  {
+    "name": "9R Ltd",
+    "symbol": "1Y1"
+  },
+  {
+    "name": "GSS Energy Ltd",
+    "symbol": "41F"
+  },
+  {
+    "name": "MindChamps PreSchool Ltd",
+    "symbol": "CNE"
+  },
+  {
+    "name": "Mary Chia Holdings Ltd",
+    "symbol": "5OX"
+  },
+  {
+    "name": "Sri Trang Agro-Industry PLC",
+    "symbol": "NC2"
+  },
+  {
+    "name": "Keppel DC REIT",
+    "symbol": "AJBU"
+  },
+  {
+    "name": "Comba Telecom Systems Holdings Ltd",
+    "symbol": "STC"
+  },
+  {
+    "name": "China Everbright Water Ltd",
+    "symbol": "U9E"
+  },
+  {
+    "name": "Maruwa Co Ltd",
+    "symbol": "M12"
+  },
+  {
+    "name": "Union Gas Holdings Ltd",
+    "symbol": "1F2"
+  },
+  {
+    "name": "Prospera Global Ltd",
+    "symbol": "5HH"
+  },
+  {
+    "name": "JEP Holdings Ltd",
+    "symbol": "1J4"
+  },
+  {
+    "name": "UMS Integration Ltd",
+    "symbol": "558"
+  },
+  {
+    "name": "Boldtek Holdings Ltd",
+    "symbol": "5VI"
+  },
+  {
+    "name": "Wing Tai Holdings Ltd",
+    "symbol": "W05"
+  },
+  {
+    "name": "ComfortDelGro Corp Ltd",
+    "symbol": "C52"
+  },
+  {
+    "name": "Sing Investments & Finance Ltd",
+    "symbol": "S35"
+  },
+  {
+    "name": "BBR Holdings (S) Ltd",
+    "symbol": "KJ5"
+  },
+  {
+    "name": "Le Tree Holdings Ltd",
+    "symbol": "E6R"
+  },
+  {
+    "name": "Medi Lifestyle Ltd",
+    "symbol": "Z4D"
+  },
+  {
+    "name": "Asia-Pacific Strategic Investments Ltd",
+    "symbol": "5RA"
+  },
+  {
+    "name": "Progen Holdings Ltd",
+    "symbol": "583"
+  },
+  {
+    "name": "Straco Corp Ltd",
+    "symbol": "S85"
+  },
+  {
+    "name": "AJJ Medtech Holdings Ltd",
+    "symbol": "584"
+  },
+  {
+    "name": "SIA Engineering Co Ltd",
+    "symbol": "S59"
   },
   {
     "name": "Straits Trading Co Ltd",
     "symbol": "S20"
   },
   {
-    "name": "Stamford Land Corp Ltd",
-    "symbol": "H07"
+    "name": "Singapore Land Group Ltd",
+    "symbol": "U06"
+  },
+  {
+    "name": "Frasers Property Ltd",
+    "symbol": "TQ5"
+  },
+  {
+    "name": "Emperador Inc",
+    "symbol": "EMI"
+  },
+  {
+    "name": "Sin Heng Heavy Machinery Ltd",
+    "symbol": "BKA"
+  },
+  {
+    "name": "Koh Brothers Group Ltd",
+    "symbol": "K75"
+  },
+  {
+    "name": "Metech International Ltd",
+    "symbol": "V3M"
+  },
+  {
+    "name": "OUE Ltd",
+    "symbol": "LJ3"
+  },
+  {
+    "name": "CapitaLand Ascott Trust",
+    "symbol": "HMN"
+  },
+  {
+    "name": "Second Chance Properties Ltd",
+    "symbol": "528"
+  },
+  {
+    "name": "Teho International Inc Ltd",
+    "symbol": "5OQ"
+  },
+  {
+    "name": "Prudential PLC",
+    "symbol": "K6S"
+  },
+  {
+    "name": "AvePoint Inc",
+    "symbol": "AVP"
+  },
+  {
+    "name": "Brook Crompton Holdings Ltd",
+    "symbol": "AWC"
+  },
+  {
+    "name": "United Overseas Insurance Ltd",
+    "symbol": "U13"
+  },
+  {
+    "name": "Bukit Sembawang Estates Ltd",
+    "symbol": "B61"
+  },
+  {
+    "name": "Helens International Holdings Co Ltd",
+    "symbol": "HLS"
+  },
+  {
+    "name": "Far East Hospitality Trust",
+    "symbol": "Q5T"
+  },
+  {
+    "name": "Hongkong Land Holdings Ltd",
+    "symbol": "H78"
+  },
+  {
+    "name": "Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd",
+    "symbol": "T14"
+  },
+  {
+    "name": "City Developments Ltd",
+    "symbol": "C09"
+  },
+  {
+    "name": "China Environmental Resources Group Ltd",
+    "symbol": "UIX"
+  },
+  {
+    "name": "Hock Lian Seng Holdings Ltd",
+    "symbol": "J2T"
+  },
+  {
+    "name": "Hong Leong Finance Ltd",
+    "symbol": "S41"
+  },
+  {
+    "name": "Advanced Holdings Ltd",
+    "symbol": "BLZ"
+  },
+  {
+    "name": "PropNex Ltd",
+    "symbol": "OYY"
+  },
+  {
+    "name": "World Precision Machinery Ltd",
+    "symbol": "B49"
+  },
+  {
+    "name": "Hotel Royal Ltd",
+    "symbol": "H12"
+  },
+  {
+    "name": "Sunrise Shares Holdings Ltd",
+    "symbol": "581"
+  },
+  {
+    "name": "SinoCloud Group Ltd",
+    "symbol": "LYY"
+  },
+  {
+    "name": "Nam Lee Pressed Metal Industries Ltd",
+    "symbol": "G0I"
+  },
+  {
+    "name": "Asian Micro Holdings Ltd",
+    "symbol": "585"
+  },
+  {
+    "name": "DBS Group Holdings Ltd",
+    "symbol": "D05"
+  },
+  {
+    "name": "Prime US REIT",
+    "symbol": "OXMU"
+  },
+  {
+    "name": "NeraTelecommunications Ltd",
+    "symbol": "N01"
+  },
+  {
+    "name": "Pollux Properties Ltd",
+    "symbol": "5AE"
+  },
+  {
+    "name": "Figtree Holdings Ltd",
+    "symbol": "5F4"
+  },
+  {
+    "name": "Uni-Asia Group Ltd",
+    "symbol": "CHJ"
+  },
+  {
+    "name": "SING Holdings Ltd",
+    "symbol": "5IC"
+  },
+  {
+    "name": "Sapphire Corp Ltd",
+    "symbol": "BRD"
+  },
+  {
+    "name": "LY Corp Ltd",
+    "symbol": "1H8"
+  },
+  {
+    "name": "BlackGold Natural Resources Ltd",
+    "symbol": "41H"
+  },
+  {
+    "name": "Raffles Medical Group Ltd",
+    "symbol": "BSL"
+  },
+  {
+    "name": "Livingstone Health Holdings Ltd",
+    "symbol": "PRH"
+  },
+  {
+    "name": "NauticAWT Ltd",
+    "symbol": "42D"
+  },
+  {
+    "name": "Oxley Holdings Ltd",
+    "symbol": "5UX"
+  },
+  {
+    "name": "YHI International Ltd",
+    "symbol": "BPF"
+  },
+  {
+    "name": "Nordic Group Ltd",
+    "symbol": "MR7"
+  },
+  {
+    "name": "Asti Holdings Ltd",
+    "symbol": "575"
+  },
+  {
+    "name": "Keong Hong Holdings Ltd",
+    "symbol": "5TT"
+  },
+  {
+    "name": "Chuan Hup Holdings Ltd",
+    "symbol": "C33"
+  },
+  {
+    "name": "Grand Banks Yachts Ltd",
+    "symbol": "G50"
+  },
+  {
+    "name": "New Toyo International Holdings Ltd",
+    "symbol": "N08"
+  },
+  {
+    "name": "Pan Hong Holdings Group Ltd",
+    "symbol": "P36"
+  },
+  {
+    "name": "Olam Group Ltd",
+    "symbol": "VC2"
+  },
+  {
+    "name": "Hotel Grand Central Ltd",
+    "symbol": "H18"
+  },
+  {
+    "name": "APAC Realty Ltd",
+    "symbol": "CLN"
+  },
+  {
+    "name": "Sasseur REIT",
+    "symbol": "CRPU"
+  },
+  {
+    "name": "Beng Kuang Marine Ltd",
+    "symbol": "BEZ"
+  },
+  {
+    "name": "Sarine Technologies Ltd",
+    "symbol": "U77"
+  },
+  {
+    "name": "Manulife US REIT",
+    "symbol": "BTOU"
+  },
+  {
+    "name": "Southern Packaging Group Ltd",
+    "symbol": "BQP"
+  },
+  {
+    "name": "Thakral Corp Ltd",
+    "symbol": "AWI"
+  },
+  {
+    "name": "SATS Ltd",
+    "symbol": "S58"
+  },
+  {
+    "name": "Fraser and Neave Ltd",
+    "symbol": "F99"
   },
   {
     "name": "Shen Yao Holdings Ltd",
@@ -260,1544 +1144,992 @@
     "symbol": "MIJ"
   },
   {
-    "name": "Lion Asiapac Ltd",
-    "symbol": "BAZ"
+    "name": "Sakae Holdings Ltd",
+    "symbol": "5DO"
   },
   {
-    "name": "Food Empire Holdings Ltd",
-    "symbol": "F03"
-  },
-  {
-    "name": "Bonvests Holdings Ltd",
-    "symbol": "B28"
-  },
-  {
-    "name": "Sapphire Corp Ltd",
-    "symbol": "BRD"
-  },
-  {
-    "name": "Ocean Sky International Ltd",
-    "symbol": "1B6"
-  },
-  {
-    "name": "Yongnam Holdings Ltd",
-    "symbol": "AXB"
-  },
-  {
-    "name": "Southern Packaging Group Ltd",
-    "symbol": "BQP"
-  },
-  {
-    "name": "Fraser and Neave Ltd",
-    "symbol": "F99"
-  },
-  {
-    "name": "GP Industries Ltd",
-    "symbol": "G20"
-  },
-  {
-    "name": "Suntar Eco-City Ltd",
-    "symbol": "BKZ"
-  },
-  {
-    "name": "CapitaLand China Trust",
-    "symbol": "AU8U"
-  },
-  {
-    "name": "Valuetronics Holdings Ltd",
-    "symbol": "BN2"
-  },
-  {
-    "name": "Travelite Holdings Ltd",
-    "symbol": "BCZ"
-  },
-  {
-    "name": "Darco Water Technologies Ltd",
-    "symbol": "BLR"
-  },
-  {
-    "name": "RE&S",
-    "symbol": "1G1"
-  },
-  {
-    "name": "MindChamps PreSchool Ltd",
-    "symbol": "CNE"
-  },
-  {
-    "name": "Sri Trang Agro-Industry PLC",
-    "symbol": "NC2"
-  },
-  {
-    "name": "Lum Chang Holdings Ltd",
-    "symbol": "L19"
-  },
-  {
-    "name": "Thakral Corp Ltd",
-    "symbol": "AWI"
-  },
-  {
-    "name": "Jadason Enterprises Ltd",
-    "symbol": "J03"
-  },
-  {
-    "name": "Megachem Ltd",
-    "symbol": "5DS"
-  },
-  {
-    "name": "Bumitama Agri Ltd",
-    "symbol": "P8Z"
-  },
-  {
-    "name": "Hock Lian Seng Holdings Ltd",
-    "symbol": "J2T"
-  },
-  {
-    "name": "APAC Realty Ltd",
-    "symbol": "CLN"
-  },
-  {
-    "name": "Jardine Matheson Holdings Ltd",
-    "symbol": "J36"
-  },
-  {
-    "name": "AEM Holdings Ltd",
-    "symbol": "AWX"
-  },
-  {
-    "name": "Hutchison Port Holdings Trust",
-    "symbol": "NS8U"
-  },
-  {
-    "name": "Emperador Inc",
-    "symbol": "EMI"
-  },
-  {
-    "name": "Centurion Accommodation REIT",
-    "symbol": "8C8U"
-  },
-  {
-    "name": "GSS Energy Ltd",
-    "symbol": "41F"
-  },
-  {
-    "name": "Incredible Holdings Ltd",
-    "symbol": "RDR"
-  },
-  {
-    "name": "British and Malayan Holdings Ltd",
-    "symbol": "CJN"
-  },
-  {
-    "name": "Keppel DC REIT",
-    "symbol": "AJBU"
-  },
-  {
-    "name": "CDL Hospitality Trusts",
-    "symbol": "J85"
-  },
-  {
-    "name": "Zhongxin Fruit and Juice Ltd",
-    "symbol": "5EG"
-  },
-  {
-    "name": "Wee Hur Holdings Ltd",
-    "symbol": "E3B"
-  },
-  {
-    "name": "17LIVE Group Ltd",
-    "symbol": "LVR"
-  },
-  {
-    "name": "UMS Integration Ltd",
-    "symbol": "558"
-  },
-  {
-    "name": "Emerging Towns & Cities Singapore Ltd",
-    "symbol": "1C0"
-  },
-  {
-    "name": "Mapletree Industrial Trust",
-    "symbol": "ME8U"
-  },
-  {
-    "name": "Advanced Holdings Ltd",
-    "symbol": "BLZ"
-  },
-  {
-    "name": "InnoTek Ltd",
-    "symbol": "M14"
-  },
-  {
-    "name": "SBS Transit Ltd",
-    "symbol": "S61"
-  },
-  {
-    "name": "Stoneweg Europe Stapled Trust",
-    "symbol": "CWCU"
-  },
-  {
-    "name": "Metech International Ltd",
-    "symbol": "V3M"
-  },
-  {
-    "name": "Sembcorp Industries Ltd",
-    "symbol": "U96"
-  },
-  {
-    "name": "Vallianz Holdings Ltd",
-    "symbol": "WPC"
-  },
-  {
-    "name": "Combine Will International Holdings Ltd",
-    "symbol": "N0Z"
-  },
-  {
-    "name": "City Developments Ltd",
-    "symbol": "C09"
-  },
-  {
-    "name": "Keppel REIT",
-    "symbol": "K71U"
-  },
-  {
-    "name": "Manulife US REIT",
-    "symbol": "BTOU"
-  },
-  {
-    "name": "CDW Holding Ltd",
-    "symbol": "BXE"
-  },
-  {
-    "name": "Aspial Lifestyle Ltd",
-    "symbol": "5UF"
-  },
-  {
-    "name": "New Wave Holdings Ltd",
-    "symbol": "5FX"
-  },
-  {
-    "name": "TalkMed Group Ltd",
-    "symbol": "5G3"
-  },
-  {
-    "name": "NutryFarm International Ltd",
-    "symbol": "AZT"
-  },
-  {
-    "name": "Ascent Bridge Ltd",
-    "symbol": "AWG"
-  },
-  {
-    "name": "Ossia International Ltd",
-    "symbol": "O08"
-  },
-  {
-    "name": "Shangri-La Asia Ltd",
-    "symbol": "S07"
-  },
-  {
-    "name": "Kingsmen Creatives Ltd",
-    "symbol": "5MZ"
-  },
-  {
-    "name": "KSH Holdings Ltd",
-    "symbol": "ER0"
-  },
-  {
-    "name": "Y Ventures Group Ltd",
-    "symbol": "1F1"
-  },
-  {
-    "name": "Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd",
-    "symbol": "T14"
-  },
-  {
-    "name": "Tung Lok Restaurants(2000) Ltd",
-    "symbol": "540"
-  },
-  {
-    "name": "Singapore Exchange Ltd",
-    "symbol": "S68"
-  },
-  {
-    "name": "VCPlus Ltd",
-    "symbol": "43E"
-  },
-  {
-    "name": "World Precision Machinery Ltd",
-    "symbol": "B49"
-  },
-  {
-    "name": "Boustead Singapore Ltd",
-    "symbol": "F9D"
-  },
-  {
-    "name": "Pan Hong Holdings Group Ltd",
-    "symbol": "P36"
-  },
-  {
-    "name": "BH Global Corp Ltd",
-    "symbol": "BQN"
-  },
-  {
-    "name": "Sing Investments & Finance Ltd",
-    "symbol": "S35"
-  },
-  {
-    "name": "CapitaLand Ascott Trust",
-    "symbol": "HMN"
-  },
-  {
-    "name": "Raffles Medical Group Ltd",
-    "symbol": "BSL"
-  },
-  {
-    "name": "Ho Bee Land Ltd",
-    "symbol": "H13"
-  },
-  {
-    "name": "Tye Soon Ltd",
-    "symbol": "BFU"
-  },
-  {
-    "name": "Great Eastern Holdings Ltd",
-    "symbol": "G07"
-  },
-  {
-    "name": "IREIT Global",
-    "symbol": "8U7U"
-  },
-  {
-    "name": "Huationg Global Ltd",
-    "symbol": "41B"
-  },
-  {
-    "name": "Haw Par Corp Ltd",
-    "symbol": "H02"
-  },
-  {
-    "name": "Pan-United Corp Ltd",
-    "symbol": "P52"
-  },
-  {
-    "name": "Beverly Wilshire Ltd",
-    "symbol": "9QX"
-  },
-  {
-    "name": "Hafary Holdings Ltd",
-    "symbol": "5VS"
-  },
-  {
-    "name": "Vividthree Holdings Ltd",
-    "symbol": "OMK"
-  },
-  {
-    "name": "MTQ Corp Ltd",
-    "symbol": "M05"
-  },
-  {
-    "name": "Centurion Corp Ltd",
-    "symbol": "OU8"
-  },
-  {
-    "name": "AJJ Medtech Holdings Ltd",
-    "symbol": "584"
-  },
-  {
-    "name": "Audience Analytics Ltd",
-    "symbol": "1AZ"
-  },
-  {
-    "name": "Singapore Shipping Corp Ltd",
-    "symbol": "S19"
-  },
-  {
-    "name": "ComfortDelGro Corp Ltd",
-    "symbol": "C52"
-  },
-  {
-    "name": "Maruwa Co Ltd",
-    "symbol": "M12"
-  },
-  {
-    "name": "DFI Retail Group Holdings Ltd",
-    "symbol": "D01"
-  },
-  {
-    "name": "Dezign Format Group Ltd",
-    "symbol": "UZF"
-  },
-  {
-    "name": "Thai Beverage PLC",
-    "symbol": "Y92"
-  },
-  {
-    "name": "Prudential PLC",
-    "symbol": "K6S"
-  },
-  {
-    "name": "BBR Holdings (S) Ltd",
-    "symbol": "KJ5"
-  },
-  {
-    "name": "BRC Asia Ltd",
-    "symbol": "BEC"
-  },
-  {
-    "name": "Civmec Ltd",
-    "symbol": "P9D"
-  },
-  {
-    "name": "First Resources Ltd",
-    "symbol": "EB5"
-  },
-  {
-    "name": "Prime US REIT",
-    "symbol": "OXMU"
-  },
-  {
-    "name": "Vicom Ltd",
-    "symbol": "WJP"
-  },
-  {
-    "name": "NSL Ltd",
-    "symbol": "N02"
-  },
-  {
-    "name": "Seatrium Ltd",
-    "symbol": "5E2"
-  },
-  {
-    "name": "Ban Leong Technologies Ltd",
-    "symbol": "B26"
-  },
-  {
-    "name": "SDAI Ltd",
-    "symbol": "5TI"
-  },
-  {
-    "name": "Hongkong Land Holdings Ltd",
-    "symbol": "H78"
-  },
-  {
-    "name": "OUE Ltd",
-    "symbol": "LJ3"
-  },
-  {
-    "name": "SATS Ltd",
-    "symbol": "S58"
-  },
-  {
-    "name": "Daiwa House Logistics Trust",
-    "symbol": "DHLU"
-  },
-  {
-    "name": "Delfi Ltd",
-    "symbol": "P34"
-  },
-  {
-    "name": "Progen Holdings Ltd",
-    "symbol": "583"
-  },
-  {
-    "name": "Sarine Technologies Ltd",
-    "symbol": "U77"
-  },
-  {
-    "name": "Wing Tai Holdings Ltd",
-    "symbol": "W05"
-  },
-  {
-    "name": "Edition Ltd",
-    "symbol": "5HG"
-  },
-  {
-    "name": "Stoneweg Europe Stapled Trust",
-    "symbol": "SET"
-  },
-  {
-    "name": "Alpha DX Group Ltd",
-    "symbol": "VVL"
-  },
-  {
-    "name": "Hutchison Port Holdings Trust",
-    "symbol": "P7VU"
-  },
-  {
-    "name": "China Aviation Oil (Singapore) Corp Ltd",
-    "symbol": "G92"
-  },
-  {
-    "name": "Koh Brothers Group Ltd",
-    "symbol": "K75"
-  },
-  {
-    "name": "Singapore Post Ltd",
-    "symbol": "S08"
-  },
-  {
-    "name": "Olam Group Ltd",
-    "symbol": "VC2"
-  },
-  {
-    "name": "Karin Technology Holdings Ltd",
-    "symbol": "K29"
-  },
-  {
-    "name": "VibroPower Corp Ltd",
-    "symbol": "BJD"
-  },
-  {
-    "name": "Uni-Asia Group Ltd",
-    "symbol": "CHJ"
-  },
-  {
-    "name": "NeraTelecommunications Ltd",
-    "symbol": "N01"
-  },
-  {
-    "name": "Mooreast Holdings Ltd",
-    "symbol": "1V3"
-  },
-  {
-    "name": "City Developments Ltd Pref",
-    "symbol": "C70"
-  },
-  {
-    "name": "Aztech Global Ltd",
-    "symbol": "8AZ"
-  },
-  {
-    "name": "Soon Hock Enterprise Holding Ltd",
-    "symbol": "SHE"
-  },
-  {
-    "name": "Duty Free International Ltd",
-    "symbol": "5SO"
-  },
-  {
-    "name": "Micro-Mechanics (Holdings) Ltd",
-    "symbol": "5DD"
-  },
-  {
-    "name": "Venture Corp Ltd",
-    "symbol": "V03"
-  },
-  {
-    "name": "Grand Venture Technology Ltd",
-    "symbol": "JLB"
-  },
-  {
-    "name": "Oversea-Chinese Banking Corp Ltd",
-    "symbol": "O39"
-  },
-  {
-    "name": "Top Glove Corp Bhd",
-    "symbol": "BVA"
-  },
-  {
-    "name": "TSH Resources Bhd",
-    "symbol": "TSH"
-  },
-  {
-    "name": "Wilmar International Ltd",
-    "symbol": "F34"
-  },
-  {
-    "name": "Q & M Dental Group (Singapore) Ltd",
-    "symbol": "QC7"
-  },
-  {
-    "name": "Joyas International Holdings Ltd",
-    "symbol": "E9L"
-  },
-  {
-    "name": "Jubilee Industries Holdings Ltd",
-    "symbol": "NHD"
-  },
-  {
-    "name": "Aspial Corp Ltd",
-    "symbol": "A30"
-  },
-  {
-    "name": "CSC Holdings Ltd",
-    "symbol": "C06"
-  },
-  {
-    "name": "Asian Pay Television Trust",
-    "symbol": "S7OU"
-  },
-  {
-    "name": "YKGI Ltd",
-    "symbol": "YK9"
-  },
-  {
-    "name": "IFS Capital Ltd",
-    "symbol": "I49"
-  },
-  {
-    "name": "NauticAWT Ltd",
-    "symbol": "42D"
-  },
-  {
-    "name": "Golden Agri-Resources Ltd",
-    "symbol": "E5H"
-  },
-  {
-    "name": "UnUsUaL Ltd",
-    "symbol": "1D1"
-  },
-  {
-    "name": "Low Keng Huat (Singapore) Ltd",
-    "symbol": "F1E"
-  },
-  {
-    "name": "Hotel Grand Central Ltd",
-    "symbol": "H18"
-  },
-  {
-    "name": "Elite UK REIT",
-    "symbol": "MXNU"
-  },
-  {
-    "name": "Tai Sin Electric Ltd",
-    "symbol": "500"
-  },
-  {
-    "name": "RH Petrogas Ltd",
-    "symbol": "T13"
-  },
-  {
-    "name": "Baker Technology Ltd",
-    "symbol": "BTP"
-  },
-  {
-    "name": "Tat Seng Packaging Group Ltd",
-    "symbol": "T12"
-  },
-  {
-    "name": "CNMC Goldmine Holdings Ltd",
-    "symbol": "5TP"
-  },
-  {
-    "name": "Second Chance Properties Ltd",
-    "symbol": "528"
-  },
-  {
-    "name": "Comba Telecom Systems Holdings Ltd",
-    "symbol": "STC"
-  },
-  {
-    "name": "Plato Capital Ltd",
-    "symbol": "YYN"
-  },
-  {
-    "name": "ValueMax Group Ltd",
-    "symbol": "T6I"
-  },
-  {
-    "name": "SIA Engineering Co Ltd",
-    "symbol": "S59"
-  },
-  {
-    "name": "Vicplas International Ltd",
-    "symbol": "569"
-  },
-  {
-    "name": "JB Foods Ltd",
-    "symbol": "BEW"
-  },
-  {
-    "name": "Chasen Holdings Ltd",
-    "symbol": "5NV"
-  },
-  {
-    "name": "IPS Securex Holdings Ltd",
-    "symbol": "42N"
-  },
-  {
-    "name": "Noel Gifts International Ltd",
-    "symbol": "543"
-  },
-  {
-    "name": "Rex International Holding Ltd",
-    "symbol": "5WH"
-  },
-  {
-    "name": "Singapore Technologies Engineering Ltd",
-    "symbol": "S63"
-  },
-  {
-    "name": "Quantum Healthcare Ltd",
-    "symbol": "V8Y"
-  },
-  {
-    "name": "PNE Industries Ltd",
-    "symbol": "BDA"
+    "name": "StarHub Ltd",
+    "symbol": "CC3"
   },
   {
     "name": "Attika Group Ltd",
     "symbol": "53W"
   },
   {
-    "name": "United Hampshire US REIT",
-    "symbol": "ODBU"
-  },
-  {
-    "name": "Pacific Century Regional Developments Ltd",
-    "symbol": "P15"
-  },
-  {
-    "name": "Versalink Holdings Ltd",
-    "symbol": "40N"
-  },
-  {
-    "name": "AcroMeta Group Ltd",
-    "symbol": "43F"
-  },
-  {
-    "name": "AsiaMedic Ltd",
-    "symbol": "505"
-  },
-  {
-    "name": "ST Group Food Industries Holdings Ltd",
-    "symbol": "DRX"
-  },
-  {
-    "name": "Asia Enterprises Holding Ltd",
-    "symbol": "A55"
-  },
-  {
-    "name": "Avi-Tech Holdings Ltd",
-    "symbol": "1R6"
-  },
-  {
-    "name": "Charisma Energy Services Ltd",
-    "symbol": "YSV"
-  },
-  {
-    "name": "Lum Chang Creations Ltd",
-    "symbol": "LCC"
-  },
-  {
-    "name": "Mewah International Inc",
-    "symbol": "MV4"
-  },
-  {
-    "name": "Koda Ltd",
-    "symbol": "BJZ"
-  },
-  {
-    "name": "Luminor Financial Holdings Ltd",
-    "symbol": "5UA"
-  },
-  {
-    "name": "iFAST Corp Ltd",
-    "symbol": "AIY"
-  },
-  {
-    "name": "Union Gas Holdings Ltd",
-    "symbol": "1F2"
-  },
-  {
-    "name": "China Mining International Ltd",
-    "symbol": "BHD"
-  },
-  {
-    "name": "Mary Chia Holdings Ltd",
-    "symbol": "5OX"
-  },
-  {
-    "name": "Mapletree Logistics Trust",
-    "symbol": "M44U"
-  },
-  {
-    "name": "Sincap Group Ltd",
-    "symbol": "5UN"
-  },
-  {
-    "name": "Willas-Array Electronics Holdings Ltd",
-    "symbol": "BDR"
-  },
-  {
-    "name": "Zhongmin Baihui Retail Group Ltd",
-    "symbol": "5SR"
-  },
-  {
-    "name": "Shanaya Ltd",
-    "symbol": "SES"
-  },
-  {
-    "name": "Stamford Tyres Corp Ltd",
-    "symbol": "S29"
-  },
-  {
-    "name": "Raffles Infrastructure Holdings Ltd",
-    "symbol": "LUY"
-  },
-  {
-    "name": "CapitaLand Integrated Commercial Trust",
-    "symbol": "C38U"
-  },
-  {
-    "name": "ISDN Holdings Ltd",
-    "symbol": "I07"
-  },
-  {
-    "name": "Eindec Corp Ltd",
-    "symbol": "42Z"
-  },
-  {
-    "name": "IHH Healthcare Bhd",
-    "symbol": "Q0F"
-  },
-  {
-    "name": "MSM International Ltd",
-    "symbol": "51O"
-  },
-  {
-    "name": "USP Group Ltd",
-    "symbol": "BRS"
-  },
-  {
-    "name": "V2Y Corp Ltd",
-    "symbol": "V2Y"
-  },
-  {
-    "name": "Keppel Ltd",
-    "symbol": "BN4"
-  },
-  {
-    "name": "Tosei Corp",
-    "symbol": "S2D"
-  },
-  {
-    "name": "EC World Real Estate Investment Trust",
-    "symbol": "BWCU"
-  },
-  {
-    "name": "China Shenshan Orchard Holdings Co Ltd",
-    "symbol": "BKV"
-  },
-  {
-    "name": "CH Offshore Ltd",
-    "symbol": "C13"
-  },
-  {
-    "name": "ISEC Healthcare Ltd",
-    "symbol": "40T"
-  },
-  {
-    "name": "Parkway Life Real Estate Investment Trust",
-    "symbol": "C2PU"
-  },
-  {
-    "name": "Fuxing China Group Ltd",
-    "symbol": "AWK"
-  },
-  {
-    "name": "MYP Ltd",
-    "symbol": "F86"
-  },
-  {
-    "name": "OKP Holdings Ltd",
-    "symbol": "5CF"
-  },
-  {
-    "name": "AvePoint Inc",
-    "symbol": "AVP"
-  },
-  {
-    "name": "Yangzijiang Shipbuilding (Holdings) Ltd",
-    "symbol": "SO7"
-  },
-  {
-    "name": "PropNex Ltd",
-    "symbol": "OYY"
-  },
-  {
-    "name": "Choo Chiang Holdings Ltd",
-    "symbol": "42E"
-  },
-  {
-    "name": "Embracing Future Holdings Ltd",
-    "symbol": "8YY"
-  },
-  {
-    "name": "Frencken Group Ltd",
-    "symbol": "E28"
-  },
-  {
-    "name": "Sheng Siong Group Ltd",
-    "symbol": "OV8"
-  },
-  {
-    "name": "Sakae Holdings Ltd",
-    "symbol": "5DO"
-  },
-  {
-    "name": "Nordic Group Ltd",
-    "symbol": "MR7"
-  },
-  {
-    "name": "Sitra Holdings (International) Ltd",
-    "symbol": "5LE"
-  },
-  {
-    "name": "Far East Group Ltd",
-    "symbol": "5TJ"
-  },
-  {
-    "name": "Airports of Thailand PCL DRC",
-    "symbol": "TATD"
-  },
-  {
-    "name": "Ley Choon Group Holdings Ltd",
-    "symbol": "Q0X"
-  },
-  {
-    "name": "China International Holdings Ltd",
-    "symbol": "BEH"
-  },
-  {
-    "name": "AusGroup Ltd",
-    "symbol": "5GJ"
-  },
-  {
-    "name": "AP Oil International Ltd",
-    "symbol": "5AU"
-  },
-  {
-    "name": "Tan Chong International Ltd",
-    "symbol": "T15"
-  },
-  {
-    "name": "Sasseur REIT",
-    "symbol": "CRPU"
-  },
-  {
-    "name": "Hosen Group Ltd",
-    "symbol": "5EV"
-  },
-  {
-    "name": "Trans-China Automotive Holdings Ltd",
-    "symbol": "VI2"
-  },
-  {
-    "name": "Prospera Global Ltd",
-    "symbol": "5HH"
-  },
-  {
-    "name": "Sabana Industrial REIT",
-    "symbol": "M1GU"
-  },
-  {
-    "name": "Digilife Technologies Ltd",
-    "symbol": "BAI"
-  },
-  {
-    "name": "Amcorp Global Ltd",
-    "symbol": "S9B"
-  },
-  {
-    "name": "Asti Holdings Ltd",
-    "symbol": "575"
-  },
-  {
-    "name": "First Ship Lease Trust",
-    "symbol": "D8DU"
-  },
-  {
-    "name": "Singapore Telecommunications Ltd",
-    "symbol": "Z77"
-  },
-  {
-    "name": "ISOTeam Ltd",
-    "symbol": "5WF"
-  },
-  {
-    "name": "Hiap Hoe Ltd",
-    "symbol": "5JK"
-  },
-  {
-    "name": "Winking Studios Ltd",
-    "symbol": "WKS"
-  },
-  {
-    "name": "iWOW Technology Ltd",
-    "symbol": "NXR"
-  },
-  {
-    "name": "China Everbright Water Ltd",
-    "symbol": "U9E"
-  },
-  {
-    "name": "Paragon REIT",
-    "symbol": "SK6U"
-  },
-  {
-    "name": "United Overseas Insurance Ltd",
-    "symbol": "U13"
-  },
-  {
-    "name": "Frasers Property Ltd",
-    "symbol": "TQ5"
-  },
-  {
-    "name": "TT International Ltd",
-    "symbol": "T09"
-  },
-  {
-    "name": "United Overseas Australia Ltd",
-    "symbol": "EH5"
-  },
-  {
-    "name": "Aoxin Q & M Dental Group Ltd",
-    "symbol": "1D4"
-  },
-  {
-    "name": "Ouhua Energy Holdings Ltd",
-    "symbol": "AJ2"
-  },
-  {
-    "name": "Frasers Centrepoint Trust",
-    "symbol": "J69U"
-  },
-  {
-    "name": "Lincotrade & Associates Holdings Ltd",
-    "symbol": "BFT"
-  },
-  {
-    "name": "Resources Global",
-    "symbol": "QSD"
-  },
-  {
-    "name": "Pollux Properties Ltd",
-    "symbol": "5AE"
-  },
-  {
-    "name": "Casa Holdings Ltd",
-    "symbol": "C04"
-  },
-  {
-    "name": "Keppel Infrastructure Trust",
-    "symbol": "A7RU"
-  },
-  {
-    "name": "The Hour Glass Ltd",
-    "symbol": "AGS"
-  },
-  {
-    "name": "Khong Guan Ltd",
-    "symbol": "K03"
-  },
-  {
-    "name": "Heeton Holdings Ltd",
-    "symbol": "5DP"
-  },
-  {
-    "name": "UOL Group Ltd",
-    "symbol": "U14"
-  },
-  {
-    "name": "HL Global Enterprises Ltd",
-    "symbol": "AVX"
-  },
-  {
-    "name": "IREIT Global",
-    "symbol": "UD1U"
-  },
-  {
-    "name": "Oxley Holdings Ltd",
-    "symbol": "5UX"
-  },
-  {
-    "name": "Taka Jewellery Holdings Ltd",
-    "symbol": "42L"
-  },
-  {
-    "name": "Goodland Group Ltd",
-    "symbol": "5PC"
-  },
-  {
-    "name": "NetLink NBN Trust",
-    "symbol": "CJLU"
-  },
-  {
-    "name": "Acesian Partners Ltd",
-    "symbol": "5FW"
-  },
-  {
-    "name": "GuocoLand Ltd",
-    "symbol": "F17"
-  },
-  {
-    "name": "Zixin Group Holdings Ltd",
-    "symbol": "42W"
-  },
-  {
-    "name": "GHY Culture & Media Holding Co Ltd",
-    "symbol": "XJB"
-  },
-  {
-    "name": "Amplefield Ltd",
-    "symbol": "AOF"
-  },
-  {
-    "name": "COSCO Shipping International (Singapore) Co Ltd",
-    "symbol": "F83"
-  },
-  {
-    "name": "Jiutian Chemical Group Ltd",
-    "symbol": "C8R"
-  },
-  {
-    "name": "OIO Holdings Ltd",
-    "symbol": "KUX"
-  },
-  {
-    "name": "Livingstone Health Holdings Ltd",
-    "symbol": "PRH"
-  },
-  {
-    "name": "OneApex Ltd",
-    "symbol": "5SY"
-  },
-  {
-    "name": "Sunrise Shares Holdings Ltd",
-    "symbol": "581"
-  },
-  {
-    "name": "JEP Holdings Ltd",
-    "symbol": "1J4"
-  },
-  {
-    "name": "Abundante Ltd",
-    "symbol": "570"
-  },
-  {
-    "name": "Keppel Pacific Oak US REIT",
-    "symbol": "CMOU"
-  },
-  {
-    "name": "OUE Real Estate Investment Trust",
-    "symbol": "TS0U"
-  },
-  {
-    "name": "Sen Yue Holdings Ltd",
-    "symbol": "5BS"
-  },
-  {
-    "name": "Asia Vets Holdings Ltd",
-    "symbol": "5RE"
-  },
-  {
-    "name": "Hatten Land Ltd",
-    "symbol": "PH0"
-  },
-  {
-    "name": "Isetan Singapore Ltd",
-    "symbol": "I15"
-  },
-  {
-    "name": "CP All PCL DRC",
-    "symbol": "TCPD"
-  },
-  {
-    "name": "Singapore Airlines Ltd",
-    "symbol": "C6L"
-  },
-  {
-    "name": "ES Group (Holdings) Ltd",
-    "symbol": "5RC"
-  },
-  {
-    "name": "OUE Healthcare Ltd",
-    "symbol": "5WA"
-  },
-  {
-    "name": "Creative Technology Ltd",
-    "symbol": "C76"
-  },
-  {
-    "name": "Sunpower Group Ltd",
-    "symbol": "5GD"
-  },
-  {
-    "name": "QAF Ltd",
-    "symbol": "Q01"
-  },
-  {
-    "name": "Global Invacom Group Ltd",
-    "symbol": "QS9"
-  },
-  {
-    "name": "Meta Health Ltd",
-    "symbol": "5DX"
-  },
-  {
-    "name": "Info-Tech Systems Ltd",
-    "symbol": "ITS"
-  },
-  {
-    "name": "Starhill Global Real Estate Investment Trust",
-    "symbol": "P40U"
-  },
-  {
-    "name": "BlackGold Natural Resources Ltd",
-    "symbol": "41H"
-  },
-  {
-    "name": "GRP Ltd",
-    "symbol": "BLU"
-  },
-  {
-    "name": "OxPay Financial Ltd",
-    "symbol": "TVV"
-  },
-  {
-    "name": "Gallant Venture Ltd",
-    "symbol": "5IG"
-  },
-  {
-    "name": "Heatec Jietong Holdings Ltd",
-    "symbol": "5OR"
-  },
-  {
-    "name": "Pasture Holdings Ltd",
-    "symbol": "UUK"
-  },
-  {
-    "name": "iX Biopharma Ltd",
-    "symbol": "42C"
-  },
-  {
-    "name": "EnGro Corp Ltd",
-    "symbol": "S44"
-  },
-  {
-    "name": "Lippo Malls Indonesia Retail Trust",
-    "symbol": "D5IU"
-  },
-  {
-    "name": "MeGroup Ltd",
-    "symbol": "SJY"
-  },
-  {
-    "name": "Coolan Group Ltd",
-    "symbol": "BMT"
-  },
-  {
-    "name": "Nanofilm Technologies International Ltd",
-    "symbol": "MZH"
-  },
-  {
-    "name": "Frasers Logistics & Commercial Trust",
-    "symbol": "BUOU"
-  },
-  {
-    "name": "Soup Holdings Ltd",
-    "symbol": "5KI"
-  },
-  {
-    "name": "Kencana Agri Ltd",
-    "symbol": "BNE"
-  },
-  {
-    "name": "Manufacturing Integration Technology Ltd",
-    "symbol": "M11"
-  },
-  {
-    "name": "Medi Lifestyle Ltd",
-    "symbol": "Z4D"
-  },
-  {
-    "name": "Mapletree Pan Asia Commercial Trust",
-    "symbol": "N2IU"
-  },
-  {
-    "name": "Addvalue Technologies Ltd",
-    "symbol": "A31"
-  },
-  {
-    "name": "Chuan Hup Holdings Ltd",
-    "symbol": "C33"
-  },
-  {
-    "name": "Aedge Group Ltd",
-    "symbol": "XVG"
-  },
-  {
-    "name": "Spindex Industries Ltd",
-    "symbol": "564"
-  },
-  {
-    "name": "Nam Cheong Ltd",
-    "symbol": "1MZ"
-  },
-  {
-    "name": "Leader Environmental Technologies Ltd",
-    "symbol": "LS9"
-  },
-  {
-    "name": "AIMS APAC REIT",
-    "symbol": "O5RU"
-  },
-  {
-    "name": "Powermatic Data Systems Ltd",
-    "symbol": "BCY"
-  },
-  {
-    "name": "Beng Kuang Marine Ltd",
-    "symbol": "BEZ"
-  },
-  {
-    "name": "Murata Manufacturing Co Ltd",
-    "symbol": "PJX"
-  },
-  {
-    "name": "Overseas Education Ltd",
-    "symbol": "RQ1"
-  },
-  {
-    "name": "Stoneweg Europe Stapled Trust",
-    "symbol": "SEB"
-  },
-  {
-    "name": "Wilton Resources Corp Ltd",
-    "symbol": "5F7"
-  },
-  {
-    "name": "Hong Lai Huat Group Ltd",
-    "symbol": "CTO"
-  },
-  {
-    "name": "mDR Ltd",
-    "symbol": "Y3D"
-  },
-  {
-    "name": "Ever Glory United Holdings Ltd",
-    "symbol": "ZKX"
-  },
-  {
-    "name": "TA Corp Ltd",
-    "symbol": "PA3"
-  },
-  {
-    "name": "Zheneng Jinjiang Environment Holding Co Ltd",
-    "symbol": "BWM"
-  },
-  {
-    "name": "Courage Investment Group Ltd",
-    "symbol": "CIN"
-  },
-  {
-    "name": "PSC Corp Ltd",
-    "symbol": "DM0"
-  },
-  {
-    "name": "Adventus Holdings Ltd",
-    "symbol": "5EF"
-  },
-  {
-    "name": "Serial System Ltd",
-    "symbol": "S69"
-  },
-  {
-    "name": "Secura Group Ltd",
-    "symbol": "43B"
-  },
-  {
-    "name": "Helens International Holdings Co Ltd",
-    "symbol": "HLS"
-  },
-  {
-    "name": "Parkson retail Asia Ltd",
-    "symbol": "O9E"
-  },
-  {
-    "name": "Best World International",
-    "symbol": "CGN"
-  },
-  {
-    "name": "Indofood Agri Resources Ltd",
-    "symbol": "5JS"
-  },
-  {
-    "name": "GS Holdings Ltd",
-    "symbol": "43A"
-  },
-  {
-    "name": "Miyoshi Ltd",
-    "symbol": "M03"
-  },
-  {
-    "name": "Singapore Land Group Ltd",
-    "symbol": "U06"
-  },
-  {
-    "name": "Suntec Real Estate Investment Trust",
-    "symbol": "T82U"
-  },
-  {
-    "name": "Hengyang Petrochemical Logistics Ltd",
-    "symbol": "5PD"
-  },
-  {
-    "name": "Dasin Retail Trust",
-    "symbol": "CEDU"
-  },
-  {
-    "name": "Pavillon Holdings Ltd",
-    "symbol": "596"
-  },
-  {
-    "name": "Samurai 2K Aerosol Ltd",
-    "symbol": "Y8E"
-  },
-  {
-    "name": "LHT Holdings Ltd",
-    "symbol": "BEI"
-  },
-  {
-    "name": "Jawala Inc",
-    "symbol": "1J7"
-  },
-  {
-    "name": "Hotel Royal Ltd",
-    "symbol": "H12"
-  },
-  {
-    "name": "ProsperCap Corp Ltd",
-    "symbol": "PPC"
-  },
-  {
-    "name": "Soon Lian Holdings Ltd",
-    "symbol": "5MD"
-  },
-  {
-    "name": "BHG Retail REIT",
-    "symbol": "BMGU"
-  },
-  {
-    "name": "Cordlife Group Ltd",
-    "symbol": "P8A"
-  },
-  {
-    "name": "Yangzijiang Shipbuilding (Holdings) Ltd",
-    "symbol": "BS6"
-  },
-  {
-    "name": "SinoCloud Group Ltd",
-    "symbol": "LYY"
-  },
-  {
-    "name": "Avarga Ltd",
-    "symbol": "U09"
-  },
-  {
-    "name": "KOP Ltd",
-    "symbol": "5I1"
-  },
-  {
-    "name": "Astaka Holdings Ltd",
-    "symbol": "42S"
-  },
-  {
-    "name": "Natural Cool Holdings Ltd",
-    "symbol": "5IF"
-  },
-  {
-    "name": "GSH Corp Ltd",
-    "symbol": "BDX"
-  },
-  {
-    "name": "A-Smart Holdings Ltd",
-    "symbol": "BQC"
-  },
-  {
-    "name": "Hyphens Pharma International Ltd",
-    "symbol": "1J5"
-  },
-  {
-    "name": "Sanli Environmental Ltd",
-    "symbol": "1E3"
-  },
-  {
-    "name": "Koh Brothers Eco Engineering Ltd",
-    "symbol": "5HV"
-  },
-  {
-    "name": "Digital Core REIT",
-    "symbol": "DCRU"
-  },
-  {
-    "name": "A-Sonic Aerospace Ltd",
-    "symbol": "BTJ"
-  },
-  {
-    "name": "Global Investments Ltd",
-    "symbol": "B73"
-  },
-  {
-    "name": "Shanghai Turbo Enterprises Ltd",
-    "symbol": "AWM"
-  },
-  {
-    "name": "UOB-Kay Hian Holdings Ltd",
-    "symbol": "U10"
-  },
-  {
-    "name": "Tiong Seng Holdings Ltd",
-    "symbol": "BFI"
-  },
-  {
-    "name": "Bund Center Investment Ltd",
-    "symbol": "BTE"
-  },
-  {
-    "name": "Rich Capital Holdings Ltd",
-    "symbol": "5G4"
+    "name": "HRnetGroup Ltd",
+    "symbol": "CHZ"
   },
   {
     "name": "CapitaLand India Trust",
     "symbol": "CY6U"
   },
   {
+    "name": "NSL Ltd",
+    "symbol": "N02"
+  },
+  {
+    "name": "Megachem Ltd",
+    "symbol": "5DS"
+  },
+  {
+    "name": "China Medical System Holdings Ltd",
+    "symbol": "8A8"
+  },
+  {
+    "name": "Wee Hur Holdings Ltd",
+    "symbol": "E3B"
+  },
+  {
+    "name": "Centurion Corp Ltd",
+    "symbol": "OU8"
+  },
+  {
+    "name": "New Wave Holdings Ltd",
+    "symbol": "5FX"
+  },
+  {
+    "name": "Zhongxin Fruit and Juice Ltd",
+    "symbol": "5EG"
+  },
+  {
+    "name": "Union Steel Holdings Ltd",
+    "symbol": "ZB9"
+  },
+  {
+    "name": "Grand Venture Technology Ltd",
+    "symbol": "JLB"
+  },
+  {
+    "name": "Sheng Siong Group Ltd",
+    "symbol": "OV8"
+  },
+  {
+    "name": "Info-Tech Systems Ltd",
+    "symbol": "ITS"
+  },
+  {
+    "name": "TIH Ltd",
+    "symbol": "T55"
+  },
+  {
+    "name": "VibroPower Corp Ltd",
+    "symbol": "BJD"
+  },
+  {
+    "name": "TeleChoice International Ltd",
+    "symbol": "T41"
+  },
+  {
+    "name": "Low Keng Huat (Singapore) Ltd",
+    "symbol": "F1E"
+  },
+  {
+    "name": "United Hampshire US REIT",
+    "symbol": "ODBU"
+  },
+  {
+    "name": "Jadason Enterprises Ltd",
+    "symbol": "J03"
+  },
+  {
+    "name": "AsiaMedic Ltd",
+    "symbol": "505"
+  },
+  {
+    "name": "Hutchison Port Holdings Trust",
+    "symbol": "NS8U"
+  },
+  {
+    "name": "Tye Soon Ltd",
+    "symbol": "BFU"
+  },
+  {
+    "name": "Meta Health Ltd",
+    "symbol": "5DX"
+  },
+  {
+    "name": "Baker Technology Ltd",
+    "symbol": "BTP"
+  },
+  {
+    "name": "Indofood Agri Resources Ltd",
+    "symbol": "5JS"
+  },
+  {
+    "name": "Daiwa House Logistics Trust",
+    "symbol": "DHLU"
+  },
+  {
+    "name": "Hutchison Port Holdings Trust",
+    "symbol": "P7VU"
+  },
+  {
+    "name": "ICP Ltd",
+    "symbol": "5I4"
+  },
+  {
+    "name": "Stoneweg Europe Stapled Trust",
+    "symbol": "SET"
+  },
+  {
+    "name": "Yeo Hiap Seng Ltd",
+    "symbol": "Y03"
+  },
+  {
+    "name": "Powermatic Data Systems Ltd",
+    "symbol": "BCY"
+  },
+  {
+    "name": "Acesian Partners Ltd",
+    "symbol": "5FW"
+  },
+  {
+    "name": "IREIT Global",
+    "symbol": "UD1U"
+  },
+  {
+    "name": "The Place Holdings Ltd",
+    "symbol": "E27"
+  },
+  {
+    "name": "Tung Lok Restaurants(2000) Ltd",
+    "symbol": "540"
+  },
+  {
+    "name": "Duty Free International Ltd",
+    "symbol": "5SO"
+  },
+  {
+    "name": "Geo Energy Resources Ltd",
+    "symbol": "RE4"
+  },
+  {
+    "name": "QAF Ltd",
+    "symbol": "Q01"
+  },
+  {
+    "name": "HG Metal Manufacturing Ltd",
+    "symbol": "BTG"
+  },
+  {
+    "name": "Santak Holdings Ltd",
+    "symbol": "580"
+  },
+  {
+    "name": "Far East Group Ltd",
+    "symbol": "5TJ"
+  },
+  {
+    "name": "Sincap Group Ltd",
+    "symbol": "5UN"
+  },
+  {
+    "name": "Aztech Global Ltd",
+    "symbol": "8AZ"
+  },
+  {
+    "name": "AMOS Group Ltd",
+    "symbol": "49B"
+  },
+  {
+    "name": "Singapore Post Ltd",
+    "symbol": "S08"
+  },
+  {
+    "name": "Sitra Holdings (International) Ltd",
+    "symbol": "5LE"
+  },
+  {
+    "name": "Ho Bee Land Ltd",
+    "symbol": "H13"
+  },
+  {
+    "name": "Manufacturing Integration Technology Ltd",
+    "symbol": "M11"
+  },
+  {
+    "name": "Resources Global",
+    "symbol": "QSD"
+  },
+  {
+    "name": "Eindec Corp Ltd",
+    "symbol": "42Z"
+  },
+  {
+    "name": "Lincotrade & Associates Holdings Ltd",
+    "symbol": "BFT"
+  },
+  {
+    "name": "Vallianz Holdings Ltd",
+    "symbol": "WPC"
+  },
+  {
+    "name": "Sanli Environmental Ltd",
+    "symbol": "1E3"
+  },
+  {
+    "name": "CSE Global Ltd",
+    "symbol": "544"
+  },
+  {
+    "name": "First Ship Lease Trust",
+    "symbol": "D8DU"
+  },
+  {
+    "name": "Broadway Industrial Group Ltd",
+    "symbol": "B69"
+  },
+  {
+    "name": "Hengyang Petrochemical Logistics Ltd",
+    "symbol": "5PD"
+  },
+  {
+    "name": "Vibrant Group Ltd",
+    "symbol": "BIP"
+  },
+  {
+    "name": "CH Offshore Ltd",
+    "symbol": "C13"
+  },
+  {
+    "name": "Yangzijiang Shipbuilding (Holdings) Ltd",
+    "symbol": "SO7"
+  },
+  {
+    "name": "AnAn International Ltd",
+    "symbol": "Y35"
+  },
+  {
+    "name": "Lum Chang Creations Ltd",
+    "symbol": "LCC"
+  },
+  {
+    "name": "UG Healthcare Corp Ltd",
+    "symbol": "8K7"
+  },
+  {
+    "name": "Versalink Holdings Ltd",
+    "symbol": "40N"
+  },
+  {
+    "name": "Ying Li International Real Estate Ltd",
+    "symbol": "5DM"
+  },
+  {
+    "name": "Airports of Thailand PCL DRC",
+    "symbol": "TATD"
+  },
+  {
+    "name": "China Mining International Ltd",
+    "symbol": "BHD"
+  },
+  {
+    "name": "DFI Retail Group Holdings Ltd",
+    "symbol": "D01"
+  },
+  {
+    "name": "IHH Healthcare Bhd",
+    "symbol": "Q0F"
+  },
+  {
+    "name": "Lendlease Global Commercial REIT",
+    "symbol": "JYEU"
+  },
+  {
+    "name": "Hatten Land Ltd",
+    "symbol": "PH0"
+  },
+  {
+    "name": "CDW Holding Ltd",
+    "symbol": "BXE"
+  },
+  {
+    "name": "Jardine Matheson Holdings Ltd",
+    "symbol": "J36"
+  },
+  {
+    "name": "Isetan Singapore Ltd",
+    "symbol": "I15"
+  },
+  {
+    "name": "AF Global Ltd",
+    "symbol": "L38"
+  },
+  {
+    "name": "Natural Cool Holdings Ltd",
+    "symbol": "5IF"
+  },
+  {
+    "name": "Taka Jewellery Holdings Ltd",
+    "symbol": "42L"
+  },
+  {
+    "name": "TT International Ltd",
+    "symbol": "T09"
+  },
+  {
+    "name": "MYP Ltd",
+    "symbol": "F86"
+  },
+  {
+    "name": "Secura Group Ltd",
+    "symbol": "43B"
+  },
+  {
+    "name": "Ouhua Energy Holdings Ltd",
+    "symbol": "AJ2"
+  },
+  {
     "name": "AnnAik Ltd",
     "symbol": "A52"
   },
   {
-    "name": "Luxking Group Holdings Ltd",
-    "symbol": "BKK"
+    "name": "Sen Yue Holdings Ltd",
+    "symbol": "5BS"
   },
   {
-    "name": "Hor Kew Corp Ltd",
-    "symbol": "BBP"
+    "name": "Soon Lian Holdings Ltd",
+    "symbol": "5MD"
   },
   {
-    "name": "HS Optimus Holdings Ltd",
-    "symbol": "504"
+    "name": "Charisma Energy Services Ltd",
+    "symbol": "YSV"
   },
   {
-    "name": "Keong Hong Holdings Ltd",
-    "symbol": "5TT"
+    "name": "Kencana Agri Ltd",
+    "symbol": "BNE"
   },
   {
-    "name": "EuroSports Global Ltd",
-    "symbol": "5G1"
+    "name": "Zixin Group Holdings Ltd",
+    "symbol": "42W"
+  },
+  {
+    "name": "Mapletree Industrial Trust",
+    "symbol": "ME8U"
+  },
+  {
+    "name": "Ever Glory United Holdings Ltd",
+    "symbol": "ZKX"
+  },
+  {
+    "name": "Plato Capital Ltd",
+    "symbol": "YYN"
+  },
+  {
+    "name": "Abundante Ltd",
+    "symbol": "570"
+  },
+  {
+    "name": "Niks Professional Ltd",
+    "symbol": "NPL"
+  },
+  {
+    "name": "Singapore Shipping Corp Ltd",
+    "symbol": "S19"
+  },
+  {
+    "name": "ST Group Food Industries Holdings Ltd",
+    "symbol": "DRX"
+  },
+  {
+    "name": "Hong Lai Huat Group Ltd",
+    "symbol": "CTO"
+  },
+  {
+    "name": "Shanaya Ltd",
+    "symbol": "SES"
+  },
+  {
+    "name": "Singapore Telecommunications Ltd",
+    "symbol": "Z77"
+  },
+  {
+    "name": "Parkway Life Real Estate Investment Trust",
+    "symbol": "C2PU"
+  },
+  {
+    "name": "USP Group Ltd",
+    "symbol": "BRS"
+  },
+  {
+    "name": "TA Corp Ltd",
+    "symbol": "PA3"
+  },
+  {
+    "name": "EC World Real Estate Investment Trust",
+    "symbol": "BWCU"
+  },
+  {
+    "name": "InnoTek Ltd",
+    "symbol": "M14"
+  },
+  {
+    "name": "COSCO Shipping International (Singapore) Co Ltd",
+    "symbol": "F83"
+  },
+  {
+    "name": "Civmec Ltd",
+    "symbol": "P9D"
+  },
+  {
+    "name": "YKGI Ltd",
+    "symbol": "YK9"
+  },
+  {
+    "name": "Ossia International Ltd",
+    "symbol": "O08"
+  },
+  {
+    "name": "Aspial Corp Ltd",
+    "symbol": "A30"
+  },
+  {
+    "name": "Spindex Industries Ltd",
+    "symbol": "564"
+  },
+  {
+    "name": "Thomson Medical Group Ltd",
+    "symbol": "A50"
+  },
+  {
+    "name": "Dasin Retail Trust",
+    "symbol": "CEDU"
+  },
+  {
+    "name": "Singapore Paincare Holdings Ltd",
+    "symbol": "FRQ"
+  },
+  {
+    "name": "GS Holdings Ltd",
+    "symbol": "43A"
+  },
+  {
+    "name": "Audience Analytics Ltd",
+    "symbol": "1AZ"
+  },
+  {
+    "name": "LHN Ltd",
+    "symbol": "41O"
+  },
+  {
+    "name": "GSH Corp Ltd",
+    "symbol": "BDX"
+  },
+  {
+    "name": "SDAI Ltd",
+    "symbol": "5TI"
+  },
+  {
+    "name": "Koh Brothers Eco Engineering Ltd",
+    "symbol": "5HV"
+  },
+  {
+    "name": "Fortress Minerals Ltd",
+    "symbol": "OAJ"
+  },
+  {
+    "name": "Pavillon Holdings Ltd",
+    "symbol": "596"
+  },
+  {
+    "name": "Polaris Ltd",
+    "symbol": "5BI"
+  },
+  {
+    "name": "ASL Marine Holdings Ltd",
+    "symbol": "A04"
+  },
+  {
+    "name": "Digital Core REIT",
+    "symbol": "DCRU"
+  },
+  {
+    "name": "BH Global Corp Ltd",
+    "symbol": "BQN"
+  },
+  {
+    "name": "Shanghai Turbo Enterprises Ltd",
+    "symbol": "AWM"
+  },
+  {
+    "name": "Chasen Holdings Ltd",
+    "symbol": "5NV"
+  },
+  {
+    "name": "Noel Gifts International Ltd",
+    "symbol": "543"
+  },
+  {
+    "name": "Soilbuild Construction Group Ltd",
+    "symbol": "V5Q"
+  },
+  {
+    "name": "Best World International",
+    "symbol": "CGN"
+  },
+  {
+    "name": "Huationg Global Ltd",
+    "symbol": "41B"
+  },
+  {
+    "name": "Vividthree Holdings Ltd",
+    "symbol": "OMK"
+  },
+  {
+    "name": "Adventus Holdings Ltd",
+    "symbol": "5EF"
+  },
+  {
+    "name": "Global Invacom Group Ltd",
+    "symbol": "QS9"
+  },
+  {
+    "name": "Casa Holdings Ltd",
+    "symbol": "C04"
+  },
+  {
+    "name": "IPC Corp Ltd",
+    "symbol": "AZA"
+  },
+  {
+    "name": "Sri Trang Gloves Thailand PCL",
+    "symbol": "STG"
+  },
+  {
+    "name": "UOB-Kay Hian Holdings Ltd",
+    "symbol": "U10"
   },
   {
     "name": "Singapore Kitchen Equipment Ltd",
     "symbol": "5WG"
   },
   {
-    "name": "Don Agro International Ltd",
-    "symbol": "GRQ"
+    "name": "H2G Green Ltd",
+    "symbol": "5AI"
+  },
+  {
+    "name": "Asian Pay Television Trust",
+    "symbol": "S7OU"
+  },
+  {
+    "name": "Intraco Ltd",
+    "symbol": "I06"
+  },
+  {
+    "name": "Renaissance United Ltd",
+    "symbol": "I11"
+  },
+  {
+    "name": "ISEC Healthcare Ltd",
+    "symbol": "40T"
+  },
+  {
+    "name": "AP Oil International Ltd",
+    "symbol": "5AU"
+  },
+  {
+    "name": "DISA Ltd",
+    "symbol": "532"
+  },
+  {
+    "name": "Sunpower Group Ltd",
+    "symbol": "5GD"
+  },
+  {
+    "name": "Murata Manufacturing Co Ltd",
+    "symbol": "PJX"
+  },
+  {
+    "name": "Gallant Venture Ltd",
+    "symbol": "5IG"
+  },
+  {
+    "name": "Ellipsiz Ltd",
+    "symbol": "BIX"
+  },
+  {
+    "name": "Avarga Ltd",
+    "symbol": "U09"
+  },
+  {
+    "name": "Advancer Global Ltd",
+    "symbol": "43Q"
+  },
+  {
+    "name": "Serial System Ltd",
+    "symbol": "S69"
+  },
+  {
+    "name": "Jiutian Chemical Group Ltd",
+    "symbol": "C8R"
+  },
+  {
+    "name": "Accrelist Ltd",
+    "symbol": "QZG"
+  },
+  {
+    "name": "Asia Vets Holdings Ltd",
+    "symbol": "5RE"
+  },
+  {
+    "name": "Travelite Holdings Ltd",
+    "symbol": "BCZ"
+  },
+  {
+    "name": "Kimly Ltd",
+    "symbol": "1D0"
+  },
+  {
+    "name": "GHY Culture & Media Holding Co Ltd",
+    "symbol": "XJB"
+  },
+  {
+    "name": "GRP Ltd",
+    "symbol": "BLU"
+  },
+  {
+    "name": "Nanofilm Technologies International Ltd",
+    "symbol": "MZH"
+  },
+  {
+    "name": "Overseas Education Ltd",
+    "symbol": "RQ1"
+  },
+  {
+    "name": "OUE Healthcare Ltd",
+    "symbol": "5WA"
+  },
+  {
+    "name": "Qian Hu Corp Ltd",
+    "symbol": "BCV"
+  },
+  {
+    "name": "OUE Real Estate Investment Trust",
+    "symbol": "TS0U"
+  },
+  {
+    "name": "Lonza Group Ltd",
+    "symbol": "O6Z"
+  },
+  {
+    "name": "AIMS APAC REIT",
+    "symbol": "O5RU"
+  },
+  {
+    "name": "iX Biopharma Ltd",
+    "symbol": "42C"
+  },
+  {
+    "name": "Hiap Hoe Ltd",
+    "symbol": "5JK"
+  },
+  {
+    "name": "Samurai 2K Aerosol Ltd",
+    "symbol": "Y8E"
+  },
+  {
+    "name": "Astaka Holdings Ltd",
+    "symbol": "42S"
+  },
+  {
+    "name": "Asiatic Group (Holdings) Ltd",
+    "symbol": "5CR"
+  },
+  {
+    "name": "GRC Ltd",
+    "symbol": "S3N"
+  },
+  {
+    "name": "Hor Kew Corp Ltd",
+    "symbol": "BBP"
+  },
+  {
+    "name": "Wilton Resources Corp Ltd",
+    "symbol": "5F7"
+  },
+  {
+    "name": "Jawala Inc",
+    "symbol": "1J7"
+  },
+  {
+    "name": "Chemical Industries (Far East) Ltd",
+    "symbol": "C05"
+  },
+  {
+    "name": "Avi-Tech Holdings Ltd",
+    "symbol": "1R6"
+  },
+  {
+    "name": "Genting Singapore Ltd",
+    "symbol": "G13"
+  },
+  {
+    "name": "International Cement Group Ltd",
+    "symbol": "KUO"
+  },
+  {
+    "name": "Cordlife Group Ltd",
+    "symbol": "P8A"
+  },
+  {
+    "name": "Resources Global Development Ltd",
+    "symbol": "V7R"
+  },
+  {
+    "name": "A-Sonic Aerospace Ltd",
+    "symbol": "BTJ"
   },
   {
     "name": "Yongmao Holdings Ltd",
     "symbol": "BKX"
+  },
+  {
+    "name": "Tiong Woon Corp Holding Ltd",
+    "symbol": "BQM"
+  },
+  {
+    "name": "TSH Resources Bhd",
+    "symbol": "TSH"
+  },
+  {
+    "name": "Avarga Ltd",
+    "symbol": "X5N"
+  },
+  {
+    "name": "ProsperCap Corp Ltd",
+    "symbol": "PPC"
+  },
+  {
+    "name": "BRC Asia Ltd",
+    "symbol": "BEC"
+  },
+  {
+    "name": "Jubilee Industries Holdings Ltd",
+    "symbol": "NHD"
+  },
+  {
+    "name": "Quantum Healthcare Ltd",
+    "symbol": "V8Y"
+  },
+  {
+    "name": "mm2 Asia Ltd",
+    "symbol": "1B0"
+  },
+  {
+    "name": "Sino Grandness Food Industry Group Ltd",
+    "symbol": "T4B"
+  },
+  {
+    "name": "Koyo International Ltd",
+    "symbol": "5OC"
+  },
+  {
+    "name": "NetLink NBN Trust",
+    "symbol": "CJLU"
+  },
+  {
+    "name": "UnUsUaL Ltd",
+    "symbol": "1D1"
+  },
+  {
+    "name": "ISOTeam Ltd",
+    "symbol": "5WF"
+  },
+  {
+    "name": "RH Petrogas Ltd",
+    "symbol": "T13"
+  },
+  {
+    "name": "Rich Capital Holdings Ltd",
+    "symbol": "5G4"
+  },
+  {
+    "name": "BHG Retail REIT",
+    "symbol": "BMGU"
+  },
+  {
+    "name": "Tiong Seng Holdings Ltd",
+    "symbol": "BFI"
+  },
+  {
+    "name": "Ley Choon Group Holdings Ltd",
+    "symbol": "Q0X"
+  },
+  {
+    "name": "SMI Vantage Ltd",
+    "symbol": "Y45"
+  },
+  {
+    "name": "Interra Resources Ltd",
+    "symbol": "5GI"
+  },
+  {
+    "name": "Envictus International Holdings Ltd",
+    "symbol": "BQD"
+  },
+  {
+    "name": "Mapletree Pan Asia Commercial Trust",
+    "symbol": "N2IU"
+  },
+  {
+    "name": "Serial Achieva Ltd",
+    "symbol": "XHV"
+  },
+  {
+    "name": "Addvalue Technologies Ltd",
+    "symbol": "A31"
+  },
+  {
+    "name": "Mapletree Logistics Trust",
+    "symbol": "M44U"
+  },
+  {
+    "name": "Rex International Holding Ltd",
+    "symbol": "5WH"
+  },
+  {
+    "name": "Suntec Real Estate Investment Trust",
+    "symbol": "T82U"
+  },
+  {
+    "name": "PTT Exploration Production PCL DRC",
+    "symbol": "TPED"
+  },
+  {
+    "name": "Pacific Century Regional Developments Ltd",
+    "symbol": "P15"
+  },
+  {
+    "name": "Hyphens Pharma International Ltd",
+    "symbol": "1J5"
+  },
+  {
+    "name": "AcroMeta Group Ltd",
+    "symbol": "43F"
+  },
+  {
+    "name": "Stoneweg Europe Stapled Trust",
+    "symbol": "SEB"
+  },
+  {
+    "name": "EnGro Corp Ltd",
+    "symbol": "S44"
+  },
+  {
+    "name": "Luminor Financial Holdings Ltd",
+    "symbol": "5UA"
+  },
+  {
+    "name": "Matex International Ltd",
+    "symbol": "M15"
+  },
+  {
+    "name": "Stamford Tyres Corp Ltd",
+    "symbol": "S29"
+  },
+  {
+    "name": "ISDN Holdings Ltd",
+    "symbol": "I07"
+  },
+  {
+    "name": "China International Holdings Ltd",
+    "symbol": "BEH"
+  },
+  {
+    "name": "The Trendlines Group Ltd",
+    "symbol": "42T"
+  },
+  {
+    "name": "Hosen Group Ltd",
+    "symbol": "5EV"
+  },
+  {
+    "name": "Econ Healthcare (Asia) Ltd",
+    "symbol": "EHG"
+  },
+  {
+    "name": "EuroSports Global Ltd",
+    "symbol": "5G1"
+  },
+  {
+    "name": "Zheneng Jinjiang Environment Holding Co Ltd",
+    "symbol": "BWM"
+  },
+  {
+    "name": "Sheffield Green Ltd",
+    "symbol": "SGR"
+  },
+  {
+    "name": "Frasers Logistics & Commercial Trust",
+    "symbol": "BUOU"
+  },
+  {
+    "name": "Green Build Technology Ltd",
+    "symbol": "Y06"
+  },
+  {
+    "name": "Heatec Jietong Holdings Ltd",
+    "symbol": "5OR"
+  },
+  {
+    "name": "Global Investments Ltd",
+    "symbol": "B73"
+  },
+  {
+    "name": "ZICO Holdings Inc",
+    "symbol": "40W"
+  },
+  {
+    "name": "Amara Holdings Ltd",
+    "symbol": "A34"
+  },
+  {
+    "name": "Eneco Energy Ltd",
+    "symbol": "R14"
+  },
+  {
+    "name": "PSC Corp Ltd",
+    "symbol": "DM0"
+  },
+  {
+    "name": "mDR Ltd",
+    "symbol": "Y3D"
+  },
+  {
+    "name": "Courage Investment Group Ltd",
+    "symbol": "CIN"
+  },
+  {
+    "name": "AEM Holdings Ltd",
+    "symbol": "XWA"
+  },
+  {
+    "name": "Miyoshi Ltd",
+    "symbol": "M03"
+  },
+  {
+    "name": "LHT Holdings Ltd",
+    "symbol": "BEI"
+  },
+  {
+    "name": "Yangzijiang Shipbuilding (Holdings) Ltd",
+    "symbol": "BS6"
+  },
+  {
+    "name": "KOP Ltd",
+    "symbol": "5I1"
+  },
+  {
+    "name": "Bund Center Investment Ltd",
+    "symbol": "BTE"
+  },
+  {
+    "name": "Luxking Group Holdings Ltd",
+    "symbol": "BKK"
+  },
+  {
+    "name": "HS Optimus Holdings Ltd",
+    "symbol": "504"
   },
   {
     "name": "Enviro-Hub Holdings Ltd",
@@ -1808,224 +2140,24 @@
     "symbol": "GU5"
   },
   {
-    "name": "HRnetGroup Ltd",
-    "symbol": "CHZ"
-  },
-  {
-    "name": "Niks Professional Ltd",
-    "symbol": "NPL"
-  },
-  {
-    "name": "SMI Vantage Ltd",
-    "symbol": "Y45"
-  },
-  {
-    "name": "LY Corp Ltd",
-    "symbol": "1H8"
-  },
-  {
-    "name": "UG Healthcare Corp Ltd",
-    "symbol": "8K7"
-  },
-  {
-    "name": "Santak Holdings Ltd",
-    "symbol": "580"
-  },
-  {
     "name": "Autagco Ltd",
     "symbol": "1D3"
-  },
-  {
-    "name": "Avarga Ltd",
-    "symbol": "X5N"
-  },
-  {
-    "name": "Thomson Medical Group Ltd",
-    "symbol": "A50"
-  },
-  {
-    "name": "Matex International Ltd",
-    "symbol": "M15"
-  },
-  {
-    "name": "Koyo International Ltd",
-    "symbol": "5OC"
-  },
-  {
-    "name": "GRC Ltd",
-    "symbol": "S3N"
-  },
-  {
-    "name": "Memiontec Holdings Ltd",
-    "symbol": "TWL"
-  },
-  {
-    "name": "Soilbuild Construction Group Ltd",
-    "symbol": "V5Q"
-  },
-  {
-    "name": "Sino Grandness Food Industry Group Ltd",
-    "symbol": "T4B"
-  },
-  {
-    "name": "China Environmental Resources Group Ltd",
-    "symbol": "UIX"
-  },
-  {
-    "name": "Spackman Entertainment Group Ltd",
-    "symbol": "9VW"
-  },
-  {
-    "name": "Envictus International Holdings Ltd",
-    "symbol": "BQD"
-  },
-  {
-    "name": "Mercurius Capital Investments Ltd",
-    "symbol": "5RF"
   },
   {
     "name": "CapitaLand Ascendas REIT",
     "symbol": "A17U"
   },
   {
-    "name": "mm2 Asia Ltd",
-    "symbol": "1B0"
-  },
-  {
-    "name": "Serial Achieva Ltd",
-    "symbol": "XHV"
-  },
-  {
-    "name": "Bukit Sembawang Estates Ltd",
-    "symbol": "B61"
-  },
-  {
-    "name": "Metis Energy Ltd",
-    "symbol": "L02"
-  },
-  {
-    "name": "Genting Singapore Ltd",
-    "symbol": "G13"
-  },
-  {
     "name": "Singapore Telecommunications Ltd",
     "symbol": "Z74"
-  },
-  {
-    "name": "The Trendlines Group Ltd",
-    "symbol": "42T"
-  },
-  {
-    "name": "Interra Resources Ltd",
-    "symbol": "5GI"
-  },
-  {
-    "name": "Asia-Pacific Strategic Investments Ltd",
-    "symbol": "5RA"
-  },
-  {
-    "name": "Econ Healthcare (Asia) Ltd",
-    "symbol": "EHG"
-  },
-  {
-    "name": "Sheffield Green Ltd",
-    "symbol": "SGR"
-  },
-  {
-    "name": "Lendlease Global Commercial REIT",
-    "symbol": "JYEU"
-  },
-  {
-    "name": "Ellipsiz Ltd",
-    "symbol": "BIX"
-  },
-  {
-    "name": "Kimly Ltd",
-    "symbol": "1D0"
-  },
-  {
-    "name": "IPC Corp Ltd",
-    "symbol": "AZA"
   },
   {
     "name": "Hong Fok Corp Ltd",
     "symbol": "H30"
   },
   {
-    "name": "Renaissance United Ltd",
-    "symbol": "I11"
-  },
-  {
-    "name": "Figtree Holdings Ltd",
-    "symbol": "5F4"
-  },
-  {
-    "name": "H2G Green Ltd",
-    "symbol": "5AI"
-  },
-  {
-    "name": "Broadway Industrial Group Ltd",
-    "symbol": "B69"
-  },
-  {
-    "name": "AEM Holdings Ltd",
-    "symbol": "XWA"
-  },
-  {
-    "name": "Amara Holdings Ltd",
-    "symbol": "A34"
-  },
-  {
-    "name": "Chemical Industries (Far East) Ltd",
-    "symbol": "C05"
-  },
-  {
-    "name": "AsiaPhos Ltd",
-    "symbol": "5WV"
-  },
-  {
-    "name": "Eneco Energy Ltd",
-    "symbol": "R14"
-  },
-  {
-    "name": "Polaris Ltd",
-    "symbol": "5BI"
-  },
-  {
-    "name": "Tiong Woon Corp Holding Ltd",
-    "symbol": "BQM"
-  },
-  {
-    "name": "ASL Marine Holdings Ltd",
-    "symbol": "A04"
-  },
-  {
     "name": "Nippecraft Ltd",
     "symbol": "N32"
-  },
-  {
-    "name": "Tuan Sing Holdings Ltd",
-    "symbol": "T24"
-  },
-  {
-    "name": "Qian Hu Corp Ltd",
-    "symbol": "BCV"
-  },
-  {
-    "name": "Fortress Minerals Ltd",
-    "symbol": "OAJ"
-  },
-  {
-    "name": "AF Global Ltd",
-    "symbol": "L38"
-  },
-  {
-    "name": "StarHub Ltd",
-    "symbol": "CC3"
-  },
-  {
-    "name": "Intraco Ltd",
-    "symbol": "I06"
   },
   {
     "name": "ESR-REIT",
@@ -2040,12 +2172,8 @@
     "symbol": "AAJ"
   },
   {
-    "name": "PTT Exploration Production PCL DRC",
-    "symbol": "TPED"
-  },
-  {
-    "name": "Green Build Technology Ltd",
-    "symbol": "Y06"
+    "name": "Pharmesis International Ltd",
+    "symbol": "BFK"
   },
   {
     "name": "ecoWise Holdings Ltd",
@@ -2072,14 +2200,6 @@
     "symbol": "GEH"
   },
   {
-    "name": "Tritech Group Ltd",
-    "symbol": "5G9"
-  },
-  {
-    "name": "AMOS Group Ltd",
-    "symbol": "49B"
-  },
-  {
     "name": "F J Benjamin Holdings Ltd",
     "symbol": "F10"
   },
@@ -2090,6 +2210,10 @@
   {
     "name": "Healthbank Holdings Ltd",
     "symbol": "40B"
+  },
+  {
+    "name": "Salt Investments Ltd",
+    "symbol": "FQ7"
   },
   {
     "name": "Debao Property Development Ltd",
@@ -2104,6 +2228,10 @@
     "symbol": "1B1"
   },
   {
+    "name": "Net Pacific Holdings Ltd",
+    "symbol": "5QY"
+  },
+  {
     "name": "CapitaLand Investment Ltd",
     "symbol": "9CI"
   },
@@ -2112,12 +2240,8 @@
     "symbol": "ZXY"
   },
   {
-    "name": "Pharmesis International Ltd",
-    "symbol": "BFK"
-  },
-  {
-    "name": "Net Pacific Financial Holdings Ltd",
-    "symbol": "5QY"
+    "name": "Sinostar Pec Holdings Ltd",
+    "symbol": "C9Q"
   },
   {
     "name": "Bacui Technologies International Ltd",
@@ -2126,26 +2250,6 @@
   {
     "name": "Hiap Tong Corp Ltd",
     "symbol": "5PO"
-  },
-  {
-    "name": "Sinostar Pec Holdings Ltd",
-    "symbol": "C9Q"
-  },
-  {
-    "name": "Singapore Paincare Holdings Ltd",
-    "symbol": "FRQ"
-  },
-  {
-    "name": "DISA Ltd",
-    "symbol": "532"
-  },
-  {
-    "name": "Advancer Global Ltd",
-    "symbol": "43Q"
-  },
-  {
-    "name": "Lonza Group Ltd",
-    "symbol": "O6Z"
   },
   {
     "name": "Singapura Finance Ltd",
@@ -2164,6 +2268,10 @@
     "symbol": "1H3"
   },
   {
+    "name": "Medinex Ltd",
+    "symbol": "OTX"
+  },
+  {
     "name": "shopper360 Ltd",
     "symbol": "1F0"
   },
@@ -2172,28 +2280,12 @@
     "symbol": "AW9U"
   },
   {
-    "name": "Salt Investments Ltd",
-    "symbol": "FQ7"
-  },
-  {
-    "name": "Medinex Ltd",
-    "symbol": "OTX"
-  },
-  {
     "name": "Jumbo Group Ltd",
     "symbol": "42R"
   },
   {
     "name": "Hotel Properties Ltd",
     "symbol": "H15"
-  },
-  {
-    "name": "Asiatic Group (Holdings) Ltd",
-    "symbol": "5CR"
-  },
-  {
-    "name": "Annica Holdings Ltd",
-    "symbol": "5AL"
   },
   {
     "name": "Sim Leisure Group Ltd",
@@ -2206,6 +2298,10 @@
   {
     "name": "Fuji Offset Plates Manufacturing Ltd",
     "symbol": "508"
+  },
+  {
+    "name": "Procurri Corp Ltd",
+    "symbol": "BVQ"
   },
   {
     "name": "Atlantic Navigation Holdings (Singapore) Ltd",
@@ -2232,10 +2328,6 @@
     "symbol": "5PF"
   },
   {
-    "name": "Credit Bureau Asia Ltd",
-    "symbol": "TCU"
-  },
-  {
     "name": "Yangzijiang Financial Holding Ltd",
     "symbol": "YF8"
   },
@@ -2252,6 +2344,10 @@
     "symbol": "AYN"
   },
   {
+    "name": "Aspen (Group) Holdings Ltd",
+    "symbol": "1F3"
+  },
+  {
     "name": "Acma Ltd",
     "symbol": "AYV"
   },
@@ -2260,20 +2356,12 @@
     "symbol": "S71"
   },
   {
-    "name": "Aspen (Group) Holdings Ltd",
-    "symbol": "1F3"
-  },
-  {
     "name": "Olive Tree Estates Ltd",
     "symbol": "1H2"
   },
   {
-    "name": "Procurri Corp Ltd",
-    "symbol": "BVQ"
-  },
-  {
-    "name": "SING Holdings Ltd",
-    "symbol": "5IC"
+    "name": "Stoneweg European REIT",
+    "symbol": "CWBU"
   },
   {
     "name": "Mermaid Maritime PCL",
@@ -2296,12 +2384,16 @@
     "symbol": "BKW"
   },
   {
+    "name": "Anchun International Holdings Ltd",
+    "symbol": "BTX"
+  },
+  {
     "name": "United Food Holdings Ltd",
     "symbol": "AZR"
   },
   {
-    "name": "Anchun International Holdings Ltd",
-    "symbol": "BTX"
+    "name": "Medtecs International Corp Ltd",
+    "symbol": "546"
   },
   {
     "name": "Marco Polo Marine Ltd",
@@ -2312,16 +2404,8 @@
     "symbol": "566"
   },
   {
-    "name": "Medtecs International Corp Ltd",
-    "symbol": "546"
-  },
-  {
     "name": "Hiap Seng Industries Ltd",
     "symbol": "1L2"
-  },
-  {
-    "name": "Ying Li International Real Estate Ltd",
-    "symbol": "5DM"
   },
   {
     "name": "Capital World Ltd",
@@ -2332,24 +2416,16 @@
     "symbol": "579"
   },
   {
-    "name": "Stoneweg European REIT",
-    "symbol": "CWBU"
-  },
-  {
-    "name": "9R Ltd",
-    "symbol": "1Y1"
+    "name": "NIO Inc",
+    "symbol": "NIO"
   },
   {
     "name": "Advanced Systems Automation Ltd",
     "symbol": "WJ9"
   },
   {
-    "name": "Noontalk Media Ltd",
-    "symbol": "SEJ"
-  },
-  {
-    "name": "NIO Inc",
-    "symbol": "NIO"
+    "name": "Hai Leck Holdings Ltd",
+    "symbol": "BLH"
   },
   {
     "name": "Frasers Hospitality Trust",
@@ -2372,10 +2448,6 @@
     "symbol": "BAC"
   },
   {
-    "name": "Hai Leck Holdings Ltd",
-    "symbol": "BLH"
-  },
-  {
     "name": "Assurance Healthcare Ltd",
     "symbol": "RCU"
   },
@@ -2388,44 +2460,24 @@
     "symbol": "CYW"
   },
   {
-    "name": "ICP Ltd",
-    "symbol": "5I4"
-  },
-  {
-    "name": "SIIC Environment Holdings Ltd",
-    "symbol": "BHK"
+    "name": "Kori Holdings Ltd",
+    "symbol": "5VC"
   },
   {
     "name": "Oiltek International Ltd",
     "symbol": "HQU"
   },
   {
-    "name": "Trek 2000 International Ltd",
-    "symbol": "5AB"
-  },
-  {
     "name": "ESR-REIT",
     "symbol": "J91U"
   },
   {
-    "name": "Kori Holdings Ltd",
-    "symbol": "5VC"
-  },
-  {
-    "name": "International Cement Group Ltd",
-    "symbol": "KUO"
+    "name": "Trek 2000 International Ltd",
+    "symbol": "5AB"
   },
   {
     "name": "Raffles Education Ltd",
     "symbol": "NR7"
-  },
-  {
-    "name": "Far East Orchard Ltd",
-    "symbol": "O10"
-  },
-  {
-    "name": "HG Metal Manufacturing Ltd",
-    "symbol": "BTG"
   },
   {
     "name": "Alset International Ltd",
@@ -2436,32 +2488,12 @@
     "symbol": "40E"
   },
   {
-    "name": "Resources Global Development Ltd",
-    "symbol": "V7R"
-  },
-  {
     "name": "Heptamax International Ltd",
     "symbol": "8A1"
   },
   {
-    "name": "Yeo Hiap Seng Ltd",
-    "symbol": "Y03"
-  },
-  {
-    "name": "Grand Banks Yachts Ltd",
-    "symbol": "G50"
-  },
-  {
     "name": "Yunnan Energy International Co Ltd",
     "symbol": "T43"
-  },
-  {
-    "name": "Asian Micro Holdings Ltd",
-    "symbol": "585"
-  },
-  {
-    "name": "Penguin International Ltd",
-    "symbol": "BTM"
   },
   {
     "name": "KTMG Ltd",
@@ -2484,24 +2516,8 @@
     "symbol": "5G2"
   },
   {
-    "name": "AnAn International Ltd",
-    "symbol": "Y35"
-  },
-  {
-    "name": "The Place Holdings Ltd",
-    "symbol": "E27"
-  },
-  {
     "name": "Halcyon Agri Corp Ltd",
     "symbol": "5VJ"
-  },
-  {
-    "name": "Accrelist Ltd",
-    "symbol": "QZG"
-  },
-  {
-    "name": "Straco Corp Ltd",
-    "symbol": "S85"
   },
   {
     "name": "Federal International (2000) Ltd",
@@ -2510,10 +2526,6 @@
   {
     "name": "CosmoSteel Holdings Ltd",
     "symbol": "B9S"
-  },
-  {
-    "name": "Lms Compliance Ltd",
-    "symbol": "LMS"
   },
   {
     "name": "Multi-Chem Ltd",
@@ -2534,10 +2546,6 @@
   {
     "name": "SUTL Enterprise Ltd",
     "symbol": "BHU"
-  },
-  {
-    "name": "ZICO Holdings Inc",
-    "symbol": "40W"
   },
   {
     "name": "Metro Holdings Ltd",
