@@ -3628,3 +3628,80 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-01 03:46:40 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-01 03:46:40 [INFO] - [sgx_payload] is empty, skipping push to DB
 2025-12-01 21:16:28 [INFO] - Init Global Variable
+2025-12-02 03:12:54 [INFO] - Init Global Variable
+2025-12-02 03:13:18 [INFO] - Scraping from None to None...
+2025-12-02 03:13:18 [INFO] - Start scraping from start date: 20251130 to 20251202
+2025-12-02 03:13:18 [INFO] - page_start: 0
+2025-12-02 03:13:18 [INFO] - Fetching data from API Filings...
+2025-12-02 03:13:19 [INFO] - Response status: 200
+2025-12-02 03:13:19 [INFO] - Fetched 13 announcements
+2025-12-02 03:13:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7G4NR5M4YCTCYX5K/da0370e73a55af411f7dc4093e7adf8c5db30abb328c47f0780a737c6ded674b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7G4NR5M4YCTCYX5K/868760__Form%201%20-%20Daniel%20-%2001122025.pdf
+2025-12-02 03:13:25 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VJR1XQO9UK3G761U/c6c05018e249a94b41633e1c7f995f93fa8aa8e7de775553c06962457a9088a0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VJR1XQO9UK3G761U/868743__eFORM3V2_final.pdf
+2025-12-02 03:13:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6C3KOJ7S469ECH7D/67773a0d35840c360ecd30d08c07f2ee077f1eb6b86bb5284018ae1e62efd23f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6C3KOJ7S469ECH7D/868741__eFORM1V2.pdf
+2025-12-02 03:13:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QE1W80GZRJXWMXW8/afaa2bae9f2201104653881328ff906833aabb86117efb721ca4b459a8776799 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QE1W80GZRJXWMXW8/868730__eFORM3V2%20-%20Mr%20Tan.pdf
+2025-12-02 03:13:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-02 03:13:41 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/QE1W80GZRJXWMXW8/868730__eFORM3V2%20-%20Mr%20Tan.pdf: 'list' object is not a mapping
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 677, in extract_records
+    final_record = {
+                   ^
+TypeError: 'list' object is not a mapping
+2025-12-02 03:13:41 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SANLI ENVIRONMENTAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/QE1W80GZRJXWMXW8/afaa2bae9f2201104653881328ff906833aabb86117efb721ca4b459a8776799
+2025-12-02 03:13:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/U26JKF7V2EJVBL74/5ea238eb5c7d3297a6b44d1153c68dc89ab74948715dd232534f04baa60ea68d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/U26JKF7V2EJVBL74/868728__eFORM3V2%20-%20Mr%20Sim%20Mr%20Kew%20Mr%20Lee%20Typha.pdf
+2025-12-02 03:13:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-02 03:13:45 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/U26JKF7V2EJVBL74/868728__eFORM3V2%20-%20Mr%20Sim%20Mr%20Kew%20Mr%20Lee%20Typha.pdf: 'list' object is not a mapping
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 677, in extract_records
+    final_record = {
+                   ^
+TypeError: 'list' object is not a mapping
+2025-12-02 03:13:45 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SANLI ENVIRONMENTAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/U26JKF7V2EJVBL74/5ea238eb5c7d3297a6b44d1153c68dc89ab74948715dd232534f04baa60ea68d
+2025-12-02 03:13:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8LLJ8UH9J8DB61BL/352a32050cd0b170fb80ae35750b9eececdcc4639aba6851d2035a5625596f96 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8LLJ8UH9J8DB61BL/868721__eFORM1V2-01122025-Dr%20Ng.pdf
+2025-12-02 03:13:47 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-02 03:13:47 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 300,000 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 1 December 2025 for a total consideration of S$153,000.00 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-02 03:13:47 [ERROR] - [sgx_filings] Error extracting share records from https://links.sgx.com/1.0.0/corporate-announcements/8LLJ8UH9J8DB61BL/868721__eFORM1V2-01122025-Dr%20Ng.pdf: 'list' object is not a mapping
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 677, in extract_records
+    final_record = {
+                   ^
+TypeError: 'list' object is not a mapping
+2025-12-02 03:13:47 [INFO] - [SGX FILINGS] Data not valid found for issuer name: Q & M DENTAL GROUP (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/8LLJ8UH9J8DB61BL/352a32050cd0b170fb80ae35750b9eececdcc4639aba6851d2035a5625596f96
+2025-12-02 03:13:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5LZTOZEUEWUO7W5P/21c604446bc3842cffe4d76460bdb0fbdbad17de67b3664e0ac2ced111a24483 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5LZTOZEUEWUO7W5P/868719__eFORM3V2-01122025-QMH.pdf
+2025-12-02 03:13:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VSKO545DUWBYHWN1/919f3dcddc0b0cf1f8ad59fca143c6511b56bbe2a2192d26e9248f94bd69ac97 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VSKO545DUWBYHWN1/868717__Form%206_CLCTML.pdf
+2025-12-02 03:13:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WTZP2DNYHV4Z3H8B/55324186c1832c0897ebab6d34ad97abede0b6e1708c13ea8c4fb8f72676293e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WTZP2DNYHV4Z3H8B/868695__Form%201%20-%20Dato%20Terence%20Tea%20-%2029%20November%202025.pdf
+2025-12-02 03:14:06 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0RQ9EPPIKRDBYAZ0/3c7aab7f76d7e665b9303a292eb899bcaf65cbba612b98b57097eeff798f30d0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0RQ9EPPIKRDBYAZ0/868691__Form%201_WongKanSeng_28Nov25.pdf
+2025-12-02 03:14:08 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/0RQ9EPPIKRDBYAZ0/868691__Form%201_WongKanSeng_28Nov25.pdf: All transactions have no direct interest change and total shares change
+2025-12-02 03:14:08 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UNITED OVERSEAS BANK LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0RQ9EPPIKRDBYAZ0/3c7aab7f76d7e665b9303a292eb899bcaf65cbba612b98b57097eeff798f30d0
+2025-12-02 03:14:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/22JEAWFOXRCNP4KU/72d83ad08990f3dfef6a02169c8a0096d7ff559d6449a32db0183fe8615ef3db pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/22JEAWFOXRCNP4KU/868689__20251201_VCPLUS_Form%203_Tan%20Soo%20Kia%20final.pdf
+2025-12-02 03:14:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/G5DIZIHI1XLROTAO/ee144b80cd148b3ea9410b29923693e6b521fded1b4922bf50b894f0e9119c77 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/G5DIZIHI1XLROTAO/868663__Form%201_VL_FINAL.pdf
+2025-12-02 03:14:16 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/G5DIZIHI1XLROTAO/868663__Form%201_VL_FINAL.pdf: All transactions have no direct interest change and total shares change
+2025-12-02 03:14:16 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ASIAN MICRO HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/G5DIZIHI1XLROTAO/ee144b80cd148b3ea9410b29923693e6b521fded1b4922bf50b894f0e9119c77
+2025-12-02 03:14:17 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/51AOMFGUHN3DIJMZ/fc77aa959747f51467daee5a45c8a782bfd764c5963f4823d5fd098b6e1f2237 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/51AOMFGUHN3DIJMZ/868653__eFORM1_YOJ_1%20Dec%202025_Final.pdf
+2025-12-02 03:14:17 [ERROR] - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/51AOMFGUHN3DIJMZ/868653__eFORM1_YOJ_1%20Dec%202025_Final.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 719, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-12-02 03:14:17 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/51AOMFGUHN3DIJMZ/fc77aa959747f51467daee5a45c8a782bfd764c5963f4823d5fd098b6e1f2237
+2025-12-02 03:14:20 [INFO] - page_start: 1
+2025-12-02 03:14:20 [INFO] - Fetching data from API Filings...
+2025-12-02 03:14:21 [INFO] - Response status: 200
+2025-12-02 03:14:21 [WARNING] - WARNING: API returned None
+2025-12-02 03:14:21 [INFO] - No more announcements found — stopping pagination.
+2025-12-02 03:14:34 [INFO] - Fetching data from API Filings...
+2025-12-02 03:14:34 [INFO] - Response status: 200
+2025-12-02 03:14:34 [WARNING] - WARNING: API returned None
+2025-12-02 03:14:34 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-02 03:14:34 [INFO] - [SGX FILINGS] Scraping completed. Total records: 7
+2025-12-02 03:14:35 [INFO] - Length data top_70: 0 | Length data not top_70: 7
+2025-12-02 03:14:35 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-02 03:14:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-02 03:14:35 [INFO] - Processing remove duplicate data
+2025-12-02 03:14:35 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-02 03:14:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-02 03:14:35 [INFO] - No SGX filings data to filter.
+2025-12-02 03:14:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-02 03:14:35 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-02 03:14:35 [INFO] - No SGX filings alerts to send.
+2025-12-02 03:14:35 [INFO] - [sgx_payload] is empty, skipping push to DB
