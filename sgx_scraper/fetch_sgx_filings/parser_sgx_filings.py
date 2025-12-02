@@ -403,7 +403,7 @@ def extract_symbol_fallback(doc_fits: fitz.Document, start_page: int = 1, end_pa
 
 def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> list[dict[str, any]]:
     if not raw_value:
-        return [base_record], False
+        return [base_record]
 
     multi_transaction_pattern = r"""
         ([\d,]+(?:\.\d+)?)              # Capture number (e.g., "3,844,078")
@@ -454,7 +454,7 @@ def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> lis
 
     except Exception as error:
         LOGGER.error(f"[build_special_case_value] Error processing special case value: {error}")
-        return [], False 
+        return [] 
 
 
 def build_special_case_multiple_dates(
@@ -463,7 +463,7 @@ def build_special_case_multiple_dates(
     base_record: dict[str, any]
 ) -> list[dict[str, any]]:
     if not raw_number_of_stock or not raw_value:
-        return [base_record], False 
+        return [base_record] 
 
     # Pattern to extract number + date from number_of_stock field
     number_date_pattern = r"""
@@ -536,7 +536,7 @@ def build_special_case_multiple_dates(
 
     except Exception as error:
         LOGGER.error(f"[build_special_case_multiple_dates] Error: {error}")
-        return [], False 
+        return [] 
 
 
 def extract_transaction_details(
@@ -557,7 +557,7 @@ def extract_transaction_details(
         section_text = cropped_view.extract_text(x_tolerance=2)
         
         if not section_text:
-            return base_details
+            return [base_details]
 
         # Transaction date
         transaction_date = extract_date(section_text)
@@ -618,7 +618,7 @@ def extract_transaction_details(
     
     except Exception as error:
         LOGGER.error(f'[sgx_filings] Error: {error}', exc_info=True) 
-        return None 
+        return [] 
 
 
 def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
