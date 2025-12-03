@@ -3732,3 +3732,59 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-02 03:16:13 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-02 03:16:14 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-03 03:11:35 [INFO] - Init Global Variable
+2025-12-03 03:11:55 [INFO] - Scraping from None to None...
+2025-12-03 03:11:55 [INFO] - Start scraping from start date: 20251201 to 20251203
+2025-12-03 03:11:55 [INFO] - page_start: 0
+2025-12-03 03:11:55 [INFO] - Fetching data from API Filings...
+2025-12-03 03:11:55 [INFO] - Response status: 200
+2025-12-03 03:11:55 [INFO] - Fetched 10 announcements
+2025-12-03 03:11:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/L7NCUFXJZBP9PG56/d3eb8cd1f35a5e1f8abff26b4afe6b91a05dcca5d15830a32c533a87ec9ef0bf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/L7NCUFXJZBP9PG56/868852__eFORM1V2%20-%20Terence.pdf
+2025-12-03 03:12:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Q65JNUJ80TSTCDK9/5bde433431fc13f523ef1536602e0e9bbf5b574bb67af6ae4d5e7dc305856f2b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Q65JNUJ80TSTCDK9/868848__eFORM1%20Soh.CH%202%20Dec%2025A%20Series%201%2018.pdf
+2025-12-03 03:12:05 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INTRACO LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/Q65JNUJ80TSTCDK9/5bde433431fc13f523ef1536602e0e9bbf5b574bb67af6ae4d5e7dc305856f2b
+2025-12-03 03:12:06 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UB0VRWXVFMLFJEIS/0a97db6de2325a3e3f93562ecb866e42739fdd1a7dbd1523ead85a5c1492980c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UB0VRWXVFMLFJEIS/868846__eFORM1%20MLM%202%20Dec%2025A%2018%20Series%201.pdf
+2025-12-03 03:12:06 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INTRACO LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/UB0VRWXVFMLFJEIS/0a97db6de2325a3e3f93562ecb866e42739fdd1a7dbd1523ead85a5c1492980c
+2025-12-03 03:12:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/17DRTXAR1HA4KP69/6356e1e52b8020ab978a621e305dd862a1a963a46aa85586b1a79d5f9e2236fa pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/17DRTXAR1HA4KP69/868841__AIH_Form%203_Dawn%20DFY.pdf
+2025-12-03 03:12:09 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-03 03:12:09 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-03 03:12:09 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/17DRTXAR1HA4KP69/868841__AIH_Form%203_Dawn%20DFY.pdf: All transactions have no direct interest change and total shares change
+2025-12-03 03:12:09 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ANCHUN INTERNATIONAL HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/17DRTXAR1HA4KP69/6356e1e52b8020ab978a621e305dd862a1a963a46aa85586b1a79d5f9e2236fa
+2025-12-03 03:12:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8MQFWEL5NT4D1DDF/8f60344c8771865a8a8384a7b8b8a78f432d16c6bb9908a3c2e0f85e2db0a72e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8MQFWEL5NT4D1DDF/868839__eFORM1V2-02122025-Dr%20Ng.pdf
+2025-12-03 03:12:11 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-03 03:12:11 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 49,200 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 2 December 2025 for a total consideration of S$24,846.00 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-03 03:12:11 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/8MQFWEL5NT4D1DDF/868839__eFORM1V2-02122025-Dr%20Ng.pdf: All transactions have no direct interest change and total shares change
+2025-12-03 03:12:11 [INFO] - [SGX FILINGS] Data not valid found for issuer name: Q & M DENTAL GROUP (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/8MQFWEL5NT4D1DDF/8f60344c8771865a8a8384a7b8b8a78f432d16c6bb9908a3c2e0f85e2db0a72e
+2025-12-03 03:12:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/D13HF38NZJ0WFAZQ/87d138d0d64a90d11edea1532b88a3cd5fb40537db0f4e82e917be0b76c48f8a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/D13HF38NZJ0WFAZQ/868837__eFORM3V2-02122025-QMH.pdf
+2025-12-03 03:12:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ENE551ADRQ32D3VF/ce42d19a55e993932aaab6d6419619c6d90950226727e6ab5746dbe277ad2a2a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ENE551ADRQ32D3VF/868833__AIH_Form%203_Giant.pdf
+2025-12-03 03:12:22 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-03 03:12:22 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-03 03:12:22 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-03 03:12:27 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HDHX2UO0O7TJE8TF/2f8a14442694c088c6700cafb74b6976ed948072d7226b4db2fccc101202d9ef pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HDHX2UO0O7TJE8TF/868822__eFORM3V2_02122025.pdf
+2025-12-03 03:12:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-03 03:12:28 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HDHX2UO0O7TJE8TF/868822__eFORM3V2_02122025.pdf: All transactions have no direct interest change and total shares change
+2025-12-03 03:12:28 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HDHX2UO0O7TJE8TF/2f8a14442694c088c6700cafb74b6976ed948072d7226b4db2fccc101202d9ef
+2025-12-03 03:12:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/68RKTTRSVMYPK6EK/5b6d891e7a50697e72c2dc2e24964eded1f9a1fef582155017dda8b12d6cba52 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/68RKTTRSVMYPK6EK/868801__Form%203%20-%20Lew%20Chee%20Beng.pdf
+2025-12-03 03:12:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FM4YRAK0B9ZAZF6N/bd353b5918cdb5846251b71b8261c489c971f9a74b3580f2bf89f60e65408622 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FM4YRAK0B9ZAZF6N/868798__eFORM3V2%20-%20Scholars%20Link%20dated%2002.12.2025.pdf
+2025-12-03 03:12:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-03 03:12:38 [INFO] - Transfer detected - transformed shareholder: Scholars Link Sdn Bhd -> way of offmarket disposal [->] creditors
+2025-12-03 03:12:46 [INFO] - page_start: 1
+2025-12-03 03:12:46 [INFO] - Fetching data from API Filings...
+2025-12-03 03:12:47 [INFO] - Response status: 200
+2025-12-03 03:12:47 [WARNING] - WARNING: API returned None
+2025-12-03 03:12:47 [INFO] - No more announcements found — stopping pagination.
+2025-12-03 03:12:59 [INFO] - Fetching data from API Filings...
+2025-12-03 03:12:59 [INFO] - Response status: 200
+2025-12-03 03:12:59 [WARNING] - WARNING: API returned None
+2025-12-03 03:12:59 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-03 03:12:59 [INFO] - [SGX FILINGS] Scraping completed. Total records: 5
+2025-12-03 03:13:00 [INFO] - Length data top_70: 0 | Length data not top_70: 5
+2025-12-03 03:13:00 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-03 03:13:00 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-03 03:13:00 [INFO] - Processing remove duplicate data
+2025-12-03 03:13:00 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-03 03:13:00 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-03 03:13:00 [INFO] - No SGX filings data to filter.
+2025-12-03 03:13:00 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-03 03:13:00 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-03 03:13:00 [INFO] - No SGX filings alerts to send.
+2025-12-03 03:13:00 [INFO] - [sgx_payload] is empty, skipping push to DB
