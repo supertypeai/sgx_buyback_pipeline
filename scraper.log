@@ -3815,3 +3815,180 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-03 03:15:23 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-03 03:15:23 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-04 03:13:45 [INFO] - Init Global Variable
+2025-12-04 03:14:14 [INFO] - Scraping from None to None...
+2025-12-04 03:14:14 [INFO] - Start scraping from start date: 20251202 to 20251204
+2025-12-04 03:14:14 [INFO] - page_start: 0
+2025-12-04 03:14:14 [INFO] - Fetching data from API Filings...
+2025-12-04 03:14:15 [INFO] - Response status: 200
+2025-12-04 03:14:15 [INFO] - Fetched 20 announcements
+2025-12-04 03:14:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4Y92J6I686EQ1OBB/60d301edbfc42f05e6d038ba83e13cfbd47776b8189ccfdbb4c636b88815ab15 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4Y92J6I686EQ1OBB/868991__eFORM1V2%20Lim%20Chen%20Chong.pdf
+2025-12-04 03:14:20 [INFO] - [get_transaction_type_from_desc] transfer ignore due to value is not None
+2025-12-04 03:14:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ECPMWNQE53C9WJZG/00bb2aa955b20d834a3e5d37c76bc2e6760ca20aa24aced4778990fa63cef9b8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ECPMWNQE53C9WJZG/868984__UltraGreen%2020251203%20Form%203_65EP%20final.pdf
+2025-12-04 03:14:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:30 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:30 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:30 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-04 03:14:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3RKGFUYFVVAT2GH3/82c40b7e8df590b647a8f8297d7cdddaf8d8eba47f6b59c0507c4c364f14a618 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3RKGFUYFVVAT2GH3/868982__UltraGreen%2020251203%20Form%203%20TH_Tembusu_Thomson%20final.pdf
+2025-12-04 03:14:37 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:37 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:37 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:37 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/3RKGFUYFVVAT2GH3/868982__UltraGreen%2020251203%20Form%203%20TH_Tembusu_Thomson%20final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:14:37 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ULTRAGREEN.AI LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/3RKGFUYFVVAT2GH3/82c40b7e8df590b647a8f8297d7cdddaf8d8eba47f6b59c0507c4c364f14a618
+2025-12-04 03:14:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TJ810PWUA1GJQSJO/e74fff7ed258830dd1bd01158679d00173c17eeff77e4684bc3fbb2262f2b67a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TJ810PWUA1GJQSJO/868980__UltraGreen%2020251203%20FORM%203_RGPL%20final.pdf
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:43 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/TJ810PWUA1GJQSJO/868980__UltraGreen%2020251203%20FORM%203_RGPL%20final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:14:43 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ULTRAGREEN.AI LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/TJ810PWUA1GJQSJO/e74fff7ed258830dd1bd01158679d00173c17eeff77e4684bc3fbb2262f2b67a
+2025-12-04 03:14:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S3YFUJGMCEVV9SPR/bbe7c216f69af9ad2fb91d9603c5e2184b5b18a2e05b5ff204e24e5bde252e9d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S3YFUJGMCEVV9SPR/868978__UltraGreen%2020251203%20FORM%201_Ravi%20final.pdf
+2025-12-04 03:14:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:14:46 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The listing of UltraGreen.ai Limited (the "Company") on the Main Board of the Singapore Exchange Securities Trading Limited on 3 December 2025. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-04 03:14:46 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/S3YFUJGMCEVV9SPR/868978__UltraGreen%2020251203%20FORM%201_Ravi%20final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:14:46 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ULTRAGREEN.AI LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/S3YFUJGMCEVV9SPR/bbe7c216f69af9ad2fb91d9603c5e2184b5b18a2e05b5ff204e24e5bde252e9d
+2025-12-04 03:14:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/P503R05SWGPS57TO/caa3dd1636af9d4f14dad6cd1d99156176783a4c668ea0cd5ef1ab08c0741c9b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/P503R05SWGPS57TO/868976__UltraGreen%2020251203%20FORM%201_Mr%20Kwa%20final.pdf
+2025-12-04 03:14:48 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:14:48 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The listing of UltraGreen.ai Limited (the "Company") on the Main Board of the Singapore Exchange Securities Trading Limited on 3 December 2025. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-04 03:14:48 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/P503R05SWGPS57TO/868976__UltraGreen%2020251203%20FORM%201_Mr%20Kwa%20final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:14:48 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ULTRAGREEN.AI LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/P503R05SWGPS57TO/caa3dd1636af9d4f14dad6cd1d99156176783a4c668ea0cd5ef1ab08c0741c9b
+2025-12-04 03:14:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MCAZBSI777OJ0OZC/daefacec09af2259e81683b3508db4d90a843b34b9856ab6373e08d67a79d703 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MCAZBSI777OJ0OZC/868974__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2025-12-04 03:14:54 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:54 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:54 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:14:55 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-04 03:14:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:14:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:14:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:14:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/I9R2B49FDUPAYSCP/06798f589b10868c6c55b9408036d803292a8ef473b0536c99058292d04de05f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/I9R2B49FDUPAYSCP/868972__Form%203%20-%20UMPL%20and%20others%20-%20Final.pdf
+2025-12-04 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:05 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-04 03:15:05 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:05 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:05 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/L6CRF8JCYB0A8L6C/91de672037bf32a7398993cb8d911154272cd743204116ecfd14e65bce15655f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/L6CRF8JCYB0A8L6C/868970__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:14 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:14 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-04 03:15:14 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:14 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:14 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VIPVR42YFF7DF874/c531bfc0374436375aa4fc974c07024de2640f6efc092a55c8799403f0d9b959 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VIPVR42YFF7DF874/868968__Form%203%20-%20Melvin%20Ang%20-%20Final.pdf
+2025-12-04 03:15:21 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:21 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'By virtue of Section 7 of the Companies Act 1967, Mr. Melvin Ang Wee Chye ceased to be deemed interested in the shares held by UnUsUaL Management Pte Ltd, which mm2 Asia Ltd. owns 51% direct interest of, as of on 1 November 2024, as his shareholdings in mm2 Asia Ltd. changed from 22.02% to 14.11% on 1 November 2024.'
+2025-12-04 03:15:21 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VIPVR42YFF7DF874/868968__Form%203%20-%20Melvin%20Ang%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:21 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UNUSUAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VIPVR42YFF7DF874/c531bfc0374436375aa4fc974c07024de2640f6efc092a55c8799403f0d9b959
+2025-12-04 03:15:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/STEYFQ4MB3XNHDUK/a081a9848665579e220959980e504a57ffb5632d46c52ff2ab8ddbc946af3093 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/STEYFQ4MB3XNHDUK/868966__eFORM1V2-03122025-Dr%20Ng.pdf
+2025-12-04 03:15:24 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:24 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 1,205,500 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 3 December 2025 for a total consideration of S$625,931.77 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-04 03:15:24 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/STEYFQ4MB3XNHDUK/868966__eFORM1V2-03122025-Dr%20Ng.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:24 [INFO] - [SGX FILINGS] Data not valid found for issuer name: Q & M DENTAL GROUP (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/STEYFQ4MB3XNHDUK/a081a9848665579e220959980e504a57ffb5632d46c52ff2ab8ddbc946af3093
+2025-12-04 03:15:24 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S6ECTBELZ83CBAY2/58de716d1675bf2c4434fb7d51fa1327b197d694c03c46a3c2876ae9646c8a23 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S6ECTBELZ83CBAY2/868964__eFORM3V2-03122025-QMH.pdf
+2025-12-04 03:15:30 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZJV5DHF72FO24LU5/a8c84b1f4b9dc6718f2668878f6d3f36f29e8624d48afc93ad7b3fdaf617fc2b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZJV5DHF72FO24LU5/868961__Form%203%20-%20Wee%20Henry.pdf
+2025-12-04 03:15:32 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:32 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ZJV5DHF72FO24LU5/868961__Form%203%20-%20Wee%20Henry.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:32 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LINCOTRADE & ASSOCIATES HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ZJV5DHF72FO24LU5/a8c84b1f4b9dc6718f2668878f6d3f36f29e8624d48afc93ad7b3fdaf617fc2b
+2025-12-04 03:15:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/29D2M1LFVPN0D9ZD/2b49e36034b2d3a178189bb5489b3dc11142b0d209e6f110df13d7a18f7d0a84 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/29D2M1LFVPN0D9ZD/868959__Form%203%20-%20Tan%20Chee%20Khoon.pdf
+2025-12-04 03:15:34 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:34 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/29D2M1LFVPN0D9ZD/868959__Form%203%20-%20Tan%20Chee%20Khoon.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:34 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LINCOTRADE & ASSOCIATES HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/29D2M1LFVPN0D9ZD/2b49e36034b2d3a178189bb5489b3dc11142b0d209e6f110df13d7a18f7d0a84
+2025-12-04 03:15:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OBRKML1HTYG45RPM/131bfff25e47be56d27c881067f0a8cb72808d24eb061178a62862c6216b47ce pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OBRKML1HTYG45RPM/868957__Form%203%20-%20Tan%20Jit%20Meng.pdf
+2025-12-04 03:15:37 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:37 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/OBRKML1HTYG45RPM/868957__Form%203%20-%20Tan%20Jit%20Meng.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:37 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LINCOTRADE & ASSOCIATES HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/OBRKML1HTYG45RPM/131bfff25e47be56d27c881067f0a8cb72808d24eb061178a62862c6216b47ce
+2025-12-04 03:15:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VHIINSDM8RTYVL05/34c0416925c28a9e43dc2a0776eaa556876f2f2874bf035e25020efffff4952c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VHIINSDM8RTYVL05/868955__Form%203%20-%20Soh%20Loong%20Chow%20Jackie.pdf
+2025-12-04 03:15:39 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:39 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VHIINSDM8RTYVL05/868955__Form%203%20-%20Soh%20Loong%20Chow%20Jackie.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:39 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LINCOTRADE & ASSOCIATES HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VHIINSDM8RTYVL05/34c0416925c28a9e43dc2a0776eaa556876f2f2874bf035e25020efffff4952c
+2025-12-04 03:15:40 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YNEEJBUPDUVIUBQZ/b0de4b365cbe2e36ea1639df619469f9df9207358d08bfc0149dd7f68a89fb99 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YNEEJBUPDUVIUBQZ/868948__Form%201%20-%20Ieong%20Un%20-%20Final.pdf
+2025-12-04 03:15:42 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:42 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The Company undertook a placement of 35,100,000 new ordinary shares (“Placement”) in connection with the Company’s listing on the Catalist of the SGX-ST. The shareholding percentage before the change in interest is calculated based on the Company's pre-Placement share capital of  281,675,538 Shares. The shareholding percentage after the change in interest is calculated based on the Company's post-Placement share capital of  316,775,538 Shares. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-04 03:15:42 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/YNEEJBUPDUVIUBQZ/868948__Form%201%20-%20Ieong%20Un%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:42 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INFINITY DEVELOPMENT HOLDINGS COMPANY LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/YNEEJBUPDUVIUBQZ/b0de4b365cbe2e36ea1639df619469f9df9207358d08bfc0149dd7f68a89fb99
+2025-12-04 03:15:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MCPXXR0731O23UY9/4b1108f577fc3667ebe92e07ce8357904bda190a7167d7bd27453095d82ff420 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MCPXXR0731O23UY9/868946__Form%203%20-%20All%20Reach%20and%20Substantial%20Shareholders%20-%20Final.pdf
+2025-12-04 03:15:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:45 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/MCPXXR0731O23UY9/868946__Form%203%20-%20All%20Reach%20and%20Substantial%20Shareholders%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:45 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INFINITY DEVELOPMENT HOLDINGS COMPANY LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/MCPXXR0731O23UY9/4b1108f577fc3667ebe92e07ce8357904bda190a7167d7bd27453095d82ff420
+2025-12-04 03:15:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4UKKL7PRB4N5N8SQ/fd3a9597c842b6db313f12ad6fc226e8ad2ebf19f455cdd338904a382a1fe5db pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4UKKL7PRB4N5N8SQ/868936__AIH_Form%203_MOK.pdf
+2025-12-04 03:15:47 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-04 03:15:47 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4UKKL7PRB4N5N8SQ/868936__AIH_Form%203_MOK.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:47 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ANCHUN INTERNATIONAL HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/4UKKL7PRB4N5N8SQ/fd3a9597c842b6db313f12ad6fc226e8ad2ebf19f455cdd338904a382a1fe5db
+2025-12-04 03:15:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HEGULJ4ZX1XCSUH6/ce7cb8e4f43879be7b1fc75ec8c689edfd1e2d2ad126cc76cda9c57278ec4f82 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HEGULJ4ZX1XCSUH6/868931__eFORM3V2%20-%20Tian%20Yuan%20-%203.12.2025%20-%20Final.pdf
+2025-12-04 03:15:55 [INFO] - page_start: 1
+2025-12-04 03:15:55 [INFO] - Fetching data from API Filings...
+2025-12-04 03:15:56 [INFO] - Response status: 200
+2025-12-04 03:15:56 [INFO] - Fetched 3 announcements
+2025-12-04 03:15:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JSAQ1J8ANDL6Y547/1906c14f46585a49eec955e570b8227f9550c27fcbcc04b4900d252ba799e673 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JSAQ1J8ANDL6Y547/868908__eFORM3V2_JAL_JHL_final.pdf
+2025-12-04 03:15:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-04 03:15:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/JSAQ1J8ANDL6Y547/868908__eFORM3V2_JAL_JHL_final.pdf: All transactions have no direct interest change and total shares change
+2025-12-04 03:15:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: DELFI LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/JSAQ1J8ANDL6Y547/1906c14f46585a49eec955e570b8227f9550c27fcbcc04b4900d252ba799e673
+2025-12-04 03:15:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/62O32L7MZE6S7SHQ/99872bfd479dca50b060297d4a809cd364bcbe89672091710c85e039a3840b7b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/62O32L7MZE6S7SHQ/868904__eFORM1V2%20-%20Terence.pdf
+2025-12-04 03:16:06 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DD9IZUK0NYSMR9PF/f159fd8e1ad876203751fc8fc8aa3c27e53913416ad45852b4179045d7888048 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DD9IZUK0NYSMR9PF/868892__eFORM3V2%20-%20Tang%20Wee%20Loke.pdf
+2025-12-04 03:16:16 [INFO] - page_start: 2
+2025-12-04 03:16:16 [INFO] - Fetching data from API Filings...
+2025-12-04 03:16:16 [INFO] - Response status: 200
+2025-12-04 03:16:16 [WARNING] - WARNING: API returned None
+2025-12-04 03:16:16 [INFO] - No more announcements found — stopping pagination.
+2025-12-04 03:16:29 [INFO] - Fetching data from API Filings...
+2025-12-04 03:16:29 [INFO] - Response status: 200
+2025-12-04 03:16:29 [WARNING] - WARNING: API returned None
+2025-12-04 03:16:29 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-04 03:16:29 [INFO] - [SGX FILINGS] Scraping completed. Total records: 16
+2025-12-04 03:16:30 [INFO] - Length data top_70: 0 | Length data not top_70: 16
+2025-12-04 03:16:30 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-04 03:16:30 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-04 03:16:30 [INFO] - Processing remove duplicate data
+2025-12-04 03:16:30 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-04 03:16:30 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-04 03:16:30 [INFO] - No SGX filings data to filter.
+2025-12-04 03:16:30 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-04 03:16:30 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-04 03:16:30 [INFO] - No SGX filings alerts to send.
+2025-12-04 03:16:30 [INFO] - [sgx_payload] is empty, skipping push to DB
