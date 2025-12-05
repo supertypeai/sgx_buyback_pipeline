@@ -1,60 +1,20 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/KPQYBGK5CM3IDHVI/6e4feff466d3443cdb4955530c6e9b755f79c5c48ed00ba8d296d66b2d72ae27",
-    "symbol": "S58",
-    "purchase_date": "2025-12-03",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 3.4,
-      "lowest": 3.39
-    },
-    "total_value": 1060260.13,
-    "total_shares_purchased": 312000,
-    "treasury_shares_after_purchase": 6968605,
-    "mandate": {
-      "mandate_total": 29870031,
-      "cumulative_purchased": 5500300,
-      "mandate_remaining": 24369731,
-      "mandate_start": "2025-07-25",
-      "mandate_end": "2026-07-25"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/23XHB0Q59617D7IZ/912890a3bc799f2489d771f30cbb54ad4220cf319ea45ad9162c23f8573efa95",
-    "symbol": "Z74",
-    "purchase_date": "2025-12-03",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 4.73,
-      "lowest": 4.7
-    },
-    "total_value": 12932397.92,
-    "total_shares_purchased": 2741900,
-    "treasury_shares_after_purchase": 27474698,
-    "mandate": {
-      "mandate_total": 825629225,
-      "cumulative_purchased": 25888500,
-      "mandate_remaining": 799740725,
-      "mandate_start": "2025-07-29",
-      "mandate_end": "2026-07-29"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/6UUTSBKXHLOQ3C69/41ff5c7e759089626ba3c805e9304e954149258e2b1e10216a61f818fea96eae",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/2EAQAT19I9TN88FZ/27852b81b2e80cf4a98101f59064b7dccfc5215bd06f8ab6fc7a698e9b45b5e3",
     "symbol": "BN4",
-    "purchase_date": "2025-12-03",
+    "purchase_date": "2025-12-04",
     "type": "On Market",
     "price_per_share": {
-      "highest": 10.3,
-      "lowest": 10.22
+      "highest": 10.27,
+      "lowest": 10.16
     },
-    "total_value": 513373.96,
+    "total_value": 510946.33,
     "total_shares_purchased": 50000,
-    "treasury_shares_after_purchase": 17947940,
+    "treasury_shares_after_purchase": 17997940,
     "mandate": {
       "mandate_total": 90741740,
-      "cumulative_purchased": 12270000,
-      "mandate_remaining": 78471740,
+      "cumulative_purchased": 12320000,
+      "mandate_remaining": 78421740,
       "mandate_start": "2025-04-21",
       "mandate_end": "2026-04-21"
     }
