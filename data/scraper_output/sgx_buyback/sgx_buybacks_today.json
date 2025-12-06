@@ -1,20 +1,20 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/2EAQAT19I9TN88FZ/27852b81b2e80cf4a98101f59064b7dccfc5215bd06f8ab6fc7a698e9b45b5e3",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/CHFLNFL62T2XMPZ1/922a89331181a37feedbfe215770729292334670e86487557934482ba897ba62",
     "symbol": "BN4",
-    "purchase_date": "2025-12-04",
+    "purchase_date": "2025-12-05",
     "type": "On Market",
     "price_per_share": {
-      "highest": 10.27,
+      "highest": 10.22,
       "lowest": 10.16
     },
     "total_value": 510946.33,
     "total_shares_purchased": 50000,
-    "treasury_shares_after_purchase": 17997940,
+    "treasury_shares_after_purchase": 18047940,
     "mandate": {
       "mandate_total": 90741740,
-      "cumulative_purchased": 12320000,
-      "mandate_remaining": 78421740,
+      "cumulative_purchased": 12370000,
+      "mandate_remaining": 78371740,
       "mandate_start": "2025-04-21",
       "mandate_end": "2026-04-21"
     }
