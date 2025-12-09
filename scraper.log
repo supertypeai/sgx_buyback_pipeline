@@ -4208,3 +4208,59 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-08 03:18:16 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-12-08 03:18:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-08 03:18:16 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-12-09 03:13:11 [INFO] - Init Global Variable
+2025-12-09 03:13:29 [INFO] - Scraping from None to None...
+2025-12-09 03:13:29 [INFO] - Start scraping from start date: 20251207 to 20251209
+2025-12-09 03:13:29 [INFO] - page_start: 0
+2025-12-09 03:13:29 [INFO] - Fetching data from API Filings...
+2025-12-09 03:13:29 [INFO] - Response status: 200
+2025-12-09 03:13:29 [INFO] - Fetched 10 announcements
+2025-12-09 03:13:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/E8DCS1CUGBTHPVPY/355c9dfdce078133c27b4ecd1c106c015cbf4689ff509f63512ecadeae2c75f4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/E8DCS1CUGBTHPVPY/869305__eFORM1V2-08122025-Dr%20Ng.pdf
+2025-12-09 03:13:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-09 03:13:31 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 339,400 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 8 December 2025 for a total consideration of S$179,685.15 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-09 03:13:31 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/E8DCS1CUGBTHPVPY/869305__eFORM1V2-08122025-Dr%20Ng.pdf: All transactions have no direct interest change and total shares change
+2025-12-09 03:13:31 [INFO] - [SGX FILINGS] Data not valid found for issuer name: Q & M DENTAL GROUP (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/E8DCS1CUGBTHPVPY/355c9dfdce078133c27b4ecd1c106c015cbf4689ff509f63512ecadeae2c75f4
+2025-12-09 03:13:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MZJE24XRCXUZMJ4Q/650519a077c3cb21d76d0628144f5fee24d2c9d181e0977389832f5ba140701e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MZJE24XRCXUZMJ4Q/869303__eFORM3V2-08122025-QMH.pdf
+2025-12-09 03:13:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1TKEI6M8257L2VS5/2eb8cf1047e3b183992904d53eccd5b68a7f02eb7e458098d7a73be791250c41 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1TKEI6M8257L2VS5/869300__eFORM1V2%20-%20Terence.pdf
+2025-12-09 03:13:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EAQH8VRLPSU8T3M7/5da8e8b77bdde11cd299c35eef5771bb7f79ceb9c691817582e388b2e1ca0808 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EAQH8VRLPSU8T3M7/869297__eFORM3V2-LLC.pdf
+2025-12-09 03:13:44 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/EAQH8VRLPSU8T3M7/869297__eFORM3V2-LLC.pdf: All transactions have no direct interest change and total shares change
+2025-12-09 03:13:44 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LENDLEASE GLOBAL COMMERCIAL TRUST MANAGEMENT PTE. LTD.  detail url: https://links.sgx.com/1.0.0/corporate-announcements/EAQH8VRLPSU8T3M7/5da8e8b77bdde11cd299c35eef5771bb7f79ceb9c691817582e388b2e1ca0808
+2025-12-09 03:13:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VCKVG56I1CSNN53E/b9b0d345f950bbb69c0a9a99bb3da592eaead733e6f8b37ac5de04f266a4dabb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VCKVG56I1CSNN53E/869292__Form%203%20-%20Wu%20Kun%20Wei%20-%20Final.pdf
+2025-12-09 03:13:46 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VCKVG56I1CSNN53E/869292__Form%203%20-%20Wu%20Kun%20Wei%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-09 03:13:46 [INFO] - [SGX FILINGS] Data not valid found for issuer name: EMBRACING FUTURE HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VCKVG56I1CSNN53E/b9b0d345f950bbb69c0a9a99bb3da592eaead733e6f8b37ac5de04f266a4dabb
+2025-12-09 03:13:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LTZRQCO0XRT7L2EQ/20f00ec99ca7fd057021c75271b0b214c60e2f87a050967ffe2f6b7ed42da82b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LTZRQCO0XRT7L2EQ/869289__eFORM1V2_Lim%20Chen%20Chong%2020251208.pdf
+2025-12-09 03:13:47 [INFO] - [get_transaction_type_from_desc] transfer ignore due to value is not None
+2025-12-09 03:13:47 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/LTZRQCO0XRT7L2EQ/869289__eFORM1V2_Lim%20Chen%20Chong%2020251208.pdf: All transactions have no direct interest change and total shares change
+2025-12-09 03:13:47 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ADVANCED SYSTEMS AUTOMATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LTZRQCO0XRT7L2EQ/20f00ec99ca7fd057021c75271b0b214c60e2f87a050967ffe2f6b7ed42da82b
+2025-12-09 03:13:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/E3O3AUZQJAPYV2G0/0bf796533a0daf65c120fbb1682cf66e00099275b3a90ff9c96bd7d2c16ea368 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/E3O3AUZQJAPYV2G0/869253__eFORM1_ChengWK_081225_Final.pdf
+2025-12-09 03:13:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-09 03:13:49 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/E3O3AUZQJAPYV2G0/869253__eFORM1_ChengWK_081225_Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-09 03:13:49 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/E3O3AUZQJAPYV2G0/0bf796533a0daf65c120fbb1682cf66e00099275b3a90ff9c96bd7d2c16ea368
+2025-12-09 03:13:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JOYN6CST0UWB1UDQ/027fbedd94f681b21ed3545d536f45f740dd88a5d64e52b378c1dd8f196bc234 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JOYN6CST0UWB1UDQ/869251__eFORM3V2_Dr%20Ong__8Dec2025_Final.pdf
+2025-12-09 03:13:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M22RI8JSMMGW58ZJ/b60d0ab952058374555c4476bd91be9b0e2c7029d2336ae218e8185ebf85fd8c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M22RI8JSMMGW58ZJ/869246__FORM1_Chew%20Choon%20Tee.pdf
+2025-12-09 03:14:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MWV648ZRA30A33Z7/d310133c7d744d335be99d56d6e489ac301f2477940a15543cfaa7834e79dcf6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MWV648ZRA30A33Z7/869230__eFORM3%20Final.pdf
+2025-12-09 03:14:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-09 03:14:05 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-09 03:14:05 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/MWV648ZRA30A33Z7/869230__eFORM3%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-09 03:14:05 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ALITA RESOURCES LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/MWV648ZRA30A33Z7/d310133c7d744d335be99d56d6e489ac301f2477940a15543cfaa7834e79dcf6
+2025-12-09 03:14:12 [INFO] - page_start: 1
+2025-12-09 03:14:12 [INFO] - Fetching data from API Filings...
+2025-12-09 03:14:13 [INFO] - Response status: 200
+2025-12-09 03:14:13 [WARNING] - WARNING: API returned None
+2025-12-09 03:14:13 [INFO] - No more announcements found — stopping pagination.
+2025-12-09 03:14:24 [INFO] - Fetching data from API Filings...
+2025-12-09 03:14:24 [INFO] - Response status: 200
+2025-12-09 03:14:24 [WARNING] - WARNING: API returned None
+2025-12-09 03:14:24 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-09 03:14:24 [INFO] - [SGX FILINGS] Scraping completed. Total records: 7
+2025-12-09 03:14:25 [INFO] - Length data top_70: 0 | Length data not top_70: 7
+2025-12-09 03:14:25 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-09 03:14:25 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-09 03:14:25 [INFO] - Processing remove duplicate data
+2025-12-09 03:14:25 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-09 03:14:25 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-09 03:14:25 [INFO] - No SGX filings data to filter.
+2025-12-09 03:14:25 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-09 03:14:25 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-09 03:14:25 [INFO] - No SGX filings alerts to send.
+2025-12-09 03:14:25 [INFO] - [sgx_payload] is empty, skipping push to DB
