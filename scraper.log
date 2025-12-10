@@ -4291,3 +4291,57 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-09 03:16:33 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-09 03:16:33 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-10 03:17:00 [INFO] - Init Global Variable
+2025-12-10 03:17:26 [INFO] - Scraping from None to None...
+2025-12-10 03:17:26 [INFO] - Start scraping from start date: 20251208 to 20251210
+2025-12-10 03:17:26 [INFO] - page_start: 0
+2025-12-10 03:17:26 [INFO] - Fetching data from API Filings...
+2025-12-10 03:17:27 [INFO] - Response status: 200
+2025-12-10 03:17:27 [INFO] - Fetched 7 announcements
+2025-12-10 03:17:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K0CZJ63Y8CE04YL1/1aa570c84aa5760364ca46c9bb786ee56b94535e53d42538c6003bc07eca9317 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K0CZJ63Y8CE04YL1/869403__2025-12-09%20eFORM1V2%20-%20HFH.pdf
+2025-12-10 03:17:31 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/K0CZJ63Y8CE04YL1/869403__2025-12-09%20eFORM1V2%20-%20HFH.pdf: All transactions have no direct interest change and total shares change
+2025-12-10 03:17:31 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ULTRAGREEN.AI LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/K0CZJ63Y8CE04YL1/1aa570c84aa5760364ca46c9bb786ee56b94535e53d42538c6003bc07eca9317
+2025-12-10 03:17:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/99AWSTJ62ATEUSZO/52420987c579ac0f53abd804b97ab01c88d95a40e43622043ac34727cf3ffb88 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/99AWSTJ62ATEUSZO/869393__eFORM3V2_Final_LOC.pdf
+2025-12-10 03:17:35 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/99AWSTJ62ATEUSZO/869393__eFORM3V2_Final_LOC.pdf: All transactions have no direct interest change and total shares change
+2025-12-10 03:17:35 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ACCRELIST LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/99AWSTJ62ATEUSZO/52420987c579ac0f53abd804b97ab01c88d95a40e43622043ac34727cf3ffb88
+2025-12-10 03:17:35 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0L2HR6S3RNXXZVBO/417b7065fcafd2561f94f554b7ca9e6b74fc5df55de1e466dad6589abfcd26d9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0L2HR6S3RNXXZVBO/869374__eFORM1V2-09122025-Dr%20Ng.pdf
+2025-12-10 03:17:37 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-10 03:17:37 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Quan Min Holdings Pte. Ltd. acquired 1,860,100 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 9 December 2025 for a total consideration of S$999,134.11 (excluding brokerage & stamp duties). Dr. Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by Quan Min Holdings Pte. Ltd.. Please refer to section 9 for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-10 03:17:37 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/0L2HR6S3RNXXZVBO/869374__eFORM1V2-09122025-Dr%20Ng.pdf: All transactions have no direct interest change and total shares change
+2025-12-10 03:17:37 [INFO] - [SGX FILINGS] Data not valid found for issuer name: Q & M DENTAL GROUP (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0L2HR6S3RNXXZVBO/417b7065fcafd2561f94f554b7ca9e6b74fc5df55de1e466dad6589abfcd26d9
+2025-12-10 03:17:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YM7ENN4UB8W4HJFQ/5e8c13f0488e4202aa6b9fd9e5c45fecfa87ff1dae1a5e1b2c1336a26e2d89f3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YM7ENN4UB8W4HJFQ/869372__eFORM3V2-09122025-QMH.pdf
+2025-12-10 03:17:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MK1HHZG44VGDL2G7/1be4fa8ce47d776a79695d5d685f2e56011fc94e0c3ef58e52b15831a0f0f99e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MK1HHZG44VGDL2G7/869338__Form_3-TH_Tembusu_Napier_Venezio.pdf
+2025-12-10 03:17:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-10 03:17:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-10 03:17:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-10 03:17:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-10 03:17:47 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-10 03:17:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WKUOJAAELU9BPELO/c7b5f1494b8d0caa85df64dd5e27882037720bb630722a6135136b5ba8347f8d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WKUOJAAELU9BPELO/869335__eFORM1_ChengWK_091225_Final.pdf
+2025-12-10 03:17:52 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-10 03:17:52 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/WKUOJAAELU9BPELO/869335__eFORM1_ChengWK_091225_Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-10 03:17:52 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/WKUOJAAELU9BPELO/c7b5f1494b8d0caa85df64dd5e27882037720bb630722a6135136b5ba8347f8d
+2025-12-10 03:17:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/U3PYTC1XV4OTIYYY/32faf445237da52a0b0b8db996fa2e55b2c724d0830e40555e1d5cc9f9a78638 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/U3PYTC1XV4OTIYYY/869333__20251209Form1_GSC.pdf
+2025-12-10 03:17:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-10 03:17:55 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/U3PYTC1XV4OTIYYY/869333__20251209Form1_GSC.pdf: All transactions have no direct interest change and total shares change
+2025-12-10 03:17:55 [INFO] - [SGX FILINGS] Data not valid found for issuer name: FRENCKEN GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/U3PYTC1XV4OTIYYY/32faf445237da52a0b0b8db996fa2e55b2c724d0830e40555e1d5cc9f9a78638
+2025-12-10 03:18:02 [INFO] - page_start: 1
+2025-12-10 03:18:02 [INFO] - Fetching data from API Filings...
+2025-12-10 03:18:03 [INFO] - Response status: 200
+2025-12-10 03:18:03 [WARNING] - WARNING: API returned None
+2025-12-10 03:18:03 [INFO] - No more announcements found — stopping pagination.
+2025-12-10 03:18:16 [INFO] - Fetching data from API Filings...
+2025-12-10 03:18:16 [INFO] - Response status: 200
+2025-12-10 03:18:16 [WARNING] - WARNING: API returned None
+2025-12-10 03:18:16 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-10 03:18:16 [INFO] - [SGX FILINGS] Scraping completed. Total records: 2
+2025-12-10 03:18:18 [INFO] - Length data top_70: 0 | Length data not top_70: 2
+2025-12-10 03:18:18 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-10 03:18:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-10 03:18:18 [INFO] - Processing remove duplicate data
+2025-12-10 03:18:18 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-10 03:18:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-10 03:18:18 [INFO] - No SGX filings data to filter.
+2025-12-10 03:18:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-10 03:18:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-10 03:18:18 [INFO] - No SGX filings alerts to send.
+2025-12-10 03:18:18 [INFO] - [sgx_payload] is empty, skipping push to DB
