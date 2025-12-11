@@ -4372,3 +4372,50 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-10 03:20:21 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-10 03:20:22 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-11 03:18:53 [INFO] - Init Global Variable
+2025-12-11 03:19:18 [INFO] - Scraping from None to None...
+2025-12-11 03:19:18 [INFO] - Start scraping from start date: 20251209 to 20251211
+2025-12-11 03:19:18 [INFO] - page_start: 0
+2025-12-11 03:19:18 [INFO] - Fetching data from API Filings...
+2025-12-11 03:19:18 [INFO] - Response status: 200
+2025-12-11 03:19:18 [INFO] - Fetched 7 announcements
+2025-12-11 03:19:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XS1A3OW9RKEVOR8O/72d983d9cd564c146c78ea7921bf6328bda1eb5b731b1a4581683aa9722e7bd4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XS1A3OW9RKEVOR8O/869490__eFORM1V2%20-%20Terence%20Dec%209.pdf
+2025-12-11 03:19:28 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RGNQ9W78557AL4KC/1da763a2fd1a37f09b69014756e85e4c79f026f688b50cf838e084e9e3b40999 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RGNQ9W78557AL4KC/869488__eFORM1V2%20-%20Terence%20Dec%208.pdf
+2025-12-11 03:19:35 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K8NI9WSA6NRII6AY/bb1fac9526a56c2d0ded7da9e91da16b98e6cd67bbb9bb44851eff456d60f12c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K8NI9WSA6NRII6AY/869476__20251209%20Form%203%20-%20Zhang%20Jiahui.pdf
+2025-12-11 03:19:37 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-11 03:19:37 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/K8NI9WSA6NRII6AY/869476__20251209%20Form%203%20-%20Zhang%20Jiahui.pdf: All transactions have no direct interest change and total shares change
+2025-12-11 03:19:37 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CAPALLIANZ HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/K8NI9WSA6NRII6AY/bb1fac9526a56c2d0ded7da9e91da16b98e6cd67bbb9bb44851eff456d60f12c
+2025-12-11 03:19:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/O0XXLVS8DMVF81D1/50abfe2ed60152d64dfd2f76937771a4171b1e7b0ca68d2edad0a6ef3ff30024 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/O0XXLVS8DMVF81D1/869473__Form%201%20-%20Goh%20Kim%20Hup.pdf
+2025-12-11 03:19:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TRL1E6BXK1DWXLV8/82069c9ed3652bae23e916cc41c40995b0784975207ac7f262f1bb6500ed9afe pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TRL1E6BXK1DWXLV8/869467__eFORM3V2%20-%20Scholars%20Link%20dated%2010.12.2025.pdf
+2025-12-11 03:19:45 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-11 03:19:45 [INFO] - Transfer detected - transformed shareholder: Scholars Link Sdn Bhd -> way of offmarket disposal [->] creditors
+2025-12-11 03:19:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HWIJ900GLM2PZ6LP/34b242c8b114963deca5a32cbcdbc44063dfea596fc4ff5ac003787c8b611b5b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HWIJ900GLM2PZ6LP/869450__Form%203-Tembusu.pdf
+2025-12-11 03:19:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-11 03:19:51 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'All capitalised terms not defined herein shall have the same meanings given to them in No. 10 below. Seviora, a subsidiary of Tembusu, has acquired a controlling interest in PCH, which is the indirect parent holding company of Pavilion, giving rise to a deemed interest of 3.28%.'
+2025-12-11 03:19:51 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HWIJ900GLM2PZ6LP/869450__Form%203-Tembusu.pdf: All transactions have no direct interest change and total shares change
+2025-12-11 03:19:51 [INFO] - [SGX FILINGS] Data not valid found for issuer name: 17LIVE GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HWIJ900GLM2PZ6LP/34b242c8b114963deca5a32cbcdbc44063dfea596fc4ff5ac003787c8b611b5b
+2025-12-11 03:19:51 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7WS36BVO1QDB6NRZ/9c461f12da3341edccde9abc73297aa258e718f0b26a6d59ea4e27647aa8e507 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7WS36BVO1QDB6NRZ/869437__eFORM1_ChengWK_101225_Final.pdf
+2025-12-11 03:19:53 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-11 03:19:53 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/7WS36BVO1QDB6NRZ/869437__eFORM1_ChengWK_101225_Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-11 03:19:53 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/7WS36BVO1QDB6NRZ/9c461f12da3341edccde9abc73297aa258e718f0b26a6d59ea4e27647aa8e507
+2025-12-11 03:19:58 [INFO] - page_start: 1
+2025-12-11 03:19:58 [INFO] - Fetching data from API Filings...
+2025-12-11 03:19:58 [INFO] - Response status: 200
+2025-12-11 03:19:58 [WARNING] - WARNING: API returned None
+2025-12-11 03:19:58 [INFO] - No more announcements found — stopping pagination.
+2025-12-11 03:20:10 [INFO] - Fetching data from API Filings...
+2025-12-11 03:20:10 [INFO] - Response status: 200
+2025-12-11 03:20:10 [WARNING] - WARNING: API returned None
+2025-12-11 03:20:10 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-11 03:20:10 [INFO] - [SGX FILINGS] Scraping completed. Total records: 4
+2025-12-11 03:20:11 [INFO] - Length data top_70: 0 | Length data not top_70: 4
+2025-12-11 03:20:11 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-11 03:20:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-11 03:20:11 [INFO] - Processing remove duplicate data
+2025-12-11 03:20:11 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-11 03:20:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-11 03:20:11 [INFO] - No SGX filings data to filter.
+2025-12-11 03:20:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-11 03:20:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-11 03:20:11 [INFO] - No SGX filings alerts to send.
+2025-12-11 03:20:11 [INFO] - [sgx_payload] is empty, skipping push to DB
