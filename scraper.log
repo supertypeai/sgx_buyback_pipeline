@@ -4446,3 +4446,130 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-11 03:22:12 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-11 03:22:13 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-12 03:17:26 [INFO] - Init Global Variable
+2025-12-12 03:17:51 [INFO] - Scraping from None to None...
+2025-12-12 03:17:51 [INFO] - Start scraping from start date: 20251210 to 20251212
+2025-12-12 03:17:51 [INFO] - page_start: 0
+2025-12-12 03:17:51 [INFO] - Fetching data from API Filings...
+2025-12-12 03:17:52 [INFO] - Response status: 200
+2025-12-12 03:17:52 [INFO] - Fetched 20 announcements
+2025-12-12 03:17:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AGW47K3934ZJ5B1T/8a2b2d6d083cab7a7d31783ca9e8895b6b4494aae11e68ef24e7efcf3c2eeaa1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AGW47K3934ZJ5B1T/869647__eFORM3V2%20-%20THY%202025%201211r.pdf
+2025-12-12 03:17:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:17:55 [INFO] - Transfer detected - transformed shareholder: TAN HONG YEE -> THY's CDP account [->] a joint account with her spouse
+2025-12-12 03:17:55 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/AGW47K3934ZJ5B1T/869647__eFORM3V2%20-%20THY%202025%201211r.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:17:55 [INFO] - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/AGW47K3934ZJ5B1T/8a2b2d6d083cab7a7d31783ca9e8895b6b4494aae11e68ef24e7efcf3c2eeaa1
+2025-12-12 03:17:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZV62S2K7RKKEY7AE/14219a4ba7111281220ad1febabbe415aac9c826c32e0dfebf83f898d04b4703 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZV62S2K7RKKEY7AE/869645__eFORM1V2%20-%20YHN%202025%201211r.pdf
+2025-12-12 03:17:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:17:57 [INFO] - Transfer detected - transformed shareholder: Yeah Hiang Nam @ Yeo Hiang Nam -> YHN's spouse Tan Hong Yee's ("THY") account held at The Central Depository (Pte) Limited ("CDP") [->] a joint account between YHN and THY at OCBC Securities Pte Ltd
+2025-12-12 03:17:57 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ZV62S2K7RKKEY7AE/869645__eFORM1V2%20-%20YHN%202025%201211r.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:17:57 [INFO] - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ZV62S2K7RKKEY7AE/14219a4ba7111281220ad1febabbe415aac9c826c32e0dfebf83f898d04b4703
+2025-12-12 03:17:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7FECAQW0LEGDA4T7/67a9638f653a36b37bebb66ae323dfed1c9714ed812ecb804d456802347f74c5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7FECAQW0LEGDA4T7/869636__eFORM3V2_11122025.pdf
+2025-12-12 03:17:59 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:17:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/7FECAQW0LEGDA4T7/869636__eFORM3V2_11122025.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:17:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/7FECAQW0LEGDA4T7/67a9638f653a36b37bebb66ae323dfed1c9714ed812ecb804d456802347f74c5
+2025-12-12 03:17:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OM71XQYSSEX295PC/9f55a39fb1ad4f119d80d7d3d60d54a5e736030a6964a35aa05be1aba595a623 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OM71XQYSSEX295PC/869633__eFORM1V2%20-%20Terence.pdf
+2025-12-12 03:18:05 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/T7GKDYU407PCI422/d607f2c327652cb08dc26521fff0e525fc325a11a5e072ac39e929969325d9ca pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/T7GKDYU407PCI422/869615__20251211%20-%20LGH_Form%203_LZG.pdf
+2025-12-12 03:18:08 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:08 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of Leong Guan Holdings Limited on the Catalist Board of the Singapore Exchange Securities Trading Limited ("SGX-ST") on 11 December 2025 (the "Listing").'
+2025-12-12 03:18:08 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/T7GKDYU407PCI422/869615__20251211%20-%20LGH_Form%203_LZG.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:18:08 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/T7GKDYU407PCI422/d607f2c327652cb08dc26521fff0e525fc325a11a5e072ac39e929969325d9ca
+2025-12-12 03:18:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/934H682TCAKFDTQJ/fe32833397501b5d27a93ecb834ab62b42c27c624f3b663ebb0e3efef1a31069 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/934H682TCAKFDTQJ/869613__20251211%20-%20LGH_Form%203_Plenteous.pdf
+2025-12-12 03:18:10 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:10 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of Leong Guan Holdings Limited on the Catalist Board of the Singapore Exchange Securities Trading Limited ("SGX-ST") on 11 December 2025 (the "Listing"). Pursuant to the Listing, Plenteous Investment Pte. Ltd. had undertaken a vendor sale of 4,350,000 shares in the Company.'
+2025-12-12 03:18:10 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-12 03:18:10 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:10 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of Leong Guan Holdings Limited on the Catalist Board of the Singapore Exchange Securities Trading Limited ("SGX-ST") on 11 December 2025 (the "Listing"). Pursuant to the Listing, Plenteous Investment Pte. Ltd. had undertaken a vendor sale of 4,350,000 shares in the Company.'
+2025-12-12 03:18:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8VU1PKHBHVFZVONK/7389f1c40e910826a45019ac285f91109fa9484d6ca179022ed68f155748b213 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8VU1PKHBHVFZVONK/869611__20251211%20-%20LGH_Form%203_JJL%20Enterprise.pdf
+2025-12-12 03:18:14 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:14 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of Leong Guan Holdings Limited on the Catalist Board of the Singapore Exchange Securities Trading Limited ("SGX-ST") on 11 December 2025 (the "Listing").'
+2025-12-12 03:18:14 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/8VU1PKHBHVFZVONK/869611__20251211%20-%20LGH_Form%203_JJL%20Enterprise.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:18:14 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/8VU1PKHBHVFZVONK/7389f1c40e910826a45019ac285f91109fa9484d6ca179022ed68f155748b213
+2025-12-12 03:18:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TVLT8QQDZXER22ZO/08527966de7f2db2f5ad8a031aea9b5be89b5d437459b796874e8bc3c98761bc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TVLT8QQDZXER22ZO/869609__20251211%20-%20LGH_Form%201_Patrick.pdf
+2025-12-12 03:18:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IM2ENHAUDJJK0LLL/a0816029e9d3a07813f0783d9e38604a8deaaa6304a725a5d485a976fbe78f62 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IM2ENHAUDJJK0LLL/869606__20251211%20-%20LGH_Form%201_CLH.pdf
+2025-12-12 03:18:20 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:20 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of Leong Guan Holdings Limited on the Catalist Board of the Singapore Exchange Securities Trading Limited ("SGX-ST") on 11 December 2025 (the "Listing"). Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-12 03:18:20 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/IM2ENHAUDJJK0LLL/869606__20251211%20-%20LGH_Form%201_CLH.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:18:20 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/IM2ENHAUDJJK0LLL/a0816029e9d3a07813f0783d9e38604a8deaaa6304a725a5d485a976fbe78f62
+2025-12-12 03:18:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/V1WL14Q3XWMZR67S/976a991163a143d8951a004918d9bdc74ab26e1ed74ecaa197fe79c92370d3ec pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/V1WL14Q3XWMZR67S/869604__20251211%20-%20LGH_Form%201_LHC.pdf
+2025-12-12 03:18:23 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:23 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of Leong Guan Holdings Limited on the Catalist Board of the Singapore Exchange Securities Trading Limited ("SGX-ST") on 11 December 2025 (the "Listing"). Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-12 03:18:23 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/V1WL14Q3XWMZR67S/869604__20251211%20-%20LGH_Form%201_LHC.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:18:23 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/V1WL14Q3XWMZR67S/976a991163a143d8951a004918d9bdc74ab26e1ed74ecaa197fe79c92370d3ec
+2025-12-12 03:18:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S8HLBZTAFBR7XOQC/2328b39759654a6883dd693948f4ce71ccb4922ba2a5dc5a860df9c44cad41a8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S8HLBZTAFBR7XOQC/869602__20251211%20-%20LGH_Form%201_LTC.pdf
+2025-12-12 03:18:25 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:25 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'This notification is pursuant to the listing of Leong Guan Holdings Limited on the Catalist Board of the Singapore Exchange Securities Trading Limited ("SGX-ST") on 11 December 2025 (the "Listing"). Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-12 03:18:25 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/S8HLBZTAFBR7XOQC/869602__20251211%20-%20LGH_Form%201_LTC.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:18:25 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/S8HLBZTAFBR7XOQC/2328b39759654a6883dd693948f4ce71ccb4922ba2a5dc5a860df9c44cad41a8
+2025-12-12 03:18:25 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4LBBFVASJXV7G6BT/b373be588dda85bec9390cf487d42f205a12e9d0600b09b1abd7303988cb4545 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4LBBFVASJXV7G6BT/869599__Sitra%20eFORM3V2%20Ocean_Guo.pdf
+2025-12-12 03:18:27 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:27 [INFO] - Transfer detected - transformed shareholder: Ocean Channel Enterprises Limited -> Mr.Guo Shaozeng [->] Ocean Channel Enterprises Limited for nil consideration
+2025-12-12 03:18:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8JO4O2COP72UNEJT/89f0c0e0da3dfcaba8d03f607834193f2c78b64691cd232a67a646b5dd5f0376 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8JO4O2COP72UNEJT/869594__eform3v2_FIL-20251211_final.pdf
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:37 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:37 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/8JO4O2COP72UNEJT/869594__eform3v2_FIL-20251211_final.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:18:37 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CENTURION ASSET MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/8JO4O2COP72UNEJT/89f0c0e0da3dfcaba8d03f607834193f2c78b64691cd232a67a646b5dd5f0376
+2025-12-12 03:18:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WSVOUPW5YCD6N73Q/22af7dc567f9537de53484ad0cfa2a63663eeb130cf04ed683d06140fdff9d87 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WSVOUPW5YCD6N73Q/869575__Form%203%20-%20UMPL%20and%20Others_Final.pdf
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:42 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-12 03:18:42 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:42 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:42 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-12 03:18:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0AT4VUTKCTSAH1EP/c5528f924cea1ca92403bdc6aedece24145f9666090b0df8257b074757253699 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0AT4VUTKCTSAH1EP/869573__251211%20Form%203%20-%20LSL%20-%20GasHub%20-%20Final.pdf
+2025-12-12 03:18:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:48 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-12 03:18:48 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/0AT4VUTKCTSAH1EP/869573__251211%20Form%203%20-%20LSL%20-%20GasHub%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:18:48 [INFO] - [SGX FILINGS] Data not valid found for issuer name: H2G GREEN LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0AT4VUTKCTSAH1EP/c5528f924cea1ca92403bdc6aedece24145f9666090b0df8257b074757253699
+2025-12-12 03:18:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/15CBUH8MMD8Y33YI/8682f6b672f677fcad5f08f67b27523f90d372af74a8e311bc45997b58f5530b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/15CBUH8MMD8Y33YI/869570__eFORM1V2%20-%20Kevin%20Final.pdf
+2025-12-12 03:18:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KD4PXU0NVZLU7B7O/8b14de56539eaa3b21cb35e80ca5f038073a69f4af5ac767cc3dfbb0732078ce pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KD4PXU0NVZLU7B7O/869568__eFORM1V2%20-%20Pat%20Final.pdf
+2025-12-12 03:19:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JTIKS1QRYHEFWY1N/7debdd846a704d1e9b5adf03f0f72b3cda4ed84e1f753f5dbda9c9e34bb2c783 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JTIKS1QRYHEFWY1N/869566__eFORM1V2%20-%20James%20Final.pdf
+2025-12-12 03:19:02 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/JTIKS1QRYHEFWY1N/869566__eFORM1V2%20-%20James%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-12 03:19:02 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CIVMEC LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/JTIKS1QRYHEFWY1N/7debdd846a704d1e9b5adf03f0f72b3cda4ed84e1f753f5dbda9c9e34bb2c783
+2025-12-12 03:19:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SVZJJDBDVOONXIWN/f7a3e0932870d139193a6376f6e4e006d47885b5b65adca00e4cf2f782127b45 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SVZJJDBDVOONXIWN/869556__eFORM1V2-Han%20Seng%20Juan-20251211.pdf
+2025-12-12 03:19:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JJ095VHYK4V2Q0LK/b6b1435cdb70acf5cd7a4d7f2e0c3f95b2c7fe70f8eafc15a74007d59d37132b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JJ095VHYK4V2Q0LK/869547__Gilbert%20-%20Form%201%20-%2011%20Dec%202025.pdf
+2025-12-12 03:19:08 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/JJ095VHYK4V2Q0LK/b6b1435cdb70acf5cd7a4d7f2e0c3f95b2c7fe70f8eafc15a74007d59d37132b
+2025-12-12 03:19:14 [INFO] - page_start: 1
+2025-12-12 03:19:14 [INFO] - Fetching data from API Filings...
+2025-12-12 03:19:14 [INFO] - Response status: 200
+2025-12-12 03:19:14 [INFO] - Fetched 1 announcements
+2025-12-12 03:19:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NZYST1FSL8QZPC0X/cf2a2892f3891b7c00e666511b3e7fa8eab6d81654bf3207597ba3ceda7098b6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NZYST1FSL8QZPC0X/869545__Dr%20Goi%20-%20Form%201%20-%2011%20Dec%202025.pdf
+2025-12-12 03:19:15 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/NZYST1FSL8QZPC0X/cf2a2892f3891b7c00e666511b3e7fa8eab6d81654bf3207597ba3ceda7098b6
+2025-12-12 03:19:21 [INFO] - page_start: 2
+2025-12-12 03:19:21 [INFO] - Fetching data from API Filings...
+2025-12-12 03:19:21 [INFO] - Response status: 200
+2025-12-12 03:19:21 [WARNING] - WARNING: API returned None
+2025-12-12 03:19:21 [INFO] - No more announcements found — stopping pagination.
+2025-12-12 03:19:33 [INFO] - Fetching data from API Filings...
+2025-12-12 03:19:33 [INFO] - Response status: 200
+2025-12-12 03:19:33 [WARNING] - WARNING: API returned None
+2025-12-12 03:19:33 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-12 03:19:33 [INFO] - [SGX FILINGS] Scraping completed. Total records: 10
+2025-12-12 03:19:34 [INFO] - Length data top_70: 0 | Length data not top_70: 10
+2025-12-12 03:19:34 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-12 03:19:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-12 03:19:34 [INFO] - Processing remove duplicate data
+2025-12-12 03:19:34 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-12 03:19:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-12 03:19:34 [INFO] - No SGX filings data to filter.
+2025-12-12 03:19:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-12 03:19:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-12 03:19:34 [INFO] - No SGX filings alerts to send.
+2025-12-12 03:19:34 [INFO] - [sgx_payload] is empty, skipping push to DB
