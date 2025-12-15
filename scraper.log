@@ -4644,3 +4644,27 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-14 03:25:17 [INFO] - Length data after duplicate removing: 0
 2025-12-14 03:25:17 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-14 03:25:17 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-12-15 03:24:11 [INFO] - Init Global Variable
+2025-12-15 03:24:37 [INFO] - Scraping from None to None...
+2025-12-15 03:24:37 [INFO] - Start scraping from start date: 20251213 to 20251215
+2025-12-15 03:24:37 [INFO] - page_start: 0
+2025-12-15 03:24:37 [INFO] - Fetching data from API Filings...
+2025-12-15 03:24:37 [INFO] - Response status: 200
+2025-12-15 03:24:37 [WARNING] - WARNING: API returned None
+2025-12-15 03:24:37 [INFO] - No more announcements found — stopping pagination.
+2025-12-15 03:24:49 [INFO] - Fetching data from API Filings...
+2025-12-15 03:24:49 [INFO] - Response status: 200
+2025-12-15 03:24:49 [WARNING] - WARNING: API returned None
+2025-12-15 03:24:49 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-15 03:24:49 [INFO] - [SGX FILINGS] Scraping completed. Total records: 0
+2025-12-15 03:24:49 [INFO] - [sgx_filings] is empty, skipping clean payload
+2025-12-15 03:24:51 [INFO] - Length data top_70: 0 | Length data not top_70: 0
+2025-12-15 03:24:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-15 03:24:51 [INFO] - Processing remove duplicate data
+2025-12-15 03:24:51 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-15 03:24:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-15 03:24:51 [INFO] - No SGX filings data to filter.
+2025-12-15 03:24:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-15 03:24:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-15 03:24:51 [INFO] - No SGX filings alerts to send.
+2025-12-15 03:24:51 [INFO] - [sgx_payload] is empty, skipping push to DB
