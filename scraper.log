@@ -4688,3 +4688,42 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-15 03:26:37 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-12-15 03:26:37 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-15 03:26:37 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-12-16 03:18:42 [INFO] - Init Global Variable
+2025-12-16 03:19:01 [INFO] - Scraping from None to None...
+2025-12-16 03:19:01 [INFO] - Start scraping from start date: 20251214 to 20251216
+2025-12-16 03:19:01 [INFO] - page_start: 0
+2025-12-16 03:19:01 [INFO] - Fetching data from API Filings...
+2025-12-16 03:19:02 [INFO] - Response status: 200
+2025-12-16 03:19:02 [INFO] - Fetched 6 announcements
+2025-12-16 03:19:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PXCO13DJ1CH7JSG4/2f05ffe837e5ddc44096f51efb45c8dec84e5c6709313b4548e2d5bdc9edca25 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PXCO13DJ1CH7JSG4/869862__eFORM1V2-NKS.pdf
+2025-12-16 03:19:04 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ASPIAL LIFESTYLE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/PXCO13DJ1CH7JSG4/2f05ffe837e5ddc44096f51efb45c8dec84e5c6709313b4548e2d5bdc9edca25
+2025-12-16 03:19:05 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S2HLAMPCRPKQLE96/1d70cdf53f93fda46ed08d878fda04d2c432c4efe2866760ebef3c94c34e20ec pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S2HLAMPCRPKQLE96/869858__eFORM1V2%20-%20Dr%20Ng%20Chin%20Siau.pdf
+2025-12-16 03:19:11 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1H5FIED413833AHI/9383fcd46200b686d9182b93bfed973e50537a6735e62784f5bfdd4cadfec410 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1H5FIED413833AHI/869856__eFORM1V2%20-%20Professor%20Chew.pdf
+2025-12-16 03:19:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XMU9188PXMALZYUF/1cad280cdf59aad58adfaeeac369b3159e78668e7b367f0191b99016efe3d5ce pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XMU9188PXMALZYUF/869809__eFORM6V2_15Dec2025.pdf
+2025-12-16 03:19:20 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-16 03:19:20 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-16 03:19:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GCJR1JL8BDSS639J/a0529847b66a0a567f23d4bc33a738f9c10213a72d0d6dbb741358ba3152fe3d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GCJR1JL8BDSS639J/869804__FORM1_Chew%20Choon%20Tee.pdf
+2025-12-16 03:19:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4Y0ZCY5GWSENZ2D7/03c5f6b748109703b2977d396578dbc0d881afa86572bbc6f9a3217049da0eac pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4Y0ZCY5GWSENZ2D7/869796__eFORM3V2-LLC.pdf
+2025-12-16 03:19:34 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4Y0ZCY5GWSENZ2D7/869796__eFORM3V2-LLC.pdf: All transactions have no direct interest change and total shares change
+2025-12-16 03:19:34 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LENDLEASE GLOBAL COMMERCIAL TRUST MANAGEMENT PTE. LTD.  detail url: https://links.sgx.com/1.0.0/corporate-announcements/4Y0ZCY5GWSENZ2D7/03c5f6b748109703b2977d396578dbc0d881afa86572bbc6f9a3217049da0eac
+2025-12-16 03:19:37 [INFO] - page_start: 1
+2025-12-16 03:19:37 [INFO] - Fetching data from API Filings...
+2025-12-16 03:19:37 [INFO] - Response status: 200
+2025-12-16 03:19:37 [WARNING] - WARNING: API returned None
+2025-12-16 03:19:37 [INFO] - No more announcements found — stopping pagination.
+2025-12-16 03:19:49 [INFO] - Fetching data from API Filings...
+2025-12-16 03:19:50 [INFO] - Response status: 200
+2025-12-16 03:19:50 [WARNING] - WARNING: API returned None
+2025-12-16 03:19:50 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-16 03:19:50 [INFO] - [SGX FILINGS] Scraping completed. Total records: 7
+2025-12-16 03:19:51 [INFO] - Length data top_70: 2 | Length data not top_70: 5
+2025-12-16 03:19:51 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-16 03:19:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-16 03:19:51 [INFO] - Processing remove duplicate data
+2025-12-16 03:19:51 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-16 03:19:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-16 03:19:51 [INFO] - Filtering completed. Insertable: 0 | Not insertable: 2
+2025-12-16 03:19:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-16 03:19:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-16 03:19:52 [INFO] - Email sent! Message ID: 011c019b252be337-4c52ed7e-0ead-4371-b386-6e8d64f18132-000000
+2025-12-16 03:19:52 [INFO] - [sgx_payload] is empty, skipping push to DB
