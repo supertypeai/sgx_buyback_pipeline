@@ -4754,3 +4754,85 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-16 03:21:53 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-16 03:21:53 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-17 03:14:33 [INFO] - Init Global Variable
+2025-12-17 03:14:53 [INFO] - Scraping from None to None...
+2025-12-17 03:14:53 [INFO] - Start scraping from start date: 20251215 to 20251217
+2025-12-17 03:14:53 [INFO] - page_start: 0
+2025-12-17 03:14:53 [INFO] - Fetching data from API Filings...
+2025-12-17 03:14:53 [INFO] - Response status: 200
+2025-12-17 03:14:53 [INFO] - Fetched 10 announcements
+2025-12-17 03:14:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RWFU9PUJUO21KZ58/3377ee144b4a299c1f5e1210154f92f292c1ef7c55b01be24466c5cf293ea0b5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RWFU9PUJUO21KZ58/869979__Form%205%20-%2016%20Dec%202025.pdf
+2025-12-17 03:14:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/RWFU9PUJUO21KZ58/869979__Form%205%20-%2016%20Dec%202025.pdf: All transactions have no direct interest change and total shares change
+2025-12-17 03:14:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ESR TRUST MANAGEMENT (SUNTEC) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/RWFU9PUJUO21KZ58/3377ee144b4a299c1f5e1210154f92f292c1ef7c55b01be24466c5cf293ea0b5
+2025-12-17 03:14:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JTLQ1HXQWSLRH5MU/2e81df3a50ccc5faacfdccd83031ac2dc775141d0b53c305f527176f806a7cba pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JTLQ1HXQWSLRH5MU/869951__Form%203%20-%20UMPL%20and%20Others_Final.pdf
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:04 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-17 03:15:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-17 03:15:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-17 03:15:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-17 03:15:06 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/I6MRXART7NVJDXQ2/b02eb95ae4b7a0ea12bbfd72f07cf570ccb325c0a0137681c2f45b54aa3fe503 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/I6MRXART7NVJDXQ2/869949__Form%203%20-%20Final.pdf
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:11 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/I6MRXART7NVJDXQ2/869949__Form%203%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-17 03:15:11 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SUNRISE SHARES HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/I6MRXART7NVJDXQ2/b02eb95ae4b7a0ea12bbfd72f07cf570ccb325c0a0137681c2f45b54aa3fe503
+2025-12-17 03:15:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ECA4M3GE93SV15XK/97101e0074ad873a8b6bb8c1f7378642e1c29aa605e822da5463e7b31c17d9c4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ECA4M3GE93SV15XK/869925__eFORM1V2_LYH_11%20DEC%2025_FINAL.pdf
+2025-12-17 03:15:12 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MONEYMAX FINANCIAL SERVICES LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/ECA4M3GE93SV15XK/97101e0074ad873a8b6bb8c1f7378642e1c29aa605e822da5463e7b31c17d9c4
+2025-12-17 03:15:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4HX5EW2ANFZSXZ16/59cfba2ad2660dec64f960cdddda13c7ac6bca98262c733d5847a06498df2c9f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4HX5EW2ANFZSXZ16/869922__eFORM1V2_LYS_11Dec25_FINAL.pdf
+2025-12-17 03:15:14 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MONEYMAX FINANCIAL SERVICES LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/4HX5EW2ANFZSXZ16/59cfba2ad2660dec64f960cdddda13c7ac6bca98262c733d5847a06498df2c9f
+2025-12-17 03:15:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2GQH56DUYJCXJR6T/2c6ab3f777d01827f49ffc4c7f02a6350cda2e8f6976bc6e8a4b5496a6a0fca3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2GQH56DUYJCXJR6T/869915__eFORM1V2_LYG_11DEC25_FINAL.pdf
+2025-12-17 03:15:16 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MONEYMAX FINANCIAL SERVICES LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/2GQH56DUYJCXJR6T/2c6ab3f777d01827f49ffc4c7f02a6350cda2e8f6976bc6e8a4b5496a6a0fca3
+2025-12-17 03:15:17 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EO2BNV04OIHYRVUD/1a012f15bbcf0df052735c1c3f9d45e91b5041ee70faa8660d4fbb64388a1aa8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EO2BNV04OIHYRVUD/869910__Form%201%20-%20THB%20-%2016.12.2025.pdf
+2025-12-17 03:15:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SP7GKWGTC8LAZXIM/a40e2504f62e98b641e953df8746045ed1af80cfd45517e304da51d3dc9fe286 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SP7GKWGTC8LAZXIM/869889__eFORM1V2-Han%20Seng%20Juan-20251216.pdf
+2025-12-17 03:15:30 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LUE990WSRW6I56EF/b129f678c4a7d2907553ec536faee3464b951c2212166f504d7ba2143d638450 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LUE990WSRW6I56EF/869887__FORM1%20-%20Mr%20Yeo%20Puay%20Hin.pdf
+2025-12-17 03:15:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KJRN524FXR8DIXHV/0e50d94a769e3ff83b5129137787db0221e2a950c5eb75da40b51faedf2a2d15 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KJRN524FXR8DIXHV/869872__Lippo_H2G%20-%20Form%203%20-%2015.12.2025%20-%20FINAL.pdf
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-17 03:15:43 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-17 03:15:51 [INFO] - page_start: 1
+2025-12-17 03:15:51 [INFO] - Fetching data from API Filings...
+2025-12-17 03:15:51 [INFO] - Response status: 200
+2025-12-17 03:15:51 [WARNING] - WARNING: API returned None
+2025-12-17 03:15:51 [INFO] - No more announcements found — stopping pagination.
+2025-12-17 03:16:03 [INFO] - Fetching data from API Filings...
+2025-12-17 03:16:03 [INFO] - Response status: 200
+2025-12-17 03:16:03 [WARNING] - WARNING: API returned None
+2025-12-17 03:16:03 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-17 03:16:03 [INFO] - [SGX FILINGS] Scraping completed. Total records: 7
+2025-12-17 03:16:04 [INFO] - Length data top_70: 0 | Length data not top_70: 7
+2025-12-17 03:16:04 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-17 03:16:04 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-17 03:16:04 [INFO] - Processing remove duplicate data
+2025-12-17 03:16:04 [INFO] - Length data after duplicate removing: 0
+2025-12-17 03:16:04 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-17 03:16:04 [INFO] - No SGX filings data to filter.
+2025-12-17 03:16:04 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-17 03:16:04 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-17 03:16:04 [INFO] - No SGX filings alerts to send.
+2025-12-17 03:16:04 [INFO] - [sgx_payload] is empty, skipping push to DB
