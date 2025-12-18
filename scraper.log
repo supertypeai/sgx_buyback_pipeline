@@ -4863,3 +4863,64 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-17 03:18:18 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-17 03:18:19 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-18 03:15:04 [INFO] - Init Global Variable
+2025-12-18 03:15:29 [INFO] - Scraping from None to None...
+2025-12-18 03:15:29 [INFO] - Start scraping from start date: 20251216 to 20251218
+2025-12-18 03:15:29 [INFO] - page_start: 0
+2025-12-18 03:15:29 [INFO] - Fetching data from API Filings...
+2025-12-18 03:15:29 [INFO] - Response status: 200
+2025-12-18 03:15:29 [INFO] - Fetched 12 announcements
+2025-12-18 03:15:30 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6HFW86XOIFQ8FV1Q/c64308e41da96d1d41d14864027c2d409046470bc178097b2c5d7e8f005770e8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6HFW86XOIFQ8FV1Q/870067__Tower_TIHPL%20Form%203_Entry%20into%20SPA.pdf
+2025-12-18 03:15:34 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-18 03:15:34 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-18 03:15:34 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/6HFW86XOIFQ8FV1Q/870067__Tower_TIHPL%20Form%203_Entry%20into%20SPA.pdf: All transactions have no direct interest change and total shares change
+2025-12-18 03:15:34 [INFO] - [SGX FILINGS] Data not valid found for issuer name: OUE HEALTHCARE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/6HFW86XOIFQ8FV1Q/c64308e41da96d1d41d14864027c2d409046470bc178097b2c5d7e8f005770e8
+2025-12-18 03:15:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YSEJJMFKWUXLHOYQ/9e29f7bf6f39e0c95a4cd33dba17c0186ab25fe2513df86bc8e91495c638bdd2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YSEJJMFKWUXLHOYQ/870065__eFORM1V2%20-%20Terence.pdf
+2025-12-18 03:15:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/A01EI2NLU2FHPDTW/785ebd91d9846d3cc0b6bf621570869127b6ad0ff3fb636ad3c70a267861b9d6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/A01EI2NLU2FHPDTW/870055__Form%203%20-%20Sam%20Goi%20-%20Tat%20Seng%20dd%2017.12.25.pdf
+2025-12-18 03:15:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:15:41 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/A01EI2NLU2FHPDTW/870055__Form%203%20-%20Sam%20Goi%20-%20Tat%20Seng%20dd%2017.12.25.pdf: All transactions have no direct interest change and total shares change
+2025-12-18 03:15:41 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TAT SENG PACKAGING GROUP LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/A01EI2NLU2FHPDTW/785ebd91d9846d3cc0b6bf621570869127b6ad0ff3fb636ad3c70a267861b9d6
+2025-12-18 03:15:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/F3MUD8E3QX1HTEGG/0af201776a839b9ba6783b0ea7d0120f221a77bb6b127622e000f950b443e4a5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/F3MUD8E3QX1HTEGG/870053__Form%201%20-%20Sam%20Goi%20dd%2017.12.25.pdf
+2025-12-18 03:15:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KE0MW9I1G4KMZ9EU/02c9d667e7ac6e457ab294be94e15befed07af626e0f962e3bdb7c1eb9b916f2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KE0MW9I1G4KMZ9EU/870042__20251217%20-%20XMH_Form%201_TTY.pdf
+2025-12-18 03:15:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GCFUYMJY3XOPRUJW/a2fe344e460d045c0e1a15f8a2fd1af7674d1d3cc88d7cbb03f1cf3736665a2f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GCFUYMJY3XOPRUJW/870035__20251217%20-%20LGH_Form%201_CLH.pdf
+2025-12-18 03:16:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/V5L2EOAGEIDYGUEB/57163a245e317068fecf3d282f75e9e7f0d7eaffdcfebc959321a6112f1d4094 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/V5L2EOAGEIDYGUEB/870025__eFORM1V2%20-%20TNK%20-%2017%20Dec%202025%20-%20final.pdf
+2025-12-18 03:16:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M5O3AVJQ4RRIIVYG/24c5aa031c95d0459ca9084c27cd6203904d4eb727d8d69810a6def9fb46432f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M5O3AVJQ4RRIIVYG/870021__AAL-eFORM3V2-Ms%20Lay%20Kheng%20v1-Final.pdf
+2025-12-18 03:16:12 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:16:12 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/M5O3AVJQ4RRIIVYG/870021__AAL-eFORM3V2-Ms%20Lay%20Kheng%20v1-Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-18 03:16:12 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ANNAIK LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/M5O3AVJQ4RRIIVYG/24c5aa031c95d0459ca9084c27cd6203904d4eb727d8d69810a6def9fb46432f
+2025-12-18 03:16:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4YX0FPU2H5QHQS3D/9bfdbad60026c6335e51e436133a9cf9b0608bfbbf41525ded4520af19bb2bf0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4YX0FPU2H5QHQS3D/870019__AAL-eFORM3V2-Mr%20Sim%20Yam%20v1-Final.pdf
+2025-12-18 03:16:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KYKL30XB0U7QBQGM/2ff226c723d6180714a8e681bc59558ed029d97bb643fd672ab13a292aa829ca pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KYKL30XB0U7QBQGM/870017__AAL-eFORM3V2-Mrs%20Ow%20v1-Final.pdf
+2025-12-18 03:16:27 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZBU8QNZIVNNNYNZO/33ecffd5b2e44ba12473961fe00ff979633c59f20084ea416b21ae321e17fac2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZBU8QNZIVNNNYNZO/870015__AAL-eFORM1V2-Mr%20Ow%20v1-Final.pdf
+2025-12-18 03:16:29 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:16:29 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:16:29 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Purchase of 1,250,000 ordinary voting shares in the share capital of the Company via a married deal by his spouse, Ms Low Kheng with a shareholder of the Company, Mr Low Sim Yam. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-18 03:16:29 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:16:29 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:16:29 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Purchase of 400,000 ordinary voting shares in the share capital of the Company via a married deal by his spouse, Ms Low Kheng with a shareholder of the Company, Mr Low Sim Yam. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-18 03:16:29 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ZBU8QNZIVNNNYNZO/870015__AAL-eFORM1V2-Mr%20Ow%20v1-Final.pdf: All transactions have no direct interest change and total shares change
+2025-12-18 03:16:29 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ANNAIK LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ZBU8QNZIVNNNYNZO/33ecffd5b2e44ba12473961fe00ff979633c59f20084ea416b21ae321e17fac2
+2025-12-18 03:16:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DIPFIGWCGMADQWV6/8faf7435d7e09752154e9eecac5f22bd9fc101475ccdf3e338918e9ce03b1dea pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DIPFIGWCGMADQWV6/870013__AAL-eFORM1V2-Benedict-Final.pdf
+2025-12-18 03:16:32 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:16:32 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-18 03:16:32 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Purchase of 400,000 ordinary voting shares in the share capital of the Company via a married deal by his spouse, Ms Heng Hui Lyn with a shareholder of the Company, Mr Low Sim Yam. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-18 03:16:42 [INFO] - page_start: 1
+2025-12-18 03:16:42 [INFO] - Fetching data from API Filings...
+2025-12-18 03:16:42 [INFO] - Response status: 200
+2025-12-18 03:16:42 [WARNING] - WARNING: API returned None
+2025-12-18 03:16:42 [INFO] - No more announcements found — stopping pagination.
+2025-12-18 03:16:54 [INFO] - Fetching data from API Filings...
+2025-12-18 03:16:54 [INFO] - Response status: 200
+2025-12-18 03:16:54 [WARNING] - WARNING: API returned None
+2025-12-18 03:16:54 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-18 03:16:54 [INFO] - [SGX FILINGS] Scraping completed. Total records: 12
+2025-12-18 03:16:55 [INFO] - Length data top_70: 0 | Length data not top_70: 12
+2025-12-18 03:16:55 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-18 03:16:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-18 03:16:55 [INFO] - Processing remove duplicate data
+2025-12-18 03:16:55 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-18 03:16:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-18 03:16:55 [INFO] - No SGX filings data to filter.
+2025-12-18 03:16:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-18 03:16:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-18 03:16:55 [INFO] - No SGX filings alerts to send.
+2025-12-18 03:16:55 [INFO] - [sgx_payload] is empty, skipping push to DB
