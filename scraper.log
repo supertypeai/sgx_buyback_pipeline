@@ -4951,3 +4951,97 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-18 03:18:49 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-18 03:18:49 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-19 03:18:11 [INFO] - Init Global Variable
+2025-12-19 03:18:42 [INFO] - Scraping from None to None...
+2025-12-19 03:18:42 [INFO] - Start scraping from start date: 20251217 to 20251219
+2025-12-19 03:18:42 [INFO] - page_start: 0
+2025-12-19 03:18:42 [INFO] - Fetching data from API Filings...
+2025-12-19 03:18:42 [INFO] - Response status: 200
+2025-12-19 03:18:42 [INFO] - Fetched 17 announcements
+2025-12-19 03:18:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QQKYCS6QKVS2EBE6/43ff6344fa1991cd81845bf828deb5300a85b59947e97cf2a6ab3088a3b38730 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QQKYCS6QKVS2EBE6/870186__Digital%20Core%20REIT%20Form%203%20FINAL.pdf
+2025-12-19 03:18:46 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/QQKYCS6QKVS2EBE6/870186__Digital%20Core%20REIT%20Form%203%20FINAL.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:18:46 [INFO] - [SGX FILINGS] Data not valid found for issuer name: DIGITAL CORE REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/QQKYCS6QKVS2EBE6/43ff6344fa1991cd81845bf828deb5300a85b59947e97cf2a6ab3088a3b38730
+2025-12-19 03:18:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/15YUAHEUY7RAYGMW/2ddbbd7575638d47506bbfeb5fee19623414795b990b46e3d2ed69ebb1e6fd5a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/15YUAHEUY7RAYGMW/870177__30846609_Form%201%20-%20Jeffrey.pdf
+2025-12-19 03:18:47 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SHEN YAO HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/15YUAHEUY7RAYGMW/2ddbbd7575638d47506bbfeb5fee19623414795b990b46e3d2ed69ebb1e6fd5a
+2025-12-19 03:18:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7ZK9EWUV8Q3SOCX8/26b741c70909cf13dc27a03e321b136d05c08323d2e41a33c7bf8765ffdf42a3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7ZK9EWUV8Q3SOCX8/870164__eFORM3V2_18122025.pdf
+2025-12-19 03:18:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-19 03:18:50 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/7ZK9EWUV8Q3SOCX8/870164__eFORM3V2_18122025.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:18:50 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/7ZK9EWUV8Q3SOCX8/26b741c70909cf13dc27a03e321b136d05c08323d2e41a33c7bf8765ffdf42a3
+2025-12-19 03:18:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/R3H47N9RD51XUH5M/9dcb54020690c6dff151e629cf239d197670bf6c0680d9273eacfc2a2348ad2f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/R3H47N9RD51XUH5M/870162__eFORM1V2%20-%20Dr.%20Ng%20Chin%20Siau.pdf
+2025-12-19 03:18:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZVGE8TXJSKHEXLMK/e01e093d75f82aed6555e75c415f1976830199360395de4373dee4d0dc0535f9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZVGE8TXJSKHEXLMK/870157__eFORM3V2%20-%20KLWC%20-%2018%20Dec%202025%20-%20final.pdf
+2025-12-19 03:19:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/W02E43OWNXY56WOX/60c3996a04e4c38c45e4ffbdd683e6668904fbbe20fabe8f2a3a79a1e6eb5012 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/W02E43OWNXY56WOX/870155__eFORM3V2%20-%20Mark%20Phillip%20Jones%20-%2018%20Dec%202025%20-%20final.pdf
+2025-12-19 03:19:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-19 03:19:04 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/W02E43OWNXY56WOX/870155__eFORM3V2%20-%20Mark%20Phillip%20Jones%20-%2018%20Dec%202025%20-%20final.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:04 [INFO] - [SGX FILINGS] Data not valid found for issuer name: BEVERLY WILSHIRE LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/W02E43OWNXY56WOX/60c3996a04e4c38c45e4ffbdd683e6668904fbbe20fabe8f2a3a79a1e6eb5012
+2025-12-19 03:19:05 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QHV78REINERBJX4C/57904abf700bd310fe315cd18540e8eb87c4d1695a4901cfeff1e97c0d349782 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QHV78REINERBJX4C/870150__eFORM3V2%20-%20Dato%20Ng%20Tian%20Sang%20-%2017%20Dec%202025%20-%20final.pdf
+2025-12-19 03:19:07 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-19 03:19:07 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/QHV78REINERBJX4C/870150__eFORM3V2%20-%20Dato%20Ng%20Tian%20Sang%20-%2017%20Dec%202025%20-%20final.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:07 [INFO] - [SGX FILINGS] Data not valid found for issuer name: BEVERLY WILSHIRE LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/QHV78REINERBJX4C/57904abf700bd310fe315cd18540e8eb87c4d1695a4901cfeff1e97c0d349782
+2025-12-19 03:19:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GAV723HMQV5ULSZ7/28eccab892e73b03173e14328c28f3529ba62f7067eafaa4682d47d312e5e3d0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GAV723HMQV5ULSZ7/870143__Form%201_Roland%20Ng.pdf
+2025-12-19 03:19:08 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CSC HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/GAV723HMQV5ULSZ7/28eccab892e73b03173e14328c28f3529ba62f7067eafaa4682d47d312e5e3d0
+2025-12-19 03:19:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AVKJ2SUEF6L67SZW/92ebae42856c938e55f6a86218bd696f515fab62df3547f6d3bb339b5b1ec65b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AVKJ2SUEF6L67SZW/870140__Form%201_Koo%20Chung%20Chong.pdf
+2025-12-19 03:19:09 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CSC HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/AVKJ2SUEF6L67SZW/92ebae42856c938e55f6a86218bd696f515fab62df3547f6d3bb339b5b1ec65b
+2025-12-19 03:19:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JU3TWWLH4AQJD76I/c3dd53c4762a0f66c76617347bd0051fd3eff105dc5474e19c0ffe641b717eaa pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JU3TWWLH4AQJD76I/870138__Form%201_See%20Yen%20Tarn.pdf
+2025-12-19 03:19:10 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CSC HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/JU3TWWLH4AQJD76I/c3dd53c4762a0f66c76617347bd0051fd3eff105dc5474e19c0ffe641b717eaa
+2025-12-19 03:19:11 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/J07NPNO9EMU9FTIJ/db64743c686cb05ef7edcfc0d9e5138e491321854736963679a20965aa0c4bc7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/J07NPNO9EMU9FTIJ/870136__Form%203%20-%20Sam%20Goi%20-%20Tat%20Seng%20dd%2018.12.25.pdf
+2025-12-19 03:19:13 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-19 03:19:13 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/J07NPNO9EMU9FTIJ/870136__Form%203%20-%20Sam%20Goi%20-%20Tat%20Seng%20dd%2018.12.25.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TAT SENG PACKAGING GROUP LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/J07NPNO9EMU9FTIJ/db64743c686cb05ef7edcfc0d9e5138e491321854736963679a20965aa0c4bc7
+2025-12-19 03:19:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/P3W91AM1WMYUS1C5/bedfb43d0b0fa90340e63fa007f85afb10875175476a940648a4f363a085be3a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/P3W91AM1WMYUS1C5/870132__Form%201%20-%20Sam%20Goi%20dd%2018.12.25.pdf
+2025-12-19 03:19:17 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OI7MDAHPV2PHBN4X/9072a1e520770de6672f4a732418d5d5db7a71c2000ca1ba298faf862df98c17 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OI7MDAHPV2PHBN4X/870123__JBFL%20-%20Form%203.pdf
+2025-12-19 03:19:19 [INFO] - [get_transaction_type_from_desc] transfer ignore due to value is not None
+2025-12-19 03:19:19 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/OI7MDAHPV2PHBN4X/870123__JBFL%20-%20Form%203.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:19 [INFO] - [SGX FILINGS] Data not valid found for issuer name: JB FOODS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/OI7MDAHPV2PHBN4X/9072a1e520770de6672f4a732418d5d5db7a71c2000ca1ba298faf862df98c17
+2025-12-19 03:19:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HK3NE8YPQTAKWID6/098b4c441d7bf79639b46eb02a6039d076176e50b2b0d8fb1bd98477921e1274 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HK3NE8YPQTAKWID6/870120__OUEH%20Form%203_ASM_TIHPL%20Acq%2016%20Dec%202025.pdf
+2025-12-19 03:19:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:23 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HK3NE8YPQTAKWID6/870120__OUEH%20Form%203_ASM_TIHPL%20Acq%2016%20Dec%202025.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:23 [INFO] - [SGX FILINGS] Data not valid found for issuer name: OUE HEALTHCARE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HK3NE8YPQTAKWID6/098b4c441d7bf79639b46eb02a6039d076176e50b2b0d8fb1bd98477921e1274
+2025-12-19 03:19:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GPYPRS86VKNDMZET/05a6f658968a8806a933ad7c31123919e8480e36797a088e911e576a7b65c0c7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GPYPRS86VKNDMZET/870115__OUEH%20Form%203_Lippo_TIHPL%20Acq%2016%20Dec%202025.pdf
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-19 03:19:28 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/GPYPRS86VKNDMZET/870115__OUEH%20Form%203_Lippo_TIHPL%20Acq%2016%20Dec%202025.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:28 [INFO] - [SGX FILINGS] Data not valid found for issuer name: OUE HEALTHCARE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/GPYPRS86VKNDMZET/05a6f658968a8806a933ad7c31123919e8480e36797a088e911e576a7b65c0c7
+2025-12-19 03:19:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3O15S11PH1I2SIKL/877ca677f9efeb3c90a3386aa2e16f6ba6d9d059c80e4cc4974f66ab9fcd0b54 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3O15S11PH1I2SIKL/870113__eFORM3V2_Eagleston%20Resources_fin.pdf
+2025-12-19 03:19:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-19 03:19:31 [INFO] - Transfer detected - transformed shareholder: Eagleston Resources Pte Ltd -> None
+2025-12-19 03:19:31 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/3O15S11PH1I2SIKL/870113__eFORM3V2_Eagleston%20Resources_fin.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:31 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEPTAMAX INTERNATIONAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/3O15S11PH1I2SIKL/877ca677f9efeb3c90a3386aa2e16f6ba6d9d059c80e4cc4974f66ab9fcd0b54
+2025-12-19 03:19:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1E66OFGWFKS71W15/963ea8a3f4a4a6b7220344a47d599d795c5febe06ff2f04fea4d6142c0f039a1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1E66OFGWFKS71W15/870111__eFORM3V2_Dennis_fin.pdf
+2025-12-19 03:19:33 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-19 03:19:33 [INFO] - Transfer detected - transformed shareholder: Wan Jinn Woei -> None
+2025-12-19 03:19:33 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/1E66OFGWFKS71W15/870111__eFORM3V2_Dennis_fin.pdf: All transactions have no direct interest change and total shares change
+2025-12-19 03:19:33 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEPTAMAX INTERNATIONAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/1E66OFGWFKS71W15/963ea8a3f4a4a6b7220344a47d599d795c5febe06ff2f04fea4d6142c0f039a1
+2025-12-19 03:19:41 [INFO] - page_start: 1
+2025-12-19 03:19:41 [INFO] - Fetching data from API Filings...
+2025-12-19 03:19:42 [INFO] - Response status: 200
+2025-12-19 03:19:42 [WARNING] - WARNING: API returned None
+2025-12-19 03:19:42 [INFO] - No more announcements found — stopping pagination.
+2025-12-19 03:19:54 [INFO] - Fetching data from API Filings...
+2025-12-19 03:19:54 [INFO] - Response status: 200
+2025-12-19 03:19:54 [WARNING] - WARNING: API returned None
+2025-12-19 03:19:54 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-19 03:19:54 [INFO] - [SGX FILINGS] Scraping completed. Total records: 3
+2025-12-19 03:19:55 [INFO] - Length data top_70: 0 | Length data not top_70: 3
+2025-12-19 03:19:55 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-19 03:19:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-19 03:19:55 [INFO] - Processing remove duplicate data
+2025-12-19 03:19:55 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-19 03:19:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-19 03:19:55 [INFO] - No SGX filings data to filter.
+2025-12-19 03:19:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-19 03:19:55 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-19 03:19:55 [INFO] - No SGX filings alerts to send.
+2025-12-19 03:19:55 [INFO] - [sgx_payload] is empty, skipping push to DB
