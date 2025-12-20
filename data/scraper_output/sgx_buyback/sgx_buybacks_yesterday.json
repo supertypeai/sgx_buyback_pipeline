@@ -1,40 +1,40 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/1K5VSOH5R2N70YEQ/7f129aa8b1b34a611ca9d468122da4b22426fb3d0626db831f9ac48b44c91346",
-    "symbol": "S58",
-    "purchase_date": "2025-12-18",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/GC4G6PT700D5GXV5/24c1b2abc2e08a69befe843603ef059d300075719631cf821274ef33fa727522",
+    "symbol": "F99",
+    "purchase_date": "2025-12-19",
     "type": "On Market",
     "price_per_share": {
-      "highest": 3.75,
-      "lowest": 3.7
+      "highest": 1.48,
+      "lowest": 1.48
     },
-    "total_value": 745893.26,
-    "total_shares_purchased": 200000,
-    "treasury_shares_after_purchase": 8224605,
+    "total_value": 22525.81,
+    "total_shares_purchased": 15200,
+    "treasury_shares_after_purchase": 1658630,
     "mandate": {
-      "mandate_total": 29870031,
-      "cumulative_purchased": 6756300,
-      "mandate_remaining": 23113731,
-      "mandate_start": "2025-07-25",
-      "mandate_end": "2026-07-25"
+      "mandate_total": 101970158,
+      "cumulative_purchased": 1550900,
+      "mandate_remaining": 100419258,
+      "mandate_start": "2025-01-16",
+      "mandate_end": "2026-01-16"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XQ0C551ET9S5HYHT/f3ba343f1b1febfbc97d89c501d149417de4ab2f58f8ebba325980f8c208271d",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/IC9NR0AJV6EPD1P9/2a72b17bf841b0f69bf2b4d70202f5885bff2ba22322cb9084d51dbdbf2150e2",
     "symbol": "BN4",
-    "purchase_date": "2025-12-18",
+    "purchase_date": "2025-12-19",
     "type": "On Market",
     "price_per_share": {
-      "highest": 10.12,
-      "lowest": 10.06
+      "highest": 10.09,
+      "lowest": 10.01
     },
-    "total_value": 504819.65,
+    "total_value": 503458.18,
     "total_shares_purchased": 50000,
-    "treasury_shares_after_purchase": 18497940,
+    "treasury_shares_after_purchase": 18547940,
     "mandate": {
       "mandate_total": 90741740,
-      "cumulative_purchased": 12820000,
-      "mandate_remaining": 77921740,
+      "cumulative_purchased": 12870000,
+      "mandate_remaining": 77871740,
       "mandate_start": "2025-04-21",
       "mandate_end": "2026-04-21"
     }
