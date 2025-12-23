@@ -5164,3 +5164,84 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-22 03:28:38 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-12-22 03:28:38 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-22 03:28:38 [INFO] - [sgx_payload] is empty, skipping push to DB
+2025-12-23 03:20:36 [INFO] - Init Global Variable
+2025-12-23 03:21:02 [INFO] - Scraping from None to None...
+2025-12-23 03:21:02 [INFO] - Start scraping from start date: 20251221 to 20251223
+2025-12-23 03:21:02 [INFO] - page_start: 0
+2025-12-23 03:21:02 [INFO] - Fetching data from API Filings...
+2025-12-23 03:21:02 [INFO] - Response status: 200
+2025-12-23 03:21:02 [INFO] - Fetched 15 announcements
+2025-12-23 03:21:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZGGGAR1IG2433I29/3c27e22cbe08ca000642e28513135c162691367df85d3c6ef00f5586cf187d8c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZGGGAR1IG2433I29/870375__eFORM1V2_KelvinChow_221225.pdf
+2025-12-23 03:21:09 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/G8JKLENBRC5PWEHM/9f05e3df0cfee01b000d808506a3b260861f40475c54f017b08edaa1263885c6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/G8JKLENBRC5PWEHM/870350__LMIRT_Form%206%20Provisional%20Allotment_Mgr_Final.pdf
+2025-12-23 03:21:09 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LMIRT MANAGEMENT LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/G8JKLENBRC5PWEHM/9f05e3df0cfee01b000d808506a3b260861f40475c54f017b08edaa1263885c6
+2025-12-23 03:21:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/23N0WZHSMK3YJHRE/e27524a6d1f5b6526ff0e381884538225228e4c6aae76be5ec58343312b90fa9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/23N0WZHSMK3YJHRE/870348__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf
+2025-12-23 03:21:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:13 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/23N0WZHSMK3YJHRE/870348__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UNUSUAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/23N0WZHSMK3YJHRE/e27524a6d1f5b6526ff0e381884538225228e4c6aae76be5ec58343312b90fa9
+2025-12-23 03:21:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/V1WR037A2V8EEL2L/c45cd061203c0dc7dee488e85a03adb64a268860c256d487f7140a9d710ef468 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/V1WR037A2V8EEL2L/870346__vF%20-%20Hildrics%20VCC%20-%20eFORM3V2.pdf
+2025-12-23 03:21:15 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VI47NKQRKXAGW4WT/aabe432917fa3f32ac92dc05d18794178ef2bef878e524e409d27ce2e703d1ef pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VI47NKQRKXAGW4WT/870344__LMIRT_Form%201%20Provisional%20Allotment_ML_Final.pdf
+2025-12-23 03:21:19 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LMIRT MANAGEMENT LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/VI47NKQRKXAGW4WT/aabe432917fa3f32ac92dc05d18794178ef2bef878e524e409d27ce2e703d1ef
+2025-12-23 03:21:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M5V5YXMBC1HL0DRL/7276be58e47bfd8fefedf513a06343ad7baa323158e39b341712df5b878e2832 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M5V5YXMBC1HL0DRL/870342__eFORM1V2%20-%20Terence.pdf
+2025-12-23 03:21:24 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/E7ZOQ2R4MAE847E5/febf1e279e9b670f44b28124defd7b745c12289636cc5f25efbb741acc7aba72 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/E7ZOQ2R4MAE847E5/870338__ORIGGIN%20-%20Form%203.pdf
+2025-12-23 03:21:26 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:26 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/E7ZOQ2R4MAE847E5/870338__ORIGGIN%20-%20Form%203.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:26 [INFO] - [SGX FILINGS] Data not valid found for issuer name: METAOPTICS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/E7ZOQ2R4MAE847E5/febf1e279e9b670f44b28124defd7b745c12289636cc5f25efbb741acc7aba72
+2025-12-23 03:21:27 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WYU2ZXCVTOANQJNR/b5f174429873f2d1d63efe93380d947aba836e4d542328fd05777b19c428985c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WYU2ZXCVTOANQJNR/870336__MMI%20-%20Form%203.pdf
+2025-12-23 03:21:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:29 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/WYU2ZXCVTOANQJNR/870336__MMI%20-%20Form%203.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:29 [INFO] - [SGX FILINGS] Data not valid found for issuer name: METAOPTICS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/WYU2ZXCVTOANQJNR/b5f174429873f2d1d63efe93380d947aba836e4d542328fd05777b19c428985c
+2025-12-23 03:21:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GFR3NC5AKV1T0GKT/2509605740947961456fde1733fbfaf8814cb014500422abc4c11a46054dca72 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GFR3NC5AKV1T0GKT/870334__AQUASPRING%20-%20Form%203.pdf
+2025-12-23 03:21:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:31 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/GFR3NC5AKV1T0GKT/870334__AQUASPRING%20-%20Form%203.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:31 [INFO] - [SGX FILINGS] Data not valid found for issuer name: METAOPTICS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/GFR3NC5AKV1T0GKT/2509605740947961456fde1733fbfaf8814cb014500422abc4c11a46054dca72
+2025-12-23 03:21:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HB9F4WXYY0XFIRYY/d1165d26be33bddbeefad9ceda4d393fc7e7932abf42876cac3b0fc8c55d6ece pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HB9F4WXYY0XFIRYY/870332__ANGELLING%20-%20Form%203.pdf
+2025-12-23 03:21:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:35 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HB9F4WXYY0XFIRYY/870332__ANGELLING%20-%20Form%203.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:35 [INFO] - [SGX FILINGS] Data not valid found for issuer name: METAOPTICS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/HB9F4WXYY0XFIRYY/d1165d26be33bddbeefad9ceda4d393fc7e7932abf42876cac3b0fc8c55d6ece
+2025-12-23 03:21:35 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/J1I2DRJBF1N1XA3I/f5dd155d78827259397cb6b26fda82727ebad430fc1824c3ff11b8e1964e6b2c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/J1I2DRJBF1N1XA3I/870328__MST%20GROUP%20-%20Form%203.pdf
+2025-12-23 03:21:38 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:38 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:38 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:38 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/J1I2DRJBF1N1XA3I/870328__MST%20GROUP%20-%20Form%203.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:38 [INFO] - [SGX FILINGS] Data not valid found for issuer name: METAOPTICS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/J1I2DRJBF1N1XA3I/f5dd155d78827259397cb6b26fda82727ebad430fc1824c3ff11b8e1964e6b2c
+2025-12-23 03:21:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YCMWTZAMMHHRMDUY/74fb50f7840f40699b22d3b8ad2fc8e903dbb805d18fccc31e18f33756e44fb5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YCMWTZAMMHHRMDUY/870320__WEE%20JENE%20-%20Form%201.pdf
+2025-12-23 03:21:41 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:41 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/YCMWTZAMMHHRMDUY/870320__WEE%20JENE%20-%20Form%201.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:41 [INFO] - [SGX FILINGS] Data not valid found for issuer name: METAOPTICS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/YCMWTZAMMHHRMDUY/74fb50f7840f40699b22d3b8ad2fc8e903dbb805d18fccc31e18f33756e44fb5
+2025-12-23 03:21:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5AYDICJZABQDLTHE/e8d78d541e5cfdfbc46c21867bf6ab1d1af42302f258e1a4f707bdfe6fe6b150 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5AYDICJZABQDLTHE/870318__eFORM3V2_22122025.pdf
+2025-12-23 03:21:43 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:43 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/5AYDICJZABQDLTHE/870318__eFORM3V2_22122025.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:43 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/5AYDICJZABQDLTHE/e8d78d541e5cfdfbc46c21867bf6ab1d1af42302f258e1a4f707bdfe6fe6b150
+2025-12-23 03:21:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6HOFLOM0SQEISL1Z/306ee642a2e9bf648ab43eca6715f60f6a456ca1040cc5ddd5465a6fbccf5676 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6HOFLOM0SQEISL1Z/870315__MARK%20-%20Form%201.pdf
+2025-12-23 03:21:46 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-23 03:21:46 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/6HOFLOM0SQEISL1Z/870315__MARK%20-%20Form%201.pdf: All transactions have no direct interest change and total shares change
+2025-12-23 03:21:46 [INFO] - [SGX FILINGS] Data not valid found for issuer name: METAOPTICS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/6HOFLOM0SQEISL1Z/306ee642a2e9bf648ab43eca6715f60f6a456ca1040cc5ddd5465a6fbccf5676
+2025-12-23 03:21:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3HJL14X4XP7BJ0E4/cb21ccc3ba807490e15e374d5a0154950f9cbba63c090a50769af633978f0732 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3HJL14X4XP7BJ0E4/870304__Form3_KM%20TKC%20PN_final.pdf
+2025-12-23 03:21:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-23 03:21:49 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-23 03:21:57 [INFO] - page_start: 1
+2025-12-23 03:21:57 [INFO] - Fetching data from API Filings...
+2025-12-23 03:21:58 [INFO] - Response status: 200
+2025-12-23 03:21:58 [WARNING] - WARNING: API returned None
+2025-12-23 03:21:58 [INFO] - No more announcements found — stopping pagination.
+2025-12-23 03:22:09 [INFO] - Fetching data from API Filings...
+2025-12-23 03:22:10 [INFO] - Response status: 200
+2025-12-23 03:22:10 [WARNING] - WARNING: API returned None
+2025-12-23 03:22:10 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-23 03:22:10 [INFO] - [SGX FILINGS] Scraping completed. Total records: 4
+2025-12-23 03:22:11 [INFO] - Length data top_70: 0 | Length data not top_70: 4
+2025-12-23 03:22:11 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-23 03:22:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-23 03:22:11 [INFO] - Processing remove duplicate data
+2025-12-23 03:22:11 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-23 03:22:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-23 03:22:11 [INFO] - No SGX filings data to filter.
+2025-12-23 03:22:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-23 03:22:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-23 03:22:11 [INFO] - No SGX filings alerts to send.
+2025-12-23 03:22:11 [INFO] - [sgx_payload] is empty, skipping push to DB
