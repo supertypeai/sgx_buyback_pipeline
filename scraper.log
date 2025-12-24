@@ -5272,3 +5272,62 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-23 03:23:37 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-23 03:23:37 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-24 03:18:08 [INFO] - Init Global Variable
+2025-12-24 03:18:33 [INFO] - Scraping from None to None...
+2025-12-24 03:18:33 [INFO] - Start scraping from start date: 20251222 to 20251224
+2025-12-24 03:18:33 [INFO] - page_start: 0
+2025-12-24 03:18:33 [INFO] - Fetching data from API Filings...
+2025-12-24 03:18:33 [INFO] - Response status: 200
+2025-12-24 03:18:33 [INFO] - Fetched 13 announcements
+2025-12-24 03:18:34 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XQDBU61ZO5NULTQ7/7ae0e8bdb7d888fb2377551a958567ec8262c4148ba853738e4db086506ecc1f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XQDBU61ZO5NULTQ7/870494__eFORM1V2_Form%201_Adrian%20Chui.final.pdf
+2025-12-24 03:18:35 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ESR-REIT MANAGEMENT (S) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/XQDBU61ZO5NULTQ7/7ae0e8bdb7d888fb2377551a958567ec8262c4148ba853738e4db086506ecc1f
+2025-12-24 03:18:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CCXWOOHKBOLWZRUL/306d89dcdeec614cb6a3ab0d06b3c31bb9c90c61f5129412eabe37fa70bb7323 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CCXWOOHKBOLWZRUL/870492__eFORM1V2_RichardDenny_221225.pdf
+2025-12-24 03:18:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YPFH2ZVVCDNFTL26/bf41cf6d4d09250df871c46bb995137376da96c6f956d07d9f2c1da81d7437cb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YPFH2ZVVCDNFTL26/870490__eFORM1V2_TanKhaiPang_221225.pdf
+2025-12-24 03:18:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/E78MN7KET2BI9758/bea0830e036f546acbf4d2e004b44fa99a1cf9ca93f5a222626f7d0a288d6cd9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/E78MN7KET2BI9758/870479__eFORM3V2.TSH.23122025..pdf
+2025-12-24 03:18:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6NHWYSQVAX479V7O/e9428a8fe5c98803187c4409dfc1e41387580ffddfdad66a2c7c58c0c554a827 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6NHWYSQVAX479V7O/870473__eFORM5_Volare.pdf
+2025-12-24 03:19:01 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/6NHWYSQVAX479V7O/870473__eFORM5_Volare.pdf: All transactions have no direct interest change and total shares change
+2025-12-24 03:19:01 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/6NHWYSQVAX479V7O/e9428a8fe5c98803187c4409dfc1e41387580ffddfdad66a2c7c58c0c554a827
+2025-12-24 03:19:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AS8CXRFYWMYSXFPC/32695d10ce7379578f3d44c764f93820d5a23f8c874001d6e44b40592efdd4af pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AS8CXRFYWMYSXFPC/870467__eFORM3_Volare.pdf
+2025-12-24 03:19:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:03 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-24 03:19:06 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/30CWN9GUNKBPQDFS/79ce901142f61aff524e255923d9b3b8bcd4a7f3b649388d3ae87c6a29a6aae9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/30CWN9GUNKBPQDFS/870459__KDCREIT-Form%206_KDCRM_23122025_final.pdf
+2025-12-24 03:19:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Q1E0KQL0YT9KTPP5/6a9b70c2fa4afd1f490ace8fbf9da7cd4c95ea9830a2c61f36d5c30edcb0710c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Q1E0KQL0YT9KTPP5/870455__eFORM3V2_23122025.pdf
+2025-12-24 03:19:15 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-24 03:19:15 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/Q1E0KQL0YT9KTPP5/870455__eFORM3V2_23122025.pdf: All transactions have no direct interest change and total shares change
+2025-12-24 03:19:15 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/Q1E0KQL0YT9KTPP5/6a9b70c2fa4afd1f490ace8fbf9da7cd4c95ea9830a2c61f36d5c30edcb0710c
+2025-12-24 03:19:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/V72WFSPD79JIPFED/51fe26b64b8d3fc626a8c9d0c220b6b97620abc82aba220ab111b1c6c9a81ced pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/V72WFSPD79JIPFED/870453__AHL%20-%20eFORM3V2%20-%20VCC.pdf
+2025-12-24 03:19:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:18 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-24 03:19:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SQ9FRU48RBTHXC1G/c360ae9030206b57459719487111260b203f96b5e84f5aa6aa73a3f2b75035b4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SQ9FRU48RBTHXC1G/870449__AHL%20-%20eFORM1V2%20-%20Dr%20Wong.pdf
+2025-12-24 03:19:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4MHQE4HKXFU6L1JK/0ead783e4467b2ad565afda4c36d56daca232221562ab0000ae6e0001ec61a3d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4MHQE4HKXFU6L1JK/870438__eFORM3V2_KSK_%20TKS-final.pdf
+2025-12-24 03:19:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-24 03:19:29 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4MHQE4HKXFU6L1JK/870438__eFORM3V2_KSK_%20TKS-final.pdf: All transactions have no direct interest change and total shares change
+2025-12-24 03:19:29 [INFO] - [SGX FILINGS] Data not valid found for issuer name: PNE INDUSTRIES LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/4MHQE4HKXFU6L1JK/0ead783e4467b2ad565afda4c36d56daca232221562ab0000ae6e0001ec61a3d
+2025-12-24 03:19:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/W0C66J3UE20339QR/97162860238d0d7ae554a418ed44ae44966d882092b1cf00422b52b86bd0eee8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/W0C66J3UE20339QR/870434__Form%201_GLB%2023.12.2025.pdf
+2025-12-24 03:19:35 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CL0P9SHA2XE9PKKE/f14d9d7fa60d307838a4eebc52b9ad66826052c4180d9d05935cc4b1bc993132 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CL0P9SHA2XE9PKKE/870428__eFORM1V2%20-%20Terence.pdf
+2025-12-24 03:19:46 [INFO] - page_start: 1
+2025-12-24 03:19:46 [INFO] - Fetching data from API Filings...
+2025-12-24 03:19:46 [INFO] - Response status: 200
+2025-12-24 03:19:46 [WARNING] - WARNING: API returned None
+2025-12-24 03:19:46 [INFO] - No more announcements found — stopping pagination.
+2025-12-24 03:19:58 [INFO] - Fetching data from API Filings...
+2025-12-24 03:19:58 [INFO] - Response status: 200
+2025-12-24 03:19:58 [WARNING] - WARNING: API returned None
+2025-12-24 03:19:58 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-24 03:19:58 [INFO] - [SGX FILINGS] Scraping completed. Total records: 9
+2025-12-24 03:19:59 [INFO] - Length data top_70: 1 | Length data not top_70: 8
+2025-12-24 03:19:59 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-24 03:19:59 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-24 03:19:59 [INFO] - Processing remove duplicate data
+2025-12-24 03:19:59 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-24 03:19:59 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-24 03:20:00 [INFO] - Filtering completed. Insertable: 1 | Not insertable: 0
+2025-12-24 03:20:00 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-24 03:20:00 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-24 03:20:00 [INFO] - No SGX filings alerts to send.
+2025-12-24 03:20:00 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings

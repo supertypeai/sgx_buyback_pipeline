@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/30CWN9GUNKBPQDFS/870459__KDCREIT-Form%206_KDCRM_23122025_final.pdf",
+    "symbol": "AJBU",
+    "transaction_date": "2025-12-23",
+    "shareholder_name": "Keppel Dc Reit Management Pte. Ltd",
+    "number_of_stock": 2435983,
+    "value": 5805921.8822,
+    "price_per_share": 2.3834,
+    "transaction_type": "others",
+    "shares_before": 27589574,
+    "shares_before_percentage": 0.01132,
+    "shares_after": 30025557,
+    "shares_after_percentage": 0.0123
+  }
+]
