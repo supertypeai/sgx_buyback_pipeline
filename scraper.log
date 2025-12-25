@@ -5358,3 +5358,79 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-24 03:21:32 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-24 03:21:32 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2025-12-25 03:21:12 [INFO] - Init Global Variable
+2025-12-25 03:21:37 [INFO] - Scraping from None to None...
+2025-12-25 03:21:37 [INFO] - Start scraping from start date: 20251223 to 20251225
+2025-12-25 03:21:37 [INFO] - page_start: 0
+2025-12-25 03:21:37 [INFO] - Fetching data from API Filings...
+2025-12-25 03:21:37 [INFO] - Response status: 200
+2025-12-25 03:21:37 [INFO] - Fetched 9 announcements
+2025-12-25 03:21:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WYFN02GPM2M9LGX2/80102313c815fd89e3991af7f55c6f6c64104d694c3bb6ed8746700233c75a06 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WYFN02GPM2M9LGX2/870570__eFORM3%20-%2020251224.pdf
+2025-12-25 03:21:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:42 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/WYFN02GPM2M9LGX2/870570__eFORM3%20-%2020251224.pdf: All transactions have no direct interest change and total shares change
+2025-12-25 03:21:42 [INFO] - [SGX FILINGS] Data not valid found for issuer name: FIRST RESOURCES LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/WYFN02GPM2M9LGX2/80102313c815fd89e3991af7f55c6f6c64104d694c3bb6ed8746700233c75a06
+2025-12-25 03:21:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/J986HAGNELDWEJ70/eee98f1bfac3c698490f7d694ff23fd2ab3d31e9b8fd4a9812234664d4f8b8d5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/J986HAGNELDWEJ70/870560__eFORM1V2%20LHT%20Conversion%2024%20December%202025.pdf
+2025-12-25 03:21:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/B6JIWNECFKAZR3WP/9bcabf11d5698df457ee503f85fd6427490e3bbb941dafec6f02986d0b9514c5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/B6JIWNECFKAZR3WP/870555__Form%206%20-%20ESR%20MFU%20-%2023%20Dec%202025.final.pdf
+2025-12-25 03:21:51 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'ESR-REIT issued 1,083,477 new units to ESR-REIT Management (S) Limited at S$2.8190 per unit as partial payment for its base fees for the period from 1 July 2025 to 30 September 2025 ("3Q2025"). The issue price was determined based on the volume weighted average price for a unit for all trades done on the SGX-ST in the ordinary course of trading on the SGX-ST for the last 10 business days of 3Q2025. Table 1. Change in respect of  ordinary voting units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total 24,565,213 0 24,565,213'
+2025-12-25 03:21:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/O82FZJTLKGKYOU08/1b9d2f21cb0d95732368af7772921b6b65aac7679a582894be05b2151efbc393 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/O82FZJTLKGKYOU08/870545__Form%203%20-%20UMPL%20and%20Others_Final.pdf
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:21:57 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-25 03:21:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-25 03:21:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-25 03:21:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-25 03:22:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/H1FS604V09L54KHP/25eea2a6f64da00feee0d2dfbf06e498be1078529c5e55821a00449243fb54c4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/H1FS604V09L54KHP/870538__eFORM1V2_KelvinChow_241225.pdf
+2025-12-25 03:22:11 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SV3I5FYWL5QNS7GA/b0b91a1ea9fb2bc819ff283f47e66a2b4887f89cc2b4e4f4de14a8a0f3ad28be pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SV3I5FYWL5QNS7GA/870530__Form%201_Tony%20Wong_24%20Dec%202025.pdf
+2025-12-25 03:22:13 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-25 03:22:13 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'On 24 December 2025, 500,000 shares were returned to the Director under the securities borrowing and lending agreement. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2025-12-25 03:22:13 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/SV3I5FYWL5QNS7GA/870530__Form%201_Tony%20Wong_24%20Dec%202025.pdf: All transactions have no direct interest change and total shares change
+2025-12-25 03:22:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: PC PARTNER GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/SV3I5FYWL5QNS7GA/b0b91a1ea9fb2bc819ff283f47e66a2b4887f89cc2b4e4f4de14a8a0f3ad28be
+2025-12-25 03:22:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Y11UPLQ3CV5M26NJ/aaa4109353de93e4571d98cdba82ab84884b46435017abf5d4e44000f4375af3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Y11UPLQ3CV5M26NJ/870527__eFORM3V2_final%20NCY%2024Dec25.pdf
+2025-12-25 03:22:16 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:22:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:22:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:22:17 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/Y11UPLQ3CV5M26NJ/870527__eFORM3V2_final%20NCY%2024Dec25.pdf: All transactions have no direct interest change and total shares change
+2025-12-25 03:22:17 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MEDI LIFESTYLE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/Y11UPLQ3CV5M26NJ/aaa4109353de93e4571d98cdba82ab84884b46435017abf5d4e44000f4375af3
+2025-12-25 03:22:17 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IJVWTLMP9S8YNWQH/1248f0ed34ff5473a11032df3375ec2c8593f8408c7a1c7208f1cc6b64691c1e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IJVWTLMP9S8YNWQH/870525__eFORM3V2_final%20Lingholm%2024Dec25.pdf
+2025-12-25 03:22:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:22:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:22:20 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-25 03:22:20 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-25 03:22:20 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-25 03:22:20 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'As announced by the Company on 22 December 2025, the total issued share capital (excluding 20,000 treasury shares) of the Company increased from 164,136,878 shares to 378,102,012 shares, following the issuance and allotment of 213,965,134 Debt Conversion Shares in favour of Lingholm Holdings Pte Ltd ("Lingholm") pursuant to terms of Debt Conversion Deed entered into on 9 December 2024 between Lingholm and the Company.'
+2025-12-25 03:22:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XGK1GJIZQWBVUADN/abf2ab3fd03655b07d2d238cdbcf70a3b056ded18b981a39771604801756f20d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XGK1GJIZQWBVUADN/870523__eFORM3V2_24122025.pdf
+2025-12-25 03:22:23 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-25 03:22:23 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/XGK1GJIZQWBVUADN/870523__eFORM3V2_24122025.pdf: All transactions have no direct interest change and total shares change
+2025-12-25 03:22:23 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/XGK1GJIZQWBVUADN/abf2ab3fd03655b07d2d238cdbcf70a3b056ded18b981a39771604801756f20d
+2025-12-25 03:22:29 [INFO] - page_start: 1
+2025-12-25 03:22:29 [INFO] - Fetching data from API Filings...
+2025-12-25 03:22:29 [INFO] - Response status: 200
+2025-12-25 03:22:29 [WARNING] - WARNING: API returned None
+2025-12-25 03:22:29 [INFO] - No more announcements found — stopping pagination.
+2025-12-25 03:22:41 [INFO] - Fetching data from API Filings...
+2025-12-25 03:22:41 [INFO] - Response status: 200
+2025-12-25 03:22:41 [WARNING] - WARNING: API returned None
+2025-12-25 03:22:41 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-25 03:22:41 [INFO] - [SGX FILINGS] Scraping completed. Total records: 8
+2025-12-25 03:22:42 [INFO] - Length data top_70: 0 | Length data not top_70: 8
+2025-12-25 03:22:42 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-25 03:22:42 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-25 03:22:42 [INFO] - Processing remove duplicate data
+2025-12-25 03:22:42 [INFO] - Length data after duplicate removing: 0
+2025-12-25 03:22:42 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-25 03:22:42 [INFO] - No SGX filings data to filter.
+2025-12-25 03:22:42 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-25 03:22:42 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-25 03:22:42 [INFO] - No SGX filings alerts to send.
+2025-12-25 03:22:42 [INFO] - [sgx_payload] is empty, skipping push to DB
