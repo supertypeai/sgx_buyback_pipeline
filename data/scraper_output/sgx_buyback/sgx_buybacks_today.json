@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/K1R78W61RCYGNLZQ/1bd3ebbb6a753bd05a424ea4b70b2d8b929f353beefc894959805f1f0bb705ef",
+    "symbol": "BN4",
+    "purchase_date": "2025-12-29",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 10.3,
+      "lowest": 10.28
+    },
+    "total_value": 515501.29,
+    "total_shares_purchased": 50000,
+    "treasury_shares_after_purchase": 18797940,
+    "mandate": {
+      "mandate_total": 90741740,
+      "cumulative_purchased": 13120000,
+      "mandate_remaining": 77621740,
+      "mandate_start": "2025-04-21",
+      "mandate_end": "2026-04-21"
+    }
+  }
+]
