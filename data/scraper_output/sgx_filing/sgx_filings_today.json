@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/F54EZ5Y107JNSSES/870895__Form%206%20-%20FCAM.pdf",
+    "symbol": "J69U",
+    "transaction_date": "2025-12-30",
+    "shareholder_name": "Frasers Centrepoint Asset Management Ltd",
+    "number_of_stock": 538180,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 117093850,
+    "shares_before_percentage": 0.0575,
+    "shares_after": 116555670,
+    "shares_after_percentage": 0.0573
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/EBVYG1ZFH5YV5TI6/870844__eFORM1V2_Wong%20Kim%20Yin_301225.pdf",
+    "symbol": "U96",
+    "transaction_date": "2025-12-30",
+    "shareholder_name": "Wong Kim Yin",
+    "number_of_stock": 599100,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 7130097,
+    "shares_before_percentage": 0.004,
+    "shares_after": 7729197,
+    "shares_after_percentage": 0.004
+  }
+]

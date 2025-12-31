@@ -5670,3 +5670,112 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-30 03:25:04 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2025-12-30 03:25:04 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-30 03:25:05 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
+2025-12-31 03:21:14 [INFO] - Init Global Variable
+2025-12-31 03:21:38 [INFO] - Scraping from None to None...
+2025-12-31 03:21:38 [INFO] - Start scraping from start date: 20251229 to 20251231
+2025-12-31 03:21:38 [INFO] - page_start: 0
+2025-12-31 03:21:38 [INFO] - Fetching data from API Filings...
+2025-12-31 03:21:38 [INFO] - Response status: 200
+2025-12-31 03:21:38 [INFO] - Fetched 17 announcements
+2025-12-31 03:21:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EK1NDFKHX0USB1A9/1c0fd948dfeaf91e7e1a1146ed4150db0244a6dfa3a7aa31a272c658764a9ea4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EK1NDFKHX0USB1A9/870933__SDAX%20VM11%20eFORM1v1_YLC%20Dec%2025.pdf
+2025-12-31 03:21:39 [INFO] - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/EK1NDFKHX0USB1A9/1c0fd948dfeaf91e7e1a1146ed4150db0244a6dfa3a7aa31a272c658764a9ea4
+2025-12-31 03:21:40 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M0K8OE2GIN0OZ2X1/1798f6b0e1701e62c09be4604d16c466d395905219e4ac316f320b8fb712cc6d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M0K8OE2GIN0OZ2X1/870931__ADDX%20VM17%20eFORM1_YHN%20Dec%2025.pdf
+2025-12-31 03:21:41 [INFO] - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/M0K8OE2GIN0OZ2X1/1798f6b0e1701e62c09be4604d16c466d395905219e4ac316f320b8fb712cc6d
+2025-12-31 03:21:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/F54EZ5Y107JNSSES/d143ffd08c1ab1cb49b07f43a141dbb996741f14a0afb844651cf70437b0777b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/F54EZ5Y107JNSSES/870895__Form%206%20-%20FCAM.pdf
+2025-12-31 03:21:43 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-31 03:21:47 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CHLIJ0JUCGH4JG1Y/637b59964708fa2e9e78265b7751731ab6164324a6f59044e44b2234711d5886 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CHLIJ0JUCGH4JG1Y/870891__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:21:51 [INFO] - Processing fallback for multiple shareholders with one transaction
+2025-12-31 03:21:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-31 03:21:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-31 03:21:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4JBDPOXVS7IJKHVE/a26444bbaf3b8bff28e49c3cdf364bf62e15b6f4dabf7784ca0c588b6fe1025e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4JBDPOXVS7IJKHVE/870878__eFORM3V2_30122025.pdf
+2025-12-31 03:21:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-31 03:21:57 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4JBDPOXVS7IJKHVE/870878__eFORM3V2_30122025.pdf: All transactions have no direct interest change and total shares change
+2025-12-31 03:21:57 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/4JBDPOXVS7IJKHVE/a26444bbaf3b8bff28e49c3cdf364bf62e15b6f4dabf7784ca0c588b6fe1025e
+2025-12-31 03:21:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YCV32JEU3ISY9I7X/ca6ad64d472d036545fabf9e1763ed66e8f002d05d18bd12e29866420f7e786e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YCV32JEU3ISY9I7X/870875__FINAL_Form%203-Alpha%20Integrated%20REIT-WP%20entities.pdf
+2025-12-31 03:22:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:02 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:03 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/YCV32JEU3ISY9I7X/870875__FINAL_Form%203-Alpha%20Integrated%20REIT-WP%20entities.pdf: All transactions have no direct interest change and total shares change
+2025-12-31 03:22:03 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/YCV32JEU3ISY9I7X/ca6ad64d472d036545fabf9e1763ed66e8f002d05d18bd12e29866420f7e786e
+2025-12-31 03:22:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DSDHUOBITCH8W1SH/5d0e6ebf4d5b42ef4cda25e1fc473f2809859d7e06bf1cb470af413c9d776071 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DSDHUOBITCH8W1SH/870868__FINAL_Form%203-Alpha%20Integrated%20REIT-SW%20entities.pdf
+2025-12-31 03:22:07 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:07 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:07 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:07 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:08 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/DSDHUOBITCH8W1SH/870868__FINAL_Form%203-Alpha%20Integrated%20REIT-SW%20entities.pdf: All transactions have no direct interest change and total shares change
+2025-12-31 03:22:08 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/DSDHUOBITCH8W1SH/5d0e6ebf4d5b42ef4cda25e1fc473f2809859d7e06bf1cb470af413c9d776071
+2025-12-31 03:22:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5S25VI2ACZKSB6S2/b57e10677168ea6544c9e985ac6937cb015f85b10f43c540a56c576d3545d28d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5S25VI2ACZKSB6S2/870862__FINAL_Form%203-Alpha%20Integrated%20REIT-BidCo%20entities.pdf
+2025-12-31 03:22:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2025-12-31 03:22:11 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/5S25VI2ACZKSB6S2/870862__FINAL_Form%203-Alpha%20Integrated%20REIT-BidCo%20entities.pdf: All transactions have no direct interest change and total shares change
+2025-12-31 03:22:11 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/5S25VI2ACZKSB6S2/b57e10677168ea6544c9e985ac6937cb015f85b10f43c540a56c576d3545d28d
+2025-12-31 03:22:11 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VJ2O7EEACXEHETVK/5048d618438671a7da7074adcc8b56c4b214caef3d03473610b6743782850539 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VJ2O7EEACXEHETVK/870858__eFORM1_CTP_20251230.pdf
+2025-12-31 03:22:14 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VJ2O7EEACXEHETVK/870858__eFORM1_CTP_20251230.pdf: All transactions have no direct interest change and total shares change
+2025-12-31 03:22:14 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HO BEE LAND LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VJ2O7EEACXEHETVK/5048d618438671a7da7074adcc8b56c4b214caef3d03473610b6743782850539
+2025-12-31 03:22:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EBVYG1ZFH5YV5TI6/f30b3b2175f5d7a97476317d87a8cb9c9a5b9853516c9afa164c33ed46489ffa pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EBVYG1ZFH5YV5TI6/870844__eFORM1V2_Wong%20Kim%20Yin_301225.pdf
+2025-12-31 03:22:16 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2025-12-31 03:22:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HSDRQ3868QA4CSZD/131bdde80335948a02e9593ec33ba413f659d60f8f4315a64c2eac69487f53a6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HSDRQ3868QA4CSZD/870841__KREIT_Form%201_CHY_26Dec25_final.pdf
+2025-12-31 03:22:20 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HSDRQ3868QA4CSZD/131bdde80335948a02e9593ec33ba413f659d60f8f4315a64c2eac69487f53a6
+2025-12-31 03:22:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JWHT1QBZ1W0I7VEV/480a35dd9dd69e8bdcb4c6f270e031f8fd1cd02b45cebc10064214a27878982e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JWHT1QBZ1W0I7VEV/870839__KREIT_Form%201_CAT_26Dec2025_final.pdf
+2025-12-31 03:22:21 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/JWHT1QBZ1W0I7VEV/480a35dd9dd69e8bdcb4c6f270e031f8fd1cd02b45cebc10064214a27878982e
+2025-12-31 03:22:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MT69MX0MA9OHNWYV/55fefdd6e9110e18dc700f621911a7a05082070638bd42d9f09c77e3794d26ed pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MT69MX0MA9OHNWYV/870837__KREIT-Form%201_MF_26Dec2025_final.pdf
+2025-12-31 03:22:22 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/MT69MX0MA9OHNWYV/55fefdd6e9110e18dc700f621911a7a05082070638bd42d9f09c77e3794d26ed
+2025-12-31 03:22:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AFWHTWFXSM34DLGH/89618bd5e0f9e4298c907e26a529014eccec14a9c8f4b3fecdb686acd6f5120a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AFWHTWFXSM34DLGH/870835__KREIT_Form%201_THMC_26Dec2025_final.pdf
+2025-12-31 03:22:23 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/AFWHTWFXSM34DLGH/89618bd5e0f9e4298c907e26a529014eccec14a9c8f4b3fecdb686acd6f5120a
+2025-12-31 03:22:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RQ8U3Z0PCVPI80SM/8b4fa8452ad91b99697beb65a0b0496997c5fe22fd9b9912edb940ae223350c0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RQ8U3Z0PCVPI80SM/870832__KREIT_Form%201_AN_26Dec2025_final.pdf
+2025-12-31 03:22:24 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/RQ8U3Z0PCVPI80SM/8b4fa8452ad91b99697beb65a0b0496997c5fe22fd9b9912edb940ae223350c0
+2025-12-31 03:22:25 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/91MS1DQXKKWOB7E6/8bc1bd8f958db2e6aeb0faf1e17b5f5782fe00d55fa43bdaf51414131e6ee7f1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/91MS1DQXKKWOB7E6/870830__KREIT_Form%201_IM_26Dec2025_final.pdf
+2025-12-31 03:22:25 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/91MS1DQXKKWOB7E6/8bc1bd8f958db2e6aeb0faf1e17b5f5782fe00d55fa43bdaf51414131e6ee7f1
+2025-12-31 03:22:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HJ2N5ZK1P944U6RT/76357425279a29500177318d85adc0dc4a1d4453f5e3cd7d8a0282227605037f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HJ2N5ZK1P944U6RT/870827__KREIT-Form%201_TSY_26Dec2025_final.pdf
+2025-12-31 03:22:26 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HJ2N5ZK1P944U6RT/76357425279a29500177318d85adc0dc4a1d4453f5e3cd7d8a0282227605037f
+2025-12-31 03:22:33 [INFO] - page_start: 1
+2025-12-31 03:22:33 [INFO] - Fetching data from API Filings...
+2025-12-31 03:22:34 [INFO] - Response status: 200
+2025-12-31 03:22:34 [WARNING] - WARNING: API returned None
+2025-12-31 03:22:34 [INFO] - No more announcements found — stopping pagination.
+2025-12-31 03:22:46 [INFO] - Fetching data from API Filings...
+2025-12-31 03:22:46 [INFO] - Response status: 200
+2025-12-31 03:22:46 [WARNING] - WARNING: API returned None
+2025-12-31 03:22:46 [INFO] - No more announcements found on this page — stopping pagination.
+2025-12-31 03:22:46 [INFO] - [SGX FILINGS] Scraping completed. Total records: 4
+2025-12-31 03:22:47 [INFO] - Length data top_70: 2 | Length data not top_70: 2
+2025-12-31 03:22:47 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2025-12-31 03:22:47 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2025-12-31 03:22:47 [INFO] - Processing remove duplicate data
+2025-12-31 03:22:47 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2025-12-31 03:22:47 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2025-12-31 03:22:47 [INFO] - Filtering completed. Insertable: 0 | Not insertable: 2
+2025-12-31 03:22:47 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2025-12-31 03:22:47 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2025-12-31 03:22:48 [INFO] - Email sent! Message ID: 011c019b726df6fa-749b0937-4d5a-44e5-8886-b273d676ec71-000000
+2025-12-31 03:22:48 [INFO] - [sgx_payload] is empty, skipping push to DB
