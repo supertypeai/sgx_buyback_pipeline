@@ -5806,3 +5806,68 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-12-31 03:24:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2025-12-31 03:24:28 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-01 03:44:06 [INFO] - Init Global Variable
+2026-01-01 03:44:31 [INFO] - Scraping from None to None...
+2026-01-01 03:44:31 [INFO] - Start scraping from start date: 20251230 to 20260101
+2026-01-01 03:44:31 [INFO] - page_start: 0
+2026-01-01 03:44:31 [INFO] - Fetching data from API Filings...
+2026-01-01 03:44:31 [INFO] - Response status: 200
+2026-01-01 03:44:31 [INFO] - Fetched 11 announcements
+2026-01-01 03:44:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SE7P9SN454F1OJ6Q/b47786b4ca73757a0ab582b4bb94e3805581bd0314e854f562861aba587b9e83 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SE7P9SN454F1OJ6Q/871042__FORM3.KAIXINGUO.FINAL.31DEC2025.pdf
+2026-01-01 03:44:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:36 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:36 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/SE7P9SN454F1OJ6Q/871042__FORM3.KAIXINGUO.FINAL.31DEC2025.pdf: All transactions have no direct interest change and total shares change
+2026-01-01 03:44:36 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CHUAN HUP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/SE7P9SN454F1OJ6Q/b47786b4ca73757a0ab582b4bb94e3805581bd0314e854f562861aba587b9e83
+2026-01-01 03:44:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CH68P7WEG18Z6AHC/4cb23bb055879e22b5b8e976df7c57b6b9cbf6fc041c640077459eb9db135909 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CH68P7WEG18Z6AHC/871021__eFORM1V2_Haim_dec%202025_FINAL.pdf
+2026-01-01 03:44:39 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-01 03:44:39 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/CH68P7WEG18Z6AHC/871021__eFORM1V2_Haim_dec%202025_FINAL.pdf: All transactions have no direct interest change and total shares change
+2026-01-01 03:44:39 [INFO] - [SGX FILINGS] Data not valid found for issuer name: THE TRENDLINES GROUP LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/CH68P7WEG18Z6AHC/4cb23bb055879e22b5b8e976df7c57b6b9cbf6fc041c640077459eb9db135909
+2026-01-01 03:44:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3N5XF8SORAED0JTJ/8513643fb2a9e7e7047fee41a5e466aca01e28be7d95b98ae859258694844f2b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3N5XF8SORAED0JTJ/870986__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2%20-%20rev%20-%20Final.pdf
+2026-01-01 03:44:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-01 03:44:42 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/3N5XF8SORAED0JTJ/870986__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2%20-%20rev%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2026-01-01 03:44:42 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UNUSUAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/3N5XF8SORAED0JTJ/8513643fb2a9e7e7047fee41a5e466aca01e28be7d95b98ae859258694844f2b
+2026-01-01 03:44:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/3C0E9VWWVQHDO0CN/b854cd8a2f24e0ad352a660872e350f6294c4edfae42ede171a727c529a2e7ea pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/3C0E9VWWVQHDO0CN/870984__ADDX%20VM17%20eFORM1_TSL%20Dec%2025.pdf
+2026-01-01 03:44:43 [INFO] - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/3C0E9VWWVQHDO0CN/b854cd8a2f24e0ad352a660872e350f6294c4edfae42ede171a727c529a2e7ea
+2026-01-01 03:44:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2S7LMQG1MWSUZKJE/cdaba9be7a30958889f259f2de78fefc1e98f7a7e3e8bfe7b2bf31b6c59e0d48 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2S7LMQG1MWSUZKJE/870981__vF%20-%20Hildrics%20VCC%20-%20eFORM3V2.pdf
+2026-01-01 03:44:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QRZV641BJ18JXZ2K/f461c0eb9e3c2810bcd78412756ead39217b2b9d6edc0ed081612a543650d3fb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QRZV641BJ18JXZ2K/870965__eFORM1V2%20-%20Terence.pdf
+2026-01-01 03:44:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7USXY3O76QAKLU6Y/db8d63efd79a0c111e2591eb242d92ab424b4ed5fdcb727af4fc43206cc2b51c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7USXY3O76QAKLU6Y/870959__Form%201%20-%20Gilbert_20251231_final.pdf
+2026-01-01 03:44:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/7USXY3O76QAKLU6Y/870959__Form%201%20-%20Gilbert_20251231_final.pdf: All transactions have no direct interest change and total shares change
+2026-01-01 03:44:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GSH CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/7USXY3O76QAKLU6Y/db8d63efd79a0c111e2591eb242d92ab424b4ed5fdcb727af4fc43206cc2b51c
+2026-01-01 03:45:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/94B6W85EI7JEZ8PG/0ca85dc6247bb9fd969e4014d930f377af2aa308ed508938600fb2327a8d05a3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/94B6W85EI7JEZ8PG/870954__eFORM3V2_31122025.pdf
+2026-01-01 03:45:02 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-01 03:45:02 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/94B6W85EI7JEZ8PG/870954__eFORM3V2_31122025.pdf: All transactions have no direct interest change and total shares change
+2026-01-01 03:45:02 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/94B6W85EI7JEZ8PG/0ca85dc6247bb9fd969e4014d930f377af2aa308ed508938600fb2327a8d05a3
+2026-01-01 03:45:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/V8F05DK3QGWMCGEY/afc0d3d275455839d2e92b4497c4ecb70bd0ce36953ee9cdf1b818da42d022d0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/V8F05DK3QGWMCGEY/870947__FLCAM%20-%20Form%206.pdf
+2026-01-01 03:45:05 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-01 03:45:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EK1NDFKHX0USB1A9/1c0fd948dfeaf91e7e1a1146ed4150db0244a6dfa3a7aa31a272c658764a9ea4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EK1NDFKHX0USB1A9/870933__SDAX%20VM11%20eFORM1v1_YLC%20Dec%2025.pdf
+2026-01-01 03:45:07 [INFO] - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/EK1NDFKHX0USB1A9/1c0fd948dfeaf91e7e1a1146ed4150db0244a6dfa3a7aa31a272c658764a9ea4
+2026-01-01 03:45:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M0K8OE2GIN0OZ2X1/1798f6b0e1701e62c09be4604d16c466d395905219e4ac316f320b8fb712cc6d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M0K8OE2GIN0OZ2X1/870931__ADDX%20VM17%20eFORM1_YHN%20Dec%2025.pdf
+2026-01-01 03:45:08 [INFO] - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/M0K8OE2GIN0OZ2X1/1798f6b0e1701e62c09be4604d16c466d395905219e4ac316f320b8fb712cc6d
+2026-01-01 03:45:14 [INFO] - page_start: 1
+2026-01-01 03:45:14 [INFO] - Fetching data from API Filings...
+2026-01-01 03:45:14 [INFO] - Response status: 200
+2026-01-01 03:45:14 [WARNING] - WARNING: API returned None
+2026-01-01 03:45:14 [INFO] - No more announcements found — stopping pagination.
+2026-01-01 03:45:26 [INFO] - Fetching data from API Filings...
+2026-01-01 03:45:27 [INFO] - Response status: 200
+2026-01-01 03:45:27 [WARNING] - WARNING: API returned None
+2026-01-01 03:45:27 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-01 03:45:27 [INFO] - [SGX FILINGS] Scraping completed. Total records: 3
+2026-01-01 03:45:28 [INFO] - Length data top_70: 1 | Length data not top_70: 2
+2026-01-01 03:45:28 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-01 03:45:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-01 03:45:28 [INFO] - Processing remove duplicate data
+2026-01-01 03:45:28 [INFO] - Length data after duplicate removing: 1
+2026-01-01 03:45:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-01 03:45:28 [INFO] - Filtering completed. Insertable: 0 | Not insertable: 1
+2026-01-01 03:45:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-01 03:45:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-01 03:45:29 [INFO] - Email sent! Message ID: 011c019b77a9180a-442fff93-fae6-4cc0-81fb-6d321e5f95ed-000000
+2026-01-01 03:45:29 [INFO] - [sgx_payload] is empty, skipping push to DB
