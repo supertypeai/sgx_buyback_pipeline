@@ -5898,3 +5898,4 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-01 03:47:03 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-01 03:47:03 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-01 21:18:43 [INFO] - Init Global Variable
