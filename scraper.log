@@ -5923,3 +5923,23 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-02 03:25:23 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2026-01-02 03:25:23 [INFO] - No SGX filings alerts to send.
 2026-01-02 03:25:23 [INFO] - [sgx_payload] is empty, skipping push to DB
+2026-01-02 03:26:11 [INFO] - Init Global Variable
+2026-01-02 03:26:35 [INFO] - Scraping from None to None...
+2026-01-02 03:26:35 [INFO] - Start scraping from start date: 20251231 to 20260102
+2026-01-02 03:26:35 [INFO] - page_start: 0
+2026-01-02 03:26:35 [INFO] - Fetching data from API Buybacks...
+2026-01-02 03:26:35 [INFO] - Response status: 200
+2026-01-02 03:26:35 [WARNING] - WARNING: API returned None
+2026-01-02 03:26:35 [INFO] - No more announcements found — stopping pagination.
+2026-01-02 03:26:47 [INFO] - Fetching data from API Buybacks...
+2026-01-02 03:26:47 [INFO] - Response status: 200
+2026-01-02 03:26:47 [WARNING] - WARNING: API returned None
+2026-01-02 03:26:47 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-02 03:26:47 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 0
+2026-01-02 03:26:47 [INFO] - [sgx_buyback] is empty, skipping clean payload
+2026-01-02 03:26:48 [INFO] - Length data top_70: 0 | Length data not top_70: 0
+2026-01-02 03:26:48 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-01-02 03:26:48 [INFO] - Processing remove duplicate data
+2026-01-02 03:26:48 [INFO] - Length data after duplicate removing: 0
+2026-01-02 03:26:48 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-01-02 03:26:48 [INFO] - [sgx_payload] is empty, skipping push to DB
