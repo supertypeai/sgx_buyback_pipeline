@@ -5943,3 +5943,27 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-02 03:26:48 [INFO] - Length data after duplicate removing: 0
 2026-01-02 03:26:48 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-02 03:26:48 [INFO] - [sgx_payload] is empty, skipping push to DB
+2026-01-03 03:18:15 [INFO] - Init Global Variable
+2026-01-03 03:18:41 [INFO] - Scraping from None to None...
+2026-01-03 03:18:41 [INFO] - Start scraping from start date: 20260101 to 20260103
+2026-01-03 03:18:41 [INFO] - page_start: 0
+2026-01-03 03:18:41 [INFO] - Fetching data from API Buybacks...
+2026-01-03 03:18:41 [INFO] - Response status: 200
+2026-01-03 03:18:41 [INFO] - Fetched 9 announcements
+2026-01-03 03:19:32 [INFO] - page_start: 1
+2026-01-03 03:19:32 [INFO] - Fetching data from API Buybacks...
+2026-01-03 03:19:33 [INFO] - Response status: 200
+2026-01-03 03:19:33 [WARNING] - WARNING: API returned None
+2026-01-03 03:19:33 [INFO] - No more announcements found — stopping pagination.
+2026-01-03 03:19:45 [INFO] - Fetching data from API Buybacks...
+2026-01-03 03:19:45 [INFO] - Response status: 200
+2026-01-03 03:19:45 [WARNING] - WARNING: API returned None
+2026-01-03 03:19:45 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-03 03:19:45 [INFO] - [SGX_BUYBACK] Scraping completed. Total records: 9
+2026-01-03 03:19:46 [INFO] - Length data top_70: 3 | Length data not top_70: 6
+2026-01-03 03:19:46 [INFO] - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2026-01-03 03:19:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-01-03 03:19:46 [INFO] - Processing remove duplicate data
+2026-01-03 03:19:46 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-03 03:19:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-01-03 03:19:46 [INFO] - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
