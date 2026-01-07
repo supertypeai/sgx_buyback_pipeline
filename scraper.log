@@ -6172,3 +6172,57 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-06 03:27:17 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-06 03:27:18 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-07 03:23:28 [INFO] - Init Global Variable
+2026-01-07 03:23:47 [INFO] - Scraping from None to None...
+2026-01-07 03:23:47 [INFO] - Start scraping from start date: 20260105 to 20260107
+2026-01-07 03:23:47 [INFO] - page_start: 0
+2026-01-07 03:23:47 [INFO] - Fetching data from API Filings...
+2026-01-07 03:23:47 [INFO] - Response status: 200
+2026-01-07 03:23:47 [INFO] - Fetched 8 announcements
+2026-01-07 03:23:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AZLBR1O9LXIJAN8B/4803691dbb90af3ac6facd0e992e7fdfa236d4c40fbf2bb3b2530a961bb81745 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AZLBR1O9LXIJAN8B/871428__eFORM3V2%20Marilyn%20Tay%20Bee%20Choo.pdf
+2026-01-07 03:23:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-07 03:23:50 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/AZLBR1O9LXIJAN8B/871428__eFORM3V2%20Marilyn%20Tay%20Bee%20Choo.pdf: All transactions have no direct interest change and total shares change
+2026-01-07 03:23:50 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ACROMETA GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/AZLBR1O9LXIJAN8B/4803691dbb90af3ac6facd0e992e7fdfa236d4c40fbf2bb3b2530a961bb81745
+2026-01-07 03:23:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/O67J75RY79YD2ZG8/7edb632a16b6a0ec52333a816c15463192982b006d1e593c37a00f1147a43d40 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/O67J75RY79YD2ZG8/871426__eFORM3V2%20Chew%20Chee%20Keong.pdf
+2026-01-07 03:23:52 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-07 03:23:52 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/O67J75RY79YD2ZG8/871426__eFORM3V2%20Chew%20Chee%20Keong.pdf: All transactions have no direct interest change and total shares change
+2026-01-07 03:23:52 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ACROMETA GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/O67J75RY79YD2ZG8/7edb632a16b6a0ec52333a816c15463192982b006d1e593c37a00f1147a43d40
+2026-01-07 03:23:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MZOZE4POVPYK801U/4c4b7b092d79a65d7e8218742e9cea7add9cf789c19e5815d4623bf8cf0f4a7a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MZOZE4POVPYK801U/871423__eFORM3V2%20Levin%20Lee%20Keng%20Weng.pdf
+2026-01-07 03:23:55 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-07 03:23:55 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/MZOZE4POVPYK801U/871423__eFORM3V2%20Levin%20Lee%20Keng%20Weng.pdf: All transactions have no direct interest change and total shares change
+2026-01-07 03:23:55 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ACROMETA GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/MZOZE4POVPYK801U/4c4b7b092d79a65d7e8218742e9cea7add9cf789c19e5815d4623bf8cf0f4a7a
+2026-01-07 03:23:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BSH1H15K5QQMPUT7/e4849df270ca1c3740225391ce71954de90b62f5cb0e23a6b517bff1efe24702 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BSH1H15K5QQMPUT7/871405__eFORM1_ChengWK_060126_Final.pdf
+2026-01-07 03:23:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-07 03:23:58 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BSH1H15K5QQMPUT7/871405__eFORM1_ChengWK_060126_Final.pdf: All transactions have no direct interest change and total shares change
+2026-01-07 03:23:58 [INFO] - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BSH1H15K5QQMPUT7/e4849df270ca1c3740225391ce71954de90b62f5cb0e23a6b517bff1efe24702
+2026-01-07 03:23:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YWQMAWQM3XY3XLS6/2e2e6f0e71690be5476c0ae1155da97569a11e82729da700d3a1b822df9c0aa6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YWQMAWQM3XY3XLS6/871395__20260106%20-%20LGH_Form%201_CLH.pdf
+2026-01-07 03:24:01 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/YWQMAWQM3XY3XLS6/871395__20260106%20-%20LGH_Form%201_CLH.pdf: All transactions have no direct interest change and total shares change
+2026-01-07 03:24:01 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/YWQMAWQM3XY3XLS6/2e2e6f0e71690be5476c0ae1155da97569a11e82729da700d3a1b822df9c0aa6
+2026-01-07 03:24:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8ORN0BY5FAATK9GI/293dfcc1986940916189b6d12c48638d08739fedb58d6f2afcc17cca220dc423 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8ORN0BY5FAATK9GI/871393__20260106%20-%20LGH_Form%201_LHC.pdf
+2026-01-07 03:24:04 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/8ORN0BY5FAATK9GI/871393__20260106%20-%20LGH_Form%201_LHC.pdf: All transactions have no direct interest change and total shares change
+2026-01-07 03:24:04 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/8ORN0BY5FAATK9GI/293dfcc1986940916189b6d12c48638d08739fedb58d6f2afcc17cca220dc423
+2026-01-07 03:24:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BY2GL4K4KGKJOLVW/8063b7d8c4d180a76b9655be700aee5587a5fc9b63a03bb505da0e616297ea89 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BY2GL4K4KGKJOLVW/871388__20260106%20-%20LGH_Form%201_LTC.pdf
+2026-01-07 03:24:07 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BY2GL4K4KGKJOLVW/871388__20260106%20-%20LGH_Form%201_LTC.pdf: All transactions have no direct interest change and total shares change
+2026-01-07 03:24:07 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LEONG GUAN HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BY2GL4K4KGKJOLVW/8063b7d8c4d180a76b9655be700aee5587a5fc9b63a03bb505da0e616297ea89
+2026-01-07 03:24:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1VC8TE63E9Z0AAB7/ff7031d338265c5789dd3f98fb7a818c07c30cc188ec476439f66b41d3c1c0bb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1VC8TE63E9Z0AAB7/871370__20260106%20-%20LGH_Form%203_Plenteous.pdf
+2026-01-07 03:24:19 [INFO] - page_start: 1
+2026-01-07 03:24:19 [INFO] - Fetching data from API Filings...
+2026-01-07 03:24:20 [INFO] - Response status: 200
+2026-01-07 03:24:20 [WARNING] - WARNING: API returned None
+2026-01-07 03:24:20 [INFO] - No more announcements found — stopping pagination.
+2026-01-07 03:24:32 [INFO] - Fetching data from API Filings...
+2026-01-07 03:24:33 [INFO] - Response status: 200
+2026-01-07 03:24:33 [WARNING] - WARNING: API returned None
+2026-01-07 03:24:33 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-07 03:24:33 [INFO] - [SGX FILINGS] Scraping completed. Total records: 1
+2026-01-07 03:24:34 [INFO] - Length data top_70: 0 | Length data not top_70: 1
+2026-01-07 03:24:34 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-07 03:24:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-07 03:24:34 [INFO] - Processing remove duplicate data
+2026-01-07 03:24:34 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-07 03:24:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-07 03:24:34 [INFO] - No SGX filings data to filter.
+2026-01-07 03:24:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-07 03:24:34 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-07 03:24:34 [INFO] - No SGX filings alerts to send.
+2026-01-07 03:24:34 [INFO] - [sgx_payload] is empty, skipping push to DB
