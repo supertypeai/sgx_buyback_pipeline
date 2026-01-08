@@ -6253,3 +6253,40 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-07 03:26:30 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-07 03:26:30 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-08 03:23:55 [INFO] - Init Global Variable
+2026-01-08 03:24:19 [INFO] - Scraping from None to None...
+2026-01-08 03:24:19 [INFO] - Start scraping from start date: 20260106 to 20260108
+2026-01-08 03:24:19 [INFO] - page_start: 0
+2026-01-08 03:24:19 [INFO] - Fetching data from API Filings...
+2026-01-08 03:24:20 [INFO] - Response status: 200
+2026-01-08 03:24:20 [INFO] - Fetched 3 announcements
+2026-01-08 03:24:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/D7SHWH7WF0RFJMWB/ffef1c239aa480af0879ec66a5b259eb7753d0b21c3c78b446a88cbd965879b8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/D7SHWH7WF0RFJMWB/871510__eFORM1V2_SLC%207%20Jan%202026_Final.pdf
+2026-01-08 03:24:22 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-08 03:24:22 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/D7SHWH7WF0RFJMWB/871510__eFORM1V2_SLC%207%20Jan%202026_Final.pdf: All transactions have no direct interest change and total shares change
+2026-01-08 03:24:22 [INFO] - [SGX FILINGS] Data not valid found for issuer name: STAMFORD LAND CORPORATION LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/D7SHWH7WF0RFJMWB/ffef1c239aa480af0879ec66a5b259eb7753d0b21c3c78b446a88cbd965879b8
+2026-01-08 03:24:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/588P9ZKDNINT8XU9/b80ddc9f155f150a0096de869e3ccc991c0de70be8e0bce02d6ae80a3fcbf41c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/588P9ZKDNINT8XU9/871495__eFORM3V2_07012026.pdf
+2026-01-08 03:24:24 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-08 03:24:24 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/588P9ZKDNINT8XU9/871495__eFORM3V2_07012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-08 03:24:24 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/588P9ZKDNINT8XU9/b80ddc9f155f150a0096de869e3ccc991c0de70be8e0bce02d6ae80a3fcbf41c
+2026-01-08 03:24:24 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6NXFP5TDG1EAFDSP/3e95dd06934633ab86bb3864895fdf302fbafa59e696fee4dd148efbd7f8cc9a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6NXFP5TDG1EAFDSP/871491__20260107%20-%20XMH_Form%201_TTY.pdf
+2026-01-08 03:24:36 [INFO] - page_start: 1
+2026-01-08 03:24:36 [INFO] - Fetching data from API Filings...
+2026-01-08 03:24:37 [INFO] - Response status: 200
+2026-01-08 03:24:37 [WARNING] - WARNING: API returned None
+2026-01-08 03:24:37 [INFO] - No more announcements found — stopping pagination.
+2026-01-08 03:24:49 [INFO] - Fetching data from API Filings...
+2026-01-08 03:24:49 [INFO] - Response status: 200
+2026-01-08 03:24:49 [WARNING] - WARNING: API returned None
+2026-01-08 03:24:49 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-08 03:24:49 [INFO] - [SGX FILINGS] Scraping completed. Total records: 2
+2026-01-08 03:24:50 [INFO] - Length data top_70: 0 | Length data not top_70: 2
+2026-01-08 03:24:50 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-08 03:24:50 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-08 03:24:50 [INFO] - Processing remove duplicate data
+2026-01-08 03:24:50 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-08 03:24:50 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-08 03:24:50 [INFO] - No SGX filings data to filter.
+2026-01-08 03:24:50 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-08 03:24:50 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-08 03:24:50 [INFO] - No SGX filings alerts to send.
+2026-01-08 03:24:50 [INFO] - [sgx_payload] is empty, skipping push to DB
