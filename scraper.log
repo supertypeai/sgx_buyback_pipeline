@@ -6314,3 +6314,62 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-08 03:26:39 [INFO] - Length data after duplicate removing: 2
 2026-01-08 03:26:39 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-08 03:26:40 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
+2026-01-09 03:24:23 [INFO] - Init Global Variable
+2026-01-09 03:24:49 [INFO] - Scraping from None to None...
+2026-01-09 03:24:49 [INFO] - Start scraping from start date: 20260107 to 20260109
+2026-01-09 03:24:49 [INFO] - page_start: 0
+2026-01-09 03:24:49 [INFO] - Fetching data from API Filings...
+2026-01-09 03:24:50 [INFO] - Response status: 200
+2026-01-09 03:24:50 [INFO] - Fetched 9 announcements
+2026-01-09 03:24:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/59P20W58GBWBBVPX/e1d601f12abea55ae43213f2bdccd5638ffd8e81b3c55af9cc582f7e2e29459f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/59P20W58GBWBBVPX/871640__eFORM3V2_Shitthi.pdf
+2026-01-09 03:24:52 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:24:52 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:24:52 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/59P20W58GBWBBVPX/871640__eFORM3V2_Shitthi.pdf: All transactions have no direct interest change and total shares change
+2026-01-09 03:24:52 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SHANAYA LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/59P20W58GBWBBVPX/e1d601f12abea55ae43213f2bdccd5638ffd8e81b3c55af9cc582f7e2e29459f
+2026-01-09 03:24:53 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9ASZ0HTWYI4NGJGX/84aa59d4b02c92125e1aa9b0e1f6a781a4cf2ff0b309d989c4e7eaa07953fc36 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9ASZ0HTWYI4NGJGX/871638__eFORM1V2_OKS.pdf
+2026-01-09 03:24:56 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-09 03:25:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DCZ5CWTKXLMKXFK1/906f949ee8525ecc030ffaffe3a8b38f6ff0c39bd88bd3f0f34211e4885d1a1a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DCZ5CWTKXLMKXFK1/871636__eFORM1V2_Chopra.pdf
+2026-01-09 03:25:03 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-09 03:25:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QWXKKXKGVRHG3LJB/cef1e7b2a4e0bdf5ac4a6e96f0d120b4a12924ad4ce34a06c044fe9cdda74c5f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QWXKKXKGVRHG3LJB/871611__Form%203%20-%20Chu%20Chin%20Ee.pdf
+2026-01-09 03:25:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QVBS5VBW730I27HJ/966557f4016ab94a0a09472c1bc0406982558675a15523fa13100acc11d53cbf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QVBS5VBW730I27HJ/871609__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-01-09 03:25:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:17 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-09 03:25:18 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-09 03:25:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-09 03:25:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-09 03:25:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-09 03:25:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AB9L26REA0NQQN1A/59ab0f2e27f28a24c9a98a19ba33d345e7c50b8ed3231821263144d5b674aa07 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AB9L26REA0NQQN1A/871607__eFORM1-Tan%20Kok%20Huat.pdf
+2026-01-09 03:25:25 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JQDKXH3XHE19E82F/6b612d89be26bc6e24330ec8ab27abf1797e661a9beac5b0ed39335b9770f139 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JQDKXH3XHE19E82F/871601__eFORM3V2_Tan%20Jit%20Meng.pdf
+2026-01-09 03:25:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Y2NAWLGES5ESTXL7/1ef4bd1df72711b4405ec0dd4281fec43552e46680131cf5067cba6a5859f17b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Y2NAWLGES5ESTXL7/871599__eFORM3V2_Tan%20Chee%20Khoon.pdf
+2026-01-09 03:25:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CHLL4NVBABPPE2Q7/e0791b2b0c525d84e9ad5939f50031505a0d40555f5360c0ab7d990436ef618e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CHLL4NVBABPPE2Q7/871578__eFORM1V2%20Steve%20Chu.pdf
+2026-01-09 03:25:44 [INFO] - page_start: 1
+2026-01-09 03:25:44 [INFO] - Fetching data from API Filings...
+2026-01-09 03:25:44 [INFO] - Response status: 200
+2026-01-09 03:25:44 [WARNING] - WARNING: API returned None
+2026-01-09 03:25:44 [INFO] - No more announcements found — stopping pagination.
+2026-01-09 03:25:56 [INFO] - Fetching data from API Filings...
+2026-01-09 03:25:56 [INFO] - Response status: 200
+2026-01-09 03:25:56 [WARNING] - WARNING: API returned None
+2026-01-09 03:25:56 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-09 03:25:56 [INFO] - [SGX FILINGS] Scraping completed. Total records: 10
+2026-01-09 03:25:58 [INFO] - Length data top_70: 0 | Length data not top_70: 10
+2026-01-09 03:25:58 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-09 03:25:58 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-09 03:25:58 [INFO] - Processing remove duplicate data
+2026-01-09 03:25:58 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-09 03:25:58 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-09 03:25:58 [INFO] - No SGX filings data to filter.
+2026-01-09 03:25:58 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-09 03:25:58 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-09 03:25:58 [INFO] - No SGX filings alerts to send.
+2026-01-09 03:25:58 [INFO] - [sgx_payload] is empty, skipping push to DB
