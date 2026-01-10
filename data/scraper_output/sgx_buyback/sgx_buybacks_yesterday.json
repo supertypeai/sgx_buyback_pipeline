@@ -1,39 +1,40 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ZKXJJNMRFDG9OQNA/223d88858542da6991de027e83994cade2b642f44bec61765eb03abef5e51ad4",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/IK4OL130JO3WNW71/4ad0dc39f218fa4dc22018a2d211ee8ac083722c1b06f52e35e98d1c851d8897",
     "symbol": "U11",
-    "purchase_date": "2026-01-08",
+    "purchase_date": "2026-01-09",
     "type": "On Market",
     "price_per_share": {
-      "highest": 36.1,
-      "lowest": 35.86
+      "highest": 36.21,
+      "lowest": 36.01
     },
-    "total_value": 1368515.46,
+    "total_value": 1373155.23,
     "total_shares_purchased": 38000,
     "treasury_shares_after_purchase": 15243008,
     "mandate": {
       "mandate_total": 83545909,
-      "cumulative_purchased": 18969200,
-      "mandate_remaining": 64576709,
+      "cumulative_purchased": 19007200,
+      "mandate_remaining": 64538709,
       "mandate_start": "2025-04-21",
       "mandate_end": "2026-04-21"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/JX3VZFHA8W0VAKAO/43c8d819c744f1c475227fe547ff205ef2f50619b40106eac5db3419b70db30e",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XB83LDFQN2YO7E06/c7ad48729cdf966012a4be4bbec8d7957f2526a07a8c614702fd9aa07be0e296",
     "symbol": "S58",
-    "purchase_date": "2026-01-08",
+    "purchase_date": "2026-01-09",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 3.78
+      "highest": 3.78,
+      "lowest": 3.77
     },
-    "total_value": 301248.77,
-    "total_shares_purchased": 79600,
-    "treasury_shares_after_purchase": 8982105,
+    "total_value": 378212.93,
+    "total_shares_purchased": 100000,
+    "treasury_shares_after_purchase": 9082105,
     "mandate": {
       "mandate_total": 29870031,
-      "cumulative_purchased": 7513800,
-      "mandate_remaining": 22356231,
+      "cumulative_purchased": 7613800,
+      "mandate_remaining": 22256231,
       "mandate_start": "2025-07-25",
       "mandate_end": "2026-07-25"
     }
