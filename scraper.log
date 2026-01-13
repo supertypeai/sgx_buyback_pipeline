@@ -6488,3 +6488,72 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-12 03:45:01 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-01-12 03:45:01 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-12 03:45:01 [INFO] - [sgx_payload] is empty, skipping push to DB
+2026-01-13 03:22:14 [INFO] - Init Global Variable
+2026-01-13 03:22:40 [INFO] - Scraping from None to None...
+2026-01-13 03:22:40 [INFO] - Start scraping from start date: 20260111 to 20260113
+2026-01-13 03:22:40 [INFO] - page_start: 0
+2026-01-13 03:22:40 [INFO] - Fetching data from API Filings...
+2026-01-13 03:22:40 [INFO] - Response status: 200
+2026-01-13 03:22:40 [INFO] - Fetched 13 announcements
+2026-01-13 03:22:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/A07WBGIIK5AWV6UN/ccb8df89f59b944f7c7c3ed9252353636b45d013152f5ca37c93841112d3752f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/A07WBGIIK5AWV6UN/871827__eFORM3V2_Tan%20Chee%20Khoon.pdf
+2026-01-13 03:22:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/T89932J2G6227W1V/60cb338a31a1f1cfe26500c854ea9f7d5c26db058aa57578413634e4b5dbf4ba pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/T89932J2G6227W1V/871822__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf
+2026-01-13 03:22:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:22:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:22:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:22:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:22:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:22:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:22:53 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/T89932J2G6227W1V/871822__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf: All transactions have no direct interest change and total shares change
+2026-01-13 03:22:53 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UNUSUAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/T89932J2G6227W1V/60cb338a31a1f1cfe26500c854ea9f7d5c26db058aa57578413634e4b5dbf4ba
+2026-01-13 03:22:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BSU0N2BSF7ZEJ655/c38245a20d7405564ccaf30128a04093b37afb566bf5442f3f2ca452c5974b5d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BSU0N2BSF7ZEJ655/871820__vF%20-%20Hildrics%20VCC%20-%20eFORM3V2.pdf
+2026-01-13 03:22:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/H6EXAWVTOK4RG6HA/79e863091600b0c445ce541ad4f068a92aa5a18dbb4c9c4e7aad0778c05a54b1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/H6EXAWVTOK4RG6HA/871815__eFORM3V2_12012026.pdf
+2026-01-13 03:23:00 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-13 03:23:00 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/H6EXAWVTOK4RG6HA/871815__eFORM3V2_12012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-13 03:23:00 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/H6EXAWVTOK4RG6HA/79e863091600b0c445ce541ad4f068a92aa5a18dbb4c9c4e7aad0778c05a54b1
+2026-01-13 03:23:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YDDNFHM0E9YL9L2G/99676dba808d954235aa4bf89ed97858ad8bfe7383504989aa1fff8f0275d86f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YDDNFHM0E9YL9L2G/871809__eFORM1V2_LKJ_12.1.2026.pdf
+2026-01-13 03:23:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/21VDJR6EPW3GFE1M/a4f825585ef959c57327c3a7fd96a3c13168060ebfcdba4a71e9e1b3f22fff5a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/21VDJR6EPW3GFE1M/871806__260112%20FORM1%20Steven%20-%20Final.pdf
+2026-01-13 03:23:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8ZQ5G127QG78WROC/b171cc095ef946c25526736514cd94003c79027375a20c406adae0927708136e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8ZQ5G127QG78WROC/871795__eFORM3%20-%20BigFoot.pdf
+2026-01-13 03:23:17 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UAU3TM1JV71EJ8VR/b6b2a48e9b90ecb5fe5ebdd21f4bcefcfca3105824877d2316da2b4a5db8cee8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UAU3TM1JV71EJ8VR/871786__Form%203%20-%20Silchester%20-%20Golden%20Agri%20-%2009012026.pdf
+2026-01-13 03:23:19 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/UAU3TM1JV71EJ8VR/871786__Form%203%20-%20Silchester%20-%20Golden%20Agri%20-%2009012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-13 03:23:19 [INFO] - [SGX FILINGS] Data not valid found for issuer name: GOLDEN AGRI-RESOURCES LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/UAU3TM1JV71EJ8VR/b6b2a48e9b90ecb5fe5ebdd21f4bcefcfca3105824877d2316da2b4a5db8cee8
+2026-01-13 03:23:19 [ERROR] - [extract symbol] Failed to extract symbol from split: 'NoneType' object has no attribute 'split'
+2026-01-13 03:23:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WU6IKVLARSNJWAKY/ced3f6a884e720cd3b2b13c7258bba0d7d82fe3958a8b87f65819fd7ae5f491a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WU6IKVLARSNJWAKY/871781__30948186_Form%203_Allgreat%20Pacific%20Limited%20and%20Sunpower%20Business%20Group%20Pte%20Ltd.pdf
+2026-01-13 03:23:21 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:23:21 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:23:21 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/WU6IKVLARSNJWAKY/871781__30948186_Form%203_Allgreat%20Pacific%20Limited%20and%20Sunpower%20Business%20Group%20Pte%20Ltd.pdf: All transactions have no direct interest change and total shares change
+2026-01-13 03:23:21 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SUNPOWER GROUP LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/WU6IKVLARSNJWAKY/ced3f6a884e720cd3b2b13c7258bba0d7d82fe3958a8b87f65819fd7ae5f491a
+2026-01-13 03:23:22 [ERROR] - [extract symbol] Failed to extract symbol from split: 'NoneType' object has no attribute 'split'
+2026-01-13 03:23:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/383CXD5Z936VHKY7/51b15eaa34ffe627361d2fea472c4af4d5c45944c9d39f065c03c7560409b5e9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/383CXD5Z936VHKY7/871779__30948183_Form%201_Guo%20Hong%20Xin.pdf
+2026-01-13 03:23:24 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-13 03:23:24 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The Bondholders of Sunpower Group Ltd. (the “Company”) have opted to exercise its right to convert part of the Convertible Bonds in the principal amount of S$4,915,489(the “Conversion"). Pursuant to the Conversion, 19,661,956 shares have been issued to the Bondholders at a conversion price of S$0.25 as determined under the terms and conditions of the Convertible Bonds. The change in the percentage is due to the change in the issued and paid up share capital of the Company as a result of the Conversion as described above. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-01-13 03:23:24 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/383CXD5Z936VHKY7/871779__30948183_Form%201_Guo%20Hong%20Xin.pdf: All transactions have no direct interest change and total shares change
+2026-01-13 03:23:24 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SUNPOWER GROUP LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/383CXD5Z936VHKY7/51b15eaa34ffe627361d2fea472c4af4d5c45944c9d39f065c03c7560409b5e9
+2026-01-13 03:23:24 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GG4GUQPT7ULK5E38/b8819ae00e12c177787f4b60ab6af8f52338c4792b6f05bbe6341da06cfaa4d8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GG4GUQPT7ULK5E38/871776__eFORM1%20V2%208%20JAN%202026%20FINAL.pdf
+2026-01-13 03:23:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IJN52WG0KYPJ94HG/cc32a19d203acd56c2ac1d862e1c1fc6f79fc24f0f887a8f29e478d342fda486 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IJN52WG0KYPJ94HG/871774__eFORM1%20V2%207%20JAN%202026%20-%20RECTIFIED.pdf
+2026-01-13 03:23:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1WJ9FCGCHM0G18TE/4d834393ee79c2c7d12472f1dde56d85218cbf7d8f26ff70ad41cd8d0c65a14b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1WJ9FCGCHM0G18TE/871771__Form_3-TH_Tembusu_Napier_Venezio.pdf
+2026-01-13 03:23:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:23:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:23:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:23:42 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-13 03:23:42 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-13 03:23:52 [INFO] - page_start: 1
+2026-01-13 03:23:52 [INFO] - Fetching data from API Filings...
+2026-01-13 03:23:53 [INFO] - Response status: 200
+2026-01-13 03:23:53 [WARNING] - WARNING: API returned None
+2026-01-13 03:23:53 [INFO] - No more announcements found — stopping pagination.
+2026-01-13 03:24:05 [INFO] - Fetching data from API Filings...
+2026-01-13 03:24:05 [INFO] - Response status: 200
+2026-01-13 03:24:05 [WARNING] - WARNING: API returned None
+2026-01-13 03:24:05 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-13 03:24:05 [INFO] - [SGX FILINGS] Scraping completed. Total records: 11
+2026-01-13 03:24:06 [INFO] - Length data top_70: 0 | Length data not top_70: 11
+2026-01-13 03:24:06 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-13 03:24:06 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-13 03:24:06 [INFO] - Processing remove duplicate data
+2026-01-13 03:24:06 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-13 03:24:06 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-13 03:24:06 [INFO] - No SGX filings data to filter.
+2026-01-13 03:24:06 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-13 03:24:06 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-13 03:24:06 [INFO] - No SGX filings alerts to send.
+2026-01-13 03:24:06 [INFO] - [sgx_payload] is empty, skipping push to DB
