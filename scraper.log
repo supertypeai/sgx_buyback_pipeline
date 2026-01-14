@@ -6584,3 +6584,50 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-13 03:25:43 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-13 03:25:43 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-14 03:40:54 [INFO] - Init Global Variable
+2026-01-14 03:41:36 [INFO] - Scraping from None to None...
+2026-01-14 03:41:36 [INFO] - Start scraping from start date: 20260112 to 20260114
+2026-01-14 03:41:36 [INFO] - page_start: 0
+2026-01-14 03:41:36 [INFO] - Fetching data from API Filings...
+2026-01-14 03:41:37 [INFO] - Response status: 200
+2026-01-14 03:41:37 [INFO] - Fetched 3 announcements
+2026-01-14 03:41:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZHA32ETZJFBTOOFF/0946839670fb37872baf174032de8cac5e4cc491b6b1da35901188aaab528c12 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZHA32ETZJFBTOOFF/871923__eFORM3V2_Tan%20Chee%20Khoon.pdf
+2026-01-14 03:41:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/663EGPJOV936G9K9/0e7c9d522130afb04ea4ab9a9071f943ed75b489ab1946c6a10e0dcc5e55a768 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/663EGPJOV936G9K9/871914__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-14 03:41:45 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-14 03:41:45 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-14 03:41:45 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-14 03:41:45 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-14 03:41:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/L40U9XT2W8TZCIRG/d59fdef7e6ef581d888907e2c32f789331efd07efd6b26269b5dd3597e18e98e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/L40U9XT2W8TZCIRG/871888__20260113%20-%20XMH_Form%201_TTY.pdf
+2026-01-14 03:42:03 [INFO] - page_start: 1
+2026-01-14 03:42:03 [INFO] - Fetching data from API Filings...
+2026-01-14 03:42:03 [INFO] - Response status: 200
+2026-01-14 03:42:03 [WARNING] - WARNING: API returned None
+2026-01-14 03:42:03 [INFO] - No more announcements found — stopping pagination.
+2026-01-14 03:42:15 [INFO] - Fetching data from API Filings...
+2026-01-14 03:42:15 [INFO] - Response status: 200
+2026-01-14 03:42:15 [WARNING] - WARNING: API returned None
+2026-01-14 03:42:15 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-14 03:42:15 [INFO] - [SGX FILINGS] Scraping completed. Total records: 5
+2026-01-14 03:42:16 [INFO] - Length data top_70: 0 | Length data not top_70: 5
+2026-01-14 03:42:16 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-14 03:42:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-14 03:42:16 [INFO] - Processing remove duplicate data
+2026-01-14 03:42:16 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-14 03:42:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-14 03:42:16 [INFO] - No SGX filings data to filter.
+2026-01-14 03:42:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-14 03:42:16 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-14 03:42:16 [INFO] - No SGX filings alerts to send.
+2026-01-14 03:42:16 [INFO] - [sgx_payload] is empty, skipping push to DB
