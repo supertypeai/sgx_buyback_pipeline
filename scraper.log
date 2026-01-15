@@ -6655,3 +6655,59 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-14 03:44:04 [INFO] - Length data after duplicate removing: 1
 2026-01-14 03:44:04 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-14 03:44:04 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
+2026-01-15 03:24:55 [INFO] - Init Global Variable
+2026-01-15 03:25:22 [INFO] - Scraping from None to None...
+2026-01-15 03:25:22 [INFO] - Start scraping from start date: 20260113 to 20260115
+2026-01-15 03:25:22 [INFO] - page_start: 0
+2026-01-15 03:25:22 [INFO] - Fetching data from API Filings...
+2026-01-15 03:25:22 [INFO] - Response status: 200
+2026-01-15 03:25:22 [INFO] - Fetched 9 announcements
+2026-01-15 03:25:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4H3CQTFDHJJM2Z4D/e46aa5f298dd975bc89cf2fc3c41186a47278ee6f6d43a0bbe9767482f0fc492 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4H3CQTFDHJJM2Z4D/872047__eFORM3V2_Final.pdf
+2026-01-15 03:25:25 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4H3CQTFDHJJM2Z4D/872047__eFORM3V2_Final.pdf: All transactions have no direct interest change and total shares change
+2026-01-15 03:25:25 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LENDLEASE GLOBAL COMMERCIAL TRUST MANAGEMENT PTE. LTD.  detail url: https://links.sgx.com/1.0.0/corporate-announcements/4H3CQTFDHJJM2Z4D/e46aa5f298dd975bc89cf2fc3c41186a47278ee6f6d43a0bbe9767482f0fc492
+2026-01-15 03:25:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JQSCJ4GM493TSBV3/4c85ecb09c40707e18233417e3b3a17842774f2729fd76816b583a799618ae04 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JQSCJ4GM493TSBV3/872041__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf
+2026-01-15 03:25:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-15 03:25:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-15 03:25:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-15 03:25:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-15 03:25:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-15 03:25:29 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-15 03:25:29 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/JQSCJ4GM493TSBV3/872041__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf: All transactions have no direct interest change and total shares change
+2026-01-15 03:25:29 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UNUSUAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/JQSCJ4GM493TSBV3/4c85ecb09c40707e18233417e3b3a17842774f2729fd76816b583a799618ae04
+2026-01-15 03:25:30 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/03DONZJ7X1HKXM2D/96a3aa104363acfbcc38b44dcc2f2bddc006300cac17c727efd3770e7b9a8a0f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/03DONZJ7X1HKXM2D/872039__vF%20-%20Hildrics%20VCC%20-%20eFORM3V2.pdf
+2026-01-15 03:25:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CQL1EZYN13IJK28X/9b3f7fc440f00a82c05c17da25c469ba27815c17df1060b2ef84e5e5e140ac26 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CQL1EZYN13IJK28X/872026__eForm3_14Jan26_BlackRock.pdf
+2026-01-15 03:25:39 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-15 03:25:39 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Change in position due to a decrease in shares held as collateral.'
+2026-01-15 03:25:39 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/CQL1EZYN13IJK28X/872026__eForm3_14Jan26_BlackRock.pdf: All transactions have no direct interest change and total shares change
+2026-01-15 03:25:39 [INFO] - [SGX FILINGS] Data not valid found for issuer name: CAPITALAND ASCENDAS REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/CQL1EZYN13IJK28X/9b3f7fc440f00a82c05c17da25c469ba27815c17df1060b2ef84e5e5e140ac26
+2026-01-15 03:25:40 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PI6LV1SV1JLPC7MF/3d1eb615abefccfbc62d0042aec18d8111de995302757c050b47a6197bd2761e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PI6LV1SV1JLPC7MF/872020__eFORM1V2-%20Andy%20Luong.pdf
+2026-01-15 03:25:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BTA6NF21YZVQFGHY/50cf190af883a786f550fe7df14f5415cb7a53d0f8866f52adc1fbf9f6ba96af pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BTA6NF21YZVQFGHY/872008__eFORM3V2_14012026.pdf
+2026-01-15 03:25:48 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-15 03:25:48 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BTA6NF21YZVQFGHY/872008__eFORM3V2_14012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-15 03:25:48 [INFO] - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BTA6NF21YZVQFGHY/50cf190af883a786f550fe7df14f5415cb7a53d0f8866f52adc1fbf9f6ba96af
+2026-01-15 03:25:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RZKAT400DW2A3W93/6ae465bb41a42fbbc01a4ca4f557a7cd5dd89993395dd75aeaf3b904fc76a028 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RZKAT400DW2A3W93/871995__Form%201%20of%20Tan%20Ser%20Ping.pdf
+2026-01-15 03:25:50 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-15 03:25:50 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Gift to daugther Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-01-15 03:25:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/X1E6F9LDRWHP60JS/67612a509358a5e95cf490c0c38a542c2fadf5f445326cff79511d6d57e11a7b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/X1E6F9LDRWHP60JS/871984__eFORM1V2_LKJ_14.1.2026.pdf
+2026-01-15 03:25:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OLSC8M0UQSUD8AYM/52cb99730c9fa3e5da47add3a663d31f907b777ebdd5b407c5a80435a7aee06a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OLSC8M0UQSUD8AYM/871982__eFORM1V2_LKJ_13.1.2026.pdf
+2026-01-15 03:26:09 [INFO] - page_start: 1
+2026-01-15 03:26:09 [INFO] - Fetching data from API Filings...
+2026-01-15 03:26:10 [INFO] - Response status: 200
+2026-01-15 03:26:10 [WARNING] - WARNING: API returned None
+2026-01-15 03:26:10 [INFO] - No more announcements found — stopping pagination.
+2026-01-15 03:26:22 [INFO] - Fetching data from API Filings...
+2026-01-15 03:26:22 [INFO] - Response status: 200
+2026-01-15 03:26:22 [WARNING] - WARNING: API returned None
+2026-01-15 03:26:22 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-15 03:26:22 [INFO] - [SGX FILINGS] Scraping completed. Total records: 6
+2026-01-15 03:26:23 [INFO] - Length data top_70: 0 | Length data not top_70: 6
+2026-01-15 03:26:23 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-15 03:26:23 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-15 03:26:23 [INFO] - Processing remove duplicate data
+2026-01-15 03:26:23 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-15 03:26:23 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-15 03:26:23 [INFO] - No SGX filings data to filter.
+2026-01-15 03:26:23 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-15 03:26:23 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-15 03:26:23 [INFO] - No SGX filings alerts to send.
+2026-01-15 03:26:23 [INFO] - [sgx_payload] is empty, skipping push to DB
