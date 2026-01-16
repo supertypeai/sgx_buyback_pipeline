@@ -6738,3 +6738,85 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-15 03:27:51 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-15 03:27:51 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-16 03:24:02 [INFO] - Init Global Variable
+2026-01-16 03:24:31 [INFO] - Scraping from None to None...
+2026-01-16 03:24:31 [INFO] - Start scraping from start date: 20260114 to 20260116
+2026-01-16 03:24:31 [INFO] - page_start: 0
+2026-01-16 03:24:31 [INFO] - Fetching data from API Filings...
+2026-01-16 03:24:31 [INFO] - Response status: 200
+2026-01-16 03:24:31 [INFO] - Fetched 16 announcements
+2026-01-16 03:24:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EUVWIIPM76Q5IBIX/639d6bc71576fbe71aa47f8ef41f2666508c40aa3915917ce5e6c473cbf6b6a9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EUVWIIPM76Q5IBIX/872174__eFORM1V2%20Lim%20Chen%20Chong%20150126.pdf
+2026-01-16 03:24:35 [INFO] - [get_transaction_type_from_desc] transfer ignore due to value is not None
+2026-01-16 03:24:40 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7SNMFD6KCULE1LG0/b4c365769bcb178ea57f4d8f16b5550e4e1216b140af1aa876655fec320183d6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7SNMFD6KCULE1LG0/872172__eFORM1V2_Victor%20Levin_15.1.26%20final.pdf
+2026-01-16 03:24:42 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:24:42 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/7SNMFD6KCULE1LG0/872172__eFORM1V2_Victor%20Levin_15.1.26%20final.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:24:42 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ACMA LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/7SNMFD6KCULE1LG0/b4c365769bcb178ea57f4d8f16b5550e4e1216b140af1aa876655fec320183d6
+2026-01-16 03:24:42 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HNW3MKAX8J5EQF8V/87af8dddad8b41c918044c615ba4ffdef2fb113991952e1ded678301f3e7cf19 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HNW3MKAX8J5EQF8V/872170__eFORM1V2_QSP_15.1.26%20final.pdf
+2026-01-16 03:24:44 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:24:44 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HNW3MKAX8J5EQF8V/872170__eFORM1V2_QSP_15.1.26%20final.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:24:44 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ACMA LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/HNW3MKAX8J5EQF8V/87af8dddad8b41c918044c615ba4ffdef2fb113991952e1ded678301f3e7cf19
+2026-01-16 03:24:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WHCJRWYT75QXDRN2/f54cffc1cd209eaaa29da7ed14edd5948a3585892923b04d812526e330fe7fbc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WHCJRWYT75QXDRN2/872165__Sasseur_Group-Form_3.pdf
+2026-01-16 03:24:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-16 03:24:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-16 03:24:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-16 03:24:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-16 03:24:47 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-16 03:24:47 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/WHCJRWYT75QXDRN2/872165__Sasseur_Group-Form_3.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:24:47 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SASSEUR ASSET MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/WHCJRWYT75QXDRN2/f54cffc1cd209eaaa29da7ed14edd5948a3585892923b04d812526e330fe7fbc
+2026-01-16 03:24:47 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/T2JP8XR1X48JQ0BL/4bab44b39dbdf0fc50eb6e14977e2d25812c7c273c2b20e6c4b4a1f139752948 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/T2JP8XR1X48JQ0BL/872163__Yang%20Xue_Form%201.pdf
+2026-01-16 03:24:49 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:24:49 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/T2JP8XR1X48JQ0BL/872163__Yang%20Xue_Form%201.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:24:49 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SASSEUR ASSET MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/T2JP8XR1X48JQ0BL/4bab44b39dbdf0fc50eb6e14977e2d25812c7c273c2b20e6c4b4a1f139752948
+2026-01-16 03:24:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LB9HE05NM6MRBBC6/200b1c8a7b699c14782a41dd4005923b265e0e2be81b7e0eea21bf8a473e5c5d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LB9HE05NM6MRBBC6/872161__Xu%20Rongcan_Form%201.pdf
+2026-01-16 03:24:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:24:51 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/LB9HE05NM6MRBBC6/872161__Xu%20Rongcan_Form%201.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:24:51 [INFO] - [SGX FILINGS] Data not valid found for issuer name: SASSEUR ASSET MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/LB9HE05NM6MRBBC6/200b1c8a7b699c14782a41dd4005923b265e0e2be81b7e0eea21bf8a473e5c5d
+2026-01-16 03:24:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/12D5O8S0E3HTBH1S/d71caf7caccbd29a4a48df12b9a4caeb3d23d67e247f8e3547f1a8a4d4cd98ce pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/12D5O8S0E3HTBH1S/872159__SAMPL_Form%206.pdf
+2026-01-16 03:24:56 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/35EAWT2S3DDU5706/b33e26aba2f78ce7935aac927b25f9c5ccc3bfe8b39c3f65ea3b373958de41ce pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/35EAWT2S3DDU5706/872155__20260115%20-%20eFORM1%20-%20Guna.pdf
+2026-01-16 03:24:59 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:24:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/35EAWT2S3DDU5706/872155__20260115%20-%20eFORM1%20-%20Guna.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:24:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRICKLESTAR LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/35EAWT2S3DDU5706/b33e26aba2f78ce7935aac927b25f9c5ccc3bfe8b39c3f65ea3b373958de41ce
+2026-01-16 03:24:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LGCRNMKL4JCBRZCT/95604d91ee41ab6c37161f85a4a2e68ec108df44067411ba4ebca28b713234f4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LGCRNMKL4JCBRZCT/872153__20260115%20-%20eFORM1%20-%20Jeremy.pdf
+2026-01-16 03:25:01 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:25:01 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/LGCRNMKL4JCBRZCT/872153__20260115%20-%20eFORM1%20-%20Jeremy.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:25:01 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRICKLESTAR LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LGCRNMKL4JCBRZCT/95604d91ee41ab6c37161f85a4a2e68ec108df44067411ba4ebca28b713234f4
+2026-01-16 03:25:01 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DBBPGPGS2RL26YB8/c1a39c5fecca13155f5c77bfc573990cce1b6a01dac15b75528e4ca1de5a92e2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DBBPGPGS2RL26YB8/872151__20260115%20-%20eFORM1%20-%20Jern.pdf
+2026-01-16 03:25:03 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:25:03 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/DBBPGPGS2RL26YB8/872151__20260115%20-%20eFORM1%20-%20Jern.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:25:03 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRICKLESTAR LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/DBBPGPGS2RL26YB8/c1a39c5fecca13155f5c77bfc573990cce1b6a01dac15b75528e4ca1de5a92e2
+2026-01-16 03:25:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EQE9GZA43P7TYE0U/39159171eb8bda00415e39628c5e8737ad18e352f08d1442e9c484da08c3c052 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EQE9GZA43P7TYE0U/872149__20260115%20-%20eFORM1%20-%20Hee%20Keat.pdf
+2026-01-16 03:25:05 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:25:05 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/EQE9GZA43P7TYE0U/872149__20260115%20-%20eFORM1%20-%20Hee%20Keat.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:25:05 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRICKLESTAR LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/EQE9GZA43P7TYE0U/39159171eb8bda00415e39628c5e8737ad18e352f08d1442e9c484da08c3c052
+2026-01-16 03:25:06 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/J8O8X4NONR7E4FZ3/4636836268bfe8c5c4b829688f0923955d8147891ff8a77bd496559cdf596840 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/J8O8X4NONR7E4FZ3/872145__Form%203%20-%20Thomas%20Goh%20-%20Final.pdf
+2026-01-16 03:25:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2SJLORTQMZXKX9B9/493ed16b3ebfd2c05c619cff102f6e74951acf097c141ef8a48e7c6c6e2b6fc2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2SJLORTQMZXKX9B9/872136__Form%201_Tony%20Wong_15%20Jan%202026.pdf
+2026-01-16 03:25:11 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-16 03:25:11 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'On 15 January 2026, 804,000 shares were returned to the Director under the securities borrowing and lending agreement. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-01-16 03:25:11 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/2SJLORTQMZXKX9B9/872136__Form%201_Tony%20Wong_15%20Jan%202026.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:25:11 [INFO] - [SGX FILINGS] Data not valid found for issuer name: PC PARTNER GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/2SJLORTQMZXKX9B9/493ed16b3ebfd2c05c619cff102f6e74951acf097c141ef8a48e7c6c6e2b6fc2
+2026-01-16 03:25:12 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HPDVX4L59IZGN0ZU/0a46cc620d0def68958eda56c324e3d9bd445495452e389fc38de8f7cc0f34f1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HPDVX4L59IZGN0ZU/872112__eFORM3V2_WYH.pdf
+2026-01-16 03:25:14 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HPDVX4L59IZGN0ZU/872112__eFORM3V2_WYH.pdf: All transactions have no direct interest change and total shares change
+2026-01-16 03:25:14 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LOW KENG HUAT (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HPDVX4L59IZGN0ZU/0a46cc620d0def68958eda56c324e3d9bd445495452e389fc38de8f7cc0f34f1
+2026-01-16 03:25:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CQWL60RO95YUB16M/20e58820ded55bef33b697d9e4cf0efa65a1e799768e876654a26c0c47f996ae pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CQWL60RO95YUB16M/872099__eFORM1V2-%20Andy%20Luong.pdf
+2026-01-16 03:25:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6VJDKRVN5MMYHZYR/5572f782c6a67e142e64617487934a3a47197d2d34cf13678fd0694984113746 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6VJDKRVN5MMYHZYR/872094__eFORM1%20V2.pdf
+2026-01-16 03:25:31 [INFO] - page_start: 1
+2026-01-16 03:25:31 [INFO] - Fetching data from API Filings...
+2026-01-16 03:25:32 [INFO] - Response status: 200
+2026-01-16 03:25:32 [WARNING] - WARNING: API returned None
+2026-01-16 03:25:32 [INFO] - No more announcements found — stopping pagination.
+2026-01-16 03:25:44 [INFO] - Fetching data from API Filings...
+2026-01-16 03:25:45 [INFO] - Response status: 200
+2026-01-16 03:25:45 [WARNING] - WARNING: API returned None
+2026-01-16 03:25:45 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-16 03:25:45 [INFO] - [SGX FILINGS] Scraping completed. Total records: 5
+2026-01-16 03:25:46 [INFO] - Length data top_70: 0 | Length data not top_70: 5
+2026-01-16 03:25:46 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-16 03:25:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-16 03:25:46 [INFO] - Processing remove duplicate data
+2026-01-16 03:25:46 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-16 03:25:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-16 03:25:46 [INFO] - No SGX filings data to filter.
+2026-01-16 03:25:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-16 03:25:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-16 03:25:46 [INFO] - No SGX filings alerts to send.
+2026-01-16 03:25:46 [INFO] - [sgx_payload] is empty, skipping push to DB
