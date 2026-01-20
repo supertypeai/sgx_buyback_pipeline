@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RMO9R7LRMVKUKACH/872355__MAS%20Form%206%20Notification%20Form%20190126_final.pdf",
+    "symbol": "K71U",
+    "transaction_date": "2026-01-19",
+    "shareholder_name": "Keppel REIT Management Limited",
+    "number_of_stock": 49380900,
+    "value": 47405664.0,
+    "price_per_share": 0.96,
+    "transaction_type": "buy",
+    "shares_before": 214699566,
+    "shares_before_percentage": 0.05349,
+    "shares_after": 264080466,
+    "shares_after_percentage": 0.05349
+  }
+]

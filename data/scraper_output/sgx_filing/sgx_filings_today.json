@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/WJHO4S968SZGVM0K/872397__Form%201_WCK_Vesting%20of%20RSP_19Jan2026.pdf",
+    "symbol": "V03",
+    "transaction_date": "2026-01-19",
+    "shareholder_name": "Wong Chee Kheong",
+    "number_of_stock": 12000,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 148000,
+    "shares_before_percentage": 0.00051,
+    "shares_after": 160000,
+    "shares_after_percentage": 0.00056
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XFCINHV02LADKL6W/872395__Form%201_WNL_Vesting%20of%20RSP_19Jan2026.pdf",
+    "symbol": "V03",
+    "transaction_date": "2026-01-19",
+    "shareholder_name": "Wong Ngit Liong",
+    "number_of_stock": 16000,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 20731219,
+    "shares_before_percentage": 0.07204,
+    "shares_after": 20747219,
+    "shares_after_percentage": 0.07209
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RMO9R7LRMVKUKACH/872355__MAS%20Form%206%20Notification%20Form%20190126_final.pdf",
+    "symbol": "K71U",
+    "transaction_date": "2026-01-19",
+    "shareholder_name": "Keppel REIT Management Limited",
+    "number_of_stock": 49380900,
+    "value": 47405664.0,
+    "price_per_share": 0.96,
+    "transaction_type": "buy",
+    "shares_before": 214699566,
+    "shares_before_percentage": 0.05349,
+    "shares_after": 264080466,
+    "shares_after_percentage": 0.05349
+  }
+]

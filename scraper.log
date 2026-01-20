@@ -6944,3 +6944,111 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-19 03:46:07 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-01-19 03:46:07 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-19 03:46:07 [INFO] - [sgx_payload] is empty, skipping push to DB
+2026-01-20 03:27:38 [INFO] - Init Global Variable
+2026-01-20 03:28:01 [INFO] - Scraping from None to None...
+2026-01-20 03:28:01 [INFO] - Start scraping from start date: 20260118 to 20260120
+2026-01-20 03:28:01 [INFO] - page_start: 0
+2026-01-20 03:28:01 [INFO] - Fetching data from API Filings...
+2026-01-20 03:28:02 [INFO] - Response status: 200
+2026-01-20 03:28:02 [INFO] - Fetched 20 announcements
+2026-01-20 03:28:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FL389YZWO6JLI5LL/a6a702e76959c9bd2c9a7af41a0f4197f47b4bf8439730f7baa493950f3748c4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FL389YZWO6JLI5LL/872441__20260119%20-%20eFORM1V2%20-%20TYK.pdf
+2026-01-20 03:28:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/I2AFUKGF2L8NUXR0/773bc12baba4607588dc1460639a1e6b3e002c6ccefbc10b83ceb777e2ea7b35 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/I2AFUKGF2L8NUXR0/872429__Form%201%20_Inch.pdf
+2026-01-20 03:28:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/G8N1HQKGIF49TH6G/733158840c5cfbbf48cf0775d3b6b1ef7700a876254d305ca893273598ee0216 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/G8N1HQKGIF49TH6G/872425__eForm3_Tan%20Boon%20Seng.pdf
+2026-01-20 03:28:24 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:28:24 [INFO] - Transfer detected - transformed shareholder: Tan Boon Seng -> None
+2026-01-20 03:28:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/86HANLX2SU47FDU3/bcc4ebf383c0084e3216dc1a382d8a30d1f5cfeeefe5c2d5b4d48c2e49ef9145 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/86HANLX2SU47FDU3/872423__20260119%20-%20eFORM3%20-%20Powertech.pdf
+2026-01-20 03:28:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:28:28 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'TrickleStar Limited had on 19 January 2026 vested a total of 3,500,000 ordinary shares under TrickleStar Performance Share Plan. Arising thereto, the percentage level of interest in Powertech Industiral Co. Ltd has decreased from 9.13% to 8.93%'
+2026-01-20 03:28:28 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/86HANLX2SU47FDU3/872423__20260119%20-%20eFORM3%20-%20Powertech.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:28:28 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TRICKLESTAR LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/86HANLX2SU47FDU3/bcc4ebf383c0084e3216dc1a382d8a30d1f5cfeeefe5c2d5b4d48c2e49ef9145
+2026-01-20 03:28:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KH1CTZKT3Q05584U/2c6c9cd9941e2a86222fa3102fbe834eca29a07766a4669b16f3a81f021e8025 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KH1CTZKT3Q05584U/872421__20260119%20-%20eFORM1%20-%20Guna.pdf
+2026-01-20 03:28:31 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:28:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6YUVK1ZKAF237OEU/84e2229bdb090fee0ad2d7284206b0252aea806b807e75912d7fd6476629abb8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6YUVK1ZKAF237OEU/872416__20260119%20-%20eFORM1%20-%20Jern.pdf
+2026-01-20 03:28:38 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:28:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RDWAF2F4J8T6WRWF/292f66b9a09ebbaadb62f6d50c3435667e7448df48a8db5282a57eb33411f9ab pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RDWAF2F4J8T6WRWF/872410__20260119%20-%20eFORM1%20-%20Jeremy.pdf
+2026-01-20 03:28:43 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:28:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TOBQJYQJ4P15Q20E/689274767700be2a88044cc82eafc8118f0945337d86666eb8d3780ae002442c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TOBQJYQJ4P15Q20E/872408__20260119%20-%20eFORM1%20-%20Hee%20Keat.pdf
+2026-01-20 03:28:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:28:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WJHO4S968SZGVM0K/5f6debc99e8457ba6fbd011b16224b1adfaacfb98f73367f4efb1136cf7c39ed pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WJHO4S968SZGVM0K/872397__Form%201_WCK_Vesting%20of%20RSP_19Jan2026.pdf
+2026-01-20 03:28:56 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XFCINHV02LADKL6W/498fe76695f2eadf50ca30df4a225822c584df859a1c7b0d180ddd378d895f9d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XFCINHV02LADKL6W/872395__Form%201_WNL_Vesting%20of%20RSP_19Jan2026.pdf
+2026-01-20 03:29:04 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NBEAHLAVOS1U8N5O/f91618920ba8cf11c3573295ee2947e2fb01711563908d6e0507d62fcdaadaea pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NBEAHLAVOS1U8N5O/872390__Form%203_Librae%20_17%20Jan%202026.pdf
+2026-01-20 03:29:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-20 03:29:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-20 03:29:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-20 03:29:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-20 03:29:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-20 03:29:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-20 03:29:13 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/NBEAHLAVOS1U8N5O/872390__Form%203_Librae%20_17%20Jan%202026.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: THE TRENDLINES GROUP LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/NBEAHLAVOS1U8N5O/f91618920ba8cf11c3573295ee2947e2fb01711563908d6e0507d62fcdaadaea
+2026-01-20 03:29:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MLH35W5TO11CRMJH/ca7d7741f4b15e19858cff93f9f5aacfc00bdc70e9a462d5a37f9b695a997365 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MLH35W5TO11CRMJH/872386__Form%201_Haim_17%20Jan%202026.pdf
+2026-01-20 03:29:15 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:15 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/MLH35W5TO11CRMJH/872386__Form%201_Haim_17%20Jan%202026.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:15 [INFO] - [SGX FILINGS] Data not valid found for issuer name: THE TRENDLINES GROUP LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/MLH35W5TO11CRMJH/ca7d7741f4b15e19858cff93f9f5aacfc00bdc70e9a462d5a37f9b695a997365
+2026-01-20 03:29:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VZ3GU9BSNB4ZX2XR/435244da293241dcbb7feb4e97d6498950ed4bb557f1c3fbcce9331cb1dc933b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VZ3GU9BSNB4ZX2XR/872383__FORM1%20-%20Lilian.pdf
+2026-01-20 03:29:16 [ERROR] - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/VZ3GU9BSNB4ZX2XR/872383__FORM1%20-%20Lilian.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 719, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-01-20 03:29:16 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEPTAMAX INTERNATIONAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VZ3GU9BSNB4ZX2XR/435244da293241dcbb7feb4e97d6498950ed4bb557f1c3fbcce9331cb1dc933b
+2026-01-20 03:29:17 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8ECQN5X4C8F5MEVC/3d7ee68b8b5efe08c0dda305d03af68bf305c4067a3b07b009b107a20c1b6ad0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8ECQN5X4C8F5MEVC/872381__FORM3%20-%20Lilian.pdf
+2026-01-20 03:29:19 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:19 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/8ECQN5X4C8F5MEVC/872381__FORM3%20-%20Lilian.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:19 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEPTAMAX INTERNATIONAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/8ECQN5X4C8F5MEVC/3d7ee68b8b5efe08c0dda305d03af68bf305c4067a3b07b009b107a20c1b6ad0
+2026-01-20 03:29:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4AO760DLNYYAGD6O/d53a55f4ee3608f438ad7e0ec884f4d3d8cfaa1ab8683d2fc33a7b4c64e0a1d7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4AO760DLNYYAGD6O/872378__FORM3%20-%20Dennis.pdf
+2026-01-20 03:29:21 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:21 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4AO760DLNYYAGD6O/872378__FORM3%20-%20Dennis.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:21 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEPTAMAX INTERNATIONAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/4AO760DLNYYAGD6O/d53a55f4ee3608f438ad7e0ec884f4d3d8cfaa1ab8683d2fc33a7b4c64e0a1d7
+2026-01-20 03:29:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YN7HLDWMAZ0H2MT6/8760650e5a57d536549b380d6df3d7445e1b5cb1948858c732d96ee4786d47d6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YN7HLDWMAZ0H2MT6/872373__eFORM1V2-%20Andy%20Luong.pdf
+2026-01-20 03:29:28 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1FDOWZ91U7VJKVVV/0f4f1cf8354057b5ef2859c5962fffee69d0e50a2673d74028a0ec61f451eee6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1FDOWZ91U7VJKVVV/872371__20260119Form1_GSC.pdf
+2026-01-20 03:29:30 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:30 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/1FDOWZ91U7VJKVVV/872371__20260119Form1_GSC.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:30 [INFO] - [SGX FILINGS] Data not valid found for issuer name: FRENCKEN GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/1FDOWZ91U7VJKVVV/0f4f1cf8354057b5ef2859c5962fffee69d0e50a2673d74028a0ec61f451eee6
+2026-01-20 03:29:30 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PHKAV4XUTKRQV180/bfe4b769af4422f08754e04f9a37079b09893c8e366f7a2282eaeee323555ebc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PHKAV4XUTKRQV180/872367__eFORM3V2_Leo.pdf
+2026-01-20 03:29:33 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:33 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/PHKAV4XUTKRQV180/872367__eFORM3V2_Leo.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:33 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEALTHBANK HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/PHKAV4XUTKRQV180/bfe4b769af4422f08754e04f9a37079b09893c8e366f7a2282eaeee323555ebc
+2026-01-20 03:29:33 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DXMG4BTGFO5XETH4/2089f79884306ff4de93ccc9e1a30287d24c51aae01f5a788eee7c16d4f183aa pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DXMG4BTGFO5XETH4/872364__eFORM3V2_PF.pdf
+2026-01-20 03:29:35 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:35 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/DXMG4BTGFO5XETH4/872364__eFORM3V2_PF.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:35 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEALTHBANK HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/DXMG4BTGFO5XETH4/2089f79884306ff4de93ccc9e1a30287d24c51aae01f5a788eee7c16d4f183aa
+2026-01-20 03:29:36 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BSXVOAHU3KMF25C3/0773a8db52a55d27b4e6e7f35e55b2eb85402df97872f6bbfa4424d52d17b1b1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BSXVOAHU3KMF25C3/872362__eFORM3V2_Luning.pdf
+2026-01-20 03:29:37 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:37 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BSXVOAHU3KMF25C3/872362__eFORM3V2_Luning.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:37 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEALTHBANK HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BSXVOAHU3KMF25C3/0773a8db52a55d27b4e6e7f35e55b2eb85402df97872f6bbfa4424d52d17b1b1
+2026-01-20 03:29:39 [INFO] - page_start: 1
+2026-01-20 03:29:39 [INFO] - Fetching data from API Filings...
+2026-01-20 03:29:40 [INFO] - Response status: 200
+2026-01-20 03:29:40 [INFO] - Fetched 5 announcements
+2026-01-20 03:29:41 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DB1UQMJFS7YPTPQ5/05b10d6d006f4c5eac01cded132566c59605d6f84d668e26bc05fb69c0723cf0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DB1UQMJFS7YPTPQ5/872360__eFORM3V2_FL.pdf
+2026-01-20 03:29:42 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-20 03:29:42 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/DB1UQMJFS7YPTPQ5/872360__eFORM3V2_FL.pdf: All transactions have no direct interest change and total shares change
+2026-01-20 03:29:42 [INFO] - [SGX FILINGS] Data not valid found for issuer name: HEALTHBANK HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/DB1UQMJFS7YPTPQ5/05b10d6d006f4c5eac01cded132566c59605d6f84d668e26bc05fb69c0723cf0
+2026-01-20 03:29:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/755OZX2SJYQNNMN3/d9c3f7f07ad0732ccb92ea05329a97bb76364fb01743b6f8da42740bb7804f6f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/755OZX2SJYQNNMN3/872358__eFORM3V2_Dominic.pdf
+2026-01-20 03:29:46 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RMO9R7LRMVKUKACH/2687583b03c51b7c91e5d87588faff21a2e2036613c4276514cf6400a8fdf8f6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RMO9R7LRMVKUKACH/872355__MAS%20Form%206%20Notification%20Form%20190126_final.pdf
+2026-01-20 03:29:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/58ZBHAULTFGI7AAQ/2e7f1b0123dc068338cec33bdf14c54a7d12e84d308f9469e07250029982fc97 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/58ZBHAULTFGI7AAQ/872349__eFORM3V2%20CWY_19.1.26%20FINAL.pdf
+2026-01-20 03:30:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EJLX1IOMPDSL4PWP/e2b71b5f09828c386ac2d530444803306ca344c7c3ff88a319fdefdde5d1ea54 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EJLX1IOMPDSL4PWP/872315__Form%201-LWS.pdf
+2026-01-20 03:30:13 [INFO] - page_start: 2
+2026-01-20 03:30:13 [INFO] - Fetching data from API Filings...
+2026-01-20 03:30:14 [INFO] - Response status: 200
+2026-01-20 03:30:14 [WARNING] - WARNING: API returned None
+2026-01-20 03:30:14 [INFO] - No more announcements found — stopping pagination.
+2026-01-20 03:30:26 [INFO] - Fetching data from API Filings...
+2026-01-20 03:30:26 [INFO] - Response status: 200
+2026-01-20 03:30:26 [WARNING] - WARNING: API returned None
+2026-01-20 03:30:26 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-20 03:30:26 [INFO] - [SGX FILINGS] Scraping completed. Total records: 17
+2026-01-20 03:30:28 [INFO] - Length data top_70: 3 | Length data not top_70: 14
+2026-01-20 03:30:28 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-20 03:30:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-20 03:30:28 [INFO] - Processing remove duplicate data
+2026-01-20 03:30:28 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-20 03:30:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-20 03:30:28 [INFO] - Filtering completed. Insertable: 1 | Not insertable: 2
+2026-01-20 03:30:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-20 03:30:28 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-20 03:30:29 [INFO] - Email sent! Message ID: 011c019bd974328d-cf7aa40f-86f3-4227-9ef5-ea74f96a91d5-000000
+2026-01-20 03:30:30 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
