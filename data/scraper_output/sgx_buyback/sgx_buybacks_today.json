@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/N4V9MRY39OI6PM8J/9a18c8beadc96f1ff7efb73d171a927968d6e6d797b7e97b9bea43d06ff2fc6f",
+    "symbol": "U11",
+    "purchase_date": "2026-01-19",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 36.84,
+      "lowest": 36.4
+    },
+    "total_value": 1396705.27,
+    "total_shares_purchased": 38000,
+    "treasury_shares_after_purchase": 15243008,
+    "mandate": {
+      "mandate_total": 83545909,
+      "cumulative_purchased": 19235200,
+      "mandate_remaining": 64310709,
+      "mandate_start": "2025-04-21",
+      "mandate_end": "2026-04-21"
+    }
+  }
+]
