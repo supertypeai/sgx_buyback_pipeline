@@ -7079,3 +7079,69 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-20 03:32:15 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-20 03:32:16 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-21 03:27:10 [INFO] - Init Global Variable
+2026-01-21 03:27:36 [INFO] - Scraping from None to None...
+2026-01-21 03:27:36 [INFO] - Start scraping from start date: 20260119 to 20260121
+2026-01-21 03:27:36 [INFO] - page_start: 0
+2026-01-21 03:27:36 [INFO] - Fetching data from API Filings...
+2026-01-21 03:27:36 [INFO] - Response status: 200
+2026-01-21 03:27:36 [INFO] - Fetched 13 announcements
+2026-01-21 03:27:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IP89SH9RUA1YNB87/5a56d0ad32b45b952a07cee4b72bc631bae696d4130b3c7dc0ee03b0215cbcc4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IP89SH9RUA1YNB87/872550__eFORM1%20Soh.CH%2020%20Jan%2026A%20Series%201%2019.pdf
+2026-01-21 03:27:38 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INTRACO LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/IP89SH9RUA1YNB87/5a56d0ad32b45b952a07cee4b72bc631bae696d4130b3c7dc0ee03b0215cbcc4
+2026-01-21 03:27:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C5PYUESDJ0Y8PTOA/2642d4944eac8897a924ddb05bce9fc5609227b45d22ec43daca4205303bdb20 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C5PYUESDJ0Y8PTOA/872548__eFORM1%20MLM%2020%20Jan%2026A%2019%20Series%201.pdf
+2026-01-21 03:27:39 [INFO] - [SGX FILINGS] Data not valid found for issuer name: INTRACO LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/C5PYUESDJ0Y8PTOA/2642d4944eac8897a924ddb05bce9fc5609227b45d22ec43daca4205303bdb20
+2026-01-21 03:27:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GPZXH94ZE99D61YT/2d3d95efb5cf83443ce6c5f9ba8f76694ace8406fd8a48df435ac875c4066188 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GPZXH94ZE99D61YT/872545__eFORM3V2%20-%20Montelion%20and%20Sun%20Quan%20-%2019%20Jan%202026%20-%20Final.pdf
+2026-01-21 03:27:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-21 03:27:41 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-21 03:27:41 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-21 03:27:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QAM7NBFROAMIHY7K/64fbeaf8e6d5dd92cc670893cdabc3d30f60ff8f1a1cc0e20d1d34b2ca397700 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QAM7NBFROAMIHY7K/872540__eFORM1_Alvin%20Chew.pdf
+2026-01-21 03:27:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UW5VKK9HGOOD2IMI/a3655392151739ebae07381c13f39fd34ba5731b3d067ff310053c561285b824 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UW5VKK9HGOOD2IMI/872536__Form%201%20-%20Stanley.pdf
+2026-01-21 03:27:53 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-21 03:27:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YYIFS9R61I84JPGK/5b5538014bb8d7d56c1fd410501e58db92d283053cd5b3204dbebcb9e484404b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YYIFS9R61I84JPGK/872534__Form%201%20-%20Andy.pdf
+2026-01-21 03:27:57 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-21 03:27:57 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/YYIFS9R61I84JPGK/872534__Form%201%20-%20Andy.pdf: All transactions have no direct interest change and total shares change
+2026-01-21 03:27:57 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UMS INTEGRATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/YYIFS9R61I84JPGK/5b5538014bb8d7d56c1fd410501e58db92d283053cd5b3204dbebcb9e484404b
+2026-01-21 03:27:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LJP4GO5UWHPN3XKY/8c0b481e920146f5b0d53501f419c50a7877a14789d9a900786c2bf9ee05ce5c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LJP4GO5UWHPN3XKY/872515__eFORM1V2_LKJ_19.1.2026.pdf
+2026-01-21 03:28:04 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2DXN3NBTDPXL5D54/ba37d9b77f1373a5103ee3aea07d3d7dde7b4c7be6682221e42806c2f97fbdb5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2DXN3NBTDPXL5D54/872513__Form%201_Chris%20Teo%2019%20Jan%202026.pdf
+2026-01-21 03:28:06 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-21 03:28:06 [INFO] - Transfer detected - transformed shareholder: Teo Miang Chneh -> Estate of Teo Soo Chuan [->] Teo Miang Chneh
+2026-01-21 03:28:10 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8NWUA5EXXPCYDJVL/989b767fedc99701e623d8e350455a3f859e27dc4c86740f78ac61a6c67798b5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8NWUA5EXXPCYDJVL/872511__Form%201_Jamie%20Teo%2019%20Jan%202026.pdf
+2026-01-21 03:28:12 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-21 03:28:12 [INFO] - Transfer detected - transformed shareholder: Teo Miang Yeow -> Estate of Teo Soo Chuan [->] Teo Miang Yeow
+2026-01-21 03:28:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Z7VA37D9YWQD6BR2/0616af4c3e8fe4130f8b73f8b6ba7b2d83ec583a4a888cb78006bedd031bfd4c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Z7VA37D9YWQD6BR2/872502__Form%201-Victor%20Song.pdf
+2026-01-21 03:28:20 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-21 03:28:20 [INFO] - Transfer detected - transformed shareholder: Victor Song Chern Chean -> Elite Partners Holdings Pte. Ltd. ("EPH") [->] its entitled employees and employees of related corporation
+2026-01-21 03:28:20 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/Z7VA37D9YWQD6BR2/872502__Form%201-Victor%20Song.pdf: All transactions have no direct interest change and total shares change
+2026-01-21 03:28:20 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ELITE UK REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/Z7VA37D9YWQD6BR2/0616af4c3e8fe4130f8b73f8b6ba7b2d83ec583a4a888cb78006bedd031bfd4c
+2026-01-21 03:28:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/16K0BY0EDSOIGBCD/330bb46f353396570d710d0bfb4e410b1deaf19a4c8f5997492c19225b1b2a06 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/16K0BY0EDSOIGBCD/872500__FORM1_Chew%20Choon%20Tee.pdf
+2026-01-21 03:28:26 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YHGRNMBRAHLEIA8N/0f2086afea0eb6fda278fb386d575e1264986878e76c1703f7484dd9dbc41935 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YHGRNMBRAHLEIA8N/872498__Form%201-Micheal%20Tan.pdf
+2026-01-21 03:28:28 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-21 03:28:28 [INFO] - Transfer detected - transformed shareholder: Tan Hai Peng Micheal -> Elite Partners Holdings Pte. Ltd. ("EPH") [->] its entitled employees and employees of related corporation
+2026-01-21 03:28:28 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/YHGRNMBRAHLEIA8N/872498__Form%201-Micheal%20Tan.pdf: All transactions have no direct interest change and total shares change
+2026-01-21 03:28:28 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ELITE UK REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/YHGRNMBRAHLEIA8N/0f2086afea0eb6fda278fb386d575e1264986878e76c1703f7484dd9dbc41935
+2026-01-21 03:28:28 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EEHJSHG8DSXBR1K3/2215af78893bd2c0078d13abc4bb16513b0a76358b0ea5fa6b9c52a75ee7959f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EEHJSHG8DSXBR1K3/872488__eForm1_Dato%20Jaya.pdf
+2026-01-21 03:28:30 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-21 03:28:30 [INFO] - Transfer detected - transformed shareholder: DATO' JAYA J B TAN -> direct interest [->] deemed interest arising from transfer of shares to a lender as security for a loan
+2026-01-21 03:28:30 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/EEHJSHG8DSXBR1K3/872488__eForm1_Dato%20Jaya.pdf: All transactions have no direct interest change and total shares change
+2026-01-21 03:28:30 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ENVICTUS INTERNATIONAL HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/EEHJSHG8DSXBR1K3/2215af78893bd2c0078d13abc4bb16513b0a76358b0ea5fa6b9c52a75ee7959f
+2026-01-21 03:28:32 [INFO] - page_start: 1
+2026-01-21 03:28:32 [INFO] - Fetching data from API Filings...
+2026-01-21 03:28:33 [INFO] - Response status: 200
+2026-01-21 03:28:33 [WARNING] - WARNING: API returned None
+2026-01-21 03:28:33 [INFO] - No more announcements found — stopping pagination.
+2026-01-21 03:28:44 [INFO] - Fetching data from API Filings...
+2026-01-21 03:28:45 [INFO] - Response status: 200
+2026-01-21 03:28:45 [WARNING] - WARNING: API returned None
+2026-01-21 03:28:45 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-21 03:28:45 [INFO] - [SGX FILINGS] Scraping completed. Total records: 8
+2026-01-21 03:28:46 [INFO] - Length data top_70: 0 | Length data not top_70: 8
+2026-01-21 03:28:46 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-21 03:28:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-21 03:28:46 [INFO] - Processing remove duplicate data
+2026-01-21 03:28:46 [INFO] - Length data after duplicate removing: 0
+2026-01-21 03:28:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-21 03:28:46 [INFO] - No SGX filings data to filter.
+2026-01-21 03:28:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-21 03:28:46 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-21 03:28:46 [INFO] - No SGX filings alerts to send.
+2026-01-21 03:28:46 [INFO] - [sgx_payload] is empty, skipping push to DB
