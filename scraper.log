@@ -7332,3 +7332,112 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-22 03:46:06 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-22 03:46:06 [INFO] - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-23 03:26:49 [INFO] - Init Global Variable
+2026-01-23 03:27:13 [INFO] - Scraping from None to None...
+2026-01-23 03:27:13 [INFO] - Start scraping from start date: 20260121 to 20260123
+2026-01-23 03:27:13 [INFO] - page_start: 0
+2026-01-23 03:27:13 [INFO] - Fetching data from API Filings...
+2026-01-23 03:27:14 [INFO] - Response status: 200
+2026-01-23 03:27:14 [INFO] - Fetched 20 announcements
+2026-01-23 03:27:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NBXHWSUZJVUZ3SHQ/04b49fa3af21150ef3f2aa59f3a27a5be9e1a7ff07b94fdd0c822060fc9ef31c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NBXHWSUZJVUZ3SHQ/872872__eFORM3V2%20-%20FEOC%2020.1.26%20final.pdf
+2026-01-23 03:27:16 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-23 03:27:16 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 755,500 shares via open market transaction.'
+2026-01-23 03:27:16 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/NBXHWSUZJVUZ3SHQ/872872__eFORM3V2%20-%20FEOC%2020.1.26%20final.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:27:16 [INFO] - [SGX FILINGS] Data not valid found for issuer name: BANYAN TREE HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/NBXHWSUZJVUZ3SHQ/04b49fa3af21150ef3f2aa59f3a27a5be9e1a7ff07b94fdd0c822060fc9ef31c
+2026-01-23 03:27:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/R5I2EZFKSWM1NV89/23bf426f87439a405de80257880eaf69b3aac715920555dc880787b9762513f8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/R5I2EZFKSWM1NV89/872870__eFORM3V2%20-%20PN%2020.1.26%20final.pdf
+2026-01-23 03:27:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-23 03:27:18 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 755,500 shares via open market transaction.'
+2026-01-23 03:27:18 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/R5I2EZFKSWM1NV89/872870__eFORM3V2%20-%20PN%2020.1.26%20final.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:27:18 [INFO] - [SGX FILINGS] Data not valid found for issuer name: BANYAN TREE HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/R5I2EZFKSWM1NV89/23bf426f87439a405de80257880eaf69b3aac715920555dc880787b9762513f8
+2026-01-23 03:27:18 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/U9Y2ZF3C17IOQ3JW/214b9f82d16c216e73d59f92ea4f1eb608444c6dcfd79829fd96e8f7ad548c01 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/U9Y2ZF3C17IOQ3JW/872868__eFORM3V2%20-%20RN%2020.1.26%20final.pdf
+2026-01-23 03:27:20 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-23 03:27:20 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Goodview Properties Pte Ltd acquired 755,500 shares via open market transaction.'
+2026-01-23 03:27:20 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/U9Y2ZF3C17IOQ3JW/872868__eFORM3V2%20-%20RN%2020.1.26%20final.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:27:20 [INFO] - [SGX FILINGS] Data not valid found for issuer name: BANYAN TREE HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/U9Y2ZF3C17IOQ3JW/214b9f82d16c216e73d59f92ea4f1eb608444c6dcfd79829fd96e8f7ad548c01
+2026-01-23 03:27:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OTTWTHAGLG2266KV/3462433052f9c9bdfa3b0e89fefbf7dba8e5efcfc2867b0288ac146bddd3e865 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OTTWTHAGLG2266KV/872866__eFORM3V2%20-%20The%20Estate%2020.1.26%20final.pdf
+2026-01-23 03:27:22 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:27:22 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:27:22 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/OTTWTHAGLG2266KV/872866__eFORM3V2%20-%20The%20Estate%2020.1.26%20final.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:27:22 [INFO] - [SGX FILINGS] Data not valid found for issuer name: BANYAN TREE HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/OTTWTHAGLG2266KV/3462433052f9c9bdfa3b0e89fefbf7dba8e5efcfc2867b0288ac146bddd3e865
+2026-01-23 03:27:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZFGB4G91PYWI0JJK/4624165e987c7e0c2436b3d79e7b75a5c925bca63f384efaf036cf182a95b5a7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZFGB4G91PYWI0JJK/872864__eFORM3V2%20-%20Goodview%2020.1.26%20final.pdf
+2026-01-23 03:27:30 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EE7AJS9ZWIX4JT0E/bada4d534fe6b432fa298ac72786b5f53f4695601f244e5bf6b92f6220e107b8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EE7AJS9ZWIX4JT0E/872859__Form%203%20-%20PU%20GUOFEI.pdf
+2026-01-23 03:27:37 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5P26524M1GRKFVJZ/74978a02bcd9e1ff2ebbd8e82b14c1576e84c2e3577764cb07c83228a1047f63 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5P26524M1GRKFVJZ/872843__4.%20eFORM1V2%20-%20LSM%20-%2022%20Jan%202026.pdf
+2026-01-23 03:27:43 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WU3E7UFUBEEU91OY/8550a2fb78e7b10be399470d2a22a01d1dbd024ff0db3f384ecaa61144900c8d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WU3E7UFUBEEU91OY/872841__3.%20eFORM1V2%20-%20LHT%20-%2022%20Jan%202026.pdf
+2026-01-23 03:27:50 [ERROR] - [extract symbol] Failed to extract symbol from split: 'NoneType' object has no attribute 'split'
+2026-01-23 03:27:50 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ICR3IL0DGOE8XH8P/54c4657ad54d4044351301edd039a22961be82736fd7801ec4683c3f17dc5f9a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ICR3IL0DGOE8XH8P/872839__2.%20eFORM1V2%20-%20JHJ%20-%2022%20Jan%202026.pdf
+2026-01-23 03:27:58 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6CKCHNR9127L3OAJ/3b41059a35f0e61afa18c308988c4cc68cc42dfb053d50bc08bb386896aeae8b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6CKCHNR9127L3OAJ/872837__1.%20eFORM1V2%20-%20CCK%20-%2022%20Jan%202026.pdf
+2026-01-23 03:28:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/UUIDZG76U1EPIEZU/09030e6c05bed26b5a033796e477cea153b421b7239bbcaa41b34487d8eb9042 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/UUIDZG76U1EPIEZU/872819__eFORM1V2_Lim%20Chen%20Chong%20210126.pdf
+2026-01-23 03:28:04 [INFO] - [get_transaction_type_from_desc] transfer ignore due to value is not None
+2026-01-23 03:28:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WE02FMBQDGO7GNIT/ee94a1dd13cbae6a36c164594066df2a65a545235651b9a3754cfc124f3b711b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WE02FMBQDGO7GNIT/872814__eform3v2_FIL_20260122_Final.pdf
+2026-01-23 03:28:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:11 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:12 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-23 03:28:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/L1GU8Z07IYJG4DCL/0d15de0ed0a2c2d8a01c640b716d574eb83ba542cf77ae622560e8a757c08346 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/L1GU8Z07IYJG4DCL/872801__Keppel%20Reit%2020260121%20FORM%203_final.pdf
+2026-01-23 03:28:16 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: '923,189,327 new Units were allotted and issued on 19 January 2026 pursuant to the Preferential Offering (as defined in the Listed Issuer's announcements on 11, 16, 26 December 2025 and 13 January 2026). The Relevant Entities acquired an aggregate of 356,758,432 new Units in the Preferential Offering.'
+2026-01-23 03:28:16 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/L1GU8Z07IYJG4DCL/872801__Keppel%20Reit%2020260121%20FORM%203_final.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:28:16 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/L1GU8Z07IYJG4DCL/0d15de0ed0a2c2d8a01c640b716d574eb83ba542cf77ae622560e8a757c08346
+2026-01-23 03:28:17 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CR6DF8AEG9I82BST/7ce2647b247ba4d055934679c8465da0520141b0b65e5016465d8ead1a439ef8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CR6DF8AEG9I82BST/872792__eFORM1V2-%20Andy%20Luong.pdf
+2026-01-23 03:28:21 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BUBHJ3N030R3S4HY/eb88c2039e7d53b080ebeeae733636dd20e093d2fc7cb27b467bdccc69de9847 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BUBHJ3N030R3S4HY/872779__Form%203%20-%20Silchester%20-%20ComfortDelGro%20-%2020260121.pdf
+2026-01-23 03:28:22 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BUBHJ3N030R3S4HY/872779__Form%203%20-%20Silchester%20-%20ComfortDelGro%20-%2020260121.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:28:22 [INFO] - [SGX FILINGS] Data not valid found for issuer name: COMFORTDELGRO CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BUBHJ3N030R3S4HY/eb88c2039e7d53b080ebeeae733636dd20e093d2fc7cb27b467bdccc69de9847
+2026-01-23 03:28:23 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XOFWD82EE64RJGZL/4fe299faa2df062991568f6d11ec2f7586e5ba3997478cb0f1f67b42c96c606e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XOFWD82EE64RJGZL/872777__DCRM%20-%20Form%206_22%20January%202026.pdf
+2026-01-23 03:28:25 [INFO] - [get_transaction_type_from_desc] transfer ignore due to value is not None
+2026-01-23 03:28:29 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CPF2FJQHTGSJJAVD/80aabfc68fc79eae05690414d998ec25a5530211ee854d1025c52199421d864c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CPF2FJQHTGSJJAVD/872775__20260122%20FORM1V2_James%20Soh.pdf
+2026-01-23 03:28:30 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-23 03:28:30 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/CPF2FJQHTGSJJAVD/872775__20260122%20FORM1V2_James%20Soh.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:28:30 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ASTI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/CPF2FJQHTGSJJAVD/80aabfc68fc79eae05690414d998ec25a5530211ee854d1025c52199421d864c
+2026-01-23 03:28:31 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/T8F5JQP07CIHL38V/824c8c9dc87e8fbbacd58073758ea1cd964088154a2f274500e2e14ba71cb9fd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/T8F5JQP07CIHL38V/872772__20260122%20FORM1V2_Eddie%20Ng.pdf
+2026-01-23 03:28:32 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-23 03:28:32 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/T8F5JQP07CIHL38V/872772__20260122%20FORM1V2_Eddie%20Ng.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:28:32 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ASTI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/T8F5JQP07CIHL38V/824c8c9dc87e8fbbacd58073758ea1cd964088154a2f274500e2e14ba71cb9fd
+2026-01-23 03:28:33 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/39GCNPK7CCKFT36C/d2b7b95f1d599fe32707591d82668b1ef75eac1f6e9a97314f657bc71063739e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/39GCNPK7CCKFT36C/872764__Lee%20Wan%20Tang%20Form%203.pdf
+2026-01-23 03:28:39 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C6DCI8L4FRLG5TQ9/21542f6a9709f57cc7bdcb9010ff4df895b7da3785ace08958b442ecdbc822a5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C6DCI8L4FRLG5TQ9/872762__Lie%20Ly%20Form%201.pdf
+2026-01-23 03:28:41 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/C6DCI8L4FRLG5TQ9/872762__Lie%20Ly%20Form%201.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:28:41 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MARCO POLO MARINE LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/C6DCI8L4FRLG5TQ9/21542f6a9709f57cc7bdcb9010ff4df895b7da3785ace08958b442ecdbc822a5
+2026-01-23 03:28:45 [INFO] - page_start: 1
+2026-01-23 03:28:45 [INFO] - Fetching data from API Filings...
+2026-01-23 03:28:45 [INFO] - Response status: 200
+2026-01-23 03:28:45 [INFO] - Fetched 3 announcements
+2026-01-23 03:28:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/01KDYNWEOWTH433Q/35508cefe5f59fd0e14b361ba89036b12d24524fb1739efe85a1cd445c8cd6a9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/01KDYNWEOWTH433Q/872760__Darren%20Teo%20Form%201.pdf
+2026-01-23 03:28:47 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/01KDYNWEOWTH433Q/872760__Darren%20Teo%20Form%201.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:28:47 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MARCO POLO MARINE LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/01KDYNWEOWTH433Q/35508cefe5f59fd0e14b361ba89036b12d24524fb1739efe85a1cd445c8cd6a9
+2026-01-23 03:28:48 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YMD37F3NZPOQUHEU/0804113c9e5c9e94c737cee6a27e7d240477570a194a9aeb9d9c228e3abd48fe pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YMD37F3NZPOQUHEU/872758__Apricot%20Capital%20Form%203.pdf
+2026-01-23 03:28:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:50 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-23 03:28:50 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-23 03:28:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NI2PAAUSEZ25N0RB/22f49acec8fa08f0f595e657c4cf1b421eca723fc4a9a787eb908cc7fa7b0143 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NI2PAAUSEZ25N0RB/872756__eFORM3V2_WYH.pdf
+2026-01-23 03:28:56 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/NI2PAAUSEZ25N0RB/872756__eFORM3V2_WYH.pdf: All transactions have no direct interest change and total shares change
+2026-01-23 03:28:56 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LOW KENG HUAT (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/NI2PAAUSEZ25N0RB/22f49acec8fa08f0f595e657c4cf1b421eca723fc4a9a787eb908cc7fa7b0143
+2026-01-23 03:28:57 [INFO] - page_start: 2
+2026-01-23 03:28:57 [INFO] - Fetching data from API Filings...
+2026-01-23 03:28:58 [INFO] - Response status: 200
+2026-01-23 03:28:58 [WARNING] - WARNING: API returned None
+2026-01-23 03:28:58 [INFO] - No more announcements found — stopping pagination.
+2026-01-23 03:29:09 [INFO] - Fetching data from API Filings...
+2026-01-23 03:29:10 [INFO] - Response status: 200
+2026-01-23 03:29:10 [WARNING] - WARNING: API returned None
+2026-01-23 03:29:10 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-23 03:29:10 [INFO] - [SGX FILINGS] Scraping completed. Total records: 12
+2026-01-23 03:29:11 [INFO] - Length data top_70: 0 | Length data not top_70: 12
+2026-01-23 03:29:11 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-23 03:29:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-23 03:29:11 [INFO] - Processing remove duplicate data
+2026-01-23 03:29:11 [INFO] - Length data after duplicate removing: 0
+2026-01-23 03:29:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-23 03:29:11 [INFO] - No SGX filings data to filter.
+2026-01-23 03:29:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-23 03:29:11 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-23 03:29:11 [INFO] - No SGX filings alerts to send.
+2026-01-23 03:29:11 [INFO] - [sgx_payload] is empty, skipping push to DB
