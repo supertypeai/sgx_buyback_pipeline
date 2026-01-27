@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/S7W5UXVM69PRMMLP/7b20ee7c01ffa8f72731fd9dedc41a932ec4265a1ec2d5934465be03e61dd837",
+    "symbol": "S58",
+    "purchase_date": "2026-01-26",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 3.91,
+      "lowest": 3.87
+    },
+    "total_value": 1361625.64,
+    "total_shares_purchased": 350000,
+    "treasury_shares_after_purchase": 10468305,
+    "mandate": {
+      "mandate_total": 29870031,
+      "cumulative_purchased": 9000000,
+      "mandate_remaining": 20870031,
+      "mandate_start": "2025-07-25",
+      "mandate_end": "2026-07-25"
+    }
+  }
+]
