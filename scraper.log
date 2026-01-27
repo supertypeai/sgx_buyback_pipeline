@@ -7556,3 +7556,105 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-26 03:52:50 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-01-26 03:52:50 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-26 03:52:50 [INFO] - [sgx_payload] is empty, skipping push to DB
+2026-01-27 03:41:29 [INFO] - Init Global Variable
+2026-01-27 03:41:53 [INFO] - Scraping from None to None...
+2026-01-27 03:41:53 [INFO] - Start scraping from start date: 20260125 to 20260127
+2026-01-27 03:41:53 [INFO] - page_start: 0
+2026-01-27 03:41:53 [INFO] - Fetching data from API Filings...
+2026-01-27 03:41:54 [INFO] - Response status: 200
+2026-01-27 03:41:54 [INFO] - Fetched 15 announcements
+2026-01-27 03:41:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/O3UEZ92TQ4XZOOQB/491ab8bbca43e4c81f99d9b4d1a854e98af3cb91a3c1920a1910226bdefde7b1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/O3UEZ92TQ4XZOOQB/873132__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-01-27 03:41:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:41:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:41:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:41:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:41:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:41:59 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:00 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:00 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-27 03:42:00 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:00 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:00 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:05 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/I9VSJK0CZ8B9FZAB/6add98903c92118a6507a0fae3c7f6851f386d1d3cd78bab37b0629a81058763 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/I9VSJK0CZ8B9FZAB/873129__eFORM1V2-%20Andy%20Luong.pdf
+2026-01-27 03:42:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QKOLKF8EYADXNF18/944a7cd616ad26b8eb84440e75d3d479d2d8e319501051e242eabf1d13bd9831 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QKOLKF8EYADXNF18/873120__JBGL%20-%20Form%201%20Grant%20JPSP%20Jan%202026_Chris.pdf
+2026-01-27 03:42:15 [INFO] - [SGX FILINGS] Data not valid found for issuer name: JUMBO GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/QKOLKF8EYADXNF18/944a7cd616ad26b8eb84440e75d3d479d2d8e319501051e242eabf1d13bd9831
+2026-01-27 03:42:15 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/22033I7UE8BPLO58/60755e58c45c710e61784311e65a6858ea3926323eb3d6056806d265c63c61cc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/22033I7UE8BPLO58/873117__JBGL%20-%20Form%201%20Grant%20JPSP%20Jan%202026_AKM.pdf
+2026-01-27 03:42:16 [INFO] - [SGX FILINGS] Data not valid found for issuer name: JUMBO GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/22033I7UE8BPLO58/60755e58c45c710e61784311e65a6858ea3926323eb3d6056806d265c63c61cc
+2026-01-27 03:42:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EEZ1U2PA39IB7QST/b0aa6cc1985693e636e9107fc21716966bdf4076ca7789f579dcd9886e7a7362 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EEZ1U2PA39IB7QST/873115__eFORM1V2_Chalermchai%20Mahagitsiri.pdf
+2026-01-27 03:42:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:24 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AT0BLMEH3O8827L4/51c2bef6cf707468e185148e61f9ab785801ee0ee46c5693e642bbeccc100c5f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AT0BLMEH3O8827L4/873087__NE%20eFORM1V2%20RSP2023T3%202024T2%20Final.pdf
+2026-01-27 03:42:26 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:26 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:32 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LFGYZZA85JU0C20B/8d472a6e41ba394a7ab98553ac7387468751bfce9e3bb23db2633f5231082199 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LFGYZZA85JU0C20B/873077__Keppel%20Reit%2020260123%20FORM%203_Final.pdf
+2026-01-27 03:42:34 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/LFGYZZA85JU0C20B/873077__Keppel%20Reit%2020260123%20FORM%203_Final.pdf: All transactions have no direct interest change and total shares change
+2026-01-27 03:42:34 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LFGYZZA85JU0C20B/8d472a6e41ba394a7ab98553ac7387468751bfce9e3bb23db2633f5231082199
+2026-01-27 03:42:35 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/I8KZEDOVHJR2WELB/01e6d92d2f678c5f119970e9b64e3aa37d83ba387097436ad7454824885c15b1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/I8KZEDOVHJR2WELB/873072__eFORM3V2_EDIS_260126.pdf
+2026-01-27 03:42:36 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:40 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HEX5DOVMI803R32U/f15fc4116dc372fdd64467635cbe4fd5c6fc32f579d51ea9f2cd0fe60a3fc6e4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HEX5DOVMI803R32U/873067__eFORM1V2_THP.pdf
+2026-01-27 03:42:42 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:42 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'Received shares from LK Tang Pte. Ltd.. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-01-27 03:42:45 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C98GEFK7DTQSYAIH/4ff82549a5631a625cf850076d126a86fcbaedffd6308b849c38c08f25582436 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C98GEFK7DTQSYAIH/873065__eFORM1V2_TKA.pdf
+2026-01-27 03:42:48 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:48 [INFO] - Transfer detected - transformed shareholder: TEO KIANG ANG -> Transfer of ordinary shares [->] Teo Hark Piang by LK Tang Pte
+2026-01-27 03:42:48 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:48 [INFO] - Transfer detected - transformed shareholder: TEO KIANG ANG -> Transfer of ordinary shares [->] Teo Woo Yang by LK Tang Pte
+2026-01-27 03:42:48 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:48 [INFO] - Transfer detected - transformed shareholder: TEO KIANG ANG -> Transfer of ordinary shares [->] Ellen Teo Soak Hoon by LK Tang Pte
+2026-01-27 03:42:48 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:48 [INFO] - Transfer detected - transformed shareholder: TEO KIANG ANG -> Transfer of ordinary shares [->] Alice Teo Soak Imn by LK Tang Pte
+2026-01-27 03:42:48 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:49 [INFO] - Transfer detected - transformed shareholder: TEO KIANG ANG -> Transfer of ordinary shares [->] Alexis Teo Soak Theng by LK Tang Pte
+2026-01-27 03:42:49 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/C98GEFK7DTQSYAIH/873065__eFORM1V2_TKA.pdf: All transactions have no direct interest change and total shares change
+2026-01-27 03:42:49 [INFO] - [SGX FILINGS] Data not valid found for issuer name: UNION GAS HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/C98GEFK7DTQSYAIH/4ff82549a5631a625cf850076d126a86fcbaedffd6308b849c38c08f25582436
+2026-01-27 03:42:49 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/631H5SSZWRRXQA6D/e5ca899b85c7b6f2e8aa30bf1b43864c333090a19a16d723e437c5bb0a50bb18 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/631H5SSZWRRXQA6D/873055__Toku%20Ltd.%20-%20FORM%203%20-%20Tembusu%20Growth%20Fund%20II%20Ltd.%2023012026.pdf
+2026-01-27 03:42:51 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:51 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The listing of Toku Ltd. (the "Company") on the Catalist of the Singapore Exchange Securities Trading Limited on 22 January 2026.'
+2026-01-27 03:42:51 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/631H5SSZWRRXQA6D/873055__Toku%20Ltd.%20-%20FORM%203%20-%20Tembusu%20Growth%20Fund%20II%20Ltd.%2023012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-27 03:42:51 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TOKU LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/631H5SSZWRRXQA6D/e5ca899b85c7b6f2e8aa30bf1b43864c333090a19a16d723e437c5bb0a50bb18
+2026-01-27 03:42:51 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Q5VBCF0APIDB6N10/428cdb844e14f86d307fe71c1aa3013e142886080542b7aa2e4b2ff997a59015 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Q5VBCF0APIDB6N10/873049__Toku%20Ltd.%20-%20FORM%203%20-%20Neptune%20Invest%20Asia%2023012026.pdf
+2026-01-27 03:42:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:53 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-27 03:42:53 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/Q5VBCF0APIDB6N10/873049__Toku%20Ltd.%20-%20FORM%203%20-%20Neptune%20Invest%20Asia%2023012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-27 03:42:53 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TOKU LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/Q5VBCF0APIDB6N10/428cdb844e14f86d307fe71c1aa3013e142886080542b7aa2e4b2ff997a59015
+2026-01-27 03:42:54 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/E7UDVWX9VPUSHD0A/dbd7fae314d1c18efcd22f2d1b256bafc31ad32a2c3d7a42efa331ffe3d35312 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/E7UDVWX9VPUSHD0A/873047__Toku%20Ltd.%20-%20FORM%203%20-%20Lim%20Andy%2023012026.pdf
+2026-01-27 03:42:56 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:56 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The listing of Toku Ltd. (the "Company") on the Catalist of the Singapore Exchange Securities Trading Limited on 22 January 2026.'
+2026-01-27 03:42:56 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/E7UDVWX9VPUSHD0A/873047__Toku%20Ltd.%20-%20FORM%203%20-%20Lim%20Andy%2023012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-27 03:42:56 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TOKU LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/E7UDVWX9VPUSHD0A/dbd7fae314d1c18efcd22f2d1b256bafc31ad32a2c3d7a42efa331ffe3d35312
+2026-01-27 03:42:57 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FJVF8DDUHALZ5H0Q/6ae2d188252f9ea0886a759f9af37a00891e59620c6e4c8b47ab181c9eb1d329 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FJVF8DDUHALZ5H0Q/873045__Toku%20Ltd.%20-%20FORM%201%20-%20Tan%20Hwee%20Hua%2023012026.pdf
+2026-01-27 03:42:59 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:42:59 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The listing of Toku Ltd. (the "Company") on the Catalist of the Singapore Exchange Securities Trading Limited on 22 January 2026. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-01-27 03:42:59 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/FJVF8DDUHALZ5H0Q/873045__Toku%20Ltd.%20-%20FORM%201%20-%20Tan%20Hwee%20Hua%2023012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-27 03:42:59 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TOKU LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/FJVF8DDUHALZ5H0Q/6ae2d188252f9ea0886a759f9af37a00891e59620c6e4c8b47ab181c9eb1d329
+2026-01-27 03:42:59 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IOGHR1T9YB2GAXY0/1267912548b4340824e77e8d653b5cef38d5a7cdbc22135a079245a895ee1211 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IOGHR1T9YB2GAXY0/873043__Toku%20Ltd.%20-%20FORM%201%20-%20Thomas%20Laboulle%2023012026.pdf
+2026-01-27 03:43:01 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-27 03:43:01 [WARNING] - [get_transaction_type_from_desc] No keywords matched for description: 'The listing of Toku Ltd. (the "Company") on the Catalist of the Singapore Exchange Securities Trading Limited on 22 January 2026. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-01-27 03:43:01 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/IOGHR1T9YB2GAXY0/873043__Toku%20Ltd.%20-%20FORM%201%20-%20Thomas%20Laboulle%2023012026.pdf: All transactions have no direct interest change and total shares change
+2026-01-27 03:43:01 [INFO] - [SGX FILINGS] Data not valid found for issuer name: TOKU LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/IOGHR1T9YB2GAXY0/1267912548b4340824e77e8d653b5cef38d5a7cdbc22135a079245a895ee1211
+2026-01-27 03:43:03 [INFO] - page_start: 1
+2026-01-27 03:43:03 [INFO] - Fetching data from API Filings...
+2026-01-27 03:43:04 [INFO] - Response status: 200
+2026-01-27 03:43:04 [WARNING] - WARNING: API returned None
+2026-01-27 03:43:04 [INFO] - No more announcements found — stopping pagination.
+2026-01-27 03:43:17 [INFO] - Fetching data from API Filings...
+2026-01-27 03:43:18 [INFO] - Response status: 200
+2026-01-27 03:43:18 [WARNING] - WARNING: API returned None
+2026-01-27 03:43:18 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-27 03:43:18 [INFO] - [SGX FILINGS] Scraping completed. Total records: 9
+2026-01-27 03:43:19 [INFO] - Length data top_70: 0 | Length data not top_70: 9
+2026-01-27 03:43:19 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-27 03:43:19 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-27 03:43:19 [INFO] - Processing remove duplicate data
+2026-01-27 03:43:19 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-27 03:43:19 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-27 03:43:19 [INFO] - No SGX filings data to filter.
+2026-01-27 03:43:19 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-27 03:43:19 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-27 03:43:19 [INFO] - No SGX filings alerts to send.
+2026-01-27 03:43:19 [INFO] - [sgx_payload] is empty, skipping push to DB
