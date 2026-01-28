@@ -1,6 +1,8 @@
-from sgx_scraper.config.settings import LOGGER
-
 import re 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def safe_convert_float(number_value: str) -> float:

@@ -1,9 +1,12 @@
 from rapidfuzz import process
 
-from sgx_scraper.config.settings import LOGGER
-
 import json
 import os
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
+
 
 CACHE_PATH = "data/sgx_companies.json"
 

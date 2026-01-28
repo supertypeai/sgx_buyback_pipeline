@@ -1,6 +1,9 @@
 import requests 
 
-from sgx_scraper.config.settings import LOGGER
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def get_latest_currency(currency_from: str) -> float | None:

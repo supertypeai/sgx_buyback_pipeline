@@ -7,12 +7,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
-from sgx_scraper.config.settings import LOGGER, PROXY
+from sgx_scraper.config.settings import PROXY
 
 import requests
 import json 
 import time
 import traceback
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdriver.Chrome:

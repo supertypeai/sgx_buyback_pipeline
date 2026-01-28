@@ -17,10 +17,13 @@ from sgx_scraper.utils.sgx_parser_helper import (
     matching_symbol,
     safe_convert_datetime, 
 )
-from sgx_scraper.config.settings import LOGGER
 
 import requests
 import json 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def extract_table_data(table_element: Tag) -> dict[str, str | list[str]]:

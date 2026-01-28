@@ -6,11 +6,15 @@ from sgx_scraper.alerting.build_template import render_email_content
 from sgx_scraper.alerting.filter_data_alert import get_data_alert 
 from sgx_scraper.config.settings import (
     AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, 
-    AWS_REGION, SENDER_EMAIL, TO_EMAIL, LOGGER
+    AWS_REGION, SENDER_EMAIL, TO_EMAIL
 )
 from sgx_scraper.alerting.utils.send_alert_helper import attach_files
 
 import boto3
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def send_sgx_filings_alert(

@@ -1,4 +1,3 @@
-from sgx_scraper.config.settings import LOGGER
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
     ACQUISITION_OPTIONS, DISPOSAL_OPTIONS, 
     OTHER_OPTIONS, TYPE_SECURITIES_OPTIONS, 
@@ -7,6 +6,10 @@ from sgx_scraper.fetch_sgx_filings.utils.constants import (
 import re
 import pdfplumber
 import fitz 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def get_all_text_blocks(text_dict: dict[str, any]) -> list[dict[str, any]]:

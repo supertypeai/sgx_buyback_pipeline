@@ -1,9 +1,11 @@
-from sgx_scraper.config.settings import LOGGER
-
 from sgx_scraper.alerting.utils.send_alert_helper import get_price
 
 import math
 import json 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def filter_sgx_filings(payload: dict[str, any]) -> bool:

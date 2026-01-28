@@ -8,7 +8,8 @@ from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     build_value,
     build_shareholder_name_transfer,
     shares_percentage_to_decimal,
-    safe_convert_float
+    safe_convert_float, 
+    HTTPCLIENT
 )
 from sgx_scraper.utils.sgx_parser_helper import (
     extract_symbol, 
@@ -25,7 +26,6 @@ from sgx_scraper.fetch_sgx_filings.utils.payload_pdf_helper import (
 )
 from sgx_scraper.fetch_sgx_filings.utils.payload_html_helper import extract_section_data
 from sgx_scraper.fetch_sgx_filings.models import SGXFilings
-from sgx_scraper.config.settings import LOGGER
 
 import fitz
 import requests
@@ -33,6 +33,11 @@ import re
 import json 
 import pdfplumber 
 import io 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
+
 
 
 def open_pdf(pdf_url: str) -> fitz.Document:
@@ -41,7 +46,7 @@ def open_pdf(pdf_url: str) -> fitz.Document:
 
     try:
         if pdf_url.endswith('.pdf'):
-            response = requests.get(pdf_url, timeout=15)
+            response = HTTPCLIENT.get(pdf_url)
             response.raise_for_status()
     
         # Open PDF from memory
@@ -623,7 +628,7 @@ def extract_transaction_details(
 
 def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
     try:
-        response = requests.get(pdf_url, timeout=15)
+        response = HTTPCLIENT.get(pdf_url)
         response.raise_for_status()
         pdf_file = io.BytesIO(response.content)
 
@@ -735,8 +740,9 @@ def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
 
 def get_sgx_filings(url: str) -> list[SGXFilings] | None:
     try:
-        response = requests.get(url)
+        response = HTTPCLIENT.get(url)
         response.raise_for_status()
+
         soup = BeautifulSoup(response.text, 'html.parser')
         payload_html = extract_html_content(soup)
 
@@ -784,8 +790,9 @@ if __name__ == '__main__':
     test_pdf = 'https://links.sgx.com/FileOpen/_Form%206_FLCAM.ashx?App=Announcement&FileID=867052'
     duplicate = 'https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/c2c6966fb8ed3562b3d5b3736c96d1b21837954db7ec864a101cb1558e5dd874'
     new_test = 'https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/9dc3586f0ef9038964cfbe3c2e75e2c5e9789e9803971a015c23a623ecbbcab0'
+    testing = 'https://links.sgx.com/1.0.0/corporate-announcements/GWF99S55MLHRFKZD/fa10799c2edf565026bfe756ce0b686b0e277720923328fb37dcfaddde6cc066'
 
-    result_sgx_filing = get_sgx_filings(failed)
+    result_sgx_filing = get_sgx_filings(testing)
 
     # print(result_sgx_filing)
     # if result_sgx_filing is not None:

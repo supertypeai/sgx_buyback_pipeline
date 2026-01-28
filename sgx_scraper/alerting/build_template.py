@@ -3,16 +3,20 @@ from datetime import datetime
 from sgx_scraper.alerting.utils.send_alert_helper import escape_keyword 
 
 import json 
+import logging
 
 
-def get_data_to_alert(path: str):
+LOGGER = logging.getLogger(__name__)
+
+
+def get_data_to_alert(path: str) -> list[dict[str, any]]:
     try:
         with open(path, 'r') as file:
             data_to_alert = json.load(file)
         return data_to_alert
     except Exception as error:
-        print(f"Error loading data to alert from {path}: {error}") 
-
+        LOGGER.error(f"Error loading data to alert from {path}: {error}") 
+        return []
 
 def build_email_subject(title, alerts):
     total = len(alerts)

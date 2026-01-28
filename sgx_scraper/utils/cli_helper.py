@@ -1,11 +1,14 @@
 from datetime import datetime 
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
-from sgx_scraper.config.settings import LOGGER
 
 import json 
 import os 
 import pandas as pd 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def normalize_datetime(date: str | datetime) -> str: 
@@ -46,8 +49,8 @@ def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
         
         return is_succes
     
-    except Exception as error:
-        LOGGER.error(f"[push_to_db] Failed to push data: {error}")
+    except Exception as _:
+        LOGGER.error(f"[push_to_db] Failed to push data")
         return None
 
 

@@ -1,10 +1,43 @@
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
 from sgx_scraper.fetch_sgx_filings.utils.converter_helper import get_latest_currency, calculate_currency_to_sgd
-from sgx_scraper.config.settings import LOGGER
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
     OTHER_CIRCUMSTANCES_RULES, TRANSACTION_KEYWORDS
 )
 
 import re 
+import logging
+import requests
+
+
+LOGGER = logging.getLogger(__name__)
+
+
+class HttpClient:
+    def __init__(self, timeout: int = 15):
+        self.timeout = timeout
+        self.session = requests.Session()
+        retry = Retry(
+            total=3,
+            connect=3,
+            read=3,
+            status=3,
+            backoff_factor=0.8,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=frozenset(["GET"]),
+            raise_on_status=False,
+            respect_retry_after_header=True,
+        )
+        adapter = HTTPAdapter(max_retries=retry)
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
+
+    def get(self, url: str, **kwargs):
+        timeout = kwargs.pop("timeout", self.timeout)
+        return self.session.get(url, timeout=timeout, **kwargs)
+
+HTTPCLIENT = HttpClient()
 
 
 def safe_convert_float(number_value: str) -> float | None:
@@ -329,6 +362,10 @@ def build_transaction_type(
     transaction_details: list[dict[str, any]] | float
 ) -> str:
     try:
+        if not circumstance_interest_raw: 
+            LOGGER.warning(f'[build_transaction_type] circumstance_interest_raw is None')
+            return None
+
         # get total value 
         if isinstance(transaction_details, list):
             value = [value_detail.get('value', None) for value_detail in transaction_details]  

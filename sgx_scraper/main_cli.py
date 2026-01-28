@@ -1,8 +1,6 @@
 from dataclasses import asdict
 from datetime import datetime, timedelta
-from pathlib import Path
 
-from sgx_scraper.config.settings import LOGGER
 from sgx_scraper.utils.cli_helper import (
     normalize_datetime, push_to_db, 
     clean_payload_sgx_buyback, clean_payload_sgx_filings, 
@@ -24,6 +22,27 @@ import typer
 import os 
 import time 
 import random 
+import logging 
+import sys 
+
+
+def setup_logging():
+    """Configures logging for the whole application"""
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s [%(levelname)s] %(name)s - %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        handlers=[
+            logging.StreamHandler(sys.stdout),
+            logging.FileHandler("scraper.log") 
+        ]
+    )
+
+    # suppress noisy third-party loggers
+    logging.getLogger('WDM').setLevel(logging.WARNING)
+    logging.getLogger('seleniumwire2').setLevel(logging.WARNING)
+    logging.getLogger('mitmproxy').setLevel(logging.WARNING)
+    logging.getLogger('urllib3').setLevel(logging.WARNING)
 
 
 app = typer.Typer(
@@ -39,7 +58,7 @@ def main():
     
     This callback function treats this as a multi-command app
     """
-    pass
+    setup_logging()
 
 
 @app.command(name='scraper_buybacks')
@@ -49,10 +68,12 @@ def run_sgx_buyback_scraper(
     page_size: int = typer.Option(20, help="Number of records per page"),
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
 ):
+    logger = logging.getLogger(__name__)
+
     api_url = "https://api.sgx.com/announcements/v1.1/"
     headers = get_auth(proxy=None)
 
-    LOGGER.info(f"Scraping from {period_start} to {period_end}...")
+    logger.info(f"Scraping from {period_start} to {period_end}...")
 
     page_start = 0
     payload_sgx_buybacks = []
@@ -66,10 +87,10 @@ def run_sgx_buyback_scraper(
     normalized_start = normalize_datetime(start_date_source)
     normalized_end = normalize_datetime(end_date_source)
 
-    LOGGER.info(f"Start scraping from start date: {normalized_start} to {normalized_end}")
+    logger.info(f"Start scraping from start date: {normalized_start} to {normalized_end}")
 
     while True:
-        LOGGER.info(f'page_start: {page_start}')
+        logger.info(f'page_start: {page_start}')
         typer.echo(f'page start: {page_start}')
         try:
             url = (
@@ -83,12 +104,12 @@ def run_sgx_buyback_scraper(
             sgx_announcements = run_scrape_api(api_url=url, flag_log='Buybacks', headers=headers)
            
             if sgx_announcements is None:
-                LOGGER.info("No more announcements found — stopping pagination.")
+                logger.info("No more announcements found — stopping pagination.")
                 headers = get_auth(proxy=None)
                 sgx_announcements = run_scrape_api(api_url=url, flag_log='Buybacks', headers=headers)
                 
             if sgx_announcements is None:
-                LOGGER.info("No more announcements found on this page — stopping pagination.")
+                logger.info("No more announcements found on this page — stopping pagination.")
                 break
 
             for sgx_announcement in sgx_announcements:
@@ -96,7 +117,7 @@ def run_sgx_buyback_scraper(
                 issuer_name = sgx_announcement.get("issuer_name")
 
                 if not detail_url:
-                    LOGGER.info(
+                    logger.info(
                         f'[SGX BUYBACK] Skipping extracting data in details for issuer name: {issuer_name}'
                     )
                     continue
@@ -110,10 +131,10 @@ def run_sgx_buyback_scraper(
             time.sleep(random.uniform(1, 8))
 
         except Exception as error:
-            LOGGER.error(f'[SGX BUYBACK] Unexpected error on page {page_start}: {error}', exc_info=True)
+            logger.error(f'[SGX BUYBACK] Unexpected error on page {page_start}: {error}', exc_info=True)
             break 
 
-    LOGGER.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_buybacks)}")
+    logger.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_buybacks)}")
 
     payload_sgx_buybacks_clean = clean_payload_sgx_buyback(payload_sgx_buybacks)
     
@@ -123,10 +144,10 @@ def run_sgx_buyback_scraper(
     write_to_json(SGX_BUYBACKS_PATH_TODAY, payload_top_70)
 
     if os.path.exists(SGX_BUYBACKS_PATH_YESTERDAY):   
-        LOGGER.info('Processing remove duplicate data') 
+        logger.info('Processing remove duplicate data') 
         new_payload_sgx_buybacks = remove_duplicate(SGX_BUYBACKS_PATH_TODAY, SGX_BUYBACKS_PATH_YESTERDAY)
     else: 
-        LOGGER.info('First run detected, all Top 70 filings are new')
+        logger.info('First run detected, all Top 70 filings are new')
         new_payload_sgx_buybacks = payload_top_70
 
     write_to_json(SGX_BUYBACKS_PATH_YESTERDAY, payload_top_70)
@@ -142,10 +163,12 @@ def run_sgx_filings_scraper(
     page_size: int = typer.Option(20, help="Number of records per page"),
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
 ):
+    logger = logging.getLogger(__name__)
+    
     api_url = "https://api.sgx.com/announcements/v1.1/"
     headers = get_auth(proxy=None)
 
-    LOGGER.info(f"Scraping from {period_start} to {period_end}...")
+    logger.info(f"Scraping from {period_start} to {period_end}...")
 
     page_start = 0
     payload_sgx_filings = []
@@ -159,10 +182,10 @@ def run_sgx_filings_scraper(
     normalized_start = normalize_datetime(start_date_source)
     normalized_end = normalize_datetime(end_date_source)
 
-    LOGGER.info(f"Start scraping from start date: {normalized_start} to {normalized_end}")
+    logger.info(f"Start scraping from start date: {normalized_start} to {normalized_end}")
 
     while True:
-        LOGGER.info(f'page_start: {page_start}')
+        logger.info(f'page_start: {page_start}')
         typer.echo(f'page start: {page_start}')
         try:
             url = (
@@ -176,12 +199,12 @@ def run_sgx_filings_scraper(
             sgx_announcements = run_scrape_api(api_url=url, flag_log='Filings', headers=headers)
            
             if sgx_announcements is None:
-                LOGGER.info("No more announcements found — stopping pagination.")
+                logger.info("No more announcements found — stopping pagination.")
                 headers = get_auth(proxy=None)
                 sgx_announcements = run_scrape_api(api_url=url, flag_log='Filings', headers=headers)
                 
             if sgx_announcements is None:
-                LOGGER.info("No more announcements found on this page — stopping pagination.")
+                logger.info("No more announcements found on this page — stopping pagination.")
                 break
 
             for sgx_announcement in sgx_announcements:
@@ -189,7 +212,7 @@ def run_sgx_filings_scraper(
                 issuer_name = sgx_announcement.get("issuer_name")
 
                 if not detail_url:
-                    LOGGER.info(
+                    logger.info(
                         f'[SGX FILINGS] Skipping extracting data in details for issuer name: {issuer_name}'
                     )
                     continue
@@ -197,7 +220,7 @@ def run_sgx_filings_scraper(
                 sgx_filings_details = get_sgx_filings(detail_url)
 
                 if not sgx_filings_details:
-                    LOGGER.info( f'[SGX FILINGS] Data not valid found for issuer name: {issuer_name} detail url: {detail_url}')
+                    logger.info( f'[SGX FILINGS] Data not valid found for issuer name: {issuer_name} detail url: {detail_url}')
                     continue
                 
                 for sgx_filing_detail in sgx_filings_details:
@@ -210,10 +233,10 @@ def run_sgx_filings_scraper(
             time.sleep(random.uniform(1, 8))
 
         except Exception as error:
-            LOGGER.error(f'[SGX FILINGS] Unexpected error on page {page_start}: {error}', exc_info=True)
+            logger.error(f'[SGX FILINGS] Unexpected error on page {page_start}: {error}', exc_info=True)
             break 
 
-    LOGGER.info(f"[SGX FILINGS] Scraping completed. Total records: {len(payload_sgx_filings)}")
+    logger.info(f"[SGX FILINGS] Scraping completed. Total records: {len(payload_sgx_filings)}")
 
     payload_sgx_filings_clean = clean_payload_sgx_filings(payload_sgx_filings)
 
@@ -223,10 +246,10 @@ def run_sgx_filings_scraper(
     write_to_json(SGX_FILINGS_PATH_TODAY, payload_top_70)
 
     if os.path.exists(SGX_FILINGS_PATH_YESTERDAY):    
-        LOGGER.info('Processing remove duplicate data') 
+        logger.info('Processing remove duplicate data') 
         new_payload_sgx_filings = remove_duplicate(SGX_FILINGS_PATH_TODAY, SGX_FILINGS_PATH_YESTERDAY)
     else:
-        LOGGER.info('First run detected, all Top 70 filings are new')
+        logger.info('First run detected, all Top 70 filings are new')
         new_payload_sgx_filings = payload_top_70
 
     write_to_json(SGX_FILINGS_PATH_YESTERDAY, payload_top_70)

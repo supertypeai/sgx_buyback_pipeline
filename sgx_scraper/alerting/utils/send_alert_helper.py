@@ -1,10 +1,12 @@
 from email.mime.application import MIMEApplication
 
-from sgx_scraper.config.settings import LOGGER
-
 import html 
 import yfinance as yf 
 import pandas as pd 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def escape_keyword(value):

@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
 
-from sgx_scraper.config.settings import LOGGER
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def extract_section_data(soup: BeautifulSoup, section_title: str) -> dict[str, str | list[str]]:

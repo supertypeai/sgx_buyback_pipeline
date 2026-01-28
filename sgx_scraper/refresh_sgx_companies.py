@@ -1,5 +1,3 @@
-from datetime import datetime, timedelta
-
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 
 import json 

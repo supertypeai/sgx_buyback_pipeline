@@ -1,7 +1,10 @@
 from datetime import datetime
 
-from sgx_scraper.config.settings import LOGGER
 from sgx_scraper.utils.symbol_matching_helper import match_company_name
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def extract_symbol(issuer_security: str) -> str | None:
