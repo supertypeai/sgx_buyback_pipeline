@@ -7685,3 +7685,188 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-01-27 03:44:49 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-27 03:44:50 [INFO] - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-01-28 03:29:25 [INFO] - Init Global Variable
+2026-01-28 03:29:58 [INFO] - Scraping from None to None...
+2026-01-28 03:29:58 [INFO] - Start scraping from start date: 20260126 to 20260128
+2026-01-28 03:29:58 [INFO] - page_start: 0
+2026-01-28 03:29:58 [INFO] - Fetching data from API Filings...
+2026-01-28 03:29:58 [INFO] - Response status: 200
+2026-01-28 03:29:58 [INFO] - Fetched 19 announcements
+2026-01-28 03:30:00 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DRJ6N24HH0TNZDJL/2b20c77545ecd1383c7cf54cae062db056425cacfbfce24bd3296df4554cd7dd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DRJ6N24HH0TNZDJL/873307__eFORM1-Tan%20Kok%20Huat.pdf
+2026-01-28 03:30:03 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HGDNB01QZ4R4GL0S/71cbd2bf0f294a0339788b390766ae31ed497484d9ddb8cf4a5abdfe702118b2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HGDNB01QZ4R4GL0S/873305__eFORM1-Chan%20Chew%20Leh.pdf
+2026-01-28 03:30:07 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/V0LA3IUYLCWZHNNQ/4f86e57c99ad98ad60c0012c41715720d04f02f224daab83b00994ce28727a88 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/V0LA3IUYLCWZHNNQ/873277__Form%203%20-%20Warburg%20entities.pdf
+2026-01-28 03:30:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:12 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:13 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/V0LA3IUYLCWZHNNQ/873277__Form%203%20-%20Warburg%20entities.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:30:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ESR TRUST MANAGEMENT (SUNTEC) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/V0LA3IUYLCWZHNNQ/4f86e57c99ad98ad60c0012c41715720d04f02f224daab83b00994ce28727a88
+2026-01-28 03:30:14 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/77A9V2WA7RTZZXZ1/4dc25ee3333c155d0e78eda9bb0d2a2ebe4f6445f28e851e96221de040d60926 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/77A9V2WA7RTZZXZ1/873272__Form%203%20-%20Starwood%20entities.pdf
+2026-01-28 03:30:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:18 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:19 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/77A9V2WA7RTZZXZ1/873272__Form%203%20-%20Starwood%20entities.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:30:19 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ESR TRUST MANAGEMENT (SUNTEC) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/77A9V2WA7RTZZXZ1/4dc25ee3333c155d0e78eda9bb0d2a2ebe4f6445f28e851e96221de040d60926
+2026-01-28 03:30:20 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LW9VK33V79HOSL5F/288dd664b78c3f16213c256463a3522dffba047d740431f3fe74a6afaa1fe1c5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LW9VK33V79HOSL5F/873270__Form%203%20-%20ESR.pdf
+2026-01-28 03:30:21 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-28 03:30:21 [INFO] - Transfer detected - transformed shareholder: ESR Group Limited -> time [->] time to receive its management fee in the form of units or cash
+2026-01-28 03:30:21 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/LW9VK33V79HOSL5F/873270__Form%203%20-%20ESR.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:30:21 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ESR TRUST MANAGEMENT (SUNTEC) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LW9VK33V79HOSL5F/288dd664b78c3f16213c256463a3522dffba047d740431f3fe74a6afaa1fe1c5
+2026-01-28 03:30:22 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7AS7ZJ07ERU7FL27/b13a89ff71c7ab2d7d943fa592bb9cda4f8b7a592b3f940d204d982e51bf804f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7AS7ZJ07ERU7FL27/873268__eFORM1V2%20-%20Mr%20Ong%20Hwee%20Li.pdf
+2026-01-28 03:30:30 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AVSH7L33U5E7PMMV/9cec4d7091ffba4b52a88d840c5dd7723527b2b06c1973f801879bb7e706fd4f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AVSH7L33U5E7PMMV/873266__Form%203%20-%20BidCo%20entities.pdf
+2026-01-28 03:30:32 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:32 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:32 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:32 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:32 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/AVSH7L33U5E7PMMV/873266__Form%203%20-%20BidCo%20entities.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:30:32 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ESR TRUST MANAGEMENT (SUNTEC) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/AVSH7L33U5E7PMMV/9cec4d7091ffba4b52a88d840c5dd7723527b2b06c1973f801879bb7e706fd4f
+2026-01-28 03:30:33 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RS96HK60TQMKEP0N/250b25416e669fc5b277677d0c79c269e6340f762c54f19e7a0729de780486d8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RS96HK60TQMKEP0N/873261__Form%203%20-%20Derek%20Cheong%20Sheng%20Ze%20-%2027%20Jan%202026.pdf
+2026-01-28 03:30:38 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/35MTZDW2K2IG0RNQ/d055387e137c0826eca950305c047b360e478d206171f5f0334db546470cebeb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/35MTZDW2K2IG0RNQ/873252__LMIRT_Form%206_Final.pdf
+2026-01-28 03:30:44 [ERROR] - [sgx filings] Error fetching SGX filing url https://links.sgx.com/1.0.0/corporate-announcements/JSSKJP29TMPXQWAD/bd5a307ac53070879ffaa3197467c284b985bdf555d5e2c8132e30f519e32350: HTTPSConnectionPool(host='links.sgx.com', port=443): Max retries exceeded with url: /1.0.0/corporate-announcements/JSSKJP29TMPXQWAD/bd5a307ac53070879ffaa3197467c284b985bdf555d5e2c8132e30f519e32350 (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='links.sgx.com', port=443): Max retries exceeded with url: /1.0.0/corporate-announcements/JSSKJP29TMPXQWAD/bd5a307ac53070879ffaa3197467c284b985bdf555d5e2c8132e30f519e32350 (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 738, in get_sgx_filings
+    response = requests.get(url)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/.venv/lib/python3.12/site-packages/requests/adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='links.sgx.com', port=443): Max retries exceeded with url: /1.0.0/corporate-announcements/JSSKJP29TMPXQWAD/bd5a307ac53070879ffaa3197467c284b985bdf555d5e2c8132e30f519e32350 (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)')))
+2026-01-28 03:30:44 [INFO] - [SGX FILINGS] Data not valid found for issuer name: LMIRT MANAGEMENT LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/JSSKJP29TMPXQWAD/bd5a307ac53070879ffaa3197467c284b985bdf555d5e2c8132e30f519e32350
+2026-01-28 03:30:44 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/D4QELNF98PEBBV7J/d3f2564c7917f73a79958f78e373124bee80517d5b4246fc8e894cf14ed7785d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/D4QELNF98PEBBV7J/873246__LMIRT_Form3_BIL_SD_LPKR.pdf
+2026-01-28 03:30:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:49 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:30:49 [INFO] - Processing fallback for multiple shareholders with one transaction
+2026-01-28 03:30:52 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BEGX56JJ390IW42P/dd8625b2da32f454a2c2314a186cc7c27f69b6eea41054e72f92d7feca11cb47 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BEGX56JJ390IW42P/873244__Keppel%20Reit%2020260126%20FORM%203_final.pdf
+2026-01-28 03:30:54 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BEGX56JJ390IW42P/873244__Keppel%20Reit%2020260126%20FORM%203_final.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:30:54 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BEGX56JJ390IW42P/dd8625b2da32f454a2c2314a186cc7c27f69b6eea41054e72f92d7feca11cb47
+2026-01-28 03:30:55 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZW5PTQYTDT3EHT8Y/ea926f63522d56edca074d625006e3efc0a74d8f5d42db3825652fa132f85ca9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZW5PTQYTDT3EHT8Y/873242__LMIRT_Form%201_ML_Final.pdf
+2026-01-28 03:31:02 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BHA5YYVL90SN5LK1/4f44a798796c17bceab6bea3ed210cd4729cd7bd0033a8a9758f0cdcda5615cf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BHA5YYVL90SN5LK1/873236__eFORM1V2%20CSL%2027012026.pdf
+2026-01-28 03:31:08 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VKXJZE1JIQU7F027/bc40085499bcdc14d34c0a859924fa923c7752ae9459a7b4c900514c6066b4dd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VKXJZE1JIQU7F027/873232__20260127%20eFORM3V2_Loh%20Soon%20Gnee.pdf
+2026-01-28 03:31:11 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-28 03:31:11 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VKXJZE1JIQU7F027/873232__20260127%20eFORM3V2_Loh%20Soon%20Gnee.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:31:11 [INFO] - [SGX FILINGS] Data not valid found for issuer name: ASTI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VKXJZE1JIQU7F027/bc40085499bcdc14d34c0a859924fa923c7752ae9459a7b4c900514c6066b4dd
+2026-01-28 03:31:11 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WK971V07T019XAC6/434ca8af46690dfab391f6b5195fa64309663fa5ae1462d7c4335b93263dab09 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WK971V07T019XAC6/873227__KDC%20FORM%203_20260126%20final.pdf
+2026-01-28 03:31:13 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/WK971V07T019XAC6/873227__KDC%20FORM%203_20260126%20final.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:31:13 [INFO] - [SGX FILINGS] Data not valid found for issuer name: KEPPEL DC REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/WK971V07T019XAC6/434ca8af46690dfab391f6b5195fa64309663fa5ae1462d7c4335b93263dab09
+2026-01-28 03:31:13 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DFJBZUABW202KQJT/2050c5ed7f59fe9c4838fd1b307258e8a85a59f479516ea1109a248ac95e58fc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DFJBZUABW202KQJT/873224__Jeffrey%20Hing%20Form%201.pdf
+2026-01-28 03:31:15 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-28 03:31:16 [INFO] - Transfer detected - transformed shareholder: Jeffrey Hing Yih Peir -> None
+2026-01-28 03:31:16 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/DFJBZUABW202KQJT/873224__Jeffrey%20Hing%20Form%201.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:31:16 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MARCO POLO MARINE LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/DFJBZUABW202KQJT/2050c5ed7f59fe9c4838fd1b307258e8a85a59f479516ea1109a248ac95e58fc
+2026-01-28 03:31:16 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RTB3HMUN5Q88QMXJ/463c526616aaf3c485ef86723fb52101870f255b52049b3f7bca8dd973a3858e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RTB3HMUN5Q88QMXJ/873222__Penguin%20Form%203.pdf
+2026-01-28 03:31:18 [WARNING] - [safe_round] Cannot round None Raw value returned None
+2026-01-28 03:31:18 [INFO] - Transfer detected - transformed shareholder: PENGUIN INTERNATIONAL LIMITED -> None
+2026-01-28 03:31:19 [INFO] - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/91ZWZNYO65W8DLVM/4a9c7657e5986f87c5fefc55cdd34897ee104815050f898801b3d42f2f7b605d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/91ZWZNYO65W8DLVM/873220__eFORM3%20Aleph%20Tav%20Ltd.pdf
+2026-01-28 03:31:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:31:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:31:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:31:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:31:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:31:23 [ERROR] - [build_transaction_type] Error: 'NoneType' object has no attribute 'get'
+2026-01-28 03:31:23 [INFO] - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/91ZWZNYO65W8DLVM/873220__eFORM3%20Aleph%20Tav%20Ltd.pdf: All transactions have no direct interest change and total shares change
+2026-01-28 03:31:23 [INFO] - [SGX FILINGS] Data not valid found for issuer name: MARCO POLO MARINE LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/91ZWZNYO65W8DLVM/4a9c7657e5986f87c5fefc55cdd34897ee104815050f898801b3d42f2f7b605d
+2026-01-28 03:31:25 [INFO] - page_start: 1
+2026-01-28 03:31:25 [INFO] - Fetching data from API Filings...
+2026-01-28 03:31:25 [INFO] - Response status: 200
+2026-01-28 03:31:25 [WARNING] - WARNING: API returned None
+2026-01-28 03:31:25 [INFO] - No more announcements found — stopping pagination.
+2026-01-28 03:31:37 [INFO] - Fetching data from API Filings...
+2026-01-28 03:31:37 [INFO] - Response status: 200
+2026-01-28 03:31:37 [WARNING] - WARNING: API returned None
+2026-01-28 03:31:37 [INFO] - No more announcements found on this page — stopping pagination.
+2026-01-28 03:31:37 [INFO] - [SGX FILINGS] Scraping completed. Total records: 10
+2026-01-28 03:31:39 [INFO] - Length data top_70: 0 | Length data not top_70: 10
+2026-01-28 03:31:39 [INFO] - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-28 03:31:39 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-28 03:31:39 [INFO] - Processing remove duplicate data
+2026-01-28 03:31:39 [INFO] - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-28 03:31:39 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-28 03:31:39 [INFO] - No SGX filings data to filter.
+2026-01-28 03:31:39 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-28 03:31:39 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-28 03:31:39 [INFO] - No SGX filings alerts to send.
+2026-01-28 03:31:39 [INFO] - [sgx_payload] is empty, skipping push to DB
