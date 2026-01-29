@@ -7894,3 +7894,43 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='links.sgx.com', port=443
 2026-01-28 03:41:24 [INFO] - Length data after duplicate removing: 0
 2026-01-28 03:41:24 [INFO] - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-28 03:41:24 [INFO] - [sgx_payload] is empty, skipping push to DB
+2026-01-29 04:01:55 [INFO] __main__ - Scraping from None to None...
+2026-01-29 04:01:55 [INFO] __main__ - Start scraping from start date: 20260127 to 20260129
+2026-01-29 04:01:55 [INFO] __main__ - page_start: 0
+2026-01-29 04:01:55 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-01-29 04:01:56 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-29 04:01:56 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 5 announcements
+2026-01-29 04:01:56 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/I7P8GP781P5KLYHL/59f4d57084af5e8a05ed7e78e7a2a2794e3d28269f433339995b372a235f85df pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/I7P8GP781P5KLYHL/873402__Form%206%20-%2028%20Jan%202026%20FINAL.pdf
+2026-01-29 04:02:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SG5QD530ZYGXDQ7W/bf188ea05617baaabb1a0c456fa51cb7369ba3a0adac611b07b7e3c46d8bf848 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SG5QD530ZYGXDQ7W/873369__iFast%2020260128%20Tembusu%20only%20Form%203_final.pdf
+2026-01-29 04:02:04 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/SG5QD530ZYGXDQ7W/873369__iFast%2020260128%20Tembusu%20only%20Form%203_final.pdf: All transactions have no direct interest change and total shares change
+2026-01-29 04:02:04 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: IFAST CORPORATION LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/SG5QD530ZYGXDQ7W/bf188ea05617baaabb1a0c456fa51cb7369ba3a0adac611b07b7e3c46d8bf848
+2026-01-29 04:02:04 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6ZHQM0803KFHFBI1/e2cad7fa3f87469ae8075a87b56b9461392260707e2064cf78d86add7aeb03de pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6ZHQM0803KFHFBI1/873347__LMIRT_FORM3_TCC.pdf
+2026-01-29 04:02:06 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-29 04:02:06 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-29 04:02:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/6ZHQM0803KFHFBI1/873347__LMIRT_FORM3_TCC.pdf: All transactions have no direct interest change and total shares change
+2026-01-29 04:02:06 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: LMIRT MANAGEMENT LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/6ZHQM0803KFHFBI1/e2cad7fa3f87469ae8075a87b56b9461392260707e2064cf78d86add7aeb03de
+2026-01-29 04:02:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DRJ6N24HH0TNZDJL/2b20c77545ecd1383c7cf54cae062db056425cacfbfce24bd3296df4554cd7dd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DRJ6N24HH0TNZDJL/873307__eFORM1-Tan%20Kok%20Huat.pdf
+2026-01-29 04:02:09 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HGDNB01QZ4R4GL0S/71cbd2bf0f294a0339788b390766ae31ed497484d9ddb8cf4a5abdfe702118b2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HGDNB01QZ4R4GL0S/873305__eFORM1-Chan%20Chew%20Leh.pdf
+2026-01-29 04:02:23 [INFO] __main__ - page_start: 1
+2026-01-29 04:02:23 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-01-29 04:02:24 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-29 04:02:24 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-01-29 04:02:24 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-01-29 04:02:35 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-01-29 04:02:35 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-29 04:02:35 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-01-29 04:02:35 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-01-29 04:02:35 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 3
+2026-01-29 04:02:36 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-01-29 04:02:36 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 2
+2026-01-29 04:02:36 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-29 04:02:36 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-29 04:02:36 [INFO] __main__ - Processing remove duplicate data
+2026-01-29 04:02:36 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-29 04:02:36 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-29 04:02:37 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 1 | Not insertable: 0
+2026-01-29 04:02:37 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-29 04:02:37 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-29 04:02:37 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-01-29 04:02:37 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_filings?columns=%22transaction_type%22%2C%22transaction_date%22%2C%22number_of_stock%22%2C%22shares_after_percentage%22%2C%22url%22%2C%22shares_before%22%2C%22shares_after%22%2C%22value%22%2C%22shareholder_name%22%2C%22shares_before_percentage%22%2C%22price_per_share%22%2C%22symbol%22 "HTTP/2 201 Created"
+2026-01-29 04:02:37 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
