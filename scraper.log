@@ -7934,3 +7934,23 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='links.sgx.com', port=443
 2026-01-29 04:02:37 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
 2026-01-29 04:02:37 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_filings?columns=%22transaction_type%22%2C%22transaction_date%22%2C%22number_of_stock%22%2C%22shares_after_percentage%22%2C%22url%22%2C%22shares_before%22%2C%22shares_after%22%2C%22value%22%2C%22shareholder_name%22%2C%22shares_before_percentage%22%2C%22price_per_share%22%2C%22symbol%22 "HTTP/2 201 Created"
 2026-01-29 04:02:37 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
+2026-01-29 04:03:37 [INFO] __main__ - Scraping from None to None...
+2026-01-29 04:03:37 [INFO] __main__ - Start scraping from start date: 20260127 to 20260129
+2026-01-29 04:03:37 [INFO] __main__ - page_start: 0
+2026-01-29 04:03:37 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-01-29 04:03:37 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-29 04:03:37 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-01-29 04:03:37 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-01-29 04:03:49 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-01-29 04:03:49 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-29 04:03:49 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-01-29 04:03:49 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-01-29 04:03:49 [INFO] __main__ - [SGX_BUYBACK] Scraping completed. Total records: 0
+2026-01-29 04:03:49 [INFO] sgx_scraper.utils.cli_helper - [sgx_buyback] is empty, skipping clean payload
+2026-01-29 04:03:50 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 0
+2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-01-29 04:03:50 [INFO] __main__ - Processing remove duplicate data
+2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
