@@ -7954,3 +7954,60 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='links.sgx.com', port=443
 2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-01-29 04:03:50 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-01-30 04:02:38 [INFO] __main__ - Scraping from None to None...
+2026-01-30 04:02:38 [INFO] __main__ - Start scraping from start date: 20260128 to 20260130
+2026-01-30 04:02:38 [INFO] __main__ - page_start: 0
+2026-01-30 04:02:38 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-01-30 04:02:38 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-30 04:02:38 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 6 announcements
+2026-01-30 04:02:39 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WUASYTTQLZDV8NHH/8890d8c38a32d2dbd0b9ba955df24ba5ff1b4002b42311cb9ad09c29afb7aae5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WUASYTTQLZDV8NHH/873612__F6-MRM.2026%200130%20F.pdf
+2026-01-30 04:02:44 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9EB4PKJODHBJ1ECV/0e0e2b0966a1b4aeb98549c9b3edf62131c421c829b08a52dd3d6cf9e3b12dd0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9EB4PKJODHBJ1ECV/873610__F6-MBTM.2026%200130%20F.pdf
+2026-01-30 04:02:52 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/U3237Y9QYM4JMXU0/3f1a6440baa560d8b519f725be49ac6e1232c367baa40c0d4738ee81302a4544 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/U3237Y9QYM4JMXU0/873573__eFORM3V2_CCK.pdf
+2026-01-30 04:02:59 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OTQS4J94K9PEHYGC/f154a3488f4d82ec8ef7508fdd1cbf521bc05ff26ee3e61b6d6b7fdd3e435ed2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OTQS4J94K9PEHYGC/873570__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-01-30 04:03:05 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-01-30 04:03:05 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-01-30 04:03:05 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-01-30 04:03:05 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-01-30 04:03:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LMUWCBKY1RLTMV09/dfc665accea5c8b50528e5f905379f638fa20125615fde542bd59b29bff14188 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LMUWCBKY1RLTMV09/873488__eFORM1_NMF.pdf
+2026-01-30 04:03:08 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-01-30 04:03:08 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/LMUWCBKY1RLTMV09/873488__eFORM1_NMF.pdf: All transactions have no direct interest change and total shares change
+2026-01-30 04:03:08 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: FORTRESS MINERALS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LMUWCBKY1RLTMV09/dfc665accea5c8b50528e5f905379f638fa20125615fde542bd59b29bff14188
+2026-01-30 04:03:08 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0ZYE89U0MNWUFAJF/89b3fec606b96aa9bf0b63c84a64d6303eaac7559774b0ceb9388200589afc97 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0ZYE89U0MNWUFAJF/873476__Form%201_Tony%20Wong_29%20Jan%202026.pdf
+2026-01-30 04:03:10 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-01-30 04:03:10 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'On 29 January 2026, 1,227,700 shares were returned to the Director under the securities borrowing and lending agreement. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-01-30 04:03:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/0ZYE89U0MNWUFAJF/873476__Form%201_Tony%20Wong_29%20Jan%202026.pdf: All transactions have no direct interest change and total shares change
+2026-01-30 04:03:10 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PC PARTNER GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0ZYE89U0MNWUFAJF/89b3fec606b96aa9bf0b63c84a64d6303eaac7559774b0ceb9388200589afc97
+2026-01-30 04:03:17 [INFO] __main__ - page_start: 1
+2026-01-30 04:03:17 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-01-30 04:03:17 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-30 04:03:17 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-01-30 04:03:17 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-01-30 04:03:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-01-30 04:03:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-01-30 04:03:29 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-01-30 04:03:29 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-01-30 04:03:29 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 6
+2026-01-30 04:03:30 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 6
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-01-30 04:03:30 [INFO] __main__ - Processing remove duplicate data
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-01-30 04:03:30 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-01-30 04:03:30 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-01-30 04:03:30 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
