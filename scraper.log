@@ -8075,3 +8075,47 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='links.sgx.com', port=443
 2026-02-01 04:26:43 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-01 04:26:43 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-01 04:26:43 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-02 04:16:02 [INFO] __main__ - Scraping from None to None...
+2026-02-02 04:16:02 [INFO] __main__ - Start scraping from start date: 20260131 to 20260202
+2026-02-02 04:16:02 [INFO] __main__ - page_start: 0
+2026-02-02 04:16:02 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-02 04:16:02 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-02 04:16:02 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 2 announcements
+2026-02-02 04:16:03 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FMCPFRL10R5IUR33/7ede3dabc7474926883fe267ff3a9f8797e3eea3259115b408db803a2230e818 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FMCPFRL10R5IUR33/873807__260201%20Form%201%20-%20Eng%20Zhen-Hui%20-%20Final.pdf
+2026-02-02 04:16:04 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/FMCPFRL10R5IUR33/873807__260201%20Form%201%20-%20Eng%20Zhen-Hui%20-%20Final.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 724, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-02-02 04:16:04 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: Y VENTURES GROUP LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/FMCPFRL10R5IUR33/7ede3dabc7474926883fe267ff3a9f8797e3eea3259115b408db803a2230e818
+2026-02-02 04:16:04 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VDC1YUBXEN2RP5MC/f0315aadd5ffacd5f579dd0349bb78eff16b5c11b053f84521ebc772723141d4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VDC1YUBXEN2RP5MC/873804__eFORM1V2_VL_FINAL.pdf
+2026-02-02 04:16:05 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/VDC1YUBXEN2RP5MC/873804__eFORM1V2_VL_FINAL.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 724, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-02-02 04:16:05 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: FU YU CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VDC1YUBXEN2RP5MC/f0315aadd5ffacd5f579dd0349bb78eff16b5c11b053f84521ebc772723141d4
+2026-02-02 04:16:07 [INFO] __main__ - page_start: 1
+2026-02-02 04:16:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-02 04:16:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-02 04:16:07 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-02 04:16:07 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-02 04:16:18 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-02 04:16:19 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-02 04:16:19 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-02 04:16:19 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-02 04:16:19 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 0
+2026-02-02 04:16:19 [INFO] sgx_scraper.utils.cli_helper - [sgx_filings] is empty, skipping clean payload
+2026-02-02 04:16:20 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-02 04:16:20 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 0
+2026-02-02 04:16:20 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-02 04:16:20 [INFO] __main__ - Processing remove duplicate data
+2026-02-02 04:16:20 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-02 04:16:20 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-02 04:16:20 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-02-02 04:16:20 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-02 04:16:20 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-02 04:16:20 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-02 04:16:20 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
