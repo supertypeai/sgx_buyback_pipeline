@@ -8139,3 +8139,40 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-02 04:19:51 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-02 04:19:51 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-02 04:19:51 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-03 04:08:45 [INFO] __main__ - Scraping from None to None...
+2026-02-03 04:08:45 [INFO] __main__ - Start scraping from start date: 20260201 to 20260203
+2026-02-03 04:08:45 [INFO] __main__ - page_start: 0
+2026-02-03 04:08:45 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-03 04:08:45 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-03 04:08:45 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 5 announcements
+2026-02-03 04:08:45 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HFGCAJWHI4IESF25/77e9b2a71fc8e50ddf25aaaf797f67acc5b6ad01522f15f81a4a6249bbc373f5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HFGCAJWHI4IESF25/873911__JBGL%20-%20Form%201%20JPSP%20May%202025%20tranche%202_JPSP%20Jan%202025%20tranche%201_Chris.pdf
+2026-02-03 04:08:47 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-03 04:08:50 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/I0A5HKR9I2KTTFPJ/df8ce8a9fc9499dae4d5457b24a45e1d8646418a0bfc019b4de263e27b27a220 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/I0A5HKR9I2KTTFPJ/873909__JBGL%20-%20Form%201%20JPSP%20May%202025%20tranche%202_JPSP%20Jan%202026%20tranche%201_AKM.pdf
+2026-02-03 04:08:51 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-03 04:08:55 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IUFMNFNOSTRR5LIL/f69e06b3f1adf02a8fc9ce95889becd41c625354da24298253968146b5a80c43 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IUFMNFNOSTRR5LIL/873898__eFORM3V2%20-%20TKC%2030.01.26%20final.pdf
+2026-02-03 04:08:55 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: FEO HOSPITALITY ASSET MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/IUFMNFNOSTRR5LIL/f69e06b3f1adf02a8fc9ce95889becd41c625354da24298253968146b5a80c43
+2026-02-03 04:08:55 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/21LYBKMKMB0VLBXK/7bf260a96da5a24516780a26ba5fe1131e05cbc2785c656ff250238f99f62483 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/21LYBKMKMB0VLBXK/873874__eFORM1V2_ST.pdf
+2026-02-03 04:09:00 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/U6POG89A03BZ1BFZ/7653ab81b37b8696c0b03d215ddd15779eeec5561f4e1b04059c2dffbb647aaf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/U6POG89A03BZ1BFZ/873871__Form%203%20-%20Yafin_.pdf
+2026-02-03 04:09:07 [INFO] __main__ - page_start: 1
+2026-02-03 04:09:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-03 04:09:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-03 04:09:07 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-03 04:09:07 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-03 04:09:20 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-03 04:09:20 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-03 04:09:20 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-03 04:09:20 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-03 04:09:20 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 4
+2026-02-03 04:09:21 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-03 04:09:21 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 3
+2026-02-03 04:09:21 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-03 04:09:21 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-03 04:09:21 [INFO] __main__ - Processing remove duplicate data
+2026-02-03 04:09:21 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-03 04:09:21 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-03 04:09:22 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 1 | Not insertable: 0
+2026-02-03 04:09:22 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-03 04:09:22 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-03 04:09:22 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-03 04:09:22 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_filings?columns=%22shares_after_percentage%22%2C%22symbol%22%2C%22transaction_type%22%2C%22shares_before_percentage%22%2C%22shares_after%22%2C%22shareholder_name%22%2C%22shares_before%22%2C%22url%22%2C%22number_of_stock%22%2C%22value%22%2C%22price_per_share%22%2C%22transaction_date%22 "HTTP/2 201 Created"
+2026-02-03 04:09:22 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
