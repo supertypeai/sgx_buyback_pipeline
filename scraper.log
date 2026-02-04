@@ -8196,3 +8196,52 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-03 04:10:24 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-03 04:10:24 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-03 04:10:24 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-04 04:05:48 [INFO] __main__ - Scraping from None to None...
+2026-02-04 04:05:48 [INFO] __main__ - Start scraping from start date: 20260202 to 20260204
+2026-02-04 04:05:48 [INFO] __main__ - page_start: 0
+2026-02-04 04:05:48 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-04 04:05:49 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-04 04:05:49 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 3 announcements
+2026-02-04 04:05:49 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/V9MZR4PZEMWZP2HB/600ef4a3c77f84cf6b81c5e384dcbee7bbb123b6af325a094e167e44073e03e0 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/V9MZR4PZEMWZP2HB/874023__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:52 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:05:53 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-04 04:05:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-04 04:05:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-04 04:05:58 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XG9WEFV3ANDJU2WN/7ed6cd7acbe1f3dccd4934f0c4d73e2775a395320ea5e7da1007d59014c3d489 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XG9WEFV3ANDJU2WN/873986__F3-MHIL%202026%200203%20F.pdf
+2026-02-04 04:06:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:06:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:06:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-04 04:06:00 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/XG9WEFV3ANDJU2WN/873986__F3-MHIL%202026%200203%20F.pdf: All transactions have no direct interest change and total shares change
+2026-02-04 04:06:00 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: M&C REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/XG9WEFV3ANDJU2WN/7ed6cd7acbe1f3dccd4934f0c4d73e2775a395320ea5e7da1007d59014c3d489
+2026-02-04 04:06:01 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HS8LYD4P0ED6CMPG/971fcffa44e19eddca60d874d967f33654c73bcb0903e5198379cab449335bdf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HS8LYD4P0ED6CMPG/873982__Form%203%20-%20Silchester%20-%20ComfortDelGro%20-%2020260202.pdf
+2026-02-04 04:06:03 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HS8LYD4P0ED6CMPG/873982__Form%203%20-%20Silchester%20-%20ComfortDelGro%20-%2020260202.pdf: All transactions have no direct interest change and total shares change
+2026-02-04 04:06:03 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: COMFORTDELGRO CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HS8LYD4P0ED6CMPG/971fcffa44e19eddca60d874d967f33654c73bcb0903e5198379cab449335bdf
+2026-02-04 04:06:10 [INFO] __main__ - page_start: 1
+2026-02-04 04:06:10 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-04 04:06:11 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-04 04:06:11 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-04 04:06:11 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-04 04:06:22 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-04 04:06:22 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-04 04:06:22 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-04 04:06:22 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-04 04:06:22 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 2
+2026-02-04 04:06:23 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 2
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-04 04:06:23 [INFO] __main__ - Processing remove duplicate data
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-04 04:06:23 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-04 04:06:23 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-04 04:06:23 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
