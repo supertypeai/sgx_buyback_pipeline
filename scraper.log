@@ -8269,3 +8269,56 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-04 04:07:53 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-04 04:07:53 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-04 04:07:53 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-05 04:07:29 [INFO] __main__ - Scraping from None to None...
+2026-02-05 04:07:29 [INFO] __main__ - Start scraping from start date: 20260203 to 20260205
+2026-02-05 04:07:29 [INFO] __main__ - page_start: 0
+2026-02-05 04:07:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-05 04:07:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-05 04:07:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 6 announcements
+2026-02-05 04:07:30 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AUA1R15WRM4ACIP6/3f92cca4d5325405f7191274fd7692bad87589209c34404b9b8e4c7d20bff7b6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AUA1R15WRM4ACIP6/874134__eFORM1V2_VL_REPL_FINAL.pdf
+2026-02-05 04:07:31 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/AUA1R15WRM4ACIP6/874134__eFORM1V2_VL_REPL_FINAL.pdf: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 724, in extract_all_fields
+    if not type_securities_raw.get("results", {}).get('Voting shares/units', False):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-02-05 04:07:31 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: FU YU CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/AUA1R15WRM4ACIP6/3f92cca4d5325405f7191274fd7692bad87589209c34404b9b8e4c7d20bff7b6
+2026-02-05 04:07:31 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BP4BAFACOTWB1FAM/cec99c5534b9dee0ffae95994150d1c8e4b9bee586ca7649eaeebe0dda9e2ed9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BP4BAFACOTWB1FAM/874127__eFORM3V2%20v2%20Vincent_Final.pdf
+2026-02-05 04:07:33 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-05 04:07:33 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/BP4BAFACOTWB1FAM/874127__eFORM3V2%20v2%20Vincent_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-05 04:07:33 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: HUATIONG GLOBAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BP4BAFACOTWB1FAM/cec99c5534b9dee0ffae95994150d1c8e4b9bee586ca7649eaeebe0dda9e2ed9
+2026-02-05 04:07:33 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K87GR9S21730H1Y9/b661a43c2fb0e2a786e3c6d7e0b38eb58260d9e6db93e0f49bf8ec2802069bab pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K87GR9S21730H1Y9/874125__eFORM3V2%20v2%20Patrick_Final.pdf
+2026-02-05 04:07:36 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-05 04:07:36 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/K87GR9S21730H1Y9/874125__eFORM3V2%20v2%20Patrick_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-05 04:07:36 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: HUATIONG GLOBAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/K87GR9S21730H1Y9/b661a43c2fb0e2a786e3c6d7e0b38eb58260d9e6db93e0f49bf8ec2802069bab
+2026-02-05 04:07:36 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IXE8APQOHHOGWB0W/e5713dfec56faf8e60c0d07a42dc834612de7aff54f365d95e7daa7a62785dc6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IXE8APQOHHOGWB0W/874123__eFORM3V2%20v2%20Ng%20Hai%20Liong_Final.pdf
+2026-02-05 04:07:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-05 04:07:38 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/IXE8APQOHHOGWB0W/874123__eFORM3V2%20v2%20Ng%20Hai%20Liong_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-05 04:07:38 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: HUATIONG GLOBAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/IXE8APQOHHOGWB0W/e5713dfec56faf8e60c0d07a42dc834612de7aff54f365d95e7daa7a62785dc6
+2026-02-05 04:07:38 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2GPNFEWA8A1Q93FO/e2c0071547544b7b0746748e31ffe736259ddabaecdfdd82d9bff33dabe13522 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2GPNFEWA8A1Q93FO/874121__eFORM3V2%20v2%20Dandelion_Final.pdf
+2026-02-05 04:07:40 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-05 04:07:40 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/2GPNFEWA8A1Q93FO/874121__eFORM3V2%20v2%20Dandelion_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-05 04:07:40 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: HUATIONG GLOBAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/2GPNFEWA8A1Q93FO/e2c0071547544b7b0746748e31ffe736259ddabaecdfdd82d9bff33dabe13522
+2026-02-05 04:07:40 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/30UTLYBUL86B79CP/690928afd8ed78c684e59a602069c9ee7bcc3bd0d8ce709fc9db12e2d18eaedc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/30UTLYBUL86B79CP/874111__eFORM1V2%20CSL%2004022026.pdf
+2026-02-05 04:07:54 [INFO] __main__ - page_start: 1
+2026-02-05 04:07:54 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-05 04:07:54 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-05 04:07:54 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-05 04:07:54 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-05 04:08:06 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-05 04:08:06 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-05 04:08:06 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-05 04:08:06 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-05 04:08:06 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 1
+2026-02-05 04:08:07 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 1
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-05 04:08:07 [INFO] __main__ - Processing remove duplicate data
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-05 04:08:07 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-05 04:08:07 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-05 04:08:07 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
