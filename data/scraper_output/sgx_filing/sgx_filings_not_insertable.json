@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ZBY5WQEY5E50KGMJ/874257__MPACT%205Feb2026-SuffolkAssets-%20Form%203.pdf",
+    "symbol": "N2IU",
+    "transaction_date": "2026-02-04",
+    "shareholder_name": "Suffolk Assets Pte. Ltd",
+    "number_of_stock": 121127133,
+    "value": 177427024.4184,
+    "price_per_share": 1.4648,
+    "transaction_type": null,
+    "shares_before": 164129263,
+    "shares_before_percentage": 0.031,
+    "shares_after": 285256396,
+    "shares_after_percentage": 0.054,
+    "reasons": [
+      "Missing transaction_type"
+    ]
+  }
+]

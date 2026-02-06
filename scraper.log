@@ -8342,3 +8342,85 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-05 04:09:57 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-05 04:09:57 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-05 04:09:57 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-06 04:07:54 [INFO] __main__ - Scraping from None to None...
+2026-02-06 04:07:54 [INFO] __main__ - Start scraping from start date: 20260204 to 20260206
+2026-02-06 04:07:54 [INFO] __main__ - page_start: 0
+2026-02-06 04:07:54 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-06 04:07:55 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-06 04:07:55 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 11 announcements
+2026-02-06 04:07:56 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6FYQ4CE8QQP7I2MA/29ac5dddcf5d34e4476c4b1cd954ac5ce48991705188e7f4283f5ce5533fadca pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6FYQ4CE8QQP7I2MA/874323__Form%203%20-%20Pang%20Pok%20and%20Ang%20Siew%20Kiock%2003022026.pdf
+2026-02-06 04:07:58 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:07:58 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:07:58 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-06 04:08:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9BDZ85WLKRGV2GHJ/02f6882bc38f2413fc43e0de353ef8a8936e38d2dd6e6f5a8f6f73826ded7c26 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9BDZ85WLKRGV2GHJ/874319__Form%201_Dr.%20Pisanu.pdf
+2026-02-06 04:08:05 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-06 04:08:05 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/9BDZ85WLKRGV2GHJ/874319__Form%201_Dr.%20Pisanu.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:05 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: THAI BEVERAGE PUBLIC CO LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/9BDZ85WLKRGV2GHJ/02f6882bc38f2413fc43e0de353ef8a8936e38d2dd6e6f5a8f6f73826ded7c26
+2026-02-06 04:08:05 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4G69GST3J8Z2PRGG/7a24448481c7654857f798c726c6f0e19c6ca474e7d9f5e21ab718a984bcac8c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4G69GST3J8Z2PRGG/874315__Form%201_Mr.%20Sithichai.pdf
+2026-02-06 04:08:07 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-06 04:08:07 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4G69GST3J8Z2PRGG/874315__Form%201_Mr.%20Sithichai.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:07 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: THAI BEVERAGE PUBLIC CO LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/4G69GST3J8Z2PRGG/7a24448481c7654857f798c726c6f0e19c6ca474e7d9f5e21ab718a984bcac8c
+2026-02-06 04:08:07 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/JG1YQ84OOKN9NYHP/e870887c4f6d5a425061e937e0ae2a6de66bf6d4c2b3a1f8981bf87d93c6d976 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/JG1YQ84OOKN9NYHP/874307__Form%201_Mr.%20Ueychai.pdf
+2026-02-06 04:08:09 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-06 04:08:09 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/JG1YQ84OOKN9NYHP/874307__Form%201_Mr.%20Ueychai.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:09 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: THAI BEVERAGE PUBLIC CO LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/JG1YQ84OOKN9NYHP/e870887c4f6d5a425061e937e0ae2a6de66bf6d4c2b3a1f8981bf87d93c6d976
+2026-02-06 04:08:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NTGH7M4XYRFTTVKM/505b77d901ceeb5b133fad8c2a3bf6b003ee93101337ec98b8c880db095e7535 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NTGH7M4XYRFTTVKM/874304__05.02.2026%20eFORM3-Jinhushen_Liuliguang_SIIC_Qianhai%20Furong_Shenzhen%20Yierde.pdf
+2026-02-06 04:08:13 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:13 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:13 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:13 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:13 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:13 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/NTGH7M4XYRFTTVKM/874304__05.02.2026%20eFORM3-Jinhushen_Liuliguang_SIIC_Qianhai%20Furong_Shenzhen%20Yierde.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:13 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TIANJIN PHARMACEUTICAL DA REN TANG GROUP CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/NTGH7M4XYRFTTVKM/505b77d901ceeb5b133fad8c2a3bf6b003ee93101337ec98b8c880db095e7535
+2026-02-06 04:08:13 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5GG1NX8R9GAEOGK5/fa6eaa3922f550b3a9e4b8176a981d463a2514bf6a00ef7b5025668676b49318 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5GG1NX8R9GAEOGK5/874302__05.02.2026%20eFORM1-Guo%20Min.pdf
+2026-02-06 04:08:15 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-06 04:08:15 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Please refer to Item 9 below. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-02-06 04:08:15 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/5GG1NX8R9GAEOGK5/874302__05.02.2026%20eFORM1-Guo%20Min.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:15 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TIANJIN PHARMACEUTICAL DA REN TANG GROUP CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/5GG1NX8R9GAEOGK5/fa6eaa3922f550b3a9e4b8176a981d463a2514bf6a00ef7b5025668676b49318
+2026-02-06 04:08:15 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/J3IA448V89XIRI5O/a9011c89093eb3eddb002adc56e05c7199576682cf5a1f171082f04c18ea3112 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/J3IA448V89XIRI5O/874299__05.02.2026%20eFORM3-TPH_Guoyu_Guoxin_Bohai%20Assets%20Management_Tsinlien_TEDA%20Investment.pdf
+2026-02-06 04:08:19 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:19 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:19 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:19 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:19 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:19 [ERROR] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build value] Error: unsupported operand type(s) for *: 'NoneType' and 'NoneType'
+2026-02-06 04:08:19 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Please refer to Item 8 of Substantial Shareholder A's notification.'
+2026-02-06 04:08:19 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/J3IA448V89XIRI5O/874299__05.02.2026%20eFORM3-TPH_Guoyu_Guoxin_Bohai%20Assets%20Management_Tsinlien_TEDA%20Investment.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:19 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TIANJIN PHARMACEUTICAL DA REN TANG GROUP CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/J3IA448V89XIRI5O/a9011c89093eb3eddb002adc56e05c7199576682cf5a1f171082f04c18ea3112
+2026-02-06 04:08:20 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/435QWQAQLHONTLHG/5f088f0ac59f298eb754de585590225c5156971b44ef093eeb9ac00d8cf3f1bf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/435QWQAQLHONTLHG/874291__eFORM1V2%20SLC_Final.pdf
+2026-02-06 04:08:21 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-06 04:08:22 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/435QWQAQLHONTLHG/874291__eFORM1V2%20SLC_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:22 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: STAMFORD LAND CORPORATION LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/435QWQAQLHONTLHG/5f088f0ac59f298eb754de585590225c5156971b44ef093eeb9ac00d8cf3f1bf
+2026-02-06 04:08:22 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ASU28LO4AK8EJ6NK/933dd3f93c3ef953d674a10994477e1f2fcd540cda46ee4b3f439bb45803548d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ASU28LO4AK8EJ6NK/874279__SSC%20-%20FORM1V2%20-%20OCK.pdf
+2026-02-06 04:08:24 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-06 04:08:24 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ASU28LO4AK8EJ6NK/874279__SSC%20-%20FORM1V2%20-%20OCK.pdf: All transactions have no direct interest change and total shares change
+2026-02-06 04:08:24 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: SINGAPORE SHIPPING CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ASU28LO4AK8EJ6NK/933dd3f93c3ef953d674a10994477e1f2fcd540cda46ee4b3f439bb45803548d
+2026-02-06 04:08:24 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/D4YGTGTJPWR6UZLP/606e39fed73b0cae5dfec02d052950f867838aa6d6f69cc947c165e7cac980ec pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/D4YGTGTJPWR6UZLP/874274__ZYG_eFORM3V2_05FEB26_FINAL.pdf
+2026-02-06 04:08:26 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:26 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:26 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-06 04:08:26 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-06 04:08:30 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZBY5WQEY5E50KGMJ/077caf2e9b6b42ae82e792d17c1c815e00a808e7841d5a47036ec442f137c591 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZBY5WQEY5E50KGMJ/874257__MPACT%205Feb2026-SuffolkAssets-%20Form%203.pdf
+2026-02-06 04:08:32 [INFO] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] transfer ignore due to value is not None
+2026-02-06 04:08:38 [INFO] __main__ - page_start: 1
+2026-02-06 04:08:38 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-06 04:08:38 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-06 04:08:38 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-06 04:08:38 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-06 04:08:51 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-06 04:08:51 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-06 04:08:51 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-06 04:08:51 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-06 04:08:51 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 3
+2026-02-06 04:08:52 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-06 04:08:52 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 2
+2026-02-06 04:08:52 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-06 04:08:52 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-06 04:08:52 [INFO] __main__ - Processing remove duplicate data
+2026-02-06 04:08:52 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-06 04:08:52 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-06 04:08:52 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 0 | Not insertable: 1
+2026-02-06 04:08:52 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-06 04:08:52 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-06 04:08:53 [INFO] sgx_scraper.alerting.mailer - Email sent! Message ID: 011c019c3123768e-b41b4f15-9691-472d-8b3a-9425db2e5d8c-000000
+2026-02-06 04:08:53 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
