@@ -5,6 +5,7 @@ from dataclasses import dataclass
 class SGXFilings:
     url: str
     symbol: str = ''
+
     transaction_date: str = ''
     shareholder_name: str = ''
     number_of_stock: float = 0.0
@@ -15,4 +16,8 @@ class SGXFilings:
     shares_before_percentage: float = 0.0
     shares_after: float = 0.0
     shares_after_percentage: float = 0.0
+
+    title: str = ''
+    body: str = ''
+    holder_type: str = ''
     

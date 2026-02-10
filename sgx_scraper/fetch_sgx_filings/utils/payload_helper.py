@@ -1,5 +1,6 @@
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from typing import Optional
 
 from sgx_scraper.fetch_sgx_filings.utils.converter_helper import get_latest_currency, calculate_currency_to_sgd
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
@@ -9,6 +10,8 @@ from sgx_scraper.fetch_sgx_filings.utils.constants import (
 import re 
 import logging
 import requests
+import os 
+import json 
 
 
 LOGGER = logging.getLogger(__name__)
@@ -107,7 +110,7 @@ def safe_convert_float(number_value: str) -> float | None:
         return None
     
 
-def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
+def build_price_per_share(raw_value: str, number_of_stock: float) -> float | None:
     if raw_value is None or number_of_stock is None:
         return None
     
@@ -144,6 +147,14 @@ def build_price_per_share(raw_value: str, number_of_stock: str) -> float | None:
         
         if or_match:
             per_share_value = or_match.group(1).replace(',', '')
+            return safe_convert_float(per_share_value)
+        
+        # Handle direct price per unit format - e.g., "S$0.007 per Rights Unit"
+        direct_per_unit_pattern = r'(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)\s*per\s+(?:shares?|units?|rights\s+units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))'
+        direct_match = re.search(direct_per_unit_pattern, cleaned_value, re.IGNORECASE)
+
+        if direct_match:
+            per_share_value = direct_match.group(1).replace(',', '')
             return safe_convert_float(per_share_value)
 
         # Handle text contains context
@@ -490,3 +501,188 @@ def build_shareholder_name_transfer(
     except Exception as error:
         LOGGER.error(f"[build_shareholder_name_transfer] Error: {error}")
         return None 
+
+
+def compute_transactions(price_transactions: list[dict[str, any]]) -> dict[str, any]:
+    if not price_transactions:
+        return {}
+    
+    total_buy_shares = 0
+    total_buy_value = 0.0
+    
+    total_sell_shares = 0
+    total_sell_value = 0.0
+
+    total_others_shares = 0
+    total_others_value = 0.0
+    try:
+        has_buy_sell = False 
+
+        for price_transaction in price_transactions: 
+            amount = int(price_transaction.get('amount_transacted') or 0)
+            price = float(price_transaction.get('price') or 0.0)
+            value = amount * price
+            
+            type = str(price_transaction.get('type')).lower()
+
+            if type =='buy': 
+                total_buy_shares += amount
+                total_buy_value += value
+                has_buy_sell = True 
+            elif type == 'sell':
+                total_sell_shares += amount
+                total_sell_value += value
+                has_buy_sell = True 
+            else:
+                total_others_shares += amount
+                total_others_value += value
+
+        if has_buy_sell:
+            # Net transaction value (Buy – Sell)
+            net_value = total_buy_value - total_sell_value
+            
+            # Net transacted share amount (Buy-Sell)
+            net_shares = total_buy_shares - total_sell_shares
+
+            if net_value > 0:
+                type = 'buy'
+            elif net_value < 0:
+                type = 'sell'
+            else:
+                type = 'others'
+
+            if net_shares != 0:
+                # We use abs() because price cannot be negative
+                w_avg_price = abs(net_value / net_shares)
+            else:
+                w_avg_price = 0.0
+
+            return {
+                "price": round(w_avg_price, 3),
+                "transaction_value": abs(int(net_value)),
+                "transaction_type": type
+            }
+        
+        else:
+            # Calculate Price (Total Value / Total Shares)
+            if total_others_shares > 0:
+                w_avg_price = total_others_value / total_others_shares
+            else:
+                w_avg_price = 0.0
+            
+            return {
+                "price": round(w_avg_price, 3),
+                "transaction_value": abs(int(total_others_value)),
+                "transaction_type": "others"
+            }
+
+    except Exception as error:
+        LOGGER.error(f'compute transaction error: {error}')
+        return {}
+
+
+def populate_extra_data(
+    symbol: str, 
+) -> tuple[str, str, str]: 
+    cache_path = "data/sgx_companies_lookup.json"
+
+    if not os.path.exists(cache_path):
+        raise FileNotFoundError("sgx_companies_lookup.json not found")
+
+    with open(cache_path, "r", encoding="utf-8") as file:
+        company_lookup = json.load(file)
+
+    if not symbol: 
+        return None, None, None 
+    
+    for lookup in company_lookup:
+        data = lookup.get(symbol, None)
+        
+        if not data:
+            LOGGER.info('symbol not matched with company lookup')
+
+        company_name =  data.get('name') or None 
+        sector = data.get('sector') or None 
+        sub_sector = data.get('sub_sector') or None 
+
+        return company_name, sector, sub_sector
+
+
+def classify_holder_type(name: str) -> str:
+    if not name:
+        return "insider"
+    
+    # Normalize
+    name_clean = re.sub(r"[.,]", "", name).strip().upper() 
+    name_clean = re.sub(r"\s+", " ", name_clean)
+
+    INSTITUTION_TOKENS = {
+        "PTE", "LTD", "LIMITED", "LLP", "PLC", "INC", "CORP", "CORPORATION",
+        "BHD", "SDN", "SA", "SARL", "BV", "NV", "GMBH", "AG", "SCSP",
+        "TRUST", "REIT", "FUND", "CAPITAL", "HOLDINGS", "INVESTMENT",
+        "MANAGEMENT", "NOMINEES", "CUSTODIAN", "BANK", "INSURANCE",
+        "GOVERNMENT", "AUTHORITY", "MINISTRY", "FOUNDATION"
+    }
+    
+    # Fast check
+    tokens = set(name_clean.split())
+    if not tokens.isdisjoint(INSTITUTION_TOKENS):
+        return "institution"
+
+    # Regex Check
+    institution_pattern = r"\b(PTE\s?LTD|LTD|LIMITED|LLP|PLC|INC|CORP|S\.?A\.?|S\.?C\.?S\.?P\.?|TRUST|REIT|FUND)\b"
+    
+    if re.search(institution_pattern, name_clean):
+        return "institution"
+        
+    return "insider"
+
+
+def generate_title_and_body(
+    holder_name: str,
+    company_name: str,
+    tx_type: str,
+    amount: Optional[int],
+    holding_before: Optional[int],
+    holding_after: Optional[int],
+    purpose_en: str,
+) -> tuple[str, str]:
+    action_title = tx_type.replace("-", " ").title()
+    if tx_type == "buy":
+        action_verb = "bought"
+        title = f"{holder_name} buys shares of {company_name}"
+    elif tx_type == "sell":
+        action_verb = "sold"
+        title = f"{holder_name} sells shares of {company_name}"
+    elif tx_type == "share-transfer":
+        action_verb = "transferred"
+        title = f"{holder_name} transfers shares of {company_name}"
+    elif tx_type == "award":
+        action_verb = "was awarded"
+        title = f"{holder_name} was awarded shares of {company_name}"
+    elif tx_type == "others": 
+        action_verb = "executed a transaction for"
+        title = f"Change in {holder_name}'s position in {company_name}"
+    elif tx_type == "inheritance":
+        action_verb = "inherited"
+        title = f"{holder_name} inherits shares of {company_name}"
+    
+    else:
+        action_verb = "executed a transaction for"
+        title = f"{holder_name} {action_title} transaction of {company_name}"
+
+    amount_str = f"{amount:,} shares" if amount is not None else "shares"
+    body = f"{holder_name} {action_verb} {amount_str} of {company_name}."
+
+    if holding_before is not None and holding_after is not None:
+        hb_str, ha_str = f"{holding_before:,}", f"{holding_after:,}"
+        if holding_after > holding_before:
+            body += f" This increases their holdings from {hb_str} to {ha_str} shares."
+        elif holding_after < holding_before:
+            body += f" This decreases their holdings from {hb_str} to {ha_str} shares."
+        else:
+            body += f" Their holdings remain at {ha_str} shares."
+
+    if purpose_en:
+        body += f" The stated purpose of the transaction was {purpose_en.lower()}."
+    return title, body

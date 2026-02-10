@@ -9,6 +9,9 @@ from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     build_shareholder_name_transfer,
     shares_percentage_to_decimal,
     safe_convert_float, 
+    populate_extra_data,
+    generate_title_and_body,
+    classify_holder_type,
     HTTPCLIENT
 )
 from sgx_scraper.utils.sgx_parser_helper import (
@@ -37,7 +40,6 @@ import logging
 
 
 LOGGER = logging.getLogger(__name__)
-
 
 
 def open_pdf(pdf_url: str) -> fitz.Document:
@@ -150,7 +152,7 @@ def extract_date(text: str) -> str | None:
             return None
         
     except Exception as error:
-        print(f"[sgx_filings] Error extracting date: {error}")
+        LOGGER.error(f"[sgx_filings] Error extracting date: {error}")
         return None
 
 
@@ -293,6 +295,7 @@ def parse_share_table_values(pdf_object: pdfplumber.PDF, page_number: int, bbox:
 
 def build_individual_share_record(pdf_object: pdfplumber.PDF, page_number: int, bbox: tuple) -> dict[str, any]:
     shares_before_raw, shares_after_raw = parse_share_table_values(pdf_object, page_number, bbox)
+    print(f'\nraw shares before: {shares_before_raw}, raw shares after: {shares_after_raw}')
 
     if not shares_before_raw and not shares_after_raw:
         return None
@@ -307,6 +310,8 @@ def build_individual_share_record(pdf_object: pdfplumber.PDF, page_number: int, 
     shares_after_percentage = safe_convert_float(shares_after_raw.get("percentage"))
     shares_after_decimal = shares_percentage_to_decimal(shares_after_percentage)
     direct_interest_after = safe_convert_float(shares_after_raw.get("direct_interest_after"))
+
+    print(f'\nshares before percentage: {shares_before_percentage} | shares after percentage: {shares_after_percentage}\n')
 
     return {
         "shares_before": shares_before,
@@ -398,6 +403,8 @@ def extract_symbol_fallback(doc_fits: fitz.Document, start_page: int = 1, end_pa
             name = re.sub(r'^\d+\.\s*', '', name)  
             # Normalize whitespace
             name = re.sub(r'\s+', ' ', name)  
+
+            print(f'\nraw company name extracted: {name}\n')
             return name.strip()
         
         return None 
@@ -596,6 +603,9 @@ def extract_transaction_details(
                     break 
 
         # Price per share 
+        print(f'\nraw value: {raw_value}\n')
+        print(f'\nraw number of stock: {number_of_stock}\n')
+
         price_per_share = build_price_per_share(raw_value, number_of_stock)
     
         base_details.update({
@@ -626,7 +636,7 @@ def extract_transaction_details(
         return [] 
 
 
-def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
+def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[dict] | None:
     try:
         response = HTTPCLIENT.get(pdf_url)
         response.raise_for_status()
@@ -669,6 +679,12 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
                 print(f'\nraw circumstance interest: {circumstance_interest_raw}')
                 transaction_type = build_transaction_type(circumstance_interest_raw, transaction_details)
                 
+                # get holder type 
+                if detected_holder_type != 'mix': 
+                    holder_type = detected_holder_type 
+                else:
+                    holder_type = classify_holder_type(shareholder_name)
+
                 # Special case shareholder name if transaction type is transfer
                 if transaction_type == 'transfer':
                     original_shareholder_name = shareholder_name
@@ -682,6 +698,7 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
                     final_record = {
                         'shareholder_name': shareholder_name if shareholder_name else None,
                         'transaction_type': transaction_type if transaction_type else None,
+                        'holder_type': holder_type,
                         **transaction_detail,
                         **individual_share_data
                     }
@@ -714,7 +731,7 @@ def extract_records(pdf_url: str, doc_fitz) -> list[dict] | None:
         return None
     
 
-def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
+def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str, detected_holder_type: str) -> list[dict]:
     try:
         # Check if data valid or not 
         type_securities_raw = extract_type_securities_checkbox(
@@ -725,7 +742,7 @@ def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
             return None  
         
         # Orchestrate record extraction 
-        all_records = extract_records(pdf_url, doc_fitz)
+        all_records = extract_records(pdf_url, doc_fitz, detected_holder_type)
     
         # Add fallback for document multiples shareholder
         if all_records:
@@ -736,6 +753,27 @@ def extract_all_fields(doc_fitz: fitz.Document, pdf_url: str) -> list[dict]:
     except Exception as error:
         LOGGER.error(f"[sgx_filings] Failed to process extract all fields {pdf_url}: {error}", exc_info=True)
         return None 
+
+
+def detect_form_type(pdf_url: str, doc_fitz: fitz.Document) -> str | None:
+    pdf_text = parse_pdf(doc_fitz, end_page=1, start_page=0) 
+    
+    patterns = [
+        ('insider', r'NOTIFICATION\s+FORM\s+FOR\s+DIRECTOR', r'\b1\b'),
+        ('mix', r'NOTIFICATION\s+FORM\s+FOR\s+SUBSTANTIAL', r'\b3\b'),
+        ('institution', r'NOTIFICATION\s+FORM\s+FOR\s+TRUSTEE-MANAGER', r'\b6\b')
+    ]
+    
+    for form_type, notification_pattern, number_pattern in patterns:
+        notification_match = re.search(notification_pattern, pdf_text, re.IGNORECASE)
+        if notification_match:
+            text_before = pdf_text[:notification_match.start()]
+            
+            if re.search(number_pattern, text_before):
+                return form_type
+    
+    LOGGER.info(f'detect holder type all not match return None {pdf_url}')
+    return None
 
 
 def get_sgx_filings(url: str) -> list[SGXFilings] | None:
@@ -757,46 +795,70 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
             symbol_extracted = extract_symbol_fallback(doc_fitz)
             symbol = matching_symbol(symbol_extracted)
 
-        list_data_extracted = extract_all_fields(doc_fitz, pdf_url)
+        # Populate extra data
+        company_name, _, _ = populate_extra_data(symbol)
+        detected_holder_type = detect_form_type(pdf_url, doc_fitz)
+
+        list_data_extracted = extract_all_fields(doc_fitz, pdf_url, detected_holder_type)
         
         if not list_data_extracted:
             return None
 
         final_filings_list = []
+
         for data_record in list_data_extracted:
-            sgx_filings = SGXFilings(symbol=symbol, url=pdf_url, **data_record)
-            final_filings_list.append(sgx_filings)
+            holder_name = data_record['shareholder_name']
+            company_name = company_name
+            tx_type = data_record['transaction_type'] or None 
+            amount = data_record['number_of_stock'] or None 
+            holding_before = data_record['shares_before']
+            holding_after = data_record['shares_after']
+
+            title, body = generate_title_and_body(
+                holder_name=holder_name, 
+                company_name=company_name, 
+                tx_type=tx_type, 
+                amount=amount, 
+                holding_before=holding_before, 
+                holding_after=holding_after,
+                purpose_en=None
+            )  
+
+            sgx_filings = SGXFilings(
+                symbol=symbol, 
+                url=pdf_url, 
+                title=title, 
+                body=body,
+                **data_record
+            )
 
             print(json.dumps(asdict(sgx_filings), indent=2))
-        
+
+            final_filings_list.append(sgx_filings)
+
         return final_filings_list
     
     except requests.RequestException as error:
-        LOGGER.error(f"[sgx filings] Error fetching SGX filing url {url}: {error}", exc_info=True)
+        LOGGER.error(f"[sgx filings] Error fetching SGX filing url {pdf_url}: {error}", exc_info=True)
         return None
 
     except Exception as error:
-        LOGGER.error(f"[sgx filings] Unexpected Error extracting SGX filings url: {url}: {error}", exc_info=True)
+        LOGGER.error(f"[sgx filings] Unexpected Error extracting SGX filings url: {pdf_url}: {error}", exc_info=True)
         return None
 
 
 if __name__ == '__main__':
     test_clean_data = 'https://links.sgx.com/1.0.0/corporate-announcements/L7QIXIV1LZ9CQR8X/d159e63ab68b983fa8f0e286519b84185c47cc3891f0c7a5fb778e529f448a38'
-    test_one_name_multiple_shareholder = 'https://links.sgx.com/1.0.0/corporate-announcements/07KOA264E5YBKSP7/59c7b3af10cf9d7ec43bb98a405d2959cce4a0f956347332522f4ab342f96967'
+    double_transactions = 'https://links.sgx.com/1.0.0/corporate-announcements/07KOA264E5YBKSP7/59c7b3af10cf9d7ec43bb98a405d2959cce4a0f956347332522f4ab342f96967'
     multiples = 'https://links.sgx.com/1.0.0/corporate-announcements/UQETVC6UVOBCI39D/c7d80525b311a0e0134c87602df7c340edbfd5468b271338eee4cba6812b347f'
     failed = 'https://links.sgx.com/1.0.0/corporate-announcements/D4S34X31H5S17WZ6/4322199213ba04fa35f4aaf094b649cee6a480eda70b585055c6e09761584e19'
     test = 'https://links.sgx.com/1.0.0/corporate-announcements/YTBTYESAL1QHRHCN/46cec123919234a2fa4b360b97f767da81b5ab08822e9b9b886cdfbf2cb23fdb'
     double = 'https://links.sgx.com/1.0.0/corporate-announcements/4L30DFCB3DFLCMNP/1b96579fa316d719251bdcab545fef62e112faf1fd8a5a6a847ab6a279c557f6'
-    test_pdf = 'https://links.sgx.com/FileOpen/_Form%206_FLCAM.ashx?App=Announcement&FileID=867052'
     duplicate = 'https://links.sgx.com/1.0.0/corporate-announcements/VQV4019E82CHGPC4/c2c6966fb8ed3562b3d5b3736c96d1b21837954db7ec864a101cb1558e5dd874'
     new_test = 'https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/9dc3586f0ef9038964cfbe3c2e75e2c5e9789e9803971a015c23a623ecbbcab0'
-    testing = 'https://links.sgx.com/1.0.0/corporate-announcements/GWF99S55MLHRFKZD/fa10799c2edf565026bfe756ce0b686b0e277720923328fb37dcfaddde6cc066'
+    testing = 'https://links.sgx.com/1.0.0/corporate-announcements/35MTZDW2K2IG0RNQ/d055387e137c0826eca950305c047b360e478d206171f5f0334db546470cebeb'
 
-    result_sgx_filing = get_sgx_filings(testing)
+    batched_payload_processed = get_sgx_filings(testing) 
 
-    # print(result_sgx_filing)
-    # if result_sgx_filing is not None:
-    #     for result in result_sgx_filing:
-    #         print(json.dumps(asdict(result), indent=2))
 
-    # uv run -m sgx_scraper.fetch_sgx_filings.parser_sgx_filings
+# uv run -m sgx_scraper.fetch_sgx_filings.parser_sgx_filings

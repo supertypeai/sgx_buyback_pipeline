@@ -5,7 +5,7 @@ from sgx_scraper.utils.cli_helper import (
     normalize_datetime, push_to_db, 
     clean_payload_sgx_buyback, clean_payload_sgx_filings, 
     write_to_json, remove_duplicate, 
-    filter_top_70_companies, write_to_csv
+    filter_top_70_companies, write_to_csv, standardize_name
 )
 from sgx_scraper.utils.constant import (
     SGX_BUYBACKS_PATH_YESTERDAY, SGX_BUYBACKS_PATH_TODAY, SGX_BUYBACKS_PATH_NOT_TOP_70,
@@ -261,8 +261,10 @@ def run_sgx_filings_scraper(
 
     send_sgx_filings_alert(sgx_filings_not_insertable, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
 
+    sgx_filings_insertable_final = standardize_name(sgx_filings_insertable)
+
     if is_push_db:
-        push_to_db(sgx_filings_insertable, 'sgx_filings') 
+        push_to_db(sgx_filings_insertable_final, 'sgx_filings') 
 
 
 if __name__ == '__main__':
