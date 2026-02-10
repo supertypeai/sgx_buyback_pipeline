@@ -1,8 +1,9 @@
-from rapidfuzz import process
+from rapidfuzz import process, fuzz
 
 import json
 import os
 import logging
+import re 
 
 
 LOGGER = logging.getLogger(__name__)
@@ -11,7 +12,7 @@ LOGGER = logging.getLogger(__name__)
 CACHE_PATH = "data/sgx_companies.json"
 
 if not os.path.exists(CACHE_PATH):
-    raise FileNotFoundError("sgx_companies.json not found. Run company_refresher.py first.")
+    raise FileNotFoundError("sgx_companies.json not found.")
 
 with open(CACHE_PATH, "r", encoding="utf-8") as file:
     SGX_COMPANIES = json.load(file)
@@ -20,22 +21,52 @@ SGX_COMPANY_NAMES = [company_name.get('name').lower() for company_name in SGX_CO
 
 
 def match_company_name(input_name: str, threshold: int = 90):
-    input_name_lower = input_name.lower()
+    cleaned_name = re.sub(r'\s*\([^)]*\)', '', input_name)
+    cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()
+
+    input_name_lower = cleaned_name.lower()
+
+    if 'public company' in input_name_lower:
+        input_name_lower = input_name_lower.replace('public company', '').strip()
+
+    if 'corporation' in input_name_lower:
+        input_name_lower = input_name_lower.replace('corporation', 'corp').strip()
+        if '("ifast")' in input_name_lower:
+            input_name_lower = input_name_lower.replace('("ifast")', '').strip()
+
     if 'limited' in input_name_lower:
         if 'the' in input_name_lower:
             input_name_lower = input_name_lower.replace('the', '').strip()
         input_name_lower = input_name_lower.replace('limited', 'ltd').strip()
 
+    input_name_lower = re.sub(r'\s+', ' ', input_name_lower).strip()
+
     try:
-        result = process.extractOne(input_name_lower, SGX_COMPANY_NAMES)
+        scorers = [
+            fuzz.ratio,
+            fuzz.partial_ratio,
+            fuzz.token_sort_ratio,
+            fuzz.token_set_ratio
+        ]
         
-        if not result:
-            return None
+        for scorer in scorers:
+            result = process.extractOne(
+                input_name_lower, 
+                SGX_COMPANY_NAMES,
+                scorer=scorer
+            )
+            
+            if not result:
+                continue
+            
+            match, score, _ = result
+            if round(score) >= threshold:
+                LOGGER.info(f'\nMatched with {scorer.__name__}: {result}\n')
+                matched = next(sgx_company for sgx_company in SGX_COMPANIES if sgx_company.get("name").lower() == match)
+                return matched
         
-        match, score, _ = result
-        if round(score) >= threshold:
-            matched = next(sgx_company for sgx_company in SGX_COMPANIES if sgx_company.get("name").lower() == match)
-            return matched
+        LOGGER.info(f'\nNo match found above threshold {threshold}\n')
+        return None
         
     except (TypeError, ValueError) as error:
         return LOGGER.error(f"[symbol_matching_helper] TypeError or ValueError occurred: {input_name} {error}")
