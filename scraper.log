@@ -8536,6 +8536,7 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-09 04:23:16 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-09 04:23:16 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-09 04:23:16 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+<<<<<<< Updated upstream
 2026-02-10 04:26:34 [INFO] __main__ - Scraping from None to None...
 2026-02-10 04:26:34 [INFO] __main__ - Start scraping from start date: 20260208 to 20260210
 2026-02-10 04:26:34 [INFO] __main__ - page_start: 0
@@ -8608,3 +8609,29 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-10 04:28:19 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2026-02-10 04:28:20 [INFO] sgx_scraper.alerting.mailer - Email sent! Message ID: 011c019c45ceb3e1-e12bf528-3074-4426-8642-2eb2b00e11e3-000000
 2026-02-10 04:28:20 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+=======
+2026-02-10 04:29:20 [INFO] __main__ - Scraping from None to None...
+2026-02-10 04:29:20 [INFO] __main__ - Start scraping from start date: 20260208 to 20260210
+2026-02-10 04:29:20 [INFO] __main__ - page_start: 0
+2026-02-10 04:29:20 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-02-10 04:29:20 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-10 04:29:20 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 3 announcements
+2026-02-10 04:29:36 [INFO] __main__ - page_start: 1
+2026-02-10 04:29:36 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-02-10 04:29:36 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-10 04:29:36 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-10 04:29:36 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-10 04:29:48 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-02-10 04:29:48 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-10 04:29:48 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-10 04:29:48 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-10 04:29:48 [INFO] __main__ - [SGX_BUYBACK] Scraping completed. Total records: 3
+2026-02-10 04:29:49 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-10 04:29:49 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 3
+2026-02-10 04:29:49 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2026-02-10 04:29:49 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-02-10 04:29:49 [INFO] __main__ - Processing remove duplicate data
+2026-02-10 04:29:49 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-10 04:29:49 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-02-10 04:29:49 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+>>>>>>> Stashed changes
