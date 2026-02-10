@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/1D2U31JHBDD0NCEU/874551__Form%201%20CEO-Share%20Grant%20Vesting-F090226.pdf",
+    "symbol": "F17",
+    "transaction_date": "2026-02-05",
+    "shareholder_name": "Cheng Hsing Yao",
+    "number_of_stock": 514839,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 1186511,
+    "shares_before_percentage": 0.001,
+    "shares_after": 1701350,
+    "shares_after_percentage": 0.0014
+  }
+]
