@@ -84,6 +84,29 @@ def clean_payload_sgx_buyback(payload: list[dict[str, any]]) -> list[dict[str, a
     return payload
 
 
+def standardize_name(payload: list[dict[str, any]]) -> list[dict[str, any]]:
+    for record in payload:
+        if not record['shareholder_name']: 
+            LOGGER.info('holder name was None will be assigned to None')
+            record['shareholder_name'] = None
+
+        record['holder_name'] = record.pop('shareholder_name', '').strip()
+        record['holding_before'] = record.pop('shares_before', None)
+        record['holding_after'] = record.pop('shares_after', None)
+        record['share_percentage_before'] = record.pop('shares_before_percentage', None)
+        record['share_percentage_after'] = record.pop('shares_after_percentage', None)
+        record['timestamp'] = record.pop('transaction_date', None)
+        record['amount_transaction'] = record.pop('number_of_stock', None)
+        record['transaction_value'] = record.pop('value', None) 
+        record['source'] = record.pop('url', None) 
+
+        record['share_percentage_transaction'] = round(
+            abs(record.get('share_percentage_after') - record.get('share_percentage_before')), 7
+        )
+
+    return payload 
+
+
 def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
     if not payload:
         LOGGER.info(f'[sgx_filings] is empty, skipping clean payload')
