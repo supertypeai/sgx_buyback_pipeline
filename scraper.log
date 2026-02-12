@@ -8685,3 +8685,66 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-11 04:26:50 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-11 04:26:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-11 04:26:50 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-12 04:16:32 [INFO] __main__ - Scraping from None to None...
+2026-02-12 04:16:32 [INFO] __main__ - Start scraping from start date: 20260210 to 20260212
+2026-02-12 04:16:32 [INFO] __main__ - page_start: 0
+2026-02-12 04:16:32 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-12 04:16:32 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-12 04:16:32 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 7 announcements
+2026-02-12 04:16:33 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/X4XAVJ7YR2HQYAPP/cc906cd5743854ac5ae1ae2fc7862b26a3cea2299dc15655d1591e9d7c3d6a57 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/X4XAVJ7YR2HQYAPP/874778__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-02-12 04:16:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:38 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-12 04:16:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-12 04:16:44 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M5XJAN8M7I01MUXT/abe072f9487fb6a76337ff58487a3c2c224b8b3a57b737eaea512c6c40368419 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M5XJAN8M7I01MUXT/874776__Form%203_Teh%20Wing%20Kwan.pdf
+2026-02-12 04:16:46 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-12 04:16:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/M5XJAN8M7I01MUXT/874776__Form%203_Teh%20Wing%20Kwan.pdf: All transactions have no direct interest change and total shares change
+2026-02-12 04:16:46 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: SKYLINK HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/M5XJAN8M7I01MUXT/abe072f9487fb6a76337ff58487a3c2c224b8b3a57b737eaea512c6c40368419
+2026-02-12 04:16:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/F6CBO6BRETQUPTPR/01de3ad3fba2944403b0644cbd12d5031f75beb00f1f4c2a3a332a286cbffd27 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/F6CBO6BRETQUPTPR/874774__Form%203_PM%20Capital%20Pte.%20Ltd.%20Xue%20Wanqiu%20Shen%20Wende.pdf
+2026-02-12 04:16:48 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:48 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:49 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-12 04:16:49 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/F6CBO6BRETQUPTPR/874774__Form%203_PM%20Capital%20Pte.%20Ltd.%20Xue%20Wanqiu%20Shen%20Wende.pdf: All transactions have no direct interest change and total shares change
+2026-02-12 04:16:49 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: SKYLINK HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/F6CBO6BRETQUPTPR/01de3ad3fba2944403b0644cbd12d5031f75beb00f1f4c2a3a332a286cbffd27
+2026-02-12 04:16:49 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FWE9998GZM6SFB6V/b3bab351d81a78a1f807a2795468bea0398320cb4166653bfc326149716fd512 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FWE9998GZM6SFB6V/874768__Form%203-Dextra_Feb26.pdf
+2026-02-12 04:16:51 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-12 04:16:51 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'As at 19  January 2026, MITM held 32,830,100 units in MIT. MITM is a direct subsidiary of Mapletree Capital Management Pte. Ltd. ("MCM") which was in turn a direct subsidiary of Mapletree Investments Pte Ltd ("MIPL"). Please refer to item 13 below for more details.'
+2026-02-12 04:16:51 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/FWE9998GZM6SFB6V/874768__Form%203-Dextra_Feb26.pdf: All transactions have no direct interest change and total shares change
+2026-02-12 04:16:51 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MAPLETREE INDUSTRIAL TRUST MANAGEMENT LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/FWE9998GZM6SFB6V/b3bab351d81a78a1f807a2795468bea0398320cb4166653bfc326149716fd512
+2026-02-12 04:16:51 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LH423UOOPOZ8WYM7/a13eae2be4697ba169578ec14ac314c37aa62fe3cbd8d40517072484186f84c8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LH423UOOPOZ8WYM7/874750__eFORM3V2_LFZ_11.2.2026.pdf
+2026-02-12 04:16:55 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SZ2VQO47GBRXUBQ4/4a130cf39e3719d690fb60e00c1df7922735ed02cf0e6a74314e41f60aadcded pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SZ2VQO47GBRXUBQ4/874748__eFORM3V2_CWY_11.2.26.pdf
+2026-02-12 04:17:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FX4ACDNAWMI0JH9D/1011f1e2efe340ab2838fa82c2050fa822fbfa5e989003a3a37e551f3b28e39c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FX4ACDNAWMI0JH9D/874730__eFORM1V2%20CSL%2011022026.pdf
+2026-02-12 04:17:14 [INFO] __main__ - page_start: 1
+2026-02-12 04:17:14 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-12 04:17:15 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-12 04:17:15 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-12 04:17:15 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-12 04:17:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-12 04:17:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-12 04:17:29 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-12 04:17:29 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-12 04:17:29 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 6
+2026-02-12 04:17:30 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 6
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-12 04:17:30 [INFO] __main__ - Processing remove duplicate data
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-12 04:17:30 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-12 04:17:30 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-12 04:17:30 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
