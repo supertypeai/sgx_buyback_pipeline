@@ -647,7 +647,11 @@ def generate_title_and_body(
     holding_after: Optional[int],
     purpose_en: str,
 ) -> tuple[str, str]:
-    action_title = tx_type.replace("-", " ").title()
+    if tx_type:
+        action_title = tx_type.title()
+    if holder_name:
+        holder_name = holder_name.title()
+
     if tx_type == "buy":
         action_verb = "bought"
         title = f"{holder_name} buys shares of {company_name}"
@@ -666,7 +670,6 @@ def generate_title_and_body(
     elif tx_type == "inheritance":
         action_verb = "inherited"
         title = f"{holder_name} inherits shares of {company_name}"
-    
     else:
         action_verb = "executed a transaction for"
         title = f"{holder_name} {action_title} transaction of {company_name}"
