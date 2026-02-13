@@ -8773,3 +8773,95 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-02-12 04:21:40 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-12 04:21:40 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_buybacks?columns=%22treasury_shares_after_purchase%22%2C%22purchase_date%22%2C%22total_shares_purchased%22%2C%22total_value%22%2C%22mandate%22%2C%22price_per_share%22%2C%22symbol%22%2C%22url%22%2C%22type%22 "HTTP/2 201 Created"
 2026-02-12 04:21:40 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
+2026-02-13 04:13:33 [INFO] __main__ - Scraping from None to None...
+2026-02-13 04:13:33 [INFO] __main__ - Start scraping from start date: 20260211 to 20260213
+2026-02-13 04:13:33 [INFO] __main__ - page_start: 0
+2026-02-13 04:13:33 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-13 04:13:34 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-13 04:13:34 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 13 announcements
+2026-02-13 04:13:35 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/R8UZ7SBEVFGK4B1B/98664a4bc75d590dcdec73f3fc5a2d69f168705c7be96849df1e45f0be4960d3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/R8UZ7SBEVFGK4B1B/875021__Form%206%20-%20FLCAM.pdf
+2026-02-13 04:13:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'The REIT Manager has announced the issuance of 4,244,715 Units payable to FLCAM as payment of 75% of the management fees in respect of FLCT, FCOT and FS1T and 998,843 Units payable to FLT Australia Management, a wholly-owned subsidiary of FLCAM, as payment of 75% of management fees in respect of the HAUT. Each of FLCAM and FLT Australia Management has nominated FPITH II to receive the Units payable to it and has received cash in consideration for such nomination. Table 1. Change in respect of  ordinary voting units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total 22,492,847 998,843 23,491,690'
+2026-02-13 04:13:37 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/R8UZ7SBEVFGK4B1B/875021__Form%206%20-%20FLCAM.pdf: 'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 650, in generate_title_and_body
+    action_title = tx_type.replace("-", " ").title()
+                   ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'replace'
+2026-02-13 04:13:37 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: FRASERS LOGISTICS & COMMERCIAL ASSET MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/R8UZ7SBEVFGK4B1B/98664a4bc75d590dcdec73f3fc5a2d69f168705c7be96849df1e45f0be4960d3
+2026-02-13 04:13:37 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/OZ5ICX3ZVCV162GR/a4ad4a6f2d47969656adcd9882d76c564e0bc2b3cc76603abc02437d47c216cc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/OZ5ICX3ZVCV162GR/875018__Form%203%20-%20FPITH%20II.pdf
+2026-02-13 04:13:40 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/OZ5ICX3ZVCV162GR/875018__Form%203%20-%20FPITH%20II.pdf: All transactions have no direct interest change and total shares change
+2026-02-13 04:13:40 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: FRASERS LOGISTICS & COMMERCIAL ASSET MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/OZ5ICX3ZVCV162GR/a4ad4a6f2d47969656adcd9882d76c564e0bc2b3cc76603abc02437d47c216cc
+2026-02-13 04:13:40 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/29Y2BCOUAWDCHPN9/bd09fb409246806febe5bde282b0963eb430d2656ce9751a28d20ff42811721b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/29Y2BCOUAWDCHPN9/875004__Tower%20-%20TIHPL%20Form%203%20Completion.pdf
+2026-02-13 04:13:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-13 04:13:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-13 04:13:42 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/29Y2BCOUAWDCHPN9/875004__Tower%20-%20TIHPL%20Form%203%20Completion.pdf: All transactions have no direct interest change and total shares change
+2026-02-13 04:13:42 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OUE HEALTHCARE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/29Y2BCOUAWDCHPN9/bd09fb409246806febe5bde282b0963eb430d2656ce9751a28d20ff42811721b
+2026-02-13 04:13:42 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SBAT8R3RWACQUF7P/99716a9b84e45c8137983ea8d6479a87a48ee71951338689b282cb2a4254d006 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SBAT8R3RWACQUF7P/874963__20260212-MLT-Form6_final.pdf
+2026-02-13 04:13:44 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'MLT has issued 7,280,207 new units payable to MLTM and 1,039,730 new units payable to MPM on 12 February 2026. Both MLTM and MPM have nominated Mulberry Pte. Ltd. to receive the aggregate of 8,319,937 new units payable to them and have received cash in consideration of such nomination. Following this nomination, the Manager has a direct interest in 6,290,361 units.'
+2026-02-13 04:13:44 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/SBAT8R3RWACQUF7P/874963__20260212-MLT-Form6_final.pdf: 'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 650, in generate_title_and_body
+    action_title = tx_type.replace("-", " ").title()
+                   ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'replace'
+2026-02-13 04:13:44 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MAPLETREE LOGISTICS TRUST MANAGEMENT LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/SBAT8R3RWACQUF7P/99716a9b84e45c8137983ea8d6479a87a48ee71951338689b282cb2a4254d006
+2026-02-13 04:13:45 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CCQL6N9UGS21F6S4/13a36f92fdb673824d73fad37913dc02c2f2cec06f16c7b6eb352300c16a0df7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CCQL6N9UGS21F6S4/874959__MPACTM_Form%206_12Feb2026.pdf
+2026-02-13 04:13:46 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/CCQL6N9UGS21F6S4/874959__MPACTM_Form%206_12Feb2026.pdf: 'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 650, in generate_title_and_body
+    action_title = tx_type.replace("-", " ").title()
+                   ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'replace'
+2026-02-13 04:13:46 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MPACT MANAGEMENT LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/CCQL6N9UGS21F6S4/13a36f92fdb673824d73fad37913dc02c2f2cec06f16c7b6eb352300c16a0df7
+2026-02-13 04:13:47 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/33S1LHZMGD6FM28O/103012b5722449b2c9d46452e4f1b3ef081ceecddfcac0b1b28a08747fd6d099 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/33S1LHZMGD6FM28O/874955__20260212%20-%20Form%203%20-%20CLI%20India%20-%20Final.pdf
+2026-02-13 04:13:49 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-13 04:13:49 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: '5,048,728 units in CLINT have been issued at an issue price of S$1.2325 per unit to CLINTMPL, as trustee- manager of CLINT, as payment of 50% of the base fee for the period from 1 October 2025 to 31 December 2025 and the performance fee for the period from 1 January 2025 to 31 December 2025.'
+2026-02-13 04:13:49 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/33S1LHZMGD6FM28O/874955__20260212%20-%20Form%203%20-%20CLI%20India%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-13 04:13:49 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: CAPITALAND INDIA TRUST MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/33S1LHZMGD6FM28O/103012b5722449b2c9d46452e4f1b3ef081ceecddfcac0b1b28a08747fd6d099
+2026-02-13 04:13:49 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8QMDTLA3IKR8MYJG/5eebc023d02048f98515346cdda81661f4c3baa339d7fee25240253898ed8708 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8QMDTLA3IKR8MYJG/874942__20260212%20-%20Form%206%20-%20CLINTMPL%20-%20Final.pdf
+2026-02-13 04:13:54 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/W2G3X2O2F4XMPFZN/c07a108ea6520e06f09fd7938b8164ecf9644e732fb776141422bb68d3aea2fa pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/W2G3X2O2F4XMPFZN/874934__Form%201%20CEO-Share%20Grant%20Feb26-F120226.pdf
+2026-02-13 04:13:55 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: GUOCOLAND LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/W2G3X2O2F4XMPFZN/c07a108ea6520e06f09fd7938b8164ecf9644e732fb776141422bb68d3aea2fa
+2026-02-13 04:13:55 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M326UFM2ZDBMDR7C/fc20b8827fd9ae454fe3888c5d9e454979158eae93bfbe9bab9a1b976db472cb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M326UFM2ZDBMDR7C/874914__FORM%201.pdf
+2026-02-13 04:13:57 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-13 04:13:57 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'REFER TO BOX 9 Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-02-13 04:13:57 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/M326UFM2ZDBMDR7C/874914__FORM%201.pdf: All transactions have no direct interest change and total shares change
+2026-02-13 04:13:57 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: AIMS APAC REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/M326UFM2ZDBMDR7C/fc20b8827fd9ae454fe3888c5d9e454979158eae93bfbe9bab9a1b976db472cb
+2026-02-13 04:13:57 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5776KI1AZ4QI6IFN/6a1084db4f83145697a6eaf7a832b03ee7a5b796f6bba63bf32a802d5213709f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5776KI1AZ4QI6IFN/874911__FORM%206.pdf
+2026-02-13 04:14:05 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/MNQ4ZL54FHYM6MCW/e2952abbbc670257cb0a5477e7990fd312c742cbccc1d2a01393374c6b7196f1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/MNQ4ZL54FHYM6MCW/874907__Form%203%20-%20Pang%20Pok%20and%20Ang%20Siew%20Kiock%2010022026.pdf
+2026-02-13 04:14:07 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-13 04:14:07 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-13 04:14:07 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-13 04:14:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0OQIS0OLM626AAK7/078f17f7993702553f8d46ae7b5c187d215991dc0b3d0448f69074642c4dc3dd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0OQIS0OLM626AAK7/874887__First_REIT_Form_6_12_February_2026.pdf
+2026-02-13 04:14:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7QBXOF1M79XU0RAV/3fe57b3d5d7910392394e18f87a54419b95e8548d0f0062fe7299ad1c05852d8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7QBXOF1M79XU0RAV/874873__KDCREIT-Form%206_KDCRM_12022026_final.pdf
+2026-02-13 04:14:23 [INFO] __main__ - page_start: 1
+2026-02-13 04:14:23 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-13 04:14:24 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-13 04:14:24 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-13 04:14:24 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-13 04:14:36 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-13 04:14:36 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-13 04:14:36 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-13 04:14:36 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-13 04:14:36 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 6
+2026-02-13 04:14:38 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-13 04:14:38 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 5
+2026-02-13 04:14:38 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-13 04:14:38 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-13 04:14:38 [INFO] __main__ - Processing remove duplicate data
+2026-02-13 04:14:38 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-13 04:14:38 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-13 04:14:38 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 1 | Not insertable: 0
+2026-02-13 04:14:38 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-13 04:14:38 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-13 04:14:38 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-13 04:14:39 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_filings?columns=%22amount_transaction%22%2C%22price_per_share%22%2C%22body%22%2C%22timestamp%22%2C%22holder_type%22%2C%22source%22%2C%22holding_before%22%2C%22transaction_value%22%2C%22share_percentage_before%22%2C%22symbol%22%2C%22share_percentage_transaction%22%2C%22share_percentage_after%22%2C%22holding_after%22%2C%22transaction_type%22%2C%22holder_name%22%2C%22title%22 "HTTP/2 201 Created"
+2026-02-13 04:14:39 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings

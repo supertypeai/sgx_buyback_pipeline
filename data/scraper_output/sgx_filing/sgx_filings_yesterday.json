@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/7QBXOF1M79XU0RAV/874873__KDCREIT-Form%206_KDCRM_12022026_final.pdf",
+    "symbol": "AJBU",
+    "transaction_date": "2026-02-12",
+    "shareholder_name": "Keppel Dc Reit Management Pte. Ltd",
+    "number_of_stock": 3792116,
+    "value": 8355548.3944,
+    "price_per_share": 2.2034,
+    "transaction_type": "others",
+    "shares_before": 30025557,
+    "shares_before_percentage": 0.0123,
+    "shares_after": 33817673,
+    "shares_after_percentage": 0.01383,
+    "title": "Change in KEPPEL DC REIT MANAGEMENT PTE. LTD's position in Keppel DC REIT",
+    "body": "KEPPEL DC REIT MANAGEMENT PTE. LTD executed a transaction for 3,792,116.0 shares of Keppel DC REIT. This increases their holdings from 30,025,557.0 to 33,817,673.0 shares.",
+    "holder_type": "institution"
+  }
+]
