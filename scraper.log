@@ -8979,3 +8979,119 @@ AttributeError: 'NoneType' object has no attribute 'replace'
 2026-02-16 04:20:48 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-16 04:20:48 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-16 04:20:48 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-17 04:12:06 [INFO] __main__ - Scraping from None to None...
+2026-02-17 04:12:06 [INFO] __main__ - Start scraping from start date: 20260215 to 20260217
+2026-02-17 04:12:06 [INFO] __main__ - page_start: 0
+2026-02-17 04:12:06 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-17 04:12:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-17 04:12:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 11 announcements
+2026-02-17 04:12:08 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HI39UZVP1X9939AR/b0efefd07ddd5c4bd829a68d0c0f5c25cbb96d8f03e594a739acd2fef424d6fc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HI39UZVP1X9939AR/875285__eForm3_12Feb26_BlackRock.pdf
+2026-02-17 04:12:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/HI39UZVP1X9939AR/875285__eForm3_12Feb26_BlackRock.pdf: All transactions have no direct interest change and total shares change
+2026-02-17 04:12:10 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: CAPITALAND ASCENDAS REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/HI39UZVP1X9939AR/b0efefd07ddd5c4bd829a68d0c0f5c25cbb96d8f03e594a739acd2fef424d6fc
+2026-02-17 04:12:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KO8TADK8EAPVOWK8/91ca01bac4292e5387f701f494c2e22701c53171050e9801bb281fc94995198e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KO8TADK8EAPVOWK8/875274__FORM1_TSS_Feb2026_GRANT_AND_VEST_FINAL.pdf
+2026-02-17 04:12:11 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: DBS GROUP HOLDINGS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/KO8TADK8EAPVOWK8/91ca01bac4292e5387f701f494c2e22701c53171050e9801bb281fc94995198e
+2026-02-17 04:12:11 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6FB0TMUVRQGJOOI8/b40f11f7bb98d5d8c63bd64db55afcda9acd6c08f01d2a434214912424ea41fb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6FB0TMUVRQGJOOI8/875272__Form%201%20Or%20Lay%20Huat%20Daniel.pdf
+2026-02-17 04:12:13 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/6FB0TMUVRQGJOOI8/875272__Form%201%20Or%20Lay%20Huat%20Daniel.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-17 04:12:13 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OKP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/6FB0TMUVRQGJOOI8/b40f11f7bb98d5d8c63bd64db55afcda9acd6c08f01d2a434214912424ea41fb
+2026-02-17 04:12:13 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WW7T00JLUAGDSAIG/a75cc1e5e10894c4f2d35a81550e437e8b643f3a07a65dff1ba9c5254a558f43 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WW7T00JLUAGDSAIG/875270__Form%201%20Oh%20Enc%20Nam.pdf
+2026-02-17 04:12:15 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/WW7T00JLUAGDSAIG/875270__Form%201%20Oh%20Enc%20Nam.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-17 04:12:15 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OKP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/WW7T00JLUAGDSAIG/a75cc1e5e10894c4f2d35a81550e437e8b643f3a07a65dff1ba9c5254a558f43
+2026-02-17 04:12:15 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6Q66MZCKXPTWWKR2/3213f01e52f50fcb0d3d01736c8996679fdb4ff9276257fb408d1dbcd43c0946 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6Q66MZCKXPTWWKR2/875268__Form%201%20Or%20Kiam%20Meng.pdf
+2026-02-17 04:12:17 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/6Q66MZCKXPTWWKR2/875268__Form%201%20Or%20Kiam%20Meng.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-17 04:12:17 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OKP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/6Q66MZCKXPTWWKR2/3213f01e52f50fcb0d3d01736c8996679fdb4ff9276257fb408d1dbcd43c0946
+2026-02-17 04:12:17 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/K0ME7K44FBQO95UR/77ffa7163c0448b2de08c5ef9727ac5114e44fda249da513c4257e64e6cb5279 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/K0ME7K44FBQO95UR/875266__Form%201%20Ang%20Beng%20Tin.pdf
+2026-02-17 04:12:19 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/K0ME7K44FBQO95UR/875266__Form%201%20Ang%20Beng%20Tin.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-17 04:12:19 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OKP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/K0ME7K44FBQO95UR/77ffa7163c0448b2de08c5ef9727ac5114e44fda249da513c4257e64e6cb5279
+2026-02-17 04:12:19 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8HD55RK5AFBAW518/90ce13675de3989ba4d1c991632ab57144befc5587781809c6f4be3095af6614 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8HD55RK5AFBAW518/875264__Form%201%20Or%20Toh%20Wat.pdf
+2026-02-17 04:12:21 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/8HD55RK5AFBAW518/875264__Form%201%20Or%20Toh%20Wat.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-17 04:12:21 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OKP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/8HD55RK5AFBAW518/90ce13675de3989ba4d1c991632ab57144befc5587781809c6f4be3095af6614
+2026-02-17 04:12:22 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/F40L6TAQ3U0SS77O/a67592f6d7c67a360618b671cbaa5cb6db3f31fd47a167cb7271c31d5c6a6d02 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/F40L6TAQ3U0SS77O/875262__Form%201%20Or%20Kim%20Peow.pdf
+2026-02-17 04:12:23 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/F40L6TAQ3U0SS77O/875262__Form%201%20Or%20Kim%20Peow.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-17 04:12:23 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OKP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/F40L6TAQ3U0SS77O/a67592f6d7c67a360618b671cbaa5cb6db3f31fd47a167cb7271c31d5c6a6d02
+2026-02-17 04:12:24 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/18T4L9Q44DJSFT8H/1044a60448188e01e8fe996ac6733e90d3b8dfc7b41141ad0cb388ee767d04b8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/18T4L9Q44DJSFT8H/875251__Form%201%20-%20Nagaraj%20Sivaram_13%20Feb%202026_final.pdf
+2026-02-17 04:12:28 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LPJSYOW5DGZS6KC5/1e11b3a0e284596c3b6708f3619eece546cef1687500e3bcf167ab73c8f1cbd5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LPJSYOW5DGZS6KC5/875248__Form%203%20-%20Pang%20Pok%20and%20Ang%20Siew%20Kiock%2013022026.pdf
+2026-02-17 04:12:30 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:30 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:30 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-17 04:12:34 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/P0W37OJSI1B3CT94/6f70e6ee19b6acccc9a48d687af69fb93adc09800808e1b25a140d61d21114c6 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/P0W37OJSI1B3CT94/875246__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-17 04:12:37 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-17 04:12:37 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-17 04:12:46 [INFO] __main__ - page_start: 1
+2026-02-17 04:12:46 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-17 04:12:47 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-17 04:12:47 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-17 04:12:47 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-17 04:12:59 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-17 04:12:59 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-17 04:12:59 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-17 04:12:59 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-17 04:12:59 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 4
+2026-02-17 04:13:01 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 4
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-17 04:13:01 [INFO] __main__ - Processing remove duplicate data
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-17 04:13:01 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-17 04:13:01 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-17 04:13:01 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
