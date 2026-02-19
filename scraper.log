@@ -9163,3 +9163,34 @@ UnboundLocalError: cannot access local variable 'action_title' where it is not a
 2026-02-18 04:16:56 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
 2026-02-18 04:16:56 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-18 04:16:56 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-19 04:12:28 [INFO] __main__ - Scraping from None to None...
+2026-02-19 04:12:28 [INFO] __main__ - Start scraping from start date: 20260217 to 20260219
+2026-02-19 04:12:28 [INFO] __main__ - page_start: 0
+2026-02-19 04:12:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-19 04:12:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-19 04:12:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 1 announcements
+2026-02-19 04:12:29 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/a5ab63ba6736a29643643a312be8b3bf595e0b452144bf5535c0e0072d62ae29 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/875345__eFORM1V2%20-%20Marco%20Low.pdf
+2026-02-19 04:12:30 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/875345__eFORM1V2%20-%20Marco%20Low.pdf: All transactions have no direct interest change and total shares change
+2026-02-19 04:12:30 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: LOW KENG HUAT (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/a5ab63ba6736a29643643a312be8b3bf595e0b452144bf5535c0e0072d62ae29
+2026-02-19 04:12:36 [INFO] __main__ - page_start: 1
+2026-02-19 04:12:36 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-19 04:12:36 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-19 04:12:36 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-19 04:12:36 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-19 04:12:49 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-19 04:12:49 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-19 04:12:49 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-19 04:12:49 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-19 04:12:49 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 0
+2026-02-19 04:12:49 [INFO] sgx_scraper.utils.cli_helper - [sgx_filings] is empty, skipping clean payload
+2026-02-19 04:12:50 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-19 04:12:50 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 0
+2026-02-19 04:12:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-19 04:12:50 [INFO] __main__ - Processing remove duplicate data
+2026-02-19 04:12:50 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-19 04:12:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-19 04:12:50 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-02-19 04:12:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-19 04:12:50 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-19 04:12:50 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-19 04:12:50 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
