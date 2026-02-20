@@ -9274,3 +9274,27 @@ UnboundLocalError: cannot access local variable 'action_title' where it is not a
 2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2026-02-20 04:08:48 [INFO] sgx_scraper.alerting.mailer - Email sent! Message ID: 011c019c793c681d-65959720-688f-4f33-aec4-eb79b1ce29e1-000000
 2026-02-20 04:08:48 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-20 04:10:50 [INFO] __main__ - Scraping from None to None...
+2026-02-20 04:10:50 [INFO] __main__ - Start scraping from start date: 20260218 to 20260220
+2026-02-20 04:10:50 [INFO] __main__ - page_start: 0
+2026-02-20 04:10:50 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-02-20 04:10:51 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-20 04:10:51 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 1 announcements
+2026-02-20 04:11:02 [INFO] __main__ - page_start: 1
+2026-02-20 04:11:02 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-02-20 04:11:03 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-20 04:11:03 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-20 04:11:03 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-20 04:11:15 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-02-20 04:11:15 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-20 04:11:15 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-20 04:11:15 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-20 04:11:15 [INFO] __main__ - [SGX_BUYBACK] Scraping completed. Total records: 1
+2026-02-20 04:11:17 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-20 04:11:17 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 0
+2026-02-20 04:11:17 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-02-20 04:11:17 [INFO] __main__ - Processing remove duplicate data
+2026-02-20 04:11:17 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-20 04:11:17 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-02-20 04:11:17 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_buybacks?columns=%22total_value%22%2C%22mandate%22%2C%22price_per_share%22%2C%22treasury_shares_after_purchase%22%2C%22url%22%2C%22type%22%2C%22total_shares_purchased%22%2C%22symbol%22%2C%22purchase_date%22 "HTTP/2 201 Created"
+2026-02-20 04:11:17 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
