@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/6ITMAOPQN3A9ETQY/875362__Form%206-PTML.pdf",
+    "symbol": "C2PU",
+    "transaction_date": "2026-02-19",
+    "shareholder_name": "Parkway Trust Management Limited",
+    "number_of_stock": 166139,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "others",
+    "shares_before": 1462774,
+    "shares_before_percentage": 0.00224,
+    "shares_after": 1628913,
+    "shares_after_percentage": 0.0025,
+    "title": "Change in Parkway Trust Management Limited's position in Parkway Life Real Estate Investment Trust",
+    "body": "Parkway Trust Management Limited executed a transaction for 166,139.0 shares of Parkway Life Real Estate Investment Trust. This increases their holdings from 1,462,774.0 to 1,628,913.0 shares.",
+    "holder_type": "institution",
+    "reasons": [
+      "Transaction type is \"others\" but missing financial data: value=None, number_of_stock=166139, price_per_share=None"
+    ]
+  }
+]

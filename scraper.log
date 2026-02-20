@@ -9214,3 +9214,63 @@ UnboundLocalError: cannot access local variable 'action_title' where it is not a
 2026-02-19 04:15:46 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-19 04:15:46 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-19 04:15:46 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-20 04:08:07 [INFO] __main__ - Scraping from None to None...
+2026-02-20 04:08:07 [INFO] __main__ - Start scraping from start date: 20260218 to 20260220
+2026-02-20 04:08:07 [INFO] __main__ - page_start: 0
+2026-02-20 04:08:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-20 04:08:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-20 04:08:07 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 8 announcements
+2026-02-20 04:08:08 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EVHSFZZMAQ1FZRXR/8b82bfe9adf022152f842d63e5908ccc6081f987a8e86ecfd95867a6fbf46544 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EVHSFZZMAQ1FZRXR/875381__Form%203-PPL.pdf
+2026-02-20 04:08:10 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:10 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:10 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/EVHSFZZMAQ1FZRXR/875381__Form%203-PPL.pdf: All transactions have no direct interest change and total shares change
+2026-02-20 04:08:10 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PARKWAY TRUST MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/EVHSFZZMAQ1FZRXR/8b82bfe9adf022152f842d63e5908ccc6081f987a8e86ecfd95867a6fbf46544
+2026-02-20 04:08:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PVITUOOXYSWLZW0U/f3779dea672830802d278967744737f3277c6cd0f53b93a250738c308399e52e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PVITUOOXYSWLZW0U/875378__Form%203-Mitsui.pdf
+2026-02-20 04:08:12 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:12 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:12 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/PVITUOOXYSWLZW0U/875378__Form%203-Mitsui.pdf: All transactions have no direct interest change and total shares change
+2026-02-20 04:08:12 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PARKWAY TRUST MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/PVITUOOXYSWLZW0U/f3779dea672830802d278967744737f3277c6cd0f53b93a250738c308399e52e
+2026-02-20 04:08:12 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VCUXA8JZULVCGHMW/7c3efa6d23bc982cd3f3730422c0b0a12050a9f7d3d11b991aa6d85d7cf1db66 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VCUXA8JZULVCGHMW/875376__eFORM3V2-Pang%20Yoke%20Chun-20260219.pdf
+2026-02-20 04:08:14 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-20 04:08:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VCUXA8JZULVCGHMW/875376__eFORM3V2-Pang%20Yoke%20Chun-20260219.pdf: All transactions have no direct interest change and total shares change
+2026-02-20 04:08:14 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TAI SIN ELECTRIC LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VCUXA8JZULVCGHMW/7c3efa6d23bc982cd3f3730422c0b0a12050a9f7d3d11b991aa6d85d7cf1db66
+2026-02-20 04:08:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/5XI1QJOU1YZDB0BT/63612d8cee29d8f71a1e1e2e1eda3baa9ae02f0dfe8d48f1f5dda7189f3ed1c7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/5XI1QJOU1YZDB0BT/875374__eFORM1V2-Bernard%20Lim-20260219.pdf
+2026-02-20 04:08:20 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WZ9GT5TOT99KY38P/ae6bb90df6d5631f78979994fcb8e63cee5df44065ce55faa123291ee666684f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WZ9GT5TOT99KY38P/875371__Form%203-Khazanah.pdf
+2026-02-20 04:08:22 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:22 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:22 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/WZ9GT5TOT99KY38P/875371__Form%203-Khazanah.pdf: All transactions have no direct interest change and total shares change
+2026-02-20 04:08:22 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PARKWAY TRUST MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/WZ9GT5TOT99KY38P/ae6bb90df6d5631f78979994fcb8e63cee5df44065ce55faa123291ee666684f
+2026-02-20 04:08:22 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RQDKSURRGPKS0ZYX/4344fec96366bdb87ed56029f62b196c9d8f8c878ada4de19ad2eaf210b8a09c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RQDKSURRGPKS0ZYX/875367__Form%203-IHH.pdf
+2026-02-20 04:08:24 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-20 04:08:24 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-20 04:08:24 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Parkway Life Real Estate Investment Trust ("PLife REIT") issued 166,139 new units on 19 February 2026, being payment of the management fee due to Parkway Trust Management Limited, the manager of PLife REIT, comprising part payment of the base fee component for the period from 01 October 2025 to 31 December 2025, and the performance fee component for the full financial year from 01 January 2025 to 31 December 2025.'
+2026-02-20 04:08:24 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/RQDKSURRGPKS0ZYX/875367__Form%203-IHH.pdf: All transactions have no direct interest change and total shares change
+2026-02-20 04:08:24 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PARKWAY TRUST MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/RQDKSURRGPKS0ZYX/4344fec96366bdb87ed56029f62b196c9d8f8c878ada4de19ad2eaf210b8a09c
+2026-02-20 04:08:25 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6ITMAOPQN3A9ETQY/12a6cf331102bd5cc97e9bc4f7ec32b6b1760b59dc7289e1c724b63b43242e38 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6ITMAOPQN3A9ETQY/875362__Form%206-PTML.pdf
+2026-02-20 04:08:26 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-20 04:08:31 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/a5ab63ba6736a29643643a312be8b3bf595e0b452144bf5535c0e0072d62ae29 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/875345__eFORM1V2%20-%20Marco%20Low.pdf
+2026-02-20 04:08:32 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/875345__eFORM1V2%20-%20Marco%20Low.pdf: All transactions have no direct interest change and total shares change
+2026-02-20 04:08:32 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: LOW KENG HUAT (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/VFA4IE4VT7A14HKZ/a5ab63ba6736a29643643a312be8b3bf595e0b452144bf5535c0e0072d62ae29
+2026-02-20 04:08:34 [INFO] __main__ - page_start: 1
+2026-02-20 04:08:34 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-20 04:08:34 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-20 04:08:34 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-20 04:08:34 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-20 04:08:46 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-20 04:08:46 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-20 04:08:46 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-20 04:08:46 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-20 04:08:46 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 2
+2026-02-20 04:08:47 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 1
+2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-20 04:08:47 [INFO] __main__ - Processing remove duplicate data
+2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-20 04:08:47 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 0 | Not insertable: 1
+2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-20 04:08:47 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-20 04:08:48 [INFO] sgx_scraper.alerting.mailer - Email sent! Message ID: 011c019c793c681d-65959720-688f-4f33-aec4-eb79b1ce29e1-000000
+2026-02-20 04:08:48 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
