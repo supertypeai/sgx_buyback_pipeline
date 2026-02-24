@@ -9387,3 +9387,56 @@ UnboundLocalError: cannot access local variable 'action_title' where it is not a
 2026-02-23 04:19:51 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-02-23 04:19:51 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-23 04:19:51 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-02-24 04:11:27 [INFO] __main__ - Scraping from None to None...
+2026-02-24 04:11:27 [INFO] __main__ - Start scraping from start date: 20260222 to 20260224
+2026-02-24 04:11:27 [INFO] __main__ - page_start: 0
+2026-02-24 04:11:27 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-24 04:11:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-24 04:11:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 6 announcements
+2026-02-24 04:11:28 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/P0JUTRZW5TUITY9T/3b9ecbd17de82d45ade1acfcb319f80a6cb868f3e511b876762b316cabe170ff pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/P0JUTRZW5TUITY9T/875627__FORM1_TSS_19Feb26_VEST_FINAL.pdf
+2026-02-24 04:11:30 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-24 04:11:34 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EHF160SEDIGBC01E/110e80ed5eaba4e7f613e06bba7646a210349221ebf29dfd049db9a63868af41 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EHF160SEDIGBC01E/875608__eFORM1_ChengWK_230226_Final.pdf
+2026-02-24 04:11:36 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-24 04:11:36 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/EHF160SEDIGBC01E/875608__eFORM1_ChengWK_230226_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-24 04:11:36 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/EHF160SEDIGBC01E/110e80ed5eaba4e7f613e06bba7646a210349221ebf29dfd049db9a63868af41
+2026-02-24 04:11:36 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1TH9HE1DIZ51XL78/c727fd213425b90a06e7142a14dee6f4b71451bd7454ee4d54d743604efe123a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1TH9HE1DIZ51XL78/875605__Keppel%20DC%20Reit%2002.19.2026%20Form%203_final.pdf
+2026-02-24 04:11:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-24 04:11:38 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Change in position due to an increase in shares held as collateral.'
+2026-02-24 04:11:38 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/1TH9HE1DIZ51XL78/875605__Keppel%20DC%20Reit%2002.19.2026%20Form%203_final.pdf: All transactions have no direct interest change and total shares change
+2026-02-24 04:11:38 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: KEPPEL DC REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/1TH9HE1DIZ51XL78/c727fd213425b90a06e7142a14dee6f4b71451bd7454ee4d54d743604efe123a
+2026-02-24 04:11:38 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WYNMV2PCHW4NOK65/8beb433845cda5e19e17395af0c29ce6d1e2e571755b31a9f8ca6403c99295b5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WYNMV2PCHW4NOK65/875596__eFORM3V2%20-%20Mikuni%20Co%20Limited%20and%20Yoshimi%20Kunikazu_Final.pdf
+2026-02-24 04:11:40 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-24 04:11:40 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-24 04:11:40 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-24 04:11:44 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/SZ85R0AIDB8CSQ7O/196558a8925c4dd3f0185f139df79d087dc26703a7f90625597e6d0b6051fedb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/SZ85R0AIDB8CSQ7O/875589__20260220%20Alpha%20Integrated%20REIT%20Jan%20Moerman%20Form%201.pdf
+2026-02-24 04:11:46 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-24 04:11:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Transfer detected - transformed shareholder: Jan Frederic Moermann -> investment vehicles managed by Quarz Capital ASIA (Singapore) [->] direct interest
+2026-02-24 04:11:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/SZ85R0AIDB8CSQ7O/875589__20260220%20Alpha%20Integrated%20REIT%20Jan%20Moerman%20Form%201.pdf: All transactions have no direct interest change and total shares change
+2026-02-24 04:11:46 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/SZ85R0AIDB8CSQ7O/196558a8925c4dd3f0185f139df79d087dc26703a7f90625597e6d0b6051fedb
+2026-02-24 04:11:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EWM3VVQ9BPOTRMJZ/674a7a330197e9a1afbd9a1733f7a706d678babc112cee7a6099583324b23147 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EWM3VVQ9BPOTRMJZ/875587__20260220%20Alpha%20Integrated%20REIT%20QCA%20Form%203.pdf
+2026-02-24 04:11:48 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-24 04:11:48 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Transfer detected - transformed shareholder: Quarz Capital ASIA Pte. Ltd -> investment vehicles managed by Quarz Capital ASIA (Singapore) [->] Jan Frederic Moermann's direct interest
+2026-02-24 04:11:48 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/EWM3VVQ9BPOTRMJZ/875587__20260220%20Alpha%20Integrated%20REIT%20QCA%20Form%203.pdf: All transactions have no direct interest change and total shares change
+2026-02-24 04:11:48 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/EWM3VVQ9BPOTRMJZ/674a7a330197e9a1afbd9a1733f7a706d678babc112cee7a6099583324b23147
+2026-02-24 04:11:51 [INFO] __main__ - page_start: 1
+2026-02-24 04:11:51 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-24 04:11:51 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-24 04:11:51 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-24 04:11:51 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-24 04:12:03 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-24 04:12:04 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-24 04:12:04 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-24 04:12:04 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-24 04:12:04 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 2
+2026-02-24 04:12:04 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-24 04:12:04 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 1
+2026-02-24 04:12:04 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-24 04:12:04 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-24 04:12:04 [INFO] __main__ - Processing remove duplicate data
+2026-02-24 04:12:04 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-02-24 04:12:04 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-24 04:12:04 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 0 | Not insertable: 1
+2026-02-24 04:12:04 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-24 04:12:04 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-24 04:12:05 [INFO] sgx_scraper.alerting.mailer - Email sent! Message ID: 011c019c8dd8dcb2-8d728adb-5df0-47c5-b8b5-761355c186ab-000000
+2026-02-24 04:12:05 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB

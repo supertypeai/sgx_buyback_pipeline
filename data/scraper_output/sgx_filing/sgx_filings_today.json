@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/P0JUTRZW5TUITY9T/875627__FORM1_TSS_19Feb26_VEST_FINAL.pdf",
+    "symbol": "D05",
+    "transaction_date": "2026-02-19",
+    "shareholder_name": "Tan Su Shan",
+    "number_of_stock": 53988,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 1415991,
+    "shares_before_percentage": 0.0005,
+    "shares_after": 1469979,
+    "shares_after_percentage": 0.00052,
+    "title": "Tan Su Shan was awarded shares of DBS Group Holdings Ltd",
+    "body": "Tan Su Shan was awarded 53,988.0 shares of DBS Group Holdings Ltd. This increases their holdings from 1,415,991.0 to 1,469,979.0 shares.",
+    "holder_type": "insider"
+  }
+]
