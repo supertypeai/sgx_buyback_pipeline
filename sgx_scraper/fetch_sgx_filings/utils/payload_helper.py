@@ -647,8 +647,13 @@ def generate_title_and_body(
     holding_after: Optional[int],
     purpose_en: str,
 ) -> tuple[str, str]:
+    
     if tx_type:
         action_title = tx_type.title()
+    else: 
+        tx_type = None 
+        action_title = None 
+
     if holder_name:
         holder_name = holder_name.title()
 
