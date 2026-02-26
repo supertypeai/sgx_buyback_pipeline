@@ -9539,3 +9539,112 @@ UnboundLocalError: cannot access local variable 'action_title' where it is not a
 2026-02-25 04:16:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-25 04:16:24 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_buybacks?columns=%22price_per_share%22%2C%22type%22%2C%22total_shares_purchased%22%2C%22mandate%22%2C%22url%22%2C%22treasury_shares_after_purchase%22%2C%22total_value%22%2C%22symbol%22%2C%22purchase_date%22 "HTTP/2 201 Created"
 2026-02-25 04:16:24 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
+2026-02-26 04:09:38 [INFO] __main__ - Scraping from None to None...
+2026-02-26 04:09:38 [INFO] __main__ - Start scraping from start date: 20260224 to 20260226
+2026-02-26 04:09:38 [INFO] __main__ - page_start: 0
+2026-02-26 04:09:38 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-26 04:09:39 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-26 04:09:39 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 11 announcements
+2026-02-26 04:09:39 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CGDXK2FYSQ175926/58b1465d3e400c462a475868fec8e4eed4629e1c9e08b102e983ba923c2645fe pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CGDXK2FYSQ175926/876194__SFA%20Form1%20LSS%20Feb26.pdf
+2026-02-26 04:09:44 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C0DL0TWBVVICQK8Z/ea7acd02bf9fc4c84e16256a75ff08f3f6106f749dd67ca5b71ef1cef7f706cc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C0DL0TWBVVICQK8Z/876055__eFORM3_Dr%20Modi_Final.pdf
+2026-02-26 04:09:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/C0DL0TWBVVICQK8Z/876055__eFORM3_Dr%20Modi_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-26 04:09:46 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: DIGILIFE TECHNOLOGIES LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/C0DL0TWBVVICQK8Z/ea7acd02bf9fc4c84e16256a75ff08f3f6106f749dd67ca5b71ef1cef7f706cc
+2026-02-26 04:09:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6ZY3JSLQGVXJI393/ff62ebcb284f616ba38bab18b585214ad79e54060b79dc865afe450563389843 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6ZY3JSLQGVXJI393/876034__eFORM5_Volare_Feb%2026.pdf
+2026-02-26 04:09:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - detect holder type all not match return None https://links.sgx.com/1.0.0/corporate-announcements/6ZY3JSLQGVXJI393/876034__eFORM5_Volare_Feb%2026.pdf
+2026-02-26 04:09:48 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/6ZY3JSLQGVXJI393/876034__eFORM5_Volare_Feb%2026.pdf: All transactions have no direct interest change and total shares change
+2026-02-26 04:09:48 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/6ZY3JSLQGVXJI393/ff62ebcb284f616ba38bab18b585214ad79e54060b79dc865afe450563389843
+2026-02-26 04:09:48 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/W5UVTPBILZ7ZX9MB/aab62048a8f9d484a99769534c05075ec0db093b26e3788a36de519dfb2b73a2 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/W5UVTPBILZ7ZX9MB/876031__eFORM5_Volare_Dec%2025.pdf
+2026-02-26 04:09:49 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - detect holder type all not match return None https://links.sgx.com/1.0.0/corporate-announcements/W5UVTPBILZ7ZX9MB/876031__eFORM5_Volare_Dec%2025.pdf
+2026-02-26 04:09:50 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/W5UVTPBILZ7ZX9MB/876031__eFORM5_Volare_Dec%2025.pdf: All transactions have no direct interest change and total shares change
+2026-02-26 04:09:50 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/W5UVTPBILZ7ZX9MB/aab62048a8f9d484a99769534c05075ec0db093b26e3788a36de519dfb2b73a2
+2026-02-26 04:09:50 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LZXE24AL4VSGZY08/377ee096500929fc06f9dfcc676270b50cf4db2d7564975abe53835f58b5b1e7 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LZXE24AL4VSGZY08/876022__eFORM3_Volare_25%20Feb%2026.pdf
+2026-02-26 04:09:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-26 04:09:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-26 04:09:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-26 04:09:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-26 04:09:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Valid acceptances of 137,215,125 Units tendered in connection with the mandatory conditional cash offer by Mindarie Investment Pte. Ltd. announced on 23 December 2025, which became unconditional on 9 February 2026 and closed at 5.30 p.m. (Singapore time) on 24 February 2026.'
+2026-02-26 04:09:53 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-26 04:09:53 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Valid acceptances of 137,215,125 Units tendered in connection with the mandatory conditional cash offer by Mindarie Investment Pte. Ltd. announced on 23 December 2025, which became unconditional on 9 February 2026 and closed at 5.30 p.m. (Singapore time) on 24 February 2026.'
+2026-02-26 04:09:53 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/LZXE24AL4VSGZY08/876022__eFORM3_Volare_25%20Feb%2026.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-26 04:09:53 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ALPHA INTEGRATED REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/LZXE24AL4VSGZY08/377ee096500929fc06f9dfcc676270b50cf4db2d7564975abe53835f58b5b1e7
+2026-02-26 04:09:53 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/09VQZPX1UJU9S6RL/e78923c47824a17569914823663a3d81461bde64aaaf7185f36a3425cd2dda6d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/09VQZPX1UJU9S6RL/875971__eFORM3V2%20NAM%20LEE%20%2025022026.pdf
+2026-02-26 04:09:55 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-26 04:09:55 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-26 04:09:55 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-02-26 04:09:55 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-02-26 04:10:00 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/BCNFGZLPRPO3N3A5/d3d21d36ad6a28c8848cc5d6cc82db44a32095147c4b948c73f9b13277147459 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/BCNFGZLPRPO3N3A5/875954__eFORM1V2_Zhou%20Xinping%20-%20Final.pdf
+2026-02-26 04:10:02 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'On 23 February 2026, the Company announced the completion of a debt conversion exercise, whereby the Company had converted S$352,389 amounts owing to Zhou Xinping into 27,106,846 new ordinary shares in the capital of the Company at S$0.0130. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-02-26 04:10:02 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/BCNFGZLPRPO3N3A5/875954__eFORM1V2_Zhou%20Xinping%20-%20Final.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-26 04:10:02 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TRITECH GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/BCNFGZLPRPO3N3A5/d3d21d36ad6a28c8848cc5d6cc82db44a32095147c4b948c73f9b13277147459
+2026-02-26 04:10:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/LP5PEIP2Q6TNUPBA/d8a1fa2c0f84602d2f76c474043b18ed766811f9d69c2a4ce3b2447574b31d82 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/LP5PEIP2Q6TNUPBA/875952__eFORM3V2_Protocol%20Capital%20W.L.L%20-%20Final.PDF
+2026-02-26 04:10:02 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Failed to open PDF: cannot access local variable 'response' where it is not associated with a value
+2026-02-26 04:10:02 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Error parsing page 0: 'NoneType' object is not subscriptable
+2026-02-26 04:10:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - detect holder type all not match return None https://links.sgx.com/1.0.0/corporate-announcements/LP5PEIP2Q6TNUPBA/875952__eFORM3V2_Protocol%20Capital%20W.L.L%20-%20Final.PDF
+2026-02-26 04:10:02 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Failed to process extract all fields https://links.sgx.com/1.0.0/corporate-announcements/LP5PEIP2Q6TNUPBA/875952__eFORM3V2_Protocol%20Capital%20W.L.L%20-%20Final.PDF: object of type 'NoneType' has no len()
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 737, in extract_all_fields
+    type_securities_raw = extract_type_securities_checkbox(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_pdf_helper.py", line 490, in extract_type_securities_checkbox
+    for page_num in range(len(doc)):
+                          ^^^^^^^^
+TypeError: object of type 'NoneType' has no len()
+2026-02-26 04:10:02 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TRITECH GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/LP5PEIP2Q6TNUPBA/d8a1fa2c0f84602d2f76c474043b18ed766811f9d69c2a4ce3b2447574b31d82
+2026-02-26 04:10:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8TKEOO1OSAVCS5TX/bb6758c4cf48a9605bfce5f4e7e1ac6818cc2a8059269f91a8e781346a408238 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8TKEOO1OSAVCS5TX/875950__eFORM3V2_Lee%20Sui%20Hee%20%20-%20Final.pdf
+2026-02-26 04:10:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'On 23 February 2026, the Company announced the completion of a debt conversion exercise, whereby the Company had converted  S$5,708,162.18 amounts owing to Lee Sui Hee into  439,089,398 new ordinary shares in the capital of the Company at S$0.0130.'
+2026-02-26 04:10:04 [ERROR] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx filings] Unexpected Error extracting SGX filings url: https://links.sgx.com/1.0.0/corporate-announcements/8TKEOO1OSAVCS5TX/875950__eFORM3V2_Lee%20Sui%20Hee%20%20-%20Final.pdf: cannot access local variable 'action_title' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/parser_sgx_filings.py", line 817, in get_sgx_filings
+    title, body = generate_title_and_body(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/sgx_buyback_pipeline/sgx_buyback_pipeline/sgx_scraper/fetch_sgx_filings/utils/payload_helper.py", line 675, in generate_title_and_body
+    title = f"{holder_name} {action_title} transaction of {company_name}"
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'action_title' where it is not associated with a value
+2026-02-26 04:10:04 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TRITECH GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/8TKEOO1OSAVCS5TX/bb6758c4cf48a9605bfce5f4e7e1ac6818cc2a8059269f91a8e781346a408238
+2026-02-26 04:10:04 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4QLD630WPEXA9STJ/0a9b3c0ce3c2967ceb605a24a542a1346072903a43f15d0a219acf41b24cda23 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4QLD630WPEXA9STJ/875944__eFORM3V2_Jeffrey%20Wang%20-%20Final.pdf
+2026-02-26 04:10:06 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-26 04:10:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4QLD630WPEXA9STJ/875944__eFORM3V2_Jeffrey%20Wang%20-%20Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-26 04:10:06 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: TRITECH GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/4QLD630WPEXA9STJ/0a9b3c0ce3c2967ceb605a24a542a1346072903a43f15d0a219acf41b24cda23
+2026-02-26 04:10:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S6O732YG2U5WDUMJ/b67aaccaca7113e53e4dd2057526927520e74850797c39553a13bd036c28f5e3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S6O732YG2U5WDUMJ/875925__eFORM1_ChengWK_250226_Final.pdf
+2026-02-26 04:10:08 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-02-26 04:10:08 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/S6O732YG2U5WDUMJ/875925__eFORM1_ChengWK_250226_Final.pdf: All transactions have no direct interest change and total shares change
+2026-02-26 04:10:08 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/S6O732YG2U5WDUMJ/b67aaccaca7113e53e4dd2057526927520e74850797c39553a13bd036c28f5e3
+2026-02-26 04:10:10 [INFO] __main__ - page_start: 1
+2026-02-26 04:10:10 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-26 04:10:10 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-26 04:10:10 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-26 04:10:10 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-02-26 04:10:22 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-02-26 04:10:22 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-02-26 04:10:22 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-02-26 04:10:22 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-02-26 04:10:22 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 3
+2026-02-26 04:10:23 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 3
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-02-26 04:10:23 [INFO] __main__ - Processing remove duplicate data
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-02-26 04:10:23 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-02-26 04:10:23 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-02-26 04:10:23 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
