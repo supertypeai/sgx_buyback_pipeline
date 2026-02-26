@@ -259,7 +259,8 @@ def run_sgx_filings_scraper(
     write_to_json(SGX_FILINGS_PATH_NOT_INSERTABLE, sgx_filings_not_insertable)
     write_to_json(SGX_FILINGS_PATH_INSERTABLE, sgx_filings_insertable)
 
-    send_sgx_filings_alert(sgx_filings_not_insertable, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
+    sgx_filings_invalid_final = standardize_name(sgx_filings_not_insertable)
+    send_sgx_filings_alert(sgx_filings_invalid_final, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
 
     sgx_filings_insertable_final = standardize_name(sgx_filings_insertable)
 
