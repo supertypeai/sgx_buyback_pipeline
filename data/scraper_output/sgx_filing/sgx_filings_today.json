@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/SVJDTDZHU325ZCAC/876251__Form1_Andrew_Lee_25Feb2026.pdf",
+    "symbol": "O39",
+    "transaction_date": "2026-02-25",
+    "shareholder_name": "Andrew Lee Kok Keng",
+    "number_of_stock": 23085,
+    "value": 203471.19,
+    "price_per_share": 8.814,
+    "transaction_type": "buy",
+    "shares_before": 562380,
+    "shares_before_percentage": 0.00013,
+    "shares_after": 585465,
+    "shares_after_percentage": 0.00013,
+    "title": "Andrew Lee Kok Keng buys shares of Oversea-Chinese Banking Corp Ltd",
+    "body": "Andrew Lee Kok Keng bought 23,085.0 shares of Oversea-Chinese Banking Corp Ltd. This increases their holdings from 562,380.0 to 585,465.0 shares.",
+    "holder_type": "insider"
+  }
+]
