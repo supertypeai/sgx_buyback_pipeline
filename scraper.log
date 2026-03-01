@@ -9802,3 +9802,23 @@ Matched with ratio: ('ix biopharma ltd', 96.96969696969697, 89)
 2026-02-28 03:50:56 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-02-28 03:50:56 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_buybacks?columns=%22price_per_share%22%2C%22url%22%2C%22purchase_date%22%2C%22mandate%22%2C%22type%22%2C%22total_shares_purchased%22%2C%22total_value%22%2C%22treasury_shares_after_purchase%22%2C%22symbol%22 "HTTP/2 201 Created"
 2026-02-28 03:50:56 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 5 records to DB, table: sgx_buybacks
+2026-03-01 04:18:12 [INFO] __main__ - Scraping from None to None...
+2026-03-01 04:18:12 [INFO] __main__ - Start scraping from start date: 20260227 to 20260301
+2026-03-01 04:18:12 [INFO] __main__ - page_start: 0
+2026-03-01 04:18:12 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-03-01 04:18:13 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-01 04:18:13 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-01 04:18:13 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-03-01 04:18:25 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-03-01 04:18:25 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-01 04:18:25 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-01 04:18:25 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-03-01 04:18:25 [INFO] __main__ - [SGX_BUYBACK] Scraping completed. Total records: 0
+2026-03-01 04:18:25 [INFO] sgx_scraper.utils.cli_helper - [sgx_buyback] is empty, skipping clean payload
+2026-03-01 04:18:26 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 0
+2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-03-01 04:18:26 [INFO] __main__ - Processing remove duplicate data
+2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
+2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
