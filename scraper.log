@@ -9842,3 +9842,39 @@ Matched with ratio: ('ix biopharma ltd', 96.96969696969697, 89)
 2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-03-02 04:48:17 [INFO] __main__ - Scraping from None to None...
+2026-03-02 04:48:17 [INFO] __main__ - Start scraping from start date: 20260228 to 20260302
+2026-03-02 04:48:17 [INFO] __main__ - page_start: 0
+2026-03-02 04:48:17 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-02 04:48:17 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-02 04:48:17 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 2 announcements
+2026-03-02 04:48:18 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched with ratio: ('valuemax group ltd', 100.0, 156)
+2026-03-02 04:48:18 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/A9KDQ5FFAFZPKVO1/0668efdd3e419857bfded47a50d5408887f71fa6f86e583450fcc0b3718e906b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/A9KDQ5FFAFZPKVO1/876963__eFORM3V2%2020260226%20THY.pdf
+2026-03-02 04:48:20 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/A9KDQ5FFAFZPKVO1/876963__eFORM3V2%2020260226%20THY.pdf: All transactions have no direct interest change and total shares change
+2026-03-02 04:48:20 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/A9KDQ5FFAFZPKVO1/0668efdd3e419857bfded47a50d5408887f71fa6f86e583450fcc0b3718e906b
+2026-03-02 04:48:20 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched with ratio: ('valuemax group ltd', 100.0, 156)
+2026-03-02 04:48:20 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ICKVUB40L86DTACS/bbd0784b3137e44ebd5b61e7ede014947af2a9a8a65b25e89ba2b78ab9c3750f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ICKVUB40L86DTACS/876961__eFORM1V2%2020260226%20YHN.pdf
+2026-03-02 04:48:22 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ICKVUB40L86DTACS/876961__eFORM1V2%2020260226%20YHN.pdf: All transactions have no direct interest change and total shares change
+2026-03-02 04:48:22 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: VALUEMAX GROUP LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ICKVUB40L86DTACS/bbd0784b3137e44ebd5b61e7ede014947af2a9a8a65b25e89ba2b78ab9c3750f
+2026-03-02 04:48:28 [INFO] __main__ - page_start: 1
+2026-03-02 04:48:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-02 04:48:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-02 04:48:28 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-02 04:48:28 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-03-02 04:48:40 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-02 04:48:41 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-02 04:48:41 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-02 04:48:41 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-03-02 04:48:41 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 0
+2026-03-02 04:48:41 [INFO] sgx_scraper.utils.cli_helper - [sgx_filings] is empty, skipping clean payload
+2026-03-02 04:48:42 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-03-02 04:48:42 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 0
+2026-03-02 04:48:42 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-03-02 04:48:42 [INFO] __main__ - Processing remove duplicate data
+2026-03-02 04:48:42 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
+2026-03-02 04:48:42 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-03-02 04:48:42 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-03-02 04:48:42 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-03-02 04:48:42 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-03-02 04:48:42 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-03-02 04:48:42 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
