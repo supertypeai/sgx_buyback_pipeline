@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sgx_scraper.utils.symbol_matching_helper import match_company_name
+from sgx_scraper.utils.symbol_matching_helper import symbol_from_company_name
 import logging
 
 
@@ -23,9 +23,9 @@ def extract_symbol(issuer_security: str) -> str | None:
 
 def matching_symbol(issuer_security: str) -> str | None:
     try:
-        company_matched = match_company_name(issuer_security)
-        if company_matched:
-            return company_matched.get('symbol')
+        symbol_matched = symbol_from_company_name(issuer_security)
+        if symbol_matched:
+            return symbol_matched
     
     except Exception as error:
         LOGGER.error(f"[matching symbol] Fallback matching symbol failed: {error}")

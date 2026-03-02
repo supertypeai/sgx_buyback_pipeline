@@ -17,10 +17,13 @@ if not os.path.exists(CACHE_PATH):
 with open(CACHE_PATH, "r", encoding="utf-8") as file:
     SGX_COMPANIES = json.load(file)
 
-SGX_COMPANY_NAMES = [company_name.get('name').lower() for company_name in SGX_COMPANIES]
+SGX_COMPANY_NAMES = [
+    value.get('name').strip().lower()
+    for _, value in SGX_COMPANIES.items()
+]
 
 
-def match_company_name(input_name: str, threshold: int = 90):
+def symbol_from_company_name(input_name: str, threshold: int = 90) -> str:
     cleaned_name = re.sub(r'\s*\([^)]*\)', '', input_name)
     cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()
 
@@ -40,7 +43,7 @@ def match_company_name(input_name: str, threshold: int = 90):
         input_name_lower = input_name_lower.replace('limited', 'ltd').strip()
 
     input_name_lower = re.sub(r'\s+', ' ', input_name_lower).strip()
-
+    
     try:
         scorers = [
             fuzz.ratio,
@@ -60,12 +63,16 @@ def match_company_name(input_name: str, threshold: int = 90):
                 continue
             
             match, score, _ = result
+            
             if round(score) >= threshold:
-                LOGGER.info(f'\nMatched with {scorer.__name__}: {result}\n')
-                matched = next(sgx_company for sgx_company in SGX_COMPANIES if sgx_company.get("name").lower() == match)
+                LOGGER.info(f'Matched with {scorer.__name__}: {result}')
+                matched = next(
+                    value.get('symbol') 
+                    for _, value in SGX_COMPANIES.items() if value.get('name').lower() == match
+                )
                 return matched
         
-        LOGGER.info(f'\nNo match found above threshold {threshold}\n')
+        LOGGER.info(f'No match company name found above threshold {threshold}')
         return None
         
     except (TypeError, ValueError) as error:
@@ -75,6 +82,9 @@ def match_company_name(input_name: str, threshold: int = 90):
     
 
 if __name__ == '__main__':
-    company = match_company_name("17live group limited")
+    company = symbol_from_company_name("17live group limited")
     print(company)
+    # print(SGX_COMPANY_NAMES[:5])
 
+
+# uv run -m sgx_scraper.utils.symbol_matching_helper
