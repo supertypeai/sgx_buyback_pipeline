@@ -584,10 +584,10 @@ def compute_transactions(price_transactions: list[dict[str, any]]) -> dict[str, 
 def populate_extra_data(
     symbol: str, 
 ) -> tuple[str, str, str]: 
-    cache_path = "data/sgx_companies_lookup.json"
+    cache_path = "data/sgx_companies.json"
 
     if not os.path.exists(cache_path):
-        raise FileNotFoundError("sgx_companies_lookup.json not found")
+        raise FileNotFoundError("sgx_companies.json not found")
 
     with open(cache_path, "r", encoding="utf-8") as file:
         company_lookup = json.load(file)
@@ -595,17 +595,16 @@ def populate_extra_data(
     if not symbol: 
         return None, None, None 
     
-    for lookup in company_lookup:
-        data = lookup.get(symbol, None)
-        
-        if not data:
-            LOGGER.info('symbol not matched with company lookup')
+    data = company_lookup.get(symbol, None)
+    
+    if not data:
+        LOGGER.info('symbol not matched with company lookup')
 
-        company_name =  data.get('name') or None 
-        sector = data.get('sector') or None 
-        sub_sector = data.get('sub_sector') or None 
+    company_name =  data.get('name') or None 
+    sector = data.get('sector') or None 
+    sub_sector = data.get('sub_sector') or None 
 
-        return company_name, sector, sub_sector
+    return company_name, sector, sub_sector
 
 
 def classify_holder_type(name: str) -> str:
