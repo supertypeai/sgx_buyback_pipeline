@@ -18,8 +18,8 @@ LOGGER = logging.getLogger(__name__)
 
 
 def send_sgx_filings_alert(
-        payload_alert: list[dict[str, any]],
-        attachments_path: list[str] | None = None
+    payload_alert: list[dict[str, any]],
+    attachments_path: list[str] | None = None
 ):
     if not payload_alert:
         LOGGER.info("No SGX filings alerts to send.")

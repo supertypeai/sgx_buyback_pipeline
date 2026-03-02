@@ -186,10 +186,10 @@ def get_auth(proxy: str | None = PROXY) -> dict[str, str] | None:
 
 
 def run_scrape_api(
-        api_url: str, 
-        flag_log: str,
-        headers: dict[str, str] | None, 
-        proxy: str | None = None
+    api_url: str, 
+    flag_log: str,
+    headers: dict[str, str] | None, 
+    proxy: str | None = None
 ) -> list[dict] | None:
     if not headers:
         LOGGER.info("Cannot fetch JSON, headers missing.")
@@ -235,8 +235,12 @@ def run_scrape_api(
 if __name__ == '__main__':
     api_buyback = 'https://api.sgx.com/announcements/v1.1/?periodstart=20250930_160000&periodend=20251001_155959&cat=ANNC&sub=ANNC13&pagestart=2&pagesize=20'
     api_filings = 'https://api.sgx.com/announcements/v1.1/?periodstart=20251007_160000&periodend=20251009_155959&cat=ANNC&sub=ANNC14&pagestart=0&pagesize=20'
+    
     headers = get_auth(proxy=None)
-    data = run_scrape_api(api_url=api_filings, headers=headers, proxy=None)
-    if not data:
+    data = run_scrape_api(api_url=api_filings, headers=headers, proxy=None, flag_log='filings')
+    if data:
         print(json.dumps(data, indent=2))
-    print(data)
+        print(len(data))
+
+
+# uv run -m sgx_scraper.sgx_api.scraper_sgx_api
