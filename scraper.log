@@ -9822,3 +9822,23 @@ Matched with ratio: ('ix biopharma ltd', 96.96969696969697, 89)
 2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
 2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-03-01 04:18:26 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-03-02 04:45:20 [INFO] __main__ - Scraping from None to None...
+2026-03-02 04:45:20 [INFO] __main__ - Start scraping from start date: 20260228 to 20260302
+2026-03-02 04:45:20 [INFO] __main__ - page_start: 0
+2026-03-02 04:45:20 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-03-02 04:45:20 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-02 04:45:20 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-02 04:45:20 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-03-02 04:45:32 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-03-02 04:45:32 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-02 04:45:32 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-02 04:45:32 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-03-02 04:45:32 [INFO] __main__ - [SGX_BUYBACK] Scraping completed. Total records: 0
+2026-03-02 04:45:32 [INFO] sgx_scraper.utils.cli_helper - [sgx_buyback] is empty, skipping clean payload
+2026-03-02 04:45:33 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 0
+2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-03-02 04:45:33 [INFO] __main__ - Processing remove duplicate data
+2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-03-02 04:45:33 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
