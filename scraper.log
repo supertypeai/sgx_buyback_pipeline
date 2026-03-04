@@ -10009,3 +10009,91 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-03-03 04:12:33 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_buybacks?columns=%22symbol%22%2C%22total_value%22%2C%22purchase_date%22%2C%22type%22%2C%22treasury_shares_after_purchase%22%2C%22url%22%2C%22total_shares_purchased%22%2C%22price_per_share%22%2C%22mandate%22 "HTTP/2 201 Created"
 2026-03-03 04:12:33 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 6 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-03-04 04:02:19 [INFO] __main__ - Scraping from None to None...
+2026-03-04 04:02:19 [INFO] __main__ - Start scraping from start date: 20260302 to 20260304
+2026-03-04 04:02:19 [INFO] __main__ - page_start: 0
+2026-03-04 04:02:19 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-04 04:02:19 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-04 04:02:19 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 15 announcements
+2026-03-04 04:02:20 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/PC0COVPVDP3T0ZXB/627d4edab20b7b9ef83f8b952d081ca41c55743cbbd3f8f28c0fa3fa25b5b479 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/PC0COVPVDP3T0ZXB/877281__eFORM1V2%20-%20William.pdf
+2026-03-04 04:02:22 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: CAPITALAND ASCENDAS REIT MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/PC0COVPVDP3T0ZXB/627d4edab20b7b9ef83f8b952d081ca41c55743cbbd3f8f28c0fa3fa25b5b479
+2026-03-04 04:02:22 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/0W6H8DBK4S0L8AT8/63f90acfb0cd302d6d2e1fb937ef87e12250ad37dc9bda61eddaee444b324474 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/0W6H8DBK4S0L8AT8/877274__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf
+2026-03-04 04:02:25 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:25 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:25 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:25 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:25 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:25 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:25 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/0W6H8DBK4S0L8AT8/877274__vF%20-%20Hildrics%20Capital%20-%20eFORM3V2.pdf: All transactions have no direct interest change and total shares change
+2026-03-04 04:02:25 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: UNUSUAL LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/0W6H8DBK4S0L8AT8/63f90acfb0cd302d6d2e1fb937ef87e12250ad37dc9bda61eddaee444b324474
+2026-03-04 04:02:25 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/KWOV6JFD2SO3HOCN/f1b4ce516c75b51d22f73ac649d680e45679d6fae71b26f9dbf1f92da349bbbc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/KWOV6JFD2SO3HOCN/877272__vF%20-%20Hildrics%20VCC%20-%20eFORM3V2.pdf
+2026-03-04 04:02:33 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Z3GQLXTBTE3EM8JB/076698e5655e06d85ae45f09bef092f5d7792d518356b38f38f7a9e8ef0913a9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Z3GQLXTBTE3EM8JB/877269__eFORM3V2_Zhang%20Haihua_final_SGX.pdf
+2026-03-04 04:02:35 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/Z3GQLXTBTE3EM8JB/877269__eFORM3V2_Zhang%20Haihua_final_SGX.pdf: All transactions have no direct interest change and total shares change
+2026-03-04 04:02:35 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ASIA VETS HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/Z3GQLXTBTE3EM8JB/076698e5655e06d85ae45f09bef092f5d7792d518356b38f38f7a9e8ef0913a9
+2026-03-04 04:02:35 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/6T0E1YK82PQO52J4/8c3c75457f8773ac584e8c7d1d8a8ce44c1c761fafa6d7031600cb03ac1fba3f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/6T0E1YK82PQO52J4/877267__eFORM3V2%20Tan%20Ah%20Chew%2020260302_final_SGX.pdf
+2026-03-04 04:02:37 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/6T0E1YK82PQO52J4/877267__eFORM3V2%20Tan%20Ah%20Chew%2020260302_final_SGX.pdf: All transactions have no direct interest change and total shares change
+2026-03-04 04:02:37 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ASIA VETS HOLDINGS LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/6T0E1YK82PQO52J4/8c3c75457f8773ac584e8c7d1d8a8ce44c1c761fafa6d7031600cb03ac1fba3f
+2026-03-04 04:02:38 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/A9VHYWL4Q25MBXBK/c81ca2df91dc1ba398ce6b29112ea928c751b5b0c7229c45eb086e9efd0ad576 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/A9VHYWL4Q25MBXBK/877265__Form%203%20-%20UMPL%20and%20Others%20-%20Final.pdf
+2026-03-04 04:02:41 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:41 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:41 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:42 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-03-04 04:02:42 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-03-04 04:02:47 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZB844GQTPMI5Y8AE/705bc6c271d5232af9ceb5313f576297eccc2a021c496c336f21f96d7fecb938 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZB844GQTPMI5Y8AE/877261__FORM3_Body%20Power%20Sdn.%20Bhd._Final.pdf
+2026-03-04 04:02:49 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Allotment and issuance of Earn-Out Shares to Body Power Sdn. Bhd. (“Body Power”) pursuant to the Sales and Purchase Agreement between Body Power and the Company’s subsidiary, 9R Leisure Sdn. Bhd. (“SPA”).'
+2026-03-04 04:02:52 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XD25V2UYHZZ66318/ced033ee1b8eb78dc646e34f456e8f0e616c13aa938fe207e1197ad12cebcafc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XD25V2UYHZZ66318/877259__FORM1_Khoo%20Kai%20Yang_Final.pdf
+2026-03-04 04:02:54 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Allotment and issuance of Earn-Out Shares to Body Power Sdn. Bhd. (“Body Power”) pursuant to the Sales and Purchase Agreement between Body Power and the Company’s subsidiary, 9R Leisure Sdn. Bhd. (“SPA”). Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total'
+2026-03-04 04:02:54 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/XD25V2UYHZZ66318/877259__FORM1_Khoo%20Kai%20Yang_Final.pdf: All transactions have no direct interest change and total shares change
+2026-03-04 04:02:54 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: 9R LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/XD25V2UYHZZ66318/ced033ee1b8eb78dc646e34f456e8f0e616c13aa938fe207e1197ad12cebcafc
+2026-03-04 04:02:54 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/539K071U2WER0KIN/dc7b12e735774b999a526636eae729bfc60fd6003d58fde0163625b3fe658a34 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/539K071U2WER0KIN/877255__eform3v2_Final.pdf
+2026-03-04 04:02:56 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:56 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-03-04 04:02:56 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/539K071U2WER0KIN/877255__eform3v2_Final.pdf: All transactions have no direct interest change and total shares change
+2026-03-04 04:02:56 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: DELFI LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/539K071U2WER0KIN/dc7b12e735774b999a526636eae729bfc60fd6003d58fde0163625b3fe658a34
+2026-03-04 04:02:57 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/W7WIEJPINVXBRRTU/ae69c69d77c5a4fa40e3094e710b36b09eee9b8cef3c1056d9c4a31ddbd77592 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/W7WIEJPINVXBRRTU/877248__eFORM%203_Tan%20Chin%20Hoon.pdf
+2026-03-04 04:02:57 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: ENGRO CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/W7WIEJPINVXBRRTU/ae69c69d77c5a4fa40e3094e710b36b09eee9b8cef3c1056d9c4a31ddbd77592
+2026-03-04 04:02:58 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/1D1P39ZDE8C6HMEJ/27c48505045fda6b473d45b0df0597dc53200bdbefabdea8a29e5bdecd2a5546 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/1D1P39ZDE8C6HMEJ/877233__eFORM3V2_03032026.pdf
+2026-03-04 04:02:59 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-03-04 04:03:00 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/1D1P39ZDE8C6HMEJ/877233__eFORM3V2_03032026.pdf: All transactions have no direct interest change and total shares change
+2026-03-04 04:03:00 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/1D1P39ZDE8C6HMEJ/27c48505045fda6b473d45b0df0597dc53200bdbefabdea8a29e5bdecd2a5546
+2026-03-04 04:03:00 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/IHDOIHGER6L9ZYM7/d77010b7e72407fa83f6428acbd0323c22ff7db2ffa83e79555f79f89e835ab9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/IHDOIHGER6L9ZYM7/877214__eFORM1_ChengWK_030326_Final.pdf
+2026-03-04 04:03:02 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-03-04 04:03:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/IHDOIHGER6L9ZYM7/877214__eFORM1_ChengWK_030326_Final.pdf: All transactions have no direct interest change and total shares change
+2026-03-04 04:03:02 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/IHDOIHGER6L9ZYM7/d77010b7e72407fa83f6428acbd0323c22ff7db2ffa83e79555f79f89e835ab9
+2026-03-04 04:03:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/CXAP7I2VKP6O4I6D/8bc8aae273b6d0bb58bbd35dcab132a682ed497747a313e559da3abc0b7b6dba pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/CXAP7I2VKP6O4I6D/877212__eFORM6V2_4Q2025.pdf
+2026-03-04 04:03:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XCZFR6BQ0DIQUA14/10a035352a5ab828d5c5209708c101b8819480ec771ca1749b4aa478874aa864 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XCZFR6BQ0DIQUA14/877201__eFORM1V2-ST.pdf
+2026-03-04 04:03:11 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: CAPITALAND ASCOTT TRUST MANAGEMENT LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/XCZFR6BQ0DIQUA14/10a035352a5ab828d5c5209708c101b8819480ec771ca1749b4aa478874aa864
+2026-03-04 04:03:11 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M7BRE30KL1O5ZTED/389d8837e2391d83ba28ffcd9bf626ba9aa8e7b985d93d3cb2dadb4d3829b8eb pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M7BRE30KL1O5ZTED/877190__eFORM1V2-David%20Loh-20260303.pdf
+2026-03-04 04:03:22 [INFO] __main__ - page_start: 1
+2026-03-04 04:03:22 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-04 04:03:22 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-04 04:03:22 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-04 04:03:22 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-03-04 04:03:35 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-04 04:03:35 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-03-04 04:03:35 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-03-04 04:03:35 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-03-04 04:03:35 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 8
+2026-03-04 04:03:37 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 8
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-03-04 04:03:37 [INFO] __main__ - Processing remove duplicate data
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-03-04 04:03:37 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-03-04 04:03:37 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-03-04 04:03:37 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
