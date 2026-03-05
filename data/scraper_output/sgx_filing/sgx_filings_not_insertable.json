@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "symbol": "F17",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Cheng Hsing Yao was awarded shares of GuocoLand Ltd",
+    "body": "Cheng Hsing Yao was awarded 63,033.0 shares of GuocoLand Ltd. This increases their holdings from 1,701,350.0 to 1,764,383.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: value=None, number_of_stock=63033, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ],
+    "holder_name": "Cheng Hsing Yao",
+    "holding_before": 1701350,
+    "holding_after": 1764383,
+    "share_percentage_before": 0.0014,
+    "share_percentage_after": 0.0015,
+    "timestamp": "2026-03-02",
+    "amount_transaction": 63033,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FSJ7LWK5MOAJ53WK/877381__Form%201%20CEO-Share%20Grant%20Vesting-Final040326.pdf",
+    "share_percentage_transaction": 0.0001
+  },
+  {
+    "symbol": "9CI",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Lee Chee Koon was awarded shares of CapitaLand Investment Ltd",
+    "body": "Lee Chee Koon was awarded 373,860.0 shares of CapitaLand Investment Ltd. This increases their holdings from 5,241,953.0 to 5,615,813.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: value=None, number_of_stock=373860, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ],
+    "holder_name": "Lee Chee Koon",
+    "holding_before": 5241953,
+    "holding_after": 5615813,
+    "share_percentage_before": 0.0011,
+    "share_percentage_after": 0.0011,
+    "timestamp": "2026-03-02",
+    "amount_transaction": 373860,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/8DY22W7KB7WE4DB9/877329__20260302_eFORM1V2_LCK_Final.pdf",
+    "share_percentage_transaction": 0.0
+  },
+  {
+    "symbol": "C38U",
+    "price_per_share": null,
+    "transaction_type": null,
+    "title": "Tan Choon Siang None transaction of CapitaLand Integrated Commercial Trust",
+    "body": "Tan Choon Siang executed a transaction for 33,985.0 shares of CapitaLand Integrated Commercial Trust. This increases their holdings from 37,218.0 to 71,203.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Tan Choon Siang",
+    "holding_before": 37218,
+    "holding_after": 71203,
+    "share_percentage_before": 0.0,
+    "share_percentage_after": 0.0,
+    "timestamp": "2026-03-02",
+    "amount_transaction": 33985,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1T3UPT7AST4J8LBO/877314__eFORM1V2_TCS%2020260304.pdf",
+    "share_percentage_transaction": 0.0
+  }
+]
