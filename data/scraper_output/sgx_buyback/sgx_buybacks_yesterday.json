@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/PYH2B4M0FX8QH29R/02395e086d9ee54d2f159e3c1e13e06d85680d8feb677fca7d9ce3b272b94684",
+    "symbol": "C6L",
+    "purchase_date": "2026-03-06",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 6.65,
+      "lowest": 6.57
+    },
+    "total_value": 3312520.26,
+    "total_shares_purchased": 500000,
+    "treasury_shares_after_purchase": 5786043,
+    "mandate": {
+      "mandate_total": 151475628,
+      "cumulative_purchased": 3000000,
+      "mandate_remaining": 148475628,
+      "mandate_start": "2025-07-25",
+      "mandate_end": "2026-07-25"
+    }
+  }
+]
