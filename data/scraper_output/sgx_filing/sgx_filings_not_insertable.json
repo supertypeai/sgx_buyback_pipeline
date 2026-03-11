@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "symbol": "C09",
+    "price_per_share": null,
+    "transaction_type": null,
+    "title": "Hong Leong Investment Holdings Pte. Ltd None transaction of City Developments Ltd",
+    "body": "Hong Leong Investment Holdings Pte. Ltd executed a transaction for shares of City Developments Ltd. This increases their holdings from 440,316,144.0 to 441,767,719.0 shares.",
+    "holder_type": "institution",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Hong Leong Investment Holdings Pte. Ltd",
+    "holding_before": 440316144,
+    "holding_after": 441767719,
+    "share_percentage_before": 0.49285,
+    "share_percentage_after": 0.49448,
+    "timestamp": "2025-11-13",
+    "amount_transaction": null,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/6J3LRNPU9XOWCX2W/877969__Form%203%20-%20HLIH%20KH.pdf",
+    "share_percentage_transaction": 0.00163
+  }
+]
