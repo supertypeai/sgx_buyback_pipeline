@@ -10951,3 +10951,37 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-03-12 04:10:16 [INFO] httpx - HTTP Request: POST https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_buybacks?columns=%22treasury_shares_after_purchase%22%2C%22price_per_share%22%2C%22symbol%22%2C%22purchase_date%22%2C%22type%22%2C%22url%22%2C%22mandate%22%2C%22total_shares_purchased%22%2C%22total_value%22 "HTTP/2 201 Created"
 2026-03-12 04:10:16 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-03-13 04:05:17 [INFO] __main__ - Scraping from None to None...
+2026-03-13 04:05:17 [INFO] __main__ - Start scraping from start date: 20260311 to 20260313
+2026-03-13 04:05:17 [INFO] __main__ - page_start: 0
+2026-03-13 04:05:17 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-13 04:05:18 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - API request failed: 403 Client Error: Forbidden for url: https://api.sgx.com/announcements/v1.1/?periodstart=20260311_160000&periodend=20260313_155959&cat=ANNC&sub=ANNC14&pagestart=0&pagesize=20
+2026-03-13 04:05:18 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - Response: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;api&#46;sgx&#46;com&#47;announcements&#47;v1&#46;1&#47;&#63;" o
+2026-03-13 04:05:18 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-03-13 04:05:29 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-13 04:05:30 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - API request failed: 403 Client Error: Forbidden for url: https://api.sgx.com/announcements/v1.1/?periodstart=20260311_160000&periodend=20260313_155959&cat=ANNC&sub=ANNC14&pagestart=0&pagesize=20
+2026-03-13 04:05:30 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - Response: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;api&#46;sgx&#46;com&#47;announcements&#47;v1&#46;1&#47;&#63;" o
+2026-03-13 04:05:30 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-03-13 04:05:30 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 0
+2026-03-13 04:05:30 [INFO] sgx_scraper.utils.cli_helper - [sgx_filings] is empty, skipping clean payload
+2026-03-13 04:05:31 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_companies?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-03-13 04:05:31 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 0
+2026-03-13 04:05:31 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-03-13 04:05:31 [INFO] __main__ - Processing remove duplicate data
+2026-03-13 04:05:31 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-03-13 04:05:31 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-03-13 04:05:31 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-03-13 04:05:31 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-03-13 04:05:31 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-03-13 04:05:31 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-03-13 04:05:31 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
