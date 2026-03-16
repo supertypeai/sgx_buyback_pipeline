@@ -176,7 +176,7 @@ def filter_top_70_companies(clean_payload: list[dict[str]]) -> tuple:
     try:
         response = (
             SUPABASE_CLIENT
-            .table('sgx_companies')
+            .table('sgx_company_report')
             .select('symbol, name, market_cap')
             .execute()
         )
@@ -188,6 +188,15 @@ def filter_top_70_companies(clean_payload: list[dict[str]]) -> tuple:
         df_sgx_companies = pd.DataFrame(response.data)
 
         df_top_sgx = df_sgx_companies.sort_values("market_cap", ascending=False).head(70)
+
+        df_top_70 = pd.read_csv("../../data/sgx_top_70_mcap_companies.csv")
+
+        df_top_70 = df_top_70[~df_top_70.symbol.isin(df_top_sgx['symbol'])]
+        top_70_symbols = pd.concat([df_top_sgx[["symbol","name"]], df_top_70])
+
+        if df_top_70.shape[0] > df_top_sgx.shape[0]:
+            top_70_symbols.to_csv("../../data/sgx_top_70_mcap_companies.csv", index = False)
+
         top_70_symbols = set(df_top_sgx['symbol'].tolist())
 
         top_70_payload = []
