@@ -11267,3 +11267,37 @@ You don't have permission to access "http&#58;&#47;&#47;api&#46;sgx&#46;com&#47;
 2026-03-18 04:21:12 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-03-18 04:21:12 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-03-18 04:21:12 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-03-19 04:14:58 [INFO] __main__ - Scraping from None to None...
+2026-03-19 04:14:58 [INFO] __main__ - Start scraping from start date: 20260317 to 20260319
+2026-03-19 04:14:58 [INFO] __main__ - page_start: 0
+2026-03-19 04:14:58 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-19 04:14:58 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - API request failed: 403 Client Error: Forbidden for url: https://api.sgx.com/announcements/v1.1/?periodstart=20260317_160000&periodend=20260319_155959&cat=ANNC&sub=ANNC14&pagestart=0&pagesize=20
+2026-03-19 04:14:58 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - Response: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;api&#46;sgx&#46;com&#47;announcements&#47;v1&#46;1&#47;&#63;" o
+2026-03-19 04:14:58 [INFO] __main__ - No more announcements found — stopping pagination.
+2026-03-19 04:15:10 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-03-19 04:15:10 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - API request failed: 403 Client Error: Forbidden for url: https://api.sgx.com/announcements/v1.1/?periodstart=20260317_160000&periodend=20260319_155959&cat=ANNC&sub=ANNC14&pagestart=0&pagesize=20
+2026-03-19 04:15:10 [ERROR] sgx_scraper.sgx_api.scraper_sgx_api - Response: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;api&#46;sgx&#46;com&#47;announcements&#47;v1&#46;1&#47;&#63;" o
+2026-03-19 04:15:10 [INFO] __main__ - No more announcements found on this page — stopping pagination.
+2026-03-19 04:15:10 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 0
+2026-03-19 04:15:10 [INFO] sgx_scraper.utils.cli_helper - [sgx_filings] is empty, skipping clean payload
+2026-03-19 04:15:11 [INFO] httpx - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/sgx_company_report?select=symbol%2Cname%2Cmarket_cap "HTTP/2 200 OK"
+2026-03-19 04:15:11 [ERROR] sgx_scraper.utils.cli_helper - [filter_top_50_companies] Error: [Errno 2] No such file or directory: '../../data/sgx_top_70_mcap_companies.csv'
+2026-03-19 04:15:11 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-03-19 04:15:11 [INFO] __main__ - Processing remove duplicate data
+2026-03-19 04:15:11 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-03-19 04:15:11 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-03-19 04:15:11 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-03-19 04:15:11 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-03-19 04:15:11 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-03-19 04:15:11 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-03-19 04:15:11 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
