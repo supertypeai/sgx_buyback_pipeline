@@ -236,6 +236,7 @@ def extract_value(text: str) -> str | None:
 def parse_share_table_values(pdf_object: pdfplumber.PDF, page_number: int, bbox: tuple) -> tuple[dict, dict]:
     try:
         share_tables = extract_share_tables(pdf_object, page_number, bbox)
+
     except Exception as error:
         LOGGER.error(f"[sgx_filings] Failed to extract tables from PDF: {error}")
         return None, None
@@ -266,7 +267,7 @@ def parse_share_table_values(pdf_object: pdfplumber.PDF, page_number: int, bbox:
 
     except Exception as error:
         LOGGER.error(f"[sgx_filings] Error while parsing tables: {error}")
-        return None 
+        return None, None  
     
     # Get total interest
     total_share_before = table_values[0] if len(table_values) > 0 else None
@@ -501,8 +502,8 @@ def build_special_case_multiple_dates(
         number_matches = re.findall(number_date_pattern, raw_number_of_stock, re.IGNORECASE | re.VERBOSE)
         price_matches = re.findall(price_date_pattern, raw_value, re.IGNORECASE | re.VERBOSE)
 
-        print(f"DEBUG number_matches: {number_matches}")
-        print(f"DEBUG price_matches: {price_matches}")
+        # print(f"DEBUG number_matches: {number_matches}")
+        # print(f"DEBUG price_matches: {price_matches}")
 
         if len(number_matches) >= 2 and len(price_matches) >= 2:
             LOGGER.info(f"[build_special_case_multiple_dates] Detected {len(number_matches)} transactions with dates")
@@ -644,7 +645,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
 
         with pdfplumber.open(pdf_file) as pdf:
             shareholder_sections = find_shareholder_sections(pdf)
-            print(f'raw section: {shareholder_sections}')
+            # print(f'raw section: {shareholder_sections}')
 
             all_records = []
             for shareholder_section in shareholder_sections:
@@ -676,7 +677,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                     shareholder_section['page_number'],
                     shareholder_section['bbox']
                 )
-                print(f'\nraw circumstance interest: {circumstance_interest_raw}')
+                # print(f'\nraw circumstance interest: {circumstance_interest_raw}')
                 transaction_type = build_transaction_type(circumstance_interest_raw, transaction_details)
                 
                 # get holder type 
@@ -858,7 +859,10 @@ if __name__ == '__main__':
     new_test = 'https://links.sgx.com/1.0.0/corporate-announcements/OS4PB16UG9Q860VC/9dc3586f0ef9038964cfbe3c2e75e2c5e9789e9803971a015c23a623ecbbcab0'
     testing = 'https://links.sgx.com/1.0.0/corporate-announcements/35MTZDW2K2IG0RNQ/d055387e137c0826eca950305c047b360e478d206171f5f0334db546470cebeb'
 
-    batched_payload_processed = get_sgx_filings(testing) 
+    error_test = 'https://links.sgx.com/1.0.0/corporate-announcements/S6O732YG2U5WDUMJ/b67aaccaca7113e53e4dd2057526927520e74850797c39553a13bd036c28f5e3'
+    error = 'https://links.sgx.com/1.0.0/corporate-announcements/55DXSPCF8EFWEOO8/113084aab6886b1738d7bdff8d8762bfd1112d14fcfc6ae639833267ccd451d1'
+
+    batched_payload_processed = get_sgx_filings(error) 
 
 
 # uv run -m sgx_scraper.fetch_sgx_filings.parser_sgx_filings

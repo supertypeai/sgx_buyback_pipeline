@@ -45,11 +45,13 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                 f'price_per_share={price_per_share}'
             )
 
+    diff_shares = None
+    
     if shares_after and shares_before:
         diff_shares = shares_after - shares_before
 
     # Inconsistent share count
-    if number_of_stock:
+    if number_of_stock and diff_shares is not None:
         if abs(diff_shares) != number_of_stock:
             reasons.append(
                 f'Difference in shares (after - before = {abs(diff_shares)}) '

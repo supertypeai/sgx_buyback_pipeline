@@ -199,7 +199,7 @@ def run_scrape_api(
         proxy = PROXY 
     else: 
         proxy = None 
-            
+
     proxies = None
     if proxy:
         proxies = {
@@ -209,11 +209,6 @@ def run_scrape_api(
     
     try:
         LOGGER.info(f"Fetching data from API {flag_log}...")
-        # response = requests.get(
-        #     api_url, headers=headers, 
-        #     proxies=proxies, verify=False, timeout=30
-        # )
-        # response.raise_for_status()
 
         response = cffi_requests.get(
             api_url,
@@ -231,7 +226,7 @@ def run_scrape_api(
 
         if data.get('data') is None:
             LOGGER.warning("WARNING: API returned None")
-            return None
+            return []
         
         LOGGER.info(f"Fetched {len(data.get('data', []))} announcements")
         return data.get('data', [])

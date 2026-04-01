@@ -599,7 +599,8 @@ def populate_extra_data(
     
     if not data:
         LOGGER.info('symbol not matched with company lookup')
-
+        return None, None, None
+    
     company_name =  data.get('name') or None 
     sector = data.get('sector') or None 
     sub_sector = data.get('sub_sector') or None 
