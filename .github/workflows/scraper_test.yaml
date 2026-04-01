@@ -1,0 +1,122 @@
+name: SGX Scraper Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      scraper_type:
+        description: "Choose which scraper to run"
+        required: true
+        type: choice
+        default: filings
+        options:
+          - buybacks
+          - filings
+
+      period_start:
+        description: "Start date in YYYYMMDD. Leave blank to use CLI default."
+        required: false
+        type: string
+        default: ""
+
+      period_end:
+        description: "End date in YYYYMMDD. Leave blank to use CLI default."
+        required: false
+        type: string
+        default: ""
+
+      page_size:
+        description: "Page size passed to the CLI"
+        required: true
+        type: string
+        default: "20"
+
+      is_push_db:
+        description: "Push results to DB"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sgx-scraper-test
+  cancel-in-progress: false
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    env:
+      PYTHONUNBUFFERED: "1"
+      PROXY: ${{ secrets.PROXY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run selected scraper
+        shell: bash
+        env:
+          SCRAPER_TYPE: ${{ inputs.scraper_type }}
+          PERIOD_START: ${{ inputs.period_start }}
+          PERIOD_END: ${{ inputs.period_end }}
+          PAGE_SIZE: ${{ inputs.page_size }}
+          IS_PUSH_DB: ${{ inputs.is_push_db }}
+        run: |
+          set -euo pipefail
+
+          if [[ "$SCRAPER_TYPE" == "buybacks" ]]; then
+            args=(scraper_buybacks)
+          else
+            args=(scraper_filings)
+          fi
+
+          if [[ -n "$PERIOD_START" ]]; then
+            args+=(--period-start "$PERIOD_START")
+          fi
+
+          if [[ -n "$PERIOD_END" ]]; then
+            args+=(--period-end "$PERIOD_END")
+          fi
+
+          if [[ -n "$PAGE_SIZE" ]]; then
+            args+=(--page-size "$PAGE_SIZE")
+          fi
+
+          if [[ "$IS_PUSH_DB" == "true" ]]; then
+            args+=(--is-push-db)
+          else
+            args+=(--no-is-push-db)
+          fi
+
+          printf 'Running command: uv run python -m sgx_scraper.main_cli'
+          printf ' %q' "${args[@]}"
+          printf '\n'
+
+          uv run python -m sgx_scraper.main_cli "${args[@]}"
+
+      - name: Upload scraper artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgx-scraper-test-artifacts
+          if-no-files-found: ignore
+          path: |
+            scraper.log
+            data/**/*.json
+            data/**/*.csv

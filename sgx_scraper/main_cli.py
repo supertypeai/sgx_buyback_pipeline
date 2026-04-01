@@ -73,8 +73,6 @@ def run_sgx_buyback_scraper(
     api_url = "https://api.sgx.com/announcements/v1.1/"
     headers = get_auth(proxy=None)
 
-    logger.info(f"Scraping from {period_start} to {period_end}...")
-
     page_start = 0
     payload_sgx_buybacks = []
 

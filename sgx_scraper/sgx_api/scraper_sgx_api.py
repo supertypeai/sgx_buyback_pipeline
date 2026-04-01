@@ -1,3 +1,4 @@
+from curl_cffi import requests as cffi_requests
 from seleniumwire2 import webdriver 
 from seleniumwire2 import SeleniumWireOptions
 from seleniumwire2 import ProxyConfig  
@@ -189,11 +190,10 @@ def run_scrape_api(
     api_url: str, 
     flag_log: str,
     headers: dict[str, str] | None, 
-    proxy: str | None = None
+    proxy: str | None = PROXY
 ) -> list[dict] | None:
     if not headers:
-        LOGGER.info("Cannot fetch JSON, headers missing.")
-        return None
+        raise ValueError("Cannot fetch API, headers are missing.")
     
     proxies = None
     if proxy:
@@ -204,15 +204,26 @@ def run_scrape_api(
     
     try:
         LOGGER.info(f"Fetching data from API {flag_log}...")
-        response = requests.get(
-            api_url, headers=headers, 
-            proxies=proxies, verify=False, timeout=30
+        # response = requests.get(
+        #     api_url, headers=headers, 
+        #     proxies=proxies, verify=False, timeout=30
+        # )
+        # response.raise_for_status()
+
+        response = cffi_requests.get(
+            api_url,
+            headers=headers,
+            proxies=proxies,
+            impersonate="chrome131",
+            verify=False if proxy else True,
+            timeout=30,
         )
         response.raise_for_status()
         
         LOGGER.info(f"Response status: {response.status_code}")
     
         data = response.json()
+
         if data.get('data') is None:
             LOGGER.warning("WARNING: API returned None")
             return None
@@ -224,7 +235,8 @@ def run_scrape_api(
         LOGGER.error(f"API request failed: {error}")
         if 'response' in locals():
             LOGGER.error(f"Response: {response.text[:200]}")
-        return None
+        # return None
+        raise 
     
     except json.JSONDecodeError as error:
         LOGGER.error(f"JSON decode error: {error}")
