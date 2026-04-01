@@ -43,6 +43,7 @@ def setup_logging():
     logging.getLogger('seleniumwire2').setLevel(logging.WARNING)
     logging.getLogger('mitmproxy').setLevel(logging.WARNING)
     logging.getLogger('urllib3').setLevel(logging.WARNING)
+    logging.getLogger('httpx').setLevel(logging.WARNING)
 
 
 app = typer.Typer(
@@ -90,7 +91,7 @@ def run_sgx_buyback_scraper(
 
     while True:
         logger.info(f'page_start: {page_start}')
-        typer.echo(f'page start: {page_start}')
+       
         try:
             url = (
                 f"{api_url}?periodstart={normalized_start}_160000"
@@ -106,37 +107,37 @@ def run_sgx_buyback_scraper(
                 headers=headers, 
                 is_proxy=is_proxy
             ) 
-           
-            if sgx_announcements is None:
-                logger.info("No more announcements found — stopping pagination.")
-                headers = get_auth(proxy=None)
-                sgx_announcements = run_scrape_api(api_url=url, flag_log='Buybacks', headers=headers)
-                
-            if sgx_announcements is None:
-                logger.info("No more announcements found on this page — stopping pagination.")
+
+            if not sgx_announcements:
+                logger.info("No more announcements found, stopping pagination.")
                 break
 
-            for sgx_announcement in sgx_announcements:
-                detail_url = sgx_announcement.get('url', None)
-                issuer_name = sgx_announcement.get("issuer_name")
+        except Exception as error:
+            logger.error(f'[SGX BUYBACK] Fatal API error on page {page_start}: {error}', exc_info=True)
+            raise
 
-                if not detail_url:
-                    logger.info(
-                        f'[SGX BUYBACK] Skipping extracting data in details for issuer name: {issuer_name}'
-                    )
-                    continue
+        for sgx_announcement in sgx_announcements:
+            detail_url = sgx_announcement.get('url', None)
+            issuer_name = sgx_announcement.get("issuer_name")
 
+            if not detail_url:
+                logger.info(f'[SGX BUYBACK] Skipping {issuer_name}, no detail url.')
+                continue
+            
+            try:
                 sgx_announcement_details = get_sgx_buybacks(detail_url)
+
                 sgx_announcement_details = asdict(sgx_announcement_details)
                 payload_sgx_buybacks.append(sgx_announcement_details)
-                time.sleep(random.uniform(1, 6))
 
-            page_start += 1
-            time.sleep(random.uniform(1, 8))
+            except Exception as error:
+                logger.error(f'[SGX BUYBACK] Failed parsing {issuer_name} - {detail_url}: {error}', exc_info=True)
+                continue
 
-        except Exception as error:
-            logger.error(f'[SGX BUYBACK] Unexpected error on page {page_start}: {error}', exc_info=True)
-            break 
+            time.sleep(random.uniform(1, 3))
+
+        page_start += 1
+        time.sleep(random.uniform(1, 8))
 
     logger.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_buybacks)}")
 
@@ -189,7 +190,7 @@ def run_sgx_filings_scraper(
 
     while True:
         logger.info(f'page_start: {page_start}')
-        typer.echo(f'page start: {page_start}')
+    
         try:
             url = (
                 f"{api_url}?periodstart={normalized_start}_160000"
@@ -205,26 +206,24 @@ def run_sgx_filings_scraper(
                 headers=headers, 
                 is_proxy=is_proxy
             )
-           
-            if sgx_announcements is None:
-                logger.info("No more announcements found — stopping pagination.")
-                headers = get_auth(proxy=None)
-                sgx_announcements = run_scrape_api(api_url=url, flag_log='Filings', headers=headers)
-                
-            if sgx_announcements is None:
-                logger.info("No more announcements found on this page — stopping pagination.")
+
+            if not sgx_announcements:
+                logger.info("No more announcements found, stopping pagination.")
                 break
+        
+        except Exception as error:
+            logger.error(f'[SGX FILINGS] Fatal API error on page {page_start}: {error}', exc_info=True)
+            raise
 
-            for sgx_announcement in sgx_announcements:
-                detail_url = sgx_announcement.get('url', None)
-                issuer_name = sgx_announcement.get("issuer_name")
+        for sgx_announcement in sgx_announcements:
+            detail_url = sgx_announcement.get('url', None)
+            issuer_name = sgx_announcement.get("issuer_name")
 
-                if not detail_url:
-                    logger.info(
-                        f'[SGX FILINGS] Skipping extracting data in details for issuer name: {issuer_name}'
-                    )
-                    continue
-
+            if not detail_url:
+                logger.info(f'[SGX FILINGS] Skipping {issuer_name}, no detail url.')
+                continue
+            
+            try: 
                 sgx_filings_details = get_sgx_filings(detail_url)
 
                 if not sgx_filings_details:
@@ -234,28 +233,29 @@ def run_sgx_filings_scraper(
                 for sgx_filing_detail in sgx_filings_details:
                     sgx_filing_data = asdict(sgx_filing_detail)
                     payload_sgx_filings.append(sgx_filing_data)
-                
-                time.sleep(random.uniform(1, 6))
+            
+            except Exception as error:
+                logger.error(f'[SGX FILINGS] Failed parsing {issuer_name} - {detail_url}: {error}', exc_info=True)
+                continue
 
-            page_start += 1
-            time.sleep(random.uniform(1, 8))
+            time.sleep(random.uniform(1, 3))
 
-        except Exception as error:
-            logger.error(f'[SGX FILINGS] Unexpected error on page {page_start}: {error}', exc_info=True)
-            break 
+        page_start += 1
+        time.sleep(random.uniform(1, 8))
 
     logger.info(f"[SGX FILINGS] Scraping completed. Total records: {len(payload_sgx_filings)}")
 
     payload_sgx_filings_clean = clean_payload_sgx_filings(payload_sgx_filings)
 
     payload_top_70, payload_not_top_70 = filter_top_70_companies(payload_sgx_filings_clean)
-    write_to_csv(SGX_FILINGS_PATH_NOT_TOP_70, payload_not_top_70)
 
+    write_to_csv(SGX_FILINGS_PATH_NOT_TOP_70, payload_not_top_70)
     write_to_json(SGX_FILINGS_PATH_TODAY, payload_top_70)
 
     if os.path.exists(SGX_FILINGS_PATH_YESTERDAY):    
         logger.info('Processing remove duplicate data') 
         new_payload_sgx_filings = remove_duplicate(SGX_FILINGS_PATH_TODAY, SGX_FILINGS_PATH_YESTERDAY)
+
     else:
         logger.info('First run detected, all Top 70 filings are new')
         new_payload_sgx_filings = payload_top_70
