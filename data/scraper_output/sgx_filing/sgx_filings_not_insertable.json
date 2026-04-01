@@ -1,1 +1,216 @@
-[]
+[
+  {
+    "symbol": "AJBU",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Keppel Dc Reit Management Pte. Ltd was awarded shares of Keppel DC REIT",
+    "body": "Keppel Dc Reit Management Pte. Ltd was awarded 477,511.0 shares of Keppel DC REIT. This decreases their holdings from 33,817,673.0 to 33,340,162.0 shares.",
+    "holder_type": "institution",
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: value=None, number_of_stock=477511, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ],
+    "holder_name": "Keppel Dc Reit Management Pte. Ltd",
+    "holding_before": 33817673,
+    "holding_after": 33340162,
+    "share_percentage_before": 0.01383,
+    "share_percentage_after": 0.01363,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 477511,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WSNMAIAVAM19QDX4/881213__Form%206-%20KDCRM%2031032026_final.pdf",
+    "share_percentage_transaction": 0.0002
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Neo Tzu Chao, Kevin was awarded shares of Keppel Infrastructure Trust",
+    "body": "Neo Tzu Chao, Kevin was awarded 509,321.0 shares of Keppel Infrastructure Trust. This increases their holdings from 464,388.0 to 973,709.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: value=None, number_of_stock=509321, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ],
+    "holder_name": "Neo Tzu Chao, Kevin",
+    "holding_before": 464388,
+    "holding_after": 973709,
+    "share_percentage_before": 8e-05,
+    "share_percentage_after": 0.00016,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 509321,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZGHHEMZ369CMRFNJ/881202__Form%201%20-%20KN%2020260331%20Final.pdf",
+    "share_percentage_transaction": 8e-05
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": 0.503,
+    "transaction_type": null,
+    "title": "Eng Chin Chin None transaction of Keppel Infrastructure Trust",
+    "body": "Eng Chin Chin executed a transaction for 46,800.0 shares of Keppel Infrastructure Trust. This increases their holdings from 0.0 to 46,800.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Eng Chin Chin",
+    "holding_before": 0,
+    "holding_after": 46800,
+    "share_percentage_before": 0.0,
+    "share_percentage_after": 1e-05,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 46800,
+    "transaction_value": 23540.4,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LKVZR0ZSFP2QHDKB/881200__Form%201%20Ms%20Eng%20final.pdf",
+    "share_percentage_transaction": 1e-05
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": 0.503,
+    "transaction_type": null,
+    "title": "Khor Poh Hwa None transaction of Keppel Infrastructure Trust",
+    "body": "Khor Poh Hwa executed a transaction for 50,300.0 shares of Keppel Infrastructure Trust. This increases their holdings from 24,600.0 to 74,900.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Khor Poh Hwa",
+    "holding_before": 24600,
+    "holding_after": 74900,
+    "share_percentage_before": 0.0,
+    "share_percentage_after": 1e-05,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 50300,
+    "transaction_value": 25300.9,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/2J6HTM6HJ4ZH643W/881198__Form%201%20Mr%20Khor%20final.pdf",
+    "share_percentage_transaction": 1e-05
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": 0.503,
+    "transaction_type": null,
+    "title": "Ng Kin Sze None transaction of Keppel Infrastructure Trust",
+    "body": "Ng Kin Sze executed a transaction for 51,200.0 shares of Keppel Infrastructure Trust. This increases their holdings from 322,300.0 to 373,500.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Ng Kin Sze",
+    "holding_before": 322300,
+    "holding_after": 373500,
+    "share_percentage_before": 5e-05,
+    "share_percentage_after": 6e-05,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 51200,
+    "transaction_value": 25753.6,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/GYLEIIW7QIVT3HK2/881194__Form%201%20Mr%20Ng%20final.pdf",
+    "share_percentage_transaction": 1e-05
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": 0.503,
+    "transaction_type": null,
+    "title": "Chong Suk Shien None transaction of Keppel Infrastructure Trust",
+    "body": "Chong Suk Shien executed a transaction for 48,900.0 shares of Keppel Infrastructure Trust. This increases their holdings from 176,600.0 to 225,500.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Chong Suk Shien",
+    "holding_before": 176600,
+    "holding_after": 225500,
+    "share_percentage_before": 3e-05,
+    "share_percentage_after": 4e-05,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 48900,
+    "transaction_value": 24596.7,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LQBB14GDEYOAWM1D/881192__Form%201%20Ms%20Chong%20final.pdf",
+    "share_percentage_transaction": 1e-05
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": 0.503,
+    "transaction_type": null,
+    "title": "Chan Pengee, Adrian None transaction of Keppel Infrastructure Trust",
+    "body": "Chan Pengee, Adrian executed a transaction for 62,300.0 shares of Keppel Infrastructure Trust. This increases their holdings from 118,800.0 to 181,100.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Chan Pengee, Adrian",
+    "holding_before": 118800,
+    "holding_after": 181100,
+    "share_percentage_before": 2e-05,
+    "share_percentage_after": 3e-05,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 62300,
+    "transaction_value": 31336.9,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LSTE6NAK0M2FTJJD/881190__Form%201%20Mr%20Chan%20final.pdf",
+    "share_percentage_transaction": 1e-05
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": 0.503,
+    "transaction_type": null,
+    "title": "Daniel Cuthbert Ee Hock Huat None transaction of Keppel Infrastructure Trust",
+    "body": "Daniel Cuthbert Ee Hock Huat executed a transaction for 93,000.0 shares of Keppel Infrastructure Trust. This increases their holdings from 554,031.0 to 647,031.0 shares.",
+    "holder_type": "insider",
+    "reasons": [
+      "Missing transaction_type"
+    ],
+    "holder_name": "Daniel Cuthbert Ee Hock Huat",
+    "holding_before": 554031,
+    "holding_after": 647031,
+    "share_percentage_before": 9e-05,
+    "share_percentage_after": 0.00011,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 93000,
+    "transaction_value": 46779.0,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/R4NHJ3PKL1S4WMIX/881188__Form%201%20Mr%20Ee%20final.pdf",
+    "share_percentage_transaction": 2e-05
+  },
+  {
+    "symbol": "A7RU",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Keppel Infrastructure Fund Management Pte. Ltd was awarded shares of Keppel Infrastructure Trust",
+    "body": "Keppel Infrastructure Fund Management Pte. Ltd was awarded 1,359,209.0 shares of Keppel Infrastructure Trust. This decreases their holdings from 1,359,209.0 to 0.0 shares.",
+    "holder_type": "institution",
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: value=None, number_of_stock=1359209, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ],
+    "holder_name": "Keppel Infrastructure Fund Management Pte. Ltd",
+    "holding_before": 1359209,
+    "holding_after": 0,
+    "share_percentage_before": 0.00022,
+    "share_percentage_after": 0.0,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 1359209,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C9FLFHCQSZPQDOCM/881182__Form%206%20KIFM%20-%20Disposal%20of%20units%2031%20Mar%202026%20Final.pdf",
+    "share_percentage_transaction": 0.00022
+  },
+  {
+    "symbol": "K71U",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Keppel Reit Management Limited was awarded shares of Keppel REIT",
+    "body": "Keppel Reit Management Limited was awarded 269,379.0 shares of Keppel REIT. This decreases their holdings from 282,111,392.0 to 281,842,013.0 shares.",
+    "holder_type": "institution",
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: value=None, number_of_stock=269379, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ],
+    "holder_name": "Keppel REIT Management Limited",
+    "holding_before": 282111392,
+    "holding_after": 281842013,
+    "share_percentage_before": 0.05693,
+    "share_percentage_after": 0.05688,
+    "timestamp": "2026-03-31",
+    "amount_transaction": 269379,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FSMBY261DVXKL5RJ/881180__MAS%20Form%206%20Notification%20Form_310326_final.pdf",
+    "share_percentage_transaction": 5e-05
+  }
+]
