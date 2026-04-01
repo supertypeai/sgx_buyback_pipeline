@@ -100,9 +100,13 @@ def standardize_name(payload: list[dict[str, any]]) -> list[dict[str, any]]:
         record['transaction_value'] = record.pop('value', None) 
         record['source'] = record.pop('url', None) 
 
-        record['share_percentage_transaction'] = round(
-            abs(record.get('share_percentage_after') - record.get('share_percentage_before')), 7
-        )
+        share_pct_after = record.get('share_percentage_after')
+        share_pct_before = record.get('share_percentage_before')
+        
+        if share_pct_after is not None and share_pct_before is not None:
+            record['share_percentage_transaction'] = round(abs(share_pct_after - share_pct_before), 7)
+        else:
+            record['share_percentage_transaction'] = None
 
     return payload 
 
