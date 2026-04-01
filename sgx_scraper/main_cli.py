@@ -66,7 +66,8 @@ def run_sgx_buyback_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(20, help="Number of records per page"),
-    is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
+    is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
+    is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
 ):
     logger = logging.getLogger(__name__)
 
@@ -99,7 +100,12 @@ def run_sgx_buyback_scraper(
                 f"&pagesize={page_size}"
             )
             
-            sgx_announcements = run_scrape_api(api_url=url, flag_log='Buybacks', headers=headers)
+            sgx_announcements = run_scrape_api(
+                api_url=url, 
+                flag_log='Buybacks', 
+                headers=headers, 
+                is_proxy=is_proxy
+            ) 
            
             if sgx_announcements is None:
                 logger.info("No more announcements found — stopping pagination.")
@@ -159,14 +165,13 @@ def run_sgx_filings_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(20, help="Number of records per page"),
-    is_push_db: bool = typer.Option(True, help='Flag to push to db or not')
+    is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
+    is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
 ):
     logger = logging.getLogger(__name__)
     
     api_url = "https://api.sgx.com/announcements/v1.1/"
     headers = get_auth(proxy=None)
-
-    logger.info(f"Scraping from {period_start} to {period_end}...")
 
     page_start = 0
     payload_sgx_filings = []
@@ -194,7 +199,12 @@ def run_sgx_filings_scraper(
                 f"&pagesize={page_size}"
             )
             
-            sgx_announcements = run_scrape_api(api_url=url, flag_log='Filings', headers=headers)
+            sgx_announcements = run_scrape_api(
+                api_url=url, 
+                flag_log='Filings',
+                headers=headers, 
+                is_proxy=is_proxy
+            )
            
             if sgx_announcements is None:
                 logger.info("No more announcements found — stopping pagination.")

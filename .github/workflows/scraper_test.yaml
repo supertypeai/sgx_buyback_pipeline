@@ -36,6 +36,12 @@ on:
         type: boolean
         default: false
 
+      is_proxy:
+        description: "Use proxy for SGX requests"
+        required: true
+        type: boolean
+        default: true
+
 permissions:
   contents: read
 
@@ -77,6 +83,7 @@ jobs:
           PERIOD_END: ${{ inputs.period_end }}
           PAGE_SIZE: ${{ inputs.page_size }}
           IS_PUSH_DB: ${{ inputs.is_push_db }}
+          IS_PROXY: ${{ inputs.is_proxy }}
         run: |
           set -euo pipefail
 
@@ -102,6 +109,12 @@ jobs:
             args+=(--is-push-db)
           else
             args+=(--no-is-push-db)
+          fi
+
+          if [[ "$IS_PROXY" == "true" ]]; then
+            args+=(--is-proxy)
+          else
+            args+=(--no-is-proxy)
           fi
 
           printf 'Running command: uv run python -m sgx_scraper.main_cli'

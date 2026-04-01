@@ -190,11 +190,16 @@ def run_scrape_api(
     api_url: str, 
     flag_log: str,
     headers: dict[str, str] | None, 
-    proxy: str | None = PROXY
+    is_proxy: bool
 ) -> list[dict] | None:
     if not headers:
         raise ValueError("Cannot fetch API, headers are missing.")
-    
+
+    if is_proxy: 
+        proxy = PROXY 
+    else: 
+        proxy = None 
+            
     proxies = None
     if proxy:
         proxies = {
