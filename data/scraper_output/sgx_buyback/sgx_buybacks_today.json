@@ -1,1 +1,81 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/BBQ0Z5FGSBIUOA3F/ef956124bb5d0ee54b65e0257bd8745dd0880a165f95abb15cfe5c65b60a241c",
+    "symbol": "U11",
+    "purchase_date": "2026-04-06",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 36.92,
+      "lowest": 36.65
+    },
+    "total_value": 1364784.95,
+    "total_shares_purchased": 37000,
+    "treasury_shares_after_purchase": 11893700,
+    "mandate": {
+      "mandate_total": 83545909,
+      "cumulative_purchased": 20438200,
+      "mandate_remaining": 63107709,
+      "mandate_start": "2025-04-21",
+      "mandate_end": "2026-04-21"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/9D2J390P3878AP9R/b71cf300e51ad962f509e3d99e0dfb2babc70504cc93ea06ea831963bb66f064",
+    "symbol": "BN4",
+    "purchase_date": "2026-04-06",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 11.9,
+      "lowest": 11.79
+    },
+    "total_value": 2372126.81,
+    "total_shares_purchased": 200000,
+    "treasury_shares_after_purchase": 7423806,
+    "mandate": {
+      "mandate_total": 90741740,
+      "cumulative_purchased": 21715400,
+      "mandate_remaining": 69026340,
+      "mandate_start": "2025-04-21",
+      "mandate_end": "2026-04-21"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/66TY8FDR1F8HB53A/78290d9314d61bd133f84576ff154f4211e8f8bb76244264e5b0c871749bfc34",
+    "symbol": "O39",
+    "purchase_date": "2026-04-06",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 22.39
+    },
+    "total_value": 13448457.25,
+    "total_shares_purchased": 600000,
+    "treasury_shares_after_purchase": 15842957,
+    "mandate": {
+      "mandate_total": 224941889,
+      "cumulative_purchased": 23709600,
+      "mandate_remaining": 201232289,
+      "mandate_start": "2025-04-17",
+      "mandate_end": "2026-04-17"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/I1FN671SR039XI48/abec39ca11ad73a6b602a15b1b51f20df86aaf2051b7c9a3d0a70b50b4f56b37",
+    "symbol": "F99",
+    "purchase_date": "2026-04-06",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 1.45,
+      "lowest": 1.44
+    },
+    "total_value": 109037.06,
+    "total_shares_purchased": 75100,
+    "treasury_shares_after_purchase": 1000288,
+    "mandate": {
+      "mandate_total": 101967963,
+      "cumulative_purchased": 861200,
+      "mandate_remaining": 101106763,
+      "mandate_start": "2026-01-27",
+      "mandate_end": "2027-01-27"
+    }
+  }
+]
