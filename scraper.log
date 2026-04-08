@@ -12609,3 +12609,21 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-04-08 04:31:28 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2026-04-08 04:31:28 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
 2026-04-08 04:31:28 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-04-08 04:33:44 [INFO] __main__ - Start scraping from start date: 20260406 to 20260408
+2026-04-08 04:33:44 [INFO] __main__ - page_start: 0
+2026-04-08 04:33:44 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-04-08 04:33:44 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-08 04:33:44 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 17 announcements
+2026-04-08 04:34:28 [INFO] __main__ - page_start: 1
+2026-04-08 04:34:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-04-08 04:34:28 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-08 04:34:28 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-04-08 04:34:28 [INFO] __main__ - No more announcements found, stopping pagination.
+2026-04-08 04:34:28 [INFO] __main__ - [SGX_BUYBACK] Scraping completed. Total records: 17
+2026-04-08 04:34:29 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 6 | Length data not top_70: 11
+2026-04-08 04:34:29 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2026-04-08 04:34:29 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-04-08 04:34:29 [INFO] __main__ - Processing remove duplicate data
+2026-04-08 04:34:29 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 6
+2026-04-08 04:34:29 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-04-08 04:34:30 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 6 records to DB, table: sgx_buybacks
