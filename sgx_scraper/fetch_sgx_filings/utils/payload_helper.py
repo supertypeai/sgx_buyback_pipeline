@@ -660,21 +660,31 @@ def generate_title_and_body(
     if tx_type == "buy":
         action_verb = "bought"
         title = f"{holder_name} buys shares of {company_name}"
+    
     elif tx_type == "sell":
         action_verb = "sold"
         title = f"{holder_name} sells shares of {company_name}"
+    
     elif tx_type == "share-transfer":
         action_verb = "transferred"
         title = f"{holder_name} transfers shares of {company_name}"
+
+    elif tx_type == 'transfer': 
+        action_verb = "executed a transaction for"
+        title = f"{holder_name} share movement in {company_name}"
+
     elif tx_type == "award":
         action_verb = "was awarded"
         title = f"{holder_name} was awarded shares of {company_name}"
+    
     elif tx_type == "others": 
         action_verb = "executed a transaction for"
         title = f"Change in {holder_name}'s position in {company_name}"
+    
     elif tx_type == "inheritance":
         action_verb = "inherited"
         title = f"{holder_name} inherits shares of {company_name}"
+    
     else:
         action_verb = "executed a transaction for"
         title = f"{holder_name} {action_title} transaction of {company_name}"
