@@ -9,88 +9,71 @@ LOGGER = logging.getLogger(__name__)
 
 
 def filter_sgx_filings(payload: dict[str, any]) -> bool:
-    shares_before = payload.get('shares_before')
-    shares_after = payload.get('shares_after')
-    number_of_stock = payload.get('number_of_stock')
+    holding_before = payload.get('holding_before')
+    holding_after = payload.get('holding_after')
+    amount_transaction = payload.get('amount_transaction')
     transaction_type = payload.get('transaction_type')
-    value = payload.get('value')
-    price_per_share = payload.get('price_per_share') 
+    transaction_value = payload.get('transaction_value')
+    price_per_share = payload.get('price_per_share')
     symbol = payload.get('symbol')
-    transaction_date = payload.get('transaction_date')
-    shareholder_name = payload.get('shareholder_name')
+    timestamp = payload.get('timestamp')
+    holder_name = payload.get('holder_name')
 
     reasons = []
 
-    basic_fields = [
-        symbol, transaction_date, shares_before,
-        shares_after
-    ]
+    basic_fields = [symbol, timestamp, holding_before, holding_after]
 
-    # Missing required field
     if any(field is None for field in basic_fields):
         reasons.append(
             f'Missing one or more required fields: '
-            f'symbol={symbol}, transaction_date={transaction_date}, '
-            f'shares_before={shares_before}, shares_after={shares_after}, '
+            f'symbol={symbol}, timestamp={timestamp}, '
+            f'holding_before={holding_before}, holding_after={holding_after}'
         )
-       
-    if transaction_type is None: 
-        reasons.append(f'Missing transaction_type')
-    
+
+    if transaction_type is None:
+        reasons.append('Missing transaction_type')
+
     if transaction_type:
-        if not all([value, number_of_stock, price_per_share]):
+        if not all([transaction_value, amount_transaction, price_per_share]):
             reasons.append(
                 f'Transaction type is "{transaction_type}" but missing financial data: '
-                f'value={value}, number_of_stock={number_of_stock}, '
+                f'transaction_value={transaction_value}, amount_transaction={amount_transaction}, '
                 f'price_per_share={price_per_share}'
             )
 
     diff_shares = None
-    
-    if shares_after and shares_before:
-        diff_shares = shares_after - shares_before
 
-    # Inconsistent share count
-    if number_of_stock and diff_shares is not None:
-        if abs(diff_shares) != number_of_stock:
+    if holding_after and holding_before:
+        diff_shares = holding_after - holding_before
+
+    if amount_transaction and diff_shares is not None:
+        if abs(diff_shares) != amount_transaction:
             reasons.append(
                 f'Difference in shares (after - before = {abs(diff_shares)}) '
-                f'does not match reported number_of_stock={number_of_stock}'
+                f'does not match reported amount_transaction={amount_transaction}'
             )
-           
-    # Invalid transaction type for share movement
+
     if transaction_type:
-        # Double check shareholder name if type is transfer
         if transaction_type == 'transfer':
             reasons.append(
-                f'Please verify the shareholder name for transfer type. ' 
-                f'The format {shareholder_name} may not always match the current regex.'
+                f'Please verify the holder name for transfer type. '
+                f'The format {holder_name} may not always match the current regex. '
+                f'Since we need to have a sign [->]'
             )
         if transaction_type == 'award':
             reasons.append(
-                f'Please double check the transaction type: {transaction_type}. ' 
+                f'Please double check the transaction type: {transaction_type}. '
                 f'The document may contain multiple descriptions that affect the classification.'
             )
-        # if diff_shares > 0 and transaction_type != 'buy':
-        #     reasons.append(
-        #         f'Share difference is positive ({diff_shares}), '
-        #         f'but transaction_type="{transaction_type}" instead of "buy"'
-        #     )
-        # if diff_shares < 0 and transaction_type != 'sell':
-        #     reasons.append(
-        #         f'Share difference is negative ({diff_shares}), '
-        #         f'but transaction_type="{transaction_type}" instead of "sell"'
-        #     )
-    
+        
     # Unrealistic or inconsistent price
     if price_per_share:
         if price_per_share > 200:
             reasons.append(
                 f'Unrealistic price_per_share={price_per_share} (>200)'
             )
-         
         else:
-            market_price_yfinance = get_price(symbol, transaction_date)
+            market_price_yfinance = get_price(symbol, timestamp)
             if market_price_yfinance:
                 deviation = abs(price_per_share - market_price_yfinance) / market_price_yfinance
                 if deviation > 0.4:
@@ -100,19 +83,19 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                     )
                     
     # Value and price inconsistency
-    if value and number_of_stock and price_per_share:
-        calculated_price = value / number_of_stock 
+    if transaction_value and amount_transaction and price_per_share:
+        calculated_price = transaction_value / amount_transaction
         if not math.isclose(calculated_price, price_per_share, rel_tol=0.05):
             reasons.append(
-                f'Calculated price (value/number_of_stock={calculated_price:.2f}) '
+                f'Calculated price (transaction_value/amount_transaction={calculated_price:.2f}) '
                 f'does not match reported price_per_share={price_per_share}'
             )
-        
-        expected_value = number_of_stock * price_per_share
-        if not math.isclose(expected_value, value, rel_tol=0.05):
-            reasons.append( 
+
+        expected_value = amount_transaction * price_per_share
+        if not math.isclose(expected_value, transaction_value, rel_tol=0.05):
+            reasons.append(
                 f'Inconsistent total value: expected {expected_value:.2f} '
-                f'(number_of_stock * price_per_share), but got {value:.2f}'
+                f'(amount_transaction * price_per_share), but got {transaction_value:.2f}'
             )
            
     if reasons:

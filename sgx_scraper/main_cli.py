@@ -262,18 +262,17 @@ def run_sgx_filings_scraper(
 
     write_to_json(SGX_FILINGS_PATH_YESTERDAY, payload_top_70)
 
-    sgx_filings_insertable, sgx_filings_not_insertable = get_data_alert(new_payload_sgx_filings)
+    standardized_payload = standardize_name(new_payload_sgx_filings)
 
-    sgx_filings_invalid_final = standardize_name(sgx_filings_not_insertable)
-    sgx_filings_insertable_final = standardize_name(sgx_filings_insertable)
+    sgx_filings_insertable, sgx_filings_not_insertable = get_data_alert(standardized_payload)
 
-    write_to_json(SGX_FILINGS_PATH_NOT_INSERTABLE, sgx_filings_invalid_final)
-    write_to_json(SGX_FILINGS_PATH_INSERTABLE, sgx_filings_insertable_final)
+    write_to_json(SGX_FILINGS_PATH_NOT_INSERTABLE, sgx_filings_not_insertable)
+    write_to_json(SGX_FILINGS_PATH_INSERTABLE, sgx_filings_insertable)
 
-    send_sgx_filings_alert(sgx_filings_invalid_final, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
+    send_sgx_filings_alert(sgx_filings_not_insertable, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
 
     if is_push_db:
-        push_to_db(sgx_filings_insertable_final, 'sgx_filings') 
+        push_to_db(sgx_filings_insertable, 'sgx_filings') 
 
 
 if __name__ == '__main__':
