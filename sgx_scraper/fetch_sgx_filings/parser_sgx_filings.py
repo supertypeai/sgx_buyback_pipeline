@@ -796,7 +796,7 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
             symbol_extracted = extract_symbol_fallback(doc_fitz)
             symbol = matching_symbol(symbol_extracted)
 
-        # Populate extra data
+        # Populate extra data (issuer name, holder_type)
         company_name, _, _ = populate_extra_data(symbol)
         detected_holder_type = detect_form_type(pdf_url, doc_fitz)
 
@@ -830,6 +830,7 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
                 url=pdf_url, 
                 title=title, 
                 body=body,
+                issuer_name=company_name,
                 **data_record
             )
 

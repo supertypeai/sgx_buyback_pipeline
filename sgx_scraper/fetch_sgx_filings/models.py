@@ -20,4 +20,5 @@ class SGXFilings:
     title: str = ''
     body: str = ''
     holder_type: str = ''
+    issuer_name: str = ''
     

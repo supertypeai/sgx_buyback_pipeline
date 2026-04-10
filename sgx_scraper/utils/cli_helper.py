@@ -35,6 +35,11 @@ def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
     try:
         is_succes = False 
 
+        sgx_payload = [
+            {key: value for key, value in record.items() if key != "issuer_name"}
+            for record in sgx_payload
+        ]
+
         response = (
             SUPABASE_CLIENT
             .table(table_name)
