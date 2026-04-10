@@ -18,6 +18,7 @@ def get_data_to_alert(path: str) -> list[dict[str, any]]:
         LOGGER.error(f"Error loading data to alert from {path}: {error}") 
         return []
 
+
 def build_email_subject(title, alerts):
     total = len(alerts)
     today = datetime.now().strftime("%Y-%m-%d")
@@ -30,22 +31,22 @@ def build_plain_text_body(alerts, title, total, today):
 
     for index, alert in enumerate(alerts, 1):
         symbol = alert.get("symbol", "-")
-        holder = alert.get("shareholder_name", "-")
-        ttype = alert.get("transaction_type", "-")
+        holder = alert.get("holder_name", "-")
+        type = alert.get("transaction_type", "-")
         price = alert.get("price_per_share", "-")
-        shares = alert.get("number_of_stock", "-")
-        value = alert.get("value", "-")
-        date = alert.get("transaction_date", "-")
-        url = alert.get("url", "-")
+        shares = alert.get("amount_transaction", "-")
+        transaction_value = alert.get("transaction_value", "-")
+        date = alert.get("timestamp", "-")
+        url = alert.get("source", "-")
 
-        before = alert.get("shares_before", "-")
-        after = alert.get("shares_after", "-")
-        before_pct = alert.get("shares_before_percentage", "-")
-        after_pct = alert.get("shares_after_percentage", "-")
+        before = alert.get("holding_before", "-")
+        after = alert.get("holding_after", "-")
+        before_pct = alert.get("share_percentage_before", "-")
+        after_pct = alert.get("share_percentage_after", "-")
 
         lines.append(
-            f"{index}. {symbol} | {ttype} | holder={holder} | "
-            f"shares={shares} | price={price} | value={value} | date={date}"
+            f"{index}. {symbol} | {type} | holder={holder} | "
+            f"shares={shares} | price={price} | value={transaction_value} | date={date}"
         )
         lines.append(
             f"   before={before} ({before_pct}%), after={after} ({after_pct}%)"
@@ -59,18 +60,18 @@ def build_html_body(alerts, title, total, today, escape_keyword):
     rows = []
     for alert in alerts:
         symbol = alert.get("symbol", "-")
-        holder = alert.get("shareholder_name", "-")
-        ttype = alert.get("transaction_type", "-")
+        holder = alert.get("holder_name", "-")
+        type = alert.get("transaction_type", "-")
         price = alert.get("price_per_share", "-")
-        shares = alert.get("number_of_stock", "-")
-        value = alert.get("value", "-")
-        date = alert.get("transaction_date", "-")
-        url = alert.get("url", "-")
+        shares = alert.get("amount_transaction", "-")
+        transaction_value = alert.get("transaction_value", "-")
+        date = alert.get("timestamp", "-")
+        url = alert.get("source", "-")
 
-        before = alert.get("shares_before", "-")
-        after = alert.get("shares_after", "-")
-        before_pct = alert.get("shares_before_percentage", "-")
-        after_pct = alert.get("shares_after_percentage", "-")
+        before = alert.get("holding_before", "-")
+        after = alert.get("holding_after", "-")
+        before_pct = alert.get("share_percentage_before", "-")
+        after_pct = alert.get("share_percentage_after", "-")
 
         link = (
             f'<a href="{escape_keyword(url)}" target="_blank" rel="noopener">{escape_keyword(url)}</a>'
@@ -83,10 +84,10 @@ def build_html_body(alerts, title, total, today, escape_keyword):
             f"<td>{escape_keyword(date)}</td>"
             f"<td><strong>{escape_keyword(symbol)}</strong></td>"
             f"<td>{escape_keyword(holder)}</td>"
-            f"<td>{escape_keyword(ttype)}</td>"
+            f"<td>{escape_keyword(type)}</td>"
             f"<td style='text-align:right'>{escape_keyword(shares)}</td>"
             f"<td style='text-align:right'>{escape_keyword(price)}</td>"
-            f"<td style='text-align:right'>{escape_keyword(value)}</td>"
+            f"<td style='text-align:right'>{escape_keyword(transaction_value)}</td>"
             f"<td style='text-align:right'>{escape_keyword(before)} ({escape_keyword(before_pct)}%) → "
             f"{escape_keyword(after)} ({escape_keyword(after_pct)}%)</td>"
             f"<td style='max-width:320px;overflow-wrap:anywhere'>{link}</td>"
@@ -131,7 +132,7 @@ def render_email_content(alerts: list[dict[str, any]], title: str = "SGX Transac
 
 
 if __name__ == "__main__":
-    data_to_alert = get_data_to_alert('data/scraper_output/sgx_filing/test_sgx_filings_alert.json')
+    data_to_alert = get_data_to_alert('data/scraper_output/sgx_filing/sgx_filings_not_insertable.json')
     data_to_alert = data_to_alert[:5]
     subject, body_text, body_html = render_email_content(data_to_alert)
     print(f"Subject: {subject}\n")
