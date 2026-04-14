@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "symbol": "C2PU",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Yong Yean Chau was awarded shares of Parkway Life Real Estate Investment Trust",
+    "body": "Yong Yean Chau was awarded shares of Parkway Life Real Estate Investment Trust. This increases their holdings from 1,101,300.0 to 1,177,700.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "Parkway Life Real Estate Investment Trust",
+    "holder_name": "Yong Yean Chau",
+    "holding_before": 1101300,
+    "holding_after": 1177700,
+    "share_percentage_before": 0.0017,
+    "share_percentage_after": 0.0018,
+    "timestamp": "2026-04-13",
+    "amount_transaction": null,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VOF9I3SRPEPO26DX/883567__Form%201-YYC.pdf",
+    "share_percentage_transaction": 0.0001,
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: transaction_value=None, amount_transaction=None, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ]
+  },
+  {
+    "symbol": "C2PU",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Parkway Trust Management Limited was awarded shares of Parkway Life Real Estate Investment Trust",
+    "body": "Parkway Trust Management Limited was awarded 180,000.0 shares of Parkway Life Real Estate Investment Trust. This decreases their holdings from 1,628,913.0 to 1,448,913.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "Parkway Life Real Estate Investment Trust",
+    "holder_name": "Parkway Trust Management Limited",
+    "holding_before": 1628913,
+    "holding_after": 1448913,
+    "share_percentage_before": 0.0025,
+    "share_percentage_after": 0.0022,
+    "timestamp": "2026-04-13",
+    "amount_transaction": 180000,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/483YK2LVOTGGR1K1/883565__Form%206-PTML.pdf",
+    "share_percentage_transaction": 0.0003,
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: transaction_value=None, amount_transaction=180000, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ]
+  }
+]

@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/VOF9I3SRPEPO26DX/883567__Form%201-YYC.pdf",
+    "symbol": "C2PU",
+    "transaction_date": "2026-04-13",
+    "shareholder_name": "Yong Yean Chau",
+    "number_of_stock": null,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 1101300,
+    "shares_before_percentage": 0.0017,
+    "shares_after": 1177700,
+    "shares_after_percentage": 0.0018,
+    "title": "Yong Yean Chau was awarded shares of Parkway Life Real Estate Investment Trust",
+    "body": "Yong Yean Chau was awarded shares of Parkway Life Real Estate Investment Trust. This increases their holdings from 1,101,300.0 to 1,177,700.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "Parkway Life Real Estate Investment Trust"
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/483YK2LVOTGGR1K1/883565__Form%206-PTML.pdf",
+    "symbol": "C2PU",
+    "transaction_date": "2026-04-13",
+    "shareholder_name": "Parkway Trust Management Limited",
+    "number_of_stock": 180000,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 1628913,
+    "shares_before_percentage": 0.0025,
+    "shares_after": 1448913,
+    "shares_after_percentage": 0.0022,
+    "title": "Parkway Trust Management Limited was awarded shares of Parkway Life Real Estate Investment Trust",
+    "body": "Parkway Trust Management Limited was awarded 180,000.0 shares of Parkway Life Real Estate Investment Trust. This decreases their holdings from 1,628,913.0 to 1,448,913.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "Parkway Life Real Estate Investment Trust"
+  }
+]
