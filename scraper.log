@@ -13053,3 +13053,58 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-04-14 04:43:34 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-04-14 04:43:34 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-04-15 04:40:27 [INFO] __main__ - Start scraping from start date: 20260413 to 20260415
+2026-04-15 04:40:27 [INFO] __main__ - page_start: 0
+2026-04-15 04:40:27 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-15 04:40:27 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-15 04:40:27 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 11 announcements
+2026-04-15 04:40:29 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/O2ZT7I5YLWIAFXG2/1347f18484045830d69876b18cbd89c52f55a30ea1449b26e0d81b3eab32eef9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/O2ZT7I5YLWIAFXG2/883989__Uni-Asia%202026-04-14%20-%20Change%20in%20Interest%20-%20Masahiro%20Iwabuchi.pdf
+2026-04-15 04:40:33 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/FO51W2RWXCRS68SB/63f670e26a34325b446972f0736412e526645984538cd30489d1475f1fea1f25 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/FO51W2RWXCRS68SB/883976__eFORM3V2%20-%20EDIS%20-%2020260414%20Final.pdf
+2026-04-15 04:40:38 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/NTF0BNWAEYER41KH/107b9b7e3afa4ae3a045ad78c5dca5dde80249785d25ddb40a261f30e810d559 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/NTF0BNWAEYER41KH/883932__eFORM3V2_14042026.pdf
+2026-04-15 04:40:40 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:40:40 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/NTF0BNWAEYER41KH/883932__eFORM3V2_14042026.pdf: All transactions have no direct interest change and total shares change
+2026-04-15 04:40:40 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: A-SONIC AEROSPACE LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/NTF0BNWAEYER41KH/107b9b7e3afa4ae3a045ad78c5dca5dde80249785d25ddb40a261f30e810d559
+2026-04-15 04:40:41 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8FHQ6UXC1K21R1SP/4dcb3870d52a6907302445d6d3df0bf6a7719918c36740ab0b8ac0a571f58fcf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8FHQ6UXC1K21R1SP/883924__20260414%20-%20Form%206.pdf
+2026-04-15 04:40:43 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:40:43 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Transfer detected - transformed shareholder: CapitaLand India Trust Management Pte. Ltd -> CLINTMPL's unitholding [->] the eligible employees of CLINTMPL Group
+2026-04-15 04:40:46 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/EL8W6POA2XQWD75G/b92afab810732fa5e668c3f6171a9471d4719be18af09ba09b01984a5eb28d80 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/EL8W6POA2XQWD75G/883920__eFORM6V2%20-%20CLARML%20-%2014%20Apr%202026.pdf
+2026-04-15 04:40:47 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:40:47 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Transfer detected - transformed shareholder: CapitaLand Ascendas REIT Management Limited -> CapitaLand Ascendas REIT Management Limited's unitholding [->] its key management personnel and eligible employees
+2026-04-15 04:40:49 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/33INZ9OWNY1AHM4L/66304ac57e8b4e9551387cd229b4497faa84320092791e77134bf648b2b2d966 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/33INZ9OWNY1AHM4L/883906__eFORM6V2_CLCTML.pdf
+2026-04-15 04:40:51 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:40:51 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Transfer detected - transformed shareholder: CapitaLand China Trust Management Limited -> CapitaLand China Trust Management Limited's unitholding [->] its key management personnel and and eligible employees
+2026-04-15 04:40:53 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/J5OJLISFHFRHF82P/569b6f1b0f13ee8c086b7c0388e65c4729e6af991cca055be8d61d6e46bef2c1 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/J5OJLISFHFRHF82P/883894__eFORM1_ChengWK_140426_Final.pdf
+2026-04-15 04:40:56 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:40:56 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/J5OJLISFHFRHF82P/883894__eFORM1_ChengWK_140426_Final.pdf: All transactions have no direct interest change and total shares change
+2026-04-15 04:40:56 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/J5OJLISFHFRHF82P/569b6f1b0f13ee8c086b7c0388e65c4729e6af991cca055be8d61d6e46bef2c1
+2026-04-15 04:40:56 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QCWQKQDOY74G0MM5/28d91e09831b78c6cbcabf6b9874cb290f27d68b3c7dd5e340fd53f0885eac48 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QCWQKQDOY74G0MM5/883854__eFORM6V2_CLASML.pdf
+2026-04-15 04:40:58 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:40:58 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Transfer detected - transformed shareholder: CapitaLand Ascott Trust Management Limited -> CapitaLand Ascott Trust Management Limited's securityholding [->] its key management personnel and eligible employees
+2026-04-15 04:41:01 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4PWG3EETEKFRE1N4/653f2bf6f1397f5244b6f82e11628cacf0973bfb1618dfbf2c7c2bc911803e76 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4PWG3EETEKFRE1N4/883846__eFORM6V2.pdf
+2026-04-15 04:41:02 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:41:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Transfer detected - transformed shareholder: CapitaLand Integrated Commercial Trust Management Limited -> CapitaLand Integrated Commercial Trust Management Limited ("CICTML")'s unitholding [->] its key management personnel and eligible employees
+2026-04-15 04:41:04 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/RLVA6V328X04ZADF/b2c2d7a4bf088b787ba33e5039294b16b0bc8cd756845b41f4725a1bf4d3a631 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/RLVA6V328X04ZADF/883841__Form_3_BlackRock-10.04.2026_final.pdf
+2026-04-15 04:41:06 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-15 04:41:06 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Change in position due to a decrease in shares held as collateral.'
+2026-04-15 04:41:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/RLVA6V328X04ZADF/883841__Form_3_BlackRock-10.04.2026_final.pdf: All transactions have no direct interest change and total shares change
+2026-04-15 04:41:06 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: VENTURE CORPORATION LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/RLVA6V328X04ZADF/b2c2d7a4bf088b787ba33e5039294b16b0bc8cd756845b41f4725a1bf4d3a631
+2026-04-15 04:41:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZR6T46EUP87ZEZSS/edd976d5aed443eb21c91219099dc1df008322acad97e3a46e806b2a7b73a636 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZR6T46EUP87ZEZSS/883829__Digital%20Core%20REIT%20Form%203%20FINAL.pdf
+2026-04-15 04:41:08 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ZR6T46EUP87ZEZSS/883829__Digital%20Core%20REIT%20Form%203%20FINAL.pdf: All transactions have no direct interest change and total shares change
+2026-04-15 04:41:08 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: DIGITAL CORE REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/ZR6T46EUP87ZEZSS/edd976d5aed443eb21c91219099dc1df008322acad97e3a46e806b2a7b73a636
+2026-04-15 04:41:12 [INFO] __main__ - page_start: 1
+2026-04-15 04:41:12 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-15 04:41:13 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-15 04:41:13 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-04-15 04:41:13 [INFO] __main__ - No more announcements found, stopping pagination.
+2026-04-15 04:41:13 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 7
+2026-04-15 04:41:14 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 3 | Length data not top_70: 4
+2026-04-15 04:41:14 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-04-15 04:41:14 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-04-15 04:41:14 [INFO] __main__ - Processing remove duplicate data
+2026-04-15 04:41:14 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 3
+2026-04-15 04:41:14 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-04-15 04:41:14 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 0 | Not insertable: 3
+2026-04-15 04:41:14 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-04-15 04:41:14 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-04-15 04:41:15 [INFO] sgx_scraper.alerting.mailer - Email sent! Message ID: 011c019d8f7186f3-ce3f2b2c-ea6e-4c5e-8f71-2d23fa77969b-000000
+2026-04-15 04:41:15 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
