@@ -1,21 +1,22 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/UDJO0DEDY6ONZC6B/50ec9759049fc7e18ac53de029e6b2bb18e541c7eb30a3147a67b7a66c26e477",
-    "symbol": "5E2",
-    "purchase_date": "2026-04-21",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/LUZ707ZMFGTXIAGG/c7835d3f14b1871544191c9e0f51414ea994b12c63ddaa435d086651e6b3dcfd",
+    "symbol": "S63",
+    "purchase_date": "2026-04-22",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 2.3515
+      "highest": 11.29,
+      "lowest": 11.23
     },
-    "total_value": 2001225.99,
-    "total_shares_purchased": 850000,
-    "treasury_shares_after_purchase": 31995088,
+    "total_value": 5635161.17,
+    "total_shares_purchased": 500000,
+    "treasury_shares_after_purchase": 759459,
     "mandate": {
-      "mandate_total": 67564587,
-      "cumulative_purchased": 6670000,
-      "mandate_remaining": 60894587,
-      "mandate_start": "2025-04-23",
-      "mandate_end": "2026-04-23"
+      "mandate_total": 62436520,
+      "cumulative_purchased": 11250000,
+      "mandate_remaining": 51186520,
+      "mandate_start": "2025-04-24",
+      "mandate_end": "2026-04-24"
     }
   }
 ]
