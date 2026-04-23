@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "symbol": "A17U",
+    "price_per_share": 2.5646,
+    "transaction_type": "others",
+    "title": "Change in Capitaland Ascendas Reit Management Limited's position in CapitaLand Ascendas REIT",
+    "body": "Capitaland Ascendas Reit Management Limited executed a transaction for 896,826.0 shares of CapitaLand Ascendas REIT. This increases their holdings from 2,896,022.0 to 3,792,848.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "CapitaLand Ascendas REIT",
+    "holder_name": "CapitaLand Ascendas REIT Management Limited",
+    "holding_before": 2896022,
+    "holding_after": 3792848,
+    "share_percentage_before": 0.0005,
+    "share_percentage_after": 0.0007,
+    "timestamp": "2026-04-22",
+    "amount_transaction": 896826,
+    "transaction_value": 804296874276.0,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/B0QZ0W5ZBH4LHRFT/885122__eFORM6V2%20-%20CLARML%20-%2022%20Apr%202026.pdf",
+    "share_percentage_transaction": 0.0002,
+    "reasons": [
+      "Calculated price (transaction_value/amount_transaction=896826.00) does not match reported price_per_share=2.5646",
+      "Inconsistent total value: expected 2299999.96 (amount_transaction * price_per_share), but got 804296874276.00"
+    ]
+  }
+]

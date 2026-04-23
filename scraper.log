@@ -13628,3 +13628,69 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-04-22 04:43:26 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-04-22 04:43:27 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-04-23 04:45:47 [INFO] __main__ - Start scraping from start date: 20260421 to 20260423
+2026-04-23 04:45:47 [INFO] __main__ - page_start: 0
+2026-04-23 04:45:47 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-23 04:45:47 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-23 04:45:47 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 10 announcements
+2026-04-23 04:45:48 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/2509483TU7LERCZZ/a52d70dabcc92c633736cf99c670f7df3d747366e14319e9aaa068c2d4ceec84 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/2509483TU7LERCZZ/885187__eFORM3%20Final.pdf
+2026-04-23 04:45:51 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/C4LH5BHTV81POS6H/237903112c4bc1ca8cb30e59c14d98dfa6cc44d19005da13d98025b0489de28f pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/C4LH5BHTV81POS6H/885185__From%203%20-%20CS%20International.pdf
+2026-04-23 04:45:54 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:54 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:54 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:54 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:55 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:55 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:55 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:55 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-23 04:45:55 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Processing fallback for multiple shareholders with one transaction
+2026-04-23 04:45:56 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/33DUHYT9KMDE0TRO/1f6f558840b6bf0241a727c0cb2a4c6f4a01f698411aa69fe1d9dfb9b62de845 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/33DUHYT9KMDE0TRO/885183__Form%201%20-%20Or%20Kim%20Peow.pdf
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:01 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:01 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:01 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:01 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:01 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:01 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:01 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/33DUHYT9KMDE0TRO/885183__Form%201%20-%20Or%20Kim%20Peow.pdf: All transactions have no direct interest change and total shares change
+2026-04-23 04:46:01 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: OKP HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/33DUHYT9KMDE0TRO/1f6f558840b6bf0241a727c0cb2a4c6f4a01f698411aa69fe1d9dfb9b62de845
+2026-04-23 04:46:01 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/M1BDPJPWVO3RH9DU/45cde7b97a17823c68d0a52ae80743d838a95088932d7450dd30dfa67f29e04a pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/M1BDPJPWVO3RH9DU/885181__Form%203%20-%20OKPI.pdf
+2026-04-23 04:46:07 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/R7AM798E2U00S9Y2/49e99ba7a157cb0a29dee3b60579cac1cca30e05784754cb1556c584d866af49 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/R7AM798E2U00S9Y2/885161__KDC%20FORM%203_20260422%20final.pdf
+2026-04-23 04:46:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/R7AM798E2U00S9Y2/885161__KDC%20FORM%203_20260422%20final.pdf: All transactions have no direct interest change and total shares change
+2026-04-23 04:46:10 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: KEPPEL DC REIT MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/R7AM798E2U00S9Y2/49e99ba7a157cb0a29dee3b60579cac1cca30e05784754cb1556c584d866af49
+2026-04-23 04:46:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/B0QZ0W5ZBH4LHRFT/83a547d221bce407e7b38b3d87e0b990f6f0b84a83a1e0319bc9ade3d85dd03e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/B0QZ0W5ZBH4LHRFT/885122__eFORM6V2%20-%20CLARML%20-%2022%20Apr%202026.pdf
+2026-04-23 04:46:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/22LXDSFQN8460W75/b93d331e162e839416e0f286af495ee46b7e212f67805d62d035fdfac554dc05 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/22LXDSFQN8460W75/885086__20260420%20CapitaLand%20India%20Trust%20abrdn%20Holdings%20Limited%20Form%203%20Final.pdf
+2026-04-23 04:46:16 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/22LXDSFQN8460W75/885086__20260420%20CapitaLand%20India%20Trust%20abrdn%20Holdings%20Limited%20Form%203%20Final.pdf: All transactions have no direct interest change and total shares change
+2026-04-23 04:46:16 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: CAPITALAND INDIA TRUST MANAGEMENT PTE. LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/22LXDSFQN8460W75/b93d331e162e839416e0f286af495ee46b7e212f67805d62d035fdfac554dc05
+2026-04-23 04:46:17 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/II0B70Q523ASTX46/b81e2f324ee9c7237f0a5209d61b98f0309e87c53345d01be1f2493c28f6c347 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/II0B70Q523ASTX46/885083__Form%201%20-%20Lim%20See%20Wah.pdf
+2026-04-23 04:46:21 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/9KSKDPS8MUT7CUYW/329963187da0e27ae32a1913cb08590487f83ec127dfaad9b334d5b379545e4b pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/9KSKDPS8MUT7CUYW/885080__eFORM1V2_STEVE.pdf
+2026-04-23 04:46:26 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QBQOA1TS1TCIHYIL/ace85431c8756f5c6110244fd49edb4d3fd740f89e055585fc5aac8308107afd pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QBQOA1TS1TCIHYIL/885074__eFORM1_ChengWK_220426_Final.pdf
+2026-04-23 04:46:28 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-23 04:46:28 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/QBQOA1TS1TCIHYIL/885074__eFORM1_ChengWK_220426_Final.pdf: All transactions have no direct interest change and total shares change
+2026-04-23 04:46:28 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/QBQOA1TS1TCIHYIL/ace85431c8756f5c6110244fd49edb4d3fd740f89e055585fc5aac8308107afd
+2026-04-23 04:46:33 [INFO] __main__ - page_start: 1
+2026-04-23 04:46:33 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-23 04:46:34 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-23 04:46:34 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-04-23 04:46:34 [INFO] __main__ - No more announcements found, stopping pagination.
+2026-04-23 04:46:34 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 13
+2026-04-23 04:46:34 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 12
+2026-04-23 04:46:34 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-04-23 04:46:34 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-04-23 04:46:34 [INFO] __main__ - Processing remove duplicate data
+2026-04-23 04:46:34 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-04-23 04:46:34 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-04-23 04:46:35 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 0 | Not insertable: 1
+2026-04-23 04:46:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-04-23 04:46:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-04-23 04:46:36 [INFO] sgx_scraper.alerting.mailer - Email sent! Message ID: 011c019db8a94cb9-49db35a7-869c-4467-a127-2f03e09fc497-000000
+2026-04-23 04:46:36 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
