@@ -13715,3 +13715,50 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-04-23 04:47:57 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-04-23 04:47:57 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-04-24 04:50:01 [INFO] __main__ - Start scraping from start date: 20260422 to 20260424
+2026-04-24 04:50:01 [INFO] __main__ - page_start: 0
+2026-04-24 04:50:01 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-24 04:50:01 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-24 04:50:01 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 10 announcements
+2026-04-24 04:50:02 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZIQCEHLPXJQ6IDHS/d45e7ed35b485a0c8773176c1071db0a630fe2afa8f7a7719c88df34816a9e70 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZIQCEHLPXJQ6IDHS/885445__eFORM1V2-23042026-Dr%20Ng.pdf
+2026-04-24 04:50:04 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-24 04:50:04 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/ZIQCEHLPXJQ6IDHS/885445__eFORM1V2-23042026-Dr%20Ng.pdf: All transactions have no direct interest change and total shares change
+2026-04-24 04:50:04 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: Q & M DENTAL GROUP (SINGAPORE) LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/ZIQCEHLPXJQ6IDHS/d45e7ed35b485a0c8773176c1071db0a630fe2afa8f7a7719c88df34816a9e70
+2026-04-24 04:50:04 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ITRMKWLQC34JG0BN/b2afba929ff196dc9648eb541c1d26ae1b5af66e775690f16804de3ae7b1f463 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ITRMKWLQC34JG0BN/885443__eFORM3V2-23042026-QMH.pdf
+2026-04-24 04:50:08 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TGBX4C201GF7LY1O/84a0c716a63ff778d1e6313eae07cae82c78d09e14bbb7db786df5ec2b260a7e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TGBX4C201GF7LY1O/885396__FORM%201_CWH.pdf
+2026-04-24 04:50:09 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PAN-UNITED CORPORATION LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/TGBX4C201GF7LY1O/84a0c716a63ff778d1e6313eae07cae82c78d09e14bbb7db786df5ec2b260a7e
+2026-04-24 04:50:09 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/YO3VHVYZELBUOOT4/392419574673bd68269c3ca852a71db98c9da144d1e0848b23749b4760f2b37d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/YO3VHVYZELBUOOT4/885388__FORM%201_FYK.pdf
+2026-04-24 04:50:10 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PAN-UNITED CORPORATION LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/YO3VHVYZELBUOOT4/392419574673bd68269c3ca852a71db98c9da144d1e0848b23749b4760f2b37d
+2026-04-24 04:50:11 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GDKBI63X7T7QGGIA/b3dff94d10268bea36284f0b64b79ddf2371df5f242ae947005994942dcb55e5 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GDKBI63X7T7QGGIA/885384__FORM%201_SEB.pdf
+2026-04-24 04:50:11 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: PAN-UNITED CORPORATION LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/GDKBI63X7T7QGGIA/b3dff94d10268bea36284f0b64b79ddf2371df5f242ae947005994942dcb55e5
+2026-04-24 04:50:11 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/38CQNQ71JIFYEY4P/455f21da75bb4bd95cefe516509302fb0d45a3fe998f681b7c2c05a318f6a79c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/38CQNQ71JIFYEY4P/885377__eFORM3V2.pdf
+2026-04-24 04:50:14 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-24 04:50:14 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-24 04:50:14 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-24 04:50:14 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [build_transaction_type] circumstance_interest_raw is None
+2026-04-24 04:50:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/38CQNQ71JIFYEY4P/885377__eFORM3V2.pdf: All transactions have no direct interest change and total shares change
+2026-04-24 04:50:14 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: VALUETRONICS HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/38CQNQ71JIFYEY4P/455f21da75bb4bd95cefe516509302fb0d45a3fe998f681b7c2c05a318f6a79c
+2026-04-24 04:50:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/18DJBJUQBY0DN7IV/906e5dd7908b29d38f29c6f0ba650348ab3f6135ce759bb22c164f120b48bec3 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/18DJBJUQBY0DN7IV/885351__eFORM1V2-%20Andy%20Luong.pdf
+2026-04-24 04:50:20 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S17TZ9T5YDC7PI3O/bc6d502db840972a90fce1b530fd16640432bf659da1a8ef3cb0ef10b740c672 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S17TZ9T5YDC7PI3O/885349__eFORM6v2-%20CLARML%20-%2023%20Apr%202026.pdf
+2026-04-24 04:50:24 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VG8B3MM57XKDB21B/f8afdc4a209eee1edb4c079ffdcb63d92a4c7ef114c48a3cb51083b97e9b7620 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VG8B3MM57XKDB21B/885312__eFORM1_TWL%20disposed%20of%20shares_20%20to%2021%20Apr%202026.pdf
+2026-04-24 04:50:28 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4APD8UNROCW72886/9cb1c33b4b4e5c343f3330cc1d0a45798ddc66e141c236aac115818b7956a8f8 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4APD8UNROCW72886/885307__eFORM1_ChengWK_230426_Final.pdf
+2026-04-24 04:50:30 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-24 04:50:30 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/4APD8UNROCW72886/885307__eFORM1_ChengWK_230426_Final.pdf: All transactions have no direct interest change and total shares change
+2026-04-24 04:50:30 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: WING TAI HOLDINGS LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/4APD8UNROCW72886/9cb1c33b4b4e5c343f3330cc1d0a45798ddc66e141c236aac115818b7956a8f8
+2026-04-24 04:50:33 [INFO] __main__ - page_start: 1
+2026-04-24 04:50:33 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-24 04:50:33 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-24 04:50:33 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-04-24 04:50:33 [INFO] __main__ - No more announcements found, stopping pagination.
+2026-04-24 04:50:33 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 5
+2026-04-24 04:50:34 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 3 | Length data not top_70: 2
+2026-04-24 04:50:34 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-04-24 04:50:34 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-04-24 04:50:34 [INFO] __main__ - Processing remove duplicate data
+2026-04-24 04:50:34 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 3
+2026-04-24 04:50:34 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-04-24 04:50:35 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 3 | Not insertable: 0
+2026-04-24 04:50:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-04-24 04:50:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-04-24 04:50:35 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-04-24 04:50:35 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 3 records to DB, table: sgx_filings
