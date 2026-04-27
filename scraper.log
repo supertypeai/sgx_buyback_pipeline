@@ -13838,3 +13838,21 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-04-27 05:17:28 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
 2026-04-27 05:17:28 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
 2026-04-27 05:17:28 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-04-27 05:19:02 [INFO] __main__ - Start scraping from start date: 20260425 to 20260427
+2026-04-27 05:19:02 [INFO] __main__ - page_start: 0
+2026-04-27 05:19:02 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-04-27 05:19:02 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-27 05:19:02 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 2 announcements
+2026-04-27 05:19:08 [INFO] __main__ - page_start: 1
+2026-04-27 05:19:08 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Buybacks...
+2026-04-27 05:19:08 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-27 05:19:08 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-04-27 05:19:08 [INFO] __main__ - No more announcements found, stopping pagination.
+2026-04-27 05:19:08 [INFO] __main__ - [SGX_BUYBACK] Scraping completed. Total records: 2
+2026-04-27 05:19:09 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 2
+2026-04-27 05:19:09 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_buyback/sgx_buybacks_not_top_70.csv
+2026-04-27 05:19:09 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_today.json
+2026-04-27 05:19:09 [INFO] __main__ - Processing remove duplicate data
+2026-04-27 05:19:09 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
+2026-04-27 05:19:09 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
+2026-04-27 05:19:09 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
