@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/PJVI2XZUGX7JSZRP/30bc9298c813572fe1ed86acb653771311e9ef7ff6c75ad042039fcf9728c43f",
+    "symbol": "AIY",
+    "purchase_date": "2026-04-27",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 8.95,
+      "lowest": 8.91
+    },
+    "total_value": 893423.13,
+    "total_shares_purchased": 100000,
+    "treasury_shares_after_purchase": 427440,
+    "mandate": {
+      "mandate_total": 30468451,
+      "cumulative_purchased": 173100,
+      "mandate_remaining": 30295351,
+      "mandate_start": "2026-04-24",
+      "mandate_end": "2027-04-24"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XSUJH8L2RDB5ZA6L/dd22bf434e6130206b02fab5586f96c5d14fd9bbde76ceb64699dd46cbc152fa",
+    "symbol": "BN4",
+    "purchase_date": "2026-04-27",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 11.2,
+      "lowest": 10.96
+    },
+    "total_value": 4424389.33,
+    "total_shares_purchased": 400000,
+    "treasury_shares_after_purchase": 8623806,
+    "mandate": {
+      "mandate_total": 90646698,
+      "cumulative_purchased": 1000000,
+      "mandate_remaining": 89646698,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
+    }
+  }
+]
