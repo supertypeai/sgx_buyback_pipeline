@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "symbol": "J69U",
+    "price_per_share": 2.2099,
+    "transaction_type": "others",
+    "title": "Change in Frasers Centrepoint Asset Management Ltd's position in Frasers Centrepoint Trust",
+    "body": "Frasers Centrepoint Asset Management Ltd executed a transaction for 1,332,572.0 shares of Frasers Centrepoint Trust. This increases their holdings from 118,094,254.0 to 119,426,826.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "Frasers Centrepoint Trust",
+    "holder_name": "Frasers Centrepoint Asset Management Ltd",
+    "holding_before": 118094254,
+    "holding_after": 119426826,
+    "share_percentage_before": 0.058,
+    "share_percentage_after": 0.0586,
+    "timestamp": "2026-04-28",
+    "amount_transaction": 1332572,
+    "transaction_value": 2944851.84,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3EB1QWWW3NLKM6DX/886524__Form%206%20-%2028%20Apr%202026%20FINAL.pdf",
+    "share_percentage_transaction": 0.0006
+  }
+]
