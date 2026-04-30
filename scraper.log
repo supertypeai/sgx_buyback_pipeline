@@ -14044,3 +14044,57 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-04-29 05:23:08 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-04-29 05:23:08 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 2 records to DB, table: sgx_buybacks
 >>>>>>> Stashed changes
+2026-04-30 05:24:44 [INFO] __main__ - Start scraping from start date: 20260428 to 20260430
+2026-04-30 05:24:44 [INFO] __main__ - page_start: 0
+2026-04-30 05:24:44 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-30 05:24:45 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-30 05:24:45 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 13 announcements
+2026-04-30 05:24:45 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/Y05VD7BKRUN2IM4S/2d2f0454139d121abf6656820ca779f3579cdf60b956489bca7bcbb1c71e8dda pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/Y05VD7BKRUN2IM4S/886970__F6-MRM.2026%200430%20F.pdf
+2026-04-30 05:24:51 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/8R4KPQCU3EVSX8MD/aabfa5b9d5b284d46baa8ba11c96aa6246fe0c5d1a6c8ec8a87feadab28a86b9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/8R4KPQCU3EVSX8MD/886968__F6-MBTM.2026%200430%20F.pdf
+2026-04-30 05:24:54 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/WTRUTU0J201PHHXM/e7ee43c890d899db89e9dd77e696ae9aefea8ad5f01dc8ad2178532fa7d7efae pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/WTRUTU0J201PHHXM/886930__eFORM3V2%20-%20DC%20-%2029%20April%202026%20-%20final.pdf
+2026-04-30 05:24:56 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:24:56 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [get_transaction_type_from_desc] No keywords matched for description: 'Scrip Dividend'
+2026-04-30 05:24:58 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/AQYHGN7NYHXRPTZG/e935c6dfa752e4e01c3411fb7b1c104c80b87cf089edb37828468c475c48e7a4 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/AQYHGN7NYHXRPTZG/886928__eFORM1V2%20-%20LSM%20-%2029%20April%202026%20-%20final.pdf
+2026-04-30 05:25:00 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:25:01 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/ZQO7X4SXK863VF5S/949a7a3d4d1fcf99e6ef343bc1ff6070a078c603534549fee4f8777018f5a764 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/ZQO7X4SXK863VF5S/886925__eFORM1V2%20-%20CHS%20-%2029%20April%202026%20-%20final.pdf
+2026-04-30 05:25:03 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:25:05 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/XG8J5IJBUOJ1APCC/11ae454559f82e027730e8ceec26c27485a2ccce2b99d18d1156ad26623c42f9 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/XG8J5IJBUOJ1APCC/886921__eFORM1V2%20-%20CCK%20-%2029%20April%202026%20-%20final.pdf
+2026-04-30 05:25:07 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:25:10 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/DQEJRO46BGI9LEFG/ffebe0e5f80e759653a0824d54221e8867343aed82a9290fc0990dc02842c5df pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/DQEJRO46BGI9LEFG/886776__eFORM3V2_MONEYFARM_FINAL.pdf
+2026-04-30 05:25:12 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:25:12 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/DQEJRO46BGI9LEFG/886776__eFORM3V2_MONEYFARM_FINAL.pdf: All transactions have no direct interest change and total shares change
+2026-04-30 05:25:12 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MONEYMAX FINANCIAL SERVICES LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/DQEJRO46BGI9LEFG/ffebe0e5f80e759653a0824d54221e8867343aed82a9290fc0990dc02842c5df
+2026-04-30 05:25:12 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/7P51XCWUXQPARX08/ae81da40a8c96312076d4a9e42bcde414b874b33ca278664fdc128eee4a2b8dc pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/7P51XCWUXQPARX08/886771__eFORM3V2_LIM%20LIANG%20ENG_FINAL.pdf
+2026-04-30 05:25:14 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:25:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/7P51XCWUXQPARX08/886771__eFORM3V2_LIM%20LIANG%20ENG_FINAL.pdf: All transactions have no direct interest change and total shares change
+2026-04-30 05:25:14 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MONEYMAX FINANCIAL SERVICES LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/7P51XCWUXQPARX08/ae81da40a8c96312076d4a9e42bcde414b874b33ca278664fdc128eee4a2b8dc
+2026-04-30 05:25:14 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/S6JD5S0P8PGCVZ5V/57ead6a1fa8e67eb9056ea06efa9dea9864a50a42e265175ca3dc8c969d57ada pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/S6JD5S0P8PGCVZ5V/886765__eFORM3V2_LIM%20YONG%20SHENG_FINAL.pdf
+2026-04-30 05:25:16 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:25:16 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/S6JD5S0P8PGCVZ5V/886765__eFORM3V2_LIM%20YONG%20SHENG_FINAL.pdf: All transactions have no direct interest change and total shares change
+2026-04-30 05:25:16 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MONEYMAX FINANCIAL SERVICES LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/S6JD5S0P8PGCVZ5V/57ead6a1fa8e67eb9056ea06efa9dea9864a50a42e265175ca3dc8c969d57ada
+2026-04-30 05:25:17 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/TR32T48M8X50L1C5/a5eb85d995c3d7b7e00472133acd0da40f9b7178d82ce3c3373563d936c3404d pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/TR32T48M8X50L1C5/886757__eFORM3V2_LIM%20YONG%20GUAN_FINAL.pdf
+2026-04-30 05:25:18 [WARNING] sgx_scraper.fetch_sgx_filings.utils.payload_helper - [safe_round] Cannot round None Raw value returned None
+2026-04-30 05:25:18 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/TR32T48M8X50L1C5/886757__eFORM3V2_LIM%20YONG%20GUAN_FINAL.pdf: All transactions have no direct interest change and total shares change
+2026-04-30 05:25:18 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MONEYMAX FINANCIAL SERVICES LTD. detail url: https://links.sgx.com/1.0.0/corporate-announcements/TR32T48M8X50L1C5/a5eb85d995c3d7b7e00472133acd0da40f9b7178d82ce3c3373563d936c3404d
+2026-04-30 05:25:19 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/VA4E8WM977BML4VS/c783626914d46a32dc7b30c42003c3fde46f86ada877008f364d4f5c5d570609 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/VA4E8WM977BML4VS/886604__eFORM1V2%20-LiuTao.pdf
+2026-04-30 05:25:21 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - [sgx_filings] Skipping https://links.sgx.com/1.0.0/corporate-announcements/VA4E8WM977BML4VS/886604__eFORM1V2%20-LiuTao.pdf: All transactions have no direct interest change and total shares change
+2026-04-30 05:25:21 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: BROMAT HOLDINGS LTD detail url: https://links.sgx.com/1.0.0/corporate-announcements/VA4E8WM977BML4VS/c783626914d46a32dc7b30c42003c3fde46f86ada877008f364d4f5c5d570609
+2026-04-30 05:25:21 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/HTSXNMSYQQNUTUUN/41e57a714f8288a91e317df956c4d2d72c4b07ab90d2ffe0a498e69d0dfeb19c pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/HTSXNMSYQQNUTUUN/886601__FORM%201%20V2%20OBH.pdf
+2026-04-30 05:25:26 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/4J870YB4VM33IJJK/9bb939caf648e9bfc972c67382f4eca927a90ed154d14d61c364d3fdaa581385 pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/4J870YB4VM33IJJK/886599__eFORM1V2_STEVE.pdf
+2026-04-30 05:25:33 [INFO] __main__ - page_start: 1
+2026-04-30 05:25:33 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-04-30 05:25:34 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-04-30 05:25:34 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-04-30 05:25:34 [INFO] __main__ - No more announcements found, stopping pagination.
+2026-04-30 05:25:34 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 9
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 0 | Length data not top_70: 9
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - Saved payload to data/scraper_output/sgx_filing/sgx_filings_not_top_70.csv
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-04-30 05:25:35 [INFO] __main__ - Processing remove duplicate data
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 0
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-04-30 05:25:35 [INFO] sgx_scraper.alerting.filter_data_alert - No SGX filings data to filter.
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-04-30 05:25:35 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-04-30 05:25:35 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
