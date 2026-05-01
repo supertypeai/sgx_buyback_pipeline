@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "symbol": "K71U",
+    "price_per_share": 0.9043,
+    "transaction_type": "others",
+    "title": "Change in Keppel Reit Management Limited's position in Keppel REIT",
+    "body": "Keppel Reit Management Limited executed a transaction for 12,256,676.0 shares of Keppel REIT. This increases their holdings from 281,842,013.0 to 294,098,689.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "Keppel REIT",
+    "holder_name": "Keppel REIT Management Limited",
+    "holding_before": 281842013,
+    "holding_after": 294098689,
+    "share_percentage_before": 0.05688,
+    "share_percentage_after": 0.05921,
+    "timestamp": "2026-04-30",
+    "amount_transaction": 12256676,
+    "transaction_value": 11083712.1068,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4YSNWROH138IHSNX/887164__MAS%20Form%206_Notification%20Form_300426_final.pdf",
+    "share_percentage_transaction": 0.00233
+  }
+]
