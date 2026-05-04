@@ -14247,3 +14247,27 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2026-05-03 05:26:08 [INFO] sgx_scraper.utils.cli_helper - Skip removing duplicate, sgx yesterday data is empty, returning sgx today
 2026-05-03 05:26:08 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_buyback/sgx_buybacks_yesterday.json
 2026-05-03 05:26:08 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] is empty, skipping push to DB
+2026-05-04 05:28:04 [INFO] __main__ - Start scraping from start date: 20260502 to 20260504
+2026-05-04 05:28:04 [INFO] __main__ - page_start: 0
+2026-05-04 05:28:04 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-05-04 05:28:04 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-05-04 05:28:04 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetched 2 announcements
+2026-05-04 05:28:05 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/GZH9NN51AZ3C4YHJ/4fb4a34d0ab72a25c6c198b8574e768196fe8ad327649214d62515ee7075394e pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/GZH9NN51AZ3C4YHJ/887411__20260503_OSC_eFORM1V2_Final.pdf
+2026-05-04 05:28:06 [INFO] __main__ - [SGX FILINGS] Data not valid found for issuer name: MDR LIMITED detail url: https://links.sgx.com/1.0.0/corporate-announcements/GZH9NN51AZ3C4YHJ/4fb4a34d0ab72a25c6c198b8574e768196fe8ad327649214d62515ee7075394e
+2026-05-04 05:28:06 [INFO] sgx_scraper.fetch_sgx_filings.parser_sgx_filings - Extracting detail filing for url: https://links.sgx.com/1.0.0/corporate-announcements/QPQGMHMRFNE90OTX/843b6743cfd3c782200c6ec12909cb5bfdfacbf6015d60a58f35829dd7377daf pdf_url: https://links.sgx.com/1.0.0/corporate-announcements/QPQGMHMRFNE90OTX/887399__eFORM3V2.pdf
+2026-05-04 05:28:12 [INFO] __main__ - page_start: 1
+2026-05-04 05:28:12 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Fetching data from API Filings...
+2026-05-04 05:28:12 [INFO] sgx_scraper.sgx_api.scraper_sgx_api - Response status: 200
+2026-05-04 05:28:12 [WARNING] sgx_scraper.sgx_api.scraper_sgx_api - WARNING: API returned None
+2026-05-04 05:28:12 [INFO] __main__ - No more announcements found, stopping pagination.
+2026-05-04 05:28:12 [INFO] __main__ - [SGX FILINGS] Scraping completed. Total records: 1
+2026-05-04 05:28:13 [INFO] sgx_scraper.utils.cli_helper - Length data top_70: 1 | Length data not top_70: 0
+2026-05-04 05:28:13 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_today.json
+2026-05-04 05:28:13 [INFO] __main__ - Processing remove duplicate data
+2026-05-04 05:28:13 [INFO] sgx_scraper.utils.cli_helper - Length data after duplicate removing: 1
+2026-05-04 05:28:13 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_yesterday.json
+2026-05-04 05:28:13 [INFO] sgx_scraper.alerting.filter_data_alert - Filtering completed. Insertable: 1 | Not insertable: 0
+2026-05-04 05:28:13 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_not_insertable.json
+2026-05-04 05:28:13 [INFO] sgx_scraper.utils.cli_helper - Saved all sgx scraped to data/scraper_output/sgx_filing/sgx_filings_insertable.json
+2026-05-04 05:28:13 [INFO] sgx_scraper.alerting.mailer - No SGX filings alerts to send.
+2026-05-04 05:28:13 [INFO] sgx_scraper.utils.cli_helper - [sgx_payload] Successfully pushed 1 records to DB, table: sgx_filings
