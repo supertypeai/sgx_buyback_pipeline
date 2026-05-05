@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "symbol": "AIY",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Tham Soh Mui was awarded shares of iFAST Corp Ltd",
+    "body": "Tham Soh Mui was awarded 3,000.0 shares of iFAST Corp Ltd. This increases their holdings from 1,600.0 to 4,600.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "iFAST Corp Ltd",
+    "holder_name": "Tham Soh Mui",
+    "holding_before": 1600,
+    "holding_after": 4600,
+    "share_percentage_before": 0.0,
+    "share_percentage_after": 2e-05,
+    "timestamp": "2026-05-04",
+    "amount_transaction": 3000,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DRVE5GXE36MSZCCA/887518__FORM1-Tammie_04052026.pdf",
+    "share_percentage_transaction": 2e-05,
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: transaction_value=None, amount_transaction=3000, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ]
+  },
+  {
+    "symbol": "AIY",
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Lim Wee Kian was awarded shares of iFAST Corp Ltd",
+    "body": "Lim Wee Kian was awarded 3,000.0 shares of iFAST Corp Ltd. This increases their holdings from 19,461,300.0 to 19,464,300.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "iFAST Corp Ltd",
+    "holder_name": "Lim Wee Kian",
+    "holding_before": 19461300,
+    "holding_after": 19464300,
+    "share_percentage_before": 0.06391,
+    "share_percentage_after": 0.06391,
+    "timestamp": "2026-05-04",
+    "amount_transaction": 3000,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LOTA2TN2RAWJH8PG/887514__FORM1%20-%20LWK_04052026.pdf",
+    "share_percentage_transaction": 0.0,
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: transaction_value=None, amount_transaction=3000, price_per_share=None",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ]
+  }
+]
