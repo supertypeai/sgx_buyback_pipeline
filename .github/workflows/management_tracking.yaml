@@ -37,6 +37,15 @@ jobs:
         run: |
           uv run python -m sgx_scraper.main_cli track_management
 
+      - name: Upload scraper artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: track-management-artifacts
+          path: |
+            scraper.log
+          if-no-files-found: warn
+          retention-days: 100
+
       - name: Pull Latest Changes (safe)
         run: |
           git fetch origin main

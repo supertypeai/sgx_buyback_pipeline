@@ -35,6 +35,16 @@ jobs:
         run: |
           uv run python -m sgx_scraper.main_cli scraper_buybacks 
 
+      - name: Upload scraper artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgx-buyback-artifacts
+          path: |
+            data/scraper_output/sgx_buyback/
+            scraper.log
+          if-no-files-found: warn
+          retention-days: 100
+
       - name: Pull Latest Changes (safe)
         run: |
           git fetch origin main
