@@ -2,10 +2,11 @@ from dataclasses import asdict
 from datetime import datetime, timedelta
 
 from sgx_scraper.utils.cli_helper import (
-    normalize_datetime, push_to_db, 
+    normalize_datetime, push_to_db, upsert_to_db,
     clean_payload_sgx_buyback, clean_payload_sgx_filings, 
     write_to_json, remove_duplicate, 
-    filter_top_70_companies, write_to_csv, standardize_name
+    filter_top_70_companies, write_to_csv, 
+    standardize_name, get_100_top_companies
 )
 from sgx_scraper.utils.constant import (
     SGX_BUYBACKS_PATH_YESTERDAY, SGX_BUYBACKS_PATH_TODAY, SGX_BUYBACKS_PATH_NOT_TOP_70,
@@ -17,6 +18,7 @@ from sgx_scraper.fetch_sgx_buyback.parser_sgx_buyback import get_sgx_buybacks
 from sgx_scraper.fetch_sgx_filings.parser_sgx_filings import get_sgx_filings
 from sgx_scraper.alerting.filter_data_alert import get_data_alert 
 from sgx_scraper.alerting.mailer import send_sgx_filings_alert
+from sgx_scraper.track_management.tracking import get_management_update
 
 import typer 
 import os 
@@ -273,6 +275,92 @@ def run_sgx_filings_scraper(
 
     if is_push_db:
         push_to_db(sgx_filings_insertable, 'sgx_filings') 
+
+
+@app.command(name='track_management')
+def run_tracking_management(
+    period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
+    period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
+    page_size: int = typer.Option(20, help="Number of records per page"),
+    is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
+    is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
+):
+    logger = logging.getLogger(__name__)
+
+    api_url = "https://api.sgx.com/announcements/v1.1/"
+    headers = get_auth(proxy=None)
+
+    page_start = 0
+    payload_management = []
+
+    today = datetime.now()
+    yesterday = today - timedelta(days=2)
+
+    start_date_source = period_start if period_start is not None else yesterday
+    end_date_source = period_end if period_end is not None else today
+
+    normalized_start = normalize_datetime(start_date_source)
+    normalized_end = normalize_datetime(end_date_source)
+
+    logger.info(f"Start scraping from start date: {normalized_start} to {normalized_end}")
+
+    top_100_companies = get_100_top_companies()
+
+    while True:
+        logger.info(f'page_start: {page_start}')
+       
+        try:
+            url = (
+                f"{api_url}?periodstart={normalized_start}_160000"
+                f"&periodend={normalized_end}_155959"
+                f"&cat=ANNC&sub=ANNC03%2CANNC04"
+                f"&pagestart={page_start}"
+                f"&pagesize={page_size}"
+            )
+            
+            logger.info(f'url constructed: {url}')
+
+            announcements = run_scrape_api(
+                api_url=url, 
+                flag_log='Management', 
+                headers=headers, 
+                is_proxy=is_proxy
+            ) 
+
+            if not announcements:
+                logger.info("No more announcements found, stopping pagination.")
+                break
+
+        except Exception as error:
+            logger.error(f'[Management] Fatal API error on page {page_start}: {error}', exc_info=True)
+            raise
+        
+        for announcement in announcements:
+            try:
+                updated_management_record = get_management_update(
+                    api_response=announcement,
+                    top_100_companies=top_100_companies
+                ) 
+
+                time.sleep(random.uniform(1, 3))
+
+                if not updated_management_record:
+                    continue 
+
+                payload_management.extend(updated_management_record)
+
+            except Exception as error: 
+                logger.error(f'[Management] Error processing announcement: {error}', exc_info=True)
+                continue
+
+        page_start += 1
+        time.sleep(random.uniform(1, 8))
+    
+    logger.info(f'total length of payload management: {len(payload_management)}')
+    logger.info(f'payload management to upsert: {payload_management}')
+
+    if is_push_db: 
+        upsert_to_db(sgx_payload=payload_management, table_name='sgx_companies')
 
 
 if __name__ == '__main__':

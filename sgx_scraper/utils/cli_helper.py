@@ -54,10 +54,37 @@ def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
         
         return is_succes
     
-    except Exception as _:
-        LOGGER.error(f"[push_to_db] Failed to push data")
+    except Exception as error:
+        LOGGER.error(f"[push_to_db] Failed to push data to {table_name}: {error}")
         return None
 
+
+def upsert_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
+    if not sgx_payload:
+        LOGGER.info(f'[sgx_payload] is empty, skipping push to DB')
+        return 
+    
+    try:
+        is_succes = False 
+
+        response = (
+            SUPABASE_CLIENT
+            .table(table_name)
+            .upsert(sgx_payload)
+            .execute()
+        )
+
+        if response.data:
+            LOGGER.info(f"[sgx_payload] Successfully upsert {len(sgx_payload)} records to DB, table: {table_name}")
+            is_succes = True 
+            return is_succes 
+        
+        return is_succes
+    
+    except Exception as error:
+        LOGGER.error(f'[upsert_to_db] failed to upsert to {table_name}: {error}')
+        return False
+    
 
 def clean_payload_sgx_buyback(payload: list[dict[str, any]]) -> list[dict[str, any]]:
     if not payload:
@@ -222,6 +249,19 @@ def filter_top_70_companies(clean_payload: list[dict[str]]) -> tuple:
     except Exception as error:
         LOGGER.error(f'[filter_top_50_companies] Error: {error}')
         return [], [] 
+
+
+def get_100_top_companies():
+    response = (
+        SUPABASE_CLIENT
+        .table('sgx_companies')
+        .select('symbol, name, market_cap')
+        .order('market_cap', desc=True)
+        .limit(100)
+        .execute()
+    )
+
+    return response.data 
 
 
 def write_to_csv(path: str, payload_not_top_70: list[dict[str]]):
