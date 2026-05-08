@@ -1,21 +1,21 @@
 [
   {
-    "symbol": "BUOU",
-    "price_per_share": 0.9818,
-    "transaction_type": "others",
-    "title": "Change in Frasers Logistics & Commercial Asset Management Pte. Ltd's position in Frasers Logistics & Commercial Trust",
-    "body": "Frasers Logistics & Commercial Asset Management Pte. Ltd executed a transaction for 5,247,119.0 shares of Frasers Logistics & Commercial Trust. This increases their holdings from 18,248,132.0 to 23,495,251.0 shares.",
+    "symbol": "C07",
+    "price_per_share": 32.3311,
+    "transaction_type": "buy",
+    "title": "Jardine Strategic Singapore Pte Ltd buys shares of Jardine Cycle & Carriage Ltd",
+    "body": "Jardine Strategic Singapore Pte Ltd bought 106,000.0 shares of Jardine Cycle & Carriage Ltd. This increases their holdings from 339,899,837.0 to 340,005,837.0 shares.",
     "holder_type": "institution",
-    "issuer_name": "Frasers Logistics & Commercial Trust",
-    "holder_name": "Frasers Logistics & Commercial Asset Management Pte. Ltd",
-    "holding_before": 18248132,
-    "holding_after": 23495251,
-    "share_percentage_before": 0.00481,
-    "share_percentage_after": 0.00618,
-    "timestamp": "2026-05-06",
-    "amount_transaction": 5247119,
-    "transaction_value": 5151623.0,
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LJHUTUL8LP6J0KT4/887849__Form%206%20-%20FLCAM.pdf",
-    "share_percentage_transaction": 0.00137
+    "issuer_name": "Jardine Cycle & Carriage Ltd",
+    "holder_name": "Jardine Strategic Singapore Pte Ltd",
+    "holding_before": 339899837,
+    "holding_after": 340005837,
+    "share_percentage_before": 0.85999,
+    "share_percentage_after": 0.86026,
+    "timestamp": "2026-05-05",
+    "amount_transaction": 106000,
+    "transaction_value": 3427096.6,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/L5DD5I6GMD9LTOKK/887900__eFORM3V2.pdf",
+    "share_percentage_transaction": 0.00027
   }
 ]
