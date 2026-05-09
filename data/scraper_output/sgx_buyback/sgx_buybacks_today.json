@@ -1,40 +1,40 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/Y2LE09GL097TNA85/c1b2886179e74d84e80900a91d136207f96e4bc7c91d04b3b65ab0f415f53cf1",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/G5VLY5UMIG97RS2I/db0d4b448f2408c55cfd3457aad19af5b66ce8d085142b4b435e8e71d9332543",
     "symbol": "U11",
-    "purchase_date": "2026-05-07",
+    "purchase_date": "2026-05-08",
     "type": "On Market",
     "price_per_share": {
-      "highest": 36.85,
-      "lowest": 36.45
+      "highest": 36.65,
+      "lowest": 36.1
     },
-    "total_value": 2787957.88,
+    "total_value": 2773989.09,
     "total_shares_purchased": 76000,
-    "treasury_shares_after_purchase": 11899000,
+    "treasury_shares_after_purchase": 11937000,
     "mandate": {
       "mandate_total": 82676174,
-      "cumulative_purchased": 76000,
-      "mandate_remaining": 82600174,
+      "cumulative_purchased": 152000,
+      "mandate_remaining": 82524174,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ZVHD4JAT4B981TOU/fa1dce11ce9e9c06166fc7962795c76cad437e7d4db242e2f9bd1f5b79ba84d6",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/EE3P7NL081XN82DE/b5606b22e0c2d0c64ef2f4da0833b1d9e9fedd34ee7279863e3197316a4bd8ba",
     "symbol": "BN4",
-    "purchase_date": "2026-05-07",
+    "purchase_date": "2026-05-08",
     "type": "On Market",
     "price_per_share": {
-      "highest": 11.17,
-      "lowest": 11.04
+      "highest": 10.98,
+      "lowest": 10.87
     },
-    "total_value": 2220647.86,
-    "total_shares_purchased": 200000,
-    "treasury_shares_after_purchase": 10223806,
+    "total_value": 5465816.25,
+    "total_shares_purchased": 500000,
+    "treasury_shares_after_purchase": 10723806,
     "mandate": {
       "mandate_total": 90646698,
-      "cumulative_purchased": 2600000,
-      "mandate_remaining": 88046698,
+      "cumulative_purchased": 3100000,
+      "mandate_remaining": 87546698,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
