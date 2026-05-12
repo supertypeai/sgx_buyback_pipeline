@@ -24,6 +24,12 @@ def get_management_update(api_response: dict, top_100_companies: list[dict]):
     
     announcement = handler(api_response=api_response)
 
+    if announcement is None:
+        LOGGER.warning(
+            f'[management] handler returned None for category: {category} url: {api_response.get('url')}'
+        )
+        return None
+
     db_symbols = {record.get('symbol'): record for record in top_100_companies}
 
     symbol = announcement.get('symbol')

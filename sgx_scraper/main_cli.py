@@ -2,16 +2,27 @@ from dataclasses import asdict
 from datetime import datetime, timedelta
 
 from sgx_scraper.utils.cli_helper import (
-    normalize_datetime, push_to_db, upsert_to_db,
-    clean_payload_sgx_buyback, clean_payload_sgx_filings, 
-    write_to_json, remove_duplicate, 
-    filter_top_70_companies, write_to_csv, 
-    standardize_name, get_100_top_companies
+    normalize_datetime, 
+    push_to_db, 
+    upsert_to_db,
+    clean_payload_sgx_buyback, 
+    clean_payload_sgx_filings, 
+    write_to_json, 
+    remove_duplicate, 
+    filter_top_70_companies, 
+    write_to_csv, 
+    standardize_name, 
+    get_100_top_companies
 )
 from sgx_scraper.utils.constant import (
-    SGX_BUYBACKS_PATH_YESTERDAY, SGX_BUYBACKS_PATH_TODAY, SGX_BUYBACKS_PATH_NOT_TOP_70,
-    SGX_FILINGS_PATH_INSERTABLE, SGX_FILINGS_PATH_NOT_INSERTABLE, 
-    SGX_FILINGS_PATH_TODAY, SGX_FILINGS_PATH_YESTERDAY, SGX_FILINGS_PATH_NOT_TOP_70
+    SGX_BUYBACKS_PATH_YESTERDAY, 
+    SGX_BUYBACKS_PATH_TODAY, 
+    SGX_BUYBACKS_PATH_NOT_TOP_70,
+    SGX_FILINGS_PATH_INSERTABLE, 
+    SGX_FILINGS_PATH_NOT_INSERTABLE, 
+    SGX_FILINGS_PATH_TODAY, 
+    SGX_FILINGS_PATH_YESTERDAY, 
+    SGX_FILINGS_PATH_NOT_TOP_70
 )
 from sgx_scraper.sgx_api.scraper_sgx_api import get_auth, run_scrape_api
 from sgx_scraper.fetch_sgx_buyback.parser_sgx_buyback import get_sgx_buybacks
