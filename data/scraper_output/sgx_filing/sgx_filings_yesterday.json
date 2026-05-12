@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/C58FQNDL958KFR6R/888308__KREIT%20Form%203_KRI%20KRESG%20KML%20KL_8May2026_final.pdf",
+    "symbol": "K71U",
+    "transaction_date": "2026-05-08",
+    "shareholder_name": "Keppel REIT Investment Pte. Ltd",
+    "number_of_stock": 201339855,
+    "value": 177179072.4,
+    "price_per_share": 0.88,
+    "transaction_type": null,
+    "shares_before": 1382235181,
+    "shares_before_percentage": 0.27826,
+    "shares_after": 1180895326,
+    "shares_after_percentage": 0.23773,
+    "title": "Keppel Reit Investment Pte. Ltd None transaction of Keppel REIT",
+    "body": "Keppel Reit Investment Pte. Ltd executed a transaction for 201,339,855.0 shares of Keppel REIT. This decreases their holdings from 1,382,235,181.0 to 1,180,895,326.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "Keppel REIT"
+  }
+]
