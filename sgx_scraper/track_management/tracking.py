@@ -2,6 +2,7 @@ from rapidfuzz import process, fuzz
 
 from sgx_scraper.track_management.appointment import get_appointment 
 from sgx_scraper.track_management.cessation import get_cessation
+from .utils.helper import enrich
 
 import logging 
 
@@ -65,12 +66,14 @@ def get_management_update(api_response: dict, top_100_companies: list[dict]):
         if not matched:
             LOGGER.warning(f'[cessation] no match found for {announcement.get("name")} in {symbol} management')
 
-    updated_record = {
+    updated_record = [{
         'symbol': symbol, 
         'management': db_management
-    }
+    }]
     
-    return [updated_record]
+    final_updated = enrich(updated_record)
+
+    return final_updated
 
 
 if __name__ == '__main__':

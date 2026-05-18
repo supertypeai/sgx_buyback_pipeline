@@ -3,7 +3,7 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 
-from sgx_scraper.track_management.utils.parser import (
+from sgx_scraper.track_management.utils.helper import (
     extract_field,
     extract_symbol,
     parse_appointment_date,

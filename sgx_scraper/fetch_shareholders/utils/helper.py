@@ -1,6 +1,7 @@
 from rapidfuzz import fuzz
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
+from sgx_scraper.refresh_sgx_companies import get_sgx_companies
 
 import logging 
 import re 
@@ -82,3 +83,21 @@ def clean_company_name(company_name: str) -> str:
     company_name = remove_pte_parentheses(company_name)
 
     return company_name
+
+
+def enrich(payload: list[dict]) -> list[dict]:
+    companies = get_sgx_companies()
+    
+    companies_lookup = {
+        record.get('symbol'): record.get('investing_symbol') 
+        for record in companies 
+    }
+
+    for record in payload: 
+        symbol = record.get('symbol')
+
+        investing_symbol = companies_lookup.get(symbol)
+        
+        record['investing_symbol'] = investing_symbol 
+
+    return payload

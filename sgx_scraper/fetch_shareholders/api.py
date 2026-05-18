@@ -2,8 +2,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from collections import defaultdict
 
-from sgx_scraper.utils.cli_helper import write_to_json, open_json
-from .utils.helper import find_matched_db_shareholder, clean_company_name
+from .utils.helper import find_matched_db_shareholder, clean_company_name, enrich
 
 import requests 
 import logging
@@ -174,6 +173,8 @@ def sync_with_db(
             'shareholders': merged_shareholders
         })
 
-    LOGGER.info('Check payload synced: %s', json.dumps(result, indent=2))
-    return result
+    final_result = enrich(result)
+
+    LOGGER.info('Check payload synced: %s', json.dumps(final_result, indent=2))
+    return final_result 
 

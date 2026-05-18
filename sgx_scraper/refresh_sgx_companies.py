@@ -10,7 +10,7 @@ def get_sgx_companies():
         response = (
             SUPABASE_CLIENT
             .table('sgx_companies')
-            .select('name, symbol', 'sector', 'sub_sector')
+            .select('name, symbol', 'sector', 'sub_sector', 'investing_symbol')
             .execute()
         )
         return response.data

@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 
 from sgx_scraper.utils.cli_helper import open_json
 from sgx_scraper.utils.symbol_matching_helper import symbol_from_company_name
+from sgx_scraper.refresh_sgx_companies import get_sgx_companies
 
 import re 
 
@@ -46,3 +47,21 @@ def extract_symbol(issuers: list) -> str | None:
             return symbol_from_company_name(issuer_name)
 
     return None
+
+
+def enrich(payload: list[dict]) -> list[dict]:
+    companies = get_sgx_companies()
+    
+    companies_lookup = {
+        record.get('symbol'): record.get('investing_symbol') 
+        for record in companies 
+    }
+
+    for record in payload: 
+        symbol = record.get('symbol')
+
+        investing_symbol = companies_lookup.get(symbol)
+        
+        record['investing_symbol'] = investing_symbol 
+
+    return payload

@@ -1,6 +1,6 @@
 from sgx_scraper.utils.cli_helper import open_json
 from sgx_scraper.utils.constant import SGX_FILINGS_PATH_TOP_100 
-from .utils.helper import find_matched_db_shareholder 
+from .utils.helper import find_matched_db_shareholder, enrich
 
 import logging 
 import json 
@@ -82,6 +82,9 @@ def get_shareholders_update(filing_payload: list[dict], shareholders_db: list[di
         for symbol, shareholders in result_by_symbol.items()
     ]
 
-    LOGGER.info('Check payload updated: %s', json.dumps(payload_update, indent=2))
-    return payload_update
+    final_payload = enrich(payload_update)
+
+    LOGGER.info('Check payload updated: %s', json.dumps(final_payload, indent=2))
+    return final_payload
+
 
