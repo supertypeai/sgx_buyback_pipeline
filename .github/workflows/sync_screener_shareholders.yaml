@@ -1,20 +1,22 @@
-name: Scrape SGX BuyBack
+name: Sync SGX Screener Shareholders
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # 09:00 AM WIB (UTC+7)
+    - cron: '0 3 1 * *'  # Runs at 10:00 AM WIB (UTC+7), 1st of every month
+
 concurrency:
-  group: sgx-scraper-main
+  group: sgx-sync-screener-shareholders
   cancel-in-progress: false
 
 jobs:
-  scrape:
+  sync:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-    
+
       - name: Install uv (Python package manager)
         uses: astral-sh/setup-uv@v2
 
@@ -25,30 +27,29 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-            uv sync 
+          uv sync
 
-      - name: Run scraper 
+      - name: Run screener sync
         env:
           PROXY: ${{ secrets.PROXY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
-          uv run python -m sgx_scraper.main_cli scraper_buybacks 
+          uv run python -m sgx_scraper.main_cli sync_screener_shareholders
 
-      - name: Upload scraper artifacts
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: sgx-buyback-artifacts
+          name: sgx-sync-screener-shareholders-artifacts
           path: |
-            data/scraper_output/sgx_buyback/
             scraper.log
           if-no-files-found: warn
           retention-days: 90
 
-      - name: Pull Latest Changes (safe)
+      - name: Pull latest changes
         run: |
           git fetch origin main
-          git stash push -m "temp-scraper-log" || true
+          git stash push -m "temp-shareholders-log" || true
           git merge origin/main --strategy-option=theirs || true
           git stash pop || true
 
@@ -57,7 +58,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || (git commit -m "sgx_buyback: scraped data and push" --allow-empty)
+          git diff-index --quiet HEAD || (git commit -m "sgx_shareholders: track shareholders payload" --allow-empty)
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

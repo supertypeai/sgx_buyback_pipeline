@@ -44,7 +44,7 @@ jobs:
           path: |
             scraper.log
           if-no-files-found: warn
-          retention-days: 100
+          retention-days: 90
 
       - name: Pull Latest Changes (safe)
         run: |
