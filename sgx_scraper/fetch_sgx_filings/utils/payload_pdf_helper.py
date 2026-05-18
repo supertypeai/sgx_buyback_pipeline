@@ -674,9 +674,10 @@ def get_shareholder_name(name_patterns: list[str], section_text: str) -> str:
 
     for pattern in name_patterns:
         match = re.search(pattern, section_text, re.IGNORECASE)
+
         if match:
             potential_name = match.group(1).strip()
-            
+
             # Remove parenthetical abbreviations like ("FCAML") and trailing
             potential_name = re.sub(r'\s*\([^)]*\)\s*', ' ', potential_name).strip()
             potential_name = re.sub(r'\s+', ' ', potential_name).strip()
@@ -685,21 +686,21 @@ def get_shareholder_name(name_patterns: list[str], section_text: str) -> str:
             if potential_name and potential_name != ':' and not potential_name.startswith('('):
                 name = potential_name
                 break
-    
+
     return name 
 
 
 def extract_shareholder_name(pdf_object: pdfplumber.PDF, page_number: int, bbox: tuple) -> str | None:
     try:
         page = pdf_object.pages[page_number]
-       
+
         cropped_view = page.crop(bbox)
         section_text = cropped_view.extract_text(x_tolerance=2)
         
         if not section_text:
             LOGGER.warning(f"[extract_shareholder_name] Empty section text on page {page_number}")
             return None 
-
+        
         # Search for standard headers within the section 
         name_patterns = [
             r"Name of Substantial Shareholder/Unitholder:\s*([^\n]+)",
@@ -709,11 +710,13 @@ def extract_shareholder_name(pdf_object: pdfplumber.PDF, page_number: int, bbox:
 
         # Search full current page first
         full_page_text = page.extract_text(x_tolerance=2)
+
         if full_page_text:
             name = get_shareholder_name(name_patterns, full_page_text)
+
             if name:
                 return name
-        
+
         # Fallback two previous pages
         if not name:
             for prev_page_idx in range(page_number - 1, page_number - 3, -1):
@@ -727,9 +730,10 @@ def extract_shareholder_name(pdf_object: pdfplumber.PDF, page_number: int, bbox:
                 # print(f'\nprev_text fallback 2 pages: {prev_page_text}\n')
                 if prev_page_text:
                     name = get_shareholder_name(name_patterns, prev_page_text)
+                    
                     if name:
                         break 
-
+            
         # Fallback to the earlier pages 
         if not name: 
             for prev_page_idx in range(page_number - 1, 0, -1):
@@ -744,6 +748,7 @@ def extract_shareholder_name(pdf_object: pdfplumber.PDF, page_number: int, bbox:
                     name = get_shareholder_name(name_patterns, prev_page_text)
                     if name:
                         break 
+
         return name 
     
     except Exception as error:
@@ -778,6 +783,7 @@ def find_shareholder_sections(pdf_object: pdfplumber.PDF) -> list[dict]:
             for match in transaction_anchor_pattern.finditer(page_text):
                 # Find the coordinates of this text match
                 bbox = page.search(match.group(0), case=True)
+
                 if bbox:
                     found_transactions.append({'page_number': index, 'top': bbox[0]['top']})
 
@@ -786,18 +792,22 @@ def find_shareholder_sections(pdf_object: pdfplumber.PDF) -> list[dict]:
     found_transactions.sort(key=lambda x: (x['page_number'], x['top']))
 
     final_anchors = []
-    if len(found_primary) > 1 and "Name of Substantial Shareholder/Unitholder:" in [a['text'] for a in found_primary]:
+
+    if len(found_primary) > 1 and "Name of Substantial Shareholder/Unitholder:" in [item['text'] for item in found_primary]:
         # Case: Multi-shareholder document. Use the primary anchors
         final_anchors = found_primary
+
     elif len(found_transactions) > 1:
         # Case: Multi-transaction document. Use the "Transaction A/B" anchors
         final_anchors = found_transactions
+
     else:
         # Case: Simple single-filer document. Use the single primary anchor found
         final_anchors = found_primary
 
     # Build the sections based on the chosen final anchors 
     shareholder_sections = []
+
     if not final_anchors:
         return []
         
@@ -811,6 +821,7 @@ def find_shareholder_sections(pdf_object: pdfplumber.PDF) -> list[dict]:
             section_bottom = final_anchors[index+1]['top']
         
         section_bbox = (0, section_top, page_width, section_bottom)
+
         shareholder_sections.append({
             'page_number': anchor['page_number'],
             'bbox': section_bbox

@@ -258,7 +258,14 @@ def run_sgx_filings_scraper(
 
     logger.info(f"[SGX FILINGS] Scraping completed. Total records: {len(payload_sgx_filings)}")
 
-    payload_sgx_filings_clean = clean_payload_sgx_filings(payload_sgx_filings)
+    filing_dates = Counter(
+        record.get('time', '')
+        for record in payload_sgx_filings
+    )
+        
+    logger.info(f"Filing dates distribution: {dict(sorted(filing_dates.items()))}")
+
+    payload_clean = clean_payload_sgx_filings(payload_sgx_filings)
 
     payload_top_70, payload_not_top_70 = filter_top_70_companies(payload_sgx_filings_clean)
 

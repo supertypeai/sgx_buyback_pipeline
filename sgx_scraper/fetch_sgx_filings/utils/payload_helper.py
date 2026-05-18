@@ -1,5 +1,6 @@
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from datetime import datetime, timezone, timedelta
 from typing import Optional
 
 from sgx_scraper.fetch_sgx_filings.utils.converter_helper import get_latest_currency, calculate_currency_to_sgd
@@ -211,7 +212,7 @@ def shares_percentage_to_decimal(share_percentage: float) -> float:
 
 
 def build_value(raw_value: str, number_of_stock: float) -> float | None:
-    print(f"[build_value] Input - raw_value: {raw_value}, number_of_stock: {number_of_stock}")
+    # print(f"[build_value] Input - raw_value: {raw_value}, number_of_stock: {number_of_stock}")
     
     if raw_value is None and number_of_stock is None:
         return None
@@ -270,7 +271,7 @@ def build_value(raw_value: str, number_of_stock: float) -> float | None:
             sgd_rate = get_latest_currency('usd')
             usd_value = safe_convert_float(raw_value)
             value = calculate_currency_to_sgd(usd_value, sgd_rate)
-            print(f'value: {value} type: {type(value)}')
+            # print(f'value: {value} type: {type(value)}')
 
             if should_multiply:
                 value = float(number_of_stock) * value
@@ -278,7 +279,7 @@ def build_value(raw_value: str, number_of_stock: float) -> float | None:
             return value
         
         if 'hk'in clean_value:
-            print('Converted to sgd from hkd')
+            # print('Converted to sgd from hkd')
             sgd_rate = get_latest_currency('hkd')
             hk_value = safe_convert_float(raw_value)
             value = calculate_currency_to_sgd(hk_value, sgd_rate)
@@ -290,7 +291,7 @@ def build_value(raw_value: str, number_of_stock: float) -> float | None:
         
         if should_multiply:
             value = safe_convert_float(raw_value)
-            print(f'Number stock multiplied with value: {value}')
+            # print(f'Number stock multiplied with value: {value}')
             value = number_of_stock * value
             value = safe_round(value, 'Multiplied')
             return value 
@@ -386,7 +387,7 @@ def build_transaction_type(
 
         circumstance_interest = circumstance_interest_raw.get('results')
         circumstance_interest = get_circumstance_interest(circumstance_interest)
-        print(f'\ncircumstance_interest processed: {circumstance_interest}')
+        # print(f'\ncircumstance_interest processed: {circumstance_interest}')
 
         transaction_type = None 
         key = circumstance_interest.get('key')
@@ -423,7 +424,7 @@ def build_shareholder_name_transfer(
         circumstance_interest = get_circumstance_interest(circumstance_interest)
         description = circumstance_interest.get('description', None)
 
-        print(f'\ndescription for transfer: {description}, shareholder name: {shareholder_name}') 
+        # print(f'\ndescription for transfer: {description}, shareholder name: {shareholder_name}') 
 
         if not description:
             return shareholder_name 
@@ -496,89 +497,19 @@ def build_shareholder_name_transfer(
             from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor|the)\s+', '', from_person, flags=re.IGNORECASE).strip()
             return f"{from_person} [->] {shareholder_name}"
         
+        # Matches: "transfer of [anything] shares to [recipient] by way of/,"/"
+        shares_to_pattern = r'shares?\s+to\s+([^,\.]+?)(?:\s+by\s+way|,|\.)'
+        match = re.search(shares_to_pattern, description, re.IGNORECASE)
+
+        if match:
+            to_person = match.group(1).strip()
+            return f"{shareholder_name} [->] {to_person}"
+
         return None
 
     except Exception as error:
         LOGGER.error(f"[build_shareholder_name_transfer] Error: {error}")
         return None 
-
-
-def compute_transactions(price_transactions: list[dict[str, any]]) -> dict[str, any]:
-    if not price_transactions:
-        return {}
-    
-    total_buy_shares = 0
-    total_buy_value = 0.0
-    
-    total_sell_shares = 0
-    total_sell_value = 0.0
-
-    total_others_shares = 0
-    total_others_value = 0.0
-    try:
-        has_buy_sell = False 
-
-        for price_transaction in price_transactions: 
-            amount = int(price_transaction.get('amount_transacted') or 0)
-            price = float(price_transaction.get('price') or 0.0)
-            value = amount * price
-            
-            type = str(price_transaction.get('type')).lower()
-
-            if type =='buy': 
-                total_buy_shares += amount
-                total_buy_value += value
-                has_buy_sell = True 
-            elif type == 'sell':
-                total_sell_shares += amount
-                total_sell_value += value
-                has_buy_sell = True 
-            else:
-                total_others_shares += amount
-                total_others_value += value
-
-        if has_buy_sell:
-            # Net transaction value (Buy – Sell)
-            net_value = total_buy_value - total_sell_value
-            
-            # Net transacted share amount (Buy-Sell)
-            net_shares = total_buy_shares - total_sell_shares
-
-            if net_value > 0:
-                type = 'buy'
-            elif net_value < 0:
-                type = 'sell'
-            else:
-                type = 'others'
-
-            if net_shares != 0:
-                # We use abs() because price cannot be negative
-                w_avg_price = abs(net_value / net_shares)
-            else:
-                w_avg_price = 0.0
-
-            return {
-                "price": round(w_avg_price, 3),
-                "transaction_value": abs(int(net_value)),
-                "transaction_type": type
-            }
-        
-        else:
-            # Calculate Price (Total Value / Total Shares)
-            if total_others_shares > 0:
-                w_avg_price = total_others_value / total_others_shares
-            else:
-                w_avg_price = 0.0
-            
-            return {
-                "price": round(w_avg_price, 3),
-                "transaction_value": abs(int(total_others_value)),
-                "transaction_type": "others"
-            }
-
-    except Exception as error:
-        LOGGER.error(f'compute transaction error: {error}')
-        return {}
 
 
 def populate_extra_data(

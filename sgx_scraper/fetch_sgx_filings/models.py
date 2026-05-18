@@ -5,6 +5,7 @@ from dataclasses import dataclass
 class SGXFilings:
     url: str
     symbol: str = ''
+    time: str = ''
 
     transaction_date: str = ''
     shareholder_name: str = ''

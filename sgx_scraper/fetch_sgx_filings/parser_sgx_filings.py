@@ -114,7 +114,9 @@ def extract_html_content(soup: BeautifulSoup) -> dict[str, str]:
     try:
         issuer_section = extract_section_data(soup, 'Issuer & Securities')
         attachments_section = extract_section_data(soup, 'Attachments')
-
+        details = extract_section_data(soup, 'Announcement Details')
+        transaction_time = details.get('Date &Time of Broadcast')
+    
         # Get symbol
         issuer_security = issuer_section.get('Securities', None)
        
@@ -130,7 +132,8 @@ def extract_html_content(soup: BeautifulSoup) -> dict[str, str]:
 
         payload_html.update({
             'symbol': symbol,
-            'url':attachment
+            'url': attachment,
+            'time': transaction_time
         })
 
     except Exception as error:
@@ -663,7 +666,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                     pdf, shareholder_section['page_number'],
                     shareholder_section['bbox']
                 )
-
+                
                 # Extract additional fields 
                 transaction_details = extract_transaction_details(
                     pdf,
@@ -683,14 +686,18 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                 # get holder type 
                 if detected_holder_type != 'mix': 
                     holder_type = detected_holder_type 
+
                 else:
                     holder_type = classify_holder_type(shareholder_name)
 
                 # Special case shareholder name if transaction type is transfer
                 if transaction_type == 'transfer':
                     original_shareholder_name = shareholder_name
-                    shareholder_name = build_shareholder_name_transfer(circumstance_interest_raw, shareholder_name) 
-
+                    shareholder_name = build_shareholder_name_transfer(
+                        circumstance_interest_raw, 
+                        shareholder_name
+                    ) 
+                
                     # Log transformation 
                     if shareholder_name != original_shareholder_name:
                         LOGGER.info(f'Transfer detected - transformed shareholder: {original_shareholder_name} -> {shareholder_name}')
@@ -707,6 +714,8 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                     all_records.append(final_record)
 
             # Skip if direct interest before and after are the same
+            print(f'RAW ALL RECORDS: {all_records}')
+
             all_records = [ 
                 record for record in all_records
                 if (record.get('direct_interest_before') != record.get('direct_interest_after')
@@ -787,8 +796,7 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
 
         pdf_url = payload_html.get('url')
         symbol = payload_html.get('symbol')
-
-        LOGGER.info(f"Extracting detail filing for url: {url} pdf_url: {pdf_url}")
+        time = payload_html.get('time')
 
         doc_fitz = open_pdf(pdf_url)
         
@@ -828,6 +836,7 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
             sgx_filings = SGXFilings(
                 symbol=symbol, 
                 url=pdf_url, 
+                time=time,
                 title=title, 
                 body=body,
                 issuer_name=company_name,
