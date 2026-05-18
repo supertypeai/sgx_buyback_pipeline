@@ -1,4 +1,4 @@
-from datetime import datetime 
+from datetime import datetime
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 
@@ -25,7 +25,8 @@ def normalize_datetime(date: str | datetime) -> str:
     
     except ValueError:
         LOGGER.error("Invalid date format. Use YYYY-MM-DD or YYYYMMDD.")
-    
+        return None 
+
 
 def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
     if not sgx_payload:
@@ -59,14 +60,12 @@ def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
         return None
 
 
-def upsert_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
+def upsert_to_db(sgx_payload: list[dict], table_name: str) -> bool:
     if not sgx_payload:
-        LOGGER.info(f'[sgx_payload] is empty, skipping push to DB')
-        return 
-    
-    try:
-        is_succes = False 
+        LOGGER.info('[sgx_payload] is empty, skipping push to DB')
+        return False
 
+    try:
         response = (
             SUPABASE_CLIENT
             .table(table_name)
@@ -75,14 +74,17 @@ def upsert_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
         )
 
         if response.data:
-            LOGGER.info(f"[sgx_payload] Successfully upsert {len(sgx_payload)} records to DB, table: {table_name}")
-            is_succes = True 
-            return is_succes 
-        
-        return is_succes
-    
+            LOGGER.info(
+                '[sgx_payload] successfully upserted %d records to DB, table: %s',
+                len(sgx_payload),
+                table_name
+            )
+            return True
+
+        return False
+
     except Exception as error:
-        LOGGER.error(f'[upsert_to_db] failed to upsert to {table_name}: {error}')
+        LOGGER.error('[upsert_to_db] failed to upsert to %s: %s', table_name, error)
         return False
     
 
@@ -93,11 +95,14 @@ def clean_payload_sgx_buyback(payload: list[dict[str, any]]) -> list[dict[str, a
     
     for row in payload:
         mandate = row.get('mandate')
+
         if mandate:
             for key_mandate in ['cumulative_purchased', 'mandate_remaining', 'mandate_total']:
+
                 if key_mandate in mandate and mandate[key_mandate] is not None:
                     try:
                         mandate[key_mandate] = int(float(mandate[key_mandate]))
+
                     except (ValueError, TypeError):
                         LOGGER.error(f"Failed to convert {key_mandate} with value {mandate[key_mandate]} to int.")
                         mandate[key_mandate] = None
@@ -109,6 +114,7 @@ def clean_payload_sgx_buyback(payload: list[dict[str, any]]) -> list[dict[str, a
             if key in row and row[key] is not None:
                 try:
                     row[key] = int(float(row[key]))
+
                 except (ValueError, TypeError):
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
@@ -134,9 +140,10 @@ def standardize_name(payload: list[dict[str, any]]) -> list[dict[str, any]]:
         
         if share_pct_after is not None and share_pct_before is not None:
             record['share_percentage_transaction'] = round(abs(share_pct_after - share_pct_before), 7)
+        
         else:
             record['share_percentage_transaction'] = None
-
+        
     return payload 
 
 
@@ -150,6 +157,7 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
 
     for row in payload:
         shareholder_name = row.get('shareholder_name')
+        row.pop('time', None)
 
         if shareholder_name and shareholder_name.isupper():
             row['shareholder_name'] = shareholder_name.title()
@@ -163,6 +171,7 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
             if key in row and row[key] is not None:
                 try:
                     row[key] = int(float(row[key]))
+
                 except (ValueError, TypeError):
                     LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
                     row[key] = None
@@ -173,7 +182,8 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
             row.get('shareholder_name'),
             row.get('transaction_date'),
             row.get('shares_before'),
-            row.get('shares_after')
+            row.get('shares_after'),
+            row.get('price_per_share')
         )
 
         if unique_key in seen_keys:
@@ -205,7 +215,7 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
     return unique_data_today
 
 
-def filter_top_70_companies(clean_payload: list[dict[str]]) -> tuple:
+def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> tuple:
     try:
         response = (
             SUPABASE_CLIENT
@@ -220,35 +230,35 @@ def filter_top_70_companies(clean_payload: list[dict[str]]) -> tuple:
         
         df_sgx_companies = pd.DataFrame(response.data)
 
-        df_top_sgx = df_sgx_companies.sort_values("market_cap", ascending=False).head(70)
+        df_top_sgx = df_sgx_companies.sort_values("market_cap", ascending=False).head(top_n)
 
-        df_top_70 = pd.read_csv("data/sgx_top_70_mcap_companies.csv")
+        df_top_n = pd.read_csv(f"data/sgx_top_{top_n}_mcap_companies.csv")
 
-        df_top_70 = df_top_70[~df_top_70.symbol.isin(df_top_sgx['symbol'])]
-        top_70_symbols = pd.concat([df_top_sgx[["symbol","name"]], df_top_70])
+        df_top_n = df_top_n[~df_top_n.symbol.isin(df_top_sgx['symbol'])]
+        top_n_symbols = pd.concat([df_top_sgx[["symbol", "name"]], df_top_n])
 
-        if df_top_70.shape[0] > df_top_sgx.shape[0]:
-            top_70_symbols.to_csv("data/sgx_top_70_mcap_companies.csv", index = False)
+        if df_top_n.shape[0] > df_top_sgx.shape[0]:
+            top_n_symbols.to_csv(f"data/sgx_top_{top_n}_mcap_companies.csv", index=False)
 
-        top_70_symbols = set(df_top_sgx['symbol'].tolist())
+        top_n_symbols = set(df_top_sgx['symbol'].tolist())
 
-        top_70_payload = []
-        not_top_70_payload = []
+        top_n_payload = []
+        not_top_n_payload = []
 
         for payload in clean_payload:
             symbol = payload.get('symbol')
-            
-            if symbol in top_70_symbols:
-                 top_70_payload.append(payload)
-            else:
-                 not_top_70_payload.append(payload)
 
-        LOGGER.info(f'Length data top_70: {len(top_70_payload)} | Length data not top_70: {len(not_top_70_payload)}')
-        return top_70_payload, not_top_70_payload
+            if symbol in top_n_symbols:
+                top_n_payload.append(payload)
+            else:
+                not_top_n_payload.append(payload)
+
+        LOGGER.info(f'Length data top_{top_n}: {len(top_n_payload)} | Length data not top_{top_n}: {len(not_top_n_payload)}')
+        return top_n_payload, not_top_n_payload
 
     except Exception as error:
-        LOGGER.error(f'[filter_top_50_companies] Error: {error}')
-        return [], [] 
+        LOGGER.error(f'[filter_top_n_companies] Error: {error}')
+        return [], []
 
 
 def get_100_top_companies():
