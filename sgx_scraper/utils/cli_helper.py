@@ -1,4 +1,5 @@
 from datetime import datetime
+from pathlib import Path 
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 
@@ -230,15 +231,15 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
         
         df_sgx_companies = pd.DataFrame(response.data)
 
-        df_top_sgx = df_sgx_companies.sort_values("market_cap", ascending=False).head(top_n)
+        df_top_sgx = (
+            df_sgx_companies
+            .sort_values("market_cap", ascending=False)
+            .head(top_n)
+        )
 
-        df_top_n = pd.read_csv(f"data/sgx_top_{top_n}_mcap_companies.csv")
-
-        df_top_n = df_top_n[~df_top_n.symbol.isin(df_top_sgx['symbol'])]
-        top_n_symbols = pd.concat([df_top_sgx[["symbol", "name"]], df_top_n])
-
-        if df_top_n.shape[0] > df_top_sgx.shape[0]:
-            top_n_symbols.to_csv(f"data/sgx_top_{top_n}_mcap_companies.csv", index=False)
+        csv_path = Path(f"data/sgx_top_{top_n}_mcap_companies.csv")
+        csv_path.parent.mkdir(parents=True, exist_ok=True)
+        df_top_sgx[["symbol", "name", "market_cap"]].to_csv(csv_path, index=False)
 
         top_n_symbols = set(df_top_sgx['symbol'].tolist())
 
@@ -250,28 +251,31 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
 
             if symbol in top_n_symbols:
                 top_n_payload.append(payload)
+
             else:
                 not_top_n_payload.append(payload)
 
-        LOGGER.info(f'Length data top_{top_n}: {len(top_n_payload)} | Length data not top_{top_n}: {len(not_top_n_payload)}')
+        LOGGER.info(
+            "Length data top_%d: %d | Length data not top_%d: %d",
+            top_n, len(top_n_payload), top_n, len(not_top_n_payload)
+        )
+
         return top_n_payload, not_top_n_payload
 
     except Exception as error:
-        LOGGER.error(f'[filter_top_n_companies] Error: {error}')
+        LOGGER.error("[filter_top_n_companies] Error: %s", error, exc_info=True)
         return [], []
 
 
 def get_100_top_companies():
-    response = (
-        SUPABASE_CLIENT
-        .table('sgx_companies')
-        .select('symbol, name, market_cap')
-        .order('market_cap', desc=True)
-        .limit(100)
-        .execute()
-    )
+    csv_path = Path(f"data/sgx_top_100_mcap_companies.csv")
 
-    return response.data 
+    if not csv_path.exists():
+        LOGGER.warning("CSV not found: %s", csv_path)
+        return []
+
+    df_top_n = pd.read_csv(csv_path)
+    return df_top_n.to_dict(orient="records")
 
 
 def write_to_csv(path: str, payload_not_top_70: list[dict[str]]):
