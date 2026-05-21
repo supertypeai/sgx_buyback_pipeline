@@ -301,7 +301,7 @@ def run_sgx_filings_scraper(
 
     if is_send_news:
         news_payload = generate_news(payload_insertable)
-        push_to_db(news_payload, 'idx_news')
+        push_to_db(news_payload, 'sgx_news')
 
     write_to_json(SGX_FILINGS_PATH_NOT_INSERTABLE, payload_not_insertable)
     write_to_json(SGX_FILINGS_PATH_INSERTABLE, payload_insertable)
