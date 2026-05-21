@@ -2,7 +2,7 @@ name: Scrape SGX Filings
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * 1-5'  # Runs at 09:00 AM WIB (UTC+7), Monday–Friday
+    - cron: '0 2 * * *'  # Runs every day at 09:00 AM WIB (UTC+7)
 concurrency:
   group: sgx-scraper-main
   cancel-in-progress: false
