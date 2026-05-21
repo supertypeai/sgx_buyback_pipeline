@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "symbol": "AWX",
+    "price_per_share": 1.142,
+    "transaction_type": "buy",
+    "title": "Chok Yean Hung buys shares of AEM Holdings Ltd",
+    "body": "Chok Yean Hung bought 676,000.0 shares of AEM Holdings Ltd. This increases their holdings from 402,044.0 to 1,078,044.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "AEM Holdings Ltd",
+    "holder_name": "Chok Yean Hung",
+    "holding_before": 402044,
+    "holding_after": 1078044,
+    "share_percentage_before": 0.00126,
+    "share_percentage_after": 0.00338,
+    "timestamp": "2026-05-20",
+    "amount_transaction": 676000,
+    "transaction_value": 771992.0,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7NN2LSFDNPAZN93D/889532__Form%201-ChokYH.pdf",
+    "share_percentage_transaction": 0.00212,
+    "reasons": [
+      "Price deviation too large: filing price=1.142, market price=9.15999984741211, deviation=87.53%"
+    ]
+  }
+]
