@@ -32,6 +32,7 @@ from sgx_scraper.utils.constant import (
 from sgx_scraper.sgx_api.scraper_sgx_api import get_auth, run_scrape_api
 from sgx_scraper.fetch_sgx_buyback.parser_sgx_buyback import get_sgx_buybacks
 from sgx_scraper.fetch_sgx_filings.parser_sgx_filings import get_sgx_filings
+from sgx_scraper.fetch_sgx_filings.news.builder import generate_news
 from sgx_scraper.alerting.filter_data_alert import get_data_alert 
 from sgx_scraper.alerting.mailer import send_sgx_filings_alert
 from sgx_scraper.track_management.tracking import get_management_update
@@ -190,6 +191,7 @@ def run_sgx_filings_scraper(
     page_size: int = typer.Option(20, help="Number of records per page"),
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
     is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
+    is_send_news: bool = typer.Option(True, help='Flag to send to idx_news or not')
 ):
     logger = logging.getLogger(__name__)
     
@@ -296,6 +298,10 @@ def run_sgx_filings_scraper(
     standardized_payload = standardize_name(new_payload)
 
     payload_insertable, payload_not_insertable = get_data_alert(standardized_payload)
+
+    if is_send_news:
+        news_payload = generate_news(payload_insertable)
+        push_to_db(news_payload, 'idx_news')
 
     write_to_json(SGX_FILINGS_PATH_NOT_INSERTABLE, payload_not_insertable)
     write_to_json(SGX_FILINGS_PATH_INSERTABLE, payload_insertable)

@@ -29,28 +29,28 @@ def normalize_datetime(date: str | datetime) -> str:
         return None 
 
 
-def push_to_db(sgx_payload: list[dict[str]], table_name: str) -> bool:
-    if not sgx_payload:
-        LOGGER.info(f'[sgx_payload] is empty, skipping push to DB')
+def push_to_db(payload: list[dict[str]], table_name: str) -> bool:
+    if not payload:
+        LOGGER.info(f'[payload] is empty, skipping push to DB')
         return 
     
     try:
         is_succes = False 
 
-        sgx_payload = [
+        payload = [
             {key: value for key, value in record.items() if key != "issuer_name"}
-            for record in sgx_payload
+            for record in payload
         ]
 
         response = (
             SUPABASE_CLIENT
             .table(table_name)
-            .insert(sgx_payload)
+            .insert(payload)
             .execute()
         )
 
         if response.data:
-            LOGGER.info(f"[sgx_payload] Successfully pushed {len(sgx_payload)} records to DB, table: {table_name}")
+            LOGGER.info(f"[payload] Successfully pushed {len(payload)} records to DB, table: {table_name}")
             is_succes = True 
             return is_succes 
         
