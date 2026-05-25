@@ -131,6 +131,9 @@ def clean_news_payload(
 
 
 def generate_news(payload: list[dict]) -> list[dict]:
+    if payload is None:
+        return []
+    
     results = []
 
     for record in payload:
