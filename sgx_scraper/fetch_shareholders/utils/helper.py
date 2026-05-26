@@ -1,4 +1,4 @@
-from rapidfuzz import fuzz
+from rapidfuzz import fuzz, process
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.refresh_sgx_companies import get_sgx_companies
@@ -22,32 +22,55 @@ COUNTRY_ABBREVIATIONS = {
 }
 
 
-def match_shareholder_name(screener_name: str, db_name: str, threshold: int = 92) -> bool:
-    normalized_screener_name = screener_name.lower().strip()
-    normalized_db_name = db_name.lower().strip()
+# def match_shareholder_name(screener_name: str, db_name: str, threshold: int = 92) -> bool:
+#     normalized_screener_name = screener_name.lower().strip()
+#     normalized_db_name = db_name.lower().strip()
     
-    score = fuzz.token_sort_ratio(normalized_screener_name, normalized_db_name)
+#     score = fuzz.token_sort_ratio(normalized_screener_name, normalized_db_name)
     
-    LOGGER.info(
-        'Matching "%s" vs "%s" | score: %d | result: %s',
-        screener_name,
-        db_name,
-        score,
-        'matched' if score >= threshold else 'no match'
-    )
+#     LOGGER.info(
+#         'Matching "%s" vs "%s" | score: %d | result: %s',
+#         screener_name,
+#         db_name,
+#         score,
+#         'matched' if score >= threshold else 'no match'
+#     )
     
-    return score >= threshold
+#     return score >= threshold
 
 
 def find_matched_db_shareholder(
     filing_name: str,
     db_shareholders: list[dict],
-) -> dict | None:
-    for db_shareholder in db_shareholders:
-        if match_shareholder_name(filing_name, db_shareholder.get('name', '')):
-            return db_shareholder
-    
-    return None
+    threshold: int = 95
+) -> dict | None:    
+    lookup_shareholder_by_name = {
+        shareholder.get('name', ''): shareholder
+        for shareholder in db_shareholders
+    }
+
+    shareholder_names = list(lookup_shareholder_by_name.keys())
+
+    result = process.extractOne(
+        clean_name_titles(filing_name),
+        shareholder_names,
+        scorer=fuzz.WRatio
+    )
+
+    if not result or result[1] < threshold:
+        return None
+
+    matched_name = result[0]
+    similarity_score = result[1]
+
+    LOGGER.info(
+        'Matching "%s" vs "%s" | score: %d | result: matched',
+        filing_name,
+        matched_name,
+        similarity_score
+    )
+
+    return lookup_shareholder_by_name[matched_name]
 
 
 def get_current_shareholders() -> list[dict]:
@@ -64,6 +87,13 @@ def get_current_shareholders() -> list[dict]:
     except Exception as error:
         LOGGER.error('Error fetching shareholders db: %s', error)
         return None 
+
+
+def clean_name_titles(name: str) -> str:
+    name = re.sub(r'^(Ir|Drs?|Dr)\.?\s+', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\.([a-zA-Z])(?=\s|$)', r' \1', name)
+    name = re.sub(r'(?<=\s)([a-zA-Z])\.', r'\1', name)
+    return ' '.join(name.split())
 
 
 def expand_country_abbreviations(company_name: str) -> str:

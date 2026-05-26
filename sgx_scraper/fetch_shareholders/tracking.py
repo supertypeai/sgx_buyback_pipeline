@@ -70,12 +70,12 @@ def get_shareholders_update(filing_payload: list[dict], shareholders_db: list[di
             matched_shareholder['share_percentage'] = filing_share_percentage
 
         else:
-            if filing_share_percentage > 0.001:
-                result_by_symbol[filing_symbol].append({
-                    'name': filing_shareholder,
-                    'share_amount': filing_share_amount,
-                    'share_percentage': filing_share_percentage,
-                })
+            # if filing_share_percentage > 0.001:
+            result_by_symbol[filing_symbol].append({
+                'name': filing_shareholder,
+                'share_amount': filing_share_amount,
+                'share_percentage': filing_share_percentage,
+            })
 
     payload_update = [
         {'symbol': symbol, 'shareholders': shareholders}
