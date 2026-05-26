@@ -1,7 +1,6 @@
 from rapidfuzz import fuzz, process
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
-from sgx_scraper.refresh_sgx_companies import get_sgx_companies
 from sgx_scraper.utils.cli_helper import open_json
 
 import logging 
@@ -94,7 +93,7 @@ def matched_db_management(
     return True
 
 
-def get_current_shareholders(is_refresh: bool = False) -> list[dict] | dict[str: dict]:
+def get_current_shareholders(is_refresh: bool = False) -> dict[str, dict]:
     try: 
         if is_refresh:
             response = (
