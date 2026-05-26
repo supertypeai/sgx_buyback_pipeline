@@ -2,6 +2,7 @@ from rapidfuzz import fuzz, process
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.refresh_sgx_companies import get_sgx_companies
+from sgx_scraper.utils.cli_helper import open_json
 
 import logging 
 import re 
@@ -22,26 +23,19 @@ COUNTRY_ABBREVIATIONS = {
 }
 
 
-# def match_shareholder_name(screener_name: str, db_name: str, threshold: int = 92) -> bool:
-#     normalized_screener_name = screener_name.lower().strip()
-#     normalized_db_name = db_name.lower().strip()
-    
-#     score = fuzz.token_sort_ratio(normalized_screener_name, normalized_db_name)
-    
-#     LOGGER.info(
-#         'Matching "%s" vs "%s" | score: %d | result: %s',
-#         screener_name,
-#         db_name,
-#         score,
-#         'matched' if score >= threshold else 'no match'
-#     )
-    
-#     return score >= threshold
+def matching(input: str, input_to_match: list):
+    result = process.extractOne(
+        input,
+        input_to_match,
+        scorer=fuzz.WRatio
+    )   
+
+    return result
 
 
 def find_matched_db_shareholder(
     filing_name: str,
-    db_shareholders: list[dict],
+    db_shareholders: dict,
     threshold: int = 95
 ) -> dict | None:    
     lookup_shareholder_by_name = {
@@ -51,8 +45,10 @@ def find_matched_db_shareholder(
 
     shareholder_names = list(lookup_shareholder_by_name.keys())
 
+    clean_filing_name = clean_name_titles(filing_name)
+
     result = process.extractOne(
-        clean_name_titles(filing_name),
+        clean_filing_name,
         shareholder_names,
         scorer=fuzz.WRatio
     )
@@ -73,16 +69,51 @@ def find_matched_db_shareholder(
     return lookup_shareholder_by_name[matched_name]
 
 
-def get_current_shareholders() -> list[dict]:
-    try: 
-        response = (
-            SUPABASE_CLIENT 
-            .table('sgx_companies')
-            .select('symbol, shareholders')
-            .execute()
-        ) 
+def matched_db_management(
+    filing_name: str, 
+    list_managements: list[str], 
+    threshold: int = 90
+) -> bool:
+    clean_filing_name = clean_name_titles(filing_name)
 
-        return response.data 
+    result = matching(clean_filing_name, list_managements)
+
+    if not result or result[1] < threshold:
+        return False
+
+    matched_name = result[0]
+    similarity_score = result[1]
+
+    LOGGER.info(
+        'Matching against management "%s" vs "%s" | score: %d | result: matched',
+        clean_filing_name,
+        matched_name,
+        similarity_score
+    )
+
+    return True
+
+
+def get_current_shareholders(is_refresh: bool = False) -> list[dict] | dict[str: dict]:
+    try: 
+        if is_refresh:
+            response = (
+                SUPABASE_CLIENT 
+                .table('sgx_companies')
+                .select('symbol, shareholders, management')
+                .execute()
+            ) 
+
+            lookup_response = {
+                record.get('symbol'): record  
+                for record in response.data
+            }
+
+            return lookup_response
+        
+        else: 
+            companies = open_json('data/sgx_companies.json')
+            return companies 
 
     except Exception as error:
         LOGGER.error('Error fetching shareholders db: %s', error)
@@ -116,18 +147,10 @@ def clean_company_name(company_name: str) -> str:
 
 
 def enrich(payload: list[dict]) -> list[dict]:
-    companies = get_sgx_companies()
-    
-    companies_lookup = {
-        record.get('symbol'): record.get('investing_symbol') 
-        for record in companies 
-    }
+    companies = open_json('data/sgx_companies.json')
 
     for record in payload: 
-        symbol = record.get('symbol')
-
-        investing_symbol = companies_lookup.get(symbol)
-        
+        investing_symbol = companies.get(record.get('symbol')).get('investing_symbol')
         record['investing_symbol'] = investing_symbol 
 
     return payload

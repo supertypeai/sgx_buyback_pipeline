@@ -1,6 +1,6 @@
 from sgx_scraper.utils.cli_helper import open_json
 from sgx_scraper.utils.constant import SGX_FILINGS_PATH_TOP_100 
-from .utils.helper import find_matched_db_shareholder, enrich
+from .utils.helper import find_matched_db_shareholder, enrich, matched_db_management
 
 import logging 
 import json 
@@ -37,12 +37,7 @@ def get_filings() -> list[dict]:
     return final_payload 
 
 
-def get_shareholders_update(filing_payload: list[dict], shareholders_db: list[dict]) -> list[dict]:
-    db_lookup = {
-        record.get('symbol'): record.get('shareholders')
-        for record in shareholders_db
-    }
-
+def get_shareholders_update(filing_payload: list[dict], shareholders_db: dict[str, dict]) -> list[dict]:
     result_by_symbol = {}
 
     for filing in filing_payload:
@@ -51,17 +46,17 @@ def get_shareholders_update(filing_payload: list[dict], shareholders_db: list[di
         filing_share_percentage = filing.get('shares_after_percentage')
         filing_share_amount = filing.get('shares_after')
 
-        if filing_symbol not in db_lookup:
+        if filing_symbol not in shareholders_db:
             continue
 
-        db_shareholders = db_lookup.get(filing_symbol, [])
+        db_shareholders = shareholders_db.get(filing_symbol, [])
 
         if not db_shareholders:
             LOGGER.warning(f'[matching] No db shareholders found for symbol: {filing_symbol}')
             continue
 
         if filing_symbol not in result_by_symbol:
-            result_by_symbol[filing_symbol] = list(db_shareholders)
+            result_by_symbol[filing_symbol] = list(db_shareholders.get('shareholders'))
 
         matched_shareholder = find_matched_db_shareholder(filing_shareholder, result_by_symbol[filing_symbol])
 
@@ -70,7 +65,21 @@ def get_shareholders_update(filing_payload: list[dict], shareholders_db: list[di
             matched_shareholder['share_percentage'] = filing_share_percentage
 
         else:
-            # if filing_share_percentage > 0.001:
+            db_management = db_shareholders.get('management')
+
+            list_managements = {
+                record.get('name') 
+                for record in db_management
+            }
+
+            is_management = matched_db_management(filing_shareholder, list_managements)
+
+            if not is_management and filing_share_percentage < 0.05: 
+                LOGGER.info(
+                    'shareholder name: %s not in board management: %s', filing_shareholder, ', '.join(list_managements)
+                )
+                continue 
+
             result_by_symbol[filing_symbol].append({
                 'name': filing_shareholder,
                 'share_amount': filing_share_amount,
