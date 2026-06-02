@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/J8RZVMFSP05OK51S/19f9d68ea98cc1b2ac961b7b011ebb7a8a5efcdd4c047f24ed7d3b3b71c154cd",
+    "symbol": "8A8",
+    "purchase_date": "2026-06-01",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 11.18,
+      "lowest": 10.75
+    },
+    "total_value": 5579880.0,
+    "total_shares_purchased": 507000,
+    "treasury_shares_after_purchase": 1527000,
+    "mandate": {
+      "mandate_total": 243952851,
+      "cumulative_purchased": 1527000,
+      "mandate_remaining": 242425851,
+      "mandate_start": "2026-04-23",
+      "mandate_end": "2027-04-23"
+    }
+  }
+]
