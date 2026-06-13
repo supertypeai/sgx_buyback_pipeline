@@ -1,80 +1,60 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/4H6KY18JBO229NXD/723ee2efd33c6e5f05d3657bc841935f69b92ebe9ade372bbd8218e6185d0727",
-    "symbol": "Z74",
-    "purchase_date": "2026-06-11",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 4.27,
-      "lowest": 4.22
-    },
-    "total_value": 19963137.36,
-    "total_shares_purchased": 4700000,
-    "treasury_shares_after_purchase": 14619033,
-    "mandate": {
-      "mandate_total": 825629225,
-      "cumulative_purchased": 166979005,
-      "mandate_remaining": 658650220,
-      "mandate_start": "2025-07-29",
-      "mandate_end": "2026-07-29"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/G8NDH8HHDQF8YM5T/530c3f1330fc4e96d701b3f24eff3a1368bee1ff24cbd4fccc07c6b617a3fe12",
-    "symbol": "S63",
-    "purchase_date": "2026-06-11",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 10.55,
-      "lowest": 10.43
-    },
-    "total_value": 5265828.7,
-    "total_shares_purchased": 500000,
-    "treasury_shares_after_purchase": 2695959,
-    "mandate": {
-      "mandate_total": 62434714,
-      "cumulative_purchased": 2000000,
-      "mandate_remaining": 60434714,
-      "mandate_start": "2026-04-23",
-      "mandate_end": "2027-04-23"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/1ABNANL3NL3U397E/e1358ead0443f40cbf25ea503ba19ae747710be5f1d1d9501813e39d4812e46c",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/N5KO02Z7V821CCE6/ddc37b81c0a246606f176313f66dbcd7b026aa28450510be72e80f0df95b551f",
     "symbol": "U11",
-    "purchase_date": "2026-06-11",
+    "purchase_date": "2026-06-12",
     "type": "On Market",
     "price_per_share": {
-      "highest": 38.06,
-      "lowest": 37.52
+      "highest": 38.3,
+      "lowest": 37.91
     },
-    "total_value": 2725140.16,
+    "total_value": 2744331.85,
     "total_shares_purchased": 72000,
-    "treasury_shares_after_purchase": 12742600,
+    "treasury_shares_after_purchase": 12778600,
     "mandate": {
       "mandate_total": 82676174,
-      "cumulative_purchased": 1763200,
-      "mandate_remaining": 80912974,
+      "cumulative_purchased": 1835200,
+      "mandate_remaining": 80840974,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/GP50Q089JOC03Z2G/fe981d348498b4daf7f2e7f91c151b98627a1354244863a845502f06fd8055e4",
-    "symbol": "BN4",
-    "purchase_date": "2026-06-11",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/OB26QB7L6V400V06/229653b729a95204d2225b93084ba40c55828b8f673b83a69c559f4ec779d118",
+    "symbol": "Z74",
+    "purchase_date": "2026-06-12",
     "type": "On Market",
     "price_per_share": {
-      "highest": 10.62,
-      "lowest": 10.49
+      "highest": 4.28,
+      "lowest": 4.24
     },
-    "total_value": 3173110.91,
+    "total_value": 9532207.99,
+    "total_shares_purchased": 2233000,
+    "treasury_shares_after_purchase": 14619033,
+    "mandate": {
+      "mandate_total": 825629225,
+      "cumulative_purchased": 169212005,
+      "mandate_remaining": 656417220,
+      "mandate_start": "2025-07-29",
+      "mandate_end": "2026-07-29"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/W2SDRK2PUQ4LN5G5/61e716c092787cee01db67faae60a328694ebe2729fb7cd6c59319ad87d90ba2",
+    "symbol": "BN4",
+    "purchase_date": "2026-06-12",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 10.69,
+      "lowest": 10.58
+    },
+    "total_value": 3191758.23,
     "total_shares_purchased": 300000,
-    "treasury_shares_after_purchase": 17893806,
+    "treasury_shares_after_purchase": 18193806,
     "mandate": {
       "mandate_total": 90646698,
-      "cumulative_purchased": 10270000,
-      "mandate_remaining": 80376698,
+      "cumulative_purchased": 10570000,
+      "mandate_remaining": 80076698,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
