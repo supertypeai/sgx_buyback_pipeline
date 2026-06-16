@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "symbol": "AJBU",
+    "price_per_share": 2.3093,
+    "transaction_type": null,
+    "title": "Yeo Siew Eng None transaction of Keppel DC REIT",
+    "body": "Yeo Siew Eng executed a transaction for 12,900.0 shares of Keppel DC REIT. This increases their holdings from 31,694.0 to 44,594.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "Keppel DC REIT",
+    "holder_name": "Yeo Siew Eng",
+    "holding_before": 31694,
+    "holding_after": 44594,
+    "share_percentage_before": 1e-05,
+    "share_percentage_after": 2e-05,
+    "timestamp": "2026-06-12",
+    "amount_transaction": 12900,
+    "transaction_value": 29789.97,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KYZZV59PKQ4O6L3T/893269__KDCREIT_Form%201-YSE_12June2026_final.pdf",
+    "share_percentage_transaction": 1e-05,
+    "reasons": [
+      "Missing transaction_type"
+    ]
+  },
+  {
+    "symbol": "A17U",
+    "price_per_share": null,
+    "transaction_type": "others",
+    "title": "Change in Capitaland Ascendas Reit Management Limited's position in CapitaLand Ascendas REIT",
+    "body": "Capitaland Ascendas Reit Management Limited executed a transaction for 3,853,753.0 shares of CapitaLand Ascendas REIT. This increases their holdings from 3,876,487.0 to 7,730,240.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "CapitaLand Ascendas REIT",
+    "holder_name": "CapitaLand Ascendas REIT Management Limited",
+    "holding_before": 3876487,
+    "holding_after": 7730240,
+    "share_percentage_before": 0.0007,
+    "share_percentage_after": 0.0015,
+    "timestamp": "2026-06-15",
+    "amount_transaction": 3853753,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/IJFJT62KK1MZBYGQ/893265__eFORM6V2%20-%2015%20June%202026.pdf",
+    "share_percentage_transaction": 0.0008,
+    "reasons": [
+      "Transaction type is \"others\" but missing financial data: transaction_value=None, amount_transaction=3853753, price_per_share=None"
+    ]
+  },
+  {
+    "symbol": "A17U",
+    "price_per_share": null,
+    "transaction_type": "sell",
+    "title": "Capitaland Ascendas Reit Management Limited sells shares of CapitaLand Ascendas REIT",
+    "body": "Capitaland Ascendas Reit Management Limited sold 3,853,753.0 shares of CapitaLand Ascendas REIT. This decreases their holdings from 7,730,240.0 to 3,876,487.0 shares.",
+    "holder_type": "institution",
+    "issuer_name": "CapitaLand Ascendas REIT",
+    "holder_name": "CapitaLand Ascendas REIT Management Limited",
+    "holding_before": 7730240,
+    "holding_after": 3876487,
+    "share_percentage_before": 0.0015,
+    "share_percentage_after": 0.0007,
+    "timestamp": "2026-06-15",
+    "amount_transaction": 3853753,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/IJFJT62KK1MZBYGQ/893265__eFORM6V2%20-%2015%20June%202026.pdf",
+    "share_percentage_transaction": 0.0008,
+    "reasons": [
+      "Transaction type is \"sell\" but missing financial data: transaction_value=None, amount_transaction=3853753, price_per_share=None"
+    ]
+  },
+  {
+    "symbol": "AJBU",
+    "price_per_share": 2.3093,
+    "transaction_type": null,
+    "title": "Tan Kok Kiong Andrew None transaction of Keppel DC REIT",
+    "body": "Tan Kok Kiong Andrew executed a transaction for 10,900.0 shares of Keppel DC REIT. This increases their holdings from 15,200.0 to 26,100.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "Keppel DC REIT",
+    "holder_name": "Tan Kok Kiong Andrew",
+    "holding_before": 15200,
+    "holding_after": 26100,
+    "share_percentage_before": 1e-05,
+    "share_percentage_after": 1e-05,
+    "timestamp": "2026-06-12",
+    "amount_transaction": 10900,
+    "transaction_value": 25171.37,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/CMN2EMJW1QN9NVNC/893224__KDCREIT-Form%201_AT_12June2026_final.pdf",
+    "share_percentage_transaction": 0.0,
+    "reasons": [
+      "Missing transaction_type"
+    ]
+  },
+  {
+    "symbol": "AJBU",
+    "price_per_share": 2.3093,
+    "transaction_type": null,
+    "title": "Low Huan Ping None transaction of Keppel DC REIT",
+    "body": "Low Huan Ping executed a transaction for 12,800.0 shares of Keppel DC REIT. This increases their holdings from 62,834.0 to 75,634.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "Keppel DC REIT",
+    "holder_name": "Low Huan Ping",
+    "holding_before": 62834,
+    "holding_after": 75634,
+    "share_percentage_before": 3e-05,
+    "share_percentage_after": 3e-05,
+    "timestamp": "2026-06-12",
+    "amount_transaction": 12800,
+    "transaction_value": 29559.04,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/2FW9ARNJOTG70TSV/893222__KDCREIT_Form%201-LHP_12June2026_final.pdf",
+    "share_percentage_transaction": 0.0,
+    "reasons": [
+      "Missing transaction_type"
+    ]
+  }
+]
