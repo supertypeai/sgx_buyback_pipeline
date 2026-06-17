@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "symbol": "U14",
+    "price_per_share": 7.42,
+    "transaction_type": "buy",
+    "title": "Liam Wee Sin buys shares of UOL Group Ltd",
+    "body": "Liam Wee Sin bought 120,000.0 shares of UOL Group Ltd. This increases their holdings from 828,777.0 to 948,777.0 shares.",
+    "holder_type": "insider",
+    "issuer_name": "UOL Group Ltd",
+    "holder_name": "Liam Wee Sin",
+    "holding_before": 828777,
+    "holding_after": 948777,
+    "share_percentage_before": 0.00098,
+    "share_percentage_after": 0.00112,
+    "timestamp": "2026-06-16",
+    "amount_transaction": 120000,
+    "transaction_value": 890400.0,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KK9T4Q8HCTKIEQ0M/893377__FORM1_LWS_2026.06.16.pdf",
+    "share_percentage_transaction": 0.00014
+  }
+]
