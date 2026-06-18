@@ -20,6 +20,8 @@ class SGXFilings:
 
     title: str = ''
     body: str = ''
+    sector: str = ''
+    sub_sector: str = ''
     holder_type: str = ''
     issuer_name: str = ''
     

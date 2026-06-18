@@ -1,9 +1,22 @@
+from pathlib import Path
+
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 
 import json 
-import os 
+import re 
 
-SGX_PATH = 'data/sgx_companies.json'
+
+def convert_to_kebab(sub_sector: str):
+    result = (
+        sub_sector
+        .replace("&", "")
+        .replace(",", "")
+        .replace("  ", " ")
+        .replace(" ", "-")
+        .lower()
+    )
+    return re.sub(r'-+', '-', result)
+
 
 def get_sgx_companies():
     try:
@@ -32,12 +45,17 @@ def refresh_master_company_data():
     datas = get_sgx_companies()
 
     sgx_lookup = {}
+    
     for data in datas: 
         symbol = data.get('symbol') 
+        data['sector'] = convert_to_kebab(data['sector'])
+        data['sub_sector'] = convert_to_kebab(data['sub_sector'])
+
         sgx_lookup[symbol] = data
 
-    os.makedirs(os.path.dirname(SGX_PATH), exist_ok=True)
-    with open(SGX_PATH, 'w', encoding='utf-8') as file:
+    sgx_path = Path('data/sgx_companies.json')
+
+    with sgx_path.open('w', encoding='utf-8') as file:
         json.dump(sgx_lookup, file, ensure_ascii=False, indent=2)
         
     print(f"Saved {len(sgx_lookup)} companies to data/sgx_companies.json")

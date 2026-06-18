@@ -651,6 +651,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
             # print(f'raw section: {shareholder_sections}')
 
             all_records = []
+
             for shareholder_section in shareholder_sections:
                 individual_share_data = build_individual_share_record(
                     pdf,
@@ -680,7 +681,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                     shareholder_section['page_number'],
                     shareholder_section['bbox']
                 )
-                # print(f'\nraw circumstance interest: {circumstance_interest_raw}')
+
                 transaction_type = build_transaction_type(circumstance_interest_raw, transaction_details)
                 
                 # get holder type 
@@ -736,6 +737,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
     except requests.RequestException as error:
         LOGGER.error(f"[sgx_filings] Failed to download PDF {pdf_url}: {error}")
         return None
+    
     except Exception as error:
         LOGGER.error(f"[sgx_filings] Error extracting share records from {pdf_url}: {error}", exc_info=True)
         return None
@@ -796,20 +798,20 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
 
         pdf_url = payload_html.get('url')
         symbol = payload_html.get('symbol')
-        time = payload_html.get('time')
+        # time = payload_html.get('time')
 
         doc_fitz = open_pdf(pdf_url)
-        
+
         if not symbol:
             symbol_extracted = extract_symbol_fallback(doc_fitz)
             symbol = matching_symbol(symbol_extracted)
 
         # Populate extra data (issuer name, holder_type)
-        company_name, _, _ = populate_extra_data(symbol)
+        company_name, sector, sub_sector = populate_extra_data(symbol)
         detected_holder_type = detect_form_type(pdf_url, doc_fitz)
 
         list_data_extracted = extract_all_fields(doc_fitz, pdf_url, detected_holder_type)
-        
+
         if not list_data_extracted:
             return None
 
@@ -822,6 +824,7 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
             amount = data_record['number_of_stock'] or None 
             holding_before = data_record['shares_before']
             holding_after = data_record['shares_after']
+            time = data_record['transaction_date']
 
             title, body = generate_title_and_body(
                 holder_name=holder_name, 
@@ -839,6 +842,8 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
                 time=time,
                 title=title, 
                 body=body,
+                sector=sector, 
+                sub_sector=sub_sector,
                 issuer_name=company_name,
                 **data_record
             )
@@ -872,7 +877,8 @@ if __name__ == '__main__':
     error_test = 'https://links.sgx.com/1.0.0/corporate-announcements/S6O732YG2U5WDUMJ/b67aaccaca7113e53e4dd2057526927520e74850797c39553a13bd036c28f5e3'
     error = 'https://links.sgx.com/1.0.0/corporate-announcements/55DXSPCF8EFWEOO8/113084aab6886b1738d7bdff8d8762bfd1112d14fcfc6ae639833267ccd451d1'
 
-    batched_payload_processed = get_sgx_filings(error) 
-
+    fail = 'https://links.sgx.com/1.0.0/corporate-announcements/1N8PDMU2DQTVT8RV/893406__Form%201_WNL_Award_of_RSP_16Jun2026.pdf'
+    batched_payload_processed = get_sgx_filings(test_clean_data)
+     
 
 # uv run -m sgx_scraper.fetch_sgx_filings.parser_sgx_filings

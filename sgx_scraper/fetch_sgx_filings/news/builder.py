@@ -119,14 +119,14 @@ def clean_news_payload(
         'body': body,
         'source': record.get('source'),
         'timestamp': record.get('timestamp'),
-        'sector': to_kebab(sector),
-        'sub_sector': [to_kebab(sub_sector)],
+        'sector': sector,
+        'sub_sector': [sub_sector],
         'tags': ['Insider Trading'],
-        'tickers': [symbol],
         'symbols': [symbol],
         'dimension': None,
         'votes': None,
         'score': None,
+        'thumbnail': None 
     }
 
 
