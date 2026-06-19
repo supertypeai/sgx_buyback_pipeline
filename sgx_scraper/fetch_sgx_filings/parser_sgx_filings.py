@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from dataclasses import asdict
 from io import BytesIO
 
+from sgx_scraper.fetch_sgx_filings.utils.constants import *
 from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     build_transaction_type, 
     build_price_per_share, 
@@ -12,6 +13,9 @@ from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     populate_extra_data,
     generate_title_and_body,
     classify_holder_type,
+    build_special_case_multiple_dates, 
+    build_special_case_value,
+    contains_any_keyword,
     HTTPCLIENT
 )
 from sgx_scraper.utils.sgx_parser_helper import (
@@ -396,6 +400,7 @@ def apply_fallback_for_multiple_shareholder(all_records: list[dict], doc_fitz: f
 
 def extract_symbol_fallback(doc_fits: fitz.Document, start_page: int = 1, end_page: int = 4) -> str:
     pdf_text = parse_pdf(doc_fits, end_page=end_page, start_page=start_page)
+    
     try:
         pattern = r'(?:\d+\.\s*)?Name\s+of\s+Listed\s+Issuer\s*:?\s*(?:\d+\.\s*)?([^\n]+?)(?=\s*\d+\.\s*Type\s+of\s+Listed\s+Issuer|\s*\d+\.|$)'
         
@@ -412,147 +417,79 @@ def extract_symbol_fallback(doc_fits: fitz.Document, start_page: int = 1, end_pa
             return name.strip()
         
         return None 
+    
     except Exception as error:
         LOGGER.error(f"[extract_symbol_fallback] Error extracting symbol fallback: {error}")
         return None
 
 
-def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> list[dict[str, any]]:
-    if not raw_value:
-        return [base_record]
+def detect_tags(circumstances_raw: dict) -> list:
+    final_tags = []
 
-    multi_transaction_pattern = r"""
-        ([\d,]+(?:\.\d+)?)              # Capture number (e.g., "3,844,078")
-        \s*
-        (?:units?|shares?|              # Match "unit", "units", "share", "shares"
-        securit(?:y|ies)|            # "security" or "securities"
-        stapled\s+securit(?:y|ies))  # "stapled security/securities"
-        \s+at\s+                        # Match " at "
-        (?:(?:an?\s+)?issue\s+)?        # Optional "issue" or "a/an issue"
-        (?:(?:an?\s+)?price\s+)?        # Optional "a/an price" ← MADE OPTIONAL!
-        (?:of\s+)?                      # Optional "of "
-        (?:sg\$|s\$|usd|sgd|            # Optional currency symbols
-        hkd|us\$|\$)?
-        \s*
-        ([\d,]+(?:\.\d+)?)              # Capture price (e.g., "2.2242")
-        \s*per\s+                       # Match " per "
-        (?:unit|share|security|         # Match "unit", "share", etc.
-        stapled\s+security)
-    """
+    results = circumstances_raw.get('results') or {}
+    acquisition = results.get('acquisition') or {}
+    disposal = results.get('disposal') or {}
+    other_circumstances = results.get('other_circumstances') or {}
+    others_specify = results.get('others_specify') or {}
+
+    acquisition_ticked = any(value is True for value in acquisition.values())
+    disposal_ticked = any(value is True for value in disposal.values())
+
+    if acquisition_ticked:
+        final_tags.append('investment')
+
+    elif disposal_ticked:
+        final_tags.append('divestment')
     
-    try:
-        matches = re.findall(multi_transaction_pattern, raw_value, re.IGNORECASE | re.VERBOSE)
-       
-        if len(matches) >= 2:
-            LOGGER.info(f"[build_special_case_value] Detected {len(matches)} transactions in: {raw_value}")
-            
-            new_records = []
-            for index, (value, price_per_share) in enumerate(matches):
-                copy_record = base_record.copy()
-            
-                price_per_share = safe_convert_float(price_per_share)
-                value = safe_convert_float(value)
-                value = value * price_per_share
-                value = round(value, 2)
 
-                copy_record.update({
-                    'value': value, 
-                    'price_per_share': price_per_share
-                })
+    # checkbox tier 
+    takeover_ticked = any(
+        other_circumstances.get(key) is True for key in TAKEOVER_CHECKBOX_KEYS
+    )
 
-                print(f"Transaction {index+1}: {value}.{price_per_share} = {value}")
-                new_records.append(copy_record)
-            
-            return new_records
-        
-        list_all_record =  [base_record]
-        return list_all_record
+    if takeover_ticked:
+        final_tags.append('takeover')
 
-    except Exception as error:
-        LOGGER.error(f"[build_special_case_value] Error processing special case value: {error}")
-        return [] 
+    corporate_action = other_circumstances.get('Corporate action by Listed Issuer') or {}
 
+    if corporate_action.get('checked') is True:
+        final_tags.append('corporate-action')
 
-def build_special_case_multiple_dates(
-    raw_number_of_stock: str, 
-    raw_value: str, 
-    base_record: dict[str, any]
-) -> list[dict[str, any]]:
-    if not raw_number_of_stock or not raw_value:
-        return [base_record] 
+    employee_checkbox_ticked = any(
+        other_circumstances.get(key) is True for key in EMPLOYEE_CHECKBOX_KEYS
+    )
 
-    # Pattern to extract number + date from number_of_stock field
-    number_date_pattern = r"""
-        ([\d,]+(?:\.\d+)?)              # Capture number
-        \s+
-        (?:shares?|units?|securit(?:y|ies))  # Match share/unit type
-        \s+on\s+                        # Match " on "
-        (\d{1,2}\s+\w+\s+\d{4})         # Capture date: "7 Nov 2024" format
-    """
+    # Cause: Others free text 
+    others_text = ""
 
-    price_date_pattern = r"""
-        (?:paid\s+)?                    # Optional "paid"
-        (?:sg\$|s\$|usd|sgd|\$)?        # Optional currency
-        \s*
-        ([\d,]+(?:\.\d+)?)              # Capture price
-        \s+per\s+
-        (?:share|unit|security)         # Match per share/unit
-        \s+on\s+                        # Match " on "
-        (\d{1,2}\s+\w+\s+\d{4})         # Capture date: "7 Nov 2024" format
-    """
+    if others_specify.get('checked') is True:
+        others_text = others_specify.get('description') or ""
 
-    try:
-        number_matches = re.findall(number_date_pattern, raw_number_of_stock, re.IGNORECASE | re.VERBOSE)
-        price_matches = re.findall(price_date_pattern, raw_value, re.IGNORECASE | re.VERBOSE)
+    employee_text_match = contains_any_keyword(others_text, KEYWORD_EMPLOYEE_PLAN)
 
-        # print(f"DEBUG number_matches: {number_matches}")
-        # print(f"DEBUG price_matches: {price_matches}")
+    if contains_any_keyword(others_text, KEYWORD_DIRECTOR_FEE):
+        final_tags.append('director-fee-shares')
+    
+    if employee_checkbox_ticked or employee_text_match:
+        if 'director-fee-shares' not in final_tags:
+            final_tags.append('employee-share-plan')
+    
+    if contains_any_keyword(others_text, KEYWORD_MANAGEMENT_FEE):
+        final_tags.append('management-fee-shares')
+    
+    if contains_any_keyword(others_text, KEYWORD_DIVIDEND):
+        final_tags.append('dividend-in-specie')
+    
+    if contains_any_keyword(others_text, KEYWORD_INHERITANCE):
+        final_tags.append('inheritance')
+    
+    if contains_any_keyword(others_text, KEYWORD_INTERNAL_RESTRUCTURING):
+        final_tags.append('internal-restructuring')
+    
+    if contains_any_keyword(others_text, KEYWORD_GIFT):
+        final_tags.append('gift')
 
-        if len(number_matches) >= 2 and len(price_matches) >= 2:
-            LOGGER.info(f"[build_special_case_multiple_dates] Detected {len(number_matches)} transactions with dates")
-
-            number_by_date = {}
-            for number, number_date in number_matches:
-                number_date = number_date.strip()
-                number_clean = safe_convert_float(number)
-                number_by_date[number_date] = number_clean 
-
-            value_by_date = {}
-            for value, value_date in price_matches:
-                value_date = value_date.strip()
-                value_clean = safe_convert_float(value)
-                value_by_date[value_date] = value_clean 
-
-            new_records = []
-            for number_stock_date in number_by_date.keys():
-                if number_stock_date in value_by_date:
-                    number_of_stock = number_by_date[number_stock_date]
-                    price_per_share = value_by_date[number_stock_date]
-
-                    new_value = number_of_stock * price_per_share
-                    new_value = round(new_value, 2)
-
-                    transaction_date = safe_convert_datetime(number_stock_date)
-                    
-                    copy_record = base_record.copy()
-                    copy_record.update({
-                        "transaction_date": transaction_date,
-                        "number_of_stock": number_of_stock,
-                        "price_per_share": price_per_share,
-                        "value": new_value,
-                    })
-                    
-                    print(f"Matched: {number_stock_date} → {number_of_stock} x {price_per_share} = {new_value}")
-                    new_records.append(copy_record)
-             
-            return new_records
-
-        list_all_record =  [base_record]
-        return list_all_record
-
-    except Exception as error:
-        LOGGER.error(f"[build_special_case_multiple_dates] Error: {error}")
-        return [] 
+    return final_tags
 
 
 def extract_transaction_details(
@@ -650,6 +587,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
             shareholder_sections = find_shareholder_sections(pdf)
             # print(f'raw section: {shareholder_sections}')
 
+            circumstances_descs = []
             all_records = []
 
             for shareholder_section in shareholder_sections:
@@ -681,6 +619,13 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                     shareholder_section['page_number'],
                     shareholder_section['bbox']
                 )
+                
+                # Detect Tags
+                if circumstance_interest_raw:
+                    tags = detect_tags(circumstance_interest_raw)
+
+                else: 
+                    tags = []
 
                 transaction_type = build_transaction_type(circumstance_interest_raw, transaction_details)
                 
@@ -708,6 +653,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                         'shareholder_name': shareholder_name if shareholder_name else None,
                         'transaction_type': transaction_type if transaction_type else None,
                         'holder_type': holder_type,
+                        'tags': tags,
                         **transaction_detail,
                         **individual_share_data
                     }
@@ -837,12 +783,12 @@ def get_sgx_filings(url: str) -> list[SGXFilings] | None:
             )  
 
             sgx_filings = SGXFilings(
-                symbol=symbol, 
-                url=pdf_url, 
+                symbol=symbol,
+                url=pdf_url,
                 time=time,
-                title=title, 
+                title=title,
                 body=body,
-                sector=sector, 
+                sector=sector,
                 sub_sector=sub_sector,
                 issuer_name=company_name,
                 **data_record
@@ -877,8 +823,12 @@ if __name__ == '__main__':
     error_test = 'https://links.sgx.com/1.0.0/corporate-announcements/S6O732YG2U5WDUMJ/b67aaccaca7113e53e4dd2057526927520e74850797c39553a13bd036c28f5e3'
     error = 'https://links.sgx.com/1.0.0/corporate-announcements/55DXSPCF8EFWEOO8/113084aab6886b1738d7bdff8d8762bfd1112d14fcfc6ae639833267ccd451d1'
 
-    fail = 'https://links.sgx.com/1.0.0/corporate-announcements/1N8PDMU2DQTVT8RV/893406__Form%201_WNL_Award_of_RSP_16Jun2026.pdf'
-    batched_payload_processed = get_sgx_filings(test_clean_data)
+    fail = 'https://links.sgx.com/1.0.0/corporate-announcements/L7QIXIV1LZ9CQR8X/860899__FORM1_LWS_2025.10.03.pdf'
+
+    form_6 = 'https://links.sgx.com/FileOpen/_FORM6-REIT_Manager.ashx?App=Announcement&FileID=863792'
+    form_3 = 'https://links.sgx.com/FileOpen/_251001%20Form%203%20-%20LSL%20-%20GasHub%20-%20Final.ashx?App=Announcement&FileID=860683'
+    form_1 = 'https://links.sgx.com/FileOpen/_FORM1_LWS_2025.10.03.ashx?App=Announcement&FileID=860899'
+    batched_payload_processed = get_sgx_filings(form_3)
      
 
 # uv run -m sgx_scraper.fetch_sgx_filings.parser_sgx_filings

@@ -66,3 +66,44 @@ TYPE_SECURITIES_OPTIONS = {
     "Others": r"Others.*(?:specify|:)"
 }
 
+KEYWORD_DIRECTOR_FEE = [
+    "director's fee", "directors' fee", "director\u2019s fee", "directors\u2019 fee",
+    "non-executive director", "in lieu of cash", "share component of my",
+    "directors' remuneration", "directors\u2019 remuneration",
+]
+KEYWORD_EMPLOYEE_PLAN = [
+    "restricted unit plan", "performance unit plan", "restricted share plan",
+    "restricted stapled security plan", "performance stapled security plan",
+    "long-term incentive plan", "executive share scheme", "restricted share award",
+    "vesting of awards", "key management personnel", "eligible employees",
+    "share grant",
+]
+KEYWORD_MANAGEMENT_FEE = [
+    "management fee", "base management fee", "performance management fee",
+    "divestment fee", "acquisition fee",
+]
+KEYWORD_DIVIDEND = [
+    "dividend in specie", "special dividend",
+]
+KEYWORD_INHERITANCE = [
+    "deceased", "beneficiaries",
+]
+KEYWORD_INTERNAL_RESTRUCTURING = [
+    "internal transfer", "wholly-owned subsidiaries", "amalgamated",
+    "amalgamation", "by operation of law", "immediate holding company",
+]
+KEYWORD_GIFT = [
+    "by way of gift", "as a gift",
+]
+
+# Checkbox keys that all map to the employee-share-plan tag.
+EMPLOYEE_CHECKBOX_KEYS = [
+    "Acceptance of employee share options/share awards",
+    "Vesting of share awards",
+    "Exercise of employee share options",
+]
+# The take-over key varies between forms; only one appears per filing.
+TAKEOVER_CHECKBOX_KEYS = [
+    "Acceptance of take-over offer",
+    "Acceptance of take-over offer for Listed Issuer",
+]

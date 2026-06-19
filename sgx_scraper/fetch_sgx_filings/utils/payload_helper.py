@@ -1,12 +1,16 @@
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from datetime import datetime, timezone, timedelta
 from typing import Optional
 
-from sgx_scraper.fetch_sgx_filings.utils.converter_helper import get_latest_currency, calculate_currency_to_sgd
+from sgx_scraper.fetch_sgx_filings.utils.converter_helper import (
+    get_latest_currency, 
+    calculate_currency_to_sgd
+)
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
     OTHER_CIRCUMSTANCES_RULES, TRANSACTION_KEYWORDS
 )
+from sgx_scraper.utils.sgx_parser_helper import safe_convert_datetime
+
 
 import re 
 import logging
@@ -635,3 +639,146 @@ def generate_title_and_body(
     if purpose_en:
         body += f" The stated purpose of the transaction was {purpose_en.lower()}."
     return title, body
+
+
+def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> list[dict[str, any]]:
+    if not raw_value:
+        return [base_record]
+
+    multi_transaction_pattern = r"""
+        ([\d,]+(?:\.\d+)?)              # Capture number (e.g., "3,844,078")
+        \s*
+        (?:units?|shares?|              # Match "unit", "units", "share", "shares"
+        securit(?:y|ies)|            # "security" or "securities"
+        stapled\s+securit(?:y|ies))  # "stapled security/securities"
+        \s+at\s+                        # Match " at "
+        (?:(?:an?\s+)?issue\s+)?        # Optional "issue" or "a/an issue"
+        (?:(?:an?\s+)?price\s+)?        # Optional "a/an price" ← MADE OPTIONAL!
+        (?:of\s+)?                      # Optional "of "
+        (?:sg\$|s\$|usd|sgd|            # Optional currency symbols
+        hkd|us\$|\$)?
+        \s*
+        ([\d,]+(?:\.\d+)?)              # Capture price (e.g., "2.2242")
+        \s*per\s+                       # Match " per "
+        (?:unit|share|security|         # Match "unit", "share", etc.
+        stapled\s+security)
+    """
+    
+    try:
+        matches = re.findall(multi_transaction_pattern, raw_value, re.IGNORECASE | re.VERBOSE)
+       
+        if len(matches) >= 2:
+            LOGGER.info(f"[build_special_case_value] Detected {len(matches)} transactions in: {raw_value}")
+            
+            new_records = []
+            for index, (value, price_per_share) in enumerate(matches):
+                copy_record = base_record.copy()
+            
+                price_per_share = safe_convert_float(price_per_share)
+                value = safe_convert_float(value)
+                value = value * price_per_share
+                value = round(value, 2)
+
+                copy_record.update({
+                    'value': value, 
+                    'price_per_share': price_per_share
+                })
+
+                print(f"Transaction {index+1}: {value}.{price_per_share} = {value}")
+                new_records.append(copy_record)
+            
+            return new_records
+        
+        list_all_record =  [base_record]
+        return list_all_record
+
+    except Exception as error:
+        LOGGER.error(f"[build_special_case_value] Error processing special case value: {error}")
+        return [] 
+
+
+def build_special_case_multiple_dates(
+    raw_number_of_stock: str, 
+    raw_value: str, 
+    base_record: dict[str, any]
+) -> list[dict[str, any]]:
+    if not raw_number_of_stock or not raw_value:
+        return [base_record] 
+
+    # Pattern to extract number + date from number_of_stock field
+    number_date_pattern = r"""
+        ([\d,]+(?:\.\d+)?)              # Capture number
+        \s+
+        (?:shares?|units?|securit(?:y|ies))  # Match share/unit type
+        \s+on\s+                        # Match " on "
+        (\d{1,2}\s+\w+\s+\d{4})         # Capture date: "7 Nov 2024" format
+    """
+
+    price_date_pattern = r"""
+        (?:paid\s+)?                    # Optional "paid"
+        (?:sg\$|s\$|usd|sgd|\$)?        # Optional currency
+        \s*
+        ([\d,]+(?:\.\d+)?)              # Capture price
+        \s+per\s+
+        (?:share|unit|security)         # Match per share/unit
+        \s+on\s+                        # Match " on "
+        (\d{1,2}\s+\w+\s+\d{4})         # Capture date: "7 Nov 2024" format
+    """
+
+    try:
+        number_matches = re.findall(number_date_pattern, raw_number_of_stock, re.IGNORECASE | re.VERBOSE)
+        price_matches = re.findall(price_date_pattern, raw_value, re.IGNORECASE | re.VERBOSE)
+
+        # print(f"DEBUG number_matches: {number_matches}")
+        # print(f"DEBUG price_matches: {price_matches}")
+
+        if len(number_matches) >= 2 and len(price_matches) >= 2:
+            LOGGER.info(f"[build_special_case_multiple_dates] Detected {len(number_matches)} transactions with dates")
+
+            number_by_date = {}
+            for number, number_date in number_matches:
+                number_date = number_date.strip()
+                number_clean = safe_convert_float(number)
+                number_by_date[number_date] = number_clean 
+
+            value_by_date = {}
+            for value, value_date in price_matches:
+                value_date = value_date.strip()
+                value_clean = safe_convert_float(value)
+                value_by_date[value_date] = value_clean 
+
+            new_records = []
+            for number_stock_date in number_by_date.keys():
+                if number_stock_date in value_by_date:
+                    number_of_stock = number_by_date[number_stock_date]
+                    price_per_share = value_by_date[number_stock_date]
+
+                    new_value = number_of_stock * price_per_share
+                    new_value = round(new_value, 2)
+
+                    transaction_date = safe_convert_datetime(number_stock_date)
+                    
+                    copy_record = base_record.copy()
+                    copy_record.update({
+                        "transaction_date": transaction_date,
+                        "number_of_stock": number_of_stock,
+                        "price_per_share": price_per_share,
+                        "value": new_value,
+                    })
+                    
+                    print(f"Matched: {number_stock_date} → {number_of_stock} x {price_per_share} = {new_value}")
+                    new_records.append(copy_record)
+             
+            return new_records
+
+        list_all_record =  [base_record]
+        return list_all_record
+
+    except Exception as error:
+        LOGGER.error(f"[build_special_case_multiple_dates] Error: {error}")
+        return [] 
+
+
+def contains_any_keyword(text: str, keywords: list) -> bool:
+    lowered = text.lower()
+    return any(keyword in lowered for keyword in keywords)

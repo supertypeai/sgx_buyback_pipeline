@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 @dataclass
@@ -6,6 +6,7 @@ class SGXFilings:
     url: str
     symbol: str = ''
     time: str = ''
+    tags: list[str] = field(default_factory=list)
 
     transaction_date: str = ''
     shareholder_name: str = ''

@@ -32,6 +32,8 @@ def get_sgx_companies():
                 'shareholders,' 
                 'management'
             )
+            .eq('is_suspended', False)
+            .eq('is_active', True)
             .execute()
         )
         return response.data
