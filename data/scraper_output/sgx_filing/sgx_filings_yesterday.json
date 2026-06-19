@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XQFSAI37IJN94PRR/893571__Form%201%20-%20LHL.pdf",
+    "symbol": "OV8",
+    "transaction_date": "2026-06-17",
+    "shareholder_name": "Lim Hock Leng [->] by way of gift",
+    "number_of_stock": 2666666,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "transfer",
+    "shares_before": 799098459,
+    "shares_before_percentage": 0.5315,
+    "shares_after": 776431793,
+    "shares_after_percentage": 0.5164,
+    "title": "Lim Hock Leng [->] By Way Of Gift share movement in Sheng Siong Group Ltd",
+    "body": "Lim Hock Leng [->] By Way Of Gift executed a transaction for 2,666,666.0 shares of Sheng Siong Group Ltd. This decreases their holdings from 799,098,459.0 to 776,431,793.0 shares.",
+    "sector": "consumer-non-cyclicals",
+    "sub_sector": "food-beverage-retail-production",
+    "holder_type": "insider",
+    "issuer_name": "Sheng Siong Group Ltd"
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/VLAWK57AF8AO93JC/893569__Form%201%20-%20LHC.pdf",
+    "symbol": "OV8",
+    "transaction_date": "2026-06-17",
+    "shareholder_name": "Lim Hock Chee [->] and daughter",
+    "number_of_stock": 20000000,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "transfer",
+    "shares_before": 791205559,
+    "shares_before_percentage": 0.5262,
+    "shares_after": 768538893,
+    "shares_after_percentage": 0.5112,
+    "title": "Lim Hock Chee [->] And Daughter share movement in Sheng Siong Group Ltd",
+    "body": "Lim Hock Chee [->] And Daughter executed a transaction for 20,000,000.0 shares of Sheng Siong Group Ltd. This decreases their holdings from 791,205,559.0 to 768,538,893.0 shares.",
+    "sector": "consumer-non-cyclicals",
+    "sub_sector": "food-beverage-retail-production",
+    "holder_type": "insider",
+    "issuer_name": "Sheng Siong Group Ltd"
+  }
+]

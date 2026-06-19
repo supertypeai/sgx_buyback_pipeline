@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "symbol": "OV8",
+    "price_per_share": null,
+    "transaction_type": "transfer",
+    "title": "Lim Hock Leng [->] By Way Of Gift share movement in Sheng Siong Group Ltd",
+    "body": "Lim Hock Leng [->] By Way Of Gift executed a transaction for 2,666,666.0 shares of Sheng Siong Group Ltd. This decreases their holdings from 799,098,459.0 to 776,431,793.0 shares.",
+    "sector": "consumer-non-cyclicals",
+    "sub_sector": "food-beverage-retail-production",
+    "holder_type": "insider",
+    "issuer_name": "Sheng Siong Group Ltd",
+    "holder_name": "Lim Hock Leng [->] by way of gift",
+    "holding_before": 799098459,
+    "holding_after": 776431793,
+    "share_percentage_before": 0.5315,
+    "share_percentage_after": 0.5164,
+    "timestamp": "2026-06-17",
+    "amount_transaction": 2666666,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XQFSAI37IJN94PRR/893571__Form%201%20-%20LHL.pdf",
+    "share_percentage_transaction": 0.0151,
+    "reasons": [
+      "Transaction type is \"transfer\" but missing financial data: transaction_value=None, amount_transaction=2666666, price_per_share=None",
+      "Difference in shares (after - before = 22666666) does not match reported amount_transaction=2666666",
+      "Please verify the holder name for transfer type. The format Lim Hock Leng [->] by way of gift may not always match the current regex. Since we need to have a sign [->]"
+    ]
+  },
+  {
+    "symbol": "OV8",
+    "price_per_share": null,
+    "transaction_type": "transfer",
+    "title": "Lim Hock Chee [->] And Daughter share movement in Sheng Siong Group Ltd",
+    "body": "Lim Hock Chee [->] And Daughter executed a transaction for 20,000,000.0 shares of Sheng Siong Group Ltd. This decreases their holdings from 791,205,559.0 to 768,538,893.0 shares.",
+    "sector": "consumer-non-cyclicals",
+    "sub_sector": "food-beverage-retail-production",
+    "holder_type": "insider",
+    "issuer_name": "Sheng Siong Group Ltd",
+    "holder_name": "Lim Hock Chee [->] and daughter",
+    "holding_before": 791205559,
+    "holding_after": 768538893,
+    "share_percentage_before": 0.5262,
+    "share_percentage_after": 0.5112,
+    "timestamp": "2026-06-17",
+    "amount_transaction": 20000000,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLAWK57AF8AO93JC/893569__Form%201%20-%20LHC.pdf",
+    "share_percentage_transaction": 0.015,
+    "reasons": [
+      "Transaction type is \"transfer\" but missing financial data: transaction_value=None, amount_transaction=20000000, price_per_share=None",
+      "Difference in shares (after - before = 22666666) does not match reported amount_transaction=20000000",
+      "Please verify the holder name for transfer type. The format Lim Hock Chee [->] and daughter may not always match the current regex. Since we need to have a sign [->]"
+    ]
+  }
+]
