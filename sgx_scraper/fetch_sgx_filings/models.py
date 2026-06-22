@@ -25,4 +25,5 @@ class SGXFilings:
     sub_sector: str = ''
     holder_type: str = ''
     issuer_name: str = ''
+    circumstances_desc: str = ''
     

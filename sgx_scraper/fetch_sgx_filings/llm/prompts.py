@@ -58,6 +58,12 @@ class PomptCollections:
             nature of the award beyond what the data explicitly states.
             - If transaction type is others, identify and describe the specific corporate action
             (e.g. rights issue, private placement, transfer) rather than labeling it as others.
+            - tags provides context labels for the nature of the transaction. Use these only to
+            inform the framing and word choice of the body — do not invent details not present
+            in the other fields.
+            - circumstances contains the filer's own free-text description of why the transaction
+            occurred. If present and not '-', use it to add specific context to the body. Quote or paraphrase it faithfully — do not
+            contradict or expand beyond what it states.
             - Do not speculate. Do not editorialize. Do not use filler phrases like
             "it is worth noting" or "this is significant because".
             - Do not use informal shorthands like 'the buy' or 'the sell'. 

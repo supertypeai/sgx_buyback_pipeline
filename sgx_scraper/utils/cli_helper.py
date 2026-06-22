@@ -38,7 +38,11 @@ def push_to_db(payload: list[dict[str]], table_name: str) -> bool:
         is_succes = False 
 
         payload = [
-            {key: value for key, value in record.items() if key != "issuer_name"}
+            {
+                key: value 
+                for key, value in record.items() 
+                if key not in {"issuer_name", "circumstances_desc"}
+            }
             for record in payload
         ]
 

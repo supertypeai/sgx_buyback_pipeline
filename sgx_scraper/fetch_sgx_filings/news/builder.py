@@ -48,6 +48,8 @@ def format_filing_for_prompt(filing: dict) -> str:
         f"ownership before: {filing.get('share_percentage_before')}",
         f"ownership after: {filing.get('share_percentage_after')}",
         f"timestamp: {filing.get('timestamp') or '-'}",
+        f"tags: {', '.join(filing.get('tags') or []) or '-'}",
+        f"circumstances: {filing.get('circumstances_desc') or '-'}"
     ]
     return '\n'.join(lines)
 
@@ -119,8 +121,8 @@ def clean_news_payload(
         'body': body,
         'source': record.get('source'),
         'timestamp': record.get('timestamp'),
-        'sector': sector,
-        'sub_sector': [sub_sector],
+        'sector': record.get('sector') or sector,
+        'sub_sector': [record.get('sub_sector')] or [sub_sector],
         'tags': ['Insider Trading'],
         'symbols': [symbol],
         'dimension': None,
