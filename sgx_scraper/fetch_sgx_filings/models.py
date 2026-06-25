@@ -26,4 +26,6 @@ class SGXFilings:
     holder_type: str = ''
     issuer_name: str = ''
     circumstances_desc: str = ''
+    circumstances_raw: dict = field(default_factory=dict)
+    
     source_is_manual: bool = True

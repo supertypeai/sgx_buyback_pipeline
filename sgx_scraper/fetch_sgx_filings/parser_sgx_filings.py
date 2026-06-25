@@ -655,6 +655,7 @@ def extract_records(pdf_url: str, doc_fitz, detected_holder_type: str) -> list[d
                         'holder_type': holder_type,
                         'tags': tags,
                         'circumstances_desc': circumstances_desc,
+                        'circumstances_raw': circumstance_interest_raw, 
                         **transaction_detail,
                         **individual_share_data
                     }
@@ -829,7 +830,7 @@ if __name__ == '__main__':
     form_6 = 'https://links.sgx.com/FileOpen/_FORM6-REIT_Manager.ashx?App=Announcement&FileID=863792'
     form_3 = 'https://links.sgx.com/FileOpen/_251001%20Form%203%20-%20LSL%20-%20GasHub%20-%20Final.ashx?App=Announcement&FileID=860683'
     form_1 = 'https://links.sgx.com/FileOpen/_FORM1_LWS_2025.10.03.ashx?App=Announcement&FileID=860899'
-    batched_payload_processed = get_sgx_filings(failed)
+    batched_payload_processed = get_sgx_filings(test_clean_data)
      
 
 # uv run -m sgx_scraper.fetch_sgx_filings.parser_sgx_filings
