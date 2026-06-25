@@ -26,4 +26,4 @@ class SGXFilings:
     holder_type: str = ''
     issuer_name: str = ''
     circumstances_desc: str = ''
-    
+    source_is_manual: bool = True
