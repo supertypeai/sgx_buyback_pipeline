@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RMTMMKBILRZ667VT/894084__RS%20eFORM1V2%2024%20June%202026%20-%20Final.pdf",
+    "symbol": "ULG",
+    "tags": [
+      "investment"
+    ],
+    "transaction_date": "2026-06-23",
+    "shareholder_name": "Ravinder Sajwan",
+    "number_of_stock": 198025,
+    "value": 345659.38,
+    "price_per_share": 1.3446,
+    "transaction_type": "buy",
+    "shares_before": 683151842,
+    "shares_before_percentage": 0.6198,
+    "shares_after": 683349867,
+    "shares_after_percentage": 0.62,
+    "title": "Ravinder Sajwan buys shares of Ultragreen Ai Ltd",
+    "body": "Ravinder Sajwan bought 198,025.0 shares of Ultragreen Ai Ltd. This increases their holdings from 683,151,842.0 to 683,349,867.0 shares.",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "holder_type": "insider",
+    "issuer_name": "Ultragreen Ai Ltd",
+    "circumstances_desc": ""
+  }
+]
