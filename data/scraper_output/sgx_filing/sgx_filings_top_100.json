@@ -1,1 +1,60 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/SIWKJ4CHSU8MCTNF/894604__RS%20eFORM1V2%2029%20June%202026.pdf",
+    "symbol": "ULG",
+    "tags": [
+      "investment"
+    ],
+    "transaction_date": "2026-06-26",
+    "shareholder_name": "Ravinder Sajwan",
+    "number_of_stock": 25576,
+    "value": 41655.41,
+    "price_per_share": 1.2591,
+    "transaction_type": "buy",
+    "shares_before": 683877447,
+    "shares_before_percentage": 0.6205,
+    "shares_after": 683903023,
+    "shares_after_percentage": 0.6206,
+    "title": "Ravinder Sajwan buys shares of Ultragreen Ai Ltd",
+    "body": "Ravinder Sajwan bought 25,576.0 shares of Ultragreen Ai Ltd. This increases their holdings from 683,877,447.0 to 683,903,023.0 shares.",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "holder_type": "insider",
+    "issuer_name": "Ultragreen Ai Ltd",
+    "circumstances_desc": "",
+    "circumstances_raw": {
+      "page": 4,
+      "results": {
+        "acquisition": {
+          "Securities via market transaction": true,
+          "Securities via off-market transaction": false,
+          "Securities via physical settlement": false,
+          "Securities pursuant to rights issue": false,
+          "Securities via a placement": false,
+          "Securities following conversion/exercise": false,
+          "Securities as part of management": null
+        },
+        "disposal": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false
+        },
+        "other_circumstances": {
+          "Acceptance of take-over offer": false,
+          "Acceptance of employee share options/share awards": false,
+          "Vesting of share awards": false,
+          "Exercise of employee share options": false,
+          "Acceptance of take-over offer for Listed Issuer": false,
+          "Corporate action by Listed Issuer": {
+            "checked": false,
+            "description": null
+          }
+        },
+        "others_specify": {
+          "checked": false,
+          "description": null
+        }
+      }
+    },
+    "source_is_manual": false
+  }
+]
