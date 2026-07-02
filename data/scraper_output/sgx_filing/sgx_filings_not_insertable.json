@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "symbol": "S58",
+    "tags": [
+      "employee-share-plan"
+    ],
+    "price_per_share": null,
+    "transaction_type": "award",
+    "title": "Mok Tee Heong Kerry was awarded shares of SATS Ltd",
+    "body": "Mok Tee Heong Kerry was awarded 372,600.0 shares of SATS Ltd. This increases their holdings from 1,199,684.0 to 1,806,584.0 shares.",
+    "sector": "infrastructures",
+    "sub_sector": "heavy-construction-transport-infrastructure",
+    "holder_type": "insider",
+    "issuer_name": "SATS Ltd",
+    "circumstances_desc": "",
+    "circumstances_raw": {
+      "page": 4,
+      "results": {
+        "acquisition": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false,
+          "Securities via physical settlement": false,
+          "Securities pursuant to rights issue": false,
+          "Securities via a placement": false,
+          "Securities following conversion/exercise": false,
+          "Securities as part of management": null
+        },
+        "disposal": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false
+        },
+        "other_circumstances": {
+          "Acceptance of take-over offer": false,
+          "Acceptance of employee share options/share awards": false,
+          "Vesting of share awards": true,
+          "Exercise of employee share options": false,
+          "Acceptance of take-over offer for Listed Issuer": false,
+          "Corporate action by Listed Issuer": {
+            "checked": false,
+            "description": null
+          }
+        },
+        "others_specify": {
+          "checked": false,
+          "description": null
+        }
+      }
+    },
+    "source_is_manual": false,
+    "holder_name": "Mok Tee Heong Kerry",
+    "holding_before": 1199684,
+    "holding_after": 1806584,
+    "share_percentage_before": 0.00081,
+    "share_percentage_after": 0.00122,
+    "timestamp": "2026-07-01",
+    "amount_transaction": 372600,
+    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XBW5OBG9CHE1A4YK/895017__Form1_PCEO.pdf",
+    "share_percentage_transaction": 0.00041,
+    "reasons": [
+      "Transaction type is \"award\" but missing financial data: transaction_value=None, amount_transaction=372600, price_per_share=None",
+      "Difference in shares (after - before = 606900) does not match reported amount_transaction=372600",
+      "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
+    ]
+  }
+]

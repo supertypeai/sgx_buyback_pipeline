@@ -1,1 +1,60 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XBW5OBG9CHE1A4YK/895017__Form1_PCEO.pdf",
+    "symbol": "S58",
+    "tags": [
+      "employee-share-plan"
+    ],
+    "transaction_date": "2026-07-01",
+    "shareholder_name": "Mok Tee Heong Kerry",
+    "number_of_stock": 372600,
+    "value": null,
+    "price_per_share": null,
+    "transaction_type": "award",
+    "shares_before": 1199684,
+    "shares_before_percentage": 0.00081,
+    "shares_after": 1806584,
+    "shares_after_percentage": 0.00122,
+    "title": "Mok Tee Heong Kerry was awarded shares of SATS Ltd",
+    "body": "Mok Tee Heong Kerry was awarded 372,600.0 shares of SATS Ltd. This increases their holdings from 1,199,684.0 to 1,806,584.0 shares.",
+    "sector": "infrastructures",
+    "sub_sector": "heavy-construction-transport-infrastructure",
+    "holder_type": "insider",
+    "issuer_name": "SATS Ltd",
+    "circumstances_desc": "",
+    "circumstances_raw": {
+      "page": 4,
+      "results": {
+        "acquisition": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false,
+          "Securities via physical settlement": false,
+          "Securities pursuant to rights issue": false,
+          "Securities via a placement": false,
+          "Securities following conversion/exercise": false,
+          "Securities as part of management": null
+        },
+        "disposal": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false
+        },
+        "other_circumstances": {
+          "Acceptance of take-over offer": false,
+          "Acceptance of employee share options/share awards": false,
+          "Vesting of share awards": true,
+          "Exercise of employee share options": false,
+          "Acceptance of take-over offer for Listed Issuer": false,
+          "Corporate action by Listed Issuer": {
+            "checked": false,
+            "description": null
+          }
+        },
+        "others_specify": {
+          "checked": false,
+          "description": null
+        }
+      }
+    },
+    "source_is_manual": false
+  }
+]
