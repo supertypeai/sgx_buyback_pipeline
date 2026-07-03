@@ -1,42 +1,41 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/I8EFJDBKEEWYYE1O/682fe104f29494a2d25d87a6e6d21653f329e23e291c20a0ef0b11f61c4ba4a2",
-    "symbol": "U11",
-    "purchase_date": "2026-07-01",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/C0N986HXXMNOPB46/da6e6d15a33a7d6f81fc9c253db9c090599f4d8b47355261c2910105378963d2",
+    "symbol": "V03",
+    "purchase_date": "2026-07-02",
     "type": "On Market",
     "price_per_share": {
-      "highest": 39.96,
-      "lowest": 39.51
+      "price_paid_per_share": 17.22
     },
-    "total_value": 2731371.23,
-    "total_shares_purchased": 68800,
-    "treasury_shares_after_purchase": 13232600,
+    "total_value": 620799.34,
+    "total_shares_purchased": 36000,
+    "treasury_shares_after_purchase": 1340000,
     "mandate": {
-      "mandate_total": 82676174,
-      "cumulative_purchased": 2743200,
-      "mandate_remaining": 79932974,
-      "mandate_start": "2026-04-17",
-      "mandate_end": "2027-04-17"
+      "mandate_total": 14375948,
+      "cumulative_purchased": 154300,
+      "mandate_remaining": 14221648,
+      "mandate_start": "2026-04-24",
+      "mandate_end": "2027-04-24"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/YGI87QA9UHA4GQJI/522555a6638bd472b764d7ba00f2bbc4de8d8718ab7eb1162808a3e09bf83c73",
-    "symbol": "F99",
-    "purchase_date": "2026-07-01",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/84JYX7PZQF7HTS2P/1d320db5a3146e20663ad60bee6d64f4980a0d101e205700976083fe4ddbb737",
+    "symbol": "U11",
+    "purchase_date": "2026-07-02",
     "type": "On Market",
     "price_per_share": {
-      "highest": 1.43,
-      "lowest": 1.43
+      "highest": 40.07,
+      "lowest": 39.59
     },
-    "total_value": 52120.47,
-    "total_shares_purchased": 36400,
-    "treasury_shares_after_purchase": 1905088,
+    "total_value": 2745491.83,
+    "total_shares_purchased": 68800,
+    "treasury_shares_after_purchase": 13267000,
     "mandate": {
-      "mandate_total": 101967963,
-      "cumulative_purchased": 1766000,
-      "mandate_remaining": 100201963,
-      "mandate_start": "2026-01-27",
-      "mandate_end": "2027-01-27"
+      "mandate_total": 82676174,
+      "cumulative_purchased": 2812000,
+      "mandate_remaining": 79864174,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
     }
   }
 ]
