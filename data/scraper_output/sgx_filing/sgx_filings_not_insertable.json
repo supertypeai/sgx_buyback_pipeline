@@ -1,17 +1,17 @@
 [
   {
-    "symbol": "S58",
+    "symbol": "AIY",
     "tags": [
       "employee-share-plan"
     ],
     "price_per_share": null,
     "transaction_type": "award",
-    "title": "Mok Tee Heong Kerry was awarded shares of SATS Ltd",
-    "body": "Mok Tee Heong Kerry was awarded 372,600.0 shares of SATS Ltd. This increases their holdings from 1,199,684.0 to 1,806,584.0 shares.",
-    "sector": "infrastructures",
-    "sub_sector": "heavy-construction-transport-infrastructure",
+    "title": "Tham Soh Mui was awarded shares of iFAST Corp Ltd",
+    "body": "Tham Soh Mui was awarded 1,500.0 shares of iFAST Corp Ltd. This increases their holdings from 4,600.0 to 6,100.0 shares.",
+    "sector": "technology",
+    "sub_sector": "software-it-services",
     "holder_type": "insider",
-    "issuer_name": "SATS Ltd",
+    "issuer_name": "iFAST Corp Ltd",
     "circumstances_desc": "",
     "circumstances_raw": {
       "page": 4,
@@ -47,19 +47,18 @@
       }
     },
     "source_is_manual": false,
-    "holder_name": "Mok Tee Heong Kerry",
-    "holding_before": 1199684,
-    "holding_after": 1806584,
-    "share_percentage_before": 0.00081,
-    "share_percentage_after": 0.00122,
+    "holder_name": "Tham Soh Mui",
+    "holding_before": 4600,
+    "holding_after": 6100,
+    "share_percentage_before": 2e-05,
+    "share_percentage_after": 2e-05,
     "timestamp": "2026-07-01",
-    "amount_transaction": 372600,
+    "amount_transaction": 1500,
     "transaction_value": null,
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XBW5OBG9CHE1A4YK/895017__Form1_PCEO.pdf",
-    "share_percentage_transaction": 0.00041,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/864OYTF17KKQ17SP/895222__FORM1V2-Tammie_02.07.2026.pdf",
+    "share_percentage_transaction": 0.0,
     "reasons": [
-      "Transaction type is \"award\" but missing financial data: transaction_value=None, amount_transaction=372600, price_per_share=None",
-      "Difference in shares (after - before = 606900) does not match reported amount_transaction=372600",
+      "Transaction type is \"award\" but missing financial data: transaction_value=None, amount_transaction=1500, price_per_share=None",
       "Please double check the transaction type: award. The document may contain multiple descriptions that affect the classification."
     ]
   }
