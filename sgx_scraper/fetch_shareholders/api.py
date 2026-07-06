@@ -127,22 +127,22 @@ def get_screener_shareholders(symbols: list[str]) -> dict[str, list]:
 
 def sync_with_db(
     screener_shareholders_by_symbol: dict[str, list],
-    db_records: list[dict],
+    db_records: dict[str, dict],
 ) -> list[dict]:
     result = []
 
     db_lookup = {
-        record.get('symbol'): record.get('shareholders')
-        for record in db_records
+        symbol: record.get('shareholders')
+        for symbol, record in db_records.items()
     }
 
     for symbol, screener_shareholders in screener_shareholders_by_symbol.items():
         if symbol not in db_lookup:
             continue
 
-        existing_db_shareholders = db_lookup[symbol]
+        existing_db_shareholders = db_lookup[symbol] or []
         merged_shareholders = []
-        matched_db_shareholders = set()
+        matched_shareholder_names = set()
 
         for screener_shareholder in screener_shareholders:
             screener_name = screener_shareholder.get('name')
@@ -159,14 +159,14 @@ def sync_with_db(
                     matched_db_shareholder['share_amount'] = screener_share_amount
                     matched_db_shareholder['share_percentage'] = screener_share_percentage
 
-                matched_db_shareholders.add(matched_db_shareholder.get('name'))
+                matched_shareholder_names.add(matched_db_shareholder.get('name'))
                 merged_shareholders.append(matched_db_shareholder)  
 
             else:
                 merged_shareholders.append(screener_shareholder)  
 
         for db_shareholder in existing_db_shareholders:
-            if db_shareholder.get('name') not in matched_db_shareholders:
+            if db_shareholder.get('name') not in matched_shareholder_names:
                 merged_shareholders.append(db_shareholder)
 
         result.append({

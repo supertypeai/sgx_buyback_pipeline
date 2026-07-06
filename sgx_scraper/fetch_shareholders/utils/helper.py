@@ -34,9 +34,9 @@ def matching(input: str, input_to_match: list):
 
 def find_matched_db_shareholder(
     filing_name: str,
-    db_shareholders: dict,
+    db_shareholders: list[dict],
     threshold: int = 95
-) -> dict | None:    
+) -> dict | None:
     lookup_shareholder_by_name = {
         shareholder.get('name', ''): shareholder
         for shareholder in db_shareholders
