@@ -1,10 +1,14 @@
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 
 from sgx_scraper.utils.cli_helper import open_json
 from sgx_scraper.utils.symbol_matching_helper import symbol_from_company_name
 from sgx_scraper.refresh_sgx_companies import get_sgx_companies
 
-import re 
+import logging
+import re
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def extract_field(soup: BeautifulSoup, label: str) -> str | None:
@@ -51,7 +55,11 @@ def extract_symbol(issuers: list) -> str | None:
 
 def enrich(payload: list[dict]) -> list[dict]:
     companies = get_sgx_companies()
-    
+
+    if companies is None:
+        LOGGER.error('Could not fetch SGX companies, skipping investing_symbol enrichment')
+        return payload
+
     companies_lookup = {
         record.get('symbol'): record.get('investing_symbol') 
         for record in companies 

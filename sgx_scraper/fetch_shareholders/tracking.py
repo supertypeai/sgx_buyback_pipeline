@@ -50,13 +50,14 @@ def get_shareholders_update(filing_payload: list[dict], shareholders_db: dict[st
             continue
 
         db_shareholders = shareholders_db.get(filing_symbol, [])
+        existing_shareholders = db_shareholders.get('shareholders')
 
-        if not db_shareholders:
+        if not existing_shareholders:
             LOGGER.warning(f'[matching] No db shareholders found for symbol: {filing_symbol}')
             continue
 
         if filing_symbol not in result_by_symbol:
-            result_by_symbol[filing_symbol] = list(db_shareholders.get('shareholders'))
+            result_by_symbol[filing_symbol] = list(existing_shareholders)
 
         matched_shareholder = find_matched_db_shareholder(filing_shareholder, result_by_symbol[filing_symbol])
 
@@ -65,7 +66,7 @@ def get_shareholders_update(filing_payload: list[dict], shareholders_db: dict[st
             matched_shareholder['share_percentage'] = filing_share_percentage
 
         else:
-            db_management = db_shareholders.get('management')
+            db_management = db_shareholders.get('management') or []
 
             list_managements = {
                 record.get('name') 
@@ -74,7 +75,7 @@ def get_shareholders_update(filing_payload: list[dict], shareholders_db: dict[st
 
             is_management = matched_db_management(filing_shareholder, list_managements)
 
-            if not is_management and filing_share_percentage < 0.05: 
+            if not is_management: #and filing_share_percentage < 0.05: 
                 LOGGER.info(
                     'shareholder name: %s not in board management: %s', filing_shareholder, ', '.join(list_managements)
                 )

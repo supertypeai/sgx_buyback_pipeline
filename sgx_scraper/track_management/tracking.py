@@ -1,8 +1,8 @@
-from rapidfuzz import process, fuzz
+from rapidfuzz import fuzz
 
 from sgx_scraper.track_management.appointment import get_appointment 
 from sgx_scraper.track_management.cessation import get_cessation
-from .utils.helper import enrich
+# from .utils.helper import enrich
 
 import logging 
 
@@ -71,9 +71,9 @@ def get_management_update(api_response: dict, top_100_companies: list[dict]):
         'management': db_management
     }]
     
-    final_updated = enrich(updated_record)
+    # final_updated = enrich(updated_record)
 
-    return final_updated
+    return updated_record
 
 
 if __name__ == '__main__':
