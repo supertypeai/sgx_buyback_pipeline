@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/M73CWNM143FL1RQU/b68b8faf3afdedf14dd80d7ab82be4ccbc035fc7c12a0a74f96229ab9a118592",
+    "symbol": "U11",
+    "purchase_date": "2026-07-06",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 40.52,
+      "lowest": 40.25
+    },
+    "total_value": 2782152.73,
+    "total_shares_purchased": 68800,
+    "treasury_shares_after_purchase": 13335800,
+    "mandate": {
+      "mandate_total": 82676174,
+      "cumulative_purchased": 2949600,
+      "mandate_remaining": 79726574,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
+    }
+  }
+]
