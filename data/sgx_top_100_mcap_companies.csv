@@ -1,20 +1,20 @@
 symbol,name,market_cap
-M12,Maruwa Co Ltd,842564753160.0
+M12,Maruwa Co Ltd,735208084260.0
 D05,DBS Group Holdings Ltd,194775527849.0
 O39,Oversea-Chinese Banking Corp Ltd,118259448031.0
 SO7,Yangzijiang Shipbuilding (Holdings) Ltd,71917004348.0
 Z74,Singapore Telecommunications Ltd,71695894224.0
 Z77,Singapore Telecommunications Ltd,71695894224.0
 U11,United Overseas Bank Ltd,68857246434.0
-O6Z,Lonza Group Ltd,64853432383.0
-N33,Nomura Holdings Inc,34853280787.0
+O6Z,Lonza Group Ltd,64182997176.0
+N33,Nomura Holdings Inc,35905896650.0
 S63,Singapore Technologies Engineering Ltd,34598637316.0
-K6S,Prudential PLC,34278724112.0
+K6S,Prudential PLC,33916508968.0
 TATD,Airports of Thailand PCL DRC,33571393536.0
 S68,Singapore Exchange Ltd,25878359214.0
 C6L,Singapore Airlines Ltd,24639915115.0
 F34,Wilmar International Ltd,23410870522.0
-Q0F,IHH Healthcare Bhd,23121778020.0
+Q0F,IHH Healthcare Bhd,23260564203.0
 TPED,PTT Exploration Production PCL DRC,20445423616.0
 BN4,Keppel Ltd,19715673733.0
 J36,Jardine Matheson Holdings Ltd,18720811806.0
@@ -22,11 +22,11 @@ C38U,CapitaLand Integrated Commercial Trust,18675001344.0
 TCPD,CP All PCL DRC,15950870528.0
 H78,Hongkong Land Holdings Ltd,15630654474.0
 G07,Great Eastern Holdings Ltd,15354470598.0
-S07,Shangri-La Asia Ltd,14489375828.0
+S07,Shangri-La Asia Ltd,13955369347.0
 BS6,Yangzijiang Shipbuilding (Holdings) Ltd,13695850485.0
 A17U,CapitaLand Ascendas REIT,12637892608.0
+NIO,NIO Inc,12570994687.0
 9CI,CapitaLand Investment Ltd,12483828367.0
-NIO,NIO Inc,12360093404.0
 Y92,Thai Beverage PLC,11309258764.0
 C07,Jardine Cycle & Carriage Ltd,10916426274.0
 U96,Sembcorp Industries Ltd,10200490178.0
@@ -39,12 +39,12 @@ S58,SATS Ltd,6778056900.0
 M44U,Mapletree Logistics Trust,6246274048.0
 AJBU,Keppel DC REIT,5577276416.0
 ME8U,Mapletree Industrial Trust,5538706944.0
-EMI,Emperador Inc,5065550319.0
+EMI,Emperador Inc,5191197129.0
 EB5,First Resources Ltd,4922769645.0
 OV8,Sheng Siong Group Ltd,4916565990.0
-8A8,China Medical System Holdings Ltd,4885047954.0
 V03,Venture Corp Ltd,4836252531.0
 D01,DFI Retail Group Holdings Ltd,4818996563.0
+8A8,China Medical System Holdings Ltd,4708286351.0
 J69U,Frasers Centrepoint Trust,4625860608.0
 VC2,Olam Group Ltd,4563090513.0
 U06,Singapore Land Group Ltd,4542176857.0
@@ -53,14 +53,14 @@ TQ5,Frasers Property Ltd,4279385314.0
 T82U,Suntec Real Estate Investment Trust,4255977984.0
 U10,UOB-Kay Hian Holdings Ltd,4192641898.0
 S59,SIA Engineering Co Ltd,3914808387.0
-T14,Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd,3903882048.0
+T14,Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd,3856921361.0
 CJLU,NetLink NBN Trust,3819031552.0
 BUOU,Frasers Logistics & Commercial Trust,3668217344.0
 H02,Haw Par Corp Ltd,3586164402.0
 HMN,CapitaLand Ascott Trust,3461720576.0
+AVP,AvePoint Inc,3433888101.0
 E5H,Golden Agri-Resources Ltd,3424051725.0
 A7RU,Keppel Infrastructure Trust,3347491072.0
-AVP,AvePoint Inc,3306249575.0
 T15,Tan Chong International Ltd,3241427490.0
 AWX,AEM Holdings Ltd,3106003741.0
 C52,ComfortDelGro Corp Ltd,2904367598.0
@@ -82,17 +82,17 @@ TS0U,OUE Real Estate Investment Trust,1963148672.0
 JYEU,Lendlease Global Commercial REIT,1896406656.0
 CC3,StarHub Ltd,1777769990.0
 8C8U,Centurion Accommodation REIT,1776713856.0
-BVA,Top Glove Corp Bhd,1712748879.0
 BSL,Raffles Medical Group Ltd,1711377513.0
 F03,Food Empire Holdings Ltd,1704798669.0
 AGS,The Hour Glass Ltd,1694518067.0
+BVA,Top Glove Corp Bhd,1687561395.0
 G92,China Aviation Oil (Singapore) Corp Ltd,1625747056.0
 CY6U,CapitaLand India Trust,1531523968.0
 A50,Thomson Medical Group Ltd,1427955275.0
+S2D,Tosei Corp,1390613765.0
 ULG,Ultragreen Ai Ltd,1367043580.0
 OYY,PropNex Ltd,1361600000.0
 H13,Ho Bee Land Ltd,1361233620.0
-S2D,Tosei Corp,1347157084.0
 SET,Stoneweg Europe Stapled Trust,1310000204.0
 SEB,Stoneweg Europe Stapled Trust,1309230592.0
 O5RU,AIMS APAC REIT,1293458304.0
