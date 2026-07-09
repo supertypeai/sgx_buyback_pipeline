@@ -1,40 +1,40 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/QSII5E6WMH9Y25JW/b190dd037bfca57e87ec082cc3424a66b94a5caf9ed1b3fe658b8f7580a7cf6f",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/IPPJ216BIHMHMUJB/772a7b7de91452a21c4b3b9696381b6aaf676354ba469ccc381c45a9bc033b69",
     "symbol": "U11",
-    "purchase_date": "2026-07-07",
+    "purchase_date": "2026-07-08",
     "type": "On Market",
     "price_per_share": {
-      "highest": 41.69,
-      "lowest": 40.68
+      "highest": 42.44,
+      "lowest": 41.71
     },
-    "total_value": 2724073.81,
-    "total_shares_purchased": 66000,
-    "treasury_shares_after_purchase": 13368800,
+    "total_value": 633841.58,
+    "total_shares_purchased": 15100,
+    "treasury_shares_after_purchase": 13376400,
     "mandate": {
       "mandate_total": 82676174,
-      "cumulative_purchased": 3015600,
-      "mandate_remaining": 79660574,
+      "cumulative_purchased": 3030700,
+      "mandate_remaining": 79645474,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/GGS3KPRRMJ09CGZB/bb683d0682f93f99b6da03df62511350aceaaa32ed548151a65cf792cacba217",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/8LW31JWBW8YH7L9S/409dd85d25e0167e26b9bcfd12b9d26dcbe3169578914af7b334131b33d2bb90",
     "symbol": "Z74",
-    "purchase_date": "2026-07-07",
+    "purchase_date": "2026-07-08",
     "type": "On Market",
     "price_per_share": {
-      "highest": 4.42,
+      "highest": 4.4,
       "lowest": 4.37
     },
-    "total_value": 10111658.7,
-    "total_shares_purchased": 2300000,
+    "total_value": 8782339.91,
+    "total_shares_purchased": 2000000,
     "treasury_shares_after_purchase": 14619033,
     "mandate": {
       "mandate_total": 825629225,
-      "cumulative_purchased": 199916305,
-      "mandate_remaining": 625712920,
+      "cumulative_purchased": 201916305,
+      "mandate_remaining": 623712920,
       "mandate_start": "2025-07-29",
       "mandate_end": "2026-07-29"
     }
