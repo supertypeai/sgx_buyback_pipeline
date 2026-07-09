@@ -28,7 +28,6 @@ def get_sgx_companies():
                 'symbol', 
                 'sector', 
                 'sub_sector', 
-                'investing_symbol,' 
                 'shareholders,' 
                 'management'
             )
