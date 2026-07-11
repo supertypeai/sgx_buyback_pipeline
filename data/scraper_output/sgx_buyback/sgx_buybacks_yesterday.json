@@ -1,40 +1,40 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/CM3WSGIDKQG8VAWX/02d80b4adc4d9ce76979e1c534c0687639ddd615865a58ad381d7ecc02129b08",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/35GGRDK6T7J3IOT3/7d8ba739782d0ef117cdeb7cb9597a09e7b40b38bca3bcc55bd9862edd91a2e2",
     "symbol": "U11",
-    "purchase_date": "2026-07-09",
+    "purchase_date": "2026-07-10",
     "type": "On Market",
     "price_per_share": {
-      "highest": 43.22,
-      "lowest": 43.11
+      "highest": 44.12,
+      "lowest": 43.47
     },
-    "total_value": 276734.58,
-    "total_shares_purchased": 6400,
-    "treasury_shares_after_purchase": 13379600,
+    "total_value": 694659.2,
+    "total_shares_purchased": 15800,
+    "treasury_shares_after_purchase": 13387500,
     "mandate": {
       "mandate_total": 82676174,
-      "cumulative_purchased": 3037100,
-      "mandate_remaining": 79639074,
+      "cumulative_purchased": 3052900,
+      "mandate_remaining": 79623274,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/OO1S1YYKTIKFRWB0/b78aa9760fd8b7bc400c0abe927e049976323cc0d43cd95051a2253cd562b1ea",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/R7TRKF59CZG0F1BK/66ec8f8da624687469d75a2d1da157017d8481a96035918df0d9e48b1fee7aba",
     "symbol": "Z74",
-    "purchase_date": "2026-07-09",
+    "purchase_date": "2026-07-10",
     "type": "On Market",
     "price_per_share": {
-      "highest": 4.4,
-      "lowest": 4.38
+      "highest": 4.42,
+      "lowest": 4.4
     },
-    "total_value": 6495818.69,
-    "total_shares_purchased": 1476700,
+    "total_value": 10586118.8,
+    "total_shares_purchased": 2400000,
     "treasury_shares_after_purchase": 14619033,
     "mandate": {
       "mandate_total": 825629225,
-      "cumulative_purchased": 203393005,
-      "mandate_remaining": 622236220,
+      "cumulative_purchased": 205793005,
+      "mandate_remaining": 619836220,
       "mandate_start": "2025-07-29",
       "mandate_end": "2026-07-29"
     }
