@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/5WBZS9Q4HF1QUJPA/59bd62096467aa15022a8cddd1b06c7ac0e4219c3687ab085ac4586f13a763e9",
+    "symbol": "U11",
+    "purchase_date": "2026-07-13",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 44.45,
+      "lowest": 43.9
+    },
+    "total_value": 2684407.94,
+    "total_shares_purchased": 60800,
+    "treasury_shares_after_purchase": 13417900,
+    "mandate": {
+      "mandate_total": 82676174,
+      "cumulative_purchased": 3113700,
+      "mandate_remaining": 79562474,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/9G7FP4VSA9CCMJ5R/0280abceeb95abbe3584773d9519cbf9267a83971d658933351f71c931f7f18c",
+    "symbol": "Z74",
+    "purchase_date": "2026-07-13",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 4.45,
+      "lowest": 4.38
+    },
+    "total_value": 14104258.16,
+    "total_shares_purchased": 3200000,
+    "treasury_shares_after_purchase": 14619033,
+    "mandate": {
+      "mandate_total": 825629225,
+      "cumulative_purchased": 208993005,
+      "mandate_remaining": 616636220,
+      "mandate_start": "2025-07-29",
+      "mandate_end": "2026-07-29"
+    }
+  }
+]
