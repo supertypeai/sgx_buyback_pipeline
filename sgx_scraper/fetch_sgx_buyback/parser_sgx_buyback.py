@@ -145,8 +145,8 @@ def parse_prices(section_a: dict[str], section_b: dict[str]) -> dict[str, float]
 
 
 def parse_total_value(
-        section_a: dict[str], section_b: dict[str], 
-        section_c: dict[str], section_d: dict[str]
+    section_a: dict[str], section_b: dict[str], 
+    section_c: dict[str], section_d: dict[str]
 ) -> tuple:
     # Total mandate 
     total_mandate = section_a.get('Maximum number of shares authorised for purchase')

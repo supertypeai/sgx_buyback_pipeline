@@ -20,12 +20,12 @@ from sgx_scraper.utils.cli_helper import (
 from sgx_scraper.utils.constant import (
     SGX_BUYBACKS_PATH_YESTERDAY, 
     SGX_BUYBACKS_PATH_TODAY, 
-    SGX_BUYBACKS_PATH_NOT_TOP_70,
+    SGX_BUYBACKS_PATH_NOT_TOP_200,
     SGX_FILINGS_PATH_INSERTABLE, 
     SGX_FILINGS_PATH_NOT_INSERTABLE, 
     SGX_FILINGS_PATH_TODAY, 
     SGX_FILINGS_PATH_YESTERDAY, 
-    SGX_FILINGS_PATH_NOT_TOP_70,
+    SGX_FILINGS_PATH_NOT_TOP_200,
     SGX_FILINGS_PATH_TOP_100,
     OUTPUT_DIR_SHAREHOLDERS
 )
@@ -166,19 +166,23 @@ def run_sgx_buyback_scraper(
 
     payload_sgx_buybacks_clean = clean_payload_sgx_buyback(payload_sgx_buybacks)
     
-    payload_top_70, payload_not_top_70 = filter_top_n_companies(payload_sgx_buybacks_clean)
-    write_to_csv(SGX_BUYBACKS_PATH_NOT_TOP_70, payload_not_top_70)
+    payload_top_200, payload_not_top_200 = filter_top_n_companies(
+        payload_sgx_buybacks_clean,
+        top_n=200
+    )
 
-    write_to_json(SGX_BUYBACKS_PATH_TODAY, payload_top_70)
+    write_to_csv(SGX_BUYBACKS_PATH_NOT_TOP_200, payload_not_top_200)
+    write_to_json(SGX_BUYBACKS_PATH_TODAY, payload_top_200)
 
-    if os.path.exists(SGX_BUYBACKS_PATH_YESTERDAY):   
-        logger.info('Processing remove duplicate data') 
+    if os.path.exists(SGX_BUYBACKS_PATH_YESTERDAY):
+        logger.info('Processing remove duplicate data')
         new_payload_sgx_buybacks = remove_duplicate(SGX_BUYBACKS_PATH_TODAY, SGX_BUYBACKS_PATH_YESTERDAY)
-    else: 
-        logger.info('First run detected, all Top 70 filings are new')
-        new_payload_sgx_buybacks = payload_top_70
+    
+    else:
+        logger.info('First run detected, all Top 200 filings are new')
+        new_payload_sgx_buybacks = payload_top_200
 
-    write_to_json(SGX_BUYBACKS_PATH_YESTERDAY, payload_top_70)
+    write_to_json(SGX_BUYBACKS_PATH_YESTERDAY, payload_top_200)
 
     if is_push_db:
         push_to_db(new_payload_sgx_buybacks, 'sgx_buybacks')
@@ -242,7 +246,9 @@ def run_sgx_filings_scraper(
         for sgx_announcement in sgx_announcements:
             detail_url = sgx_announcement.get('url', None)
             issuer_name = sgx_announcement.get("issuer_name")
-           
+
+            logger.info(f'Processing url: {detail_url}')
+
             if not detail_url:
                 logger.info(f'[SGX FILINGS] Skipping {issuer_name}, no detail url.')
                 continue
@@ -271,22 +277,24 @@ def run_sgx_filings_scraper(
 
     payload_clean = clean_payload_sgx_filings(payload_sgx_filings)
 
-    payload_top_70, payload_not_top_70 = filter_top_n_companies(payload_clean)
+    payload_top_200, payload_not_top_200 = filter_top_n_companies(
+        payload_clean, top_n=200
+    )
     payload_top_100, _ = filter_top_n_companies(payload_clean, top_n=100)
 
-    write_to_csv(SGX_FILINGS_PATH_NOT_TOP_70, payload_not_top_70)
-    write_to_json(SGX_FILINGS_PATH_TODAY, payload_top_70)
+    write_to_csv(SGX_FILINGS_PATH_NOT_TOP_200, payload_not_top_200)
+    write_to_json(SGX_FILINGS_PATH_TODAY, payload_top_200)
     write_to_json(SGX_FILINGS_PATH_TOP_100, payload_top_100)
 
-    if os.path.exists(SGX_FILINGS_PATH_YESTERDAY):    
-        logger.info('Processing remove duplicate data') 
+    if os.path.exists(SGX_FILINGS_PATH_YESTERDAY):
+        logger.info('Processing remove duplicate data')
         new_payload = remove_duplicate(SGX_FILINGS_PATH_TODAY, SGX_FILINGS_PATH_YESTERDAY)
 
     else:
-        logger.info('First run detected, all Top 70 filings are new')
-        new_payload = payload_top_70
+        logger.info('First run detected, all Top 200 filings are new')
+        new_payload = payload_top_200
 
-    write_to_json(SGX_FILINGS_PATH_YESTERDAY, payload_top_70)
+    write_to_json(SGX_FILINGS_PATH_YESTERDAY, payload_top_200)
 
     standardized_payload = standardize_name(new_payload)
 

@@ -10,6 +10,7 @@ SGX_FILINGS_PATH_YESTERDAY = SGX_FILINGS_BASE_DIR / "sgx_filings_yesterday.json"
 SGX_FILINGS_PATH_INSERTABLE = SGX_FILINGS_BASE_DIR / "sgx_filings_insertable.json"
 SGX_FILINGS_PATH_NOT_INSERTABLE = SGX_FILINGS_BASE_DIR / "sgx_filings_not_insertable.json"
 SGX_FILINGS_PATH_NOT_TOP_70 = SGX_FILINGS_BASE_DIR / "sgx_filings_not_top_70.csv"
+SGX_FILINGS_PATH_NOT_TOP_200 = SGX_FILINGS_BASE_DIR / "sgx_filings_not_top_200.csv"
 SGX_FILINGS_PATH_TOP_100 = SGX_FILINGS_BASE_DIR / "sgx_filings_top_100.json"
 
 # SGX BUYBACKS
@@ -19,6 +20,7 @@ SGX_BUYBACKS_BASE_DIR.mkdir(parents=True, exist_ok=True)
 SGX_BUYBACKS_PATH_TODAY = SGX_BUYBACKS_BASE_DIR / "sgx_buybacks_today.json"
 SGX_BUYBACKS_PATH_YESTERDAY = SGX_BUYBACKS_BASE_DIR / "sgx_buybacks_yesterday.json"
 SGX_BUYBACKS_PATH_NOT_TOP_70 = SGX_BUYBACKS_BASE_DIR / "sgx_buybacks_not_top_70.csv"
+SGX_BUYBACKS_PATH_NOT_TOP_200 = SGX_BUYBACKS_BASE_DIR / "sgx_buybacks_not_top_200.csv"
 
 OUTPUT_DIR_SHAREHOLDERS = Path('data/scraper_output/shareholders')
 

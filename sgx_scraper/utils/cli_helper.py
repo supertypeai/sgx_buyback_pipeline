@@ -3,8 +3,9 @@ from pathlib import Path
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 
-import json 
-import os 
+import csv
+import json
+import os
 import pandas as pd 
 import logging
 
@@ -230,26 +231,31 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
             SUPABASE_CLIENT
             .table('sgx_company_report')
             .select('symbol, name, market_cap')
+            .order('market_cap', desc=True)
+            .limit(top_n)
             .execute()
         )
 
-        if not response:
+        if not response.data:
             LOGGER.warning('Data sgx_companies not found')
             return [], clean_payload
-        
-        df_sgx_companies = pd.DataFrame(response.data)
 
-        df_top_sgx = (
-            df_sgx_companies
-            .sort_values("market_cap", ascending=False)
-            .head(top_n)
-        )
+        top_companies = response.data
 
         csv_path = Path(f"data/sgx_top_{top_n}_mcap_companies.csv")
         csv_path.parent.mkdir(parents=True, exist_ok=True)
-        df_top_sgx[["symbol", "name", "market_cap"]].to_csv(csv_path, index=False)
 
-        top_n_symbols = set(df_top_sgx['symbol'].tolist())
+        with csv_path.open('w', newline='', encoding='utf-8') as file:
+            writer = csv.DictWriter(
+                file, fieldnames=['symbol', 'name', 'market_cap']
+            )
+            writer.writeheader()
+            writer.writerows(top_companies)
+
+        top_n_symbols = {
+            company['symbol'] 
+            for company in top_companies
+        }
 
         top_n_payload = []
         not_top_n_payload = []
