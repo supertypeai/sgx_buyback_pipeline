@@ -1,1 +1,118 @@
-[]
+[
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/L208TN0KOAROEIB8/896439__Form%201%20-%20Eddy%20Lee_final.pdf",
+    "symbol": "42C",
+    "tags": [
+      "investment"
+    ],
+    "transaction_date": "2026-07-15",
+    "shareholder_name": "Eddy Lee Yip Hang",
+    "number_of_stock": 11620807,
+    "value": 697248.42,
+    "price_per_share": 0.06,
+    "transaction_type": "buy",
+    "shares_before": 237806749,
+    "shares_before_percentage": 0.2207,
+    "shares_after": 249427556,
+    "shares_after_percentage": 0.229,
+    "title": "Eddy Lee Yip Hang buys shares of iX Biopharma Ltd",
+    "body": "Eddy Lee Yip Hang bought 11,620,807.0 shares of iX Biopharma Ltd. This increases their holdings from 237,806,749.0 to 249,427,556.0 shares.",
+    "sector": "healthcare",
+    "sub_sector": "pharmaceuticals-research",
+    "holder_type": "insider",
+    "issuer_name": "iX Biopharma Ltd",
+    "circumstances_desc": "",
+    "circumstances_raw": {
+      "page": 4,
+      "results": {
+        "acquisition": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false,
+          "Securities via physical settlement": false,
+          "Securities pursuant to rights issue": false,
+          "Securities via a placement": false,
+          "Securities following conversion/exercise": true,
+          "Securities as part of management": null
+        },
+        "disposal": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false
+        },
+        "other_circumstances": {
+          "Acceptance of take-over offer": false,
+          "Acceptance of employee share options/share awards": false,
+          "Vesting of share awards": false,
+          "Exercise of employee share options": false,
+          "Acceptance of take-over offer for Listed Issuer": false,
+          "Corporate action by Listed Issuer": {
+            "checked": false,
+            "description": null
+          }
+        },
+        "others_specify": {
+          "checked": false,
+          "description": null
+        }
+      }
+    },
+    "source_is_manual": false
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/4IQR9BITQ068YP58/896424__Form%201%20-%20Albert%20Ho_final.pdf",
+    "symbol": "42C",
+    "tags": [
+      "investment"
+    ],
+    "transaction_date": "2026-07-14",
+    "shareholder_name": "Albert Ho Shing Tung",
+    "number_of_stock": 1019337,
+    "value": 61160.22,
+    "price_per_share": 0.06,
+    "transaction_type": "buy",
+    "shares_before": 12365885,
+    "shares_before_percentage": 0.0115,
+    "shares_after": 13385222,
+    "shares_after_percentage": 0.0124,
+    "title": "Albert Ho Shing Tung buys shares of iX Biopharma Ltd",
+    "body": "Albert Ho Shing Tung bought 1,019,337.0 shares of iX Biopharma Ltd. This increases their holdings from 12,365,885.0 to 13,385,222.0 shares.",
+    "sector": "healthcare",
+    "sub_sector": "pharmaceuticals-research",
+    "holder_type": "insider",
+    "issuer_name": "iX Biopharma Ltd",
+    "circumstances_desc": "",
+    "circumstances_raw": {
+      "page": 4,
+      "results": {
+        "acquisition": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false,
+          "Securities via physical settlement": false,
+          "Securities pursuant to rights issue": false,
+          "Securities via a placement": false,
+          "Securities following conversion/exercise": true,
+          "Securities as part of management": null
+        },
+        "disposal": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false
+        },
+        "other_circumstances": {
+          "Acceptance of take-over offer": false,
+          "Acceptance of employee share options/share awards": false,
+          "Vesting of share awards": false,
+          "Exercise of employee share options": false,
+          "Acceptance of take-over offer for Listed Issuer": false,
+          "Corporate action by Listed Issuer": {
+            "checked": false,
+            "description": null
+          }
+        },
+        "others_specify": {
+          "checked": false,
+          "description": null
+        }
+      }
+    },
+    "source_is_manual": false
+  }
+]
