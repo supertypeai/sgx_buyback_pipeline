@@ -1,1 +1,61 @@
-[]
+[
+  {
+    "symbol": "H07",
+    "tags": [
+      "investment"
+    ],
+    "price_per_share": 0.49,
+    "transaction_type": "buy",
+    "title": "Ow Chio Kiat buys shares of Stamford Land Corp Ltd",
+    "body": "Ow Chio Kiat bought 19,700.0 shares of Stamford Land Corp Ltd. This increases their holdings from 683,869,762.0 to 683,889,462.0 shares.",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
+    "holder_type": "insider",
+    "issuer_name": "Stamford Land Corp Ltd",
+    "circumstances_desc": "",
+    "circumstances_raw": {
+      "page": 4,
+      "results": {
+        "acquisition": {
+          "Securities via market transaction": true,
+          "Securities via off-market transaction": false,
+          "Securities via physical settlement": false,
+          "Securities pursuant to rights issue": false,
+          "Securities via a placement": false,
+          "Securities following conversion/exercise": false,
+          "Securities as part of management": null
+        },
+        "disposal": {
+          "Securities via market transaction": false,
+          "Securities via off-market transaction": false
+        },
+        "other_circumstances": {
+          "Acceptance of take-over offer": false,
+          "Acceptance of employee share options/share awards": false,
+          "Vesting of share awards": false,
+          "Exercise of employee share options": false,
+          "Acceptance of take-over offer for Listed Issuer": false,
+          "Corporate action by Listed Issuer": {
+            "checked": false,
+            "description": null
+          }
+        },
+        "others_specify": {
+          "checked": false,
+          "description": null
+        }
+      }
+    },
+    "source_is_manual": false,
+    "holder_name": "Ow Chio Kiat",
+    "holding_before": 683869762,
+    "holding_after": 683889462,
+    "share_percentage_before": 0.46095,
+    "share_percentage_after": 0.46107,
+    "timestamp": "2026-07-14",
+    "amount_transaction": 19700,
+    "transaction_value": 9653.0,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/0UJBVB7T9J93VAF1/896629__eFORM1V2%20-%20SLC%20-%20For%20release%2016%20Jul%202026.pdf",
+    "share_percentage_transaction": 0.00012
+  }
+]
