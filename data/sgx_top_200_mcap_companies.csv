@@ -1,36 +1,36 @@
 symbol,name,market_cap
-MENU,MENU,
-VDCR,AcroMeta Group Limited,
-YV4R,Duty Free International Ltd,
 C70,City Developments Ltd Pref,
+YV4R,Duty Free International Ltd,
 LQPR,AcroMeta Grp R,
+8M4R,Duty Free International Limited,
 UGS,UGS,
 1U8,1U8,
-8M4R,Duty Free International Limited,
+MENU,MENU,
+VDCR,AcroMeta Group Limited,
 D05,DBS Group Holdings Ltd,204196488695
 O39,Oversea-Chinese Banking Corp Ltd,128228755944
-Z77,Singapore Telecommunications Ltd,72678029761
 Z74,Singapore Telecommunications Ltd,72678029761
+Z77,Singapore Telecommunications Ltd,72678029761
 U11,United Overseas Bank Ltd,70145532647
 O6Z,Lonza Group Ltd,64272388537
-K6S,Prudential PLC,44628786411
+K6S,Prudential PLC,44698058877
 N33,Nomura Holdings Inc,37636859935
 TATD,Airports of Thailand PCL DRC,33571393536
 S63,Singapore Technologies Engineering Ltd,32539566024
 S68,Singapore Exchange Ltd,25518597290
 F34,Wilmar International Ltd,24160018379
 C6L,Singapore Airlines Ltd,24104264787
-J36,Jardine Matheson Holdings Ltd,23961603846
+J36,Jardine Matheson Holdings Ltd,23998796867
 Q0F,IHH Healthcare Bhd,23676922751
-H78,Hongkong Land Holdings Ltd,21043672243
+H78,Hongkong Land Holdings Ltd,21076336073
 TPED,PTT Exploration Production PCL DRC,20445423616
 BN4,Keppel Ltd,20364452759
 C38U,CapitaLand Integrated Commercial Trust,19462978328
 G07,Great Eastern Holdings Ltd,18270116063
-NIO,NIO Inc,16650637160
+NIO,NIO Inc,16676482154
 TCPD,CP All PCL DRC,15950870528
+SO7,Yangzijiang Shipbuilding (Holdings) Ltd,14290714730
 BS6,Yangzijiang Shipbuilding (Holdings) Ltd,14286188868
-SO7,Yangzijiang Shipbuilding (Holdings) Ltd,14283213043
 A17U,CapitaLand Ascendas REIT,12537988487
 9CI,CapitaLand Investment Ltd,12433893054
 Y92,Thai Beverage PLC,11434917195
@@ -42,16 +42,16 @@ N2IU,Mapletree Pan Asia Commercial Trust,7081055432
 S58,SATS Ltd,6882106019
 C09,City Developments Ltd,6879193321
 5E2,Seatrium Ltd,6743591583
-D01,DFI Retail Group Holdings Ltd,6279044230
+D01,DFI Retail Group Holdings Ltd,6288790515
 M44U,Mapletree Logistics Trust,6195075066
-M12,Maruwa Co Ltd,5726461729
+M12,Maruwa Co Ltd,5725020929
 AJBU,Keppel DC REIT,5675123355
 ME8U,Mapletree Industrial Trust,5538706656
 EB5,First Resources Ltd,5340740653
 EMI,Emperador Inc,5092002279
 8A8,China Medical System Holdings Ltd,5061809558
+T14,Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd,4934155673
 OV8,Sheng Siong Group Ltd,4931601360
-T14,Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd,4926508783
 V03,Venture Corp Ltd,4617729824
 J69U,Frasers Centrepoint Trust,4605482569
 VC2,Olam Group Ltd,4563090513
@@ -72,11 +72,11 @@ P8Z,Bumitama Agri Ltd,3208166481
 AIY,iFAST Corp Ltd,2916423325
 C52,ComfortDelGro Corp Ltd,2904367598
 AWX,AEM Holdings Ltd,2760892214
-XWA,AEM Holdings Ltd,2747743137
+XWA,AEM Holdings Ltd,2752008163
 C2PU,Parkway Life Real Estate Investment Trust,2715036950
 F17,GuocoLand Ltd,2471046626
 H15,Hotel Properties Ltd,2425641526
-S07,Shangri-La Asia Ltd,2341084409
+S07,Shangri-La Asia Ltd,2343932444
 P7VU,Hutchison Port Holdings Trust,2216680704
 NS8U,Hutchison Port Holdings Trust,2197392661
 558,UMS Integration Ltd,2165507366
@@ -91,7 +91,7 @@ JYEU,Lendlease Global Commercial REIT,1913041845
 CC3,StarHub Ltd,1761022535
 AGS,The Hour Glass Ltd,1732884513
 BSL,Raffles Medical Group Ltd,1729779422
-ULG,Ultragreen Ai Ltd,1704615148
+ULG,Ultragreen Ai Ltd,1707261039
 BVA,Top Glove Corp Bhd,1662373912
 CY6U,CapitaLand India Trust,1531523968
 F03,Food Empire Holdings Ltd,1505564433
@@ -108,8 +108,8 @@ P15,Pacific Century Regional Developments Ltd,1296808618
 AP4,Riverstone Holdings Ltd,1267253725
 P40U,Starhill Global Real Estate Investment Trust,1264951470
 B61,Bukit Sembawang Estates Ltd,1255719931
+NTDU,NTT DC REIT,1227568362
 Z25,Yanlord Land Group Ltd,1226524963
-NTDU,NTT DC REIT,1225665893
 W05,Wing Tai Holdings Ltd,1206947005
 Q5T,Far East Hospitality Trust,1170301056
 ADN,First Sponsor Group Ltd,1151852231
@@ -131,7 +131,7 @@ RE4,Geo Energy Resources Ltd,962049704
 T6I,ValueMax Group Ltd,885399990
 CRPU,Sasseur REIT,866324336
 BWM,Zheneng Jinjiang Environment Holding Co Ltd,860472300
-DCRU,Digital Core REIT,831707303
+DCRU,Digital Core REIT,832998272
 544,CSE Global Ltd,824044124
 S08,Singapore Post Ltd,799610251
 P9D,Civmec Ltd,777701428
@@ -157,7 +157,7 @@ O10,Far East Orchard Ltd,546098702
 H18,Hotel Grand Central Ltd,536083957
 P34,Delfi Ltd,534762375
 U13,United Overseas Insurance Ltd,525933000
-T15,Tan Chong International Ltd,519651159
+T15,Tan Chong International Ltd,520283338
 A31,Addvalue Technologies Ltd,519355883
 S56,Samudera Shipping Line Ltd,513826480
 QC7,Q & M Dental Group (Singapore) Ltd,511757530
@@ -180,7 +180,7 @@ BHK,SIIC Environment Holdings Ltd,422409179
 ZQM,Soilbuild Construction Group Ltd,413665115
 BDX,GSH Corp Ltd,411503874
 42C,iX Biopharma Ltd,408441877
-ODBU,United Hampshire US REIT,403574868
+ODBU,United Hampshire US REIT,404201294
 ZKX,Ever Glory United Holdings Ltd,398514990
 5CF,OKP Holdings Ltd,397515072
 HLS,Helens International Holdings Co Ltd,396839291
@@ -196,6 +196,6 @@ KUO,International Cement Group Ltd,349818703
 BTM,Penguin International Ltd,347868242
 A04,ASL Marine Holdings Ltd,344726046
 DHLU,Daiwa House Logistics Trust,340062939
-MXNU,Elite UK REIT,338502894
+MXNU,Elite UK REIT,337338120
 N02,NSL Ltd,336202413
 AWZ,Multi-Chem Ltd,335154396
