@@ -21,7 +21,9 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
 
     reasons = []
 
-    basic_fields = [symbol, timestamp, holding_before, holding_after]
+    basic_fields = [
+        symbol, timestamp, holding_before, holding_after
+    ]
 
     if any(field is None for field in basic_fields):
         reasons.append(
@@ -34,12 +36,13 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
         reasons.append('Missing transaction_type')
 
     if transaction_type:
-        if not all([transaction_value, amount_transaction, price_per_share]):
-            reasons.append(
-                f'Transaction type is "{transaction_type}" but missing financial data: '
-                f'transaction_value={transaction_value}, amount_transaction={amount_transaction}, '
-                f'price_per_share={price_per_share}'
-            )
+        if transaction_type in ['sell', 'buy']:
+            if not all([transaction_value, amount_transaction, price_per_share]):
+                reasons.append(
+                    f'Transaction type is "{transaction_type}" but missing financial data: '
+                    f'transaction_value={transaction_value}, amount_transaction={amount_transaction}, '
+                    f'price_per_share={price_per_share}'
+                )
 
     diff_shares = None
 
@@ -60,6 +63,7 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                 f'The format {holder_name} may not always match the current regex. '
                 f'Since we need to have a sign [->]'
             )
+        
         if transaction_type == 'award':
             reasons.append(
                 f'Please double check the transaction type: {transaction_type}. '
@@ -72,10 +76,13 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
             reasons.append(
                 f'Unrealistic price_per_share={price_per_share} (>200)'
             )
+        
         else:
             market_price_yfinance = get_price(symbol, timestamp)
+            
             if market_price_yfinance:
                 deviation = abs(price_per_share - market_price_yfinance) / market_price_yfinance
+                
                 if deviation > 0.4:
                     reasons.append(
                         f'Price deviation too large: filing price={price_per_share}, '
