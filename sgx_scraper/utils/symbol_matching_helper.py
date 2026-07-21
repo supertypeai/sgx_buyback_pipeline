@@ -1,7 +1,7 @@
 from rapidfuzz import process, fuzz
 
-import json
-import os
+from .json_helper import open_json
+
 import logging
 import re 
 
@@ -9,21 +9,22 @@ import re
 LOGGER = logging.getLogger(__name__)
 
 
-CACHE_PATH = "data/sgx_companies.json"
+def get_sgx_company_names():
+    companies_path = "data/sgx_companies.json"
 
-if not os.path.exists(CACHE_PATH):
-    raise FileNotFoundError("sgx_companies.json not found.")
+    companies = open_json(path=companies_path)
 
-with open(CACHE_PATH, "r", encoding="utf-8") as file:
-    SGX_COMPANIES = json.load(file)
+    company_names = [
+        value.get('name').strip().lower()
+        for _, value in companies.items()
+    ]
 
-SGX_COMPANY_NAMES = [
-    value.get('name').strip().lower()
-    for _, value in SGX_COMPANIES.items()
-]
+    return company_names, companies
 
 
 def symbol_from_company_name(input_name: str, threshold: int = 90) -> str:
+    company_names, companies = get_sgx_company_names()
+
     cleaned_name = re.sub(r'\s*\([^)]*\)', '', input_name)
     cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()
 
@@ -55,7 +56,7 @@ def symbol_from_company_name(input_name: str, threshold: int = 90) -> str:
         for scorer in scorers:
             result = process.extractOne(
                 input_name_lower, 
-                SGX_COMPANY_NAMES,
+                company_names,
                 scorer=scorer
             )
             
@@ -68,18 +69,51 @@ def symbol_from_company_name(input_name: str, threshold: int = 90) -> str:
                 LOGGER.info(f'Matched with {scorer.__name__}: {result}')
                 matched = next(
                     value.get('symbol') 
-                    for _, value in SGX_COMPANIES.items() if value.get('name').lower() == match
+                    for _, value in companies.items() 
+                    if value.get('name').lower() == match
                 )
+
                 return matched
         
         LOGGER.info(f'No match company name found above threshold {threshold}')
+        
         return None
         
     except (TypeError, ValueError) as error:
         return LOGGER.error(f"[symbol_matching_helper] TypeError or ValueError occurred: {input_name} {error}")
+    
     except Exception as error:
         return LOGGER.error(f"[symbol_matching_helper] Error: {error}")
-    
+
+
+def extract_symbol(issuer_security: str) -> str | None:
+    try:
+        parts = issuer_security.split(' - ')
+
+        if len(parts) > 1 and len(parts) <= 3:
+            symbol = parts[-1].strip()
+
+            if symbol:
+                return symbol
+
+    except Exception as error:
+        LOGGER.error(f"[extract symbol] Failed to extract symbol from split: {error}")
+
+    return None
+
+
+def matching_symbol(issuer_security: str) -> str | None:
+    try:
+        symbol_matched = symbol_from_company_name(issuer_security)
+
+        if symbol_matched:
+            return symbol_matched
+
+    except Exception as error:
+        LOGGER.error(f"[matching symbol] Fallback matching symbol failed: {error}")
+
+    return None
+
 
 if __name__ == '__main__':
     company = symbol_from_company_name("17live group limited")

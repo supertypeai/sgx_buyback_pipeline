@@ -1,0 +1,50 @@
+from datetime import datetime
+
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
+
+
+def normalize_datetime(date: str | datetime) -> str:
+    """
+    Normalize a date to YYYYMMDD, the format the SGX announcements API expects.
+    """
+    if isinstance(date, datetime):
+        return date.strftime("%Y%m%d")
+
+    try:
+        if '-' in date:
+            dt = datetime.strptime(date, "%Y-%m-%d")
+            
+        else:
+            dt = datetime.strptime(date, "%Y%m%d")
+
+        return dt.strftime("%Y%m%d")
+
+    except ValueError:
+        LOGGER.error("Invalid date format. Use YYYY-MM-DD or YYYYMMDD.")
+        return None
+
+
+def safe_convert_datetime(date: str) -> str | None:
+    """
+    Parse a scraped date string in various formats to YYYY-MM-DD for storage.
+    """
+    if not date:
+        return None
+
+    try:
+        date_str = date.strip()
+
+        for format in ("%d/%m/%Y", "%d-%b-%Y", "%d %b %Y", "%d %B %Y"):
+            try:
+                parsed_date = datetime.strptime(date_str, format)
+                return parsed_date.strftime("%Y-%m-%d")
+
+            except ValueError:
+                continue
+
+    except Exception as error:
+        LOGGER.error(f"[safe_convert_datetime] Error: {error} for value '{date}'")
+        return None

@@ -14,6 +14,7 @@ def safe_convert_float(number_value: str) -> float:
         if match:
             cleaned = match.group(1).replace(",", "")
             return float(cleaned)
+        
         else:
             return None
         
@@ -47,10 +48,13 @@ def safe_extract_value(value: str | list) -> str:
         if isinstance(value, list) and value:
             # Get Number not percentage 
             extracted_value = value[0] if value else None
+        
         elif isinstance(value, str) and value:
             extracted_value = value 
+
         else: 
             extracted_value = None
+        
         return extracted_value
     
     except Exception as e:
@@ -62,16 +66,20 @@ def safe_extract_fallback(key_name: str, section_a: dict | list, section_b) -> s
     try:
         raw_value_section_a = section_a.get(key_name, None) 
         value_section_a = safe_extract_value(raw_value_section_a)
+        
         if value_section_a:
             return value_section_a
+    
     except Exception as error:
         LOGGER.error(f"[safe extract fallback] Error {error}")
 
     try:
         raw_value_section_b = section_b.get(key_name, None)
         value_section_b = safe_extract_value(raw_value_section_b)
+        
         if value_section_b:
             return value_section_b
+    
     except Exception as error:
         LOGGER.error(f"[safe extract fallback] Error: {error}")
 
@@ -79,13 +87,47 @@ def safe_extract_fallback(key_name: str, section_a: dict | list, section_b) -> s
 
 
 def compute_mandate_remaining(total_mandate: float, cumulative_purchased: float) -> float:
-    try: 
+    try:
         if not total_mandate or not cumulative_purchased:
             return None
-        
+
         mandate_remaining = total_mandate - cumulative_purchased
         return mandate_remaining
-     
+
     except Exception as error:
-        LOGGER.error(f"[compute_mandate_remaining] Error: {error}") 
-        return None  
+        LOGGER.error(f"[compute_mandate_remaining] Error: {error}")
+        return None
+
+
+def clean_payload_sgx_buyback(payload: list[dict[str, any]]) -> list[dict[str, any]]:
+    if not payload:
+        LOGGER.info(f'[sgx_buyback] is empty, skipping clean payload')
+        return []
+
+    for row in payload:
+        mandate = row.get('mandate')
+
+        if mandate:
+            for key_mandate in ['cumulative_purchased', 'mandate_remaining', 'mandate_total']:
+
+                if key_mandate in mandate and mandate[key_mandate] is not None:
+                    try:
+                        mandate[key_mandate] = int(float(mandate[key_mandate]))
+
+                    except (ValueError, TypeError):
+                        LOGGER.error(f"Failed to convert {key_mandate} with value {mandate[key_mandate]} to int.")
+                        mandate[key_mandate] = None
+
+        for key in [
+            "total_shares_purchased",
+            "treasury_shares_after_purchase"
+        ]:
+            if key in row and row[key] is not None:
+                try:
+                    row[key] = int(float(row[key]))
+
+                except (ValueError, TypeError):
+                    LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
+                    row[key] = None
+
+    return payload

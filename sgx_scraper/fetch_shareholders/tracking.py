@@ -1,4 +1,4 @@
-from sgx_scraper.utils.cli_helper import open_json
+from sgx_scraper.utils.json_helper import open_json
 from sgx_scraper.utils.constant import SGX_FILINGS_PATH_TOP_100 
 from .utils.helper import find_matched_db_shareholder, matched_db_management
 

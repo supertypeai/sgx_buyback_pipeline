@@ -1,18 +1,22 @@
 from curl_cffi import requests as cffi_requests
-from seleniumwire2 import webdriver 
+from seleniumwire2 import webdriver
 from seleniumwire2 import SeleniumWireOptions
-from seleniumwire2 import ProxyConfig  
+from seleniumwire2 import ProxyConfig
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from datetime import datetime, timedelta
+from typing import Iterator
 
 from sgx_scraper.config.settings import PROXY
+from sgx_scraper.utils.date_helper import normalize_datetime
 
 import requests
-import json 
+import json
 import time
+import random
 import traceback
 import logging
 
@@ -197,10 +201,12 @@ def run_scrape_api(
 
     if is_proxy: 
         proxy = PROXY 
+
     else: 
         proxy = None 
 
     proxies = None
+
     if proxy:
         proxies = {
             'http': proxy,
@@ -218,6 +224,7 @@ def run_scrape_api(
             verify=False if proxy else True,
             timeout=30,
         )
+
         response.raise_for_status()
         
         LOGGER.info(f"Response status: {response.status_code}")
@@ -229,13 +236,13 @@ def run_scrape_api(
             return []
         
         LOGGER.info(f"Fetched {len(data.get('data', []))} announcements")
+        
         return data.get('data', [])
 
     except requests.exceptions.RequestException as error:
         LOGGER.error(f"API request failed: {error}")
         if 'response' in locals():
             LOGGER.error(f"Response: {response.text[:200]}")
-        # return None
         raise 
     
     except json.JSONDecodeError as error:
@@ -243,6 +250,73 @@ def run_scrape_api(
         LOGGER.error(f"Response text: {response.text}")
         return None
 
+
+def iter_sgx_announcements(
+    sub_category: str,
+    flag_log: str,
+    period_start: str | None = None,
+    period_end: str | None = None,
+    page_size: int = 20,
+    is_proxy: bool | None = None,
+    category: str = "ANNC",
+) -> Iterator[dict]:
+    """
+    Paginate the SGX announcements API and yield one announcement at a time.
+
+    Owns the shared scraping skeleton (auth, date defaulting, URL construction,
+    pagination, per-page throttle). Each pipeline supplies its category/sub-category
+    and keeps its own per-record handling by iterating the yielded announcements.
+    """
+    logger = logging.getLogger(__name__)
+
+    api_url = "https://api.sgx.com/announcements/v1.1/"
+    headers = get_auth(proxy=None)
+
+    today = datetime.now()
+    yesterday = today - timedelta(days=2)
+
+    start_date_source = period_start if period_start is not None else yesterday
+    end_date_source = period_end if period_end is not None else today
+
+    normalized_start = normalize_datetime(start_date_source)
+    normalized_end = normalize_datetime(end_date_source)
+
+    logger.info(f"Start scraping from start date: {normalized_start} to {normalized_end}")
+
+    page_start = 0
+
+    while True:
+        logger.info(f'page_start: {page_start}')
+
+        try:
+            url = (
+                f"{api_url}?periodstart={normalized_start}_160000"
+                f"&periodend={normalized_end}_155959"
+                f"&cat={category}&sub={sub_category}"
+                f"&pagestart={page_start}"
+                f"&pagesize={page_size}"
+            )
+
+            announcements = run_scrape_api(
+                api_url=url,
+                flag_log=flag_log,
+                headers=headers,
+                is_proxy=is_proxy
+            )
+
+            if not announcements:
+                logger.info("No more announcements found, stopping pagination.")
+                break
+
+        except Exception as error:
+            logger.error(f'[{flag_log}] Fatal API error on page {page_start}: {error}', exc_info=True)
+            raise
+
+        yield from announcements
+
+        page_start += 1
+        time.sleep(random.uniform(1, 8))
+        
 
 if __name__ == '__main__':
     api_buyback = 'https://api.sgx.com/announcements/v1.1/?periodstart=20250930_160000&periodend=20251001_155959&cat=ANNC&sub=ANNC13&pagestart=2&pagesize=20'

@@ -1,33 +1,14 @@
-from datetime import datetime
-from pathlib import Path 
+from pathlib import Path
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
+from sgx_scraper.utils.json_helper import open_json
 
 import csv
-import json
-import os
-import pandas as pd 
+import pandas as pd
 import logging
 
 
 LOGGER = logging.getLogger(__name__)
-
-
-def normalize_datetime(date: str | datetime) -> str: 
-    if isinstance(date, datetime):
-        return date.strftime("%Y%m%d")
-     
-    try:
-        if '-' in date: 
-            dt = datetime.strptime(date, "%Y-%m-%d")
-        else:
-            dt = datetime.strptime(date, "%Y%m%d")
-        
-        return dt.strftime("%Y%m%d") 
-    
-    except ValueError:
-        LOGGER.error("Invalid date format. Use YYYY-MM-DD or YYYYMMDD.")
-        return None 
 
 
 def push_to_db(payload: list[dict[str]], table_name: str) -> bool:
@@ -96,114 +77,6 @@ def upsert_to_db(sgx_payload: list[dict], table_name: str) -> bool:
     except Exception as error:
         LOGGER.error('[upsert_to_db] failed to upsert to %s: %s', table_name, error)
         return False
-    
-
-def clean_payload_sgx_buyback(payload: list[dict[str, any]]) -> list[dict[str, any]]:
-    if not payload:
-        LOGGER.info(f'[sgx_buyback] is empty, skipping clean payload')
-        return []
-    
-    for row in payload:
-        mandate = row.get('mandate')
-
-        if mandate:
-            for key_mandate in ['cumulative_purchased', 'mandate_remaining', 'mandate_total']:
-
-                if key_mandate in mandate and mandate[key_mandate] is not None:
-                    try:
-                        mandate[key_mandate] = int(float(mandate[key_mandate]))
-
-                    except (ValueError, TypeError):
-                        LOGGER.error(f"Failed to convert {key_mandate} with value {mandate[key_mandate]} to int.")
-                        mandate[key_mandate] = None
-
-        for key in [
-            "total_shares_purchased",
-            "treasury_shares_after_purchase"
-        ]:
-            if key in row and row[key] is not None:
-                try:
-                    row[key] = int(float(row[key]))
-
-                except (ValueError, TypeError):
-                    LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
-                    row[key] = None
-
-    return payload
-
-
-def standardize_name(payload: list[dict[str, any]]) -> list[dict[str, any]]:
-    for record in payload:
-        holder_name = record.pop('shareholder_name', None)
-        record['holder_name'] = holder_name.strip() if holder_name is not None else None 
-        record['holding_before'] = record.pop('shares_before', None)
-        record['holding_after'] = record.pop('shares_after', None)
-        record['share_percentage_before'] = record.pop('shares_before_percentage', None)
-        record['share_percentage_after'] = record.pop('shares_after_percentage', None)
-        record['timestamp'] = record.pop('transaction_date', None)
-        record['amount_transaction'] = record.pop('number_of_stock', None)
-        record['transaction_value'] = record.pop('value', None) 
-        record['source'] = record.pop('url', None) 
-
-        share_pct_after = record.get('share_percentage_after')
-        share_pct_before = record.get('share_percentage_before')
-        
-        if share_pct_after is not None and share_pct_before is not None:
-            record['share_percentage_transaction'] = round(abs(share_pct_after - share_pct_before), 7)
-        
-        else:
-            record['share_percentage_transaction'] = None
-        
-    return payload 
-
-
-def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
-    if not payload:
-        LOGGER.info(f'[sgx_filings] is empty, skipping clean payload')
-        return []
-
-    cleaned_payload = []
-    seen_keys = set()
-
-    for row in payload:
-        shareholder_name = row.get('shareholder_name')
-        row.pop('time', None)
-
-        if shareholder_name and shareholder_name.isupper():
-            row['shareholder_name'] = shareholder_name.title()
-
-        # Convert share counts to int
-        for key in [
-            "number_of_stock",
-            "shares_before",
-            "shares_after"
-        ]:
-            if key in row and row[key] is not None:
-                try:
-                    row[key] = int(float(row[key]))
-
-                except (ValueError, TypeError):
-                    LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
-                    row[key] = None
-        
-        # Check duplicate data with composite keys
-        unique_key = (
-            row.get('url'),
-            row.get('shareholder_name'),
-            row.get('transaction_date'),
-            row.get('shares_before'),
-            row.get('shares_after'),
-            row.get('price_per_share')
-        )
-
-        if unique_key in seen_keys:
-            LOGGER.info(f"Dropping duplicate record found in payload: \n{json.dumps(row, indent=2)}")
-            continue
-        
-        seen_keys.add(unique_key)
-        cleaned_payload.append(row)
-
-    return cleaned_payload 
 
 
 def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
@@ -290,33 +163,3 @@ def get_100_top_companies():
 
     df_top_n = pd.read_csv(csv_path)
     return df_top_n.to_dict(orient="records")
-
-
-def write_to_csv(path: str, payload_not_top_70: list[dict[str]]):
-    df = pd.DataFrame(payload_not_top_70)
-    
-    if df.empty:
-        return
-
-    file_exists = os.path.isfile(path)
-    df.to_csv(path, mode='a', index=False, header=not file_exists)
-
-    LOGGER.info(f'Saved payload to {path}')
-
-
-def write_to_json(path: str, payload_sgx: list[dict[str, any]]):
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump(payload_sgx, file, ensure_ascii=False, indent=2)
-    
-    LOGGER.info(f"Saved all sgx scraped to {path}")
-
-
-def open_json(path: str):
-    if not os.path.exists(path) or os.path.getsize(path) == 0:
-        return []
-    try:
-        with open(path, "r", encoding="utf-8") as file:
-            return json.load(file)
-    except json.JSONDecodeError:
-        LOGGER.warning(f"Failed to decode JSON from {path}, returning empty list")
-        return []

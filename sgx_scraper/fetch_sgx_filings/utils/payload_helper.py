@@ -1,51 +1,21 @@
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 from typing import Optional
 
 from sgx_scraper.fetch_sgx_filings.utils.converter_helper import (
-    get_latest_currency, 
+    get_latest_currency,
     calculate_currency_to_sgd
 )
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
     OTHER_CIRCUMSTANCES_RULES, TRANSACTION_KEYWORDS
 )
-from sgx_scraper.utils.sgx_parser_helper import safe_convert_datetime
+from sgx_scraper.utils.date_helper import safe_convert_datetime
 
-
-import re 
+import re
 import logging
-import requests
-import os 
-import json 
+import os
+import json
 
 
 LOGGER = logging.getLogger(__name__)
-
-
-class HttpClient:
-    def __init__(self, timeout: int = 15):
-        self.timeout = timeout
-        self.session = requests.Session()
-        retry = Retry(
-            total=3,
-            connect=3,
-            read=3,
-            status=3,
-            backoff_factor=0.8,
-            status_forcelist=[429, 500, 502, 503, 504],
-            allowed_methods=frozenset(["GET"]),
-            raise_on_status=False,
-            respect_retry_after_header=True,
-        )
-        adapter = HTTPAdapter(max_retries=retry)
-        self.session.mount("https://", adapter)
-        self.session.mount("http://", adapter)
-
-    def get(self, url: str, **kwargs):
-        timeout = kwargs.pop("timeout", self.timeout)
-        return self.session.get(url, timeout=timeout, **kwargs)
-
-HTTPCLIENT = HttpClient()
 
 
 def safe_convert_float(number_value: str) -> float | None:
@@ -782,3 +752,77 @@ def build_special_case_multiple_dates(
 def contains_any_keyword(text: str, keywords: list) -> bool:
     lowered = text.lower()
     return any(keyword in lowered for keyword in keywords)
+
+
+def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
+    if not payload:
+        LOGGER.info(f'[sgx_filings] is empty, skipping clean payload')
+        return []
+
+    cleaned_payload = []
+    seen_keys = set()
+
+    for row in payload:
+        shareholder_name = row.get('shareholder_name')
+        row.pop('time', None)
+
+        if shareholder_name and shareholder_name.isupper():
+            row['shareholder_name'] = shareholder_name.title()
+
+        # Convert share counts to int
+        for key in [
+            "number_of_stock",
+            "shares_before",
+            "shares_after"
+        ]:
+            if key in row and row[key] is not None:
+                try:
+                    row[key] = int(float(row[key]))
+
+                except (ValueError, TypeError):
+                    LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
+                    row[key] = None
+
+        # Check duplicate data with composite keys
+        unique_key = (
+            row.get('url'),
+            row.get('shareholder_name'),
+            row.get('transaction_date'),
+            row.get('shares_before'),
+            row.get('shares_after'),
+            row.get('price_per_share')
+        )
+
+        if unique_key in seen_keys:
+            LOGGER.info(f"Dropping duplicate record found in payload: \n{json.dumps(row, indent=2)}")
+            continue
+
+        seen_keys.add(unique_key)
+        cleaned_payload.append(row)
+
+    return cleaned_payload
+
+
+def standardize_name(payload: list[dict[str, any]]) -> list[dict[str, any]]:
+    for record in payload:
+        holder_name = record.pop('shareholder_name', None)
+        record['holder_name'] = holder_name.strip() if holder_name is not None else None
+        record['holding_before'] = record.pop('shares_before', None)
+        record['holding_after'] = record.pop('shares_after', None)
+        record['share_percentage_before'] = record.pop('shares_before_percentage', None)
+        record['share_percentage_after'] = record.pop('shares_after_percentage', None)
+        record['timestamp'] = record.pop('transaction_date', None)
+        record['amount_transaction'] = record.pop('number_of_stock', None)
+        record['transaction_value'] = record.pop('value', None)
+        record['source'] = record.pop('url', None)
+
+        share_pct_after = record.get('share_percentage_after')
+        share_pct_before = record.get('share_percentage_before')
+
+        if share_pct_after is not None and share_pct_before is not None:
+            record['share_percentage_transaction'] = round(abs(share_pct_after - share_pct_before), 7)
+
+        else:
+            record['share_percentage_transaction'] = None
+
+    return payload

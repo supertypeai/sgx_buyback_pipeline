@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-from sgx_scraper.utils.cli_helper import open_json
+from sgx_scraper.utils.json_helper import open_json
 from sgx_scraper.utils.symbol_matching_helper import symbol_from_company_name
 from sgx_scraper.refresh_sgx_companies import get_sgx_companies
 

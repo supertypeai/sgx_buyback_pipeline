@@ -4,25 +4,22 @@ from io import BytesIO
 
 from sgx_scraper.fetch_sgx_filings.utils.constants import *
 from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
-    build_transaction_type, 
-    build_price_per_share, 
+    build_transaction_type,
+    build_price_per_share,
     build_value,
     build_shareholder_name_transfer,
     shares_percentage_to_decimal,
-    safe_convert_float, 
+    safe_convert_float,
     populate_extra_data,
     generate_title_and_body,
     classify_holder_type,
-    build_special_case_multiple_dates, 
+    build_special_case_multiple_dates,
     build_special_case_value,
     contains_any_keyword,
-    HTTPCLIENT
 )
-from sgx_scraper.utils.sgx_parser_helper import (
-    extract_symbol, 
-    matching_symbol,
-    safe_convert_datetime
-)
+from sgx_scraper.utils.http_client import HTTPCLIENT
+from sgx_scraper.utils.symbol_matching_helper import extract_symbol, matching_symbol
+from sgx_scraper.utils.date_helper import safe_convert_datetime
 from sgx_scraper.fetch_sgx_filings.utils.payload_pdf_helper import (
     extract_circumstance_interest_checkbox,
     extract_type_securities_checkbox,

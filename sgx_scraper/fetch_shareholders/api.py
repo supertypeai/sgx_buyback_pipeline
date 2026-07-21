@@ -1,31 +1,15 @@
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 from collections import defaultdict
 
 from .utils.helper import find_matched_db_shareholder, clean_company_name, enrich
+from sgx_scraper.utils.http_client import HTTPCLIENT
 
-import requests 
 import logging
-import time 
-import random 
-import json 
+import time
+import random
+import json
 
 
 LOGGER = logging.getLogger(__name__)
-
-
-def build_http_session() -> requests.Session:
-    retry_strategy = Retry(
-        total=3,
-        backoff_factor=1,
-        status_forcelist=[429, 500, 502, 503, 504],
-        allowed_methods=["GET"],
-    )
-    adapter = HTTPAdapter(max_retries=retry_strategy)
-    session = requests.Session()
-    session.mount("https://", adapter)
-    session.mount("http://", adapter)
-    return session
 
 
 def get_randomized_headers(base_headers: dict) -> dict:
@@ -60,11 +44,9 @@ def fetch_api(symbol: str) -> dict[str, any]:
     headers = get_randomized_headers(base_headers)
   
     api_url = f'https://api.sgx.com/shareholdersreports/v2.0/stockCode/{symbol}?params=investorName,investorType,investorHoldingsDate,pctOfSharesOutstanding,sharesHeld,sharesHeldChange,turnoverRating'
-    
-    session = build_http_session()
 
     try:
-        response = session.get(url=api_url, headers=headers)
+        response = HTTPCLIENT.get(url=api_url, headers=headers)
         response.raise_for_status()
 
         return response.json()
@@ -85,7 +67,10 @@ def clean_api_response(payload: dict[str, any], symbol: str) -> dict[str, list]:
         share_percentage = record.get('pctOfSharesOutstanding')
 
         if any(value is None for value in [shareholder_name, share_amount, share_percentage]):
-            print('some data is none, skipped for symbol: %s', symbol)
+            LOGGER.info(
+                'some data is none, skipped for symbol: %s', 
+                symbol
+            )
             continue 
 
         final_payload[symbol].append(
@@ -176,6 +161,9 @@ def sync_with_db(
 
     final_result = enrich(result)
 
-    LOGGER.info('Check payload synced: %s', json.dumps(final_result, indent=2))
+    LOGGER.info(
+        'Check payload synced: %s', json.dumps(final_result, indent=2)
+    )
+    
     return final_result 
 

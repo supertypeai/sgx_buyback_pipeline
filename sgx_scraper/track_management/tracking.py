@@ -2,7 +2,6 @@ from rapidfuzz import fuzz
 
 from sgx_scraper.track_management.appointment import get_appointment 
 from sgx_scraper.track_management.cessation import get_cessation
-# from .utils.helper import enrich
 
 import logging 
 
@@ -31,7 +30,10 @@ def get_management_update(api_response: dict, top_100_companies: list[dict]):
         )
         return None
 
-    db_symbols = {record.get('symbol'): record for record in top_100_companies}
+    db_symbols = {
+        record.get('symbol'): record 
+        for record in top_100_companies
+    }
 
     symbol = announcement.get('symbol')
 

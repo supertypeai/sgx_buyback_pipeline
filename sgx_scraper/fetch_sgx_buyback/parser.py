@@ -1,6 +1,5 @@
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 from dataclasses import asdict
-from bs4.element import Tag
 from dateutil.relativedelta import relativedelta
 from datetime import datetime
 
@@ -10,91 +9,19 @@ from sgx_scraper.fetch_sgx_buyback.utils.payload_helper import (
     compute_mandate_remaining,
     safe_extract_value,
     safe_extract_fallback,
-    safe_convert_float
+    safe_convert_float,
 )
-from sgx_scraper.utils.sgx_parser_helper import (
-    extract_symbol, 
-    matching_symbol,
-    safe_convert_datetime, 
-)
+from sgx_scraper.utils.symbol_matching_helper import extract_symbol, matching_symbol
+from sgx_scraper.utils.date_helper import safe_convert_datetime
+from sgx_scraper.utils.sgx_announcement_html import extract_section_data
+from sgx_scraper.utils.http_client import HTTPCLIENT
 
 import requests
-import json 
+import json
 import logging
 
 
 LOGGER = logging.getLogger(__name__)
-
-
-def extract_table_data(table_element: Tag) -> dict[str, str | list[str]]:
-    try:
-        table_data = {}
-        rows = table_element.find_all('tr')
-        
-        for row in rows:
-            cells = row.find_all('td')
-            if len(cells) < 2:
-                continue
-                
-            key = cells[0].get_text(strip=True)
-            values = []
-            for cell in cells[1:]:
-                text = cell.get_text(strip=True)
-                if text:
-                    values.append(text)
-            
-            if not key or not values:
-                continue
-                
-            if len(values) == 1:
-                table_data[key] = values[0]
-            else:
-                table_data[key] = values
-                
-        return table_data
-
-    except Exception as error:
-        LOGGER.error(f"[sgx_buyback] Failed to extract table data: {error}")
-        return None
-
-
-def extract_section_data(soup: BeautifulSoup, section_title: str) -> dict[str, str | list[str]]:
-    section_data = {}
-    
-    try:
-        h2 = soup.find('h2', class_='announcement-group-header', string=section_title)
-        if not h2: 
-            return section_data
-        
-        section_div = h2.find_next_sibling('div', class_='announcement-group')
-        if not section_div:
-            return section_data
-        
-        # Extract simple key-value pairs where the <dd> does not contain a table
-        dt_tags = section_div.find_all('dt')
-        for dt in dt_tags:
-            dd = dt.find_next_sibling('dd')
-            if dd and not dd.find('table'):
-                key = dt.get_text(strip=True)
-                value = dd.get_text(strip=True)
-                if key:
-                    section_data[key] = value
-
-        # Find all tables within the section 
-        all_tables = section_div.find_all('table')
-        for table in all_tables:
-            table_data = extract_table_data(table)
-            section_data.update(table_data)
-
-        for key in list(section_data.keys()):
-            if 'total consideration' in key.lower().strip():
-                section_data['Total Consideration'] = section_data.pop(key)
-        
-        return section_data
-    
-    except Exception as error:
-        LOGGER.error(f'[sgx_buyback] Error extracting section {section_title}: {error}')
-        return None 
 
 
 def resolve_symbol(issuer_section: dict) -> str | None:
@@ -238,7 +165,7 @@ def get_sgx_buybacks(url: str) -> SGXBuyback:
     try:
         print(f"Extracting detail buyback for {url}")
 
-        response = requests.get(url)
+        response = HTTPCLIENT.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
