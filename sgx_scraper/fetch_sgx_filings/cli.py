@@ -36,6 +36,7 @@ def run_sgx_filings_scraper(
     page_size: int = typer.Option(100, help="Number of records per listing page"),
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
     is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
+    is_send_email: bool = typer.Option(True, help="Sending flagged records to email"),
     is_send_news: bool = typer.Option(True, help='Flag to send to idx_news or not')
 ):
     logger = logging.getLogger(__name__)
@@ -112,7 +113,8 @@ def run_sgx_filings_scraper(
     write_json(SGX_FILINGS_PATH_NOT_INSERTABLE, payload_not_insertable)
     write_json(SGX_FILINGS_PATH_INSERTABLE, payload_insertable)
 
-    send_sgx_filings_alert(payload_not_insertable, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
+    if is_send_email:
+        send_sgx_filings_alert(payload_not_insertable, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
 
     if is_push_db:
         push_to_db(payload_insertable, 'sgx_filings')
