@@ -79,6 +79,27 @@ def run_sgx_buyback_scraper(
                 )
                 continue
 
+            # Required NOT NULL columns, SGX may broadcast a dividend before its
+            # pay date is declared, a later Replacement fills it in
+            missing = [
+                field
+                for field in (
+                    "reference", 
+                    "symbol", 
+                    "ex_date", 
+                    "payment_date"
+                )
+                if not payload.get(field)
+            ]
+
+            if missing:
+                logger.info(
+                    '[Upcoming Dividend] Skipping %s, missing required fields: %s',
+                    detail_url,
+                    missing,
+                )
+                continue
+
             payload_upcoming_dividend.append(payload)
 
         except Exception as error:
