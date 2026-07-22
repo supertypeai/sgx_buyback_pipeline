@@ -87,10 +87,14 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
         LOGGER.info('Skip removing duplicate, sgx yesterday data is empty, returning sgx today')
         return sgx_today_datas
     
-    urls_yesterday = {item.get("url") for item in sgx_yesterday_datas}
+    urls_yesterday = {
+        item.get("url") 
+        for item in sgx_yesterday_datas
+    }
 
     unique_data_today = [
-        item for item in sgx_today_datas
+        item 
+        for item in sgx_today_datas
         if item.get('url') not in urls_yesterday
     ]
 
@@ -104,6 +108,7 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
             SUPABASE_CLIENT
             .table('sgx_company_report')
             .select('symbol, name, market_cap')
+            .not_.is_('market_cap', 'null')
             .order('market_cap', desc=True)
             .limit(top_n)
             .execute()
