@@ -1,60 +1,81 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/6Y0J6SWPBIB7SZAZ/ca21972e5294caac169085c8a353fbc622b84dbede359d3e99ed752a0bf0190e",
-    "symbol": "U11",
-    "purchase_date": "2026-07-20",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/8M6ASN3HKDKLKCKJ/52fecc6782b9c93cb09f1cc877f7f6d84ad8b30df630a4168872a28aeb9adb8a",
+    "symbol": "H07",
+    "purchase_date": "2026-07-21",
     "type": "On Market",
     "price_per_share": {
-      "highest": 42.66,
-      "lowest": 42.07
+      "price_paid_per_share": 0.485
     },
-    "total_value": 2578297.11,
-    "total_shares_purchased": 60700,
-    "treasury_shares_after_purchase": 13569900,
+    "total_value": 8593.3,
+    "total_shares_purchased": 17700,
+    "treasury_shares_after_purchase": 10527900,
     "mandate": {
-      "mandate_total": 82676174,
-      "cumulative_purchased": 3417600,
-      "mandate_remaining": 79258574,
-      "mandate_start": "2026-04-17",
-      "mandate_end": "2027-04-17"
+      "mandate_total": 148361002,
+      "cumulative_purchased": 351200,
+      "mandate_remaining": 148009802,
+      "mandate_start": "2025-07-29",
+      "mandate_end": "2026-07-29"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/BXW56LM4PLNXQVKL/fc8f358ce5d5342859b3cfdcbe6ab4f70f9e79f3cc33e02863833ccf87e946fa",
-    "symbol": "AGS",
-    "purchase_date": "2026-07-20",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RWVXL49592F7L5AT/3f32bfab90328f149e631758e6f7b1776ef097f6ac25239a6db6bb4f3a779508",
+    "symbol": "5UX",
+    "purchase_date": "2026-07-21",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 2.72385
+      "highest": 0.077,
+      "lowest": 0.075
     },
-    "total_value": 109215.67,
-    "total_shares_purchased": 40000,
-    "treasury_shares_after_purchase": 6627000,
+    "total_value": 26357.66,
+    "total_shares_purchased": 350000,
+    "treasury_shares_after_purchase": 117746700,
     "mandate": {
-      "mandate_total": 64685158,
-      "cumulative_purchased": 7883100,
-      "mandate_remaining": 56802058,
-      "mandate_start": "2025-07-28",
-      "mandate_end": "2026-07-28"
+      "mandate_total": 210983495,
+      "cumulative_purchased": 15162600,
+      "mandate_remaining": 195820895,
+      "mandate_start": "2025-10-27",
+      "mandate_end": "2026-10-27"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/8ARKX8YBR00NI7P9/5e243b2bce8d9c815e5f3fbb8709c7c8e78e1357aab6e713a881c79222bcdacd",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/PKDAC4BOUBBRNI6Z/9009d77bbefa5cd6e64fae9f0b8c526ff9588096d11c745ede2b42c40676535f",
     "symbol": "Z74",
-    "purchase_date": "2026-07-20",
+    "purchase_date": "2026-07-21",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 4.4
+      "highest": 4.4,
+      "lowest": 4.39
     },
-    "total_value": 2041174.07,
-    "total_shares_purchased": 463600,
+    "total_value": 2639745.26,
+    "total_shares_purchased": 600000,
     "treasury_shares_after_purchase": 14619033,
     "mandate": {
       "mandate_total": 825629225,
-      "cumulative_purchased": 215856605,
-      "mandate_remaining": 609772620,
+      "cumulative_purchased": 216456605,
+      "mandate_remaining": 609172620,
       "mandate_start": "2025-07-29",
       "mandate_end": "2026-07-29"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/Y4N9MOTKFBOU83P5/9aa08ba00055d1606ba7ba1412761d73720dc98942b98a5276ff1e9c6d078aea",
+    "symbol": "U11",
+    "purchase_date": "2026-07-21",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 43.14,
+      "lowest": 42.64
+    },
+    "total_value": 2749461.66,
+    "total_shares_purchased": 64000,
+    "treasury_shares_after_purchase": 13601900,
+    "mandate": {
+      "mandate_total": 82676174,
+      "cumulative_purchased": 3481600,
+      "mandate_remaining": 79194574,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
     }
   }
 ]
