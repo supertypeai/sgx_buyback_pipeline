@@ -4,7 +4,7 @@ from langchain_core.output_parsers import JsonOutputParser
 from pathlib import Path
 
 from sgx_scraper.fetch_sgx_filings.llm.client import get_llm 
-from sgx_scraper.fetch_sgx_filings.llm.prompts import *
+from sgx_scraper.fetch_sgx_filings.llm.prompts import PromptCollections, TitleBodyGeneration
 
 import logging
 import time
@@ -58,7 +58,7 @@ def generate_news_title_body(record: dict) -> tuple[str, str] | None:
     generation_parser = JsonOutputParser(pydantic_object=TitleBodyGeneration)
     format_instructions = generation_parser.get_format_instructions()
 
-    prompt_collections = PomptCollections()
+    prompt_collections = PromptCollections()
     system_prompt = prompt_collections.get_system_prompt()
     user_prompt = prompt_collections.get_user_prompt()
 

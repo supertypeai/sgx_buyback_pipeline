@@ -17,12 +17,14 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
     price_per_share = payload.get('price_per_share')
     symbol = payload.get('symbol')
     timestamp = payload.get('timestamp')
-    holder_name = payload.get('holder_name')
 
     reasons = []
 
     basic_fields = [
-        symbol, timestamp, holding_before, holding_after
+        symbol, 
+        timestamp, 
+        holding_before, 
+        holding_after
     ]
 
     if any(field is None for field in basic_fields):
@@ -55,20 +57,6 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
                 f'Difference in shares (after - before = {abs(diff_shares)}) '
                 f'does not match reported amount_transaction={amount_transaction}'
             )
-
-    if transaction_type:
-        if transaction_type == 'transfer':
-            reasons.append(
-                f'Please verify the holder name for transfer type. '
-                f'The format {holder_name} may not always match the current regex. '
-                f'Since we need to have a sign [->]'
-            )
-        
-        if transaction_type == 'award':
-            reasons.append(
-                f'Please double check the transaction type: {transaction_type}. '
-                f'The document may contain multiple descriptions that affect the classification.'
-            )
         
     # Unrealistic or inconsistent price
     if price_per_share:
@@ -92,6 +80,7 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
     # Value and price inconsistency
     if transaction_value and amount_transaction and price_per_share:
         calculated_price = transaction_value / amount_transaction
+
         if not math.isclose(calculated_price, price_per_share, rel_tol=0.05):
             reasons.append(
                 f'Calculated price (transaction_value/amount_transaction={calculated_price:.2f}) '
@@ -99,6 +88,7 @@ def filter_sgx_filings(payload: dict[str, any]) -> bool:
             )
 
         expected_value = amount_transaction * price_per_share
+
         if not math.isclose(expected_value, transaction_value, rel_tol=0.05):
             reasons.append(
                 f'Inconsistent total value: expected {expected_value:.2f} '
@@ -123,19 +113,11 @@ def get_data_alert(payload_sgx_filings: list[dict[str, any]]) -> tuple[list[dict
     for payload in payload_sgx_filings: 
         if filter_sgx_filings(payload):
             data_not_insertable.append(payload)
+
         else: 
             data_insertable.append(payload)
     
     LOGGER.info(f'Filtering completed. Insertable: {len(data_insertable)} | Not insertable: {len(data_not_insertable)}')
+
     return data_insertable, data_not_insertable
 
-
-if __name__ == '__main__':
-    data_path = 'data/scraper_output/sgx_filing/sgx_filings_today_alert.json' 
-    with open(data_path, 'r') as file:
-        data = json.load(file)
-    print(len(data))
-    data_insertable, data_not_insertable = get_data_alert(data)
-    print(f'check data not insertable sample: {data_not_insertable[:2]} | \ndata insertable sample: {data_insertable[:2]}')
-    
-    # uv run -m src.alerting.filter_data_alert
