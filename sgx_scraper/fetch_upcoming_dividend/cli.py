@@ -5,7 +5,7 @@ from sgx_scraper.utils.cli_helper import upsert_to_db
 from sgx_scraper.utils.constant import UPCOMING_DIVIDEND
 from sgx_scraper.utils.json_helper import write_json
 from .parser import get_upcoming_dividend
-from .utils.db_helper import delete_past_dividends
+from .utils.db_helper import dedup_payload, delete_past_dividends
 
 import typer
 import logging
@@ -120,8 +120,10 @@ def run_sgx_buyback_scraper(
     )
 
     if is_push_db:
+        deduped_payload = dedup_payload(payload_upcoming_dividend)
+
         upsert_to_db(
-            sgx_payload=payload_upcoming_dividend,
+            sgx_payload=deduped_payload,
             table_name="sgx_upcoming_dividend"
         )
 
