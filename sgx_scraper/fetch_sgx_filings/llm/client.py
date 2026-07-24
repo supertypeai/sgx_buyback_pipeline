@@ -4,8 +4,15 @@ from langchain_core.messages import BaseMessage
 from langchain_core.outputs import ChatResult
 from langchain_core.callbacks import BaseCallbackHandler
 
-from sgx_scraper.config.settings import GROQ_API_KEY 
-from sgx_scraper.utils.constant import *
+from sgx_scraper.config.settings import GROQ_API_KEY, OPENROUTER_API_KEY
+from sgx_scraper.utils.constant import (
+    MODEL_CONFIG, 
+    ABORT_KEYWORDS, 
+    ABORT_STATUS_CODES, 
+    ROTATE_400_KEYWORDS, 
+    ROTATE_KEYWORDS, 
+    ROTATE_STATUS_CODES
+)
 
 import logging 
 
@@ -170,10 +177,17 @@ def get_llm(model_name: str, temperature: float = 0.5):
         return None
     
     provider = config_model.get('provider')
-    
-    api_keys = [GROQ_API_KEY]
-    
-    api_keys = [key for key in api_keys if key]
+
+    provider_keys = {
+        'groq': [GROQ_API_KEY],
+        'openrouter': [OPENROUTER_API_KEY]
+    }
+
+    api_keys = [
+        key 
+        for key in provider_keys.get(provider, []) 
+        if key
+    ]
     
     if not api_keys:
         LOGGER.error(f"No valid API keys found for provider: '{provider}'")
@@ -189,7 +203,7 @@ def get_llm(model_name: str, temperature: float = 0.5):
                 temperature=temperature,
                 max_retries=3,
                 api_key=api_key,
-                max_tokens=18000 
+                max_tokens=10000 
             ) 
 
             llm_pool.append(initiate_model)
