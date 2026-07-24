@@ -47,6 +47,10 @@ HEADERS = {
 }
 
 MODEL_CONFIG = { 
+    "nvidia-nemotron-3-ultra": {
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free", 
+        "provider": "openrouter"
+    },
     'gpt-oss-120b': {
         'model': 'openai/gpt-oss-120b',
         'provider': 'groq', 
