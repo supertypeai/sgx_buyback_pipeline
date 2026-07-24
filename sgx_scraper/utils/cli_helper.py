@@ -77,8 +77,13 @@ def upsert_to_db(sgx_payload: list[dict], table_name: str) -> bool:
         return False
 
     except Exception as error:
-        LOGGER.error('[upsert_to_db] failed to upsert to %s: %s', table_name, error)
-        return False
+        LOGGER.error(
+            '[upsert_to_db] failed to upsert to %s: %s', 
+            table_name, 
+            error,
+            exc_info=True
+        )
+        raise
 
 
 def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
