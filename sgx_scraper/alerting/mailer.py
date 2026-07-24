@@ -19,12 +19,22 @@ LOGGER = logging.getLogger(__name__)
 
 def send_sgx_filings_alert(
     payload_alert: list[dict[str, any]],
-    attachments_path: list[str] | None = None
+    attachments_path: list[str] | None = None,
+    to_emails: str | list[str] | None = None,
 ):
     if not payload_alert:
         LOGGER.info("No SGX filings alerts to send.")
         return
-        
+
+    recipients = to_emails or TO_EMAIL
+
+    if isinstance(recipients, str):
+        recipients = [
+            addr.strip() 
+            for addr in recipients.split(",") 
+            if addr.strip()
+        ]
+
     subject, body_text, body_html = (
         render_email_content(payload_alert, title="SGX Non-Insertable Transaction Alerts")
     )
@@ -32,7 +42,7 @@ def send_sgx_filings_alert(
     msg = MIMEMultipart()
     msg["Subject"] = subject
     msg["From"] = SENDER_EMAIL
-    msg["To"] = TO_EMAIL
+    msg["To"] = ", ".join(recipients)
 
     msg_alt = MIMEMultipart("alternative")
     msg_alt.attach(MIMEText(body_text, "plain"))
@@ -53,7 +63,7 @@ def send_sgx_filings_alert(
     try:
         response = ses.send_raw_email(
             Source=SENDER_EMAIL,
-            Destinations=[TO_EMAIL],
+            Destinations=recipients,
             RawMessage={"Data": msg.as_string()},
         )
         message_id = response.get("MessageId")
@@ -70,36 +80,4 @@ def send_sgx_filings_alert(
 
     except Exception as error:
         LOGGER.error(f"[send_sgx_filings_alert] Unexpected error: {error}")
-
-
-if __name__ == '__main__':
-    path = 'data/scraper_output/sgx_filing/sgx_filings_today_sep.json'
-    alert_insertable, alert_not_insertable = get_data_alert(path) 
-    send_sgx_filings_alert(
-        payload_alert=alert_not_insertable,
-        attachments_path=['data/scraper_output/sgx_filing/manual_check.json']
-    )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
