@@ -11,23 +11,25 @@ import logging
 LOGGER = logging.getLogger(__name__)
 
 
-def push_to_db(payload: list[dict[str]], table_name: str) -> bool:
+def push_to_db(
+    payload: list[dict[str]],
+    table_name: str,
+    exclude_columns: set[str] | None = None,
+) -> bool:
     if not payload:
         LOGGER.info(f'[payload] is empty, skipping push to DB')
-        return 
-    
+        return
+
     try:
-        is_succes = False 
+        is_succes = False
+
+        exclude_columns = exclude_columns or set()
 
         payload = [
             {
-                key: value 
-                for key, value in record.items() 
-                if key not in {
-                    "issuer_name", 
-                    "circumstances_desc", 
-                    "circumstances_raw"
-                }
+                key: value
+                for key, value in record.items()
+                if key not in exclude_columns
             }
             for record in payload
         ]
