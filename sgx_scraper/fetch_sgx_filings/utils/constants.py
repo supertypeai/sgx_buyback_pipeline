@@ -59,6 +59,8 @@ TRANSACTION_KEYWORDS = {
     ]
 }
 
+TYPE_SECURITIES_SECTION_PATTERN = r'Type of securities which are the subject of the transaction'
+
 TYPE_SECURITIES_OPTIONS = {
     "Voting shares/units": r"(?:Ordinary\s+)?voting\s+(?:shares|units)",
     "Rights/Options/Warrants over voting shares/units": r"Rights/Options/Warrants\s+over\s+(?:voting\s+)?(?:shares/)?units",

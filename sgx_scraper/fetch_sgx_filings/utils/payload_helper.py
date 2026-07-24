@@ -1,5 +1,3 @@
-from typing import Optional
-
 from sgx_scraper.fetch_sgx_filings.utils.converter_helper import (
     get_latest_currency,
     calculate_currency_to_sgd
@@ -7,11 +5,10 @@ from sgx_scraper.fetch_sgx_filings.utils.converter_helper import (
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
     OTHER_CIRCUMSTANCES_RULES, TRANSACTION_KEYWORDS
 )
-from sgx_scraper.utils.date_helper import safe_convert_datetime
+from sgx_scraper.utils.json_helper import open_json
 
 import re
 import logging
-import os
 import json
 
 
@@ -88,84 +85,81 @@ def safe_convert_float(number_value: str) -> float | None:
 def build_price_per_share(raw_value: str, number_of_stock: float) -> float | None:
     if raw_value is None or number_of_stock is None:
         return None
-    
-    try:
-        cleaned_value = raw_value.lower().strip()
-      
-        # Handle "at a price per share of X" - e.g., "at a price per share of S$0.22"
-        at_price_pattern = r'at\s+a?\s*price\s+per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))\s+of\s+(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)'
-        at_price_match = re.search(at_price_pattern, cleaned_value, re.IGNORECASE)
-        
-        if at_price_match:
-            per_share_value = at_price_match.group(1).replace(',', '')
-            return safe_convert_float(per_share_value)
-        
-        # Handle "@" separator - e.g., "SGD167,958 @ SGD0.042 per share"
-        at_pattern = r'@\s*(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/shares?|/units?|per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies)))'
-        at_match = re.search(at_pattern, cleaned_value, re.IGNORECASE)
-        
-        if at_match:
-            per_share_value = at_match.group(1).replace(',', '')
-            return safe_convert_float(per_share_value)
-        
-        # Handle Explicit per-share in parentheses with currency - e.g., "(being s$0.2649 per share)"
-        explicit_per_share_pattern = r'\((?:being|at|@)?\s*(?:sg\$|s\$|usd|sgd|hkd|\$)?\s*([\d,]+(?:\.\d+)?)\s*per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))\)'
-        explicit_match = re.search(explicit_per_share_pattern, cleaned_value, re.IGNORECASE)
-        
-        if explicit_match:
-            per_share_value = explicit_match.group(1).replace(',', '')
-            return safe_convert_float(per_share_value)
 
-        # Handle "or" separator - e.g., "S$140,114 or S$1.3205/share"
-        or_pattern = r'or\s+(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/shares?|/units?|per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies)))'
-        or_match = re.search(or_pattern, cleaned_value, re.IGNORECASE)
-        
-        if or_match:
-            per_share_value = or_match.group(1).replace(',', '')
-            return safe_convert_float(per_share_value)
-        
-        # Handle direct price per unit format - e.g., "S$0.007 per Rights Unit"
-        direct_per_unit_pattern = r'(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)\s*per\s+(?:shares?|units?|rights\s+units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))'
-        direct_match = re.search(direct_per_unit_pattern, cleaned_value, re.IGNORECASE)
+    cleaned_value = raw_value.lower().strip()
 
-        if direct_match:
-            per_share_value = direct_match.group(1).replace(',', '')
-            return safe_convert_float(per_share_value)
+    # Handle "at a price per share of X" - e.g., "at a price per share of S$0.22"
+    at_price_pattern = r'at\s+a?\s*price\s+per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))\s+of\s+(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)'
+    at_price_match = re.search(at_price_pattern, cleaned_value, re.IGNORECASE)
 
-        # Handle text contains context
-        context_patterns = [
-            r'pursuant\s+to',
-        ]
-        
-        has_context = any(re.search(pattern, cleaned_value, re.IGNORECASE) for pattern in context_patterns)
-        
-        if (
-            'share' in cleaned_value or 
-            'per unit' in cleaned_value or 
-            'per share' in cleaned_value or 
-            'per stapled security' in cleaned_value or
-            has_context
-        ):
-            return safe_convert_float(raw_value)
-        
-        value = safe_convert_float(raw_value)
-        
-        price_per_share = None
-        if value and number_of_stock:
-            price_per_share = round(value / number_of_stock, 4)
-            return price_per_share
-    
-    except Exception as error:
-        LOGGER.error(f"[build price per share] Error: {error}")
-        return None 
+    if at_price_match:
+        per_share_value = at_price_match.group(1).replace(',', '')
+        return safe_convert_float(per_share_value)
+
+    # Handle "@" separator - e.g., "SGD167,958 @ SGD0.042 per share"
+    at_pattern = r'@\s*(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/shares?|/units?|per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies)))'
+    at_match = re.search(at_pattern, cleaned_value, re.IGNORECASE)
+
+    if at_match:
+        per_share_value = at_match.group(1).replace(',', '')
+        return safe_convert_float(per_share_value)
+
+    # Handle Explicit per-share in parentheses with currency - e.g., "(being s$0.2649 per share)"
+    explicit_per_share_pattern = r'\((?:being|at|@)?\s*(?:sg\$|s\$|usd|sgd|hkd|\$)?\s*([\d,]+(?:\.\d+)?)\s*per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))\)'
+    explicit_match = re.search(explicit_per_share_pattern, cleaned_value, re.IGNORECASE)
+
+    if explicit_match:
+        per_share_value = explicit_match.group(1).replace(',', '')
+        return safe_convert_float(per_share_value)
+
+    # Handle "or" separator - e.g., "S$140,114 or S$1.3205/share"
+    or_pattern = r'or\s+(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)\s*(?:/shares?|/units?|per\s+(?:shares?|units?|securit(?:y|ies)|stapled\s+securit(?:y|ies)))'
+    or_match = re.search(or_pattern, cleaned_value, re.IGNORECASE)
+
+    if or_match:
+        per_share_value = or_match.group(1).replace(',', '')
+        return safe_convert_float(per_share_value)
+
+    # Handle direct price per unit format - e.g., "S$0.007 per Rights Unit"
+    direct_per_unit_pattern = r'(?:sg\$|s\$|usd|sgd|hkd|us\$|\$)?\s*([\d,]+(?:\.\d+)?)\s*per\s+(?:shares?|units?|rights\s+units?|securit(?:y|ies)|stapled\s+securit(?:y|ies))'
+    direct_match = re.search(direct_per_unit_pattern, cleaned_value, re.IGNORECASE)
+
+    if direct_match:
+        per_share_value = direct_match.group(1).replace(',', '')
+        return safe_convert_float(per_share_value)
+
+    # Handle text contains context
+    context_patterns = [
+        r'pursuant\s+to',
+    ]
+
+    has_context = any(re.search(pattern, cleaned_value, re.IGNORECASE) for pattern in context_patterns)
+
+    if (
+        'share' in cleaned_value or
+        'per unit' in cleaned_value or
+        'per share' in cleaned_value or
+        'per stapled security' in cleaned_value or
+        has_context
+    ):
+        return safe_convert_float(raw_value)
+
+    value = safe_convert_float(raw_value)
+
+    if value and number_of_stock:
+        return round(value / number_of_stock, 4)
+
+    return None
 
 
 def safe_round(value, context="", digits=4):
     if value is None:
-        LOGGER.warning(f"[safe_round] Cannot round None {context} {value}")
+        # None is an expected, valid input (e.g. an absent price/consideration)
         return None
+
     try:
         return round(value, digits)
+    
     except Exception as error:
         LOGGER.error(f"[safe_round] Rounding failed for {value} {context}: {error}")
         return None
@@ -178,6 +172,7 @@ def shares_percentage_to_decimal(share_percentage: float) -> float:
         
         decimal_share_before = float(share_percentage) / 100
         decimal_share_before = float(f"{decimal_share_before:.5f}")
+
         return decimal_share_before
     
     except ValueError as error:
@@ -280,222 +275,123 @@ def build_value(raw_value: str, number_of_stock: float) -> float | None:
 
 
 def get_circumstance_interest(circumstance_interest: dict[str, any]) -> dict[str, any]:
-    try:
-        for key, value in circumstance_interest.items():
-            if key == 'others_specify':
-                checked = value.get('checked')
-                desc = value.get('description')
-                if checked:
-                    return {
-                        'key': 'others_specify',
-                        'checked': checked, 
-                        'description': desc
-                    }
-            else:
-                for sub_key, sub_value in value.items():
-                    if isinstance(sub_value, dict) and 'checked' in sub_value:
-                        checked = sub_value.get('checked')
-                        desc = sub_value.get('desc')
-                        if checked: 
-                            return {
-                                'key': key, 
-                                'specific_key': sub_key,
-                                'checked': checked,
-                                'description': desc
-                            }
-                    elif sub_value:
+    if not circumstance_interest:
+        return None
+
+    for key, value in circumstance_interest.items():
+        if key == 'others_specify':
+            checked = value.get('checked')
+            desc = value.get('description')
+
+            if checked:
+                return {
+                    'key': 'others_specify',
+                    'checked': checked,
+                    'description': desc
+                }
+            
+        else:
+            for sub_key, sub_value in value.items():
+                if isinstance(sub_value, dict) and 'checked' in sub_value:
+                    checked = sub_value.get('checked')
+                    desc = sub_value.get('desc')
+
+                    if checked:
                         return {
                             'key': key,
                             'specific_key': sub_key,
-                            'checked': sub_value
+                            'checked': checked,
+                            'description': desc
                         }
+                    
+                elif sub_value:
+                    return {
+                        'key': key,
+                        'specific_key': sub_key,
+                        'checked': sub_value
+                    }
 
-    except Exception as error:
-        LOGGER.error(f"[get_transaction_type] Error: {error}")
-        return None 
+    return None
 
 
 def get_transaction_type_from_desc(description: str, value: float | None) -> str:
-    try:
-        if not description:
-            LOGGER.info(f'[get_transaction_type_from_desc] description is None')
-            return None 
-
-        desc_lower = description.lower()
-
-        transaction_type = next(
-            (key for key, values in TRANSACTION_KEYWORDS.items()
-            if any(value.lower() in desc_lower for value in values)),
-            None
-        )
-        
-        if transaction_type == 'transfer' and value is not None:
-            LOGGER.info(f'[get_transaction_type_from_desc] transfer ignore due to value is not None')
-            return None 
-
-        if not transaction_type:
-            LOGGER.warning(f"[get_transaction_type_from_desc] No keywords matched for description: '{description}'")
-
-        return transaction_type
-
-    except Exception as error:
-        LOGGER.error(f"[get_transaction_type_from_desc] Error: {error}")
+    if not description:
+        LOGGER.info('[get_transaction_type_from_desc] description is None')
         return None
+
+    desc_lower = description.lower()
+
+    transaction_type = next(
+        (key for key, keywords in TRANSACTION_KEYWORDS.items()
+         if any(keyword.lower() in desc_lower for keyword in keywords)),
+        None
+    )
+
+    if transaction_type == 'transfer' and value is not None:
+        LOGGER.info('[get_transaction_type_from_desc] transfer ignore due to having value')
+        return None
+
+    # No keyword match returns None on purpose, the LLM fallback classifies
+    # transaction_type from the circumstance description in that case
+    return transaction_type
 
 
 def build_transaction_type(
     circumstance_interest_raw: dict[str, any],
     transaction_details: list[dict[str, any]] | float
 ) -> str:
-    try:
-        if not circumstance_interest_raw: 
-            LOGGER.warning(f'[build_transaction_type] circumstance_interest_raw is None')
-            return None
-
-        # get total value 
-        if isinstance(transaction_details, list):
-            value = [value_detail.get('value', None) for value_detail in transaction_details]  
-            value = value[0]
-        else:
-            value = transaction_details 
-
-        circumstance_interest = circumstance_interest_raw.get('results')
-        circumstance_interest = get_circumstance_interest(circumstance_interest)
-        # print(f'\ncircumstance_interest processed: {circumstance_interest}')
-
-        transaction_type = None 
-        key = circumstance_interest.get('key')
-        checked = circumstance_interest.get('checked')
-        specific_key = circumstance_interest.get('specific_key')
-
-        if checked:
-            if key == 'others_specify':
-                description = circumstance_interest.get('description', None)
-                transaction_type = get_transaction_type_from_desc(description, value)
-            elif key == 'acquisition':
-                transaction_type = 'buy'
-                if specific_key == 'Securities as part of management':
-                    transaction_type = 'others'
-            elif key == 'disposal':
-                transaction_type = 'sell'
-            elif key == 'other_circumstances':
-                lookup_key = specific_key.lower().strip()
-                transaction_type = OTHER_CIRCUMSTANCES_RULES.get(lookup_key)
-
-        return transaction_type
-
-    except Exception as error:
-        LOGGER.error(f"[build_transaction_type] Error: {error}")
+    if not circumstance_interest_raw:
+        LOGGER.warning('[build_transaction_type] circumstance_interest_raw is None')
         return None
+
+    # get total value
+    if isinstance(transaction_details, list):
+        values = [
+            value_detail.get('value') 
+            for value_detail in transaction_details
+        ]
+        value = values[0] if values else None
+
+    else:
+        value = transaction_details
+
+    circumstance_interest = get_circumstance_interest(circumstance_interest_raw.get('results'))
+
+    if not circumstance_interest:
+        return None
+
+    transaction_type = None
+    key = circumstance_interest.get('key')
+    checked = circumstance_interest.get('checked')
+    specific_key = circumstance_interest.get('specific_key')
+
+    if checked:
+        if key == 'others_specify':
+            description = circumstance_interest.get('description', None)
+            transaction_type = get_transaction_type_from_desc(description, value)
+
+        elif key == 'acquisition':
+            transaction_type = 'buy'
+
+            if specific_key == 'Securities as part of management':
+                transaction_type = 'others'
+
+        elif key == 'disposal':
+            transaction_type = 'sell'
+
+        elif key == 'other_circumstances':
+            lookup_key = specific_key.lower().strip()
+            transaction_type = OTHER_CIRCUMSTANCES_RULES.get(lookup_key)
+
+    return transaction_type
                 
-
-def build_shareholder_name_transfer(
-    circumstance_interest_raw: dict[str, any],
-    shareholder_name: str
-) -> str:
-    try:
-        circumstance_interest = circumstance_interest_raw.get('results')
-        circumstance_interest = get_circumstance_interest(circumstance_interest)
-        description = circumstance_interest.get('description', None)
-
-        # print(f'\ndescription for transfer: {description}, shareholder name: {shareholder_name}') 
-
-        if not description:
-            return shareholder_name 
-        
-        description_lower = description.lower().strip()
-
-        # Matches: "treasury shares" or "transfer of treasury shares"
-        if re.search(r'treasury\s+shares?', description_lower):
-            return f"Company Treasury [->] {shareholder_name}"
-        
-        # Matches: "Tan Sri Datuk Tiong Su Kouk transfer 7,900,000 ordinary shares to his family member"
-        name_first_pattern = r'^([A-Z][a-zA-Z\s\.\,]+?)\s+transfer(?:red)?\s+[\d,]+\s+(?:ordinary\s+)?shares?\s+to\s+(?:his|her|their)?\s*(.+?)(?:\.|$)'
-        match = re.search(name_first_pattern, description)
-        
-        if match:
-            from_person = match.group(1).strip()
-            to_person = match.group(2).strip()
-            
-            # Keep the original "to_person" text (like "family member")
-            return f"{from_person} [->] {to_person}"
-        
-        # Matches: "from Mr John to Mr Smith", "by Mr John to his son Mr Smith"
-        from_to_pattern = r'(?:from|by)\s+([^,]+?)\s+to\s+(?:his|her|their)?\s*(?:son|daughter|spouse|wife|husband|child|children|family|relative)?\s*,?\s*([^,\.]+?)(?:\s+by\s+way|,|\.|\s+pursuant|\s+under)'
-        match = re.search(from_to_pattern, description, re.IGNORECASE)
-        
-        if match:
-            from_person = match.group(1).strip()
-            to_person = match.group(2).strip()
-            
-            # Clean up common prefixes/titles (but keep honorifics)
-            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', from_person, flags=re.IGNORECASE).strip()
-            to_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', to_person, flags=re.IGNORECASE).strip()
-            
-            return f"{from_person} [->] {to_person}"
-        
-        # Matches: "Transfer of 35,000,000 shares by Mr Goh Kim San to his son, Mr Goh Yi Shun, Joshua"
-        transfer_by_to_pattern = r'transfer\s+of\s+[\d,]+\s+shares?\s+by\s+([^,]+?)\s+to\s+(?:his|her|their)?\s*(?:son|daughter|spouse|wife|husband|child|children|family|relative)?\s*,?\s*([^,\.]+?)(?:\s+by\s+way|,|\.|\s+pursuant|\s+under)'
-        match = re.search(transfer_by_to_pattern, description, re.IGNORECASE)
-        
-        if match:
-            from_person = match.group(1).strip()
-            to_person = match.group(2).strip()
-            
-            # Clean up
-            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', from_person, flags=re.IGNORECASE).strip()
-            to_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', to_person, flags=re.IGNORECASE).strip()
-            
-            return f"{from_person} [->] {to_person}"
-        
-        # Matches: "John transferred to Smith", "shares by John to Smith"
-        transfer_pattern = r'(?:shares?\s+)?(?:transferred\s+)?(?:by\s+)?([A-Z][a-zA-Z\s\.]+?)\s+to\s+([A-Z][a-zA-Z\s\.]+?)(?:\s+by\s+way|,|\.|\s+pursuant|\s+under)'
-        match = re.search(transfer_pattern, description)
-        
-        if match:
-            from_person = match.group(1).strip()
-            to_person = match.group(2).strip()
-            
-            # Clean up
-            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', from_person, flags=re.IGNORECASE).strip()
-            to_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor)\s+', '', to_person, flags=re.IGNORECASE).strip()
-            
-            return f"{from_person} [->] {to_person}"
-        
-        # Matches: "transfer from Company" -> "Company [->] shareholder_name"
-        from_pattern = r'transfer\s+(?:of\s+shares?\s+)?from\s+([^,\.]+?)(?:\s+to\s+me|,|\.)'
-        match = re.search(from_pattern, description, re.IGNORECASE)
-        
-        if match:
-            from_person = match.group(1).strip()
-            from_person = re.sub(r'^(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Professor|the)\s+', '', from_person, flags=re.IGNORECASE).strip()
-            return f"{from_person} [->] {shareholder_name}"
-        
-        # Matches: "transfer of [anything] shares to [recipient] by way of/,"/"
-        shares_to_pattern = r'shares?\s+to\s+([^,\.]+?)(?:\s+by\s+way|,|\.)'
-        match = re.search(shares_to_pattern, description, re.IGNORECASE)
-
-        if match:
-            to_person = match.group(1).strip()
-            return f"{shareholder_name} [->] {to_person}"
-
-        return None
-
-    except Exception as error:
-        LOGGER.error(f"[build_shareholder_name_transfer] Error: {error}")
-        return None 
-
 
 def populate_extra_data(
     symbol: str, 
 ) -> tuple[str, str, str]: 
     cache_path = "data/sgx_companies.json"
 
-    if not os.path.exists(cache_path):
-        raise FileNotFoundError("sgx_companies.json not found")
-
-    with open(cache_path, "r", encoding="utf-8") as file:
-        company_lookup = json.load(file)
+    company_lookup = open_json(cache_path)
 
     if not symbol: 
         return None, None, None 
@@ -543,18 +439,27 @@ def classify_holder_type(name: str) -> str:
     return "insider"
 
 
+def clean_holder_name(holder_name: str) -> str:
+    # Remove parenthetical abbreviations like ("FCAML") and trailing
+    holder_name = re.sub(r'\s*\([^)]*\)\s*', ' ', holder_name).strip()
+    holder_name = re.sub(r'\s+', ' ', holder_name).strip()
+    holder_name = holder_name.rstrip('.')
+
+    return holder_name
+
+
 def generate_title_and_body(
     holder_name: str,
     company_name: str,
     tx_type: str,
-    amount: Optional[int],
-    holding_before: Optional[int],
-    holding_after: Optional[int],
+    amount: int | None,
+    holding_before: int | None,
+    holding_after: int | None,
     purpose_en: str,
 ) -> tuple[str, str]:
-    
     if tx_type:
         action_title = tx_type.title()
+
     else: 
         tx_type = None 
         action_title = None 
@@ -599,154 +504,20 @@ def generate_title_and_body(
 
     if holding_before is not None and holding_after is not None:
         hb_str, ha_str = f"{holding_before:,}", f"{holding_after:,}"
+
         if holding_after > holding_before:
             body += f" This increases their holdings from {hb_str} to {ha_str} shares."
+
         elif holding_after < holding_before:
             body += f" This decreases their holdings from {hb_str} to {ha_str} shares."
+
         else:
             body += f" Their holdings remain at {ha_str} shares."
 
     if purpose_en:
         body += f" The stated purpose of the transaction was {purpose_en.lower()}."
+
     return title, body
-
-
-def build_special_case_value(raw_value: str, base_record: dict[str, any]) -> list[dict[str, any]]:
-    if not raw_value:
-        return [base_record]
-
-    multi_transaction_pattern = r"""
-        ([\d,]+(?:\.\d+)?)              # Capture number (e.g., "3,844,078")
-        \s*
-        (?:units?|shares?|              # Match "unit", "units", "share", "shares"
-        securit(?:y|ies)|            # "security" or "securities"
-        stapled\s+securit(?:y|ies))  # "stapled security/securities"
-        \s+at\s+                        # Match " at "
-        (?:(?:an?\s+)?issue\s+)?        # Optional "issue" or "a/an issue"
-        (?:(?:an?\s+)?price\s+)?        # Optional "a/an price" ← MADE OPTIONAL!
-        (?:of\s+)?                      # Optional "of "
-        (?:sg\$|s\$|usd|sgd|            # Optional currency symbols
-        hkd|us\$|\$)?
-        \s*
-        ([\d,]+(?:\.\d+)?)              # Capture price (e.g., "2.2242")
-        \s*per\s+                       # Match " per "
-        (?:unit|share|security|         # Match "unit", "share", etc.
-        stapled\s+security)
-    """
-    
-    try:
-        matches = re.findall(multi_transaction_pattern, raw_value, re.IGNORECASE | re.VERBOSE)
-       
-        if len(matches) >= 2:
-            LOGGER.info(f"[build_special_case_value] Detected {len(matches)} transactions in: {raw_value}")
-            
-            new_records = []
-            for index, (value, price_per_share) in enumerate(matches):
-                copy_record = base_record.copy()
-            
-                price_per_share = safe_convert_float(price_per_share)
-                value = safe_convert_float(value)
-                value = value * price_per_share
-                value = round(value, 2)
-
-                copy_record.update({
-                    'value': value, 
-                    'price_per_share': price_per_share
-                })
-
-                print(f"Transaction {index+1}: {value}.{price_per_share} = {value}")
-                new_records.append(copy_record)
-            
-            return new_records
-        
-        list_all_record =  [base_record]
-        return list_all_record
-
-    except Exception as error:
-        LOGGER.error(f"[build_special_case_value] Error processing special case value: {error}")
-        return [] 
-
-
-def build_special_case_multiple_dates(
-    raw_number_of_stock: str, 
-    raw_value: str, 
-    base_record: dict[str, any]
-) -> list[dict[str, any]]:
-    if not raw_number_of_stock or not raw_value:
-        return [base_record] 
-
-    # Pattern to extract number + date from number_of_stock field
-    number_date_pattern = r"""
-        ([\d,]+(?:\.\d+)?)              # Capture number
-        \s+
-        (?:shares?|units?|securit(?:y|ies))  # Match share/unit type
-        \s+on\s+                        # Match " on "
-        (\d{1,2}\s+\w+\s+\d{4})         # Capture date: "7 Nov 2024" format
-    """
-
-    price_date_pattern = r"""
-        (?:paid\s+)?                    # Optional "paid"
-        (?:sg\$|s\$|usd|sgd|\$)?        # Optional currency
-        \s*
-        ([\d,]+(?:\.\d+)?)              # Capture price
-        \s+per\s+
-        (?:share|unit|security)         # Match per share/unit
-        \s+on\s+                        # Match " on "
-        (\d{1,2}\s+\w+\s+\d{4})         # Capture date: "7 Nov 2024" format
-    """
-
-    try:
-        number_matches = re.findall(number_date_pattern, raw_number_of_stock, re.IGNORECASE | re.VERBOSE)
-        price_matches = re.findall(price_date_pattern, raw_value, re.IGNORECASE | re.VERBOSE)
-
-        # print(f"DEBUG number_matches: {number_matches}")
-        # print(f"DEBUG price_matches: {price_matches}")
-
-        if len(number_matches) >= 2 and len(price_matches) >= 2:
-            LOGGER.info(f"[build_special_case_multiple_dates] Detected {len(number_matches)} transactions with dates")
-
-            number_by_date = {}
-            for number, number_date in number_matches:
-                number_date = number_date.strip()
-                number_clean = safe_convert_float(number)
-                number_by_date[number_date] = number_clean 
-
-            value_by_date = {}
-            for value, value_date in price_matches:
-                value_date = value_date.strip()
-                value_clean = safe_convert_float(value)
-                value_by_date[value_date] = value_clean 
-
-            new_records = []
-            for number_stock_date in number_by_date.keys():
-                if number_stock_date in value_by_date:
-                    number_of_stock = number_by_date[number_stock_date]
-                    price_per_share = value_by_date[number_stock_date]
-
-                    new_value = number_of_stock * price_per_share
-                    new_value = round(new_value, 2)
-
-                    transaction_date = safe_convert_datetime(number_stock_date)
-                    
-                    copy_record = base_record.copy()
-                    copy_record.update({
-                        "transaction_date": transaction_date,
-                        "number_of_stock": number_of_stock,
-                        "price_per_share": price_per_share,
-                        "value": new_value,
-                    })
-                    
-                    print(f"Matched: {number_stock_date} → {number_of_stock} x {price_per_share} = {new_value}")
-                    new_records.append(copy_record)
-             
-            return new_records
-
-        list_all_record =  [base_record]
-        return list_all_record
-
-    except Exception as error:
-        LOGGER.error(f"[build_special_case_multiple_dates] Error: {error}")
-        return [] 
 
 
 def contains_any_keyword(text: str, keywords: list) -> bool:
@@ -754,36 +525,15 @@ def contains_any_keyword(text: str, keywords: list) -> bool:
     return any(keyword in lowered for keyword in keywords)
 
 
-def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
+def filter_duplicate(payload: list[dict[str, any]]) -> list[dict]:
     if not payload:
-        LOGGER.info(f'[sgx_filings] is empty, skipping clean payload')
+        LOGGER.info(f'Payload is empty, skipping filter duplicate')
         return []
 
     cleaned_payload = []
     seen_keys = set()
 
     for row in payload:
-        shareholder_name = row.get('shareholder_name')
-        row.pop('time', None)
-
-        if shareholder_name and shareholder_name.isupper():
-            row['shareholder_name'] = shareholder_name.title()
-
-        # Convert share counts to int
-        for key in [
-            "number_of_stock",
-            "shares_before",
-            "shares_after"
-        ]:
-            if key in row and row[key] is not None:
-                try:
-                    row[key] = int(float(row[key]))
-
-                except (ValueError, TypeError):
-                    LOGGER.error(f"Failed to convert {key} with value {row[key]} to int.")
-                    row[key] = None
-
-        # Check duplicate data with composite keys
         unique_key = (
             row.get('url'),
             row.get('shareholder_name'),
@@ -801,28 +551,3 @@ def clean_payload_sgx_filings(payload: list[dict[str, any]]) -> list[dict]:
         cleaned_payload.append(row)
 
     return cleaned_payload
-
-
-def standardize_name(payload: list[dict[str, any]]) -> list[dict[str, any]]:
-    for record in payload:
-        holder_name = record.pop('shareholder_name', None)
-        record['holder_name'] = holder_name.strip() if holder_name is not None else None
-        record['holding_before'] = record.pop('shares_before', None)
-        record['holding_after'] = record.pop('shares_after', None)
-        record['share_percentage_before'] = record.pop('shares_before_percentage', None)
-        record['share_percentage_after'] = record.pop('shares_after_percentage', None)
-        record['timestamp'] = record.pop('transaction_date', None)
-        record['amount_transaction'] = record.pop('number_of_stock', None)
-        record['transaction_value'] = record.pop('value', None)
-        record['source'] = record.pop('url', None)
-
-        share_pct_after = record.get('share_percentage_after')
-        share_pct_before = record.get('share_percentage_before')
-
-        if share_pct_after is not None and share_pct_before is not None:
-            record['share_percentage_transaction'] = round(abs(share_pct_after - share_pct_before), 7)
-
-        else:
-            record['share_percentage_transaction'] = None
-
-    return payload

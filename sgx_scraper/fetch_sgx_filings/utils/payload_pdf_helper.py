@@ -4,7 +4,6 @@ from sgx_scraper.fetch_sgx_filings.utils.constants import (
 )
 
 import re
-import pdfplumber
 import fitz 
 import logging
 
@@ -266,7 +265,7 @@ def find_subsection_blocks(
                 # Break when found all blocks for this transaction
                 if (acquisition_block and disposal_block and 
                     other_circumstances_block and others_specify_block):
-                    print(f"All subsection blocks found, stopping search")
+                    # print(f"All subsection blocks found, stopping search")
                     break
 
         return acquisition_block, disposal_block, other_circumstances_block, others_specify_block
@@ -330,7 +329,7 @@ def extract_circumstance_interest_checkbox(
             if not section_block:
                 continue
             
-            print(f'\nSection found on page {page_index}')
+            # print(f'\nSection found on page {page_index}')
             
             # Collect text blocks from current page and next pages
             combined_text_blocks, combined_drawings = gather_page_content(doc_fitz, page_index)
@@ -397,89 +396,58 @@ def extract_circumstance_interest_checkbox(
         return None
 
 
-def extract_checkbox_fallback(
-    doc: fitz.Document,
-    section_pattern: str
-) -> dict[str, any] | None:
-    try:
-        for page_num in range(2, len(doc)):
-            page = doc.load_page(page_num)
-            
-            # Extract all text with positions
-            text_dict = page.get_text("dict")
-            
-            # Get all text blocks
-            all_text_blocks = get_all_text_blocks(text_dict)
-            
-            # Find the main section header
-            section_block = None
-            for block in all_text_blocks:
-                if re.search(section_pattern, block["text"], re.IGNORECASE):
-                    section_block = block
-                    break
-            
-            if not section_block:
-                continue
-            
-            # Find subsection headers
-            subsection_blocks = find_subsection_blocks(all_text_blocks, section_block["y1"])
-            if not subsection_blocks:
-                continue
-            
-            # Define Y-ranges for each subsection
-            acquisition_range, disposal_range, other_circumstances_range, others_specify_range = \
-                calculate_section_ranges(subsection_blocks)
-            
-            # Get drawings (checkboxes)
-            drawings = page.get_drawings()
-            
-            results = {
-                "acquisition": {},
-                "disposal": {},
-                "other_circumstances": {},
-                "others_specify": {
-                    "checked": False,
-                    "description": None
-                }
-            }
-            
-            # Extract checkboxes for each subsection
-            results["acquisition"] = find_options_in_range(
-                all_text_blocks, drawings, ACQUISITION_OPTIONS, *acquisition_range
-            )
-            
-            if disposal_range[0]:
-                results["disposal"] = find_options_in_range(
-                    all_text_blocks, drawings, DISPOSAL_OPTIONS, *disposal_range
-                )
-            
-            if other_circumstances_range[0]:
-                results["other_circumstances"] = find_options_in_range(
-                    all_text_blocks, drawings, OTHER_OPTIONS, 
-                    *other_circumstances_range
-                )
+def read_type_securities_page(
+    page: fitz.Page,
+    section_pattern: str,
+    search_range: int,
+) -> dict[str, bool] | None:
+    # Read the 'Type of securities' checkbox group on a single page (the first
+    # section header found on it). Returns {option: checked} or None if the section
+    # is not on this page.
+    all_text_blocks = get_all_text_blocks(page.get_text("dict"))
 
-                results["other_circumstances"]["Corporate action by Listed Issuer"] = extract_others_description(
-                    all_text_blocks, drawings, *other_circumstances_range,
-                    r"Corporate action.*Listed Issuer.*please specify"
-                )
-            
-            if others_specify_range[0]:
-                results["others_specify"] = extract_others_description(
-                    all_text_blocks, drawings, *others_specify_range,
-                    r"Others\s*\(\s*please specify\s*\)"
-                )
-            
-            return {
-                'page': page_num + 1,
-                'results': results
-            }
-        
+    section_block = next(
+        (block for block in all_text_blocks
+         if re.search(section_pattern, block["text"], re.IGNORECASE | re.DOTALL)),
+        None,
+    )
+
+    if not section_block:
         return None
 
-    except Exception as error:
-        LOGGER.error(f"[extract_checkbox_fallback] Error: {error}", exc_info=True)
-        return None
+    search_y_start = section_block["y1"]
+    search_y_end = search_y_start + search_range
+    drawings = page.get_drawings()
+
+    results = {}
+
+    for option_name, pattern in TYPE_SECURITIES_OPTIONS.items():
+        for block in all_text_blocks:
+            if (block["y0"] >= search_y_start and
+                block["y0"] <= search_y_end and
+                re.search(pattern, block["text"], re.IGNORECASE)):
+
+                is_checked = False
+
+                # checkbox is the filled drawing on the same line, to the left
+                for drawing in drawings:
+                    d_rect = drawing['rect']
+
+                    if (abs(d_rect.y0 - block['y0']) < 10 and
+                        d_rect.x1 <= block['x0'] and
+                        drawing['type'] == 'f'):
+
+                        fill_color = drawing.get('fill')
+
+                        # checked = dark fill, unchecked = white fill
+                        if fill_color and fill_color != (1.0, 1.0, 1.0):
+                            is_checked = True
+                            break
+
+                results[option_name] = is_checked
+                break
+
+    return results or None
 
 
 def extract_type_securities_checkbox(
@@ -487,115 +455,42 @@ def extract_type_securities_checkbox(
     section_pattern: str,
     search_range: int = 150
 ) -> dict[str, any]:
+    # First 'Type of securities' section in the document (filing-level).
     for page_num in range(len(doc)):
         try:
-            page = doc.load_page(page_num)
-            
-            # Extract all text with positions
-            text_dict = page.get_text("dict")
-            
-            # Get all text blocks
-            all_text_blocks = get_all_text_blocks(text_dict)
-            
-            # Find the section header
-            section_block = None
-            for block in all_text_blocks:
-                if re.search(section_pattern, block["text"], re.IGNORECASE | re.DOTALL):
-                    section_block = block
-                    break
-            
-            if not section_block:
-                continue 
-            
-            # Define search area below the header
-            search_y_start = section_block["y1"]
-            search_y_end = search_y_start + search_range
-            
-            # Get drawings (checkboxes)
-            drawings = page.get_drawings()
-            
-            results = {}
-            
-            # Find each options
-            for option_name, pattern in TYPE_SECURITIES_OPTIONS.items():
-                for block in all_text_blocks:
-                    # Check if block is in search area and matches pattern
-                    if (block["y0"] >= search_y_start and 
-                        block["y0"] <= search_y_end and
-                        re.search(pattern, block["text"], re.IGNORECASE)):
-                        
-                        is_checked = False
-                        
-                        # Look for checkbox near this text (within ±10 points Y, to the left)
-                        for drawing in drawings:
-                            d_rect = drawing['rect']
-                            
-                            # Check if drawing is on same line and to the left of text
-                            if (abs(d_rect.y0 - block['y0']) < 10 and
-                                d_rect.x1 <= block['x0'] and
-                                drawing['type'] == 'f'):
-                                
-                                fill_color = drawing.get('fill')
-                                
-                                # Checked = Black/dark fill, Unchecked = White fill
-                                if fill_color and fill_color != (1.0, 1.0, 1.0):
-                                    is_checked = True
-                                    break
-                        
-                        results[option_name] = is_checked
-                        break
-            
+            results = read_type_securities_page(doc.load_page(page_num), section_pattern, search_range)
+
             if results:
-                return {
-                    'page': page_num + 1,
-                    'results': results
-                }
-            
+                return {'page': page_num + 1, 'results': results}
+
         except Exception as error:
-                LOGGER.warning(f"[extract_type_securities_checkbox] Error: {page_num}: {error}")
-                continue
-        
+            LOGGER.warning(f"[extract_type_securities_checkbox] Error: {page_num}: {error}")
+            continue
+
     return None
 
 
-def extract_share_tables(
-    pdf_object: pdfplumber.PDF, 
-    page_number: int, 
-    bbox: tuple
-) -> list[list[str]]:
-    try:
-        found_tables = []
+def extract_type_securities_checkbox_all(
+    doc: fitz.Document,
+    section_pattern: str,
+    search_range: int = 150
+) -> list[dict[str, any]]:
+    # One entry per 'Type of securities' section across the document, in page order
+    # (one per transaction in a multi-transaction filing)
+    sections = []
 
-        # Search the initial page within the specified bounding box
-        start_page = pdf_object.pages[page_number]
-        cropped_view = start_page.crop(bbox)
-        initial_tables = cropped_view.extract_tables()
+    for page_num in range(len(doc)):
+        try:
+            results = read_type_securities_page(doc.load_page(page_num), section_pattern, search_range)
 
-        for table in initial_tables:
-            found_tables.append({'page': page_number, 'table': table})
+            if results:
+                sections.append({'page': page_num + 1, 'results': results})
 
-        # Continue searching on the next 3 pages 
-        for page_idx in range(page_number + 1, min(len(pdf_object.pages), page_number + 4)):
-            next_page = pdf_object.pages[page_idx]
-            tables_on_next_page = next_page.extract_tables()
-            for table in tables_on_next_page:
-                found_tables.append({'page': page_idx, 'table': table})
-                
-        matching_tables = []
-        for item in found_tables:
-            table = item['table']
-            if table and contains_share_rule(table):
-                matching_tables.append(item)
-                
-        if matching_tables:
-            merged = merge_tables(matching_tables)
-            return merged
-            
-        return None
+        except Exception as error:
+            LOGGER.warning(f"[extract_type_securities_checkbox_all] Error: {page_num}: {error}")
+            continue
 
-    except Exception as error:
-        LOGGER.error(f"[extract_share_tables] Error: {str(error)}", exc_info=True)
-        return None
+    return sections
 
 
 def contains_share_rule(table: list[list[str]]) -> bool:
@@ -632,200 +527,3 @@ def contains_share_rule(table: list[list[str]]) -> bool:
     
     return False
 
-
-def merge_tables(table_items: list[dict[str, any]]) -> list[list[str]]:
-    if not table_items:
-        return []
-    
-    merged = table_items[0]['table']
-    
-    for index in range(1, len(table_items)):
-        current = table_items[index]['table']
-        prev_page = table_items[index-1]['page']
-        curr_page = table_items[index]['page']
-        
-        # print(f"Pages: {prev_page} -> {curr_page}")
-        # print(f"First row: {current[0] if current else 'empty'}")
-        
-        # If on consecutive pages, it's likely a continuation
-        if curr_page - prev_page <= 1:
-            # Check if it's just percentage rows
-            is_percentage_only = all(
-                'as a percentage' in ' '.join([str(c) for c in row if c]).lower()
-                for row in current
-            )
-            
-            print(f"Is percentage only: {is_percentage_only}")
-            
-            if is_percentage_only:
-                print(f"MERGING")
-                merged.extend(current)
-
-            # Different header = continuation
-            elif current[0] != merged[0]:  
-                print(f"MERGING (different structure)")
-                merged.extend(current)
-    
-    return merged
-
-
-def get_shareholder_name(name_patterns: list[str], section_text: str) -> str:
-    name = None 
-
-    for pattern in name_patterns:
-        match = re.search(pattern, section_text, re.IGNORECASE)
-
-        if match:
-            potential_name = match.group(1).strip()
-
-            # Remove parenthetical abbreviations like ("FCAML") and trailing
-            potential_name = re.sub(r'\s*\([^)]*\)\s*', ' ', potential_name).strip()
-            potential_name = re.sub(r'\s+', ' ', potential_name).strip()
-            potential_name = potential_name.rstrip('.')
-            
-            if potential_name and potential_name != ':' and not potential_name.startswith('('):
-                name = potential_name
-                break
-
-    return name 
-
-
-def extract_shareholder_name(pdf_object: pdfplumber.PDF, page_number: int, bbox: tuple) -> str | None:
-    try:
-        page = pdf_object.pages[page_number]
-
-        cropped_view = page.crop(bbox)
-        section_text = cropped_view.extract_text(x_tolerance=2)
-        
-        if not section_text:
-            LOGGER.warning(f"[extract_shareholder_name] Empty section text on page {page_number}")
-            return None 
-        
-        # Search for standard headers within the section 
-        name_patterns = [
-            r"Name of Substantial Shareholder/Unitholder:\s*([^\n]+)",
-            r"Name of Director/CEO:\s*([^\n]+)",
-            r"(?:\d+\.\s*)?Name of Trustee-Manager(?:/Responsible Person)?:\s*([^\n]+)"
-        ]
-
-        # Search full current page first
-        full_page_text = page.extract_text(x_tolerance=2)
-
-        if full_page_text:
-            name = get_shareholder_name(name_patterns, full_page_text)
-
-            if name:
-                return name
-
-        # Fallback two previous pages
-        if not name:
-            for prev_page_idx in range(page_number - 1, page_number - 3, -1):
-            
-                if prev_page_idx < 0: 
-                    continue
-
-                prev_page = pdf_object.pages[prev_page_idx]
-                prev_page_text = prev_page.extract_text(x_tolerance=2)
-
-                # print(f'\nprev_text fallback 2 pages: {prev_page_text}\n')
-                if prev_page_text:
-                    name = get_shareholder_name(name_patterns, prev_page_text)
-                    
-                    if name:
-                        break 
-            
-        # Fallback to the earlier pages 
-        if not name: 
-            for prev_page_idx in range(page_number - 1, 0, -1):
-                if prev_page_idx < 0: 
-                    continue
-
-                prev_page = pdf_object.pages[prev_page_idx]
-                prev_page_text = prev_page.extract_text(x_tolerance=2)
-
-                # print(f'\nprev_text fallback all earlier pages: {prev_page_text}\n')
-                if prev_page_text:
-                    name = get_shareholder_name(name_patterns, prev_page_text)
-                    if name:
-                        break 
-
-        return name 
-    
-    except Exception as error:
-        LOGGER.error(f'[extract_shareholder_name] Error: {error}', exc_info=True) 
-        return None 
-
-
-def find_shareholder_sections(pdf_object: pdfplumber.PDF) -> list[dict]:
-    primary_anchors = [
-        "Quantum of interests in securities held by Trustee-Manager",
-        "Name of Substantial Shareholder/Unitholder:",
-        "Part II - Substantial Shareholder/Unitholder and Transaction(s) Details",
-        "Name of Director/CEO:"
-    ]
-    
-    # Regex to find "Transaction A", "Transaction B", etc
-    transaction_anchor_pattern = re.compile(r"^Transaction ?[A-Z]$", re.MULTILINE)
-
-    found_primary = []
-    found_transactions = []
-
-    for index, page in enumerate(pdf_object.pages):
-        # Find primary anchors
-        for anchor_text in primary_anchors:
-            found = page.search(anchor_text, case=False)
-            for item in found:
-                found_primary.append({'text':anchor_text, 'page_number': index, 'top': item['top']})
-        
-        # Find transaction anchors
-        page_text = page.extract_text()
-        if page_text:
-            for match in transaction_anchor_pattern.finditer(page_text):
-                # Find the coordinates of this text match
-                bbox = page.search(match.group(0), case=True)
-
-                if bbox:
-                    found_transactions.append({'page_number': index, 'top': bbox[0]['top']})
-
-    # Sort all found anchors to process them in order
-    found_primary.sort(key=lambda x: (x['page_number'], x['top']))
-    found_transactions.sort(key=lambda x: (x['page_number'], x['top']))
-
-    final_anchors = []
-
-    if len(found_primary) > 1 and "Name of Substantial Shareholder/Unitholder:" in [item['text'] for item in found_primary]:
-        # Case: Multi-shareholder document. Use the primary anchors
-        final_anchors = found_primary
-
-    elif len(found_transactions) > 1:
-        # Case: Multi-transaction document. Use the "Transaction A/B" anchors
-        final_anchors = found_transactions
-
-    else:
-        # Case: Simple single-filer document. Use the single primary anchor found
-        final_anchors = found_primary
-
-    # Build the sections based on the chosen final anchors 
-    shareholder_sections = []
-
-    if not final_anchors:
-        return []
-        
-    page_width = pdf_object.pages[0].width
-    for index, anchor in enumerate(final_anchors):
-        page = pdf_object.pages[anchor['page_number']]
-        section_top = anchor['top']
-        section_bottom = page.height
-        
-        if index + 1 < len(final_anchors) and final_anchors[index+1]['page_number'] == anchor['page_number']:
-            section_bottom = final_anchors[index+1]['top']
-        
-        section_bbox = (0, section_top, page_width, section_bottom)
-
-        shareholder_sections.append({
-            'page_number': anchor['page_number'],
-            'bbox': section_bbox
-        })
-
-    return shareholder_sections
-    
