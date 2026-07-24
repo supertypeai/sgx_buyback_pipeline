@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+
 from datetime import datetime, timedelta
 from typing import Iterator
 
@@ -17,7 +18,6 @@ import requests
 import json
 import time
 import random
-import traceback
 import logging
 
 
@@ -28,10 +28,10 @@ def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdr
     options = webdriver.ChromeOptions()
 
     if is_headless:
-        print("Running in headless mode...")
-        options.add_argument("--headless=new")  
+        LOGGER.info("Running in headless mode...")
+        options.add_argument("--headless=new")
     else:
-        print("Running in non-headless mode...")
+        LOGGER.info("Running in non-headless mode...")
 
     # Common options for stealth
     options.add_argument("--disable-blink-features=AutomationControlled")
@@ -48,7 +48,7 @@ def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdr
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
     
     if proxy:
-        print(f"Configuring browser with proxy: {proxy.split('@')[-1] if '@' in proxy else proxy}")
+        LOGGER.info(f"Configuring browser with proxy: {proxy.split('@')[-1] if '@' in proxy else proxy}")
         seleniumwire_options = SeleniumWireOptions(
             request_storage='memory',
             verify_ssl=False,
@@ -93,8 +93,7 @@ def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdr
         return driver
         
     except Exception as error:
-        print(f"Failed to create driver: {error}")
-        print(traceback.format_exc())
+        LOGGER.error(f"Failed to create driver: {error}", exc_info=True)
         return None
 
 
@@ -121,73 +120,86 @@ def get_auth(proxy: str | None = PROXY) -> dict[str, str] | None:
         if not driver:
             return None
         
-        print("Navigating to SGX page...")
+        LOGGER.info("Navigating to SGX page...")
         driver.get('https://www.sgx.com/securities/company-announcements?ANNC=ANNC13')
-        
+
         # Check if blocked
         page_title = driver.title.lower()
         if 'access denied' in page_title or 'blocked' in page_title:
-            print(f"Access denied! Page title: {driver.title}")
+            LOGGER.error(f"Access denied! Page title: {driver.title}")
             return None
-        
-        print(f"Page loaded successfully. Title: {driver.title}")
-        
-        print("Waiting for JavaScript to execute...")
+
+        LOGGER.info(f"Page loaded successfully. Title: {driver.title}")
+
+        LOGGER.info("Waiting for JavaScript to execute...")
         time.sleep(8)
-        
+
         # Interact with page
         try:
             wait = WebDriverWait(driver, 10)
             wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-            
+
             # Scroll
             driver.execute_script("window.scrollTo(0, 500);")
             time.sleep(2)
-            
+
         except Exception as error:
-            print(f"Interaction warning: {error}")
-        
-        print("Waiting for API request...")
-        
+            LOGGER.warning(f"Interaction warning: {error}")
+
+        LOGGER.info("Waiting for API request...")
+
         try:
             request = driver.wait_for_request(
                 'api.sgx.com/announcements',
                 timeout=30
             )
-            
+
             token = request.headers.get('authorizationtoken')
             if not token:
-                print("No Authorization header found.")
+                LOGGER.warning("No Authorization header found.")
                 return None
-            
-            print(f"Token captured: {token[:20]}...")
+
+            LOGGER.info(f"Token captured: {token[:20]}...")
             headers["authorizationtoken"] = token
             return headers
-            
+
         except Exception as error:
-            print(f"Timeout: {error}")
-            
-            # Debug
-            print("\nDebug - Requests to SGX:")
+            LOGGER.error(f"Timeout waiting for SGX API request: {error}")
+
+            # Debug: dump the SGX requests that were captured
             sgx_requests = [req for req in driver.requests if 'sgx' in req.url.lower()]
-            
+
             if not sgx_requests:
-                print("  No requests captured!")
+                LOGGER.error("No SGX requests captured!")
             else:
                 for req in sgx_requests[-10:]:
                     status = req.response.status_code if req.response else 'No response'
-                    print(f"  {req.method} {req.url[:80]}... - {status}")
-            
+                    LOGGER.error(f"  {req.method} {req.url[:80]}... - {status}")
+
             return None
 
     except Exception as error:
-        print(f"FAILED getting auth token: {error}")
+        LOGGER.error(f"FAILED getting auth token: {error}", exc_info=True)
         return None
 
     finally:
         if driver:
-            print("Closing driver...")
+            LOGGER.info("Closing driver...")
             driver.quit()
+
+
+def get_auth_with_retry(proxy=None, attempts=3):
+    for attempt in range(1, attempts + 1):
+        headers = get_auth(proxy=proxy)
+
+        if headers:
+            return headers
+
+        LOGGER.warning("[get_auth] attempt %d/%d failed, retrying", attempt, attempts)
+        time.sleep(random.uniform(3, 8))
+
+    LOGGER.error("[get_auth] all %d attempts failed", attempts)
+    return None
 
 
 def run_scrape_api(
@@ -270,7 +282,7 @@ def iter_sgx_announcements(
     logger = logging.getLogger(__name__)
 
     api_url = "https://api.sgx.com/announcements/v1.1/"
-    headers = get_auth(proxy=None)
+    headers = get_auth_with_retry(proxy=None)
 
     today = datetime.now()
     yesterday = today - timedelta(days=2)
