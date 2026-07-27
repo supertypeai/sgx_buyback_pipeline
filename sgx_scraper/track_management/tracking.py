@@ -9,6 +9,24 @@ import logging
 LOGGER = logging.getLogger(__name__)
 
 
+def consolidate_management_records(records: list[dict]) -> list[dict]:
+    records_by_symbol = {}
+
+    for record in records:
+        symbol = record.get('symbol')
+
+        if not symbol:
+            LOGGER.warning(
+                '[management] skipping update without a symbol: %s', 
+                record
+            )
+            continue
+
+        records_by_symbol[symbol] = record
+
+    return list(records_by_symbol.values())
+
+
 def get_management_update(api_response: dict, top_100_companies: list[dict]):
     registry = {
         'announcement of appointment': get_appointment, 

@@ -1,6 +1,9 @@
 from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import upsert_to_db, get_100_top_companies
-from sgx_scraper.track_management.tracking import get_management_update
+from sgx_scraper.track_management.tracking import (
+    consolidate_management_records,
+    get_management_update,
+)
 
 import typer
 import logging
@@ -52,7 +55,9 @@ def run_tracking_management(
             logger.error(f'[Management] Error processing announcement: {error}', exc_info=True)
             continue
 
-    logger.info(f'total length of payload management: {len(payload_management)}')
+    payload_management = consolidate_management_records(payload_management)
+
+    logger.info(f'total unique management payloads to upsert: {len(payload_management)}')
     logger.info(f'payload management to upsert: {payload_management}')
 
     if is_push_db:

@@ -174,4 +174,18 @@ def get_100_top_companies():
         return []
 
     df_top_n = pd.read_csv(csv_path)
-    return df_top_n.to_dict(orient="records")
+    top_companies = df_top_n.to_dict(orient="records")
+
+    # The top-100 CSV intentionally contains only ranking data.  Management
+    # tracking needs the existing management list, so need to open from local list
+    companies = open_json('data/sgx_companies.json')
+    
+    if not isinstance(companies, dict):
+        LOGGER.warning('Company snapshot is unavailable; management updates will start empty')
+        return top_companies
+
+    for company in top_companies:
+        cached_company = companies.get(company.get('symbol'), {})
+        company['management'] = cached_company.get('management') or []
+
+    return top_companies
