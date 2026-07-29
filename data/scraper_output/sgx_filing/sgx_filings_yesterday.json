@@ -1,26 +1,28 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/GZN56VWEBA6AIABZ/897419__OUE%20REIT_Form_3_OUE_Limited_27%20July%202026.pdf",
-    "symbol": "TS0U",
-    "company_name": "OUE Real Estate Investment Trust",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4UYR2OXF87L4J8CA/897586__eFORM6V2%20-%2020260728.pdf",
+    "symbol": "Q5T",
+    "company_name": "Far East Hospitality Trust",
     "sector": "reit",
-    "sub_sector": "reit-office",
-    "holder_name": "OUE Limited",
+    "sub_sector": "reit-diversified",
+    "holder_name": "FEO Hospitality Asset Management Pte. Ltd",
     "holder_type": "institution",
-    "timestamp": "2026-07-27",
-    "amount_transaction": 5478088,
-    "transaction_value": 1932121,
-    "price_per_share": 0.3527,
+    "timestamp": "2026-07-28",
+    "amount_transaction": 1960881,
+    "transaction_value": 1122604,
+    "price_per_share": 0.5725,
     "transaction_type": "others",
-    "tags": [],
-    "circumstances_desc": "5,478,088 Units were issued pursuant to the trust deed constituting OUE REIT dated 10 October 2013 (as amended) (the “Trust Deed”) as payment for 50.0% of the Base Fee (as defined in the Trust Deed) for the period from 1 April 2026 to 30 June 2026. Pursuant to an arrangement between the Manager and OUE, the 5,478,088 Units were issued directly to OUE.",
-    "holding_before": 2708394902,
-    "direct_before": 1236793631,
-    "share_percentage_before": 0.4898,
-    "holding_after": 2713872990,
-    "direct_after": 1242271719,
-    "share_percentage_after": 0.4903,
-    "title": "Oue Limited None transaction of OUE Real Estate Investment Trust",
-    "body": "Oue Limited executed a transaction for 5,478,088 shares of OUE Real Estate Investment Trust. This increases their holdings from 2,708,394,902 to 2,713,872,990 shares."
+    "tags": [
+      "investment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 163273992,
+    "direct_before": 163273992,
+    "share_percentage_before": 0.0793,
+    "holding_after": 165234873,
+    "direct_after": 165234873,
+    "share_percentage_after": 0.0802,
+    "title": "Change in Feo Hospitality Asset Management Pte. Ltd's position in Far East Hospitality Trust",
+    "body": "Feo Hospitality Asset Management Pte. Ltd executed a transaction for 1,960,881 shares of Far East Hospitality Trust. This increases their holdings from 163,273,992 to 165,234,873 shares."
   }
 ]
