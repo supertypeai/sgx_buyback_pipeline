@@ -38,6 +38,7 @@ jobs:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
         run: |
           uv run python -m sgx_scraper.main_cli scraper_filings
