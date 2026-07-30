@@ -1,9 +1,9 @@
-from rapidfuzz import process, fuzz
+from rapidfuzz import fuzz, process
 
 from .json_helper import open_json
 
 import logging
-import re 
+import re
 
 
 LOGGER = logging.getLogger(__name__)
@@ -22,68 +22,207 @@ def get_sgx_company_names():
     return company_names, companies
 
 
-def symbol_from_company_name(input_name: str, threshold: int = 90) -> str:
-    company_names, companies = get_sgx_company_names()
+def get_sgx_company_name_aliases() -> dict[str, str]:
+    aliases_path = "data/sgx_company_name_aliases.json"
+    aliases = open_json(path=aliases_path)
 
-    cleaned_name = re.sub(r'\s*\([^)]*\)', '', input_name)
-    cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()
+    return aliases if isinstance(aliases, dict) else {}
 
-    input_name_lower = cleaned_name.lower()
 
-    if 'public company' in input_name_lower:
-        input_name_lower = input_name_lower.replace('public company', '').strip()
+def normalize_company_name(
+    company_name: str,
+    remove_parenthetical: bool = False,
+    expand_reit: bool = False,
+) -> str:
+    normalized_name = company_name.casefold()
 
-    if 'corporation' in input_name_lower:
-        input_name_lower = input_name_lower.replace('corporation', 'corp').strip()
-        if '("ifast")' in input_name_lower:
-            input_name_lower = input_name_lower.replace('("ifast")', '').strip()
+    if remove_parenthetical:
+        normalized_name = re.sub(r"\s*\([^)]*\)", " ", normalized_name)
 
-    if 'limited' in input_name_lower:
-        if 'the' in input_name_lower:
-            input_name_lower = input_name_lower.replace('the', '').strip()
-        input_name_lower = input_name_lower.replace('limited', 'ltd').strip()
+    normalized_name = re.sub(r"\bpublic company\b", " ", normalized_name)
+    normalized_name = re.sub(r"\bcorporation\b", "corp", normalized_name)
+    normalized_name = re.sub(r"\blimited\b", "ltd", normalized_name)
 
-    input_name_lower = re.sub(r'\s+', ' ', input_name_lower).strip()
-    
+    if expand_reit:
+        normalized_name = re.sub(
+            r"\breit\b",
+            "real estate investment trust",
+            normalized_name,
+        )
+
+    return " ".join(normalized_name.split())
+
+
+def build_unique_company_lookup(
+    companies: dict,
+    remove_parenthetical: bool = False,
+    expand_reit: bool = False,
+) -> dict[str, str]:
+    symbols_by_name = {}
+    ambiguous_names = set()
+
+    for company in companies.values():
+        company_name = company.get("name")
+        symbol = company.get("symbol")
+
+        if not company_name or not symbol:
+            continue
+
+        normalized_name = normalize_company_name(
+            company_name,
+            remove_parenthetical=remove_parenthetical,
+            expand_reit=expand_reit,
+        )
+        existing_symbol = symbols_by_name.get(normalized_name)
+
+        if existing_symbol and existing_symbol != symbol:
+            ambiguous_names.add(normalized_name)
+            continue
+
+        symbols_by_name[normalized_name] = symbol
+
+    for ambiguous_name in ambiguous_names:
+        symbols_by_name.pop(ambiguous_name, None)
+
+    return symbols_by_name
+
+
+def build_company_alias_lookup(
+    aliases: dict[str, str],
+    remove_parenthetical: bool = False,
+    expand_reit: bool = False,
+) -> dict[str, str]:
+    return {
+        normalize_company_name(
+            alias,
+            remove_parenthetical=remove_parenthetical,
+            expand_reit=expand_reit,
+        ): symbol
+        for alias, symbol in aliases.items()
+        if alias and symbol
+    }
+
+
+def find_fuzzy_symbol(
+    input_name: str,
+    symbols_by_name: dict[str, str],
+    threshold: int,
+    minimum_score_margin: int = 5,
+) -> str | None:
+    matches = process.extract(
+        input_name,
+        symbols_by_name.keys(),
+        scorer=fuzz.ratio,
+        limit=2,
+    )
+
+    if not matches:
+        return None
+
+    matched_name, matched_score, _ = matches[0]
+    runner_up_score = matches[1][1] if len(matches) > 1 else 0
+
+    if (
+        round(matched_score) < threshold
+        or matched_score - runner_up_score < minimum_score_margin
+    ):
+        return None
+
+    LOGGER.info(
+        "Matched company name '%s' to '%s' with score %.2f",
+        input_name,
+        matched_name,
+        matched_score,
+    )
+    return symbols_by_name[matched_name]
+
+
+def symbol_from_company_name(input_name: str, threshold: int = 90) -> str | None:
+    if not input_name:
+        return None
+
     try:
-        scorers = [
-            fuzz.ratio,
-            fuzz.partial_ratio,
-            fuzz.token_sort_ratio,
-            fuzz.token_set_ratio
-        ]
+        _, companies = get_sgx_company_names()
+        aliases = get_sgx_company_name_aliases()
         
-        for scorer in scorers:
-            result = process.extractOne(
-                input_name_lower, 
-                company_names,
-                scorer=scorer
+        lookup_variants = (
+            (False, False),
+            (True, False),
+            (False, True),
+            (True, True),
+        )
+
+        for remove_parenthetical, expand_reit in lookup_variants:
+            company_lookup = build_unique_company_lookup(
+                companies,
+                remove_parenthetical=remove_parenthetical,
+                expand_reit=expand_reit,
+            )
+
+            normalized_input = normalize_company_name(
+                input_name,
+                remove_parenthetical=remove_parenthetical,
+                expand_reit=expand_reit,
             )
             
-            if not result:
-                continue
-            
-            match, score, _ = result
-            
-            if round(score) >= threshold:
-                LOGGER.info(f'Matched with {scorer.__name__}: {result}')
-                matched = next(
-                    value.get('symbol') 
-                    for _, value in companies.items() 
-                    if value.get('name').lower() == match
-                )
+            exact_symbol = company_lookup.get(normalized_input)
 
-                return matched
-        
-        LOGGER.info(f'No match company name found above threshold {threshold}')
+            if exact_symbol:
+                return exact_symbol
+
+        for remove_parenthetical, expand_reit in lookup_variants:
+            alias_lookup = build_company_alias_lookup(
+                aliases,
+                remove_parenthetical=remove_parenthetical,
+                expand_reit=expand_reit,
+            )
+            normalized_input = normalize_company_name(
+                input_name,
+                remove_parenthetical=remove_parenthetical,
+                expand_reit=expand_reit,
+            )
+            exact_symbol = alias_lookup.get(normalized_input)
+
+            if exact_symbol:
+                return exact_symbol
+
+        company_lookup = build_unique_company_lookup(companies)
+        normalized_input = normalize_company_name(input_name)
+
+        company_lookup_without_parenthetical = build_unique_company_lookup(
+            companies,
+            remove_parenthetical=True,
+        )
+
+        normalized_input_without_parenthetical = normalize_company_name(
+            input_name,
+            remove_parenthetical=True,
+        )
+
+        fuzzy_symbol = find_fuzzy_symbol(
+            input_name=normalized_input,
+            symbols_by_name=company_lookup,
+            threshold=threshold,
+        )
+
+        if fuzzy_symbol:
+            return fuzzy_symbol
+
+        return find_fuzzy_symbol(
+            input_name=normalized_input_without_parenthetical,
+            symbols_by_name=company_lookup_without_parenthetical,
+            threshold=threshold,
+        )
+
+    except Exception as error:
+        LOGGER.error(
+            "[symbol_matching_helper] Failed matching '%s': %s", 
+            input_name, 
+            error,
+            exc_info=True
+        )
         
         return None
-        
-    except (TypeError, ValueError) as error:
-        return LOGGER.error(f"[symbol_matching_helper] TypeError or ValueError occurred: {input_name} {error}")
-    
-    except Exception as error:
-        return LOGGER.error(f"[symbol_matching_helper] Error: {error}")
 
 
 def extract_symbol(issuer_security: str) -> str | None:
