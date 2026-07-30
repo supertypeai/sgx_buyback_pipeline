@@ -118,8 +118,18 @@ def dispatch(
         send_sgx_filings_alert(not_insertable, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
 
     if is_push_db:
-        exclude_columns = {"circumstances_desc", "direct_before", "direct_after"}
-        push_to_db(insertable, 'sgx_filings', exclude_columns=exclude_columns)
+        exclude_columns = {
+            "circumstances_desc", 
+            "direct_before", 
+            "direct_after",
+            "company_name"
+        }
+        
+        push_to_db(
+            insertable, 
+            'sgx_filings',
+            exclude_columns=exclude_columns
+        )
 
 
 @app.command(name='scraper_filings')

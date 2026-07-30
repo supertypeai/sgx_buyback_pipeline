@@ -35,7 +35,18 @@ class Form3PartIIIandIV(BaseFormParser):
         share_table_result = self.parse_share_table(share_table=share_table)
 
         amount_transaction = safe_convert_float(raw_amount)
-        transaction_value = build_value(raw_value, amount_transaction)
+
+        price_per_share = build_price_per_share(
+            raw_value, 
+            amount_transaction
+        )
+
+        transaction_value = (
+            build_value(raw_value, amount_transaction)
+            if amount_transaction is not None 
+            and price_per_share is not None
+            else None
+        )
 
         tags, circumstances_desc = self.detect_tags(circumstance)
         transaction_type = self.build_transaction_type(circumstance, transaction_value)
@@ -44,7 +55,7 @@ class Form3PartIIIandIV(BaseFormParser):
             "timestamp": safe_convert_datetime(raw_date),
             "amount_transaction": amount_transaction,
             "transaction_value": transaction_value,
-            "price_per_share": build_price_per_share(raw_value, amount_transaction),
+            "price_per_share": price_per_share,
             "transaction_type": transaction_type,
             "tags": tags,
             "circumstances_desc": circumstances_desc,
@@ -117,4 +128,3 @@ class Form3PartIIIandIV(BaseFormParser):
             records.append(record)
 
         return records
-

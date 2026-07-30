@@ -141,7 +141,18 @@ class TransactionRecordBuilder:
         amount_float = safe_convert_float(raw_amount)
 
         amount_transaction = int(amount_float) if amount_float is not None else None
-        transaction_value = build_value(raw_value, amount_transaction)
+
+        price_per_share = build_price_per_share(
+            raw_value, 
+            amount_transaction
+        )
+
+        transaction_value = (
+            build_value(raw_value, amount_transaction)
+            if amount_transaction is not None 
+            and price_per_share is not None
+            else None
+        )
 
         tags, circumstances_desc = source.detect_tags(circumstance)
         transaction_type = source.build_transaction_type(circumstance, transaction_value)
@@ -150,7 +161,7 @@ class TransactionRecordBuilder:
             "timestamp": safe_convert_datetime(raw_date),
             "amount_transaction": amount_transaction,
             "transaction_value": int(transaction_value) if transaction_value is not None else None,
-            "price_per_share": build_price_per_share(raw_value, amount_transaction),
+            "price_per_share": price_per_share,
             "transaction_type": transaction_type,
             "tags": tags,
             "circumstances_desc": circumstances_desc,

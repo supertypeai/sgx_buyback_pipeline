@@ -228,11 +228,15 @@ def build_value(raw_value: str, number_of_stock: float) -> float | None:
             r'pursuant\s+to',
         ]
 
-        has_context = any(re.search(pattern, clean_value, re.IGNORECASE) for pattern in context_patterns)
+        has_context = any(
+            re.search(pattern, clean_value, re.IGNORECASE) 
+            for pattern in context_patterns
+        )
+
         should_multiply = (
             'share' in clean_value or 
             'per unit' in clean_value or 
-            'security' in clean_value or 
+            'securit' in clean_value or 
             has_context
         ) and not is_clarification
 
@@ -480,6 +484,7 @@ def generate_title_and_body(
         title = f"{holder_name} transfers shares of {company_name}"
 
     elif tx_type == 'transfer': 
+        holder_name = holder_name.replace(" [->] ", " to ")
         action_verb = "executed a transaction for"
         title = f"{holder_name} share movement in {company_name}"
 

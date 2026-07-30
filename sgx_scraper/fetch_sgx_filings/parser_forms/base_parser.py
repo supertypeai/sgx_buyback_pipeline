@@ -132,21 +132,51 @@ class BaseFormParser(ABC):
                 continue
 
             elif 'as a percentage' in label:
+                direct_percentage = safe_convert_float(direct)
+
                 values[f'share_percentage_{section}'] = shares_percentage_to_decimal(
                     safe_convert_float(total)
                 )
 
+                values[f"direct_pct_{section}"] = shares_percentage_to_decimal(
+                    direct_percentage if direct_percentage is not None else 0
+                )
+
             else:
-                values[f'holding_{section}'] = int(safe_convert_float(total))
-                values[f'direct_{section}'] = int(safe_convert_float(direct))
+                total_holding = safe_convert_float(total)
+                direct_holding = safe_convert_float(direct)
+
+                values[f'holding_{section}'] = (
+                    int(total_holding)
+                    if total_holding is not None
+                    else None
+                )
+
+                values[f'direct_{section}'] = (
+                    int(direct_holding)
+                    if direct_holding is not None
+                    else 0
+                )
+
+        share_percentage_before = values.get('share_percentage_before')
+        share_percentage_after = values.get('share_percentage_after')
+
+        values['share_percentage_transaction'] = (
+            round(abs(share_percentage_after - share_percentage_before), 5)
+            if share_percentage_before is not None
+            and share_percentage_after is not None
+            else None
+        )
 
         return values
 
     def is_valid_record(self, share_table_result: dict[str, any]) -> bool:
-        if share_table_result['direct_before'] != share_table_result['direct_after']:
-            return True
-
-        return False
+        return (
+            share_table_result["direct_before"]
+            != share_table_result["direct_after"]
+            and share_table_result["holding_before"]
+            != share_table_result["holding_after"]
+        )
 
     def extract_circumstances(self) -> list[dict]:
         doc_fitz = self.get_pdf_doc()
@@ -199,6 +229,31 @@ class BaseFormParser(ABC):
     def build_transaction_type(self, circumstance_raw: dict, value: float | None) -> str | None:
         return build_transaction_type_helper(circumstance_raw, value)
 
+    @staticmethod
+    def build_circumstances_description(
+        other_circumstances: dict,
+        others_specify: dict,
+    ) -> str:
+        description_parts = []
+        
+        corporate_action = (
+            other_circumstances.get('Corporate action by Listed Issuer') or {}
+        )
+
+        if corporate_action.get('checked') is True:
+            corporate_action_text = corporate_action.get('description') or ''
+
+            if corporate_action_text:
+                description_parts.append(corporate_action_text)
+
+        if others_specify.get('checked') is True:
+            others_text = others_specify.get('description') or ''
+
+            if others_text:
+                description_parts.append(others_text)
+
+        return ' '.join(description_parts)
+
     def detect_tags(self, circumstances_raw: dict) -> tuple[list, str]:
         final_tags = []
 
@@ -235,36 +290,36 @@ class BaseFormParser(ABC):
             for key in EMPLOYEE_CHECKBOX_KEYS
         )
 
-        others_text = ''
+        circumstances_text = self.build_circumstances_description(
+            other_circumstances,
+            others_specify,
+        )
 
-        if others_specify.get('checked') is True:
-            others_text = others_specify.get('description') or ''
+        employee_text_match = contains_any_keyword(circumstances_text, KEYWORD_EMPLOYEE_PLAN)
 
-        employee_text_match = contains_any_keyword(others_text, KEYWORD_EMPLOYEE_PLAN)
-
-        if contains_any_keyword(others_text, KEYWORD_DIRECTOR_FEE):
+        if contains_any_keyword(circumstances_text, KEYWORD_DIRECTOR_FEE):
             final_tags.append('director-fee-shares')
 
         if employee_checkbox_ticked or employee_text_match:
             if 'director-fee-shares' not in final_tags:
                 final_tags.append('employee-share-plan')
 
-        if contains_any_keyword(others_text, KEYWORD_MANAGEMENT_FEE):
+        if contains_any_keyword(circumstances_text, KEYWORD_MANAGEMENT_FEE):
             final_tags.append('management-fee-shares')
 
-        if contains_any_keyword(others_text, KEYWORD_DIVIDEND):
+        if contains_any_keyword(circumstances_text, KEYWORD_DIVIDEND):
             final_tags.append('dividend-in-specie')
 
-        if contains_any_keyword(others_text, KEYWORD_INHERITANCE):
+        if contains_any_keyword(circumstances_text, KEYWORD_INHERITANCE):
             final_tags.append('inheritance')
 
-        if contains_any_keyword(others_text, KEYWORD_INTERNAL_RESTRUCTURING):
+        if contains_any_keyword(circumstances_text, KEYWORD_INTERNAL_RESTRUCTURING):
             final_tags.append('internal-restructuring')
 
-        if contains_any_keyword(others_text, KEYWORD_GIFT):
+        if contains_any_keyword(circumstances_text, KEYWORD_GIFT):
             final_tags.append('gift')
 
-        return final_tags, others_text
+        return final_tags, circumstances_text
 
     def get_sector_and_sub_sector(self, symbol: str) -> tuple[str | None, str | None]:
         company_name, sector, sub_sector = populate_extra_data(symbol)
@@ -364,4 +419,3 @@ class BaseFormParser(ABC):
     @abstractmethod
     def parse_records(self) -> list[dict]:
         ...
-

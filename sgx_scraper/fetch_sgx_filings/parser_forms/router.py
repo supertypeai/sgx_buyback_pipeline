@@ -23,7 +23,7 @@ class RouterFormParser:
     """
 
     @staticmethod
-    def _select_parser_class(text: str) -> type[BaseFormParser]:
+    def _select_parser_class(text: str) -> type[BaseFormParser] | None:
         if re.search(r'NOTIFICATION\s+FORM\s+FOR\s+DIRECTOR', text, re.IGNORECASE):
             return Form1Parser
 
@@ -38,10 +38,10 @@ class RouterFormParser:
 
             return Form3PartII
 
-        raise ValueError('[RouterFormParser] Unrecognised form type')
+        return None
 
     @staticmethod
-    def get_parser(pdf_url: str) -> BaseFormParser:
+    def get_parser(pdf_url: str) -> BaseFormParser | None:
         response = HTTPCLIENT.get(pdf_url)
         response.raise_for_status()
         pdf_bytes = response.content
@@ -50,6 +50,10 @@ class RouterFormParser:
             text = '\n'.join(page.get_text() for page in doc)
 
         parser_class = RouterFormParser._select_parser_class(text)
+
+        if parser_class is None:
+            return None
+
         LOGGER.info('[RouterFormParser] -> %s', parser_class.__name__)
 
         parser = parser_class(pdf_url)
@@ -57,8 +61,4 @@ class RouterFormParser:
         parser.pdf_bytes = pdf_bytes
 
         return parser
-
-    @staticmethod
-    def route(pdf_url: str) -> list[dict]:
-        return RouterFormParser.get_parser(pdf_url).parse_records()
 
