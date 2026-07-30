@@ -77,7 +77,7 @@ def run_extraction(
             if llm is None:
                 continue
 
-            LOGGER.info('[fallback] extracting raw values with %s', model)
+            LOGGER.info('extracting raw values with %s', model)
 
             extraction = (prompt | llm | parser).invoke(input_data)
             LOGGER.info("raw extraction fallback: %s", extraction)
@@ -150,7 +150,17 @@ def compute_fields(
     missing_columns: list[str],
 ) -> dict:
     amount_transaction = safe_convert_float(raw_amount) if raw_amount else None
-    transaction_value = build_value(raw_value, amount_transaction) if raw_value else None
+    price_per_share = build_price_per_share(raw_value, amount_transaction) if raw_value else None
+
+    transaction_value = (
+        build_value(raw_value, amount_transaction)
+        if (
+            'transaction_value' in missing_columns
+            and amount_transaction is not None
+            and price_per_share is not None
+        )
+        else None
+    )
 
     filled = {}
 
@@ -161,8 +171,6 @@ def compute_fields(
         filled['transaction_value'] = transaction_value
 
     if 'price_per_share' in missing_columns:
-        price_per_share = build_price_per_share(raw_value, amount_transaction) if raw_value else None
-
         if price_per_share is not None:
             filled['price_per_share'] = price_per_share
 

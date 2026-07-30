@@ -168,7 +168,11 @@ class KeyRotatingChatModel(BaseChatModel):
         )
     
 
-def get_llm(model_name: str, temperature: float = 0.5): 
+def get_llm(
+    model_name: str,
+    temperature: float = 0.5,
+    max_retries: int = 3,
+):
     config_model = MODEL_CONFIG.get(model_name)
 
     if config_model is None:
@@ -201,7 +205,7 @@ def get_llm(model_name: str, temperature: float = 0.5):
                 config_model.get('model'),
                 model_provider=provider,
                 temperature=temperature,
-                max_retries=3,
+                max_retries=max_retries,
                 api_key=api_key,
                 max_tokens=10000 
             ) 

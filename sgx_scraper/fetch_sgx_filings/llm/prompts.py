@@ -170,24 +170,40 @@ class PromptCollections:
             Rules for the numeric values (amount_transaction, consideration):
             - Copy each value exactly as printed, including thousand separators and any
                 currency prefix (e.g. 'S$2,700,000', '9,000,000').
+            
             - Do NOT compute a price per share, do NOT convert currencies, do NOT sum or
                 divide anything. Copy only.
+            
             - For every value you return, also return its source: the exact printed field
                 LABEL/heading the value sits under, copied verbatim and WITHOUT the value
                 appended. Do NOT stitch the label and the value into one sentence.
+            
             - If a value is not present in the text below, return null for both the value
                 and its source. Returning null is correct and expected.
 
             Rule for transaction_type:
             - Classify using ONLY the circumstance description below. Do NOT read the filing
                 section for this, ignore checkboxes.
+            
             - If a circumstance description is provided, classify it into exactly one label:
-                'buy'      -> an acquisition or purchase of securities
-                'sell'     -> a disposal of securities
-                'award'    -> a share award, grant, or vesting of awards
-                'transfer' -> an off-market transfer, gift, inheritance, or a trust/spousal
-                                arrangement (a change of holder without a market purchase/sale)
-                'others'   -> a corporate action or anything that does not fit the above
+                -buy: securities acquired through a purchase for consideration.
+                
+                -sell: securities disposed of through a sale for consideration.
+                
+                -award: securities granted, vested, or transferred as compensation under
+                an explicit share/unit award, incentive, restricted share/unit, or named
+                remuneration plan.
+
+                - transfer:  a non-sale movement of securities between identifiable parties,
+                including gifts, inheritance, and internal ownership transfers.
+                Both the transferor and transferee must be identifiable.
+                                
+                - others: anything that does not satisfy the definitions above, including
+                bonus issues, dividends in specie, rights-related corporate actions,
+                director-fee payments without an explicit award-plan context, securities
+                lending or returns with an unidentified counterparty, and reclassification
+                between direct and deemed interest.
+            
             - If the circumstance description is empty, return null for transaction_type.
 
             Circumstance description (for transaction_type only):
