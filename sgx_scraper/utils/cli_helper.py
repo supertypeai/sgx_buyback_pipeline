@@ -95,14 +95,14 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
         return sgx_today_datas
     
     urls_yesterday = {
-        item.get("url") 
+        item.get("source") 
         for item in sgx_yesterday_datas
     }
 
     unique_data_today = [
         item 
         for item in sgx_today_datas
-        if item.get('url') not in urls_yesterday
+        if item.get('source') not in urls_yesterday
     ]
 
     LOGGER.info(f'Length data after duplicate removing: {len(unique_data_today)}')

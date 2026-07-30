@@ -540,11 +540,11 @@ def filter_duplicate(payload: list[dict[str, any]]) -> list[dict]:
 
     for row in payload:
         unique_key = (
-            row.get('url'),
-            row.get('shareholder_name'),
-            row.get('transaction_date'),
-            row.get('shares_before'),
-            row.get('shares_after'),
+            row.get('source'),
+            row.get('holder_name'),
+            row.get('timestamp'),
+            row.get('holding_before'),
+            row.get('holding_after'),
             row.get('price_per_share')
         )
 
