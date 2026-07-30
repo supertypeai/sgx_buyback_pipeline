@@ -32,11 +32,15 @@ def resolve_document_url(url: str) -> str | None:
 
 def get_sgx_filings(url: str) -> list[dict]:
     pdf_url = resolve_document_url(url)
-    
+
     if not pdf_url:
-        return None
+        return []
 
     parser = RouterFormParser.get_parser(pdf_url)
+
+    if parser is None:
+        LOGGER.info("[sgx_filings] skipping unsupported form: %s", pdf_url)
+        return []
 
     # Voting-shares filtering now happens inside each parser: per-transaction in the
     # builder-based forms, and once per shared Part IV in Form 3 Part III/IV.
@@ -59,6 +63,11 @@ def get_sgx_filings(url: str) -> list[dict]:
         ]
 
         if missing_columns:
+            LOGGER.info(
+                "Fallback fires because missing values on %s",
+                ", ".join(missing_columns)
+            )
+
             filled = parse_with_llm(
                 source=parser,
                 holder_name=record.get("holder_name"),
@@ -74,6 +83,10 @@ def get_sgx_filings(url: str) -> list[dict]:
         # For transfers (possibly only known after step 1), rewrite holder_name
         # as 'transferor [->] transferee'. Left unchanged if it can't be resolved
         if record.get("transaction_type") == "transfer":
+            LOGGER.info(
+                "Transfer holder name reconstruction fires"
+            )
+            
             holder = resolve_transfer_holder(
                 holder_name=record.get("holder_name"),
                 circumstances_desc=circumstances_desc,
@@ -83,6 +96,8 @@ def get_sgx_filings(url: str) -> list[dict]:
                 record["holder_name"] = holder
 
             time.sleep(2)
+
+        parser.generate_title_and_body(record=record)
 
     return result_parsed
 
