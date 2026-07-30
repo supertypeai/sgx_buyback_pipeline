@@ -37,17 +37,37 @@ def find_matched_db_shareholder(
     db_shareholders: list[dict],
     threshold: int = 95
 ) -> dict | None:
-    lookup_shareholder_by_name = {
-        shareholder.get('name', ''): shareholder
+    lookup_shareholder_by_normalized_name = {
+        normalize_shareholder_name(shareholder.get('name', '')): shareholder
         for shareholder in db_shareholders
     }
 
-    shareholder_names = list(lookup_shareholder_by_name.keys())
+    shareholder_names = list(lookup_shareholder_by_normalized_name.keys())
 
-    clean_filing_name = clean_name_titles(filing_name)
+    normalized_filing_name = normalize_shareholder_name(filing_name)
+
+    for shareholder_name in shareholder_names:
+        if (
+            len(normalized_filing_name) >= 8
+            and (
+                normalized_filing_name in shareholder_name
+                or shareholder_name in normalized_filing_name
+            )
+        ):
+            matched_shareholder = lookup_shareholder_by_normalized_name[
+                shareholder_name
+            ]
+
+            LOGGER.info(
+                'Matching "%s" vs "%s" | containment result: matched',
+                filing_name,
+                matched_shareholder.get('name'),
+            )
+            
+            return matched_shareholder
 
     result = process.extractOne(
-        clean_filing_name,
+        normalized_filing_name,
         shareholder_names,
         scorer=fuzz.WRatio
     )
@@ -61,11 +81,11 @@ def find_matched_db_shareholder(
     LOGGER.info(
         'Matching "%s" vs "%s" | score: %d | result: matched',
         filing_name,
-        matched_name,
+        lookup_shareholder_by_normalized_name[matched_name].get('name'),
         similarity_score
     )
 
-    return lookup_shareholder_by_name[matched_name]
+    return lookup_shareholder_by_normalized_name[matched_name]
 
 
 def matched_db_management(
@@ -124,6 +144,13 @@ def clean_name_titles(name: str) -> str:
     name = re.sub(r'\.([a-zA-Z])(?=\s|$)', r' \1', name)
     name = re.sub(r'(?<=\s)([a-zA-Z])\.', r'\1', name)
     return ' '.join(name.split())
+
+
+def normalize_shareholder_name(name: str) -> str:
+    normalized_name = clean_name_titles(name).lower()
+    normalized_name = re.sub(r'\bltd\.?\b', 'limited', normalized_name)
+    normalized_name = re.sub(r'[^a-z0-9]+', ' ', normalized_name)
+    return ' '.join(normalized_name.split())
 
 
 def expand_country_abbreviations(company_name: str) -> str:
