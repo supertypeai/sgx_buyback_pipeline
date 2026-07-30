@@ -1,57 +1,19 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/5WSUJJ7TN9VELTIF/b976d208ae84e1945fb30e8580114453f54c23fad8c1ebe56c4ba3cf3db8eaac",
-    "symbol": "A31",
-    "purchase_date": "2026-07-28",
-    "type": "On Market",
-    "price_per_share": {
-      "price_paid_per_share": 0.14927
-    },
-    "total_value": 107823.37,
-    "total_shares_purchased": 720600,
-    "treasury_shares_after_purchase": 10300000,
-    "mandate": {
-      "mandate_total": 368337506,
-      "cumulative_purchased": 10300000,
-      "mandate_remaining": 358037506,
-      "mandate_start": "2025-07-24",
-      "mandate_end": "2026-07-24"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/U65K58LOGBRO59DX/c87570b78dd1038799061e5aef761a0dfeb5a25c3c8e1d83f47d2d268eb2ccc7",
-    "symbol": "H07",
-    "purchase_date": "2026-07-28",
-    "type": "On Market",
-    "price_per_share": {
-      "price_paid_per_share": 0.495
-    },
-    "total_value": 49053.46,
-    "total_shares_purchased": 99000,
-    "treasury_shares_after_purchase": 11109200,
-    "mandate": {
-      "mandate_total": 148361002,
-      "cumulative_purchased": 932500,
-      "mandate_remaining": 147428502,
-      "mandate_start": "2025-07-29",
-      "mandate_end": "2026-07-29"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/K7MSMZDFQLR64JQT/a76791bc41f5047dd8bf40487c96fa7020a1b10a7944c715c265b68b63139880",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/A4IWRCX56AO8F1RM/cbbc04f884fa63474085db31d9a67906f4715edc3619d65643fa3ba00ebc6dcd",
     "symbol": "AGS",
-    "purchase_date": "2026-07-28",
+    "purchase_date": "2026-07-29",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 2.74614
+      "price_paid_per_share": 2.73805
     },
-    "total_value": 284907.44,
-    "total_shares_purchased": 103500,
-    "treasury_shares_after_purchase": 6919500,
+    "total_value": 337588.12,
+    "total_shares_purchased": 123000,
+    "treasury_shares_after_purchase": 7042500,
     "mandate": {
       "mandate_total": 63900848,
-      "cumulative_purchased": 292500,
-      "mandate_remaining": 63608348,
+      "cumulative_purchased": 415500,
+      "mandate_remaining": 63485348,
       "mandate_start": "2026-07-21",
       "mandate_end": "2027-07-21"
     }
