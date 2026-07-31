@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/Y8PXM5062WVUKAD9/898030__Form%206-%2030%20July%202026%20FINAL.pdf",
+    "symbol": "J69U",
+    "company_name": "Frasers Centrepoint Trust",
+    "sector": "reit",
+    "sub_sector": "reit-retail",
+    "holder_name": "FRASERS CENTREPOINT ASSET MANAGEMENT LTD",
+    "holder_type": "institution",
+    "timestamp": "2026-07-30",
+    "amount_transaction": 1480877,
+    "transaction_value": 3345302,
+    "price_per_share": 2.259,
+    "transaction_type": "others",
+    "tags": [
+      "investment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 119426826,
+    "direct_before": 119426826,
+    "share_percentage_before": 0.0586,
+    "direct_pct_before": 0.0586,
+    "holding_after": 120907703,
+    "direct_after": 120907703,
+    "share_percentage_after": 0.0593,
+    "direct_pct_after": 0.0593,
+    "share_percentage_transaction": 0.0007,
+    "title": "Change in Frasers Centrepoint Asset Management Ltd's position in Frasers Centrepoint Trust",
+    "body": "Frasers Centrepoint Asset Management Ltd executed a transaction for 1,480,877 shares of Frasers Centrepoint Trust. This increases their holdings from 119,426,826 to 120,907,703 shares."
+  }
+]
