@@ -22,6 +22,27 @@ COUNTRY_ABBREVIATIONS = {
 }
 
 
+def remove_shareholder_dates(payload: list[dict]) -> list[dict]:
+    return [
+        {
+            **record,
+            'shareholders': (
+                [
+                    {
+                        key: value
+                        for key, value in shareholder.items()
+                        if key != 'date'
+                    }
+                    for shareholder in record.get('shareholders') or []
+                ]
+                if record.get('shareholders') is not None
+                else None
+            ),
+        }
+        for record in payload
+    ]
+
+
 def matching(input: str, input_to_match: list):
     result = process.extractOne(
         input,
@@ -176,7 +197,8 @@ def enrich(payload: list[dict]) -> list[dict]:
     companies = open_json('data/sgx_companies.json')
 
     for record in payload: 
-        investing_symbol = companies.get(record.get('symbol')).get('investing_symbol')
+        company = companies.get(record.get('symbol')) or {}
+        investing_symbol = company.get('investing_symbol')
         record['investing_symbol'] = investing_symbol 
 
     return payload

@@ -1,6 +1,10 @@
 from collections import defaultdict
 
-from .utils.helper import find_matched_db_shareholder, clean_company_name, enrich
+from .utils.helper import (
+    clean_company_name,
+    enrich,
+    find_matched_db_shareholder,
+)
 from sgx_scraper.utils.http_client import HTTPCLIENT
 
 import logging
@@ -26,7 +30,7 @@ def get_randomized_headers(base_headers: dict) -> dict:
     }
 
 
-def fetch_api(symbol: str) -> dict[str, any]: 
+def fetch_api(symbol: str) -> dict | None:
     base_headers = {
         'accept': '*/*',
         'accept-language': 'en-US,en;q=0.9',
@@ -56,8 +60,15 @@ def fetch_api(symbol: str) -> dict[str, any]:
         return None 
 
 
-def clean_api_response(payload: dict[str, any], symbol: str) -> dict[str, list]: 
-    data = payload.get('data')
+def clean_api_response(payload: dict | None, symbol: str) -> dict[str, list]:
+    data = payload.get('data') if payload else None
+
+    if not isinstance(data, list):
+        LOGGER.warning(
+            'No valid screener shareholders data returned for symbol: %s',
+            symbol,
+        )
+        return {}
     
     final_payload = defaultdict(list)
 
@@ -65,8 +76,16 @@ def clean_api_response(payload: dict[str, any], symbol: str) -> dict[str, list]:
         shareholder_name = record.get('investorName')
         share_amount = record.get('sharesHeld')
         share_percentage = record.get('pctOfSharesOutstanding')
+        date = record.get('investorHoldingsDate')
 
-        if any(value is None for value in [shareholder_name, share_amount, share_percentage]):
+        if any(
+            value is None
+            for value in [
+                shareholder_name,
+                share_amount,
+                share_percentage
+            ]
+        ):
             LOGGER.info(
                 'some data is none, skipped for symbol: %s', 
                 symbol
@@ -77,7 +96,8 @@ def clean_api_response(payload: dict[str, any], symbol: str) -> dict[str, list]:
             {
                 'name': clean_company_name(shareholder_name), 
                 'share_amount': share_amount, 
-                'share_percentage': round(share_percentage / 100, 3) 
+                'share_percentage': round(share_percentage / 100, 5),
+                "date": date
             }
         )
 
@@ -86,7 +106,6 @@ def clean_api_response(payload: dict[str, any], symbol: str) -> dict[str, list]:
 
 def get_screener_shareholders(symbols: list[str]) -> dict[str, list]:
     next_long_break_at = random.randint(8, 15)
-
     final = {}
 
     for index, symbol in enumerate(symbols, start=1):
@@ -97,7 +116,7 @@ def get_screener_shareholders(symbols: list[str]) -> dict[str, list]:
 
         final.update(result)
 
-        if index == next_long_break_at: 
+        if index == next_long_break_at:
             sleep_duration = random.randint(20, 30)
             LOGGER.info('long break at request %d, sleeping %ds', index, sleep_duration)
 
@@ -105,7 +124,7 @@ def get_screener_shareholders(symbols: list[str]) -> dict[str, list]:
             next_long_break_at = index + random.randint(8, 15)
 
         else:
-            time.sleep(random.randint(2, 10))
+            time.sleep(random.uniform(1.567, 4.5422))
 
     return final 
 
@@ -116,16 +135,12 @@ def sync_with_db(
 ) -> list[dict]:
     result = []
 
-    db_lookup = {
-        symbol: record.get('shareholders')
-        for symbol, record in db_records.items()
-    }
-
     for symbol, screener_shareholders in screener_shareholders_by_symbol.items():
-        if symbol not in db_lookup:
+        if symbol not in db_records:
             continue
 
-        existing_db_shareholders = db_lookup[symbol] or []
+        existing_db_shareholders = db_records[symbol].get('shareholders') or []
+
         merged_shareholders = []
         matched_shareholder_names = set()
 
@@ -134,12 +149,15 @@ def sync_with_db(
             screener_share_amount = screener_shareholder.get('share_amount')
             screener_share_percentage = screener_shareholder.get('share_percentage')
 
-            matched_db_shareholder = find_matched_db_shareholder(screener_name, existing_db_shareholders)
+            matched_db_shareholder = find_matched_db_shareholder(
+                screener_name,
+                existing_db_shareholders
+            )
 
             if matched_db_shareholder:
                 if (
-                    matched_db_shareholder.get('share_amount') != screener_share_amount or
-                    matched_db_shareholder.get('share_percentage') != screener_share_percentage
+                    matched_db_shareholder.get('share_amount') != screener_share_amount
+                    or matched_db_shareholder.get('share_percentage') != screener_share_percentage
                 ):
                     matched_db_shareholder['share_amount'] = screener_share_amount
                     matched_db_shareholder['share_percentage'] = screener_share_percentage
@@ -148,7 +166,7 @@ def sync_with_db(
                 merged_shareholders.append(matched_db_shareholder)  
 
             else:
-                merged_shareholders.append(screener_shareholder)  
+                merged_shareholders.append(screener_shareholder)
 
         for db_shareholder in existing_db_shareholders:
             if db_shareholder.get('name') not in matched_shareholder_names:
@@ -166,4 +184,3 @@ def sync_with_db(
     )
     
     return final_result 
-
