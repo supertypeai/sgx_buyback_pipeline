@@ -77,6 +77,18 @@ class Form3PartIIIandIV(BaseFormParser):
         raw_dates = self.find_values_below_label('Date of acquisition of or change in interest')
         share_tables = self.extract_share_tables()
 
+        awareness_explanations = self.find_values_below_label(
+            r'Explanation\s*\(\s*if the date of becoming aware'
+        )
+
+        deemed_interest_descriptions = self.find_values_below_label(
+            'Circumstances giving rise to deemed interests'
+        )
+        
+        shareholder_relationships = self.find_values_below_label(
+            'Relationship between the Substantial Shareholders/Unitholders'
+        )
+
         # Part IV: a single shared transaction, broadcast to every holder
         raw_amount = self.find_value_below_label('acquired or disposed of by')
         raw_value = self.find_value_below_label('Amount of consideration')
@@ -87,16 +99,38 @@ class Form3PartIIIandIV(BaseFormParser):
             'holders': len(holder_names),
             'dates': len(raw_dates),
             'tables': len(share_tables),
+            'awareness_explanations': len(awareness_explanations),
+            'deemed_interest_descriptions': len(deemed_interest_descriptions),
+            'shareholder_relationships': len(shareholder_relationships),
         }
        
         if len(set(counts.values())) != 1:
-            LOGGER.warning('[Form3PartIIIandIV] count mismatch %s for %s', counts, self.pdf_url)
+            LOGGER.warning(
+                '[Form3PartIIIandIV] count mismatch %s for %s', 
+                counts, 
+                self.pdf_url
+            )
 
         records = []
+        transfer_context_records = []
 
-        for holder_name, raw_date, share_table in zip(
-            holder_names, raw_dates, share_tables
-        ):
+        shareholder_data = zip(
+            holder_names,
+            raw_dates,
+            share_tables,
+            awareness_explanations,
+            deemed_interest_descriptions,
+            shareholder_relationships,
+        )
+
+        for (
+            holder_name,
+            raw_date,
+            share_table,
+            awareness_explanation,
+            deemed_interest_description,
+            shareholder_relationship,
+        ) in shareholder_data:
             transaction = self.extract_transaction(
                 raw_date=raw_date,
                 raw_amount=raw_amount,
@@ -104,6 +138,32 @@ class Form3PartIIIandIV(BaseFormParser):
                 share_table=share_table,
                 circumstance=circumstance,
             )
+
+            description_parts = [transaction['circumstances_desc']]
+
+            if awareness_explanation:
+                description_parts.append(
+                    f'Awareness-date explanation: {awareness_explanation}'
+                )
+
+            if deemed_interest_description:
+                description_parts.append(
+                    f'Deemed-interest circumstances: {deemed_interest_description}'
+                )
+
+            if shareholder_relationship:
+                description_parts.append(
+                    f'Shareholder relationship: {shareholder_relationship}'
+                )
+
+            transaction['circumstances_desc'] = '\n\n'.join(description_parts)
+
+            transfer_context_records.append({
+                "holder_name": holder_name,
+                "direct_before": transaction["direct_before"],
+                "direct_after": transaction["direct_after"],
+                "circumstances_desc": transaction["circumstances_desc"],
+            })
 
             if not self.is_valid_record(transaction):
                 LOGGER.info(
@@ -126,5 +186,7 @@ class Form3PartIIIandIV(BaseFormParser):
             record = self.generate_title_and_body(record)
 
             records.append(record)
+
+        self.transfer_context_records = transfer_context_records
 
         return records

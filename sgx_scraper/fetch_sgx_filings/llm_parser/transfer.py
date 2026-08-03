@@ -4,6 +4,7 @@ from langchain_core.output_parsers import JsonOutputParser
 from sgx_scraper.fetch_sgx_filings.llm.client import get_llm
 from sgx_scraper.fetch_sgx_filings.llm.prompts import TransferParties, PromptCollections
 
+import json
 import logging
 
 
@@ -73,3 +74,54 @@ def resolve_transfer_holder(holder_name: str | None, circumstances_desc: str) ->
         return None
 
     return f'{transferor} [->] {transferee}'
+
+
+def resolve_form_3_part_iii_iv_transfer_holder(records: list[dict]) -> str | None:
+    direct_change_records = [
+        record
+        for record in records
+        if record.get('direct_before') != record.get('direct_after')
+    ]
+
+    if len(direct_change_records) < 2:
+        return None
+
+    parser = JsonOutputParser(pydantic_object=TransferParties)
+
+    prompt_collections = PromptCollections()
+
+    prompt = ChatPromptTemplate.from_messages([
+        ('system', prompt_collections.get_system_form_3_transfer_prompt()),
+        ('user', prompt_collections.get_user_form_3_transfer_prompt()),
+    ])
+
+    input_data = {
+        'records': json.dumps(records, indent=2),
+        'format_instructions': parser.get_format_instructions(),
+    }
+    
+    for model in [
+        # "nvidia-nemotron-3-ultra",
+        "gpt-oss-120b",
+    ]:
+        try:
+            llm = get_llm(model, temperature=0.2)
+
+            if llm is None:
+                continue
+
+            LOGGER.info('[form_3_iii_iv_transfer] resolving parties with %s', model)
+
+            parties = (prompt | llm | parser).invoke(input_data)
+            LOGGER.info('[form_3_iii_iv_transfer] parties: %s', parties)
+
+            transferor = (parties.get('transferor') or '').strip()
+            transferee = (parties.get('transferee') or '').strip()
+
+            if transferor and transferee:
+                return f'{transferor} [->] {transferee}'
+
+        except Exception as error:
+            LOGGER.warning('[form_3_transfer] model %s failed: %s', model, error)
+
+    return None

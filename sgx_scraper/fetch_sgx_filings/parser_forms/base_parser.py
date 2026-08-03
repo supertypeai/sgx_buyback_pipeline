@@ -54,7 +54,10 @@ class BaseFormParser(ABC):
 
     # Item headers such as '2. Type of Listed Issuer:' or '(a) Name of ...'
     # sit directly below a value in reading order, used to reject them as values
-    _ITEM_HEADER_PATTERN = re.compile(r'^\s*(?:\d+\.|\([a-z0-9]+\))\s')
+    _ITEM_HEADER_PATTERN = re.compile(
+        r'^\s*(?:\d+\.|\([a-z0-9]+\)|Attachments\b)(?:\s|$)'
+    )
+    _PAGE_HEADER_PATTERN = re.compile(r'^Page \d+ of \d+ FORM ', re.IGNORECASE)
 
     def __init__(
         self,
@@ -174,8 +177,8 @@ class BaseFormParser(ABC):
         return (
             share_table_result["direct_before"]
             != share_table_result["direct_after"]
-            and share_table_result["holding_before"]
-            != share_table_result["holding_after"]
+            # and share_table_result["holding_before"]
+            # != share_table_result["holding_after"]
         )
 
     def extract_circumstances(self) -> list[dict]:
@@ -373,8 +376,16 @@ class BaseFormParser(ABC):
 
             value = None
 
-            if index + 1 < len(blocks):
-                candidate = blocks[index + 1]['text']
+            candidate_index = index + 1
+
+            if (
+                candidate_index < len(blocks)
+                and self._PAGE_HEADER_PATTERN.match(blocks[candidate_index]['text'])
+            ):
+                candidate_index += 1
+
+            if candidate_index < len(blocks):
+                candidate = blocks[candidate_index]['text']
 
                 # A following item header (e.g. '2. ...') means the field is empty
                 if not self._ITEM_HEADER_PATTERN.match(candidate):

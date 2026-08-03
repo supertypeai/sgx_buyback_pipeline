@@ -4,7 +4,7 @@ from sgx_scraper.fetch_sgx_filings.parser_forms.router import RouterFormParser
 from sgx_scraper.utils.http_client import HTTPCLIENT
 from .utils.payload_html_helper import extract_section_data
 from .llm_parser.fallback import parse_with_llm
-from .llm_parser.transfer import resolve_transfer_holder
+from .llm_parser.transfer import resolve_form_3_part_iii_iv_transfer_holder, resolve_transfer_holder
 
 import logging
 import time
@@ -46,6 +46,15 @@ def get_sgx_filings(url: str) -> list[dict]:
     # builder-based forms, and once per shared Part IV in Form 3 Part III/IV.
     result_parsed = parser.parse_records()
 
+    form_3_part_iii_iv_context_records = getattr(
+        parser,
+        "transfer_context_records",
+        None,
+    )
+
+    form_3_part_iii_iv_transfer_holder = None
+    form_3_part_iii_iv_transfer_checked = False
+
     columns_to_check = [
         "price_per_share",
         "amount_transaction",
@@ -80,22 +89,34 @@ def get_sgx_filings(url: str) -> list[dict]:
 
             time.sleep(2)
 
-        # For transfers (possibly only known after step 1), rewrite holder_name
-        # as 'transferor [->] transferee'. Left unchanged if it can't be resolved
-        if record.get("transaction_type") == "transfer":
-            LOGGER.info(
-                "Transfer holder name reconstruction fires"
-            )
-            
-            holder = resolve_transfer_holder(
-                holder_name=record.get("holder_name"),
-                circumstances_desc=circumstances_desc,
-            )
+        is_unresolved_transfer = (
+            record.get("transaction_type") == "transfer"
+            and "[->]" not in (record.get("holder_name") or "")
+        )
+
+        if is_unresolved_transfer:
+            if form_3_part_iii_iv_context_records:
+                if not form_3_part_iii_iv_transfer_checked:
+                    form_3_part_iii_iv_transfer_holder = (
+                        resolve_form_3_part_iii_iv_transfer_holder(
+                            form_3_part_iii_iv_context_records
+                        )
+                    )
+                    
+                    form_3_part_iii_iv_transfer_checked = True
+                    time.sleep(2)
+
+                holder = form_3_part_iii_iv_transfer_holder
+
+            else:
+                holder = resolve_transfer_holder(
+                    holder_name=record.get("holder_name"),
+                    circumstances_desc=circumstances_desc,
+                )
+                time.sleep(2)
 
             if holder:
                 record["holder_name"] = holder
-
-            time.sleep(2)
 
         parser.generate_title_and_body(record=record)
 
