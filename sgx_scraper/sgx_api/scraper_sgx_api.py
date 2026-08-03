@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from urllib.parse import quote, urlencode
 
 from datetime import datetime, timedelta
 from typing import Iterator
@@ -271,6 +272,7 @@ def iter_sgx_announcements(
     page_size: int = 20,
     is_proxy: bool | None = None,
     category: str = "ANNC",
+    company: str | None = None 
 ) -> Iterator[dict]:
     """
     Paginate the SGX announcements API and yield one announcement at a time.
@@ -301,13 +303,29 @@ def iter_sgx_announcements(
         logger.info(f'page_start: {page_start}')
 
         try:
-            url = (
-                f"{api_url}?periodstart={normalized_start}_160000"
-                f"&periodend={normalized_end}_155959"
-                f"&cat={category}&sub={sub_category}"
-                f"&pagestart={page_start}"
-                f"&pagesize={page_size}"
-            )
+            if company:
+                query_parameters = {
+                    "periodstart": f"{normalized_start}_160000",
+                    "periodend": f"{normalized_end}_155959",
+                    "cat": category,
+                    "sub": sub_category,
+                    "value": company,
+                    "exactsearch": "true",
+                    "pagestart": page_start,
+                    "pagesize": page_size,
+                }
+
+                query_string = urlencode(query_parameters, quote_via=quote)
+                url = f"{api_url}company?{query_string}"
+
+            else:
+                url = (
+                    f"{api_url}?periodstart={normalized_start}_160000"
+                    f"&periodend={normalized_end}_155959"
+                    f"&cat={category}&sub={sub_category}"
+                    f"&pagestart={page_start}"
+                    f"&pagesize={page_size}"
+                )
 
             announcements = run_scrape_api(
                 api_url=url,
@@ -327,7 +345,7 @@ def iter_sgx_announcements(
         yield from announcements
 
         page_start += 1
-        time.sleep(random.uniform(1, 8))
+        time.sleep(random.uniform(1.5, 8.9))
         
 
 if __name__ == '__main__':

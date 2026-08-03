@@ -166,15 +166,21 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
         return [], []
 
 
-def get_100_top_companies():
-    csv_path = Path(f"data/sgx_top_100_mcap_companies.csv")
-
+def get_top_companies(csv_path: str | Path) -> list[dict]:
+    csv_path = Path(csv_path)
+    
     if not csv_path.exists():
         LOGGER.warning("CSV not found: %s", csv_path)
         return []
 
     df_top_n = pd.read_csv(csv_path)
-    top_companies = df_top_n.to_dict(orient="records")
+    return df_top_n.to_dict(orient="records")
+
+
+def get_100_top_companies():
+    top_companies = get_top_companies(
+        "data/sgx_top_100_mcap_companies.csv"
+    )
 
     # The top-100 CSV intentionally contains only ranking data.  Management
     # tracking needs the existing management list, so need to open from local list
