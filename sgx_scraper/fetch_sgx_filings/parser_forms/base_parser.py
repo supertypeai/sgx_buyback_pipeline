@@ -141,7 +141,7 @@ class BaseFormParser(ABC):
                     safe_convert_float(total)
                 )
 
-                values[f"direct_pct_{section}"] = shares_percentage_to_decimal(
+                values[f"direct_percentage_{section}"] = shares_percentage_to_decimal(
                     direct_percentage if direct_percentage is not None else 0
                 )
 

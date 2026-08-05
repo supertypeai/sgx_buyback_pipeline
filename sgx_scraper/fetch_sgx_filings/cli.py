@@ -120,8 +120,6 @@ def dispatch(
     if is_push_db:
         exclude_columns = {
             "circumstances_desc", 
-            "direct_before", 
-            "direct_after",
             "company_name"
         }
         

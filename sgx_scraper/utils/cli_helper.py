@@ -49,8 +49,11 @@ def push_to_db(
         return is_succes
     
     except Exception as error:
-        LOGGER.error(f"[push_to_db] Failed to push data to {table_name}: {error}")
-        return None
+        LOGGER.error(
+            f"[push_to_db] Failed to push data to {table_name}: {error}",
+            exc_info=True,
+        )
+        raise
 
 
 def upsert_to_db(sgx_payload: list[dict], table_name: str) -> bool:
