@@ -1,12 +1,66 @@
 [
   {
+    "symbol": "8U7U",
+    "reference": "SG260805DVCAU6S5",
+    "recording_date": "2026-08-14",
+    "ex_date": "2026-08-13",
+    "dividend_amount": 0.00531468,
+    "payment_date": "2026-08-27",
+    "updated_on": "2026-08-05 19:45:43"
+  },
+  {
+    "symbol": "8C8U",
+    "reference": "SG260805DVCAMHL6",
+    "recording_date": "2026-08-14",
+    "ex_date": "2026-08-13",
+    "dividend_amount": 0.00434,
+    "payment_date": "2026-09-17",
+    "updated_on": "2026-08-05 19:45:48"
+  },
+  {
+    "symbol": "8C8U",
+    "reference": "SG260805DVCATSSI",
+    "recording_date": "2026-08-14",
+    "ex_date": "2026-08-13",
+    "dividend_amount": 0.02976,
+    "payment_date": "2026-09-17",
+    "updated_on": "2026-08-05 19:45:50"
+  },
+  {
+    "symbol": "A17U",
+    "reference": "SG260805DVCA5UNT",
+    "recording_date": "2026-08-14",
+    "ex_date": "2026-08-13",
+    "dividend_amount": 0.00318,
+    "payment_date": "2026-09-08",
+    "updated_on": "2026-08-05 19:45:54"
+  },
+  {
+    "symbol": "AU8U",
+    "reference": "SG260805DVCA8ALG",
+    "recording_date": "2026-08-14",
+    "ex_date": "2026-08-13",
+    "dividend_amount": 0.0245,
+    "payment_date": "2026-09-09",
+    "updated_on": "2026-08-05 19:46:00"
+  },
+  {
+    "symbol": "DHLU",
+    "reference": "SG260805DVCABF2P",
+    "recording_date": "2026-08-14",
+    "ex_date": "2026-08-13",
+    "dividend_amount": 0.0182,
+    "payment_date": "2026-09-28",
+    "updated_on": "2026-08-05 19:46:03"
+  },
+  {
     "symbol": "C2PU",
     "reference": "SG260804DVCAH19J",
     "recording_date": "2026-08-13",
     "ex_date": "2026-08-12",
     "dividend_amount": 0.0116,
     "payment_date": "2026-09-08",
-    "updated_on": "2026-08-04 19:46:08"
+    "updated_on": "2026-08-05 19:46:06"
   },
   {
     "symbol": "C2PU",
@@ -15,16 +69,25 @@
     "ex_date": "2026-08-12",
     "dividend_amount": 0.0632,
     "payment_date": "2026-09-08",
-    "updated_on": "2026-08-04 19:46:12"
+    "updated_on": "2026-08-05 19:46:10"
   },
   {
     "symbol": "TPED",
     "reference": "SG260803DVCAS0MS",
     "recording_date": "2026-08-17",
     "ex_date": "2026-08-14",
-    "dividend_amount": 0.154141218,
+    "dividend_amount": 0.153836496,
     "payment_date": "2026-09-03",
-    "updated_on": "2026-08-04 19:46:19"
+    "updated_on": "2026-08-05 19:46:15"
+  },
+  {
+    "symbol": "G07",
+    "reference": "SG260731DVCAOZPA",
+    "recording_date": "2026-08-20",
+    "ex_date": "2026-08-19",
+    "dividend_amount": 0.35,
+    "payment_date": "2026-08-28",
+    "updated_on": "2026-08-05 19:46:26"
   },
   {
     "symbol": "N2IU",
@@ -33,7 +96,7 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.0015,
     "payment_date": "2026-09-16",
-    "updated_on": "2026-08-04 19:46:35"
+    "updated_on": "2026-08-05 19:46:33"
   },
   {
     "symbol": "AW9U",
@@ -42,7 +105,7 @@
     "ex_date": "2026-08-12",
     "dividend_amount": 0.0016,
     "payment_date": "2026-09-23",
-    "updated_on": "2026-08-04 19:46:41"
+    "updated_on": "2026-08-05 19:46:39"
   },
   {
     "symbol": "J85",
@@ -51,7 +114,7 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.0171,
     "payment_date": "2026-08-31",
-    "updated_on": "2026-08-04 19:46:46"
+    "updated_on": "2026-08-05 19:46:46"
   },
   {
     "symbol": "BN4",
@@ -60,7 +123,7 @@
     "ex_date": "2026-08-11",
     "dividend_amount": 0.15,
     "payment_date": "2026-08-21",
-    "updated_on": "2026-08-04 19:46:49"
+    "updated_on": "2026-08-05 19:46:50"
   },
   {
     "symbol": "Q5T",
@@ -69,7 +132,7 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.0163,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-04 19:46:53"
+    "updated_on": "2026-08-05 19:46:55"
   },
   {
     "symbol": "Y8E",
@@ -78,7 +141,7 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.00215,
     "payment_date": "2026-08-19",
-    "updated_on": "2026-08-04 19:46:57"
+    "updated_on": "2026-08-05 19:46:58"
   },
   {
     "symbol": "S56",
@@ -87,7 +150,7 @@
     "ex_date": "2026-08-12",
     "dividend_amount": 0.0135,
     "payment_date": "2026-08-21",
-    "updated_on": "2026-08-04 19:47:01"
+    "updated_on": "2026-08-05 19:47:02"
   },
   {
     "symbol": "AW9U",
@@ -96,7 +159,7 @@
     "ex_date": "2026-08-12",
     "dividend_amount": 0.0016,
     "payment_date": "2026-09-23",
-    "updated_on": "2026-08-04 19:47:05"
+    "updated_on": "2026-08-05 19:47:07"
   },
   {
     "symbol": "BCY",
@@ -105,7 +168,7 @@
     "ex_date": "2026-08-13",
     "dividend_amount": 0.15,
     "payment_date": "2026-08-26",
-    "updated_on": "2026-08-04 19:47:12"
+    "updated_on": "2026-08-05 19:47:13"
   },
   {
     "symbol": "BCY",
@@ -114,7 +177,7 @@
     "ex_date": "2026-08-13",
     "dividend_amount": 0.04,
     "payment_date": "2026-08-26",
-    "updated_on": "2026-08-04 19:47:16"
+    "updated_on": "2026-08-05 19:47:17"
   },
   {
     "symbol": "BEW",
@@ -123,7 +186,7 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.045,
     "payment_date": "2026-08-18",
-    "updated_on": "2026-08-04 19:47:19"
+    "updated_on": "2026-08-05 19:47:21"
   },
   {
     "symbol": "OV8",
@@ -132,7 +195,7 @@
     "ex_date": "2026-08-13",
     "dividend_amount": 0.0375,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-04 19:47:23"
+    "updated_on": "2026-08-05 19:47:24"
   },
   {
     "symbol": "K71U",
@@ -141,7 +204,7 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.0123,
     "payment_date": "2026-09-15",
-    "updated_on": "2026-08-04 19:47:28"
+    "updated_on": "2026-08-05 19:47:30"
   },
   {
     "symbol": "CY6U",
@@ -150,70 +213,7 @@
     "ex_date": "2026-08-17",
     "dividend_amount": 0.0256,
     "payment_date": "2026-09-23",
-    "updated_on": "2026-08-04 19:47:33"
-  },
-  {
-    "symbol": "M44U",
-    "reference": "SG260728DVCA7GEH",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.0031,
-    "payment_date": "2026-09-16",
-    "updated_on": "2026-08-04 19:47:40"
-  },
-  {
-    "symbol": "8AZ",
-    "reference": "SG260728DVCA7MYW",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.005,
-    "payment_date": "2026-08-12",
-    "updated_on": "2026-08-04 19:47:47"
-  },
-  {
-    "symbol": "9A4U",
-    "reference": "SG260728DVCAN1BI",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.0005,
-    "payment_date": "2026-09-11",
-    "updated_on": "2026-08-04 19:47:51"
-  },
-  {
-    "symbol": "9A4U",
-    "reference": "SG260728DVCA585N",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.10126,
-    "payment_date": "2026-09-11",
-    "updated_on": "2026-08-04 19:47:54"
-  },
-  {
-    "symbol": "HMN",
-    "reference": "SG260728DVCAL22G",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.018,
-    "payment_date": "2026-08-28",
-    "updated_on": "2026-08-04 19:47:59"
-  },
-  {
-    "symbol": "CMOU",
-    "reference": "SG260728DVCAF2S6",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.0051276,
-    "payment_date": "2026-09-29",
-    "updated_on": "2026-08-04 19:48:04"
-  },
-  {
-    "symbol": "A7RU",
-    "reference": "SG260728DVCAYCOS",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.0199,
-    "payment_date": "2026-08-13",
-    "updated_on": "2026-08-04 19:48:08"
+    "updated_on": "2026-08-05 19:47:34"
   },
   {
     "symbol": "AIY",
@@ -222,7 +222,7 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.03,
     "payment_date": "2026-08-20",
-    "updated_on": "2026-08-04 19:48:13"
+    "updated_on": "2026-08-05 19:47:56"
   },
   {
     "symbol": "5ML",
@@ -231,7 +231,7 @@
     "ex_date": "2026-08-13",
     "dividend_amount": 0.02,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-04 19:48:34"
+    "updated_on": "2026-08-05 19:48:16"
   },
   {
     "symbol": "Q0X",
@@ -240,7 +240,7 @@
     "ex_date": "2026-08-13",
     "dividend_amount": 0.0015,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-04 19:48:42"
+    "updated_on": "2026-08-05 19:48:24"
   },
   {
     "symbol": "1L2",
@@ -249,7 +249,25 @@
     "ex_date": "2026-08-12",
     "dividend_amount": 0.0002,
     "payment_date": "2026-08-27",
-    "updated_on": "2026-08-04 19:48:46"
+    "updated_on": "2026-08-05 19:48:27"
+  },
+  {
+    "symbol": "BKX",
+    "reference": "SG260713DVCA3N91",
+    "recording_date": "2026-08-20",
+    "ex_date": "2026-08-19",
+    "dividend_amount": 0.01,
+    "payment_date": "2026-09-04",
+    "updated_on": "2026-08-05 19:48:31"
+  },
+  {
+    "symbol": "BKX",
+    "reference": "SG260713DVCAZPWX",
+    "recording_date": "2026-08-20",
+    "ex_date": "2026-08-19",
+    "dividend_amount": 0.01,
+    "payment_date": "2026-09-04",
+    "updated_on": "2026-08-05 19:48:35"
   },
   {
     "symbol": "5PF",
@@ -258,25 +276,7 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.0075,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-04 19:48:56"
-  },
-  {
-    "symbol": "C41",
-    "reference": "SG260713DVCA8Y2H",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.14,
-    "payment_date": "2026-08-14",
-    "updated_on": "2026-08-04 19:48:59"
-  },
-  {
-    "symbol": "C41",
-    "reference": "SG260713DVCA3CB1",
-    "recording_date": "2026-08-05",
-    "ex_date": "2026-08-04",
-    "dividend_amount": 0.02,
-    "payment_date": "2026-08-14",
-    "updated_on": "2026-08-04 19:49:03"
+    "updated_on": "2026-08-05 19:48:40"
   },
   {
     "symbol": "G20",
@@ -285,7 +285,16 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.0175,
     "payment_date": "2026-08-21",
-    "updated_on": "2026-08-04 19:49:07"
+    "updated_on": "2026-08-05 19:48:48"
+  },
+  {
+    "symbol": "OTX",
+    "reference": "SG260709DVCAB4EL",
+    "recording_date": "2026-08-20",
+    "ex_date": "2026-08-19",
+    "dividend_amount": 0.0084,
+    "payment_date": "2026-09-04",
+    "updated_on": "2026-08-05 19:48:53"
   },
   {
     "symbol": "B61",
@@ -294,7 +303,7 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.18,
     "payment_date": "2026-08-20",
-    "updated_on": "2026-08-04 19:49:16"
+    "updated_on": "2026-08-05 19:48:57"
   },
   {
     "symbol": "B61",
@@ -303,7 +312,7 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.04,
     "payment_date": "2026-08-20",
-    "updated_on": "2026-08-04 19:49:19"
+    "updated_on": "2026-08-05 19:49:01"
   },
   {
     "symbol": "C05",
@@ -312,7 +321,7 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.005,
     "payment_date": "2026-08-17",
-    "updated_on": "2026-08-04 19:49:23"
+    "updated_on": "2026-08-05 19:49:04"
   },
   {
     "symbol": "5PO",
@@ -321,7 +330,7 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.001,
     "payment_date": "2026-08-17",
-    "updated_on": "2026-08-04 19:49:27"
+    "updated_on": "2026-08-05 19:49:07"
   },
   {
     "symbol": "OAJ",
@@ -330,7 +339,7 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.00472,
     "payment_date": "2026-08-21",
-    "updated_on": "2026-08-04 19:49:36"
+    "updated_on": "2026-08-05 19:49:16"
   },
   {
     "symbol": "OAJ",
@@ -339,7 +348,7 @@
     "ex_date": "2026-08-06",
     "dividend_amount": 0.0047,
     "payment_date": "2026-08-21",
-    "updated_on": "2026-08-04 19:49:41"
+    "updated_on": "2026-08-05 19:49:26"
   },
   {
     "symbol": "M01",
@@ -348,6 +357,6 @@
     "ex_date": "2026-08-05",
     "dividend_amount": 0.02,
     "payment_date": "2026-08-18",
-    "updated_on": "2026-08-04 19:49:49"
+    "updated_on": "2026-08-05 19:49:32"
   }
 ]
