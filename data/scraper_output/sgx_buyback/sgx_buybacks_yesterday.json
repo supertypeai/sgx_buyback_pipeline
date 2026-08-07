@@ -1,21 +1,60 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XZV040SOZ1HIUJ6D/5fddb2b80eb96edc9743f6d1a4742e17dfb3240553a71ee15d156f91bf0a4769",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/8ORWCM0GJSX0RAU9/9368a8def0614bc5e6d9c6ac9214312fe40d41e6f64ac6d6162329b8548d9f53",
     "symbol": "BSL",
-    "purchase_date": "2026-08-05",
+    "purchase_date": "2026-08-06",
     "type": "On Market",
     "price_per_share": {
       "price_paid_per_share": 0.885
     },
-    "total_value": 531694.55,
-    "total_shares_purchased": 600000,
-    "treasury_shares_after_purchase": 47514050,
+    "total_value": 620310.3,
+    "total_shares_purchased": 700000,
+    "treasury_shares_after_purchase": 48214050,
     "mandate": {
       "mandate_total": 184016087,
-      "cumulative_purchased": 3160000,
-      "mandate_remaining": 180856087,
+      "cumulative_purchased": 3860000,
+      "mandate_remaining": 180156087,
       "mandate_start": "2026-04-24",
       "mandate_end": "2027-04-24"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/6TPYLM0RSDI70GB0/ab7e072113ba4d486b324f4f2fa63967e9d9af452f1fa06c6d1abc91d715b363",
+    "symbol": "AGS",
+    "purchase_date": "2026-08-06",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 2.74786
+    },
+    "total_value": 210164.88,
+    "total_shares_purchased": 76300,
+    "treasury_shares_after_purchase": 8024700,
+    "mandate": {
+      "mandate_total": 63900848,
+      "cumulative_purchased": 1397700,
+      "mandate_remaining": 62503148,
+      "mandate_start": "2026-07-21",
+      "mandate_end": "2027-07-21"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/2KT0EF42MZTHHERC/bfbbe259417f6140de547f37f56ddf16a4b16e04deb984fae5ea43ab5d297503",
+    "symbol": "BN4",
+    "purchase_date": "2026-08-06",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 11.25,
+      "lowest": 11.16
+    },
+    "total_value": 4482724.86,
+    "total_shares_purchased": 400000,
+    "treasury_shares_after_purchase": 21836258,
+    "mandate": {
+      "mandate_total": 90646698,
+      "cumulative_purchased": 14228000,
+      "mandate_remaining": 76418698,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
     }
   }
 ]
