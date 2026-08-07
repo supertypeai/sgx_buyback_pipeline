@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7D34HIZ1JS0MSI2G/898922__FORM%206.pdf",
+    "symbol": "O5RU",
+    "company_name": "AIMS APAC REIT",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
+    "holder_name": "AIMS APAC REIT MANAGEMENT LIMITED",
+    "holder_type": "institution",
+    "timestamp": "2026-08-06",
+    "amount_transaction": 275758,
+    "transaction_value": 76042474564,
+    "price_per_share": 1.5536,
+    "transaction_type": "others",
+    "tags": [
+      "investment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 10299164,
+    "direct_before": 10299164,
+    "share_percentage_before": 0.0125,
+    "direct_percentage_before": 0.0125,
+    "holding_after": 10574922,
+    "direct_after": 10574922,
+    "share_percentage_after": 0.0128,
+    "direct_percentage_after": 0.0128,
+    "share_percentage_transaction": 0.0003,
+    "title": "Change in Aims Apac Reit Management Limited's position in AIMS APAC REIT",
+    "body": "Aims Apac Reit Management Limited executed a transaction for 275,758 shares of AIMS APAC REIT. This increases their holdings from 10,299,164 to 10,574,922 shares.",
+    "reasons": [
+      "Calculated price (transaction_value/amount_transaction=275758.00) does not match reported price_per_share=1.5536",
+      "Inconsistent total value: expected 428417.63 (amount_transaction * price_per_share), but got 76042474564.00"
+    ]
+  }
+]
