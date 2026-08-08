@@ -1,58 +1,58 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/8ORWCM0GJSX0RAU9/9368a8def0614bc5e6d9c6ac9214312fe40d41e6f64ac6d6162329b8548d9f53",
-    "symbol": "BSL",
-    "purchase_date": "2026-08-06",
-    "type": "On Market",
-    "price_per_share": {
-      "price_paid_per_share": 0.885
-    },
-    "total_value": 620310.3,
-    "total_shares_purchased": 700000,
-    "treasury_shares_after_purchase": 48214050,
-    "mandate": {
-      "mandate_total": 184016087,
-      "cumulative_purchased": 3860000,
-      "mandate_remaining": 180156087,
-      "mandate_start": "2026-04-24",
-      "mandate_end": "2027-04-24"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/6TPYLM0RSDI70GB0/ab7e072113ba4d486b324f4f2fa63967e9d9af452f1fa06c6d1abc91d715b363",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/QFPAPTV7M9WZJFWE/8848f7dc2028d8122f9a078ee713cdc950e7c5a2070ae7f7d11b00f54d04d2f9",
     "symbol": "AGS",
-    "purchase_date": "2026-08-06",
+    "purchase_date": "2026-08-07",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 2.74786
+      "price_paid_per_share": 2.75
     },
-    "total_value": 210164.88,
-    "total_shares_purchased": 76300,
-    "treasury_shares_after_purchase": 8024700,
+    "total_value": 559037.74,
+    "total_shares_purchased": 202800,
+    "treasury_shares_after_purchase": 8227500,
     "mandate": {
       "mandate_total": 63900848,
-      "cumulative_purchased": 1397700,
-      "mandate_remaining": 62503148,
+      "cumulative_purchased": 1600500,
+      "mandate_remaining": 62300348,
       "mandate_start": "2026-07-21",
       "mandate_end": "2027-07-21"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/2KT0EF42MZTHHERC/bfbbe259417f6140de547f37f56ddf16a4b16e04deb984fae5ea43ab5d297503",
-    "symbol": "BN4",
-    "purchase_date": "2026-08-06",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/80QV2PE4KJHIO00R/bad4de541c236feee64f753b87fe55fb8070ee209581acbe0b0d143eb306be2d",
+    "symbol": "BSL",
+    "purchase_date": "2026-08-07",
     "type": "On Market",
     "price_per_share": {
-      "highest": 11.25,
-      "lowest": 11.16
+      "price_paid_per_share": 0.875
     },
-    "total_value": 4482724.86,
-    "total_shares_purchased": 400000,
-    "treasury_shares_after_purchase": 21836258,
+    "total_value": 262843.35,
+    "total_shares_purchased": 300000,
+    "treasury_shares_after_purchase": 48514050,
+    "mandate": {
+      "mandate_total": 184016087,
+      "cumulative_purchased": 4160000,
+      "mandate_remaining": 179856087,
+      "mandate_start": "2026-04-24",
+      "mandate_end": "2027-04-24"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/Z46GFVYET50V9QCM/2e3a071c1157b69b7bd1c4cf938ff2f5a85b8bf17842c31e2b0df9a801236a90",
+    "symbol": "BN4",
+    "purchase_date": "2026-08-07",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 11.24,
+      "lowest": 11.12
+    },
+    "total_value": 2239638.55,
+    "total_shares_purchased": 200000,
+    "treasury_shares_after_purchase": 22036258,
     "mandate": {
       "mandate_total": 90646698,
-      "cumulative_purchased": 14228000,
-      "mandate_remaining": 76418698,
+      "cumulative_purchased": 14428000,
+      "mandate_remaining": 76218698,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
