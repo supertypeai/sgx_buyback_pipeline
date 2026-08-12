@@ -1,0 +1,64 @@
+name: Scrape SGX REIT Property Transaction
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'  # 10:00 AM WIB (UTC+7)
+concurrency:
+  group: sgx-scraper-main
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv (Python package manager)
+        uses: astral-sh/setup-uv@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+            uv sync
+
+      - name: Run scraper
+        env:
+          PROXY: ${{ secrets.PROXY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          uv run python -m sgx_scraper.main_cli scraper_reit_transaction
+
+      - name: Upload scraper artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgx-reit-transaction-artifacts
+          path: |
+            data/scraper_output/sgx_reit_transaction/
+            scraper.log
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Pull Latest Changes (safe)
+        run: |
+          git fetch origin main
+          git stash push -m "temp-scraper-log" || true
+          git merge origin/main --strategy-option=theirs || true
+          git stash pop || true
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -m "sgx_reit_transaction: scraped data and push" --allow-empty)
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
