@@ -64,6 +64,10 @@ MODEL_CONFIG = {
     'deepseek-v4-flash': {
         'model': 'deepseek/deepseek-v4-flash-0731',
         'provider': 'openrouter'
+    },
+    'laguna-s-2.1': {
+        'model': 'poolside/laguna-s-2.1:free',
+        'provider': 'openrouter'
     }
 }
 
