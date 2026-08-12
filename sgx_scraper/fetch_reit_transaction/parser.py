@@ -73,16 +73,16 @@ def extract_properties(detail_url: str, model_name: str) -> list[dict]:
     if llm is None:
         return []
 
-    reply = llm.invoke([
-        ("system", ReitTransactionPrompt.get_system_prompt()),
-        ("human", ReitTransactionPrompt.get_user_prompt(
-            document_text[:MAX_DOCUMENT_CHARS]
-        )),
-    ])
-
     try:
+        reply = llm.invoke([
+            ("system", ReitTransactionPrompt.get_system_prompt()),
+            ("human", ReitTransactionPrompt.get_user_prompt(
+                document_text[:MAX_DOCUMENT_CHARS]
+            )),
+        ])
+
         return parse_json_reply(reply.content).get("properties") or []
 
-    except (ValueError, AttributeError) as error:
-        LOGGER.error(f"[REIT TRANSACTION] Unparseable reply for {detail_url}: {error}")
+    except Exception as error:
+        LOGGER.error(f"[REIT TRANSACTION] Extraction failed for {detail_url}: {error}")
         return []

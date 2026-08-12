@@ -58,8 +58,12 @@ MODEL_CONFIG = {
     },
     'gpt-oss-20b': {
         'model': 'openai/gpt-oss-20b',
-        'provider': 'groq', 
+        'provider': 'groq',
         # 'key': GROQ_API_KEY
+    },
+    'deepseek-v4-flash': {
+        'model': 'deepseek/deepseek-v4-flash-0731',
+        'provider': 'openrouter'
     }
 }
 

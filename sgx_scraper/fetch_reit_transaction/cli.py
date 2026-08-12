@@ -52,7 +52,7 @@ def build_record(
     symbol: str,
     prop: dict,
     plan: dict,
-    plan_url: str | None,
+    plan_announcement: dict | None,
 ) -> ReitPropertyTransaction:
 
     def pick(field):
@@ -72,7 +72,10 @@ def build_record(
         counterparty=pick("counterparty"),
         interest_pct=pick("interest_pct"),
         completed_date=completed.isoformat() if completed else None,
-        deal_id=f"{symbol.lower()}:{announcement.get('ref_id')}" if plan_url else None,
+        deal_id=(
+            f"{symbol.lower()}:{plan_announcement['ref_id']}"
+            if plan_announcement else None
+        ),
         basis_value=to_sgd(pick("basis_value"), currency, completed),
         basis=clean_basis(pick("basis")),
         transaction_price=to_sgd(pick("transaction_price"), currency, completed),
@@ -97,11 +100,14 @@ def run_reit_transaction_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(100, help="Number of records per listing page"),
-    model_name: str = typer.Option("nvidia-nemotron-3-ultra", help="Model key in MODEL_CONFIG"),
+    model_name: str = typer.Option("deepseek-v4-flash", help="Model key in MODEL_CONFIG"),
+    limit: int = typer.Option(None, help="Stop after this many completion filings"),
+    ignore_seen: bool = typer.Option(False, help="Reprocess filings already in the seen list"),
     is_push_db: bool = typer.Option(True, help="Flag to push to db or not"),
     is_proxy: bool = typer.Option(None, help="Flag to use proxy or not"),
 ):
     seen_refs = load_seen_refs()
+    processed = 0
     payload, conflicts = [], []
 
     announcements = iter_sgx_announcements(
@@ -125,7 +131,7 @@ def run_reit_transaction_scraper(
         if not is_completion(title):
             continue
 
-        if ref_id in seen_refs:
+        if ref_id in seen_refs and not ignore_seen:
             LOGGER.info(f"[REIT TRANSACTION] Already processed {ref_id}, skipping")
             continue
 
@@ -143,11 +149,11 @@ def run_reit_transaction_scraper(
             if prop.get("status") == "terminated":
                 continue
 
-            plan, plan_url = {}, None
+            plan, plan_announcement = {}, None
 
             if prop.get("transaction_price") is None or prop.get("basis_value") is None:
                 found = find_plan_property(
-                    company=REIT_SYMBOLS[symbol],
+                    company=announcement.get("issuer_name"),
                     property_name=prop.get("property_name"),
                     completed_on=to_date(prop.get("completed_date"))
                     or to_date(announcement.get("submission_date")),
@@ -156,7 +162,7 @@ def run_reit_transaction_scraper(
                 )
 
                 if found:
-                    plan, plan_url = found
+                    plan, plan_announcement = found
 
             gap = price_conflict(prop, plan)
 
@@ -168,12 +174,26 @@ def run_reit_transaction_scraper(
                     "plan_price": plan.get("transaction_price"),
                     "gap_pct": round(gap, 3),
                     "source_url": detail_url,
-                    "plan_url": plan_url,
+                    "plan_url": plan_announcement.get("url") if plan_announcement else None,
                 })
 
-            payload.append(asdict(build_record(announcement, symbol, prop, plan, plan_url)))
+            payload.append(
+                asdict(build_record(announcement, symbol, prop, plan, plan_announcement))
+            )
+
+        if not properties:
+            LOGGER.warning(
+                f"[REIT TRANSACTION] Nothing extracted from {ref_id}, leaving it unseen to retry"
+            )
+            continue
 
         seen_refs.add(ref_id)
+        processed += 1
+
+        if limit and processed >= limit:
+            LOGGER.info(f"[REIT TRANSACTION] Reached limit of {limit} filings")
+            break
+
         time.sleep(random.uniform(1, 3))
 
     LOGGER.info(f"[REIT TRANSACTION] Scraping completed. Total records: {len(payload)}")
@@ -188,10 +208,13 @@ def run_reit_transaction_scraper(
         )
         write_json(REIT_TRANSACTION_PATH_CONFLICT, conflicts)
 
-    if is_push_db:
-        upsert_to_db(
-            payload=payload,
-            table_name=TABLE_NAME,
-            on_conflict="symbol,financial_year,transaction_type,property_name",
-            exclude_columns=DB_EXCLUDED_COLUMNS,
-        )
+    if not is_push_db:
+        LOGGER.info(f"[REIT TRANSACTION] Dry run, {len(payload)} records written to file only")
+        return
+
+    upsert_to_db(
+        payload=payload,
+        table_name=TABLE_NAME,
+        on_conflict="symbol,financial_year,transaction_type,property_name",
+        exclude_columns=DB_EXCLUDED_COLUMNS,
+    )

@@ -68,6 +68,7 @@ TRANSACTION_BASIS = (
 )
 
 PLAN_LOOKBACK_DAYS = 365
+MAX_UNNAMED_CANDIDATES = 5
 
 # Financing notices name the acquisitions they fund, so they match on property
 # name while their figures are the funding.

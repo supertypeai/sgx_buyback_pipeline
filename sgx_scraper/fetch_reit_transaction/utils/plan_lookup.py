@@ -2,6 +2,7 @@ from datetime import date, timedelta
 
 from sgx_scraper.fetch_reit_transaction.constant import (
     FINANCING_TITLE_PATTERN,
+    MAX_UNNAMED_CANDIDATES,
     PLAN_LOOKBACK_DAYS,
     SUB_CATEGORY,
 )
@@ -33,11 +34,17 @@ def find_plan_property(
     completed_on: date,
     model_name: str,
     is_proxy: bool | None = None,
-) -> tuple[dict, str] | None:
+) -> tuple[dict, dict] | None:
     """A completion announcement usually confirms the deal without restating the
     money, so the earlier plan announcement is fetched on demand. Measured lag
     between the two peaks at 195 days.
+
+    The company filter matches SGX's issuer_name, which is the manager rather
+    than the trust, so it is taken from the completion announcement itself.
     """
+    if not company:
+        return None
+
     window_start = completed_on - timedelta(days=PLAN_LOOKBACK_DAYS)
 
     candidates = iter_sgx_announcements(
@@ -49,26 +56,27 @@ def find_plan_property(
         is_proxy=is_proxy,
     )
 
-    best = None
+    plans = [
+        announcement
+        for announcement in candidates
+        if announcement.get("url")
+        and not is_completion(announcement.get("title") or "")
+        and not is_financing(announcement.get("title") or "")
+    ]
+    plans.sort(key=lambda item: item.get("submission_date") or "", reverse=True)
 
-    for announcement in candidates:
-        title = announcement.get("title") or ""
-        detail_url = announcement.get("url")
+    # Titles usually name the property, so those are read first and the rest
+    # only if none of them matched. Every candidate read costs an LLM call.
+    named = [item for item in plans if is_same_property(property_name, item.get("title"))]
 
-        if not detail_url or is_completion(title) or is_financing(title):
-            continue
+    for batch in (named, [item for item in plans if item not in named][:MAX_UNNAMED_CANDIDATES]):
+        for announcement in batch:
+            detail_url = announcement["url"]
 
-        for candidate in extract_properties(detail_url, model_name):
-            if not is_same_property(property_name, candidate.get("property_name")):
-                continue
+            for candidate in extract_properties(detail_url, model_name):
+                if is_same_property(property_name, candidate.get("property_name")):
+                    return candidate, announcement
 
-            broadcast = announcement.get("submission_date") or ""
+    LOGGER.info(f"[REIT TRANSACTION] No plan announcement found for {property_name}")
 
-            if best is None or broadcast > best[0]:
-                best = (broadcast, candidate, detail_url)
-
-    if best is None:
-        LOGGER.info(f"[REIT TRANSACTION] No plan announcement found for {property_name}")
-        return None
-
-    return best[1], best[2]
+    return None
