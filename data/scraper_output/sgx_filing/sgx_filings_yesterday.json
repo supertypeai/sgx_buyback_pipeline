@@ -1,1 +1,60 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WGIK3ZL8LXU0QTGF/900384__KWS%20-%20Form%201.pdf",
+    "symbol": "5UF",
+    "company_name": "Aspial Lifestyle Ltd",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "luxury-goods",
+    "holder_name": "Koh Wee Seng",
+    "holder_type": "insider",
+    "timestamp": "2026-08-11",
+    "amount_transaction": 1000000,
+    "transaction_value": 383167,
+    "price_per_share": 0.3832,
+    "transaction_type": "buy",
+    "tags": [
+      "investment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 1560381554,
+    "direct_before": 205121212,
+    "share_percentage_before": 0.7567,
+    "direct_percentage_before": 0.0995,
+    "holding_after": 1561381554,
+    "direct_after": 206121212,
+    "share_percentage_after": 0.7571,
+    "direct_percentage_after": 0.0999,
+    "share_percentage_transaction": 0.0004,
+    "title": "Koh Wee Seng buys shares of Aspial Lifestyle Ltd",
+    "body": "Koh Wee Seng bought 1,000,000 shares of Aspial Lifestyle Ltd. This increases their holdings from 1,560,381,554 to 1,561,381,554 shares."
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZR9XKOIPAUBRJPAS/900298__20260811-Form%201-KWS-Final.pdf",
+    "symbol": "JCO",
+    "company_name": "JCO",
+    "sector": "properties-real-estate",
+    "sub_sector": "other-real-estate-operations",
+    "holder_name": "Kong Wan Sing",
+    "holder_type": "insider",
+    "timestamp": "2026-08-07",
+    "amount_transaction": 500000,
+    "transaction_value": 322066,
+    "price_per_share": 0.6441,
+    "transaction_type": "buy",
+    "tags": [
+      "investment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 90877130,
+    "direct_before": 1212500,
+    "share_percentage_before": 0.1858,
+    "direct_percentage_before": 0.0025,
+    "holding_after": 91377130,
+    "direct_after": 1712500,
+    "share_percentage_after": 0.1868,
+    "direct_percentage_after": 0.0035,
+    "share_percentage_transaction": 0.001,
+    "title": "Kong Wan Sing buys shares of JCO",
+    "body": "Kong Wan Sing bought 500,000 shares of JCO. This increases their holdings from 90,877,130 to 91,377,130 shares."
+  }
+]
