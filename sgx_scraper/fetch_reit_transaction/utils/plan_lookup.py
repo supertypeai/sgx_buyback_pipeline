@@ -72,10 +72,22 @@ def find_plan_property(
     for batch in (named, [item for item in plans if item not in named][:MAX_UNNAMED_CANDIDATES]):
         for announcement in batch:
             detail_url = announcement["url"]
+            extracted = extract_properties(detail_url, model_name)
 
-            for candidate in extract_properties(detail_url, model_name):
+            for candidate in extracted:
                 if is_same_property(property_name, candidate.get("property_name")):
                     return candidate, announcement
+
+            # The two filings can name one property differently, "Philadelphia
+            # Data Centre" against "2000 Kubach Road, Philadelphia". Issuer,
+            # sub-category and the date window already narrow this far, so a
+            # lone candidate on both sides is taken as the same deal.
+            if len(plans) == 1 and len(extracted) == 1:
+                LOGGER.info(
+                    f"[REIT TRANSACTION] Linking {property_name} to the only plan "
+                    f"candidate, {extracted[0].get('property_name')}"
+                )
+                return extracted[0], announcement
 
     LOGGER.info(f"[REIT TRANSACTION] No plan announcement found for {property_name}")
 

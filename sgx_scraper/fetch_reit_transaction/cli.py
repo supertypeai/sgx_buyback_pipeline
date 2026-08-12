@@ -66,7 +66,9 @@ def build_record(
 
     return ReitPropertyTransaction(
         symbol=symbol,
-        property_name=prop.get("property_name"),
+        # property_name is part of the primary key and a completion can name a
+        # property loosely, so the plan's more specific name wins when linked.
+        property_name=plan.get("property_name") or prop.get("property_name"),
         transaction_type=pick("transaction_type"),
         financial_year=resolve_financial_year(completed, symbol),
         counterparty=pick("counterparty"),
