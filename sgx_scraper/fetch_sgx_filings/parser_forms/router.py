@@ -46,7 +46,7 @@ class RouterFormParser:
         response.raise_for_status()
         pdf_bytes = response.content
 
-        with fitz.open(stream=pdf_bytes, filetype='pdf') as doc:
+        with fitz.open(stream=pdf_bytes, filetype="pdf") as doc:
             text = '\n'.join(page.get_text() for page in doc)
 
         parser_class = RouterFormParser._select_parser_class(text)
@@ -54,7 +54,7 @@ class RouterFormParser:
         if parser_class is None:
             return None
 
-        LOGGER.info('[RouterFormParser] -> %s', parser_class.__name__)
+        LOGGER.info("[RouterFormParser] -> %s", parser_class.__name__)
 
         parser = parser_class(pdf_url)
         # reuse the bytes already downloaded for detection

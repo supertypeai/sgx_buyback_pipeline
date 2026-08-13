@@ -118,6 +118,7 @@ class TransactionRecordBuilder:
                 "sub_sector": sub_sector,
                 "holder_name": clean_holder_name(holder_name),
                 "holder_type": holder_type,
+                "source_is_manual": False,
                 **transaction,
             }
 

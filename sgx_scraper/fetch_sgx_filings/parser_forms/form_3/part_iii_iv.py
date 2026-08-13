@@ -178,6 +178,7 @@ class Form3PartIIIandIV(BaseFormParser):
                 "company_name": company_name,
                 "sector": sector,
                 "sub_sector": sub_sector,
+                "source_is_manual": False,
                 "holder_name": holder_name,
                 "holder_type": classify_holder_type(holder_name),
                 **transaction,
