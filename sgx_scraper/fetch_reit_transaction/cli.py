@@ -102,7 +102,7 @@ def run_reit_transaction_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(100, help="Number of records per listing page"),
-    model_name: str = typer.Option("deepseek-v4-flash", help="Model key in MODEL_CONFIG"),
+    model_name: str = typer.Option("laguna-s-2.1", help="Model key in MODEL_CONFIG"),
     limit: int = typer.Option(None, help="Stop after this many completion filings"),
     ignore_seen: bool = typer.Option(False, help="Reprocess filings already in the seen list"),
     is_push_db: bool = typer.Option(True, help="Flag to push to db or not"),
