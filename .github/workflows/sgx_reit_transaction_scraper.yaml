@@ -46,12 +46,20 @@ jobs:
           if-no-files-found: warn
           retention-days: 90
 
+      # The seen list is what stops a filing being re-read and re-inserted under a
+      # different LLM-written property name, so it is kept outside the merge below.
+      - name: Stage seen list
+        run: cp data/scraper_output/sgx_reit_transaction/reit_transaction_seen.json "$RUNNER_TEMP/reit_transaction_seen.json"
+
       - name: Pull Latest Changes (safe)
         run: |
           git fetch origin main
           git stash push -m "temp-scraper-log" || true
           git merge origin/main --strategy-option=theirs || true
           git stash pop || true
+
+      - name: Restore seen list
+        run: cp "$RUNNER_TEMP/reit_transaction_seen.json" data/scraper_output/sgx_reit_transaction/reit_transaction_seen.json
 
       - name: Commit and push changes
         run: |
@@ -62,3 +70,9 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify seen list persisted
+        run: |
+          git fetch origin main
+          git show origin/main:data/scraper_output/sgx_reit_transaction/reit_transaction_seen.json > "$RUNNER_TEMP/pushed.json"
+          python -c "import json,os,sys; t=os.environ['RUNNER_TEMP']; a=set(json.load(open(t+'/reit_transaction_seen.json'))); b=set(json.load(open(t+'/pushed.json'))); m=a-b; sys.exit(f'seen list lost {len(m)} refs: {sorted(m)[:5]}') if m else None"
