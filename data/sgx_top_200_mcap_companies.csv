@@ -5,13 +5,13 @@ Z74,Singapore Telecommunications Ltd,72841719017
 Z77,Singapore Telecommunications Ltd,72841719017
 U11,United Overseas Bank Ltd,69006867600
 O6Z,Lonza Group Ltd,62969627295
-K6S,Prudential PLC,43728108293
+K6S,Prudential PLC,43717861919
 N33,Nomura Holdings Inc,37133697734
 S63,Singapore Technologies Engineering Ltd,34187582668
 TATD,Airports of Thailand PCL DRC,33571393536
 S68,Singapore Exchange Ltd,26971917739
-H78,Hongkong Land Holdings Ltd,23658482511
-J36,Jardine Matheson Holdings Ltd,23447550622
+H78,Hongkong Land Holdings Ltd,23652938853
+J36,Jardine Matheson Holdings Ltd,23442056390
 F34,Wilmar International Ltd,23411241772
 Q0F,IHH Healthcare Bhd,22882029389
 C6L,Singapore Airlines Ltd,22232755609
@@ -22,7 +22,7 @@ C38U,CapitaLand Integrated Commercial Trust,19147788395
 BS6,Yangzijiang Shipbuilding (Holdings) Ltd,18182422196
 SO7,Yangzijiang Shipbuilding (Holdings) Ltd,18182097213
 TCPD,CP All PCL DRC,15950870528
-NIO,NIO Inc,14439867697
+NIO,NIO Inc,14436484146
 9CI,CapitaLand Investment Ltd,13682275890
 A17U,CapitaLand Ascendas REIT,12188323470
 Y92,Thai Beverage PLC,11811892487
@@ -34,8 +34,8 @@ C09,City Developments Ltd,7254422047
 5E2,Seatrium Ltd,7251902506
 S58,SATS Ltd,6971557371
 N2IU,Mapletree Pan Asia Commercial Trust,6763993249
-D01,DFI Retail Group Holdings Ltd,6620361844
-M12,Maruwa Co Ltd,6160361353
+D01,DFI Retail Group Holdings Ltd,6618810560
+M12,Maruwa Co Ltd,6161128521
 EB5,First Resources Ltd,6115156037
 M44U,Mapletree Logistics Trust,5990279196
 ME8U,Mapletree Industrial Trust,5453056553
@@ -45,7 +45,7 @@ V03,Venture Corp Ltd,4857255651
 U06,Singapore Land Group Ltd,4843646003
 OV8,Sheng Siong Group Ltd,4826353770
 8A8,China Medical System Holdings Ltd,4699720089
-T14,Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd,4660042818
+T14,Tianjin Pharmaceutical Da Ren Tang Group Corp Ltd,4658950876
 VC2,Olam Group Ltd,4525379022
 J69U,Frasers Centrepoint Trust,4486471050
 T82U,Suntec Real Estate Investment Trust,4437878743
@@ -60,8 +60,8 @@ S59,SIA Engineering Co Ltd,3510988611
 HMN,CapitaLand Ascott Trust,3461720576
 H02,Haw Par Corp Ltd,3431206681
 A7RU,Keppel Infrastructure Trust,3347491072
-XWA,AEM Holdings Ltd,3342957723
 AWX,AEM Holdings Ltd,3342461620
+XWA,AEM Holdings Ltd,3342174401
 P8Z,Bumitama Agri Ltd,3225507921
 C52,ComfortDelGro Corp Ltd,2926041983
 AIY,iFAST Corp Ltd,2718530818
@@ -70,7 +70,7 @@ F17,GuocoLand Ltd,2548962511
 H22,Hong Leong Asia Ltd,2546086594
 H15,Hotel Properties Ltd,2494642269
 558,UMS Integration Ltd,2414008211
-S07,Shangri-La Asia Ltd,2390811092
+S07,Shangri-La Asia Ltd,2389346135
 P7VU,Hutchison Port Holdings Trust,2216680704
 NS8U,Hutchison Port Holdings Trust,2197392661
 F99,Fraser and Neave Ltd,2066512071
@@ -83,7 +83,7 @@ CC3,StarHub Ltd,1933671803
 9A4U,ESR-REIT,1899882758
 JYEU,Lendlease Global Commercial REIT,1863136406
 AGS,The Hour Glass Ltd,1788446923
-ULG,Ultragreen Ai Ltd,1777925094
+ULG,Ultragreen Ai Ltd,1777508490
 BVA,Top Glove Corp Bhd,1644518951
 BSL,Raffles Medical Group Ltd,1600966061
 F03,Food Empire Holdings Ltd,1571855001
@@ -97,7 +97,7 @@ G92,China Aviation Oil (Singapore) Corp Ltd,1350488295
 P15,Pacific Century Regional Developments Ltd,1310041359
 SET,Stoneweg Europe Stapled Trust,1310000204
 SEB,Stoneweg Europe Stapled Trust,1309230592
-NTDU,NTT DC REIT,1257578782
+NTDU,NTT DC REIT,1257284106
 PCT,PC Partner Group Ltd,1252864247
 AP4,Riverstone Holdings Ltd,1245021204
 S61,SBS Transit Ltd,1227487302
@@ -125,7 +125,7 @@ F9D,Boustead Singapore Ltd,938786260
 T6I,ValueMax Group Ltd,918543305
 CRPU,Sasseur REIT,897942012
 P9D,Civmec Ltd,866302565
-DCRU,Digital Core REIT,859804804
+DCRU,Digital Core REIT,859603334
 BWM,Zheneng Jinjiang Environment Holding Co Ltd,810278082
 5WJ,Moneymax Financial Services Ltd,793009096
 S08,Singapore Post Ltd,788348135
@@ -153,7 +153,7 @@ H18,Hotel Grand Central Ltd,532386826
 O10,Far East Orchard Ltd,531339278
 NPW,Malaysia Smelting Corp Bhd,528690033
 QC7,Q & M Dental Group (Singapore) Ltd,525973017
-T15,Tan Chong International Ltd,525715246
+T15,Tan Chong International Ltd,525393117
 5LY,Marco Polo Marine Ltd,520581684
 F83,COSCO Shipping International (Singapore) Co Ltd,515026339
 KUO,International Cement Group Ltd,510391223
@@ -174,7 +174,7 @@ ZKX,Ever Glory United Holdings Ltd,423578825
 BHK,SIIC Environment Holdings Ltd,422409179
 BN2,Valuetronics Holdings Ltd,414896119
 BDX,GSH Corp Ltd,411503874
-ODBU,United Hampshire US REIT,408793056
+ODBU,United Hampshire US REIT,408697267
 STC,Comba Telecom Systems Holdings Ltd,403243359
 5CF,OKP Holdings Ltd,400200985
 5DD,Micro-Mechanics (Holdings) Ltd,388589266
@@ -185,7 +185,7 @@ T24,Tuan Sing Holdings Ltd,374532434
 S35,Sing Investments & Finance Ltd,373573022
 Y03,Yeo Hiap Seng Ltd,358846000
 M01,Metro Holdings Ltd,351915246
-MXNU,Elite UK REIT,346273149
+MXNU,Elite UK REIT,346333298
 BTM,Penguin International Ltd,334658056
 A30,Aspial Corp Ltd,332330663
 5HV,Koh Brothers Eco Engineering Ltd,329731847
@@ -197,5 +197,5 @@ BTE,Bund Center Investment Ltd,307301376
 JCO,JCO,305772348
 DHLU,Daiwa House Logistics Trust,305004904
 5IG,Gallant Venture Ltd,300473540
-OXMU,Prime US REIT,299981563
+OXMU,Prime US REIT,299911272
 HLS,Helens International Holdings Co Ltd,299236179
