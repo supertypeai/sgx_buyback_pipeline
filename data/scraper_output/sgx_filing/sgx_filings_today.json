@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FD8JDG08IH2DJYOI/901375__SAMPL%20Form%206.pdf",
+    "symbol": "CRPU",
+    "company_name": "Sasseur REIT",
+    "sector": "reit",
+    "sub_sector": "reit-retail",
+    "holder_name": "Sasseur Asset Management Pte. Ltd",
+    "holder_type": "institution",
+    "source_is_manual": false,
+    "timestamp": "2026-08-14",
+    "amount_transaction": 5000000,
+    "transaction_value": 3350000,
+    "price_per_share": 0.67,
+    "transaction_type": "sell",
+    "tags": [
+      "divestment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 29159660,
+    "direct_before": 29159660,
+    "share_percentage_before": 0.02306,
+    "direct_percentage_before": 0.02306,
+    "holding_after": 24159660,
+    "direct_after": 24159660,
+    "share_percentage_after": 0.0191,
+    "direct_percentage_after": 0.0191,
+    "share_percentage_transaction": 0.00396,
+    "title": "Sasseur Asset Management Pte. Ltd sells shares of Sasseur REIT",
+    "body": "Sasseur Asset Management Pte. Ltd sold 5,000,000 shares of Sasseur REIT. This decreases their holdings from 29,159,660 to 24,159,660 shares."
+  }
+]
