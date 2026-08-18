@@ -6,7 +6,16 @@
     "ex_date": "2026-08-31",
     "dividend_amount": 0.031,
     "payment_date": "2026-09-08",
-    "updated_on": "2026-08-17 18:49:46"
+    "updated_on": "2026-08-18 18:48:26"
+  },
+  {
+    "symbol": "8A8",
+    "reference": "SG260817DVCAX9BT",
+    "recording_date": "2026-09-01",
+    "ex_date": "2026-08-31",
+    "dividend_amount": 0.031,
+    "payment_date": "2026-09-08",
+    "updated_on": "2026-08-18 18:48:29"
   },
   {
     "symbol": "NC2",
@@ -15,7 +24,7 @@
     "ex_date": "2026-08-27",
     "dividend_amount": 0.019079,
     "payment_date": "2026-09-11",
-    "updated_on": "2026-08-17 18:49:51"
+    "updated_on": "2026-08-18 18:48:36"
   },
   {
     "symbol": "STG",
@@ -24,7 +33,7 @@
     "ex_date": "2026-08-27",
     "dividend_amount": 0.009564,
     "payment_date": "2026-09-11",
-    "updated_on": "2026-08-17 18:49:57"
+    "updated_on": "2026-08-18 18:48:41"
   },
   {
     "symbol": "E3B",
@@ -33,7 +42,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.005,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:50:00"
+    "updated_on": "2026-08-18 18:48:46"
   },
   {
     "symbol": "5VS",
@@ -42,7 +51,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.0025,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-17 18:50:04"
+    "updated_on": "2026-08-18 18:48:50"
   },
   {
     "symbol": "5VS",
@@ -51,7 +60,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.0075,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-17 18:50:07"
+    "updated_on": "2026-08-18 18:48:54"
   },
   {
     "symbol": "5JK",
@@ -60,7 +69,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.0025,
     "payment_date": "2026-09-03",
-    "updated_on": "2026-08-17 18:50:14"
+    "updated_on": "2026-08-18 18:48:59"
   },
   {
     "symbol": "T6I",
@@ -69,7 +78,7 @@
     "ex_date": "2026-08-26",
     "dividend_amount": 0.0138,
     "payment_date": "2026-09-03",
-    "updated_on": "2026-08-17 18:50:18"
+    "updated_on": "2026-08-18 18:49:03"
   },
   {
     "symbol": "H02",
@@ -78,7 +87,7 @@
     "ex_date": "2026-08-24",
     "dividend_amount": 0.2,
     "payment_date": "2026-09-11",
-    "updated_on": "2026-08-17 18:50:22"
+    "updated_on": "2026-08-18 18:49:07"
   },
   {
     "symbol": "QC7",
@@ -87,7 +96,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.004,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:50:25"
+    "updated_on": "2026-08-18 18:49:11"
   },
   {
     "symbol": "C52",
@@ -96,7 +105,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.0391,
     "payment_date": "2026-08-31",
-    "updated_on": "2026-08-17 18:50:28"
+    "updated_on": "2026-08-18 18:49:15"
   },
   {
     "symbol": "MV4",
@@ -105,7 +114,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.0014,
     "payment_date": "2026-09-02",
-    "updated_on": "2026-08-17 18:50:32"
+    "updated_on": "2026-08-18 18:49:18"
   },
   {
     "symbol": "P8Z",
@@ -114,16 +123,16 @@
     "ex_date": "2026-08-24",
     "dividend_amount": 0.041,
     "payment_date": "2026-09-03",
-    "updated_on": "2026-08-17 18:50:35"
+    "updated_on": "2026-08-18 18:49:22"
   },
   {
     "symbol": "ULG",
     "reference": "SG260812DVCA1SGS",
     "recording_date": "2026-08-21",
     "ex_date": "2026-08-20",
-    "dividend_amount": 0.0128,
+    "dividend_amount": 0.012776000000000001,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:50:39"
+    "updated_on": "2026-08-18 18:49:27"
   },
   {
     "symbol": "EB5",
@@ -132,7 +141,7 @@
     "ex_date": "2026-08-26",
     "dividend_amount": 0.08,
     "payment_date": "2026-09-10",
-    "updated_on": "2026-08-17 18:50:45"
+    "updated_on": "2026-08-18 18:49:33"
   },
   {
     "symbol": "VC2",
@@ -141,7 +150,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.06,
     "payment_date": "2026-08-31",
-    "updated_on": "2026-08-17 18:50:50"
+    "updated_on": "2026-08-18 18:49:37"
   },
   {
     "symbol": "VC2",
@@ -150,7 +159,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.01,
     "payment_date": "2026-08-31",
-    "updated_on": "2026-08-17 18:50:53"
+    "updated_on": "2026-08-18 18:49:40"
   },
   {
     "symbol": "P52",
@@ -159,7 +168,7 @@
     "ex_date": "2026-08-26",
     "dividend_amount": 0.015,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:51:04"
+    "updated_on": "2026-08-18 18:49:52"
   },
   {
     "symbol": "42E",
@@ -168,7 +177,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.012,
     "payment_date": "2026-09-01",
-    "updated_on": "2026-08-17 18:51:09"
+    "updated_on": "2026-08-18 18:49:54"
   },
   {
     "symbol": "MZH",
@@ -177,7 +186,7 @@
     "ex_date": "2026-08-28",
     "dividend_amount": 0.006,
     "payment_date": "2026-09-07",
-    "updated_on": "2026-08-17 18:51:13"
+    "updated_on": "2026-08-18 18:49:57"
   },
   {
     "symbol": "G13",
@@ -186,7 +195,7 @@
     "ex_date": "2026-08-27",
     "dividend_amount": 0.02,
     "payment_date": "2026-09-22",
-    "updated_on": "2026-08-17 18:51:17"
+    "updated_on": "2026-08-18 18:50:02"
   },
   {
     "symbol": "S61",
@@ -195,7 +204,7 @@
     "ex_date": "2026-08-20",
     "dividend_amount": 0.1597,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-17 18:51:21"
+    "updated_on": "2026-08-18 18:50:05"
   },
   {
     "symbol": "S61",
@@ -204,7 +213,7 @@
     "ex_date": "2026-08-20",
     "dividend_amount": 0.0845,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-17 18:51:27"
+    "updated_on": "2026-08-18 18:50:10"
   },
   {
     "symbol": "CC3",
@@ -213,7 +222,7 @@
     "ex_date": "2026-08-20",
     "dividend_amount": 0.03,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:51:33"
+    "updated_on": "2026-08-18 18:50:17"
   },
   {
     "symbol": "C09",
@@ -222,7 +231,7 @@
     "ex_date": "2026-08-20",
     "dividend_amount": 0.06,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:51:39"
+    "updated_on": "2026-08-18 18:50:23"
   },
   {
     "symbol": "OYY",
@@ -231,7 +240,7 @@
     "ex_date": "2026-08-25",
     "dividend_amount": 0.05,
     "payment_date": "2026-09-11",
-    "updated_on": "2026-08-17 18:51:42"
+    "updated_on": "2026-08-18 18:50:28"
   },
   {
     "symbol": "U96",
@@ -240,7 +249,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.11,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:51:45"
+    "updated_on": "2026-08-18 18:50:31"
   },
   {
     "symbol": "S63",
@@ -249,7 +258,7 @@
     "ex_date": "2026-08-21",
     "dividend_amount": 0.05,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:51:51"
+    "updated_on": "2026-08-18 18:50:36"
   },
   {
     "symbol": "AWX",
@@ -258,16 +267,25 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.024,
     "payment_date": "2026-09-08",
-    "updated_on": "2026-08-17 18:51:55"
+    "updated_on": "2026-08-18 18:50:40"
   },
   {
     "symbol": "ULG",
     "reference": "SG260812DVCA1SGS",
     "recording_date": "2026-08-21",
     "ex_date": "2026-08-20",
-    "dividend_amount": 0.0128,
+    "dividend_amount": 0.012776000000000001,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:52:04"
+    "updated_on": "2026-08-18 18:50:49"
+  },
+  {
+    "symbol": "F03",
+    "reference": "SG260812DVCADCMC",
+    "recording_date": "2026-09-02",
+    "ex_date": "2026-09-01",
+    "dividend_amount": 0.04,
+    "payment_date": "2026-09-10",
+    "updated_on": "2026-08-18 18:50:53"
   },
   {
     "symbol": "5AB",
@@ -276,7 +294,7 @@
     "ex_date": "2026-08-24",
     "dividend_amount": 0.005,
     "payment_date": "2026-09-11",
-    "updated_on": "2026-08-17 18:52:15"
+    "updated_on": "2026-08-18 18:51:03"
   },
   {
     "symbol": "YK9",
@@ -285,7 +303,7 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.002,
     "payment_date": "2026-08-31",
-    "updated_on": "2026-08-17 18:52:20"
+    "updated_on": "2026-08-18 18:51:08"
   },
   {
     "symbol": "F34",
@@ -294,7 +312,7 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.05,
     "payment_date": "2026-09-02",
-    "updated_on": "2026-08-17 18:52:24"
+    "updated_on": "2026-08-18 18:51:11"
   },
   {
     "symbol": "H22",
@@ -303,7 +321,7 @@
     "ex_date": "2026-08-26",
     "dividend_amount": 0.03,
     "payment_date": "2026-09-09",
-    "updated_on": "2026-08-17 18:52:27"
+    "updated_on": "2026-08-18 18:51:15"
   },
   {
     "symbol": "C38U",
@@ -312,7 +330,7 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.0019,
     "payment_date": "2026-09-25",
-    "updated_on": "2026-08-17 18:52:31"
+    "updated_on": "2026-08-18 18:51:17"
   },
   {
     "symbol": "P34",
@@ -321,7 +339,7 @@
     "ex_date": "2026-08-27",
     "dividend_amount": 0.0134,
     "payment_date": "2026-09-11",
-    "updated_on": "2026-08-17 18:52:37"
+    "updated_on": "2026-08-18 18:51:23"
   },
   {
     "symbol": "5WJ",
@@ -330,7 +348,7 @@
     "ex_date": "2026-08-24",
     "dividend_amount": 0.0025,
     "payment_date": "2026-09-01",
-    "updated_on": "2026-08-17 18:52:46"
+    "updated_on": "2026-08-18 18:51:32"
   },
   {
     "symbol": "U13",
@@ -339,7 +357,7 @@
     "ex_date": "2026-08-18",
     "dividend_amount": 0.0907,
     "payment_date": "2026-08-31",
-    "updated_on": "2026-08-17 18:52:49"
+    "updated_on": "2026-08-18 18:51:35"
   },
   {
     "symbol": "WJP",
@@ -348,7 +366,7 @@
     "ex_date": "2026-08-18",
     "dividend_amount": 0.0395,
     "payment_date": "2026-08-26",
-    "updated_on": "2026-08-17 18:52:54"
+    "updated_on": "2026-08-18 18:51:40"
   },
   {
     "symbol": "ITS",
@@ -357,7 +375,7 @@
     "ex_date": "2026-08-20",
     "dividend_amount": 0.0168,
     "payment_date": "2026-09-01",
-    "updated_on": "2026-08-17 18:53:00"
+    "updated_on": "2026-08-18 18:51:47"
   },
   {
     "symbol": "U9E",
@@ -366,7 +384,7 @@
     "ex_date": "2026-08-27",
     "dividend_amount": 0.01,
     "payment_date": "2026-09-14",
-    "updated_on": "2026-08-17 18:53:04"
+    "updated_on": "2026-08-18 18:51:50"
   },
   {
     "symbol": "MR7",
@@ -375,7 +393,7 @@
     "ex_date": "2026-08-20",
     "dividend_amount": 0.010008,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:53:12"
+    "updated_on": "2026-08-18 18:51:58"
   },
   {
     "symbol": "5UF",
@@ -384,7 +402,7 @@
     "ex_date": "2026-08-18",
     "dividend_amount": 0.009,
     "payment_date": "2026-08-27",
-    "updated_on": "2026-08-17 18:53:17"
+    "updated_on": "2026-08-18 18:52:01"
   },
   {
     "symbol": "S41",
@@ -393,25 +411,7 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.0285,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:53:30"
-  },
-  {
-    "symbol": "TAP",
-    "reference": "SG260807DVCAQKZP",
-    "recording_date": "2026-08-18",
-    "ex_date": "2026-08-17",
-    "dividend_amount": 0.001,
-    "payment_date": "2026-08-31",
-    "updated_on": "2026-08-17 18:53:34"
-  },
-  {
-    "symbol": "U11",
-    "reference": "SG260807DVCASZ08",
-    "recording_date": "2026-08-18",
-    "ex_date": "2026-08-17",
-    "dividend_amount": 0.88,
-    "payment_date": "2026-08-28",
-    "updated_on": "2026-08-17 18:53:38"
+    "updated_on": "2026-08-18 18:52:14"
   },
   {
     "symbol": "HQU",
@@ -420,16 +420,7 @@
     "ex_date": "2026-08-26",
     "dividend_amount": 0.005,
     "payment_date": "2026-09-09",
-    "updated_on": "2026-08-17 18:53:42"
-  },
-  {
-    "symbol": "O39",
-    "reference": "SG260807DVCAT8ES",
-    "recording_date": "2026-08-18",
-    "ex_date": "2026-08-17",
-    "dividend_amount": 0.47,
-    "payment_date": "2026-08-28",
-    "updated_on": "2026-08-17 18:53:46"
+    "updated_on": "2026-08-18 18:52:21"
   },
   {
     "symbol": "ER0",
@@ -438,7 +429,7 @@
     "ex_date": "2026-08-26",
     "dividend_amount": 0.01,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:53:50"
+    "updated_on": "2026-08-18 18:52:26"
   },
   {
     "symbol": "V03",
@@ -447,7 +438,7 @@
     "ex_date": "2026-08-31",
     "dividend_amount": 0.3,
     "payment_date": "2026-09-11",
-    "updated_on": "2026-08-17 18:54:02"
+    "updated_on": "2026-08-18 18:52:39"
   },
   {
     "symbol": "CLN",
@@ -456,7 +447,7 @@
     "ex_date": "2026-08-25",
     "dividend_amount": 0.036,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:54:37"
+    "updated_on": "2026-08-18 18:53:14"
   },
   {
     "symbol": "CLN",
@@ -465,7 +456,7 @@
     "ex_date": "2026-08-25",
     "dividend_amount": 0.019,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:54:40"
+    "updated_on": "2026-08-18 18:53:18"
   },
   {
     "symbol": "1E3",
@@ -474,7 +465,7 @@
     "ex_date": "2026-08-27",
     "dividend_amount": 0.00189,
     "payment_date": "2026-09-30",
-    "updated_on": "2026-08-17 18:54:44"
+    "updated_on": "2026-08-18 18:53:21"
   },
   {
     "symbol": "G07",
@@ -483,16 +474,16 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.35,
     "payment_date": "2026-08-28",
-    "updated_on": "2026-08-17 18:54:47"
+    "updated_on": "2026-08-18 18:53:25"
   },
   {
-    "symbol": "CY6U",
-    "reference": "SG260729DVCAXV8O",
-    "recording_date": "2026-08-18",
-    "ex_date": "2026-08-17",
-    "dividend_amount": 0.0256,
-    "payment_date": "2026-09-23",
-    "updated_on": "2026-08-17 18:55:28"
+    "symbol": "C07",
+    "reference": "SG260730DVCAVED6",
+    "recording_date": "2026-09-02",
+    "ex_date": "2026-09-01",
+    "dividend_amount": 0.35772800000000005,
+    "payment_date": "2026-10-05",
+    "updated_on": "2026-08-18 18:53:30"
   },
   {
     "symbol": "BKX",
@@ -501,7 +492,7 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.01,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:56:19"
+    "updated_on": "2026-08-18 18:54:57"
   },
   {
     "symbol": "BKX",
@@ -510,7 +501,7 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.01,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:56:22"
+    "updated_on": "2026-08-18 18:55:02"
   },
   {
     "symbol": "OTX",
@@ -519,6 +510,6 @@
     "ex_date": "2026-08-19",
     "dividend_amount": 0.0084,
     "payment_date": "2026-09-04",
-    "updated_on": "2026-08-17 18:56:37"
+    "updated_on": "2026-08-18 18:55:17"
   }
 ]
