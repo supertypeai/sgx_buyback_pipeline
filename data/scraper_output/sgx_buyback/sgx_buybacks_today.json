@@ -1,60 +1,120 @@
 [
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/SZ3IZYYIES2RMLXQ/a4913643bf3427433b2ead1c025bf6bddbbb2d045c386a2888dac64708510da4",
-    "symbol": "A30",
-    "purchase_date": "2026-08-17",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/LPU132Q766J63QT0/4449e112f732420da6c1cda65cd5cc3881e295ec9b02f6820f374aaf3cd6c0a9",
+    "symbol": "5E2",
+    "purchase_date": "2026-08-18",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 0.147
+      "price_paid_per_share": 2.1578
     },
-    "total_value": 15219.34,
-    "total_shares_purchased": 103300,
-    "treasury_shares_after_purchase": 24893715,
+    "total_value": 1987610.32,
+    "total_shares_purchased": 920000,
+    "treasury_shares_after_purchase": 30809425,
+    "mandate": {
+      "mandate_total": 67597276,
+      "cumulative_purchased": 10180000,
+      "mandate_remaining": 57417276,
+      "mandate_start": "2026-04-22",
+      "mandate_end": "2027-04-22"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/NM9JZQS1AAYSBY9U/9931b4c6bbdfa377f8b17d68905046e1aebd77cab6220c3ac8bdf3efa6594e56",
+    "symbol": "A30",
+    "purchase_date": "2026-08-18",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 0.148,
+      "lowest": 0.147
+    },
+    "total_value": 22138.87,
+    "total_shares_purchased": 150000,
+    "treasury_shares_after_purchase": 25043715,
     "mandate": {
       "mandate_total": 93791434,
-      "cumulative_purchased": 4520500,
-      "mandate_remaining": 89270934,
+      "cumulative_purchased": 4670500,
+      "mandate_remaining": 89120934,
       "mandate_start": "2026-04-28",
       "mandate_end": "2027-04-28"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/64MIT3LIDMIUJQOG/5345db7ede373914700062f67d099ad2c1a4b6c61967c922aa199e2d220fad2e",
-    "symbol": "BN4",
-    "purchase_date": "2026-08-17",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/38JYHSKBIKFFF77Q/0e42eb786f9a0fe61cf58b28567a4bbb671d4ef58f43938a415668de2cec22fb",
+    "symbol": "MZH",
+    "purchase_date": "2026-08-18",
     "type": "On Market",
     "price_per_share": {
-      "highest": 11.44,
-      "lowest": 11.27
+      "highest": 1.06,
+      "lowest": 1.04
     },
-    "total_value": 1368689.85,
-    "total_shares_purchased": 120000,
-    "treasury_shares_after_purchase": 23156258,
+    "total_value": 419639.41,
+    "total_shares_purchased": 400000,
+    "treasury_shares_after_purchase": 12933024,
     "mandate": {
-      "mandate_total": 90646698,
-      "cumulative_purchased": 15548000,
-      "mandate_remaining": 75098698,
+      "mandate_total": 65257658,
+      "cumulative_purchased": 2166500,
+      "mandate_remaining": 63091158,
+      "mandate_start": "2026-04-29",
+      "mandate_end": "2027-04-29"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/NQKHZ1P385C05E5F/3284e023e85c525935baba2fed3f90c46cba28f1c5c3b051d3efa4b35bd2cd31",
+    "symbol": "U11",
+    "purchase_date": "2026-08-18",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 41.1,
+      "lowest": 40.67
+    },
+    "total_value": 2696571.06,
+    "total_shares_purchased": 66000,
+    "treasury_shares_after_purchase": 13698900,
+    "mandate": {
+      "mandate_total": 82676174,
+      "cumulative_purchased": 3675600,
+      "mandate_remaining": 79000574,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
   },
   {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/5MTWZ0KI0MKKBRGA/12ed760fbb28fdf2ff9a49fa80a4a94452236525885cdb74ff75925473474cd9",
-    "symbol": "AGS",
-    "purchase_date": "2026-08-17",
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/5IDHQF4BA80FMXJL/92c3ef9d4d63df91151ee536491fe6166f77ff11fd67d61d6fc076760f718080",
+    "symbol": "BN4",
+    "purchase_date": "2026-08-18",
     "type": "On Market",
     "price_per_share": {
-      "price_paid_per_share": 2.79746
+      "highest": 11.47,
+      "lowest": 11.31
     },
-    "total_value": 176662.97,
-    "total_shares_purchased": 63000,
-    "treasury_shares_after_purchase": 9210100,
+    "total_value": 2283832.67,
+    "total_shares_purchased": 200000,
+    "treasury_shares_after_purchase": 23356258,
     "mandate": {
-      "mandate_total": 63900848,
-      "cumulative_purchased": 2583100,
-      "mandate_remaining": 61317748,
-      "mandate_start": "2026-07-21",
-      "mandate_end": "2027-07-21"
+      "mandate_total": 90646698,
+      "cumulative_purchased": 15748000,
+      "mandate_remaining": 74898698,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/IC9CG0B6FZBTYEST/e12686218342a80d298e02aec76933e50d23a42bc7c22e50d3dfa48ddda20b97",
+    "symbol": "DCRU",
+    "purchase_date": "2026-08-18",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 0.525
+    },
+    "total_value": 1051258.95,
+    "total_shares_purchased": 2000000,
+    "treasury_shares_after_purchase": 0,
+    "mandate": {
+      "mandate_total": 129602591,
+      "cumulative_purchased": 2358900,
+      "mandate_remaining": 127243691,
+      "mandate_start": "2026-04-15",
+      "mandate_end": "2027-04-15"
     }
   }
 ]
