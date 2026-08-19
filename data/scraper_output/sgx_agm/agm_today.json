@@ -1,0 +1,38 @@
+[
+  {
+    "symbol": "43A",
+    "recording_date": "2026-08-12",
+    "agm_date": "2026-08-28",
+    "meeting_type": "AGM",
+    "issuer_name": "OCTOPUS (APAC) HOLDINGS LIMITED",
+    "agm_time": "14:00:00",
+    "agm_place": "The Hideout Bistro, Level 1 Octopus Building, 361 Ubi Rd 3, Singapore 408664",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/44EN6KVJBZRBEOC1/bd27e1df237461667dbb063babc5d1e36f67fdc5a295aa0dc50e268f042b022c",
+    "source_file": "Octopus - Notice of AGM.pdf",
+    "ref_id": "SG260812MEETVBE4"
+  },
+  {
+    "symbol": "5F7",
+    "recording_date": "2026-08-12",
+    "agm_date": "2026-08-28",
+    "meeting_type": "AGM",
+    "issuer_name": "WILTON RESOURCES CORPORATION LIMITED",
+    "agm_time": "14:00:00",
+    "agm_place": "Temasek Club, Seletar I, 131 Rifle Range Road, #03-03, Singapore 588406",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/TLKS0W6QI9A59VXR/d660c3d7931ec142fcaf9ce8aa76babf733196e19e1da03340fcab461b07ab3b",
+    "source_file": "Wilton FY2025_Notice of AGM.pdf",
+    "ref_id": "SG260812MEET7ESO"
+  }
+]

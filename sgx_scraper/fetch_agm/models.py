@@ -7,7 +7,6 @@ class AgmMeeting:
     recording_date: str
     agm_date: str
     meeting_type: str
-    issuer_name: str | None = None
     agm_time: str | None = None
     agm_place: str | None = None
     agm_place_desc: str | None = None
@@ -17,5 +16,4 @@ class AgmMeeting:
     sias_response_pdf: str | None = None
     qa: list[dict] | None = None
     source_link: str | None = None
-    source_file: str | None = None
     ref_id: str | None = None

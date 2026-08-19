@@ -11,7 +11,7 @@ from sgx_scraper.fetch_agm.constant import (
 from sgx_scraper.fetch_agm.models import AgmMeeting
 from sgx_scraper.fetch_agm.parser import (
     extract_detail_fields,
-    resolve_source_document,
+    resolve_results_document,
     summarise_results,
 )
 from sgx_scraper.fetch_agm.utils.payload_helper import (
@@ -56,7 +56,6 @@ def build_record(
     fields: dict,
     summary: str | None,
     tags: list[str] | None,
-    source_file: str | None,
     sias_entry: dict,
     qa: list[dict],
 ) -> AgmMeeting:
@@ -70,7 +69,6 @@ def build_record(
         recording_date=to_iso_date(announcement.get("submission_date")),
         agm_date=agm_date,
         meeting_type=meeting_type,
-        issuer_name=announcement.get("issuer_name"),
         agm_time=agm_time,
         agm_place=venue,
         agm_place_desc=resolve_place_desc(venue),
@@ -80,7 +78,6 @@ def build_record(
         sias_response_pdf=sias_entry.get("response_pdf"),
         qa=qa or None,
         source_link=announcement.get("url"),
-        source_file=source_file,
         ref_id=announcement.get("ref_id"),
     )
 
@@ -140,7 +137,7 @@ def run_agm_scraper(
                 LOGGER.warning(f"[AGM] No meeting date on {ref_id}, skipping")
                 continue
 
-            source_file, results_url = resolve_source_document(detail_url)
+            results_url = resolve_results_document(detail_url)
 
             summary, tags = (
                 summarise_results(results_url, model_name)
@@ -149,8 +146,7 @@ def run_agm_scraper(
 
             sias_entry = find_sias_entry(
                 index=sias_index,
-                issuer_name=announcement.get("issuer_name"),
-                security_name=announcement.get("security_name"),
+                        security_name=announcement.get("security_name"),
                 meeting_date=agm_date,
                 meeting_type=meeting_type,
             )
@@ -160,7 +156,7 @@ def run_agm_scraper(
             payload.append(
                 asdict(build_record(
                     announcement, symbol, meeting_type, fields,
-                    summary, tags, source_file, sias_entry, qa,
+                    summary, tags, sias_entry, qa,
                 ))
             )
 

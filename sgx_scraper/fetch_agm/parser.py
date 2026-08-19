@@ -43,20 +43,15 @@ def extract_detail_fields(detail_url: str) -> dict:
     return fields
 
 
-def resolve_source_document(detail_url: str) -> tuple[str | None, str | None]:
+def resolve_results_document(detail_url: str) -> str | None:
     """A thread accumulates its attachments, so the results document sits
-    alongside the notice once the meeting has happened. Returns its name and
-    link, or the first attachment when the meeting is still at notice stage."""
-    attachments = resolve_attachments(detail_url)
-
-    if not attachments:
-        return None, None
-
-    for name, link in attachments:
+    alongside the notice once the meeting has happened. Nothing is returned
+    while the meeting is still at notice stage, and there is no outcome yet."""
+    for name, link in resolve_attachments(detail_url):
         if re.search(RESULTS_ATTACHMENT_PATTERN, name, re.I):
-            return name, link
+            return link
 
-    return attachments[0][0], None
+    return None
 
 
 def summarise_results(results_url: str, model_name: str) -> tuple[str | None, list[str] | None]:

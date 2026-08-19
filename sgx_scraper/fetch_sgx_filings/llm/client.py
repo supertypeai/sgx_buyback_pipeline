@@ -17,6 +17,8 @@ from sgx_scraper.utils.constant import (
     ROTATE_STATUS_CODES
 )
 
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeout
+
 import asyncio
 import logging
 import time
@@ -114,6 +116,21 @@ class KeyRotatingChatModel(BaseChatModel):
         )
         return "raise"
 
+    def call_with_deadline(self, llm_client, messages, stop, **kwargs):
+        """langchain-openrouter builds its request through the openrouter SDK,
+        which exposes no timeout, so request_timeout is silently ignored and a
+        stalled provider blocks forever. The deadline is enforced here instead.
+        The worker is abandoned rather than joined; it is holding a socket the
+        SDK will not release."""
+        executor = ThreadPoolExecutor(max_workers=1)
+
+        try:
+            future = executor.submit(llm_client._generate, messages, stop=stop, **kwargs)
+            return future.result(timeout=LLM_TIMEOUT_SECONDS)
+
+        finally:
+            executor.shutdown(wait=False)
+
     def _generate(
         self,
         messages: list[BaseMessage],
@@ -133,7 +150,16 @@ class KeyRotatingChatModel(BaseChatModel):
 
             for index, llm_client in enumerate(self.llm_pool):
                 try:
-                    return llm_client._generate(messages, stop=stop, **kwargs)
+                    return self.call_with_deadline(llm_client, messages, stop, **kwargs)
+
+                except FutureTimeout:
+                    LOGGER.warning(
+                        f"Key index {index} exceeded {LLM_TIMEOUT_SECONDS}s for "
+                        f"'{self.model_name_identifier}', abandoning the call"
+                    )
+                    last_error = RuntimeError(
+                        f"no reply within {LLM_TIMEOUT_SECONDS}s"
+                    )
 
                 except Exception as error:
                     if self.handle_error(error, index) == "raise":
