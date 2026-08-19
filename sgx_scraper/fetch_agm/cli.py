@@ -64,8 +64,7 @@ def build_record(
 
     return AgmMeeting(
         symbol=symbol,
-        # submission_date is when the announcement thread opened, which is when
-        # the meeting went on record, a median 16 days before it is held.
+        # submission_date is when the announcement thread opened.
         recording_date=to_iso_date(announcement.get("submission_date")),
         agm_date=agm_date,
         meeting_type=meeting_type,
@@ -160,8 +159,7 @@ def run_agm_scraper(
                 ))
             )
 
-            # A meeting still at notice stage has no results document yet, so it
-            # is left unseen and picked up again once the results are filed.
+            # Left unseen until the results are filed.
             if summary:
                 seen_refs.add(ref_id)
 

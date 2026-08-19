@@ -44,9 +44,7 @@ def extract_detail_fields(detail_url: str) -> dict:
 
 
 def resolve_results_document(detail_url: str) -> str | None:
-    """A thread accumulates its attachments, so the results document sits
-    alongside the notice once the meeting has happened. Nothing is returned
-    while the meeting is still at notice stage, and there is no outcome yet."""
+    """Nothing is returned while a meeting is still at notice stage."""
     for name, link in resolve_attachments(detail_url):
         if re.search(RESULTS_ATTACHMENT_PATTERN, name, re.I):
             return link

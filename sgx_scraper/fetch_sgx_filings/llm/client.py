@@ -117,11 +117,7 @@ class KeyRotatingChatModel(BaseChatModel):
         return "raise"
 
     def call_with_deadline(self, llm_client, messages, stop, **kwargs):
-        """langchain-openrouter builds its request through the openrouter SDK,
-        which exposes no timeout, so request_timeout is silently ignored and a
-        stalled provider blocks forever. The deadline is enforced here instead.
-        The worker is abandoned rather than joined; it is holding a socket the
-        SDK will not release."""
+        """The openrouter SDK exposes no timeout, so it is enforced here."""
         executor = ThreadPoolExecutor(max_workers=1)
 
         try:

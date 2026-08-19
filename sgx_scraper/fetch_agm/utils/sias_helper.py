@@ -86,8 +86,7 @@ def read_listing_page(page: int) -> list[dict]:
 
 
 def build_sias_index(pages: int) -> dict[tuple[str, str], dict]:
-    """SIAS keys on company name and meeting date, so the index is built on the
-    normalised name and matched against the issuer and the security name."""
+    """SIAS keys on company name and meeting date, not on a ticker."""
     index = {}
 
     for page in range(1, pages + 1):
@@ -204,8 +203,7 @@ def parse_answers(text: str, expect: int) -> dict[int, str] | None:
 
 
 def locate_answers_with_llm(text: str, expect: int, model_name: str) -> dict[int, str] | None:
-    """The model reports only where each answer starts; the cut is still made
-    here, so the stored text is the document's own."""
+    """The model reports where each answer starts, the cut is made here."""
     llm = get_llm(model_name, temperature=0)
 
     if llm is None:
