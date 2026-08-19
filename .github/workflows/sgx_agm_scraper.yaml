@@ -1,0 +1,78 @@
+name: Scrape SGX AGM
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * *'  # 10:30 AM WIB (UTC+7)
+concurrency:
+  group: sgx-scraper-main
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv (Python package manager)
+        uses: astral-sh/setup-uv@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+            uv sync
+
+      - name: Run scraper
+        env:
+          PROXY: ${{ secrets.PROXY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          uv run python -m sgx_scraper.main_cli scraper_agm
+
+      - name: Upload scraper artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgx-agm-artifacts
+          path: |
+            data/scraper_output/sgx_agm/
+            scraper.log
+          if-no-files-found: warn
+          retention-days: 90
+
+      # A meeting is only marked seen once its results are summarised, so the
+      # list is what stops a settled meeting being summarised again.
+      - name: Stage seen list
+        run: cp data/scraper_output/sgx_agm/agm_seen.json "$RUNNER_TEMP/agm_seen.json"
+
+      - name: Pull Latest Changes (safe)
+        run: |
+          git fetch origin main
+          git stash push -m "temp-scraper-log" || true
+          git merge origin/main --strategy-option=theirs || true
+          git stash pop || true
+
+      - name: Restore seen list
+        run: cp "$RUNNER_TEMP/agm_seen.json" data/scraper_output/sgx_agm/agm_seen.json
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -m "sgx_agm: scraped data and push" --allow-empty)
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify seen list persisted
+        run: |
+          git fetch origin main
+          git show origin/main:data/scraper_output/sgx_agm/agm_seen.json > "$RUNNER_TEMP/pushed.json"
+          python -c "import json,os,sys; t=os.environ['RUNNER_TEMP']; a=set(json.load(open(t+'/agm_seen.json'))); b=set(json.load(open(t+'/pushed.json'))); m=a-b; sys.exit(f'seen list lost {len(m)} refs: {sorted(m)[:5]}') if m else None"

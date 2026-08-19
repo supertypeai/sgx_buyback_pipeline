@@ -18,6 +18,14 @@ The project follows a modular pipeline architecture.
     * `parser_sgx_filings.py`: Logic to extract company announcements.
     * `utils/`: Contains specialized helpers for parsing PDF payloads, html parser and converter currency. 
     * `models.py`: Data validation schemas for filings.
+* **`fetch_reit_transaction/`**:
+    * `parser.py`: Reads a REIT asset acquisition or disposal filing through an LLM.
+    * `utils/`: FX conversion, financial year resolution, and the plan lookup that links a completion back to its announcement.
+    * `models.py`: Data schema for a property transaction.
+* **`fetch_agm/`**:
+    * `parser.py`: Reads the meeting fields off the announcement detail page and summarises the results PDF.
+    * `utils/`: Venue and date payload helpers, and the SIAS Q&A scrape and join.
+    * `models.py`: Data schema for a meeting.
 
 ### Shared Resources
 
@@ -127,6 +135,8 @@ This project utilizes Typer for CLI interaction and uv for dependency management
 | :--- | :--- |
 | `scraper_buybacks` | Extracts daily share buyback transactions. |
 | `scraper_filings` | Extracts company announcements using anchor detection. |
+| `scraper_reit_transaction` | Extracts REIT property acquisitions and divestments (ANNC06). |
+| `scraper_agm` | Extracts AGM and EGM meetings (ANNC05, ANNC16) with the SIAS Q&A. |
 
 ### Shared Options
 Both commands accept the following arguments to control the date range and database operations.

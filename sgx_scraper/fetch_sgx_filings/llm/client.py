@@ -9,12 +9,17 @@ from sgx_scraper.utils.constant import (
     MODEL_CONFIG, 
     ABORT_KEYWORDS, 
     ABORT_STATUS_CODES, 
+    LLM_TIMEOUT_SECONDS,
     ROTATE_400_KEYWORDS, 
+    ROTATE_BACKOFF_SECONDS,
     ROTATE_KEYWORDS, 
+    ROTATE_MAX_SWEEPS,
     ROTATE_STATUS_CODES
 )
 
-import logging 
+import asyncio
+import logging
+import time
 
 
 LOGGER = logging.getLogger(__name__)
@@ -93,6 +98,22 @@ class KeyRotatingChatModel(BaseChatModel):
     def _llm_type(self) -> str:
         return f"key-rotating-{self.model_name_identifier}"
 
+    def handle_error(self, error: Exception, index: int) -> str:
+        action = classify_error(error)
+
+        if action == "rotate":
+            LOGGER.warning(
+                f"Key index {index} failed for '{self.model_name_identifier}' "
+                f"(rotating to next key). Error: {error}"
+            )
+            return action
+
+        LOGGER.error(
+            f"Non-recoverable error for '{self.model_name_identifier}', "
+            f"aborting key rotation. Error: {error}"
+        )
+        return "raise"
+
     def _generate(
         self,
         messages: list[BaseMessage],
@@ -101,29 +122,24 @@ class KeyRotatingChatModel(BaseChatModel):
     ) -> ChatResult:
         last_error: Exception | None = None
 
-        for index, llm_client in enumerate(self.llm_pool):
-            try:
-                return llm_client._generate(messages, stop=stop, **kwargs)
-            
-            except Exception as error:
-                action = classify_error(error)
+        for sweep in range(ROTATE_MAX_SWEEPS):
+            if sweep:
+                backoff = ROTATE_BACKOFF_SECONDS * sweep
+                LOGGER.warning(
+                    f"All keys rate-limited for '{self.model_name_identifier}', "
+                    f"retrying the pool in {backoff}s"
+                )
+                time.sleep(backoff)
 
-                if action == "rotate":
-                    LOGGER.warning(
-                        f"Key index {index} failed for '{self.model_name_identifier}' "
-                        f"(rotating to next key). Error: {error}"
-                    )
+            for index, llm_client in enumerate(self.llm_pool):
+                try:
+                    return llm_client._generate(messages, stop=stop, **kwargs)
+
+                except Exception as error:
+                    if self.handle_error(error, index) == "raise":
+                        raise
+
                     last_error = error
-                    continue
-
-                if action == "abort":
-                    LOGGER.error(
-                        f"Non-recoverable error for '{self.model_name_identifier}', "
-                        f"aborting key rotation. Error: {error}"
-                    )
-                    raise
-
-                raise
 
         raise RuntimeError(
             f"All {len(self.llm_pool)} API keys exhausted for model "
@@ -138,29 +154,24 @@ class KeyRotatingChatModel(BaseChatModel):
     ) -> ChatResult:
         last_error: Exception | None = None
 
-        for index, llm_client in enumerate(self.llm_pool):
-            try:
-                return await llm_client._agenerate(messages, stop=stop, **kwargs)
-            
-            except Exception as error:
-                action = classify_error(error)
+        for sweep in range(ROTATE_MAX_SWEEPS):
+            if sweep:
+                backoff = ROTATE_BACKOFF_SECONDS * sweep
+                LOGGER.warning(
+                    f"All keys rate-limited for '{self.model_name_identifier}' "
+                    f"(async), retrying the pool in {backoff}s"
+                )
+                await asyncio.sleep(backoff)
 
-                if action == "rotate":
-                    LOGGER.warning(
-                        f"Key index {index} failed for '{self.model_name_identifier}' "
-                        f"(async, rotating to next key). Error: {error}"
-                    )
+            for index, llm_client in enumerate(self.llm_pool):
+                try:
+                    return await llm_client._agenerate(messages, stop=stop, **kwargs)
+
+                except Exception as error:
+                    if self.handle_error(error, index) == "raise":
+                        raise
+
                     last_error = error
-                    continue
-
-                if action == "abort":
-                    LOGGER.error(
-                        f"Non-recoverable error for '{self.model_name_identifier}' "
-                        f"(async), aborting key rotation. Error: {error}"
-                    )
-                    raise
-
-                raise
 
         raise RuntimeError(
             f"All {len(self.llm_pool)} API keys exhausted for model "
@@ -207,7 +218,8 @@ def get_llm(
                 temperature=temperature,
                 max_retries=max_retries,
                 api_key=api_key,
-                max_tokens=10000 
+                max_tokens=10000,
+                timeout=LLM_TIMEOUT_SECONDS,
             ) 
 
             llm_pool.append(initiate_model)

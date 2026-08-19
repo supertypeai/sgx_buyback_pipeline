@@ -72,6 +72,14 @@ MODEL_CONFIG = {
 }
 
 ROTATE_STATUS_CODES = {401, 403, 429, 413}
+
+# Free-tier models are rate-limited upstream in bursts, so a pool of one key is
+# exhausted by a single 429. Sweeping the pool again after a pause recovers it.
+ROTATE_MAX_SWEEPS = 3
+ROTATE_BACKOFF_SECONDS = 20
+
+# Without this a stalled provider hangs the whole daily run.
+LLM_TIMEOUT_SECONDS = 120
 ABORT_STATUS_CODES = {400, 422, 500, 502, 503, 504}
 
 ROTATE_KEYWORDS = (

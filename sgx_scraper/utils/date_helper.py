@@ -27,6 +27,18 @@ def normalize_datetime(date: str | datetime) -> str:
         return None
 
 
+def to_iso_date(date: str | datetime) -> str | None:
+    """
+    Normalize a date to YYYY-MM-DD, the format Postgres date columns expect.
+    """
+    normalized = normalize_datetime(date)
+
+    if not normalized:
+        return None
+
+    return f"{normalized[:4]}-{normalized[4:6]}-{normalized[6:]}"
+
+
 def safe_convert_datetime(date: str) -> str | None:
     """
     Parse a scraped date string in various formats to YYYY-MM-DD for storage.
