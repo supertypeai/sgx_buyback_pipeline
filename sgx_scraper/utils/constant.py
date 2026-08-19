@@ -71,6 +71,8 @@ MODEL_CONFIG = {
     }
 }
 
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+
 ROTATE_STATUS_CODES = {401, 403, 429, 413}
 
 # A pool of one key is exhausted by a single burst 429, so the pool is swept again.

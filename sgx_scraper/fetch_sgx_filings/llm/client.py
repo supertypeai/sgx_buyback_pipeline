@@ -10,6 +10,7 @@ from sgx_scraper.utils.constant import (
     ABORT_KEYWORDS, 
     ABORT_STATUS_CODES, 
     LLM_TIMEOUT_SECONDS,
+    OPENROUTER_BASE_URL,
     ROTATE_400_KEYWORDS, 
     ROTATE_BACKOFF_SECONDS,
     ROTATE_KEYWORDS, 
@@ -225,6 +226,9 @@ def get_llm(
         for key in provider_keys.get(provider, []) 
         if key
     ]
+
+    # the native openrouter provider ignores timeout and never returns on a stall
+    is_openrouter = provider == 'openrouter'
     
     if not api_keys:
         LOGGER.error(f"No valid API keys found for provider: '{provider}'")
@@ -236,12 +240,13 @@ def get_llm(
         try:
             initiate_model = init_chat_model(
                 config_model.get('model'),
-                model_provider=provider,
+                model_provider='openai' if is_openrouter else provider,
                 temperature=temperature,
                 max_retries=max_retries,
                 api_key=api_key,
                 max_tokens=10000,
                 timeout=LLM_TIMEOUT_SECONDS,
+                **({'base_url': OPENROUTER_BASE_URL} if is_openrouter else {}),
             ) 
 
             llm_pool.append(initiate_model)
