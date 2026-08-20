@@ -58,12 +58,28 @@ MODEL_CONFIG = {
     },
     'gpt-oss-20b': {
         'model': 'openai/gpt-oss-20b',
-        'provider': 'groq', 
+        'provider': 'groq',
         # 'key': GROQ_API_KEY
+    },
+    'deepseek-v4-flash': {
+        'model': 'deepseek/deepseek-v4-flash-0731',
+        'provider': 'openrouter'
+    },
+    'laguna-s-2.1': {
+        'model': 'poolside/laguna-s-2.1:free',
+        'provider': 'openrouter'
     }
 }
 
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+
 ROTATE_STATUS_CODES = {401, 403, 429, 413}
+
+# A pool of one key is exhausted by a single burst 429, so the pool is swept again.
+ROTATE_MAX_SWEEPS = 3
+ROTATE_BACKOFF_SECONDS = 20
+
+LLM_TIMEOUT_SECONDS = 60
 ABORT_STATUS_CODES = {400, 422, 500, 502, 503, 504}
 
 ROTATE_KEYWORDS = (

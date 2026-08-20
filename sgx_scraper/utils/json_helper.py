@@ -3,6 +3,7 @@ from pathlib import Path
 import pandas as pd
 import logging
 import json
+import re
 
 
 LOGGER = logging.getLogger(__name__)
@@ -43,3 +44,8 @@ def write_to_csv(path: str, payload: list[dict[str]]):
     df.to_csv(path, mode='a', index=False, header=not file_exists)
 
     LOGGER.info(f'Saved payload to {path}')
+
+
+def parse_json_reply(reply: str) -> dict:
+    cleaned = re.sub(r"^```(?:json)?|```$", "", reply.strip(), flags=re.MULTILINE)
+    return json.loads(cleaned.strip())

@@ -198,3 +198,46 @@ def get_100_top_companies():
         company['management'] = cached_company.get('management') or []
 
     return top_companies
+
+
+def upsert_to_db(
+    payload: list[dict[str]],
+    table_name: str,
+    on_conflict: str,
+    exclude_columns: set[str] | None = None,
+) -> bool:
+    if not payload:
+        LOGGER.info('[payload] is empty, skipping upsert to DB')
+        return False
+
+    exclude_columns = exclude_columns or set()
+
+    payload = [
+        {
+            key: value
+            for key, value in record.items()
+            if key not in exclude_columns
+        }
+        for record in payload
+    ]
+
+    try:
+        response = (
+            SUPABASE_CLIENT
+            .table(table_name)
+            .upsert(payload, on_conflict=on_conflict)
+            .execute()
+        )
+
+        if response.data:
+            LOGGER.info(f"[payload] Successfully upserted {len(payload)} records to DB, table: {table_name}")
+            return True
+
+        return False
+
+    except Exception as error:
+        LOGGER.error(
+            f"[upsert_to_db] Failed to upsert data to {table_name}: {error}",
+            exc_info=True,
+        )
+        return False

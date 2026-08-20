@@ -9,12 +9,20 @@ from sgx_scraper.utils.constant import (
     MODEL_CONFIG, 
     ABORT_KEYWORDS, 
     ABORT_STATUS_CODES, 
+    LLM_TIMEOUT_SECONDS,
+    OPENROUTER_BASE_URL,
     ROTATE_400_KEYWORDS, 
+    ROTATE_BACKOFF_SECONDS,
     ROTATE_KEYWORDS, 
+    ROTATE_MAX_SWEEPS,
     ROTATE_STATUS_CODES
 )
 
-import logging 
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeout
+
+import asyncio
+import logging
+import time
 
 
 LOGGER = logging.getLogger(__name__)
@@ -93,6 +101,33 @@ class KeyRotatingChatModel(BaseChatModel):
     def _llm_type(self) -> str:
         return f"key-rotating-{self.model_name_identifier}"
 
+    def handle_error(self, error: Exception, index: int) -> str:
+        action = classify_error(error)
+
+        if action == "rotate":
+            LOGGER.warning(
+                f"Key index {index} failed for '{self.model_name_identifier}' "
+                f"(rotating to next key). Error: {error}"
+            )
+            return action
+
+        LOGGER.error(
+            f"Non-recoverable error for '{self.model_name_identifier}', "
+            f"aborting key rotation. Error: {error}"
+        )
+        return "raise"
+
+    def call_with_deadline(self, llm_client, messages, stop, **kwargs):
+        """The openrouter SDK exposes no timeout, so it is enforced here."""
+        executor = ThreadPoolExecutor(max_workers=1)
+
+        try:
+            future = executor.submit(llm_client._generate, messages, stop=stop, **kwargs)
+            return future.result(timeout=LLM_TIMEOUT_SECONDS)
+
+        finally:
+            executor.shutdown(wait=False)
+
     def _generate(
         self,
         messages: list[BaseMessage],
@@ -101,29 +136,33 @@ class KeyRotatingChatModel(BaseChatModel):
     ) -> ChatResult:
         last_error: Exception | None = None
 
-        for index, llm_client in enumerate(self.llm_pool):
-            try:
-                return llm_client._generate(messages, stop=stop, **kwargs)
-            
-            except Exception as error:
-                action = classify_error(error)
+        for sweep in range(ROTATE_MAX_SWEEPS):
+            if sweep:
+                backoff = ROTATE_BACKOFF_SECONDS * sweep
+                LOGGER.warning(
+                    f"All keys rate-limited for '{self.model_name_identifier}', "
+                    f"retrying the pool in {backoff}s"
+                )
+                time.sleep(backoff)
 
-                if action == "rotate":
+            for index, llm_client in enumerate(self.llm_pool):
+                try:
+                    return self.call_with_deadline(llm_client, messages, stop, **kwargs)
+
+                except FutureTimeout:
                     LOGGER.warning(
-                        f"Key index {index} failed for '{self.model_name_identifier}' "
-                        f"(rotating to next key). Error: {error}"
+                        f"Key index {index} exceeded {LLM_TIMEOUT_SECONDS}s for "
+                        f"'{self.model_name_identifier}', abandoning the call"
                     )
+                    last_error = RuntimeError(
+                        f"no reply within {LLM_TIMEOUT_SECONDS}s"
+                    )
+
+                except Exception as error:
+                    if self.handle_error(error, index) == "raise":
+                        raise
+
                     last_error = error
-                    continue
-
-                if action == "abort":
-                    LOGGER.error(
-                        f"Non-recoverable error for '{self.model_name_identifier}', "
-                        f"aborting key rotation. Error: {error}"
-                    )
-                    raise
-
-                raise
 
         raise RuntimeError(
             f"All {len(self.llm_pool)} API keys exhausted for model "
@@ -138,29 +177,24 @@ class KeyRotatingChatModel(BaseChatModel):
     ) -> ChatResult:
         last_error: Exception | None = None
 
-        for index, llm_client in enumerate(self.llm_pool):
-            try:
-                return await llm_client._agenerate(messages, stop=stop, **kwargs)
-            
-            except Exception as error:
-                action = classify_error(error)
+        for sweep in range(ROTATE_MAX_SWEEPS):
+            if sweep:
+                backoff = ROTATE_BACKOFF_SECONDS * sweep
+                LOGGER.warning(
+                    f"All keys rate-limited for '{self.model_name_identifier}' "
+                    f"(async), retrying the pool in {backoff}s"
+                )
+                await asyncio.sleep(backoff)
 
-                if action == "rotate":
-                    LOGGER.warning(
-                        f"Key index {index} failed for '{self.model_name_identifier}' "
-                        f"(async, rotating to next key). Error: {error}"
-                    )
+            for index, llm_client in enumerate(self.llm_pool):
+                try:
+                    return await llm_client._agenerate(messages, stop=stop, **kwargs)
+
+                except Exception as error:
+                    if self.handle_error(error, index) == "raise":
+                        raise
+
                     last_error = error
-                    continue
-
-                if action == "abort":
-                    LOGGER.error(
-                        f"Non-recoverable error for '{self.model_name_identifier}' "
-                        f"(async), aborting key rotation. Error: {error}"
-                    )
-                    raise
-
-                raise
 
         raise RuntimeError(
             f"All {len(self.llm_pool)} API keys exhausted for model "
@@ -192,6 +226,9 @@ def get_llm(
         for key in provider_keys.get(provider, []) 
         if key
     ]
+
+    # the native openrouter provider ignores timeout and never returns on a stall
+    is_openrouter = provider == 'openrouter'
     
     if not api_keys:
         LOGGER.error(f"No valid API keys found for provider: '{provider}'")
@@ -203,11 +240,13 @@ def get_llm(
         try:
             initiate_model = init_chat_model(
                 config_model.get('model'),
-                model_provider=provider,
+                model_provider='openai' if is_openrouter else provider,
                 temperature=temperature,
                 max_retries=max_retries,
                 api_key=api_key,
-                max_tokens=10000 
+                max_tokens=10000,
+                timeout=LLM_TIMEOUT_SECONDS,
+                **({'base_url': OPENROUTER_BASE_URL} if is_openrouter else {}),
             ) 
 
             llm_pool.append(initiate_model)
