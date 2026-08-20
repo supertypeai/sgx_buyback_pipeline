@@ -44,6 +44,21 @@ def load_seen_refs() -> set[str]:
     return set(open_json(AGM_PATH_SEEN) or [])
 
 
+def deduplicate(payload: list[dict]) -> list[dict]:
+    """The feed repeats a filing, and postgres rejects a batch that conflicts
+    with itself, so the richer row wins."""
+    best = {}
+
+    for record in payload:
+        key = (record["symbol"], record["agm_date"], record["meeting_type"])
+        current = best.get(key)
+
+        if current is None or (record["summary"] and not current["summary"]):
+            best[key] = record
+
+    return list(best.values())
+
+
 def resolve_symbol(announcement: dict) -> str | None:
     issuers = announcement.get("issuers") or []
     return issuers[0].get("stock_code") if issuers else None
@@ -145,7 +160,8 @@ def run_agm_scraper(
 
             sias_entry = find_sias_entry(
                 index=sias_index,
-                        security_name=announcement.get("security_name"),
+                issuer_name=announcement.get("issuer_name"),
+                security_name=announcement.get("security_name"),
                 meeting_date=agm_date,
                 meeting_type=meeting_type,
             )
@@ -173,6 +189,8 @@ def run_agm_scraper(
 
         if limit and processed >= limit:
             break
+
+    payload = deduplicate(payload)
 
     LOGGER.info(f"[AGM] Scraping completed. Total records: {len(payload)}")
 

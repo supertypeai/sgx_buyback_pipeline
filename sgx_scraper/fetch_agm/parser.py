@@ -4,7 +4,7 @@ from sgx_scraper.fetch_agm.constant import (
     DETAIL_SECTIONS,
     MAX_DOCUMENT_CHARS,
     MEETING_TAGS,
-    RESULTS_ATTACHMENT_PATTERN,
+    OUTCOME_ATTACHMENT_PATTERNS,
 )
 from sgx_scraper.fetch_agm.llm.prompts import AgmPrompt
 from sgx_scraper.fetch_sgx_filings.llm.client import get_llm
@@ -45,9 +45,12 @@ def extract_detail_fields(detail_url: str) -> dict:
 
 def resolve_results_document(detail_url: str) -> str | None:
     """Nothing is returned while a meeting is still at notice stage."""
-    for name, link in resolve_attachments(detail_url):
-        if re.search(RESULTS_ATTACHMENT_PATTERN, name, re.I):
-            return link
+    attachments = resolve_attachments(detail_url)
+
+    for pattern in OUTCOME_ATTACHMENT_PATTERNS:
+        for name, link in attachments:
+            if re.search(pattern, name, re.I):
+                return link
 
     return None
 

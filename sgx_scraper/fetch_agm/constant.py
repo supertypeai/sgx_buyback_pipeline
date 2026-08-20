@@ -28,9 +28,12 @@ MEETING_TAGS = (
     "acquisitions and disposals",
 )
 
-# A meeting thread carries the notice, then the results, then sometimes the
-# minutes. Only the results document states what was actually decided.
-RESULTS_ATTACHMENT_PATTERN = r"result|outcome|poll"
+# What was decided is stated in the results document, and failing that in the
+# minutes, which some companies file instead.
+OUTCOME_ATTACHMENT_PATTERNS = (
+    r"result|outcome|poll|resolution.{0,5}pass|pass.{0,5}resolution",
+    r"minute",
+)
 
 ELECTRONIC_VENUE_PATTERN = r"electronic|virtual|online|webcast|zoom"
 PHYSICAL_VENUE_PATTERN = r"singapore|road|street|level|floor|avenue|ballroom|hotel|#\d"
