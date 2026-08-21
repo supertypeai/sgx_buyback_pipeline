@@ -56,39 +56,6 @@ def push_to_db(
         raise
 
 
-def upsert_to_db(sgx_payload: list[dict], table_name: str) -> bool:
-    if not sgx_payload:
-        LOGGER.info('[sgx_payload] is empty, skipping push to DB')
-        return False
-
-    try:
-        response = (
-            SUPABASE_CLIENT
-            .table(table_name)
-            .upsert(sgx_payload)
-            .execute()
-        )
-
-        if response.data:
-            LOGGER.info(
-                '[sgx_payload] successfully upserted %d records to DB, table: %s',
-                len(sgx_payload),
-                table_name
-            )
-            return True
-
-        return False
-
-    except Exception as error:
-        LOGGER.error(
-            '[upsert_to_db] failed to upsert to %s: %s', 
-            table_name, 
-            error,
-            exc_info=True
-        )
-        raise
-
-
 def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
     sgx_today_datas = open_json(path_today)
     sgx_yesterday_datas = open_json(path_yesterday) 
@@ -203,7 +170,7 @@ def get_100_top_companies():
 def upsert_to_db(
     payload: list[dict[str]],
     table_name: str,
-    on_conflict: str,
+    on_conflict: str | None = None,
     exclude_columns: set[str] | None = None,
 ) -> bool:
     if not payload:
@@ -225,7 +192,7 @@ def upsert_to_db(
         response = (
             SUPABASE_CLIENT
             .table(table_name)
-            .upsert(payload, on_conflict=on_conflict)
+            .upsert(payload, **({'on_conflict': on_conflict} if on_conflict else {}))
             .execute()
         )
 
@@ -240,4 +207,4 @@ def upsert_to_db(
             f"[upsert_to_db] Failed to upsert data to {table_name}: {error}",
             exc_info=True,
         )
-        return False
+        raise

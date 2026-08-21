@@ -123,7 +123,7 @@ def run_sgx_buyback_scraper(
         deduped_payload = dedup_payload(payload_upcoming_dividend)
 
         upsert_to_db(
-            sgx_payload=deduped_payload,
+            payload=deduped_payload,
             table_name="sgx_upcoming_dividend"
         )
 

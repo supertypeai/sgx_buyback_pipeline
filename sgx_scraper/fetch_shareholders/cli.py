@@ -35,7 +35,7 @@ def run_tracking_shareholders(
 
     if is_push_db:
         upsert_to_db(
-            sgx_payload=payload_updated,
+            payload=payload_updated,
             table_name='sgx_companies'
         )
 
@@ -72,7 +72,7 @@ def run_sync_screener_shareholders(
 
     if is_push_db:
         upsert_to_db(
-            sgx_payload=payload_updated,
+            payload=payload_updated,
             table_name='sgx_companies'
         )
 
