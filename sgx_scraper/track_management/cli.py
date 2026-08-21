@@ -61,7 +61,7 @@ def run_tracking_management(
     logger.info(f'payload management to upsert: {payload_management}')
 
     if is_push_db:
-        upsert_to_db(sgx_payload=payload_management, table_name='sgx_companies')
+        upsert_to_db(payload=payload_management, table_name='sgx_companies')
 
 
 if __name__ == '__main__':
