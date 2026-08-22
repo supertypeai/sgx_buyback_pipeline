@@ -1,6 +1,6 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/U5643MA4P4YLZG80/901811__UIP%20Hldgs%20-%20eFORM3V2%202008%202026.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/UIVQYNFLD9UPQFT4/901919__UIP%20Hldgs%20-%20eFORM3V2%202108%202026.pdf",
     "symbol": "U10",
     "company_name": "UOB-Kay Hian Holdings Ltd",
     "sector": "financial-services",
@@ -8,25 +8,25 @@
     "holder_name": "U.I.P. Holdings Limited",
     "holder_type": "institution",
     "source_is_manual": false,
-    "timestamp": "2026-08-19",
-    "amount_transaction": 25000,
-    "transaction_value": 108750,
-    "price_per_share": 4.35,
+    "timestamp": "2026-08-20",
+    "amount_transaction": 125000,
+    "transaction_value": 526828,
+    "price_per_share": 4.21463,
     "transaction_type": "sell",
     "tags": [
       "divestment"
     ],
     "circumstances_desc": "",
-    "holding_before": 187821346,
-    "direct_before": 187821346,
+    "holding_before": 187796346,
+    "direct_before": 187796346,
     "share_percentage_before": 0.1908,
     "direct_percentage_before": 0.1908,
-    "holding_after": 187796346,
-    "direct_after": 187796346,
-    "share_percentage_after": 0.1908,
-    "direct_percentage_after": 0.1908,
-    "share_percentage_transaction": 0.0,
+    "holding_after": 187671346,
+    "direct_after": 187671346,
+    "share_percentage_after": 0.1907,
+    "direct_percentage_after": 0.1907,
+    "share_percentage_transaction": 0.0001,
     "title": "U.I.P. Holdings Limited sells shares of UOB-Kay Hian Holdings Ltd",
-    "body": "U.I.P. Holdings Limited sold 25,000 shares of UOB-Kay Hian Holdings Ltd. This decreases their holdings from 187,821,346 to 187,796,346 shares."
+    "body": "U.I.P. Holdings Limited sold 125,000 shares of UOB-Kay Hian Holdings Ltd. This decreases their holdings from 187,796,346 to 187,671,346 shares."
   }
 ]
