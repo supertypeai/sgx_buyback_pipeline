@@ -5,6 +5,7 @@ from pathlib import Path
 
 from sgx_scraper.fetch_sgx_filings.llm.client import get_llm 
 from sgx_scraper.fetch_sgx_filings.llm.prompts import PromptCollections, TitleBodyGeneration
+from sgx_scraper.utils.symbol_matching_helper import lookup_company_by_symbol
 
 import logging
 import time
@@ -112,9 +113,10 @@ def clean_news_payload(
         companies = json.load(file)
 
     symbol = record.get('symbol', '')
-    
-    sector = companies.get(symbol).get('sector')
-    sub_sector = companies.get(symbol).get('sub_sector')
+
+    company = lookup_company_by_symbol(companies, symbol) or {}
+    sector = company.get('sector')
+    sub_sector = company.get('sub_sector')
 
     return {
         'title': title,

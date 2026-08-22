@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from sgx_scraper.utils.sgx_announcement_html import extract_section_data
 from sgx_scraper.utils.date_helper import safe_convert_datetime
 from sgx_scraper.utils.json_helper import open_json
+from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix, lookup_company_by_symbol
 from sgx_scraper.utils.http_client import HTTPCLIENT
 from sgx_scraper.fetch_upcoming_dividend.utils.fx_rates_client import fetch_compact_rates
 
@@ -100,7 +101,7 @@ def check_companies(record: dict[str, any]) -> dict[str, any] | None:
     companies_db = open_json("data/sgx_companies.json")
     symbol = record.get('symbol')
 
-    if symbol not in companies_db:
+    if not lookup_company_by_symbol(companies_db, symbol):
         LOGGER.info(
             'Skipping symbol: %s not in sgx_companies json', 
             symbol
@@ -118,7 +119,7 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         dividend_section = extract_section_data(soup, "Dividend Details")
 
         security = issuer_section.get("Security")
-        symbol = security.rsplit(" - ", 2)[-1]
+        symbol = add_sgx_suffix(security.rsplit(" - ", 2)[-1])
 
         return {
             "symbol": symbol,

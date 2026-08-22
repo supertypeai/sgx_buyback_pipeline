@@ -1,5 +1,7 @@
 from email.mime.application import MIMEApplication
 
+from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix
+
 import html 
 import yfinance as yf 
 import pandas as pd 
@@ -29,7 +31,7 @@ def attach_files(file_path: str, msg):
 
 def get_price(symbol: str, date_str: str) -> float:
     try:
-        ticker_symbol = f'{symbol}.SI'
+        ticker_symbol = add_sgx_suffix(symbol)
         ticker = yf.Ticker(ticker_symbol)
 
         data = ticker.history(start=date_str, end=pd.to_datetime(date_str) + pd.Timedelta(days=3))

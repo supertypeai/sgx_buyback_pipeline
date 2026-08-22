@@ -241,6 +241,53 @@ def extract_symbol(issuer_security: str) -> str | None:
     return None
 
 
+SGX_SYMBOL_SUFFIX = ".SI"
+
+
+def add_sgx_suffix(symbol: str | None) -> str | None:
+    """Return the symbol with the SGX yahoo-style suffix (e.g. 'D05' -> 'D05.SI')"""
+    if not symbol:
+        return symbol
+
+    symbol = symbol.strip()
+
+    if symbol.upper().endswith(SGX_SYMBOL_SUFFIX):
+        return f"{symbol[: -len(SGX_SYMBOL_SUFFIX)]}{SGX_SYMBOL_SUFFIX}"
+
+    return f"{symbol}{SGX_SYMBOL_SUFFIX}"
+
+
+def strip_sgx_suffix(symbol: str | None) -> str | None:
+    """Return the bare symbol without the SGX suffix (e.g. 'D05.SI' -> 'D05')"""
+    if not symbol:
+        return symbol
+
+    symbol = symbol.strip()
+
+    if symbol.upper().endswith(SGX_SYMBOL_SUFFIX):
+        return symbol[: -len(SGX_SYMBOL_SUFFIX)]
+
+    return symbol
+
+
+def lookup_company_by_symbol(company_lookup: dict, symbol: str | None) -> dict | None:
+    """Look a company up in a symbol-keyed cache regardless of the '.SI' suffix.
+
+    The cached snapshot and the DB have disagreed on the suffix before, so try
+    the symbol as given, then both suffixed and bare forms
+    """
+    if not company_lookup or not symbol:
+        return None
+
+    for candidate in (symbol, add_sgx_suffix(symbol), strip_sgx_suffix(symbol)):
+        data = company_lookup.get(candidate)
+
+        if data:
+            return data
+
+    return None
+
+
 def matching_symbol(issuer_security: str) -> str | None:
     try:
         symbol_matched = symbol_from_company_name(issuer_security)

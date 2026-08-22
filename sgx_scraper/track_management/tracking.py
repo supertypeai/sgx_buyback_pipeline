@@ -2,6 +2,7 @@ from rapidfuzz import fuzz
 
 from sgx_scraper.track_management.appointment import get_appointment 
 from sgx_scraper.track_management.cessation import get_cessation
+from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix
 
 import logging 
 
@@ -48,8 +49,9 @@ def get_management_update(api_response: dict, top_100_companies: list[dict]):
         )
         return None
 
+    # the top-100 CSV holds bare symbols, sgx_companies is keyed on '.SI'
     db_symbols = {
-        record.get('symbol'): record 
+        add_sgx_suffix(record.get('symbol')): record 
         for record in top_100_companies
     }
 

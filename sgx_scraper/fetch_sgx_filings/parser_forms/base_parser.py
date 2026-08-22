@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 from sgx_scraper.utils.http_client import HTTPCLIENT
-from sgx_scraper.utils.symbol_matching_helper import matching_symbol
+from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix, matching_symbol
 from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     populate_extra_data,
     safe_convert_float,
@@ -409,7 +409,7 @@ class BaseFormParser(ABC):
         if not company_name:
             return None
 
-        return matching_symbol(company_name)
+        return add_sgx_suffix(matching_symbol(company_name))
 
     def generate_title_and_body(self, record: dict) -> dict:
         title, body = generate_title_and_body_helper(

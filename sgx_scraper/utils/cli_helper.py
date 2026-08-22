@@ -2,6 +2,10 @@ from pathlib import Path
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.utils.json_helper import open_json
+from sgx_scraper.utils.symbol_matching_helper import (
+    lookup_company_by_symbol,
+    strip_sgx_suffix,
+)
 
 import csv
 import pandas as pd
@@ -116,7 +120,8 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
         not_top_n_payload = []
 
         for payload in clean_payload:
-            symbol = payload.get('symbol')
+            # payload symbols may carry the '.SI' suffix, DB symbols never do
+            symbol = strip_sgx_suffix(payload.get('symbol'))
 
             if symbol in top_n_symbols:
                 top_n_payload.append(payload)
@@ -161,7 +166,7 @@ def get_100_top_companies():
         return top_companies
 
     for company in top_companies:
-        cached_company = companies.get(company.get('symbol'), {})
+        cached_company = lookup_company_by_symbol(companies, company.get('symbol')) or {}
         company['management'] = cached_company.get('management') or []
 
     return top_companies

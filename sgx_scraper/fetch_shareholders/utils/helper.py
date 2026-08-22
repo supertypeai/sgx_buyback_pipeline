@@ -2,6 +2,7 @@ from rapidfuzz import fuzz, process
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.utils.json_helper import open_json
+from sgx_scraper.utils.symbol_matching_helper import lookup_company_by_symbol
 
 import logging 
 import re 
@@ -197,7 +198,7 @@ def enrich(payload: list[dict]) -> list[dict]:
     companies = open_json('data/sgx_companies.json')
 
     for record in payload: 
-        company = companies.get(record.get('symbol')) or {}
+        company = lookup_company_by_symbol(companies, record.get('symbol')) or {}
         investing_symbol = company.get('investing_symbol')
         record['investing_symbol'] = investing_symbol 
 
