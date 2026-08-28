@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S3LXRXVBG8UON4US/902554__RS%20eFORM1V2%2027%20August%202026.pdf",
+    "symbol": "ULG",
+    "company_name": "Ultragreen Ai Ltd",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "holder_name": "Ravinder Sajwan",
+    "holder_type": "insider",
+    "source_is_manual": false,
+    "timestamp": "2026-08-26",
+    "amount_transaction": 371893,
+    "transaction_value": 351807,
+    "price_per_share": 0.7441,
+    "transaction_type": "buy",
+    "tags": [
+      "investment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 684864561,
+    "direct_before": 1791519,
+    "share_percentage_before": 0.6224,
+    "direct_percentage_before": 0.0016,
+    "holding_after": 685236454,
+    "direct_after": 2163412,
+    "share_percentage_after": 0.6228,
+    "direct_percentage_after": 0.002,
+    "share_percentage_transaction": 0.0004,
+    "title": "Ravinder Sajwan buys shares of Ultragreen Ai Ltd",
+    "body": "Ravinder Sajwan bought 371,893 shares of Ultragreen Ai Ltd. This increases their holdings from 684,864,561 to 685,236,454 shares.",
+    "reasons": [
+      "Calculated price (transaction_value/amount_transaction=0.95) does not match reported price_per_share=0.7441",
+      "Inconsistent total value: expected 276725.58 (amount_transaction * price_per_share), but got 351807.00"
+    ]
+  }
+]
