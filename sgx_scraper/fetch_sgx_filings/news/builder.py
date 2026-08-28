@@ -1,67 +1,44 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from pathlib import Path
-
 from sgx_scraper.fetch_sgx_filings.llm.client import get_llm 
+from sgx_scraper.utils.json_helper import open_json
 from sgx_scraper.fetch_sgx_filings.llm.prompts import PromptCollections, TitleBodyGeneration
-from sgx_scraper.utils.symbol_matching_helper import lookup_company_by_symbol
+from .utils.formatter import (
+    format_filing_input, 
+    format_upcoming_dividend_input, 
+    format_takeover_input
+)
 
 import logging
 import time
 import random 
-import json 
-import re 
 
 
 LOGGER = logging.getLogger(__name__)
 
-SLUG_PATTERN = re.compile(r"[^A-Za-z0-9]+")
 
 
-def fmt_int(value) -> str:
-    return f'{value:,}' if value is not None else '-'
-
-
-def fmt_sgd(value) -> str:
-    return f'SGD {value:,}' if value is not None else '-'
-
-
-def to_kebab(value: str | None) -> str:
-    if not value:
-        return "unknown"
-    
-    return SLUG_PATTERN.sub("-", value.strip()).strip("-").lower()
-
-
-def format_filing_for_prompt(filing: dict) -> str:
-    lines = [
-        f"symbol: {filing.get('symbol') or '-'}",
-        f"company name: {filing.get('issuer_name') or '-'}",
-        f"holder name: {filing.get('holder_name') or '-'}",
-        f"holder type: {filing.get('holder_type') or '-'}",
-        f"transaction type: {filing.get('transaction_type') or '-'}",
-        f"shares transacted: {fmt_int(filing.get('amount_transaction'))}",
-        f"transaction value: {fmt_sgd(filing.get('transaction_value'))}",
-        f"price_per_share: {fmt_sgd(filing.get('price_per_share'))}",
-        f"holding before: {fmt_int(filing.get('holding_before'))}",
-        f"holding after: {fmt_int(filing.get('holding_after'))}",
-        f"ownership before: {filing.get('share_percentage_before')}",
-        f"ownership after: {filing.get('share_percentage_after')}",
-        f"timestamp: {filing.get('timestamp') or '-'}",
-        f"tags: {', '.join(filing.get('tags') or []) or '-'}",
-        f"circumstances: {filing.get('circumstances_desc') or '-'}"
-    ]
-    return '\n'.join(lines)
-
-
-def generate_news_title_body(record: dict) -> tuple[str, str] | None:
+def generate_news_title_body(
+    formatted_record: str, 
+    generate_type: str = "filing" 
+) -> tuple[str, str] | None:
     generation_parser = JsonOutputParser(pydantic_object=TitleBodyGeneration)
     format_instructions = generation_parser.get_format_instructions()
 
     prompt_collections = PromptCollections()
-    system_prompt = prompt_collections.get_system_prompt()
-    user_prompt = prompt_collections.get_user_prompt()
+
+    if generate_type == "filing":
+        system_prompt = prompt_collections.get_news_filing_system_prompt()
+        user_prompt = prompt_collections.get_news_filing_user_prompt()
+
+    elif generate_type == "upcoming_dividend": 
+        system_prompt = prompt_collections.get_upcoming_dividend_system_prompt()
+        user_prompt = prompt_collections.get_upcoming_dividend_user_prompt()
+
+    elif generate_type == "takeover":
+        system_prompt = prompt_collections.get_takeover_system_prompt()
+        user_prompt = prompt_collections.get_takeover_user_prompt()
 
     prompt = ChatPromptTemplate.from_messages([
         ("system", system_prompt),
@@ -73,11 +50,9 @@ def generate_news_title_body(record: dict) -> tuple[str, str] | None:
             llm = get_llm(model, temperature=0.4)
             LOGGER.info(f"LLM used for news: {model}")
 
-            formatted_current_filing =  format_filing_for_prompt(record)
-
             input_data = {
-                'current_filing': formatted_current_filing,
-                'format_instructions': format_instructions,
+                "data": formatted_record,
+                "format_instructions": format_instructions,
             }
 
             llm_chain = prompt | llm | generation_parser
@@ -105,18 +80,27 @@ def generate_news_title_body(record: dict) -> tuple[str, str] | None:
 def clean_news_payload(
     record: dict, 
     title: str, 
-    body: str, 
+    body: str,
+    generate_type: str = "filing" 
 ) -> dict:
-    companies_path = Path('data/sgx_companies.json')
-
-    with companies_path.open('r') as file: 
-        companies = json.load(file)
+    companies_path = "data/sgx_companies.json"
+    companies = open_json(companies_path)
 
     symbol = record.get('symbol', '')
 
-    company = lookup_company_by_symbol(companies, symbol) or {}
+    company = companies.get(symbol) or {}
+    
     sector = company.get('sector')
     sub_sector = company.get('sub_sector')
+
+    if generate_type == "filing":
+        tag = ["Insider Trading"] 
+
+    elif generate_type == "upcoming_dividend": 
+        tag = ["Dividend Announcement"]
+
+    elif generate_type == "takeover": 
+        tag = ["Mergers & Acquisitions"]
 
     return {
         'title': title,
@@ -124,8 +108,8 @@ def clean_news_payload(
         'source': record.get('source'),
         'timestamp': record.get('timestamp'),
         'sector': record.get('sector') or sector,
-        'sub_sector': [record.get('sub_sector')] or [sub_sector],
-        'tags': ['Insider Trading'],
+        'sub_sector': [record.get('sub_sector') or sub_sector],
+        'tags': tag,
         'symbols': [symbol],
         'dimension': None,
         'votes': None,
@@ -134,14 +118,30 @@ def clean_news_payload(
     }
 
 
-def generate_news(payload: list[dict]) -> list[dict]:
-    if payload is None:
+def generate_news(
+    payload: list[dict], 
+    generate_type: str = "filing"
+) -> list[dict]:
+    if payload is None or not payload:
         return []
     
     results = []
 
     for record in payload:
-        result = generate_news_title_body(record)
+        if generate_type == "filing":
+            formatted_current_data = format_filing_input(record)
+
+        elif generate_type == "upcoming_dividend": 
+            formatted_current_data = format_upcoming_dividend_input(record)
+
+        elif generate_type == "takeover": 
+            formatted_current_data = format_takeover_input(record)
+
+        result = generate_news_title_body(
+            formatted_record=formatted_current_data,
+            generate_type=generate_type
+        )   
+
         time.sleep(random.randint(2, 5))
 
         if result is None:
@@ -149,9 +149,41 @@ def generate_news(payload: list[dict]) -> list[dict]:
             continue
 
         title, body = result
-        cleaned = clean_news_payload(record, title, body)
+
+        cleaned = clean_news_payload(
+            record, 
+            title, 
+            body,
+            generate_type
+        )
+
         results.append(cleaned)
 
     return results
 
 
+if __name__ == "__main__": 
+    payload = [{
+    "symbol": "5TJ",
+    "reference": "SG260824DVCA4ZDD",
+    "recording_date": "2026-09-01",
+    "ex_date": "2026-08-31",
+    "dividend_amount": 0.0018,
+    "payment_date": "2026-09-08",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": None,
+      "information_conditions": None
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/TNYFSTLQ3PZTUQZ4/92b1fd8514f58f3c54dc8f3cd4e3617c6fd6af337a82115ed1f6c88bfba324e1",
+    "timestamp": "2026-08-24 18:58:36",
+    "updated_on": "2026-08-28 08:54:30"
+  }]
+
+    result = generate_news(
+        payload=payload,
+        generate_type="upcoming_dividend"
+    )
+
+    print(result)

@@ -1,11 +1,7 @@
 from bs4 import BeautifulSoup
 
 from sgx_scraper.utils.json_helper import open_json
-from sgx_scraper.utils.symbol_matching_helper import (
-    add_sgx_suffix,
-    lookup_company_by_symbol,
-    symbol_from_company_name,
-)
+from sgx_scraper.utils.symbol_matching_helper import symbol_from_company_name
 
 import logging
 import re
@@ -44,13 +40,13 @@ def extract_symbol(issuers: list) -> str | None:
     for issuer in issuers:
         stock_code = issuer.get('stock_code')
 
-        if stock_code and lookup_company_by_symbol(sgx_companies, stock_code):
-            return add_sgx_suffix(stock_code)
+        if stock_code and sgx_companies.get(stock_code):
+            return stock_code
 
     for issuer in issuers:
         issuer_name = issuer.get('issuer_name')
 
         if issuer_name:
-            return add_sgx_suffix(symbol_from_company_name(issuer_name))
+            return symbol_from_company_name(issuer_name)
 
     return None

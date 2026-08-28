@@ -1,9 +1,10 @@
 from datetime import date, timedelta
 
 from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
-from sgx_scraper.utils.cli_helper import upsert_to_db
+from sgx_scraper.utils.cli_helper import upsert_to_db, get_db, push_to_db
 from sgx_scraper.utils.constant import UPCOMING_DIVIDEND
 from sgx_scraper.utils.json_helper import write_json
+from sgx_scraper.fetch_sgx_filings.news.builder import generate_news
 from .parser import get_upcoming_dividend
 from .utils.db_helper import dedup_payload, delete_past_dividends
 
@@ -37,7 +38,9 @@ def run_sgx_buyback_scraper(
     # Default the broadcast window to [today - lookback_days, today] so long-lead
     # dividends stay fetchable on the day their ex-date enters the 14-day window
     if period_start is None:
-        period_start = (today - timedelta(days=lookback_days)).strftime("%Y%m%d")
+        period_start = (
+            today - timedelta(days=lookback_days)
+        ).strftime("%Y%m%d")
 
     if period_end is None:
         period_end = today.strftime("%Y%m%d")
@@ -122,9 +125,57 @@ def run_sgx_buyback_scraper(
     if is_push_db:
         deduped_payload = dedup_payload(payload_upcoming_dividend)
 
+        # flow to generate news from new upcoming dividend record 
+        references = [
+            record["reference"]
+            for record in deduped_payload
+        ]
+
+        existing_data = get_db(
+            table="sgx_upcoming_dividend", 
+            columns="*", 
+            query=lambda query: (
+                query.in_("reference", references)
+            )
+        )
+
+        existing_references = {
+            record["reference"]
+            for record in existing_data
+        }
+
+        new_dividends = [
+            record
+            for record in deduped_payload
+            if record["reference"] not in existing_references
+        ]
+
+        logger.info(
+            "check new dividends payload: %s", 
+            new_dividends
+        )
+
+        news_payload = generate_news(
+            payload=new_dividends,
+            generate_type="upcoming_dividend"
+        )
+
+        if news_payload:  
+            push_to_db(
+                payload=news_payload,
+                table_name="sgx_news"
+            )
+        
         upsert_to_db(
             payload=deduped_payload,
-            table_name="sgx_upcoming_dividend"
+            table_name="sgx_upcoming_dividend",
+            exclude_columns={
+                "payment_type",
+                "dividend_type",
+                "event_narrative",
+                "source",
+                "timestamp",
+            },
         )
 
         delete_past_dividends(

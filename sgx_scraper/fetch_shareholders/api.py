@@ -2,11 +2,9 @@ from collections import defaultdict
 
 from .utils.helper import (
     clean_company_name,
-    enrich,
     find_matched_db_shareholder,
 )
 from sgx_scraper.utils.http_client import HTTPCLIENT
-from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix, strip_sgx_suffix
 
 import logging
 import time
@@ -48,8 +46,12 @@ def fetch_api(symbol: str) -> dict | None:
 
     headers = get_randomized_headers(base_headers)
   
-    # the SGX api expects the bare stock code, without the '.SI' suffix
-    api_url = f'https://api.sgx.com/shareholdersreports/v2.0/stockCode/{strip_sgx_suffix(symbol)}?params=investorName,investorType,investorHoldingsDate,pctOfSharesOutstanding,sharesHeld,sharesHeldChange,turnoverRating'
+    api_url = (
+        "https://api.sgx.com/shareholdersreports/v2.0/stockCode/"
+        f"{symbol}"
+        "?params=investorName,investorType,investorHoldingsDate,"
+        "pctOfSharesOutstanding,sharesHeld,sharesHeldChange,turnoverRating"
+    )
 
     try:
         response = HTTPCLIENT.get(url=api_url, headers=headers)
@@ -74,9 +76,6 @@ def clean_api_response(payload: dict | None, symbol: str) -> dict[str, list]:
     
     final_payload = defaultdict(list)
 
-    # key on the suffixed symbol, that is what sgx_companies stores
-    symbol_key = add_sgx_suffix(symbol)
-
     for record in data:
         shareholder_name = record.get('investorName')
         share_amount = record.get('sharesHeld')
@@ -97,7 +96,7 @@ def clean_api_response(payload: dict | None, symbol: str) -> dict[str, list]:
             )
             continue 
 
-        final_payload[symbol_key].append(
+        final_payload[symbol].append(
             {
                 'name': clean_company_name(shareholder_name), 
                 'share_amount': share_amount, 
@@ -182,10 +181,8 @@ def sync_with_db(
             'shareholders': merged_shareholders
         })
 
-    final_result = enrich(result)
-
     LOGGER.info(
-        'Check payload synced: %s', json.dumps(final_result, indent=2)
+        'Check payload synced: %s', json.dumps(result, indent=2)
     )
     
-    return final_result 
+    return result 

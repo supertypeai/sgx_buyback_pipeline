@@ -1,18 +1,36 @@
-from pathlib import Path
-
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.utils.json_helper import open_json
-from sgx_scraper.utils.symbol_matching_helper import (
-    lookup_company_by_symbol,
+from sgx_scraper.utils.sgx_symbol_helper import (
+    add_sgx_suffix,
     strip_sgx_suffix,
 )
 
-import csv
-import pandas as pd
 import logging
 
 
 LOGGER = logging.getLogger(__name__)
+
+
+def prepare_payload_for_db(payload: list[dict]) -> list[dict]:
+    prepared_payload = []
+
+    for record in payload:
+        prepared_record = record.copy()
+
+        if prepared_record.get("symbol"):
+            prepared_record["symbol"] = add_sgx_suffix(
+                prepared_record["symbol"]
+            )
+
+        if prepared_record.get("symbols"):
+            prepared_record["symbols"] = [
+                add_sgx_suffix(symbol)
+                for symbol in prepared_record["symbols"]
+            ]
+
+        prepared_payload.append(prepared_record)
+
+    return prepared_payload
 
 
 def push_to_db(
@@ -37,6 +55,7 @@ def push_to_db(
             }
             for record in payload
         ]
+        payload = prepare_payload_for_db(payload)
 
         response = (
             SUPABASE_CLIENT
@@ -85,34 +104,23 @@ def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
 
 def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> tuple:
     try:
-        response = (
-            SUPABASE_CLIENT
-            .table('sgx_company_report')
-            .select('symbol, name, market_cap')
-            .not_.is_('market_cap', 'null')
-            .order('market_cap', desc=True)
-            .limit(top_n)
-            .execute()
+        top_companies = get_db(
+            table='sgx_company_report',
+            columns='symbol, name, market_cap',
+            query=lambda query: (
+                query
+                .not_.is_('market_cap', 'null')
+                .order('market_cap', desc=True)
+                .limit(top_n)
+            ),
         )
 
-        if not response.data:
+        if not top_companies:
             LOGGER.warning('Data sgx_companies not found')
             return [], clean_payload
 
-        top_companies = response.data
-
-        csv_path = Path(f"data/sgx_top_{top_n}_mcap_companies.csv")
-        csv_path.parent.mkdir(parents=True, exist_ok=True)
-
-        with csv_path.open('w', newline='', encoding='utf-8') as file:
-            writer = csv.DictWriter(
-                file, fieldnames=['symbol', 'name', 'market_cap']
-            )
-            writer.writeheader()
-            writer.writerows(top_companies)
-
         top_n_symbols = {
-            company['symbol'] 
+            company['symbol']
             for company in top_companies
         }
 
@@ -120,8 +128,7 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
         not_top_n_payload = []
 
         for payload in clean_payload:
-            # payload symbols may carry the '.SI' suffix, DB symbols never do
-            symbol = strip_sgx_suffix(payload.get('symbol'))
+            symbol = payload.get('symbol')
 
             if symbol in top_n_symbols:
                 top_n_payload.append(payload)
@@ -139,37 +146,6 @@ def filter_top_n_companies(clean_payload: list[dict[str]], top_n: int = 70) -> t
     except Exception as error:
         LOGGER.error("[filter_top_n_companies] Error: %s", error, exc_info=True)
         return [], []
-
-
-def get_top_companies(csv_path: str | Path) -> list[dict]:
-    csv_path = Path(csv_path)
-    
-    if not csv_path.exists():
-        LOGGER.warning("CSV not found: %s", csv_path)
-        return []
-
-    df_top_n = pd.read_csv(csv_path)
-    return df_top_n.to_dict(orient="records")
-
-
-def get_100_top_companies():
-    top_companies = get_top_companies(
-        "data/sgx_top_100_mcap_companies.csv"
-    )
-
-    # The top-100 CSV intentionally contains only ranking data.  Management
-    # tracking needs the existing management list, so need to open from local list
-    companies = open_json('data/sgx_companies.json')
-    
-    if not isinstance(companies, dict):
-        LOGGER.warning('Company snapshot is unavailable; management updates will start empty')
-        return top_companies
-
-    for company in top_companies:
-        cached_company = lookup_company_by_symbol(companies, company.get('symbol')) or {}
-        company['management'] = cached_company.get('management') or []
-
-    return top_companies
 
 
 def upsert_to_db(
@@ -193,6 +169,8 @@ def upsert_to_db(
         for record in payload
     ]
 
+    payload = prepare_payload_for_db(payload)
+
     try:
         response = (
             SUPABASE_CLIENT
@@ -213,3 +191,24 @@ def upsert_to_db(
             exc_info=True,
         )
         raise
+
+
+def get_db(table: str, columns: str = "*", query=None):
+    db_query = (
+        SUPABASE_CLIENT
+        .table(table)
+        .select(columns)
+    )
+
+    if query:
+        db_query = query(db_query)
+
+    response = db_query.execute()
+
+    records = response.data
+
+    for record in records:
+        if record.get("symbol"):
+            record["symbol"] = strip_sgx_suffix(record["symbol"])
+
+    return records

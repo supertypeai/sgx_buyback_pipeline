@@ -4,7 +4,6 @@ from datetime import datetime, timezone
 from sgx_scraper.utils.sgx_announcement_html import extract_section_data
 from sgx_scraper.utils.date_helper import safe_convert_datetime
 from sgx_scraper.utils.json_helper import open_json
-from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix, lookup_company_by_symbol
 from sgx_scraper.utils.http_client import HTTPCLIENT
 from sgx_scraper.fetch_upcoming_dividend.utils.fx_rates_client import fetch_compact_rates
 
@@ -101,7 +100,7 @@ def check_companies(record: dict[str, any]) -> dict[str, any] | None:
     companies_db = open_json("data/sgx_companies.json")
     symbol = record.get('symbol')
 
-    if not lookup_company_by_symbol(companies_db, symbol):
+    if not companies_db.get(symbol):
         LOGGER.info(
             'Skipping symbol: %s not in sgx_companies json', 
             symbol
@@ -117,9 +116,15 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         announcement_section = extract_section_data(soup, "Announcement Details")
         event_dates_section = extract_section_data(soup, "Event Dates")
         dividend_section = extract_section_data(soup, "Dividend Details")
+        event_narrative_section = extract_section_data(soup, "Event Narrative") or {}
 
         security = issuer_section.get("Security")
-        symbol = add_sgx_suffix(security.rsplit(" - ", 2)[-1])
+        symbol = security.rsplit(" - ", 2)[-1]
+
+        record_narrative = {
+            "narrative": event_narrative_section.get("Narrative version"),
+            "information_conditions": event_narrative_section.get("Information Conditions"),
+        }
 
         return {
             "symbol": symbol,
@@ -128,10 +133,22 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
             "ex_date": safe_convert_datetime(event_dates_section.get("Ex Date")),
             "dividend_amount": parse_rate(dividend_section.get("Gross Rate (Per Share)")),
             "payment_date": safe_convert_datetime(dividend_section.get("Pay Date")),
+            "payment_type": dividend_section.get("Payment Type"),
+            "dividend_type": announcement_section.get("Dividend/ Distribution Type"),
+            "event_narrative": record_narrative,
+            "source": url,
+            "timestamp": parse_broadcast_datetime(
+                announcement_section.get("Date &Time of Broadcast")
+            ),
         }
 
     except Exception as error:
-        LOGGER.error(f"[fetch_upcoming_dividend] Error parsing dividend fields at {url}: {error}", exc_info=True)
+        LOGGER.error(
+            "[fetch_upcoming_dividend] Error parsing dividend fields at url: %s | error: %s",
+            url,
+            error,
+            exc_info=True,
+        )
         return None
 
 

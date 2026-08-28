@@ -1,7 +1,8 @@
 from datetime import datetime
 from typing import Annotated
 
-from sgx_scraper.utils.cli_helper import get_top_companies, upsert_to_db
+from sgx_scraper.utils.cli_helper import get_db
+from sgx_scraper.utils.cli_helper import upsert_to_db
 from sgx_scraper.utils.json_helper import open_json
 from sgx_scraper.utils.constant import SGX_FILINGS_PATH_TODAY, OUTPUT_DIR_SHAREHOLDERS
 from sgx_scraper.fetch_shareholders.tracking import get_shareholders_update
@@ -44,8 +45,15 @@ def run_tracking_shareholders(
 def run_sync_screener_shareholders(
     is_push_db: Annotated[bool, typer.Option(help='Flag to upsert to db or not')] = True
 ):
-    top_200_companies = get_top_companies(
-        "data/sgx_top_200_mcap_companies.csv"
+    top_200_companies = get_db(
+        table="sgx_company_report",
+        columns="name,symbol,market_cap",
+        query=lambda query: (
+            query
+            .not_.is_('market_cap', 'null')
+            .order('market_cap', desc=True)
+            .limit(200)
+        ),
     )
 
     symbols = [

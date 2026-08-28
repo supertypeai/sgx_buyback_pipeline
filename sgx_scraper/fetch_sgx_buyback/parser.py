@@ -11,11 +11,7 @@ from sgx_scraper.fetch_sgx_buyback.utils.payload_helper import (
     safe_extract_fallback,
     safe_convert_float,
 )
-from sgx_scraper.utils.symbol_matching_helper import (
-    add_sgx_suffix,
-    extract_symbol,
-    matching_symbol,
-)
+from sgx_scraper.utils.symbol_matching_helper import matching_symbol
 from sgx_scraper.utils.date_helper import safe_convert_datetime
 from sgx_scraper.utils.sgx_announcement_html import extract_section_data
 from sgx_scraper.utils.http_client import HTTPCLIENT
@@ -28,6 +24,22 @@ import logging
 LOGGER = logging.getLogger(__name__)
 
 
+def extract_symbol(issuer_security: str) -> str | None:
+    try:
+        parts = issuer_security.split(' - ')
+
+        if len(parts) > 1 and len(parts) <= 3:
+            symbol = parts[-1].strip()
+
+            if symbol:
+                return symbol
+
+    except Exception as error:
+        LOGGER.error(f"[extract symbol] Failed to extract symbol from split: {error}")
+
+    return None
+
+
 def resolve_symbol(issuer_section: dict) -> str | None:
     issuer_security = issuer_section.get("Securities")
     symbol = extract_symbol(issuer_security)
@@ -36,7 +48,7 @@ def resolve_symbol(issuer_section: dict) -> str | None:
         issuer_name = issuer_section.get("Issuer/ Manager")
         symbol = matching_symbol(issuer_name)
 
-    return add_sgx_suffix(symbol)
+    return symbol
 
 
 def get_buyback_type(section_a: dict[str], section_b: dict[str]) -> str | None:
@@ -179,7 +191,11 @@ def get_sgx_buybacks(url: str) -> SGXBuyback:
         
         sgx_buybacks = SGXBuyback(url=url, **data_extracted)
 
-        print(json.dumps(asdict(sgx_buybacks), indent=2))
+        LOGGER.info(
+            "[SGX_BUYBACK] check payload: %s", 
+            sgx_buybacks
+        )
+
         return sgx_buybacks
     
     except requests.RequestException as error:

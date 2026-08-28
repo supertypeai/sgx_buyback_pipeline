@@ -1,6 +1,6 @@
 from email.mime.application import MIMEApplication
 
-from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix
+from sgx_scraper.utils.sgx_symbol_helper import add_sgx_suffix
 
 import html 
 import yfinance as yf 

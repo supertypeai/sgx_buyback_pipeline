@@ -28,7 +28,9 @@ def dedup_payload(payload: list[dict]):
 
 
 def delete_past_dividends(table_name: str, retention_days: int = 14) -> bool:
-    deletion_date = (date.today() - timedelta(days=retention_days)).isoformat()
+    deletion_date = (
+        date.today() - timedelta(days=retention_days)
+    ).isoformat()
 
     try:
         response = (

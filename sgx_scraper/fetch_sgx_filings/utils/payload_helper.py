@@ -6,7 +6,6 @@ from sgx_scraper.fetch_sgx_filings.utils.constants import (
     OTHER_CIRCUMSTANCES_RULES, TRANSACTION_KEYWORDS
 )
 from sgx_scraper.utils.json_helper import open_json
-from sgx_scraper.utils.symbol_matching_helper import lookup_company_by_symbol
 
 import re
 import logging
@@ -401,7 +400,7 @@ def populate_extra_data(
     if not symbol: 
         return None, None, None 
     
-    data = lookup_company_by_symbol(company_lookup, symbol)
+    data = company_lookup.get(symbol)
     
     if not data:
         LOGGER.info('symbol not matched with company lookup')

@@ -21,7 +21,6 @@ from sgx_scraper.fetch_agm.utils.payload_helper import (
 from sgx_scraper.fetch_agm.utils.sias_helper import build_sias_index, build_qa, find_sias_entry
 from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import upsert_to_db
-from sgx_scraper.utils.symbol_matching_helper import add_sgx_suffix
 from sgx_scraper.utils.date_helper import to_iso_date
 from sgx_scraper.utils.json_helper import open_json, write_json
 
@@ -66,7 +65,7 @@ def resolve_symbol(announcement: dict) -> str | None:
     if not issuers:
         return None
 
-    return add_sgx_suffix(issuers[0].get("stock_code"))
+    return issuers[0].get("stock_code")
 
 
 def build_record(

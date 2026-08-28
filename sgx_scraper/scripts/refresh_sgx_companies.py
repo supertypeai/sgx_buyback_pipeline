@@ -1,6 +1,9 @@
 from pathlib import Path
 
 from sgx_scraper.config.settings import SUPABASE_CLIENT
+from sgx_scraper.utils.cli_helper import get_db
+from sgx_scraper.utils.json_helper import write_json
+from sgx_scraper.utils.sgx_symbol_helper import strip_sgx_suffix
 
 import json 
 import re 
@@ -20,22 +23,23 @@ def convert_to_kebab(sub_sector: str):
 
 def get_sgx_companies():
     try:
-        response = (
-            SUPABASE_CLIENT
-            .table('sgx_companies')
-            .select(
-                'name,' 
-                'symbol', 
-                'sector', 
-                'sub_sector', 
-                'shareholders,' 
-                'management'
+        response = get_db(
+            table="sgx_companies",
+            columns=(
+                "name,symbol,sector,"
+                "sub_sector,shareholders,management,former_management"
+            ),
+            query=lambda query: (
+                query
+                .eq('is_suspended', False)
+                .eq('is_active', True)
             )
-            .eq('is_suspended', False)
-            .eq('is_active', True)
-            .execute()
-        )
-        return response.data
+        )   
+
+        for record in response:
+            record["symbol"] = strip_sgx_suffix(record["symbol"])
+
+        return response
 
     except Exception as error:
         print(f"Error fetching SGX companies: {error}")
@@ -56,9 +60,11 @@ def refresh_master_company_data():
 
     sgx_path = Path('data/sgx_companies.json')
 
-    with sgx_path.open('w', encoding='utf-8') as file:
-        json.dump(sgx_lookup, file, ensure_ascii=False, indent=2)
-        
+    write_json(
+        sgx_path, 
+        sgx_lookup
+    )    
+
     print(f"Saved {len(sgx_lookup)} companies to data/sgx_companies.json")
 
 

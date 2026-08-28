@@ -1,8 +1,7 @@
 from rapidfuzz import fuzz, process
 
-from sgx_scraper.config.settings import SUPABASE_CLIENT
+from sgx_scraper.utils.cli_helper import get_db
 from sgx_scraper.utils.json_helper import open_json
-from sgx_scraper.utils.symbol_matching_helper import lookup_company_by_symbol
 
 import logging 
 import re 
@@ -138,17 +137,20 @@ def matched_db_management(
 def get_current_shareholders(is_refresh: bool = False) -> dict[str, dict]:
     try: 
         if is_refresh:
-            response = (
-                SUPABASE_CLIENT 
-                .table('sgx_companies')
-                .select('symbol, shareholders, management')
-                .execute()
-            ) 
+            records = get_db(
+                table='sgx_companies',
+                columns='symbol, shareholders, management',
+            )
 
-            lookup_response = {
-                record.get('symbol'): record  
-                for record in response.data
-            }
+            lookup_response = {}
+
+            for record in records:
+                symbol = record.get('symbol')
+
+                if not symbol:
+                    continue
+
+                lookup_response[symbol] = record
 
             return lookup_response
         
@@ -192,14 +194,3 @@ def clean_company_name(company_name: str) -> str:
     company_name = remove_pte_parentheses(company_name)
 
     return company_name
-
-
-def enrich(payload: list[dict]) -> list[dict]:
-    companies = open_json('data/sgx_companies.json')
-
-    for record in payload: 
-        company = lookup_company_by_symbol(companies, record.get('symbol')) or {}
-        investing_symbol = company.get('investing_symbol')
-        record['investing_symbol'] = investing_symbol 
-
-    return payload

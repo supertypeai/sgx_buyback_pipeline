@@ -91,3 +91,5 @@ ABORT_KEYWORDS = (
     "context length", "max token", "internal server",
     "bad gateway", "service unavailable",
 )
+
+SGX_SYMBOL_SUFFIX = ".SI"
