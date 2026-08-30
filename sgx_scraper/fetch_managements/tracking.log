@@ -1,0 +1,468 @@
+2026-08-24 16:11:42,695 [INFO] __main__ - [cessation] matched Shim Phyau Wui Victor -> Shim Phyau Wui, Victor (score: 97.67441860465115) for WJP
+2026-08-24 16:11:42,858 [INFO] __main__ - [cessation] matched June Seah Lee Kiang -> June Seah Lee Kiang (score: 100.0) for WJP
+2026-08-24 16:11:43,109 [INFO] __main__ - [appointment] added Chung Tying Chun as Deputy Chief Executive Officer for WJP
+2026-08-24 16:11:43,276 [WARNING] __main__ - [cessation] no match found for Mary Lee Peck Kim in WJP management
+2026-08-24 16:11:43,420 [INFO] __main__ - [cessation] matched Ooi Beng Chin -> Ooi Beng Chin (score: 100.0) for WJP
+2026-08-24 16:11:43,531 [INFO] __main__ - [cessation] matched Sim Wing Yew -> Sim Wing Yew (score: 100.0) for WJP
+2026-08-24 16:11:43,708 [INFO] __main__ - [appointment] added Chung Tying Chun as Chief Executive Officer and Non-Independent Executive Director, and a member of the Sustainability Committee and the Technology Committee. for WJP
+2026-08-24 16:11:43,841 [INFO] __main__ - [appointment] added Ng Soon Lee as Acting Chief Executive Officer, Setsco Services Pte Ltd for WJP
+2026-08-24 16:11:43,975 [INFO] __main__ - [appointment] added Tan Yen Yen as Independent Non-Executive Director, Member of the Nominating and Remuneration Committee and the Technology Committee. for WJP
+2026-08-24 16:11:44,144 [INFO] __main__ - [appointment] added Cheok Bok Sim Philip as Chief Financial Officer for WJP
+2026-08-24 16:11:44,282 [WARNING] __main__ - [cessation] no match found for Tan Yen Yen in O39 management
+2026-08-24 16:11:44,397 [WARNING] __main__ - [cessation] no match found for Chua Kim Chiu in O39 management
+2026-08-24 16:11:44,563 [INFO] __main__ - [appointment] added Seow Bee Lian as Independent Non-executive DirectorAudit and Risk Committee Member for J85
+2026-08-24 16:11:44,698 [INFO] __main__ - [cessation] matched Cheah Sui Ling -> Cheah Sui Ling (score: 100.0) for J85
+2026-08-24 16:11:44,813 [INFO] __main__ - [appointment] added Nandakumar Govindan as Group Chief Operating Officer for P34
+2026-08-24 16:11:44,968 [WARNING] __main__ - [cessation] no match found for Tan Chay Kee in P34 management
+2026-08-24 16:11:45,081 [INFO] __main__ - [cessation] matched Poh Boon Hu Raymond -> Poh Boon Hu Raymond (score: 100.0) for BS6
+2026-08-24 16:11:45,229 [INFO] __main__ - [appointment] added Heng Su-Ling Mae as Independent Non-Executive Director, Chairperson of Remuneration Committee, a Member of Audit and Risk Committee and a Member of Nominating Committee for BS6
+2026-08-24 16:11:45,416 [INFO] __main__ - [cessation] matched Yovav Carmi -> Yovav Carmi (score: 100.0) for SET
+2026-08-24 16:11:45,532 [INFO] __main__ - [appointment] added Pierre Gregoire Baudin as Independent Non-Executive Director, Chairman of SC, Member of ARC, and Member of NRC for SET
+2026-08-24 16:11:45,715 [WARNING] __main__ - [cessation] no match found for Christian Bernard Marie Delaire in SET management
+2026-08-24 16:11:45,876 [INFO] __main__ - [cessation] matched Chaly Mah Chee Kheong -> Chaly Mah Chee Kheong (score: 100.0) for 9CI
+2026-08-24 16:11:46,009 [INFO] __main__ - [appointment] added Hsieh Fu Hua as Deputy Chairman, Non-Executive Independent Director, ESC Member, ERCC Member, NC Member for 9CI
+2026-08-24 16:11:46,399 [INFO] __main__ - [appointment] added Leong Hon Foong as Independent Non-Executive Director for 544
+2026-08-24 16:11:46,525 [INFO] __main__ - [cessation] matched Tan Chian Khong -> Tan Chian Khong (score: 100.0) for 544
+2026-08-24 16:11:46,689 [INFO] __main__ - [appointment] added Amitava Guharoy as Lead Independent DirectorChairman of the Audit and Risk CommitteeMember of the Nominating Committee for 544
+2026-08-24 16:11:46,848 [INFO] __main__ - [appointment] added Arthur Lee Han Teik as Alternate Director to Ms Michelle Liem Mei Fung for T24
+2026-08-24 16:11:46,979 [INFO] __main__ - [appointment] added Foo Say Mui as Non-Executive and Independent Director for T24
+2026-08-24 16:11:47,153 [INFO] __main__ - [cessation] matched Cheng Hong Kok -> Cheng Hong Kok (score: 100.0) for T24
+2026-08-24 16:12:23,092 [INFO] __main__ - [cessation] matched Shim Phyau Wui Victor -> Shim Phyau Wui, Victor (score: 97.67441860465115) for WJP
+2026-08-24 16:12:23,198 [INFO] __main__ - [cessation] matched June Seah Lee Kiang -> June Seah Lee Kiang (score: 100.0) for WJP
+2026-08-24 16:12:23,320 [INFO] __main__ - [appointment] added Chung Tying Chun as Deputy Chief Executive Officer for WJP
+2026-08-24 16:12:23,509 [WARNING] __main__ - [cessation] no match found for Mary Lee Peck Kim in WJP management
+2026-08-24 16:12:23,613 [INFO] __main__ - [cessation] matched Ooi Beng Chin -> Ooi Beng Chin (score: 100.0) for WJP
+2026-08-24 16:12:23,771 [INFO] __main__ - [cessation] matched Sim Wing Yew -> Sim Wing Yew (score: 100.0) for WJP
+2026-08-24 16:12:23,873 [INFO] __main__ - [appointment] added Chung Tying Chun as Chief Executive Officer and Non-Independent Executive Director, and a member of the Sustainability Committee and the Technology Committee. for WJP
+2026-08-24 16:12:23,975 [INFO] __main__ - [appointment] added Ng Soon Lee as Acting Chief Executive Officer, Setsco Services Pte Ltd for WJP
+2026-08-24 16:12:24,141 [INFO] __main__ - [appointment] added Tan Yen Yen as Independent Non-Executive Director, Member of the Nominating and Remuneration Committee and the Technology Committee. for WJP
+2026-08-24 16:12:24,259 [INFO] __main__ - [appointment] added Cheok Bok Sim Philip as Chief Financial Officer for WJP
+2026-08-24 16:12:24,456 [WARNING] __main__ - [cessation] no match found for Tan Yen Yen in O39 management
+2026-08-24 16:12:24,587 [WARNING] __main__ - [cessation] no match found for Chua Kim Chiu in O39 management
+2026-08-24 16:12:24,736 [INFO] __main__ - [appointment] added Seow Bee Lian as Independent Non-executive DirectorAudit and Risk Committee Member for J85
+2026-08-24 16:12:24,868 [INFO] __main__ - [cessation] matched Cheah Sui Ling -> Cheah Sui Ling (score: 100.0) for J85
+2026-08-24 16:12:24,976 [INFO] __main__ - [appointment] added Nandakumar Govindan as Group Chief Operating Officer for P34
+2026-08-24 16:12:25,099 [WARNING] __main__ - [cessation] no match found for Tan Chay Kee in P34 management
+2026-08-24 16:12:25,210 [INFO] __main__ - [cessation] matched Poh Boon Hu Raymond -> Poh Boon Hu Raymond (score: 100.0) for BS6
+2026-08-24 16:12:25,338 [INFO] __main__ - [appointment] added Heng Su-Ling Mae as Independent Non-Executive Director, Chairperson of Remuneration Committee, a Member of Audit and Risk Committee and a Member of Nominating Committee for BS6
+2026-08-24 16:12:25,439 [INFO] __main__ - [cessation] matched Yovav Carmi -> Yovav Carmi (score: 100.0) for SET
+2026-08-24 16:12:25,604 [INFO] __main__ - [appointment] added Pierre Gregoire Baudin as Independent Non-Executive Director, Chairman of SC, Member of ARC, and Member of NRC for SET
+2026-08-24 16:12:25,721 [WARNING] __main__ - [cessation] no match found for Christian Bernard Marie Delaire in SET management
+2026-08-24 16:12:25,824 [INFO] __main__ - [cessation] matched Chaly Mah Chee Kheong -> Chaly Mah Chee Kheong (score: 100.0) for 9CI
+2026-08-24 16:12:26,059 [INFO] __main__ - [appointment] added Hsieh Fu Hua as Deputy Chairman, Non-Executive Independent Director, ESC Member, ERCC Member, NC Member for 9CI
+2026-08-24 16:12:26,256 [INFO] __main__ - [appointment] added Leong Hon Foong as Independent Non-Executive Director for 544
+2026-08-24 16:12:26,416 [INFO] __main__ - [cessation] matched Tan Chian Khong -> Tan Chian Khong (score: 100.0) for 544
+2026-08-24 16:12:26,529 [INFO] __main__ - [appointment] added Amitava Guharoy as Lead Independent DirectorChairman of the Audit and Risk CommitteeMember of the Nominating Committee for 544
+2026-08-24 16:12:26,670 [INFO] __main__ - [appointment] added Arthur Lee Han Teik as Alternate Director to Ms Michelle Liem Mei Fung for T24
+2026-08-24 16:12:26,902 [INFO] __main__ - [appointment] added Foo Say Mui as Non-Executive and Independent Director for T24
+2026-08-24 16:12:27,027 [INFO] __main__ - [cessation] matched Cheng Hong Kok -> Cheng Hong Kok (score: 100.0) for T24
+2026-08-24 16:12:27,150 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/8A234MQDQBZTTNHM/f0c8e8b867ed3716306c989983e094ebdf266692f99c2efea708b16e34ea56fa
+2026-08-24 16:12:27,314 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/B4CTTULSLXTKAADN/91682d783c263d0911c884d42b3ee8b31b7c102b9e06a669c6d0134216bf65f6
+2026-08-24 16:12:27,488 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/DM4VQJT7YGP39UJO/5762846615ae448db26f2476ee5dba5fff21cd5bd012856bcd6de7d95e0fa147
+2026-08-24 16:12:27,765 [WARNING] __main__ - [management] handler returned None for category: announcement of appointment url: https://links.sgx.com/1.0.0/corporate-announcements/7PITLIN2E1X7FSMC/ea1b21780c5168c5bea16460093c50113fa4fab768636521e3d625764cc6a294
+2026-08-24 16:12:27,893 [WARNING] __main__ - [management] handler returned None for category: announcement of appointment url: https://links.sgx.com/1.0.0/corporate-announcements/599SWH2B8P10J41Q/e44d5227b06d603a7d59b8750c4c4a659e2b3d0bf2f4130a70cdd653bdab0645
+2026-08-24 16:12:28,039 [WARNING] __main__ - [management] handler returned None for category: announcement of appointment url: https://links.sgx.com/1.0.0/corporate-announcements/KW26ZC9KZ7TIHP27/77a432df195d06595c7c08e49d610e0a50e10fcf1202d1761b10394caffdbc99
+2026-08-24 16:12:28,218 [INFO] __main__ - [cessation] matched Takashi Suzuki -> Takashi Suzuki (score: 100.0) for DHLU
+2026-08-24 16:12:28,367 [INFO] __main__ - [cessation] matched Eiichi Shibata -> Eiichi Shibata (score: 100.0) for DHLU
+2026-08-24 16:12:28,593 [INFO] __main__ - [appointment] added Noriko Otsuka as Independent Non-Executive Director and ARC Member for DHLU
+2026-08-24 16:12:28,764 [INFO] __main__ - [appointment] added Hiroaki Murata as Non-Independent Non-Executive Director for DHLU
+2026-08-24 16:12:28,976 [INFO] __main__ - [cessation] matched Yoshiyuki Takagi -> Yoshiyuki Takagi (score: 100.0) for DHLU
+2026-08-24 16:12:29,099 [INFO] __main__ - [appointment] added Hideto Arai as Non-Independent Non-Executive Director and member of the Audit and Risk Committee for DHLU
+2026-08-24 16:12:29,237 [WARNING] __main__ - [cessation] no match found for Lee Keat Leong in AP4 management
+2026-08-24 16:12:29,419 [INFO] __main__ - [appointment] added Jonathan Christian LARSEN as Non-Executive and Independent Director for D05
+2026-08-24 16:12:29,531 [INFO] __main__ - [appointment] added Cheng Song Seng, Anthony as Head of Corporate Social Responsibility (CSR) for E3B
+2026-08-24 16:12:29,708 [INFO] __main__ - [appointment] added Scott Peter William as Chief Executive Officer of Wee Hur (Australia) Pte. Ltd. (Promoted from Deputy Chief Executive Officer) for E3B
+2026-08-24 16:12:29,875 [INFO] __main__ - [cessation] matched Wee Guan Oei Desmond -> Mr Wee Guan Oei Desmond (score: 93.02325581395348) for ADN
+2026-08-24 16:12:30,071 [INFO] __main__ - [cessation] matched Kingston Kwek Eik Huih -> Mr Kingston Kwek Eik Huih (score: 93.61702127659575) for ADN
+2026-08-24 16:12:30,257 [INFO] __main__ - [appointment] added Yeo Seng Chong Simon as Independent Non-Executive Director for V03
+2026-08-24 16:12:30,371 [INFO] __main__ - [appointment] added Faith Su-Yin Wong Ower as Non-Independent Non-Executive Director for V03
+2026-08-24 16:12:30,485 [INFO] __main__ - [cessation] matched Goh Kian Chee -> Goh Kian Chee (score: 100.0) for 5JS
+2026-08-24 16:12:30,670 [INFO] __main__ - [appointment] added Amelia Setiawan as Non-Executive and Independent DirectorMember of the Audit and Risk Management Committee for 5JS
+2026-08-24 16:12:30,842 [INFO] __main__ - [appointment] added Gwee Wei Yong Andy as Chief Financial Officer for K71U
+2026-08-24 16:12:31,071 [WARNING] __main__ - [cessation] no match found for Song Young Sun, Sebastian in K71U management
+2026-08-24 16:12:31,289 [INFO] __main__ - [appointment] added Leong Kok Keong as Independent Director and Member of the Audit and Risk Committee for K71U
+2026-08-24 16:12:31,508 [INFO] __main__ - [cessation] matched Alan Rupert Nisbet -> Alan Rupert Nisbet (score: 100.0) for K71U
+2026-08-24 16:12:31,662 [INFO] __main__ - [appointment] added Leong Kok Keong as Chairman of Audit and Risk Committee for K71U
+2026-08-24 16:12:31,889 [INFO] __main__ - [appointment] added Jeff Tan Geok Hong as Independent Non-Executive Director for H18
+2026-08-24 16:12:32,020 [INFO] __main__ - [cessation] matched Wu Geng -> Wu Geng (score: 100.0) for CRPU
+2026-08-24 16:12:32,169 [INFO] __main__ - [appointment] added GOH CHYAN PIT (WU XIANBI) as Independent Director, member of the Audit and Risk Committee. for CRPU
+2026-08-24 16:12:32,297 [INFO] __main__ - [cessation] matched Lim Ah Doo -> Lim Ah Doo (score: 100.0) for VC2
+2026-08-24 16:12:32,417 [INFO] __main__ - [cessation] matched Sunny George Verghese -> Sunny George Verghese (score: 100.0) for VC2
+2026-08-24 16:12:32,606 [WARNING] __main__ - [cessation] no match found for Neelamani Muthukumar in VC2 management
+2026-08-24 16:12:32,779 [INFO] __main__ - [appointment] added Venkataraman Krishnan as Group Chief Financial Officer for VC2
+2026-08-24 16:12:33,003 [INFO] __main__ - [appointment] added Yoshinori Nagata as Non-Executive DirectorMember, Audit CommitteeMember, Nomination and Remuneration Committee for VC2
+2026-08-24 16:12:33,134 [INFO] __main__ - [cessation] matched Shuji Kobayashi -> Shuji Kobayashi (score: 100.0) for VC2
+2026-08-24 16:12:33,277 [INFO] __main__ - [appointment] added Shekhar Anantharaman as Executive Director for VC2
+2026-08-24 16:12:33,435 [INFO] __main__ - [appointment] added Judith Amanda Sourry Knox as Non-Executive and Independent DirectorMember of Sustainability Committee for VC2
+2026-08-24 16:12:33,597 [WARNING] __main__ - [cessation] no match found for Ho Sing in P40U management
+2026-08-24 16:12:33,718 [INFO] __main__ - [appointment] added Tan Peck Mun Kemmy as Chief Executive Officer and Executive Director for P40U
+2026-08-24 16:12:33,901 [INFO] __main__ - [cessation] matched Tan Woon Hum -> Mr Tan Woon Hum (score: 88.88888888888889) for P40U
+2026-08-24 16:12:34,011 [INFO] __main__ - [appointment] added Ng Sey Ming as Non-Executive and Independent Director, Chairman of the Nominating and Remuneration Committee and Member of the Audit Committee for P40U
+2026-08-24 16:12:34,200 [INFO] __main__ - [appointment] added Chan Leng Sun as Independent Director and Member of the Environmental, Social and Governance Committee for AJBU
+2026-08-24 16:12:34,366 [INFO] __main__ - [appointment] added Chang Tou Chen as Independent Director, and ARCC and NRC member, effective 27 July 2026.Independent Director, ARCC Chairman and NRC member, effective 1 December 2026. for BUOU
+2026-08-24 16:12:34,503 [INFO] __main__ - [cessation] matched Reinfried Helmut Otter -> Reinfried Helmut Otter (score: 100.0) for BUOU
+2026-08-24 16:12:34,619 [INFO] __main__ - [cessation] matched Kyle Lee Khai Fatt -> Kyle Lee Khai Fatt (score: 100.0) for BUOU
+2026-08-24 16:12:34,741 [INFO] __main__ - [cessation] matched Ms Koh Kah Sek -> Ms Koh Kah Sek (score: 100.0) for CJLU
+2026-08-24 16:12:34,842 [WARNING] __main__ - [cessation] no match found for Russell Ng Keh Yang in O5RU management
+2026-08-24 16:12:34,978 [INFO] __main__ - [appointment] added Simon Cheong Sae Peng as Non-Independent and Non-Executive DirectorChairman of Customer Experience,Technology and Sustainability Committee for C6L
+2026-08-24 16:12:35,081 [INFO] __main__ - [appointment] added Dominic Ho Chiu Fai as Non-Independent and Non-Executive DirectorChairman of Board Safety and Risk CommitteeMember of Board Audit Committee for C6L
+2026-08-24 16:12:35,220 [INFO] __main__ - [cessation] matched Gautam Banerjee -> Gautam Banerjee (score: 100.0) for C6L
+2026-08-24 16:12:35,401 [INFO] __main__ - [cessation] matched Lee Kim Shin -> Lee Kim Shin (score: 100.0) for C6L
+2026-08-24 16:12:35,514 [WARNING] __main__ - [cessation] no match found for Lim Keen Ban in C41 management
+2026-08-24 16:12:35,700 [INFO] __main__ - [appointment] added Lim Jit Ming as Executive Chairman and Group Chief Executive Officer for C41
+2026-08-24 16:12:35,866 [INFO] __main__ - [appointment] added Tang Kin Fei as Non-Executive and Non-Independent DirectorChairman, Board of DirectorsChairman, Executive CommitteeMember, Nominating Committee for S59
+2026-08-24 16:12:36,043 [INFO] __main__ - [appointment] added Lim Sim Seng as Deputy ChairmanLead Independent DirectorChairman, Compensation & HR CommitteeChairman, Nominating CommitteeMember, Executive Committee for S59
+2026-08-24 16:12:36,210 [INFO] __main__ - [cessation] matched Leung Yu Hin Eugene -> Leung Yu Hin Eugene (score: 100.0) for Y03
+2026-08-24 16:12:36,323 [WARNING] __main__ - [cessation] no match found for Ong Yuh Hwang in Y03 management
+2026-08-24 16:12:36,451 [INFO] __main__ - [appointment] added Ho Mun Loong, Adrian as Chief Executive Officer for Y03
+2026-08-24 16:12:36,613 [WARNING] __main__ - [cessation] no match found for Phua Siyu, Audrey in O10 management
+2026-08-24 16:12:36,727 [INFO] __main__ - [cessation] matched Luan Zusheng -> Luan Zusheng (score: 100.0) for U9E
+2026-08-24 16:12:36,881 [INFO] __main__ - [appointment] added Xiong Jianping as Executive Director, acting Chairman of the Board, Chief Executive Officer, Chairman of Strategy Committee and Chairman of Sustainability Committee for U9E
+2026-08-24 16:12:37,049 [INFO] __main__ - [appointment] added Ge Dan as Chief Financial Officer for U9E
+2026-08-24 16:12:37,192 [WARNING] __main__ - [cessation] no match found for Koh Mui Ai Wendy in N2IU management
+2026-08-24 16:12:37,332 [INFO] __main__ - [cessation] matched Guy Daniel Harvey-Samuel -> Guy Daniel Harvey-Samuel (score: 100.0) for ME8U
+2026-08-24 16:12:37,472 [INFO] __main__ - [cessation] matched Koh Mui Ai Wendy -> Wendy Koh Mui Ai (score: 100.0) for ME8U
+2026-08-24 16:12:37,621 [INFO] __main__ - [cessation] matched Koh Mui Ai Wendy -> Ms Wendy Koh Mui Ai (score: 91.42857142857143) for M44U
+2026-08-24 16:12:37,770 [INFO] __main__ - [cessation] matched Zhang Xingwang -> Zhang Xingwang (score: 100.0) for BEC
+2026-08-24 16:12:37,872 [INFO] __main__ - [appointment] added Lee Chun Fun as Executive Director for BEC
+2026-08-24 16:12:37,986 [INFO] __main__ - [appointment] added Anthony Peter Lombardo as Group Chief Operating Officer for TQ5
+2026-08-24 16:12:38,121 [WARNING] __main__ - [cessation] no match found for Soon Su Lin in TQ5 management
+2026-08-24 16:12:38,256 [INFO] __main__ - [appointment] added Tan Wee Hsien as Chief Executive Officer, Frasers Property Singapore for TQ5
+2026-08-24 16:12:38,383 [WARNING] __main__ - [cessation] no match found for Reinfried Helmut Otter (Reini Otter) in TQ5 management
+2026-08-24 16:12:38,527 [INFO] __main__ - [cessation] matched Tham Ee Mern Lilian -> Tham Ee Mern Lilian (score: 100.0) for C52
+2026-08-24 16:12:38,672 [INFO] __main__ - [cessation] matched Ooi Beng Chin -> Ooi Beng Chin (score: 100.0) for C52
+2026-08-24 16:12:38,792 [INFO] __main__ - [appointment] added Yap Chee Khean as Group Chief Operating Officer for C52
+2026-08-24 16:12:38,906 [WARNING] __main__ - [cessation] no match found for Dato' Sri Muthanna bin Abdullah in C2PU management
+2026-08-24 16:12:39,015 [INFO] __main__ - [appointment] added Dilip Kadambi as Non-Independent Non-Executive Director for C2PU
+2026-08-24 16:12:39,181 [INFO] __main__ - [appointment] added Tong Wei Min Raymond as i. Independent Non-Executive Directorii. Member of Audit and Risk Committee and Nominating and Remuneration Committee for NTDU
+2026-08-24 16:12:39,368 [INFO] __main__ - [cessation] matched Tan Soo Kiang -> Tan Soo Kiang (score: 100.0) for 5UF
+2026-08-24 16:12:39,520 [WARNING] __main__ - [cessation] no match found for Jonathan Foo Chuan Hui in 5UF management
+2026-08-24 16:12:39,626 [INFO] __main__ - [appointment] added Oh Kwok Fon as Assistant Finance Director for 5UF
+2026-08-24 16:12:39,728 [INFO] __main__ - [appointment] added Pan Pei Say as Non-Executive and Independent Director, Chairman of the Remuneration Committee and Member of the Audit Committee for 5UF
+2026-08-24 16:12:39,830 [WARNING] __main__ - [cessation] no match found for Lai Siok Fung, Dawn in T82U management
+2026-08-24 16:12:39,934 [INFO] __main__ - [appointment] added Chen Huaidan @ Celine Tang as Non-Executive Director and Chairman for T82U
+2026-08-24 16:12:40,039 [INFO] __main__ - [cessation] matched Lim Teck Chai, Danny -> Lim Teck Chai, Danny (score: 100.0) for H07
+2026-08-24 16:12:40,161 [INFO] __main__ - [cessation] matched Abdulla Ali M A Al-Kuwari -> Abdulla Ali M A Al-Kuwari (score: 100.0) for B58
+2026-08-24 16:12:40,305 [WARNING] __main__ - [cessation] no match found for Abdul Rahim bin Mohamed Ali in B58 management
+2026-08-24 16:12:40,453 [INFO] __main__ - [appointment] added Abdulla Ali A A Al-Marri as Non-Independent and Non-Executive Director for B58
+2026-08-24 16:12:40,589 [INFO] __main__ - [appointment] added Abdul Rahim bin Mohamed Ali as Alternate Director to Mr Abdulla Ali A A Al-Marri for B58
+2026-08-24 16:12:40,683 [INFO] __main__ - [cessation] matched Steve Ghanayem -> Steve Ghanayem (score: 100.0) for MZH
+2026-08-24 16:12:40,806 [INFO] __main__ - [appointment] added Tan Swee Ho as Independent and Non-Executive DirectorMember of Audit and Risk Committee for MZH
+2026-08-24 16:12:40,910 [INFO] __main__ - [cessation] matched Lee Lee Khoon -> Ms Lee Lee Khoon (score: 89.65517241379311) for MZH
+2026-08-24 16:12:41,033 [INFO] __main__ - [appointment] added Lam Khin Yong as Non-Independent and Non-Executive DirectorMember of Nominating and Remuneration Committee for MZH
+2026-08-24 16:12:41,140 [INFO] __main__ - [cessation] matched Teoh Lian Ee -> Teoh Lian Ee (score: 100.0) for G07
+2026-08-24 16:12:41,248 [WARNING] __main__ - [cessation] no match found for Daniel Cuthbert Ee Hock Huat in A7RU management
+2026-08-24 16:12:41,377 [INFO] __main__ - [appointment] added Khor Poh Hwa as Non-Executive Chairman and Independent DirectorChairman of Nominating and Remuneration CommitteeMember of Investment Committee for A7RU
+2026-08-24 16:12:41,486 [INFO] __main__ - [appointment] added Ng Kin Sze as Non-Executive and Independent DirectorMember of ARCMember of Environmental, Social and Governance CommitteeMember of Investment Committee for A7RU
+2026-08-24 16:12:41,594 [INFO] __main__ - [appointment] added Margaret Lui as Non-Executive and Independent DirectorMember of Audit and Risk CommitteeMember of Investment Committee for A7RU
+2026-08-24 16:12:41,699 [INFO] __main__ - [cessation] matched Justin Marco Gabbani -> Justin Marco Gabbani (score: 100.0) for JYEU
+2026-08-24 16:12:41,842 [INFO] __main__ - [appointment] added Guy Alexander Cawthra as Executive Director and Chief Executive Officer of Lendlease Global Commercial Trust Management Pte. Ltd. for JYEU
+2026-08-24 16:12:41,960 [INFO] __main__ - [appointment] added Matthew Rhys Williams as Deputy Chief Executive Officer.Chief of Consumer Business Group. for CC3
+2026-08-24 16:12:42,093 [INFO] __main__ - [appointment] added Stephen Geoffrey Miller as Non-Executive DirectorAC MemberNGC MemberOrganisation Development and Compensation Committee MemberSteering Committee Member for CC3
+2026-08-24 16:12:42,217 [INFO] __main__ - [cessation] matched Teo Ek Tor -> Teo Ek Tor (score: 100.0) for CC3
+2026-08-24 16:12:42,324 [INFO] __main__ - [appointment] added Ravinder Singh S/O Harchand Singh as Independent Non-Executive Director and a full Member of RSC for CC3
+2026-08-24 16:12:42,429 [INFO] __main__ - [appointment] added Matthew Rhys Williams as CEO-Designate (with effect from 24 June 2026)Deputy CEO (existing)Chief Consumer Business Group (existing)CEO (with effect from 1 January 2027) for CC3
+2026-08-24 16:12:42,536 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/FTVF5OFBK5WVFQS7/36b99475c217106620fa857987cdc2080ab84dad92f8aa481352a49a0059872e
+2026-08-24 16:12:42,647 [INFO] __main__ - [appointment] added Matthew Rhys Williams as CEO (with effect from 1 January 2027) for CC3
+2026-08-24 16:12:42,752 [INFO] __main__ - [cessation] matched Kan Yut Keong -> Kan Yut Keong (score: 100.0) for OYY
+2026-08-24 16:12:42,900 [INFO] __main__ - [appointment] added Lim Teck Chai, Danny as Independent Non-Executive Director, Chairman of Remuneration Committee, Member of Audit and Nominating Committees for OYY
+2026-08-24 16:12:43,020 [INFO] __main__ - [cessation] matched Ho Chai Seng -> Ho Chai Seng (score: 100.0) for J69U
+2026-08-24 16:12:43,261 [INFO] __main__ - [appointment] added Lam Wai Meng Jeffrey as Dy CEO and a member of Group Executive Committee ("Group EXCO") for S63
+2026-08-24 16:12:43,365 [INFO] __main__ - [appointment] added Wu Jianmin as Alternate Director to VADM Aaron Beng Yao Cheng for S63
+2026-08-24 16:12:43,536 [WARNING] __main__ - [cessation] no match found for Chong Shi Hao in S63 management
+2026-08-24 16:12:43,677 [INFO] __main__ - [appointment] added Ong Pang Liang as - Non-Independent and Non-Executive Director- Chairman of the Audit and Risk Committee- Member of the Nominating and Remuneration Committee for A50
+2026-08-24 16:12:43,818 [INFO] __main__ - [appointment] added Ng Ser Miang as - Non-Independent and Non-Executive Director- Chairman of the Board- Chairman of Nominating and Remuneration Committee for A50
+2026-08-24 16:12:43,962 [INFO] __main__ - [cessation] matched Ng Ser Miang -> Ng Ser Miang (score: 100.0) for A50
+2026-08-24 16:12:44,116 [INFO] __main__ - [appointment] added Tong Kooi Ong as Independent and Non-Executive DirectorChairman of the Board for A50
+2026-08-24 16:12:44,238 [WARNING] __main__ - [cessation] no match found for Lee Suen Ming in A50 management
+2026-08-24 16:12:44,347 [INFO] __main__ - [appointment] added Loh Wei Ning Cassandra as Acting Chief Executive Officer, Thomson Medical Singapore for A50
+2026-08-24 16:12:44,498 [INFO] __main__ - [appointment] added David John Korunic as Non-Independent Non-Executive Director, Member of the Audit Committee for P15
+2026-08-24 16:12:44,632 [INFO] __main__ - [cessation] matched Yap Chee Keong -> Yap Chee Keong (score: 100.0) for U96
+2026-08-24 16:12:44,733 [INFO] __main__ - [cessation] matched Tow Heng Tan -> Tow Heng Tan (score: 100.0) for U96
+2026-08-24 16:12:44,894 [WARNING] __main__ - [cessation] no match found for Liu Deming in QES management
+2026-08-24 16:12:45,097 [INFO] __main__ - [appointment] added Xu Yufu as Executive Director of China Sunsine Chemical Holdings Ltd.General Manager and Director of Shandong Sunsine Chemical Co., Ltd for QES
+2026-08-24 16:12:45,300 [WARNING] __main__ - [cessation] no match found for Tan Joon Hong in F03 management
+2026-08-24 16:12:45,429 [INFO] __main__ - [appointment] added Amrish Rungta as Group Chief Operating Officer for F03
+2026-08-24 16:12:45,567 [INFO] __main__ - [appointment] added Kwek Leng Peck as Non-Independent Non-Executive Director and Vice Chairman and Member of the Nominating and Remuneration Committee for C09
+2026-08-24 16:12:45,676 [INFO] __main__ - [cessation] matched Daniel Marie Ghislain Desbaillets -> Daniel Marie Ghislain Desbaillets (score: 100.0) for C09
+2026-08-24 16:12:45,789 [INFO] __main__ - [cessation] matched Liew Yoke Pheng Joseph -> Mr. Liew Yoke Pheng Joseph (score: 91.66666666666666) for T14
+2026-08-24 16:12:45,989 [INFO] __main__ - [appointment] added Zhai Shuping as Independent and Non-Executive Director for T14
+2026-08-24 16:12:46,183 [INFO] __main__ - [cessation] matched Lyu Jianwei -> Lyu Jianwei (score: 100.0) for 8YZ
+2026-08-24 16:12:46,355 [INFO] __main__ - [appointment] added Gao Yuhua as Independent Non-Executive Director and a member of the Audit and Risk, Nominating and Remuneration Committees for 8YZ
+2026-08-24 16:12:46,573 [WARNING] __main__ - [cessation] no match found for Adam James Goldsmith in P9D management
+2026-08-24 16:12:46,769 [WARNING] __main__ - [cessation] no match found for Mylon Manusiu in P9D management
+2026-08-24 16:12:46,962 [WARNING] __main__ - [cessation] no match found for Kevin James Deery in P9D management
+2026-08-24 16:12:47,064 [WARNING] __main__ - [cessation] no match found for NG FOOK AI VICTOR in ZQM management
+2026-08-24 16:12:47,181 [INFO] __main__ - [appointment] added Tan Poh Hong as 1. Non-Executive Independent Director2. Chairman of Renumeration Committee3. Member of Audit Committee and Nominating Committee for ZQM
+2026-08-24 16:12:47,339 [INFO] __main__ - [cessation] matched Melvin Chan Wai Leong -> Melvin Chan Wai Leong (score: 100.0) for E28
+2026-08-24 16:12:47,541 [INFO] __main__ - [appointment] added Tay Peng Huat as Independent Non-Executive Director, Chairman of NC and Member of Audit Committee. for E28
+2026-08-24 16:12:48,009 [INFO] __main__ - [appointment] added Dame Anne Helen Richards as Non-Executive Independent Director.Member of the Board Risk Committee. for BN4
+2026-08-24 16:12:48,154 [INFO] __main__ - [appointment] added Lim Teck Chai, Danny ("Mr. Lim") as Independent Non-Executive Director, member of the Audit Committee, Remuneration Committee and Risk Management Committee. for I07
+2026-08-24 16:12:48,312 [WARNING] __main__ - [cessation] no match found for Tan Soon Liang in I07 management
+2026-08-24 16:12:48,426 [INFO] __main__ - [appointment] added Tan Siew Bee as Chief Financial Officer - Designate for HMN
+2026-08-24 16:12:48,564 [WARNING] __main__ - [cessation] no match found for Tan Siew Bee in AU8U management
+2026-08-24 16:12:48,679 [INFO] __main__ - [appointment] added Yan Lintong as Chief Financial Officer for AU8U
+2026-08-24 16:12:48,866 [INFO] __main__ - [appointment] added Low Penny as Independent DirectorMember of the Audit and Risk Management CommitteeMember of the Nominating CommitteeChairman of the Remuneration Committee for BWM
+2026-08-24 16:12:49,057 [INFO] __main__ - [appointment] added Ang Swee Tian as Non-Executive and Non-Independent Director for BWM
+2026-08-24 16:12:49,238 [INFO] __main__ - [appointment] added Ni Mingjiang as Non-Executive and Non-Independent Director for BWM
+2026-08-24 16:12:49,498 [INFO] __main__ - [appointment] added Kan Yaw Kiong (Ernest) as Lead Independent DirectorChairman of Audit and Risk Management CommitteeChairman of Nominating CommitteeMember of Remuneration Committee for BWM
+2026-08-24 16:12:49,615 [INFO] __main__ - [appointment] added Hareesh V Nair as Non-Independent Non-Executive Director for QC7
+2026-08-24 16:12:49,767 [INFO] __main__ - [cessation] matched Seow Choke Meng -> Seow Choke Meng (score: 100.0) for H13
+2026-08-24 16:12:49,953 [WARNING] __main__ - [cessation] no match found for Josephine Choo Poh Hua in H13 management
+2026-08-24 16:12:50,115 [INFO] __main__ - [appointment] added Choo Yi Ming as Independent Non-Executive Director, Member of the Nominating Committee, the Remuneration Committee and the Board Sustainability Committee for H13
+2026-08-24 16:12:50,256 [INFO] __main__ - [cessation] matched Goh Kay Yong David -> Goh Kay Yong David (score: 100.0) for S20
+2026-08-24 16:12:50,535 [INFO] __main__ - [appointment] added Dr Gary Hilton Weiss as i. Non-Independent and Non-Executive Directorii. Member of the Remuneration Committee for S20
+2026-08-24 16:12:50,750 [INFO] __main__ - [cessation] matched Wendell Wong Hin Pkin -> Wendell Wong Hin Pkin (score: 100.0) for BDX
+2026-08-24 16:12:50,932 [INFO] __main__ - [cessation] matched Goi Kok Ming (Wei Guoming) -> Goi Kok Ming (Wei Guoming) (score: 100.0) for BDX
+2026-08-24 16:12:51,069 [INFO] __main__ - [appointment] added Goi Kok Ming (Wei Guoming) as Alternate Director to Dr Sam Goi Seng Hui for BDX
+2026-08-24 16:12:51,211 [INFO] __main__ - [cessation] matched Gilbert Ee Guan Hui -> Gilbert Ee Guan Hui (score: 100.0) for BDX
+2026-08-24 16:12:51,376 [WARNING] __main__ - [cessation] no match found for Lim Hong Kian in BDX management
+2026-08-24 16:12:51,516 [INFO] __main__ - [appointment] added Christopher Wong Mun Yick as Non-Executive Independent Director and Member of Audit and Risk Committee for A17U
+2026-08-24 16:12:51,648 [INFO] __main__ - [appointment] added David Alasdair William Matheson as Alternate Director to Mr Shen Jinchu, Non-Executive Director of ESR-REIT Management (S) Limited. for 9A4U
+2026-08-24 16:12:51,825 [INFO] __main__ - [cessation] matched Hee Theng Fong -> Hee Theng Fong (score: 100.0) for Z25
+2026-08-24 16:12:51,948 [INFO] __main__ - [appointment] added Gn Jong Yuh Gwendolyn as Independent Non-Executive Director, RC Chairperson, AC member and RMSC member for Z25
+2026-08-24 16:12:52,145 [WARNING] __main__ - [cessation] no match found for Fawzia Binti Abdullah in MV4 management
+2026-08-24 16:12:52,316 [INFO] __main__ - [appointment] added Muliadi Rahardja as Independent Director, Member of Audit Committee, and Member of Nominating Committee. for MV4
+2026-08-24 16:12:52,524 [WARNING] __main__ - [cessation] no match found for Lee Sok Koon in S61 management
+2026-08-24 16:12:52,677 [INFO] __main__ - [cessation] matched Quek Bin Hwee -> Quek Bin Hwee (score: 100.0) for C38U
+2026-08-24 16:12:52,813 [INFO] __main__ - [appointment] added Yeo Boon Keong as Non-Executive and Non-Independent Director for 1D0
+2026-08-24 16:12:52,990 [INFO] __main__ - [cessation] matched Tan Chuan Lye -> Tan Chuan Lye (score: 100.0) for AW9U
+2026-08-24 16:12:53,151 [INFO] __main__ - [cessation] matched Chew Yow Foo -> Chew Yow Foo (score: 100.0) for BTE
+2026-08-24 16:12:53,313 [INFO] __main__ - [appointment] added Ng Chiou Gee Willy as Group Chief Financial Officer for BTE
+2026-08-24 16:12:53,486 [INFO] __main__ - [cessation] matched Tan Soo Nan -> Tan Soo Nan (score: 100.0) for BSL
+2026-08-24 16:12:53,616 [INFO] __main__ - [cessation] matched Lim Sim Seng -> Lim Sim Seng (score: 100.0) for BSL
+2026-08-24 16:12:53,766 [INFO] __main__ - [appointment] added Dr Lu Liangjian David as Non-Executive and Non-Independent Director for BSL
+2026-08-24 16:12:53,916 [INFO] __main__ - [cessation] matched Jeffrey Hing Yih Peir -> Jeffrey Hing Yih Peir (score: 100.0) for 5LY
+2026-08-24 16:12:54,038 [INFO] __main__ - [appointment] added Soh Shin Yann Susan as Non-executive and Independent Director for S68
+2026-08-24 16:12:54,164 [INFO] __main__ - [cessation] matched Lim Sok Hui (Mrs Chng) -> Ms Lim Sok Hui (Mrs Chng) (score: 93.61702127659575) for S68
+2026-08-24 16:12:54,324 [WARNING] __main__ - [cessation] no match found for Ms Koh Puay Eng Agnes in S68 management
+2026-08-24 16:12:54,515 [INFO] __main__ - [appointment] added Mr Han Kang Teng, Ivan as Chief Risk Officer for S68
+2026-08-24 16:12:54,692 [INFO] __main__ - [cessation] matched Chan Heng Wing -> Mr Chan Heng Wing (score: 90.32258064516128) for F99
+2026-08-24 16:12:54,851 [INFO] __main__ - [cessation] matched Sithichai Chaikriangkrai -> Mr Sithichai Chaikriangkrai (score: 94.11764705882352) for F99
+2026-08-24 16:12:55,009 [WARNING] __main__ - [cessation] no match found for Michael Chye Hin Fah in F99 management
+2026-08-24 16:12:55,126 [INFO] __main__ - [appointment] added Michael Chye Hin Fah as Alternate Director to Mr Prapakon Thongtheppairot; and a Member of each of the Board Exco and SRMC. for F99
+2026-08-24 16:12:55,271 [WARNING] __main__ - [cessation] no match found for Chin Mei Ling in 5UX management
+2026-08-24 16:12:55,481 [INFO] __main__ - [appointment] added Yap Pei Chin as Financial Controller and Company Secretary for 5UX
+2026-08-24 16:12:55,631 [INFO] __main__ - [appointment] added Yeoh Oon Jin as Independent Non-Executive Director, Member of Audit & Risk Committee and Remuneration Committee. for W05
+2026-08-24 16:12:55,635 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_tracked.json
+2026-08-24 16:12:55,635 [INFO] __main__ - saved tracked management records: 177
+2026-08-27 15:13:01,371 [INFO] __main__ - [cessation] matched Shim Phyau Wui Victor -> Shim Phyau Wui, Victor (score: 97.67441860465115) for WJP
+2026-08-27 15:13:01,477 [INFO] __main__ - [cessation] matched June Seah Lee Kiang -> June Seah Lee Kiang (score: 100.0) for WJP
+2026-08-27 15:13:01,647 [INFO] __main__ - [appointment] added Chung Tying Chun as Deputy Chief Executive Officer for WJP
+2026-08-27 15:13:01,944 [WARNING] __main__ - [cessation] no match found for Mary Lee Peck Kim in WJP management
+2026-08-27 15:13:02,079 [INFO] __main__ - [cessation] matched Ooi Beng Chin -> Ooi Beng Chin (score: 100.0) for WJP
+2026-08-27 15:13:02,188 [INFO] __main__ - [cessation] matched Sim Wing Yew -> Sim Wing Yew (score: 100.0) for WJP
+2026-08-27 15:13:02,325 [INFO] __main__ - [appointment] added Chung Tying Chun as Chief Executive Officer and Non-Independent Executive Director, and a member of the Sustainability Committee and the Technology Committee. for WJP
+2026-08-27 15:13:02,442 [INFO] __main__ - [appointment] added Ng Soon Lee as Acting Chief Executive Officer, Setsco Services Pte Ltd for WJP
+2026-08-27 15:13:02,550 [INFO] __main__ - [appointment] added Tan Yen Yen as Independent Non-Executive Director, Member of the Nominating and Remuneration Committee and the Technology Committee. for WJP
+2026-08-27 15:13:02,703 [INFO] __main__ - [appointment] added Cheok Bok Sim Philip as Chief Financial Officer for WJP
+2026-08-27 15:13:02,810 [INFO] __main__ - [cessation] matched Tan Yen Yen -> Tan Yen Yen (score: 100.0) for O39
+2026-08-27 15:13:02,949 [INFO] __main__ - [cessation] matched Chua Kim Chiu -> Chua Kim Chiu (score: 100.0) for O39
+2026-08-27 15:13:03,104 [INFO] __main__ - [appointment] added Seow Bee Lian as Independent Non-executive DirectorAudit and Risk Committee Member for J85
+2026-08-27 15:13:03,266 [INFO] __main__ - [cessation] matched Cheah Sui Ling -> Cheah Sui Ling (score: 100.0) for J85
+2026-08-27 15:13:03,523 [INFO] __main__ - [appointment] added Nandakumar Govindan as Group Chief Operating Officer for P34
+2026-08-27 15:13:03,659 [WARNING] __main__ - [cessation] no match found for Tan Chay Kee in P34 management
+2026-08-27 15:13:03,782 [INFO] __main__ - [cessation] matched Poh Boon Hu Raymond -> Poh Boon Hu Raymond (score: 100.0) for BS6
+2026-08-27 15:13:03,905 [INFO] __main__ - [appointment] added Heng Su-Ling Mae as Independent Non-Executive Director, Chairperson of Remuneration Committee, a Member of Audit and Risk Committee and a Member of Nominating Committee for BS6
+2026-08-27 15:13:04,017 [INFO] __main__ - [cessation] matched Yovav Carmi -> Yovav Carmi (score: 100.0) for SET
+2026-08-27 15:13:04,149 [INFO] __main__ - [appointment] added Pierre Gregoire Baudin as Independent Non-Executive Director, Chairman of SC, Member of ARC, and Member of NRC for SET
+2026-08-27 15:13:04,351 [WARNING] __main__ - [cessation] no match found for Christian Bernard Marie Delaire in SET management
+2026-08-27 15:13:04,493 [INFO] __main__ - [cessation] matched Chaly Mah Chee Kheong -> Chaly Mah Chee Kheong (score: 100.0) for 9CI
+2026-08-27 15:13:04,634 [INFO] __main__ - [appointment] added Hsieh Fu Hua as Deputy Chairman, Non-Executive Independent Director, ESC Member, ERCC Member, NC Member for 9CI
+2026-08-27 15:13:04,775 [INFO] __main__ - [appointment] added Leong Hon Foong as Independent Non-Executive Director for 544
+2026-08-27 15:13:04,931 [INFO] __main__ - [cessation] matched Tan Chian Khong -> Tan Chian Khong (score: 100.0) for 544
+2026-08-27 15:13:05,088 [INFO] __main__ - [appointment] added Amitava Guharoy as Lead Independent DirectorChairman of the Audit and Risk CommitteeMember of the Nominating Committee for 544
+2026-08-27 15:13:05,291 [INFO] __main__ - [appointment] added Arthur Lee Han Teik as Alternate Director to Ms Michelle Liem Mei Fung for T24
+2026-08-27 15:13:05,420 [INFO] __main__ - [appointment] added Foo Say Mui as Non-Executive and Independent Director for T24
+2026-08-27 15:13:05,587 [WARNING] __main__ - [cessation] no match found for Cheng Hong Kok in T24 management
+2026-08-27 15:13:05,768 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/8A234MQDQBZTTNHM/f0c8e8b867ed3716306c989983e094ebdf266692f99c2efea708b16e34ea56fa
+2026-08-27 15:13:05,895 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/B4CTTULSLXTKAADN/91682d783c263d0911c884d42b3ee8b31b7c102b9e06a669c6d0134216bf65f6
+2026-08-27 15:13:06,013 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/DM4VQJT7YGP39UJO/5762846615ae448db26f2476ee5dba5fff21cd5bd012856bcd6de7d95e0fa147
+2026-08-27 15:13:06,209 [WARNING] __main__ - [management] handler returned None for category: announcement of appointment url: https://links.sgx.com/1.0.0/corporate-announcements/7PITLIN2E1X7FSMC/ea1b21780c5168c5bea16460093c50113fa4fab768636521e3d625764cc6a294
+2026-08-27 15:13:06,349 [WARNING] __main__ - [management] handler returned None for category: announcement of appointment url: https://links.sgx.com/1.0.0/corporate-announcements/599SWH2B8P10J41Q/e44d5227b06d603a7d59b8750c4c4a659e2b3d0bf2f4130a70cdd653bdab0645
+2026-08-27 15:13:06,464 [WARNING] __main__ - [management] handler returned None for category: announcement of appointment url: https://links.sgx.com/1.0.0/corporate-announcements/KW26ZC9KZ7TIHP27/77a432df195d06595c7c08e49d610e0a50e10fcf1202d1761b10394caffdbc99
+2026-08-27 15:13:06,599 [INFO] __main__ - [cessation] matched Takashi Suzuki -> Takashi Suzuki (score: 100.0) for DHLU
+2026-08-27 15:13:06,712 [INFO] __main__ - [cessation] matched Eiichi Shibata -> Eiichi Shibata (score: 100.0) for DHLU
+2026-08-27 15:13:06,896 [INFO] __main__ - [appointment] added Noriko Otsuka as Independent Non-Executive Director and ARC Member for DHLU
+2026-08-27 15:13:07,053 [INFO] __main__ - [appointment] added Hiroaki Murata as Non-Independent Non-Executive Director for DHLU
+2026-08-27 15:13:07,170 [INFO] __main__ - [cessation] matched Yoshiyuki Takagi -> Yoshiyuki Takagi (score: 100.0) for DHLU
+2026-08-27 15:13:07,295 [INFO] __main__ - [appointment] added Hideto Arai as Non-Independent Non-Executive Director and member of the Audit and Risk Committee for DHLU
+2026-08-27 15:13:07,443 [WARNING] __main__ - [cessation] no match found for Lee Keat Leong in AP4 management
+2026-08-27 15:13:07,659 [INFO] __main__ - [appointment] added Jonathan Christian LARSEN as Non-Executive and Independent Director for D05
+2026-08-27 15:13:07,792 [INFO] __main__ - [appointment] added Cheng Song Seng, Anthony as Head of Corporate Social Responsibility (CSR) for E3B
+2026-08-27 15:13:07,998 [INFO] __main__ - [appointment] added Scott Peter William as Chief Executive Officer of Wee Hur (Australia) Pte. Ltd. (Promoted from Deputy Chief Executive Officer) for E3B
+2026-08-27 15:13:08,128 [INFO] __main__ - [cessation] matched Wee Guan Oei Desmond -> Wee Guan Oei Desmond (score: 100.0) for ADN
+2026-08-27 15:13:08,270 [INFO] __main__ - [cessation] matched Kingston Kwek Eik Huih -> Kingston Kwek Eik Huih (score: 100.0) for ADN
+2026-08-27 15:13:08,408 [INFO] __main__ - [appointment] added Yeo Seng Chong Simon as Independent Non-Executive Director for V03
+2026-08-27 15:13:08,651 [INFO] __main__ - [appointment] added Faith Su-Yin Wong Ower as Non-Independent Non-Executive Director for V03
+2026-08-27 15:13:08,790 [INFO] __main__ - [cessation] matched Goh Kian Chee -> Goh Kian Chee (score: 100.0) for 5JS
+2026-08-27 15:13:08,950 [INFO] __main__ - [appointment] added Amelia Setiawan as Non-Executive and Independent DirectorMember of the Audit and Risk Management Committee for 5JS
+2026-08-27 15:13:09,106 [INFO] __main__ - [appointment] added Gwee Wei Yong Andy as Chief Financial Officer for K71U
+2026-08-27 15:13:09,230 [WARNING] __main__ - [cessation] no match found for Song Young Sun, Sebastian in K71U management
+2026-08-27 15:13:09,375 [INFO] __main__ - [appointment] added Leong Kok Keong as Independent Director and Member of the Audit and Risk Committee for K71U
+2026-08-27 15:13:09,487 [INFO] __main__ - [cessation] matched Alan Rupert Nisbet -> N E Alan Rupert Nisbet (score: 90.0) for K71U
+2026-08-27 15:13:09,843 [INFO] __main__ - [appointment] added Leong Kok Keong as Chairman of Audit and Risk Committee for K71U
+2026-08-27 15:13:10,979 [INFO] __main__ - [appointment] added Jeff Tan Geok Hong as Independent Non-Executive Director for H18
+2026-08-27 15:13:11,111 [INFO] __main__ - [cessation] matched Wu Geng -> Wu Geng (score: 100.0) for CRPU
+2026-08-27 15:13:11,378 [INFO] __main__ - [appointment] added GOH CHYAN PIT (WU XIANBI) as Independent Director, member of the Audit and Risk Committee. for CRPU
+2026-08-27 15:13:11,537 [INFO] __main__ - [cessation] matched Lim Ah Doo -> Lim Ah Doo (score: 100.0) for VC2
+2026-08-27 15:13:11,700 [INFO] __main__ - [cessation] matched Sunny George Verghese -> Sunny George Verghese (score: 100.0) for VC2
+2026-08-27 15:13:11,872 [WARNING] __main__ - [cessation] no match found for Neelamani Muthukumar in VC2 management
+2026-08-27 15:13:12,073 [INFO] __main__ - [appointment] added Venkataraman Krishnan as Group Chief Financial Officer for VC2
+2026-08-27 15:13:12,282 [INFO] __main__ - [appointment] added Yoshinori Nagata as Non-Executive DirectorMember, Audit CommitteeMember, Nomination and Remuneration Committee for VC2
+2026-08-27 15:13:12,428 [INFO] __main__ - [cessation] matched Shuji Kobayashi -> Shuji Kobayashi (score: 100.0) for VC2
+2026-08-27 15:13:12,632 [INFO] __main__ - [appointment] added Shekhar Anantharaman as Executive Director for VC2
+2026-08-27 15:13:12,816 [INFO] __main__ - [appointment] added Judith Amanda Sourry Knox as Non-Executive and Independent DirectorMember of Sustainability Committee for VC2
+2026-08-27 15:13:12,948 [INFO] __main__ - [cessation] matched Ho Sing -> Ho Sing (score: 100.0) for P40U
+2026-08-27 15:13:13,064 [INFO] __main__ - [appointment] added Tan Peck Mun Kemmy as Chief Executive Officer and Executive Director for P40U
+2026-08-27 15:13:13,187 [INFO] __main__ - [cessation] matched Tan Woon Hum -> Tan Woon Hum (score: 100.0) for P40U
+2026-08-27 15:13:13,355 [INFO] __main__ - [appointment] added Ng Sey Ming as Non-Executive and Independent Director, Chairman of the Nominating and Remuneration Committee and Member of the Audit Committee for P40U
+2026-08-27 15:13:13,484 [INFO] __main__ - [appointment] added Chan Leng Sun as Independent Director and Member of the Environmental, Social and Governance Committee for AJBU
+2026-08-27 15:13:13,649 [INFO] __main__ - [appointment] added Chang Tou Chen as Independent Director, and ARCC and NRC member, effective 27 July 2026.Independent Director, ARCC Chairman and NRC member, effective 1 December 2026. for BUOU
+2026-08-27 15:13:13,779 [WARNING] __main__ - [cessation] no match found for Reinfried Helmut Otter in BUOU management
+2026-08-27 15:13:13,922 [INFO] __main__ - [cessation] matched Kyle Lee Khai Fatt -> Kyle Lee Khai Fatt (score: 100.0) for BUOU
+2026-08-27 15:13:14,063 [INFO] __main__ - [cessation] matched Ms Koh Kah Sek -> Koh Kah Sek (score: 88.0) for CJLU
+2026-08-27 15:13:14,219 [WARNING] __main__ - [cessation] no match found for Russell Ng Keh Yang in O5RU management
+2026-08-27 15:13:14,387 [INFO] __main__ - [appointment] added Simon Cheong Sae Peng as Non-Independent and Non-Executive DirectorChairman of Customer Experience,Technology and Sustainability Committee for C6L
+2026-08-27 15:13:14,537 [INFO] __main__ - [appointment] added Dominic Ho Chiu Fai as Non-Independent and Non-Executive DirectorChairman of Board Safety and Risk CommitteeMember of Board Audit Committee for C6L
+2026-08-27 15:13:14,667 [INFO] __main__ - [cessation] matched Gautam Banerjee -> Gautam Banerjee (score: 100.0) for C6L
+2026-08-27 15:13:14,813 [INFO] __main__ - [cessation] matched Lee Kim Shin -> Lee Kim Shin (score: 100.0) for C6L
+2026-08-27 15:13:14,935 [WARNING] __main__ - [cessation] no match found for Lim Keen Ban in C41 management
+2026-08-27 15:13:15,067 [INFO] __main__ - [appointment] added Lim Jit Ming as Executive Chairman and Group Chief Executive Officer for C41
+2026-08-27 15:13:15,197 [INFO] __main__ - [appointment] added Tang Kin Fei as Non-Executive and Non-Independent DirectorChairman, Board of DirectorsChairman, Executive CommitteeMember, Nominating Committee for S59
+2026-08-27 15:13:15,330 [INFO] __main__ - [appointment] added Lim Sim Seng as Deputy ChairmanLead Independent DirectorChairman, Compensation & HR CommitteeChairman, Nominating CommitteeMember, Executive Committee for S59
+2026-08-27 15:13:15,465 [INFO] __main__ - [cessation] matched Leung Yu Hin Eugene -> Leung Yu Hin Eugene (score: 100.0) for Y03
+2026-08-27 15:13:15,710 [WARNING] __main__ - [cessation] no match found for Ong Yuh Hwang in Y03 management
+2026-08-27 15:13:15,878 [INFO] __main__ - [appointment] added Ho Mun Loong, Adrian as Chief Executive Officer for Y03
+2026-08-27 15:13:16,010 [WARNING] __main__ - [cessation] no match found for Phua Siyu, Audrey in O10 management
+2026-08-27 15:13:16,134 [INFO] __main__ - [cessation] matched Luan Zusheng -> Zusheng Luan (score: 100.0) for U9E
+2026-08-27 15:13:16,292 [INFO] __main__ - [appointment] added Xiong Jianping as Executive Director, acting Chairman of the Board, Chief Executive Officer, Chairman of Strategy Committee and Chairman of Sustainability Committee for U9E
+2026-08-27 15:13:16,428 [INFO] __main__ - [appointment] added Ge Dan as Chief Financial Officer for U9E
+2026-08-27 15:13:16,562 [WARNING] __main__ - [cessation] no match found for Koh Mui Ai Wendy in N2IU management
+2026-08-27 15:13:16,716 [INFO] __main__ - [cessation] matched Guy Daniel Harvey-Samuel -> Guy Daniel Harvey-Samuel (score: 100.0) for ME8U
+2026-08-27 15:13:16,849 [INFO] __main__ - [cessation] matched Koh Mui Ai Wendy -> Wendy Koh Mui Ai (score: 100.0) for ME8U
+2026-08-27 15:13:16,966 [INFO] __main__ - [cessation] matched Koh Mui Ai Wendy -> Wendy Koh Mui Ai (score: 100.0) for M44U
+2026-08-27 15:13:17,188 [INFO] __main__ - [cessation] matched Zhang Xingwang -> Zhang Xingwang (score: 100.0) for BEC
+2026-08-27 15:13:17,318 [INFO] __main__ - [appointment] added Lee Chun Fun as Executive Director for BEC
+2026-08-27 15:13:17,481 [INFO] __main__ - [appointment] added Anthony Peter Lombardo as Group Chief Operating Officer for TQ5
+2026-08-27 15:13:17,652 [WARNING] __main__ - [cessation] no match found for Soon Su Lin in TQ5 management
+2026-08-27 15:13:17,814 [INFO] __main__ - [appointment] added Tan Wee Hsien as Chief Executive Officer, Frasers Property Singapore for TQ5
+2026-08-27 15:13:17,964 [WARNING] __main__ - [cessation] no match found for Reinfried Helmut Otter (Reini Otter) in TQ5 management
+2026-08-27 15:13:18,080 [INFO] __main__ - [cessation] matched Tham Ee Mern Lilian -> Tham Ee Mern Lilian (score: 100.0) for C52
+2026-08-27 15:13:18,267 [INFO] __main__ - [cessation] matched Ooi Beng Chin -> Ooi Beng Chin (score: 100.0) for C52
+2026-08-27 15:13:18,395 [INFO] __main__ - [appointment] added Yap Chee Khean as Group Chief Operating Officer for C52
+2026-08-27 15:13:18,553 [WARNING] __main__ - [cessation] no match found for Dato' Sri Muthanna bin Abdullah in C2PU management
+2026-08-27 15:13:18,709 [INFO] __main__ - [appointment] added Dilip Kadambi as Non-Independent Non-Executive Director for C2PU
+2026-08-27 15:13:18,899 [INFO] __main__ - [appointment] added Tong Wei Min Raymond as i. Independent Non-Executive Directorii. Member of Audit and Risk Committee and Nominating and Remuneration Committee for NTDU
+2026-08-27 15:13:19,025 [INFO] __main__ - [cessation] matched Tan Soo Kiang -> Tan Soo Kiang (score: 100.0) for 5UF
+2026-08-27 15:13:19,154 [WARNING] __main__ - [cessation] no match found for Jonathan Foo Chuan Hui in 5UF management
+2026-08-27 15:13:19,329 [INFO] __main__ - [appointment] added Oh Kwok Fon as Assistant Finance Director for 5UF
+2026-08-27 15:13:19,467 [INFO] __main__ - [appointment] added Pan Pei Say as Non-Executive and Independent Director, Chairman of the Remuneration Committee and Member of the Audit Committee for 5UF
+2026-08-27 15:13:19,609 [WARNING] __main__ - [cessation] no match found for Lai Siok Fung, Dawn in T82U management
+2026-08-27 15:13:19,761 [INFO] __main__ - [appointment] added Chen Huaidan @ Celine Tang as Non-Executive Director and Chairman for T82U
+2026-08-27 15:13:19,941 [WARNING] __main__ - [cessation] no match found for Lim Teck Chai, Danny in H07 management
+2026-08-27 15:13:20,106 [INFO] __main__ - [cessation] matched Abdulla Ali M A Al-Kuwari -> Abdulla Ali M A Al-Kuwari (score: 100.0) for B58
+2026-08-27 15:13:20,269 [WARNING] __main__ - [cessation] no match found for Abdul Rahim bin Mohamed Ali in B58 management
+2026-08-27 15:13:20,382 [INFO] __main__ - [appointment] added Abdulla Ali A A Al-Marri as Non-Independent and Non-Executive Director for B58
+2026-08-27 15:13:20,511 [INFO] __main__ - [appointment] added Abdul Rahim bin Mohamed Ali as Alternate Director to Mr Abdulla Ali A A Al-Marri for B58
+2026-08-27 15:13:20,628 [INFO] __main__ - [cessation] matched Steve Ghanayem -> Steve Ghanayem (score: 100.0) for MZH
+2026-08-27 15:13:20,791 [INFO] __main__ - [appointment] added Tan Swee Ho as Independent and Non-Executive DirectorMember of Audit and Risk Committee for MZH
+2026-08-27 15:13:20,934 [INFO] __main__ - [cessation] matched Lee Lee Khoon -> Lee Lee Khoon (score: 100.0) for MZH
+2026-08-27 15:13:21,087 [INFO] __main__ - [appointment] added Lam Khin Yong as Non-Independent and Non-Executive DirectorMember of Nominating and Remuneration Committee for MZH
+2026-08-27 15:13:21,225 [INFO] __main__ - [cessation] matched Teoh Lian Ee -> Teoh Lian Ee (score: 100.0) for G07
+2026-08-27 15:13:21,345 [WARNING] __main__ - [cessation] no match found for Daniel Cuthbert Ee Hock Huat in A7RU management
+2026-08-27 15:13:21,476 [INFO] __main__ - [appointment] added Khor Poh Hwa as Non-Executive Chairman and Independent DirectorChairman of Nominating and Remuneration CommitteeMember of Investment Committee for A7RU
+2026-08-27 15:13:21,679 [INFO] __main__ - [appointment] added Ng Kin Sze as Non-Executive and Independent DirectorMember of ARCMember of Environmental, Social and Governance CommitteeMember of Investment Committee for A7RU
+2026-08-27 15:13:21,868 [INFO] __main__ - [appointment] added Margaret Lui as Non-Executive and Independent DirectorMember of Audit and Risk CommitteeMember of Investment Committee for A7RU
+2026-08-27 15:13:21,989 [INFO] __main__ - [cessation] matched Justin Marco Gabbani -> Justin Marco Gabbani (score: 100.0) for JYEU
+2026-08-27 15:13:22,195 [INFO] __main__ - [appointment] added Guy Alexander Cawthra as Executive Director and Chief Executive Officer of Lendlease Global Commercial Trust Management Pte. Ltd. for JYEU
+2026-08-27 15:13:22,427 [INFO] __main__ - [appointment] added Matthew Rhys Williams as Deputy Chief Executive Officer.Chief of Consumer Business Group. for CC3
+2026-08-27 15:13:22,608 [INFO] __main__ - [appointment] added Stephen Geoffrey Miller as Non-Executive DirectorAC MemberNGC MemberOrganisation Development and Compensation Committee MemberSteering Committee Member for CC3
+2026-08-27 15:13:22,747 [INFO] __main__ - [cessation] matched Teo Ek Tor -> Teo Ek Tor (score: 100.0) for CC3
+2026-08-27 15:13:22,893 [INFO] __main__ - [appointment] added Ravinder Singh S/O Harchand Singh as Independent Non-Executive Director and a full Member of RSC for CC3
+2026-08-27 15:13:23,051 [INFO] __main__ - [appointment] added Matthew Rhys Williams as CEO-Designate (with effect from 24 June 2026)Deputy CEO (existing)Chief Consumer Business Group (existing)CEO (with effect from 1 January 2027) for CC3
+2026-08-27 15:13:23,214 [WARNING] __main__ - [management] handler returned None for category: announcement of cessation url: https://links.sgx.com/1.0.0/corporate-announcements/FTVF5OFBK5WVFQS7/36b99475c217106620fa857987cdc2080ab84dad92f8aa481352a49a0059872e
+2026-08-27 15:13:23,460 [INFO] __main__ - [appointment] added Matthew Rhys Williams as CEO (with effect from 1 January 2027) for CC3
+2026-08-27 15:13:23,600 [INFO] __main__ - [cessation] matched Kan Yut Keong -> Kan Yut Keong (score: 100.0) for OYY
+2026-08-27 15:13:23,749 [INFO] __main__ - [appointment] added Lim Teck Chai, Danny as Independent Non-Executive Director, Chairman of Remuneration Committee, Member of Audit and Nominating Committees for OYY
+2026-08-27 15:13:23,905 [INFO] __main__ - [cessation] matched Ho Chai Seng -> Ho Chai Seng (score: 100.0) for J69U
+2026-08-27 15:13:24,052 [INFO] __main__ - [appointment] added Lam Wai Meng Jeffrey as Dy CEO and a member of Group Executive Committee ("Group EXCO") for S63
+2026-08-27 15:13:24,193 [INFO] __main__ - [appointment] added Wu Jianmin as Alternate Director to VADM Aaron Beng Yao Cheng for S63
+2026-08-27 15:13:24,313 [INFO] __main__ - [cessation] matched Chong Shi Hao -> Chong Shi Hao (score: 100.0) for S63
+2026-08-27 15:13:24,832 [INFO] __main__ - [appointment] added Ong Pang Liang as - Non-Independent and Non-Executive Director- Chairman of the Audit and Risk Committee- Member of the Nominating and Remuneration Committee for A50
+2026-08-27 15:13:24,962 [INFO] __main__ - [appointment] added Ng Ser Miang as - Non-Independent and Non-Executive Director- Chairman of the Board- Chairman of Nominating and Remuneration Committee for A50
+2026-08-27 15:13:25,084 [INFO] __main__ - [cessation] matched Ng Ser Miang -> Ng Ser Miang (score: 100.0) for A50
+2026-08-27 15:13:25,246 [INFO] __main__ - [appointment] added Tong Kooi Ong as Independent and Non-Executive DirectorChairman of the Board for A50
+2026-08-27 15:13:25,366 [WARNING] __main__ - [cessation] no match found for Lee Suen Ming in A50 management
+2026-08-27 15:13:25,496 [INFO] __main__ - [appointment] added Loh Wei Ning Cassandra as Acting Chief Executive Officer, Thomson Medical Singapore for A50
+2026-08-27 15:13:25,643 [INFO] __main__ - [appointment] added David John Korunic as Non-Independent Non-Executive Director, Member of the Audit Committee for P15
+2026-08-27 15:13:25,810 [INFO] __main__ - [cessation] matched Yap Chee Keong -> Yap Chee Keong (score: 100.0) for U96
+2026-08-27 15:13:26,072 [INFO] __main__ - [cessation] matched Tow Heng Tan -> Tow Heng Tan (score: 100.0) for U96
+2026-08-27 15:13:26,214 [WARNING] __main__ - [cessation] no match found for Liu Deming in QES management
+2026-08-27 15:13:26,334 [INFO] __main__ - [appointment] added Xu Yufu as Executive Director of China Sunsine Chemical Holdings Ltd.General Manager and Director of Shandong Sunsine Chemical Co., Ltd for QES
+2026-08-27 15:13:26,453 [WARNING] __main__ - [cessation] no match found for Tan Joon Hong in F03 management
+2026-08-27 15:13:26,611 [INFO] __main__ - [appointment] added Amrish Rungta as Group Chief Operating Officer for F03
+2026-08-27 15:13:26,813 [INFO] __main__ - [appointment] added Kwek Leng Peck as Non-Independent Non-Executive Director and Vice Chairman and Member of the Nominating and Remuneration Committee for C09
+2026-08-27 15:13:27,012 [INFO] __main__ - [cessation] matched Daniel Marie Ghislain Desbaillets -> Daniel Marie Ghislain Desbaillets (score: 100.0) for C09
+2026-08-27 15:13:27,227 [INFO] __main__ - [cessation] matched Liew Yoke Pheng Joseph -> Liew Yoke Pheng Joseph (score: 100.0) for T14
+2026-08-27 15:13:27,348 [INFO] __main__ - [appointment] added Zhai Shuping as Independent and Non-Executive Director for T14
+2026-08-27 15:13:27,494 [INFO] __main__ - [cessation] matched Lyu Jianwei -> Lyu Jianwei (score: 100.0) for 8YZ
+2026-08-27 15:13:27,609 [INFO] __main__ - [appointment] added Gao Yuhua as Independent Non-Executive Director and a member of the Audit and Risk, Nominating and Remuneration Committees for 8YZ
+2026-08-27 15:13:27,726 [WARNING] __main__ - [cessation] no match found for Adam James Goldsmith in P9D management
+2026-08-27 15:13:27,881 [WARNING] __main__ - [cessation] no match found for Mylon Manusiu in P9D management
+2026-08-27 15:13:28,022 [INFO] __main__ - [cessation] matched Kevin James Deery -> Kevin James Deery (score: 100.0) for P9D
+2026-08-27 15:13:28,206 [WARNING] __main__ - [cessation] no match found for NG FOOK AI VICTOR in ZQM management
+2026-08-27 15:13:28,335 [INFO] __main__ - [appointment] added Tan Poh Hong as 1. Non-Executive Independent Director2. Chairman of Renumeration Committee3. Member of Audit Committee and Nominating Committee for ZQM
+2026-08-27 15:13:28,446 [INFO] __main__ - [cessation] matched Melvin Chan Wai Leong -> Melvin Chan Wai Leong (score: 100.0) for E28
+2026-08-27 15:13:28,579 [INFO] __main__ - [appointment] added Tay Peng Huat as Independent Non-Executive Director, Chairman of NC and Member of Audit Committee. for E28
+2026-08-27 15:13:28,713 [INFO] __main__ - [appointment] added Dame Anne Helen Richards as Non-Executive Independent Director.Member of the Board Risk Committee. for BN4
+2026-08-27 15:13:28,858 [INFO] __main__ - [appointment] added Tan Siew Bee as Chief Financial Officer - Designate for HMN
+2026-08-27 15:13:28,980 [WARNING] __main__ - [cessation] no match found for Tan Siew Bee in AU8U management
+2026-08-27 15:13:29,126 [INFO] __main__ - [appointment] added Yan Lintong as Chief Financial Officer for AU8U
+2026-08-27 15:13:29,231 [INFO] __main__ - [appointment] added Low Penny as Independent DirectorMember of the Audit and Risk Management CommitteeMember of the Nominating CommitteeChairman of the Remuneration Committee for BWM
+2026-08-27 15:13:29,370 [INFO] __main__ - [appointment] added Ang Swee Tian as Non-Executive and Non-Independent Director for BWM
+2026-08-27 15:13:29,494 [INFO] __main__ - [appointment] added Ni Mingjiang as Non-Executive and Non-Independent Director for BWM
+2026-08-27 15:13:29,608 [INFO] __main__ - [appointment] added Kan Yaw Kiong (Ernest) as Lead Independent DirectorChairman of Audit and Risk Management CommitteeChairman of Nominating CommitteeMember of Remuneration Committee for BWM
+2026-08-27 15:13:29,753 [INFO] __main__ - [appointment] added Hareesh V Nair as Non-Independent Non-Executive Director for QC7
+2026-08-27 15:13:29,889 [INFO] __main__ - [cessation] matched Seow Choke Meng -> Seow Choke Meng (score: 100.0) for H13
+2026-08-27 15:13:30,017 [WARNING] __main__ - [cessation] no match found for Josephine Choo Poh Hua in H13 management
+2026-08-27 15:13:30,152 [INFO] __main__ - [appointment] added Choo Yi Ming as Independent Non-Executive Director, Member of the Nominating Committee, the Remuneration Committee and the Board Sustainability Committee for H13
+2026-08-27 15:13:30,299 [INFO] __main__ - [cessation] matched Goh Kay Yong David -> Goh Kay Yong David (score: 100.0) for S20
+2026-08-27 15:13:30,434 [INFO] __main__ - [appointment] added Dr Gary Hilton Weiss as i. Non-Independent and Non-Executive Directorii. Member of the Remuneration Committee for S20
+2026-08-27 15:13:30,583 [INFO] __main__ - [cessation] matched Wendell Wong Hin Pkin -> Wendell Wong Hin Pkin (score: 100.0) for BDX
+2026-08-27 15:13:30,699 [INFO] __main__ - [cessation] matched Goi Kok Ming (Wei Guoming) -> Goi Kok Ming (Wei Guoming) (score: 100.0) for BDX
+2026-08-27 15:13:30,837 [INFO] __main__ - [appointment] added Goi Kok Ming (Wei Guoming) as Alternate Director to Dr Sam Goi Seng Hui for BDX
+2026-08-27 15:13:30,960 [INFO] __main__ - [cessation] matched Gilbert Ee Guan Hui -> Gilbert Ee Guan Hui (score: 100.0) for BDX
+2026-08-27 15:13:31,078 [WARNING] __main__ - [cessation] no match found for Lim Hong Kian in BDX management
+2026-08-27 15:13:31,232 [INFO] __main__ - [appointment] added Christopher Wong Mun Yick as Non-Executive Independent Director and Member of Audit and Risk Committee for A17U
+2026-08-27 15:13:31,364 [INFO] __main__ - [appointment] added David Alasdair William Matheson as Alternate Director to Mr Shen Jinchu, Non-Executive Director of ESR-REIT Management (S) Limited. for 9A4U
+2026-08-27 15:13:31,519 [INFO] __main__ - [cessation] matched Hee Theng Fong -> Hee Theng Fong (score: 100.0) for Z25
+2026-08-27 15:13:31,681 [INFO] __main__ - [appointment] added Gn Jong Yuh Gwendolyn as Independent Non-Executive Director, RC Chairperson, AC member and RMSC member for Z25
+2026-08-27 15:13:31,816 [WARNING] __main__ - [cessation] no match found for Fawzia Binti Abdullah in MV4 management
+2026-08-27 15:13:31,937 [INFO] __main__ - [appointment] added Muliadi Rahardja as Independent Director, Member of Audit Committee, and Member of Nominating Committee. for MV4
+2026-08-27 15:13:32,067 [WARNING] __main__ - [cessation] no match found for Lee Sok Koon in S61 management
+2026-08-27 15:13:32,220 [INFO] __main__ - [cessation] matched Quek Bin Hwee -> Quek Bin Hwee (score: 100.0) for C38U
+2026-08-27 15:13:32,344 [INFO] __main__ - [appointment] added Yeo Boon Keong as Non-Executive and Non-Independent Director for 1D0
+2026-08-27 15:13:32,463 [INFO] __main__ - [cessation] matched Tan Chuan Lye -> Tan Chuan Lye (score: 100.0) for AW9U
+2026-08-27 15:13:32,586 [INFO] __main__ - [cessation] matched Chew Yow Foo -> Chew Yow Foo (score: 100.0) for BTE
+2026-08-27 15:13:32,705 [INFO] __main__ - [appointment] added Ng Chiou Gee Willy as Group Chief Financial Officer for BTE
+2026-08-27 15:13:32,881 [INFO] __main__ - [cessation] matched Tan Soo Nan -> Tan Soo Nan (score: 100.0) for BSL
+2026-08-27 15:13:32,993 [INFO] __main__ - [cessation] matched Lim Sim Seng -> Lim Sim Seng (score: 100.0) for BSL
+2026-08-27 15:13:33,111 [INFO] __main__ - [appointment] added Dr Lu Liangjian David as Non-Executive and Non-Independent Director for BSL
+2026-08-27 15:13:33,280 [INFO] __main__ - [cessation] matched Jeffrey Hing Yih Peir -> Jeffrey Hing Yih Peir (score: 100.0) for 5LY
+2026-08-27 15:13:33,440 [INFO] __main__ - [appointment] added Soh Shin Yann Susan as Non-executive and Independent Director for S68
+2026-08-27 15:13:33,629 [WARNING] __main__ - [cessation] no match found for Lim Sok Hui (Mrs Chng) in S68 management
+2026-08-27 15:13:33,734 [WARNING] __main__ - [cessation] no match found for Ms Koh Puay Eng Agnes in S68 management
+2026-08-27 15:13:33,844 [INFO] __main__ - [appointment] added Mr Han Kang Teng, Ivan as Chief Risk Officer for S68
+2026-08-27 15:13:33,956 [INFO] __main__ - [cessation] matched Chan Heng Wing -> Chan Heng Wing (score: 100.0) for F99
+2026-08-27 15:13:34,085 [INFO] __main__ - [cessation] matched Sithichai Chaikriangkrai -> Sithichai Chaikriangkrai (score: 100.0) for F99
+2026-08-27 15:13:34,209 [WARNING] __main__ - [cessation] no match found for Michael Chye Hin Fah in F99 management
+2026-08-27 15:13:34,340 [INFO] __main__ - [appointment] added Michael Chye Hin Fah as Alternate Director to Mr Prapakon Thongtheppairot; and a Member of each of the Board Exco and SRMC. for F99
+2026-08-27 15:13:34,473 [WARNING] __main__ - [cessation] no match found for Chin Mei Ling in 5UX management
+2026-08-27 15:13:34,597 [INFO] __main__ - [appointment] added Yap Pei Chin as Financial Controller and Company Secretary for 5UX
+2026-08-27 15:13:34,728 [INFO] __main__ - [appointment] added Yeoh Oon Jin as Independent Non-Executive Director, Member of Audit & Risk Committee and Remuneration Committee. for W05
+2026-08-27 15:13:34,736 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_tracked_v2.json
+2026-08-27 15:13:34,736 [INFO] __main__ - saved tracked management records: 175
+2026-08-27 15:46:02,348 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/tracked/result_tracked_clean.json
+2026-08-27 15:54:19,663 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/tracked/result_tracked_clean.json
+2026-08-27 15:56:19,071 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/tracked/result_tracked_clean.json

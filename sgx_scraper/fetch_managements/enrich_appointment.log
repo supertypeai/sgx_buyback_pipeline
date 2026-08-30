@@ -1,0 +1,974 @@
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: F9D
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: A31
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: H07
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: C41
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: B61
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: BN2
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: BBW
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: NTDU
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: S58
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: Z74
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: N2IU
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: AGS
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: O5RU
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: C6L
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: CJLU
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: M01
+2026-08-27 21:22:10,801 [INFO] __main__ - Skipping processed symbol: S08
+2026-08-27 21:22:10,801 [INFO] __main__ - Processing symbol: ME8U | 18/175
+2026-08-27 21:22:15,195 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Cheah Kim Teck for ME8U from appointment announcement NIW2N931R5GC8C0I
+2026-08-27 21:22:20,565 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Andrew Chong Yang Hsueh for ME8U from appointment announcement R3F3GWIE0OY4T1A3
+2026-08-27 21:22:22,820 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Pok Soy Yoong for ME8U from appointment announcement 52FNX6Q6ZBM2TU7G
+2026-08-27 21:22:27,927 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chan Chia Lin for ME8U from appointment announcement WQ6FOMNZI0RNHV1R
+2026-08-27 21:22:41,582 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Andrew Lee Tong Kin for ME8U from appointment announcement 63AIGK23UUKJ5B1W
+2026-08-27 21:22:50,609 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched William Toh Thiam Siew for ME8U from appointment announcement R7RXF2S8QI9W6BYJ
+2026-08-27 21:23:24,526 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Noorsurainah Tengah for ME8U from appointment announcement 9IYF1XABZF57JUVQ
+2026-08-27 21:24:01,465 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched Eng-Kwok Seat Moey for ME8U from appointment announcement KSY2UJG8Y1TN86BD
+2026-08-27 21:24:46,344 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Soo Yar Ping for ME8U from appointment announcement VFWQYEWZH7236SH8
+2026-08-27 21:24:58,810 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chua Tiow Chye for ME8U from appointment announcement TQ1YVOIPF3MPDNKH
+2026-08-27 21:24:58,810 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Ler Lily for ME8U from appointment announcement 69N6SWJZ8LLLZ2CH
+2026-08-27 21:24:58,811 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:24:58,811 [INFO] __main__ - Processing symbol: NPW | 19/175
+2026-08-27 21:24:58,814 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:24:58,814 [INFO] __main__ - Processing symbol: M44U | 20/175
+2026-08-27 21:25:01,112 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Lee Chong Kwee for M44U from appointment announcement SYMH62GW2Z7M7349
+2026-08-27 21:25:01,112 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Loh Shai Weng for M44U from appointment announcement 60AXGQ0IEN8BV5ZS
+2026-08-27 21:25:16,736 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Ching Wei Hong for M44U from appointment announcement 6VMPIPZLMLVJPDA9
+2026-08-27 21:25:25,062 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Judy Lee for M44U from appointment announcement WX5VE8D4V36SEECP
+2026-08-27 21:25:39,709 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Lee Wai Fai for M44U from appointment announcement OVLQKLKQPJ9HE643
+2026-08-27 21:25:45,600 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Lim Mei for M44U from appointment announcement RIQKB4TZCIMGLXBH
+2026-08-27 21:26:13,698 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ong Siew Koon gets date from tavily: 2026-01-25
+2026-08-27 21:26:13,698 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Tan Wah Yeow for M44U from appointment announcement FJIY2646BI5DYUJ7
+2026-08-27 21:26:21,994 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Goh Chye Boon for M44U from appointment announcement XQFCJAU9HITPOAOA
+2026-08-27 21:26:41,140 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Wong Mun Hoong gets date from tavily: 2006-07-15
+2026-08-27 21:26:41,140 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Jean Kam Sok Kam for M44U from appointment announcement Y7FLGN5CQ1JAXCA5
+2026-08-27 21:26:41,141 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:26:41,141 [INFO] __main__ - Processing symbol: 9CI | 21/175
+2026-08-27 21:26:43,643 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:26:43,644 [INFO] __main__ - Processing symbol: T82U | 22/175
+2026-08-27 21:26:46,811 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:26:46,811 [INFO] __main__ - Processing symbol: HMN | 23/175
+2026-08-27 21:26:48,605 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Max Loh Khum Whai for HMN from appointment announcement Y50RIYPSIWTS3LNS
+2026-08-27 21:26:48,606 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:26:48,606 [INFO] __main__ - Processing symbol: E5H | 24/175
+2026-08-27 21:26:58,358 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Franky Oesman Widjaja gets date from tavily: null
+2026-08-27 21:26:58,358 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Muktar Widjaja for E5H from appointment announcement WWG4CWEW188ZR757
+2026-08-27 21:27:04,860 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Rafael Buhay Concepcion, Jr. gets date from tavily: 2002-08-01
+2026-08-27 21:27:11,658 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Christian G H Gautier De Charnacé for E5H from appointment announcement GLBTJHN6PO9A4FV7
+2026-08-27 21:27:11,659 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:27:11,659 [INFO] __main__ - Processing symbol: SET | 25/175
+2026-08-27 21:27:12,422 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:27:12,423 [INFO] __main__ - Processing symbol: BN4 | 26/175
+2026-08-27 21:27:18,289 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:27:18,289 [INFO] __main__ - Processing symbol: F34 | 27/175
+2026-08-27 21:27:24,939 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:27:24,939 [INFO] __main__ - Processing symbol: EMI | 28/175
+2026-08-27 21:27:24,943 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:27:24,943 [INFO] __main__ - Processing symbol: U14 | 29/175
+2026-08-27 21:27:29,062 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:27:29,062 [INFO] __main__ - Processing symbol: C07 | 30/175
+2026-08-27 21:27:41,541 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Benjamin Birks gets date from tavily: 2019-10-01
+2026-08-27 21:27:46,660 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Freddy Lee gets date from tavily: 2025-06-01
+2026-08-27 21:27:46,661 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:27:46,661 [INFO] __main__ - Processing symbol: H15 | 31/175
+2026-08-27 21:27:47,910 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Wong Liang Ying for H15 from appointment announcement LSGBMPCRJOXD1KQR
+2026-08-27 21:27:56,517 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Christopher Lim Tien Lock gets date from tavily: 2020-02-14
+2026-08-27 21:28:03,123 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Stephen Lau Buong Lik gets date from tavily: null
+2026-08-27 21:28:08,821 [INFO] __main__ - [TAVILY FALLBACK DATE] name: David Fu Kuo Chen gets date from tavily: 2005-08-05
+2026-08-27 21:28:16,419 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Arthur Tan Keng Hock gets date from tavily: 1996-07-05
+2026-08-27 21:28:16,419 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Nicholas James Loup for H15 from appointment announcement B0TL3EK7Y07AWFNU
+2026-08-27 21:28:16,419 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Rahul Goswamy for H15 from appointment announcement LV0A737XUBBVNME0
+2026-08-27 21:28:16,421 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:28:16,421 [INFO] __main__ - Processing symbol: BTM | 32/175
+2026-08-27 21:28:25,552 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jeffrey Hing Yih Peir gets date from tavily: 2009-02-01
+2026-08-27 21:28:31,967 [INFO] __main__ - [TAVILY FALLBACK DATE] name: James Tham Tuck Choong gets date from tavily: null
+2026-08-27 21:28:38,488 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Joanna Tung May Fong gets date from tavily: null
+2026-08-27 21:28:38,490 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:28:38,490 [INFO] __main__ - Processing symbol: MV4 | 33/175
+2026-08-27 21:28:41,296 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:28:41,296 [INFO] __main__ - Processing symbol: QC7 | 34/175
+2026-08-27 21:28:44,296 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:28:44,296 [INFO] __main__ - Processing symbol: T14 | 35/175
+2026-08-27 21:28:53,002 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Wang Lei for T14 from appointment announcement GB00M1TTDJTMF6RZ
+2026-08-27 21:29:14,226 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Guo Min for T14 from appointment announcement JX25UR23P8B0JMS0
+2026-08-27 21:29:38,133 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Shang Mingjie for T14 from appointment announcement ZNSW6F7AKFSFF52I
+2026-08-27 21:29:43,419 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Zhou Hong for T14 from appointment announcement 7STGWGFFHIFSE45Y
+2026-08-27 21:29:52,715 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Xing Jianhua for T14 from appointment announcement EJQCBU5L1BIGQ2TN
+2026-08-27 21:30:08,434 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Mao Weiwen for T14 from appointment announcement F5BHBZET8KRN72Z0
+2026-08-27 21:30:25,857 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Yeo Guat Kwang for T14 from appointment announcement VT3WSQFPOPRP7BQQ
+2026-08-27 21:30:46,729 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Zhong Ming for T14 from appointment announcement 9LWUUQ5N2Q8OCL4F
+2026-08-27 21:30:46,731 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:30:46,731 [INFO] __main__ - Processing symbol: AP4 | 36/175
+2026-08-27 21:30:48,916 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:30:48,917 [INFO] __main__ - Processing symbol: H18 | 37/175
+2026-08-27 21:31:02,213 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tan Teck Lin gets date from tavily: 1991-11-20
+2026-08-27 21:31:08,918 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tan Eng How gets date from tavily: null
+2026-08-27 21:31:14,512 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tan Hwa Imm Michelle gets date from tavily: 2024-03-21
+2026-08-27 21:31:14,514 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:31:14,514 [INFO] __main__ - Processing symbol: ADN | 38/175
+2026-08-27 21:31:15,677 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:31:15,677 [INFO] __main__ - Processing symbol: 1MZ | 39/175
+2026-08-27 21:31:17,137 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:31:17,137 [INFO] __main__ - Processing symbol: A30 | 40/175
+2026-08-27 21:31:25,131 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Koh Wee Seng gets date from tavily: 2026-04-28
+2026-08-27 21:31:30,941 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Koh Lee Hwee gets date from tavily: 1988-08-15
+2026-08-27 21:31:37,615 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ko Lee Meng gets date from tavily: 2023-05-05
+2026-08-27 21:31:37,617 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:31:37,617 [INFO] __main__ - Processing symbol: F03 | 41/175
+2026-08-27 21:31:44,910 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tan Wang Cheow gets date from tavily: 2000-02-17
+2026-08-27 21:31:50,541 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Sudeep Nair gets date from tavily: null
+2026-08-27 21:31:50,543 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:31:50,543 [INFO] __main__ - Processing symbol: SEG | 42/175
+2026-08-27 21:31:56,164 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Liu Shunxing gets date from tavily: 2009-05-31
+2026-08-27 21:32:03,574 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Liu Jianhong gets date from tavily: 2016-01-01
+2026-08-27 21:32:10,038 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Niu Wenhui gets date from tavily: 2016-12-31
+2026-08-27 21:32:15,495 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Zhai Feng gets date from tavily: 2020-01-16
+2026-08-27 21:32:20,543 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Shang Jia gets date from tavily: 2021-04-07
+2026-08-27 21:32:25,439 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Chan Kam Kwan, Jason gets date from tavily: 2006-12-06
+2026-08-27 21:32:30,533 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Wang Feng gets date from tavily: 2022-09-01
+2026-08-27 21:32:34,626 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Huang Jian gets date from tavily: null
+2026-08-27 21:32:39,711 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jesse Zhixi Fang gets date from tavily: 2018-01-01
+2026-08-27 21:32:45,758 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Zhang Zhong gets date from tavily: null
+2026-08-27 21:32:49,983 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Li Yongli gets date from tavily: 2022-05-19
+2026-08-27 21:32:54,932 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Chua Pin gets date from tavily: 2024-10-25
+2026-08-27 21:32:54,934 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:32:54,935 [INFO] __main__ - Processing symbol: Q0F | 43/175
+2026-08-27 21:32:54,939 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:32:54,939 [INFO] __main__ - Processing symbol: AU8U | 44/175
+2026-08-27 21:32:59,226 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chan Kin Leong Gerry for AU8U from appointment announcement 0PYS826XQBBGBZ4A
+2026-08-27 21:32:59,228 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:32:59,229 [INFO] __main__ - Processing symbol: C38U | 45/175
+2026-08-27 21:33:02,679 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:33:02,679 [INFO] __main__ - Processing symbol: S07 | 46/175
+2026-08-27 21:33:10,763 [INFO] __main__ - [TAVILY FALLBACK DATE] name: KUOK Hui Kwong gets date from tavily: 2016-06-01
+2026-08-27 21:33:17,070 [INFO] __main__ - [TAVILY FALLBACK DATE] name: CHUA Chee Wui gets date from tavily: null
+2026-08-27 21:33:22,873 [INFO] __main__ - [TAVILY FALLBACK DATE] name: LIM Beng Chee gets date from tavily: 2016-09-26
+2026-08-27 21:33:28,968 [INFO] __main__ - [TAVILY FALLBACK DATE] name: LI Kwok Cheung Arthur gets date from tavily: 1994-01-03
+2026-08-27 21:33:34,879 [INFO] __main__ - [TAVILY FALLBACK DATE] name: YAP Chee Keong gets date from tavily: 2017‑12‑11
+2026-08-27 21:33:40,588 [INFO] __main__ - [TAVILY FALLBACK DATE] name: LI Xiaodong Forrest gets date from tavily: null
+2026-08-27 21:33:47,389 [INFO] __main__ - [TAVILY FALLBACK DATE] name: ZHUANG Chenchao gets date from tavily: 2019-12-01
+2026-08-27 21:33:54,083 [INFO] __main__ - [TAVILY FALLBACK DATE] name: KHOO Shulamite N K gets date from tavily: null
+2026-08-27 21:33:54,086 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:33:54,086 [INFO] __main__ - Processing symbol: K6S | 47/175
+2026-08-27 21:33:58,933 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Shriti Vadera gets date from tavily: 2020-05-01
+2026-08-27 21:34:05,495 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Sir Douglas Flint gets date from tavily: 2026-03-04
+2026-08-27 21:34:10,816 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Anil Wadhwani gets date from tavily: 2023-02-25
+2026-08-27 21:34:16,492 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jeremy Anderson gets date from tavily: 2020-01-01
+2026-08-27 21:34:20,734 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Arijit Basu gets date from tavily: 2022-09-01
+2026-08-27 21:34:27,560 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Chua Sock Koong gets date from tavily: 2021-05-01
+2026-08-27 21:34:31,354 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Guido Fürer gets date from tavily: 2025-07-01
+2026-08-27 21:34:37,309 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ming Lu gets date from tavily: 2021-05-01
+2026-08-27 21:34:42,485 [INFO] __main__ - [TAVILY FALLBACK DATE] name: George Sartorel gets date from tavily: 2022-01-14
+2026-08-27 21:34:46,764 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Mark Saunders gets date from tavily: 2024-04-01
+2026-08-27 21:34:53,470 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Claudia Suessmuth Dyckerhoff gets date from tavily: 2023-01-01
+2026-08-27 21:34:58,138 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jeanette Wong gets date from tavily: 2021-05-01
+2026-08-27 21:34:58,140 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:34:58,140 [INFO] __main__ - Processing symbol: ZKX | 48/175
+2026-08-27 21:34:58,814 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:34:58,814 [INFO] __main__ - Processing symbol: B58 | 49/175
+2026-08-27 21:35:02,826 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:35:02,826 [INFO] __main__ - Processing symbol: HLS | 50/175
+2026-08-27 21:35:11,116 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Cai Wenjun gets date from tavily: 2018‑04‑01
+2026-08-27 21:35:17,509 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Yu Zhen gets date from tavily: null
+2026-08-27 21:35:23,897 [INFO] __main__ - [TAVILY FALLBACK DATE] name: He Daqing gets date from tavily: 2023-09-15
+2026-08-27 21:35:23,899 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:35:23,899 [INFO] __main__ - Processing symbol: BS6 | 51/175
+2026-08-27 21:54:14,118 [INFO] __main__ - Skipping processed symbol: F9D
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: A31
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: H07
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: C41
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: B61
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: BN2
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: BBW
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: NTDU
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: S58
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: Z74
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: N2IU
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: AGS
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: O5RU
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: C6L
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: CJLU
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: M01
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: S08
+2026-08-27 21:54:14,119 [INFO] __main__ - Skipping processed symbol: ME8U
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: NPW
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: M44U
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: 9CI
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: T82U
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: HMN
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: E5H
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: SET
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: BN4
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: F34
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: EMI
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: U14
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: C07
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: H15
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: BTM
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: MV4
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: QC7
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: T14
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: AP4
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: H18
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: ADN
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: 1MZ
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: A30
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: F03
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: SEG
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: Q0F
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: AU8U
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: C38U
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: S07
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: K6S
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: ZKX
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: B58
+2026-08-27 21:54:14,120 [INFO] __main__ - Skipping processed symbol: HLS
+2026-08-27 21:54:14,120 [INFO] __main__ - Processing symbol: BS6 | 51/175
+2026-08-27 21:54:16,528 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Yee Kee Shian, Leon for BS6 from appointment announcement 75ASW1989VKIE5J2
+2026-08-27 21:54:16,530 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:54:16,530 [INFO] __main__ - Processing symbol: TSH | 52/175
+2026-08-27 21:54:16,532 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:54:16,532 [INFO] __main__ - Processing symbol: 5JS | 53/175
+2026-08-27 21:54:16,676 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'indofood agri resources ltd.' to 'indofood agri resources ltd' with score 98.18
+2026-08-27 21:54:16,850 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'indofood agri resources ltd.' to 'indofood agri resources ltd' with score 98.18
+2026-08-27 21:54:16,992 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'indofood agri resources ltd.' to 'indofood agri resources ltd' with score 98.18
+2026-08-27 21:54:17,171 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'indofood agri resources ltd.' to 'indofood agri resources ltd' with score 98.18
+2026-08-27 21:54:17,683 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Philip Yeo Liat Kok for 5JS from appointment announcement B9WEAZPDJ1RFV3MN
+2026-08-27 21:54:17,683 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] David Sungkoro for 5JS from appointment announcement DOL9W218ODDZHZRZ
+2026-08-27 21:54:25,197 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Mark Julian Wakeford gets date from tavily: 2007-08-14
+2026-08-27 21:54:25,197 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Andreas Tan for 5JS from appointment announcement 5OEETPIOUMZI1QMS
+2026-08-27 21:54:31,505 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Axton Salim gets date from tavily: 2007-01-23
+2026-08-27 21:54:37,836 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Suaimi Suriady gets date from tavily: 2007-10-08
+2026-08-27 21:54:43,548 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tjhie Tje Fie gets date from tavily: 2006-12-08
+2026-08-27 21:54:48,276 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Moleonoto Tjang gets date from tavily: 2007-03-09
+2026-08-27 21:54:48,278 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:54:48,278 [INFO] __main__ - Processing symbol: WJP | 54/175
+2026-08-27 21:54:51,427 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:54:51,427 [INFO] __main__ - Processing symbol: A17U | 55/175
+2026-08-27 21:54:54,353 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:54:54,353 [INFO] __main__ - Processing symbol: CY6U | 56/175
+2026-08-27 21:54:56,428 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:54:56,428 [INFO] __main__ - Processing symbol: ZQM | 57/175
+2026-08-27 21:54:56,571 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction grp ltd' to 'soilbuild construction group ltd' with score 96.77
+2026-08-27 21:54:56,799 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction grp ltd' to 'soilbuild construction group ltd' with score 96.77
+2026-08-27 21:54:56,973 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:57,128 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:57,351 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:57,593 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:57,721 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:57,876 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:58,044 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:58,220 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:58,350 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:58,478 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:58,605 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:58,726 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'soilbuild construction group ltd.' to 'soilbuild construction group ltd' with score 98.46
+2026-08-27 21:54:58,853 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:54:58,853 [INFO] __main__ - Processing symbol: 5TP | 58/175
+2026-08-27 21:55:05,502 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Choo Chee Kong gets date from tavily: 2011-12-12
+2026-08-27 21:55:11,637 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lin Xiang Xiong gets date from tavily: 2024-04-30
+2026-08-27 21:55:11,638 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Keng Yeng Pheng for 5TP from appointment announcement KR5V8734EWC9K37V
+2026-08-27 21:55:18,618 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Sovann Giang gets date from tavily: 2024-04-30
+2026-08-27 21:55:23,968 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lim Kuoh Yang gets date from tavily: 2022-01-01
+2026-08-27 21:55:23,968 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chooi Pey Nee for 5TP from appointment announcement A13X5JHT3GC5CCMC
+2026-08-27 21:55:23,970 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:55:23,970 [INFO] __main__ - Processing symbol: 8YZ | 59/175
+2026-08-27 21:55:24,750 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:55:24,750 [INFO] __main__ - Processing symbol: QES | 60/175
+2026-08-27 21:55:24,886 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:25,017 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:25,193 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:25,348 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:25,500 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:25,646 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:26,125 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:26,282 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:26,446 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:26,599 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:26,736 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:26,891 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:27,023 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'china sunsine chemical holdings ltd.' to 'china sunsine chemical holdings ltd' with score 98.59
+2026-08-27 21:55:35,773 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Xu Cheng Qiu gets date from tavily: null
+2026-08-27 21:55:42,312 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Xu Jun gets date from tavily: 2007-05-18
+2026-08-27 21:55:42,312 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Tong Yiping for QES from appointment announcement YW9BO9CBZMUE2NCQ
+2026-08-27 21:55:48,316 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Liang Cheng for QES from appointment announcement YQBXGJ1TLCLB6I5B
+2026-08-27 21:55:48,318 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:55:48,318 [INFO] __main__ - Processing symbol: BWM | 61/175
+2026-08-27 21:55:57,751 [INFO] __main__ - [TAVILY FALLBACK DATE] name: WEI Dongliang gets date from tavily: null
+2026-08-27 21:56:02,243 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched WANG Ruihong for BWM from appointment announcement FB516EKXK5YULRIY
+2026-08-27 21:56:14,366 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched JIN Ruizhi for BWM from appointment announcement C9JVAGHU8G65PPKC
+2026-08-27 21:56:21,983 [INFO] __main__ - [TAVILY FALLBACK DATE] name: ANG Swee Tian gets date from tavily: null
+2026-08-27 21:56:21,983 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] NI Mingjiang for BWM from appointment announcement Q29FH4LVK6SF5A2N
+2026-08-27 21:56:21,984 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] KAN Yaw Kiong (Ernest) for BWM from appointment announcement UXBHD2ARRQPKWV5O
+2026-08-27 21:56:36,536 [INFO] __main__ - [TAVILY FALLBACK DATE] name: LIANG Weiwen gets date from tavily: 2023-04-24
+2026-08-27 21:56:36,538 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:56:36,539 [INFO] __main__ - Processing symbol: 5JK | 62/175
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: F9D
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: A31
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: H07
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: C41
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: B61
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: BN2
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: BBW
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: NTDU
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: S58
+2026-08-27 21:57:12,491 [INFO] __main__ - Skipping processed symbol: Z74
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: N2IU
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: AGS
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: O5RU
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: C6L
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: CJLU
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: M01
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: S08
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: ME8U
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: NPW
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: M44U
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: 9CI
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: T82U
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: HMN
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: E5H
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: SET
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: BN4
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: F34
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: EMI
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: U14
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: C07
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: H15
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: BTM
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: MV4
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: QC7
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: T14
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: AP4
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: H18
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: ADN
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: 1MZ
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: A30
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: F03
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: SEG
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: Q0F
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: AU8U
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: C38U
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: S07
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: K6S
+2026-08-27 21:57:12,492 [INFO] __main__ - Skipping processed symbol: ZKX
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: B58
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: HLS
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: BS6
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: TSH
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: 5JS
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: WJP
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: A17U
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: CY6U
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: ZQM
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: 5TP
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: 8YZ
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: QES
+2026-08-27 21:57:12,493 [INFO] __main__ - Skipping processed symbol: BWM
+2026-08-27 21:57:12,493 [INFO] __main__ - Processing symbol: 5JK | 62/175
+2026-08-27 21:57:16,187 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Teo Ho Beng for 5JK from appointment announcement FQJ7VXFNGDY8G6JZ
+2026-08-27 21:57:16,190 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:16,190 [INFO] __main__ - Processing symbol: U96 | 63/175
+2026-08-27 21:57:21,339 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:21,339 [INFO] __main__ - Processing symbol: E3B | 64/175
+2026-08-27 21:57:21,485 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'wee poh holdings ltd' to 'wee hur holdings ltd' with score 90.00
+2026-08-27 21:57:21,634 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'wee hur holdings ltd.' to 'wee hur holdings ltd' with score 97.56
+2026-08-27 21:57:21,761 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'wee hur holdings ltd.' to 'wee hur holdings ltd' with score 97.56
+2026-08-27 21:57:21,910 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'wee hur holdings ltd.' to 'wee hur holdings ltd' with score 97.56
+2026-08-27 21:57:22,033 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'wee hur holdings ltd.' to 'wee hur holdings ltd' with score 97.56
+2026-08-27 21:57:22,160 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'wee hur holdings ltd.' to 'wee hur holdings ltd' with score 97.56
+2026-08-27 21:57:22,329 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'wee hur holdings ltd.' to 'wee hur holdings ltd' with score 97.56
+2026-08-27 21:57:26,186 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:26,186 [INFO] __main__ - Processing symbol: MZH | 65/175
+2026-08-27 21:57:28,275 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:28,275 [INFO] __main__ - Processing symbol: YF8 | 66/175
+2026-08-27 21:57:29,574 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:29,574 [INFO] __main__ - Processing symbol: U10 | 67/175
+2026-08-27 21:57:39,548 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Wee Ee Chao gets date from tavily: 1990-01-03
+2026-08-27 21:57:39,551 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:39,551 [INFO] __main__ - Processing symbol: 558 | 68/175
+2026-08-27 21:57:48,522 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Luong Andy gets date from tavily: 2018-02-22
+2026-08-27 21:57:48,525 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:48,525 [INFO] __main__ - Processing symbol: RE4 | 69/175
+2026-08-27 21:57:50,755 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:50,755 [INFO] __main__ - Processing symbol: 5WJ | 70/175
+2026-08-27 21:57:52,820 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:57:52,820 [INFO] __main__ - Processing symbol: NIO | 71/175
+2026-08-27 21:57:57,315 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Bin Li gets date from tavily: 2014‑01‑31
+2026-08-27 21:58:04,993 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lihong Qin gets date from tavily: 2014-06-01
+2026-08-27 21:58:11,227 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Hai Wu gets date from tavily: 2016-07-01
+2026-08-27 21:58:19,022 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Denny Ting Bun Lee gets date from tavily: 2018-09-01
+2026-08-27 21:58:23,995 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Yu Long gets date from tavily: 2021-07-12
+2026-08-27 21:58:30,053 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Yonggang Wen gets date from tavily: 2023-11-13
+2026-08-27 21:58:35,573 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Eddy Georges Skaf gets date from tavily: 2024-02-07
+2026-08-27 21:58:43,638 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Nicholas Paul Collins gets date from tavily: 2024-02-07
+2026-08-27 21:58:43,641 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:58:43,641 [INFO] __main__ - Processing symbol: P34 | 72/175
+2026-08-27 21:58:45,352 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:58:45,352 [INFO] __main__ - Processing symbol: AWX | 73/175
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Loke Wai San for AWX from appointment announcement C4YMU4FNIB1EH6ST
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] James Toh Ban Leng for AWX from appointment announcement W94DZVT8MLMIS034
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Loh Kin Wah for AWX from appointment announcement ZBGK4BAXW79TLVSV
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Yeo Yee Chia for AWX from appointment announcement SH1W6WNS0EUIEF33
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chou Yen Ning @ Alice Lin for AWX from appointment announcement 1YWS5E4I5QM5E4LR
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] André Andonian for AWX from appointment announcement TP5OLOWBEFLFPQ3M
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chok Yean Hung for AWX from appointment announcement USN656MJ4WBHZAJL
+2026-08-27 21:58:49,109 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Tham Min Yew for AWX from appointment announcement QRWWE74Y8VUZZFIG
+2026-08-27 21:58:49,112 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:58:49,113 [INFO] __main__ - Processing symbol: 544 | 74/175
+2026-08-27 21:58:52,089 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:58:52,089 [INFO] __main__ - Processing symbol: VC2 | 75/175
+2026-08-27 21:59:01,484 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Simon Nigel Cooper for VC2 from appointment announcement 6GZL87DGORWMII3A
+2026-08-27 21:59:01,488 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:59:01,488 [INFO] __main__ - Processing symbol: HQU | 76/175
+2026-08-27 21:59:01,626 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'portek international ltd' to 'oiltek international ltd' with score 91.67
+2026-08-27 21:59:01,794 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'portek international ltd' to 'oiltek international ltd' with score 91.67
+2026-08-27 21:59:01,935 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'portek international ltd' to 'oiltek international ltd' with score 91.67
+2026-08-27 21:59:02,088 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'portek international ltd' to 'oiltek international ltd' with score 91.67
+2026-08-27 21:59:07,852 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Hew Koon Chan gets date from tavily: 2021-12-30
+2026-08-27 21:59:15,225 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Yong Khai Weng gets date from tavily: 2021-12-29
+2026-08-27 21:59:20,284 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Koh Keng Siang gets date from tavily: 2013-02-28
+2026-08-27 21:59:25,028 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Bernard Wong Ee Yu gets date from tavily: 2013-05-01
+2026-08-27 21:59:31,583 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lai Wai Kit Andrew gets date from tavily: null
+2026-08-27 21:59:36,894 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tan Yee Peng gets date from tavily: 2019-04-25
+2026-08-27 21:59:36,897 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 21:59:36,897 [INFO] __main__ - Processing symbol: B28 | 77/175
+2026-08-27 21:59:45,205 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Henry Ngo gets date from tavily: 2010-06-01
+2026-08-27 21:59:50,711 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched Andy Xie Guoyuan for B28 from appointment announcement EFZNRS1M4PEVL3JE
+2026-08-27 21:59:55,035 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Gary Xie Guojun for B28 from appointment announcement G28CAJBAW4GV9ZTP
+2026-08-27 22:00:01,642 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Fong Heng Boo for B28 from appointment announcement D5MHRGEC2MKYVZ5M
+2026-08-27 22:00:01,642 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Teo Lip Hua Benedict for B28 from appointment announcement AE8QPAB9BVS5YOQM
+2026-08-27 22:00:01,645 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:00:01,645 [INFO] __main__ - Processing symbol: AWZ | 78/175
+2026-08-27 22:00:04,782 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chong Teck Sin for AWZ from appointment announcement BAXFR8998SN8JJ2V
+2026-08-27 22:00:11,815 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Foo Suan Sai gets date from tavily: null
+2026-08-27 22:00:18,840 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Han Juat Hoon gets date from tavily: 1987-05-01
+2026-08-27 22:00:18,840 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Foo Fang Yong for AWZ from appointment announcement XLGZCNQAMEN7AMTV
+2026-08-27 22:00:18,840 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chan Wan Hong for AWZ from appointment announcement 10B0Z9THCU69R3R4
+2026-08-27 22:00:18,840 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Neo Bock Cheng for AWZ from appointment announcement LP9OWNNEG9U8RT6K
+2026-08-27 22:00:18,843 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:00:18,843 [INFO] __main__ - Processing symbol: P8Z | 79/175
+2026-08-27 22:00:18,975 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'bumitama agri ltd.' to 'bumitama agri ltd' with score 97.14
+2026-08-27 22:00:19,131 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'bumitama agri ltd.' to 'bumitama agri ltd' with score 97.14
+2026-08-27 22:00:19,255 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'bumitama agri ltd.' to 'bumitama agri ltd' with score 97.14
+2026-08-27 22:00:20,025 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:00:20,025 [INFO] __main__ - Processing symbol: ULG | 80/175
+2026-08-27 22:00:20,031 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:00:20,031 [INFO] __main__ - Processing symbol: H78 | 81/175
+2026-08-27 22:00:27,397 [INFO] __main__ - [TAVILY FALLBACK DATE] name: John Witt gets date from tavily: 2024-08-02
+2026-08-27 22:00:35,266 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Michael T. Smith gets date from tavily: 2024-04-01
+2026-08-27 22:00:40,853 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Craig Beattie gets date from tavily: 2022-07-27
+2026-08-27 22:00:48,679 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lincoln Pan gets date from tavily: 2025-11-01
+2026-08-27 22:00:57,906 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lily Jencks gets date from tavily: 2022-07-28
+2026-08-27 22:01:02,596 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Adam Keswick gets date from tavily: 2012-04-01
+2026-08-27 22:01:10,566 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lincoln K.K. Leong gets date from tavily: 2022-03-04
+2026-08-27 22:01:18,669 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ming Mei gets date from tavily: 2024-10-10
+2026-08-27 22:01:24,996 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Alan Miyasaki gets date from tavily: 2025-11-01
+2026-08-27 22:01:24,999 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:01:24,999 [INFO] __main__ - Processing symbol: J36 | 82/175
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: F9D
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: A31
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: H07
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: C41
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: B61
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: BN2
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: BBW
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: NTDU
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: S58
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: Z74
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: N2IU
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: AGS
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: O5RU
+2026-08-27 22:01:40,164 [INFO] __main__ - Skipping processed symbol: C6L
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: CJLU
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: M01
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: S08
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: ME8U
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: NPW
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: M44U
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: 9CI
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: T82U
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: HMN
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: E5H
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: SET
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: BN4
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: F34
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: EMI
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: U14
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: C07
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: H15
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: BTM
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: MV4
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: QC7
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: T14
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: AP4
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: H18
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: ADN
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: 1MZ
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: A30
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: F03
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: SEG
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: Q0F
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: AU8U
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: C38U
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: S07
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: K6S
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: ZKX
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: B58
+2026-08-27 22:01:40,165 [INFO] __main__ - Skipping processed symbol: HLS
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: BS6
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: TSH
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: 5JS
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: WJP
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: A17U
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: CY6U
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: ZQM
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: 5TP
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: 8YZ
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: QES
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: BWM
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: 5JK
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: U96
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: E3B
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: MZH
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: YF8
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: U10
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: 558
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: RE4
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: 5WJ
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: NIO
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: P34
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: AWX
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: 544
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: VC2
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: HQU
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: B28
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: AWZ
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: P8Z
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: ULG
+2026-08-27 22:01:40,166 [INFO] __main__ - Skipping processed symbol: H78
+2026-08-27 22:01:40,166 [INFO] __main__ - Processing symbol: J36 | 82/175
+2026-08-27 22:01:41,268 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ben Keswick gets date from tavily: 2007-04-01
+2026-08-27 22:01:49,242 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lincoln Pan gets date from tavily: 2025-12-01
+2026-08-27 22:01:55,529 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Graham Baker gets date from tavily: 2020-06-15
+2026-08-27 22:02:03,469 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Janine Feng gets date from tavily: 2023-05-05
+2026-08-27 22:02:10,424 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Stuart Gulliver gets date from tavily: 2019-01-01
+2026-08-27 22:02:15,147 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Keyu Jin gets date from tavily: 2024-01-31
+2026-08-27 22:02:23,304 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Adam Keswick gets date from tavily: 2007-03-31
+2026-08-27 22:02:29,193 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ming Lu gets date from tavily: 2025-02-24
+2026-08-27 22:02:38,082 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tim Wise gets date from tavily: 2025-05-23
+2026-08-27 22:02:38,085 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:02:38,085 [INFO] __main__ - Processing symbol: NS8U | 83/175
+2026-08-27 22:02:57,218 [INFO] __main__ - [TAVILY FALLBACK DATE] name: IM MAN IENG gets date from tavily: 2024-12-02
+2026-08-27 22:02:57,222 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:02:57,222 [INFO] __main__ - Processing symbol: CC3 | 84/175
+2026-08-27 22:02:57,381 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:57,610 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:57,773 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:57,948 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:58,110 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:58,252 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:58,401 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:58,515 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:58,639 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:58,779 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:58,921 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:02:59,087 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'starhub ltd.' to 'starhub ltd' with score 95.65
+2026-08-27 22:03:02,929 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:03:02,929 [INFO] __main__ - Processing symbol: H30 | 85/175
+2026-08-27 22:03:04,282 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chan Pengee, Adrian for H30 from appointment announcement P7GDCZI2OTV1LXYW
+2026-08-27 22:03:11,847 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Cheong Pin Chuan gets date from tavily: 2014-01-31
+2026-08-27 22:03:20,839 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Cheong Sim Eng gets date from tavily: 2014-01-31
+2026-08-27 22:03:26,799 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Cheong Hooi Kheng gets date from tavily: 2015-01-01
+2026-08-27 22:03:26,799 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chong Weng Hoe for H30 from appointment announcement MMN7ZDNT1GZ291VU
+2026-08-27 22:03:26,799 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Kwik Sam Aik for H30 from appointment announcement ZSKFHETNB0FOPAL2
+2026-08-27 22:03:40,395 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Tan Kok Kwee for H30 from appointment announcement NT532Z0FCXJ4IW84
+2026-08-27 22:03:40,398 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:03:40,399 [INFO] __main__ - Processing symbol: EB5 | 86/175
+2026-08-27 22:03:41,961 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:03:41,961 [INFO] __main__ - Processing symbol: H13 | 87/175
+2026-08-27 22:03:52,280 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Chua Thian Poh gets date from tavily: 1987-08-08
+2026-08-27 22:03:52,280 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Lim Swee Say for H13 from appointment announcement P7D6DC73MG8P9E3R
+2026-08-27 22:03:58,833 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Josephine Choo gets date from tavily: 2017-04-26
+2026-08-27 22:03:58,833 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Pauline Goh for H13 from appointment announcement DN32686WXCVCD00G
+2026-08-27 22:04:02,643 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Esmond Choo gets date from tavily: 2025-05-01
+2026-08-27 22:04:09,931 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Bobby Chin gets date from tavily: 2006-11-29
+2026-08-27 22:04:09,935 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:04:09,935 [INFO] __main__ - Processing symbol: AJBU | 88/175
+2026-08-27 22:04:14,941 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:04:14,942 [INFO] __main__ - Processing symbol: A7RU | 89/175
+2026-08-27 22:04:19,369 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:04:19,369 [INFO] __main__ - Processing symbol: E28 | 90/175
+2026-08-27 22:04:30,244 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Dato' Seri Gooi Soon Chai gets date from tavily: 2015-02-10
+2026-08-27 22:04:30,244 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Foo Seang Choong for E28 from appointment announcement Y4K618M6G5UBQ3GG
+2026-08-27 22:04:30,248 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:04:30,248 [INFO] __main__ - Processing symbol: OV8 | 91/175
+2026-08-27 22:04:32,955 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:04:32,955 [INFO] __main__ - Processing symbol: CHZ | 92/175
+2026-08-27 22:04:40,045 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Peter Sim gets date from tavily: 2016-09-21
+2026-08-27 22:04:47,325 [INFO] __main__ - [TAVILY FALLBACK DATE] name: JS Sim gets date from tavily: 2016-09-20
+2026-08-27 22:04:52,659 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched Adeline Sim for CHZ from appointment announcement LCFQORD5UERKCOU9
+2026-08-27 22:04:58,369 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jennifer Kang gets date from tavily: 2023-05-01
+2026-08-27 22:05:08,455 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Mae Heng gets date from tavily: 2017-05-16
+2026-08-27 22:05:15,186 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Hank Sato gets date from tavily: 2022-07-01
+2026-08-27 22:05:15,186 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Pong Chen Yih for CHZ from appointment announcement FLSDECTJOIJB5MZE
+2026-08-27 22:05:19,892 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Albert Ellis gets date from tavily: 2022-10-01
+2026-08-27 22:05:27,204 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Esmond Choo gets date from tavily: 2025-05-01
+2026-08-27 22:05:27,207 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:05:27,207 [INFO] __main__ - Processing symbol: OU8 | 93/175
+2026-08-27 22:05:29,133 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:05:29,133 [INFO] __main__ - Processing symbol: 5GD | 94/175
+2026-08-27 22:05:29,289 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'sunpower group ltd.' to 'sunpower group ltd' with score 97.30
+2026-08-27 22:05:38,670 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Guo Hong Xin gets date from tavily: 2004-01-01
+2026-08-27 22:05:38,670 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Yang Zheng for 5GD from appointment announcement PPM0YZT6Q3X18QG2
+2026-08-27 22:05:38,670 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Pan Shuhong for 5GD from appointment announcement X78COYD7GVBP4TEF
+2026-08-27 22:05:45,068 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ngoo Lin Fong gets date from tavily: 2025-04-03
+2026-08-27 22:05:45,072 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:05:45,072 [INFO] __main__ - Processing symbol: P52 | 95/175
+2026-08-27 22:05:45,183 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'pan-united corp ltd.' to 'pan-united corp ltd' with score 97.44
+2026-08-27 22:05:45,299 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'pan-united corp ltd.' to 'pan-united corp ltd' with score 97.44
+2026-08-27 22:05:45,420 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'pan-united corp ltd.' to 'pan-united corp ltd' with score 97.44
+2026-08-27 22:05:53,147 [INFO] __main__ - [TAVILY FALLBACK DATE] name: May Ng Bee Bee gets date from tavily: 2024-07-15
+2026-08-27 22:05:53,147 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Patrick Ng Bee Soon for P52 from appointment announcement 59BVY0VXQ89GW17G
+2026-08-27 22:05:53,147 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Fong Yue Kwong for P52 from appointment announcement S25WMBQ5Z5X5UGIC
+2026-08-27 22:05:53,147 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Soh Ee Beng for P52 from appointment announcement 3LWRX7TMM2SDTMDJ
+2026-08-27 22:05:59,452 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chan Wan Hong for P52 from appointment announcement DIVFB55KUICH234F
+2026-08-27 22:05:59,456 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:05:59,456 [INFO] __main__ - Processing symbol: S20 | 96/175
+2026-08-27 22:05:59,585 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:05:59,740 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:05:59,847 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:05:59,979 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:00,100 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:00,224 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:00,342 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:00,484 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:00,685 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:00,838 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:01,005 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:01,402 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:01,549 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:01,906 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:02,034 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:02,171 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'straits trading co. ltd' to 'straits trading co ltd' with score 97.78
+2026-08-27 22:06:08,155 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:08,155 [INFO] __main__ - Processing symbol: 8C8U | 97/175
+2026-08-27 22:06:08,162 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:08,162 [INFO] __main__ - Processing symbol: T24 | 98/175
+2026-08-27 22:06:10,193 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:10,193 [INFO] __main__ - Processing symbol: KUO | 99/175
+2026-08-27 22:06:13,262 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:13,262 [INFO] __main__ - Processing symbol: ODBU | 100/175
+2026-08-27 22:06:13,505 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:13,505 [INFO] __main__ - Processing symbol: LJ3 | 101/175
+2026-08-27 22:06:14,656 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:14,656 [INFO] __main__ - Processing symbol: DHLU | 102/175
+2026-08-27 22:06:15,690 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:15,690 [INFO] __main__ - Processing symbol: OYY | 103/175
+2026-08-27 22:06:16,485 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:16,485 [INFO] __main__ - Processing symbol: F83 | 104/175
+2026-08-27 22:06:19,473 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Wang Shan He for F83 from appointment announcement OOZ9OPNXRUJAK34D
+2026-08-27 22:06:19,478 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:19,478 [INFO] __main__ - Processing symbol: H02 | 105/175
+2026-08-27 22:06:22,085 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:22,085 [INFO] __main__ - Processing symbol: V03 | 106/175
+2026-08-27 22:06:25,592 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Han Thong Kwang for V03 from appointment announcement XWK8N3GEQEWTY1VV
+2026-08-27 22:06:25,596 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:25,596 [INFO] __main__ - Processing symbol: 9A4U | 107/175
+2026-08-27 22:06:25,743 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:25,743 [INFO] __main__ - Processing symbol: BTE | 108/175
+2026-08-27 22:06:32,155 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Frankle (Djafar) Widjaja gets date from tavily: 2009-09-01
+2026-08-27 22:06:39,141 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Franky Oesman Widjaja gets date from tavily: 2009-09-09
+2026-08-27 22:06:39,141 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Deborah Widjaja for BTE from appointment announcement VWXCPWB1JSEVBAN2
+2026-08-27 22:06:39,141 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Foo Meng Kee for BTE from appointment announcement Z8B7K5J9I97Q9O2B
+2026-08-27 22:06:39,141 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Chong Weng Hoe for BTE from appointment announcement GDI291P3YC7M06RU
+2026-08-27 22:06:39,141 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Kuan Li Li for BTE from appointment announcement RAYECJXFS5F2FQ6W
+2026-08-27 22:06:39,146 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:39,146 [INFO] __main__ - Processing symbol: 8AZ | 109/175
+2026-08-27 22:06:45,789 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jeremy Mun Weng Hung gets date from tavily: 2017-08-08
+2026-08-27 22:06:45,793 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:45,793 [INFO] __main__ - Processing symbol: 8A8 | 110/175
+2026-08-27 22:06:45,800 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:06:45,800 [INFO] __main__ - Processing symbol: AIY | 111/175
+2026-08-27 22:06:52,367 [INFO] __main__ - [TAVILY FALLBACK DATE] name: LIM CHUNG CHUN gets date from tavily: null
+2026-08-27 22:06:58,345 [INFO] __main__ - [TAVILY FALLBACK DATE] name: MARK RUDOLPH DUNCAN gets date from tavily: 2021-01-01
+2026-08-27 22:07:27,175 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched CHEN PENG for AIY from appointment announcement IPGJCB2ZUUDRPTGG
+2026-08-27 22:07:46,284 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched THAM SOH MUI TAMMIE for AIY from appointment announcement 4SSK2JIQWBFJ3A33
+2026-08-27 22:07:50,247 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched TOH TENG PEOW DAVID for AIY from appointment announcement 80WXE383CA2Z8XLX
+2026-08-27 22:08:04,462 [INFO] __main__ - [FALLBACK TAVILY MATCH NAME]Enriched CHU WING TAK CAECILIA for AIY from appointment announcement 8K93WFDKXL3DJCMV
+2026-08-27 22:08:16,722 [INFO] __main__ - [TAVILY FALLBACK DATE] name: LIM WEE KIAN gets date from tavily: 2004-04-28
+2026-08-27 22:08:34,561 [INFO] __main__ - [TAVILY FALLBACK DATE] name: WONG TIN NIAM JEAN PAUL gets date from tavily: 2021-05-01
+2026-08-27 22:08:34,566 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:08:34,566 [INFO] __main__ - Processing symbol: U13 | 112/175
+2026-08-27 22:08:36,340 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:08:36,340 [INFO] __main__ - Processing symbol: O6Z | 113/175
+2026-08-27 22:08:42,847 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jean-Marc Huët gets date from tavily: 2024-05-15
+2026-08-27 22:08:47,647 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jürgen Steinemann gets date from tavily: 2014-04-15
+2026-08-27 22:08:51,838 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Christoph Mäder gets date from tavily: 2016-04-01
+2026-08-27 22:08:58,107 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Juan Andres gets date from tavily: 2025-05-08
+2026-08-27 22:09:05,917 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Eric Drapé gets date from tavily: 2025-05-14
+2026-08-27 22:09:10,097 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Marion Helmes gets date from tavily: 2022-05-01
+2026-08-27 22:09:16,328 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Angelica Kohlmann gets date from tavily: 2018-05-03
+2026-08-27 22:09:22,039 [INFO] __main__ - [TAVILY FALLBACK DATE] name: David Meline gets date from tavily: null
+2026-08-27 22:09:27,100 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Roger Nitsch gets date from tavily: 2022-04-30
+2026-08-27 22:09:31,110 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Barbara Richmond gets date from tavily: 2014-04-01
+2026-08-27 22:09:31,114 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:09:31,115 [INFO] __main__ - Processing symbol: M1GU | 114/175
+2026-08-27 22:09:40,982 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Bhavik Umesh Doshi gets date from tavily: null
+2026-08-27 22:09:56,000 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lim Hock Chuan gets date from tavily: 2020-10-01
+2026-08-27 22:10:09,281 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Saha Anshuman Manabendranath gets date from tavily: 2024-10-17
+2026-08-27 22:10:20,932 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Konrad Duttwiler gets date from tavily: null
+2026-08-27 22:10:30,470 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Jan Frederic Moermann gets date from tavily: 2026-08-20
+2026-08-27 22:10:35,374 [ERROR] __main__ - [TAVILY] error: Forbidden: This request exceeds your plan's set usage limit. Please upgrade your plan or contact support@tavily.com
+2026-08-27 22:10:39,557 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Havard Chi Cher Pan gets date from tavily: 2025-08-01
+2026-08-27 22:10:39,562 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:10:39,562 [INFO] __main__ - Processing symbol: O10 | 115/175
+2026-08-27 22:10:42,226 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:10:42,226 [INFO] __main__ - Processing symbol: CRPU | 116/175
+2026-08-27 22:10:43,180 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:10:43,180 [INFO] __main__ - Processing symbol: 5CF | 117/175
+2026-08-27 22:10:43,590 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:10:43,590 [INFO] __main__ - Processing symbol: G92 | 118/175
+2026-08-27 22:10:50,577 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:10:50,577 [INFO] __main__ - Processing symbol: AW9U | 119/175
+2026-08-27 22:10:51,993 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:10:51,993 [INFO] __main__ - Processing symbol: Y03 | 120/175
+2026-08-27 22:10:58,450 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:10:58,450 [INFO] __main__ - Processing symbol: BSL | 121/175
+2026-08-27 22:11:03,966 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:03,966 [INFO] __main__ - Processing symbol: PCT | 122/175
+2026-08-27 22:11:04,105 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:04,105 [INFO] __main__ - Processing symbol: C09 | 123/175
+2026-08-27 22:11:09,235 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:09,235 [INFO] __main__ - Processing symbol: C2PU | 124/175
+2026-08-27 22:11:11,896 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:11,896 [INFO] __main__ - Processing symbol: U9E | 125/175
+2026-08-27 22:11:15,076 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:15,076 [INFO] __main__ - Processing symbol: BHK | 126/175
+2026-08-27 22:11:15,205 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:15,328 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:15,456 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:15,583 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:15,726 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:15,839 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:15,952 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:16,083 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:16,204 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:16,341 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asia environment holdings ltd' to 'siic environment holdings ltd' with score 93.10
+2026-08-27 22:11:16,499 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'siic environment holdings ltd.' to 'siic environment holdings ltd' with score 98.31
+2026-08-27 22:11:16,628 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'siic environment holdings ltd.' to 'siic environment holdings ltd' with score 98.31
+2026-08-27 22:11:16,842 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'siic environment holdings ltd.' to 'siic environment holdings ltd' with score 98.31
+2026-08-27 22:11:17,005 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'siic environment holdings ltd.' to 'siic environment holdings ltd' with score 98.31
+2026-08-27 22:11:21,360 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:21,360 [INFO] __main__ - Processing symbol: Q01 | 127/175
+2026-08-27 22:11:29,745 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Philip Yeo Liat Kok for Q01 from appointment announcement 2ZSOCZTSD44D0AZB
+2026-08-27 22:11:29,745 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Michael Darren Hewat for Q01 from appointment announcement 4NH143BHCI1XZUMJ
+2026-08-27 22:11:29,750 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:29,750 [INFO] __main__ - Processing symbol: TS0U | 128/175
+2026-08-27 22:11:31,160 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Brian Riady for TS0U from appointment announcement 7T5MJYJ8X9DUTTL0
+2026-08-27 22:11:31,165 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:31,165 [INFO] __main__ - Processing symbol: G07 | 129/175
+2026-08-27 22:11:31,284 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:31,443 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:31,579 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:31,716 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:31,862 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:31,978 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:32,157 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:32,293 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:32,452 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:32,570 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:32,681 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:32,848 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:32,998 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:33,144 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'great eastern hldgs ltd' to 'great eastern holdings ltd' with score 93.88
+2026-08-27 22:11:36,427 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:36,428 [INFO] __main__ - Processing symbol: C52 | 130/175
+2026-08-27 22:11:41,170 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:41,170 [INFO] __main__ - Processing symbol: H22 | 131/175
+2026-08-27 22:11:41,301 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'hong leong asia ltd.' to 'hong leong asia ltd' with score 97.44
+2026-08-27 22:11:41,443 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'hong leong asia ltd.' to 'hong leong asia ltd' with score 97.44
+2026-08-27 22:11:41,567 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'hong leong asia ltd.' to 'hong leong asia ltd' with score 97.44
+2026-08-27 22:11:41,706 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'hong leong asia ltd.' to 'hong leong asia ltd' with score 97.44
+2026-08-27 22:11:41,850 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'hong leong asia ltd.' to 'hong leong asia ltd' with score 97.44
+2026-08-27 22:11:44,268 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:44,269 [INFO] __main__ - Processing symbol: S61 | 132/175
+2026-08-27 22:11:49,132 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:49,132 [INFO] __main__ - Processing symbol: K71U | 133/175
+2026-08-27 22:11:52,918 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:52,918 [INFO] __main__ - Processing symbol: S41 | 134/175
+2026-08-27 22:11:54,592 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:54,592 [INFO] __main__ - Processing symbol: MXNU | 135/175
+2026-08-27 22:11:55,709 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:11:55,709 [INFO] __main__ - Processing symbol: S63 | 136/175
+2026-08-27 22:12:06,203 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Ong Su Kiat Melvyn for S63 from appointment announcement JOGYQ9HY1YG0Z74C
+2026-08-27 22:12:06,208 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:06,208 [INFO] __main__ - Processing symbol: DCRU | 137/175
+2026-08-27 22:12:06,629 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:06,629 [INFO] __main__ - Processing symbol: G13 | 138/175
+2026-08-27 22:12:06,776 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'genting singapore plc' to 'genting singapore ltd' with score 90.48
+2026-08-27 22:12:06,897 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'genting singapore plc' to 'genting singapore ltd' with score 90.48
+2026-08-27 22:12:07,079 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'genting singapore plc' to 'genting singapore ltd' with score 90.48
+2026-08-27 22:12:09,595 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:09,595 [INFO] __main__ - Processing symbol: O39 | 139/175
+2026-08-27 22:12:16,411 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:16,411 [INFO] __main__ - Processing symbol: Q5T | 140/175
+2026-08-27 22:12:17,428 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:17,428 [INFO] __main__ - Processing symbol: U11 | 141/175
+2026-08-27 22:12:20,752 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:20,752 [INFO] __main__ - Processing symbol: D05 | 142/175
+2026-08-27 22:12:29,461 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Peter Seah gets date from tavily: 2009-11-16
+2026-08-27 22:12:35,622 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Olivier Lim gets date from tavily: 2017-11-07
+2026-08-27 22:12:43,275 [INFO] __main__ - [TAVILY FALLBACK DATE] name: David Ho gets date from tavily: 2023-04-26
+2026-08-27 22:12:49,982 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Anthony Lim gets date from tavily: 2020-04-01
+2026-08-27 22:12:49,988 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:49,988 [INFO] __main__ - Processing symbol: F99 | 143/175
+2026-08-27 22:12:50,411 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:50,571 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:50,890 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:51,067 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:51,230 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:51,364 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:51,515 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:51,697 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:51,862 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:52,008 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:52,144 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:52,293 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:52,435 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:52,630 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:52,758 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:52,995 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:53,173 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:53,347 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:53,498 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:53,634 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:53,758 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:53,876 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,029 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,166 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,309 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,437 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,574 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,716 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,853 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:54,995 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:55,132 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'fraser and neave ltd.' to 'fraser and neave ltd' with score 97.56
+2026-08-27 22:12:59,153 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:12:59,153 [INFO] __main__ - Processing symbol: Y92 | 144/175
+2026-08-27 22:13:05,621 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:05,621 [INFO] __main__ - Processing symbol: 1D0 | 145/175
+2026-08-27 22:13:07,081 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:07,081 [INFO] __main__ - Processing symbol: BUOU | 146/175
+2026-08-27 22:13:08,770 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:08,770 [INFO] __main__ - Processing symbol: J69U | 147/175
+2026-08-27 22:13:10,185 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:10,185 [INFO] __main__ - Processing symbol: TQ5 | 148/175
+2026-08-27 22:13:14,644 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:14,644 [INFO] __main__ - Processing symbol: S3N | 149/175
+2026-08-27 22:13:17,762 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:17,762 [INFO] __main__ - Processing symbol: A04 | 150/175
+2026-08-27 22:13:17,908 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asl marine holdings ltd.' to 'asl marine holdings ltd' with score 97.87
+2026-08-27 22:13:18,071 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asl marine holdings ltd.' to 'asl marine holdings ltd' with score 97.87
+2026-08-27 22:13:18,196 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'asl marine holdings ltd.' to 'asl marine holdings ltd' with score 97.87
+2026-08-27 22:13:25,964 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ang Kok Tian gets date from tavily: 2020-10-18
+2026-08-27 22:13:32,178 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ang Ah Nui gets date from tavily: 2000-10-01
+2026-08-27 22:13:38,134 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ang Kok Leong gets date from tavily: 2002-10-17
+2026-08-27 22:13:38,134 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] David Hwang Soo Chin for A04 from appointment announcement 2JOZJT98VRLZEXIU
+2026-08-27 22:13:38,134 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Tan Sek Khee for A04 from appointment announcement K2K5AT4KP6GYS3CE
+2026-08-27 22:13:38,134 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Adrian Wong Soon Peng for A04 from appointment announcement D72R3S2GHFJFXRJO
+2026-08-27 22:13:38,140 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:38,140 [INFO] __main__ - Processing symbol: W05 | 151/175
+2026-08-27 22:13:40,044 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:40,044 [INFO] __main__ - Processing symbol: 5UX | 152/175
+2026-08-27 22:13:49,889 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Ching Chiat Kwong gets date from tavily: 2014-05-01
+2026-08-27 22:13:49,896 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:49,896 [INFO] __main__ - Processing symbol: 42C | 153/175
+2026-08-27 22:13:51,234 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:13:51,234 [INFO] __main__ - Processing symbol: N02 | 154/175
+2026-08-27 22:13:51,391 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'nsl ltd.' to 'nsl ltd' with score 93.33
+2026-08-27 22:13:51,545 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'nsl ltd.' to 'nsl ltd' with score 93.33
+2026-08-27 22:13:51,671 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'nsl ltd.' to 'nsl ltd' with score 93.33
+2026-08-27 22:14:15,272 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Tan Sri (Sir) Yeoh Sock Ping for N02 from appointment announcement S0MOUMRZTXIFY8ED
+2026-08-27 22:14:24,894 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Dato' Seri Yeoh Seok Hong for N02 from appointment announcement ENGHJSLDIJTD9KGI
+2026-08-27 22:14:39,508 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Dato' Yeoh Seok Kian for N02 from appointment announcement LAYBRPMBFR2S3ASE
+2026-08-27 22:14:44,434 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Dato' Yeoh Soo Keng for N02 from appointment announcement YMCWS0J1E1Q9PMCZ
+2026-08-27 22:14:44,435 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Dato' Sri Yeoh Sock Siong for N02 from appointment announcement PULO2CH916TY99LX
+2026-08-27 22:14:50,277 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Yeoh Pei Jen for N02 from appointment announcement 088LKWN5GXBSLQ9X
+2026-08-27 22:14:50,277 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Choo Eng Chuan for N02 from appointment announcement MX1KV80MRW4YQ58N
+2026-08-27 22:14:50,277 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Anand Kumar for N02 from appointment announcement LXLWUZL1YMD2S9BB
+2026-08-27 22:14:50,277 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Edmund Lee Yu Chiang for N02 from appointment announcement 1JWD47HYVB5W3ZGV
+2026-08-27 22:14:50,283 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:14:50,283 [INFO] __main__ - Processing symbol: A50 | 155/175
+2026-08-27 22:14:53,910 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:14:53,910 [INFO] __main__ - Processing symbol: JYEU | 156/175
+2026-08-27 22:14:55,236 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:14:55,236 [INFO] __main__ - Processing symbol: P9D | 157/175
+2026-08-27 22:14:57,332 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:14:57,332 [INFO] __main__ - Processing symbol: 5DD | 158/175
+2026-08-27 22:14:57,472 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'micro-mechanics (holdings) ltd.' to 'micro-mechanics (holdings) ltd' with score 98.36
+2026-08-27 22:14:57,591 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'micro-mechanics (holdings) ltd.' to 'micro-mechanics (holdings) ltd' with score 98.36
+2026-08-27 22:14:57,730 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'micro-mechanics (holdings) ltd.' to 'micro-mechanics (holdings) ltd' with score 98.36
+2026-08-27 22:15:04,771 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Christopher Reid Borch gets date from tavily: 1996-06-25
+2026-08-27 22:15:04,771 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Kyle Christopher Borch for 5DD from appointment announcement 9ZKLVKGJORTJ1J1X
+2026-08-27 22:15:10,547 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Kenny Kwan gets date from tavily: 2019-06-14
+2026-08-27 22:15:10,547 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Kazuo Jozeph Takeda for 5DD from appointment announcement VO1UEGXDPA8Z6TZL
+2026-08-27 22:15:16,116 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Chua Siew Hwi gets date from tavily: 2023-11-01
+2026-08-27 22:15:16,122 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:16,123 [INFO] __main__ - Processing symbol: F17 | 159/175
+2026-08-27 22:15:21,302 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:21,302 [INFO] __main__ - Processing symbol: P40U | 160/175
+2026-08-27 22:15:23,513 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:23,513 [INFO] __main__ - Processing symbol: S68 | 161/175
+2026-08-27 22:15:30,982 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:30,982 [INFO] __main__ - Processing symbol: S59 | 162/175
+2026-08-27 22:15:37,150 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:37,150 [INFO] __main__ - Processing symbol: U06 | 163/175
+2026-08-27 22:15:39,661 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:39,661 [INFO] __main__ - Processing symbol: BDX | 164/175
+2026-08-27 22:15:41,884 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:41,885 [INFO] __main__ - Processing symbol: T6I | 165/175
+2026-08-27 22:15:49,346 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Yeah Chia Kai gets date from tavily: 2022-01-01
+2026-08-27 22:15:49,352 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:15:49,352 [INFO] __main__ - Processing symbol: P15 | 166/175
+2026-08-27 22:15:56,107 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Richard Li Tzar Kai gets date from tavily: 1994-09-07
+2026-08-27 22:16:02,613 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Francis Yuen Tin Fan gets date from tavily: 2005-03-15
+2026-08-27 22:16:09,777 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Peter A. Allen gets date from tavily: 1997-11-01
+2026-08-27 22:16:09,777 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Christopher John Fossick for P15 from appointment announcement PQ3W0IBA402U5NAF
+2026-08-27 22:16:09,777 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Yeo Wee Kiong for P15 from appointment announcement CMYE6GI7406R0M9X
+2026-08-27 22:16:09,777 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Charlene Dawes for P15 from appointment announcement FJM4KMX3PB0AQMKX
+2026-08-27 22:16:09,777 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Clara Tiong Siew EE for P15 from appointment announcement 9AZAX6EXWJ1O5E8S
+2026-08-27 22:16:09,783 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:16:09,783 [INFO] __main__ - Processing symbol: Z25 | 167/175
+2026-08-27 22:16:12,965 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:16:12,965 [INFO] __main__ - Processing symbol: 5IG | 168/175
+2026-08-27 22:16:13,093 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'gallant venture ltd.' to 'gallant venture ltd' with score 97.44
+2026-08-27 22:16:14,231 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'gallant venture ltd.' to 'gallant venture ltd' with score 97.44
+2026-08-27 22:16:14,384 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'gallant venture ltd.' to 'gallant venture ltd' with score 97.44
+2026-08-27 22:16:15,507 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:16:15,507 [INFO] __main__ - Processing symbol: D01 | 169/175
+2026-08-27 22:16:21,525 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Lincoln Pan gets date from tavily: 2025-11-01
+2026-08-27 22:16:28,045 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Tom van der Lee gets date from tavily: 2024-10-01
+2026-08-27 22:16:35,164 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Graham Baker gets date from tavily: 2024-07-16
+2026-08-27 22:16:42,774 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Elaine Chang gets date from tavily: 2025-02-17
+2026-08-27 22:16:50,218 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Dave Cheesewright gets date from tavily: 2021-09-08
+2026-08-27 22:16:56,472 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Weiwei Chen gets date from tavily: 2021-11-29
+2026-08-27 22:17:03,698 [INFO] __main__ - [TAVILY FALLBACK DATE] name: Christian Nothhaft gets date from tavily: 2021-11-29
+2026-08-27 22:17:03,705 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:17:03,705 [INFO] __main__ - Processing symbol: S35 | 170/175
+2026-08-27 22:17:05,078 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:17:05,078 [INFO] __main__ - Processing symbol: J85 | 171/175
+2026-08-27 22:17:06,367 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:17:06,367 [INFO] __main__ - Processing symbol: BEC | 172/175
+2026-08-27 22:17:11,751 [INFO] __main__ - [ENRICHED WITH ANNOUNCEMENTS] Seah Kiin Peng for BEC from appointment announcement Z8U7K78T401X31AM
+2026-08-27 22:17:11,757 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:17:11,757 [INFO] __main__ - Processing symbol: 5LY | 173/175
+2026-08-27 22:17:11,891 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'marco polo marine ltd.' to 'marco polo marine ltd' with score 97.67
+2026-08-27 22:17:12,046 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'marco polo marine ltd.' to 'marco polo marine ltd' with score 97.67
+2026-08-27 22:17:12,163 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'marco polo marine ltd.' to 'marco polo marine ltd' with score 97.67
+2026-08-27 22:17:12,284 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'marco polo marine ltd.' to 'marco polo marine ltd' with score 97.67
+2026-08-27 22:17:12,436 [INFO] sgx_scraper.utils.symbol_matching_helper - Matched company name 'marco polo marine ltd.' to 'marco polo marine ltd' with score 97.67
+2026-08-27 22:17:13,970 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:17:13,970 [INFO] __main__ - Processing symbol: 5UF | 174/175
+2026-08-27 22:17:16,157 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
+2026-08-27 22:17:16,157 [INFO] __main__ - Processing symbol: BVA | 175/175
+2026-08-27 22:17:16,166 [INFO] sgx_scraper.utils.json_helper - Saved all sgx scraped to sgx_scraper/fetch_managements/data/success/result_enriched_appointment_v3.json
