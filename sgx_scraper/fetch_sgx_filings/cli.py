@@ -103,7 +103,7 @@ def dispatch(
     write_json(SGX_FILINGS_PATH_NOT_INSERTABLE, not_insertable)
     write_json(SGX_FILINGS_PATH_INSERTABLE, insertable)
 
-    if is_send_email:
+    if is_send_email and not_insertable:
         subject, body_text, body_html = render_filing_email_content(
             alerts=not_insertable,
             title="SGX Non-Insertable Transaction Alerts",
