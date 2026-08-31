@@ -79,7 +79,8 @@ NEWS_TAG_MAPPING = {
 
 def generate_news_title_body(
     formatted_record: str, 
-    generate_type: str = "filing" 
+    models: list[str],
+    generate_type: str = "filing",
 ) -> tuple[str, str] | None:
     prompt = NEWS_PROMPT_MAPPING.get(generate_type)
 
@@ -95,7 +96,7 @@ def generate_news_title_body(
         user_prompt=user_prompt,
         log_name=f"SGX News {generate_type}",
         input_data={"data": formatted_record},
-        models=["gpt-oss-120b"],
+        models=models,
         temperature=0.4,
         effort="low",
     )
@@ -151,7 +152,8 @@ def clean_news_payload(
 
 def generate_news(
     payload: list[dict], 
-    generate_type: str = "filing"
+    generate_type: str = "filing",
+    models: list[str] = ["nvidia-nemotron-3-ultra","gpt-oss-120b"]
 ) -> list[dict]:
     if payload is None or not payload:
         return []
@@ -174,6 +176,7 @@ def generate_news(
         result = generate_news_title_body(
             formatted_record=formatted_current_data,
             generate_type=news_type,
+            models=models
         )   
 
         time.sleep(random.randint(2, 5))

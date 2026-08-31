@@ -31,7 +31,7 @@ def to_kebab(value: str | None) -> str:
 def format_filing_input(filing: dict) -> str:
     lines = [
         f"symbol: {filing.get('symbol') or '-'}",
-        f"company name: {filing.get('issuer_name') or '-'}",
+        f"company name: {filing.get('company_name') or '-'}",
         f"holder name: {filing.get('holder_name') or '-'}",
         f"holder type: {filing.get('holder_type') or '-'}",
         f"transaction type: {filing.get('transaction_type') or '-'}",

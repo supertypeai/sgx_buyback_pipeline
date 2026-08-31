@@ -12,8 +12,20 @@ USER_PROMPT = """
     {data}
 
     Title format. Use data from the current filing only:
-    - If transaction type is buy or sell:
-        (Holder name) (Transaction Type) Shares of (Company name)
+    - Do not begin the title with a hyphen, dash, bullet, quotation mark, or any other punctuation.
+      Start directly with the title text.
+    - If holder name contains "[->]", replace it with "to". Never include "[->]" or square
+      brackets in the title.
+    - Use natural headline grammar. For buy and sell transactions, use "Buys" and "Sells"
+      rather than the raw transaction labels "Buy" and "Sell".
+    - Use clean corporate suffixes such as "Pte Ltd" and "Ltd" without full stops. Do not
+      remove meaningful punctuation that is part of a proper name.
+    - If transaction type is buy:
+        (Holder name) Buys Shares of (Company name)
+    - If transaction type is sell:
+        (Holder name) Sells Shares of (Company name)
+    - If transaction type is transfer:
+        (Company name) Transfer from (Transferor) to (Transferee)
     - If transaction type is award:
         (Holder name) Reports Share Award Distribution in (Company name)
     - If transaction type is others:
