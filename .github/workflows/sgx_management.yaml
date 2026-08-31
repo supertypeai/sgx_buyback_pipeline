@@ -1,0 +1,88 @@
+name: Scrape SGX Management
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 1 * *'  # 11:00 AM WIB (UTC+7) on the first day of each month
+
+concurrency:
+  group: sgx-scraper-main
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+    
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Calculate previous month
+        id: management_period
+        shell: bash
+        run: |
+          current_month=$(date -u +%Y-%m-01)
+          period_start=$(date -u -d "$current_month -1 month" +%Y%m%d)
+          period_end=$(date -u -d "$current_month -1 day" +%Y%m%d)
+
+          echo "period_start=$period_start" >> "$GITHUB_OUTPUT"
+          echo "period_end=$period_end" >> "$GITHUB_OUTPUT"
+          echo "Processing management announcements from $period_start to $period_end"
+
+      - name: Run management scraper
+        env:
+          PROXY: ${{ secrets.PROXY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          TAVILY_API_KEY1: ${{ secrets.TAVILY_API_KEY1 }}
+          TAVILY_API_KEY2: ${{ secrets.TAVILY_API_KEY2 }}
+          TAVILY_API_KEY3: ${{ secrets.TAVILY_API_KEY3 }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        run: |
+          set -o pipefail
+          uv run python -m sgx_scraper.main_cli scraper_managements --period-start "${{ steps.management_period.outputs.period_start }}" --period-end "${{ steps.management_period.outputs.period_end }}" --is-upsert-db 2>&1 | tee scraper.log
+
+      - name: Pull Latest Changes (safe)
+        run: |
+          git fetch origin main
+          git stash push -m "temp-scraper-log" || true
+          git merge origin/main --strategy-option=theirs || true
+          git stash pop || true
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          git add data/scraper_output/sgx_managements/annual_report/processed/new/clean_annual_report_urls.json
+          git add data/scraper_output/sgx_managements/annual_report/processed/historical/annual_report_urls.json
+
+          git diff-index --quiet HEAD || (git commit -m "sgx_management: update annual report checkpoint" --allow-empty)
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload scraper artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgx-management-artifacts
+          path: |
+            scraper.log
+          if-no-files-found: warn
+          retention-days: 90

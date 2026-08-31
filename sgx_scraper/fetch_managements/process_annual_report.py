@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 from sgx_scraper.utils.cli_helper import get_db 
-from sgx_scraper.utils.json_helper import open_json, write_json
+from sgx_scraper.utils.json_helper import write_json
 from sgx_scraper.utils.sgx_announcement_html import resolve_annual_report
 from sgx_scraper.utils.symbol_matching_helper import symbol_from_company_name 
 
@@ -12,23 +12,18 @@ LOGGER = logging.getLogger(__name__)
 
 
 def filter_lookup_announcements(
-    path: str = "sgx_scraper/fetch_managements/announcements.json",
-    output_path: str = (
-        "sgx_scraper/fetch_managements/"
-        "cleaned_announcements_appointment_cessation.json"
-    ),
-    sort_oldest_first: bool = False,
+    raw_announcement_api: list,
+    is_descending: bool = True,
+    is_print_log_matching: bool = False
 ) -> None:
     primary_symbols = {
         "YANGZIJIANG SHIPBUILDING (HOLDINGS) LTD.": "BS6",
     }
 
-    records = open_json(path)
-
     sorted_records = sorted(
-        records,
+        raw_announcement_api,
         key=lambda announcement: announcement.get("submission_date") or "",
-        reverse=not sort_oldest_first,
+        reverse=is_descending,
     )
     
     top_200 = get_db(
@@ -61,12 +56,17 @@ def filter_lookup_announcements(
 
         if len(issuer_symbols) == 1:
             symbol = next(iter(issuer_symbols))
+            
         elif issuer_symbols:
             symbol = primary_symbols.get(issuer_name)
+
         else:
             if issuer_name not in resolved_symbols_by_issuer_name:
                 resolved_symbols_by_issuer_name[issuer_name] = (
-                    symbol_from_company_name(issuer_name)
+                    symbol_from_company_name(
+                        issuer_name, 
+                        is_print_log=is_print_log_matching
+                    )
                 )
 
             symbol = resolved_symbols_by_issuer_name[issuer_name]
@@ -76,44 +76,56 @@ def filter_lookup_announcements(
 
         announcement_lookup[symbol].append(record)
 
-    write_json(
-        output_path,
-        dict(announcement_lookup)
+    LOGGER.info(
+        "Total annual report filtered to top 200 lookup: %d", 
+        len(announcement_lookup)
     )
 
-    LOGGER.info("length cleaned: %d", len(announcement_lookup))
+    return announcement_lookup
 
 
 def filter_annual_report_url(
-    cleaned_announcements_path: str, 
+    announcement_lookup: dict,
     output_path: str 
-) -> None:
-    announcements = open_json(cleaned_announcements_path) 
+) -> dict:
+    pdf_urls = {}
 
-    pdf_urls = []
+    for index, (symbol, records) in enumerate(
+        announcement_lookup.items(),
+        start=1 
+    ): 
+        LOGGER.info(
+            "Processing filter anual report url: %d/%d | symbol: %s",
+            index, 
+            len(announcement_lookup),
+            symbol
+        )
 
-    for symbol, records in announcements.items(): 
         pdf_url = None
 
         for record in records:
             url = record["url"]
+            submission_date = record["submission_date"]
 
-            pdf_url, resolved_company_name = resolve_annual_report(
+            pdf_url, _ = resolve_annual_report(
                 url,
-                company_name=record.get("security_name") or resolved_company_name,
+                company_name=record.get("security_name"),
             )
 
             if pdf_url is not None: 
                 break 
 
-        pdf_urls.append({
+        pdf_urls[symbol] = {
             "symbol": symbol, 
-            "pdf_url": pdf_url
-        })
+            "pdf_url": pdf_url, 
+            "submission_date": submission_date
+        }
 
         write_json(
-            path=output_path, # "sgx_scraper/fetch_managements/pdf_urls.json", 
+            path=output_path, 
             payload=pdf_urls
         )
 
     LOGGER.info("Total annual report urls covered: %d", len(pdf_urls))
+
+    return pdf_urls

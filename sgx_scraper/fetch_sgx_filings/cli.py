@@ -1,21 +1,20 @@
+from itertools import islice
+
 from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import push_to_db, remove_duplicate, filter_top_n_companies
-from sgx_scraper.utils.json_helper import write_json, write_to_csv
+from sgx_scraper.utils.json_helper import write_json
 from sgx_scraper.utils.constant import (
     SGX_FILINGS_PATH_TODAY,
     SGX_FILINGS_PATH_YESTERDAY,
-    SGX_FILINGS_PATH_NOT_TOP_200,
-    SGX_FILINGS_PATH_TOP_100,
     SGX_FILINGS_PATH_INSERTABLE,
     SGX_FILINGS_PATH_NOT_INSERTABLE,
 )
 from sgx_scraper.fetch_sgx_filings.parser import get_sgx_filings
 from sgx_scraper.fetch_sgx_filings.utils.payload_helper import filter_duplicate
-from sgx_scraper.fetch_sgx_filings.news.builder import generate_news
+from sgx_scraper.news.builder import generate_news
 from sgx_scraper.alerting.filter_data_alert import get_data_alert
-from sgx_scraper.alerting.mailer import send_sgx_filings_alert
-
-from itertools import islice
+from sgx_scraper.alerting.mailer import send_sgx_alert_email
+from sgx_scraper.alerting.build_template import render_filing_email_content
 
 import typer
 import logging
@@ -76,16 +75,6 @@ def scrape_filings(
     return payload
 
 
-def write_snapshots(
-    top_200: list[dict], 
-    not_top_200: list[dict], 
-    top_100: list[dict]
-) -> None:
-    write_to_csv(SGX_FILINGS_PATH_NOT_TOP_200, not_top_200)
-    write_json(SGX_FILINGS_PATH_TODAY, top_200)
-    write_json(SGX_FILINGS_PATH_TOP_100, top_100)
-
-
 def resolve_new_records(top_200: list[dict]) -> list[dict]:
     if SGX_FILINGS_PATH_YESTERDAY.exists():
         LOGGER.info('Processing remove duplicate data')
@@ -115,7 +104,17 @@ def dispatch(
     write_json(SGX_FILINGS_PATH_INSERTABLE, insertable)
 
     if is_send_email:
-        send_sgx_filings_alert(not_insertable, [str(SGX_FILINGS_PATH_NOT_INSERTABLE)])
+        subject, body_text, body_html = render_filing_email_content(
+            alerts=not_insertable,
+            title="SGX Non-Insertable Transaction Alerts",
+        )
+
+        send_sgx_alert_email(
+            subject=subject,
+            body_text=body_text,
+            body_html=body_html,
+            attachments_path=[str(SGX_FILINGS_PATH_NOT_INSERTABLE)]
+        )
 
     if is_push_db:
         exclude_columns = {
@@ -151,10 +150,9 @@ def run_sgx_filings_scraper(
 
     payload_clean = filter_duplicate(payload)
 
-    top_200, not_top_200 = filter_top_n_companies(payload_clean, top_n=200)
-    top_100, _ = filter_top_n_companies(payload_clean, top_n=100)
+    top_200, _ = filter_top_n_companies(payload_clean, top_n=200)
 
-    write_snapshots(top_200, not_top_200, top_100)
+    write_json(SGX_FILINGS_PATH_TODAY, top_200)
 
     new_records = resolve_new_records(top_200)
     insertable, not_insertable = get_data_alert(new_records)

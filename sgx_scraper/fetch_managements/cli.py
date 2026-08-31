@@ -1,26 +1,30 @@
 from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
-from sgx_scraper.utils.cli_helper import upsert_to_db, get_100_top_companies
+from sgx_scraper.utils.cli_helper import upsert_to_db, push_to_db
+from sgx_scraper.alerting.mailer import send_sgx_alert_email
+from sgx_scraper.alerting.build_template import render_management_email_content
 from sgx_scraper.fetch_managements.management import (
-    filter_announcements,
-    get_management_payload,
+    search_appointed_date_with_tavily,
+    get_management_payload, 
+    enrich_management_records
 )
-from sgx_scraper.utils.json_helper import write_json
+from sgx_scraper.utils.json_helper import write_json, open_json
 from sgx_scraper.fetch_managements.tracking import (
-    consolidate_management_records,
     get_management_update,
 )
-from pathlib import Path 
+from .process_annual_report import (
+    filter_annual_report_url, 
+    filter_lookup_announcements
+)
+from sgx_scraper.news.builder import generate_news
+from sgx_scraper.utils.cli_helper import get_db
 
 import typer
 import logging
-import time
-import random
-import json 
 
 
 LOGGER = logging.getLogger(__name__)
 
-app = typer.Typer(help="SGX management tracking pipeline")
+app = typer.Typer(help="SGX management pipeline")
 
 
 @app.command(name='track_management')
@@ -31,81 +35,106 @@ def run_tracking_management(
     is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
     is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
 ):
-    payload_management = []
+    payload_management_by_symbol = {}
+    management_news_payload = []
 
-    # top_100_companies = get_100_top_companies()
+    announcements = list(iter_sgx_announcements(
+        sub_category="ANNC03%2CANNC04",
+        flag_log="Management",
+        period_start=period_start,
+        period_end=period_end,
+        page_size=page_size,
+        is_proxy=is_proxy,
+    ))
 
-    # announcements = list(iter_sgx_announcements(
-    #     sub_category="ANNC03",
-    #     flag_log="Management",
-    #     period_start=period_start,
-    #     period_end=period_end,
-    #     page_size=page_size,
-    #     is_proxy=is_proxy,
-    # ))
-
-    
-    output_path = Path(
-        "sgx_scraper/fetch_managements/data/cessations/"
-        "historical.jsonl"
+    top_200 = get_db(
+        table="sgx_company_report",
+        columns="symbol",
+        query=lambda query: (
+            query
+            .not_.is_("market_cap", "null")
+            .order("market_cap", desc=True)
+            .limit(200)
+        ),
     )
 
-    announcement_count = 0
+    top_200_symbols = {
+        record["symbol"]
+        for record in top_200
+    }
 
-    with output_path.open("w", encoding="utf-8") as output_file:
-        for announcement in iter_sgx_announcements(
-            sub_category="ANNC04",
-            flag_log="Management",
-            period_start=period_start,
-            period_end=period_end,
-            page_size=page_size,
-            is_proxy=is_proxy,
-        ):
-            output_file.write(
-                json.dumps(announcement, ensure_ascii=False)
+    companies = {
+        symbol: record
+        for symbol, record in open_json("data/sgx_companies.json").items()
+        if symbol in top_200_symbols
+    }
+
+    announcements = sorted(
+        announcements,
+        key=lambda announcement: announcement.get("submission_date_time") or 0,
+    )
+
+    for announcement in announcements:
+        try:
+            # build management and former management 
+            result = get_management_update(
+                api_response=announcement,
+                management_by_symbol=companies
             )
-            output_file.write("\n")
-            announcement_count += 1
+
+            if not result:
+                continue
+
+            management_record = result["management_record"]
+            management_announcement = result["announcement"]
+            symbol = management_record["symbol"]
+
+            payload_management_by_symbol[symbol] = management_record
+            management_news_payload.append(management_announcement)
+
+        except Exception as error:
+            LOGGER.error(
+                "[TRACKING MANAGEMENT] Error processing announcement: %s",
+                error, 
+                exc_info=True
+            )
+            continue
+
+    payload_management = list(payload_management_by_symbol.values())
 
     LOGGER.info(
-        "Saved %d raw announcements to %s", 
-        announcement_count, output_path
+        "Total unique management payloads to upsert: %d",
+        len(payload_management)
     )
 
-    # filter_announcements(
-    #     path=str(output_path),
-    #     output_path=(
-    #         "sgx_scraper/fetch_managements/data/appointments/"
-    #         "lookup_historical.json"
-    #     ),
-    #     sort_oldest_first=True,
-    # )
-        
-    # for announcement in announcements:
-    #     try:
-    #         updated_management_record = get_management_update(
-    #             api_response=announcement,
-    #             top_100_companies=top_100_companies
-    #         )
+    LOGGER.info(
+        "payload management to upsert: %s",
+        payload_management
+    )
 
-    #         time.sleep(random.uniform(1, 3))
+    news_payload = generate_news(
+        payload=management_news_payload,
+        generate_type="management",
+    )
 
-    #         if not updated_management_record:
-    #             continue
+    LOGGER.info(
+        "Generated management news records: %d",
+        len(news_payload),
+    )
 
-    #         payload_management.extend(updated_management_record)
+    LOGGER.info(news_payload)
 
-    #     except Exception as error:
-    #         LOGGER.error(f'[Management] Error processing announcement: {error}', exc_info=True)
-    #         continue
+    if is_push_db:
+        push_to_db(
+            payload=news_payload,
+            table_name="sgx_news",
+        )
 
-    # payload_management = consolidate_management_records(payload_management)
-
-    # LOGGER.info(f'total unique management payloads to upsert: {len(payload_management)}')
-    # LOGGER.info(f'payload management to upsert: {payload_management}')
-
-    # if is_push_db:
-    #     upsert_to_db(sgx_payload=payload_management, table_name='sgx_companies')
+        upsert_to_db(
+            payload=payload_management, 
+            table_name="sgx_companies",
+            on_conflict="symbol"
+        )
 
 
 @app.command(name='scraper_managements')
@@ -113,7 +142,7 @@ def run_managements_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(100, help="Number of records per listing page"),
-    is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
+    is_upsert_db: bool = typer.Option(True, help='Flag to push to db or not'),
     is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
 ):
     announcements = list(
@@ -127,34 +156,177 @@ def run_managements_scraper(
         )
     )
 
-    write_json(
-        "sgx_scraper/fetch_managements/announcements.json", 
-        announcements
+    base_dir = "data/scraper_output/sgx_managements/annual_report"
+    clean_url_output_path = f"{base_dir}/processed/new/clean_annual_report_urls.json"
+
+    lookup_top_200 = filter_lookup_announcements(
+        raw_announcement_api=announcements, 
+        is_descending=True
     )
 
-    # final_management_payload = []
+    new_pdf_urls = filter_annual_report_url(
+        announcement_lookup=lookup_top_200,
+        output_path=clean_url_output_path
+    )
 
-    # for index, announcement in enumerate(
-    #     announcements,
-    #     start=1
-    # ):
-    #     annual_report_url = announcement.get("url")
+    historical_urls = open_json(
+        f"{base_dir}/processed/historical/annual_report_urls.json"
+    )
 
-    #     LOGGER.info(
-    #         "Processing %d/%d | annual report url: %s",
-    #         index,
-    #         len(announcements),
-    #         annual_report_url 
-    #     )
+    companies = open_json("data/sgx_companies.json")
 
-        # management_payload = get_management_payload(
-        #     annual_report_url=annual_report_url,
-        #     company_name=announcement.get("issuer_name"),
-        # )
+    final_payload = []
+    management_alerts = []
 
-        # final_management_payload.append(management_payload)
-    
-    
+    for symbol, record in new_pdf_urls.items():
+        submission_date = record["submission_date"]
+        annual_report_url = record["pdf_url"]
+        company_name = companies[symbol]["name"]
+
+        historical_record = historical_urls.get(symbol)
+        historical_submission_date = historical_record["submission_date"]
+
+        if submission_date <= historical_submission_date:
+            LOGGER.info(
+                "Submission date is not newest for symbol: %s | url: %s | Skipping",
+                symbol, 
+                annual_report_url
+            )
+            continue 
+
+        if not annual_report_url: 
+            LOGGER.warning(
+                "Annual report URL is missing for symbol: %s",
+                symbol,
+            )
+            continue 
+        
+        result = get_management_payload(
+            annual_report_url=annual_report_url, 
+            company_name=company_name
+        )
+
+        management_payload = result.get("bod_payload") if result else None
+
+        # fallback search for alternative page bod
+        need_fallback = any(
+            management_record.get("start_date") is None
+            for management_record in management_payload
+        )
+
+        if need_fallback:
+            LOGGER.info(
+                "Running management LLM fallback for symbol: %s",
+                symbol,
+            )
+             
+            fallback_result = get_management_payload(
+                annual_report_url=annual_report_url,
+                models=["deepsek-v4-flash", "nvidia-nemotron-3-ultra"],
+                company_name=company_name,
+                is_fallback=True,
+            )
+            
+            fallback_payload = (
+                fallback_result.get("bod_payload")
+                if fallback_result
+                else None
+            )
+
+            if fallback_payload:
+                management_payload = enrich_management_records(
+                    primary_records=management_payload,
+                    fallback_records=fallback_payload,
+                )
+
+        # fallback tavily search
+        for management_record in management_payload:
+            if management_record.get("start_date") is not None:
+                continue
+
+            LOGGER.info(
+                (
+                    "Searching appointment date with Tavily "
+                    "| symbol: %s | name: %s"
+                ),
+                symbol,
+                management_record["name"],
+            )
+
+            tavily_start_date = search_appointed_date_with_tavily(
+                name=management_record["name"],
+                position=management_record["position"],
+                company_name=company_name,
+            )
+
+            if tavily_start_date is not None:
+                management_record["start_date"] = tavily_start_date
+
+        # fallback send email for manual review 
+        for management_record in management_payload:
+            if management_record.get("start_date") is not None:
+                continue
+
+            management_alerts.append({
+                "symbol": symbol,
+                "company_name": company_name,
+                "name": management_record["name"],
+                "position": management_record["position"],
+                "annual_report_url": annual_report_url,
+                "issue": "Unable to determine management start date",
+            })
+
+        final_payload.append({
+            "symbol": symbol, 
+            "management": management_payload
+        })
+
+    if management_alerts:
+        LOGGER.warning(
+            "%s management records require manual review",
+            len(management_alerts),
+        )
+
+        subject, body_text, body_html = render_management_email_content(
+            alerts=management_alerts,
+            title="SGX Management Records Requiring Review",
+        )
+
+        send_sgx_alert_email(
+            subject=subject,
+            body_text=body_text,
+            body_html=body_html,
+        )
+
+    else:
+        LOGGER.info(
+            "No SGX management records require manual review."
+        )
+
+    if is_upsert_db and final_payload:
+        is_upserted = upsert_to_db(
+            payload=final_payload, 
+            table_name="sgx_companies",
+            on_conflict="symbol"
+        )
+
+        if not is_upserted:
+            LOGGER.error("Management upsert failed: checkpoint was not updated")
+            return
+
+        # write back to historical as new checkpoint
+        for payload_record in final_payload:
+            symbol = payload_record["symbol"]
+            historical_urls[symbol] = new_pdf_urls[symbol]
+
+        write_json(
+            path=(
+                f"{base_dir}/processed/historical/"
+                "annual_report_urls.json"
+            ),
+            payload=historical_urls,
+        )
+
 
 if __name__ == '__main__':
     logging.basicConfig(

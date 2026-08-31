@@ -1,8 +1,14 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from sgx_scraper.fetch_sgx_filings.llm.client import get_llm
-from sgx_scraper.fetch_sgx_filings.llm.prompts import TransferParties, PromptCollections
+from sgx_scraper.llm.client import get_llm
+from sgx_scraper.fetch_sgx_filings.llm_parser.transfer_prompt import (
+    SYSTEM_FORM_3_TRANSFER_PROMPT,
+    SYSTEM_TRANSFER_PROMPT,
+    TransferParties,
+    USER_FORM_3_TRANSFER_PROMPT,
+    USER_TRANSFER_PROMPT,
+)
 
 import json
 import logging
@@ -14,11 +20,9 @@ LOGGER = logging.getLogger(__name__)
 def classify_transfer(holder_name: str | None, circumstances_desc: str) -> dict | None:
     parser = JsonOutputParser(pydantic_object=TransferParties)
 
-    prompt_collections = PromptCollections()
-
     prompt = ChatPromptTemplate.from_messages([
-        ('system', prompt_collections.get_system_transfer_prompt()),
-        ('user', prompt_collections.get_user_transfer_prompt()),
+        ('system', SYSTEM_TRANSFER_PROMPT),
+        ('user', USER_TRANSFER_PROMPT),
     ])
 
     input_data = {
@@ -88,11 +92,9 @@ def resolve_form_3_part_iii_iv_transfer_holder(records: list[dict]) -> str | Non
 
     parser = JsonOutputParser(pydantic_object=TransferParties)
 
-    prompt_collections = PromptCollections()
-
     prompt = ChatPromptTemplate.from_messages([
-        ('system', prompt_collections.get_system_form_3_transfer_prompt()),
-        ('user', prompt_collections.get_user_form_3_transfer_prompt()),
+        ('system', SYSTEM_FORM_3_TRANSFER_PROMPT),
+        ('user', USER_FORM_3_TRANSFER_PROMPT),
     ])
 
     input_data = {

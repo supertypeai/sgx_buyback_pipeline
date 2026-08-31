@@ -194,150 +194,149 @@ def map_report_pages_with_page_labels(
         pdf_document.close()
 
 
-def map_report_pages_to_pdf(
-    pdf_bytes: bytes,
-    report_page_start: int | None,
-    report_page_end: int | None,
-) -> str | None:
-    if report_page_start is None:
-        return None
+def _find_page_number_matches(
+    block_text: str,
+    is_header_block: bool,
+    is_footer_block: bool,
+):
+    page_number_matches = []
 
-    if report_page_end is not None and report_page_end < report_page_start:
-        LOGGER.warning(
-            "Invalid printed report page range: %s-%s",
-            report_page_start,
-            report_page_end,
+    for line in block_text.splitlines():
+        normalized_line = line.strip()
+
+        page_number_match = re.fullmatch(
+            r"0*([0-9]{1,3})",
+            normalized_line,
         )
-        return None
 
-    pdf_document = pymupdf.open(stream=pdf_bytes, filetype="pdf")
-    target_report_pages = {report_page_start}
+        if not page_number_match:
+            page_number_match = re.fullmatch(
+                r"-\s*0*([0-9]{1,3})\s*-",
+                normalized_line,
+            )
 
-    if report_page_end is not None:
-        target_report_pages.add(report_page_end)
+        if (
+            not page_number_match
+            and (is_header_block or is_footer_block)
+        ):
+            compact_line = re.sub(r"\s+", "", normalized_line)
+            page_number_match = re.fullmatch(
+                r"0*([0-9]{1,3})[.|]?",
+                compact_line,
+            )
 
+        if (
+            not page_number_match
+            and (is_header_block or is_footer_block)
+        ):
+            page_number_match = re.match(
+                r"^0*([0-9]{1,3})(?![0-9])(?:\s|[.|]|$)",
+                normalized_line,
+            )
+
+        if (
+            not page_number_match
+            and (is_header_block or is_footer_block)
+        ):
+            page_number_match = re.match(
+                r"^[IVXLCDM]+\s+0*([0-9]{1,3})(?![0-9])",
+                normalized_line,
+            )
+
+        line_page_number_matches = []
+
+        if page_number_match:
+            line_page_number_matches.append(page_number_match)
+
+        if (
+            is_header_block or is_footer_block
+        ) and ("|" in normalized_line or "/" in normalized_line):
+            line_page_number_matches.extend(
+                re.finditer(
+                    r"(?<![0-9])0*([0-9]{1,3})(?![0-9])",
+                    normalized_line,
+                )
+            )
+
+        page_number_matches.extend(line_page_number_matches)
+
+    return page_number_matches
+
+
+def _collect_report_page_candidates(
+    pdf_document,
+    target_report_pages: set[int],
+):
     report_page_candidates = {
         report_page_number: []
         for report_page_number in target_report_pages
     }
     report_page_to_label_priority = {}
 
-    try:
-        for physical_page_index in range(pdf_document.page_count):
-            page = pdf_document[physical_page_index]
+    for physical_page_index in range(pdf_document.page_count):
+        page = pdf_document[physical_page_index]
 
-            if all(
-                report_page_to_label_priority.get(report_page_number) == 2
-                for report_page_number in target_report_pages
+        if all(
+            report_page_to_label_priority.get(report_page_number) == 2
+            for report_page_number in target_report_pages
+        ):
+            break
+
+        header_end = page.rect.height * 0.15
+        footer_start = page.rect.height * 0.88
+
+        for block in page.get_text("blocks"):
+            is_header_block = block[3] <= header_end
+            is_footer_block = block[1] >= footer_start
+            block_center = (block[0] + block[2]) / 2
+
+            is_centered_page_number_block = (
+                block[1] >= page.rect.height * 0.65
+                and page.rect.width * 0.4 <= block_center
+                <= page.rect.width * 0.6
+                and len(block[4].splitlines()) == 1
+            )
+
+            is_header_or_footer_block = (
+                is_header_block or is_footer_block
+            )
+
+            if (
+                not is_header_or_footer_block
+                and not is_centered_page_number_block
             ):
-                break
+                continue
 
-            header_end = page.rect.height * 0.15
-            footer_start = page.rect.height * 0.88
+            label_priority = 2 if is_header_or_footer_block else 1
+            page_number_matches = _find_page_number_matches(
+                block_text=block[4],
+                is_header_block=is_header_block,
+                is_footer_block=is_footer_block,
+            )
 
-            for block in page.get_text("blocks"):
-                is_header_block = block[3] <= header_end
-                is_footer_block = block[1] >= footer_start
-                block_center = (block[0] + block[2]) / 2
+            for page_number_match in page_number_matches:
+                report_page_number = int(page_number_match.group(1))
 
-                is_centered_page_number_block = (
-                    block[1] >= page.rect.height * 0.65
-                    and page.rect.width * 0.4 <= block_center
-                    <= page.rect.width * 0.6
-                    and len(block[4].splitlines()) == 1
-                )
-
-                is_header_or_footer_block = (
-                    is_header_block or is_footer_block
-                )
-
-                if (
-                    not is_header_or_footer_block
-                    and not is_centered_page_number_block
-                ):
+                if report_page_number not in target_report_pages:
                     continue
 
-                label_priority = 2 if is_header_or_footer_block else 1
+                report_page_candidates[report_page_number].append(
+                    (physical_page_index + 1, label_priority)
+                )
+                report_page_to_label_priority[report_page_number] = max(
+                    report_page_to_label_priority.get(
+                        report_page_number,
+                        0,
+                    ),
+                    label_priority,
+                )
 
-                for line in block[4].splitlines():
-                    normalized_line = line.strip()
+    return report_page_candidates
 
-                    page_number_match = re.fullmatch(
-                        r"0*([0-9]{1,3})",
-                        normalized_line,
-                    )
 
-                    if not page_number_match:
-                        page_number_match = re.fullmatch(
-                            r"-\s*0*([0-9]{1,3})\s*-",
-                            normalized_line,
-                        )
-
-                    if (
-                        not page_number_match
-                        and (is_header_block or is_footer_block)
-                    ):
-                        compact_line = re.sub(r"\s+", "", normalized_line)
-                        page_number_match = re.fullmatch(
-                            r"0*([0-9]{1,3})[.|]?",
-                            compact_line,
-                        )
-
-                    if (
-                        not page_number_match
-                        and (is_header_block or is_footer_block)
-                    ):
-                        page_number_match = re.match(
-                            r"^0*([0-9]{1,3})(?![0-9])(?:\s|[.|]|$)",
-                            normalized_line,
-                        )
-
-                    if (
-                        not page_number_match
-                        and (is_header_block or is_footer_block)
-                    ):
-                        page_number_match = re.match(
-                            r"^[IVXLCDM]+\s+0*([0-9]{1,3})(?![0-9])",
-                            normalized_line,
-                        )
-
-                    page_number_matches = []
-
-                    if page_number_match:
-                        page_number_matches.append(page_number_match)
-
-                    if (
-                        is_header_block or is_footer_block
-                    ) and ("|" in normalized_line or "/" in normalized_line):
-                        page_number_matches.extend(
-                            re.finditer(
-                                r"(?<![0-9])0*([0-9]{1,3})(?![0-9])",
-                                normalized_line,
-                            )
-                        )
-
-                    if not page_number_matches:
-                        continue
-
-                    for page_number_match in page_number_matches:
-                        report_page_number = int(page_number_match.group(1))
-
-                        if report_page_number not in target_report_pages:
-                            continue
-
-                        report_page_candidates[report_page_number].append(
-                            (physical_page_index + 1, label_priority)
-                        )
-                        report_page_to_label_priority[report_page_number] = max(
-                            report_page_to_label_priority.get(
-                                report_page_number,
-                                0,
-                            ),
-                            label_priority,
-                        )
-    finally:
-        pdf_document.close()
-
+def _select_preferred_report_page_candidates(
+    report_page_candidates: dict,
+):
     preferred_report_page_candidates = {}
 
     for report_page_number, candidates in report_page_candidates.items():
@@ -346,14 +345,23 @@ def map_report_pages_to_pdf(
 
         highest_label_priority = max(
             candidate_label_priority
-            for candidate_pdf_page, candidate_label_priority in candidates
+            for _, candidate_label_priority in candidates
         )
+        
         preferred_report_page_candidates[report_page_number] = [
             candidate_pdf_page
             for candidate_pdf_page, candidate_label_priority in candidates
             if candidate_label_priority == highest_label_priority
         ]
 
+    return preferred_report_page_candidates
+
+
+def _build_report_page_mapping(
+    report_page_start: int,
+    report_page_end: int | None,
+    preferred_report_page_candidates: dict,
+):
     report_page_to_pdf_page = {}
     start_page_candidates = preferred_report_page_candidates.get(
         report_page_start,
@@ -401,6 +409,48 @@ def map_report_pages_to_pdf(
     for report_page_number, candidates in preferred_report_page_candidates.items():
         if report_page_number not in report_page_to_pdf_page:
             report_page_to_pdf_page[report_page_number] = candidates[0]
+
+    return report_page_to_pdf_page
+
+
+def map_report_pages_to_pdf(
+    pdf_bytes: bytes,
+    report_page_start: int | None,
+    report_page_end: int | None,
+) -> str | None:
+    if report_page_start is None:
+        return None
+
+    if report_page_end is not None and report_page_end < report_page_start:
+        LOGGER.warning(
+            "Invalid printed report page range: %s-%s",
+            report_page_start,
+            report_page_end,
+        )
+        return None
+
+    pdf_document = pymupdf.open(stream=pdf_bytes, filetype="pdf")
+    target_report_pages = {report_page_start}
+
+    if report_page_end is not None:
+        target_report_pages.add(report_page_end)
+
+    try:
+        report_page_candidates = _collect_report_page_candidates(
+            pdf_document=pdf_document,
+            target_report_pages=target_report_pages,
+        )
+    finally:
+        pdf_document.close()
+
+    preferred_report_page_candidates = _select_preferred_report_page_candidates(
+        report_page_candidates=report_page_candidates,
+    )
+    report_page_to_pdf_page = _build_report_page_mapping(
+        report_page_start=report_page_start,
+        report_page_end=report_page_end,
+        preferred_report_page_candidates=preferred_report_page_candidates,
+    )
 
     pdf_page_start = report_page_to_pdf_page.get(report_page_start)
     pdf_page_end = report_page_to_pdf_page.get(report_page_end)

@@ -1,8 +1,12 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from sgx_scraper.fetch_sgx_filings.llm.client import get_llm
-from sgx_scraper.fetch_sgx_filings.llm.prompts import RawTransactionExtraction, PromptCollections
+from sgx_scraper.llm.client import get_llm
+from sgx_scraper.fetch_sgx_filings.llm_parser.fallback_prompt import (
+    RawTransactionExtraction,
+    SYSTEM_FALLBACK_PARSER_PROMPT,
+    USER_FALLBACK_PARSER_PROMPT,
+)
 from sgx_scraper.fetch_sgx_filings.parser_forms.base_parser import BaseFormParser
 from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     safe_convert_float,
@@ -53,11 +57,9 @@ def run_extraction(
 
     parser = JsonOutputParser(pydantic_object=RawTransactionExtraction)
 
-    promtp_collections = PromptCollections()
-
     prompt = ChatPromptTemplate.from_messages([
-        ('system', promtp_collections.get_system_fallback_parser_prompt()),
-        ('user', promtp_collections.get_user_fallback_parser_prompt()),
+        ('system', SYSTEM_FALLBACK_PARSER_PROMPT),
+        ('user', USER_FALLBACK_PARSER_PROMPT),
     ])
 
     input_data = {
@@ -228,28 +230,3 @@ def parse_with_llm(
         transaction_type,
         missing_columns,
     )
-
-
-if __name__ == '__main__':
-    from sgx_scraper.fetch_sgx_filings.parser_forms.router import RouterFormParser
-
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s | %(levelname)-8s | %(name)s | %(message)s',
-    )
-
-    pdf_url = "https://links.sgx.com/FileOpen/_20260713%20Quarz%20CA%20BBR%20Holdings%20Form%203.ashx?App=Announcement&FileID=896228"
-    pdf_form_1_type_missing = "https://links.sgx.com/FileOpen/_KDCREIT_Form%201-YSE_12June2026_final.ashx?App=Announcement&FileID=893269"
-    pdf_6 = "https://links.sgx.com/FileOpen/_eFORM6V2%20-%2015%20June%202026.ashx?App=Announcement&FileID=893265"
-    
-    parser = RouterFormParser.get_parser(pdf_form_1_type_missing)
-
-    print(parse_with_llm(
-        source=parser,
-        holder_name='Quarz Capital ASIA (Singapore) Pte. Ltd.',
-        missing_columns=[
-            'price_per_share', 
-            'amount_transaction', 
-            'transaction_type'
-        ],
-        circumstances_desc="Receipt of 12,900 Units from Keppel DC REIT Management Pte. Ltd. at an average price of S$2.3093 per Unit as partpayment of my director's fees for the year ended 31 December 2025."    ))

@@ -210,7 +210,11 @@ def get_llm(
 
     if config_model is None:
         available_models = ', '.join(MODEL_CONFIG.keys())
-        LOGGER.error(f"Unknown model name: '{model_name}'. Available models: {available_models}")
+        LOGGER.error(
+            "Unknown model name: %s. Available models: %s",
+            model_name, 
+            available_models
+        )
         return None
     
     provider = config_model.get('provider')

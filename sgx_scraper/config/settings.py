@@ -16,5 +16,9 @@ SENDER_EMAIL = os.getenv('SENDER_EMAIL')
 TO_EMAIL = os.getenv('TO_EMAIL')
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+TAVILY_API_KEYS = [
+    os.getenv(f"TAVILY_API_KEY{index}")
+    for index in range(1, 4)
+]
 
 SUPABASE_CLIENT = create_client(SUPABASE_URL, SUPABASE_KEY)

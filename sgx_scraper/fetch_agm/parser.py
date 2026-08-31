@@ -7,7 +7,7 @@ from sgx_scraper.fetch_agm.constant import (
     OUTCOME_ATTACHMENT_PATTERNS,
 )
 from sgx_scraper.fetch_agm.llm.prompts import AgmPrompt
-from sgx_scraper.fetch_sgx_filings.llm.client import get_llm
+from sgx_scraper.llm.client import get_llm
 from sgx_scraper.utils.http_client import HTTPCLIENT
 from sgx_scraper.utils.json_helper import parse_json_reply
 from sgx_scraper.utils.pdf_helper import read_pdf, resolve_attachments

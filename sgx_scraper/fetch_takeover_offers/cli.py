@@ -1,5 +1,5 @@
 from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
-from sgx_scraper.fetch_sgx_filings.news.builder import generate_news
+from sgx_scraper.news.builder import generate_news
 from sgx_scraper.utils.cli_helper import push_to_db, filter_top_n_companies
 from .parser import get_takeover
 

@@ -1,4 +1,4 @@
-name: Track Management 
+name: Track SGX Management
 
 on:
   workflow_dispatch:
@@ -10,14 +10,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  scrape:
+  track:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-    
-      - name: Install uv (Python package manager)
+
+      - name: Install uv
         uses: astral-sh/setup-uv@v2
 
       - name: Set up Python
@@ -25,40 +25,22 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install Python dependencies
-        run: |
-            uv sync 
+      - name: Install dependencies
+        run: uv sync
 
-      - name: Run scraper 
+      - name: Run management tracking
         env:
           PROXY: ${{ secrets.PROXY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: |
-          uv run python -m sgx_scraper.main_cli track_management
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: uv run python -m sgx_scraper.main_cli track_management --is-push-db
 
       - name: Upload scraper artifacts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: track-management-artifacts
-          path: |
-            scraper.log
+          name: sgx-management-tracking-artifacts
+          path: scraper.log
           if-no-files-found: warn
           retention-days: 90
-
-      - name: Pull Latest Changes (safe)
-        run: |
-          git fetch origin main
-          git stash push -m "temp-scraper-log" || true
-          git merge origin/main --strategy-option=theirs || true
-          git stash pop || true
-
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -m "track_management: scraped data and push" --allow-empty)
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

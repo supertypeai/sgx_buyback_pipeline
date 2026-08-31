@@ -8,7 +8,7 @@ from sgx_scraper.fetch_agm.constant import (
     SIAS_QUESTION_PATTERN,
 )
 from sgx_scraper.fetch_agm.llm.prompts import SiasAnswerPrompt
-from sgx_scraper.fetch_sgx_filings.llm.client import get_llm
+from sgx_scraper.llm.client import get_llm
 from sgx_scraper.utils.date_helper import safe_convert_datetime
 from sgx_scraper.utils.http_client import HTTPCLIENT
 from sgx_scraper.utils.json_helper import parse_json_reply

@@ -62,6 +62,7 @@ def invoke_structured_llm(
                 )
 
                 if llm is None:
+                    attempt += 1
                     continue
 
                 LOGGER.info(

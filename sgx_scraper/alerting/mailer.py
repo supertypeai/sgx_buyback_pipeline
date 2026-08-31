@@ -2,8 +2,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from botocore.exceptions import BotoCoreError, ClientError
 
-from sgx_scraper.alerting.build_template import render_email_content
-from sgx_scraper.alerting.filter_data_alert import get_data_alert 
 from sgx_scraper.config.settings import (
     AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, 
     AWS_REGION, SENDER_EMAIL, TO_EMAIL
@@ -17,67 +15,83 @@ import logging
 LOGGER = logging.getLogger(__name__)
 
 
-def send_sgx_filings_alert(
-    payload_alert: list[dict[str, any]],
+def send_sgx_alert_email(
+    subject: str,
+    body_text: str,
+    body_html: str,
     attachments_path: list[str] | None = None,
     to_emails: str | list[str] | None = None,
 ):
-    if not payload_alert:
-        LOGGER.info("No SGX filings alerts to send.")
-        return
-
     recipients = to_emails or TO_EMAIL
 
     if isinstance(recipients, str):
         recipients = [
-            addr.strip() 
-            for addr in recipients.split(",") 
-            if addr.strip()
+            address.strip()
+            for address in recipients.split(",")
+            if address.strip()
         ]
 
-    subject, body_text, body_html = (
-        render_email_content(payload_alert, title="SGX Non-Insertable Transaction Alerts")
+    message = MIMEMultipart()
+    message["Subject"] = subject
+    message["From"] = SENDER_EMAIL
+    message["To"] = ", ".join(recipients)
+
+    alternative_message = MIMEMultipart("alternative")
+    alternative_message.attach(
+        MIMEText(body_text, "plain")
+    )
+    alternative_message.attach(
+        MIMEText(body_html, "html")
     )
 
-    msg = MIMEMultipart()
-    msg["Subject"] = subject
-    msg["From"] = SENDER_EMAIL
-    msg["To"] = ", ".join(recipients)
-
-    msg_alt = MIMEMultipart("alternative")
-    msg_alt.attach(MIMEText(body_text, "plain"))
-    msg_alt.attach(MIMEText(body_html, "html"))
-    msg.attach(msg_alt)
+    message.attach(alternative_message)
 
     if attachments_path:
         for file_path in attachments_path:
-            attach_files(file_path, msg)
+            attach_files(file_path, message)
 
-    ses = boto3.client(
+    ses_client = boto3.client(
         "ses",
         region_name=AWS_REGION,
         aws_access_key_id=AWS_ACCESS_KEY_ID,
-        aws_secret_access_key=AWS_SECRET_ACCESS_KEY
+        aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
     )
 
     try:
-        response = ses.send_raw_email(
+        response = ses_client.send_raw_email(
             Source=SENDER_EMAIL,
             Destinations=recipients,
-            RawMessage={"Data": msg.as_string()},
+            RawMessage={"Data": message.as_string()},
         )
-        message_id = response.get("MessageId")
 
-        LOGGER.info(f"Email sent! Message ID: {message_id}")
+        LOGGER.info(
+            "Email sent | message_id=%s",
+            response.get("MessageId"),
+        )
 
     except ClientError as error:
-        error_code = error.response["Error"].get("Code", "Unknown")
-        error_message = error.response["Error"].get("Message", "No message provided")
-        LOGGER.error(f"[send_sgx_filings_alert] AWS ClientError [{error_code}]: {error_message}")
+        error_code = error.response["Error"].get(
+            "Code",
+            "Unknown",
+        )
+        error_message = error.response["Error"].get(
+            "Message",
+            "No message provided",
+        )
+
+        LOGGER.error(
+            "[send_sgx_alert_email] AWS ClientError [%s]: %s",
+            error_code,
+            error_message,
+        )
 
     except BotoCoreError as error:
-        LOGGER.error(f"[send_sgx_filings_alert] BotoCoreError: {error}")
+        LOGGER.error(
+            "[send_sgx_alert_email] BotoCoreError: %s",
+            error,
+        )
 
-    except Exception as error:
-        LOGGER.error(f"[send_sgx_filings_alert] Unexpected error: {error}")
-
+    except Exception:
+        LOGGER.exception(
+            "[send_sgx_alert_email] Unexpected error"
+        )

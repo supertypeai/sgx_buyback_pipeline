@@ -4,7 +4,7 @@ from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import upsert_to_db, get_db, push_to_db
 from sgx_scraper.utils.constant import UPCOMING_DIVIDEND
 from sgx_scraper.utils.json_helper import write_json
-from sgx_scraper.fetch_sgx_filings.news.builder import generate_news
+from sgx_scraper.news.builder import generate_news
 from .parser import get_upcoming_dividend
 from .utils.db_helper import dedup_payload, delete_past_dividends
 

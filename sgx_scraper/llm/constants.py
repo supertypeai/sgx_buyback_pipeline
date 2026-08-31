@@ -15,10 +15,10 @@ MODEL_CONFIG = {
         "model": "openai/gpt-oss-120b",
         "provider": "groq",
     },
-    "gpt-oss-20b": {
-        "model": "openai/gpt-oss-20b",
-        "provider": "groq",
-    },
+    "laguna-s-2.1": {
+        "model": "poolside/laguna-s-2.1:free",
+        "provider": "openrouter"
+    }
 }
 
 ROTATE_STATUS_CODES = {401, 403, 429, 413}

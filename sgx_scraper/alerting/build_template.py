@@ -2,27 +2,20 @@ from datetime import datetime
 
 from sgx_scraper.alerting.utils.send_alert_helper import escape_keyword 
 
-import json 
 import logging
 
 
 LOGGER = logging.getLogger(__name__)
 
 
-def get_data_to_alert(path: str) -> list[dict[str, any]]:
-    try:
-        with open(path, 'r') as file:
-            data_to_alert = json.load(file)
-        return data_to_alert
-    except Exception as error:
-        LOGGER.error(f"Error loading data to alert from {path}: {error}") 
-        return []
-
-
-def build_email_subject(title, alerts):
+def build_email_subject(
+    title: str,
+    alerts: list[dict],
+) -> tuple[str, int, str]:
     total = len(alerts)
     today = datetime.now().strftime("%Y-%m-%d")
     subject = f"[{title}] {total} alert(s) — {today}"
+
     return subject, total, today
 
 
@@ -124,17 +117,143 @@ def build_html_body(alerts, title, total, today, escape_keyword):
     return html
 
 
-def render_email_content(alerts: list[dict[str, any]], title: str = "SGX Transaction Alerts") -> tuple[str, str, str]:
+def render_filing_email_content(
+    alerts: list[dict[str, any]], 
+    title: str = "SGX Transaction Alerts"
+) -> tuple[str, str, str]:
     subject, total, today = build_email_subject(title, alerts)
     body_text = build_plain_text_body(alerts, title, total, today)
     body_html = build_html_body(alerts, title, total, today, escape_keyword)
     return subject, body_text, body_html
 
 
-if __name__ == "__main__":
-    data_to_alert = get_data_to_alert('data/scraper_output/sgx_filing/sgx_filings_not_insertable.json')
-    data_to_alert = data_to_alert[:5]
-    subject, body_text, body_html = render_email_content(data_to_alert)
-    print(f"Subject: {subject}\n")
-    print(f"Body (text): {body_text}\n")
-    print(f"Body (HTML): {body_html}\n")
+def build_management_plain_text_body(
+    alerts: list[dict],
+    title: str,
+    total: int,
+    today: str,
+) -> str:
+    lines = [
+        f"{title} — {total} alert(s) on {today}",
+        "-" * 40,
+    ]
+
+    for index, alert in enumerate(alerts, 1):
+        symbol = alert.get("symbol", "-")
+        company_name = alert.get("company_name", "-")
+        management_name = alert.get("name", "-")
+        position = alert.get("position", "-")
+        issue = alert.get("issue", "-")
+        annual_report_url = alert.get("annual_report_url", "-")
+
+        lines.append(
+            f"{index}. {symbol} | {company_name}"
+        )
+        lines.append(
+            f"   Name: {management_name}"
+        )
+        lines.append(
+            f"   Position: {position}"
+        )
+        lines.append(
+            f"   Issue: {issue}"
+        )
+        lines.append(
+            f"   Annual report: {annual_report_url}"
+        )
+        lines.append("")
+
+    return "\n".join(lines)
+
+
+def build_management_html_body(
+    alerts: list[dict],
+    title: str,
+    total: int,
+    today: str,
+    escape_keyword,
+) -> str:
+    rows = []
+
+    for alert in alerts:
+        symbol = alert.get("symbol", "-")
+        company_name = alert.get("company_name", "-")
+        management_name = alert.get("name", "-")
+        position = alert.get("position", "-")
+        issue = alert.get("issue", "-")
+        annual_report_url = alert.get("annual_report_url", "-")
+
+        annual_report_link = (
+            (
+                f'<a href="{escape_keyword(annual_report_url)}" '
+                f'target="_blank" rel="noopener">Annual Report</a>'
+            )
+            if annual_report_url and annual_report_url != "-"
+            else "-"
+        )
+
+        rows.append(
+            "<tr>"
+            f"<td>{escape_keyword(symbol)}</td>"
+            f"<td>{escape_keyword(company_name)}</td>"
+            f"<td>{escape_keyword(management_name)}</td>"
+            f"<td>{escape_keyword(position)}</td>"
+            f"<td>{escape_keyword(issue)}</td>"
+            f"<td>{annual_report_link}</td>"
+            "</tr>"
+        )
+
+    table = (
+        "<table style='border-collapse:collapse;width:100%;font-family:system-ui,Arial'>"
+        "<thead>"
+        "<tr style='background:#f3f4f6'>"
+        "<th style='padding:8px;border:1px solid #e5e7eb;text-align:left'>Symbol</th>"
+        "<th style='padding:8px;border:1px solid #e5e7eb;text-align:left'>Company</th>"
+        "<th style='padding:8px;border:1px solid #e5e7eb;text-align:left'>Name</th>"
+        "<th style='padding:8px;border:1px solid #e5e7eb;text-align:left'>Position</th>"
+        "<th style='padding:8px;border:1px solid #e5e7eb;text-align:left'>Issue</th>"
+        "<th style='padding:8px;border:1px solid #e5e7eb;text-align:left'>Source</th>"
+        "</tr>"
+        "</thead>"
+        f"<tbody>{''.join(rows)}</tbody>"
+        "</table>"
+    )
+
+    return (
+        "<div>"
+        f"<h2 style='font-family:system-ui,Arial;margin:0 0 8px'>"
+        f"{escape_keyword(title)}"
+        "</h2>"
+        f"<p style='margin:0 0 12px;color:#6b7280'>"
+        f"{total} alert(s) — {escape_keyword(today)}"
+        "</p>"
+        f"{table}"
+        "</div>"
+    )
+
+
+def render_management_email_content(
+    alerts: list[dict],
+    title: str = "SGX Management Alerts",
+) -> tuple[str, str, str]:
+    subject, total, today = build_email_subject(
+        title=title,
+        alerts=alerts,
+    )
+
+    body_text = build_management_plain_text_body(
+        alerts=alerts,
+        title=title,
+        total=total,
+        today=today,
+    )
+
+    body_html = build_management_html_body(
+        alerts=alerts,
+        title=title,
+        total=total,
+        today=today,
+        escape_keyword=escape_keyword,
+    )
+
+    return subject, body_text, body_html

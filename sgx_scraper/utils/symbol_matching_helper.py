@@ -108,6 +108,7 @@ def find_fuzzy_symbol(
     symbols_by_name: dict[str, str],
     threshold: int,
     minimum_score_margin: int = 5,
+    is_print_log: bool = True
 ) -> str | None:
     matches = process.extract(
         input_name,
@@ -128,16 +129,22 @@ def find_fuzzy_symbol(
     ):
         return None
 
-    LOGGER.info(
-        "Matched company name '%s' to '%s' with score %.2f",
-        input_name,
-        matched_name,
-        matched_score,
-    )
+    if is_print_log:
+        LOGGER.info(
+            "Matched company name '%s' to '%s' with score %.2f",
+            input_name,
+            matched_name,
+            matched_score,
+        )
+
     return symbols_by_name[matched_name]
 
 
-def symbol_from_company_name(input_name: str, threshold: int = 90) -> str | None:
+def symbol_from_company_name(
+    input_name: str, 
+    threshold: int = 90,
+    is_print_log: bool = True
+) -> str | None:
     if not input_name:
         return None
 
@@ -203,6 +210,7 @@ def symbol_from_company_name(input_name: str, threshold: int = 90) -> str | None
             input_name=normalized_input,
             symbols_by_name=company_lookup,
             threshold=threshold,
+            is_print_log=is_print_log
         )
 
         if fuzzy_symbol:
@@ -212,6 +220,7 @@ def symbol_from_company_name(input_name: str, threshold: int = 90) -> str | None
             input_name=normalized_input_without_parenthetical,
             symbols_by_name=company_lookup_without_parenthetical,
             threshold=threshold,
+            is_print_log=is_print_log
         )
 
     except Exception as error:

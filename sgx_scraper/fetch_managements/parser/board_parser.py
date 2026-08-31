@@ -1,5 +1,9 @@
 from sgx_scraper.llm.caller import invoke_structured_llm
-from sgx_scraper.llm.prompts import PromptCollections, BoardPageNumber, BoardMemberDirector
+from sgx_scraper.fetch_managements.parser.board_prompt import (
+    BoardMemberDirector,
+    BoardPageNumber,
+    PromptCollections,
+)
 from sgx_scraper.fetch_managements.utils.pdf_helper import (
     parse_native_pages,
     parse_pages,
@@ -106,8 +110,6 @@ def get_range_pages(
             is_liteparse=is_liteparse,
         )    
 
-    LOGGER.info("[PARSED CONTENTS] parsed: %s", page_text)
-
     input_data = {
         "table_of_contents": page_text
     }
@@ -137,7 +139,7 @@ def extract_board_of_director(
         "deepsek-v4-flash"
     ],
     effort: str = "low",
-) -> list[dict]:
+) -> dict:
     prompts = PromptCollections()
 
     input_data = {

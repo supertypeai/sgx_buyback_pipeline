@@ -26,6 +26,7 @@ def open_json(path: str):
 
 def write_json(path: str, payload: list[dict[str, any]]):
     path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
 
     with path.open("w", encoding="utf-8") as file:
         json.dump(payload, file, ensure_ascii=False, indent=2)

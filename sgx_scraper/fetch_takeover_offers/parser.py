@@ -733,23 +733,3 @@ def get_takeover(
         return None
 
 
-if __name__ == "__main__":
-    test_url = (
-        "https://links.sgx.com/1.0.0/"
-        "corporate-announcements/KIPEZ09JTLRFG3I8"
-    )
-
-    result = get_takeover(
-        url=test_url
-    )
-
-    print(
-        json.dumps(
-            result,
-            indent=2,
-            ensure_ascii=False,
-        )
-    )
-
-
-# uv run -m sgx_scraper.fetch_takeover.parser
