@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "symbol": "A31",
+    "recording_date": "2026-08-31",
+    "agm_date": "2026-09-24",
+    "meeting_type": "EGM",
+    "agm_time": "15:00:00",
+    "agm_place": "202 Bedok South Ave 1,Singapore 469332(Block A, Event Hall 1 & 2 on Level 3)",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/HW4IEQ8HOR8JPQNR/685e359694e8e8551f8f73e5605e0700d6cfa381499183eaadf3e5147d0b2509",
+    "ref_id": "SG260831XMET4268"
+  }
+]
