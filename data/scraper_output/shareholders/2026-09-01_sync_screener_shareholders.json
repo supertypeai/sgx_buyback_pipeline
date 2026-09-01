@@ -1,0 +1,7047 @@
+[
+  {
+    "symbol": "D05",
+    "shareholders": [
+      {
+        "name": "Maju Holdings Pte Ltd",
+        "share_amount": 484789855.0,
+        "share_percentage": 0.1708
+      },
+      {
+        "name": "Temasek Holdings (Private) Limited",
+        "share_amount": 312559831.0,
+        "share_percentage": 0.1102
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 295076132.0,
+        "share_percentage": 0.104
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 17228627.0,
+        "share_percentage": 0.0061
+      },
+      {
+        "name": "Lee Foundation",
+        "share_amount": 12664094.0,
+        "share_percentage": 0.0045
+      },
+      {
+        "name": "Lim Huat Seah",
+        "share_amount": 404425,
+        "share_percentage": 0.00014
+      },
+      {
+        "name": "Punita Lal",
+        "share_amount": 13623,
+        "share_percentage": 0
+      },
+      {
+        "name": "Su Shan Tan",
+        "share_amount": 1369979,
+        "share_percentage": 0.00048
+      },
+      {
+        "name": "Sai Choy Tham",
+        "share_amount": 126147,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Judy Lee",
+        "share_amount": 14404,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Bonghan Cho",
+        "share_amount": 22037,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Anthony Lim Weng Kin",
+        "share_amount": 17172,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "David Ho Hing-Yuen",
+        "share_amount": 6053,
+        "share_percentage": 0
+      },
+      {
+        "name": "Olivier Lim Tse Ghow",
+        "share_amount": 176046,
+        "share_percentage": 6e-05
+      }
+    ]
+  },
+  {
+    "symbol": "O39",
+    "shareholders": [
+      {
+        "name": "Selat Limited",
+        "share_amount": 467604264.0,
+        "share_percentage": 0.1041
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 288998173.0,
+        "share_percentage": 0.0644
+      },
+      {
+        "name": "Lee Foundation",
+        "share_amount": 200851953.0,
+        "share_percentage": 0.0447
+      },
+      {
+        "name": "Herald Investment Pte Ltd",
+        "share_amount": 181721294.0,
+        "share_percentage": 0.0405
+      },
+      {
+        "name": "Singapore Investments Pte Ltd",
+        "share_amount": 157007526.0,
+        "share_percentage": 0.035
+      },
+      {
+        "name": "Teck Long Tan",
+        "share_amount": 519318,
+        "share_percentage": 0.0001
+      },
+      {
+        "name": "Andrew Lee Kok Keng",
+        "share_amount": 585465,
+        "share_percentage": 0.00013
+      }
+    ]
+  },
+  {
+    "symbol": "Z74",
+    "shareholders": [
+      {
+        "name": "Temasek Holdings (Private) Limited",
+        "share_amount": 8304071181.0,
+        "share_percentage": 0.5029
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 1507581718.0,
+        "share_percentage": 0.0913
+      },
+      {
+        "name": "Central Provident Fund Board",
+        "share_amount": 737334544.0,
+        "share_percentage": 0.0447
+      },
+      {
+        "name": "Atrium Investments Pte Ltd",
+        "share_amount": 184900210.0,
+        "share_percentage": 0.0112
+      },
+      {
+        "name": "Merrill Lynch (Singapore) Pte Ltd",
+        "share_amount": 29350320.0,
+        "share_percentage": 0.0018
+      },
+      {
+        "name": "Ying-I Yong",
+        "share_amount": 310000,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Yuen Kuan Moon",
+        "share_amount": 9737969,
+        "share_percentage": 0.00059
+      }
+    ]
+  },
+  {
+    "symbol": "Z77",
+    "shareholders": [
+      {
+        "name": "Temasek Holdings (Private) Limited",
+        "share_amount": 8304071181.0,
+        "share_percentage": 0.5057
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 1788199200.0,
+        "share_percentage": 0.1089
+      },
+      {
+        "name": "Central Provident Fund Board",
+        "share_amount": 560502770.0,
+        "share_percentage": 0.0341
+      },
+      {
+        "name": "Atrium Investments Pte Ltd",
+        "share_amount": 184900210.0,
+        "share_percentage": 0.0113
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 32903942.0,
+        "share_percentage": 0.002
+      },
+      {
+        "name": "Merrill Lynch (Singapore) Pte Ltd",
+        "share_amount": 29350320.0,
+        "share_percentage": 0.002
+      }
+    ]
+  },
+  {
+    "symbol": "U11",
+    "shareholders": [
+      {
+        "name": "Wee Investments Limited",
+        "share_amount": 133278368.0,
+        "share_percentage": 0.0807
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 126085151.0,
+        "share_percentage": 0.0763
+      },
+      {
+        "name": "Wah Hin and Company Private Limited",
+        "share_amount": 86676076.0,
+        "share_percentage": 0.0525
+      },
+      {
+        "name": "Tai Tak Estates Sendirian Berhad",
+        "share_amount": 68800000.0,
+        "share_percentage": 0.0417
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 43755119.0,
+        "share_percentage": 0.0265
+      },
+      {
+        "name": "Ee Cheong Wee",
+        "share_amount": 5968929,
+        "share_percentage": 0.00357
+      },
+      {
+        "name": "Kan Seng Wong",
+        "share_amount": 101100,
+        "share_percentage": 6e-05
+      },
+      {
+        "name": "Ba Thanh Dinh",
+        "share_amount": 4500,
+        "share_percentage": 0
+      },
+      {
+        "name": "Lay Lim Teo",
+        "share_amount": 8800,
+        "share_percentage": 0
+      },
+      {
+        "name": "Chong Tee Ong",
+        "share_amount": 8100,
+        "share_percentage": 0
+      },
+      {
+        "name": "Chia Tai Tee",
+        "share_amount": 15400,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Tracey Woon Kim Hong",
+        "share_amount": 13400,
+        "share_percentage": 1e-05
+      }
+    ]
+  },
+  {
+    "symbol": "O6Z",
+    "shareholders": [
+      {
+        "name": "BlackRock, Inc",
+        "share_amount": 7114279.0,
+        "share_percentage": 0.0985
+      }
+    ]
+  },
+  {
+    "symbol": "K6S",
+    "shareholders": [
+      {
+        "name": "BlackRock Institutional Trust Company, NA",
+        "share_amount": 139683248.0,
+        "share_percentage": 0.05256
+      },
+      {
+        "name": "Norges Bank Investment Management (NBIM)",
+        "share_amount": 113899085.0,
+        "share_percentage": 0.04286
+      },
+      {
+        "name": "Causeway Capital Management LLC",
+        "share_amount": 91535620.0,
+        "share_percentage": 0.03444
+      },
+      {
+        "name": "Dodge & Cox",
+        "share_amount": 91280836.0,
+        "share_percentage": 0.03435
+      },
+      {
+        "name": "Harris Associates LP",
+        "share_amount": 86300180.0,
+        "share_percentage": 0.03247
+      }
+    ]
+  },
+  {
+    "symbol": "N33",
+    "shareholders": [
+      {
+        "name": "Nomura Asset Management Co, Ltd",
+        "share_amount": 118554608.0,
+        "share_percentage": 0.03748
+      },
+      {
+        "name": "Sumitomo Mitsui Trust Asset Management Co, Ltd",
+        "share_amount": 98971100.0,
+        "share_percentage": 0.03129
+      },
+      {
+        "name": "The Vanguard Group, Inc",
+        "share_amount": 85151412.0,
+        "share_percentage": 0.02692
+      },
+      {
+        "name": "BlackRock Japan Co, Ltd",
+        "share_amount": 69023600.0,
+        "share_percentage": 0.02182
+      },
+      {
+        "name": "Nikko Asset Management Co, Ltd",
+        "share_amount": 64125300.0,
+        "share_percentage": 0.02027
+      }
+    ]
+  },
+  {
+    "symbol": "S63",
+    "shareholders": [
+      {
+        "name": "Temasek Holdings (Private) Limited",
+        "share_amount": 1554764574.0,
+        "share_percentage": 0.4991
+      },
+      {
+        "name": "Temasek Holdings (Private) Limited",
+        "share_amount": 1554764574.0,
+        "share_percentage": 0.4991
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 209107706.0,
+        "share_percentage": 0.0672
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 209107706.0,
+        "share_percentage": 0.0672
+      },
+      {
+        "name": "Vestal Investments Pte Ltd",
+        "share_amount": 28501000.0,
+        "share_percentage": 0.0092
+      },
+      {
+        "name": "Ming Kian Teo",
+        "share_amount": 123600,
+        "share_percentage": 0
+      },
+      {
+        "name": "Bee Bee Ng",
+        "share_amount": 45600,
+        "share_percentage": 0
+      },
+      {
+        "name": "Siaou-Sze Lien",
+        "share_amount": 6300,
+        "share_percentage": 0
+      },
+      {
+        "name": "Kevin Khien Kwok",
+        "share_amount": 197300,
+        "share_percentage": 0.0001
+      },
+      {
+        "name": "Peng Yam Tan",
+        "share_amount": 46311,
+        "share_percentage": 0
+      },
+      {
+        "name": "Su-Min Song",
+        "share_amount": 83600,
+        "share_percentage": 0
+      },
+      {
+        "name": "Gim Huay Neo",
+        "share_amount": 8700,
+        "share_percentage": 0
+      },
+      {
+        "name": "Vincent Chong Sy Feng",
+        "share_amount": 6751566,
+        "share_percentage": 0.0022
+      },
+      {
+        "name": "Lim Chin Hu",
+        "share_amount": 170400,
+        "share_percentage": 0.0001
+      },
+      {
+        "name": "Philip Lee Sooi Chuen",
+        "share_amount": 9500,
+        "share_percentage": 0
+      }
+    ]
+  },
+  {
+    "symbol": "S68",
+    "shareholders": [
+      {
+        "name": "Sel Holdings Pte Ltd",
+        "share_amount": 249991184.0,
+        "share_percentage": 0.2339
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 103845438.0,
+        "share_percentage": 0.0972
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 14400418.0,
+        "share_percentage": 0.0135
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 3435522.0,
+        "share_percentage": 0.0032
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 3334468.0,
+        "share_percentage": 0.0031
+      },
+      {
+        "name": "Boon Hwee Koh",
+        "share_amount": 60617,
+        "share_percentage": 5e-05
+      },
+      {
+        "name": "Stuart Wilson Lewis",
+        "share_amount": 1201,
+        "share_percentage": 0
+      },
+      {
+        "name": "Oon Jin Yeoh",
+        "share_amount": 7248,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Huey Ru Lin",
+        "share_amount": 2973,
+        "share_percentage": 0
+      },
+      {
+        "name": "Maimoonah Binte Mohamed Hussain",
+        "share_amount": 1201,
+        "share_percentage": 0
+      },
+      {
+        "name": "Gao Zhun Julie",
+        "share_amount": 2973,
+        "share_percentage": 0
+      },
+      {
+        "name": "Tsien Samuel Nag",
+        "share_amount": 5101,
+        "share_percentage": 0
+      }
+    ]
+  },
+  {
+    "symbol": "F34",
+    "shareholders": [
+      {
+        "name": "PPB Group Berhad",
+        "share_amount": 1172614755.0,
+        "share_percentage": 0.1878
+      },
+      {
+        "name": "Kuok (Singapore) Limited",
+        "share_amount": 256951112.0,
+        "share_percentage": 0.0412
+      },
+      {
+        "name": "Harpole Resources Limited",
+        "share_amount": 256211778.0,
+        "share_percentage": 0.041
+      },
+      {
+        "name": "Longhlin Asia Limited",
+        "share_amount": 230486621.0,
+        "share_percentage": 0.0369
+      },
+      {
+        "name": "Noblespirit Venture Limited",
+        "share_amount": 222800000.0,
+        "share_percentage": 0.0357
+      },
+      {
+        "name": "Yong-Boon Yeo",
+        "share_amount": 906500,
+        "share_percentage": 0.00015
+      }
+    ]
+  },
+  {
+    "symbol": "Q0F",
+    "shareholders": [
+      {
+        "name": "Mitsui & Co Ltd",
+        "share_amount": 2888487400.0,
+        "share_percentage": 0.32775
+      },
+      {
+        "name": "Khazanah Nasional Berhad",
+        "share_amount": 2284536356.0,
+        "share_percentage": 0.25922
+      },
+      {
+        "name": "Employees Provident Fund Board",
+        "share_amount": 890733962.0,
+        "share_percentage": 0.10107
+      },
+      {
+        "name": "Gayrimenkul Yatirim Insaat",
+        "share_amount": 517610173.0,
+        "share_percentage": 0.05873
+      },
+      {
+        "name": "Kumpulan Wang Persaraan (Diperbadankan)",
+        "share_amount": 278755700.0,
+        "share_percentage": 0.03163
+      }
+    ]
+  },
+  {
+    "symbol": "H78",
+    "shareholders": [
+      {
+        "name": "Jardine Strategic Holdings Ltd",
+        "share_amount": 1176616646.0,
+        "share_percentage": 0.53322
+      },
+      {
+        "name": "First Eagle Investment Management, LLC",
+        "share_amount": 58872900.0,
+        "share_percentage": 0.02668
+      },
+      {
+        "name": "The Vanguard Group, Inc",
+        "share_amount": 37691142.0,
+        "share_percentage": 0.01708
+      },
+      {
+        "name": "BlackRock Institutional Trust Company, NA",
+        "share_amount": 25427378.0,
+        "share_percentage": 0.01152
+      },
+      {
+        "name": "Seafarer Capital Partners, LLC",
+        "share_amount": 19745000.0,
+        "share_percentage": 0.00895
+      }
+    ]
+  },
+  {
+    "symbol": "J36",
+    "shareholders": [
+      {
+        "name": "Keswick (Benjamin William)",
+        "share_amount": 50158750.0,
+        "share_percentage": 0.17181
+      },
+      {
+        "name": "1947 Trust",
+        "share_amount": 37355491.0,
+        "share_percentage": 0.12796
+      },
+      {
+        "name": "First Eagle Investment Management, LLC",
+        "share_amount": 14714540.0,
+        "share_percentage": 0.0504
+      },
+      {
+        "name": "The Vanguard Group, Inc",
+        "share_amount": 5978326.0,
+        "share_percentage": 0.02048
+      },
+      {
+        "name": "Weatherall (Edward Percy Keswick)",
+        "share_amount": 4114023.0,
+        "share_percentage": 0.01409
+      }
+    ]
+  },
+  {
+    "symbol": "C6L",
+    "shareholders": [
+      {
+        "name": "Napier Investments Pte Ltd",
+        "share_amount": 930959900.0,
+        "share_percentage": 0.2954
+      },
+      {
+        "name": "Temasek Holdings (Private) Limited",
+        "share_amount": 657306600.0,
+        "share_percentage": 0.2086
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 100965498.0,
+        "share_percentage": 0.032
+      },
+      {
+        "name": "MooMoo Financial Singapore Pte Ltd",
+        "share_amount": 24506892.0,
+        "share_percentage": 0.0077
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 20509342.0,
+        "share_percentage": 0.0065
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 14743828.0,
+        "share_percentage": 0.005
+      },
+      {
+        "name": "Lim Huat Seah",
+        "share_amount": 281700,
+        "share_percentage": 9e-05
+      },
+      {
+        "name": "Sae Peng Cheong",
+        "share_amount": 69575,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Kim Shin Lee",
+        "share_amount": 52700,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Gautam Banerjee",
+        "share_amount": 76450,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "David John Gledhill",
+        "share_amount": 62400,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Oon Jin Yeoh",
+        "share_amount": 29500,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Swee Chen Goh",
+        "share_amount": 53550,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Jeanette Wong Kai Yuan",
+        "share_amount": 28100,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Dominic Ho Chiu Fai",
+        "share_amount": 80300,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Goh Choon Phong",
+        "share_amount": 5799182,
+        "share_percentage": null
+      }
+    ]
+  },
+  {
+    "symbol": "BN4",
+    "shareholders": [
+      {
+        "name": "Temasek Holdings (Private) Ltd",
+        "share_amount": 371408292.0,
+        "share_percentage": 0.2064
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 119792245.0,
+        "share_percentage": 0.0666
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 15705471.0,
+        "share_percentage": 0.0087
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 10429925.0,
+        "share_percentage": 0.0058
+      },
+      {
+        "name": "Shanwood Development Pte Ltd",
+        "share_amount": 7040000.0,
+        "share_percentage": 0.0039
+      },
+      {
+        "name": "Shirish Moreshwar Apte",
+        "share_amount": 31000,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Chin Hua Loh",
+        "share_amount": 9849718,
+        "share_percentage": 0.00549
+      },
+      {
+        "name": "Sai Choy Tham",
+        "share_amount": 199570,
+        "share_percentage": 0.00011
+      },
+      {
+        "name": "Leong Kay Teoh",
+        "share_amount": 229825,
+        "share_percentage": 0.00013
+      },
+      {
+        "name": "Ang Wan Ching",
+        "share_amount": 13000,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Jimmy Ng Hwee Kim",
+        "share_amount": 19000,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Olivier Pascal Marius Blum",
+        "share_amount": 16000,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Penny Goh",
+        "share_amount": 73000,
+        "share_percentage": 4e-05
+      }
+    ]
+  },
+  {
+    "symbol": "G07",
+    "shareholders": [
+      {
+        "name": "Sungei Bagan Rubber Company (Malaya) Berhad",
+        "share_amount": 9530240.0,
+        "share_percentage": 0.0189
+      },
+      {
+        "name": "The Nyalas Rubber Estates Ltd",
+        "share_amount": 8028000.0,
+        "share_percentage": 0.016
+      },
+      {
+        "name": "Wong Hong Sun",
+        "share_amount": 6801000.0,
+        "share_percentage": 0.0135
+      },
+      {
+        "name": "Wong Hong Yen",
+        "share_amount": 2373336.0,
+        "share_percentage": 0.0047
+      },
+      {
+        "name": "Lee Hak Heng",
+        "share_amount": 1456300.0,
+        "share_percentage": 0.0029
+      }
+    ]
+  },
+  {
+    "symbol": "BS6",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 715003565.0,
+        "share_percentage": 0.1817
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 32228758.0,
+        "share_percentage": 0.0082
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 10319600.0,
+        "share_percentage": 0.0026
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 10193859.0,
+        "share_percentage": 0.0026
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 10021374.0,
+        "share_percentage": 0.0025
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 24143800.0,
+        "share_percentage": 0.006
+      },
+      {
+        "name": "Societe Generale Singapore Branch",
+        "share_amount": 18754068.0,
+        "share_percentage": 0.005
+      }
+    ]
+  },
+  {
+    "symbol": "SO7",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 715003565.0,
+        "share_percentage": 0.1817
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 32228758.0,
+        "share_percentage": 0.0082
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 10319600.0,
+        "share_percentage": 0.0026
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 10193859.0,
+        "share_percentage": 0.0026
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 10021374.0,
+        "share_percentage": 0.0025
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 24143800.0,
+        "share_percentage": 0.006
+      },
+      {
+        "name": "Societe Generale Singapore Branch",
+        "share_amount": 18754068.0,
+        "share_percentage": 0.005
+      }
+    ]
+  },
+  {
+    "symbol": "C38U",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 715280000.0,
+        "share_percentage": 0.094
+      },
+      {
+        "name": "SBR Private Limited",
+        "share_amount": 583714592.0,
+        "share_percentage": 0.0767
+      },
+      {
+        "name": "Premier Healthcare Services International Pte Ltd",
+        "share_amount": 413861835.0,
+        "share_percentage": 0.0544
+      },
+      {
+        "name": "Albert Complex Pte Ltd",
+        "share_amount": 303265987.0,
+        "share_percentage": 0.0398
+      },
+      {
+        "name": "Pyramex Investments Pte Ltd",
+        "share_amount": 199291863.0,
+        "share_percentage": 0.0262
+      },
+      {
+        "name": "Mun Wai Leo",
+        "share_amount": 52875,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Ngiap Jong Low",
+        "share_amount": 57079,
+        "share_percentage": 0
+      },
+      {
+        "name": "Beng Lin Lim",
+        "share_amount": 39749,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Bin Hwee Quek",
+        "share_amount": 121609,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Boon Khai Tan",
+        "share_amount": 23952,
+        "share_percentage": 0
+      },
+      {
+        "name": "Teo Swee Lian",
+        "share_amount": 99439,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Cictml'S Unitholding",
+        "share_amount": 74656728,
+        "share_percentage": 0.0098
+      },
+      {
+        "name": "Tan Choon Siang",
+        "share_amount": 101277,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Capitaland Integrated Commercial Trust Management Limited",
+        "share_amount": 77610232,
+        "share_percentage": 0.0098
+      }
+    ]
+  },
+  {
+    "symbol": "NIO",
+    "shareholders": [
+      {
+        "name": "Tencent Holdings Ltd",
+        "share_amount": 48260167.0,
+        "share_percentage": 0.02489
+      },
+      {
+        "name": "Millennium Management LLC",
+        "share_amount": 14050692.0,
+        "share_percentage": 0.00725
+      },
+      {
+        "name": "Renaissance Technologies LLC",
+        "share_amount": 12494700.0,
+        "share_percentage": 0.00644
+      },
+      {
+        "name": "Legal & General Investment Management Ltd",
+        "share_amount": 11004690.0,
+        "share_percentage": 0.00568
+      },
+      {
+        "name": "BofA Global Research (United States)",
+        "share_amount": 9253316.0,
+        "share_percentage": 0.00477
+      }
+    ]
+  },
+  {
+    "symbol": "9CI",
+    "shareholders": [
+      {
+        "name": "Capitaland Group Pte Ltd",
+        "share_amount": 2693106549.0,
+        "share_percentage": 0.5395
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 212349060.0,
+        "share_percentage": 0.0425
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 35358326.0,
+        "share_percentage": 0.0071
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 18665572.0,
+        "share_percentage": 0.0037
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 16356484.0,
+        "share_percentage": 0.0033
+      },
+      {
+        "name": "Belita Ong",
+        "share_amount": 24813,
+        "share_percentage": 0
+      },
+      {
+        "name": "Tuong Sing Su",
+        "share_amount": 55241,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Abdul Farid bin Alias",
+        "share_amount": 43244,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Chee Kheong Mah",
+        "share_amount": 198388,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Chung Wei Hsu",
+        "share_amount": 62755,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Chee Koon Lee",
+        "share_amount": 5736464,
+        "share_percentage": 0.0012
+      },
+      {
+        "name": "Siu Ming Wong",
+        "share_amount": 68874,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Anthony Lim Weng Kin",
+        "share_amount": 141399,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Ko Kai Kwun Miguel @Ko Miguel",
+        "share_amount": 1547469,
+        "share_percentage": 0.00031
+      }
+    ]
+  },
+  {
+    "symbol": "A17U",
+    "shareholders": [
+      {
+        "name": "Cli Re Fund Investments Pte Ltd",
+        "share_amount": 779928969.0,
+        "share_percentage": 0.1691
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 416974687.0,
+        "share_percentage": 0.0904
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 29049630.0,
+        "share_percentage": 0.0063
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 27932167.0,
+        "share_percentage": 0.0061
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 22405419.0,
+        "share_percentage": 0.0049
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 18261724.0,
+        "share_percentage": 0.004
+      },
+      {
+        "name": "Capitaland Ascendas Reit Management Limited'S Unitholding",
+        "share_amount": 3876487,
+        "share_percentage": 0.0007
+      },
+      {
+        "name": "William Tay Wee Leong",
+        "share_amount": 1130302,
+        "share_percentage": 0.00023
+      }
+    ]
+  },
+  {
+    "symbol": "Y92",
+    "shareholders": [
+      {
+        "name": "Siriwana Co, Ltd",
+        "share_amount": 5176627762.0,
+        "share_percentage": 0.206
+      },
+      {
+        "name": "The Central Depository Limited",
+        "share_amount": 7155990138.0,
+        "share_percentage": 0.2847
+      },
+      {
+        "name": "Siriwana Co, Ltd",
+        "share_amount": 5176627762.0,
+        "share_percentage": 0.206
+      },
+      {
+        "name": "Mr Natthavat Tejapaibul",
+        "share_amount": 129827500.0,
+        "share_percentage": 0.0052
+      },
+      {
+        "name": "Mr Thapana Sirivadhanabhakdi",
+        "share_amount": 107000000.0,
+        "share_percentage": 0.0043
+      },
+      {
+        "name": "Mr. Wee Joo Yeow",
+        "share_amount": 300000,
+        "share_percentage": 1e-05
+      }
+    ]
+  },
+  {
+    "symbol": "C07",
+    "shareholders": [
+      {
+        "name": "Jardine Strategic Singapore Pte Ltd",
+        "share_amount": 337735637.0,
+        "share_percentage": 0.8545
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 3816721.0,
+        "share_percentage": 0.0097
+      },
+      {
+        "name": "Thia Cheng Song",
+        "share_amount": 665000.0,
+        "share_percentage": 0.0017
+      },
+      {
+        "name": "Chua Swee Eng",
+        "share_amount": 662900.0,
+        "share_percentage": 0.0017
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 630645.0,
+        "share_percentage": 0.0016
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 663388.0,
+        "share_percentage": 0.002
+      }
+    ]
+  },
+  {
+    "symbol": "U96",
+    "shareholders": [
+      {
+        "name": "Temasek Holdings (Private) Limited",
+        "share_amount": 871200328.0,
+        "share_percentage": 0.49
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 81834277.0,
+        "share_percentage": 0.046
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 13543166.0,
+        "share_percentage": 0.0076
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 10386936.0,
+        "share_percentage": 0.0058
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 10036053.0,
+        "share_percentage": 0.0056
+      },
+      {
+        "name": "Startree Investments Pte Ltd",
+        "share_amount": 9400000.0,
+        "share_percentage": 0.005
+      },
+      {
+        "name": "Tang Kin Fei",
+        "share_amount": 4746612.0,
+        "share_percentage": 0.003
+      },
+      {
+        "name": "Heng Tan Tow",
+        "share_amount": 89800,
+        "share_percentage": 0
+      },
+      {
+        "name": "Manu Bhaskaran",
+        "share_amount": 8500,
+        "share_percentage": 0
+      },
+      {
+        "name": "Kunnasagaran Chinniah",
+        "share_amount": 25500,
+        "share_percentage": 0
+      },
+      {
+        "name": "Ming Yan Lim",
+        "share_amount": 74100,
+        "share_percentage": 0
+      },
+      {
+        "name": "Kim Yin Wong",
+        "share_amount": 8048497,
+        "share_percentage": 0.0045
+      },
+      {
+        "name": "Chee Keong Yap",
+        "share_amount": 153500,
+        "share_percentage": 0.0001
+      },
+      {
+        "name": "Chao Choon Ong",
+        "share_amount": 22000,
+        "share_percentage": 0
+      },
+      {
+        "name": "Josephine Kwa Lay Keng",
+        "share_amount": 96000,
+        "share_percentage": 0
+      },
+      {
+        "name": "Marina Chin Li Yuen",
+        "share_amount": 19400,
+        "share_percentage": 0
+      }
+    ]
+  },
+  {
+    "symbol": "U14",
+    "shareholders": [
+      {
+        "name": "Wee Investments Limited",
+        "share_amount": 135135536.0,
+        "share_percentage": 0.1596
+      },
+      {
+        "name": "CY Wee & Company Private Limited",
+        "share_amount": 115162017.0,
+        "share_percentage": 0.136
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 63947045.0,
+        "share_percentage": 0.0755
+      },
+      {
+        "name": "Haw Par Capital Pte Ltd",
+        "share_amount": 38649505.0,
+        "share_percentage": 0.0457
+      },
+      {
+        "name": "Haw Par Investment Holdings Private Limited",
+        "share_amount": 28705436.0,
+        "share_percentage": 0.0339
+      },
+      {
+        "name": "Wee Sin Liam",
+        "share_amount": 948777,
+        "share_percentage": 0.00112
+      }
+    ]
+  },
+  {
+    "symbol": "G13",
+    "shareholders": [
+      {
+        "name": "Genting Overseas Holdings Limited",
+        "share_amount": 6353685269.0,
+        "share_percentage": 0.5257
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 324359267.0,
+        "share_percentage": 0.0268
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 319731084.0,
+        "share_percentage": 0.0265
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 155275128.0,
+        "share_percentage": 0.0128
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 84681577.0,
+        "share_percentage": 0.007
+      }
+    ]
+  },
+  {
+    "symbol": "5E2",
+    "shareholders": [
+      {
+        "name": "Startree Investments Pte Ltd",
+        "share_amount": 1210968288.0,
+        "share_percentage": 0.3575
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 201680342.0,
+        "share_percentage": 0.0595
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 44690108.0,
+        "share_percentage": 0.0131
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 40203564.0,
+        "share_percentage": 0.0118
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 28380259.0,
+        "share_percentage": 0.0083
+      },
+      {
+        "name": "Mariel von Schumann",
+        "share_amount": 80200,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Astrid Skarheim Onsum",
+        "share_amount": 81600,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Sarjit Singh Gill",
+        "share_amount": 95481,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Ieda Gomes Yell",
+        "share_amount": 97500,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Jan Holm",
+        "share_amount": 92600,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Yap Chee Keong",
+        "share_amount": 327454,
+        "share_percentage": 0.0001
+      },
+      {
+        "name": "Mark Gainsborough",
+        "share_amount": 251100,
+        "share_percentage": 7e-05
+      }
+    ]
+  },
+  {
+    "symbol": "C09",
+    "shareholders": [
+      {
+        "name": "Hong Leong Investment Holdings Pte Ltd",
+        "share_amount": 169549915.0,
+        "share_percentage": 0.1898
+      },
+      {
+        "name": "Hong Leong Holdings Ltd",
+        "share_amount": 148787477.0,
+        "share_percentage": 0.1665
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 55873406.0,
+        "share_percentage": 0.0625
+      },
+      {
+        "name": "Hong Realty (Private) Limited",
+        "share_amount": 34457782.0,
+        "share_percentage": 0.0386
+      },
+      {
+        "name": "Garden Estates Limited",
+        "share_amount": 20484365.0,
+        "share_percentage": 0.0229
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 33352552.0,
+        "share_percentage": 0.037
+      }
+    ]
+  },
+  {
+    "symbol": "EB5",
+    "shareholders": [
+      {
+        "name": "Eight Capital Inc",
+        "share_amount": 195144130.0,
+        "share_percentage": 0.1261
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 30103437.0,
+        "share_percentage": 0.0194
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 10157100.0,
+        "share_percentage": 0.0066
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 5516300.0,
+        "share_percentage": 0.0036
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 3027318.0,
+        "share_percentage": 0.002
+      }
+    ]
+  },
+  {
+    "symbol": "N2IU",
+    "shareholders": [
+      {
+        "name": "Sienna Pte Ltd",
+        "share_amount": 1115457048.0,
+        "share_percentage": 0.211
+      },
+      {
+        "name": "Kent Assets Pte Ltd",
+        "share_amount": 464449105.0,
+        "share_percentage": 0.0878
+      },
+      {
+        "name": "HarbourFront Place Pte Ltd",
+        "share_amount": 442846329.0,
+        "share_percentage": 0.0838
+      },
+      {
+        "name": "HarbourFront Eight Pte Ltd",
+        "share_amount": 352238977.0,
+        "share_percentage": 0.0666
+      },
+      {
+        "name": "Suffolk Assets Pte Ltd",
+        "share_amount": 285256396.0,
+        "share_percentage": 0.054
+      },
+      {
+        "name": "Mpact Management Ltd",
+        "share_amount": 164153502,
+        "share_percentage": 0.031
+      }
+    ]
+  },
+  {
+    "symbol": "D01",
+    "shareholders": [
+      {
+        "name": "Jardine Strategic Holdings Ltd",
+        "share_amount": 1049589171.0,
+        "share_percentage": 0.77538
+      },
+      {
+        "name": "Seafarer Capital Partners, LLC",
+        "share_amount": 18339000.0,
+        "share_percentage": 0.01355
+      },
+      {
+        "name": "First Sentier Investors (Singapore)",
+        "share_amount": 12218627.0,
+        "share_percentage": 0.00903
+      },
+      {
+        "name": "The Vanguard Group, Inc",
+        "share_amount": 8724310.0,
+        "share_percentage": 0.00644
+      },
+      {
+        "name": "MFS Investment Management",
+        "share_amount": 6359109.0,
+        "share_percentage": 0.0047
+      }
+    ]
+  },
+  {
+    "symbol": "S58",
+    "shareholders": [
+      {
+        "name": "Venezio Investments Pte Ltd",
+        "share_amount": 590220938.0,
+        "share_percentage": 0.3996
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 33112882.0,
+        "share_percentage": 0.0224
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 17043906.0,
+        "share_percentage": 0.0115
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 10229076.0,
+        "share_percentage": 0.0069
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 8327759.0,
+        "share_percentage": 0.0056
+      },
+      {
+        "name": "Swee Wah Mak",
+        "share_amount": 45835,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Vinita Bali",
+        "share_amount": 44544,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Pier Luigi Sigismondi",
+        "share_amount": 27000,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Mok Tee Heong Kerry",
+        "share_amount": 1806584,
+        "share_percentage": 0.00122
+      },
+      {
+        "name": "Tan Soon Neo Jessica",
+        "share_amount": 78786,
+        "share_percentage": 5e-05
+      },
+      {
+        "name": "Tan Tiang Yew Irving",
+        "share_amount": 33800,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Deborah Tan Yang Sock",
+        "share_amount": 65323,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Michael Paul Zechmeister",
+        "share_amount": 1800,
+        "share_percentage": 0.0
+      },
+      {
+        "name": "Chan Lai Fung",
+        "share_amount": 23730,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Malcolm Wilson",
+        "share_amount": 2200,
+        "share_percentage": 0.0
+      }
+    ]
+  },
+  {
+    "symbol": "M44U",
+    "shareholders": [
+      {
+        "name": "Mulberry Pte Ltd",
+        "share_amount": 916670369.0,
+        "share_percentage": 0.179
+      },
+      {
+        "name": "Aranda Investments Pte Ltd",
+        "share_amount": 296611145.0,
+        "share_percentage": 0.0579
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 214451768.0,
+        "share_percentage": 0.0419
+      },
+      {
+        "name": "Mapletree Logistics Properties Pte Ltd",
+        "share_amount": 186592178.0,
+        "share_percentage": 0.0364
+      },
+      {
+        "name": "Mangrove Pte Ltd",
+        "share_amount": 186589900.0,
+        "share_percentage": 0.0364
+      },
+      {
+        "name": "Chong Kwee Lee",
+        "share_amount": 400000,
+        "share_percentage": 7e-05
+      },
+      {
+        "name": "Kam Sok Kam",
+        "share_amount": 100000,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Mapletree Logistics Trust Management Ltd",
+        "share_amount": 24266374,
+        "share_percentage": 0.0047
+      }
+    ]
+  },
+  {
+    "symbol": "ME8U",
+    "shareholders": [
+      {
+        "name": "Mapletree Dextra Pte Ltd",
+        "share_amount": 707719554.0,
+        "share_percentage": 0.2479
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 88795318.0,
+        "share_percentage": 0.0311
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 48152993.0,
+        "share_percentage": 0.0169
+      },
+      {
+        "name": "Mapletree Industrial Trust Management Ltd",
+        "share_amount": 34468114.0,
+        "share_percentage": 0.0121
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 32026567.0,
+        "share_percentage": 0.0112
+      },
+      {
+        "name": "Kim Teck Cheah",
+        "share_amount": 350000,
+        "share_percentage": 0.00012
+      },
+      {
+        "name": "Lily Ler",
+        "share_amount": 181437,
+        "share_percentage": 6e-05
+      }
+    ]
+  },
+  {
+    "symbol": "AJBU",
+    "shareholders": [
+      {
+        "name": "Keppel DC Investment Holdings Pte Ltd",
+        "share_amount": 438166074.0,
+        "share_percentage": 0.1792
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 178254166.0,
+        "share_percentage": 0.0729
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 35233187.0,
+        "share_percentage": 0.0144
+      },
+      {
+        "name": "Keppel DC REIT Management Pte Ltd",
+        "share_amount": 33817673.0,
+        "share_percentage": 0.0138
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 19306969.0,
+        "share_percentage": 0.0079
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 17296074.0,
+        "share_percentage": 0.008
+      },
+      {
+        "name": "Hwee Long Loh",
+        "share_amount": 585430,
+        "share_percentage": 0.00024
+      },
+      {
+        "name": "Low Huan Ping",
+        "share_amount": 75634,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Yeo Siew Eng",
+        "share_amount": 44594,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Tan Kok Kiong Andrew",
+        "share_amount": 26100,
+        "share_percentage": 1e-05
+      }
+    ]
+  },
+  {
+    "symbol": "M12",
+    "shareholders": [
+      {
+        "name": "Kanbe Art Co, Ltd",
+        "share_amount": 3639000.0,
+        "share_percentage": 0.29413
+      },
+      {
+        "name": "Capital Research Global Investors",
+        "share_amount": 820044.0,
+        "share_percentage": 0.06628
+      },
+      {
+        "name": "Asset Management One Co, Ltd",
+        "share_amount": 725800.0,
+        "share_percentage": 0.05867
+      },
+      {
+        "name": "Sumitomo Mitsui Trust Asset Management Co, Ltd",
+        "share_amount": 558300.0,
+        "share_percentage": 0.04513
+      },
+      {
+        "name": "Kanbe (Sei)",
+        "share_amount": 300000.0,
+        "share_percentage": 0.02425
+      }
+    ]
+  },
+  {
+    "symbol": "EMI",
+    "shareholders": [
+      {
+        "name": "Alliance Global Group Inc",
+        "share_amount": 12507960600.0,
+        "share_percentage": 0.79484
+      },
+      {
+        "name": "Emperador International Ltd",
+        "share_amount": 65479900.0,
+        "share_percentage": 0.00416
+      },
+      {
+        "name": "California Public Employees Retirement System",
+        "share_amount": 5955700.0,
+        "share_percentage": 0.00038
+      },
+      {
+        "name": "Dimensional Fund Advisors, LP",
+        "share_amount": 5736000.0,
+        "share_percentage": 0.00036
+      },
+      {
+        "name": "Lansforsakringar Fondforvaltning AB",
+        "share_amount": 891294.0,
+        "share_percentage": 6e-05
+      }
+    ]
+  },
+  {
+    "symbol": "V03",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 34111184.0,
+        "share_percentage": 0.1186
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 2905144.0,
+        "share_percentage": 0.0101
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 1558573.0,
+        "share_percentage": 0.0054
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 1308172.0,
+        "share_percentage": 0.0045
+      },
+      {
+        "name": "Ngit Liong Wong",
+        "share_amount": 1283619.0,
+        "share_percentage": 0.0045
+      },
+      {
+        "name": "Yong Ying-I",
+        "share_amount": 1517000.0,
+        "share_percentage": 0.005
+      },
+      {
+        "name": "Chee Kheong Wong",
+        "share_amount": 157000,
+        "share_percentage": 0.00055
+      }
+    ]
+  },
+  {
+    "symbol": "OV8",
+    "shareholders": [
+      {
+        "name": "Sheng Siong Holdings Pte Ltd",
+        "share_amount": 448800000.0,
+        "share_percentage": 0.2985
+      },
+      {
+        "name": "Lim Hock Eng",
+        "share_amount": 120000000.0,
+        "share_percentage": 0.0798
+      },
+      {
+        "name": "Lim Hock Chee",
+        "share_amount": 117700000.0,
+        "share_percentage": 0.0783
+      },
+      {
+        "name": "Lim Hock Leng",
+        "share_amount": 101924359.0,
+        "share_percentage": 0.0678
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 63163861.0,
+        "share_percentage": 0.042
+      }
+    ]
+  },
+  {
+    "symbol": "U06",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 701237571.0,
+        "share_percentage": 0.4894
+      },
+      {
+        "name": "UOL Equity Investments Pte Ltd",
+        "share_amount": 21280442.0,
+        "share_percentage": 0.0149
+      },
+      {
+        "name": "Cheong Soh Chin @ Julie",
+        "share_amount": 7381133.0,
+        "share_percentage": 0.0052
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 6821188.0,
+        "share_percentage": 0.0048
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 5700512.0,
+        "share_percentage": 0.004
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 3482993.0,
+        "share_percentage": 0.002
+      }
+    ]
+  },
+  {
+    "symbol": "T14",
+    "shareholders": [
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 72763900.0,
+        "share_percentage": 0.3638
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 24723998.0,
+        "share_percentage": 0.1236
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 6383085.0,
+        "share_percentage": 0.0319
+      },
+      {
+        "name": "Tan Toh Heah Or Tan Swee Teck Michael",
+        "share_amount": 3700000.0,
+        "share_percentage": 0.0185
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 3488800.0,
+        "share_percentage": 0.0174
+      }
+    ]
+  },
+  {
+    "symbol": "J69U",
+    "shareholders": [
+      {
+        "name": "Frasers Property Retail Trust Holdings Pte Ltd",
+        "share_amount": 658417517.0,
+        "share_percentage": 0.3236
+      },
+      {
+        "name": "Frasers Centrepoint Asset Management Ltd",
+        "share_amount": 117093850.0,
+        "share_percentage": 0.0575
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 109154954.0,
+        "share_percentage": 0.0536
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 19160686.0,
+        "share_percentage": 0.0094
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 15242256.0,
+        "share_percentage": 0.0075
+      },
+      {
+        "name": "Richard Ng",
+        "share_amount": 440833,
+        "share_percentage": 0.00022
+      }
+    ]
+  },
+  {
+    "symbol": "K71U",
+    "shareholders": [
+      {
+        "name": "Keppel REIT Investment Pte Ltd",
+        "share_amount": 1382235181.0,
+        "share_percentage": 0.279
+      },
+      {
+        "name": "Keppel REIT Management Limited",
+        "share_amount": 282111392.0,
+        "share_percentage": 0.0569
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 211506132.0,
+        "share_percentage": 0.0427
+      },
+      {
+        "name": "Keppel Capital Investment Holdings Pte Ltd",
+        "share_amount": 193023737.0,
+        "share_percentage": 0.039
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 39744448.0,
+        "share_percentage": 0.008
+      },
+      {
+        "name": "Swee Yiow Tan",
+        "share_amount": 2630223,
+        "share_percentage": 0.00053
+      },
+      {
+        "name": "Alan Rupert Nisbet",
+        "share_amount": 79157,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Hsien Yang Chua",
+        "share_amount": 299690,
+        "share_percentage": 6e-05
+      },
+      {
+        "name": "Ian Roderick Mackie",
+        "share_amount": 185500,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Tan Hua Mui Christina",
+        "share_amount": 701650,
+        "share_percentage": 0.00014
+      },
+      {
+        "name": "Temasek Holdings Limited",
+        "share_amount": 41267588,
+        "share_percentage": 0.0083
+      },
+      {
+        "name": "Tan Mei Ling, Carol Anne",
+        "share_amount": 79857,
+        "share_percentage": 2e-05
+      },
+      {
+        "name": "Fong Mun Ngin, Mervyn",
+        "share_amount": 189801,
+        "share_percentage": 4e-05
+      }
+    ]
+  },
+  {
+    "symbol": "T82U",
+    "shareholders": [
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 357645849.0,
+        "share_percentage": 0.121
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 133004368.0,
+        "share_percentage": 0.045
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 112122328.0,
+        "share_percentage": 0.0379
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 21497943.0,
+        "share_percentage": 0.0073
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 19710209.0,
+        "share_percentage": 0.0067
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 15670443.0,
+        "share_percentage": 0.005
+      }
+    ]
+  },
+  {
+    "symbol": "U10",
+    "shareholders": [
+      {
+        "name": "UIP Holdings Limited",
+        "share_amount": 188306346.0,
+        "share_percentage": 0.1933
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 169900024.0,
+        "share_percentage": 0.1744
+      },
+      {
+        "name": "Tang Wee Loke",
+        "share_amount": 36502649.0,
+        "share_percentage": 0.0375
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 8275485.0,
+        "share_percentage": 0.0085
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 7568144.0,
+        "share_percentage": 0.0078
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 143541251.0,
+        "share_percentage": 0.153
+      },
+      {
+        "name": "Lim and Tan Securities Pte Ltd",
+        "share_amount": 12203681.0,
+        "share_percentage": 0.013
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6340392.0,
+        "share_percentage": 0.007
+      }
+    ]
+  },
+  {
+    "symbol": "E5H",
+    "shareholders": [
+      {
+        "name": "Golden Moment Limited",
+        "share_amount": 3070000000.0,
+        "share_percentage": 0.2421
+      },
+      {
+        "name": "Ascent Wealth Investment Limited",
+        "share_amount": 2100000000.0,
+        "share_percentage": 0.1656
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 1118981049.0,
+        "share_percentage": 0.0882
+      },
+      {
+        "name": "Massingham International Ltd",
+        "share_amount": 977047817.0,
+        "share_percentage": 0.077
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 657572541.0,
+        "share_percentage": 0.0519
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 1067450549.0,
+        "share_percentage": 0.084
+      },
+      {
+        "name": "Flambo International Ltd",
+        "share_amount": 260000000.0,
+        "share_percentage": 0.02
+      },
+      {
+        "name": "Christian G.H. Gautier de Charnace",
+        "share_amount": 602000,
+        "share_percentage": 5e-05
+      }
+    ]
+  },
+  {
+    "symbol": "TQ5",
+    "shareholders": [
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 22502410.0,
+        "share_percentage": 0.0057
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 11570271.0,
+        "share_percentage": 0.0029
+      },
+      {
+        "name": "Wong Ghan Or Wong Shi Hao",
+        "share_amount": 9832404.0,
+        "share_percentage": 0.0025
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6631325.0,
+        "share_percentage": 0.0017
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 4961481.0,
+        "share_percentage": 0.0013
+      }
+    ]
+  },
+  {
+    "symbol": "VC2",
+    "shareholders": [
+      {
+        "name": "Breedens Investments Pte Ltd",
+        "share_amount": 1603412218.0,
+        "share_percentage": 0.4252
+      },
+      {
+        "name": "Aranda Investments Pte Ltd",
+        "share_amount": 359736514.0,
+        "share_percentage": 0.0954
+      },
+      {
+        "name": "Kewalram Singapore Limited",
+        "share_amount": 265000000.0,
+        "share_percentage": 0.0703
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 54742137.0,
+        "share_percentage": 0.0145
+      },
+      {
+        "name": "Daiwa Capital Markets Singapore Limited",
+        "share_amount": 48194900.0,
+        "share_percentage": 0.0128
+      },
+      {
+        "name": "Joerg Wolfgang Wolle",
+        "share_amount": 169398,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Ah Doo Lim",
+        "share_amount": 1124300,
+        "share_percentage": 0.0003
+      },
+      {
+        "name": "Sunny George Verghese",
+        "share_amount": 170159745,
+        "share_percentage": 0.0451
+      },
+      {
+        "name": "Chee Keong Yap",
+        "share_amount": 426271,
+        "share_percentage": 0.00011
+      },
+      {
+        "name": "Ajai Puri",
+        "share_amount": 260394,
+        "share_percentage": 7e-05
+      },
+      {
+        "name": "Phuoc Tran",
+        "share_amount": 75200,
+        "share_percentage": 2e-05
+      }
+    ]
+  },
+  {
+    "symbol": "CJLU",
+    "shareholders": [
+      {
+        "name": "Singtel Interactive Pte Ltd",
+        "share_amount": 965999999.0,
+        "share_percentage": 0.2479
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 172807951.0,
+        "share_percentage": 0.0443
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 34202664.0,
+        "share_percentage": 0.0088
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 20801700.0,
+        "share_percentage": 0.0053
+      },
+      {
+        "name": "Ifast Financial Pte Ltd",
+        "share_amount": 20715689.0,
+        "share_percentage": 0.0053
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 23721700.0,
+        "share_percentage": 0.006
+      },
+      {
+        "name": "Yew Heng Tong",
+        "share_amount": 1300000,
+        "share_percentage": 0.00033
+      }
+    ]
+  },
+  {
+    "symbol": "P8Z",
+    "shareholders": [
+      {
+        "name": "Wellpoint Pacific Holdings Ltd",
+        "share_amount": 749157774.0,
+        "share_percentage": 0.432
+      },
+      {
+        "name": "Oakridge Investments Pte Ltd",
+        "share_amount": 535050070.0,
+        "share_percentage": 0.3085
+      },
+      {
+        "name": "Lynwood Capital Resources Pte Ltd",
+        "share_amount": 21622000.0,
+        "share_percentage": 0.0125
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 19646391.0,
+        "share_percentage": 0.0113
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 7752950.0,
+        "share_percentage": 0.0045
+      },
+      {
+        "name": "Kong Goon Siong or Kong Goon Khing",
+        "share_amount": 8550000.0,
+        "share_percentage": 0.005
+      },
+      {
+        "name": "Hung Siang Lim",
+        "share_amount": 350000,
+        "share_percentage": 0.0002
+      }
+    ]
+  },
+  {
+    "symbol": "BUOU",
+    "shareholders": [
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 864011631.0,
+        "share_percentage": 0.2279
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 143686470.0,
+        "share_percentage": 0.0379
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 71129239.0,
+        "share_percentage": 0.0188
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 30376717.0,
+        "share_percentage": 0.008
+      },
+      {
+        "name": "IFAST Financial Pte Ltd",
+        "share_amount": 27102876.0,
+        "share_percentage": 0.0071
+      },
+      {
+        "name": "Anthea Lee Meng Hoon",
+        "share_amount": 430700,
+        "share_percentage": 0.00011
+      },
+      {
+        "name": "Frasers Logistics & Commercial Asset Management Pte. Ltd",
+        "share_amount": 20246590,
+        "share_percentage": 0.00591
+      }
+    ]
+  },
+  {
+    "symbol": "S59",
+    "shareholders": [
+      {
+        "name": "Singapore Airlines Limited",
+        "share_amount": 870000000.0,
+        "share_percentage": 0.7782
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 13976369.0,
+        "share_percentage": 0.0125
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 3301585.0,
+        "share_percentage": 0.0029
+      },
+      {
+        "name": "Ocbc Securities Private Limited",
+        "share_amount": 1991040.0,
+        "share_percentage": 0.0017
+      },
+      {
+        "name": "Wong Ket Seong @ Wong Ket Yin",
+        "share_amount": 1500000.0,
+        "share_percentage": 0.0013
+      },
+      {
+        "name": "Chin Yau Seng",
+        "share_amount": 495193,
+        "share_percentage": 0.00044
+      }
+    ]
+  },
+  {
+    "symbol": "HMN",
+    "shareholders": [
+      {
+        "name": "Somerset Capital Pte Ltd",
+        "share_amount": 941622837.0,
+        "share_percentage": 0.2448
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 159167739.0,
+        "share_percentage": 0.0413
+      },
+      {
+        "name": "CapitaLand Group Pte Ltd",
+        "share_amount": 153542083.0,
+        "share_percentage": 0.0399
+      },
+      {
+        "name": "AHDF Pte Ltd",
+        "share_amount": 36660272.0,
+        "share_percentage": 0.0095
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 35816898.0,
+        "share_percentage": 0.0093
+      },
+      {
+        "name": "Chong Chee Lui",
+        "share_amount": 2025381,
+        "share_percentage": 0.00053
+      },
+      {
+        "name": "Khum Whai Loh",
+        "share_amount": 164430,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Capitaland Ascott Trust Management Limited'S Securityholding",
+        "share_amount": 14934996,
+        "share_percentage": 0.0038
+      },
+      {
+        "name": "Teo Joo Ling, Serena",
+        "share_amount": 1931251,
+        "share_percentage": 0.0005
+      },
+      {
+        "name": "Capitaland Ascott Business Trust Management Pte. Ltd",
+        "share_amount": 1834375,
+        "share_percentage": 0.0004
+      }
+    ]
+  },
+  {
+    "symbol": "A7RU",
+    "shareholders": [
+      {
+        "name": "Keppel Infrastructure Holdings Pte Ltd",
+        "share_amount": 1107489090.0,
+        "share_percentage": 0.182
+      },
+      {
+        "name": "Bartley Investments Pte Ltd",
+        "share_amount": 449749957.0,
+        "share_percentage": 0.0739
+      },
+      {
+        "name": "Nassim Investments Pte Ltd",
+        "share_amount": 156625608.0,
+        "share_percentage": 0.0257
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 156330352.0,
+        "share_percentage": 0.0257
+      },
+      {
+        "name": "Napier Investments Pte Ltd",
+        "share_amount": 111985995.0,
+        "share_percentage": 0.0184
+      },
+      {
+        "name": "Kin Sze Ng",
+        "share_amount": 373500,
+        "share_percentage": 6e-05
+      },
+      {
+        "name": "Poh Hwa Khor",
+        "share_amount": 74900,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Suk Shien Chong",
+        "share_amount": 225500,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Chin Chin Eng",
+        "share_amount": 46800,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "Neo Tzu Chao, Kevin",
+        "share_amount": 973709,
+        "share_percentage": 0.00016
+      },
+      {
+        "name": "Chan Pengee, Adrian",
+        "share_amount": 181100,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Daniel Cuthbert Ee Hock Huat",
+        "share_amount": 647031,
+        "share_percentage": 0.00011
+      }
+    ]
+  },
+  {
+    "symbol": "H02",
+    "shareholders": [
+      {
+        "name": "Wee Investments Limited",
+        "share_amount": 62907926.0,
+        "share_percentage": 0.2842
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 23099083.0,
+        "share_percentage": 0.1043
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 15478438.0,
+        "share_percentage": 0.0699
+      },
+      {
+        "name": "United Overseas Insurance Limited \u2013 Shf",
+        "share_amount": 4274600.0,
+        "share_percentage": 0.0193
+      },
+      {
+        "name": "Wah Hin & Co Pte Ltd",
+        "share_amount": 3652655.0,
+        "share_percentage": 0.0165
+      },
+      {
+        "name": "Lee Huey Jee Jenny",
+        "share_amount": 200,
+        "share_percentage": 0
+      },
+      {
+        "name": "First Eagle Investment Management, Llc",
+        "share_amount": 19804504,
+        "share_percentage": 0.0895
+      }
+    ]
+  },
+  {
+    "symbol": "AWX",
+    "shareholders": [
+      {
+        "name": "Venezio Investments Pte Ltd",
+        "share_amount": 39012563.0,
+        "share_percentage": 0.124
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 13083804.0,
+        "share_percentage": 0.0416
+      },
+      {
+        "name": "Toh Ban Leng James",
+        "share_amount": 10100000.0,
+        "share_percentage": 0.0321
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 7014047.0,
+        "share_percentage": 0.0223
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 3543142.0,
+        "share_percentage": 0.0113
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 5077551.0,
+        "share_percentage": 0.016
+      },
+      {
+        "name": "Chok Yean Hung",
+        "share_amount": 1078044,
+        "share_percentage": 0.00338
+      },
+      {
+        "name": "JPMorgan Chase & Co",
+        "share_amount": 12057128,
+        "share_percentage": 0.0379
+      },
+      {
+        "name": "Merrill Lynch International",
+        "share_amount": 15784914,
+        "share_percentage": 0.0495
+      }
+    ]
+  },
+  {
+    "symbol": "XWA",
+    "shareholders": [
+      {
+        "name": "Venezio Investments Pte Ltd",
+        "share_amount": 39012563.0,
+        "share_percentage": 0.124
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 13083804.0,
+        "share_percentage": 0.0416
+      },
+      {
+        "name": "Toh Ban Leng James",
+        "share_amount": 10100000.0,
+        "share_percentage": 0.0321
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 7014047.0,
+        "share_percentage": 0.0223
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 3543142.0,
+        "share_percentage": 0.0113
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 5077551.0,
+        "share_percentage": 0.016
+      }
+    ]
+  },
+  {
+    "symbol": "C52",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 87749617.0,
+        "share_percentage": 0.0405
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 29168332.0,
+        "share_percentage": 0.0135
+      },
+      {
+        "name": "IFAST Financial Pte Ltd",
+        "share_amount": 20594797.0,
+        "share_percentage": 0.0095
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 13784123.0,
+        "share_percentage": 0.0064
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 12815487.0,
+        "share_percentage": 0.0059
+      }
+    ]
+  },
+  {
+    "symbol": "AIY",
+    "shareholders": [
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 56398850.0,
+        "share_percentage": 0.1851
+      },
+      {
+        "name": "Lim Chung Chun",
+        "share_amount": 40000000.0,
+        "share_percentage": 0.1313
+      },
+      {
+        "name": "CP Invest Ltd",
+        "share_amount": 13246242.0,
+        "share_percentage": 0.0435
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 7777085.0,
+        "share_percentage": 0.0255
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 7727786.0,
+        "share_percentage": 0.0254
+      },
+      {
+        "name": "Wee Kian Lim",
+        "share_amount": 17300,
+        "share_percentage": 6e-05
+      },
+      {
+        "name": "Tham Soh Mui",
+        "share_amount": 6100,
+        "share_percentage": 2e-05
+      }
+    ]
+  },
+  {
+    "symbol": "C2PU",
+    "shareholders": [
+      {
+        "name": "Parkway Investments Pte Ltd",
+        "share_amount": 213257000.0,
+        "share_percentage": 0.3268
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 22348881.0,
+        "share_percentage": 0.0342
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 7095496.0,
+        "share_percentage": 0.0109
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 5585092.0,
+        "share_percentage": 0.0086
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 4763910.0,
+        "share_percentage": 0.0073
+      },
+      {
+        "name": "Yean Chau Yong",
+        "share_amount": 76400,
+        "share_percentage": 0.0001
+      },
+      {
+        "name": "Parkway Trust Management Limited",
+        "share_amount": 1516268,
+        "share_percentage": 0.00232
+      }
+    ]
+  },
+  {
+    "symbol": "H22",
+    "shareholders": [
+      {
+        "name": "Hong Leong Corporation Holdings Pte Ltd",
+        "share_amount": 549001657.0,
+        "share_percentage": 0.7338
+      },
+      {
+        "name": "Starich Investments Pte Ltd",
+        "share_amount": 13804000.0,
+        "share_percentage": 0.0185
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 11950586.0,
+        "share_percentage": 0.016
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 9854100.0,
+        "share_percentage": 0.0132
+      },
+      {
+        "name": "Taiheiyo Singapore Pte Ltd",
+        "share_amount": 9079659.0,
+        "share_percentage": 0.0121
+      }
+    ]
+  },
+  {
+    "symbol": "H15",
+    "shareholders": [
+      {
+        "name": "Nassim Developments Pte Ltd",
+        "share_amount": 117347282.0,
+        "share_percentage": 0.2211
+      },
+      {
+        "name": "Ong Beng Seng",
+        "share_amount": 84812255.0,
+        "share_percentage": 0.1598
+      },
+      {
+        "name": "68 Holdings Pte Ltd",
+        "share_amount": 60000000.0,
+        "share_percentage": 0.113
+      },
+      {
+        "name": "Fu Kuo Chen David",
+        "share_amount": 26026307.0,
+        "share_percentage": 0.049
+      },
+      {
+        "name": "Fu Christina Mrs Christina Ong",
+        "share_amount": 23457308.0,
+        "share_percentage": 0.0442
+      },
+      {
+        "name": "Stephen Lau Buong Lik",
+        "share_amount": 31600,
+        "share_percentage": 6e-05
+      }
+    ]
+  },
+  {
+    "symbol": "558",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 44048027.0,
+        "share_percentage": 0.0496
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 35207550.0,
+        "share_percentage": 0.0396
+      },
+      {
+        "name": "CGS Intl Securities Singapore P L",
+        "share_amount": 14867012.0,
+        "share_percentage": 0.0167
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 13908620.0,
+        "share_percentage": 0.0157
+      },
+      {
+        "name": "Lim And Tan Securities Pte Ltd",
+        "share_amount": 10294723.0,
+        "share_percentage": 0.0116
+      },
+      {
+        "name": "San Tai Construction (Singapore) Pte Ltd",
+        "share_amount": 9500000,
+        "share_percentage": 0.013
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 7184987,
+        "share_percentage": 0.01
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 6120543,
+        "share_percentage": 0.009
+      },
+      {
+        "name": "Meng Chong Loh",
+        "share_amount": 1187500,
+        "share_percentage": 0.00134
+      },
+      {
+        "name": "Loh Meng Chong, Stanley",
+        "share_amount": 1187500,
+        "share_percentage": 0.00134
+      }
+    ]
+  },
+  {
+    "symbol": "F17",
+    "shareholders": [
+      {
+        "name": "Guocoland Assets Pte Ltd",
+        "share_amount": 791017434.0,
+        "share_percentage": 0.6684
+      },
+      {
+        "name": "Kwek Leng Hai",
+        "share_amount": 35290914.0,
+        "share_percentage": 0.0298
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 30658356.0,
+        "share_percentage": 0.0259
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 23973399.0,
+        "share_percentage": 0.0203
+      },
+      {
+        "name": "KGI Securities (Singapore) Pte Ltd",
+        "share_amount": 20170590.0,
+        "share_percentage": 0.017
+      },
+      {
+        "name": "Hsing Yao Cheng",
+        "share_amount": 1764383,
+        "share_percentage": 0.0015
+      },
+      {
+        "name": "Fairbury Pte. Ltd",
+        "share_amount": 70448112,
+        "share_percentage": 0.0595
+      }
+    ]
+  },
+  {
+    "symbol": "S07",
+    "shareholders": [
+      {
+        "name": "Kerry Group Ltd",
+        "share_amount": 1799537010.0,
+        "share_percentage": 0.50189
+      },
+      {
+        "name": "Kuok Brothers Sdn Bhd",
+        "share_amount": 260178718.0,
+        "share_percentage": 0.07256
+      },
+      {
+        "name": "Kuok (Singapore) Limited",
+        "share_amount": 220444907.0,
+        "share_percentage": 0.06148
+      },
+      {
+        "name": "Fidelity Management & Research Company LLC",
+        "share_amount": 107153876.0,
+        "share_percentage": 0.02989
+      },
+      {
+        "name": "Kuok (Hui Kwong)",
+        "share_amount": 94815353.0,
+        "share_percentage": 0.02644
+      }
+    ]
+  },
+  {
+    "symbol": "P7VU",
+    "shareholders": [
+      {
+        "name": "Hutchison Port Group Holdings Limited",
+        "share_amount": 2406227022.0,
+        "share_percentage": 0.2762
+      },
+      {
+        "name": "PSA International Pte Ltd",
+        "share_amount": 1236178600.0,
+        "share_percentage": 0.1419
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 271916341.0,
+        "share_percentage": 0.0312
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 68339451.0,
+        "share_percentage": 0.0078
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 66846535.0,
+        "share_percentage": 0.0077
+      }
+    ]
+  },
+  {
+    "symbol": "NS8U",
+    "shareholders": [
+      {
+        "name": "Hutchison Port Group Holdings Limited",
+        "share_amount": 2406227022.0,
+        "share_percentage": 0.2762
+      },
+      {
+        "name": "PSA International Pte Ltd",
+        "share_amount": 1236178600.0,
+        "share_percentage": 0.1419
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 279346955.0,
+        "share_percentage": 0.0321
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 83114151.0,
+        "share_percentage": 0.0095
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 55568192.0,
+        "share_percentage": 0.0064
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 66846535.0,
+        "share_percentage": 0.008
+      }
+    ]
+  },
+  {
+    "symbol": "F99",
+    "shareholders": [
+      {
+        "name": "Interbev Investment Limited",
+        "share_amount": 1014051428.0,
+        "share_percentage": 0.6968
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 11123255.0,
+        "share_percentage": 0.0076
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 6007905.0,
+        "share_percentage": 0.0041
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 2193132.0,
+        "share_percentage": 0.0015
+      },
+      {
+        "name": "Thia Cheng Song",
+        "share_amount": 1386000.0,
+        "share_percentage": 0.001
+      },
+      {
+        "name": "Stellar Asset Investment Pte. Ltd",
+        "share_amount": 256452456,
+        "share_percentage": 0.1763
+      }
+    ]
+  },
+  {
+    "symbol": "TS0U",
+    "shareholders": [
+      {
+        "name": "OUE Limited",
+        "share_amount": 1081414227.0,
+        "share_percentage": 0.1957
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 221364832.0,
+        "share_percentage": 0.0401
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 65518021.0,
+        "share_percentage": 0.0119
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 36056141.0,
+        "share_percentage": 0.0065
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 23814321.0,
+        "share_percentage": 0.0043
+      }
+    ]
+  },
+  {
+    "symbol": "CC3",
+    "shareholders": [
+      {
+        "name": "Asia Mobile Holdings Pte Ltd",
+        "share_amount": 965845290.0,
+        "share_percentage": 0.5601
+      },
+      {
+        "name": "NTT Docomo Business, Inc",
+        "share_amount": 171490520.0,
+        "share_percentage": 0.0995
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 18972844.0,
+        "share_percentage": 0.011
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 16396985.0,
+        "share_percentage": 0.0095
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 14917537.0,
+        "share_percentage": 0.0087
+      },
+      {
+        "name": "NTT Communications Corporation",
+        "share_amount": 171490520.0,
+        "share_percentage": 0.1
+      }
+    ]
+  },
+  {
+    "symbol": "HKB",
+    "shareholders": [
+      {
+        "name": "Lazard Asset Management, LLC",
+        "share_amount": 215816.0,
+        "share_percentage": 0.00533
+      },
+      {
+        "name": "Morgan Stanley Investment Management Inc (United States)",
+        "share_amount": 212467.0,
+        "share_percentage": 0.00525
+      },
+      {
+        "name": "AllianceBernstein LP",
+        "share_amount": 209293.0,
+        "share_percentage": 0.00517
+      },
+      {
+        "name": "Gotham Asset Management, LLC",
+        "share_amount": 101813.0,
+        "share_percentage": 0.00252
+      },
+      {
+        "name": "Allegiance Financial Group Advisory Services LLC",
+        "share_amount": 49999.0,
+        "share_percentage": 0.00124
+      }
+    ]
+  },
+  {
+    "symbol": "JYEU",
+    "shareholders": [
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 695692959.0,
+        "share_percentage": 0.2843
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 90821262.0,
+        "share_percentage": 0.0371
+      },
+      {
+        "name": "HPL Investers Pte Ltd",
+        "share_amount": 29238753.0,
+        "share_percentage": 0.012
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 25654356.0,
+        "share_percentage": 0.0105
+      },
+      {
+        "name": "iFast Financial Pte Ltd",
+        "share_amount": 25278109.0,
+        "share_percentage": 0.0103
+      }
+    ]
+  },
+  {
+    "symbol": "9A4U",
+    "shareholders": [
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 49136970.0,
+        "share_percentage": 0.0609
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 297544970.0,
+        "share_percentage": 0.037
+      },
+      {
+        "name": "Esr-Reit Management (Singapore) Limited",
+        "share_amount": 220204281.0,
+        "share_percentage": 0.0274
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 71524139.0,
+        "share_percentage": 0.0089
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 49136970.0,
+        "share_percentage": 0.0609
+      },
+      {
+        "name": "Esr Property Services Pte Ltd",
+        "share_amount": 45961181.0,
+        "share_percentage": 0.006
+      }
+    ]
+  },
+  {
+    "symbol": "AGS",
+    "shareholders": [
+      {
+        "name": "Tyc Investment Pte Ltd",
+        "share_amount": 340561369.0,
+        "share_percentage": 0.532
+      },
+      {
+        "name": "Tay Wee Jin Michael",
+        "share_amount": 55004098.0,
+        "share_percentage": 0.0859
+      },
+      {
+        "name": "Henry Tay Yun Chwan",
+        "share_amount": 37003368.0,
+        "share_percentage": 0.0578
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 20833422.0,
+        "share_percentage": 0.0325
+      },
+      {
+        "name": "Ong Yek Siang",
+        "share_amount": 5873923.0,
+        "share_percentage": 0.0092
+      }
+    ]
+  },
+  {
+    "symbol": "BVA",
+    "shareholders": [
+      {
+        "name": "Lim Wee Chai",
+        "share_amount": 2235628856.0,
+        "share_percentage": 0.27218
+      },
+      {
+        "name": "Kumpulan Wang Persaraan (Diperbadankan)",
+        "share_amount": 626653650.0,
+        "share_percentage": 0.07629
+      },
+      {
+        "name": "Firstway United Corp",
+        "share_amount": 554966328.0,
+        "share_percentage": 0.06757
+      },
+      {
+        "name": "Bank of Singapore Limited",
+        "share_amount": 225200500.0,
+        "share_percentage": 0.02742
+      },
+      {
+        "name": "Norges Bank Investment Management (NBIM)",
+        "share_amount": 158782859.0,
+        "share_percentage": 0.01933
+      }
+    ]
+  },
+  {
+    "symbol": "BSL",
+    "shareholders": [
+      {
+        "name": "Raffles Medical Holdings Pte Ltd",
+        "share_amount": 692280209.0,
+        "share_percentage": 0.3762
+      },
+      {
+        "name": "Loo Choon Yong",
+        "share_amount": 251635323.0,
+        "share_percentage": 0.1367
+      },
+      {
+        "name": "S & D Holdings Pte Ltd",
+        "share_amount": 62755366.0,
+        "share_percentage": 0.0341
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 46524443.0,
+        "share_percentage": 0.0253
+      },
+      {
+        "name": "Tan Tiang Lee",
+        "share_amount": 16228192.0,
+        "share_percentage": 0.0088
+      }
+    ]
+  },
+  {
+    "symbol": "CY6U",
+    "shareholders": [
+      {
+        "name": "CLI India Pte Ltd",
+        "share_amount": 231076629.0,
+        "share_percentage": 0.1698
+      },
+      {
+        "name": "CapitaLand India Trust Management Pte Ltd",
+        "share_amount": 115158653.0,
+        "share_percentage": 0.0846
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 77801725.0,
+        "share_percentage": 0.0572
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 18446899.0,
+        "share_percentage": 0.0136
+      },
+      {
+        "name": "ABN Amro Clearing Bank NV",
+        "share_amount": 15127192.0,
+        "share_percentage": 0.0111
+      }
+    ]
+  },
+  {
+    "symbol": "F03",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 50484607.0,
+        "share_percentage": 0.092
+      },
+      {
+        "name": "Tan Guek Ming",
+        "share_amount": 27547400.0,
+        "share_percentage": 0.0502
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 14692100.0,
+        "share_percentage": 0.0268
+      },
+      {
+        "name": "Oon Peng Heng",
+        "share_amount": 9433600.0,
+        "share_percentage": 0.0172
+      },
+      {
+        "name": "Estate of Tan Bian Chye, Deceased",
+        "share_amount": 7480800.0,
+        "share_percentage": 0.0136
+      },
+      {
+        "name": "Sudeep Nair",
+        "share_amount": 86754661,
+        "share_percentage": 0.1314
+      },
+      {
+        "name": "Tan Cher Liang",
+        "share_amount": 102000,
+        "share_percentage": 0.0002
+      },
+      {
+        "name": "Ong Kian Min",
+        "share_amount": 1410000,
+        "share_percentage": 0.0021
+      },
+      {
+        "name": "Saw Meng Tee",
+        "share_amount": 246000,
+        "share_percentage": 0.0004
+      }
+    ]
+  },
+  {
+    "symbol": "A50",
+    "shareholders": [
+      {
+        "name": "Lim Eng Hock",
+        "share_amount": 9826470334.0,
+        "share_percentage": 0.3716
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 7947604460.0,
+        "share_percentage": 0.3006
+      },
+      {
+        "name": "Garville Pte Ltd",
+        "share_amount": 111930588.0,
+        "share_percentage": 0.0042
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 61639915.0,
+        "share_percentage": 0.0023
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 44074020.0,
+        "share_percentage": 0.0017
+      }
+    ]
+  },
+  {
+    "symbol": "S2D",
+    "shareholders": [
+      {
+        "name": "Nagoya Railroad Co Ltd",
+        "share_amount": 7500100.0,
+        "share_percentage": 0.15406
+      },
+      {
+        "name": "Zeus Capital, Ltd",
+        "share_amount": 6000000.0,
+        "share_percentage": 0.12324
+      },
+      {
+        "name": "Yamaguchi (Seiichiro)",
+        "share_amount": 5385400.0,
+        "share_percentage": 0.11062
+      },
+      {
+        "name": "Dalton Investments, Inc",
+        "share_amount": 1812800.0,
+        "share_percentage": 0.03724
+      },
+      {
+        "name": "Norges Bank Investment Management (NBIM)",
+        "share_amount": 1405617.0,
+        "share_percentage": 0.02887
+      }
+    ]
+  },
+  {
+    "symbol": "H13",
+    "shareholders": [
+      {
+        "name": "Ho Bee Holdings Ltd",
+        "share_amount": 500063100.0,
+        "share_percentage": 0.7531
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 10760883.0,
+        "share_percentage": 0.0162
+      },
+      {
+        "name": "Estate Of Chua Pin Chong",
+        "share_amount": 5783750.0,
+        "share_percentage": 0.0087
+      },
+      {
+        "name": "Chua Thiam Chok",
+        "share_amount": 4265000.0,
+        "share_percentage": 0.0064
+      },
+      {
+        "name": "Chua Wee-Chern",
+        "share_amount": 3282000.0,
+        "share_percentage": 0.0049
+      },
+      {
+        "name": "Estate Of Yap Boh Sim",
+        "share_amount": 3300000.0,
+        "share_percentage": 0.005
+      }
+    ]
+  },
+  {
+    "symbol": "OYY",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 425086658.0,
+        "share_percentage": 0.5744
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 5621657.0,
+        "share_percentage": 0.0076
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 5187403.0,
+        "share_percentage": 0.007
+      },
+      {
+        "name": "Tiger Brokers (Singapore) Pte Ltd",
+        "share_amount": 4685700.0,
+        "share_percentage": 0.0063
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 4167853.0,
+        "share_percentage": 0.0056
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 3290100.0,
+        "share_percentage": 0.004
+      }
+    ]
+  },
+  {
+    "symbol": "OU8",
+    "shareholders": [
+      {
+        "name": "Centurion Properties Pte Ltd",
+        "share_amount": 405756126.0,
+        "share_percentage": 0.4826
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 49472300.0,
+        "share_percentage": 0.0588
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 45267387.0,
+        "share_percentage": 0.0538
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 12364919.0,
+        "share_percentage": 0.0147
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 10195550.0,
+        "share_percentage": 0.0121
+      },
+      {
+        "name": "Wong Kok Hoe",
+        "share_amount": 10000000.0,
+        "share_percentage": 0.012
+      },
+      {
+        "name": "Loh Kim Kang David",
+        "share_amount": 179735750,
+        "share_percentage": 0.21377
+      }
+    ]
+  },
+  {
+    "symbol": "SET",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 19361275.0,
+        "share_percentage": 0.0348
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 9139287.0,
+        "share_percentage": 0.0164
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6359461.0,
+        "share_percentage": 0.0114
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 4728241.0,
+        "share_percentage": 0.0085
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 3179904.0,
+        "share_percentage": 0.0057
+      }
+    ]
+  },
+  {
+    "symbol": "P15",
+    "shareholders": [
+      {
+        "name": "Yu Poh Suan",
+        "share_amount": 6468600.0,
+        "share_percentage": 0.0024
+      },
+      {
+        "name": "Leong Chee Tong",
+        "share_amount": 6336000.0,
+        "share_percentage": 0.0024
+      },
+      {
+        "name": "Morph Investments Ltd",
+        "share_amount": 6012000.0,
+        "share_percentage": 0.0023
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 5761000.0,
+        "share_percentage": 0.0022
+      },
+      {
+        "name": "Peter A Allen",
+        "share_amount": 5000000.0,
+        "share_percentage": 0.0019
+      }
+    ]
+  },
+  {
+    "symbol": "SEB",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 19361275.0,
+        "share_percentage": 0.0348
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 9139287.0,
+        "share_percentage": 0.0164
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6359461.0,
+        "share_percentage": 0.0114
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 4728241.0,
+        "share_percentage": 0.0085
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 3179904.0,
+        "share_percentage": 0.0057
+      },
+      {
+        "name": "Stoneweg Ebt Management Pte. Ltd",
+        "share_amount": 647268,
+        "share_percentage": 0.00116
+      },
+      {
+        "name": "Stoneweg Ereit Management Pte. Ltd",
+        "share_amount": 1492364,
+        "share_percentage": 0.0027
+      },
+      {
+        "name": "Simon Robert Garing",
+        "share_amount": 451306,
+        "share_percentage": 0.0008
+      }
+    ]
+  },
+  {
+    "symbol": "NC2",
+    "shareholders": [
+      {
+        "name": "Sri Trang Holdings Co,Ltd",
+        "share_amount": 343790629.0,
+        "share_percentage": 0.22382
+      },
+      {
+        "name": "Sincharoenkul (Viyavood)",
+        "share_amount": 132987509.0,
+        "share_percentage": 0.08658
+      },
+      {
+        "name": "Sincharoenkul (Promsuk)",
+        "share_amount": 46440000.0,
+        "share_percentage": 0.03023
+      },
+      {
+        "name": "Krungsri Asset Management Co, Ltd",
+        "share_amount": 39130700.0,
+        "share_percentage": 0.02548
+      },
+      {
+        "name": "Sincharoenkul (Vichapon)",
+        "share_amount": 29000000.0,
+        "share_percentage": 0.01888
+      }
+    ]
+  },
+  {
+    "symbol": "G92",
+    "shareholders": [
+      {
+        "name": "China National Aviation Fuel Group Limited",
+        "share_amount": 441332912.0,
+        "share_percentage": 0.5131
+      },
+      {
+        "name": "BP Investments Asia Limited",
+        "share_amount": 173476942.0,
+        "share_percentage": 0.2017
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 9317245.0,
+        "share_percentage": 0.0108
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 8621953.0,
+        "share_percentage": 0.01
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 4474647.0,
+        "share_percentage": 0.0052
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 3870933.0,
+        "share_percentage": 0.005
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 3370239.0,
+        "share_percentage": 0.004
+      }
+    ]
+  },
+  {
+    "symbol": "P40U",
+    "shareholders": [
+      {
+        "name": "YTL Starhill Global Reit Management Limited",
+        "share_amount": 70502841.0,
+        "share_percentage": 0.0307
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 58447084.0,
+        "share_percentage": 0.0254
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 39250241.0,
+        "share_percentage": 0.0171
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 22917313.0,
+        "share_percentage": 0.01
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 14464194.0,
+        "share_percentage": 0.0063
+      }
+    ]
+  },
+  {
+    "symbol": "O5RU",
+    "shareholders": [
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 97407218.0,
+        "share_percentage": 0.1187
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 32307366.0,
+        "share_percentage": 0.0394
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 12306330.0,
+        "share_percentage": 0.015
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 10741556.0,
+        "share_percentage": 0.0131
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 6714426.0,
+        "share_percentage": 0.0082
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 6294551.0,
+        "share_percentage": 0.008
+      },
+      {
+        "name": "Aims Apac Reit Management Limited",
+        "share_amount": 10574922,
+        "share_percentage": 0.0128
+      }
+    ]
+  },
+  {
+    "symbol": "W05",
+    "shareholders": [
+      {
+        "name": "Wing Sun Development Private Limited",
+        "share_amount": 222235490.0,
+        "share_percentage": 0.2913
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 99275571.0,
+        "share_percentage": 0.1301
+      },
+      {
+        "name": "Winlyn Investment Pte Ltd",
+        "share_amount": 72717436.0,
+        "share_percentage": 0.0953
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 69916262.0,
+        "share_percentage": 0.0916
+      },
+      {
+        "name": "Empire Gate Holdings Limited",
+        "share_amount": 19539572.0,
+        "share_percentage": 0.0256
+      }
+    ]
+  },
+  {
+    "symbol": "S61",
+    "shareholders": [
+      {
+        "name": "ComfortDelGro Corporation Limited",
+        "share_amount": 232125512.0,
+        "share_percentage": 0.7426
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 1411200.0,
+        "share_percentage": 0.0045
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 1332021.0,
+        "share_percentage": 0.0043
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 1255378.0,
+        "share_percentage": 0.004
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 789976.0,
+        "share_percentage": 0.0025
+      }
+    ]
+  },
+  {
+    "symbol": "Q5T",
+    "shareholders": [
+      {
+        "name": "Golden Development Private Limited",
+        "share_amount": 449715963.0,
+        "share_percentage": 0.219
+      },
+      {
+        "name": "Golden Landmark Pte Ltd",
+        "share_amount": 206629991.0,
+        "share_percentage": 0.1006
+      },
+      {
+        "name": "Far East Organization Centre Pte Ltd",
+        "share_amount": 196396847.0,
+        "share_percentage": 0.0957
+      },
+      {
+        "name": "FEO Hospitality Asset Management Pte Ltd",
+        "share_amount": 159293956.0,
+        "share_percentage": 0.0776
+      },
+      {
+        "name": "Riverland Pte Ltd",
+        "share_amount": 86499632.0,
+        "share_percentage": 0.0421
+      },
+      {
+        "name": "Benedict Leh Song Boon",
+        "share_amount": 162009,
+        "share_percentage": 8e-05
+      },
+      {
+        "name": "Quek See Tiat",
+        "share_amount": 56485,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Vivienne Lim Hui Bian",
+        "share_amount": 223093,
+        "share_percentage": 0.00011
+      },
+      {
+        "name": "Lee Khia Yee",
+        "share_amount": 173409,
+        "share_percentage": 8e-05
+      },
+      {
+        "name": "Celestine Khoo Geok Choo",
+        "share_amount": 162067,
+        "share_percentage": 8e-05
+      },
+      {
+        "name": "Gerald Lee Hwee Keong",
+        "share_amount": 3243659,
+        "share_percentage": 0.00158
+      }
+    ]
+  },
+  {
+    "symbol": "AP4",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 197010668.0,
+        "share_percentage": 0.1329
+      },
+      {
+        "name": "Lee Wai Keong",
+        "share_amount": 130791600.0,
+        "share_percentage": 0.0882
+      },
+      {
+        "name": "Wong Teck Choon",
+        "share_amount": 42809920.0,
+        "share_percentage": 0.0289
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 13748178.0,
+        "share_percentage": 0.0093
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 9183336.0,
+        "share_percentage": 0.0062
+      }
+    ]
+  },
+  {
+    "symbol": "STG",
+    "shareholders": [
+      {
+        "name": "Sri Trang Agro-Industry PCL",
+        "share_amount": 1450074600.0,
+        "share_percentage": 0.5061
+      },
+      {
+        "name": "Rubberland Products Co, Ltd",
+        "share_amount": 155326800.0,
+        "share_percentage": 0.05421
+      },
+      {
+        "name": "Sincharoenkul (Viyavood)",
+        "share_amount": 123778400.0,
+        "share_percentage": 0.0432
+      },
+      {
+        "name": "Sri Trang Holdings Co,Ltd",
+        "share_amount": 106753800.0,
+        "share_percentage": 0.03726
+      },
+      {
+        "name": "LGT Bank (Singapore) Ltd",
+        "share_amount": 37510500.0,
+        "share_percentage": 0.01309
+      }
+    ]
+  },
+  {
+    "symbol": "BEC",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 176953936.0,
+        "share_percentage": 0.645
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 56696900.0,
+        "share_percentage": 0.2067
+      },
+      {
+        "name": "KGI Securities (Singapore) Pte Ltd",
+        "share_amount": 4340700.0,
+        "share_percentage": 0.0158
+      },
+      {
+        "name": "Shanwood Development Pte Ltd",
+        "share_amount": 1889000.0,
+        "share_percentage": 0.0069
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 1793584.0,
+        "share_percentage": 0.0065
+      }
+    ]
+  },
+  {
+    "symbol": "ADN",
+    "shareholders": [
+      {
+        "name": "Republic Hotels & Resorts Limited",
+        "share_amount": 351436987.0,
+        "share_percentage": 0.3111
+      },
+      {
+        "name": "First Sponsor Capital Limited",
+        "share_amount": 344121000.0,
+        "share_percentage": 0.3046
+      },
+      {
+        "name": "Tai Tak Asia Properties Ltd",
+        "share_amount": 57244770.0,
+        "share_percentage": 0.0507
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 49883650.0,
+        "share_percentage": 0.0442
+      },
+      {
+        "name": "M&C Hospitality International Limited",
+        "share_amount": 44138222.0,
+        "share_percentage": 0.0391
+      }
+    ]
+  },
+  {
+    "symbol": "AU8U",
+    "shareholders": [
+      {
+        "name": "Retail Crown Pte Ltd",
+        "share_amount": 423641110.0,
+        "share_percentage": 0.2433
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 35477102.0,
+        "share_percentage": 0.0204
+      },
+      {
+        "name": "IFAST Financial Pte Ltd",
+        "share_amount": 19071837.0,
+        "share_percentage": 0.011
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 18304282.0,
+        "share_percentage": 0.0105
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 15748273.0,
+        "share_percentage": 0.009
+      },
+      {
+        "name": "Liu Sing Cheong",
+        "share_amount": 3773,
+        "share_percentage": 0.0
+      },
+      {
+        "name": "Wan Mei Kit",
+        "share_amount": 57329,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Tay Hwee Pio",
+        "share_amount": 90059,
+        "share_percentage": 5e-05
+      },
+      {
+        "name": "Ong Seow Eng",
+        "share_amount": 93406,
+        "share_percentage": 5e-05
+      },
+      {
+        "name": "Tan Tee How",
+        "share_amount": 87059,
+        "share_percentage": 5e-05
+      },
+      {
+        "name": "Capitaland China Trust Management Limited",
+        "share_amount": 3009003,
+        "share_percentage": 0.0017
+      },
+      {
+        "name": "Chua Keng Kim",
+        "share_amount": 1427881,
+        "share_percentage": 0.0008
+      },
+      {
+        "name": "Chan Kin Leong Gerry",
+        "share_amount": 183478,
+        "share_percentage": 0.0001
+      }
+    ]
+  },
+  {
+    "symbol": "B61",
+    "shareholders": [
+      {
+        "name": "LRG Property Investment Pte Ltd",
+        "share_amount": 75323072.0,
+        "share_percentage": 0.2909
+      },
+      {
+        "name": "Lee Rubber Company Limited",
+        "share_amount": 21955968.0,
+        "share_percentage": 0.0848
+      },
+      {
+        "name": "Kallang Development Limited",
+        "share_amount": 11875192.0,
+        "share_percentage": 0.0459
+      },
+      {
+        "name": "The Great Eastern Life Assurance Company Limited - Participating Fund",
+        "share_amount": 6171184.0,
+        "share_percentage": 0.0238
+      },
+      {
+        "name": "DBS Vickers Securities (Singapore) Pte Ltd",
+        "share_amount": 3265800.0,
+        "share_percentage": 0.0126
+      }
+    ]
+  },
+  {
+    "symbol": "S41",
+    "shareholders": [
+      {
+        "name": "Hong Leong Investment Holdings Pte Ltd",
+        "share_amount": 119186092.0,
+        "share_percentage": 0.2649
+      },
+      {
+        "name": "Hong Realty (Private) Limited",
+        "share_amount": 29788370.0,
+        "share_percentage": 0.0662
+      },
+      {
+        "name": "Hong Leong Corporation Holdings Pte Ltd",
+        "share_amount": 19685812.0,
+        "share_percentage": 0.0438
+      },
+      {
+        "name": "Garden Estates Limited",
+        "share_amount": 16710670.0,
+        "share_percentage": 0.0371
+      },
+      {
+        "name": "Hong Leong Foundation",
+        "share_amount": 13854823.0,
+        "share_percentage": 0.0308
+      }
+    ]
+  },
+  {
+    "symbol": "PCT",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 92611038.0,
+        "share_percentage": 0.2388
+      },
+      {
+        "name": "Wong Shik Ho Tony",
+        "share_amount": 55405750.0,
+        "share_percentage": 0.1428
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 49061400.0,
+        "share_percentage": 0.1265
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 37192422.0,
+        "share_percentage": 0.0959
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 5423600.0,
+        "share_percentage": 0.014
+      },
+      {
+        "name": "Rays Capital Partners Limited",
+        "share_amount": 18707700,
+        "share_percentage": 0.04823
+      }
+    ]
+  },
+  {
+    "symbol": "Z25",
+    "shareholders": [
+      {
+        "name": "Yanlord Holdings Pte Ltd",
+        "share_amount": 1278390000.0,
+        "share_percentage": 0.6619
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 38999400.0,
+        "share_percentage": 0.0202
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 30510500.0,
+        "share_percentage": 0.0158
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 28140580.0,
+        "share_percentage": 0.0146
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 11367990.0,
+        "share_percentage": 0.0059
+      }
+    ]
+  },
+  {
+    "symbol": "P52",
+    "shareholders": [
+      {
+        "name": "Ng Han Whatt, Jane Kimberly Ng Bee Kiok and Ng Bee Bee",
+        "share_amount": 6750000.0,
+        "share_percentage": 0.0096
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 37534045.0,
+        "share_percentage": 0.0536
+      },
+      {
+        "name": "Patrick Ng Bee Soon",
+        "share_amount": 34962037.0,
+        "share_percentage": 0.0499
+      },
+      {
+        "name": "Ng Han Whatt, Jane Kimberly Ng Bee Kiok and Ng Bee Bee",
+        "share_amount": 6750000.0,
+        "share_percentage": 0.0096
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 5025950.0,
+        "share_percentage": 0.0072
+      },
+      {
+        "name": "Ng Han Whatt",
+        "share_amount": 6750000.0,
+        "share_percentage": 0.01
+      },
+      {
+        "name": "Chan Wan Hong",
+        "share_amount": 18000,
+        "share_percentage": 3e-05
+      },
+      {
+        "name": "Fong Yue Kwong",
+        "share_amount": 258000,
+        "share_percentage": 0.0004
+      },
+      {
+        "name": "Soh Ee Beng",
+        "share_amount": 408000,
+        "share_percentage": 0.0006
+      },
+      {
+        "name": "Ken Loh Kah Soon",
+        "share_amount": 2191350,
+        "share_percentage": 0.0031
+      }
+    ]
+  },
+  {
+    "symbol": "EH5",
+    "shareholders": [
+      {
+        "name": "Kong (Pak Lim James)",
+        "share_amount": 197826419.0,
+        "share_percentage": 0.58811
+      },
+      {
+        "name": "Wismara Sdn Bhd",
+        "share_amount": 70300134.0,
+        "share_percentage": 0.20899
+      },
+      {
+        "name": "Griyajaya Sdn Bhd",
+        "share_amount": 10069836.0,
+        "share_percentage": 0.02994
+      }
+    ]
+  },
+  {
+    "symbol": "E28",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 32435806.0,
+        "share_percentage": 0.0758
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 19989188.0,
+        "share_percentage": 0.0467
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 10887085.0,
+        "share_percentage": 0.0255
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 8514956.0,
+        "share_percentage": 0.0199
+      },
+      {
+        "name": "Gooi Soon Chai",
+        "share_amount": 7917023.0,
+        "share_percentage": 0.0185
+      },
+      {
+        "name": "Mohamad Anwar Au",
+        "share_amount": 4717000,
+        "share_percentage": 0.011
+      }
+    ]
+  },
+  {
+    "symbol": "J85",
+    "shareholders": [
+      {
+        "name": "Hospitality Holdings Pte Ltd",
+        "share_amount": 169650000.0,
+        "share_percentage": 0.1333
+      },
+      {
+        "name": "M&C REIT Management Limited",
+        "share_amount": 136126027.0,
+        "share_percentage": 0.1069
+      },
+      {
+        "name": "Republic Hotels & Resorts Limited",
+        "share_amount": 62790000.0,
+        "share_percentage": 0.0493
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 39172732.0,
+        "share_percentage": 0.0308
+      },
+      {
+        "name": "Hong Leong Investment Holdings Pte Ltd",
+        "share_amount": 26958434.0,
+        "share_percentage": 0.0212
+      },
+      {
+        "name": "M&C Business Trust Management Limited",
+        "share_amount": 6407765,
+        "share_percentage": 0.005
+      }
+    ]
+  },
+  {
+    "symbol": "F9D",
+    "shareholders": [
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 11274763.0,
+        "share_percentage": 0.0223
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 6527778.0,
+        "share_percentage": 0.0129
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 5322556.0,
+        "share_percentage": 0.0105
+      },
+      {
+        "name": "Helen Tan Cheng Hoong",
+        "share_amount": 5166000.0,
+        "share_percentage": 0.0102
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 4258735.0,
+        "share_percentage": 0.0084
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 4906063.0,
+        "share_percentage": 0.01
+      }
+    ]
+  },
+  {
+    "symbol": "RE4",
+    "shareholders": [
+      {
+        "name": "Charles Antonny Melati",
+        "share_amount": 263653406.0,
+        "share_percentage": 0.1512
+      },
+      {
+        "name": "KGI Securities (Singapore) Pte Ltd",
+        "share_amount": 100771520.0,
+        "share_percentage": 0.0578
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 50468300.0,
+        "share_percentage": 0.0289
+      },
+      {
+        "name": "Dhamma Surya",
+        "share_amount": 36059453.0,
+        "share_percentage": 0.0207
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 28647200.0,
+        "share_percentage": 0.0164
+      },
+      {
+        "name": "Tai Mern Tze",
+        "share_amount": 20000,
+        "share_percentage": 1e-05
+      },
+      {
+        "name": "David Yan Kin Pung",
+        "share_amount": 187000,
+        "share_percentage": 0.0001
+      }
+    ]
+  },
+  {
+    "symbol": "T6I",
+    "shareholders": [
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 53683249.0,
+        "share_percentage": 0.0569
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 7145041.0,
+        "share_percentage": 0.0076
+      },
+      {
+        "name": "Sik Pei Shan (Xue Peishan)",
+        "share_amount": 5103478.0,
+        "share_percentage": 0.0054
+      },
+      {
+        "name": "Sik Soo Ching Susan",
+        "share_amount": 4147834.0,
+        "share_percentage": 0.0044
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 4127701.0,
+        "share_percentage": 0.0044
+      }
+    ]
+  },
+  {
+    "symbol": "CRPU",
+    "shareholders": [
+      {
+        "name": "Tiger Brokers (Singapore) Pte Ltd",
+        "share_amount": 643966500.0,
+        "share_percentage": 0.511
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 42136200.0,
+        "share_percentage": 0.0334
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 32798757.0,
+        "share_percentage": 0.026
+      },
+      {
+        "name": "Sasseur Asset Management Pte Ltd",
+        "share_amount": 24654328.0,
+        "share_percentage": 0.0196
+      },
+      {
+        "name": "IFAST Financial Pte Ltd",
+        "share_amount": 13578714.0,
+        "share_percentage": 0.0108
+      },
+      {
+        "name": "Cheng Hsing Yuen",
+        "share_amount": 20000,
+        "share_percentage": 2e-05
+      }
+    ]
+  },
+  {
+    "symbol": "544",
+    "shareholders": [
+      {
+        "name": "Orchid 3 Investments VCC",
+        "share_amount": 101653545.0,
+        "share_percentage": 0.1404
+      },
+      {
+        "name": "Orchid 2 Investments Pte Ltd",
+        "share_amount": 70527157.0,
+        "share_percentage": 0.0974
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 13566757.0,
+        "share_percentage": 0.0187
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 13245918.0,
+        "share_percentage": 0.0183
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 13082984.0,
+        "share_percentage": 0.0181
+      },
+      {
+        "name": "Lim Boon Kheng",
+        "share_amount": 6766661,
+        "share_percentage": 0.0093
+      }
+    ]
+  },
+  {
+    "symbol": "P9D",
+    "shareholders": [
+      {
+        "name": "Central Depository Limited",
+        "share_amount": 203306281.0,
+        "share_percentage": 0.3998
+      },
+      {
+        "name": "Mr James Finbarr Fitzgerald + Mrs Olive Teresa Fitzgerald <J & O Fitzgerald Family A/C>",
+        "share_amount": 97720806.0,
+        "share_percentage": 0.1922
+      },
+      {
+        "name": "Goldfirm Pty Ltd <Kariong Investment No 1 A/C>",
+        "share_amount": 69538806.0,
+        "share_percentage": 0.1367
+      },
+      {
+        "name": "Goldfirm Pty Ltd <Kariong Investment No 2 A/C>",
+        "share_amount": 28028000.0,
+        "share_percentage": 0.0551
+      },
+      {
+        "name": "Sikelia Pty Ltd <Sikelia Family A/C>",
+        "share_amount": 12767760.0,
+        "share_percentage": 0.0251
+      }
+    ]
+  },
+  {
+    "symbol": "BWM",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 441827075.0,
+        "share_percentage": 0.3081
+      },
+      {
+        "name": "Tiger Brokers (Singapore) Pte Ltd",
+        "share_amount": 180739674.0,
+        "share_percentage": 0.126
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 68957980.0,
+        "share_percentage": 0.0481
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 13007371.0,
+        "share_percentage": 0.0091
+      },
+      {
+        "name": "Wang Yuanluo",
+        "share_amount": 5140000.0,
+        "share_percentage": 0.0036
+      }
+    ]
+  },
+  {
+    "symbol": "DCRU",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 110099647.0,
+        "share_percentage": 0.0844
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 24305050.0,
+        "share_percentage": 0.0186
+      },
+      {
+        "name": "Digital Core REIT Management Pte Ltd",
+        "share_amount": 15458214.0,
+        "share_percentage": 0.0119
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 15015431.0,
+        "share_percentage": 0.0115
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 11855557.0,
+        "share_percentage": 0.0091
+      },
+      {
+        "name": "John Ryan Herbert",
+        "share_amount": 455000,
+        "share_percentage": 0.00035
+      },
+      {
+        "name": "John Stewart",
+        "share_amount": 2322879,
+        "share_percentage": 0.0018
+      },
+      {
+        "name": "Ginko-Agt Global Growth Fund",
+        "share_amount": 20153100,
+        "share_percentage": 0.05062
+      }
+    ]
+  },
+  {
+    "symbol": "S20",
+    "shareholders": [
+      {
+        "name": "The Cairns Pte Ltd",
+        "share_amount": 281251598.0,
+        "share_percentage": 0.5998
+      },
+      {
+        "name": "Mellford Pte Ltd",
+        "share_amount": 16021750.0,
+        "share_percentage": 0.0342
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 6965801.0,
+        "share_percentage": 0.0149
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 6648455.0,
+        "share_percentage": 0.0142
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 3355717.0,
+        "share_percentage": 0.0072
+      },
+      {
+        "name": "Dr Tan Kheng Lian",
+        "share_amount": 1556223,
+        "share_percentage": 0.0032
+      }
+    ]
+  },
+  {
+    "symbol": "S08",
+    "shareholders": [
+      {
+        "name": "Singapore Telecommunications Limited",
+        "share_amount": 494000000.0,
+        "share_percentage": 0.2194
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 37350508.0,
+        "share_percentage": 0.0166
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 35366133.0,
+        "share_percentage": 0.0157
+      },
+      {
+        "name": "MooMoo Financial Singapore Pte Ltd",
+        "share_amount": 29873931.0,
+        "share_percentage": 0.0133
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 28958171.0,
+        "share_percentage": 0.0129
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 43400317.0,
+        "share_percentage": 0.019
+      }
+    ]
+  },
+  {
+    "symbol": "LJ3",
+    "shareholders": [
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 19734505.0,
+        "share_percentage": 0.0263
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 2733500.0,
+        "share_percentage": 0.0036
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 2442145.0,
+        "share_percentage": 0.0033
+      },
+      {
+        "name": "Morph Investments Ltd",
+        "share_amount": 2070000.0,
+        "share_percentage": 0.0028
+      },
+      {
+        "name": "Ng Poh Cheng",
+        "share_amount": 2028800.0,
+        "share_percentage": 0.0027
+      }
+    ]
+  },
+  {
+    "symbol": "CHZ",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 791855173.0,
+        "share_percentage": 0.8005
+      },
+      {
+        "name": "IFAST Financial Pte Ltd",
+        "share_amount": 4568000.0,
+        "share_percentage": 0.0046
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 3533900.0,
+        "share_percentage": 0.0036
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 3008084.0,
+        "share_percentage": 0.003
+      },
+      {
+        "name": "Sim Wei Wen, Aviel",
+        "share_amount": 2334500.0,
+        "share_percentage": 0.0024
+      },
+      {
+        "name": "The Director",
+        "share_amount": 250507,
+        "share_percentage": 0.00025
+      },
+      {
+        "name": "issuer [->] director",
+        "share_amount": 81055,
+        "share_percentage": 8e-05
+      }
+    ]
+  },
+  {
+    "symbol": "5UF",
+    "shareholders": [
+      {
+        "name": "Aspial Corporation Ltd",
+        "share_amount": 1216574525.0,
+        "share_percentage": 0.6572
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 92482491.0,
+        "share_percentage": 0.05
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 58035184.0,
+        "share_percentage": 0.0313
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 23945335.0,
+        "share_percentage": 0.0129
+      },
+      {
+        "name": "Tiger Brokers (Singapore) Pte Ltd",
+        "share_amount": 8522844.0,
+        "share_percentage": 0.0046
+      },
+      {
+        "name": "Ng Kean Seen",
+        "share_amount": 363300,
+        "share_percentage": 0.0002
+      },
+      {
+        "name": "Yeo Yun Seng Bernard",
+        "share_amount": 275623,
+        "share_percentage": 0.0001
+      },
+      {
+        "name": "Ko Lee Meng",
+        "share_amount": 3010305,
+        "share_percentage": 0.0015
+      },
+      {
+        "name": "Koh Lee Hwee",
+        "share_amount": 29388888,
+        "share_percentage": 0.0143
+      },
+      {
+        "name": "Koh Wee Seng",
+        "share_amount": 206121212,
+        "share_percentage": 0.0999
+      }
+    ]
+  },
+  {
+    "symbol": "5WJ",
+    "shareholders": [
+      {
+        "name": "Money Farm Pte Ltd",
+        "share_amount": 541293670.0,
+        "share_percentage": 0.612
+      },
+      {
+        "name": "Lim Yong Guan",
+        "share_amount": 110925000.0,
+        "share_percentage": 0.1254
+      },
+      {
+        "name": "Lim Yong Sheng",
+        "share_amount": 95700000.0,
+        "share_percentage": 0.1082
+      },
+      {
+        "name": "Lim Liang Eng",
+        "share_amount": 10875000.0,
+        "share_percentage": 0.0123
+      },
+      {
+        "name": "Tan Yang Hong",
+        "share_amount": 7916670.0,
+        "share_percentage": 0.009
+      }
+    ]
+  },
+  {
+    "symbol": "H07",
+    "shareholders": [
+      {
+        "name": "Ow Chio Kiat",
+        "share_amount": 626927262.0,
+        "share_percentage": 0.4226
+      },
+      {
+        "name": "Kiersten Ow Yiling (Ou Yiling)",
+        "share_amount": 176340676.0,
+        "share_percentage": 0.1189
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 58944571.0,
+        "share_percentage": 0.0397
+      },
+      {
+        "name": "Tan Gim Tee Holdings Pte Ltd",
+        "share_amount": 50160000.0,
+        "share_percentage": 0.0338
+      },
+      {
+        "name": "Morph Investments Ltd",
+        "share_amount": 41472268.0,
+        "share_percentage": 0.028
+      }
+    ]
+  },
+  {
+    "symbol": "YF8",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 424933430.0,
+        "share_percentage": 0.1221
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 47371200.0,
+        "share_percentage": 0.0136
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 47221889.0,
+        "share_percentage": 0.0136
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 38279668.0,
+        "share_percentage": 0.011
+      },
+      {
+        "name": "IFAST Financial Pte Ltd",
+        "share_amount": 35572491.0,
+        "share_percentage": 0.0102
+      }
+    ]
+  },
+  {
+    "symbol": "H30",
+    "shareholders": [
+      {
+        "name": "Hong Fok Land Holding Limited",
+        "share_amount": 177589632.0,
+        "share_percentage": 0.2193
+      },
+      {
+        "name": "PC Cheong Pte Ltd",
+        "share_amount": 95429584.0,
+        "share_percentage": 0.1178
+      },
+      {
+        "name": "Cheong Sim Eng",
+        "share_amount": 31530828.0,
+        "share_percentage": 0.0389
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 20342706.0,
+        "share_percentage": 0.0251
+      },
+      {
+        "name": "Justin Teo Zhiwei",
+        "share_amount": 18244500.0,
+        "share_percentage": 0.0225
+      },
+      {
+        "name": "Cheong Hooi Kheng",
+        "share_amount": 14840100,
+        "share_percentage": 0.01859
+      }
+    ]
+  },
+  {
+    "symbol": "WJP",
+    "shareholders": [
+      {
+        "name": "ComfortDelGro Corporation Limited",
+        "share_amount": 237760000.0,
+        "share_percentage": 0.6706
+      },
+      {
+        "name": "Chu Chee Leong",
+        "share_amount": 3768000.0,
+        "share_percentage": 0.0106
+      },
+      {
+        "name": "Sze Thiam Siong",
+        "share_amount": 3088000.0,
+        "share_percentage": 0.0087
+      },
+      {
+        "name": "Mrs Helen Ong Yong Khee Nee Tang Helen @Helen Tan Siok Wan",
+        "share_amount": 2128000.0,
+        "share_percentage": 0.006
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 2006961.0,
+        "share_percentage": 0.0056
+      }
+    ]
+  },
+  {
+    "symbol": "C41",
+    "shareholders": [
+      {
+        "name": "Lim Keen Ban Holdings Pte Ltd",
+        "share_amount": 57457490.0,
+        "share_percentage": 0.347
+      },
+      {
+        "name": "Henry Tay Yun Chwan",
+        "share_amount": 21038700.0,
+        "share_percentage": 0.1271
+      },
+      {
+        "name": "Ming Yaw Pte Ltd",
+        "share_amount": 19803935.0,
+        "share_percentage": 0.1196
+      },
+      {
+        "name": "Yu Chuen Tek",
+        "share_amount": 9335015.0,
+        "share_percentage": 0.0564
+      },
+      {
+        "name": "Rennick Pte Ltd",
+        "share_amount": 7310000.0,
+        "share_percentage": 0.0441
+      }
+    ]
+  },
+  {
+    "symbol": "QES",
+    "shareholders": [
+      {
+        "name": "Success More Group Limited",
+        "share_amount": 545285100.0,
+        "share_percentage": 0.5719
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 46300024.0,
+        "share_percentage": 0.0486
+      },
+      {
+        "name": "Chia Kee Koon",
+        "share_amount": 18789100.0,
+        "share_percentage": 0.0197
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 14588100.0,
+        "share_percentage": 0.0153
+      },
+      {
+        "name": "Leow Ek Hua",
+        "share_amount": 7458000.0,
+        "share_percentage": 0.0078
+      }
+    ]
+  },
+  {
+    "symbol": "U9E",
+    "shareholders": [
+      {
+        "name": "China Everbright Water Holdings Limited",
+        "share_amount": 2084724572.0,
+        "share_percentage": 0.7287
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 57011070.0,
+        "share_percentage": 0.0199
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 12258612.0,
+        "share_percentage": 0.0043
+      },
+      {
+        "name": "Tan Swee Peng",
+        "share_amount": 11658925.0,
+        "share_percentage": 0.0041
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 7538274.0,
+        "share_percentage": 0.0026
+      }
+    ]
+  },
+  {
+    "symbol": "5TP",
+    "shareholders": [
+      {
+        "name": "Innovation (China) Limited",
+        "share_amount": 106987500.0,
+        "share_percentage": 0.264
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 19395400.0,
+        "share_percentage": 0.0479
+      },
+      {
+        "name": "Tan Choon Hua William",
+        "share_amount": 16238000.0,
+        "share_percentage": 0.0401
+      },
+      {
+        "name": "Lim Peng Liang David Llewellyn",
+        "share_amount": 9859000.0,
+        "share_percentage": 0.0243
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 7996364.0,
+        "share_percentage": 0.0197
+      },
+      {
+        "name": "Lin Xiang Xiong",
+        "share_amount": 536400,
+        "share_percentage": 0.0013
+      },
+      {
+        "name": "Messiah Limited",
+        "share_amount": 28212200,
+        "share_percentage": 0.0696
+      }
+    ]
+  },
+  {
+    "symbol": "MZH",
+    "shareholders": [
+      {
+        "name": "Pearl Yard Holdings Inc",
+        "share_amount": 253709960.0,
+        "share_percentage": 0.389
+      },
+      {
+        "name": "Shi Xu",
+        "share_amount": 44457573.0,
+        "share_percentage": 0.0682
+      },
+      {
+        "name": "Harrymore International Limited",
+        "share_amount": 28192518.0,
+        "share_percentage": 0.0432
+      },
+      {
+        "name": "Jin Xiaozhe",
+        "share_amount": 16559740.0,
+        "share_percentage": 0.0254
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 11977423.0,
+        "share_percentage": 0.0184
+      },
+      {
+        "name": "Venezio Investments Pte. Ltd. (\"Venezio\")",
+        "share_amount": 31562400,
+        "share_percentage": 0.0483
+      }
+    ]
+  },
+  {
+    "symbol": "E3B",
+    "shareholders": [
+      {
+        "name": "GSC Holdings Pte Ltd",
+        "share_amount": 211159000.0,
+        "share_percentage": 0.2297
+      },
+      {
+        "name": "Goh Yeu Toh",
+        "share_amount": 33362157.0,
+        "share_percentage": 0.0363
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 12898400.0,
+        "share_percentage": 0.014
+      },
+      {
+        "name": "Goh Yeo Hwa",
+        "share_amount": 11508900.0,
+        "share_percentage": 0.0125
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 11359355.0,
+        "share_percentage": 0.0124
+      }
+    ]
+  },
+  {
+    "symbol": "A31",
+    "shareholders": [
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 234503129.0,
+        "share_percentage": 0.0723
+      },
+      {
+        "name": "Paul Clark Burke",
+        "share_amount": 192726406.0,
+        "share_percentage": 0.0594
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 154682125.0,
+        "share_percentage": 0.0477
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 147188083.0,
+        "share_percentage": 0.0454
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 96772883.0,
+        "share_percentage": 0.0298
+      },
+      {
+        "name": "Economic Development Innovations Singapore Pte Ltd",
+        "share_amount": 182482493,
+        "share_percentage": 0.0495
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 144468231.0,
+        "share_percentage": 0.045
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 137252791.0,
+        "share_percentage": 0.042
+      },
+      {
+        "name": "Yuen Wai Kheong",
+        "share_amount": 119985266.0,
+        "share_percentage": 0.037
+      },
+      {
+        "name": "Tan Khai Pang",
+        "share_amount": 48601000,
+        "share_percentage": 0.0132
+      },
+      {
+        "name": "Richard John Denny",
+        "share_amount": 9100000,
+        "share_percentage": 0.00247
+      }
+    ]
+  },
+  {
+    "symbol": "HQU",
+    "shareholders": [
+      {
+        "name": "Koh Brothers Eco Engineering Limited",
+        "share_amount": 97445805.0,
+        "share_percentage": 0.6814
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 7664200.0,
+        "share_percentage": 0.0536
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 5162049.0,
+        "share_percentage": 0.0361
+      },
+      {
+        "name": "Lai Weng Kay",
+        "share_amount": 2756600.0,
+        "share_percentage": 0.0193
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 2178400.0,
+        "share_percentage": 0.0152
+      }
+    ]
+  },
+  {
+    "symbol": "Q01",
+    "shareholders": [
+      {
+        "name": "Toh Tiong Wah",
+        "share_amount": 4771825.0,
+        "share_percentage": 0.0083
+      },
+      {
+        "name": "Tan Kong King",
+        "share_amount": 4000000.0,
+        "share_percentage": 0.007
+      },
+      {
+        "name": "Lee Fook Khuen",
+        "share_amount": 3509157.0,
+        "share_percentage": 0.0061
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 3153106.0,
+        "share_percentage": 0.0055
+      },
+      {
+        "name": "Teh Kiu Cheong @ Teong Cheng @ Cheng Chiu Chang",
+        "share_amount": 2056585.0,
+        "share_percentage": 0.0036
+      },
+      {
+        "name": "Basil Chan",
+        "share_amount": 20000,
+        "share_percentage": 4e-05
+      },
+      {
+        "name": "Lin Kejian",
+        "share_amount": 7649000,
+        "share_percentage": 0.0133
+      }
+    ]
+  },
+  {
+    "symbol": "M1GU",
+    "shareholders": [
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 35432268.0,
+        "share_percentage": 0.0315
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 20932419.0,
+        "share_percentage": 0.0186
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 8196287.0,
+        "share_percentage": 0.0073
+      },
+      {
+        "name": "Lim Gek Eng",
+        "share_amount": 5860500.0,
+        "share_percentage": 0.0052
+      },
+      {
+        "name": "Lim Soon Hock",
+        "share_amount": 5833900.0,
+        "share_percentage": 0.0052
+      },
+      {
+        "name": "Mindarie Investment Pte. Ltd",
+        "share_amount": 137215125,
+        "share_percentage": 0.122
+      }
+    ]
+  },
+  {
+    "symbol": "TSH",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 27107723.0,
+        "share_percentage": 0.6111
+      },
+      {
+        "name": "Chua Khoon Hui (Cai Kunhui)",
+        "share_amount": 6552016.0,
+        "share_percentage": 0.1477
+      },
+      {
+        "name": "Cockpit International Pte Ltd",
+        "share_amount": 3028363.0,
+        "share_percentage": 0.0683
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 945751.0,
+        "share_percentage": 0.0213
+      },
+      {
+        "name": "H'Ng Tien Yao",
+        "share_amount": 916700.0,
+        "share_percentage": 0.0207
+      }
+    ]
+  },
+  {
+    "symbol": "U13",
+    "shareholders": [
+      {
+        "name": "Ng Poh Cheng",
+        "share_amount": 2177650.0,
+        "share_percentage": 0.0356
+      },
+      {
+        "name": "Thia Cheng Song",
+        "share_amount": 1778600.0,
+        "share_percentage": 0.0291
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 970934.0,
+        "share_percentage": 0.0159
+      },
+      {
+        "name": "Chong Chin Chin (Zhang Jingjing)",
+        "share_amount": 963666.0,
+        "share_percentage": 0.0158
+      },
+      {
+        "name": "Chong Kian Chun (Zhang Jianjun)",
+        "share_amount": 944168.0,
+        "share_percentage": 0.0154
+      }
+    ]
+  },
+  {
+    "symbol": "O10",
+    "shareholders": [
+      {
+        "name": "Far East Organization Pte Ltd",
+        "share_amount": 312307870.0,
+        "share_percentage": 0.6361
+      },
+      {
+        "name": "Tan Su Lan @ Tan Soo Lung",
+        "share_amount": 10894740.0,
+        "share_percentage": 0.0222
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6349198.0,
+        "share_percentage": 0.0129
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 4218231.0,
+        "share_percentage": 0.0086
+      },
+      {
+        "name": "Morph Investments Ltd",
+        "share_amount": 3619586.0,
+        "share_percentage": 0.0074
+      },
+      {
+        "name": "Koh Kah Sek",
+        "share_amount": 220000,
+        "share_percentage": 0.00045
+      },
+      {
+        "name": "Ku Xian Hong",
+        "share_amount": 20648,
+        "share_percentage": 4e-05
+      }
+    ]
+  },
+  {
+    "symbol": "H18",
+    "shareholders": [
+      {
+        "name": "Tan Chee Hoe & Sons Holdings Pte Ltd",
+        "share_amount": 412568507.0,
+        "share_percentage": 0.558
+      },
+      {
+        "name": "Tan Eng Teong Pte Ltd",
+        "share_amount": 66859520.0,
+        "share_percentage": 0.0904
+      },
+      {
+        "name": "Chng Gim Huat Holdings Pte Ltd",
+        "share_amount": 27711609.0,
+        "share_percentage": 0.0375
+      },
+      {
+        "name": "Tan Teck Lin Holdings Sdn Bhd",
+        "share_amount": 23383240.0,
+        "share_percentage": 0.0316
+      },
+      {
+        "name": "Aditan Holdings Sdn Bhd",
+        "share_amount": 20517455.0,
+        "share_percentage": 0.0277
+      }
+    ]
+  },
+  {
+    "symbol": "QC7",
+    "shareholders": [
+      {
+        "name": "Quan Min Holdings Pte Ltd",
+        "share_amount": 353724389.0,
+        "share_percentage": 0.3728
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 74145580.0,
+        "share_percentage": 0.0781
+      },
+      {
+        "name": "KGI Securities (Singapore) Pte Ltd",
+        "share_amount": 49308640.0,
+        "share_percentage": 0.052
+      },
+      {
+        "name": "Quan Min Plus Pte Ltd",
+        "share_amount": 17280000.0,
+        "share_percentage": 0.0182
+      },
+      {
+        "name": "Chan Pui Kee",
+        "share_amount": 16269643.0,
+        "share_percentage": 0.0171
+      },
+      {
+        "name": "Imc Dynamic Investments Pte. Ltd.",
+        "share_amount": 64132538,
+        "share_percentage": 0.0679
+      }
+    ]
+  },
+  {
+    "symbol": "1D0",
+    "shareholders": [
+      {
+        "name": "Lim Hee Liat",
+        "share_amount": 493915165.0,
+        "share_percentage": 0.397
+      },
+      {
+        "name": "Peh Oon Kee",
+        "share_amount": 99309105.0,
+        "share_percentage": 0.0798
+      },
+      {
+        "name": "Ng Lay Beng",
+        "share_amount": 55386866.0,
+        "share_percentage": 0.0445
+      },
+      {
+        "name": "Ng Han Keow",
+        "share_amount": 48806862.0,
+        "share_percentage": 0.0392
+      },
+      {
+        "name": "Ng Thian Hoo",
+        "share_amount": 40324732.0,
+        "share_percentage": 0.0324
+      }
+    ]
+  },
+  {
+    "symbol": "F83",
+    "shareholders": [
+      {
+        "name": "China Ocean Shipping Company Limited",
+        "share_amount": 3119560454.0,
+        "share_percentage": 0.6966
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 33324026.0,
+        "share_percentage": 0.0074
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 29651924.0,
+        "share_percentage": 0.0066
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 28519983.0,
+        "share_percentage": 0.0064
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 24297538.0,
+        "share_percentage": 0.0054
+      }
+    ]
+  },
+  {
+    "symbol": "T15",
+    "shareholders": [
+      {
+        "name": "Tan Chong Consolidated Sdn Bhd",
+        "share_amount": 705819720.0,
+        "share_percentage": 0.35058
+      },
+      {
+        "name": "Tan (Eng Soon)",
+        "share_amount": 238392972.0,
+        "share_percentage": 0.11841
+      },
+      {
+        "name": "Promenade Group Private Limited",
+        "share_amount": 212067000.0,
+        "share_percentage": 0.10533
+      },
+      {
+        "name": "Time Strategy Group Private Limited",
+        "share_amount": 104497700.0,
+        "share_percentage": 0.0519
+      },
+      {
+        "name": "Tan (Heng Chew)",
+        "share_amount": 50981686.0,
+        "share_percentage": 0.02532
+      }
+    ]
+  },
+  {
+    "symbol": "S56",
+    "shareholders": [
+      {
+        "name": "PT Samudera Indonesia Tbk",
+        "share_amount": 351180000.0,
+        "share_percentage": 0.6527
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 5741398.0,
+        "share_percentage": 0.0107
+      },
+      {
+        "name": "Pang Heng Kwee",
+        "share_amount": 5000000.0,
+        "share_percentage": 0.0093
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 4250218.0,
+        "share_percentage": 0.0079
+      },
+      {
+        "name": "Bani Maulana Mulia",
+        "share_amount": 3666400.0,
+        "share_percentage": 0.0068
+      }
+    ]
+  },
+  {
+    "symbol": "5LY",
+    "shareholders": [
+      {
+        "name": "Nautical International Holdings Ltd",
+        "share_amount": 482539867.0,
+        "share_percentage": 0.1286
+      },
+      {
+        "name": "Nautical International Holdings Ltd",
+        "share_amount": 482539867.0,
+        "share_percentage": 0.1286
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 405633171.0,
+        "share_percentage": 0.1081
+      },
+      {
+        "name": "Penguin International Limited",
+        "share_amount": 303571428.0,
+        "share_percentage": 0.0809
+      },
+      {
+        "name": "Penguin International Limited",
+        "share_amount": 303571428.0,
+        "share_percentage": 0.0809
+      },
+      {
+        "name": "Lee Wan Tang",
+        "share_amount": 34395160,
+        "share_percentage": 0.0091
+      },
+      {
+        "name": "Apricot Capital Pte. Ltd (\"Acpl\")",
+        "share_amount": 457142857,
+        "share_percentage": 0.1216
+      },
+      {
+        "name": "Ginko-Agt Global Growth Fund",
+        "share_amount": 195944800,
+        "share_percentage": 0.05006
+      },
+      {
+        "name": "Sean Lee Yun Feng",
+        "share_amount": 13996900,
+        "share_percentage": 0.0036
+      },
+      {
+        "name": "Teo Junxiang, Darren",
+        "share_amount": 11100000,
+        "share_percentage": 0.00284
+      },
+      {
+        "name": "Chew Gek Khim",
+        "share_amount": 869954,
+        "share_percentage": 0.00179
+      }
+    ]
+  },
+  {
+    "symbol": "5JS",
+    "shareholders": [
+      {
+        "name": "Indofood Singapore Holdings Pte Ltd",
+        "share_amount": 998200000.0,
+        "share_percentage": 0.7151
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 164794600.0,
+        "share_percentage": 0.1181
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 20395615.0,
+        "share_percentage": 0.0146
+      },
+      {
+        "name": "PT Indofood Sukses Makmur Tbk",
+        "share_amount": 19560830.0,
+        "share_percentage": 0.014
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6939300.0,
+        "share_percentage": 0.005
+      }
+    ]
+  },
+  {
+    "symbol": "5GD",
+    "shareholders": [
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 122020600.0,
+        "share_percentage": 0.1491
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 50796903.0,
+        "share_percentage": 0.0621
+      },
+      {
+        "name": "Pan Shuhong",
+        "share_amount": 19393198.0,
+        "share_percentage": 0.0237
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 14331600.0,
+        "share_percentage": 0.0175
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 11950100.0,
+        "share_percentage": 0.0146
+      }
+    ]
+  },
+  {
+    "symbol": "P34",
+    "shareholders": [
+      {
+        "name": "ABN Amro Clearing Bank NV",
+        "share_amount": 13952669.0,
+        "share_percentage": 0.0228
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 7361333.0,
+        "share_percentage": 0.012
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 7038200.0,
+        "share_percentage": 0.0115
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6779805.0,
+        "share_percentage": 0.0111
+      },
+      {
+        "name": "McKeeson Investments Pte Ltd",
+        "share_amount": 6000000.0,
+        "share_percentage": 0.0098
+      },
+      {
+        "name": "First Pacific Advisors, Lp",
+        "share_amount": 30358610,
+        "share_percentage": 0.0497
+      }
+    ]
+  },
+  {
+    "symbol": "NPW",
+    "shareholders": [
+      {
+        "name": "Straits Trading Company Ltd",
+        "share_amount": 218245200.0,
+        "share_percentage": 0.51963
+      },
+      {
+        "name": "Eastspring Investments Berhad",
+        "share_amount": 6332500.0,
+        "share_percentage": 0.01508
+      },
+      {
+        "name": "Neoh Choo Ee & Company Sdn Bhd",
+        "share_amount": 5464000.0,
+        "share_percentage": 0.01301
+      },
+      {
+        "name": "Norges Bank Investment Management (NBIM)",
+        "share_amount": 4180153.0,
+        "share_percentage": 0.00995
+      },
+      {
+        "name": "Mettiz Capital Sdn Bhd",
+        "share_amount": 3889800.0,
+        "share_percentage": 0.00926
+      }
+    ]
+  },
+  {
+    "symbol": "AW9U",
+    "shareholders": [
+      {
+        "name": "OLH Healthcare Investments Pte Ltd",
+        "share_amount": 480000000.0,
+        "share_percentage": 0.2287
+      },
+      {
+        "name": "First Reit Management Limited",
+        "share_amount": 100820475.0,
+        "share_percentage": 0.048
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 34889981.0,
+        "share_percentage": 0.0166
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 27176247.0,
+        "share_percentage": 0.0129
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 21337550.0,
+        "share_percentage": 0.0102
+      }
+    ]
+  },
+  {
+    "symbol": "B58",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 206702543.0,
+        "share_percentage": 0.2384
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 40738500.0,
+        "share_percentage": 0.047
+      },
+      {
+        "name": "ICD (Hong Kong) Limited",
+        "share_amount": 31000000.0,
+        "share_percentage": 0.0358
+      },
+      {
+        "name": "Ho Kwoncjan",
+        "share_amount": 16000000.0,
+        "share_percentage": 0.0185
+      },
+      {
+        "name": "Freesia Investments Ltd",
+        "share_amount": 10000000.0,
+        "share_percentage": 0.0115
+      },
+      {
+        "name": "Eddy See Hock Lye",
+        "share_amount": 1242500,
+        "share_percentage": 0.00143
+      },
+      {
+        "name": "Goodview Properties Pte Ltd",
+        "share_amount": 69844100,
+        "share_percentage": 0.0806
+      }
+    ]
+  },
+  {
+    "symbol": "BDX",
+    "shareholders": [
+      {
+        "name": "Goi Seng Hui",
+        "share_amount": 1254899908.0,
+        "share_percentage": 0.5184
+      },
+      {
+        "name": "IFAST Financial Pte Ltd",
+        "share_amount": 447881180.0,
+        "share_percentage": 0.185
+      },
+      {
+        "name": "Goodview Properties Pte Ltd",
+        "share_amount": 98705000.0,
+        "share_percentage": 0.0408
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 91045618.0,
+        "share_percentage": 0.0376
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 42052082.0,
+        "share_percentage": 0.0174
+      }
+    ]
+  },
+  {
+    "symbol": "42C",
+    "shareholders": [
+      {
+        "name": "Eddy Lee Yip Hang",
+        "share_amount": 217000852.0,
+        "share_percentage": 0.2444
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 118771924.0,
+        "share_percentage": 0.1338
+      },
+      {
+        "name": "Seah Boon Lock",
+        "share_amount": 34845869.0,
+        "share_percentage": 0.0392
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 28567233.0,
+        "share_percentage": 0.0322
+      },
+      {
+        "name": "Tang Choy Leng, Jane Jane Lee Choy Leng",
+        "share_amount": 22793565.0,
+        "share_percentage": 0.0257
+      },
+      {
+        "name": "Teo Woon Keng John",
+        "share_amount": 1047914,
+        "share_percentage": 0.0009
+      },
+      {
+        "name": "Patrick Donald Davies",
+        "share_amount": 1110622,
+        "share_percentage": 0.001
+      },
+      {
+        "name": "Anson Properties Pte. Ltd.",
+        "share_amount": 61393193,
+        "share_percentage": 0.058
+      },
+      {
+        "name": "Albert Ho Shing Tung",
+        "share_amount": 13200219,
+        "share_percentage": 0.0122
+      }
+    ]
+  },
+  {
+    "symbol": "8AZ",
+    "shareholders": [
+      {
+        "name": "Mun Hong Yew",
+        "share_amount": 142899200.0,
+        "share_percentage": 0.1852
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 9464200.0,
+        "share_percentage": 0.0123
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 6145208.0,
+        "share_percentage": 0.008
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 5775277.0,
+        "share_percentage": 0.0075
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 4934229.0,
+        "share_percentage": 0.0064
+      }
+    ]
+  },
+  {
+    "symbol": "ZKX",
+    "shareholders": [
+      {
+        "name": "Sun Renwang",
+        "share_amount": 98400000.0,
+        "share_percentage": 0.3786
+      },
+      {
+        "name": "Xu Ruibing",
+        "share_amount": 98400000.0,
+        "share_percentage": 0.3786
+      },
+      {
+        "name": "KGI Securities (Singapore) Pte Ltd",
+        "share_amount": 28640450.0,
+        "share_percentage": 0.1102
+      },
+      {
+        "name": "Dong Zhaoyan",
+        "share_amount": 9266100.0,
+        "share_percentage": 0.0357
+      },
+      {
+        "name": "Zhiwei Lin",
+        "share_amount": 6468450.0,
+        "share_percentage": 0.0249
+      }
+    ]
+  },
+  {
+    "symbol": "BN2",
+    "shareholders": [
+      {
+        "name": "Tse Chong Hing",
+        "share_amount": 75990411.0,
+        "share_percentage": 0.1857
+      },
+      {
+        "name": "Chow Kok Kit",
+        "share_amount": 32000361.0,
+        "share_percentage": 0.0782
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 17368288.0,
+        "share_percentage": 0.0424
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 8751551.0,
+        "share_percentage": 0.0214
+      },
+      {
+        "name": "Hung Kai Wing",
+        "share_amount": 6300000.0,
+        "share_percentage": 0.0154
+      },
+      {
+        "name": "ABN Amro Clearing Bank NV",
+        "share_amount": 10546340.0,
+        "share_percentage": 0.026
+      }
+    ]
+  },
+  {
+    "symbol": "MV4",
+    "shareholders": [
+      {
+        "name": "Eighteen Tenth Nineteen Forty Four Inc",
+        "share_amount": 361048720.0,
+        "share_percentage": 0.2406
+      },
+      {
+        "name": "TC Stone Limited",
+        "share_amount": 301397398.0,
+        "share_percentage": 0.2008
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 111657400.0,
+        "share_percentage": 0.0744
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 47822132.0,
+        "share_percentage": 0.0319
+      },
+      {
+        "name": "Cheo Mingyou (Shi Mingyou)",
+        "share_amount": 27805500.0,
+        "share_percentage": 0.0185
+      }
+    ]
+  },
+  {
+    "symbol": "BHK",
+    "shareholders": [
+      {
+        "name": "S I Triumph Power Limited",
+        "share_amount": 709589551.0,
+        "share_percentage": 0.2755
+      },
+      {
+        "name": "The Hongkong And Shanghai Banking Corporation Limited",
+        "share_amount": 329707920.0,
+        "share_percentage": 0.128
+      },
+      {
+        "name": "UBS Securities Hong Kong Ltd",
+        "share_amount": 283479000.0,
+        "share_percentage": 0.1101
+      },
+      {
+        "name": "BOCI Securities Ltd",
+        "share_amount": 262561217.0,
+        "share_percentage": 0.1019
+      },
+      {
+        "name": "S I Infrastructure Holdings Limited",
+        "share_amount": 165418475.0,
+        "share_percentage": 0.0642
+      }
+    ]
+  },
+  {
+    "symbol": "BTM",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 1860000.0,
+        "share_percentage": 0.0084
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 1771025.0,
+        "share_percentage": 0.008
+      },
+      {
+        "name": "Teo Jia Hao",
+        "share_amount": 1520000.0,
+        "share_percentage": 0.0069
+      },
+      {
+        "name": "Ng Kwong Chong Or Liu Oi Fui Ivy",
+        "share_amount": 1336666.0,
+        "share_percentage": 0.0061
+      },
+      {
+        "name": "Chee See Giap @ Sin Chien",
+        "share_amount": 842199.0,
+        "share_percentage": 0.0038
+      },
+      {
+        "name": "Tung May Fong",
+        "share_amount": 350000,
+        "share_percentage": 0.0016
+      },
+      {
+        "name": "James Tham Tuck Choong",
+        "share_amount": 350000,
+        "share_percentage": 0.0016
+      }
+    ]
+  },
+  {
+    "symbol": "1MZ",
+    "shareholders": [
+      {
+        "name": "Tiong Su Kouk",
+        "share_amount": 106859423.0,
+        "share_percentage": 0.2724
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 19437262.0,
+        "share_percentage": 0.0496
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 17900536.0,
+        "share_percentage": 0.0456
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 17380139.0,
+        "share_percentage": 0.0443
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 16105344.0,
+        "share_percentage": 0.0411
+      },
+      {
+        "name": "Puan Sri Datin Wong Bak Hee",
+        "share_amount": 1378552,
+        "share_percentage": 0.00344
+      },
+      {
+        "name": "Tiong Chiong Hiiung",
+        "share_amount": 1028276,
+        "share_percentage": 0.00256
+      },
+      {
+        "name": "Ginko-Agt Global Growth Fund",
+        "share_amount": 23923600,
+        "share_percentage": 0.06009
+      },
+      {
+        "name": "Leong Seng Keat",
+        "share_amount": 16040584,
+        "share_percentage": 0.03999
+      }
+    ]
+  },
+  {
+    "symbol": "ZQM",
+    "shareholders": [
+      {
+        "name": "Lim Chap Huat",
+        "share_amount": 518398940,
+        "share_percentage": 0.7832
+      },
+      {
+        "name": "Lim Han Ren (Lin Hanren)",
+        "share_amount": 26850052,
+        "share_percentage": 0.0406
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 16466160.0,
+        "share_percentage": 0.0249
+      },
+      {
+        "name": "Lim Han Qin",
+        "share_amount": 10676024.0,
+        "share_percentage": 0.0161
+      },
+      {
+        "name": "Lim Han Feng (Lin Hanfeng)",
+        "share_amount": 9625000.0,
+        "share_percentage": 0.0145
+      },
+      {
+        "name": "Lim Cheng Hwa",
+        "share_amount": 175000,
+        "share_percentage": 0.0003
+      }
+    ]
+  },
+  {
+    "symbol": "5DD",
+    "shareholders": [
+      {
+        "name": "Low Ming Wah",
+        "share_amount": 6270701.0,
+        "share_percentage": 0.0451
+      },
+      {
+        "name": "Lam Yen Yong",
+        "share_amount": 3404000.0,
+        "share_percentage": 0.0245
+      },
+      {
+        "name": "Chew Kwai Yoke",
+        "share_amount": 2740500.0,
+        "share_percentage": 0.0197
+      },
+      {
+        "name": "Tan Eng Yam Holdings Pte Ltd",
+        "share_amount": 1602700.0,
+        "share_percentage": 0.0115
+      },
+      {
+        "name": "Tan Boon Khak Holdings Pte Ltd",
+        "share_amount": 1541100.0,
+        "share_percentage": 0.0111
+      },
+      {
+        "name": "Christopher Reid Borch",
+        "share_amount": 18235169,
+        "share_percentage": 0.13116
+      }
+    ]
+  },
+  {
+    "symbol": "AWZ",
+    "shareholders": [
+      {
+        "name": "Foo Suan Sai",
+        "share_amount": 36233325.0,
+        "share_percentage": 0.4022
+      },
+      {
+        "name": "Han Juat Hoon",
+        "share_amount": 25112625.0,
+        "share_percentage": 0.2787
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 430600.0,
+        "share_percentage": 0.0048
+      },
+      {
+        "name": "Larissa Tham Kit Fun",
+        "share_amount": 372500.0,
+        "share_percentage": 0.0041
+      },
+      {
+        "name": "Yap Yoong Lok",
+        "share_amount": 357000.0,
+        "share_percentage": 0.004
+      }
+    ]
+  },
+  {
+    "symbol": "ODBU",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 76556327.0,
+        "share_percentage": 0.1264
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 60874629.0,
+        "share_percentage": 0.1005
+      },
+      {
+        "name": "Morgan Stanley Asia (Singapore) Securities Pte Ltd",
+        "share_amount": 27206315.0,
+        "share_percentage": 0.0449
+      },
+      {
+        "name": "Citigroup GM Singapore Securities Pte Ltd",
+        "share_amount": 25827023.0,
+        "share_percentage": 0.0427
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 12373500.0,
+        "share_percentage": 0.0204
+      },
+      {
+        "name": "United Hampshire Us Reit Management Pte Ltd",
+        "share_amount": 2342651,
+        "share_percentage": 0.00385
+      }
+    ]
+  },
+  {
+    "symbol": "B28",
+    "shareholders": [
+      {
+        "name": "Goldvein Holdings Pte Ltd",
+        "share_amount": 240026769.0,
+        "share_percentage": 0.5978
+      },
+      {
+        "name": "Henry Ngo",
+        "share_amount": 85357128.0,
+        "share_percentage": 0.2126
+      },
+      {
+        "name": "Morph Investments Ltd",
+        "share_amount": 9068000.0,
+        "share_percentage": 0.0226
+      },
+      {
+        "name": "Allsland Pte Ltd",
+        "share_amount": 7524500.0,
+        "share_percentage": 0.0187
+      },
+      {
+        "name": "Ng Poh Cheng",
+        "share_amount": 3487900.0,
+        "share_percentage": 0.0087
+      }
+    ]
+  },
+  {
+    "symbol": "5CF",
+    "shareholders": [
+      {
+        "name": "Or Kim Peow Investments Pte Ltd",
+        "share_amount": 294992092.0,
+        "share_percentage": 0.5491
+      },
+      {
+        "name": "CS International (Singapore) Pte Ltd",
+        "share_amount": 75468750.0,
+        "share_percentage": 0.1405
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 18447192.0,
+        "share_percentage": 0.0343
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 4749064.0,
+        "share_percentage": 0.0088
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 3477150.0,
+        "share_percentage": 0.0065
+      },
+      {
+        "name": "Ginko-Agt Global Growth Fund",
+        "share_amount": 34988500,
+        "share_percentage": 0.06513
+      },
+      {
+        "name": "Cs International (S) Private Limited",
+        "share_amount": 26250000,
+        "share_percentage": 0.0489
+      },
+      {
+        "name": "Kong Wan Sing",
+        "share_amount": 1212500,
+        "share_percentage": 0.0025
+      },
+      {
+        "name": "Or Lay Huat Daniel",
+        "share_amount": 563500,
+        "share_percentage": 0.001
+      },
+      {
+        "name": "Oh Enc Nam",
+        "share_amount": 232750,
+        "share_percentage": 0.0004
+      },
+      {
+        "name": "Or Kiam Meng",
+        "share_amount": 563500,
+        "share_percentage": 0.001
+      },
+      {
+        "name": "Ang Beng Tin",
+        "share_amount": 566125,
+        "share_percentage": 0.0011
+      },
+      {
+        "name": "Or Toh Wat",
+        "share_amount": 563500,
+        "share_percentage": 0.001
+      }
+    ]
+  },
+  {
+    "symbol": "KUO",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 3017592100.0,
+        "share_percentage": 0.5262
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 250335800.0,
+        "share_percentage": 0.0437
+      },
+      {
+        "name": "Zhang Zengtao",
+        "share_amount": 217500000.0,
+        "share_percentage": 0.0379
+      },
+      {
+        "name": "SL Capital Ventures Pte Ltd",
+        "share_amount": 108000000.0,
+        "share_percentage": 0.0188
+      },
+      {
+        "name": "Sin Soon Teng",
+        "share_amount": 105793200.0,
+        "share_percentage": 0.0184
+      }
+    ]
+  },
+  {
+    "symbol": "S3N",
+    "shareholders": [
+      {
+        "name": "Tang Organization Pte Ltd",
+        "share_amount": 2215478105.0,
+        "share_percentage": 0.6543
+      },
+      {
+        "name": "Chia Lee Meng Raymond",
+        "share_amount": 270859576.0,
+        "share_percentage": 0.08
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 84896400.0,
+        "share_percentage": 0.0251
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 46234700.0,
+        "share_percentage": 0.0137
+      },
+      {
+        "name": "CGS Intl Securities Singapore Pl",
+        "share_amount": 25730299.0,
+        "share_percentage": 0.0076
+      }
+    ]
+  },
+  {
+    "symbol": "S35",
+    "shareholders": [
+      {
+        "name": "F H Lee Holdings Ltd",
+        "share_amount": 66973652.0,
+        "share_percentage": 0.2833
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 13294474.0,
+        "share_percentage": 0.0562
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 11813850.0,
+        "share_percentage": 0.05
+      },
+      {
+        "name": "Edy Hartono",
+        "share_amount": 6091966.0,
+        "share_percentage": 0.0258
+      },
+      {
+        "name": "Lee Heng Wah @ Lee Heng Guan",
+        "share_amount": 4500000.0,
+        "share_percentage": 0.019
+      }
+    ]
+  },
+  {
+    "symbol": "STC",
+    "shareholders": [
+      {
+        "name": "Fok (Tung Ling)",
+        "share_amount": 694417468.0,
+        "share_percentage": 0.25136
+      },
+      {
+        "name": "Zhang (Yue Jun)",
+        "share_amount": 228225410.0,
+        "share_percentage": 0.08261
+      },
+      {
+        "name": "Dimensional Fund Advisors, LP",
+        "share_amount": 26036001.0,
+        "share_percentage": 0.00942
+      },
+      {
+        "name": "Xu (Huijun)",
+        "share_amount": 11000000.0,
+        "share_percentage": 0.00398
+      },
+      {
+        "name": "Bu (Binlong)",
+        "share_amount": 4510084.0,
+        "share_percentage": 0.00163
+      }
+    ]
+  },
+  {
+    "symbol": "T24",
+    "shareholders": [
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 32698162.0,
+        "share_percentage": 0.0262
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 26936715.0,
+        "share_percentage": 0.0216
+      },
+      {
+        "name": "Koh Wee Meng",
+        "share_amount": 17780000.0,
+        "share_percentage": 0.0142
+      },
+      {
+        "name": "OCBC Securities Private Ltd",
+        "share_amount": 13718773.0,
+        "share_percentage": 0.011
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 7116351.0,
+        "share_percentage": 0.0057
+      },
+      {
+        "name": "Greenpark Investments Pte. Ltd.",
+        "share_amount": 65830000,
+        "share_percentage": 0.05185
+      }
+    ]
+  },
+  {
+    "symbol": "Y03",
+    "shareholders": [
+      {
+        "name": "Far East Organization Pte Ltd",
+        "share_amount": 337669403.0,
+        "share_percentage": 0.5384
+      },
+      {
+        "name": "Far East Spring Pte Ltd",
+        "share_amount": 68925914.0,
+        "share_percentage": 0.1099
+      },
+      {
+        "name": "Transurban Properties Pte Ltd",
+        "share_amount": 60784947.0,
+        "share_percentage": 0.0969
+      },
+      {
+        "name": "Sino Land Company Limited",
+        "share_amount": 28541345.0,
+        "share_percentage": 0.0455
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 15965516.0,
+        "share_percentage": 0.0255
+      }
+    ]
+  },
+  {
+    "symbol": "MXNU",
+    "shareholders": [
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 136028183.0,
+        "share_percentage": 0.2229
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 35141111.0,
+        "share_percentage": 0.0576
+      },
+      {
+        "name": "Sunway Re Capital Pte Ltd",
+        "share_amount": 34285892.0,
+        "share_percentage": 0.0562
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 10332033.0,
+        "share_percentage": 0.0169
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 8503594.0,
+        "share_percentage": 0.0139
+      },
+      {
+        "name": "Elite Uk Reit Management Pte. Ltd",
+        "share_amount": 3811204,
+        "share_percentage": 0.0062
+      },
+      {
+        "name": "Liaw Liang Huat Joshua",
+        "share_amount": 324756,
+        "share_percentage": 0.0005
+      }
+    ]
+  },
+  {
+    "symbol": "M01",
+    "shareholders": [
+      {
+        "name": "Eng Kuan Company Private Limited",
+        "share_amount": 188995635.0,
+        "share_percentage": 0.2282
+      },
+      {
+        "name": "Ngee Ann Development Pte Ltd",
+        "share_amount": 85515056.0,
+        "share_percentage": 0.1033
+      },
+      {
+        "name": "Dynamic Holdings Pte Ltd",
+        "share_amount": 48293203.0,
+        "share_percentage": 0.0583
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 35412109.0,
+        "share_percentage": 0.0428
+      },
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 23979991.0,
+        "share_percentage": 0.029
+      },
+      {
+        "name": "Ong Sioe Hong",
+        "share_amount": 21211182.0,
+        "share_percentage": 0.026
+      }
+    ]
+  },
+  {
+    "symbol": "A30",
+    "shareholders": [
+      {
+        "name": "Mlhs Holdings Pte Ltd",
+        "share_amount": 1203886870.0,
+        "share_percentage": 0.5424
+      },
+      {
+        "name": "Tan Su Lan @ Tan Soo Lung",
+        "share_amount": 108350118.0,
+        "share_percentage": 0.0488
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 74153657.0,
+        "share_percentage": 0.0334
+      },
+      {
+        "name": "Ng Sheng Tiong",
+        "share_amount": 46306176.0,
+        "share_percentage": 0.0209
+      },
+      {
+        "name": "Koh Wee Seng",
+        "share_amount": 36632781.0,
+        "share_percentage": 0.0165
+      }
+    ]
+  },
+  {
+    "symbol": "N02",
+    "shareholders": [
+      {
+        "name": "Ytl Cement Singapore Pte Ltd",
+        "share_amount": 330493875.0,
+        "share_percentage": 0.8847
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 15066434.0,
+        "share_percentage": 0.0403
+      },
+      {
+        "name": "Tun Keng Hing",
+        "share_amount": 715000.0,
+        "share_percentage": 0.0019
+      },
+      {
+        "name": "Lo Kai Leong @ Loh Kai Leong",
+        "share_amount": 540000.0,
+        "share_percentage": 0.0015
+      },
+      {
+        "name": "Yang Eng Huat",
+        "share_amount": 472000.0,
+        "share_percentage": 0.0013
+      }
+    ]
+  },
+  {
+    "symbol": "HLS",
+    "shareholders": [
+      {
+        "name": "HHL International Ltd",
+        "share_amount": 861000000.0,
+        "share_percentage": 0.68038
+      },
+      {
+        "name": "The Vanguard Group, Inc",
+        "share_amount": 10793223.0,
+        "share_percentage": 0.00853
+      },
+      {
+        "name": "Cai (Wenjun)",
+        "share_amount": 8653476.0,
+        "share_percentage": 0.00684
+      },
+      {
+        "name": "China Asset Management Co, Ltd",
+        "share_amount": 7007000.0,
+        "share_percentage": 0.00554
+      },
+      {
+        "name": "Dimensional Fund Advisors, LP",
+        "share_amount": 636500.0,
+        "share_percentage": 0.0005
+      }
+    ]
+  },
+  {
+    "symbol": "I07",
+    "shareholders": [
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 42696338.0,
+        "share_percentage": 0.0942
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 13652250.0,
+        "share_percentage": 0.0301
+      },
+      {
+        "name": "Phang Hoei Hua",
+        "share_amount": 9833770.0,
+        "share_percentage": 0.0217
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 9559812.0,
+        "share_percentage": 0.0211
+      },
+      {
+        "name": "Moomoo Financial Singapore Pte Ltd",
+        "share_amount": 8867107.0,
+        "share_percentage": 0.0196
+      }
+    ]
+  },
+  {
+    "symbol": "A04",
+    "shareholders": [
+      {
+        "name": "Ang Kok Tian",
+        "share_amount": 132320700.0,
+        "share_percentage": 0.1339
+      },
+      {
+        "name": "Ang Kok Eng",
+        "share_amount": 110698650.0,
+        "share_percentage": 0.1121
+      },
+      {
+        "name": "Ang Kok Leong",
+        "share_amount": 109262250.0,
+        "share_percentage": 0.1106
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 79854400.0,
+        "share_percentage": 0.0808
+      },
+      {
+        "name": "Ang Sin Liu",
+        "share_amount": 70609938.0,
+        "share_percentage": 0.0715
+      }
+    ]
+  },
+  {
+    "symbol": "5IG",
+    "shareholders": [
+      {
+        "name": "UOB Kay Hian Pte Ltd",
+        "share_amount": 949837937.0,
+        "share_percentage": 0.1738
+      },
+      {
+        "name": "CGS Intl Securities Singapore Pte Ltd",
+        "share_amount": 433801100.0,
+        "share_percentage": 0.0794
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 116977540.0,
+        "share_percentage": 0.0214
+      },
+      {
+        "name": "TerraFirma Property Holdings Ltd",
+        "share_amount": 102609023.0,
+        "share_percentage": 0.0188
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 24107403.0,
+        "share_percentage": 0.0044
+      }
+    ]
+  },
+  {
+    "symbol": "BTE",
+    "shareholders": [
+      {
+        "name": "Flambo Bund Centre Ltd",
+        "share_amount": 637344964.0,
+        "share_percentage": 0.84
+      },
+      {
+        "name": "UOB Kay Hian Private Limited",
+        "share_amount": 44733752.0,
+        "share_percentage": 0.059
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 4136583.0,
+        "share_percentage": 0.0055
+      },
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 3646434.0,
+        "share_percentage": 0.0048
+      },
+      {
+        "name": "Phillip Securities Pte Ltd",
+        "share_amount": 2569905.0,
+        "share_percentage": 0.0034
+      }
+    ]
+  },
+  {
+    "symbol": "BBW",
+    "shareholders": [
+      {
+        "name": "MU XIA LTD",
+        "share_amount": 15300000.0,
+        "share_percentage": 0.51
+      },
+      {
+        "name": "Lee Wan Lik",
+        "share_amount": 8032132.0,
+        "share_percentage": 0.2677
+      },
+      {
+        "name": "Estate of Lam Pui Wan, Deceased",
+        "share_amount": 1400000.0,
+        "share_percentage": 0.0467
+      },
+      {
+        "name": "ABN AMRO Clearing Bank NV",
+        "share_amount": 1153147.0,
+        "share_percentage": 0.0384
+      },
+      {
+        "name": "Ong Su Pin",
+        "share_amount": 618000.0,
+        "share_percentage": 0.0206
+      }
+    ]
+  },
+  {
+    "symbol": "5UX",
+    "shareholders": [
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 612859865.0,
+        "share_percentage": 0.1452
+      },
+      {
+        "name": "Low See Ching (Liu Shijin)",
+        "share_amount": 448805745.0,
+        "share_percentage": 0.1064
+      },
+      {
+        "name": "Ching Chiat Kwong",
+        "share_amount": 238048577.0,
+        "share_percentage": 0.0564
+      },
+      {
+        "name": "Maybank Securities Pte Ltd",
+        "share_amount": 222011302.0,
+        "share_percentage": 0.0526
+      },
+      {
+        "name": "OCBC Securities Private Limited",
+        "share_amount": 115489943.0,
+        "share_percentage": 0.0274
+      }
+    ]
+  },
+  {
+    "symbol": "5JK",
+    "shareholders": [
+      {
+        "name": "CGS International Securities Singapore Pte Ltd",
+        "share_amount": 25943171.0,
+        "share_percentage": 0.0551
+      },
+      {
+        "name": "Morph Investments Ltd",
+        "share_amount": 10169000.0,
+        "share_percentage": 0.0216
+      },
+      {
+        "name": "Soon Li Heng Civil Engineering Pte Ltd",
+        "share_amount": 9125000.0,
+        "share_percentage": 0.0194
+      },
+      {
+        "name": "Heng Siew Eng",
+        "share_amount": 3212300.0,
+        "share_percentage": 0.0068
+      },
+      {
+        "name": "Gui Boon Sui @Goi Chon Yan",
+        "share_amount": 2703400.0,
+        "share_percentage": 0.0057
+      }
+    ]
+  },
+  {
+    "symbol": "DHLU",
+    "shareholders": [
+      {
+        "name": "Daiwa House Asset Management Asia Pte Ltd",
+        "share_amount": 67931009.0,
+        "share_percentage": 0.0969
+      },
+      {
+        "name": "Metro ARC Investments Pte Ltd",
+        "share_amount": 51625000.0,
+        "share_percentage": 0.0737
+      },
+      {
+        "name": "Nomura Singapore Limited",
+        "share_amount": 32514960.0,
+        "share_percentage": 0.0464
+      },
+      {
+        "name": "DBSN Services Pte Ltd",
+        "share_amount": 15694947.0,
+        "share_percentage": 0.0224
+      },
+      {
+        "name": "iFAST Financial Pte Ltd",
+        "share_amount": 9332500.0,
+        "share_percentage": 0.0133
+      },
+      {
+        "name": "Yamamura Jun",
+        "share_amount": 140000,
+        "share_percentage": 0.0002
+      }
+    ]
+  }
+]
