@@ -33,10 +33,17 @@ def run_sgx_buyback_scraper(
         is_proxy=is_proxy,
     )
 
-    logger.info(announcements)
+    logger.info("Total length scraped: %d", len(announcements))
 
-    for announcement in announcements:
+    for index, announcement in enumerate(announcements, start=1):
         url = announcement.get("url")
+
+        logger.info(
+            "Processing %d/%d | url: %s", 
+            index, 
+            len(announcements), 
+            url
+        )
 
         result = get_takeover(url=url)
 
@@ -49,7 +56,9 @@ def run_sgx_buyback_scraper(
 
         payload.append(result)
 
-    logger.info(payload)
+    if not payload:
+        logger.info("Payload is None, stopping")
+        return     
 
     top_n_payload, _ = filter_top_n_companies(payload, top_n=top_n)
 
@@ -65,7 +74,6 @@ def run_sgx_buyback_scraper(
 
     if is_push_db:
         push_to_db(news_payload, 'sgx_news')
-
 
 
 if __name__ == "__main__":

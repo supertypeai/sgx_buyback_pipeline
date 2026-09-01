@@ -5,6 +5,7 @@ from sgx_scraper.fetch_upcoming_dividend.cli import app as dividend_app
 from sgx_scraper.fetch_reit_transaction.cli import app as reit_transaction_app
 from sgx_scraper.fetch_agm.cli import app as agm_app
 from sgx_scraper.fetch_managements.cli import app as management_app
+from sgx_scraper.fetch_takeover_offers.cli import app as takeover_app
 
 import typer
 import logging
@@ -55,6 +56,7 @@ app.add_typer(dividend_app)          # upcoming_dividend
 app.add_typer(reit_transaction_app)  # scraper_reit_transaction
 app.add_typer(agm_app)               # scraper_agm
 app.add_typer(management_app)        # track_management, scraper_managements
+app.add_typer(takeover_app)          # takeover
 
 
 if __name__ == '__main__':
