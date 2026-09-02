@@ -52,11 +52,21 @@ def safe_convert_datetime(date: str) -> str | None:
         for format in ("%d/%m/%Y", "%d-%b-%Y", "%d %b %Y", "%d %B %Y"):
             try:
                 parsed_date = datetime.strptime(date_str, format)
+
+                if date_str[-4:-2] == "00":
+                    parsed_date = parsed_date.replace(
+                        year=parsed_date.year + 2000
+                    )
+
                 return parsed_date.strftime("%Y-%m-%d")
 
             except ValueError:
                 continue
 
     except Exception as error:
-        LOGGER.error(f"[safe_convert_datetime] Error: {error} for value '{date}'")
+        LOGGER.error(
+            "[safe_convert_datetime] Error: %s | input date: %s"
+        ),
+        error,
+        date,
         return None

@@ -35,7 +35,7 @@ def invoke_structured_llm(
     max_retry: int = 3,
     temperature: int = 0.3, 
     effort: str = "low"
-) -> dict | None:
+) -> dict | list | None:
     parser = JsonOutputParser(
         pydantic_object=pydantic_output
     )

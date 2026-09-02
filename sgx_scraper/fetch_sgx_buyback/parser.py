@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-from dataclasses import asdict
 from dateutil.relativedelta import relativedelta
 from datetime import datetime
 
@@ -25,17 +24,10 @@ LOGGER = logging.getLogger(__name__)
 
 
 def extract_symbol(issuer_security: str) -> str | None:
-    try:
-        parts = issuer_security.split(' - ')
+    parts = issuer_security.split(" - ")
 
-        if len(parts) > 1 and len(parts) <= 3:
-            symbol = parts[-1].strip()
-
-            if symbol:
-                return symbol
-
-    except Exception as error:
-        LOGGER.error(f"[extract symbol] Failed to extract symbol from split: {error}")
+    if len(parts) > 1 and len(parts) <= 3:
+        return parts[-1].strip()
 
     return None
 
@@ -47,42 +39,79 @@ def resolve_symbol(issuer_section: dict) -> str | None:
     if not symbol:
         issuer_name = issuer_section.get("Issuer/ Manager")
         symbol = matching_symbol(issuer_name)
+    
+    return symbol 
 
-    return symbol
 
-
-def get_buyback_type(section_a: dict[str], section_b: dict[str]) -> str | None:
+def get_buyback_type(
+    section_a: dict[str], 
+    section_b: dict[str]
+) -> str | None:
     on_market = section_a.get("Purchase made by way of market acquisition")
     off_market = section_b.get("Purchase made by way of off-market acquisition on equal access scheme")
 
     if on_market == "Yes" and off_market == "No":
         return "On Market"
+
     elif on_market == "No" and off_market == "Yes":
         return "Off Market"
     
     return None 
 
 
-def parse_date(section_a: dict[str], section_b: dict[str], additional_detail: dict[str]) -> tuple:
-    purchase_date = safe_extract_fallback("Date of Purchase", section_a, section_b)
+def parse_date(
+    section_a: dict[str], 
+    section_b: dict[str], 
+    additional_detail: dict[str]
+) -> tuple:
+    purchase_date = safe_extract_fallback(
+        "Date of Purchase", 
+        section_a, 
+        section_b
+    )
     purchase_date = safe_convert_datetime(purchase_date)
 
-    start_date_raw = additional_detail.get("Start date for mandate of daily share buy-back")
+    start_date_raw = additional_detail.get(
+        "Start date for mandate of daily share buy-back"
+    )
     start_date = safe_convert_datetime(start_date_raw)
 
     return purchase_date, start_date
 
 
-def parse_prices(section_a: dict[str], section_b: dict[str]) -> dict[str, float]:
-    price_paid_per_share = safe_extract_fallback("Price Paid per share", section_a, section_b)
+def parse_prices(
+    section_a: dict[str], 
+    section_b: dict[str]
+) -> dict[str, float]:
+    price_paid_per_share = safe_extract_fallback(
+        "Price Paid per share", 
+        section_a, 
+        section_b
+    )
     
     if not price_paid_per_share:
-        price_paid_per_share = safe_extract_fallback("Price Paid or Payable per Share", section_a, section_b)
+        price_paid_per_share = safe_extract_fallback(
+            "Price Paid or Payable per Share", 
+            section_a, 
+            section_b
+        )
 
-    highest_per_share = safe_extract_fallback("Highest Price per share", section_a, section_b)
-    lowest_per_share = safe_extract_fallback("Lowest Price per share", section_a, section_b)
+    highest_per_share = safe_extract_fallback(
+        "Highest Price per share", 
+        section_a, 
+        section_b
+    )
+    lowest_per_share = safe_extract_fallback(
+        "Lowest Price per share", 
+        section_a, 
+        section_b
+    )
 
-    price_per_share = build_price_per_share(price_paid_per_share, highest_per_share, lowest_per_share)
+    price_per_share = build_price_per_share(
+        price_paid_per_share, 
+        highest_per_share, 
+        lowest_per_share
+    )
 
     return price_per_share
 
@@ -92,11 +121,17 @@ def parse_total_value(
     section_c: dict[str], section_d: dict[str]
 ) -> tuple:
     # Total mandate 
-    total_mandate = section_a.get('Maximum number of shares authorised for purchase')
+    total_mandate = section_a.get(
+        "Maximum number of shares authorised for purchase"
+    )
     total_mandate = safe_convert_float(total_mandate)
 
     # Total shares purchased
-    total_share_purchased = safe_extract_fallback("Total Number of shares purchased", section_a, section_b)
+    total_share_purchased = safe_extract_fallback(
+        "Total Number of shares purchased", 
+        section_a, 
+        section_b
+    )
     total_share_purchased = safe_convert_float(total_share_purchased)
 
     # Cumulative shares purchased
@@ -105,15 +140,28 @@ def parse_total_value(
     cumulative_share_purchased = safe_convert_float(cumulative_share_purchased)
 
     # Total consideration
-    total_consideration = safe_extract_fallback("Total Consideration", section_a, section_b)
+    total_consideration = safe_extract_fallback(
+        "Total Consideration", 
+        section_a, 
+        section_b
+    )
     total_consideration = safe_convert_float(total_consideration)
 
     # Treasury shares after purchase
-    treasury_shares_after_purchase_raw = section_d.get("Number of treasury shares held after purchase")
-    treasury_shares_after_purchase = safe_convert_float(treasury_shares_after_purchase_raw)
+    treasury_shares_after_purchase_raw = section_d.get(
+        "Number of treasury shares held after purchase"
+    )
+    treasury_shares_after_purchase = safe_convert_float(
+        treasury_shares_after_purchase_raw
+    )
 
-    return total_share_purchased, cumulative_share_purchased, total_consideration, treasury_shares_after_purchase, total_mandate
-
+    return (
+        total_share_purchased, 
+        cumulative_share_purchased, 
+        total_consideration, 
+        treasury_shares_after_purchase, 
+        total_mandate
+    )
 
 def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
     try:
@@ -133,7 +181,11 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         buy_back_type = get_buyback_type(section_a, section_b)
 
         # Dates
-        purchase_date, start_date = parse_date(section_a, section_b, additional_detail)
+        purchase_date, start_date = parse_date(
+            section_a, 
+            section_b, 
+            additional_detail
+        )
 
         # Prices
         price_per_share = parse_prices(section_a, section_b)
@@ -173,43 +225,35 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         return buyback_payload
  
     except Exception as error:
-        LOGGER.error(f"[extract_buyback_fields] Error parsing SGX buyback at {url}: {error}", exc_info=True)
+        LOGGER.error(
+            "[extract_buyback_fields] Error parsing SGX buyback at %s: %s",
+            url,
+            error, 
+            exc_info=True
+        )
         return None
 
 
 def get_sgx_buybacks(url: str) -> SGXBuyback: 
     try:
-        print(f"Extracting detail buyback for {url}")
-
         response = HTTPCLIENT.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
         data_extracted = extract_all_fields(soup=soup, url=url)
+
         if not data_extracted:
             return None
         
         sgx_buybacks = SGXBuyback(url=url, **data_extracted)
 
-        LOGGER.info(
-            "[SGX_BUYBACK] check payload: %s", 
-            sgx_buybacks
-        )
-
         return sgx_buybacks
     
-    except requests.RequestException as error:
-        LOGGER.error(f"[sgx buyback] Error fetching SGX buyback for url {url}: {error}", exc_info=True)
-        return None
-    
     except Exception as error:
-        LOGGER.error(f"[sgx buyback] Unexpected Error extracting SGX buyback: {error}", exc_info=True)
+        LOGGER.error(
+            "[sgx buyback] Unexpected Error extracting SGX buyback: %s",
+            error, 
+            exc_info=True
+        )
         raise None
 
-
-if __name__ == '__main__':
-    test_url = 'https://links.sgx.com/1.0.0/corporate-announcements/IZHHDYW20N2Q5EPO/632276817f55ea1bc49fb3b9137351ce3117adca0630b958cb5c5e6d76b90dd8'
-    result = get_sgx_buybacks(test_url)
-    # print(json.dumps(asdict(result), indent=2))
-
-    # uv run -m sgx_scraper.fetch_sgx_buyback.parser_sgx_buyback
