@@ -1,5 +1,21 @@
 [
   {
+    "symbol": "WJ9",
+    "recording_date": "2026-08-27",
+    "agm_date": "2026-09-11",
+    "meeting_type": "AGM",
+    "agm_time": "10:00:00",
+    "agm_place": "16 Kallang Place, #03-02. Singapore 339156.",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/2JTJQ1N0VBW4VDTR/c89fd1bc0ec957c0c9a99cf4ee66c44213629476156fbc17808ab499ef596568",
+    "ref_id": "SG260827MEETAI96"
+  },
+  {
     "symbol": "A31",
     "recording_date": "2026-08-31",
     "agm_date": "2026-09-24",
