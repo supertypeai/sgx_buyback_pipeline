@@ -117,6 +117,10 @@ def run_sgx_buyback_scraper(
 
         time.sleep(random.uniform(1, 3))
 
+    if not payload_upcoming_dividend:
+        logger.info("[Upcoming Dividend] No payload generated, stopping.")
+        return
+
     write_json(
         path=UPCOMING_DIVIDEND,
         payload=payload_upcoming_dividend

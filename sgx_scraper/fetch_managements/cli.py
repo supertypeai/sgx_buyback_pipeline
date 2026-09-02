@@ -102,6 +102,10 @@ def run_tracking_management(
 
     payload_management = list(payload_management_by_symbol.values())
 
+    if not payload_management:
+        LOGGER.info("[TRACKING MANAGEMENT] No payload generated, stopping.")
+        return
+
     LOGGER.info(
         "Total unique management payloads to upsert: %d",
         len(payload_management)
@@ -280,6 +284,10 @@ def run_managements_scraper(
             "symbol": symbol, 
             "management": management_payload
         })
+
+    if not final_payload:
+        LOGGER.info("[MANAGEMENT] No payload generated, stopping.")
+        return
 
     if management_alerts:
         LOGGER.warning(

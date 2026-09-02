@@ -148,6 +148,10 @@ def run_sgx_filings_scraper(
         limit
     )
 
+    if not payload:
+        LOGGER.info("[SGX FILINGS] No payload generated, stopping.")
+        return
+
     payload_clean = filter_duplicate(payload)
 
     top_200, _ = filter_top_n_companies(payload_clean, top_n=200)

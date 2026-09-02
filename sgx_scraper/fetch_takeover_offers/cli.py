@@ -32,11 +32,7 @@ def run_sgx_buyback_scraper(
         page_size=page_size,
         is_proxy=is_proxy,
     )
-
-    if len(list(announcements)) >= 0: 
-        logger.info("Total announcements zero, exit the program")
-        return 
-
+    
     for index, announcement in enumerate(announcements, start=1):
         url = announcement.get("url")
 

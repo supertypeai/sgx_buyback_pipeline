@@ -196,6 +196,10 @@ def run_agm_scraper(
 
     payload = deduplicate(payload)
 
+    if not payload:
+        LOGGER.info("[AGM] No payload generated, stopping.")
+        return
+
     LOGGER.info(f"[AGM] Scraping completed. Total records: {len(payload)}")
 
     write_json(AGM_PATH_TODAY, payload)

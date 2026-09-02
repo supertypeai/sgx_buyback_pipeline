@@ -235,22 +235,12 @@ def symbol_from_company_name(
 
 
 def matching_symbol(issuer_security: str) -> str | None:
-    try:
-        symbol_matched = symbol_from_company_name(issuer_security)
+    symbol_matched = symbol_from_company_name(issuer_security)
 
-        if symbol_matched:
-            return symbol_matched
+    if not symbol_matched:
+        return None 
+    
+    return symbol_matched
 
-    except Exception as error:
-        LOGGER.error(f"[matching symbol] Fallback matching symbol failed: {error}")
+  
 
-    return None
-
-
-if __name__ == '__main__':
-    company = symbol_from_company_name("17live group limited")
-    print(company)
-    # print(SGX_COMPANY_NAMES[:5])
-
-
-# uv run -m sgx_scraper.utils.symbol_matching_helper

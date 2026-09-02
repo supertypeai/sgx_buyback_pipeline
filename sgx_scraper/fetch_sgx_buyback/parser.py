@@ -15,30 +15,21 @@ from sgx_scraper.utils.date_helper import safe_convert_datetime
 from sgx_scraper.utils.sgx_announcement_html import extract_section_data
 from sgx_scraper.utils.http_client import HTTPCLIENT
 
-import requests
-import json
 import logging
 
 
 LOGGER = logging.getLogger(__name__)
 
 
-def extract_symbol(issuer_security: str) -> str | None:
-    parts = issuer_security.split(" - ")
+def resolve_symbol(issuer_name: str, issuers: list) -> str | None:
+    symbol = matching_symbol(issuer_name)
 
-    if len(parts) > 1 and len(parts) <= 3:
-        return parts[-1].strip()
-
-    return None
-
-
-def resolve_symbol(issuer_section: dict) -> str | None:
-    issuer_security = issuer_section.get("Securities")
-    symbol = extract_symbol(issuer_security)
+    if not symbol: 
+        issuers = issuers[0]
+        symbol = issuers.get("stock_code")
 
     if not symbol:
-        issuer_name = issuer_section.get("Issuer/ Manager")
-        symbol = matching_symbol(issuer_name)
+        return None 
     
     return symbol 
 
@@ -47,8 +38,12 @@ def get_buyback_type(
     section_a: dict[str], 
     section_b: dict[str]
 ) -> str | None:
-    on_market = section_a.get("Purchase made by way of market acquisition")
-    off_market = section_b.get("Purchase made by way of off-market acquisition on equal access scheme")
+    on_market = section_a.get(
+        "Purchase made by way of market acquisition"
+    )
+    off_market = section_b.get(
+        "Purchase made by way of off-market acquisition on equal access scheme"
+    )
 
     if on_market == "Yes" and off_market == "No":
         return "On Market"
@@ -163,10 +158,14 @@ def parse_total_value(
         total_mandate
     )
 
-def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
+def extract_all_fields(
+    soup: BeautifulSoup, 
+    url: str,
+    issuer_name: str, 
+    issuers: list[dict]
+) -> dict[str, any] | None:
     try:
         # Extract sections
-        issuer_section = extract_section_data(soup, "Issuer & Securities")
         additional_detail = extract_section_data(soup, "Additional Details")
 
         section_a = extract_section_data(soup, "Section A")
@@ -175,7 +174,10 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         section_d = extract_section_data(soup, "Section D")
 
         # Symbol extraction
-        symbol = resolve_symbol(issuer_section)
+        symbol = resolve_symbol(
+            issuer_name=issuer_name, 
+            issuers=issuers
+        )
 
         # Buyback type
         buy_back_type = get_buyback_type(section_a, section_b)
@@ -234,13 +236,22 @@ def extract_all_fields(soup: BeautifulSoup, url: str) -> dict[str, any] | None:
         return None
 
 
-def get_sgx_buybacks(url: str) -> SGXBuyback: 
+def get_sgx_buybacks(
+    url: str,
+    issuer_name: str, 
+    issuers: list[dict]
+) -> SGXBuyback: 
     try:
         response = HTTPCLIENT.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        data_extracted = extract_all_fields(soup=soup, url=url)
+        data_extracted = extract_all_fields(
+            soup=soup, 
+            url=url,
+            issuer_name=issuer_name,
+            issuers=issuers
+        )
 
         if not data_extracted:
             return None

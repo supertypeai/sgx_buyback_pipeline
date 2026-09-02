@@ -198,6 +198,10 @@ def run_reit_transaction_scraper(
 
         time.sleep(random.uniform(1, 3))
 
+    if not payload:
+        LOGGER.info("[REIT TRANSACTION] No payload generated, stopping.")
+        return
+
     LOGGER.info(f"[REIT TRANSACTION] Scraping completed. Total records: {len(payload)}")
 
     write_json(REIT_TRANSACTION_PATH_TODAY, payload)

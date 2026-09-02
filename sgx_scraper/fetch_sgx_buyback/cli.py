@@ -20,13 +20,13 @@ import random
 app = typer.Typer(help="SGX buyback scraper pipeline")
 
 
-@app.command(name='scraper_buybacks')
+@app.command(name="scraper_buybacks")
 def run_sgx_buyback_scraper(
     period_start: str = typer.Option(None, help="Start period in format YYYYMMDD"),
     period_end: str = typer.Option(None, help="End period in format YYYYMMDD"),
     page_size: int = typer.Option(100, help="Number of records per listing page"),
-    is_push_db: bool = typer.Option(True, help='Flag to push to db or not'),
-    is_proxy: bool = typer.Option(None, help='Flag to use proxy or not'),
+    is_push_db: bool = typer.Option(True, help="Flag to push to db or not"),
+    is_proxy: bool = typer.Option(None, help="Flag to use proxy or not"),
 ):
     logger = logging.getLogger(__name__)
 
@@ -40,28 +40,48 @@ def run_sgx_buyback_scraper(
         page_size=page_size,
         is_proxy=is_proxy,
     )
-
+    
     for sgx_announcement in announcements:
-        detail_url = sgx_announcement.get('url', None)
+        detail_url = sgx_announcement.get("url", None)
         issuer_name = sgx_announcement.get("issuer_name")
+        issuers = sgx_announcement.get("issuers")
 
         if not detail_url:
-            logger.info(f'[SGX BUYBACK] Skipping {issuer_name}, no detail url.')
+            logger.info(
+                "[SGX BUYBACK] Skipping %s, no detail url."
+            ),
+            detail_url
             continue
 
         try:
-            sgx_announcement_details = get_sgx_buybacks(detail_url)
+            sgx_announcement_details = get_sgx_buybacks(
+                url=detail_url,
+                issuer_name=issuer_name,
+                issuers=issuers
+            )
 
             sgx_announcement_details = asdict(sgx_announcement_details)
             payload_sgx_buybacks.append(sgx_announcement_details)
 
         except Exception as error:
-            logger.error(f'[SGX BUYBACK] Failed parsing {issuer_name} - {detail_url}: {error}', exc_info=True)
+            logger.error(
+                "[SGX BUYBACK] Failed parsing url: %s | error: %s", 
+                detail_url,
+                error,
+                exc_info=True
+            )
             continue
 
         time.sleep(random.uniform(1, 3))
 
-    logger.info(f"[SGX_BUYBACK] Scraping completed. Total records: {len(payload_sgx_buybacks)}")
+    if not payload_sgx_buybacks:
+        logger.info("No buyback payload generated, stopping.")
+        return
+
+    logger.info(
+        "[SGX_BUYBACK] Total records before cleaning and filtering: %d",
+        len(payload_sgx_buybacks)
+    )
 
     payload_sgx_buybacks_clean = clean_payload_sgx_buyback(payload_sgx_buybacks)
 
