@@ -1,11 +1,14 @@
 name: Scrape SGX AGM
+
 on:
   workflow_dispatch:
   schedule:
     - cron: '30 3 * * *'  # 10:30 AM WIB (UTC+7)
+
 concurrency:
   group: sgx-scraper-main
   cancel-in-progress: false
+  queue: max
 
 jobs:
   scrape:

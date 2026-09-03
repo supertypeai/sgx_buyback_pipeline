@@ -3,11 +3,12 @@ name: Scrape SGX Management
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 1 * *'  # 11:00 AM WIB (UTC+7) on the first day of each month
+    - cron: '0 9 1 * *'  # 16:00 AM WIB (UTC+7) on the first day of each month
 
 concurrency:
   group: sgx-scraper-main
   cancel-in-progress: false
+  queue: max 
 
 jobs:
   scrape:

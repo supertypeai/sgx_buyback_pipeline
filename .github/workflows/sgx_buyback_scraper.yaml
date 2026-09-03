@@ -1,11 +1,14 @@
 name: Scrape SGX BuyBack
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # 09:00 AM WIB (UTC+7)
+    - cron: '10 5 * * *'  # 12:10 AM WIB (UTC+7)
+
 concurrency:
   group: sgx-scraper-main
   cancel-in-progress: false
+  queue: max
 
 jobs:
   scrape:

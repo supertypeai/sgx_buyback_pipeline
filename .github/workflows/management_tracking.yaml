@@ -3,11 +3,12 @@ name: Track SGX Management
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *'  # 11:00 AM WIB (UTC+7)
+    - cron: "10 6 * * *" # 13:10 AM WIB (UTC+7)
 
 concurrency:
   group: sgx-scraper-main
   cancel-in-progress: false
+  queue: max 
 
 jobs:
   track:

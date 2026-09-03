@@ -3,11 +3,12 @@ name: Sync SGX Screener Shareholders
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 3 1 * *'  # Runs at 10:00 AM WIB (UTC+7), 1st of every month
+    - cron: '0 8 1 * *'  # Runs at 15:00 AM WIB (UTC+7), 1st of every month
 
 concurrency:
   group: sgx-sync-screener-shareholders
   cancel-in-progress: false
+  queue: max
 
 jobs:
   sync:

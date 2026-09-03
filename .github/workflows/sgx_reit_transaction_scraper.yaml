@@ -1,11 +1,14 @@
 name: Scrape SGX REIT Property Transaction
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *'  # 10:00 AM WIB (UTC+7)
+    - cron: '10 3 * * *'  # 10:10 AM WIB (UTC+7)
+
 concurrency:
   group: sgx-scraper-main
   cancel-in-progress: false
+  queue: max
 
 jobs:
   scrape:
