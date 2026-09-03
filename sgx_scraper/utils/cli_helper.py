@@ -79,26 +79,35 @@ def push_to_db(
         raise
 
 
-def remove_duplicate(path_today: str, path_yesterday: str) -> list[dict]:
+def remove_duplicate(
+    path_today: str,
+    path_yesterday: str,
+    key_name: str = "source",
+) -> list[dict]:
     sgx_today_datas = open_json(path_today)
     sgx_yesterday_datas = open_json(path_yesterday) 
 
     if sgx_yesterday_datas is None or len(sgx_yesterday_datas) == 0:
-        LOGGER.info('Skip removing duplicate, sgx yesterday data is empty, returning sgx today')
+        LOGGER.info(
+            "Skip removing duplicate, sgx yesterday data is empty, returning sgx today"
+        )
         return sgx_today_datas
     
     urls_yesterday = {
-        item.get("source") 
+        item.get(key_name)
         for item in sgx_yesterday_datas
     }
 
     unique_data_today = [
         item 
         for item in sgx_today_datas
-        if item.get('source') not in urls_yesterday
+        if item.get(key_name) not in urls_yesterday
     ]
 
-    LOGGER.info(f'Length data after duplicate removing: {len(unique_data_today)}')
+    LOGGER.info(
+        "Length data after duplicate removing: %d",
+        len(unique_data_today)
+    )
     return unique_data_today
 
 

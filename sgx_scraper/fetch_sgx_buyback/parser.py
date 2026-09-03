@@ -3,6 +3,7 @@ from dateutil.relativedelta import relativedelta
 from datetime import datetime
 
 from sgx_scraper.fetch_sgx_buyback.models import SGXBuyback
+from sgx_scraper.utils.cli_helper import get_db
 from sgx_scraper.fetch_sgx_buyback.utils.payload_helper import (
     build_price_per_share,
     compute_mandate_remaining,
@@ -12,6 +13,7 @@ from sgx_scraper.fetch_sgx_buyback.utils.payload_helper import (
 )
 from sgx_scraper.utils.symbol_matching_helper import matching_symbol
 from sgx_scraper.utils.date_helper import safe_convert_datetime
+from sgx_scraper.utils.json_helper import open_json
 from sgx_scraper.utils.sgx_announcement_html import extract_section_data
 from sgx_scraper.utils.http_client import HTTPCLIENT
 
@@ -77,7 +79,7 @@ def parse_date(
 def parse_prices(
     section_a: dict[str], 
     section_b: dict[str]
-) -> dict[str, float]:
+) -> dict[str, float | str]:
     price_paid_per_share = safe_extract_fallback(
         "Price Paid per share", 
         section_a, 
@@ -158,9 +160,61 @@ def parse_total_value(
         total_mandate
     )
 
+
+def convert_currency(record: dict) -> dict:
+    rates = open_json("data/quarterly_rates.json")
+    quarterly_rates = rates["quarters"]
+
+    price = record["price_per_share"]
+    currency = price.get("currency")
+
+    if not currency:
+        return record
+
+    price_paid_per_share = price.get("price_paid_per_share")
+    price_high = price.get("highest")
+    price_low = price.get("lowest")
+    purchase_date = record["purchase_date"]
+
+    if currency != "SGD":
+        purchase_date_object = datetime.fromisoformat(purchase_date).date()
+
+        closest_quarter_end = min(
+            quarterly_rates,
+            key=lambda quarter_end: abs(
+                datetime.fromisoformat(quarter_end).date()
+                - purchase_date_object
+            ),
+        )
+
+        rate = quarterly_rates[closest_quarter_end][currency]["SGD"]
+
+        LOGGER.info(
+            "Converting prices from %s to SGD using %s | url: %s",
+            currency,
+            closest_quarter_end,
+            record["url"],
+        )
+
+        if price_paid_per_share is not None:
+            price["price_paid_per_share"] = round(
+                price_paid_per_share * rate,
+                4,
+            )
+
+        elif price_high is not None and price_low is not None:
+            price["highest"] = round(price_high * rate, 4)
+            price["lowest"] = round(price_low * rate, 4)
+
+    price.pop("currency", None)
+
+    return record
+
+
 def extract_all_fields(
     soup: BeautifulSoup, 
     url: str,
+    reference: str,
     issuer_name: str, 
     issuers: list[dict]
 ) -> dict[str, any] | None:
@@ -172,6 +226,13 @@ def extract_all_fields(
         section_b = extract_section_data(soup, "Section B")
         section_c = extract_section_data(soup, "Section C")
         section_d = extract_section_data(soup, "Section D")
+
+        title_tag = soup.find("h1")
+        announcement_title = (
+            title_tag.get_text(" ", strip=True)
+            if title_tag
+            else ""
+        )
 
         # Symbol extraction
         symbol = resolve_symbol(
@@ -207,7 +268,9 @@ def extract_all_fields(
         mandate_end = mandate_end.strftime("%Y-%m-%d")
 
         buyback_payload = {
+            "reference": reference,
             "symbol": symbol,
+            "title": announcement_title,
             "purchase_date": purchase_date,
             "type": buy_back_type,
             "price_per_share": price_per_share,
@@ -224,7 +287,7 @@ def extract_all_fields(
             "mandate_end": mandate_end
         }
 
-        return buyback_payload
+        return convert_currency(buyback_payload)
  
     except Exception as error:
         LOGGER.error(
@@ -236,8 +299,28 @@ def extract_all_fields(
         return None
 
 
+def detect_replacement_announcement(
+    incoming_record: dict,
+) -> list[int]:
+    reference = incoming_record["reference"]
+
+    db_records = get_db(
+        table="sgx_buybacks",
+        query=lambda query: query.eq(
+            "reference",
+            reference,
+        ),
+    )
+
+    return [
+        record["id"]
+        for record in db_records
+    ]
+
+
 def get_sgx_buybacks(
     url: str,
+    reference: str,
     issuer_name: str, 
     issuers: list[dict]
 ) -> SGXBuyback: 
@@ -245,10 +328,11 @@ def get_sgx_buybacks(
         response = HTTPCLIENT.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
-
+    
         data_extracted = extract_all_fields(
             soup=soup, 
             url=url,
+            reference=reference,
             issuer_name=issuer_name,
             issuers=issuers
         )

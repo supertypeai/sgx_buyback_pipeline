@@ -8,8 +8,9 @@ from sgx_scraper.utils.constant import (
     SGX_BUYBACKS_PATH_YESTERDAY,
     SGX_BUYBACKS_PATH_NOT_TOP_200,
 )
-from sgx_scraper.fetch_sgx_buyback.parser import get_sgx_buybacks
+from sgx_scraper.fetch_sgx_buyback.parser import get_sgx_buybacks, detect_replacement_announcement
 from sgx_scraper.fetch_sgx_buyback.utils.payload_helper import clean_payload_sgx_buyback
+from sgx_scraper.config.settings import SUPABASE_CLIENT
 
 import typer
 import logging
@@ -32,19 +33,26 @@ def run_sgx_buyback_scraper(
 
     payload_sgx_buybacks = []
 
-    announcements = iter_sgx_announcements(
-        sub_category="ANNC13",
-        flag_log="Buybacks",
-        period_start=period_start,
-        period_end=period_end,
-        page_size=page_size,
-        is_proxy=is_proxy,
+    announcements = sorted(
+        iter_sgx_announcements(
+            sub_category="ANNC13",
+            flag_log="Buybacks",
+            period_start=period_start,
+            period_end=period_end,
+            page_size=page_size,
+            is_proxy=is_proxy,
+        ),
+        key=lambda announcement: announcement["broadcast_date_time"],
+        reverse=True,
     )
+
+    seen_references = set()
     
-    for sgx_announcement in announcements:
-        detail_url = sgx_announcement.get("url", None)
-        issuer_name = sgx_announcement.get("issuer_name")
-        issuers = sgx_announcement.get("issuers")
+    for announcement in announcements:
+        detail_url = announcement.get("url", None)
+        reference = announcement.get("ref_id")
+        issuer_name = announcement.get("issuer_name")
+        issuers = announcement.get("issuers")
 
         if not detail_url:
             logger.info(
@@ -53,14 +61,21 @@ def run_sgx_buyback_scraper(
             detail_url
             continue
 
+        if reference in seen_references:
+            continue
+
+        seen_references.add(reference)
+        
         try:
             sgx_announcement_details = get_sgx_buybacks(
                 url=detail_url,
+                reference=reference,
                 issuer_name=issuer_name,
-                issuers=issuers
+                issuers=issuers,
             )
 
             sgx_announcement_details = asdict(sgx_announcement_details)
+
             payload_sgx_buybacks.append(sgx_announcement_details)
 
         except Exception as error:
@@ -97,7 +112,8 @@ def run_sgx_buyback_scraper(
         logger.info('Processing remove duplicate data')
         new_payload_sgx_buybacks = remove_duplicate(
             SGX_BUYBACKS_PATH_TODAY, 
-            SGX_BUYBACKS_PATH_YESTERDAY
+            SGX_BUYBACKS_PATH_YESTERDAY,
+            key_name="url",
         )
 
     else:
@@ -106,11 +122,44 @@ def run_sgx_buyback_scraper(
 
     write_json(SGX_BUYBACKS_PATH_YESTERDAY, payload_top_200)
 
+    if not new_payload_sgx_buybacks:
+        logger.info("No new buyback records to push, stopping.")
+        return
+
+    # detect old record tthat needs to be replaced 
+    replacement_ids_to_delete = []
+
+    for record in new_payload_sgx_buybacks:
+        is_replacement = "repl" in (record.get("title") or "").lower()
+
+        if is_replacement:
+            replacement_ids_to_delete.extend(
+                detect_replacement_announcement(record)
+            )
+
     if is_push_db:
-        push_to_db(
+        is_pushed = push_to_db(
             new_payload_sgx_buybacks, 
-            'sgx_buybacks'
+            "sgx_buybacks",
+            exclude_columns={"title"},
         )
+
+        if not is_pushed:
+            raise RuntimeError("Insert failed; skipping replacement deletion.")
+
+        if replacement_ids_to_delete:
+            delete_response = (
+                SUPABASE_CLIENT
+                .table("sgx_buybacks")
+                .delete()
+                .in_("id", replacement_ids_to_delete)
+                .execute()
+            )
+
+            logger.info(
+                "Deleted %d replaced buyback records",
+                len(delete_response.data),
+            )
 
 
 if __name__ == '__main__':
