@@ -1,5 +1,21 @@
 [
   {
+    "symbol": "AZT",
+    "recording_date": "2026-09-02",
+    "agm_date": "2026-09-24",
+    "meeting_type": "AGM",
+    "agm_time": "09:30:00",
+    "agm_place": "Level 3, 991G Alexandra Road, Singapore 119975",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/0AMX4H4TQNBV5L5G/d2d66ea642ae0f3fce4c75e56a13eebf0a2842435d35e57ece93e610960585c1",
+    "ref_id": "SG260902MEETIBFH"
+  },
+  {
     "symbol": "WJ9",
     "recording_date": "2026-08-27",
     "agm_date": "2026-09-11",
@@ -14,21 +30,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/2JTJQ1N0VBW4VDTR/c89fd1bc0ec957c0c9a99cf4ee66c44213629476156fbc17808ab499ef596568",
     "ref_id": "SG260827MEETAI96"
-  },
-  {
-    "symbol": "A31",
-    "recording_date": "2026-08-31",
-    "agm_date": "2026-09-24",
-    "meeting_type": "EGM",
-    "agm_time": "15:00:00",
-    "agm_place": "202 Bedok South Ave 1,Singapore 469332(Block A, Event Hall 1 & 2 on Level 3)",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/HW4IEQ8HOR8JPQNR/685e359694e8e8551f8f73e5605e0700d6cfa381499183eaadf3e5147d0b2509",
-    "ref_id": "SG260831XMET4268"
   }
 ]
