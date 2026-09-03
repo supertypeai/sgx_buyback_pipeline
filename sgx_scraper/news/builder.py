@@ -153,7 +153,11 @@ def clean_news_payload(
 def generate_news(
     payload: list[dict], 
     generate_type: str = "filing",
-    models: list[str] = ["nvidia-nemotron-3-ultra","gpt-oss-120b"]
+    models: list[str] = [
+        "gpt-oss-120b"
+        "deepsek-v4-flash", 
+        "nvidia-nemotron-3-ultra", 
+    ]
 ) -> list[dict]:
     if payload is None or not payload:
         return []

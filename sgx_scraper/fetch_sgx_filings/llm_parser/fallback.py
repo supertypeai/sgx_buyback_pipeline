@@ -70,6 +70,7 @@ def run_extraction(
     }
 
     for model in [
+        "deepsek-v4-flash"
         "nvidia-nemotron-3-ultra",
         "gpt-oss-120b",
     ]:
