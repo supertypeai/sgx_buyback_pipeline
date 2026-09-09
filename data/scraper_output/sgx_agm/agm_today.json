@@ -16,19 +16,35 @@
     "ref_id": "SG260908MEET7FG3"
   },
   {
-    "symbol": "T14",
-    "recording_date": "2026-09-07",
-    "agm_date": "2026-10-23",
+    "symbol": "C07",
+    "recording_date": "2026-09-09",
+    "agm_date": "2026-10-01",
     "meeting_type": "EGM",
-    "agm_time": "14:00:00",
-    "agm_place": "An EGM of the Company will be held at the meeting room of Da Ren Tang Mansion, Tianjin, the PRC 300193 (concurrently, via video conferencing at 171 Chin Swee Road, CES Centre, #02-07/08, Singapore 169877 for holders of the S-Shares in Singapore) on Friday, 23 October 2026 at 2:00 p.m..",
+    "agm_time": "10:00:00",
+    "agm_place": "Atrium Suites, Lobby Level, Mandarin Oriental Singapore, 5 Raffles Avenue, Singapore 039797",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/1BZZ1FRAOL256OAO/1ebbc57142af1d5adc2bee7beccaee6afc618f425dd294dd9f04c8b9adbfa9d6",
-    "ref_id": "SG260907XMET5R9N"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/9CBV0RUD55MBSQQO/f92e4ab3d7a439d7c92d0fc1552ab4a09b1fa0fb30530e08dc168a1b435dc797",
+    "ref_id": "SG260909XMET8DQ0"
+  },
+  {
+    "symbol": "WNH",
+    "recording_date": "2026-08-24",
+    "agm_date": "2026-09-08",
+    "meeting_type": "EGM",
+    "agm_time": "10:00:00",
+    "agm_place": "Lifelong Learning Institute, 11 Eunos Road 8, Singapore 408601 (R1 Arena, Level 4, Lobby A)",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/WGFVM7A2GERXGMGW/af50f05c7070df886cc89f60c1fca0e2d9d6fa3c19c0c656c35a31d2a76acfb9",
+    "ref_id": "SG260824XMETFIUQ"
   }
 ]
