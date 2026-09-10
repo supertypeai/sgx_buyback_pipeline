@@ -1,5 +1,7 @@
 from dataclasses import asdict
+from datetime import date
 
+from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.fetch_agm.constant import (
     AGM_PATH_SEEN,
     AGM_PATH_TODAY,
@@ -57,6 +59,60 @@ def deduplicate(payload: list[dict]) -> list[dict]:
             best[key] = record
 
     return list(best.values())
+
+
+def retry_missing_summaries(model_name: str) -> int:
+    """A meeting's notice is scraped once, on the day it's filed. If results
+    aren't attached yet, the row is deliberately left with summary=None to be
+    retried later -- but the scheduled run only scans a yesterday-to-today
+    listing window, and SGX lists a filing under its original submission
+    date, so an old notice never resurfaces in that window once results
+    finally arrive. Re-check existing null-summary rows directly by their own
+    URL instead of waiting for a listing reappearance that structurally
+    can't happen."""
+    today = date.today().isoformat()
+
+    stuck = (
+        SUPABASE_CLIENT.table(TABLE_NAME)
+        .select("symbol,agm_date,meeting_type,source_link")
+        .is_("summary", "null")
+        .lt("agm_date", today)
+        .execute()
+    ).data
+
+    fixed = 0
+
+    for row in stuck:
+        results_url = resolve_results_document(row["source_link"])
+
+        if not results_url:
+            continue
+
+        try:
+            summary, tags = summarise_results(results_url, model_name)
+
+        except Exception as error:
+            LOGGER.error(
+                f"[AGM retry] Failed summarising {row['symbol']} {row['agm_date']}: {error}",
+                exc_info=True,
+            )
+            continue
+
+        if not summary:
+            continue
+
+        (
+            SUPABASE_CLIENT.table(TABLE_NAME)
+            .update({"summary": summary, "tags": tags})
+            .eq("symbol", row["symbol"])
+            .eq("agm_date", row["agm_date"])
+            .eq("meeting_type", row["meeting_type"])
+            .execute()
+        )
+        fixed += 1
+
+    LOGGER.info(f"[AGM retry] Backfilled {fixed}/{len(stuck)} previously-unresolved summaries")
+    return fixed
 
 
 def resolve_symbol(announcement: dict) -> str | None:
@@ -215,3 +271,5 @@ def run_agm_scraper(
         on_conflict=ON_CONFLICT,
         exclude_columns=DB_EXCLUDED_COLUMNS,
     )
+
+    retry_missing_summaries(model_name)

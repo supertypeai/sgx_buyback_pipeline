@@ -29,10 +29,11 @@ MEETING_TAGS = (
 )
 
 # What was decided is stated in the results document, and failing that in the
-# minutes, which some companies file instead.
+# minutes, which some companies file instead. "Mins" is a common abbreviation
+# for "minutes" in filenames (e.g. "AGM Mins 2026 FINAL.pdf").
 OUTCOME_ATTACHMENT_PATTERNS = (
     r"result|outcome|poll|resolution.{0,5}pass|pass.{0,5}resolution",
-    r"minute",
+    r"minute|\bmins\b",
 )
 
 ELECTRONIC_VENUE_PATTERN = r"electronic|virtual|online|webcast|zoom"

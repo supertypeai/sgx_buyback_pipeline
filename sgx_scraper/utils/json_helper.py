@@ -48,5 +48,16 @@ def write_to_csv(path: str, payload: list[dict[str]]):
 
 
 def parse_json_reply(reply: str) -> dict:
+    """Some models tack a stray duplicated fragment onto an otherwise-valid
+    JSON reply (seen on 'laguna-s-2.1' after an upstream rate-limit retry).
+    raw_decode parses the first complete JSON value and ignores anything
+    trailing after it, instead of rejecting the whole reply."""
     cleaned = re.sub(r"^```(?:json)?|```$", "", reply.strip(), flags=re.MULTILINE)
-    return json.loads(cleaned.strip())
+    cleaned = cleaned.strip()
+
+    value, end = json.JSONDecoder().raw_decode(cleaned)
+
+    if cleaned[end:].strip():
+        LOGGER.warning(f"Ignored {len(cleaned) - end} trailing chars after valid JSON in LLM reply")
+
+    return value
