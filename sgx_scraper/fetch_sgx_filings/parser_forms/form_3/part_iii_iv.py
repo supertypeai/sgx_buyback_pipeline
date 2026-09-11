@@ -34,7 +34,8 @@ class Form3PartIIIandIV(BaseFormParser):
     ) -> dict:
         share_table_result = self.parse_share_table(share_table=share_table)
 
-        amount_transaction = safe_convert_float(raw_amount)
+        amount_float = safe_convert_float(raw_amount)
+        amount_transaction = int(amount_float) if amount_float is not None else None
 
         price_per_share = build_price_per_share(
             raw_value, 
@@ -54,7 +55,7 @@ class Form3PartIIIandIV(BaseFormParser):
         return {
             "timestamp": safe_convert_datetime(raw_date),
             "amount_transaction": amount_transaction,
-            "transaction_value": transaction_value,
+            "transaction_value": int(transaction_value) if transaction_value is not None else None,
             "price_per_share": price_per_share,
             "transaction_type": transaction_type,
             "tags": tags,
