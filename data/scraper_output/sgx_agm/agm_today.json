@@ -1,5 +1,21 @@
 [
   {
+    "symbol": "BJD",
+    "recording_date": "2026-09-10",
+    "agm_date": "2026-09-28",
+    "meeting_type": "AGM",
+    "agm_time": "09:00:00",
+    "agm_place": "38 Tuas Crescent Singapore 638725",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/CX63ZF6ONL4EJB54/2177e61fc8eed48d2f211a8f1c2edcfebf586ed16400b930ce27602882f300f5",
+    "ref_id": "SG260910MEETBWO7"
+  },
+  {
     "symbol": "595",
     "recording_date": "2026-09-10",
     "agm_date": "2026-09-25",
@@ -14,53 +30,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/DHXI37BWUSOYAWAA/1343ef87b82e8919b33d2f3aa2b35d956a0cdfd9518ef8f64a3bed4311ab77d8",
     "ref_id": "SG260910MEETB7DO"
-  },
-  {
-    "symbol": "W8W",
-    "recording_date": "2026-09-09",
-    "agm_date": "2026-09-25",
-    "meeting_type": "EGM",
-    "agm_time": "10:00:00",
-    "agm_place": "141 Middle Road, Singapore 188976",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/ZXIYR1QTMQXDJJVE/864a922eca4872295767761825eb358d4ddecf808429a62f59dbd296c012eb8c",
-    "ref_id": "SG260909XMETMV7G"
-  },
-  {
-    "symbol": "5WG",
-    "recording_date": "2026-08-25",
-    "agm_date": "2026-09-09",
-    "meeting_type": "EGM",
-    "agm_time": "10:00:00",
-    "agm_place": "207 Henderson Road, #01-01 Henderson Industrial Park, Singapore 159550",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/Z8MFITI4VS3TDG57/36f94750223a2ba87abfa392fca75a44463df14393c2aa4c3ea9225bb8b90f6e",
-    "ref_id": "SG260825XMETCKQO"
-  },
-  {
-    "symbol": "C07",
-    "recording_date": "2026-09-09",
-    "agm_date": "2026-10-01",
-    "meeting_type": "EGM",
-    "agm_time": "10:00:00",
-    "agm_place": "Atrium Suites, Lobby Level, Mandarin Oriental Singapore, 5 Raffles Avenue, Singapore 039797",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/9CBV0RUD55MBSQQO/f92e4ab3d7a439d7c92d0fc1552ab4a09b1fa0fb30530e08dc168a1b435dc797",
-    "ref_id": "SG260909XMET8DQ0"
   }
 ]
