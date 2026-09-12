@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLSX5URLX3PJL362/903991__eFORM1V2%20-MM.pdf",
+    "symbol": "8AZ",
+    "company_name": "Aztech Global Ltd",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
+    "holder_name": "Mun Hong Yew",
+    "holder_type": "insider",
+    "source_is_manual": false,
+    "timestamp": "2026-09-11",
+    "amount_transaction": 18000000,
+    "transaction_value": null,
+    "price_per_share": null,
+    "transaction_type": null,
+    "tags": [],
+    "circumstances_desc": "See Item 9 for details. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total",
+    "holding_before": 542797600,
+    "direct_before": 142899200,
+    "share_percentage_before": 0.703,
+    "direct_percentage_before": 0.185,
+    "holding_after": 542797600,
+    "direct_after": 124899200,
+    "share_percentage_after": 0.703,
+    "direct_percentage_after": 0.162,
+    "share_percentage_transaction": 0.0,
+    "title": "Mun Hong Yew None transaction of Aztech Global Ltd",
+    "body": "Mun Hong Yew executed a transaction for 18,000,000 shares of Aztech Global Ltd. Their holdings remain at 542,797,600 shares.",
+    "reasons": [
+      "Missing transaction_type",
+      "Difference in shares (after - before = 0) does not match reported amount_transaction=18000000"
+    ]
+  }
+]
