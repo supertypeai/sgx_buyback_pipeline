@@ -1,34 +1,18 @@
 [
   {
-    "symbol": "BJD",
-    "recording_date": "2026-09-10",
+    "symbol": "5OX",
+    "recording_date": "2026-09-12",
     "agm_date": "2026-09-28",
     "meeting_type": "AGM",
-    "agm_time": "09:00:00",
-    "agm_place": "38 Tuas Crescent Singapore 638725",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/CX63ZF6ONL4EJB54/2177e61fc8eed48d2f211a8f1c2edcfebf586ed16400b930ce27602882f300f5",
-    "ref_id": "SG260910MEETBWO7"
-  },
-  {
-    "symbol": "595",
-    "recording_date": "2026-09-10",
-    "agm_date": "2026-09-25",
-    "meeting_type": "AGM",
     "agm_time": "10:00:00",
-    "agm_place": "39 Benoi Road #06-01 Singapore 627725",
+    "agm_place": "SAFRA Punggol, 9 Sentul Cres, Level 5, Tembusu Room, Singapore 828654",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/DHXI37BWUSOYAWAA/1343ef87b82e8919b33d2f3aa2b35d956a0cdfd9518ef8f64a3bed4311ab77d8",
-    "ref_id": "SG260910MEETB7DO"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/G9WIJRSQNZ0L5PV7/eb7b6b02be35dfb4abf1c97ad79824a3c697b926a2b6f4bdeab50ad68ad08f4d",
+    "ref_id": "SG260912MEET9B9F"
   }
 ]
