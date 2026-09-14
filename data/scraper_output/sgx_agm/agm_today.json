@@ -1,18 +1,34 @@
 [
   {
-    "symbol": "5OX",
-    "recording_date": "2026-09-12",
-    "agm_date": "2026-09-28",
+    "symbol": "1B1",
+    "recording_date": "2026-09-14",
+    "agm_date": "2026-09-29",
     "meeting_type": "AGM",
-    "agm_time": "10:00:00",
-    "agm_place": "SAFRA Punggol, 9 Sentul Cres, Level 5, Tembusu Room, Singapore 828654",
+    "agm_time": "14:00:00",
+    "agm_place": "5 Stevens Road, Raffles Room, Level 2 - Main Clubhouse, Tanglin Club, Singapore 257814",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/G9WIJRSQNZ0L5PV7/eb7b6b02be35dfb4abf1c97ad79824a3c697b926a2b6f4bdeab50ad68ad08f4d",
-    "ref_id": "SG260912MEET9B9F"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/N75XWH902BI24OOW/274fbe0cb9f4e4ee309833ca775bc6c39c365a7274c8cb4677493367f1b73513",
+    "ref_id": "SG260914MEET692G"
+  },
+  {
+    "symbol": "OMK",
+    "recording_date": "2026-09-14",
+    "agm_date": "2026-09-29",
+    "meeting_type": "AGM",
+    "agm_time": "11:00:00",
+    "agm_place": "REC Studio, 2 Orchard Link, #03-03 *SCAPE, Singapore 237978",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/9AHGMGJF6G1029XV/182c750597946904d80c17295e0dfb9aa611ebbb9b8d39fc6e1b4df8df3652a1",
+    "ref_id": "SG260914MEETX7LL"
   }
 ]
