@@ -14,7 +14,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/EYRYME3BE7XOCOY7/e74fe60bfddfa63afceae5fbb3efb3d287785a4bcbf9571f650c2076f73fa974",
     "timestamp": "2026-09-11 18:23:15",
-    "updated_on": "2026-09-11 20:50:07"
+    "updated_on": "2026-09-14 21:43:46"
   },
   {
     "symbol": "HLS",
@@ -31,14 +31,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/INN1G3T3ZLHNT6S6/67146295db1a21832f2cc11190b6946aa99407a2185d86f43a54e53464d3018f",
     "timestamp": "2026-08-28 18:12:44",
-    "updated_on": "2026-09-11 20:50:28"
+    "updated_on": "2026-09-14 21:44:05"
   },
   {
     "symbol": "S07",
     "reference": "SG260827DVCABPUG",
     "recording_date": "2026-09-28",
     "ex_date": "2026-09-25",
-    "dividend_amount": 0.008060000000000001,
+    "dividend_amount": 0.00809,
     "payment_date": "2026-10-09",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Interim",
@@ -48,24 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/0B6E4JFOBVBOL81B/cfaba78065ee48898cb3295005af40939b4ad123bafbdd3aaa24a3b95bc3ac01",
     "timestamp": "2026-08-27 17:22:32",
-    "updated_on": "2026-09-11 20:50:47"
-  },
-  {
-    "symbol": "AP4",
-    "reference": "SG260821DVCASAYS",
-    "recording_date": "2026-09-14",
-    "ex_date": "2026-09-11",
-    "dividend_amount": 0.015560000000000003,
-    "payment_date": "2026-10-02",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Interim",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/J2VFUHSKDJBK8XIF/62a24c6e3c3e39fcc83689d8f13749d2879b96703219c00a1deb98345b6a1b84",
-    "timestamp": "2026-08-21 17:48:40",
-    "updated_on": "2026-09-11 20:51:05"
+    "updated_on": "2026-09-14 21:44:24"
   },
   {
     "symbol": "LJ3",
@@ -82,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/B648UTZQO6H242D8/3196b347d248ca3d7d581c24a5ae5c980dbc551f41c5e0d28528abc04cb2ec55",
     "timestamp": "2026-08-14 22:22:15",
-    "updated_on": "2026-09-11 20:51:23"
+    "updated_on": "2026-09-14 21:44:59"
   },
   {
     "symbol": "PCT",
@@ -99,7 +82,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/BWB9F185OH64H9KY/4368c6551a2a6809836028fdfe4e08a529e05205f7cab3ddb621321b9508c776",
     "timestamp": "2026-08-14 19:14:00",
-    "updated_on": "2026-09-11 20:51:29"
+    "updated_on": "2026-09-14 21:45:04"
   },
   {
     "symbol": "CHJ",
@@ -116,7 +99,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/K15C5H79GD5PLKGZ/cb5069bf6e1a726db7bcb6aee8176f7df4382b2598f78faa712106ab2da8055a",
     "timestamp": "2026-08-14 18:06:29",
-    "updated_on": "2026-09-11 20:51:40"
+    "updated_on": "2026-09-14 21:45:16"
   },
   {
     "symbol": "AWI",
@@ -133,7 +116,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/5ASXAQY8UXQPZY0G/856ce30131b8b842befa775fd93b161406a72dc71cf46d8bcc2df0aed0d0f81b",
     "timestamp": "2026-08-13 21:32:21",
-    "updated_on": "2026-09-11 20:52:08"
+    "updated_on": "2026-09-14 21:45:43"
   },
   {
     "symbol": "S7OU",
@@ -150,7 +133,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/JVVH49A0S5T1KXWM/f4ce4dea4b49dc0016b4b83facc3d2f606ef0937d354aa06f0f342b9928fee55",
     "timestamp": "2026-08-13 18:32:05",
-    "updated_on": "2026-09-11 20:52:15"
+    "updated_on": "2026-09-14 21:45:49"
   },
   {
     "symbol": "CHZ",
@@ -167,24 +150,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/4K0VFIBP4H6H0LVI/e5bd94312c7d343bc3c89ccd398cf323808c5bf3282c6de3aa0d8fc7b36e7c36",
     "timestamp": "2026-08-12 21:19:23",
-    "updated_on": "2026-09-11 20:52:51"
-  },
-  {
-    "symbol": "AWZ",
-    "reference": "SG260811DVCA0FQZ",
-    "recording_date": "2026-09-14",
-    "ex_date": "2026-09-11",
-    "dividend_amount": 0.166,
-    "payment_date": "2026-09-25",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Interim",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/P5F5770WESDC9ZMS/e6c082fa8e81f337818c4f7f1a3edb9607572ac46e54f41dcaeb50775f529e70",
-    "timestamp": "2026-08-11 17:28:34",
-    "updated_on": "2026-09-11 20:53:39"
+    "updated_on": "2026-09-14 21:46:25"
   },
   {
     "symbol": "RE4",
@@ -201,7 +167,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/SBB5SZEKG9H3LGHC/fb9e727a9c89c79d06ff451d81ab823bbfbe438ff221aa5c5550ade724ee7872",
     "timestamp": "2026-08-07 20:30:56",
-    "updated_on": "2026-09-11 20:53:49"
+    "updated_on": "2026-09-14 21:47:23"
   },
   {
     "symbol": "T12",
@@ -218,6 +184,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/XI63XQ1BB6279H7N/bc7c6a2e613cc48f82bf2aa7fe4ec2021d36f9a61cd7c5f1e3f6c1124eb2f32e",
     "timestamp": "2026-08-07 18:52:58",
-    "updated_on": "2026-09-11 20:53:56"
+    "updated_on": "2026-09-14 21:47:31"
   }
 ]
