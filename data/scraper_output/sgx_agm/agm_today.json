@@ -1,5 +1,21 @@
 [
   {
+    "symbol": "E27",
+    "recording_date": "2026-08-28",
+    "agm_date": "2026-09-15",
+    "meeting_type": "AGM",
+    "agm_time": "15:30:00",
+    "agm_place": "Suntec City Convention Centre, Meeting Room 311, Level 3, Suntec Singapore Convention & Exhibition Centre, 1 Raffles Boulevard, Suntec City, Singapore 039593",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/459UO0R1O1J559MY/4e8c921f6a65d7674bbeccbc4b34ae69e7bea187ef7909f61fcff7768802e1b6",
+    "ref_id": "SG260828MEETX344"
+  },
+  {
     "symbol": "42F",
     "recording_date": "2026-09-15",
     "agm_date": "2026-09-30",
@@ -32,36 +48,20 @@
     "ref_id": "SG260914MEET23H5"
   },
   {
-    "symbol": "1B1",
-    "recording_date": "2026-09-14",
-    "agm_date": "2026-09-29",
-    "meeting_type": "AGM",
-    "agm_time": "14:00:00",
-    "agm_place": "5 Stevens Road, Raffles Room, Level 2 - Main Clubhouse, Tanglin Club, Singapore 257814",
+    "symbol": "QZG",
+    "recording_date": "2026-09-16",
+    "agm_date": "2026-09-30",
+    "meeting_type": "EGM",
+    "agm_time": "15:00:00",
+    "agm_place": "10 Ubi Crescent, #02-07, Ubi Techpark Lobby A, Singapore 408564",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/N75XWH902BI24OOW/274fbe0cb9f4e4ee309833ca775bc6c39c365a7274c8cb4677493367f1b73513",
-    "ref_id": "SG260914MEET692G"
-  },
-  {
-    "symbol": "OMK",
-    "recording_date": "2026-09-14",
-    "agm_date": "2026-09-29",
-    "meeting_type": "AGM",
-    "agm_time": "11:00:00",
-    "agm_place": "REC Studio, 2 Orchard Link, #03-03 *SCAPE, Singapore 237978",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/9AHGMGJF6G1029XV/182c750597946904d80c17295e0dfb9aa611ebbb9b8d39fc6e1b4df8df3652a1",
-    "ref_id": "SG260914MEETX7LL"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/8XF9WOKS0GLI2GLQ/5e9ca1fe4ebdb07ecae3f82ebe735df73dde26a20549853d6ea7fef2ec7b7e4f",
+    "ref_id": "SG260916XMETS7JF"
   },
   {
     "symbol": "BTJ",
