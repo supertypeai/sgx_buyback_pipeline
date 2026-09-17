@@ -1,53 +1,5 @@
 [
   {
-    "symbol": "E27",
-    "recording_date": "2026-08-28",
-    "agm_date": "2026-09-15",
-    "meeting_type": "AGM",
-    "agm_time": "15:30:00",
-    "agm_place": "Suntec City Convention Centre, Meeting Room 311, Level 3, Suntec Singapore Convention & Exhibition Centre, 1 Raffles Boulevard, Suntec City, Singapore 039593",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/459UO0R1O1J559MY/4e8c921f6a65d7674bbeccbc4b34ae69e7bea187ef7909f61fcff7768802e1b6",
-    "ref_id": "SG260828MEETX344"
-  },
-  {
-    "symbol": "42F",
-    "recording_date": "2026-09-15",
-    "agm_date": "2026-09-30",
-    "meeting_type": "AGM",
-    "agm_time": "14:30:00",
-    "agm_place": "39 Scotts Road, Level 2, Amber Room, Sheraton Towers Hotel, Singapore 228230There will be no option for Shareholders to participate virtually.",
-    "agm_place_desc": "Hybrid",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/F3HJOQN88RTAJMZB/e429da8a705ba28d246d9f7d0d1b13f3fa44d9ab459a6a1245aca3b4761e693d",
-    "ref_id": "SG260915MEETQB3Z"
-  },
-  {
-    "symbol": "FQ7",
-    "recording_date": "2026-09-14",
-    "agm_date": "2026-09-29",
-    "meeting_type": "AGM",
-    "agm_time": "10:00:00",
-    "agm_place": "The AGM will be held by way of physical meeting only at 3 Chin Bee Crescent, Level 4, Singapore 619891.",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/RM891W0UERPCK3FI/cfaa6c61ff1a2be8b153707c128c683454654ee763ae5f13949a1677103c8eca",
-    "ref_id": "SG260914MEET23H5"
-  },
-  {
     "symbol": "QZG",
     "recording_date": "2026-09-16",
     "agm_date": "2026-09-30",
@@ -62,21 +14,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/8XF9WOKS0GLI2GLQ/5e9ca1fe4ebdb07ecae3f82ebe735df73dde26a20549853d6ea7fef2ec7b7e4f",
     "ref_id": "SG260916XMETS7JF"
-  },
-  {
-    "symbol": "BTJ",
-    "recording_date": "2026-09-15",
-    "agm_date": "2026-09-30",
-    "meeting_type": "EGM",
-    "agm_time": "15:00:00",
-    "agm_place": "Tower Club, 9 Raffles Place, 62nd Floor, Republic Plaza 1, Singapore 048619",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/HHFR4HTA72HS2VYH/d3dae41428aab01407b786ac7ce0ba4a35f5b90198008b89030ade3b0349e433",
-    "ref_id": "SG260915XMETIXVD"
   }
 ]
