@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "symbol": "ODBU",
+    "property_name": "BJ's Quincy",
+    "transaction_type": "divestment",
+    "financial_year": 2026,
+    "status": "completed",
+    "counterparty": "unrelated third party",
+    "interest_pct": 1,
+    "completed_date": "2026-09-16",
+    "deal_id": null,
+    "basis_value": 43488480,
+    "basis": "purchase_price",
+    "transaction_price": 44006200,
+    "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/Y25CFUBY7OOQS60I/4528eaa3c723934277e03fee5d580d1c0a0f974363375634fd6a67f565d23c64",
+    "ref_id": "SG260917OTHRAYLQ"
+  }
+]
