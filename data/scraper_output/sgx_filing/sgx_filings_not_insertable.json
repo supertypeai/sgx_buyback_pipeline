@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RLVJ4NCBROLLSJ3T/904481__Form%201%20-%20Charlotte%20Tay%20-%20Final.pdf",
+    "symbol": "M01",
+    "company_name": "Metro Holdings Ltd",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "holder_name": "Charlotte Tay Tingyin",
+    "holder_type": "insider",
+    "source_is_manual": false,
+    "timestamp": "2026-09-15",
+    "amount_transaction": 400000,
+    "transaction_value": 93000,
+    "price_per_share": 0.2325,
+    "transaction_type": "buy",
+    "tags": [
+      "investment"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 0,
+    "direct_before": 0,
+    "share_percentage_before": 0.0,
+    "direct_percentage_before": 0.0,
+    "holding_after": 400000,
+    "direct_after": 400000,
+    "share_percentage_after": 0.0023,
+    "direct_percentage_after": 0.0023,
+    "share_percentage_transaction": 0.0023,
+    "title": "Charlotte Tay Tingyin buys shares of Metro Holdings Ltd",
+    "body": "Charlotte Tay Tingyin bought 400,000 shares of Metro Holdings Ltd. This increases their holdings from 0 to 400,000 shares.",
+    "reasons": [
+      "Price deviation too large: filing price=0.2325, market price=0.38999998569488525, deviation=40.38%"
+    ]
+  }
+]
