@@ -14,31 +14,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/IDQ4R2F5MHG5L43D/3d9825ed59e09f094fa9b6c84ec165142b76459efcbe4a034bf3dfaec223ea40",
     "timestamp": "2026-09-15 17:57:18",
-    "updated_on": "2026-09-18 20:46:13"
-  },
-  {
-    "symbol": "NEX",
-    "reference": "SG260911DVCAIC2E",
-    "recording_date": "2026-09-21",
-    "ex_date": "2026-09-18",
-    "dividend_amount": 0.0025,
-    "payment_date": "2026-09-25",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Interim",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/EYRYME3BE7XOCOY7/e74fe60bfddfa63afceae5fbb3efb3d287785a4bcbf9571f650c2076f73fa974",
-    "timestamp": "2026-09-11 18:23:15",
-    "updated_on": "2026-09-18 20:46:20"
+    "updated_on": "2026-09-21 21:54:49"
   },
   {
     "symbol": "S07",
     "reference": "SG260827DVCABPUG",
     "recording_date": "2026-09-28",
     "ex_date": "2026-09-25",
-    "dividend_amount": 0.008135,
+    "dividend_amount": 0.008130000000000002,
     "payment_date": "2026-10-09",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Interim",
@@ -48,14 +31,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/0B6E4JFOBVBOL81B/cfaba78065ee48898cb3295005af40939b4ad123bafbdd3aaa24a3b95bc3ac01",
     "timestamp": "2026-08-27 17:22:32",
-    "updated_on": "2026-09-18 20:46:56"
+    "updated_on": "2026-09-21 21:55:31"
   },
   {
     "symbol": "Q0F",
     "reference": "SG260827DVCA8GTR",
     "recording_date": "2026-09-30",
     "ex_date": "2026-09-29",
-    "dividend_amount": 0.0171325,
+    "dividend_amount": 0.017204,
     "payment_date": "2026-10-30",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Interim",
@@ -65,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/FRXD94N0ZIYU4GZ4/90b45c317b1ca3327c42ab86a9eeccb7cf06aecd64651b76aece4c4f6015d9df",
     "timestamp": "2026-08-27 17:22:09",
-    "updated_on": "2026-09-18 20:46:59"
+    "updated_on": "2026-09-21 21:55:34"
   },
   {
     "symbol": "CHZ",
@@ -82,6 +65,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/4K0VFIBP4H6H0LVI/e5bd94312c7d343bc3c89ccd398cf323808c5bf3282c6de3aa0d8fc7b36e7c36",
     "timestamp": "2026-08-12 21:19:23",
-    "updated_on": "2026-09-18 20:48:49"
+    "updated_on": "2026-09-21 21:57:25"
   }
 ]
