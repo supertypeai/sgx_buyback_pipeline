@@ -14,31 +14,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/3BA6CM1HWF93A0X9/304b22f52624c46d36d8a1db6540630ee7f58ae3d2100163835e8675191f22d9",
     "timestamp": "2026-09-23 17:36:13",
-    "updated_on": "2026-09-23 21:23:44"
-  },
-  {
-    "symbol": "XZB",
-    "reference": "SG260915DVCAAN1C",
-    "recording_date": "2026-09-24",
-    "ex_date": "2026-09-23",
-    "dividend_amount": 0.0055,
-    "payment_date": "2026-10-02",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Final",
-    "event_narrative": {
-      "narrative": "The Final Dividend will be paid on 2 October 2026.",
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/IDQ4R2F5MHG5L43D/3d9825ed59e09f094fa9b6c84ec165142b76459efcbe4a034bf3dfaec223ea40",
-    "timestamp": "2026-09-15 17:57:18",
-    "updated_on": "2026-09-23 21:23:53"
+    "updated_on": "2026-09-24 21:25:02"
   },
   {
     "symbol": "S07",
     "reference": "SG260827DVCABPUG",
     "recording_date": "2026-09-28",
     "ex_date": "2026-09-25",
-    "dividend_amount": 0.008130000000000002,
+    "dividend_amount": 0.008135,
     "payment_date": "2026-10-09",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Interim",
@@ -48,14 +31,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/0B6E4JFOBVBOL81B/cfaba78065ee48898cb3295005af40939b4ad123bafbdd3aaa24a3b95bc3ac01",
     "timestamp": "2026-08-27 17:22:32",
-    "updated_on": "2026-09-23 21:24:34"
+    "updated_on": "2026-09-24 21:25:50"
   },
   {
     "symbol": "Q0F",
     "reference": "SG260827DVCA8GTR",
     "recording_date": "2026-09-30",
     "ex_date": "2026-09-29",
-    "dividend_amount": 0.017215,
+    "dividend_amount": 0.017225999999999998,
     "payment_date": "2026-10-30",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Interim",
@@ -65,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/FRXD94N0ZIYU4GZ4/90b45c317b1ca3327c42ab86a9eeccb7cf06aecd64651b76aece4c4f6015d9df",
     "timestamp": "2026-08-27 17:22:09",
-    "updated_on": "2026-09-23 21:24:37"
+    "updated_on": "2026-09-24 21:25:53"
   },
   {
     "symbol": "DM0",
@@ -82,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/5O6B8QX5QMCL3I0S/3c78b2fcc6c8178b2338c537515d9b622984bfa0878d71927ea85f0054479136",
     "timestamp": "2026-08-07 17:31:02",
-    "updated_on": "2026-09-23 21:27:30"
+    "updated_on": "2026-09-24 21:28:43"
   },
   {
     "symbol": "DM0",
@@ -99,6 +82,23 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/G2N2G2FHJ4SRZPXE/d90b1c31d1d5904c740f320d885d742369a417a958689fe55b0fc7ea0ca32690",
     "timestamp": "2026-08-07 17:29:05",
-    "updated_on": "2026-09-23 21:27:35"
+    "updated_on": "2026-09-24 21:28:47"
+  },
+  {
+    "symbol": "595",
+    "reference": "SG260730DVCALEFH",
+    "recording_date": "2026-10-09",
+    "ex_date": "2026-10-08",
+    "dividend_amount": 0.001,
+    "payment_date": "2026-10-23",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KIF3YS9XU0PXG44P/fa02d84b1f65b06983de4534c20b65f04ddf5fbd45325e6d2aff4acccd29bca8",
+    "timestamp": "2026-07-30 18:40:39",
+    "updated_on": "2026-09-24 21:29:47"
   }
 ]
