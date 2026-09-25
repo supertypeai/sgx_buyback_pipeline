@@ -1,5 +1,69 @@
 [
   {
+    "symbol": "UELB",
+    "recording_date": "2026-09-25",
+    "agm_date": "2026-09-25",
+    "meeting_type": "AGM",
+    "agm_time": "11:00:00",
+    "agm_place": "The Meeting was held through Video Conferencing at the registered office of the company",
+    "agm_place_desc": null,
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/XKJJN6JCXA606VO7/ca7f1bab8e7239f4fb9c60fd582e75fa4ee9cda0bfec272b874041a7e19d6442",
+    "ref_id": "SG260925MEETP8SI"
+  },
+  {
+    "symbol": "OBWB",
+    "recording_date": "2026-09-25",
+    "agm_date": "2026-09-25",
+    "meeting_type": "AGM",
+    "agm_time": "11:00:00",
+    "agm_place": "The Meeting was held through Video Conferencing at the registered office of the Company",
+    "agm_place_desc": null,
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/EYTHMQB5O8K1T3DC/cce1a67922db3d302ea7afd7015a8617fa2ce5f28c03224b9e7b1deb53a982a2",
+    "ref_id": "SG260925MEETM31E"
+  },
+  {
+    "symbol": "5DD",
+    "recording_date": "2026-09-24",
+    "agm_date": "2026-10-26",
+    "meeting_type": "AGM",
+    "agm_time": "14:00:00",
+    "agm_place": "Level 3, Rooms 308-309 Suntec Singapore Convention & Exhibition Centre, 1 Raffles Boulevard Singapore 039593",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/R9TD5H5SM8341336/21a6c792e19557d91b9187db0703a908d1edf99ef3d1c1bbc749aa3857b76d48",
+    "ref_id": "SG260924MEET77F5"
+  },
+  {
+    "symbol": "AZT",
+    "recording_date": "2026-09-02",
+    "agm_date": "2026-09-24",
+    "meeting_type": "AGM",
+    "agm_time": "09:30:00",
+    "agm_place": "Level 3, 991G Alexandra Road, Singapore 119975",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/O6S1IDXAY41VQ7BM/1b3d751e74802da6e4c47254ea025fa03cff51dca55987af30a5a37e3e194ff5",
+    "ref_id": "SG260902MEETIBFH"
+  },
+  {
     "symbol": "P40U",
     "recording_date": "2026-09-24",
     "agm_date": "2026-10-29",
@@ -16,67 +80,37 @@
     "ref_id": "SG260924MEET88SJ"
   },
   {
-    "symbol": "1F0",
-    "recording_date": "2026-09-08",
-    "agm_date": "2026-09-23",
-    "meeting_type": "AGM",
-    "agm_time": "14:00:00",
-    "agm_place": "Olive Ballroom, 1st Floor, Metropolitan YMCA Singapore, 60 Stevens Road, Singapore 257854",
+    "symbol": "A31",
+    "recording_date": "2026-08-31",
+    "agm_date": "2026-09-24",
+    "meeting_type": "EGM",
+    "agm_time": "15:00:00",
+    "agm_place": "202 Bedok South Ave 1,Singapore 469332(Block A, Event Hall 1 & 2 on Level 3)",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/ZJ2SHO42VIOXF9QD/32813ec0aabeb1c53683b5f4ccfd5d4ac3832a3495be156fd8731f2fb164c772",
-    "ref_id": "SG260908MEET7FG3"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/EDSAZEFUGA0NVGEA/550fd971aaf5574d9b57e47299fec3cf10e89a3adb48a259c1878fa5ee47e382",
+    "ref_id": "SG260831XMET4268"
   },
   {
-    "symbol": "1B1",
-    "recording_date": "2026-09-14",
-    "agm_date": "2026-09-29",
-    "meeting_type": "AGM",
-    "agm_time": "14:00:00",
-    "agm_place": "5 Stevens Road, Raffles Room, Level 2 - Main Clubhouse, Tanglin Club, Singapore 257814",
+    "symbol": "1F3",
+    "recording_date": "2026-09-24",
+    "agm_date": "2026-08-26",
+    "meeting_type": "EGM",
+    "agm_time": "16:30:00",
+    "agm_place": "Meeting Room, Level 5, RELC International Hotel, 30 Orange Grove, Singapore 258352",
     "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": "https://sias.org.sg/media/qareport/Q&A%20to%20HC%20SURGICAL%20SPECIALISTS%20LIMITED%202026.pdf",
-    "sias_response_pdf": "http://sias.org.sg/media/qareport/HCSS%20-Announcement%20on%20Response%20to%20FY26%20AGM%20Questions_final.pdf",
-    "qa": [
-      {
-        "n": 1,
-        "question": "As noted in the CEO’s statement to shareholders, the company is celebrating its 10th \nanniversary this year. From its origin as a specialist colorectal and endoscopy practice, the \ngroup has evolved into a multidisciplinary specialist healthcare group, with an expanding \nnetwork of clinics and specialists serving patients across Singapore. \n \nRevenue remained relatively stable at $19.4 million for the year, while operating income \ndeclined to $4.6 million and adjusted profit after tax attributable to owners was $3.6 million. \n \n \n(Adapted from company annual report) \n \n(i) \nHow does management expect the group's growth strategy to translate into \nhigher and sustainable earnings? Given that operating income and adjusted \nprofit have declined steadily over the past five years despite the expansion \nof the group's network and capabilities, what are the key factors driving this \ndecline, and what specific changes are expected to reverse the trend? \n \n(ii) \nTo help shareholders assess the underlying growth of the business, can \nmanagement provide the group's estimated market share in the colorectal \nand gastrointestinal specialist care segments in Singapore? In addition, will \nthe group track and disclose operating metrics such as patient volumes, \npatient visits, revenue per patient, clinic utilisation and specialist \nproductivity, so that shareholders can assess whether network expansion is \ntranslating into genuine growth in demand and operating performance? \n \n(iii) \nFor each new clinic or acquisition, what return thresholds does the board \napply when committing capital, and how does it measure whether those \ninvestments have subsequently met expectations?",
-        "answer": null
-      },
-      {
-        "n": 2,
-        "question": "As part of its expansion and growth strategy, the group has acquired a number of \nspecialist clinics and businesses, with acquisition consideration in excess of the identifiable \nnet assets giving rise to goodwill. For example, goodwill arising from the acquisitions of \nJulian Ong Endoscopy & Surgery Pte. Ltd. (now known as KP Ong Endoscopy & Surgery, or \n\nKPO), Chirurgia Pte. Ltd. and Medical L & C Services Pte. Ltd. (MLCS) amounted to $2.14 \nmillion, $1.23 million and $1.06 million respectively. \n \nThe goodwill relating to KPO has since been fully written off, while the goodwill relating to \nMLCS has also been impaired by approximately 40%, from $1.06 million to $640,000. KPO \nhas reported losses in both FY2025 and FY2026 (page 107; Note 7 Investment in \nsubsidiaries). \n \n(Adapted from company annual report) \n \nThe annual report states that the recoverable amounts of the relevant cash generating units \n(or CGUs) are particularly sensitive to the discount rate and revenue growth assumptions \nused in the value-in-use calculations, with the discount rate reflecting the current market \nassessment of the time value of money and risks specific to each CGU. \n \n(i) \nCan management explain how the risks specific to each CGU are assessed \nand quantified for the purpose of determining the discount rate? What are \nthe key factors that cause the discount rates to differ between CGUs, and \nhow does management ensure that the rates appropriately reflect the risks \nof each individual business? \n \n(ii) \nWhat are the specific operational and commercial assumptions underlying \nthe significantly different revenue growth rates projected for certain \nendoscopy and surgery CGUs, such as Jason Lim Endoscopy and Surgery Pte. \nLtd. (JLES) versus GMH Endoscopy & Surgery Pte. Ltd. (GMH)? How do the \nprojected growth rates compare with the respective businesses’ historical \nperformance?  \n \nThe annual report also states in Note 13 on derivative financial instruments that \nmanagement is considering whether to exercise its option to acquire the remaining 30% \ninterest in KPO at a valuation equivalent to ten times audited profit after tax for the one-year \nperiod from 1 December 2024 to 30 November 2025. The option expires on 30 November \n2026.  \n \n(iii) \nHow is the board assessing whether to exercise the option to acquire the \nremaining 30% of KPO? What financial and strategic criteria and \n\nframework will the board apply in making this decision, and if KPO's \naudited profit after tax for the relevant period is negative, how will the \nexercise price be determined under the option arrangement?",
-        "answer": null
-      },
-      {
-        "n": 3,
-        "question": "At the annual general meeting scheduled for 29 September 2026, the company is seeking \nshareholders’ approval for the re-election of Mr Chong Weng Hoe, who retires pursuant to \nRegulation 97 of the company’s constitution.  \n \nMr Chong Weng Hoe was appointed as non-executive chairman and independent director on \n28 September 2016, stepped down from the chairmanship on 25 September 2025 and was \nre-designated as a non-independent non-executive director. According to the director’s \nprofile, he also sits on the boards of other SGX-listed companies, including Hong Fok \nCorporation Ltd, Baker Technology Limited and Bund Center Investment Ltd. \n \n(i) \nFollowing the director’s re-designation as a non-independent non-executive \ndirector after nine years as an independent director and chairman, could Mr \nChong Weng Hoe explain the specific role and contribution he believes he \ncan continue to make to the board, especially in the areas of board \neffectiveness and value creation for shareholders?  \n \n(ii) \nHow did the nominating committee assess whether the director’s long \ntenure and former chairmanship could affect board dynamics or the \nwillingness of other directors to challenge established views? \n \n(iii) \nHow does the board assess the incremental value of retaining the director’s \nexperience against the need for board renewal and fresh perspectives, \nparticularly in terms of medical and healthcare expertise? \n \nTwo directors, namely Mr Lim Chye Lai, Gjan and Mr Ooi Seng Soon, who had each served on \nthe board for nine years, retired and did not seek re-election at the last AGM. Mr Chan \nPengee, Adrian and Mr Lim Jun Xiong Steven were appointed as independent non-executive \ndirectors on 1 September 2025. \n \nFrom the directors’ profiles, Mr Chan Pengee, Adrian serves as the chairman of Hong Fok \nCorporation Limited, amongst other directorships, and Mr Lim Jun Xiong Steven is also a \ndirector of Baker Technology Limited and had stepped down in recent years from other \nboard appointments in Bund Center Investment Ltd and Hong Fok Corporation Limited.   \n \n(iv) \nCould the board or nominating committee elaborate on the process used to \nidentify and assess candidates for the recent board refresh? In particular, \nhow broad and robust was the search, and what steps were taken to identify \ncandidates with different industry experience (particularly in healthcare), \nperspectives, skill sets and diversity, and to avoid groupthink and excessive \nfamiliarity among board members? \n\nShareholders are welcome to use and/or adapt the questions prepared by SIAS and to \nforward them to the company.  \n \n \nCheck out the latest questions on the annual reports of listed companies on SIAS website  \n \nJoin our mailing list here to receive latest news and upcoming events.   \n \n \nCONNECT WITH US",
-        "answer": null
-      }
+    "summary": "Resolution 1: Shareholders approved the proposed disposal of the entire 40% interest in Tanjung Bungah Development Sdn. Bhd. by Aspen Vision Tanjung Sdn. Bhd. (99.9979% for, carried).",
+    "tags": [
+      "acquisitions and disposals"
     ],
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/U90A0QYWISSYWD3J/1c11274e86be105259c374745028d2f3bf53e9790dea82c87ac01d23e6d2bb60",
-    "ref_id": "SG260914MEET692G"
-  },
-  {
-    "symbol": "F17",
-    "recording_date": "2026-09-23",
-    "agm_date": "2026-10-22",
-    "meeting_type": "AGM",
-    "agm_time": "14:30:00",
-    "agm_place": "The 50th AGM will be held in a wholly physical format at Wallich Ballroom, Level 5, Sofitel Singapore City Centre, 9 Wallich Street, Singapore 078885.",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/G4KQBZU1K7QTKZQE/1c4364683ba671f2b882797a1aae658fbbdbb5b11d7c76b5af3a6af960e24ebc",
-    "ref_id": "SG260923MEET08FH"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/AXTP3QQFWPF1NY5U/0a8b22b0cf894992cc972cb2a48fc790de316a3e6213ecfaf77f0b6efff594b1",
+    "ref_id": "SG260924XMET1CSO"
   }
 ]
