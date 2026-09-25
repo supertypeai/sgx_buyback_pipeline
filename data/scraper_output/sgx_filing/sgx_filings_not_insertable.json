@@ -1,6 +1,6 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RQ2K81TC0GXRH4Y4/904842__Form%203%20-%20LBD%20Engineering%20-%20Final.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7NW3YPQQ4K9U81SR/904988__Form%203%20-%20LBD%20Engineering%20-%20Final.pdf",
     "symbol": "M01",
     "company_name": "Metro Holdings Ltd",
     "sector": "consumer-cyclicals",
@@ -8,61 +8,28 @@
     "source_is_manual": false,
     "holder_name": "LBD Engineering Pte. Ltd.",
     "holder_type": "institution",
-    "timestamp": "2026-09-21",
-    "amount_transaction": 424000,
-    "transaction_value": 99343,
-    "price_per_share": 0.2343,
+    "timestamp": "2026-09-22",
+    "amount_transaction": 147400,
+    "transaction_value": 33165,
+    "price_per_share": 0.225,
     "transaction_type": "buy",
     "tags": [
       "investment"
     ],
     "circumstances_desc": "\n\nAwareness-date explanation: N/A\n\nDeemed-interest circumstances: N/A\n\nShareholder relationship: Alvin Lim Yee Hong, the Non-Executive, Non-Independent Chairman of Metrocon Holdings Limited, holds 46.1% of the shares in LBD Engineering Pte. Ltd., and is deemed interested in the shares in the capital of the Company held by LBD Engineering Pte. Ltd..",
-    "holding_before": 11680989,
-    "direct_before": 11680989,
-    "share_percentage_before": 0.631,
-    "direct_percentage_before": 0.631,
-    "holding_after": 112104989,
-    "direct_after": 112104989,
-    "share_percentage_after": 0.634,
-    "direct_percentage_after": 0.634,
-    "share_percentage_transaction": 0.003,
+    "holding_before": 112104989,
+    "direct_before": 112104989,
+    "share_percentage_before": 0.634,
+    "direct_percentage_before": 0.634,
+    "holding_after": 112252389,
+    "direct_after": 112252389,
+    "share_percentage_after": 0.635,
+    "direct_percentage_after": 0.635,
+    "share_percentage_transaction": 0.001,
     "title": "Lbd Engineering Pte. Ltd. buys shares of Metro Holdings Ltd",
-    "body": "Lbd Engineering Pte. Ltd. bought 424,000 shares of Metro Holdings Ltd. This increases their holdings from 11,680,989 to 112,104,989 shares.",
+    "body": "Lbd Engineering Pte. Ltd. bought 147,400 shares of Metro Holdings Ltd. This increases their holdings from 112,104,989 to 112,252,389 shares.",
     "reasons": [
-      "Difference in shares (after - before = 100424000) does not match reported amount_transaction=424000"
-    ]
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/U44TNA4IZ45SEJZ8/904840__Form%201%20-%20Alvin%20Lim%20-%20Final.pdf",
-    "symbol": "M01",
-    "company_name": "Metro Holdings Ltd",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "retail",
-    "holder_name": "Alvin Lim Yee Hong",
-    "holder_type": "insider",
-    "source_is_manual": false,
-    "timestamp": "2026-09-18",
-    "amount_transaction": 100000,
-    "transaction_value": 23000,
-    "price_per_share": 0.23,
-    "transaction_type": "buy",
-    "tags": [
-      "investment"
-    ],
-    "circumstances_desc": "",
-    "holding_before": 111980989,
-    "direct_before": 300000,
-    "share_percentage_before": 0.633,
-    "direct_percentage_before": 0.002,
-    "holding_after": 112080989,
-    "direct_after": 400000,
-    "share_percentage_after": 0.633,
-    "direct_percentage_after": 0.002,
-    "share_percentage_transaction": 0.0,
-    "title": "Alvin Lim Yee Hong buys shares of Metro Holdings Ltd",
-    "body": "Alvin Lim Yee Hong bought 100,000 shares of Metro Holdings Ltd. This increases their holdings from 111,980,989 to 112,080,989 shares.",
-    "reasons": [
-      "Price deviation too large: filing price=0.23, market price=0.39500001072883606, deviation=41.77%"
+      "Price deviation too large: filing price=0.225, market price=0.38499999046325684, deviation=41.56%"
     ]
   }
 ]
