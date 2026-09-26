@@ -1,5 +1,37 @@
 [
   {
+    "symbol": "595",
+    "recording_date": "2026-09-10",
+    "agm_date": "2026-09-25",
+    "meeting_type": "AGM",
+    "agm_time": "10:00:00",
+    "agm_place": "39 Benoi Road #06-01 Singapore 627725",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": "https://sias.org.sg/media/qareport/Q&A%20to%20GKE%20CORPORATION%20LIMITED%202026.pdf",
+    "sias_response_pdf": null,
+    "qa": [
+      {
+        "n": 1,
+        "question": "Would the board/management provide greater clarity on the following operational and \nfinancial matters? Specifically: \n \n(i) \nWarehouse and logistics and infrastructural materials: While group revenue \nincreased by 8.8%, revenue from the core “warehouse and logistics” and \n“infrastructural materials and services” segments declined by 3.8% and 38.9% \nrespectively. Can management quantify the impact of the ongoing asset \nenhancement at 7 Kwong Min Road and the disruptions in warehouse \noperations in Dubai due to the current conflict in the Middle East? What are \nmanagement’s plans to restore growth across these segments, especially \ngiven that there was a ~$10 million decline in revenue from sale of ready-\nmix concrete in China? \n \n(Source: company annual report) \n \n(ii) \n7 Kwong Min Road: What is the total investment required for the 7 Kwong \nMin Road enhancement, and what incremental EBITDA, cash flow and \nreturn on invested capital does management expect the upgraded facility to \ngenerate once fully operational by the end of May 2027? \n \n(iii) \nGKE Retails: In the mobile distribution segment, the joint venture increased \nrevenue to $30.3 million but remained loss-making, reporting a loss of $(0.35) \nmillion. What is the group's competitive advantage in this business, and what \nneeds to improve for the segment to achieve sustainable profitability? Given \nthe continued shift towards digital purchasing, what is management's \nassessment of the long-term role of physical distribution networks in \nSingapore? In addition, what are the reasons, if any, that the group's \nphysical network is currently concentrated in the eastern part of Singapore?  \n\n(Source: company annual report)",
+        "answer": null
+      },
+      {
+        "n": 2,
+        "question": "According to SGX StockFacts, the company trades at a price-to-book of approximately \n0.5 times.  \n \n(Source: https://investors.sgx.com/market/securities?code=595&type=stocks&lang=en) \n \nThis is particularly notable against the broader improvement in Singapore equities. \n \nStock exchanges and regulators worldwide, including Tokyo Stock Exchange (TSE) and \nKorea’s Financial Services Commission (FSC), have been pushing for improved corporate \nvaluations. In Singapore, the Monetary Authority of Singapore's Equities Market Review \nGroup has also introduced measures to strengthen the equity market, including the $5 billion \nEquity Market Development Programme (EQDP), which is intended to increase investor \nparticipation and support the local small- and mid-cap market. \n \nAgainst this backdrop, the STI recently reached a new all-time closing high above 5,800 \npoints, while the company's share price has fallen to its lowest level in five years.  \n \n(i) \nWhat has been the total shareholder return over the past 5, 10, 15 and 20 \nyears (or from 21 July 2005)? \n \nThe group has received approval in-principle for the proposed spin-off and listing of its \ninfrastructural materials and services business1.  \n \n(ii) \nHow does the board expect the proposed listing to address the current \nholding-company discount? Specifically, what valuation does the board \n \n1 \nhttps://links.sgx.com/FileOpen/AIP%20for%20Proposed%20Spin%20Off.ashx?App=Announcement&FileID\n=870310 \n\nbelieve can reasonably be achieved for GKE Holdings (HK) Co., Limited \nrelative to its book value, and what evidence supports this assessment? \n \n(iii) \nIn addition, how does the board, particularly the independent directors, \nintend to address the persistent valuation gap of the company? Have capital \nmanagement options such as share buybacks, special dividends or a \nbroader strategic review been formally evaluated, and what are the \ntimelines for implementation?",
+        "answer": null
+      },
+      {
+        "n": 3,
+        "question": "The company is seeking shareholders’ approval for the re-election of Mr Chen Yonghua \nas a director, following his retirement pursuant to Regulation 107 of the company’s \nconstitution. Upon re-election, Mr Chen Yonghua will remain as the executive chairman and \nexecutive director of the company. \n \nIt is noted from the company’s annual reports that Mr Chen Yonghua was absent from all \nfour shareholder meetings held over the past three years, comprising three AGMs and one \nEGM.  \n \nThe AGM is one of the principal forums through which shareholders can directly engage the \nboard and management on the company's performance, strategy and governance.  Given that \nMr Chen Yonghua holds both the positions of executive chairman and executive director, his \nattendance at shareholder meetings is particularly relevant to shareholder engagement and \naccountability.  \n\n(Source: company annual reports; emphasis added) \n \n(i) \nGiven that the director is seeking his re-election, can the company confirm \nwhether Mr Chen Yonghua will be present at this year's AGM?  \n\n(ii) \nCould Mr Chen Yonghua explain the reasons for his absence, and whether \nthere were any circumstances that prevented him from attending these \nmeetings or participating remotely? \n \n(iii) \nIf re-elected, will the director commit to attending all future shareholder \nmeetings?  \n \n \nShareholders are welcome to use and/or adapt the questions prepared by SIAS and to \nforward them to the company.  \n \n \nCheck out the latest questions on the annual reports of listed companies on SIAS website  \n \nJoin our mailing list here to receive latest news and upcoming events.   \n \n \nCONNECT WITH US",
+        "answer": null
+      }
+    ],
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/OKPK4LHNS62JT2R0/4265f58b54702746b8b407f25bbd88a2c32b4a83c5af7f1b10ffa7952d5ab56f",
+    "ref_id": "SG260910MEETB7DO"
+  },
+  {
     "symbol": "UELB",
     "recording_date": "2026-09-25",
     "agm_date": "2026-09-25",
@@ -32,85 +64,19 @@
     "ref_id": "SG260925MEETM31E"
   },
   {
-    "symbol": "5DD",
-    "recording_date": "2026-09-24",
-    "agm_date": "2026-10-26",
-    "meeting_type": "AGM",
-    "agm_time": "14:00:00",
-    "agm_place": "Level 3, Rooms 308-309 Suntec Singapore Convention & Exhibition Centre, 1 Raffles Boulevard Singapore 039593",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/R9TD5H5SM8341336/21a6c792e19557d91b9187db0703a908d1edf99ef3d1c1bbc749aa3857b76d48",
-    "ref_id": "SG260924MEET77F5"
-  },
-  {
-    "symbol": "AZT",
-    "recording_date": "2026-09-02",
-    "agm_date": "2026-09-24",
-    "meeting_type": "AGM",
-    "agm_time": "09:30:00",
-    "agm_place": "Level 3, 991G Alexandra Road, Singapore 119975",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/O6S1IDXAY41VQ7BM/1b3d751e74802da6e4c47254ea025fa03cff51dca55987af30a5a37e3e194ff5",
-    "ref_id": "SG260902MEETIBFH"
-  },
-  {
-    "symbol": "P40U",
-    "recording_date": "2026-09-24",
-    "agm_date": "2026-10-29",
-    "meeting_type": "AGM",
-    "agm_time": "11:00:00",
-    "agm_place": "Goodwood Park Hotel, Windsor Ballroom, Level 2, 22 Scotts Road, Singapore 228221",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/04JY7D8ZDZ44N9RY/8a2dd2173ec3c49ea890ce90e2a37f99feafdf73e4602d4821030581295e2017",
-    "ref_id": "SG260924MEET88SJ"
-  },
-  {
-    "symbol": "A31",
-    "recording_date": "2026-08-31",
-    "agm_date": "2026-09-24",
+    "symbol": "W8W",
+    "recording_date": "2026-09-09",
+    "agm_date": "2026-09-25",
     "meeting_type": "EGM",
-    "agm_time": "15:00:00",
-    "agm_place": "202 Bedok South Ave 1,Singapore 469332(Block A, Event Hall 1 & 2 on Level 3)",
+    "agm_time": "10:00:00",
+    "agm_place": "141 Middle Road, Singapore 188976",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/EDSAZEFUGA0NVGEA/550fd971aaf5574d9b57e47299fec3cf10e89a3adb48a259c1878fa5ee47e382",
-    "ref_id": "SG260831XMET4268"
-  },
-  {
-    "symbol": "1F3",
-    "recording_date": "2026-09-24",
-    "agm_date": "2026-08-26",
-    "meeting_type": "EGM",
-    "agm_time": "16:30:00",
-    "agm_place": "Meeting Room, Level 5, RELC International Hotel, 30 Orange Grove, Singapore 258352",
-    "agm_place_desc": "Onsite",
-    "summary": "Resolution 1: Shareholders approved the proposed disposal of the entire 40% interest in Tanjung Bungah Development Sdn. Bhd. by Aspen Vision Tanjung Sdn. Bhd. (99.9979% for, carried).",
-    "tags": [
-      "acquisitions and disposals"
-    ],
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/AXTP3QQFWPF1NY5U/0a8b22b0cf894992cc972cb2a48fc790de316a3e6213ecfaf77f0b6efff594b1",
-    "ref_id": "SG260924XMET1CSO"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/PJMMU1AXODM35IUM/09de2e0c1c4c2d3257f23a2df46b75ec4ad45995ef02fb6a6d6818dd0f6f25cf",
+    "ref_id": "SG260909XMETMV7G"
   }
 ]
