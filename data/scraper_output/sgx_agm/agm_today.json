@@ -1,82 +1,18 @@
 [
   {
-    "symbol": "595",
-    "recording_date": "2026-09-10",
-    "agm_date": "2026-09-25",
+    "symbol": "5OX",
+    "recording_date": "2026-09-12",
+    "agm_date": "2026-09-28",
     "meeting_type": "AGM",
     "agm_time": "10:00:00",
-    "agm_place": "39 Benoi Road #06-01 Singapore 627725",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": "https://sias.org.sg/media/qareport/Q&A%20to%20GKE%20CORPORATION%20LIMITED%202026.pdf",
-    "sias_response_pdf": null,
-    "qa": [
-      {
-        "n": 1,
-        "question": "Would the board/management provide greater clarity on the following operational and \nfinancial matters? Specifically: \n \n(i) \nWarehouse and logistics and infrastructural materials: While group revenue \nincreased by 8.8%, revenue from the core “warehouse and logistics” and \n“infrastructural materials and services” segments declined by 3.8% and 38.9% \nrespectively. Can management quantify the impact of the ongoing asset \nenhancement at 7 Kwong Min Road and the disruptions in warehouse \noperations in Dubai due to the current conflict in the Middle East? What are \nmanagement’s plans to restore growth across these segments, especially \ngiven that there was a ~$10 million decline in revenue from sale of ready-\nmix concrete in China? \n \n(Source: company annual report) \n \n(ii) \n7 Kwong Min Road: What is the total investment required for the 7 Kwong \nMin Road enhancement, and what incremental EBITDA, cash flow and \nreturn on invested capital does management expect the upgraded facility to \ngenerate once fully operational by the end of May 2027? \n \n(iii) \nGKE Retails: In the mobile distribution segment, the joint venture increased \nrevenue to $30.3 million but remained loss-making, reporting a loss of $(0.35) \nmillion. What is the group's competitive advantage in this business, and what \nneeds to improve for the segment to achieve sustainable profitability? Given \nthe continued shift towards digital purchasing, what is management's \nassessment of the long-term role of physical distribution networks in \nSingapore? In addition, what are the reasons, if any, that the group's \nphysical network is currently concentrated in the eastern part of Singapore?  \n\n(Source: company annual report)",
-        "answer": null
-      },
-      {
-        "n": 2,
-        "question": "According to SGX StockFacts, the company trades at a price-to-book of approximately \n0.5 times.  \n \n(Source: https://investors.sgx.com/market/securities?code=595&type=stocks&lang=en) \n \nThis is particularly notable against the broader improvement in Singapore equities. \n \nStock exchanges and regulators worldwide, including Tokyo Stock Exchange (TSE) and \nKorea’s Financial Services Commission (FSC), have been pushing for improved corporate \nvaluations. In Singapore, the Monetary Authority of Singapore's Equities Market Review \nGroup has also introduced measures to strengthen the equity market, including the $5 billion \nEquity Market Development Programme (EQDP), which is intended to increase investor \nparticipation and support the local small- and mid-cap market. \n \nAgainst this backdrop, the STI recently reached a new all-time closing high above 5,800 \npoints, while the company's share price has fallen to its lowest level in five years.  \n \n(i) \nWhat has been the total shareholder return over the past 5, 10, 15 and 20 \nyears (or from 21 July 2005)? \n \nThe group has received approval in-principle for the proposed spin-off and listing of its \ninfrastructural materials and services business1.  \n \n(ii) \nHow does the board expect the proposed listing to address the current \nholding-company discount? Specifically, what valuation does the board \n \n1 \nhttps://links.sgx.com/FileOpen/AIP%20for%20Proposed%20Spin%20Off.ashx?App=Announcement&FileID\n=870310 \n\nbelieve can reasonably be achieved for GKE Holdings (HK) Co., Limited \nrelative to its book value, and what evidence supports this assessment? \n \n(iii) \nIn addition, how does the board, particularly the independent directors, \nintend to address the persistent valuation gap of the company? Have capital \nmanagement options such as share buybacks, special dividends or a \nbroader strategic review been formally evaluated, and what are the \ntimelines for implementation?",
-        "answer": null
-      },
-      {
-        "n": 3,
-        "question": "The company is seeking shareholders’ approval for the re-election of Mr Chen Yonghua \nas a director, following his retirement pursuant to Regulation 107 of the company’s \nconstitution. Upon re-election, Mr Chen Yonghua will remain as the executive chairman and \nexecutive director of the company. \n \nIt is noted from the company’s annual reports that Mr Chen Yonghua was absent from all \nfour shareholder meetings held over the past three years, comprising three AGMs and one \nEGM.  \n \nThe AGM is one of the principal forums through which shareholders can directly engage the \nboard and management on the company's performance, strategy and governance.  Given that \nMr Chen Yonghua holds both the positions of executive chairman and executive director, his \nattendance at shareholder meetings is particularly relevant to shareholder engagement and \naccountability.  \n\n(Source: company annual reports; emphasis added) \n \n(i) \nGiven that the director is seeking his re-election, can the company confirm \nwhether Mr Chen Yonghua will be present at this year's AGM?  \n\n(ii) \nCould Mr Chen Yonghua explain the reasons for his absence, and whether \nthere were any circumstances that prevented him from attending these \nmeetings or participating remotely? \n \n(iii) \nIf re-elected, will the director commit to attending all future shareholder \nmeetings?  \n \n \nShareholders are welcome to use and/or adapt the questions prepared by SIAS and to \nforward them to the company.  \n \n \nCheck out the latest questions on the annual reports of listed companies on SIAS website  \n \nJoin our mailing list here to receive latest news and upcoming events.   \n \n \nCONNECT WITH US",
-        "answer": null
-      }
-    ],
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/OKPK4LHNS62JT2R0/4265f58b54702746b8b407f25bbd88a2c32b4a83c5af7f1b10ffa7952d5ab56f",
-    "ref_id": "SG260910MEETB7DO"
-  },
-  {
-    "symbol": "UELB",
-    "recording_date": "2026-09-25",
-    "agm_date": "2026-09-25",
-    "meeting_type": "AGM",
-    "agm_time": "11:00:00",
-    "agm_place": "The Meeting was held through Video Conferencing at the registered office of the company",
-    "agm_place_desc": null,
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/XKJJN6JCXA606VO7/ca7f1bab8e7239f4fb9c60fd582e75fa4ee9cda0bfec272b874041a7e19d6442",
-    "ref_id": "SG260925MEETP8SI"
-  },
-  {
-    "symbol": "OBWB",
-    "recording_date": "2026-09-25",
-    "agm_date": "2026-09-25",
-    "meeting_type": "AGM",
-    "agm_time": "11:00:00",
-    "agm_place": "The Meeting was held through Video Conferencing at the registered office of the Company",
-    "agm_place_desc": null,
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/EYTHMQB5O8K1T3DC/cce1a67922db3d302ea7afd7015a8617fa2ce5f28c03224b9e7b1deb53a982a2",
-    "ref_id": "SG260925MEETM31E"
-  },
-  {
-    "symbol": "W8W",
-    "recording_date": "2026-09-09",
-    "agm_date": "2026-09-25",
-    "meeting_type": "EGM",
-    "agm_time": "10:00:00",
-    "agm_place": "141 Middle Road, Singapore 188976",
+    "agm_place": "SAFRA Punggol, 9 Sentul Cres, Level 5, Tembusu Room, Singapore 828654",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/PJMMU1AXODM35IUM/09de2e0c1c4c2d3257f23a2df46b75ec4ad45995ef02fb6a6d6818dd0f6f25cf",
-    "ref_id": "SG260909XMETMV7G"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/YNRN3HQ9N9VT7QAN/6912fd0f2513eb6187171e4c7eeb44fe646dd334bc8f695df9a936a4bd9484a0",
+    "ref_id": "SG260912MEET9B9F"
   }
 ]
