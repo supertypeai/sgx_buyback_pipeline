@@ -14,14 +14,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/3BA6CM1HWF93A0X9/304b22f52624c46d36d8a1db6540630ee7f58ae3d2100163835e8675191f22d9",
     "timestamp": "2026-09-23 17:36:13",
-    "updated_on": "2026-09-28 23:09:05"
+    "updated_on": "2026-09-29 22:08:20"
   },
   {
     "symbol": "P9D",
     "reference": "SG260827DVCAPW3Z",
     "recording_date": "2026-10-13",
     "ex_date": "2026-10-12",
-    "dividend_amount": 0.0314055,
+    "dividend_amount": 0.0314265,
     "payment_date": "2026-10-23",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Final",
@@ -31,14 +31,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/CVUY39BJPI96ZZJD/1442216069a2cf013caacfd566f00b275e234f5f8ca7d3b3649ffa6d0f11519a",
     "timestamp": "2026-08-27 18:39:37",
-    "updated_on": "2026-09-28 23:09:50"
+    "updated_on": "2026-09-29 22:09:04"
   },
   {
     "symbol": "Q0F",
     "reference": "SG260827DVCA8GTR",
     "recording_date": "2026-09-30",
     "ex_date": "2026-09-29",
-    "dividend_amount": 0.017259,
+    "dividend_amount": 0.017215,
     "payment_date": "2026-10-30",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Interim",
@@ -48,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/FRXD94N0ZIYU4GZ4/90b45c317b1ca3327c42ab86a9eeccb7cf06aecd64651b76aece4c4f6015d9df",
     "timestamp": "2026-08-27 17:22:09",
-    "updated_on": "2026-09-28 23:09:59"
+    "updated_on": "2026-09-29 22:09:13"
   },
   {
     "symbol": "DM0",
@@ -65,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/5O6B8QX5QMCL3I0S/3c78b2fcc6c8178b2338c537515d9b622984bfa0878d71927ea85f0054479136",
     "timestamp": "2026-08-07 17:31:02",
-    "updated_on": "2026-09-28 23:12:55"
+    "updated_on": "2026-09-29 22:12:03"
   },
   {
     "symbol": "DM0",
@@ -82,6 +82,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/G2N2G2FHJ4SRZPXE/d90b1c31d1d5904c740f320d885d742369a417a958689fe55b0fc7ea0ca32690",
     "timestamp": "2026-08-07 17:29:05",
-    "updated_on": "2026-09-28 23:12:58"
+    "updated_on": "2026-09-29 22:12:06"
   }
 ]
