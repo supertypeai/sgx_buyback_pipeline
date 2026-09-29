@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/88P80HAW92B0ACD9/905282__eFORM1V2%20-%20SLC%20Form1%20-%20For%20release%20on%2028%20Sep%202026-OCK.pdf",
+    "symbol": "H07",
+    "company_name": "Stamford Land Corp Ltd",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
+    "holder_name": "Ow Chio Kiat",
+    "holder_type": "insider",
+    "source_is_manual": false,
+    "timestamp": "2026-09-28",
+    "amount_transaction": 7309227,
+    "transaction_value": 3142967,
+    "price_per_share": 0.43,
+    "transaction_type": "others",
+    "tags": [
+      "director-fee-shares"
+    ],
+    "circumstances_desc": "Election by the filer to receive 7,309,227 Scrip Shares in lieu of cash dividend, pursuant to Stamford Land Corporation Ltd Scrip Dividend Scheme (the \"Scheme\") for FY2026 final tax exempt (one- tier) dividend. Further, there is a change in the filer’s deemed interest following the election by Hai Sun Hup Group Pte Ltd and Victoria Park (1976) Pte. Ltd. to receive, 298,174 and 235,077 Scrip Shares, respectively. The Company issued an aggregate of 11,807,303 new shares to eligible shareholders who elected to participate in the Scheme. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total",
+    "holding_before": 690762762,
+    "direct_before": 635176362,
+    "share_percentage_before": 0.46648,
+    "direct_percentage_before": 0.42894,
+    "holding_after": 698605240,
+    "direct_after": 642485589,
+    "share_percentage_after": 0.46804,
+    "direct_percentage_after": 0.43044,
+    "share_percentage_transaction": 0.00156,
+    "title": "Change in Ow Chio Kiat's position in Stamford Land Corp Ltd",
+    "body": "Ow Chio Kiat executed a transaction for 7,309,227 shares of Stamford Land Corp Ltd. This increases their holdings from 690,762,762 to 698,605,240 shares.",
+    "reasons": [
+      "Difference in shares (after - before = 7842478) does not match reported amount_transaction=7309227"
+    ]
+  }
+]
