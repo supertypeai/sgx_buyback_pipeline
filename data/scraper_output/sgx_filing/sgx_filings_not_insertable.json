@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/PXOFM0I99U3RH1MS/905573__Form%201%20-%20SMT.pdf",
+    "symbol": "F03",
+    "company_name": "Food Empire Holdings Ltd",
+    "sector": "consumer-defensive",
+    "sub_sector": "food-beverage-production",
+    "holder_name": "Saw Meng Tee",
+    "holder_type": "insider",
+    "source_is_manual": false,
+    "timestamp": "2026-09-30",
+    "amount_transaction": 36000,
+    "transaction_value": 31806,
+    "price_per_share": 0.8835,
+    "transaction_type": "buy",
+    "tags": [
+      "employee-share-plan"
+    ],
+    "circumstances_desc": "",
+    "holding_before": 246000,
+    "direct_before": 246000,
+    "share_percentage_before": 0.0004,
+    "direct_percentage_before": 0.0004,
+    "holding_after": 282000,
+    "direct_after": 282000,
+    "share_percentage_after": 0.0004,
+    "direct_percentage_after": 0.0004,
+    "share_percentage_transaction": 0.0,
+    "title": "Saw Meng Tee buys shares of Food Empire Holdings Ltd",
+    "body": "Saw Meng Tee bought 36,000 shares of Food Empire Holdings Ltd. This increases their holdings from 246,000 to 282,000 shares.",
+    "reasons": [
+      "Price deviation too large: filing price=0.8835, market price=1.909999966621399, deviation=53.74%"
+    ]
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/87DZXFGDXNVKG33Q/905535__eFORM1V2-30092026-Dr%20Ng.pdf",
+    "symbol": "QC7",
+    "company_name": "Q & M Dental Group (Singapore) Ltd",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "holder_name": "Dr Ng Chin Siau",
+    "holder_type": "insider",
+    "source_is_manual": false,
+    "timestamp": "2026-09-30",
+    "amount_transaction": 6600000,
+    "transaction_value": 3300000,
+    "price_per_share": 0.5,
+    "transaction_type": "sell",
+    "tags": [],
+    "circumstances_desc": "On 30 September 2026, Quan Min Holdings Pte. Ltd. (\"QMH\") and Dr Ng Chin Siau, disposed of 7,400,000  and 6,600,000 ordinary shares in the Company respectively via private, off-market transactions (married deals) for a total consideration of S$3,700,000 and S$3,300,000 respectively (excluding brokerage fees and stamp duties). Dr Ng Chin Siau is deemed to have an interest in the shares of Q & M Dental Group (Singapore) Limited held by QMH. Please refer to section 9 and the Remarks section for more information. Table 1. Change in respect of  ordinary voting shares/units  of Listed Issuer Immediately before the transaction Direct Interest Deemed Interest Total",
+    "holding_before": 522841889,
+    "direct_before": 6628900,
+    "share_percentage_before": 0.551,
+    "direct_percentage_before": 0.007,
+    "holding_after": 508841889,
+    "direct_after": 28900,
+    "share_percentage_after": 0.5363,
+    "direct_percentage_after": 0.0,
+    "share_percentage_transaction": 0.0147,
+    "title": "Dr Ng Chin Siau sells shares of Q & M Dental Group (Singapore) Ltd",
+    "body": "Dr Ng Chin Siau sold 6,600,000 shares of Q & M Dental Group (Singapore) Ltd. This decreases their holdings from 522,841,889 to 508,841,889 shares.",
+    "reasons": [
+      "Difference in shares (after - before = 14000000) does not match reported amount_transaction=6600000"
+    ]
+  }
+]
