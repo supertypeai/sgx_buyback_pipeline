@@ -1,18 +1,34 @@
 [
   {
-    "symbol": "ODBU",
-    "property_name": "BJ's Quincy",
+    "symbol": "AJBU",
+    "property_name": "Tokyo Data Centre 4",
+    "transaction_type": "acquisition",
+    "financial_year": 2026,
+    "status": "completed",
+    "counterparty": "unrelated third party",
+    "interest_pct": 0.8862,
+    "completed_date": "2026-10-01",
+    "deal_id": "ajbu:SG260901OTHR7MAH",
+    "basis_value": 190000000000,
+    "basis": "purchase_price",
+    "transaction_price": 617500000,
+    "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/MRJDB21BECYTEOHM/f956bb03f1ced681ae572a54bc9c3547b4826f34cb75e9c24fddfdf41fe33b42",
+    "ref_id": "SG261001OTHRCVDK"
+  },
+  {
+    "symbol": "ME8U",
+    "property_name": "3255 Neil Armstrong Boulevard, Eagan, Minnesota",
     "transaction_type": "divestment",
     "financial_year": 2026,
     "status": "completed",
     "counterparty": "unrelated third party",
     "interest_pct": 1,
-    "completed_date": "2026-09-16",
-    "deal_id": null,
-    "basis_value": 43488480,
+    "completed_date": "2026-09-30",
+    "deal_id": "me8u:SG260929OTHRJXN0",
+    "basis_value": 11648700,
     "basis": "purchase_price",
-    "transaction_price": 44006200,
-    "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/Y25CFUBY7OOQS60I/4528eaa3c723934277e03fee5d580d1c0a0f974363375634fd6a67f565d23c64",
-    "ref_id": "SG260917OTHRAYLQ"
+    "transaction_price": 12697083,
+    "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/JHXQ26VA7CXZN7WO/0db8f83aa42de55c2839aa55fb281cb1c583691d20e379aab2484e5e5986b83e",
+    "ref_id": "SG260929OTHRJXN0"
   }
 ]
