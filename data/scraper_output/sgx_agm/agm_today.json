@@ -1,5 +1,25 @@
 [
   {
+    "symbol": "AZT",
+    "recording_date": "2026-09-02",
+    "agm_date": "2026-09-24",
+    "meeting_type": "AGM",
+    "agm_time": "09:30:00",
+    "agm_place": "Level 3, 991G Alexandra Road, Singapore 119975",
+    "agm_place_desc": "Onsite",
+    "summary": "Resolution 1: Shareholders adopted the Directors' Statement and audited financial statements for FY2025 together with the independent auditor's report (75.60% for, carried).\nResolution 2: Shareholders re-elected Mr Niu Liming as a Director of the Company (73.83% for, carried).\nResolution 3: Shareholders re-elected Mr Er Kwong Wah as a Director of the Company (99.83% for, carried).\nResolution 4: Shareholders re-elected Ms Ng Chern Nee as a Director of the Company (73.83% for, carried).\nResolution 5: Shareholders re-elected Mr Wan Tai Foong as a Director of the Company (99.87% for, carried).\nResolution 6: Shareholders approved the payment of Directors' fees of S$204,000 for FY2026 (99.83% for, carried).\nResolution 7: Shareholders re-appointed Nexia Singapore PAC as the Company's auditor (60.61% for, carried).",
+    "tags": [
+      "financial reporting and profit allocation",
+      "board and management",
+      "corporate governance"
+    ],
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/3NDY806OZRTEAFNZ/ccf69a01b5128de4c131a46eb3de7d64acd31d6423b1692f39fbaabe23d4cfb1",
+    "ref_id": "SG260902MEETIBFH"
+  },
+  {
     "symbol": "K29",
     "recording_date": "2026-10-02",
     "agm_date": "2026-10-27",
@@ -48,51 +68,37 @@
     "ref_id": "SG261002MEETVR5F"
   },
   {
-    "symbol": "L19",
-    "recording_date": "2026-10-01",
-    "agm_date": "2026-10-23",
-    "meeting_type": "AGM",
-    "agm_time": "10:30:00",
-    "agm_place": "Orchard Rendezvous HotelAntica I & II, Level 21 Tanglin RoadSingapore 247905",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/HM9RHK6XKLHHWN7V/e43008485ed85e3d11892c554a3ad5163235e114b1358dce3464ef5ebc31fd04",
-    "ref_id": "SG261001MEETOMGF"
-  },
-  {
-    "symbol": "JYEU",
-    "recording_date": "2026-10-01",
-    "agm_date": "2026-10-29",
-    "meeting_type": "AGM",
+    "symbol": "1H2",
+    "recording_date": "2026-09-17",
+    "agm_date": "2026-10-02",
+    "meeting_type": "EGM",
     "agm_time": "14:00:00",
-    "agm_place": "Suntec Singapore Convention & Exhibition Centre, Room Nicoll 3, 1 Raffles Boulevard, Singapore 039593",
+    "agm_place": "6th floor, 9 Raffles Place, Republic Plaza Tower 1, Singapore 048619",
     "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
+    "summary": "Resolution 1: Shareholders approved the proposed diversification of the Group's business into commodities trading and assets investment business (100% for, carried).",
+    "tags": [
+      "capital and equity"
+    ],
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/ARC3PA9Z868KL4LC/5a424192cd2496799f12beba7c1af5c8a372b0ecddff15e658d3fa9ed6eb39db",
-    "ref_id": "SG261001MEETJPWX"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/RZQ4BSJD5ASKS16C/ea2c4196f25f26228a5cc6dd383e19e1966bc6d9d499bcd4255639778195dd59",
+    "ref_id": "SG260917XMET6MVK"
   },
   {
-    "symbol": "A50",
-    "recording_date": "2026-10-01",
-    "agm_date": "2026-10-30",
-    "meeting_type": "AGM",
-    "agm_time": "15:00:00",
-    "agm_place": "voco Orchard Singapore581 Orchard RoadSingapore 238883",
+    "symbol": "K29",
+    "recording_date": "2026-10-02",
+    "agm_date": "2026-10-27",
+    "meeting_type": "EGM",
+    "agm_time": "10:30:00",
+    "agm_place": "The Special General Meeting of the Company will be held at Novotel Singapore on Stevens, Level One, Hercules & Cygnus Rooms, 28 Stevens Road, Singapore 257878 on Tuesday, 27 October 2026 at 10.30 a.m. (or immediately after the conclusion or adjournment of the Annual General Meeting held at 10.00 a.m. on the same day and at the same place).",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/THE0UHQ44CA28FDO/3ec9524dc77d4ce59330da5b1669ae6192b2616340de3c1a71825801dfe640a8",
-    "ref_id": "SG261001MEETXSTU"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/VRA8OUK7XXV87PUB/04a6a63574e9fe352eb7aeb871e0eb2f2a90bd45a8faab049c5cd672116462eb",
+    "ref_id": "SG261002XMETD5ET"
   }
 ]
