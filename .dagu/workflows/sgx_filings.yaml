@@ -1,0 +1,42 @@
+description: SGX filings — scrape, parse, push to the database, commit data/
+
+# GitHub: .github/workflows/sgx_filings_scraper.yaml
+
+container:
+  image: sgx-buyback-runners:latest
+  pull_policy: never
+  working_dir: /workspace
+
+secrets:
+  - PROXY
+  - SUPABASE_URL
+  - SUPABASE_KEY
+  - AWS_ACCESS_KEY_ID
+  - AWS_SECRET_ACCESS_KEY
+  - AWS_REGION
+  - SENDER_EMAIL
+  - TO_EMAIL
+  - GROQ_API_KEY
+  - OPENROUTER_API_KEY
+
+schedule: "10 2 * * *"
+queue: sgx-scraper-main
+timeout_sec: 18000
+hist_retention_days: 30
+
+steps:
+  - id: checkout
+    run: runners clone
+
+  - id: preflight
+    depends: [checkout]
+    run: bash .dagu/steps/preflight.sh chrome
+
+  - id: scrape
+    depends: [preflight]
+    run: python -m sgx_scraper.main_cli scraper_filings
+
+  - id: publish
+    depends: [scrape]
+    run: >-
+      runners push -m "sgx_filings: scraped data and push"

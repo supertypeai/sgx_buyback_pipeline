@@ -1,0 +1,34 @@
+description: Refresh data/sgx_companies.json from the database and commit it
+
+# GitHub: .github/workflows/refresh_sgx_companies.yaml
+
+container:
+  image: sgx-buyback-runners:latest
+  pull_policy: never
+  working_dir: /workspace
+
+secrets:
+  - SUPABASE_URL
+  - SUPABASE_KEY
+
+schedule: "0 21 1 * *"
+queue: sgx-scraper-main
+timeout_sec: 3600
+hist_retention_days: 30
+
+steps:
+  - id: checkout
+    run: runners clone
+
+  - id: preflight
+    depends: [checkout]
+    run: bash .dagu/steps/preflight.sh
+
+  - id: refresh
+    depends: [preflight]
+    run: python -m sgx_scraper.scripts.refresh_sgx_companies
+
+  - id: publish
+    depends: [refresh]
+    run: >-
+      runners push -m "refresh sgx_companies.json"

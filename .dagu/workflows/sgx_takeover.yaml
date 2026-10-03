@@ -1,0 +1,36 @@
+description: SGX takeover offers — scrape, push to the database, commit
+
+# GitHub: .github/workflows/sgx_takeover_scraper.yaml
+
+container:
+  image: sgx-buyback-runners:latest
+  pull_policy: never
+  working_dir: /workspace
+
+secrets:
+  - PROXY
+  - SUPABASE_URL
+  - SUPABASE_KEY
+  - GROQ_API_KEY
+
+schedule: "10 4 * * *"
+queue: sgx-scraper-main
+timeout_sec: 7200
+hist_retention_days: 30
+
+steps:
+  - id: checkout
+    run: runners clone
+
+  - id: preflight
+    depends: [checkout]
+    run: bash .dagu/steps/preflight.sh chrome
+
+  - id: scrape
+    depends: [preflight]
+    run: python -m sgx_scraper.main_cli takeover
+
+  - id: publish
+    depends: [scrape]
+    run: >-
+      runners push -m "sgx_takeover: scraped news and push"

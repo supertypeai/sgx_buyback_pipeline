@@ -1,0 +1,31 @@
+description: Track SGX management changes into the database
+
+# GitHub: .github/workflows/management_tracking.yaml
+
+container:
+  image: sgx-buyback-runners:latest
+  pull_policy: never
+  working_dir: /workspace
+
+secrets:
+  - PROXY
+  - SUPABASE_URL
+  - SUPABASE_KEY
+  - GROQ_API_KEY
+
+schedule: "10 6 * * *"
+queue: sgx-scraper-main
+timeout_sec: 3600
+hist_retention_days: 30
+
+steps:
+  - id: checkout
+    run: runners clone
+
+  - id: preflight
+    depends: [checkout]
+    run: bash .dagu/steps/preflight.sh chrome
+
+  - id: track
+    depends: [preflight]
+    run: python -m sgx_scraper.main_cli track_management --is-push-db

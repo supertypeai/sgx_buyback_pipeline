@@ -1,0 +1,2 @@
+image: sgx-buyback-runners:latest
+dockerfile: Dockerfile

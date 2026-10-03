@@ -1,0 +1,41 @@
+description: Run the buyback or filings scraper by hand, with the inputs below
+
+# GitHub: .github/workflows/scraper_test.yaml
+# Inputs are the container.env values below; edit and redeploy to change them.
+
+container:
+  image: sgx-buyback-runners:latest
+  pull_policy: never
+  working_dir: /workspace
+  env:
+    - SCRAPER_TYPE: "filings"   # buybacks | filings
+    - PERIOD_START: ""          # YYYYMMDD; blank for the CLI default
+    - PERIOD_END: ""            # YYYYMMDD; blank for the CLI default
+    - PAGE_SIZE: "20"
+    - IS_PUSH_DB: "false"       # push results to the database
+    - IS_PROXY: "true"          # use PROXY for SGX requests
+
+secrets:
+  - PROXY
+  - SUPABASE_URL
+  - SUPABASE_KEY
+  - AWS_ACCESS_KEY_ID
+  - AWS_SECRET_ACCESS_KEY
+  - AWS_REGION
+  - SENDER_EMAIL
+  - TO_EMAIL
+
+timeout_sec: 2700
+hist_retention_days: 30
+
+steps:
+  - id: checkout
+    run: runners clone
+
+  - id: preflight
+    depends: [checkout]
+    run: bash .dagu/steps/preflight.sh chrome
+
+  - id: scrape
+    depends: [preflight]
+    run: bash .dagu/steps/scraper_test.sh

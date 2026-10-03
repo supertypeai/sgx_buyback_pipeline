@@ -1,0 +1,44 @@
+description: SGX AGMs — scrape, summarise results, push to the database, commit data/
+
+# GitHub: .github/workflows/sgx_agm_scraper.yaml
+
+container:
+  image: sgx-buyback-runners:latest
+  pull_policy: never
+  working_dir: /workspace
+
+secrets:
+  - PROXY
+  - SUPABASE_URL
+  - SUPABASE_KEY
+  - OPENROUTER_API_KEY
+
+schedule: "30 3 * * *"
+queue: sgx-scraper-main
+timeout_sec: 12600
+hist_retention_days: 30
+
+steps:
+  - id: checkout
+    run: runners clone
+
+  - id: preflight
+    depends: [checkout]
+    run: bash .dagu/steps/preflight.sh chrome
+
+  - id: scrape
+    depends: [preflight]
+    run: python -m sgx_scraper.main_cli scraper_agm
+
+  - id: snapshot_seen
+    depends: [scrape]
+    run: bash .dagu/steps/seen.sh snapshot data/scraper_output/sgx_agm/agm_seen.json
+
+  - id: publish
+    depends: [snapshot_seen]
+    run: >-
+      runners push -m "sgx_agm: scraped data and push"
+
+  - id: verify_seen
+    depends: [publish]
+    run: bash .dagu/steps/seen.sh verify data/scraper_output/sgx_agm/agm_seen.json

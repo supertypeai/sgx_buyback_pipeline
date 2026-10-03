@@ -47,6 +47,10 @@ def get_wire_driver(is_headless: bool = True, proxy: str | None = None) -> webdr
     options.add_argument("--disable-gpu")
     options.add_argument("--disable-extensions")
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
+
+    # Needed in Docker: Chrome won't run as root with the sandbox, and /dev/shm is only 64 MiB
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     
     if proxy:
         LOGGER.info(f"Configuring browser with proxy: {proxy.split('@')[-1] if '@' in proxy else proxy}")
