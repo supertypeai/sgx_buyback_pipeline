@@ -1,35 +1,35 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/88MG31VITTTJKPAD/905764__KWS%20-%20Form%201-v2.pdf",
-    "symbol": "5UF",
-    "company_name": "Aspial Lifestyle Ltd",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "luxury-goods",
-    "holder_name": "Koh Wee Seng",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FOCCO64G2QR8RL16/905911__Form_1-Celine_Tang.pdf",
+    "symbol": "T82U",
+    "company_name": "Suntec Real Estate Investment Trust",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "holder_name": "Chen Huaidan @ Celine Tang",
     "holder_type": "insider",
     "source_is_manual": false,
-    "timestamp": "2026-09-30",
-    "amount_transaction": 600000,
-    "transaction_value": 204000,
-    "price_per_share": 0.34,
+    "timestamp": "2026-10-02",
+    "amount_transaction": 4326815,
+    "transaction_value": 6490222,
+    "price_per_share": 1.5,
     "transaction_type": "buy",
     "tags": [
       "investment"
     ],
     "circumstances_desc": "",
-    "holding_before": 1564681554,
-    "direct_before": 209421212,
-    "share_percentage_before": 0.7584,
-    "direct_percentage_before": 0.1015,
-    "holding_after": 1564800154,
-    "direct_after": 210021212,
-    "share_percentage_after": 0.7585,
-    "direct_percentage_after": 0.1018,
-    "share_percentage_transaction": 0.0001,
-    "title": "Koh Wee Seng buys shares of Aspial Lifestyle Ltd",
-    "body": "Koh Wee Seng bought 600,000 shares of Aspial Lifestyle Ltd. This increases their holdings from 1,564,681,554 to 1,564,800,154 shares.",
+    "holding_before": 550369457,
+    "direct_before": 266749514,
+    "share_percentage_before": 0.1858,
+    "direct_percentage_before": 0.0901,
+    "holding_after": 550369457,
+    "direct_after": 271076329,
+    "share_percentage_after": 0.1858,
+    "direct_percentage_after": 0.0915,
+    "share_percentage_transaction": 0.0,
+    "title": "Chen Huaidan @ Celine Tang buys shares of Suntec Real Estate Investment Trust",
+    "body": "Chen Huaidan @ Celine Tang bought 4,326,815 shares of Suntec Real Estate Investment Trust. Their holdings remain at 550,369,457 shares.",
     "reasons": [
-      "Difference in shares (after - before = 118600) does not match reported amount_transaction=600000"
+      "Difference in shares (after - before = 0) does not match reported amount_transaction=4326815"
     ]
   }
 ]
