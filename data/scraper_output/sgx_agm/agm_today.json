@@ -1,5 +1,69 @@
 [
   {
+    "symbol": "CJN",
+    "recording_date": "2026-10-06",
+    "agm_date": "2026-10-22",
+    "meeting_type": "AGM",
+    "agm_time": "14:30:00",
+    "agm_place": "MIT Space Pte Ltd at 111 North Bridge Road, #06-26 Peninsula Plaza, Singapore 179098",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/3LWY8GQS8KQYJV7L/ea190f42a90a5fb9cd164dc8595a448650e206ac53fbf841563d0e7aacb07a51",
+    "ref_id": "SG261006MEET2472"
+  },
+  {
+    "symbol": "585",
+    "recording_date": "2026-10-06",
+    "agm_date": "2026-10-23",
+    "meeting_type": "AGM",
+    "agm_time": "10:00:00",
+    "agm_place": "Orchid Country Club, Emerald Suite, 1 Orchid Club Road, Singapore 769162",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/LG61S02CVMEZZUZ2/f873db0e81fa8bc783702b4db8682656538ec10e984b9485d88ea395b658157f",
+    "ref_id": "SG261006MEETZEFF"
+  },
+  {
+    "symbol": "1R6",
+    "recording_date": "2026-10-06",
+    "agm_date": "2026-10-28",
+    "meeting_type": "AGM",
+    "agm_time": "11:00:00",
+    "agm_place": "19A Serangoon North Avenue 5, 1st Floor, Singapore 554859.",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/H37OMBHMHVH3N7UB/3f8d1d54b37868c5a846fa4cc73d429b8741a1bc85814f2dfecdf7625caba691",
+    "ref_id": "SG261006MEETXS6Y"
+  },
+  {
+    "symbol": "594",
+    "recording_date": "2026-10-05",
+    "agm_date": "2026-10-28",
+    "meeting_type": "AGM",
+    "agm_time": "10:00:00",
+    "agm_place": "10 Ubi Crescent, Ubi Techpark, Lobby A, #02-05, Singapore 408564",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/KDRXLZNMXC4OSNV7/b4c7b004cca306897b26ea836c1287445df2ef1a0a4bf286d4e51b66b07db224",
+    "ref_id": "SG261005MEETP7Q1"
+  },
+  {
     "symbol": "N02",
     "recording_date": "2026-10-05",
     "agm_date": "2026-10-28",
@@ -32,23 +96,19 @@
     "ref_id": "SG261005MEETBPA1"
   },
   {
-    "symbol": "FQ7",
-    "recording_date": "2026-09-14",
-    "agm_date": "2026-09-29",
-    "meeting_type": "AGM",
-    "agm_time": "10:00:00",
-    "agm_place": "The AGM will be held by way of physical meeting only at 3 Chin Bee Crescent, Level 4, Singapore 619891.",
+    "symbol": "594",
+    "recording_date": "2026-10-05",
+    "agm_date": "2026-10-28",
+    "meeting_type": "EGM",
+    "agm_time": "11:00:00",
+    "agm_place": "10 Ubi Crescent, Ubi Techpark, Lobby A, #02-05, Singapore 408564",
     "agm_place_desc": "Onsite",
-    "summary": "Resolution 1: Shareholders adopted the Directors' Statement and Audited Financial Statements for FY2026 and the Auditors' report (100.00% for, carried).\nResolution 2: Shareholders re-elected Mr. Goh Hao Kwang, Dennis, as an Executive Director and CEO (100.00% for, carried).\nResolution 3: Shareholders approved Directors' fees of S$160,000 for FY2027 (100.00% for, carried).\nResolution 4: Shareholders re-appointed RT LLP as Auditor with authority to fix remuneration (86.62% for, carried).\nResolution 5: Shareholders approved the Share Issue Mandate authorising Directors to issue and allot shares (98.66% for, carried).",
-    "tags": [
-      "financial reporting and profit allocation",
-      "board and management",
-      "corporate governance"
-    ],
+    "summary": null,
+    "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/B8M3S15QS5B4QGJQ/adf48596b8a2a9cd5b2731af7b1e0dcc4bc06d2afc413072f91208f46cdbd3c2",
-    "ref_id": "SG260914MEET23H5"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/PGZ96J25KSOA9O77/76818e02d0fe837462c10aed61c644a68826b09e78cd1a7cae7a5d4e29ee8860",
+    "ref_id": "SG261005XMETI5IB"
   }
 ]
