@@ -1,5 +1,178 @@
 [
   {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/0MMCCY3FXI3HV6LM/3a457adbfa64db12aca7c0dc6806b7cc0321577d759d10c554fbae8de6bae1c2",
+    "reference": "SG261007OTHRBNYX",
+    "symbol": "S58",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-07",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 3.79,
+      "lowest": 3.75
+    },
+    "total_value": 1341731.82,
+    "total_shares_purchased": 355000,
+    "treasury_shares_after_purchase": 10386205,
+    "mandate": {
+      "mandate_total": 29728319,
+      "cumulative_purchased": 1790000,
+      "mandate_remaining": 27938319,
+      "mandate_start": "2026-07-17",
+      "mandate_end": "2027-07-17"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RZEA2J29P7MJ0FX3/6429d20c9cab6ae518787ec94142b7e8c9b7f83230524bd67a0b849bc9ddd890",
+    "reference": "SG261007OTHRIBLW",
+    "symbol": "H13",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-07",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 1.91,
+      "lowest": 1.9
+    },
+    "total_value": 42589.0,
+    "total_shares_purchased": 22300,
+    "treasury_shares_after_purchase": 39343900,
+    "mandate": {
+      "mandate_total": 33200820,
+      "cumulative_purchased": 22300,
+      "mandate_remaining": 33178520,
+      "mandate_start": "2026-04-29",
+      "mandate_end": "2027-04-29"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/VBGF8D1UBCFFFU9D/6892b59bb53b893c0230a2e847a304538f91172e97a01ef3535ab0d9345286d7",
+    "reference": "SG261007OTHR9UA3",
+    "symbol": "U11",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-07",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 43.69,
+      "lowest": 42.44
+    },
+    "total_value": 2749498.2,
+    "total_shares_purchased": 64000,
+    "treasury_shares_after_purchase": 14548000,
+    "mandate": {
+      "mandate_total": 82676174,
+      "cumulative_purchased": 6037600,
+      "mandate_remaining": 76638574,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/HWDSI7J0CX8JLZK1/b997c9f65a0918dd9bc9f330ff71d3b0948333938752f871ac3561167f1d31db",
+    "reference": "SG261007OTHR89WO",
+    "symbol": "BSL",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-07",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 0.825
+    },
+    "total_value": 454343.5,
+    "total_shares_purchased": 550000,
+    "treasury_shares_after_purchase": 51255400,
+    "mandate": {
+      "mandate_total": 184016087,
+      "cumulative_purchased": 7592600,
+      "mandate_remaining": 176423487,
+      "mandate_start": "2026-04-24",
+      "mandate_end": "2027-04-24"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ISE2YT67YC7IQ08K/20e240536b1f380b23b29596637a8d35a259cc906c11be3cf30ae3a1ef5f0417",
+    "reference": "SG261007OTHRXMHP",
+    "symbol": "BN4",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy Back Notice",
+    "purchase_date": "2026-10-07",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 11.11,
+      "lowest": 10.93
+    },
+    "total_value": 2207355.39,
+    "total_shares_purchased": 200000,
+    "treasury_shares_after_purchase": 32456258,
+    "mandate": {
+      "mandate_total": 90646698,
+      "cumulative_purchased": 24848000,
+      "mandate_remaining": 65798698,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/G14RPKV1X7JBRD62/e8f382e81cc71b1e61f4a143c59e6df1c36f62335f9685f89e191127686e74e8",
+    "reference": "SG261007OTHRPK41",
+    "symbol": "H30",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-07",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 0.955,
+      "lowest": 0.945
+    },
+    "total_value": 847931.31,
+    "total_shares_purchased": 887700,
+    "treasury_shares_after_purchase": 80288100,
+    "mandate": {
+      "mandate_total": 80371314,
+      "cumulative_purchased": 13389100,
+      "mandate_remaining": 66982214,
+      "mandate_start": "2026-04-30",
+      "mandate_end": "2027-04-30"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/KSVL5HWJFB848HDH/48225f9e696ce9f8bdd51ba53922a284d6c194dd5c1735a630457c5035c71dd4",
+    "reference": "SG261006OTHRWAKL",
+    "symbol": "F9D",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy-Back - Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-06",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 1.76
+    },
+    "total_value": 905808.43,
+    "total_shares_purchased": 513600,
+    "treasury_shares_after_purchase": 23535400,
+    "mandate": {
+      "mandate_total": 50472379,
+      "cumulative_purchased": 941500,
+      "mandate_remaining": 49530879,
+      "mandate_start": "2026-07-30",
+      "mandate_end": "2027-07-30"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XBABM9WYTKJ3FXAY/43be2a1c7d36586499ef7a00aeda974225ec3fb7eb7debcbe308c963136658a9",
+    "reference": "SG261006OTHR1JFA",
+    "symbol": "5E2",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy Back Notice",
+    "purchase_date": "2026-10-06",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 1.993
+    },
+    "total_value": 1995443.93,
+    "total_shares_purchased": 1000000,
+    "treasury_shares_after_purchase": 35559425,
+    "mandate": {
+      "mandate_total": 67597276,
+      "cumulative_purchased": 14930000,
+      "mandate_remaining": 52667276,
+      "mandate_start": "2026-04-22",
+      "mandate_end": "2027-04-22"
+    }
+  },
+  {
     "url": "https://links.sgx.com/1.0.0/corporate-announcements/NGWDIARNJY6Q1DGA/871458e36dbc68a0c2f0d121ff9eb9048cd44570aa2f8e509d73d0606739efdc",
     "reference": "SG261006OTHRU4PW",
     "symbol": "5UX",
@@ -191,266 +364,6 @@
       "mandate_total": 90646698,
       "cumulative_purchased": 24648000,
       "mandate_remaining": 65998698,
-      "mandate_start": "2026-04-17",
-      "mandate_end": "2027-04-17"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/16WD77U0ATCOELI3/8555383ba35d7ab09709d81356acca623576e3980beead647e385821150a7a20",
-    "reference": "SG261005OTHR97YN",
-    "symbol": "F9D",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy-Back - Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "price_paid_per_share": 1.76
-    },
-    "total_value": 240737.92,
-    "total_shares_purchased": 136500,
-    "treasury_shares_after_purchase": 23021800,
-    "mandate": {
-      "mandate_total": 50472379,
-      "cumulative_purchased": 427900,
-      "mandate_remaining": 50044479,
-      "mandate_start": "2026-07-30",
-      "mandate_end": "2027-07-30"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/L4F1UPKZ9DL0RP9S/9d8de8c456e58b7a1a4d55419fb083447077255b777e3637531da90f3f1b4df4",
-    "reference": "SG261005OTHRBTQE",
-    "symbol": "RE4",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy - Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 0.61,
-      "lowest": 0.59
-    },
-    "total_value": 3618676.83,
-    "total_shares_purchased": 6000000,
-    "treasury_shares_after_purchase": 10673867,
-    "mandate": {
-      "mandate_total": 178037452,
-      "cumulative_purchased": 11837500,
-      "mandate_remaining": 166199952,
-      "mandate_start": "2026-04-29",
-      "mandate_end": "2027-04-29"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/A2LEUZ9DN9GVA5C2/bb3c90e7584a5c69f3fd75aa08836653b3dbbbdedc9c7e970ab0b8f1875366e3",
-    "reference": "SG261005OTHRKYSO",
-    "symbol": "QC7",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 0.47,
-      "lowest": 0.465
-    },
-    "total_value": 91741.24,
-    "total_shares_purchased": 195700,
-    "treasury_shares_after_purchase": 17594686,
-    "mandate": {
-      "mandate_total": 94704131,
-      "cumulative_purchased": 1201400,
-      "mandate_remaining": 93502731,
-      "mandate_start": "2026-04-29",
-      "mandate_end": "2027-04-29"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/D9HO62IYMUOVPCSF/269e702a9a770d2a2a4a6ca7e257e9e496f5da86672f8becc0f8e50c90040067",
-    "reference": "SG261005OTHRSMFD",
-    "symbol": "LJ3",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "price_paid_per_share": 0.9041
-    },
-    "total_value": 95800.14,
-    "total_shares_purchased": 105800,
-    "treasury_shares_after_purchase": 25134600,
-    "mandate": {
-      "mandate_total": 75108892,
-      "cumulative_purchased": 424100,
-      "mandate_remaining": 74684792,
-      "mandate_start": "2026-04-24",
-      "mandate_end": "2027-04-24"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XMLFDK33F30FZ8Z8/1073a184be874897a9608327ceb089903486888667e756d82baf50ef26d95baa",
-    "reference": "SG261005OTHRCP3F",
-    "symbol": "BSL",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "price_paid_per_share": 0.82
-    },
-    "total_value": 410536.28,
-    "total_shares_purchased": 500000,
-    "treasury_shares_after_purchase": 50055400,
-    "mandate": {
-      "mandate_total": 184016087,
-      "cumulative_purchased": 6392600,
-      "mandate_remaining": 177623487,
-      "mandate_start": "2026-04-24",
-      "mandate_end": "2027-04-24"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/XIUO79RLSPQ3VQ4K/702d241f908c6ccab6116276f941aaadbe354e31e1afaa45f23f440042122a09",
-    "reference": "SG261005OTHRLTF8",
-    "symbol": "5UX",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "price_paid_per_share": 0.072
-    },
-    "total_value": 5806.5,
-    "total_shares_purchased": 80000,
-    "treasury_shares_after_purchase": 123144900,
-    "mandate": {
-      "mandate_total": 210983495,
-      "cumulative_purchased": 20560800,
-      "mandate_remaining": 190422695,
-      "mandate_start": "2025-10-27",
-      "mandate_end": "2026-10-27"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/9DDNJEDTXDOV0IWQ/f746110515fefa981d1d523290e3a804c0740e1ffbee9fcc35983cbd4b6bc403",
-    "reference": "SG261005OTHROUPP",
-    "symbol": "U11",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 43.39,
-      "lowest": 42.57
-    },
-    "total_value": 2750564.83,
-    "total_shares_purchased": 64000,
-    "treasury_shares_after_purchase": 14548000,
-    "mandate": {
-      "mandate_total": 82676174,
-      "cumulative_purchased": 5909600,
-      "mandate_remaining": 76766574,
-      "mandate_start": "2026-04-17",
-      "mandate_end": "2027-04-17"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/JHG1YH9V2T9EUK70/ba85ee4069c9a8a6482eb7f394dc4bcfeffee95dcd5b858081cfe98d01ef2d7e",
-    "reference": "SG261005OTHRYOQL",
-    "symbol": "A30",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy Back",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 0.153,
-      "lowest": 0.152
-    },
-    "total_value": 25802.25,
-    "total_shares_purchased": 169000,
-    "treasury_shares_after_purchase": 27917515,
-    "mandate": {
-      "mandate_total": 93791434,
-      "cumulative_purchased": 7544300,
-      "mandate_remaining": 86247134,
-      "mandate_start": "2026-04-28",
-      "mandate_end": "2027-04-28"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/CZ326OX3777HEX9D/029fa9e6928fcfe2a4afb2c96cbc0001a7d534b48569d14859d559fd4c0b5608",
-    "reference": "SG261005OTHRHH36",
-    "symbol": "S58",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 3.75,
-      "lowest": 3.72
-    },
-    "total_value": 1346860.95,
-    "total_shares_purchased": 360000,
-    "treasury_shares_after_purchase": 9676205,
-    "mandate": {
-      "mandate_total": 29728319,
-      "cumulative_purchased": 1080000,
-      "mandate_remaining": 28648319,
-      "mandate_start": "2026-07-17",
-      "mandate_end": "2027-07-17"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/667ONUC03M21AY4N/6be081589a8ee2da9ddcad61bbbb40cc75dfaae887193e9b0880b30354a88a82",
-    "reference": "SG261005OTHRF9TQ",
-    "symbol": "H30",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 0.935,
-      "lowest": 0.915
-    },
-    "total_value": 644991.13,
-    "total_shares_purchased": 693800,
-    "treasury_shares_after_purchase": 78701400,
-    "mandate": {
-      "mandate_total": 80371314,
-      "cumulative_purchased": 11802400,
-      "mandate_remaining": 68568914,
-      "mandate_start": "2026-04-30",
-      "mandate_end": "2027-04-30"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/FQ8VKTEAQBPNE0IJ/717cf1e79704fcb227e749cf91e9fa9863ed1d9b450dcef3365a119775696ee3",
-    "reference": "SG261005OTHRYN8K",
-    "symbol": "S68",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 20.77,
-      "lowest": 20.57
-    },
-    "total_value": 2590514.0,
-    "total_shares_purchased": 125000,
-    "treasury_shares_after_purchase": 1588916,
-    "mandate": {
-      "mandate_total": 107164240,
-      "cumulative_purchased": 2853000,
-      "mandate_remaining": 104311240,
-      "mandate_start": "2025-10-09",
-      "mandate_end": "2026-10-09"
-    }
-  },
-  {
-    "url": "https://links.sgx.com/1.0.0/corporate-announcements/DZOXWQCYV8W3J1LX/9cc5601d6da93c8ce299145aafb887d585b94edbe5c47e22a7254f9b415debec",
-    "reference": "SG261005OTHRXTEF",
-    "symbol": "BN4",
-    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy Back Notice",
-    "purchase_date": "2026-10-05",
-    "type": "On Market",
-    "price_per_share": {
-      "highest": 11.13,
-      "lowest": 11.01
-    },
-    "total_value": 2216547.4,
-    "total_shares_purchased": 200000,
-    "treasury_shares_after_purchase": 31856258,
-    "mandate": {
-      "mandate_total": 90646698,
-      "cumulative_purchased": 24248000,
-      "mandate_remaining": 66398698,
       "mandate_start": "2026-04-17",
       "mandate_end": "2027-04-17"
     }
