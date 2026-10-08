@@ -226,7 +226,7 @@ def run_managements_scraper(
              
             fallback_result = get_management_payload(
                 annual_report_url=annual_report_url,
-                models=["deepsek-v4-flash", "nvidia-nemotron-3-ultra"],
+                models=["gpt-oss-120b", "deepsek-v4-flash", "nvidia-nemotron-3-ultra"],
                 company_name=company_name,
                 is_fallback=True,
             )

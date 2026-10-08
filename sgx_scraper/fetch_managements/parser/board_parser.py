@@ -90,6 +90,7 @@ def get_range_pages(
     pdf_bytes: bytes,
     content_page: str,
     models: list[str] = [
+        "gpt-oss-120b",
         "nvidia-nemotron-3-ultra", 
         "deepsek-v4-flash"
     ],
@@ -135,6 +136,7 @@ def extract_board_of_director(
     pdf_text: str,
     company_name: str, 
     models: list[str] = [
+        "gpt-oss-120b",
         "nvidia-nemotron-3-ultra", 
         "deepsek-v4-flash"
     ],

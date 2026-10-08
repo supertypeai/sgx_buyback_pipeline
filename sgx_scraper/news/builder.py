@@ -154,7 +154,7 @@ def generate_news(
     payload: list[dict], 
     generate_type: str = "filing",
     models: list[str] = [
-        "gpt-oss-120b"
+        "gpt-oss-120b",
         "deepsek-v4-flash", 
         "nvidia-nemotron-3-ultra", 
     ]

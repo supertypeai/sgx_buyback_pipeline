@@ -28,9 +28,9 @@ def invoke_structured_llm(
     log_name: str,
     input_data: dict[str], 
     models: list[str] = [
+        "gpt-oss-120b",
         "nvidia-nemotron-3-ultra", 
         "deepsek-v4-flash",
-        "gpt-oss-120b"
     ],
     max_retry: int = 3,
     temperature: int = 0.3, 

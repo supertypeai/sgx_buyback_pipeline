@@ -237,6 +237,7 @@ def management_parser(
     pdf_bytes: bytes,
     company_name: str, 
     models: list[str]= [
+        "gpt-oss-120b",
         "nvidia-nemotron-3-ultra", 
         "deepsek-v4-flash"
     ],
@@ -296,7 +297,7 @@ def management_parser(
 
 def get_management_payload(
     annual_report_url: str,
-    models: list[str] = ["nvidia-nemotron-3-ultra", "deepsek-v4-flash"],
+    models: list[str] = ["gpt-oss-120b", "nvidia-nemotron-3-ultra", "deepsek-v4-flash"],
     company_name: str | None = None,
     effort: str = "low",
     is_fallback: bool = False,

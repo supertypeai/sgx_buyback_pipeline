@@ -70,9 +70,9 @@ def run_extraction(
     }
 
     for model in [
-        "deepsek-v4-flash"
-        "nvidia-nemotron-3-ultra",
         "gpt-oss-120b",
+        "deepsek-v4-flash",
+        "nvidia-nemotron-3-ultra",
     ]:
         try:
             llm = get_llm(model, temperature=0.2)

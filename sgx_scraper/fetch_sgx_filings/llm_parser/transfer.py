@@ -32,8 +32,8 @@ def classify_transfer(holder_name: str | None, circumstances_desc: str) -> dict 
     }
 
     for model in [
-        "nvidia-nemotron-3-ultra",
         "gpt-oss-120b",
+        "nvidia-nemotron-3-ultra",
     ]:
         try:
             llm = get_llm(model, temperature=0.2)
