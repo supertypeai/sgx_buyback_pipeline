@@ -14,24 +14,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/0625DU9V2XEXNERP/507bc884902a0e8b430325f09e9a132313a4b055d56ba6aa0ea807fbf185fb84",
     "timestamp": "2026-10-07 17:20:15",
-    "updated_on": "2026-10-08 23:12:50"
-  },
-  {
-    "symbol": "C07",
-    "reference": "SG261001DVCAM8W1",
-    "recording_date": "2026-10-09",
-    "ex_date": "2026-10-08",
-    "dividend_amount": 0.473193,
-    "payment_date": "2026-12-02",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Special",
-    "event_narrative": {
-      "narrative": "The special dividend is expected to be paid on or about 2nd December 2026.",
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/8WNL6M6MQN4ESOLE/e56eeb5f40178c1cb26fe8287e29229655241c3719102bf21ed11a008d65e9f3",
-    "timestamp": "2026-10-01 17:24:58",
-    "updated_on": "2026-10-08 23:13:04"
+    "updated_on": "2026-10-09 22:31:26"
   },
   {
     "symbol": "1B1",
@@ -48,14 +31,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/JED5ZGKUA3LO4TH8/380aa44d497736296609f44bfd6e60cfa08e8291b8bd74922347bc8efcbafd2a",
     "timestamp": "2026-09-14 06:21:05",
-    "updated_on": "2026-10-08 23:13:37"
+    "updated_on": "2026-10-09 22:32:12"
   },
   {
     "symbol": "P9D",
     "reference": "SG260827DVCAPW3Z",
     "recording_date": "2026-10-13",
     "ex_date": "2026-10-12",
-    "dividend_amount": 0.031216500000000005,
+    "dividend_amount": 0.031241000000000005,
     "payment_date": "2026-10-23",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Final",
@@ -65,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/CVUY39BJPI96ZZJD/1442216069a2cf013caacfd566f00b275e234f5f8ca7d3b3649ffa6d0f11519a",
     "timestamp": "2026-08-27 18:39:37",
-    "updated_on": "2026-10-08 23:14:19"
+    "updated_on": "2026-10-09 22:32:46"
   },
   {
     "symbol": "558",
@@ -82,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/WWV430ORVDO23IYB/d4be97edb83160680b5c9b18c713026eda72671255abbe273f44e3ea97bfcced",
     "timestamp": "2026-08-13 18:37:39",
-    "updated_on": "2026-10-08 23:15:42"
+    "updated_on": "2026-10-09 22:34:11"
   },
   {
     "symbol": "1F2",
@@ -99,6 +82,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/0ZO4A7E4KOXZTRGJ/70b19c8ee7bb056bed63306755eb210b5a703d422a2290e53e00e9809ae4bb13",
     "timestamp": "2026-08-13 17:26:19",
-    "updated_on": "2026-10-08 23:16:02"
+    "updated_on": "2026-10-09 22:34:30"
   }
 ]
