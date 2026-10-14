@@ -20,20 +20,18 @@ from sgx_scraper.fetch_sgx_filings.utils.constants import (
     CORPORATE_ACTION_CHECKBOX_KEY,
 )
 from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
+    get_db,
     build_filing_payload,
     needs_acting_party,
     is_unmoved_joint_holder,
 )
-from sgx_scraper.utils.json_helper import open_json
+from functools import lru_cache
 
 import logging
 import time
 
 
 LOGGER = logging.getLogger(__name__)
-
-TOP_200_PATH = "sgx_scraper/fetch_sgx_filings/data/db_top_200/records.json"
-
 
 def process_price_per_share_recover(
     record_filing: dict,
@@ -523,8 +521,18 @@ def process_regular_form_records(
         strip_internal_fields(record)
 
 
+@lru_cache(maxsize=1)
 def get_symbols_top_200() -> set[str]:
-    db_top_200 = open_json(TOP_200_PATH)
+    db_top_200 = get_db(
+        table="sgx_company_report",
+        columns="symbol",
+        query_modifier=lambda query: (
+            query
+            .not_.is_("market_cap", "null")
+            .order("market_cap", desc=True)
+            .limit(200)
+        ),
+    )
 
     return {
         record["symbol"]
