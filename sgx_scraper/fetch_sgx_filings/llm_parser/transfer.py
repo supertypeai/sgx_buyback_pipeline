@@ -2,13 +2,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
 from sgx_scraper.llm.client import get_llm
-from sgx_scraper.fetch_sgx_filings.llm_parser.transfer_prompt import (
-    SYSTEM_FORM_3_TRANSFER_PROMPT,
-    SYSTEM_TRANSFER_PROMPT,
-    TransferParties,
-    USER_FORM_3_TRANSFER_PROMPT,
-    USER_TRANSFER_PROMPT,
-)
+from sgx_scraper.fetch_sgx_filings.prompts import transfer as transfer_prompts
+from sgx_scraper.fetch_sgx_filings.prompts.models import TransferParties
 
 import json
 import logging
@@ -21,8 +16,8 @@ def classify_transfer(holder_name: str | None, circumstances_desc: str) -> dict 
     parser = JsonOutputParser(pydantic_object=TransferParties)
 
     prompt = ChatPromptTemplate.from_messages([
-        ('system', SYSTEM_TRANSFER_PROMPT),
-        ('user', USER_TRANSFER_PROMPT),
+        ('system', transfer_prompts.get_system_transfer_prompt()),
+        ('user', transfer_prompts.get_user_transfer_prompt()),
     ])
 
     input_data = {
@@ -32,8 +27,8 @@ def classify_transfer(holder_name: str | None, circumstances_desc: str) -> dict 
     }
 
     for model in [
+        "nvidia-nemotron-3-ultra_not_free",
         "gpt-oss-120b",
-        "nvidia-nemotron-3-ultra",
     ]:
         try:
             llm = get_llm(model, temperature=0.2)
@@ -93,8 +88,8 @@ def resolve_form_3_part_iii_iv_transfer_holder(records: list[dict]) -> str | Non
     parser = JsonOutputParser(pydantic_object=TransferParties)
 
     prompt = ChatPromptTemplate.from_messages([
-        ('system', SYSTEM_FORM_3_TRANSFER_PROMPT),
-        ('user', USER_FORM_3_TRANSFER_PROMPT),
+        ('system', transfer_prompts.get_system_form_3_transfer_prompt()),
+        ('user', transfer_prompts.get_user_form_3_transfer_prompt()),
     ])
 
     input_data = {
@@ -103,7 +98,7 @@ def resolve_form_3_part_iii_iv_transfer_holder(records: list[dict]) -> str | Non
     }
     
     for model in [
-        # "nvidia-nemotron-3-ultra",
+        "nvidia-nemotron-3-ultra",
         "gpt-oss-120b",
     ]:
         try:

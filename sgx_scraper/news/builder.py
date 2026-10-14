@@ -124,9 +124,9 @@ def clean_news_payload(
     companies_path = "data/sgx_companies.json"
     companies = open_json(companies_path)
 
-    symbol = record.get('symbol', '')
+    symbol = record.get('symbol') or ''
 
-    company = companies.get(symbol) or {}
+    company = companies.get(symbol.removesuffix('.SI')) or {}
     
     sector = company.get('sector')
     sub_sector = company.get('sub_sector')

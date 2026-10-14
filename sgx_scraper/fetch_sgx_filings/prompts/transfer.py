@@ -1,29 +1,8 @@
-from pydantic import Field, BaseModel
+# Prompts for naming the two sides of a transfer.
 
 
-class TransferParties(BaseModel):
-    transferor: str | None = Field(
-        default=None,
-        description=(
-            "The party whose holding is transferred AWAY (the 'from' side), taken "
-            "from the circumstance description, e.g. \"CICTML's unitholding\" or a "
-            "person's name. null if it cannot be identified from the description."
-        ),
-    )
-    transferee: str | None = Field(
-        default=None,
-        description=(
-            "The party RECEIVING the holding (the 'to' side), taken from the "
-            "circumstance description, e.g. 'its key management personnel and "
-            "eligible employees'. null if it cannot be identified from the description."
-        ),
-    )
-    reasoning: str = Field(
-        description="Briefly explain how you identified the transferor and transferee."
-    )
-
-
-SYSTEM_TRANSFER_PROMPT = """
+def get_system_transfer_prompt():
+    return """
             You identify the two parties of an off-market transfer reported in an SGX filing.
             Use the circumstance description and the filing party provided: identify who the
             securities moved FROM (the transferor) and who they moved TO (the transferee).
@@ -34,7 +13,9 @@ SYSTEM_TRANSFER_PROMPT = """
             the description, return null for that side.
         """
 
-USER_TRANSFER_PROMPT = """
+
+def get_user_transfer_prompt():
+    return """
             A transfer transaction was reported by the filing party below. From the
             circumstance description, identify the two sides of the transfer.
 
@@ -61,14 +42,18 @@ USER_TRANSFER_PROMPT = """
             {format_instructions}
         """
 
-SYSTEM_FORM_3_TRANSFER_PROMPT = """
+
+def get_system_form_3_transfer_prompt():
+    return """
             You determine whether one Form 3 filing proves an off-market transfer.
             Use all shareholder records provided together. Return the transferor and
             transferee only when the filing clearly identifies both parties. Use the
             holder names from the records and never invent a party.
         """
 
-USER_FORM_3_TRANSFER_PROMPT = """
+
+def get_user_form_3_transfer_prompt():
+    return """
             The following shareholder records came from one Form 3 filing. Their
             circumstances may identify transfer parties in another shareholder's
             Item 6, Item 8, or Item 9 text.

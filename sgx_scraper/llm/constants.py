@@ -1,4 +1,12 @@
 MODEL_CONFIG = {
+    "gpt-6-luna": {
+        "model": "openai/gpt-6-luna",
+        "provider": "openrouter",     
+    },
+    "glm-5.3-flash": {
+        "model": "z-ai/glm-5.3-flash",
+        "provider": "openrouter"
+    },
     "nvidia-nemotron-3-ultra": {
         "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "provider": "openrouter",

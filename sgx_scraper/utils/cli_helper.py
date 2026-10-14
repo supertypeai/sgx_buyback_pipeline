@@ -221,3 +221,21 @@ def get_db(table: str, columns: str = "*", query=None):
             record["symbol"] = strip_sgx_suffix(record["symbol"])
 
     return records
+
+
+def get_stored_news_sources(sources: list[str]) -> set[str]:
+    sources = [source for source in sources if source]
+
+    if not sources:
+        return set()
+
+    stored_news = get_db(
+        table="sgx_news",
+        columns="source",
+        query=lambda query: query.in_("source", sources),
+    )
+
+    return {
+        record["source"]
+        for record in stored_news
+    }

@@ -8,7 +8,7 @@ from sgx_scraper.fetch_reit_transaction.constant import (
 )
 from sgx_scraper.fetch_reit_transaction.parser import extract_properties
 from sgx_scraper.fetch_reit_transaction.utils.payload_helper import is_same_property
-from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
+from sgx_scraper.sgx_api.announcements import iter_sgx_announcements
 
 import logging
 import re

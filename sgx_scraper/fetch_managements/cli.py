@@ -1,4 +1,4 @@
-from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
+from sgx_scraper.sgx_api.announcements import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import upsert_to_db, push_to_db
 from sgx_scraper.alerting.mailer import send_sgx_alert_email
 from sgx_scraper.alerting.build_template import render_management_email_content
@@ -16,7 +16,8 @@ from .process_annual_report import (
     filter_lookup_announcements
 )
 from sgx_scraper.news.builder import generate_news
-from sgx_scraper.utils.cli_helper import get_db
+from sgx_scraper.utils.cli_helper import get_db, get_stored_news_sources
+from sgx_scraper.utils.sgx_symbol_helper import add_sgx_suffix
 
 import typer
 import logging
@@ -63,10 +64,18 @@ def run_tracking_management(
         for record in top_200
     }
 
+    # The companies file is refreshed monthly, building on it would overwrite
+    # every change tracked since the last refresh
     companies = {
-        symbol: record
-        for symbol, record in open_json("data/sgx_companies.json").items()
-        if symbol in top_200_symbols
+        record["symbol"]: record
+        for record in get_db(
+            table="sgx_companies",
+            columns="symbol,name,management,former_management",
+            query=lambda query: query.in_(
+                "symbol",
+                [add_sgx_suffix(symbol) for symbol in top_200_symbols],
+            ),
+        )
     }
 
     announcements = sorted(
@@ -115,6 +124,18 @@ def run_tracking_management(
         "payload management to upsert: %s",
         payload_management
     )
+
+    # Daily windows overlap, so an announcement comes back on later runs
+    stored_sources = get_stored_news_sources([
+        announcement.get("source")
+        for announcement in management_news_payload
+    ])
+
+    management_news_payload = [
+        announcement
+        for announcement in management_news_payload
+        if announcement.get("source") not in stored_sources
+    ]
 
     news_payload = generate_news(
         payload=management_news_payload,

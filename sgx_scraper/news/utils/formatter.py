@@ -28,23 +28,43 @@ def to_kebab(value: str | None) -> str:
     return SLUG_PATTERN.sub("-", value.strip()).strip("-").lower()
 
 
-def format_filing_input(filing: dict) -> str:
+NAMED_HOLDER_LIMIT = 3
+
+
+def format_filing_record(filing: dict) -> str:
     lines = [
-        f"symbol: {filing.get('symbol') or '-'}",
-        f"company name: {filing.get('company_name') or '-'}",
-        f"holder name: {filing.get('holder_name') or '-'}",
+        f"holder: {filing.get('holder_name') or '-'}",
         f"holder type: {filing.get('holder_type') or '-'}",
         f"transaction type: {filing.get('transaction_type') or '-'}",
-        f"shares transacted: {fmt_int(filing.get('amount_transaction'))}",
-        f"transaction value: {fmt_sgd(filing.get('transaction_value'))}",
-        f"price_per_share: {fmt_sgd(filing.get('price_per_share'))}",
-        f"holding before: {fmt_int(filing.get('holding_before'))}",
-        f"holding after: {fmt_int(filing.get('holding_after'))}",
-        f"ownership before: {filing.get('share_percentage_before')}",
-        f"ownership after: {filing.get('share_percentage_after')}",
-        f"timestamp: {filing.get('timestamp') or '-'}",
         f"tags: {', '.join(filing.get('tags') or []) or '-'}",
-        f"circumstances: {filing.get('circumstances_desc') or '-'}"
+        f"transaction date: {filing.get('timestamp') or '-'}",
+        f"title: {filing.get('title') or '-'}",
+        f"body: {filing.get('body') or '-'}",
+    ]
+    return '\n'.join(lines)
+
+
+def format_filing_input(filing: dict) -> str:
+    # The LLM miscounts the holders it leaves out, so the ones to name and
+    # the number of the rest are fixed here
+    related_records = filing.get('related_records') or []
+    named_holders = [
+        record.get('holder_name') or '-'
+        for record in related_records[:NAMED_HOLDER_LIMIT]
+    ]
+
+    lines = [
+        f"company: {filing.get('company_name') or '-'} ({filing.get('symbol') or '-'})",
+        f"number of records: {len(related_records) + 1}",
+        "",
+        "Main record, the holder the entry is about:",
+        format_filing_record(filing),
+        "",
+        "Other records of the same transaction:",
+        '\n\n'.join(format_filing_record(record) for record in related_records) or "None",
+        "",
+        f"Related holders to name in the entry: {', '.join(named_holders) or 'None'}",
+        f"Number of further related holders, not named: {max(len(related_records) - NAMED_HOLDER_LIMIT, 0)}",
     ]
     return '\n'.join(lines)
 

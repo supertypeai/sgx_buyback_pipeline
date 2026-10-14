@@ -127,6 +127,14 @@ def extract_others_description(
                 
                 # Skip if it's just empty or very short
                 text = block['text'].strip()
+
+                if re.match(
+                    r'Table\s+\d+\.\s+Change\s+in\s+respect\s+of',
+                    text,
+                    re.IGNORECASE,
+                ):
+                    break
+
                 # Ignore very short text
                 if len(text) > 3:  
                     description_parts.append(text)
@@ -526,4 +534,3 @@ def contains_share_rule(table: list[list[str]]) -> bool:
         return True
     
     return False
-

@@ -21,7 +21,7 @@ from sgx_scraper.fetch_agm.utils.payload_helper import (
     split_meeting_datetime,
 )
 from sgx_scraper.fetch_agm.utils.sias_helper import build_sias_index, build_qa, find_sias_entry
-from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
+from sgx_scraper.sgx_api.announcements import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import upsert_to_db
 from sgx_scraper.utils.date_helper import to_iso_date
 from sgx_scraper.utils.json_helper import open_json, write_json

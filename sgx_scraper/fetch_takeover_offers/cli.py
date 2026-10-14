@@ -1,6 +1,10 @@
-from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
+from sgx_scraper.sgx_api.announcements import iter_sgx_announcements
 from sgx_scraper.news.builder import generate_news
-from sgx_scraper.utils.cli_helper import push_to_db, filter_top_n_companies
+from sgx_scraper.utils.cli_helper import (
+    push_to_db,
+    filter_top_n_companies,
+    get_stored_news_sources,
+)
 from .parser import get_takeover
 
 import typer
@@ -24,17 +28,27 @@ def run_sgx_buyback_scraper(
 
     payload = []
 
-    announcements = iter_sgx_announcements(
+    announcements = list(iter_sgx_announcements(
         sub_category="ANNC27",
         flag_log="Takeover",
         period_start=period_start,
         period_end=period_end,
         page_size=page_size,
         is_proxy=is_proxy,
-    )
-    
+    ))
+
+    # Daily windows overlap, so an announcement comes back on later runs
+    stored_sources = get_stored_news_sources([
+        announcement.get("url")
+        for announcement in announcements
+    ])
+
     for index, announcement in enumerate(announcements, start=1):
         url = announcement.get("url")
+
+        if url in stored_sources:
+            logger.info("Skipping takeover, news already stored: %s", url)
+            continue
 
         logger.info(
             "Processing %d/%d | url: %s", 

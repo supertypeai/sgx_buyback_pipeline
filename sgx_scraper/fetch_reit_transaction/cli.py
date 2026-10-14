@@ -18,7 +18,7 @@ from sgx_scraper.fetch_reit_transaction.utils.payload_helper import (
     to_date,
 )
 from sgx_scraper.fetch_reit_transaction.utils.plan_lookup import find_plan_property, is_completion
-from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
+from sgx_scraper.sgx_api.announcements import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import upsert_to_db
 from sgx_scraper.utils.json_helper import open_json, write_json
 

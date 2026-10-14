@@ -1,6 +1,6 @@
 from dataclasses import asdict
 
-from sgx_scraper.sgx_api.scraper_sgx_api import iter_sgx_announcements
+from sgx_scraper.sgx_api.announcements import iter_sgx_announcements
 from sgx_scraper.utils.cli_helper import push_to_db, remove_duplicate, filter_top_n_companies
 from sgx_scraper.utils.json_helper import write_json, write_to_csv
 from sgx_scraper.utils.constant import (

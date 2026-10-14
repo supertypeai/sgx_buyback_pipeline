@@ -64,19 +64,37 @@ def get_management_update(
         company_record["former_management"] = former_managements
 
     if category == "announcement of appointment":
-        management_db_record.append({
-            "name": announcement.get("name"),
-            "position": announcement.get("position"),
-            "age": announcement.get("age"),
-            "start_date": announcement.get("start_date"),
-        })
-        
-        LOGGER.info(
-            "[TRACKING MANAGEMENT] added new diretor name: %s | positioon: %s | symbol: %s",
-            announcement.get("name"),
-            announcement.get("position"),
-            symbol,
+        # Daily windows overlap, so the same appointment comes back on later runs
+        is_tracked = any(
+            record.get("start_date") == announcement.get("start_date")
+            and fuzz.ratio(
+                record.get("name", ""),
+                announcement.get("name", "")
+            ) >= 90
+            for record in management_db_record
         )
+
+        if is_tracked:
+            LOGGER.info(
+                "[TRACKING MANAGEMENT] appointment already tracked name: %s | symbol: %s",
+                announcement.get("name"),
+                symbol,
+            )
+
+        else:
+            management_db_record.append({
+                "name": announcement.get("name"),
+                "position": announcement.get("position"),
+                "age": announcement.get("age"),
+                "start_date": announcement.get("start_date"),
+            })
+
+            LOGGER.info(
+                "[TRACKING MANAGEMENT] added new diretor name: %s | positioon: %s | symbol: %s",
+                announcement.get("name"),
+                announcement.get("position"),
+                symbol,
+            )
 
     elif category == "announcement of cessation":
         matched = False

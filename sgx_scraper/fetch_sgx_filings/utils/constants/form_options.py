@@ -1,3 +1,5 @@
+# Checkbox labels on SGX Forms 1, 3 and 6, the transaction type and tags each
+# one gives, and the keywords and patterns used to read the forms.
 ACQUISITION_OPTIONS = {
     "Securities via market transaction": r"Securities via market transaction",
     "Securities via off-market transaction": r"Securities via off-market transaction",
@@ -22,11 +24,66 @@ OTHER_OPTIONS = {
     "Acceptance of take-over offer for Listed Issuer": r"Acceptance of take-over offer",
 }
 
+# OTHER_CIRCUMSTANCES_RULES = {
+#     "acceptance of employee share options/share awards": "others",
+#     "vesting of share awards": "others",
+#     "exercise of employee share options": "buy",
+#     "acceptance of take-over offer for the listed issuer": "sell"
+# }
+
+# Transaction type and tag mappings keyed by the exact SGX checkbox label.
+ACQUISITION_RULES = {
+    "Securities via market transaction": {
+        "transaction_type": "buy",
+        "tags": [],
+    },
+    "Securities via off-market transaction": {  
+        "transaction_type": "buy",
+        "tags": [],
+    },
+    "Securities via physical settlement": {
+        "transaction_type": "buy",
+        "tags": [],
+    },
+    "Securities pursuant to rights issue": {
+        "transaction_type": "buy",
+        "tags": ["rights-offering"],
+    },
+    "Securities via a placement": {
+        "transaction_type": "buy",
+        "tags": [],
+    },
+    "Securities following conversion/exercise": {
+        "transaction_type": "buy",
+        "tags": [],
+    },
+    "Securities as part of management": {
+        "transaction_type": "others",
+        "tags": ["management-fees"],
+    },
+}
+
 OTHER_CIRCUMSTANCES_RULES = {
-    "acceptance of employee share options/share awards": "award",
-    "vesting of share awards": "award",
-    "exercise of employee share options": "buy",
-    "acceptance of take-over offer for the listed issuer": "sell"
+    "Acceptance of employee share options/share awards": {
+        "transaction_type": "others",
+        "tags": ["award"],
+    },
+    "Vesting of share awards": {
+        "transaction_type": "others",
+        "tags": ["award"],
+    },
+    "Exercise of employee share options": {
+        "transaction_type": "buy",
+        "tags": ["option-exercise"],
+    },
+    "Acceptance of take-over offer": {
+        "transaction_type": "sell",
+        "tags": ["takeover"],
+    },
+    "Acceptance of take-over offer for Listed Issuer": {
+        "transaction_type": "sell",
+        "tags": [],
+    },
 }
 
 TRANSACTION_KEYWORDS = {
@@ -97,6 +154,19 @@ KEYWORD_INTERNAL_RESTRUCTURING = [
 KEYWORD_GIFT = [
     "by way of gift", "as a gift",
 ]
+KEYWORD_SHARE_BUYBACK = [
+    "share buyback", "share buy back", "share buy-back",
+    "equal access scheme", "repurchase of shares", "share repurchase",
+]
+
+CORPORATE_ACTION_CHECKBOX_KEY = "Corporate action by Listed Issuer"
+
+# Free-text corporate actions only get a deterministic classification when the
+# description explicitly names a share buyback; the rest go to the LLM fallback.
+SHARE_BUYBACK_RULE = {
+    "transaction_type": "others",
+    "tags": ["share-buyback"],
+}
 
 # Checkbox keys that all map to the employee-share-plan tag.
 EMPLOYEE_CHECKBOX_KEYS = [
@@ -109,3 +179,19 @@ TAKEOVER_CHECKBOX_KEYS = [
     "Acceptance of take-over offer",
     "Acceptance of take-over offer for Listed Issuer",
 ]
+
+
+# Form checkboxes read as option sets: each key is the stored value and each
+# pattern matches the option's printed label.
+NOTIFICATION_TYPE_OPTIONS = {
+    "becoming": r"^Becoming a Substantial",
+    "change_in_level": r"^Change in the percentage level",
+    "ceasing": r"^Ceasing to be a Substantial",
+}
+ISSUER_TYPE_OPTIONS = {
+    "company": r"^Company/Corporation$",
+    "business_trust": r"^Registered/Recognised Business Trust$",
+    "reit": r"^Real Estate Investment Trust$",
+}
+TRANSACTION_REFERENCE_LABEL = r"Transaction Reference Number\s*\(\s*auto-generated\s*\)"
+TRANSACTION_REFERENCE_LENGTH = 15
