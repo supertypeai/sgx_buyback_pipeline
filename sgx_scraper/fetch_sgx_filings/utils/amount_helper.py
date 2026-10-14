@@ -420,16 +420,6 @@ def build_value(
         # If any clarification pattern exists, don't multiply
         is_clarification = has_per_share_clarification or has_or_pattern or has_at_pattern or has_at_price_pattern
 
-        # Handle text contains context
-        context_patterns = [
-            r'pursuant\s+to',
-        ]
-
-        has_context = any(
-            re.search(pattern, clean_value, re.IGNORECASE) 
-            for pattern in context_patterns
-        )
-
         should_multiply = (
             PER_SECURITY_PATTERN.search(clean_value) is not None or
             is_total_too_small_to_be_total(

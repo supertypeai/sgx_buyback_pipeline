@@ -172,7 +172,7 @@ def contains_any_keyword(text: str, keywords: list) -> bool:
 
 def filter_duplicate(payload: list[dict[str, any]]) -> list[dict]:
     if not payload:
-        LOGGER.info(f'Payload is empty, skipping filter duplicate')
+        LOGGER.info('Payload is empty, skipping filter duplicate')
         return []
 
     cleaned_payload = []
