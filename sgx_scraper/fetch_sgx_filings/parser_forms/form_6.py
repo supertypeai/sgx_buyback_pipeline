@@ -1,6 +1,6 @@
 from .base_parser import BaseFormParser 
 from .transaction_record_builder import TransactionRecordBuilder
-from sgx_scraper.fetch_sgx_filings.utils.payload_helper import classify_holder_type
+from sgx_scraper.fetch_sgx_filings.utils.holder_helper import classify_holder_type
 from sgx_scraper.fetch_sgx_filings.utils.payload_pdf_helper import (
     find_options_in_range,
     get_all_text_blocks,

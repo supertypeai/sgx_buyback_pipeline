@@ -1,6 +1,6 @@
 from sgx_scraper.utils.date_helper import safe_convert_datetime
 from .base_parser import BaseFormParser
-from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
+from sgx_scraper.fetch_sgx_filings.utils.amount_helper import (
     safe_convert_float,
     build_value,
     build_price_per_share,
@@ -8,8 +8,10 @@ from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     pick_stated_amount,
     consideration_contradicts_amount,
     build_price_tranches,
-    clean_holder_name, 
-    classify_holder_type
+)
+from sgx_scraper.fetch_sgx_filings.utils.holder_helper import (
+    clean_holder_name,
+    classify_holder_type,
 )
 
 import logging

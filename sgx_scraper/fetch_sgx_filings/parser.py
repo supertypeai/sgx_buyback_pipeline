@@ -19,11 +19,13 @@ from sgx_scraper.fetch_sgx_filings.utils.currency_converter import (
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
     CORPORATE_ACTION_CHECKBOX_KEY,
 )
+from sgx_scraper.fetch_sgx_filings.utils.title_body_helper import (
+    needs_acting_party,
+    is_unmoved_joint_holder,
+)
 from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
     get_db,
     build_filing_payload,
-    needs_acting_party,
-    is_unmoved_joint_holder,
 )
 from functools import lru_cache
 

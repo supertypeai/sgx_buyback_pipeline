@@ -20,13 +20,15 @@ from sgx_scraper.fetch_sgx_filings.prompts.models import (
 )
 from sgx_scraper.utils.http_client import HTTPCLIENT
 from sgx_scraper.fetch_sgx_filings.parser_forms.base_parser import BaseFormParser
-from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
+from sgx_scraper.fetch_sgx_filings.utils.amount_helper import (
     safe_convert_float,
     build_value,
     build_price_per_share,
     build_price_tranches,
     clean_amount_text,
     consideration_contradicts_amount,
+)
+from sgx_scraper.fetch_sgx_filings.utils.holder_helper import (
     format_holder_name,
     clean_holder_name,
 )

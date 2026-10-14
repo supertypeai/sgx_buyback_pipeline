@@ -6,6 +6,7 @@ from datetime import date, datetime
 from functools import lru_cache
 
 import logging
+import re
 import requests
 
 
@@ -134,6 +135,31 @@ MAS_CURRENCIES = {
         100,
     ),
 }
+
+CURRENCY_CODES = (
+    "AED",
+    "AUD",
+    "CAD",
+    "CHF",
+    "CNY",
+    "EUR",
+    "GBP",
+    "HKD",
+    "IDR",
+    "INR",
+    "JPY",
+    "KRW",
+    "MYR",
+    "NZD",
+    "PHP",
+    "QAR",
+    "SAR",
+    "SGD",
+    "THB",
+    "TWD",
+    "USD",
+    "VND",
+)
 
 
 def parse_exchange_rate_date(
@@ -348,15 +374,55 @@ def calculate_currency_to_sgd(
         return None
 
 
-if __name__ == "__main__":
-    rate = get_latest_currency(
-        currency_from="USD",
-        exchange_rate_date="2026-03-13"
-    )
+def extract_currency_code(raw_value: str) -> str | None:
+    normalized_value = raw_value.upper()
+    
+    detected_currencies = {
+        currency_code
+        for currency_code in CURRENCY_CODES
+        # A code may be written straight against the figure, as in "USD14,584"
+        if re.search(rf"(?<![A-Z]){currency_code}(?![A-Z])", normalized_value)
+    }
 
-    result = calculate_currency_to_sgd(
-        amount=0.9991, 
-        rate_sgd=rate 
-    )
+    if "US$" in normalized_value:
+        detected_currencies.add("USD")
 
-    print(result)
+    if "HK$" in normalized_value:
+        detected_currencies.add("HKD")
+
+    if re.search(r"(?<![A-Z])S\$", normalized_value):
+        detected_currencies.add("SGD")
+
+    if "RMB" in normalized_value:
+        detected_currencies.add("CNY")
+
+    if len(detected_currencies) != 1:
+        return None
+
+    return detected_currencies.pop()
+
+
+def convert_price_to_sgd(
+    price: float | None,
+    raw_value: str,
+    exchange_rate_date: str | None,
+) -> float | None:
+    if price is None:
+        return None
+
+    currency_code = extract_currency_code(raw_value)
+
+    if currency_code is None or currency_code == "SGD":
+        return price
+
+    rate_sgd = get_latest_currency(currency_code, exchange_rate_date)
+
+    if rate_sgd is None:
+        LOGGER.warning(
+            "[currency_converter] Could not convert %s price on %s",
+            currency_code,
+            exchange_rate_date,
+        )
+        return None
+
+    return calculate_currency_to_sgd(price, rate_sgd, digits=4)

@@ -6,7 +6,6 @@ from sgx_scraper.fetch_sgx_filings.utils.constants.form_options import (
     OTHER_OPTIONS,
     ACQUISITION_RULES,
     OTHER_CIRCUMSTANCES_RULES,
-    TRANSACTION_KEYWORDS,
     TYPE_SECURITIES_SECTION_PATTERN,
     TYPE_SECURITIES_OPTIONS,
     KEYWORD_DIRECTOR_FEE,

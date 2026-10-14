@@ -86,36 +86,6 @@ OTHER_CIRCUMSTANCES_RULES = {
     },
 }
 
-TRANSACTION_KEYWORDS = {
-    # For compensation-related acquisitions
-    "award": [
-        "award", 
-        "grant",
-    ],
-    
-    # For acquisitions through special rights
-    "buy": [
-        'acquisition',
-        "exercise of options", 
-        "rights allotment", 
-        "share buy-back"
-    ],
-
-    # For transfers not on the open market
-    "transfer": [
-        "transfer",
-        "trust deed",
-        "spousal agreement"
-    ],
-
-    # For non-market sales or disposals
-    "sell": [
-        "disposal",
-        "disposed of",
-        "disposed"
-    ]
-}
-
 TYPE_SECURITIES_SECTION_PATTERN = r'Type of securities which are the subject of the transaction'
 
 TYPE_SECURITIES_OPTIONS = {

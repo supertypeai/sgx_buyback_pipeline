@@ -2,13 +2,17 @@ from abc import ABC, abstractmethod
 
 from sgx_scraper.utils.http_client import HTTPCLIENT
 from sgx_scraper.utils.symbol_matching_helper import matching_symbol
-from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
-    clean_holder_name,
-    populate_extra_data,
+from sgx_scraper.fetch_sgx_filings.utils.amount_helper import (
     safe_convert_float,
     shares_percentage_to_decimal,
-    get_circumstance_interest,
+)
+from sgx_scraper.fetch_sgx_filings.utils.holder_helper import clean_holder_name
+from sgx_scraper.fetch_sgx_filings.utils.title_body_helper import (
     generate_title_and_body as generate_title_and_body_helper,
+)
+from sgx_scraper.fetch_sgx_filings.utils.payload_helper import (
+    populate_extra_data,
+    get_circumstance_interest,
     contains_any_keyword,
 )
 from sgx_scraper.fetch_sgx_filings.utils.payload_pdf_helper import (

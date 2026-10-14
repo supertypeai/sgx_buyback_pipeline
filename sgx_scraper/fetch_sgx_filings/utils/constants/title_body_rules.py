@@ -19,7 +19,8 @@ from sgx_scraper.fetch_sgx_filings.utils.constants.form_options import (
 # A title also states how much was traded when the filing gives it: the total
 # value for a purchase or sale ("buys S$894K of C shares"), otherwise the
 # number of securities ("receives 58,700 C shares"). See build_action_title
-# and build_deemed_reason in utils/payload_helper.py.
+# and build_deemed_reason in utils/title_body_helper.py.
+
 def _title_body_rule(
     title: str | None,
     verb: str | None,
