@@ -1,10 +1,27 @@
 [
   {
+    "symbol": "LCC",
+    "reference": "SG261007DVCAYQH3",
+    "recording_date": "2026-10-30",
+    "ex_date": "2026-10-29",
+    "dividend_amount": 0.01,
+    "payment_date": "2026-11-13",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": "RHT Capital Pte. Ltd. is the Full Sponsor and Issue Manager for the initial public offering of the ordinary shares in, and listing of Lum Chang Creations Limited on the Catalist of the Singapore Exchange Securities Trading Limited. Lum Chang Creations Limited subsequently transferred its listing to the Mainboard of the Singapore Exchange Securities Trading Limited.",
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/N4ALEKYT900M70BD/ae423b4dad93caaf6b336f86563a044a89f06f7f05fd47fd199d85a479d25602",
+    "timestamp": "2026-10-07 17:22:41",
+    "updated_on": "2026-10-15 21:12:55"
+  },
+  {
     "symbol": "BBW",
     "reference": "SG261007DVCAMEPH",
     "recording_date": "2026-10-16",
     "ex_date": "2026-10-15",
-    "dividend_amount": 0.45696,
+    "dividend_amount": 0.45668,
     "payment_date": "2026-10-30",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Final",
@@ -14,7 +31,58 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/0625DU9V2XEXNERP/507bc884902a0e8b430325f09e9a132313a4b055d56ba6aa0ea807fbf185fb84",
     "timestamp": "2026-10-07 17:20:15",
-    "updated_on": "2026-10-14 21:31:35"
+    "updated_on": "2026-10-15 21:12:58"
+  },
+  {
+    "symbol": "C33",
+    "reference": "SG261002DVCAQ5FT",
+    "recording_date": "2026-10-30",
+    "ex_date": "2026-10-29",
+    "dividend_amount": 0.005,
+    "payment_date": "2026-11-11",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3DW5612C030JKLCQ/3c2b4351fb39f05b8f13aede1686b3e1e8af01d0fe4e3557b18b6d0c8863b295",
+    "timestamp": "2026-10-02 06:14:40",
+    "updated_on": "2026-10-15 21:13:05"
+  },
+  {
+    "symbol": "W05",
+    "reference": "SG260930DVCADHEU",
+    "recording_date": "2026-10-30",
+    "ex_date": "2026-10-29",
+    "dividend_amount": 0.01,
+    "payment_date": "2026-11-16",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Special",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/M5C13GPMIEQZWBKI/38cd2f520aaa9511c601835609d2f2de594a8190392f090decbac9d82b41a2d3",
+    "timestamp": "2026-09-30 07:03:12",
+    "updated_on": "2026-10-15 21:13:17"
+  },
+  {
+    "symbol": "W05",
+    "reference": "SG260930DVCAOH8J",
+    "recording_date": "2026-10-30",
+    "ex_date": "2026-10-29",
+    "dividend_amount": 0.03,
+    "payment_date": "2026-11-16",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/AS8PJYEOJCDU9IZU/c4582253b5fc6917a74e2e0f79a1efb9c922fdb38bd15bde9c8d46857dc06c43",
+    "timestamp": "2026-09-30 07:02:57",
+    "updated_on": "2026-10-15 21:13:19"
   },
   {
     "symbol": "1B1",
@@ -31,6 +99,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/JED5ZGKUA3LO4TH8/380aa44d497736296609f44bfd6e60cfa08e8291b8bd74922347bc8efcbafd2a",
     "timestamp": "2026-09-14 06:21:05",
-    "updated_on": "2026-10-14 21:32:20"
+    "updated_on": "2026-10-15 21:13:46"
   }
 ]
