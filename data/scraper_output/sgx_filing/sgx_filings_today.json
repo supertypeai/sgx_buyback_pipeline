@@ -1,1 +1,191 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KF30KK0SZHFU9O0G/907065__eFORM1V2-14102026-Dr%20Ng.pdf",
+    "timestamp": "2026-10-14",
+    "transaction_type": "buy",
+    "holder_name": "Dr Ng Chin Siau",
+    "transaction_value": 772002,
+    "share_percentage_transaction": {
+      "total": 0.0014,
+      "deemed": 0.0014,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 524176189,
+          "percentage": 0.5527
+        },
+        "deemed": {
+          "amount": 524147289,
+          "percentage": 0.5527
+        },
+        "direct": {
+          "amount": 28900,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 522776189,
+          "percentage": 0.5513
+        },
+        "deemed": {
+          "amount": 522747289,
+          "percentage": 0.5513
+        },
+        "direct": {
+          "amount": 28900,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "QC7.SI",
+    "price_per_share": [
+      {
+        "price": 0.5514,
+        "amount": 1400000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rises after S$772K share purchase",
+    "body": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rose after Quan Min Holdings Pte. Ltd bought 1,400,000 shares at S$0.5514 per share, for a total of S$772,002. The direct holding is unchanged at 28,900 shares. Total interest rises from 522,776,189 shares (55.13%) to 524,176,189 shares (55.27%).",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Q & M Dental Group (Singapore) Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "678791745842903",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 1,400,000 ordinary shares by a company in which the holder is deemed to have an interest",
+    "acting_party": "Quan Min Holdings Pte. Ltd"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4ZZIH2V2ZU96JAO9/907063__eFORM3V2-14102026-QMH.pdf",
+    "timestamp": "2026-10-14",
+    "transaction_type": "buy",
+    "holder_name": "Quan Min Holdings Pte. Ltd",
+    "transaction_value": 772002,
+    "share_percentage_transaction": {
+      "total": 0.0015,
+      "deemed": 0.0,
+      "direct": 0.0015
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 524026089,
+          "percentage": 0.5526
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 524026089,
+          "percentage": 0.5526
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 522626089,
+          "percentage": 0.5511
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 522626089,
+          "percentage": 0.5511
+        }
+      }
+    },
+    "symbol": "QC7.SI",
+    "price_per_share": [
+      {
+        "price": 0.5514,
+        "amount": 1400000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Quan Min Holdings Pte. Ltd buys S$772K of Q & M Dental Group (Singapore) Ltd shares",
+    "body": "Quan Min Holdings Pte. Ltd bought 1,400,000 shares of Q & M Dental Group (Singapore) Ltd in a market transaction at S$0.5514 per share, for a total of S$772,002. Total interest rises from 522,626,089 shares (55.11%) to 524,026,089 shares (55.26%).",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Q & M Dental Group (Singapore) Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "006611745852970",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4DODKO4OY9W5ZJAN/907008__KWS%20-%20Form%201.pdf",
+    "timestamp": "2026-10-14",
+    "transaction_type": "buy",
+    "holder_name": "Koh Wee Seng",
+    "transaction_value": 78750,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1567327454,
+          "percentage": 0.7597
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 212548512,
+          "percentage": 0.103
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1567077454,
+          "percentage": 0.7596
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 212298512,
+          "percentage": 0.1029
+        }
+      }
+    },
+    "symbol": "5UF.SI",
+    "price_per_share": [
+      {
+        "price": 0.315,
+        "amount": 250000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Koh Wee Seng buys S$78,750 of Aspial Lifestyle Ltd shares",
+    "body": "Koh Wee Seng bought 250,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.315 per share, for a total of S$78,750. Total interest rises from 1,567,077,454 shares (75.96%) to 1,567,327,454 shares (75.97%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "luxury-goods",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Aspial Lifestyle Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "701497346045901",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  }
+]
