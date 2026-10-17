@@ -1,206 +1,31 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/770YAW6MWS1MG74R/907209__eFORM1V2-15102026-Dr%20Ng.pdf",
-    "timestamp": "2026-10-15",
-    "transaction_type": "buy",
-    "holder_name": "Dr Ng Chin Siau",
-    "transaction_value": 2038651,
-    "share_percentage_transaction": {
-      "total": 0.0039,
-      "deemed": 0.0039,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 527859389,
-          "percentage": 0.5566
-        },
-        "deemed": {
-          "amount": 527830489,
-          "percentage": 0.5566
-        },
-        "direct": {
-          "amount": 28900,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 524176189,
-          "percentage": 0.5527
-        },
-        "deemed": {
-          "amount": 524147289,
-          "percentage": 0.5527
-        },
-        "direct": {
-          "amount": 28900,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "QC7.SI",
-    "price_per_share": [
-      {
-        "price": 0.5535,
-        "amount": 3683200
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rises after S$2.0M share purchase",
-    "body": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rose after Quan Min Holdings Pte. Ltd bought 3,683,200 shares at S$0.5535 per share, for a total of S$2,038,651. The direct holding is unchanged at 28,900 shares. Total interest rises from 524,176,189 shares (55.27%) to 527,859,389 shares (55.66%).",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "Q & M Dental Group (Singapore) Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "678791745842903",
-    "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the acquisition of 3,683,200 ordinary shares",
-    "acting_party": "Quan Min Holdings Pte. Ltd"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/U7LWUSIWAYOSMB38/907207__eFORM3V2-15102026-QMH.pdf",
-    "timestamp": "2026-10-15",
-    "transaction_type": "buy",
-    "holder_name": "Quan Min Holdings Pte. Ltd",
-    "transaction_value": 2038651,
-    "share_percentage_transaction": {
-      "total": 0.0039,
-      "deemed": 0.0,
-      "direct": 0.0039
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 527709289,
-          "percentage": 0.5565
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 527709289,
-          "percentage": 0.5565
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 524026089,
-          "percentage": 0.5526
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 524026089,
-          "percentage": 0.5526
-        }
-      }
-    },
-    "symbol": "QC7.SI",
-    "price_per_share": [
-      {
-        "price": 0.5535,
-        "amount": 3683200
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Quan Min Holdings Pte. Ltd buys S$2.0M of Q & M Dental Group (Singapore) Ltd shares",
-    "body": "Quan Min Holdings Pte. Ltd bought 3,683,200 shares of Q & M Dental Group (Singapore) Ltd in a market transaction at S$0.5535 per share, for a total of S$2,038,651. Total interest rises from 524,026,089 shares (55.26%) to 527,709,289 shares (55.65%).",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "Q & M Dental Group (Singapore) Ltd",
-    "filing_type": "form_3_part_ii",
-    "transaction_reference": "006611745852970",
-    "notification_type": "change_in_level",
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ILXFXNESX1DRFMN0/907185__eFORM1_ChengWK_151026_Final.pdf",
-    "timestamp": "2026-10-15",
-    "transaction_type": "buy",
-    "holder_name": "Cheng Wai Keung",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0002,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 486419859,
-          "percentage": 0.636
-        },
-        "deemed": {
-          "amount": 486205459,
-          "percentage": 0.6357
-        },
-        "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 486296259,
-          "percentage": 0.6358
-        },
-        "deemed": {
-          "amount": 486081859,
-          "percentage": 0.6355
-        },
-        "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
-        }
-      }
-    },
-    "symbol": "W05.SI",
-    "price_per_share": [
-      {
-        "price": null,
-        "amount": 123600
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 124K shares",
-    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 123,600 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 486,296,259 shares (63.58%) to 486,419,859 shares (63.60%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-development",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "Wing Tai Holdings Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "707549642691564",
-    "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the acquisition of 123,600 WTH shares by the holder's spouse",
-    "acting_party": "Chow Helen"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/T6O7G49W9F5623GR/907167__KWS%20-%20Form%201.pdf",
-    "timestamp": "2026-10-15",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/YAJZ6RCHQ0XAV2RB/907387__KWS%20-%20Form%201.pdf",
+    "timestamp": "2026-10-16",
     "transaction_type": "buy",
     "holder_name": "Koh Wee Seng",
-    "transaction_value": 468800,
+    "transaction_value": 96720,
     "share_percentage_transaction": {
-      "total": 0.0008,
+      "total": 0.0001,
       "deemed": 0.0,
-      "direct": 0.0008
+      "direct": 0.0001
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 1569144854,
+          "percentage": 0.7606
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 214365912,
+          "percentage": 0.1039
+        }
+      },
+      "before": {
         "total": {
           "amount": 1568827454,
           "percentage": 0.7605
@@ -213,64 +38,50 @@
           "amount": 214048512,
           "percentage": 0.1038
         }
-      },
-      "before": {
-        "total": {
-          "amount": 1567327454,
-          "percentage": 0.7597
-        },
-        "deemed": {
-          "amount": 1354778942,
-          "percentage": 0.6567
-        },
-        "direct": {
-          "amount": 212548512,
-          "percentage": 0.103
-        }
       }
     },
     "symbol": "5UF.SI",
     "price_per_share": [
       {
-        "price": 0.3125,
-        "amount": 1500000
+        "price": 0.3047,
+        "amount": 317400
       }
     ],
     "holder_type": "insider",
-    "title": "Koh Wee Seng buys S$469K of Aspial Lifestyle Ltd shares",
-    "body": "Koh Wee Seng bought 1,500,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.3125 per share, for a total of S$468,800. Total interest rises from 1,567,327,454 shares (75.97%) to 1,568,827,454 shares (76.05%).",
+    "title": "Koh Wee Seng buys S$96,720 of Aspial Lifestyle Ltd shares",
+    "body": "Koh Wee Seng bought 317,400 shares of Aspial Lifestyle Ltd in a market transaction at S$0.3047 per share, for a total of S$96,720. Total interest rises from 1,568,827,454 shares (76.05%) to 1,569,144,854 shares (76.06%).",
     "sector": "consumer-cyclicals",
     "sub_sector": "luxury-goods",
     "tags": [],
     "source_is_manual": false,
     "company_name": "Aspial Lifestyle Ltd",
     "filing_type": "form_1",
-    "transaction_reference": "592598346043530",
+    "transaction_reference": "212890346142450",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3O991ZOSB7M7H2JN/907159__eFORM3V2%20-%20Amova.pdf",
-    "timestamp": "2026-10-09",
-    "transaction_type": "others",
-    "holder_name": "Amova Asset Management Asia Limited",
-    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/QSYPNM0MKUGN05UK/907383__eFORM1V2%20-%20Mdm%20Michelle%20Liem%2016%20October%202026.pdf",
+    "timestamp": "2026-10-15",
+    "transaction_type": "buy",
+    "holder_name": "Michelle Liem Mei Fung",
+    "transaction_value": 529789,
     "share_percentage_transaction": {
-      "total": 0.0029,
-      "deemed": 0.0029,
+      "total": 0.00155,
+      "deemed": 0.00155,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 53812268,
-          "percentage": 0.0572
+          "amount": 766214929,
+          "percentage": 0.60351
         },
         "deemed": {
-          "amount": 53812268,
-          "percentage": 0.0572
+          "amount": 766214929,
+          "percentage": 0.60351
         },
         "direct": {
           "amount": 0,
@@ -279,12 +90,12 @@
       },
       "before": {
         "total": {
-          "amount": 53410268,
-          "percentage": 0.0601
+          "amount": 764252529,
+          "percentage": 0.60196
         },
         "deemed": {
-          "amount": 53410268,
-          "percentage": 0.0601
+          "amount": 764252529,
+          "percentage": 0.60196
         },
         "direct": {
           "amount": 0,
@@ -292,43 +103,48 @@
         }
       }
     },
-    "symbol": "558.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Amova Asset Management Asia Limited's deemed interest in UMS Integration Ltd falls to 5.72% from 6.01% after corporate action",
-    "body": "Amova Asset Management Asia Limited's deemed interest in UMS Integration Ltd moved from 6.01% to 5.72% following a corporate action by the company. The filing attributes the change to the completion of placement and the allotment and issuance of 52,941,100 new ordinary shares. No shares are held directly. Total interest rises from 53,410,268 shares (6.01%) to 53,812,268 shares (5.72%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
+    "symbol": "T24.SI",
+    "price_per_share": [
+      {
+        "price": 0.27,
+        "amount": 1962400
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rises after S$530K share purchase",
+    "body": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 1,962,400 shares in a market transaction at S$0.27 per share, for a total of S$529,789. No shares are held directly. Total interest rises from 764,252,529 shares (60.20%) to 766,214,929 shares (60.35%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-diversified",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "UMS Integration Ltd",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "153930643726273",
-    "notification_type": "change_in_level",
-    "circumstance_key": "Corporate action by Listed Issuer",
-    "change_reason": "the completion of placement and the allotment and issuance of 52,941,100 new ordinary shares",
+    "company_name": "Tuan Sing Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "289541643094354",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3O991ZOSB7M7H2JN/907159__eFORM3V2%20-%20Amova.pdf",
-    "timestamp": "2026-10-09",
-    "transaction_type": "others",
-    "holder_name": "Amova Asset Management International Limited",
-    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/J0J7PKTC19SOQZK4/907381__eFORM1V2%20-%20Mr%20William%20Liem%2016%20October%202026.pdf",
+    "timestamp": "2026-10-15",
+    "transaction_type": "buy",
+    "holder_name": "William Nursalim Alias William Liem",
+    "transaction_value": 529789,
     "share_percentage_transaction": {
-      "total": 0.0029,
-      "deemed": 0.0029,
+      "total": 0.00155,
+      "deemed": 0.00155,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 53812268,
-          "percentage": 0.0572
+          "amount": 766214929,
+          "percentage": 0.60351
         },
         "deemed": {
-          "amount": 53812268,
-          "percentage": 0.0572
+          "amount": 766214929,
+          "percentage": 0.60351
         },
         "direct": {
           "amount": 0,
@@ -337,12 +153,12 @@
       },
       "before": {
         "total": {
-          "amount": 53410268,
-          "percentage": 0.0601
+          "amount": 764252529,
+          "percentage": 0.60196
         },
         "deemed": {
-          "amount": 53410268,
-          "percentage": 0.0601
+          "amount": 764252529,
+          "percentage": 0.60196
         },
         "direct": {
           "amount": 0,
@@ -350,152 +166,244 @@
         }
       }
     },
-    "symbol": "558.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Amova Asset Management International Limited's deemed interest in UMS Integration Ltd falls to 5.72% from 6.01% after corporate action",
-    "body": "Amova Asset Management International Limited's deemed interest in UMS Integration Ltd moved from 6.01% to 5.72% following a corporate action by the company. The filing attributes the change to the completion of a placement and the allotment and issuance of 52,941,100 new ordinary shares. No shares are held directly. Total interest rises from 53,410,268 shares (6.01%) to 53,812,268 shares (5.72%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
+    "symbol": "T24.SI",
+    "price_per_share": [
+      {
+        "price": 0.27,
+        "amount": 1962400
+      }
+    ],
+    "holder_type": "insider",
+    "title": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rises after S$530K share purchase",
+    "body": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 1,962,400 shares in a market transaction at S$0.27 per share, for a total of S$529,789. No shares are held directly. Total interest rises from 764,252,529 shares (60.20%) to 766,214,929 shares (60.35%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-diversified",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "UMS Integration Ltd",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "153930643726273",
-    "notification_type": "change_in_level",
-    "circumstance_key": "Corporate action by Listed Issuer",
-    "change_reason": "the completion of a placement and the allotment and issuance of 52,941,100 new ordinary shares",
+    "company_name": "Tuan Sing Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "595990346142557",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3O991ZOSB7M7H2JN/907159__eFORM3V2%20-%20Amova.pdf",
-    "timestamp": "2026-10-09",
-    "transaction_type": "others",
-    "holder_name": "Amova Asset Management Co., Ltd",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/BYNAQK7AZDLRMC42/907347__KWS%20-%20Form%201.pdf",
+    "timestamp": "2026-10-16",
+    "transaction_type": "buy",
+    "holder_name": "Koh Wee Seng",
+    "transaction_value": 91500,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1569127454,
+          "percentage": 0.7606
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 214348512,
+          "percentage": 0.1039
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1568827454,
+          "percentage": 0.7605
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 214048512,
+          "percentage": 0.1038
+        }
+      }
+    },
+    "symbol": "5UF.SI",
+    "price_per_share": [
+      {
+        "price": 0.305,
+        "amount": 300000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Koh Wee Seng buys S$91,500 of Aspial Lifestyle Ltd shares",
+    "body": "Koh Wee Seng bought 300,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.305 per share, for a total of S$91,500. Total interest rises from 1,568,827,454 shares (76.05%) to 1,569,127,454 shares (76.06%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "luxury-goods",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Aspial Lifestyle Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "212890346142450",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/R1568YEYA80Z7ZA6/907340__eFORM1_ChengWK_161026_Final.pdf",
+    "timestamp": "2026-10-16",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
     "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 0.003,
-      "deemed": 0.003,
+      "total": 0.0,
+      "deemed": 0.0,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 55025168,
-          "percentage": 0.0585
+          "amount": 486454859,
+          "percentage": 0.636
         },
         "deemed": {
-          "amount": 55025168,
-          "percentage": 0.0585
+          "amount": 486240459,
+          "percentage": 0.6357
         },
         "direct": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 214400,
+          "percentage": 0.0003
         }
       },
       "before": {
         "total": {
-          "amount": 54623168,
-          "percentage": 0.0615
+          "amount": 486419859,
+          "percentage": 0.636
         },
         "deemed": {
-          "amount": 54623168,
-          "percentage": 0.0615
+          "amount": 486205459,
+          "percentage": 0.6357
         },
         "direct": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 214400,
+          "percentage": 0.0003
         }
       }
     },
-    "symbol": "558.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Amova Asset Management Co., Ltd's deemed interest in UMS Integration Ltd falls to 5.85% from 6.15% after corporate action",
-    "body": "Amova Asset Management Co., Ltd's deemed interest in UMS Integration Ltd moved from 6.15% to 5.85% following a corporate action by the company. The filing attributes the change to the completion of placement and the allotment and issuance of 52,941,100 new ordinary shares. No shares are held directly. Total interest rises from 54,623,168 shares (6.15%) to 55,025,168 shares (5.85%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "UMS Integration Ltd",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "153930643726273",
-    "notification_type": "change_in_level",
-    "circumstance_key": "Corporate action by Listed Issuer",
-    "change_reason": "the completion of placement and the allotment and issuance of 52,941,100 new ordinary shares",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3O991ZOSB7M7H2JN/907159__eFORM3V2%20-%20Amova.pdf",
-    "timestamp": "2026-10-09",
-    "transaction_type": "others",
-    "holder_name": "Sumitomo Mitsui Trust Group, Inc",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.003,
-      "deemed": 0.003,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 55025168,
-          "percentage": 0.0585
-        },
-        "deemed": {
-          "amount": 55025168,
-          "percentage": 0.0585
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 54623168,
-          "percentage": 0.0615
-        },
-        "deemed": {
-          "amount": 54623168,
-          "percentage": 0.0615
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 35000
       }
-    },
-    "symbol": "558.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Sumitomo Mitsui Trust Group, Inc's deemed interest in UMS Integration Ltd falls to 5.85% from 6.15% after corporate action",
-    "body": "Sumitomo Mitsui Trust Group, Inc's deemed interest in UMS Integration Ltd moved from 6.15% to 5.85% following a corporate action by the company. The filing attributes the change to the completion of placement and the allotment and issuance of 52,941,100 new ordinary shares. No shares are held directly. Total interest rises from 54,623,168 shares (6.15%) to 55,025,168 shares (5.85%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 35,000 shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 35,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 486,419,859 to 486,454,859 shares, with the stake unchanged at 63.60%.",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "UMS Integration Ltd",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "153930643726273",
-    "notification_type": "change_in_level",
-    "circumstance_key": "Corporate action by Listed Issuer",
-    "change_reason": "the completion of placement and the allotment and issuance of 52,941,100 new ordinary shares",
-    "acting_party": null
+    "company_name": "Wing Tai Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "497192246842712",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 35,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WRJV5WDFZQ5IXOPJ/907150__eFORM1V2-Han%20Seng%20Juan-20261015.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/M56OO4LCU9XENUHH/907332__Form%201%20-%20GLL%20Shares%20Acquisition%20on%2014%20Oct%202026_SGX.pdf",
     "timestamp": "2026-10-14",
     "transaction_type": "buy",
-    "holder_name": "Han Seng Juan",
-    "transaction_value": 98499,
+    "holder_name": "Quek Leng Chan",
+    "transaction_value": 705795,
     "share_percentage_transaction": {
-      "total": 9e-05,
-      "deemed": 0.0,
-      "direct": 9e-05
+      "total": 0.0002,
+      "deemed": 0.0002,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 851587970,
+          "percentage": 0.7196
+        },
+        "deemed": {
+          "amount": 851587970,
+          "percentage": 0.7196
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 851271470,
+          "percentage": 0.7194
+        },
+        "deemed": {
+          "amount": 851271470,
+          "percentage": 0.7194
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "F17.SI",
+    "price_per_share": [
+      {
+        "price": 2.23,
+        "amount": 316500
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Quek Leng Chan's deemed interest in GuocoLand Ltd rises after S$706K share purchase",
+    "body": "Quek Leng Chan's deemed interest in GuocoLand Ltd rose after GuoLine Group Management Company Pte. Ltd bought 316,500 shares in a market transaction at S$2.23 per share, for a total of S$705,795. No shares are held directly. Total interest rises from 851,271,470 shares (71.94%) to 851,587,970 shares (71.96%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "GuocoLand Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "747675458171311",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": "GuoLine Group Management Company Pte. Ltd"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7AWIBCVKRH2K4OY9/907330__eFORM1V2-Han%20Seng%20Juan-20261016.pdf",
+    "timestamp": "2026-10-15",
+    "transaction_type": "buy",
+    "holder_name": "Han Seng Juan",
+    "transaction_value": 128000,
+    "share_percentage_transaction": {
+      "total": 0.00012,
+      "deemed": 0.0,
+      "direct": 0.00012
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 373669026,
+          "percentage": 0.44443
+        },
+        "deemed": {
+          "amount": 243814026,
+          "percentage": 0.28999
+        },
+        "direct": {
+          "amount": 129855000,
+          "percentage": 0.15444
+        }
+      },
+      "before": {
         "total": {
           "amount": 373569026,
           "percentage": 0.44431
@@ -508,64 +416,50 @@
           "amount": 129755000,
           "percentage": 0.15432
         }
-      },
-      "before": {
-        "total": {
-          "amount": 373494026,
-          "percentage": 0.44422
-        },
-        "deemed": {
-          "amount": 243814026,
-          "percentage": 0.28999
-        },
-        "direct": {
-          "amount": 129680000,
-          "percentage": 0.15423
-        }
       }
     },
     "symbol": "OU8.SI",
     "price_per_share": [
       {
-        "price": 1.31333,
-        "amount": 75000
+        "price": 1.28,
+        "amount": 100000
       }
     ],
     "holder_type": "insider",
-    "title": "Han Seng Juan buys S$98,499 of Centurion Corp Ltd shares",
-    "body": "Han Seng Juan bought 75,000 shares of Centurion Corp Ltd in a market transaction at S$1.3133 per share, for a total of S$98,499. Total interest rises from 373,494,026 shares (44.42%) to 373,569,026 shares (44.43%).",
+    "title": "Han Seng Juan buys S$128K of Centurion Corp Ltd shares",
+    "body": "Han Seng Juan bought 100,000 shares of Centurion Corp Ltd in a market transaction at S$1.28 per share, for a total of S$128,000. Total interest rises from 373,569,026 shares (44.43%) to 373,669,026 shares (44.44%).",
     "sector": "consumer-cyclicals",
     "sub_sector": "hotels-resorts-leisure",
     "tags": [],
     "source_is_manual": false,
     "company_name": "Centurion Corp Ltd",
     "filing_type": "form_1",
-    "transaction_reference": "948799346042128",
+    "transaction_reference": "799390346141427",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/2RTAFN7AP1UHGDAY/907126__Digital%20Core%20REIT%20Form%203%20-%20FINAL.pdf",
-    "timestamp": "2026-10-13",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/IXEMOHEXXKBYDPH9/907297__CICT%2020261014%20Form%203_final.pdf",
+    "timestamp": "2026-10-14",
     "transaction_type": "sell",
-    "holder_name": "Cohen & Steers Capital Management, Inc",
-    "transaction_value": 991086,
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": 744724,
     "share_percentage_transaction": {
-      "total": 0.00143,
-      "deemed": 0.00143,
+      "total": 0.0001,
+      "deemed": 0.0001,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 101481421,
-          "percentage": 0.07949
+          "amount": 637749508,
+          "percentage": 0.0799
         },
         "deemed": {
-          "amount": 101481421,
-          "percentage": 0.07949
+          "amount": 637749508,
+          "percentage": 0.0799
         },
         "direct": {
           "amount": 0,
@@ -574,12 +468,12 @@
       },
       "before": {
         "total": {
-          "amount": 103303724,
-          "percentage": 0.08092
+          "amount": 638087908,
+          "percentage": 0.08
         },
         "deemed": {
-          "amount": 103303724,
-          "percentage": 0.08092
+          "amount": 638087908,
+          "percentage": 0.08
         },
         "direct": {
           "amount": 0,
@@ -587,26 +481,89 @@
         }
       }
     },
-    "symbol": "DCRU.SI",
+    "symbol": "C38U.SI",
     "price_per_share": [
       {
-        "price": 0.5439,
-        "amount": 1822303
+        "price": 2.2007,
+        "amount": 338400
       }
     ],
     "holder_type": "institution",
-    "title": "Cohen & Steers Capital Management, Inc's deemed interest in Digital Core REIT falls after S$991K unit sale",
-    "body": "Cohen & Steers Capital Management, Inc's deemed interest in Digital Core REIT fell after a party linked to the holder sold 1,822,303 units in a market transaction at S$0.5439 per unit, for a total of S$991,086. No units are held directly. Total interest falls from 103,303,724 units (8.09%) to 101,481,421 units (7.95%).",
+    "title": "BlackRock, Inc's deemed interest in CapitaLand Integrated Commercial Trust falls after S$745K unit sale",
+    "body": "BlackRock, Inc's deemed interest in CapitaLand Integrated Commercial Trust fell after a party linked to the holder sold 338,400 units in a market transaction at S$2.2007 per unit, for a total of S$744,724. No units are held directly. Total interest falls from 638,087,908 units (8.00%) to 637,749,508 units (7.99%).",
     "sector": "reit",
-    "sub_sector": "reit-data-centre",
+    "sub_sector": "reit-diversified",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "Digital Core REIT",
+    "company_name": "CapitaLand Integrated Commercial Trust",
     "filing_type": "form_3_part_ii",
-    "transaction_reference": "751318346054695",
+    "transaction_reference": "381413345152001",
     "notification_type": "change_in_level",
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/2DK4GIM1JAED5I7G/907289__20261016Form1_GSC.pdf",
+    "timestamp": "2026-10-15",
+    "transaction_type": "buy",
+    "holder_name": "Dato' Seri Gooi Soon Chai",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 101823091,
+          "percentage": 0.215
+        },
+        "deemed": {
+          "amount": 93706068,
+          "percentage": 0.1979
+        },
+        "direct": {
+          "amount": 8117023,
+          "percentage": 0.0171
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 101820091,
+          "percentage": 0.215
+        },
+        "deemed": {
+          "amount": 93703068,
+          "percentage": 0.1979
+        },
+        "direct": {
+          "amount": 8117023,
+          "percentage": 0.0171
+        }
+      }
+    },
+    "symbol": "E28.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 3000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd rises after purchase of 3,000 shares",
+    "body": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd rose after the holder's family bought 3,000 shares. The direct holding is unchanged at 8,117,023 shares. Total interest rises from 101,820,091 to 101,823,091 shares, with the stake unchanged at 21.50%.",
+    "sector": "technology",
+    "sub_sector": "communication-instruments",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Frencken Group Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "802190346141452",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 3,000 shares by his family via market transaction",
+    "acting_party": "the holder's family"
   }
 ]
