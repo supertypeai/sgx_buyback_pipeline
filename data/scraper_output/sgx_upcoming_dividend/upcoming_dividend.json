@@ -14,7 +14,24 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/N4ALEKYT900M70BD/ae423b4dad93caaf6b336f86563a044a89f06f7f05fd47fd199d85a479d25602",
     "timestamp": "2026-10-07 17:22:41",
-    "updated_on": "2026-10-19 22:14:24"
+    "updated_on": "2026-10-20 21:28:51"
+  },
+  {
+    "symbol": "BIX",
+    "reference": "SG261005DVCAU9WS",
+    "recording_date": "2026-11-04",
+    "ex_date": "2026-11-03",
+    "dividend_amount": 0.005,
+    "payment_date": "2026-11-19",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/QNYNH9SEJXAEK4CE/da65faacd90f02c4fc51670e13fab0a97e96f41a13534be453df763e71b5ff7b",
+    "timestamp": "2026-10-05 00:17:14",
+    "updated_on": "2026-10-20 21:28:59"
   },
   {
     "symbol": "C33",
@@ -31,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/3DW5612C030JKLCQ/3c2b4351fb39f05b8f13aede1686b3e1e8af01d0fe4e3557b18b6d0c8863b295",
     "timestamp": "2026-10-02 06:14:40",
-    "updated_on": "2026-10-19 22:14:32"
+    "updated_on": "2026-10-20 21:29:04"
   },
   {
     "symbol": "W05",
@@ -48,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/M5C13GPMIEQZWBKI/38cd2f520aaa9511c601835609d2f2de594a8190392f090decbac9d82b41a2d3",
     "timestamp": "2026-09-30 07:03:12",
-    "updated_on": "2026-10-19 22:14:46"
+    "updated_on": "2026-10-20 21:29:17"
   },
   {
     "symbol": "W05",
@@ -65,7 +82,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/AS8PJYEOJCDU9IZU/c4582253b5fc6917a74e2e0f79a1efb9c922fdb38bd15bde9c8d46857dc06c43",
     "timestamp": "2026-09-30 07:02:57",
-    "updated_on": "2026-10-19 22:14:50"
+    "updated_on": "2026-10-20 21:29:21"
   },
   {
     "symbol": "1B1",
@@ -82,14 +99,31 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/JED5ZGKUA3LO4TH8/380aa44d497736296609f44bfd6e60cfa08e8291b8bd74922347bc8efcbafd2a",
     "timestamp": "2026-09-14 06:21:05",
-    "updated_on": "2026-10-19 22:15:16"
+    "updated_on": "2026-10-20 21:29:46"
+  },
+  {
+    "symbol": "F17",
+    "reference": "SG260828DVCA4WFC",
+    "recording_date": "2026-11-04",
+    "ex_date": "2026-11-03",
+    "dividend_amount": 0.08,
+    "payment_date": "2026-11-18",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": "Members whose Securities Accounts with CDP are credited with Shares as at 5.00 p.m. on 4 November 2026 will be entitled to the proposed dividend.",
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/AEYWA3OXQM6L15BA/18c811774dbee4592c623297fa82792494a8e6d652a2660b050429b41984db1e",
+    "timestamp": "2026-08-28 07:49:56",
+    "updated_on": "2026-10-20 21:30:09"
   },
   {
     "symbol": "K29",
     "reference": "SG260827DVCAZS07",
     "recording_date": "2026-11-02",
     "ex_date": "2026-10-30",
-    "dividend_amount": 0.008164999999999999,
+    "dividend_amount": 0.008150000000000001,
     "payment_date": "2026-11-11",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Special",
@@ -99,14 +133,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/EICYZC8C2DKRYC6N/650fff21b5d1fec4fdfb5ab092528a069cc788269f6c25789e1bd00fa7f5ce62",
     "timestamp": "2026-08-27 22:16:56",
-    "updated_on": "2026-10-19 22:15:43"
+    "updated_on": "2026-10-20 21:30:12"
   },
   {
     "symbol": "K29",
     "reference": "SG260827DVCAGYW2",
     "recording_date": "2026-11-02",
     "ex_date": "2026-10-30",
-    "dividend_amount": 0.002939399999999999,
+    "dividend_amount": 0.002934,
     "payment_date": "2026-11-11",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Final",
@@ -116,7 +150,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/N99BU332HONMWTAF/fc48d2d2f569bca1eec21029a0debafc243521a005e9201a0f7c0ce975ba6abb",
     "timestamp": "2026-08-27 22:14:32",
-    "updated_on": "2026-10-19 22:15:47"
+    "updated_on": "2026-10-20 21:30:17"
   },
   {
     "symbol": "MIJ",
@@ -133,6 +167,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/EX1KRHPH2ZEHNFMI/d95f972cb12885f0a62e18728a1cbbe73fa9c9792c4050de06ebd2d530c76ef5",
     "timestamp": "2026-08-26 20:52:06",
-    "updated_on": "2026-10-19 22:16:01"
+    "updated_on": "2026-10-20 21:30:30"
   }
 ]
