@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/R2EUTIDQOPH8R0TM/0ded77e45ca450c09bf3c633c29f2e74e4eca7f4239a640f71950e8b58cef59b",
+    "reference": "SG261020OTHRODTY",
+    "symbol": "A30",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy Back",
+    "purchase_date": "2026-10-20",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 0.154,
+      "lowest": 0.153
+    },
+    "total_value": 79328.78,
+    "total_shares_purchased": 516800,
+    "treasury_shares_after_purchase": 29578015,
+    "mandate": {
+      "mandate_total": 93791434,
+      "cumulative_purchased": 9204800,
+      "mandate_remaining": 84586634,
+      "mandate_start": "2026-04-28",
+      "mandate_end": "2027-04-28"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/LRIU0AVAAZQHYWR4/118016c4546d96344c9cad819585a0b5d33fbcdffeef047005e162510e7fd4fb",
+    "reference": "SG261019OTHRNXHD",
+    "symbol": "V03",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-19",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 15.7
+    },
+    "total_value": 267269.54,
+    "total_shares_purchased": 17000,
+    "treasury_shares_after_purchase": 1340000,
+    "mandate": {
+      "mandate_total": 14375948,
+      "cumulative_purchased": 398100,
+      "mandate_remaining": 13977848,
+      "mandate_start": "2026-04-24",
+      "mandate_end": "2027-04-24"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/RVQCG6B882UITZM6/192f642342bdf511e1b9ab935c05b06e112a9a56007f3a5c8f1b787c68ac6e9e",
+    "reference": "SG261019OTHRTQ57",
+    "symbol": "1D0",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-19",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 0.37
+    },
+    "total_value": 37218.16,
+    "total_shares_purchased": 100000,
+    "treasury_shares_after_purchase": 5849206,
+    "mandate": {
+      "mandate_total": 124346960,
+      "cumulative_purchased": 1427700,
+      "mandate_remaining": 122919260,
+      "mandate_start": "2026-01-27",
+      "mandate_end": "2027-01-27"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/CWRF2QW9YDHBJ14X/301bb2dbfa104d4607eb0689c021d65eaaaf7ef7d7b9384e66ae19c072d73c17",
+    "reference": "SG261019OTHRUEOM",
+    "symbol": "U11",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-19",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 41.83,
+      "lowest": 41.45
+    },
+    "total_value": 2711432.59,
+    "total_shares_purchased": 65000,
+    "treasury_shares_after_purchase": 14548000,
+    "mandate": {
+      "mandate_total": 82676174,
+      "cumulative_purchased": 6575600,
+      "mandate_remaining": 76100574,
+      "mandate_start": "2026-04-17",
+      "mandate_end": "2027-04-17"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/VB61RO1S8O7HD11V/34855f7ba629b76c896c77a34d460e6b8c4e0ced68057ac0e59b8925517e1eb2",
+    "reference": "SG261019OTHR2FC8",
+    "symbol": "5UX",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-19",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 0.075,
+      "lowest": 0.071
+    },
+    "total_value": 9779.02,
+    "total_shares_purchased": 135000,
+    "treasury_shares_after_purchase": 124819900,
+    "mandate": {
+      "mandate_total": 210983495,
+      "cumulative_purchased": 22235800,
+      "mandate_remaining": 188747695,
+      "mandate_start": "2025-10-27",
+      "mandate_end": "2026-10-27"
+    }
+  },
+  {
     "url": "https://links.sgx.com/1.0.0/corporate-announcements/QKT6TTRAI2YEB5T1/ac8913cd83ff8a180add56c1c91f3836c0298cf90a2497de422cd23674d5350c",
     "reference": "SG261019OTHR3M1X",
     "symbol": "P52",
