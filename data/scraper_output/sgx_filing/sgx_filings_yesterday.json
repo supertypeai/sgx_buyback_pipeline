@@ -1,1 +1,191 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5ADYJKVXTG7NBIT1/907506__KWS%20-%20Form%201.pdf",
+    "timestamp": "2026-10-19",
+    "transaction_type": "buy",
+    "holder_name": "Koh Wee Seng",
+    "transaction_value": 75000,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1569394854,
+          "percentage": 0.7607
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 214615912,
+          "percentage": 0.104
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1569144854,
+          "percentage": 0.7606
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 214365912,
+          "percentage": 0.1039
+        }
+      }
+    },
+    "symbol": "5UF.SI",
+    "price_per_share": [
+      {
+        "price": 0.3,
+        "amount": 250000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Koh Wee Seng buys S$75,000 of Aspial Lifestyle Ltd shares",
+    "body": "Koh Wee Seng bought 250,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.3 per share, for a total of S$75,000. Total interest rises from 1,569,144,854 shares (76.06%) to 1,569,394,854 shares (76.07%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "luxury-goods",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Aspial Lifestyle Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "999293346143201",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RBJDZXQP7IC82832/907453__Keppel%20DC%20Reit%2010.15.2026%20Form%203_final.pdf",
+    "timestamp": "2026-10-15",
+    "transaction_type": "others",
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": 4061261,
+    "share_percentage_transaction": {
+      "total": 0.0007,
+      "deemed": 0.0007,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 163823428,
+          "percentage": 0.0597
+        },
+        "deemed": {
+          "amount": 163823428,
+          "percentage": 0.0597
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 165786528,
+          "percentage": 0.0604
+        },
+        "deemed": {
+          "amount": 165786528,
+          "percentage": 0.0604
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "AJBU.SI",
+    "price_per_share": [
+      {
+        "price": 2.0688,
+        "amount": 1963100
+      }
+    ],
+    "holder_type": "institution",
+    "title": "BlackRock, Inc reports change in deemed interest in Keppel DC REIT",
+    "body": "BlackRock, Inc reported a change in deemed interest in Keppel DC REIT. The transaction involved 1,963,100 units at S$2.0688 per unit, for a total of S$4,061,261. No units are held directly. Total interest falls from 165,786,528 units (6.04%) to 163,823,428 units (5.97%).",
+    "sector": "reit",
+    "sub_sector": "reit-data-centre",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Keppel DC REIT",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "527519544755151",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/L06NSET3SDU6KP56/907451__eFORM1_ChengWK_191026_Final.pdf",
+    "timestamp": "2026-10-19",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0003,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 486662859,
+          "percentage": 0.6363
+        },
+        "deemed": {
+          "amount": 486448459,
+          "percentage": 0.636
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 486454859,
+          "percentage": 0.636
+        },
+        "deemed": {
+          "amount": 486240459,
+          "percentage": 0.6357
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 208000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 208K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 208,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 486,454,859 shares (63.60%) to 486,662,859 shares (63.63%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Wing Tai Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "935549642691294",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 208,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen"
+  }
+]
