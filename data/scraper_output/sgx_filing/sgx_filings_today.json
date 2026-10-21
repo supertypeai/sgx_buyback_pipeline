@@ -1,10 +1,451 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5ADYJKVXTG7NBIT1/907506__KWS%20-%20Form%201.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ND8ZPAUL38B31ME7/907639__eFORM1V2-20102026-Dr%20Ng.pdf",
+    "timestamp": "2026-10-20",
+    "transaction_type": "buy",
+    "holder_name": "Dr Ng Chin Siau",
+    "transaction_value": 505523,
+    "share_percentage_transaction": {
+      "total": 0.001,
+      "deemed": 0.001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 528797889,
+          "percentage": 0.5579
+        },
+        "deemed": {
+          "amount": 528768989,
+          "percentage": 0.5579
+        },
+        "direct": {
+          "amount": 28900,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 527859389,
+          "percentage": 0.5569
+        },
+        "deemed": {
+          "amount": 527830489,
+          "percentage": 0.5569
+        },
+        "direct": {
+          "amount": 28900,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "QC7.SI",
+    "price_per_share": [
+      {
+        "price": 0.5387,
+        "amount": 938500
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rises after S$506K share purchase",
+    "body": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rose after Quan Min Holdings Pte. Ltd bought 938,500 shares at S$0.5387 per share, for a total of S$505,523. The direct holding is unchanged at 28,900 shares. Total interest rises from 527,859,389 shares (55.69%) to 528,797,889 shares (55.79%).",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Q & M Dental Group (Singapore) Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "678791745842903",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 938,500 ordinary shares by Quan Min Holdings Pte. Ltd",
+    "acting_party": "Quan Min Holdings Pte. Ltd"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7RSIUUCSIO4ANEC7/907637__eFORM3V2-20102026-QMH.pdf",
+    "timestamp": "2026-10-20",
+    "transaction_type": "buy",
+    "holder_name": "Quan Min Holdings Pte. Ltd",
+    "transaction_value": 505523,
+    "share_percentage_transaction": {
+      "total": 0.001,
+      "deemed": 0.0,
+      "direct": 0.001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 528647789,
+          "percentage": 0.5578
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 528647789,
+          "percentage": 0.5578
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 527709289,
+          "percentage": 0.5568
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 527709289,
+          "percentage": 0.5568
+        }
+      }
+    },
+    "symbol": "QC7.SI",
+    "price_per_share": [
+      {
+        "price": 0.5387,
+        "amount": 938500
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Quan Min Holdings Pte. Ltd buys S$506K of Q & M Dental Group (Singapore) Ltd shares",
+    "body": "Quan Min Holdings Pte. Ltd bought 938,500 shares of Q & M Dental Group (Singapore) Ltd in a market transaction at S$0.5387 per share, for a total of S$505,523. Total interest rises from 527,709,289 shares (55.68%) to 528,647,789 shares (55.78%).",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Q & M Dental Group (Singapore) Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "006611745852970",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FY6E2P9T1W85YEEO/907635__eFORM3V2_APJ_FMR_FMRC-20.10.2026.pdf",
+    "timestamp": "2026-10-16",
+    "transaction_type": "sell",
+    "holder_name": "Abigail P. Johnson",
+    "transaction_value": 191715,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0003,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 36101052,
+          "percentage": 0.0699
+        },
+        "deemed": {
+          "amount": 36101052,
+          "percentage": 0.0699
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 36222252,
+          "percentage": 0.0702
+        },
+        "deemed": {
+          "amount": 36222252,
+          "percentage": 0.0702
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "F9D.SI",
+    "price_per_share": [
+      {
+        "price": 1.5818,
+        "amount": 121200
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Abigail P. Johnson's deemed interest in Boustead Singapore Ltd falls after S$192K share sale",
+    "body": "Abigail P. Johnson's deemed interest in Boustead Singapore Ltd fell after a party linked to the holder sold 121,200 shares in a market transaction at S$1.5818 per share, for a total of S$191,715. No shares are held directly. Total interest falls from 36,222,252 shares (7.02%) to 36,101,052 shares (6.99%).",
+    "sector": "industrials",
+    "sub_sector": "conglomerates-holdings",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Boustead Singapore Ltd",
+    "filing_type": "form_3_part_iii_iv",
+    "transaction_reference": "593743461358133",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FY6E2P9T1W85YEEO/907635__eFORM3V2_APJ_FMR_FMRC-20.10.2026.pdf",
+    "timestamp": "2026-10-16",
+    "transaction_type": "sell",
+    "holder_name": "FMR LLC",
+    "transaction_value": 191715,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0003,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 36101052,
+          "percentage": 0.0699
+        },
+        "deemed": {
+          "amount": 36101052,
+          "percentage": 0.0699
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 36222252,
+          "percentage": 0.0702
+        },
+        "deemed": {
+          "amount": 36222252,
+          "percentage": 0.0702
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "F9D.SI",
+    "price_per_share": [
+      {
+        "price": 1.5818,
+        "amount": 121200
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FMR LLC's deemed interest in Boustead Singapore Ltd falls after S$192K share sale",
+    "body": "FMR LLC's deemed interest in Boustead Singapore Ltd fell after a party linked to the holder sold 121,200 shares in a market transaction at S$1.5818 per share, for a total of S$191,715. No shares are held directly. Total interest falls from 36,222,252 shares (7.02%) to 36,101,052 shares (6.99%).",
+    "sector": "industrials",
+    "sub_sector": "conglomerates-holdings",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Boustead Singapore Ltd",
+    "filing_type": "form_3_part_iii_iv",
+    "transaction_reference": "593743461358133",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FY6E2P9T1W85YEEO/907635__eFORM3V2_APJ_FMR_FMRC-20.10.2026.pdf",
+    "timestamp": "2026-10-16",
+    "transaction_type": "sell",
+    "holder_name": "Fidelity Management & Research Company LLC",
+    "transaction_value": 191715,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0002,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 30230042,
+          "percentage": 0.0586
+        },
+        "deemed": {
+          "amount": 30230042,
+          "percentage": 0.0586
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 30338142,
+          "percentage": 0.0588
+        },
+        "deemed": {
+          "amount": 30338142,
+          "percentage": 0.0588
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "F9D.SI",
+    "price_per_share": [
+      {
+        "price": 1.5818,
+        "amount": 121200
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Fidelity Management & Research Company LLC's deemed interest in Boustead Singapore Ltd falls after share sale",
+    "body": "Fidelity Management & Research Company LLC's deemed interest in Boustead Singapore Ltd fell after a party linked to the holder sold shares in a market transaction. The holders giving notice together sold 121,200 shares at S$1.5818 per share, for a total of S$191,715. No shares are held directly. Total interest falls from 30,338,142 shares (5.88%) to 30,230,042 shares (5.86%).",
+    "sector": "industrials",
+    "sub_sector": "conglomerates-holdings",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Boustead Singapore Ltd",
+    "filing_type": "form_3_part_iii_iv",
+    "transaction_reference": "593743461358133",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/APE0LZ7W3NH7RXK4/907610__eFORM1V2-Han%20Seng%20Juan-20261020.pdf",
+    "timestamp": "2026-10-16",
+    "transaction_type": "buy",
+    "holder_name": "Han Seng Juan",
+    "transaction_value": 284249,
+    "share_percentage_transaction": {
+      "total": 0.00027,
+      "deemed": 0.0,
+      "direct": 0.00027
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 373894026,
+          "percentage": 0.4447
+        },
+        "deemed": {
+          "amount": 243814026,
+          "percentage": 0.28999
+        },
+        "direct": {
+          "amount": 130080000,
+          "percentage": 0.15471
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 373669026,
+          "percentage": 0.44443
+        },
+        "deemed": {
+          "amount": 243814026,
+          "percentage": 0.28999
+        },
+        "direct": {
+          "amount": 129855000,
+          "percentage": 0.15444
+        }
+      }
+    },
+    "symbol": "OU8.SI",
+    "price_per_share": [
+      {
+        "price": 1.26333,
+        "amount": 225000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Han Seng Juan buys S$284K of Centurion Corp Ltd shares",
+    "body": "Han Seng Juan bought 225,000 shares of Centurion Corp Ltd in a market transaction at S$1.2633 per share, for a total of S$284,249. Total interest rises from 373,669,026 shares (44.44%) to 373,894,026 shares (44.47%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Centurion Corp Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "511294346141158",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/APE0LZ7W3NH7RXK4/907610__eFORM1V2-Han%20Seng%20Juan-20261020.pdf",
     "timestamp": "2026-10-19",
     "transaction_type": "buy",
+    "holder_name": "Han Seng Juan",
+    "transaction_value": 169091,
+    "share_percentage_transaction": {
+      "total": 0.00016,
+      "deemed": 0.0,
+      "direct": 0.00016
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 374027326,
+          "percentage": 0.44486
+        },
+        "deemed": {
+          "amount": 243814026,
+          "percentage": 0.28999
+        },
+        "direct": {
+          "amount": 130213300,
+          "percentage": 0.15487
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 373894026,
+          "percentage": 0.4447
+        },
+        "deemed": {
+          "amount": 243814026,
+          "percentage": 0.28999
+        },
+        "direct": {
+          "amount": 130080000,
+          "percentage": 0.15471
+        }
+      }
+    },
+    "symbol": "OU8.SI",
+    "price_per_share": [
+      {
+        "price": 1.2685,
+        "amount": 133300
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Han Seng Juan buys S$169K of Centurion Corp Ltd shares",
+    "body": "Han Seng Juan bought 133,300 shares of Centurion Corp Ltd in a market transaction at S$1.2685 per share, for a total of S$169,091. Total interest rises from 373,894,026 shares (44.47%) to 374,027,326 shares (44.49%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Centurion Corp Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "502311643426141",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/51W3U2PAAQBNN9WC/907607__KWS%20-%20Form%201.pdf",
+    "timestamp": "2026-10-20",
+    "transaction_type": "buy",
     "holder_name": "Koh Wee Seng",
-    "transaction_value": 75000,
+    "transaction_value": 49406,
     "share_percentage_transaction": {
       "total": 0.0001,
       "deemed": 0.0,
@@ -12,6 +453,20 @@
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 1569558654,
+          "percentage": 0.7608
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 214779712,
+          "percentage": 0.1041
+        }
+      },
+      "before": {
         "total": {
           "amount": 1569394854,
           "percentage": 0.7607
@@ -24,120 +479,57 @@
           "amount": 214615912,
           "percentage": 0.104
         }
-      },
-      "before": {
-        "total": {
-          "amount": 1569144854,
-          "percentage": 0.7606
-        },
-        "deemed": {
-          "amount": 1354778942,
-          "percentage": 0.6567
-        },
-        "direct": {
-          "amount": 214365912,
-          "percentage": 0.1039
-        }
       }
     },
     "symbol": "5UF.SI",
     "price_per_share": [
       {
-        "price": 0.3,
-        "amount": 250000
+        "price": 0.3016,
+        "amount": 163800
       }
     ],
     "holder_type": "insider",
-    "title": "Koh Wee Seng buys S$75,000 of Aspial Lifestyle Ltd shares",
-    "body": "Koh Wee Seng bought 250,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.3 per share, for a total of S$75,000. Total interest rises from 1,569,144,854 shares (76.06%) to 1,569,394,854 shares (76.07%).",
+    "title": "Koh Wee Seng buys S$49,406 of Aspial Lifestyle Ltd shares",
+    "body": "Koh Wee Seng bought 163,800 shares of Aspial Lifestyle Ltd in a market transaction at S$0.3016 per share, for a total of S$49,406. Total interest rises from 1,569,394,854 shares (76.07%) to 1,569,558,654 shares (76.08%).",
     "sector": "consumer-cyclicals",
     "sub_sector": "luxury-goods",
     "tags": [],
     "source_is_manual": false,
     "company_name": "Aspial Lifestyle Ltd",
     "filing_type": "form_1",
-    "transaction_reference": "999293346143201",
+    "transaction_reference": "706394346141285",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RBJDZXQP7IC82832/907453__Keppel%20DC%20Reit%2010.15.2026%20Form%203_final.pdf",
-    "timestamp": "2026-10-15",
-    "transaction_type": "others",
-    "holder_name": "BlackRock, Inc",
-    "transaction_value": 4061261,
-    "share_percentage_transaction": {
-      "total": 0.0007,
-      "deemed": 0.0007,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 163823428,
-          "percentage": 0.0597
-        },
-        "deemed": {
-          "amount": 163823428,
-          "percentage": 0.0597
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 165786528,
-          "percentage": 0.0604
-        },
-        "deemed": {
-          "amount": 165786528,
-          "percentage": 0.0604
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "AJBU.SI",
-    "price_per_share": [
-      {
-        "price": 2.0688,
-        "amount": 1963100
-      }
-    ],
-    "holder_type": "institution",
-    "title": "BlackRock, Inc reports change in deemed interest in Keppel DC REIT",
-    "body": "BlackRock, Inc reported a change in deemed interest in Keppel DC REIT. The transaction involved 1,963,100 units at S$2.0688 per unit, for a total of S$4,061,261. No units are held directly. Total interest falls from 165,786,528 units (6.04%) to 163,823,428 units (5.97%).",
-    "sector": "reit",
-    "sub_sector": "reit-data-centre",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "Keppel DC REIT",
-    "filing_type": "form_3_part_ii",
-    "transaction_reference": "527519544755151",
-    "notification_type": "change_in_level",
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/L06NSET3SDU6KP56/907451__eFORM1_ChengWK_191026_Final.pdf",
-    "timestamp": "2026-10-19",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VJWJ8QAZ45H81YG3/907600__eFORM1_ChengWK_201026_Final.pdf",
+    "timestamp": "2026-10-20",
     "transaction_type": "buy",
     "holder_name": "Cheng Wai Keung",
     "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 0.0003,
-      "deemed": 0.0003,
+      "total": 0.0006,
+      "deemed": 0.0006,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 487082859,
+          "percentage": 0.6369
+        },
+        "deemed": {
+          "amount": 486868459,
+          "percentage": 0.6366
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
         "total": {
           "amount": 486662859,
           "percentage": 0.6363
@@ -150,42 +542,91 @@
           "amount": 214400,
           "percentage": 0.0003
         }
-      },
-      "before": {
-        "total": {
-          "amount": 486454859,
-          "percentage": 0.636
-        },
-        "deemed": {
-          "amount": 486240459,
-          "percentage": 0.6357
-        },
-        "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
-        }
       }
     },
     "symbol": "W05.SI",
     "price_per_share": [
       {
         "price": null,
-        "amount": 208000
+        "amount": 420000
       }
     ],
     "holder_type": "insider",
-    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 208K shares",
-    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 208,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 486,454,859 shares (63.60%) to 486,662,859 shares (63.63%).",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 420K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 420,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 486,662,859 shares (63.63%) to 487,082,859 shares (63.69%).",
     "sector": "properties-real-estate",
     "sub_sector": "real-estate-development",
     "tags": [],
     "source_is_manual": false,
     "company_name": "Wing Tai Holdings Ltd",
     "filing_type": "form_1",
-    "transaction_reference": "935549642691294",
+    "transaction_reference": "416549642691024",
     "notification_type": null,
     "circumstance_key": null,
-    "change_reason": "the acquisition of 208,000 WTH shares by the holder's spouse",
+    "change_reason": "the acquisition of WTH shares by the holder's spouse",
     "acting_party": "Chow Helen"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DBIXCGIIZ0OYG5GV/907568__Form_3_BlackRock-16.10.2026_final.pdf",
+    "timestamp": "2026-10-16",
+    "transaction_type": "others",
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0051,
+      "deemed": 0.0051,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 15263242,
+          "percentage": 0.0531
+        },
+        "deemed": {
+          "amount": 15263242,
+          "percentage": 0.0531
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 13795894,
+          "percentage": 0.048
+        },
+        "deemed": {
+          "amount": 13795894,
+          "percentage": 0.048
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "V03.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 1467348
+      }
+    ],
+    "holder_type": "institution",
+    "title": "BlackRock, Inc becomes substantial shareholder of Venture Corp Ltd with 5.31% stake",
+    "body": "BlackRock, Inc reported a change in deemed interest in Venture Corp Ltd. The filing attributes the change to an increase in shares held as collateral. The transaction involved 1,467,348 shares. No shares are held directly. Total interest rises from 13,795,894 shares (4.80%) to 15,263,242 shares (5.31%). With this, the holder becomes a substantial shareholder of Venture Corp Ltd.",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Venture Corp Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "558119145554795",
+    "notification_type": "becoming",
+    "circumstance_key": null,
+    "change_reason": "an increase in shares held as collateral",
+    "acting_party": null
   }
 ]
