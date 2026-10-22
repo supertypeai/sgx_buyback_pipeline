@@ -1,5 +1,39 @@
 [
   {
+    "symbol": "T82U",
+    "reference": "SG261022DVCAVP0G",
+    "recording_date": "2026-10-30",
+    "ex_date": "2026-10-29",
+    "dividend_amount": 0.00338,
+    "payment_date": "2026-11-27",
+    "payment_type": "Tax Exempted",
+    "dividend_type": null,
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/2357383O1JRM7HN7/f6c2fc23814714ce7852d5340944e0e07f081a8541c4ccadeb0202220e77a68b",
+    "timestamp": "2026-10-22 20:03:06",
+    "updated_on": "2026-10-22 21:25:20"
+  },
+  {
+    "symbol": "J69U",
+    "reference": "SG261022DVCACPU9",
+    "recording_date": "2026-10-30",
+    "ex_date": "2026-10-29",
+    "dividend_amount": 5e-05,
+    "payment_date": "2026-11-27",
+    "payment_type": "Tax Exempted",
+    "dividend_type": null,
+    "event_narrative": {
+      "narrative": "Distribution of 6.214 Singapore cents per unit in respect of units listed under Frasers Centrepoint Trust (Stock Code: J69U) for the period from 1 April 2026 to 30 September 2026. This distribution comprises a taxable component of 6.209 Singapore cents per unit and a tax-exempt component of 0.005 Singapore cents per unit.",
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/QSVAK4FSI5SEOWBI/6708f0486dde8520b08b81db8fff063cbd4dd635975ee2a5c2225abf8e1a80da",
+    "timestamp": "2026-10-22 07:21:05",
+    "updated_on": "2026-10-22 21:25:25"
+  },
+  {
     "symbol": "BJZ",
     "reference": "SG261021DVCAFJZ6",
     "recording_date": "2026-11-04",
@@ -14,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/2C1DFNRKAHFGER4K/8b2440d4961bd1018ef3970f69f4e604b45a5b04b8617d54a2175725884f554a",
     "timestamp": "2026-10-21 17:36:33",
-    "updated_on": "2026-10-21 21:30:27"
+    "updated_on": "2026-10-22 21:25:32"
   },
   {
     "symbol": "5SR",
@@ -31,7 +65,41 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZAWKWDANWS08WYSR/1265fc651e45ee2850156fefd12a529a21c6e668523e81a3dbd005d33222c8c7",
     "timestamp": "2026-10-15 17:28:15",
-    "updated_on": "2026-10-21 21:30:33"
+    "updated_on": "2026-10-22 21:25:38"
+  },
+  {
+    "symbol": "543",
+    "reference": "SG261015DVCAH91Z",
+    "recording_date": "2026-11-06",
+    "ex_date": "2026-11-05",
+    "dividend_amount": 0.002,
+    "payment_date": "2026-11-16",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Special",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1CU1Z8KE31UMOKJY/c6f22c700517aedc4ec1c3ba7d9ee3fa130dafb434f615f924b559c799e84718",
+    "timestamp": "2026-10-15 17:23:32",
+    "updated_on": "2026-10-22 21:25:43"
+  },
+  {
+    "symbol": "543",
+    "reference": "SG261015DVCACKHW",
+    "recording_date": "2026-11-06",
+    "ex_date": "2026-11-05",
+    "dividend_amount": 0.001,
+    "payment_date": "2026-11-16",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RROT4FKIYRQVYON8/58b7d5b21199652cbe730e19e551409a01d6cb6a540fc677cdeb9b9464d87222",
+    "timestamp": "2026-10-15 17:23:26",
+    "updated_on": "2026-10-22 21:25:46"
   },
   {
     "symbol": "BQM",
@@ -48,7 +116,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/1ZOHV391YT617AHL/9305b4db502e4a399fc8e4bdd0218f18878b53410e1d192cce230caa93057424",
     "timestamp": "2026-10-08 19:42:56",
-    "updated_on": "2026-10-21 21:30:44"
+    "updated_on": "2026-10-22 21:25:53"
   },
   {
     "symbol": "5WF",
@@ -65,7 +133,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/JG9F9OOS2WWINNNR/b871ab841fb91db5cb8d4cfaf1c801fb2d003b0e43cb73c1972251b36ea8086e",
     "timestamp": "2026-10-08 19:21:45",
-    "updated_on": "2026-10-21 21:30:47"
+    "updated_on": "2026-10-22 21:25:57"
   },
   {
     "symbol": "LCC",
@@ -82,7 +150,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/N4ALEKYT900M70BD/ae423b4dad93caaf6b336f86563a044a89f06f7f05fd47fd199d85a479d25602",
     "timestamp": "2026-10-07 17:22:41",
-    "updated_on": "2026-10-21 21:30:50"
+    "updated_on": "2026-10-22 21:26:00"
   },
   {
     "symbol": "BIX",
@@ -99,7 +167,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/QNYNH9SEJXAEK4CE/da65faacd90f02c4fc51670e13fab0a97e96f41a13534be453df763e71b5ff7b",
     "timestamp": "2026-10-05 00:17:14",
-    "updated_on": "2026-10-21 21:30:58"
+    "updated_on": "2026-10-22 21:26:08"
   },
   {
     "symbol": "C33",
@@ -116,7 +184,58 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/3DW5612C030JKLCQ/3c2b4351fb39f05b8f13aede1686b3e1e8af01d0fe4e3557b18b6d0c8863b295",
     "timestamp": "2026-10-02 06:14:40",
-    "updated_on": "2026-10-21 21:31:02"
+    "updated_on": "2026-10-22 21:26:11"
+  },
+  {
+    "symbol": "L19",
+    "reference": "SG261001DVCAVCXP",
+    "recording_date": "2026-11-06",
+    "ex_date": "2026-11-05",
+    "dividend_amount": 0.02,
+    "payment_date": "2026-11-23",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Special",
+    "event_narrative": {
+      "narrative": "NOTICE IS HEREBY GIVEN THAT the Transfer Books and Register of Members of the Company will be closed at 5.00 p.m. on 6 November 2026 (the \"Record Date\") for the purpose of determining shareholders' entitlements to a proposed special tax exempt dividend of 2.00 Singapore cents per ordinary share for the financial year ended 30 June 2026 (the \"Proposed Special Dividend\").",
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/JD9VAIBOVKUYNRNG/f2cf8bfe189d3b19f48066c824a84f8b0ff168ed921ab6c4321fdf3d3f3b9ec6",
+    "timestamp": "2026-10-01 17:35:00",
+    "updated_on": "2026-10-22 21:26:14"
+  },
+  {
+    "symbol": "L19",
+    "reference": "SG261001DVCALRJW",
+    "recording_date": "2026-11-06",
+    "ex_date": "2026-11-05",
+    "dividend_amount": 0.01,
+    "payment_date": "2026-11-23",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": "NOTICE IS HEREBY GIVEN THAT the Transfer Books and Register of Members of the Company will be closed at 5.00 p.m. on 6 November 2026 (the 'Record Date\") for the purpose of determining shareholders' entitlements to a proposed final tax exempt dividend of 1.00 Singapore cent per ordinary share for the financial year ended 30 June 2026 (the \"Proposed Final Dividend\").",
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/TTMS35PSVKV54GJZ/2612c35e49447e21a1a045d7ebb09391af0b636fab2d85c74814c70e4009de5c",
+    "timestamp": "2026-10-01 17:34:47",
+    "updated_on": "2026-10-22 21:26:18"
+  },
+  {
+    "symbol": "G50",
+    "reference": "SG260930DVCAAVO5",
+    "recording_date": "2026-11-06",
+    "ex_date": "2026-11-05",
+    "dividend_amount": 0.01,
+    "payment_date": "2026-11-17",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KTHY388MSUHADB64/0cbcc3de4cfa55d7a3d2bff251c5a757ad67653a9363bcf555f196a5b1826bd5",
+    "timestamp": "2026-09-30 07:39:53",
+    "updated_on": "2026-10-22 21:26:26"
   },
   {
     "symbol": "W05",
@@ -133,7 +252,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/M5C13GPMIEQZWBKI/38cd2f520aaa9511c601835609d2f2de594a8190392f090decbac9d82b41a2d3",
     "timestamp": "2026-09-30 07:03:12",
-    "updated_on": "2026-10-21 21:31:15"
+    "updated_on": "2026-10-22 21:26:31"
   },
   {
     "symbol": "W05",
@@ -150,24 +269,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/AS8PJYEOJCDU9IZU/c4582253b5fc6917a74e2e0f79a1efb9c922fdb38bd15bde9c8d46857dc06c43",
     "timestamp": "2026-09-30 07:02:57",
-    "updated_on": "2026-10-21 21:31:19"
-  },
-  {
-    "symbol": "1B1",
-    "reference": "SG260914DVCAP9XE",
-    "recording_date": "2026-10-22",
-    "ex_date": "2026-10-21",
-    "dividend_amount": 0.0118,
-    "payment_date": "2026-11-03",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Final",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/JED5ZGKUA3LO4TH8/380aa44d497736296609f44bfd6e60cfa08e8291b8bd74922347bc8efcbafd2a",
-    "timestamp": "2026-09-14 06:21:05",
-    "updated_on": "2026-10-21 21:31:44"
+    "updated_on": "2026-10-22 21:26:34"
   },
   {
     "symbol": "F17",
@@ -184,14 +286,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/AEYWA3OXQM6L15BA/18c811774dbee4592c623297fa82792494a8e6d652a2660b050429b41984db1e",
     "timestamp": "2026-08-28 07:49:56",
-    "updated_on": "2026-10-21 21:32:10"
+    "updated_on": "2026-10-22 21:27:23"
   },
   {
     "symbol": "K29",
     "reference": "SG260827DVCAZS07",
     "recording_date": "2026-11-02",
     "ex_date": "2026-10-30",
-    "dividend_amount": 0.008145,
+    "dividend_amount": 0.00814,
     "payment_date": "2026-11-11",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Special",
@@ -201,14 +303,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/EICYZC8C2DKRYC6N/650fff21b5d1fec4fdfb5ab092528a069cc788269f6c25789e1bd00fa7f5ce62",
     "timestamp": "2026-08-27 22:16:56",
-    "updated_on": "2026-10-21 21:32:14"
+    "updated_on": "2026-10-22 21:27:26"
   },
   {
     "symbol": "K29",
     "reference": "SG260827DVCAGYW2",
     "recording_date": "2026-11-02",
     "ex_date": "2026-10-30",
-    "dividend_amount": 0.0029321999999999994,
+    "dividend_amount": 0.0029303999999999997,
     "payment_date": "2026-11-11",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Final",
@@ -218,7 +320,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/N99BU332HONMWTAF/fc48d2d2f569bca1eec21029a0debafc243521a005e9201a0f7c0ce975ba6abb",
     "timestamp": "2026-08-27 22:14:32",
-    "updated_on": "2026-10-21 21:32:18"
+    "updated_on": "2026-10-22 21:27:29"
   },
   {
     "symbol": "MIJ",
@@ -235,6 +337,23 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/EX1KRHPH2ZEHNFMI/d95f972cb12885f0a62e18728a1cbbe73fa9c9792c4050de06ebd2d530c76ef5",
     "timestamp": "2026-08-26 20:52:06",
-    "updated_on": "2026-10-21 21:32:32"
+    "updated_on": "2026-10-22 21:27:43"
+  },
+  {
+    "symbol": "5DD",
+    "reference": "SG260826DVCAT0JM",
+    "recording_date": "2026-11-06",
+    "ex_date": "2026-11-05",
+    "dividend_amount": 0.03,
+    "payment_date": "2026-11-17",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RY5HQTYQ79B3MNVL/8afea03f01ff38baad247f89af6508f889bd05c5bf397dbc7d02bd3978e03924",
+    "timestamp": "2026-08-26 19:46:03",
+    "updated_on": "2026-10-22 21:27:46"
   }
 ]
