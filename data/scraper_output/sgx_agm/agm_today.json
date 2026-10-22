@@ -1,5 +1,85 @@
 [
   {
+    "symbol": "581",
+    "recording_date": "2026-10-22",
+    "agm_date": "2026-11-06",
+    "meeting_type": "AGM",
+    "agm_time": "14:30:00",
+    "agm_place": "Function Room, LR Floor, 380 Jalan Besar, ARC 380, Singapore 209000",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/U9WT7XE56K5WN0B2/c47fac05033063a98d02e7c3203b84375d43f0c8dc799439427c27d047a12e0e",
+    "ref_id": "SG261022MEETMG9D"
+  },
+  {
+    "symbol": "S68",
+    "recording_date": "2026-09-29",
+    "agm_date": "2026-10-23",
+    "meeting_type": "AGM",
+    "agm_time": "10:30:00",
+    "agm_place": "Marina Bay Sands Expo and Convention Centre, Level 3, Jasmine Ballroom, 10 Bayfront Avenue, Singapore 018956",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/JXNLCHBLCJHE13WI/1b3b7d13904f543f1c292ef85d685061b75747a4b6709d6a0bc66bf97eee0bb6",
+    "ref_id": "SG260929MEETRFGJ"
+  },
+  {
+    "symbol": "MIJ",
+    "recording_date": "2026-10-07",
+    "agm_date": "2026-10-27",
+    "meeting_type": "AGM",
+    "agm_time": "14:30:00",
+    "agm_place": "8 Wilkie Road, #03-08, Wilkie Edge, Singapore 228095",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": "https://sias.org.sg/media/qareport/Q&A%20to%20ALLIANCE%20HEALTHCARE%20GROUP%20LIMITED%202026.pdf",
+    "sias_response_pdf": null,
+    "qa": [
+      {
+        "n": 1,
+        "question": "For the financial year ended 30 June 2026, revenue increased by 13.3% to $87.4 million, \nwhile employee benefits expense increased at a faster rate of 15.7% to $50.9 million.  \n \n(Source: company annual report; emphasis added) \n \nEmployee benefits expense accounted for approximately 58% of revenue in FY2026, a \nsignificant component of the group’s cost base. \n \n(i) \nCan management explain the key drivers of the increase in employee costs, \nincluding changes in headcount, remuneration and staffing requirements? \nWhat measure is the group taking to improve employee productivity and \nachieve operating leverage as the business scales? \n \nA milestone of FY2026 is the award of tender by ALPS for the provision of mobile inpatient \ncare at home services to participating public healthcare institutions under the master service \nagreement.   \n \n(ii) \nCan management provide shareholders with a clearer view of the \naddressable market for the group's mobile inpatient care services in \nSingapore? Does management consider the group to have a leading position \nin this market today? What are the group's principal competitive \nadvantages, and how difficult would it be for competitors and new entrants \nto replicate its service model?",
+        "answer": null
+      },
+      {
+        "n": 2,
+        "question": "The group rationalised parts of its specialist clinic portfolio. Evoque Medical Aesthetics \nceased operations with effect from 1 August 2026, while the Ho Kok Sun Colorectal 1 \nspecialist clinic and Lim Jit Fong Colorectal Centre ceased operations with effect from 1 July \n2026. Both colorectal clinics were acquired in full in 2014, and their operations have now \nceased following the expiry of their respective clinic management service agreements on 30 \nJune 2026. Evoque was established by the group in 2023.  \n \nAt the same time, the group expanded its specialist care platform during the financial year, \nincluding the opening of its second orthopaedic clinic under Elite Orthopaedics and the \ninauguration of a new Breast & General Surgery clinic. \n \n(i) \nCan management confirm that the group no longer operates any colorectal \nspecialist clinics following the expiry of the clinic management service \nagreements? Have the two colorectal specialists ceased practising with the \ngroup, or do they continue to have other roles or relationships with the \ngroup? \n \n(ii) \nWhich specialist areas does the group intend to start or grow over the next \nthree to five years, and will growth come primarily through establishing \nnew clinics and recruiting additional specialists or via acquisitions? \n \n(iii) \nGiven that specialist clinics acquired in 2014 have now ceased operations, \ndoes the board still regard acquiring clinics and their associated doctors as \na sustainable growth model?",
+        "answer": null
+      },
+      {
+        "n": 3,
+        "question": "Cash and cash equivalents increased from approximately $16.4 million as at 30 June \n2025 to $21.2 million as at 30 June 2026, supported by $10.5 million of net cash generated \nfrom operating activities during FY2026. \n \nAt the group level, with cash and cash equivalents exceeding loans and borrowing (including \nleases), resulting in a net cash position of $3.2 million as at 30 June 2026.  \n \n \n1 In 2014, the group acquired 100% equity interest in Ho Kok Sun Colorectal (now known as Alliance \nSpecialist Pte. Ltd.) and 100% equity interest in Lim Jit Fong Colorectal Centre (now known as Alliance \nSpecialist Centre Pte. Ltd.) \n\n(Source: company annual report) \n \nThe board has declared a final dividend of 0.52 cents per share, representing approximately \n29.8% of profit attributable to owners of the parent, with a total distribution of \napproximately $1.08 million.  \n \n(i) \nGiven the group's net cash position and strong positive operating cash flow, \nwhat was the board's rationale for setting the final dividend at a payout \nratio of approximately 30%? How did the board assess the appropriate \nbalance between retaining capital for growth and returning surplus capital \nto shareholders? \n \nIn addition, up to mid-September 2026, the company had repurchased approximately 1.87 \nmillion shares, against the maximum 20.64 million shares authorised under the share buy-\nback mandate. \n \n(ii) \nHow does the board determine the pace and quantum of share buy-backs? \nIn deciding between share buy-backs and dividends as methods of returning \ncapital, what valuation, liquidity and capital allocation criteria does the \nboard apply? At what level of discount to the board's assessment of the \ncompany's intrinsic value would share buy-backs become a more attractive \nuse of surplus cash than paying additional dividends? \n \n \nShareholders are welcome to use and/or adapt the questions prepared by SIAS and to \nforward them to the company.  \n \n \nCheck out the latest questions on the annual reports of listed companies on SIAS website  \n\nJoin our mailing list here to receive latest news and upcoming events.   \n \n \nCONNECT WITH US",
+        "answer": null
+      }
+    ],
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/IQAWVBNZXD99D4PB/f709795e50dace03543c8b025696e8b870321eb2eb3c7796d75c32c2fc8b9bf3",
+    "ref_id": "SG261007MEETBONR"
+  },
+  {
+    "symbol": "K29",
+    "recording_date": "2026-10-02",
+    "agm_date": "2026-10-27",
+    "meeting_type": "AGM",
+    "agm_time": "10:00:00",
+    "agm_place": "The Annual General Meeting of the Company will be held at Novotel Singapore on Stevens, Level One, Hercules & Cygnus Rooms, 28 Stevens Road, Orchard District, Singapore 257878 on Tuesday, 27 October 2026 at 10.00 a.m.",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/XDZJY1SKZABS6ZUM/d93c8528a2b8084680b71238e551ad080cc6512a42a518fa5042673ed4d165fc",
+    "ref_id": "SG261002MEET4PBD"
+  },
+  {
     "symbol": "5DD",
     "recording_date": "2026-09-24",
     "agm_date": "2026-10-26",
@@ -10,7 +90,7 @@
     "summary": null,
     "tags": null,
     "sias_questions_pdf": "https://sias.org.sg/media/qareport/Q&A%20to%20MICRO-MECHANICS%20(HOLDINGS)%20LTD%202026.pdf",
-    "sias_response_pdf": null,
+    "sias_response_pdf": "https://sias.org.sg/media/qareport/MMH-%20Announcement_AGM%20-%20Responses%20to%20shareholder%20queries%202026.pdf",
     "qa": [
       {
         "n": 1,
@@ -20,38 +100,16 @@
       {
         "n": 2,
         "question": "The company will report a new segment, “Build-to-print Precision Components”, \nstarting in FY2027.  \n \n(Source: company annual report) \n\nUntil FY2024, the group reported its segments on a geographical basis. Following a change \nin its internal reporting for decision-making and performance analysis, the group revised its \nreportable segments in accordance with SFRS(I) 8, Operating Segments. In FY2025 and \nFY2026, the group has reported three segments: Consumable Tools, WFE Parts, and \nCorporate and Others. \n \n(i) \nCan the board or audit & risk Committee (ARC) help shareholders better \nunderstand whether the new “Build-to-print Precision Components” \nsegment is principally a reclassification of the existing WFE Parts business, \nor whether it represents an expansion or reorganisation of the business? \nWhat has changed in the underlying activities, customer base, capabilities, \nstrategic positioning or management structure? \n \n(ii) \nHow much of the group’s core capabilities in consumable tooling are \ntransferable to the manufacture of precision components for WFE, and what \nadditional manufacturing capabilities, processes, technology or expertise \ndoes the group need to develop to compete effectively in this market? \n \nWhile the group did not report any customer contributing more than 10% of total group’s \nrevenue this year, it identified a major customer in the WFE segment contributing \napproximately $6.2 million to $6.3 million in revenue in each of the past two financial years.  \n \n(iii) \nCan management help shareholders understand where MMUS sits in the \nWFE supply chain today, including whether it supplies directly to OEMs, \ncontract manufacturers or other Tier 1 suppliers? Is MMUS itself qualified \nas a Tier 1 supplier to any major WFE customers, and how does the group \nintend to leverage its current position to identify, qualify for and win more \nlarge WFE customers?",
-        "answer": null
+        "answer": "The Group does not provide segment-level revenue forecasts. Within Consumable Tools, it sees \nopportunities in advanced packaging and localisation, particularly in China, Malaysia, and Taiwan. \nFor Build-to-Print Precision Components (“Build-to-Print”), the opportunity is supported by the much \nlarger WFE market. At the same time, the Group sees opportunities brought by the convergence of \nfront-end and back-end requirements. \n \nWhile the pace and mix will depend on market conditions, the Group believes its products, know-\nhow, team and global footprint position it well for the industry’s next phase of growth. \n \n \n \n1 World Semiconductor Trade Statistics, Global Semiconductor Market records exceptional growth \nin Q2 2026 , August 2026 \n\n3. Given the cyclical nature of the semiconductor industry and the significant investment \nassociated with AI infrastructure, what assumptions does management make about \nsemiconductor demand and the WFE cycle through FY2031? Does the Board see any \nsignificant risk of the industry entering a downcycle in the near term, and how would this \naffect the Group’s growth and investment plans?"
       },
       {
         "n": 3,
         "question": "Total capital expenditure for FY2026 amounted to $3.8 million, of which $3.0 million \nwas for plant and equipment, with the majority relating to the WFE segment.  \n \nThe CEO has disclosed that the group expects to invest $12.0 million in FY2027 to support \nits five-year plan, including expanding operations in markets where the group’s customers \nare growing and investing in next-generation processes and smarter manufacturing. \n \nThis represents a significant increase in capital expenditure compared with $1.2 million in \nFY2025 and $2.0 million in FY2024. \n \n(i) \nCan management provide a breakdown of the planned $12.0 million of \nFY2027 capital expenditure between the consumable tools and WFE \nbusinesses? \n \n(ii) \nHow much of the planned FY2027 capital expenditure is already supported \nby committed customer orders, contracts or capacity requirements, and \nhow much is intended to build capacity ahead of anticipated demand?  \n\nThe group reported an earnings per share of 11.44 cents for FY2026 and paid a dividend of \n6 cents per share. The reported payout ratio was 52.4%, compared with 67.3% previously, \nwhile the group’s dividend policy is to pay out at least 40% of net audited profit. Total \ndividends for FY2026 amounted to $8.3 million. \n \n(iii) \nWith FY2027 capital expenditure expected to increase significantly, can the \ngroup fund its planned growth investments while maintaining the current \n6-cent dividend? What factors does the board consider in determining \nwhether the 6-cent dividend can be sustained, and what gives the board \nconfidence that the higher investment programme will not come at the \nexpense of shareholder distributions? \n \n \nShareholders are welcome to use and/or adapt the questions prepared by SIAS and to \nforward them to the company.  \n \n \nCheck out the latest questions on the annual reports of listed companies on SIAS website  \n \nJoin our mailing list here to receive latest news and upcoming events.   \n \n \nCONNECT WITH US",
-        "answer": null
+        "answer": "The Group does not assume that demand will be linear through FY2031. However, over the long \nterm, the Group believes the industry will continue to grow as semiconductors become increasingly \nimportant across a wider range of applications.  \n \nThe Group therefore believes that strategic investment through the industry cycle is key to \nenhancing its long-term competitive position. This provides the flexibility to capture opportunities, \nstay resilient, and continue progressing towards its FY2031 growth objectives. \n \n4. To what extent does the Group’s FY2031 growth plan depend on acquisitions, particularly \nin the Build-to-Print segment? What capabilities, technologies or geographic markets, if any, \nwould management seek to acquire? \nThe Group’s mid-term growth strategy focuses mainly on organic growth across three key priorities. \nThe first is strengthening customer support through expanded operations and localised capabilities. \nThe Group will strengthen its presence across key semiconductor markets to provide faster and \nmore effective customer support. This includes expanding operations in China and Malaysia, where \ncustomers and the industry continue to grow, and building a stronger physical presence in Taiwan. \nThe second is next-generation processing. The Group will invest in next-generation equipment and \nprocesses to enhance its capabilities in process-critical applications. \nThe third is smart and secure manufacturing. The Group will increase the use of data-driven \ndecision-making to improve operational effectiveness and support long-term innovation, while \ndeveloping ISO 27001-aligned cybersecurity capabilities to strengthen its position as a trusted \nsupplier of choice. \nThe Group also remains open to acquisitions that can support these areas of its strategy, with its \nstrong financial position providing the flexibility to act when suitable opportunities arise. \n \nB. Operations \n \n5. Decentralised operations depend on strong local decision-makers, and the share scheme \nappears designed to align managers’ interests with shareholders. With the COO and CFO \nretiring and the CEO stepping back to become Chairman, has responsibility shifted to the \nlocal management teams or become more concentrated at the top? \nThe Group’s decentralised structure allows it to stay responsive to customers and provide quick \nlocal support with consistent, high-quality service. The Group takes a hands-on approach to \nmanagement, working closely with teams on the ground to understand challenges and improve \nexecution. \nThe Five-Star Factory initiative helps bring this together by giving teams around the world a \ncommon framework for learning, sharing ideas and solving problems together. \nAs part of its focus to build High Performance Teams, the Group continues to recruit and develop \ntalent across all levels and locations, strengthening local support for customers worldwide.  \n \n \n\n6. The Group will report a new segment, “Build-to-Print Precision Components”, starting in \nFY2027. Is the new segment principally a reclassification of the existing WFE parts business, \nor is it an expansion or reorganisation of the business? What has changed in the underlying \nactivities, customer base, capabilities, strategic positioning or management structure? \n \nThe change relates only to the segment descriptions and naming convention. It is intended to better \nreflect how the Group creates value for its customers, aligning segment reporting with its \ncompetitive positioning and strategic direction rather than the end-market served. There is no \nchange to the Group’s underlying operations, management structure or reportable segments. \n \n7. How much of the Group’s core capabilities in consumable tooling are transferable to the \nmanufacture of precision components for WFE, and what additional manufacturing \ncapabilities, processes, technology or expertise does the Group need to develop to compete \neffectively in this market? \nThe Group’s core capabilities are highly transferable across both business segments, as \nConsumable Tools and Build-to-Print parts require the same commitment to precision engineering, \nprocess control, quality, reliability and continuous improvement. The Group also benefits from a \nculture of sharing technical knowledge, lessons learned, and best practices across its operations, \nsupported by the common framework of its Five-Star Factory initiative.  \nAs parts become more complex and customer requirements more demanding, the Group continues \nto invest in its process, quality and engineering capabilities to remain a trusted supplier of choice. \nIn FY2026, these investments included a new machine to improve machining quality and efficiency, \nas well as a physics-based programming technology that can increase material removal rates by \n10-30% for long-cycle parts. With its mid-term growth strategy, the Group is also using data to \nimprove operations and innovation, while strengthening cybersecurity in line with ISO 27001 \nrequirements. \n \n8. Where does MMUS sit in the WFE supply chain today, including whether it supplies directly \nto OEMs, contract manufacturers or other Tier 1 suppliers? Is MMUS itself qualified as a Tier \n1 supplier to any major WFE customers? How does the Group intend to leverage its current \nposition to identify, qualify for and win larger WFE customers? \nMMUS mainly serves the Build-to-Print segment, supplying critical build-to-print precision \ncomponents to WFE customers and other high-tech industries globally. Its parts are used in areas \nsuch as deposition and etch applications.  \nAs a Next Generation Supplier, its value lies in manufacturing difficult parts accurately, consistently \nand efficiently. The Group continues to engage customers to better understand and solve their \nproblems, strengthen its engineering and manufacturing processes, and improve its factories \nthrough the Five-Star Factory initiative. This is increasingly important as semiconductor \nmanufacturing becomes more complex and customers place greater emphasis on supplier \ncapability and reliability. By consistently meeting these requirements, the Group believes the Build-\nto-Print business can win more critical work over time. \n \n \n\nC. Financials \n \n9. Was the inventory write-off in FY2026 due to obsolescence (overproduction or unsaleable)? \nWhat is the typical average lead time before inventory goes obsolete? \nInventory write-offs for FY2026 were S$73k, compared with S$166k in FY2025. Obsolescence risk \nvaries by product, as customer requirements, part numbers and product programmes can change \nquickly. Under its Five-Star Factory initiative, the Group continues to improve the way it plans and \nmanages inventory, while working to shorten lead times and deliver on time. \n \n10. Inventory stood at 6.5% of sales for FY2026 versus 4.8% of sales in the previous financial \nyear. Is there a fixed threshold on this? \nWith higher material costs and longer lead times, the Group built up inventory to fulfil confirmed \nbacklog orders. \nWhile there is no fixed threshold for inventory, the Group remains disciplined in managing inventory \nlevels and minimising obsolescence risk. This is especially important for the Consumable Tools \nsegment, where customers’ requirements can change quickly as they seek to improve yields, cycle \ntimes and efficiency.\n \n11. Can management provide a breakdown of the planned S$12.0 million of FY2027 capital \nexpenditure between the Consumable Tools and Build-to-Print businesses? How much of \nthe planned FY2027 capital expenditure is already supported by committed customer orders, \ncontracts or capacity requirements, and how much is intended to build capacity ahead of \nanticipated demand? \nThe Group does not disclose the breakdown the S$12.0 million investment by segment, or by \ncommitted versus anticipated demand. The investment is intended to support the three priority \nareas of its mid-term strategy: expanding operations and local capabilities, building next-generation \nprocessing capabilities, and advancing smart and secure manufacturing. \nThe Group reviews its capital expenditure plans every six months to stay responsive to changing \ncustomer needs. This helps the Group invest with discipline and add capacity where it sees \nsustainable, long-term demand rather than reacting to short-term changes in the cycle. \n \n12. With FY2027 capital expenditure expected to increase significantly, can the Group fund its \nplanned growth investments while maintaining the current 6-cent dividend? What factors \ndoes the Board consider in determining whether the 6-cent dividend can be sustained, and \nwhat gives the Board confidence that the higher investment programme will not come at the \nexpense of shareholder distributions? \nFor FY2026, total dividends represented a payout ratio of 52.4%. This exceeded the Group’s \npractice of distributing at least 40% of after-tax annual earnings, after considering financial \nperformance, projected cash flow, capital requirements for business growth, and economic or other \nconditions. \nThe Group remains focused on balancing long-term growth with sustainable shareholder returns. \nThis means being thoughtful and disciplined about how capital is used, while ensuring that it does \nnot limit good growth opportunities. The Group will continue this approach as it executes its mid-\nterm strategy, taking into consideration cash flow and investment needs."
       }
     ],
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/4LRBV8SWFEQ430RQ/1feaca66304aa971e0c9fb9cd41dc4f9366e94c12f3089cd2e69b7872fc6f5f3",
     "ref_id": "SG260924MEET77F5"
-  },
-  {
-    "symbol": "BIX",
-    "recording_date": "2026-10-05",
-    "agm_date": "2026-10-20",
-    "meeting_type": "AGM",
-    "agm_time": "10:30:00",
-    "agm_place": "1 Orchid Club Road, Orchid Country Club, Emerald Suite, Singapore 769162",
-    "agm_place_desc": "Onsite",
-    "summary": "Resolution 1: Adopted the Directors' Statement and Audited Financial Statements for FY ended 30 June 2026 and the Auditor's Report thereon (99.95% for, carried).\nResolution 2: Re-elected Mr Kenneth Ho Siew Keong as a Director (99.95% for, carried).\nResolution 3: Re-elected Mr Adrian Lum Wen-Hong as a Director (99.95% for, carried).\nResolution 4: Declared a final tax-exempt (one-tier) dividend of 0.50 cent per ordinary share (99.95% for, carried).\nResolution 5: Approved Directors' fees of $324,667 for the financial year ending 30 June 2027, to be paid quarterly in arrears (99.95% for, carried).\nResolution 6: Re-appointed Ernst & Young LLP as Auditor of the Company and authorised the Directors to fix their remuneration (99.95% for, carried).\nResolution 7: Approved authority to issue new shares (99.79% for, carried).\nResolution 8: Approved Share Purchase Mandate (99.95% for, carried).",
-    "tags": [
-      "dividend",
-      "capital and equity",
-      "board and management",
-      "financial reporting and profit allocation",
-      "corporate governance"
-    ],
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/H45I1WDHQ1R40HEA/cc6e73b3826f4916d87ed1baae64bc046d4c1547afe8fa558e90d3b263d9aff2",
-    "ref_id": "SG261005MEETBPA1"
   },
   {
     "symbol": "G50",
@@ -86,6 +144,22 @@
     "ref_id": "SG260930MEETEN3H"
   },
   {
+    "symbol": "DCRU",
+    "recording_date": "2026-10-07",
+    "agm_date": "2026-10-22",
+    "meeting_type": "EGM",
+    "agm_time": "09:30:00",
+    "agm_place": "Level 4, Singapore Land Tower, 50 Raffles Place, Singapore 048623There will be no option to participate virtually.",
+    "agm_place_desc": "Hybrid",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/5ZRX4DGREPP2AFCX/f706ef09c7be487c602bc314ec1b49cbe7d7a0ea8ddb313841a980f017ea7aa6",
+    "ref_id": "SG261007XMETPTSB"
+  },
+  {
     "symbol": "ZKX",
     "recording_date": "2026-10-20",
     "agm_date": "2026-11-11",
@@ -116,37 +190,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/XM7D2BWEBQW6250S/ee887885e23e3f9b49897e181c7a340bc4620b0e602ca5467fbc3745f662fffc",
     "ref_id": "SG261020XMETG9PS"
-  },
-  {
-    "symbol": "T14",
-    "recording_date": "2026-09-07",
-    "agm_date": "2026-10-23",
-    "meeting_type": "EGM",
-    "agm_time": "14:00:00",
-    "agm_place": "An EGM of the Company will be held at the meeting room of Da Ren Tang Mansion, Tianjin, the PRC 300193 (concurrently, via video conferencing at 171 Chin Swee Road, CES Centre, #02-07/08, Singapore 169877 for holders of the S-Shares in Singapore) on Friday, 23 October 2026 at 2:00 p.m..",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/XVO6RBH8XFB6WHB8/5cb6964ba78fb9025aec04e3e283ac90817b30697d75ec3e1ad4216dd35b6ca7",
-    "ref_id": "SG260907XMET5R9N"
-  },
-  {
-    "symbol": "BKW",
-    "recording_date": "2026-10-19",
-    "agm_date": "2026-11-03",
-    "meeting_type": "EGM",
-    "agm_time": "15:00:00",
-    "agm_place": "The extraordinary general meeting (the \"EGM\") will be held, in a wholly physical format, at Meyer Room, Singapore Swimming Club, 45 Tanjong Rhu Road, Singapore 436899. There will be no option for shareholders to participate virtually.",
-    "agm_place_desc": "Hybrid",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/V3LHMZFBRCT7IG7U/2aa9529516055decb2084fb62710ec86a6ccc59bf40c1fb111407374d2e6d3a9",
-    "ref_id": "SG261019XMET3ADO"
   }
 ]
