@@ -1,63 +1,63 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/IAGN7G4HHVC1E4JP/908072__KWS%20-%20Form%201.pdf",
-    "timestamp": "2026-10-23",
-    "transaction_type": "buy",
-    "holder_name": "Koh Wee Seng",
-    "transaction_value": 549250,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/B7UGDI5WWX3JPQB3/909080__Keppel%20DC%20Reit%2010.15.2026%20Form%203_final_updated.pdf",
+    "timestamp": "2026-10-15",
+    "transaction_type": "sell",
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": 4061261,
     "share_percentage_transaction": {
-      "total": 0.0009,
-      "deemed": 0.0,
-      "direct": 0.0009
+      "total": 0.0007,
+      "deemed": 0.0007,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 1571761654,
-          "percentage": 0.7619
+          "amount": 163823428,
+          "percentage": 0.0597
         },
         "deemed": {
-          "amount": 1354778942,
-          "percentage": 0.6567
+          "amount": 163823428,
+          "percentage": 0.0597
         },
         "direct": {
-          "amount": 216982712,
-          "percentage": 0.1052
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 1569861654,
-          "percentage": 0.761
+          "amount": 165786528,
+          "percentage": 0.0604
         },
         "deemed": {
-          "amount": 1354778942,
-          "percentage": 0.6567
+          "amount": 165786528,
+          "percentage": 0.0604
         },
         "direct": {
-          "amount": 215082712,
-          "percentage": 0.1043
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "5UF.SI",
+    "symbol": "AJBU.SI",
     "price_per_share": [
       {
-        "price": 0.2891,
-        "amount": 1900000
+        "price": 2.0688,
+        "amount": 1963100
       }
     ],
-    "holder_type": "insider",
-    "title": "Koh Wee Seng buys S$549K of Aspial Lifestyle Ltd shares",
-    "body": "Koh Wee Seng bought 1,900,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.2891 per share, for a total of S$549,250. Total interest rises from 1,569,861,654 shares (76.10%) to 1,571,761,654 shares (76.19%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "luxury-goods",
+    "holder_type": "institution",
+    "title": "BlackRock, Inc's deemed interest in Keppel DC REIT falls after S$4.1M unit sale",
+    "body": "BlackRock, Inc's deemed interest in Keppel DC REIT fell after a party linked to the holder sold 1,963,100 units in a market transaction at S$2.0688 per unit, for a total of S$4,061,261. No units are held directly. Total interest falls from 165,786,528 units (6.04%) to 163,823,428 units (5.97%).",
+    "sector": "reit",
+    "sub_sector": "reit-data-centre",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "Aspial Lifestyle Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "710696346143222",
-    "notification_type": null,
+    "company_name": "Keppel DC REIT",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "527519544755151",
+    "notification_type": "change_in_level",
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
