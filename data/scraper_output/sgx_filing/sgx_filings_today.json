@@ -1,24 +1,154 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/B7UGDI5WWX3JPQB3/909080__Keppel%20DC%20Reit%2010.15.2026%20Form%203_final_updated.pdf",
-    "timestamp": "2026-10-15",
-    "transaction_type": "sell",
-    "holder_name": "BlackRock, Inc",
-    "transaction_value": 4061261,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5K1I9VVDGS00CU68/909286__FORM%206.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "others",
+    "holder_name": "AIMS APAC REIT Management Limited",
+    "transaction_value": 469098,
     "share_percentage_transaction": {
-      "total": 0.0007,
-      "deemed": 0.0007,
+      "total": 0.0004,
+      "deemed": 0.0,
+      "direct": 0.0004
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 10887030,
+          "percentage": 0.0132
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 10887030,
+          "percentage": 0.0132
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 10574922,
+          "percentage": 0.0128
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 10574922,
+          "percentage": 0.0128
+        }
+      }
+    },
+    "symbol": "O5RU.SI",
+    "price_per_share": [
+      {
+        "price": 1.503,
+        "amount": 312108
+      }
+    ],
+    "holder_type": "insider",
+    "title": "AIMS APAC REIT Management Limited receives 312K AIMS APAC REIT units as management fees",
+    "body": "AIMS APAC REIT Management Limited received 312,108 units of AIMS APAC REIT as payment of management fees, valued at S$1.503 per unit, or S$469,098 in total. Total interest rises from 10,574,922 units (1.28%) to 10,887,030 units (1.32%).",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "company_name": "AIMS APAC REIT",
+    "filing_type": "form_6",
+    "transaction_reference": "311140945751459",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4QZX6D1WFNT9EU6B/909265__Form%203%20-%2026%20Oct%2026%20FINAL.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "others",
+    "holder_name": "Frasers Centrepoint Asset Management Ltd",
+    "transaction_value": 14450808,
+    "share_percentage_transaction": {
+      "total": 0.0032,
+      "deemed": 0.0,
+      "direct": 0.0032
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 127841539,
+          "percentage": 0.0625
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 127841539,
+          "percentage": 0.0625
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 120907703,
+          "percentage": 0.0593
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 120907703,
+          "percentage": 0.0593
+        }
+      }
+    },
+    "symbol": "J69U.SI",
+    "price_per_share": [
+      {
+        "price": 2.0841,
+        "amount": 6933836
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Frasers Centrepoint Asset Management Ltd receives 6.9M Frasers Centrepoint Trust units as management fees",
+    "body": "Frasers Centrepoint Asset Management Ltd received 6,933,836 units of Frasers Centrepoint Trust as payment of management fees, valued at S$2.0841 per unit, or S$14,450,808 in total. Total interest rises from 120,907,703 units (5.93%) to 127,841,539 units (6.25%).",
+    "sector": "reit",
+    "sub_sector": "reit-retail",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "company_name": "Frasers Centrepoint Trust",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "307319346052793",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the receipt of new units as payment of management fees",
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XFZDRFFAIA5R0HGZ/909222__eFORM1V2%20-%20Mdm%20Michelle%20Liem%2023%20October%202026.pdf",
+    "timestamp": "2026-10-22",
+    "transaction_type": "buy",
+    "holder_name": "Michelle Liem Mei Fung",
+    "transaction_value": 459757,
+    "share_percentage_transaction": {
+      "total": 0.00132,
+      "deemed": 0.00132,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 163823428,
-          "percentage": 0.0597
+          "amount": 767889329,
+          "percentage": 0.60483
         },
         "deemed": {
-          "amount": 163823428,
-          "percentage": 0.0597
+          "amount": 767889329,
+          "percentage": 0.60483
         },
         "direct": {
           "amount": 0,
@@ -27,12 +157,12 @@
       },
       "before": {
         "total": {
-          "amount": 165786528,
-          "percentage": 0.0604
+          "amount": 766214929,
+          "percentage": 0.60351
         },
         "deemed": {
-          "amount": 165786528,
-          "percentage": 0.0604
+          "amount": 766214929,
+          "percentage": 0.60351
         },
         "direct": {
           "amount": 0,
@@ -40,24 +170,971 @@
         }
       }
     },
-    "symbol": "AJBU.SI",
+    "symbol": "T24.SI",
     "price_per_share": [
       {
-        "price": 2.0688,
-        "amount": 1963100
+        "price": 0.2746,
+        "amount": 1674400
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rises after S$460K share purchase",
+    "body": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 1,674,400 shares in a market transaction at S$0.2746 per share, for a total of S$459,757. No shares are held directly. Total interest rises from 766,214,929 shares (60.35%) to 767,889,329 shares (60.48%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-diversified",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Tuan Sing Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "326942643099824",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/OC69YIEXBB8WBNVZ/909214__eFORM1V2%20-%20Mr%20William%20Liem%2023%20October%202026.pdf",
+    "timestamp": "2026-10-22",
+    "transaction_type": "buy",
+    "holder_name": "William Nursalim Alias William Liem",
+    "transaction_value": 459757,
+    "share_percentage_transaction": {
+      "total": 0.00132,
+      "deemed": 0.00132,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 767889329,
+          "percentage": 0.60483
+        },
+        "deemed": {
+          "amount": 767889329,
+          "percentage": 0.60483
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 766214929,
+          "percentage": 0.60351
+        },
+        "deemed": {
+          "amount": 766214929,
+          "percentage": 0.60351
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "T24.SI",
+    "price_per_share": [
+      {
+        "price": 0.2746,
+        "amount": 1674400
+      }
+    ],
+    "holder_type": "insider",
+    "title": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rises after S$460K share purchase",
+    "body": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 1,674,400 shares in a market transaction at S$0.2746 per share, for a total of S$459,757. No shares are held directly. Total interest rises from 766,214,929 shares (60.35%) to 767,889,329 shares (60.48%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-diversified",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Tuan Sing Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "718090346241754",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/QUJ4KJ155VFACMXT/909212__Form%206%20-%2026%20Oct%2026%20FINAL.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "others",
+    "holder_name": "Frasers Centrepoint Asset Management Ltd",
+    "transaction_value": 14450808,
+    "share_percentage_transaction": {
+      "total": 0.0032,
+      "deemed": 0.0,
+      "direct": 0.0032
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 127841539,
+          "percentage": 0.0625
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 127841539,
+          "percentage": 0.0625
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 120907703,
+          "percentage": 0.0593
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 120907703,
+          "percentage": 0.0593
+        }
+      }
+    },
+    "symbol": "J69U.SI",
+    "price_per_share": [
+      {
+        "price": 2.0841,
+        "amount": 6933836
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Frasers Centrepoint Asset Management Ltd receives 6.9M Frasers Centrepoint Trust units as management fees",
+    "body": "Frasers Centrepoint Asset Management Ltd received 6,933,836 units of Frasers Centrepoint Trust as payment of management fees, valued at S$2.0841 per unit, or S$14,450,808 in total. Total interest rises from 120,907,703 units (5.93%) to 127,841,539 units (6.25%).",
+    "sector": "reit",
+    "sub_sector": "reit-retail",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "company_name": "Frasers Centrepoint Trust",
+    "filing_type": "form_6",
+    "transaction_reference": "359049346051003",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/TU86L1SDV36EH0WG/909198__eFORM3V2_final.pdf",
+    "timestamp": "2026-10-15",
+    "transaction_type": "buy",
+    "holder_name": "T. Rowe Price Associates, Inc",
+    "transaction_value": 754560,
+    "share_percentage_transaction": {
+      "total": 0.0007,
+      "deemed": 0.0007,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 63035300,
+          "percentage": 0.0605
+        },
+        "deemed": {
+          "amount": 63035300,
+          "percentage": 0.0605
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 62365200,
+          "percentage": 0.0598
+        },
+        "deemed": {
+          "amount": 62365200,
+          "percentage": 0.0598
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "NTDU.SI",
+    "price_per_share": [
+      {
+        "price": 1.126,
+        "amount": 670100
       }
     ],
     "holder_type": "institution",
-    "title": "BlackRock, Inc's deemed interest in Keppel DC REIT falls after S$4.1M unit sale",
-    "body": "BlackRock, Inc's deemed interest in Keppel DC REIT fell after a party linked to the holder sold 1,963,100 units in a market transaction at S$2.0688 per unit, for a total of S$4,061,261. No units are held directly. Total interest falls from 165,786,528 units (6.04%) to 163,823,428 units (5.97%).",
+    "title": "T. Rowe Price Associates, Inc's deemed interest in NTT DC REIT rises after S$755K unit purchase",
+    "body": "T. Rowe Price Associates, Inc's deemed interest in NTT DC REIT rose after a party linked to the holder bought 670,100 units in a market transaction at S$1.126 per unit, for a total of S$754,560. No units are held directly. Total interest rises from 62,365,200 units (5.98%) to 63,035,300 units (6.05%).",
     "sector": "reit",
     "sub_sector": "reit-data-centre",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "Keppel DC REIT",
+    "company_name": "NTT DC REIT",
     "filing_type": "form_3_part_ii",
-    "transaction_reference": "527519544755151",
+    "transaction_reference": "511516346154747",
     "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/UJY0O2KFFFIAL6NQ/909196__eFORM3V2_final.pdf",
+    "timestamp": "2025-07-14",
+    "transaction_type": "buy",
+    "holder_name": "T. Rowe Price Associates, Inc",
+    "transaction_value": 68382880,
+    "share_percentage_transaction": {
+      "total": 0.052,
+      "deemed": 0.052,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 53600000,
+          "percentage": 0.052
+        },
+        "deemed": {
+          "amount": 53600000,
+          "percentage": 0.052
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "NTDU.SI",
+    "price_per_share": [
+      {
+        "price": 1.2758,
+        "amount": 53600000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "T. Rowe Price Associates, Inc becomes substantial unitholder of NTT DC REIT with 5.20% stake",
+    "body": "T. Rowe Price Associates, Inc's deemed interest in NTT DC REIT rose after a party linked to the holder acquired 53,600,000 units through a placement at S$1.2758 per unit, for a total of S$68,382,880. No units are held directly. Total interest rises from 0 units (0.00%) to 53,600,000 units (5.20%). With this, the holder becomes a substantial unitholder of NTT DC REIT.",
+    "sector": "reit",
+    "sub_sector": "reit-data-centre",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "NTT DC REIT",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "267952643017575",
+    "notification_type": "becoming",
+    "circumstance_key": "Securities via a placement",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7UDMS2EUL8AD5IYW/909160__eFORM1_ChengWK_261026_Final.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 487452859,
+          "percentage": 0.6373
+        },
+        "deemed": {
+          "amount": 487238459,
+          "percentage": 0.637
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 487352859,
+          "percentage": 0.6372
+        },
+        "deemed": {
+          "amount": 487138459,
+          "percentage": 0.6369
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 100000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 100K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 100,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 487,352,859 shares (63.72%) to 487,452,859 shares (63.73%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Wing Tai Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "325197346142780",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 100,000 shares by the holder's spouse",
+    "acting_party": "Chow Helen"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/V1JZGX6CNQ4IKS1I/909136__KIP%20Inc%20-%20eFORM3V2%202610%202026.pdf",
+    "timestamp": "2026-10-21",
+    "transaction_type": "buy",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 1158924,
+    "share_percentage_transaction": {
+      "total": 0.0004,
+      "deemed": 0.0004,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 166552961,
+          "percentage": 0.1692
+        },
+        "deemed": {
+          "amount": 166552961,
+          "percentage": 0.1692
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 166162961,
+          "percentage": 0.1688
+        },
+        "deemed": {
+          "amount": 166162961,
+          "percentage": 0.1688
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.9716,
+        "amount": 390000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$1.2M share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 390,000 shares in a market transaction at S$2.9716 per share, for a total of S$1,158,924. No shares are held directly. Total interest rises from 166,162,961 shares (16.88%) to 166,552,961 shares (16.92%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "835316346151010",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/V1JZGX6CNQ4IKS1I/909136__KIP%20Inc%20-%20eFORM3V2%202610%202026.pdf",
+    "timestamp": "2026-10-22",
+    "transaction_type": "buy",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 699410,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0003,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 166792961,
+          "percentage": 0.1695
+        },
+        "deemed": {
+          "amount": 166792961,
+          "percentage": 0.1695
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 166552961,
+          "percentage": 0.1692
+        },
+        "deemed": {
+          "amount": 166552961,
+          "percentage": 0.1692
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.91421,
+        "amount": 240000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$699K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 240,000 shares in a market transaction at S$2.9142 per share, for a total of S$699,410. No shares are held directly. Total interest rises from 166,552,961 shares (16.92%) to 166,792,961 shares (16.95%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "778303462175411",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/V1JZGX6CNQ4IKS1I/909136__KIP%20Inc%20-%20eFORM3V2%202610%202026.pdf",
+    "timestamp": "2026-10-23",
+    "transaction_type": "buy",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 324988,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 166902961,
+          "percentage": 0.1696
+        },
+        "deemed": {
+          "amount": 166902961,
+          "percentage": 0.1696
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 166792961,
+          "percentage": 0.1695
+        },
+        "deemed": {
+          "amount": 166792961,
+          "percentage": 0.1695
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.95444,
+        "amount": 110000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$325K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 110,000 shares in a market transaction at S$2.9544 per share, for a total of S$324,988. No shares are held directly. Total interest rises from 166,792,961 shares (16.95%) to 166,902,961 shares (16.96%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "959303462280122",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FAHMUTXA0ANFVSEB/909134__UIP%20Holdings%20-%20eFORM3V2%202610%202026.pdf",
+    "timestamp": "2026-10-21",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 1158924,
+    "share_percentage_transaction": {
+      "total": 0.0004,
+      "deemed": 0.0,
+      "direct": 0.0004
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187171346,
+          "percentage": 0.1902
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187171346,
+          "percentage": 0.1902
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 186781346,
+          "percentage": 0.1898
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 186781346,
+          "percentage": 0.1898
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.9716,
+        "amount": 390000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$1.2M of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 390,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.9716 per share, for a total of S$1,158,924. Total interest rises from 186,781,346 shares (18.98%) to 187,171,346 shares (19.02%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "866216346151923",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FAHMUTXA0ANFVSEB/909134__UIP%20Holdings%20-%20eFORM3V2%202610%202026.pdf",
+    "timestamp": "2026-10-22",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 699410,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0,
+      "direct": 0.0002
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187411346,
+          "percentage": 0.1904
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187411346,
+          "percentage": 0.1904
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187171346,
+          "percentage": 0.1902
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187171346,
+          "percentage": 0.1902
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.91421,
+        "amount": 240000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$699K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 240,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.9142 per share, for a total of S$699,410. Total interest rises from 187,171,346 shares (19.02%) to 187,411,346 shares (19.04%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "454203462195011",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FAHMUTXA0ANFVSEB/909134__UIP%20Holdings%20-%20eFORM3V2%202610%202026.pdf",
+    "timestamp": "2026-10-23",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 324988,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187521346,
+          "percentage": 0.1905
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187521346,
+          "percentage": 0.1905
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187411346,
+          "percentage": 0.1904
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187411346,
+          "percentage": 0.1904
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.95444,
+        "amount": 110000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$325K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 110,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.9544 per share, for a total of S$324,988. Total interest rises from 187,411,346 shares (19.04%) to 187,521,346 shares (19.05%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "897303462204922",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZM168ZI6IYKT1HSB/909132__WEC%20-%20eFORM1V2%202610%202026.pdf",
+    "timestamp": "2026-10-21",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 2317848,
+    "share_percentage_transaction": {
+      "total": 0.0008,
+      "deemed": 0.0008,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 353724307,
+          "percentage": 0.3594
+        },
+        "deemed": {
+          "amount": 353724307,
+          "percentage": 0.3594
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 352944307,
+          "percentage": 0.3586
+        },
+        "deemed": {
+          "amount": 352944307,
+          "percentage": 0.3586
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.9716,
+        "amount": 780000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$2.3M share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 780,000 shares in a market transaction at S$2.9716 per share, for a total of S$2,317,848. No shares are held directly. Total interest rises from 352,944,307 shares (35.86%) to 353,724,307 shares (35.94%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "602296346141835",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZM168ZI6IYKT1HSB/909132__WEC%20-%20eFORM1V2%202610%202026.pdf",
+    "timestamp": "2026-10-22",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 1398820,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 354204307,
+          "percentage": 0.3599
+        },
+        "deemed": {
+          "amount": 354204307,
+          "percentage": 0.3599
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 353724307,
+          "percentage": 0.3594
+        },
+        "deemed": {
+          "amount": 353724307,
+          "percentage": 0.3594
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.91421,
+        "amount": 480000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$1.4M share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 480,000 shares in a market transaction at S$2.9142 per share, for a total of S$1,398,820. No shares are held directly. Total interest rises from 353,724,307 shares (35.94%) to 354,204,307 shares (35.99%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "762303462130511",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZM168ZI6IYKT1HSB/909132__WEC%20-%20eFORM1V2%202610%202026.pdf",
+    "timestamp": "2026-10-23",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 649976,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0002,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 354424307,
+          "percentage": 0.3601
+        },
+        "deemed": {
+          "amount": 354424307,
+          "percentage": 0.3601
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 354204307,
+          "percentage": 0.3599
+        },
+        "deemed": {
+          "amount": 354204307,
+          "percentage": 0.3599
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.95444,
+        "amount": 220000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$650K share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 220,000 shares in a market transaction at S$2.9544 per share, for a total of S$649,976. No shares are held directly. Total interest rises from 354,204,307 shares (35.99%) to 354,424,307 shares (36.01%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "781303462249322",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/YT162N10U18UJ7U8/909125__KWS%20-%20Form%201.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "buy",
+    "holder_name": "Koh Wee Seng",
+    "transaction_value": 15000,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1571811654,
+          "percentage": 0.7619
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 217032712,
+          "percentage": 0.1052
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1571761654,
+          "percentage": 0.7619
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 216982712,
+          "percentage": 0.1052
+        }
+      }
+    },
+    "symbol": "5UF.SI",
+    "price_per_share": [
+      {
+        "price": 0.3,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Koh Wee Seng buys S$15,000 of Aspial Lifestyle Ltd shares",
+    "body": "Koh Wee Seng bought 50,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.3 per share, for a total of S$15,000. Total interest rises from 1,571,761,654 to 1,571,811,654 shares, with the stake unchanged at 76.19%.",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "luxury-goods",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Aspial Lifestyle Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "570598346142949",
+    "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
