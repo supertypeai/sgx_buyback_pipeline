@@ -1,5 +1,112 @@
 [
   {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ITZLEUT8APD1SYUM/3903d4a8267b5502c20da912c4ebbfbbe1daeba84efa8ed38643b8ef6adda19b",
+    "reference": "SG261028OTHREK2R",
+    "symbol": "5UX",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-28",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 0.071
+    },
+    "total_value": 15088.33,
+    "total_shares_purchased": 211800,
+    "treasury_shares_after_purchase": 126001700,
+    "mandate": {
+      "mandate_total": 209823205,
+      "cumulative_purchased": 211800,
+      "mandate_remaining": 209611405,
+      "mandate_start": "2026-10-28",
+      "mandate_end": "2027-10-28"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/PH0FNFG6B1YF0H9L/7e2b4aace3a74bed74ce98990269d79f25e764ceb9677ad28b247f300d513959",
+    "reference": "SG261028OTHRE3N3",
+    "symbol": "YF8",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Share Buy Back - Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-28",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 0.1968
+    },
+    "total_value": 393986.12,
+    "total_shares_purchased": 2000000,
+    "treasury_shares_after_purchase": 13398700,
+    "mandate": {
+      "mandate_total": 348045052,
+      "cumulative_purchased": 13398700,
+      "mandate_remaining": 334646352,
+      "mandate_start": "2026-04-29",
+      "mandate_end": "2027-04-29"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/ZN9WJXF9EB57NSOC/e2b00ae80bb904a43f08fefa2cf35b9d01613c8be4b6c7ddd390f0dc8a5e277a",
+    "reference": "SG261028OTHRPIKG",
+    "symbol": "H30",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-28",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 0.95,
+      "lowest": 0.945
+    },
+    "total_value": 232107.21,
+    "total_shares_purchased": 244000,
+    "treasury_shares_after_purchase": 1486700,
+    "mandate": {
+      "mandate_total": 80371314,
+      "cumulative_purchased": 17931100,
+      "mandate_remaining": 62440214,
+      "mandate_start": "2026-04-30",
+      "mandate_end": "2027-04-30"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/Y2Q7WD7XI62172Q0/8402a2260e5808f85aba209e19a7e6289d82e8587f0519cd62c4a56839cb7b9b",
+    "reference": "SG261027OTHR6K0N",
+    "symbol": "5UX",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy-Back Notice",
+    "purchase_date": "2026-10-27",
+    "type": "On Market",
+    "price_per_share": {
+      "highest": 0.072,
+      "lowest": 0.071
+    },
+    "total_value": 12879.97,
+    "total_shares_purchased": 180000,
+    "treasury_shares_after_purchase": 125789900,
+    "mandate": {
+      "mandate_total": 210983495,
+      "cumulative_purchased": 23205800,
+      "mandate_remaining": 187777695,
+      "mandate_start": "2025-10-27",
+      "mandate_end": "2026-10-27"
+    }
+  },
+  {
+    "url": "https://links.sgx.com/1.0.0/corporate-announcements/B5K1H2WP5S10IFYD/27e6bf8ea0034daeab2d41097e0214f7952e9a08e129bd2a75e793f232d61bc9",
+    "reference": "SG261027OTHRCPUY",
+    "symbol": "5E2",
+    "title": "Share Buy Back - Daily Share Buy-Back Notice::Daily Share Buy Back Notice",
+    "purchase_date": "2026-10-27",
+    "type": "On Market",
+    "price_per_share": {
+      "price_paid_per_share": 1.8363
+    },
+    "total_value": 1994828.67,
+    "total_shares_purchased": 1085000,
+    "treasury_shares_after_purchase": 38759425,
+    "mandate": {
+      "mandate_total": 67597276,
+      "cumulative_purchased": 18130000,
+      "mandate_remaining": 49467276,
+      "mandate_start": "2026-04-22",
+      "mandate_end": "2027-04-22"
+    }
+  },
+  {
     "url": "https://links.sgx.com/1.0.0/corporate-announcements/0VA2VAFB519YOTXG/342c9eb5563cfbad541a339235100730c2ae045fa21850bcb5fc0d4691fd1117",
     "reference": "SG261027OTHRJAH3",
     "symbol": "YF8",
