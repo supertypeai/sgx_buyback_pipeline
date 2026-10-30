@@ -1,147 +1,31 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LEGS9Q9N8JCOSVUN/909673__F6-MRM.2026%201029.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/G73II085ITV5WQVK/909792__KWS%20-%20Form%201.pdf",
     "timestamp": "2026-10-29",
-    "transaction_type": "others",
-    "holder_name": "M&C REIT Management Limited",
-    "transaction_value": 1642511,
-    "share_percentage_transaction": {
-      "total": 0.00173,
-      "deemed": 0.00021,
-      "direct": 0.00152
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 154356819,
-          "percentage": 0.12006
-        },
-        "deemed": {
-          "amount": 6975391,
-          "percentage": 0.00542
-        },
-        "direct": {
-          "amount": 147381428,
-          "percentage": 0.11464
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 151829896,
-          "percentage": 0.11833
-        },
-        "deemed": {
-          "amount": 6681051,
-          "percentage": 0.00521
-        },
-        "direct": {
-          "amount": 145148845,
-          "percentage": 0.11312
-        }
-      }
-    },
-    "symbol": "J85.SI",
-    "price_per_share": [
-      {
-        "price": 0.7357,
-        "amount": 2232583
-      }
-    ],
-    "holder_type": "insider",
-    "title": "M&C REIT Management Limited receives 2.2M CDL Hospitality Trusts stapled securities as management fees",
-    "body": "M&C REIT Management Limited received 2,232,583 stapled securities of CDL Hospitality Trusts as payment of management fees, valued at S$0.7357 per stapled security, or S$1,642,511 in total. The direct interest moved from 145,148,845 to 147,381,428 stapled securities and the deemed interest from 6,681,051 to 6,975,391 stapled securities. Total interest rises from 151,829,896 stapled securities (11.83%) to 154,356,819 stapled securities (12.01%).",
-    "sector": "reit",
-    "sub_sector": "reit-hospitality",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "CDL Hospitality Trusts",
-    "filing_type": "form_6",
-    "transaction_reference": "456741346251745",
-    "notification_type": null,
-    "circumstance_key": "Securities as part of management",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KC0U3WHL799PJRFQ/909671__F6-MBTM.2026%201029.pdf",
-    "timestamp": "2026-10-29",
-    "transaction_type": "others",
-    "holder_name": "M&C Business Trust Management Limited",
-    "transaction_value": 216545,
-    "share_percentage_transaction": {
-      "total": 0.00021,
-      "deemed": 0.0,
-      "direct": 0.00021
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 6975391,
-          "percentage": 0.00542
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 6975391,
-          "percentage": 0.00542
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 6681051,
-          "percentage": 0.00521
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 6681051,
-          "percentage": 0.00521
-        }
-      }
-    },
-    "symbol": "J85.SI",
-    "price_per_share": [
-      {
-        "price": 0.7357,
-        "amount": 294340
-      }
-    ],
-    "holder_type": "insider",
-    "title": "M&C Business Trust Management Limited receives 294K CDL Hospitality Trusts stapled securities as management fees",
-    "body": "M&C Business Trust Management Limited received 294,340 stapled securities of CDL Hospitality Trusts as payment of management fees, valued at S$0.7357 per stapled security, or S$216,545 in total. Total interest rises from 6,681,051 stapled securities (0.52%) to 6,975,391 stapled securities (0.54%).",
-    "sector": "reit",
-    "sub_sector": "reit-hospitality",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "CDL Hospitality Trusts",
-    "filing_type": "form_6",
-    "transaction_reference": "841741346251387",
-    "notification_type": null,
-    "circumstance_key": "Securities as part of management",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RNYUJVMVAB6QBS18/909624__KWS%20-%20Form%201.pdf",
-    "timestamp": "2026-10-28",
     "transaction_type": "buy",
     "holder_name": "Koh Wee Seng",
     "transaction_value": 30500,
     "share_percentage_transaction": {
-      "total": 0.0001,
+      "total": 0.0,
       "deemed": 0.0,
-      "direct": 0.0001
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 1572111654,
+          "percentage": 0.762
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 217332712,
+          "percentage": 0.1053
+        }
+      },
+      "before": {
         "total": {
           "amount": 1572011654,
           "percentage": 0.762
@@ -154,20 +38,6 @@
           "amount": 217232712,
           "percentage": 0.1053
         }
-      },
-      "before": {
-        "total": {
-          "amount": 1571911654,
-          "percentage": 0.7619
-        },
-        "deemed": {
-          "amount": 1354778942,
-          "percentage": 0.6567
-        },
-        "direct": {
-          "amount": 217132712,
-          "percentage": 0.1052
-        }
       }
     },
     "symbol": "5UF.SI",
@@ -179,227 +49,46 @@
     ],
     "holder_type": "insider",
     "title": "Koh Wee Seng buys S$30,500 of Aspial Lifestyle Ltd shares",
-    "body": "Koh Wee Seng bought 100,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.305 per share, for a total of S$30,500. Total interest rises from 1,571,911,654 shares (76.19%) to 1,572,011,654 shares (76.20%).",
+    "body": "Koh Wee Seng bought 100,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.305 per share, for a total of S$30,500. Total interest rises from 1,572,011,654 to 1,572,111,654 shares, with the stake unchanged at 76.20%.",
     "sector": "consumer-cyclicals",
     "sub_sector": "luxury-goods",
     "tags": [],
     "source_is_manual": false,
     "company_name": "Aspial Lifestyle Ltd",
     "filing_type": "form_1",
-    "transaction_reference": "538691346243805",
+    "transaction_reference": "289993346243256",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XNK05D2LGKD6M7TT/909579__Form%201-%20SL%20-%2028%20Oct%202026.pdf",
-    "timestamp": "2026-10-28",
-    "transaction_type": "others",
-    "holder_name": "Lu Qinghui",
-    "transaction_value": 80000,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 63165182,
-          "percentage": 0.0345
-        },
-        "deemed": {
-          "amount": 63165182,
-          "percentage": 0.0345
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 63165182,
-          "percentage": 0.0345
-        },
-        "deemed": {
-          "amount": 63165182,
-          "percentage": 0.0345
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "BSL.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 80000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Lu Qinghui receives 80,000 Raffles Medical Group Ltd shares as award",
-    "body": "Lu Qinghui received 80,000 shares of Raffles Medical Group Ltd under a share award, valued at S$1 per share, or S$80,000 in total. The number of shares held is unchanged at 63,165,182.",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [
-      "award"
-    ],
-    "source_is_manual": false,
-    "company_name": "Raffles Medical Group Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "878091246543945",
-    "notification_type": null,
-    "circumstance_key": "Acceptance of employee share options/share awards",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/YJW3O5470HJENMCJ/909574__Form%201%20-%20OL%20-%2028%20Oct%202026.pdf",
-    "timestamp": "2026-10-28",
-    "transaction_type": "others",
-    "holder_name": "Olivier Lim Tse Ghow",
-    "transaction_value": 240000,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 776016,
-          "percentage": 0.0004
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 776016,
-          "percentage": 0.0004
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 776016,
-          "percentage": 0.0004
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 776016,
-          "percentage": 0.0004
-        }
-      }
-    },
-    "symbol": "BSL.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 240000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Olivier Lim Tse Ghow receives 240K Raffles Medical Group Ltd shares as award",
-    "body": "Olivier Lim Tse Ghow received 240,000 shares of Raffles Medical Group Ltd under a share award, valued at S$1 per share, or S$240,000 in total. The number of shares held is unchanged at 776,016.",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [
-      "award"
-    ],
-    "source_is_manual": false,
-    "company_name": "Raffles Medical Group Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "277591246543502",
-    "notification_type": null,
-    "circumstance_key": "Acceptance of employee share options/share awards",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7LLJ9DWAJFRDHMKR/909558__Form%201%20-%20AL%20-%2028%20Oct%202026.pdf",
-    "timestamp": "2026-10-28",
-    "transaction_type": "others",
-    "holder_name": "Lew Yoong Keong Allen",
-    "transaction_value": 350000,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 200000,
-          "percentage": 0.0001
-        },
-        "deemed": {
-          "amount": 200000,
-          "percentage": 0.0001
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 200000,
-          "percentage": 0.0001
-        },
-        "deemed": {
-          "amount": 200000,
-          "percentage": 0.0001
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "BSL.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 350000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Lew Yoong Keong Allen receives 350K Raffles Medical Group Ltd shares as award",
-    "body": "Lew Yoong Keong Allen received 350,000 shares of Raffles Medical Group Ltd under a share award, valued at S$1 per share, or S$350,000 in total. The number of shares held is unchanged at 200,000.",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [
-      "award"
-    ],
-    "source_is_manual": false,
-    "company_name": "Raffles Medical Group Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "869291246543679",
-    "notification_type": null,
-    "circumstance_key": "Acceptance of employee share options/share awards",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4BFKKTZSBNPBQGPV/909549__eFORM1_ChengWK_281026_Final.pdf",
-    "timestamp": "2026-10-28",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5DDHF4V7LIGRPK96/909778__eFORM1_ChengWK_291026_Final.pdf",
+    "timestamp": "2026-10-29",
     "transaction_type": "buy",
     "holder_name": "Cheng Wai Keung",
     "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0001,
+      "total": 0.0004,
+      "deemed": 0.0004,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 487922859,
+          "percentage": 0.638
+        },
+        "deemed": {
+          "amount": 487708459,
+          "percentage": 0.6377
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
         "total": {
           "amount": 487647859,
           "percentage": 0.6376
@@ -412,700 +101,36 @@
           "amount": 214400,
           "percentage": 0.0003
         }
-      },
-      "before": {
-        "total": {
-          "amount": 487562859,
-          "percentage": 0.6375
-        },
-        "deemed": {
-          "amount": 487348459,
-          "percentage": 0.6372
-        },
-        "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
-        }
       }
     },
     "symbol": "W05.SI",
     "price_per_share": [
       {
         "price": null,
-        "amount": 85000
+        "amount": 275000
       }
     ],
     "holder_type": "insider",
-    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 85,000 shares",
-    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 85,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 487,562,859 shares (63.75%) to 487,647,859 shares (63.76%).",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 275K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 275,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 487,647,859 shares (63.76%) to 487,922,859 shares (63.80%).",
     "sector": "properties-real-estate",
     "sub_sector": "real-estate-development",
     "tags": [],
     "source_is_manual": false,
     "company_name": "Wing Tai Holdings Ltd",
     "filing_type": "form_1",
-    "transaction_reference": "193197346142791",
+    "transaction_reference": "411197346142769",
     "notification_type": null,
     "circumstance_key": null,
-    "change_reason": "the acquisition of 85,000 shares by the holder's spouse",
+    "change_reason": "the acquisition of 275,000 shares by the holder's spouse",
     "acting_party": "Chow Helen"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S15SJA9SCPE2HMCS/909507__OUE_REIT_Form_3_ASM_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/BONQNAYICWMXIMIB/909737__20261029%20-%20eFORM6V2%20_Payment%20of%20Management%20fee.pdf",
+    "timestamp": "2026-10-29",
     "transaction_type": "others",
-    "holder_name": "Admiralty Station Management Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "institution",
-    "title": "Admiralty Station Management Limited's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "Admiralty Station Management Limited's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "171032643117833",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S15SJA9SCPE2HMCS/909507__OUE_REIT_Form_3_ASM_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "Argyle Street Management Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "institution",
-    "title": "Argyle Street Management Limited's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "Argyle Street Management Limited's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "171032643117833",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S15SJA9SCPE2HMCS/909507__OUE_REIT_Form_3_ASM_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "Argyle Street Management Holdings Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "institution",
-    "title": "Argyle Street Management Holdings Limited's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "Argyle Street Management Holdings Limited's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "171032643117833",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S15SJA9SCPE2HMCS/909507__OUE_REIT_Form_3_ASM_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "Kin Chan",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "institution",
-    "title": "Kin Chan's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "Kin Chan's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "171032643117833",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of 5,646,924 units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S15SJA9SCPE2HMCS/909507__OUE_REIT_Form_3_ASM_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "V-Nee Yeh",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "insider",
-    "title": "V-Nee Yeh's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "V-Nee Yeh's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "171032643117833",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LBY3TKAY455WM3MT/909504__OUE_REIT_Form_3_Lippo_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "Golden Concord Asia Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2745327614,
-          "percentage": 0.4954
-        },
-        "direct": {
-          "amount": 26351777,
-          "percentage": 0.0048
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2739680690,
-          "percentage": 0.4949
-        },
-        "direct": {
-          "amount": 26351777,
-          "percentage": 0.0048
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Golden Concord Asia Limited's deemed interest in OUE Real Estate Investment Trust rises after payment of management fees in 5.6M units",
-    "body": "Golden Concord Asia Limited's deemed interest in OUE Real Estate Investment Trust rose after OUE Limited received 5,646,924 units as payment of management fees, valued at S$1 per unit, or S$5,646,924 in total. The direct holding is unchanged at 26,351,777 units. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "449032643052013",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": "OUE Limited"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LBY3TKAY455WM3MT/909504__OUE_REIT_Form_3_Lippo_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "Fortune Crane Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Fortune Crane Limited's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "Fortune Crane Limited's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "449032643052013",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of 5,646,924 units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LBY3TKAY455WM3MT/909504__OUE_REIT_Form_3_Lippo_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "Lippo ASM Asia Property Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Lippo ASM Asia Property Limited's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "Lippo ASM Asia Property Limited's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "449032643052013",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LBY3TKAY455WM3MT/909504__OUE_REIT_Form_3_Lippo_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "HKC Property Investment Holdings Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "institution",
-    "title": "HKC Property Investment Holdings Limited's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "HKC Property Investment Holdings Limited's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "449032643052013",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LBY3TKAY455WM3MT/909504__OUE_REIT_Form_3_Lippo_28_Oct_2026.pdf",
-    "timestamp": "2026-10-26",
-    "transaction_type": "others",
-    "holder_name": "Hongkong Chinese Limited",
-    "transaction_value": 5646924,
-    "share_percentage_transaction": {
-      "total": 0.0005,
-      "deemed": 0.0005,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "deemed": {
-          "amount": 2771679391,
-          "percentage": 0.5002
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "deemed": {
-          "amount": 2766032467,
-          "percentage": 0.4997
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "TS0U.SI",
-    "price_per_share": [
-      {
-        "price": 1.0,
-        "amount": 5646924
-      }
-    ],
-    "holder_type": "institution",
-    "title": "Hongkong Chinese Limited's deemed interest in OUE Real Estate Investment Trust rises to 50.02% from 49.97% in payment of management fees",
-    "body": "Hongkong Chinese Limited's deemed interest in OUE Real Estate Investment Trust moved from 49.97% to 50.02% in payment of management fees. The transaction involved 5,646,924 units at S$1 per unit, for a total of S$5,646,924. No units are held directly. Total interest rises from 2,766,032,467 units (49.97%) to 2,771,679,391 units (50.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-diversified",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "company_name": "OUE Real Estate Investment Trust",
-    "filing_type": "form_3_part_iii_iv",
-    "transaction_reference": "449032643052013",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of Units to OUE as payment of OUE REIT Management Pte. Ltd.'s base fee",
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/21CU4F13DKR5VNHB/909493__FORM%206%20-%20UIB%20RM%20-%2028Oct2026.pdf",
-    "timestamp": "2026-10-28",
-    "transaction_type": "others",
-    "holder_name": "UIB REIT Management Pte. Ltd",
-    "transaction_value": 1113902,
+    "holder_name": "FEO Hospitality Asset Management Pte. Ltd",
+    "transaction_value": 1136002,
     "share_percentage_transaction": {
       "total": 0.001,
       "deemed": 0.0,
@@ -1114,77 +139,77 @@
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 3035343,
-          "percentage": 0.0022
+          "amount": 2154786,
+          "percentage": 0.001
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 3035343,
-          "percentage": 0.0022
+          "amount": 2154786,
+          "percentage": 0.001
         }
       },
       "before": {
         "total": {
-          "amount": 1677091,
-          "percentage": 0.0012
+          "amount": 1,
+          "percentage": 0.0
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 1677091,
-          "percentage": 0.0012
+          "amount": 1,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "UIBU.SI",
+    "symbol": "Q5T.SI",
     "price_per_share": [
       {
-        "price": 0.8201,
-        "amount": 1358252
+        "price": 0.5272,
+        "amount": 2154785
       }
     ],
     "holder_type": "insider",
-    "title": "UIB REIT Management Pte. Ltd receives 1.4M UI Boustead REIT units as management fees",
-    "body": "UIB REIT Management Pte. Ltd received 1,358,252 units of UI Boustead REIT as payment of management fees, valued at S$0.8201 per unit, or S$1,113,902 in total. Total interest rises from 1,677,091 units (0.12%) to 3,035,343 units (0.22%).",
+    "title": "FEO Hospitality Asset Management Pte. Ltd receives 2.2M Far East Hospitality Trust stapled securities as management fees",
+    "body": "FEO Hospitality Asset Management Pte. Ltd received 2,154,785 stapled securities of Far East Hospitality Trust as payment of management fees, valued at S$0.5272 per stapled security, or S$1,136,002 in total. Total interest rises from 1 stapled securities (0.00%) to 2,154,786 stapled securities (0.10%).",
     "sector": "reit",
-    "sub_sector": "reit-industrial",
+    "sub_sector": "reit-hospitality",
     "tags": [
       "management-fees"
     ],
     "source_is_manual": false,
-    "company_name": "UI Boustead REIT",
+    "company_name": "Far East Hospitality Trust",
     "filing_type": "form_6",
-    "transaction_reference": "069448346051069",
+    "transaction_reference": "336441346251345",
     "notification_type": null,
     "circumstance_key": "Securities as part of management",
     "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/JUP842UWSD1MG2CY/909487__eFORM3V2%20-%20FINAL.pdf",
-    "timestamp": "2026-10-23",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WXYXLFN3VKVBGYXM/909723__KIP%20Inc%20-%20eFORM3V2%202910%202026.pdf",
+    "timestamp": "2026-10-26",
     "transaction_type": "buy",
-    "holder_name": "Kopernik Global Investors, LLC",
-    "transaction_value": 1512500,
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 104137,
     "share_percentage_transaction": {
-      "total": 0.0004,
-      "deemed": 0.0004,
+      "total": 0.0,
+      "deemed": 0.0,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 1017229200,
-          "percentage": 0.0802
+          "amount": 166937961,
+          "percentage": 0.1696
         },
         "deemed": {
-          "amount": 1017229200,
-          "percentage": 0.0802
+          "amount": 166937961,
+          "percentage": 0.1696
         },
         "direct": {
           "amount": 0,
@@ -1193,12 +218,12 @@
       },
       "before": {
         "total": {
-          "amount": 1011729200,
-          "percentage": 0.0798
+          "amount": 166902961,
+          "percentage": 0.1696
         },
         "deemed": {
-          "amount": 1011729200,
-          "percentage": 0.0798
+          "amount": 166902961,
+          "percentage": 0.1696
         },
         "direct": {
           "amount": 0,
@@ -1206,48 +231,111 @@
         }
       }
     },
-    "symbol": "E5H.SI",
+    "symbol": "U10.SI",
     "price_per_share": [
       {
-        "price": 0.275,
-        "amount": 5500000
+        "price": 2.97537,
+        "amount": 35000
       }
     ],
     "holder_type": "institution",
-    "title": "Kopernik Global Investors, LLC's deemed interest in Golden Agri-Resources Ltd rises after S$1.5M share purchase",
-    "body": "Kopernik Global Investors, LLC's deemed interest in Golden Agri-Resources Ltd rose after a party linked to the holder bought 5,500,000 shares in a market transaction at S$0.275 per share, for a total of S$1,512,500. No shares are held directly. Total interest rises from 1,011,729,200 shares (7.98%) to 1,017,229,200 shares (8.02%).",
-    "sector": "consumer-non-cyclicals",
-    "sub_sector": "food-beverage-retail-production",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$104K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 35,000 shares in a market transaction at S$2.9754 per share, for a total of S$104,137. No shares are held directly. Total interest rises from 166,902,961 to 166,937,961 shares, with the stake unchanged at 16.96%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "Golden Agri-Resources Ltd",
+    "company_name": "UOB-Kay Hian Holdings Ltd",
     "filing_type": "form_3_part_ii",
-    "transaction_reference": "635311346255818",
+    "transaction_reference": "954952643116525",
     "notification_type": "change_in_level",
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/J0KGC605587HIY7E/909476__FEH_Temasek%20Form%203%20final.pdf",
-    "timestamp": "2026-10-21",
-    "transaction_type": "others",
-    "holder_name": "Temasek Holdings (Private) Limited",
-    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/B3001FELBFXOHNCP/909721__UIP%20Holdings%20-%20eFORM3V2%202910%202026.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 104137,
     "share_percentage_transaction": {
-      "total": 0.1002,
-      "deemed": 0.1002,
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187556346,
+          "percentage": 0.1906
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187556346,
+          "percentage": 0.1906
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187521346,
+          "percentage": 0.1905
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187521346,
+          "percentage": 0.1905
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.97537,
+        "amount": 35000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$104K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 35,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.9754 per share, for a total of S$104,137. Total interest rises from 187,521,346 shares (19.05%) to 187,556,346 shares (19.06%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "906952643115645",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/807BBCX0ZQXC788C/909719__WEC%20-%20eFORM1V2%202910%202026.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 208275,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 68459062,
-          "percentage": 0.1043
+          "amount": 354494307,
+          "percentage": 0.3602
         },
         "deemed": {
-          "amount": 68459062,
-          "percentage": 0.1043
+          "amount": 354494307,
+          "percentage": 0.3602
         },
         "direct": {
           "amount": 0,
@@ -1256,12 +344,12 @@
       },
       "before": {
         "total": {
-          "amount": 2733920,
-          "percentage": 0.0041
+          "amount": 354424307,
+          "percentage": 0.3601
         },
         "deemed": {
-          "amount": 2733920,
-          "percentage": 0.0041
+          "amount": 354424307,
+          "percentage": 0.3601
         },
         "direct": {
           "amount": 0,
@@ -1269,28 +357,152 @@
         }
       }
     },
-    "symbol": "F03.SI",
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.97537,
+        "amount": 70000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$208K share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 70,000 shares in a market transaction at S$2.9754 per share, for a total of S$208,275. No shares are held directly. Total interest rises from 354,424,307 shares (36.01%) to 354,494,307 shares (36.02%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "625942643194864",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/IH83GGZAIR3XD4YI/909716__eFORM1V2_28Oct2026_Raj_final.pdf",
+    "timestamp": "2026-10-28",
+    "transaction_type": "buy",
+    "holder_name": "Nagaraj Sivaram",
+    "transaction_value": 372000,
+    "share_percentage_transaction": {
+      "total": 0.00025,
+      "deemed": 0.0,
+      "direct": 0.00025
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 620500,
+          "percentage": 0.00077
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 620500,
+          "percentage": 0.00077
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 420500,
+          "percentage": 0.00052
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 420500,
+          "percentage": 0.00052
+        }
+      }
+    },
+    "symbol": "9A4U.SI",
+    "price_per_share": [
+      {
+        "price": 1.86,
+        "amount": 200000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Nagaraj Sivaram buys S$372K of ESR-REIT units",
+    "body": "Nagaraj Sivaram bought 200,000 units of ESR-REIT in a market transaction at S$1.86 per unit, for a total of S$372,000. Total interest rises from 420,500 units (0.05%) to 620,500 units (0.08%).",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "ESR-REIT",
+    "filing_type": "form_1",
+    "transaction_reference": "924592346243076",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/MC9T0YX310AFVF32/909702__Form_3_BlackRock-27.10.2026_final.pdf",
+    "timestamp": "2026-10-27",
+    "transaction_type": "others",
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0039,
+      "deemed": 0.0039,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 14727009,
+          "percentage": 0.0513
+        },
+        "deemed": {
+          "amount": 14727009,
+          "percentage": 0.0513
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 13609095,
+          "percentage": 0.0474
+        },
+        "deemed": {
+          "amount": 13609095,
+          "percentage": 0.0474
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "V03.SI",
     "price_per_share": [
       {
         "price": null,
-        "amount": 65725142
+        "amount": 1117914
       }
     ],
     "holder_type": "institution",
-    "title": "Temasek Holdings (Private) Limited becomes substantial shareholder of Food Empire Holdings Ltd with 10.43% stake",
-    "body": "Temasek Holdings (Private) Limited's deemed interest in Food Empire Holdings Ltd moved from 0.41% to 10.43% following a transfer of shares. The transaction involved 65,725,142 shares. No shares are held directly. Total interest rises from 2,733,920 shares (0.41%) to 68,459,062 shares (10.43%). With this, the holder becomes a substantial shareholder of Food Empire Holdings Ltd.",
-    "sector": "consumer-defensive",
-    "sub_sector": "food-beverage-production",
-    "tags": [
-      "transfer"
-    ],
+    "title": "BlackRock, Inc becomes substantial shareholder of Venture Corp Ltd with 5.13% stake",
+    "body": "BlackRock, Inc reported a change in deemed interest in Venture Corp Ltd. The filing attributes the change to an increase in shares held as collateral. The transaction involved 1,117,914 shares. No shares are held directly. Total interest rises from 13,609,095 shares (4.74%) to 14,727,009 shares (5.13%). With this, the holder becomes a substantial shareholder of Venture Corp Ltd.",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
+    "tags": [],
     "source_is_manual": false,
-    "company_name": "Food Empire Holdings Ltd",
+    "company_name": "Venture Corp Ltd",
     "filing_type": "form_3_part_ii",
-    "transaction_reference": "247352643111145",
+    "transaction_reference": "558119145554795",
     "notification_type": "becoming",
     "circumstance_key": null,
-    "change_reason": "the transfer of 65,725,142 Shares to SANISA Investments Limited",
+    "change_reason": "an increase in shares held as collateral",
     "acting_party": null
   }
 ]
