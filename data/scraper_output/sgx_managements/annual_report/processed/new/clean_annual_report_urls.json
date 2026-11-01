@@ -1,7 +1,32 @@
 {
-  "U9E": {
-    "symbol": "U9E",
+  "W05": {
+    "symbol": "W05",
     "pdf_url": null,
-    "submission_date": "20260828"
+    "submission_date": "20261015"
+  },
+  "A04": {
+    "symbol": "A04",
+    "pdf_url": "https://links.sgx.com/1.0.0/corporate-announcements/U8YZ0KGVQTKAFF19/906845_Oct_13_2026%20Annual%20Report%202026.pdf",
+    "submission_date": "20261013"
+  },
+  "5UX": {
+    "symbol": "5UX",
+    "pdf_url": "https://links.sgx.com/1.0.0/corporate-announcements/WARNFSZLRKFCCDDF/906712_Oxley%20AR%202026.pdf",
+    "submission_date": "20261012"
+  },
+  "N02": {
+    "symbol": "N02",
+    "pdf_url": "https://links.sgx.com/1.0.0/corporate-announcements/8SPC6LHOXNH7L2WW/905968_NSL%20AR%202026.pdf",
+    "submission_date": "20261005"
+  },
+  "JYEU": {
+    "symbol": "JYEU",
+    "pdf_url": "https://links.sgx.com/1.0.0/corporate-announcements/YX0H4TWIATW4K5J6/905689_Annual%20Report%20FY2026.pdf",
+    "submission_date": "20261001"
+  },
+  "A50": {
+    "symbol": "A50",
+    "pdf_url": "https://links.sgx.com/1.0.0/corporate-announcements/GTDT7ECO0HAVKW4J/905643_TMG%20FY2026%20Annual%20Report.pdf",
+    "submission_date": "20261001"
   }
 }
