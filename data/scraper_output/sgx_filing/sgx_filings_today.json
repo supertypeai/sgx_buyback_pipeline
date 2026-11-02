@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HNQ3L1XHNKUH7T3D/910067__20261102Form1_GSC.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "buy",
+    "holder_name": "Dato' Seri Gooi Soon Chai",
+    "transaction_value": 200000,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0,
+      "direct": 0.0002
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 102026091,
+          "percentage": 0.2155
+        },
+        "deemed": {
+          "amount": 93709068,
+          "percentage": 0.1979
+        },
+        "direct": {
+          "amount": 8317023,
+          "percentage": 0.0176
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 101926091,
+          "percentage": 0.2153
+        },
+        "deemed": {
+          "amount": 93709068,
+          "percentage": 0.1979
+        },
+        "direct": {
+          "amount": 8217023,
+          "percentage": 0.0174
+        }
+      }
+    },
+    "symbol": "E28.SI",
+    "price_per_share": [
+      {
+        "price": 2.0,
+        "amount": 100000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Dato' Seri Gooi Soon Chai buys S$200K of Frencken Group Ltd shares",
+    "body": "Dato' Seri Gooi Soon Chai bought 100,000 shares of Frencken Group Ltd in a market transaction at S$2 per share, for a total of S$200,000. Total interest rises from 101,926,091 shares (21.53%) to 102,026,091 shares (21.55%).",
+    "sector": "technology",
+    "sub_sector": "communication-instruments",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Frencken Group Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "834397346241590",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  }
+]
