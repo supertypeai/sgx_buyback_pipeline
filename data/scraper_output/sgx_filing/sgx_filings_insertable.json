@@ -1,65 +1,764 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HNQ3L1XHNKUH7T3D/910067__20261102Form1_GSC.pdf",
-    "timestamp": "2026-10-26",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1OLK2OLPNVK8B9XJ/910231__eFORM1_ChengWK_031126_Final.pdf",
+    "timestamp": "2026-11-03",
     "transaction_type": "buy",
-    "holder_name": "Dato' Seri Gooi Soon Chai",
-    "transaction_value": 200000,
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0,
-      "direct": 0.0002
+      "total": 0.0004,
+      "deemed": 0.0004,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 102026091,
-          "percentage": 0.2155
+          "amount": 488462859,
+          "percentage": 0.6387
         },
         "deemed": {
-          "amount": 93709068,
-          "percentage": 0.1979
+          "amount": 488248459,
+          "percentage": 0.6384
         },
         "direct": {
-          "amount": 8317023,
-          "percentage": 0.0176
+          "amount": 214400,
+          "percentage": 0.0003
         }
       },
       "before": {
         "total": {
-          "amount": 101926091,
-          "percentage": 0.2153
+          "amount": 488212859,
+          "percentage": 0.6383
         },
         "deemed": {
-          "amount": 93709068,
-          "percentage": 0.1979
+          "amount": 487998459,
+          "percentage": 0.638
         },
         "direct": {
-          "amount": 8217023,
-          "percentage": 0.0174
+          "amount": 214400,
+          "percentage": 0.0003
         }
       }
     },
-    "symbol": "E28.SI",
+    "symbol": "W05.SI",
     "price_per_share": [
       {
-        "price": 2.0,
-        "amount": 100000
+        "price": null,
+        "amount": 250000
       }
     ],
     "holder_type": "insider",
-    "title": "Dato' Seri Gooi Soon Chai buys S$200K of Frencken Group Ltd shares",
-    "body": "Dato' Seri Gooi Soon Chai bought 100,000 shares of Frencken Group Ltd in a market transaction at S$2 per share, for a total of S$200,000. Total interest rises from 101,926,091 shares (21.53%) to 102,026,091 shares (21.55%).",
-    "sector": "technology",
-    "sub_sector": "communication-instruments",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 250K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 250,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 488,212,859 shares (63.83%) to 488,462,859 shares (63.87%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "Frencken Group Ltd",
+    "company_name": "Wing Tai Holdings Ltd",
     "filing_type": "form_1",
-    "transaction_reference": "834397346241590",
+    "transaction_reference": "966397346242264",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 250,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KHTXXWNNJJW5HQMB/910226__Dr%20Goi%20-%20Form%201%20dd%2003.11.26.pdf",
+    "timestamp": "2026-10-28",
+    "transaction_type": "others",
+    "holder_name": "Goi Seng Hui",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.2066,
+      "direct": 0.2066
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1257692608,
+          "percentage": 0.5196
+        },
+        "deemed": {
+          "amount": 500000000,
+          "percentage": 0.2066
+        },
+        "direct": {
+          "amount": 757692608,
+          "percentage": 0.313
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1257692608,
+          "percentage": 0.5196
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1257692608,
+          "percentage": 0.5196
+        }
+      }
+    },
+    "symbol": "BDX.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 500000000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Goi Seng Hui reports change in interest in GSH Corp Ltd after share transfer",
+    "body": "Goi Seng Hui reported a change in interest in GSH Corp Ltd following a transfer of shares. The transaction involved 500,000,000 shares. The direct interest moved from 1,257,692,608 to 757,692,608 shares and the deemed interest from 0 to 500,000,000 shares. The number of shares held is unchanged at 1,257,692,608.",
+    "sector": "industrials",
+    "sub_sector": "conglomerates-holdings",
+    "tags": [
+      "transfer"
+    ],
+    "source_is_manual": false,
+    "company_name": "GSH Corp Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "493498346242838",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "a transfer of shares to a nominee account",
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/K8G5GUA4XOPJQAWN/910176__SERT-eFORM6-SEM.pdf",
+    "timestamp": "2026-11-02",
+    "transaction_type": "others",
+    "holder_name": "Stoneweg EREIT Management Pte. Ltd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0008,
+      "deemed": 0.0,
+      "direct": 0.0008
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1080785,
+          "percentage": 0.0019
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1080785,
+          "percentage": 0.0019
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1492364,
+          "percentage": 0.0027
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1492364,
+          "percentage": 0.0027
+        }
+      }
+    },
+    "symbol": "SEB.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 411579
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Stoneweg EREIT Management Pte. Ltd's stake in Stoneweg Europe Stapled Trust falls to 0.19% from 0.27% under award plan",
+    "body": "Stoneweg EREIT Management Pte. Ltd's stake in Stoneweg Europe Stapled Trust moved from 0.27% to 0.19% under an award plan. The transaction involved 411,579 stapled securities. Total interest falls from 1,492,364 stapled securities (0.27%) to 1,080,785 stapled securities (0.19%).",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "tags": [
+      "award"
+    ],
+    "source_is_manual": false,
+    "company_name": "Stoneweg Europe Stapled Trust",
+    "filing_type": "form_6",
+    "transaction_reference": "783344346253818",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "vesting of stapled securities to SEM employees under the SEM Retention Securities Plan",
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KV7IP4SBQUIZVR0W/910174__SERT-eFORM1-Simon.pdf",
+    "timestamp": "2026-11-02",
+    "transaction_type": "others",
+    "holder_name": "Simon Robert Garing",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0004,
+      "deemed": 0.0,
+      "direct": 0.0004
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 655491,
+          "percentage": 0.0012
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 655491,
+          "percentage": 0.0012
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 451306,
+          "percentage": 0.0008
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 451306,
+          "percentage": 0.0008
+        }
+      }
+    },
+    "symbol": "SEB.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 204185
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Simon Robert Garing receives 204K Stoneweg Europe Stapled Trust stapled securities as award",
+    "body": "Simon Robert Garing received 204,185 stapled securities of Stoneweg Europe Stapled Trust under a stapled security award. Total interest rises from 451,306 stapled securities (0.08%) to 655,491 stapled securities (0.12%).",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "tags": [
+      "award"
+    ],
+    "source_is_manual": false,
+    "company_name": "Stoneweg Europe Stapled Trust",
+    "filing_type": "form_1",
+    "transaction_reference": "290194346243167",
+    "notification_type": null,
+    "circumstance_key": "Vesting of share awards",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HXPJFAKVUFQKMP95/910149__eFORM1V2%20-%20Nagaraj%20Sivaram%20-%2020261102%20-%20final.pdf",
+    "timestamp": "2026-10-30",
+    "transaction_type": "buy",
+    "holder_name": "Nagaraj Sivaram",
+    "transaction_value": 92070,
+    "share_percentage_transaction": {
+      "total": 2e-05,
+      "deemed": 0.0,
+      "direct": 2e-05
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 100000,
+          "percentage": 2e-05
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 100000,
+          "percentage": 2e-05
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1000,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1000,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "CJLU.SI",
+    "price_per_share": [
+      {
+        "price": 0.93,
+        "amount": 99000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Nagaraj Sivaram buys S$92,070 of NetLink NBN Trust units",
+    "body": "Nagaraj Sivaram bought 99,000 units of NetLink NBN Trust in a market transaction at S$0.93 per unit, for a total of S$92,070. Total interest rises from 1,000 units (0.00%) to 100,000 units (less than 0.01%).",
+    "sector": "infrastructures",
+    "sub_sector": "telecommunication",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "NetLink NBN Trust",
+    "filing_type": "form_1",
+    "transaction_reference": "823994346242858",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WP31BRK0LH91LX57/910133__KWS%20-%20Form%201.pdf",
+    "timestamp": "2026-11-02",
+    "transaction_type": "buy",
+    "holder_name": "Koh Wee Seng",
+    "transaction_value": 88500,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1572461654,
+          "percentage": 0.7622
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 217682712,
+          "percentage": 0.1055
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1572161654,
+          "percentage": 0.7621
+        },
+        "deemed": {
+          "amount": 1354778942,
+          "percentage": 0.6567
+        },
+        "direct": {
+          "amount": 217382712,
+          "percentage": 0.1054
+        }
+      }
+    },
+    "symbol": "5UF.SI",
+    "price_per_share": [
+      {
+        "price": 0.295,
+        "amount": 300000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Koh Wee Seng buys S$88,500 of Aspial Lifestyle Ltd shares",
+    "body": "Koh Wee Seng bought 300,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.295 per share, for a total of S$88,500. Total interest rises from 1,572,161,654 shares (76.21%) to 1,572,461,654 shares (76.22%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "luxury-goods",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Aspial Lifestyle Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "440794346243934",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/QX7LNLA7I0SM5RB2/910125__eFORM1_ChengWK_021126_Final.pdf",
+    "timestamp": "2026-11-02",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 488212859,
+          "percentage": 0.6383
+        },
+        "deemed": {
+          "amount": 487998459,
+          "percentage": 0.638
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 488082859,
+          "percentage": 0.6382
+        },
+        "deemed": {
+          "amount": 487868459,
+          "percentage": 0.6379
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 130000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 130K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 130,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 488,082,859 shares (63.82%) to 488,212,859 shares (63.83%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Wing Tai Holdings Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "241397346242331",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 130,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/9ZW1YJ62SU2RBNSQ/910112__eFORM3V2_MONEYFARM_02Nov26.pdf",
+    "timestamp": "2026-10-29",
+    "transaction_type": "buy",
+    "holder_name": "Money Farm Pte. Ltd",
+    "transaction_value": 22750,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 738194421,
+          "percentage": 0.5795
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 738194421,
+          "percentage": 0.5795
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 738144421,
+          "percentage": 0.5794
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 738144421,
+          "percentage": 0.5794
+        }
+      }
+    },
+    "symbol": "5WJ.SI",
+    "price_per_share": [
+      {
+        "price": 0.455,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Money Farm Pte. Ltd buys S$22,750 of Moneymax Financial Services Ltd shares",
+    "body": "Money Farm Pte. Ltd bought 50,000 shares of Moneymax Financial Services Ltd in a market transaction at S$0.455 per share, for a total of S$22,750. Total interest rises from 738,144,421 shares (57.94%) to 738,194,421 shares (57.95%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Moneymax Financial Services Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "754011346052826",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/0T6J3YH37V3F4CDL/910110__eFORM3V2_LLE_02Nov26.pdf",
+    "timestamp": "2026-10-29",
+    "transaction_type": "buy",
+    "holder_name": "Lim Liang Eng",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 753016642,
+          "percentage": 0.5911
+        },
+        "deemed": {
+          "amount": 738194421,
+          "percentage": 0.5795
+        },
+        "direct": {
+          "amount": 14822221,
+          "percentage": 0.0116
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 752966642,
+          "percentage": 0.591
+        },
+        "deemed": {
+          "amount": 738144421,
+          "percentage": 0.5794
+        },
+        "direct": {
+          "amount": 14822221,
+          "percentage": 0.0116
+        }
+      }
+    },
+    "symbol": "5WJ.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Liang Eng's deemed interest in Moneymax Financial Services Ltd rises after purchase of 50,000 shares",
+    "body": "Lim Liang Eng's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 50,000 shares. The direct holding is unchanged at 14,822,221 shares. Total interest rises from 752,966,642 shares (59.10%) to 753,016,642 shares (59.11%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Moneymax Financial Services Ltd",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "754011346052826",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 50,000 ordinary shares in MoneyMax Financial Services Ltd. by Money Farm Pte. Ltd",
+    "acting_party": "Money Farm Pte. Ltd"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LH4KT495TKCFUXTJ/910108__eFORM1V2_LYS_02Nov26.pdf",
+    "timestamp": "2026-10-29",
+    "transaction_type": "buy",
+    "holder_name": "Lim Yong Sheng",
+    "transaction_value": 22750,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 868629975,
+          "percentage": 0.6819
+        },
+        "deemed": {
+          "amount": 738194421,
+          "percentage": 0.5795
+        },
+        "direct": {
+          "amount": 130435554,
+          "percentage": 0.1024
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 868579975,
+          "percentage": 0.6818
+        },
+        "deemed": {
+          "amount": 738144421,
+          "percentage": 0.5794
+        },
+        "direct": {
+          "amount": 130435554,
+          "percentage": 0.1024
+        }
+      }
+    },
+    "symbol": "5WJ.SI",
+    "price_per_share": [
+      {
+        "price": 0.455,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Yong Sheng's deemed interest in Moneymax Financial Services Ltd rises after S$22,750 share purchase",
+    "body": "Lim Yong Sheng's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 50,000 shares at S$0.455 per share, for a total of S$22,750. The direct holding is unchanged at 130,435,554 shares. Total interest rises from 868,579,975 shares (68.18%) to 868,629,975 shares (68.19%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Moneymax Financial Services Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "967291346041991",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 50,000 ordinary shares by Money Farm Pte. Ltd",
+    "acting_party": "Money Farm Pte. Ltd"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XCF5FEK23RE15NT6/910105__eFORM1V2_LYG_02Nov26.pdf",
+    "timestamp": "2026-10-29",
+    "transaction_type": "buy",
+    "holder_name": "Lim Yong Guan",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 900171213,
+          "percentage": 0.7066
+        },
+        "deemed": {
+          "amount": 748984547,
+          "percentage": 0.5879
+        },
+        "direct": {
+          "amount": 151186666,
+          "percentage": 0.1187
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 900121213,
+          "percentage": 0.7066
+        },
+        "deemed": {
+          "amount": 748934547,
+          "percentage": 0.5879
+        },
+        "direct": {
+          "amount": 151186666,
+          "percentage": 0.1187
+        }
+      }
+    },
+    "symbol": "5WJ.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Yong Guan's deemed interest in Moneymax Financial Services Ltd rises after purchase of 50,000 shares",
+    "body": "Lim Yong Guan's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 50,000 shares. The direct holding is unchanged at 151,186,666 shares. Total interest rises from 900,121,213 to 900,171,213 shares, with the stake unchanged at 70.66%.",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "Moneymax Financial Services Ltd",
+    "filing_type": "form_1",
+    "transaction_reference": "074840643196034",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 50,000 ordinary shares by Money Farm Pte. Ltd",
+    "acting_party": "Money Farm Pte. Ltd"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/V4QZPGIH57LM0XUI/910088__CLINT%2020261030%20FORM%203_TH%20final.pdf",
+    "timestamp": "2026-10-26",
+    "transaction_type": "others",
+    "holder_name": "Temasek Holdings (Private) Limited",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0002,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 357174708,
+          "percentage": 0.2398
+        },
+        "deemed": {
+          "amount": 357174708,
+          "percentage": 0.2398
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 357474708,
+          "percentage": 0.24
+        },
+        "deemed": {
+          "amount": 357474708,
+          "percentage": 0.24
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "CY6U.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 300000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Temasek Holdings (Private) Limited reports change in deemed interest in CapitaLand India Trust",
+    "body": "Temasek Holdings (Private) Limited reported a change in deemed interest in CapitaLand India Trust. The filing attributes the change to the expiry of options. The transaction involved 300,000 units. No units are held directly. Total interest falls from 357,474,708 units (24.00%) to 357,174,708 units (23.98%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-services",
+    "tags": [],
+    "source_is_manual": false,
+    "company_name": "CapitaLand India Trust",
+    "filing_type": "form_3_part_ii",
+    "transaction_reference": "418313346252546",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the expiry of options",
     "acting_party": null
   }
 ]
