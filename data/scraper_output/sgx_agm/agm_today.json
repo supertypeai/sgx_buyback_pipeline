@@ -1,5 +1,21 @@
 [
   {
+    "symbol": "1J7",
+    "recording_date": "2026-11-04",
+    "agm_date": "2026-11-27",
+    "meeting_type": "AGM",
+    "agm_time": "14:00:00",
+    "agm_place": "Rose Room 1, York Hotel, 21 Mount Elizabeth, Singapore 228516",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/24N9IK3E6UEQYFJ6/4f250ebce1f175fcc6dc25746114ef8292618a8621408f77dbc8a89a8059107f",
+    "ref_id": "SG261104MEET06ZF"
+  },
+  {
     "symbol": "41T",
     "recording_date": "2026-11-02",
     "agm_date": "2026-11-18",
