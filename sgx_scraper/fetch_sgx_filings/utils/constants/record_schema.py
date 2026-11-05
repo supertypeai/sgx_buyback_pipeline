@@ -18,17 +18,30 @@ FILING_TABLE_COLUMNS = [
     "sub_sector",
     "tags",
     "source_is_manual",
-]
-
-# Helper fields with no column in the table. They were used to write the
-# title and body, and stay on the batch files so a batch can be reviewed
-# (which form, which box, why). They are removed from the processed files
-FILING_EXTRA_FIELDS = [
-    "company_name",
+    # The form and its boxes, which the ownership pipeline reads instead of the PDF
     "filing_type",
-    "transaction_reference",
     "notification_type",
     "circumstance_key",
     "change_reason",
     "acting_party",
+    "deemed_interest_text",
+    "relationship_text",
+    "remarks_text",
+]
+
+# Read from the parsed record as they are; the box texts are renamed in the payload
+FILING_FORM_FIELDS = [
+    "filing_type",
+    "notification_type",
+    "circumstance_key",
+    "change_reason",
+    "acting_party",
+]
+
+# Helper fields with no column in the table. They were used to write the
+# title and body, and stay on the batch files so a batch can be reviewed.
+# They are removed from the processed files
+FILING_EXTRA_FIELDS = [
+    "company_name",
+    "transaction_reference",
 ]

@@ -1,0 +1,65 @@
+name: SGX Filings Ownership
+
+# Runs as soon as the filings scrape finishes, so new filings are read the same day
+on:
+  workflow_run:
+    workflows: ["Scrape SGX Filings"]
+    types: [completed]
+  workflow_dispatch:
+
+# Shares the scrapers' group so it never reads sgx_filings while a scrape is writing it
+concurrency:
+  group: sgx-scraper-main
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  ownership:
+    # A failed scrape leaves nothing new to read
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv (Python package manager)
+        uses: astral-sh/setup-uv@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+          uv sync
+
+      - name: Run filings ownership pipeline
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          uv run python -m sgx_scraper.main_cli filings_ownership --is-push-db
+
+      # Owner chains follow the new filings the same day, from the reports kept in the repo
+      - name: Rebuild company owners
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          uv run python -m sgx_scraper.main_cli report_owners --is-push-db
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgx-filings-ownership-artifacts
+          path: |
+            data/scraper_output/filings_ownership/preview.json
+            data/scraper_output/filings_ownership/company_owners_latest.json
+            scraper.log
+          if-no-files-found: warn
+          retention-days: 90

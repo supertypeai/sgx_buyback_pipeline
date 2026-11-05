@@ -18,6 +18,7 @@ from sgx_scraper.fetch_sgx_filings.utils.constants.form_options import (
 )
 from sgx_scraper.fetch_sgx_filings.utils.constants.record_schema import (
     FILING_TABLE_COLUMNS,
+    FILING_FORM_FIELDS,
     FILING_EXTRA_FIELDS,
 )
 from sgx_scraper.fetch_sgx_filings.utils.constants.title_body_rules import (

@@ -1,7 +1,11 @@
 MODEL_CONFIG = {
     "gpt-6-luna": {
         "model": "openai/gpt-6-luna",
-        "provider": "openrouter",     
+        "provider": "openrouter",
+    },
+    "gpt-6.1-terra": {
+        "model": "openai/gpt-6.1-terra",
+        "provider": "openrouter",
     },
     "glm-5.3-flash": {
         "model": "z-ai/glm-5.3-flash",
@@ -22,6 +26,10 @@ MODEL_CONFIG = {
     "gpt-oss-120b": {
         "model": "openai/gpt-oss-120b",
         "provider": "groq",
+    },
+    "claude-haiku-5.5": {
+        "model": "anthropic/claude-haiku-5.5",
+        "provider": "openrouter"
     },
     "laguna-s-2.1": {
         "model": "poolside/laguna-s-2.1:free",

@@ -6,6 +6,7 @@ from sgx_scraper.fetch_reit_transaction.cli import app as reit_transaction_app
 from sgx_scraper.fetch_agm.cli import app as agm_app
 from sgx_scraper.fetch_managements.cli import app as management_app
 from sgx_scraper.fetch_takeover_offers.cli import app as takeover_app
+from sgx_scraper.filings_ownership.cli import app as filings_ownership_app
 
 import typer
 import logging
@@ -57,6 +58,7 @@ app.add_typer(reit_transaction_app)  # scraper_reit_transaction
 app.add_typer(agm_app)               # scraper_agm
 app.add_typer(management_app)        # track_management, scraper_managements
 app.add_typer(takeover_app)          # takeover
+app.add_typer(filings_ownership_app)  # filings_ownership, report_owners, annual_reports
 
 
 if __name__ == '__main__':

@@ -86,7 +86,7 @@ def filter_lookup_announcements(
 
 def filter_annual_report_url(
     announcement_lookup: dict,
-    output_path: str 
+    output_path: str | None = None
 ) -> dict:
     pdf_urls = {}
 
@@ -121,10 +121,12 @@ def filter_annual_report_url(
             "submission_date": submission_date
         }
 
-        write_json(
-            path=output_path, 
-            payload=pdf_urls
-        )
+        # The managements pipeline keeps a checkpoint, ownership needs none
+        if output_path:
+            write_json(
+                path=output_path,
+                payload=pdf_urls
+            )
 
     LOGGER.info("Total annual report urls covered: %d", len(pdf_urls))
 

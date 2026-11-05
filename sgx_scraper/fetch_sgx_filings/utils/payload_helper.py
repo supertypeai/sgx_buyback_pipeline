@@ -1,6 +1,7 @@
 from sgx_scraper.config.settings import SUPABASE_CLIENT
 from sgx_scraper.fetch_sgx_filings.utils.constants import (
     FILING_EXTRA_FIELDS,
+    FILING_FORM_FIELDS,
     FILING_TABLE_COLUMNS,
 )
 from sgx_scraper.utils.json_helper import open_json
@@ -104,14 +105,8 @@ def get_percentage_movement(
 
 
 def build_filing_payload(record: dict[str, any]) -> dict[str, any]:
-    # Shapes a finished record for the sgx_filings table: the before and
-    # after share table becomes interest_breakdown, the percentage moved is
-    # given per interest, and the symbol carries its exchange suffix. The
-    # FILING_EXTRA_FIELDS follow the table's own columns and are dropped by
-    # keep_table_columns when batches are merged into a processed file
     symbol = record.get("symbol")
 
-    # (stored key, flat amount prefix, flat percentage prefix)
     interests = [
         ("total", "holding", "share_percentage"),
         ("deemed", "deemed", "deemed_percentage"),
@@ -150,9 +145,14 @@ def build_filing_payload(record: dict[str, any]) -> dict[str, any]:
         "sub_sector": record.get("sub_sector"),
         "tags": record.get("tags") or [],
         "source_is_manual": record.get("source_is_manual"),
+        # The ownership graph reads these boxes, so it need not reopen the PDF.
+        # Only Form 3 Part III/IV has a relationship box
+        "deemed_interest_text": record.get("deemed_interest_circumstances"),
+        "relationship_text": record.get("shareholder_relationship"),
+        "remarks_text": record.get("remarks"),
     }
 
-    for field in FILING_EXTRA_FIELDS:
+    for field in [*FILING_FORM_FIELDS, *FILING_EXTRA_FIELDS]:
         payload[field] = record.get(field)
 
     return payload

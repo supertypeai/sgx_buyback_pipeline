@@ -50,8 +50,10 @@ class TransactionRecordBuilder:
         raw_dates = source.find_values_below_label('Date of acquisition of or change in interest')
         raw_amounts = source.find_values_below_label('acquired or disposed of by')
         raw_values = source.find_values_below_label('Amount of consideration')
+        # Anchored: filers write "See item 10 on circumstances giving rise to
+        # deemed interests" in other answers, which is not the box itself
         deemed_interest_circumstances = source.find_section_values(
-            'Circumstances giving rise to deemed interests',
+            r'^\s*(?:\d+\.\s*)?Circumstances giving rise to deemed interests',
             r'Attachments\s*\(\s*if any\s*\)',
         )
         remarks = source.find_section_values(
@@ -144,13 +146,6 @@ class TransactionRecordBuilder:
                 deemed_interest_circumstances=deemed_interest_circumstances[index],
                 remarks=remarks[index],
             )
-
-            # if not source.is_valid_record(transaction):
-            #     LOGGER.info(
-            #         '[%s] Skipping, due to no change in direct before and after',
-            #         form_name
-            #     )
-            #     continue
 
             holder_type = classify_holder_type(
                 parser_form=form_name, 

@@ -1,0 +1,80 @@
+name: SGX Annual Report Holders
+
+# Runs after the monthly managements scrape, which finds each company's latest annual
+# report; only newly published reports are read
+on:
+  workflow_run:
+    workflows: ["Scrape SGX Management"]
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  group: sgx-scraper-main
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  annual-reports:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv (Python package manager)
+        uses: astral-sh/setup-uv@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+          uv sync
+
+      - name: Read annual report holders
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          uv run python -m sgx_scraper.main_cli annual_reports
+
+      - name: Rebuild company owners
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          uv run python -m sgx_scraper.main_cli report_owners --is-push-db
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgx-annual-reports-artifacts
+          path: |
+            data/scraper_output/filings_ownership/annual_report_holders.json
+            data/scraper_output/filings_ownership/company_owners_latest.json
+            scraper.log
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Pull Latest Changes (safe)
+        run: |
+          git fetch origin main
+          git stash push -m "temp-annual-reports" || true
+          git merge origin/main --strategy-option=theirs || true
+          git stash pop || true
+
+      # Only the reports file goes back to the repo
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/scraper_output/filings_ownership/annual_report_holders.json
+          git diff --cached --quiet || git commit -m "sgx_annual_reports: read new annual reports and push"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

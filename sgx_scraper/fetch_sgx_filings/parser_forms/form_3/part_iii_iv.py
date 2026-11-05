@@ -165,8 +165,10 @@ class Form3PartIIIandIV(BaseFormParser):
             r'Explanation\s*\(\s*if the date of becoming aware'
         )
 
+        # Anchored: a cross-reference such as "See item 8 ... for the
+        # circumstances giving rise to deemed interests" is not the box itself
         deemed_interest_descriptions = self.find_part_iii_section_values(
-            'Circumstances giving rise to deemed interests',
+            r'^\s*(?:\d+\.\s*)?Circumstances giving rise to deemed interests',
             'Relationship between the Substantial Shareholders/Unitholders',
         )
 
@@ -251,13 +253,6 @@ class Form3PartIIIandIV(BaseFormParser):
                 "deemed_interest_circumstances": deemed_interest_description,
                 "shareholder_relationship": shareholder_relationship,
             })
-
-            # if not self.is_valid_record(transaction):
-            #     LOGGER.info(
-            #         "[Form3PartIIIandIV] Skipping (%s) due to no change in direct before and after",
-            #         holder_name
-            #     )
-            #     continue
 
             holder_type = classify_holder_type(
                 parser_form="form3partiiiandiv", 

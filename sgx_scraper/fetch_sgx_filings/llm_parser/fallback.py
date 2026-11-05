@@ -225,9 +225,6 @@ def get_ticked_circumstance(
 
 
 def case_holder_name(holder_name: str | None, models: list[str]) -> str | None:
-    # A name filed in ALL CAPS is given standard capitalisation by the LLM.
-    # The LLM may change case only: any other difference from the original
-    # is rejected and plain title-casing is used instead
     if not holder_name or not holder_name.isupper():
         return holder_name
 

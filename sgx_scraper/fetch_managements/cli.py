@@ -11,7 +11,7 @@ from sgx_scraper.utils.json_helper import write_json, open_json
 from sgx_scraper.fetch_managements.tracking import (
     get_management_update,
 )
-from .process_annual_report import (
+from sgx_scraper.utils.annual_report_helper import (
     filter_annual_report_url, 
     filter_lookup_announcements
 )
