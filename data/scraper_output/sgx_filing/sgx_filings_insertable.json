@@ -1,261 +1,275 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/0NI5EIKVQT34QH18/910338__eFORM1V2%20-%20Tong%20Yew%20Heng%20-%2020261103%20-%20final.pdf",
-    "timestamp": "2026-11-03",
-    "transaction_type": "buy",
-    "holder_name": "Tong Yew Heng",
-    "transaction_value": 93000,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3WUAJY5N407PC36S/910476__eFORM6V2_05112026_final.pdf",
+    "timestamp": "2026-11-05",
+    "transaction_type": "others",
+    "holder_name": "Keppel DC REIT Management Pte. Ltd",
+    "transaction_value": 14848050,
     "share_percentage_transaction": {
-      "total": 3e-05,
+      "total": 0.00251,
       "deemed": 0.0,
-      "direct": 3e-05
+      "direct": 0.00251
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 1400000,
-          "percentage": 0.00036
+          "amount": 43349257,
+          "percentage": 0.01576
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 1400000,
-          "percentage": 0.00036
+          "amount": 43349257,
+          "percentage": 0.01576
         }
       },
       "before": {
         "total": {
-          "amount": 1300000,
-          "percentage": 0.00033
+          "amount": 36373101,
+          "percentage": 0.01325
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 1300000,
-          "percentage": 0.00033
+          "amount": 36373101,
+          "percentage": 0.01325
         }
       }
     },
-    "symbol": "CJLU.SI",
+    "symbol": "AJBU.SI",
     "price_per_share": [
       {
-        "price": 0.93,
+        "price": 2.1284,
+        "amount": 6976156
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Keppel DC REIT Management Pte. Ltd receives 7.0M Keppel DC REIT units as management fees",
+    "body": "Keppel DC REIT Management Pte. Ltd received 6,976,156 units of Keppel DC REIT as payment of management fees, valued at S$2.1284 per unit, or S$14,848,050 in total. Total interest rises from 36,373,101 units (1.32%) to 43,349,257 units (1.58%).",
+    "sector": "reit",
+    "sub_sector": "reit-data-centre",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The 1.325 percentage is calculated based on 2,745,225,207 issued Units as at 10 September 2026. The 1.576 percentage is calculated based on 2,752,201,363 issued Units as at 5 November 2026.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Keppel DC REIT",
+    "transaction_reference": "333850643142985"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/16LWS8TPZV9BFTQW/910458__20260511%20RS%20eFORM1V2.pdf",
+    "timestamp": "2026-11-04",
+    "transaction_type": "buy",
+    "holder_name": "Ravinder Sajwan",
+    "transaction_value": 128895,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0,
+      "direct": 0.0002
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 685486454,
+          "percentage": 0.6237
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6215
+        },
+        "direct": {
+          "amount": 2413412,
+          "percentage": 0.0022
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 685236454,
+          "percentage": 0.6235
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6215
+        },
+        "direct": {
+          "amount": 2163412,
+          "percentage": 0.002
+        }
+      }
+    },
+    "symbol": "ULG.SI",
+    "price_per_share": [
+      {
+        "price": 0.5155,
+        "amount": 250000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Ravinder Sajwan buys S$129K of Ultragreen Ai Ltd shares",
+    "body": "Ravinder Sajwan bought 250,000 shares of Ultragreen Ai Ltd in a market transaction at S$0.5155 per share, for a total of S$128,895. Total interest rises from 685,236,454 shares (62.35%) to 685,486,454 shares (62.37%).",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "The business and affairs of IR Investments LP are managed by a board of managers (the “IR Board of Managers”). IR Holding Company Inc., the general partner of IR Investments LP, has on 15 December 2019 appointed Mr Sajwan as the sole and initial member of the IR Board of Managers. Mr Sajwan is also a Protector of The Saul Trust and a member of Saul Strategic Limited (which holds 100% of Saul Holdings Pte. Ltd.’s ordinary shares). Accordingly, for the purposes of the Securities and Futures Act 2001 of Singapore and the Securities and Futures (Disclosure of Interests) Regulations 2012, Mr Sajwan has a deemed interest in the Shares held by Renew Group Private Limited.",
+    "relationship_text": null,
+    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,099,047,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 4 NOVEMBER 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Ultragreen Ai Ltd",
+    "transaction_reference": "227643643090584"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/N6QQ92JUYH0THE5P/910430__Form%201%20-%20Oh%20Kuang%20Eng.pdf",
+    "timestamp": "2026-11-04",
+    "transaction_type": "buy",
+    "holder_name": "Oh Kuang Eng",
+    "transaction_value": 150642,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0,
+      "direct": 0.0002
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 370090500,
+          "percentage": 0.7477
+        },
+        "deemed": {
+          "amount": 361740500,
+          "percentage": 0.7308
+        },
+        "direct": {
+          "amount": 8350000,
+          "percentage": 0.0169
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 369979976,
+          "percentage": 0.7475
+        },
+        "deemed": {
+          "amount": 361729976,
+          "percentage": 0.7308
+        },
+        "direct": {
+          "amount": 8250000,
+          "percentage": 0.0167
+        }
+      }
+    },
+    "symbol": "MIM.SI",
+    "price_per_share": [
+      {
+        "price": 1.5064,
         "amount": 100000
       }
     ],
     "holder_type": "insider",
-    "title": "Tong Yew Heng buys S$93,000 of NetLink NBN Trust units",
-    "body": "Tong Yew Heng bought 100,000 units of NetLink NBN Trust in a market transaction at S$0.93 per unit, for a total of S$93,000. Total interest rises from 1,300,000 units (0.03%) to 1,400,000 units (0.04%).",
-    "sector": "infrastructures",
-    "sub_sector": "telecommunication",
+    "title": "Oh Kuang Eng buys S$151K of Mi Material Holding Limited shares",
+    "body": "Oh Kuang Eng bought 100,000 shares of Mi Material Holding Limited in a market transaction at S$1.5064 per share, for a total of S$150,642. The direct interest moved from 8,250,000 to 8,350,000 shares and the deemed interest from 361,729,976 to 361,740,500 shares. Total interest rises from 369,979,976 shares (74.75%) to 370,090,500 shares (74.77%).",
+    "sector": "technology",
+    "sub_sector": "semiconductors-equipment",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "NetLink NBN Trust",
+    "deemed_interest_text": "Mr. Oh Kuang Eng (\"Mr. Oh\") holds approximately 45.4% direct interest in the issued and paid up share capital of Mi Technovation Berhad (\"MiTB\"). MiTB holds 360,030,000 ordinary shares in the issued share capital of the Company. In addition, Ms. Yong Shiao Voon (\"Ms. Yong\"), an associate of Mr. Oh, holds 1,710,500 ordinary shares in the issued share capital of the Company. Accordingly, for the purpose of the Securities and Futures Act 2001 and the Securities and Futures (Disclosure of Interests) Regulation 2012, Mr. Oh has a deemed interest in the 361,740,500 ordinary shares held by MiTB and Ms. Yong.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of shareholdings set out above immediately before and after the transaction are calculated based on the issued share capital of the Company of 495,000,000 ordinary shares as at 4 November 2026.",
     "filing_type": "form_1",
-    "transaction_reference": "664898346242936",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
-    "acting_party": null
+    "acting_party": null,
+    "company_name": "Mi Material Holding Limited",
+    "transaction_reference": "775399346243858"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VCJWAPW9GBXXQKWH/910275__KWS%20-%20Form%201.pdf",
-    "timestamp": "2026-11-03",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5BDR3DL2J18K2MOR/910391__FORM1_GY_4.11.26.final.pdf",
+    "timestamp": "2026-11-04",
     "transaction_type": "buy",
-    "holder_name": "Koh Wee Seng",
-    "transaction_value": 459300,
+    "holder_name": "George Yong-Boon Yeo",
+    "transaction_value": 297000,
     "share_percentage_transaction": {
-      "total": 0.0008,
+      "total": 1e-05,
       "deemed": 0.0,
-      "direct": 0.0008
+      "direct": 1e-05
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 1574061654,
-          "percentage": 0.763
-        },
-        "deemed": {
-          "amount": 1354778942,
-          "percentage": 0.6567
-        },
-        "direct": {
-          "amount": 219282712,
-          "percentage": 0.1063
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 1572461654,
-          "percentage": 0.7622
-        },
-        "deemed": {
-          "amount": 1354778942,
-          "percentage": 0.6567
-        },
-        "direct": {
-          "amount": 217682712,
-          "percentage": 0.1055
-        }
-      }
-    },
-    "symbol": "5UF.SI",
-    "price_per_share": [
-      {
-        "price": 0.2871,
-        "amount": 1600000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Koh Wee Seng buys S$459K of Aspial Lifestyle Ltd shares",
-    "body": "Koh Wee Seng bought 1,600,000 shares of Aspial Lifestyle Ltd in a market transaction at S$0.2871 per share, for a total of S$459,300. Total interest rises from 1,572,461,654 shares (76.22%) to 1,574,061,654 shares (76.30%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "luxury-goods",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "Aspial Lifestyle Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "403697346243829",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DM5NDWN813B13ZAY/910271__eFORM3V2_MONEYFARM_03Nov26.pdf",
-    "timestamp": "2026-10-30",
-    "transaction_type": "buy",
-    "holder_name": "Money Farm Pte. Ltd",
-    "transaction_value": 99270,
-    "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0,
-      "direct": 0.0001
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 738415021,
-          "percentage": 0.5796
+          "amount": 1006500,
+          "percentage": 0.00016
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 738415021,
-          "percentage": 0.5796
+          "amount": 1006500,
+          "percentage": 0.00016
         }
       },
       "before": {
         "total": {
-          "amount": 738194421,
-          "percentage": 0.5795
+          "amount": 906500,
+          "percentage": 0.00015
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 738194421,
-          "percentage": 0.5795
+          "amount": 906500,
+          "percentage": 0.00015
         }
       }
     },
-    "symbol": "5WJ.SI",
+    "symbol": "F34.SI",
     "price_per_share": [
       {
-        "price": 0.45,
-        "amount": 220600
+        "price": 2.97,
+        "amount": 100000
       }
     ],
     "holder_type": "insider",
-    "title": "Money Farm Pte. Ltd buys S$99,270 of Moneymax Financial Services Ltd shares",
-    "body": "Money Farm Pte. Ltd bought 220,600 shares of Moneymax Financial Services Ltd in a market transaction at S$0.45 per share, for a total of S$99,270. Total interest rises from 738,194,421 shares (57.95%) to 738,415,021 shares (57.96%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "retail",
+    "title": "George Yong-Boon Yeo buys S$297K of Wilmar International Ltd shares",
+    "body": "George Yong-Boon Yeo bought 100,000 shares of Wilmar International Ltd in a market transaction at S$2.97 per share, for a total of S$297,000. Total interest rises from 906,500 shares (0.01%) to 1,006,500 shares (0.02%).",
+    "sector": "consumer-non-cyclicals",
+    "sub_sector": "food-beverage-retail-production",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "Moneymax Financial Services Ltd",
-    "filing_type": "form_3_part_ii",
-    "transaction_reference": "754011346052826",
-    "notification_type": "change_in_level",
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentages are computed based on 6,244,255,856 voting shares (excluding treasury shares) in Wilmar as at 4 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
-    "acting_party": null
+    "acting_party": null,
+    "company_name": "Wilmar International Ltd",
+    "transaction_reference": "007599346243020"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/PRMK6CI0IDM9EAKV/910269__eFORM3V2_LLE_03Nov26.pdf",
-    "timestamp": "2026-10-30",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HFN762YZM5NWZAEN/910354__eFORM1_ChengWK_041126_Final.pdf",
+    "timestamp": "2026-11-04",
     "transaction_type": "buy",
-    "holder_name": "Lim Liang Eng",
-    "transaction_value": 99270,
-    "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0001,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 753237242,
-          "percentage": 0.5912
-        },
-        "deemed": {
-          "amount": 738415021,
-          "percentage": 0.5796
-        },
-        "direct": {
-          "amount": 14822221,
-          "percentage": 0.0116
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 753016642,
-          "percentage": 0.5911
-        },
-        "deemed": {
-          "amount": 738194421,
-          "percentage": 0.5795
-        },
-        "direct": {
-          "amount": 14822221,
-          "percentage": 0.0116
-        }
-      }
-    },
-    "symbol": "5WJ.SI",
-    "price_per_share": [
-      {
-        "price": 0.45,
-        "amount": 220600
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Lim Liang Eng's deemed interest in Moneymax Financial Services Ltd rises after S$99,270 share purchase",
-    "body": "Lim Liang Eng's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 220,600 shares at S$0.45 per share, for a total of S$99,270. The direct holding is unchanged at 14,822,221 shares. Total interest rises from 753,016,642 shares (59.11%) to 753,237,242 shares (59.12%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "retail",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "Moneymax Financial Services Ltd",
-    "filing_type": "form_3_part_ii",
-    "transaction_reference": "754011346052826",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the acquisition of 220,600 ordinary shares by Money Farm Pte. Ltd",
-    "acting_party": "Money Farm Pte. Ltd"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/76HD8ECV6BUZW4OT/910267__eFORM1V2_LYS_03Nov26.pdf",
-    "timestamp": "2026-10-30",
-    "transaction_type": "buy",
-    "holder_name": "Lim Yong Sheng",
+    "holder_name": "Cheng Wai Keung",
     "transaction_value": null,
     "share_percentage_transaction": {
       "total": 0.0001,
@@ -265,116 +279,56 @@
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 868850575,
-          "percentage": 0.682
+          "amount": 488542859,
+          "percentage": 0.6388
         },
         "deemed": {
-          "amount": 738415021,
-          "percentage": 0.5796
+          "amount": 488328459,
+          "percentage": 0.6385
         },
         "direct": {
-          "amount": 130435554,
-          "percentage": 0.1024
+          "amount": 214400,
+          "percentage": 0.0003
         }
       },
       "before": {
         "total": {
-          "amount": 868629975,
-          "percentage": 0.6819
+          "amount": 488462859,
+          "percentage": 0.6387
         },
         "deemed": {
-          "amount": 738194421,
-          "percentage": 0.5795
+          "amount": 488248459,
+          "percentage": 0.6384
         },
         "direct": {
-          "amount": 130435554,
-          "percentage": 0.1024
+          "amount": 214400,
+          "percentage": 0.0003
         }
       }
     },
-    "symbol": "5WJ.SI",
+    "symbol": "W05.SI",
     "price_per_share": [
       {
         "price": null,
-        "amount": 220600
+        "amount": 80000
       }
     ],
     "holder_type": "insider",
-    "title": "Lim Yong Sheng's deemed interest in Moneymax Financial Services Ltd rises after purchase of 221K shares",
-    "body": "Lim Yong Sheng's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 220,600 shares. The direct holding is unchanged at 130,435,554 shares. Total interest rises from 868,629,975 shares (68.19%) to 868,850,575 shares (68.20%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "retail",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 80,000 shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 80,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 488,462,859 shares (63.87%) to 488,542,859 shares (63.88%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
     "tags": [],
     "source_is_manual": false,
-    "company_name": "Moneymax Financial Services Ltd",
+    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 80,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "relationship_text": null,
+    "remarks_text": null,
     "filing_type": "form_1",
-    "transaction_reference": "967291346041991",
     "notification_type": null,
     "circumstance_key": null,
-    "change_reason": "the acquisition of 220,600 ordinary shares by Money Farm Pte. Ltd",
-    "acting_party": "Money Farm Pte. Ltd"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/YEGZTI28CXY31BXO/910265__eFORM1V2_LYG_03Nov26.pdf",
-    "timestamp": "2026-10-30",
-    "transaction_type": "buy",
-    "holder_name": "Lim Yong Guan",
-    "transaction_value": 99270,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0002,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 900391813,
-          "percentage": 0.7068
-        },
-        "deemed": {
-          "amount": 749205147,
-          "percentage": 0.5881
-        },
-        "direct": {
-          "amount": 151186666,
-          "percentage": 0.1187
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 900171213,
-          "percentage": 0.7066
-        },
-        "deemed": {
-          "amount": 748984547,
-          "percentage": 0.5879
-        },
-        "direct": {
-          "amount": 151186666,
-          "percentage": 0.1187
-        }
-      }
-    },
-    "symbol": "5WJ.SI",
-    "price_per_share": [
-      {
-        "price": 0.45,
-        "amount": 220600
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Lim Yong Guan's deemed interest in Moneymax Financial Services Ltd rises after S$99,270 share purchase",
-    "body": "Lim Yong Guan's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 220,600 shares at S$0.45 per share, for a total of S$99,270. The direct holding is unchanged at 151,186,666 shares. Total interest rises from 900,171,213 shares (70.66%) to 900,391,813 shares (70.68%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "retail",
-    "tags": [],
-    "source_is_manual": false,
-    "company_name": "Moneymax Financial Services Ltd",
-    "filing_type": "form_1",
-    "transaction_reference": "074840643196034",
-    "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the acquisition of 220,600 ordinary shares by Money Farm Pte. Ltd",
-    "acting_party": "Money Farm Pte. Ltd"
+    "change_reason": "the acquisition of 80,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen",
+    "company_name": "Wing Tai Holdings Ltd",
+    "transaction_reference": "150397346242311"
   }
 ]
