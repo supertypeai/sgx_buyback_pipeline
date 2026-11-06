@@ -1,334 +1,274 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3WUAJY5N407PC36S/910476__eFORM6V2_05112026_final.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HDVUUXW0KQBKHN7N/910524__Form%206%20-%20MITM_Nov26.pdf",
     "timestamp": "2026-11-05",
     "transaction_type": "others",
-    "holder_name": "Keppel DC REIT Management Pte. Ltd",
-    "transaction_value": 14848050,
+    "holder_name": "Mapletree Industrial Trust Management Ltd",
+    "transaction_value": 1635395,
     "share_percentage_transaction": {
-      "total": 0.00251,
+      "total": 0.0003,
       "deemed": 0.0,
-      "direct": 0.00251
+      "direct": 0.0003
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 43349257,
-          "percentage": 0.01576
+          "amount": 36162127,
+          "percentage": 0.0126
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 43349257,
-          "percentage": 0.01576
+          "amount": 36162127,
+          "percentage": 0.0126
         }
       },
       "before": {
         "total": {
-          "amount": 36373101,
-          "percentage": 0.01325
+          "amount": 35292698,
+          "percentage": 0.0123
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 36373101,
-          "percentage": 0.01325
+          "amount": 35292698,
+          "percentage": 0.0123
         }
       }
     },
-    "symbol": "AJBU.SI",
+    "symbol": "ME8U.SI",
     "price_per_share": [
       {
-        "price": 2.1284,
-        "amount": 6976156
+        "price": 1.881,
+        "amount": 869429
       }
     ],
     "holder_type": "insider",
-    "title": "Keppel DC REIT Management Pte. Ltd receives 7.0M Keppel DC REIT units as management fees",
-    "body": "Keppel DC REIT Management Pte. Ltd received 6,976,156 units of Keppel DC REIT as payment of management fees, valued at S$2.1284 per unit, or S$14,848,050 in total. Total interest rises from 36,373,101 units (1.32%) to 43,349,257 units (1.58%).",
+    "title": "Mapletree Industrial Trust Management Ltd receives 869K Mapletree Industrial Trust units as management fees",
+    "body": "Mapletree Industrial Trust Management Ltd received 869,429 units of Mapletree Industrial Trust as payment of management fees, valued at S$1.881 per unit, or S$1,635,395 in total. Total interest rises from 35,292,698 units (1.23%) to 36,162,127 units (1.26%).",
     "sector": "reit",
-    "sub_sector": "reit-data-centre",
+    "sub_sector": "reit-industrial",
     "tags": [
       "management-fees"
     ],
     "source_is_manual": false,
     "deemed_interest_text": null,
     "relationship_text": null,
-    "remarks_text": "The 1.325 percentage is calculated based on 2,745,225,207 issued Units as at 10 September 2026. The 1.576 percentage is calculated based on 2,752,201,363 issued Units as at 5 November 2026.",
+    "remarks_text": "The percentage of unitholdings before and after the transaction is calculated based on 2,856,697,444 units issued.",
     "filing_type": "form_6",
     "notification_type": null,
-    "circumstance_key": "Securities as part of management",
-    "change_reason": null,
+    "circumstance_key": "Corporate action by Listed Issuer",
+    "change_reason": "the issuance of new units to the Manager as payment of base fees",
     "acting_party": null,
-    "company_name": "Keppel DC REIT",
-    "transaction_reference": "333850643142985"
+    "company_name": "Mapletree Industrial Trust",
+    "transaction_reference": "189944346252767"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/16LWS8TPZV9BFTQW/910458__20260511%20RS%20eFORM1V2.pdf",
-    "timestamp": "2026-11-04",
-    "transaction_type": "buy",
-    "holder_name": "Ravinder Sajwan",
-    "transaction_value": 128895,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0,
-      "direct": 0.0002
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 685486454,
-          "percentage": 0.6237
-        },
-        "deemed": {
-          "amount": 683073042,
-          "percentage": 0.6215
-        },
-        "direct": {
-          "amount": 2413412,
-          "percentage": 0.0022
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 685236454,
-          "percentage": 0.6235
-        },
-        "deemed": {
-          "amount": 683073042,
-          "percentage": 0.6215
-        },
-        "direct": {
-          "amount": 2163412,
-          "percentage": 0.002
-        }
-      }
-    },
-    "symbol": "ULG.SI",
-    "price_per_share": [
-      {
-        "price": 0.5155,
-        "amount": 250000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Ravinder Sajwan buys S$129K of Ultragreen Ai Ltd shares",
-    "body": "Ravinder Sajwan bought 250,000 shares of Ultragreen Ai Ltd in a market transaction at S$0.5155 per share, for a total of S$128,895. Total interest rises from 685,236,454 shares (62.35%) to 685,486,454 shares (62.37%).",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The business and affairs of IR Investments LP are managed by a board of managers (the “IR Board of Managers”). IR Holding Company Inc., the general partner of IR Investments LP, has on 15 December 2019 appointed Mr Sajwan as the sole and initial member of the IR Board of Managers. Mr Sajwan is also a Protector of The Saul Trust and a member of Saul Strategic Limited (which holds 100% of Saul Holdings Pte. Ltd.’s ordinary shares). Accordingly, for the purposes of the Securities and Futures Act 2001 of Singapore and the Securities and Futures (Disclosure of Interests) Regulations 2012, Mr Sajwan has a deemed interest in the Shares held by Renew Group Private Limited.",
-    "relationship_text": null,
-    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,099,047,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 4 NOVEMBER 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Ultragreen Ai Ltd",
-    "transaction_reference": "227643643090584"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/N6QQ92JUYH0THE5P/910430__Form%201%20-%20Oh%20Kuang%20Eng.pdf",
-    "timestamp": "2026-11-04",
-    "transaction_type": "buy",
-    "holder_name": "Oh Kuang Eng",
-    "transaction_value": 150642,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0,
-      "direct": 0.0002
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 370090500,
-          "percentage": 0.7477
-        },
-        "deemed": {
-          "amount": 361740500,
-          "percentage": 0.7308
-        },
-        "direct": {
-          "amount": 8350000,
-          "percentage": 0.0169
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 369979976,
-          "percentage": 0.7475
-        },
-        "deemed": {
-          "amount": 361729976,
-          "percentage": 0.7308
-        },
-        "direct": {
-          "amount": 8250000,
-          "percentage": 0.0167
-        }
-      }
-    },
-    "symbol": "MIM.SI",
-    "price_per_share": [
-      {
-        "price": 1.5064,
-        "amount": 100000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Oh Kuang Eng buys S$151K of Mi Material Holding Limited shares",
-    "body": "Oh Kuang Eng bought 100,000 shares of Mi Material Holding Limited in a market transaction at S$1.5064 per share, for a total of S$150,642. The direct interest moved from 8,250,000 to 8,350,000 shares and the deemed interest from 361,729,976 to 361,740,500 shares. Total interest rises from 369,979,976 shares (74.75%) to 370,090,500 shares (74.77%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "Mr. Oh Kuang Eng (\"Mr. Oh\") holds approximately 45.4% direct interest in the issued and paid up share capital of Mi Technovation Berhad (\"MiTB\"). MiTB holds 360,030,000 ordinary shares in the issued share capital of the Company. In addition, Ms. Yong Shiao Voon (\"Ms. Yong\"), an associate of Mr. Oh, holds 1,710,500 ordinary shares in the issued share capital of the Company. Accordingly, for the purpose of the Securities and Futures Act 2001 and the Securities and Futures (Disclosure of Interests) Regulation 2012, Mr. Oh has a deemed interest in the 361,740,500 ordinary shares held by MiTB and Ms. Yong.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings set out above immediately before and after the transaction are calculated based on the issued share capital of the Company of 495,000,000 ordinary shares as at 4 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Mi Material Holding Limited",
-    "transaction_reference": "775399346243858"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5BDR3DL2J18K2MOR/910391__FORM1_GY_4.11.26.final.pdf",
-    "timestamp": "2026-11-04",
-    "transaction_type": "buy",
-    "holder_name": "George Yong-Boon Yeo",
-    "transaction_value": 297000,
-    "share_percentage_transaction": {
-      "total": 1e-05,
-      "deemed": 0.0,
-      "direct": 1e-05
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 1006500,
-          "percentage": 0.00016
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 1006500,
-          "percentage": 0.00016
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 906500,
-          "percentage": 0.00015
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 906500,
-          "percentage": 0.00015
-        }
-      }
-    },
-    "symbol": "F34.SI",
-    "price_per_share": [
-      {
-        "price": 2.97,
-        "amount": 100000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "George Yong-Boon Yeo buys S$297K of Wilmar International Ltd shares",
-    "body": "George Yong-Boon Yeo bought 100,000 shares of Wilmar International Ltd in a market transaction at S$2.97 per share, for a total of S$297,000. Total interest rises from 906,500 shares (0.01%) to 1,006,500 shares (0.02%).",
-    "sector": "consumer-non-cyclicals",
-    "sub_sector": "food-beverage-retail-production",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": null,
-    "relationship_text": null,
-    "remarks_text": "The percentages are computed based on 6,244,255,856 voting shares (excluding treasury shares) in Wilmar as at 4 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Wilmar International Ltd",
-    "transaction_reference": "007599346243020"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HFN762YZM5NWZAEN/910354__eFORM1_ChengWK_041126_Final.pdf",
-    "timestamp": "2026-11-04",
-    "transaction_type": "buy",
-    "holder_name": "Cheng Wai Keung",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZSW35A8ZZX904WEG/910508__First_REIT_Form_3_OUE_Limited.pdf",
+    "timestamp": "2026-11-05",
+    "transaction_type": "others",
+    "holder_name": "OUE Limited",
     "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0001,
+      "total": 0.001,
+      "deemed": 0.001,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 488542859,
-          "percentage": 0.6388
+          "amount": 978853419,
+          "percentage": 0.4602
         },
         "deemed": {
-          "amount": 488328459,
-          "percentage": 0.6385
+          "amount": 978853419,
+          "percentage": 0.4602
         },
         "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 488462859,
-          "percentage": 0.6387
+          "amount": 974908641,
+          "percentage": 0.4592
         },
         "deemed": {
-          "amount": 488248459,
-          "percentage": 0.6384
+          "amount": 974908641,
+          "percentage": 0.4592
         },
         "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "W05.SI",
+    "symbol": "AW9U.SI",
     "price_per_share": [
       {
         "price": null,
-        "amount": 80000
+        "amount": 3944778
+      }
+    ],
+    "holder_type": "institution",
+    "title": "OUE Limited's deemed interest in First Real Estate Investment Trust rises after payment of management fees in 3.9M units",
+    "body": "OUE Limited's deemed interest in First Real Estate Investment Trust rose after FRML received 3,944,778 units as payment of management fees. No units are held directly. Total interest rises from 974,908,641 units (45.92%) to 978,853,419 units (46.02%).",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Total of 3,944,778 Units were issued to FRML (as Manager of First REIT), a subsidiary of OUE, as payment of FRML’s management fee on 5 November 2026. As a result, FRML has a direct interest in 247,384,374 Units (the \"FRML Units\"). Clifford Development Pte. Ltd. (“CDPL”), a subsidiary of OUE, has a direct interest in 53,471,217 Units (the \"CDPL Units\"). OLH Healthcare Investments Pte. Ltd. (\"OHIPL\"), an indirect wholly-owned subsidiary of OUE Healthcare Limited, which in turn, is an indirect subsidiary of OUE, has a direct interest in in 677,997,828 Units (the \"OHIPL Units\"). Accordingly, OUE has a deemed interest in (i) the FRML Units in which FRML has a direct interest in, (ii) the CDPL Units in which CDPL has a direct interest in and (iii) the OHIPL Units in which OHIPL has a direct interest in, amounting to a total interest of 978,853,419 Units.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the receipt of Units by FRML as payment of its management fees",
+    "acting_party": "FRML",
+    "company_name": "First Real Estate Investment Trust",
+    "transaction_reference": "552316346151979"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1HKUXGNEHIRMX0VN/910504__First_REIT_Form_6_5%20Nov%202026.pdf",
+    "timestamp": "2026-11-05",
+    "transaction_type": "others",
+    "holder_name": "First REIT Management Limited",
+    "transaction_value": 609881,
+    "share_percentage_transaction": {
+      "total": 0.0009,
+      "deemed": 0.0,
+      "direct": 0.0009
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 245666252,
+          "percentage": 0.1156
+        },
+        "deemed": {
+          "amount": null,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 245666252,
+          "percentage": 0.1156
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 243439596,
+          "percentage": 0.1147
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 243439596,
+          "percentage": 0.1147
+        }
+      }
+    },
+    "symbol": "AW9U.SI",
+    "price_per_share": [
+      {
+        "price": 0.2739,
+        "amount": 2226656
       }
     ],
     "holder_type": "insider",
-    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 80,000 shares",
-    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 80,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 488,462,859 shares (63.87%) to 488,542,859 shares (63.88%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-development",
-    "tags": [],
+    "title": "First REIT Management Limited receives 2.2M First Real Estate Investment Trust units as management fees",
+    "body": "First REIT Management Limited received 2,226,656 units of First Real Estate Investment Trust as payment of management fees, valued at S$0.2739 per unit, or S$609,881 in total. Total interest rises from 243,439,596 units (11.47%) to 245,666,252 units (11.56%).",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
     "source_is_manual": false,
-    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 80,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "deemed_interest_text": "NOT APPLICABLE",
     "relationship_text": null,
-    "remarks_text": null,
-    "filing_type": "form_1",
+    "remarks_text": "The percentage of unitholding is calculated based on 2,123,220,314 Units in issue before the change and 2,125,446,970 Units in issue after the change.",
+    "filing_type": "form_6",
     "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the acquisition of 80,000 WTH shares by the holder's spouse",
-    "acting_party": "Chow Helen",
-    "company_name": "Wing Tai Holdings Ltd",
-    "transaction_reference": "150397346242311"
+    "circumstance_key": "Securities as part of management",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "First Real Estate Investment Trust",
+    "transaction_reference": "007344346153745"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1HKUXGNEHIRMX0VN/910504__First_REIT_Form_6_5%20Nov%202026.pdf",
+    "timestamp": "2026-11-05",
+    "transaction_type": "others",
+    "holder_name": "First REIT Management Limited",
+    "transaction_value": 346717,
+    "share_percentage_transaction": {
+      "total": 0.0007,
+      "deemed": 0.0,
+      "direct": 0.0007
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 247384374,
+          "percentage": 0.1163
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 247384374,
+          "percentage": 0.1163
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 245666252,
+          "percentage": 0.1156
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 245666252,
+          "percentage": 0.1156
+        }
+      }
+    },
+    "symbol": "AW9U.SI",
+    "price_per_share": [
+      {
+        "price": 0.2018,
+        "amount": 1718122
+      }
+    ],
+    "holder_type": "insider",
+    "title": "First REIT Management Limited receives 1.7M First Real Estate Investment Trust units as management fees",
+    "body": "First REIT Management Limited received 1,718,122 units of First Real Estate Investment Trust as payment of management fees, valued at S$0.2018 per unit, or S$346,717 in total. Total interest rises from 245,666,252 units (11.56%) to 247,384,374 units (11.63%).",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "NOT APPLICABLE",
+    "relationship_text": null,
+    "remarks_text": "The percentage of unitholding is calculated based on 2,125,446,970 Units in issue before the change and 2,127,165,092 Units in issue after the change.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "First Real Estate Investment Trust",
+    "transaction_reference": "107311643437451"
   }
 ]
