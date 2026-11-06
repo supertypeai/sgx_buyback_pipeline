@@ -1,5 +1,21 @@
 [
   {
+    "symbol": "KSB",
+    "recording_date": "2026-11-06",
+    "agm_date": "2026-12-09",
+    "meeting_type": "AGM",
+    "agm_time": "15:00:00",
+    "agm_place": "Matsack Trust Limited, 70 Sir John Rogerson s Quay, Dublin 2, Ireland",
+    "agm_place_desc": null,
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/24ZQS6VG1E3O6A99/9a8e665dbf52d19a48b97ae515f4f4be627f42e129d5d9d6588876d3f7c448fd",
+    "ref_id": "SG261106MEETYIPU"
+  },
+  {
     "symbol": "K03",
     "recording_date": "2026-11-05",
     "agm_date": "2026-11-24",
@@ -30,6 +46,38 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/24N9IK3E6UEQYFJ6/4f250ebce1f175fcc6dc25746114ef8292618a8621408f77dbc8a89a8059107f",
     "ref_id": "SG261104MEET06ZF"
+  },
+  {
+    "symbol": "NTDU",
+    "recording_date": "2026-10-14",
+    "agm_date": "2026-11-06",
+    "meeting_type": "EGM",
+    "agm_time": "10:00:00",
+    "agm_place": "Suntec Singapore Convention & Exhibition Centre, Meeting Room 328-329, Level 3, 1 Raffles Boulevard, Suntec City, Singapore 039593",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/3O2OOIK2ARMUIDKR/ce69f33ccdb6d8f1aed5e62c6f90e4f39fada5b190a3353e0f1929ec29ff00c4",
+    "ref_id": "SG261014XMETMBEH"
+  },
+  {
+    "symbol": "5OX",
+    "recording_date": "2026-11-06",
+    "agm_date": "2026-11-23",
+    "meeting_type": "EGM",
+    "agm_time": "10:00:00",
+    "agm_place": "151 Lorong Chuan, #04-02A New Tech Park, Singapore 556741",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/RFPHWJMHSTLFXVP9/9e27ec14d9941ef33d40c9fcfa7b6852d6d3df5f6bf03a891dd5afd837d0d15b",
+    "ref_id": "SG261106XMETUENN"
   },
   {
     "symbol": "V8Y",
