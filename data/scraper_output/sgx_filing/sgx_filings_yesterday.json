@@ -1,274 +1,600 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HDVUUXW0KQBKHN7N/910524__Form%206%20-%20MITM_Nov26.pdf",
-    "timestamp": "2026-11-05",
-    "transaction_type": "others",
-    "holder_name": "Mapletree Industrial Trust Management Ltd",
-    "transaction_value": 1635395,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/CZJ1EGVX8X9X6N9B/910709__eFORM3V2_MONEYFARM_06Nov26.pdf",
+    "timestamp": "2026-11-04",
+    "transaction_type": "buy",
+    "holder_name": "Money Farm Pte. Ltd",
+    "transaction_value": 41000,
     "share_percentage_transaction": {
-      "total": 0.0003,
+      "total": 0.0001,
       "deemed": 0.0,
-      "direct": 0.0003
+      "direct": 0.0001
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 36162127,
-          "percentage": 0.0126
+          "amount": 738515021,
+          "percentage": 0.5797
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 36162127,
-          "percentage": 0.0126
+          "amount": 738515021,
+          "percentage": 0.5797
         }
       },
       "before": {
         "total": {
-          "amount": 35292698,
-          "percentage": 0.0123
+          "amount": 738415021,
+          "percentage": 0.5796
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 35292698,
-          "percentage": 0.0123
+          "amount": 738415021,
+          "percentage": 0.5796
         }
       }
     },
-    "symbol": "ME8U.SI",
+    "symbol": "5WJ.SI",
     "price_per_share": [
       {
-        "price": 1.881,
-        "amount": 869429
+        "price": 0.41,
+        "amount": 100000
       }
     ],
     "holder_type": "insider",
-    "title": "Mapletree Industrial Trust Management Ltd receives 869K Mapletree Industrial Trust units as management fees",
-    "body": "Mapletree Industrial Trust Management Ltd received 869,429 units of Mapletree Industrial Trust as payment of management fees, valued at S$1.881 per unit, or S$1,635,395 in total. Total interest rises from 35,292,698 units (1.23%) to 36,162,127 units (1.26%).",
-    "sector": "reit",
-    "sub_sector": "reit-industrial",
-    "tags": [
-      "management-fees"
-    ],
+    "title": "Money Farm Pte. Ltd buys S$41,000 of Moneymax Financial Services Ltd shares",
+    "body": "Money Farm Pte. Ltd bought 100,000 shares of Moneymax Financial Services Ltd in a market transaction at S$0.41 per share, for a total of S$41,000. Total interest rises from 738,415,021 shares (57.96%) to 738,515,021 shares (57.97%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
     "source_is_manual": false,
     "deemed_interest_text": null,
     "relationship_text": null,
-    "remarks_text": "The percentage of unitholdings before and after the transaction is calculated based on 2,856,697,444 units issued.",
-    "filing_type": "form_6",
-    "notification_type": null,
-    "circumstance_key": "Corporate action by Listed Issuer",
-    "change_reason": "the issuance of new units to the Manager as payment of base fees",
+    "remarks_text": "The shareholding percentage before and after the change in interest are computed based on the total number of issued shares of 1,273,909,411 shares (excluding treasury shares).",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
     "acting_party": null,
-    "company_name": "Mapletree Industrial Trust",
-    "transaction_reference": "189944346252767"
+    "company_name": "Moneymax Financial Services Ltd",
+    "transaction_reference": "754011346052826"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZSW35A8ZZX904WEG/910508__First_REIT_Form_3_OUE_Limited.pdf",
-    "timestamp": "2026-11-05",
-    "transaction_type": "others",
-    "holder_name": "OUE Limited",
-    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RBBY6Z0Z4T8S5AHW/910707__eFORM3V2_LLE_06Nov26.pdf",
+    "timestamp": "2026-11-04",
+    "transaction_type": "buy",
+    "holder_name": "Lim Liang Eng",
+    "transaction_value": 41000,
     "share_percentage_transaction": {
-      "total": 0.001,
-      "deemed": 0.001,
+      "total": 0.0001,
+      "deemed": 0.0001,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 978853419,
-          "percentage": 0.4602
+          "amount": 753337242,
+          "percentage": 0.5913
         },
         "deemed": {
-          "amount": 978853419,
-          "percentage": 0.4602
+          "amount": 738515021,
+          "percentage": 0.5797
         },
         "direct": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 14822221,
+          "percentage": 0.0116
         }
       },
       "before": {
         "total": {
-          "amount": 974908641,
-          "percentage": 0.4592
+          "amount": 753237242,
+          "percentage": 0.5912
         },
         "deemed": {
-          "amount": 974908641,
-          "percentage": 0.4592
+          "amount": 738415021,
+          "percentage": 0.5796
         },
         "direct": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 14822221,
+          "percentage": 0.0116
         }
       }
     },
-    "symbol": "AW9U.SI",
+    "symbol": "5WJ.SI",
     "price_per_share": [
       {
-        "price": null,
-        "amount": 3944778
+        "price": 0.41,
+        "amount": 100000
       }
     ],
-    "holder_type": "institution",
-    "title": "OUE Limited's deemed interest in First Real Estate Investment Trust rises after payment of management fees in 3.9M units",
-    "body": "OUE Limited's deemed interest in First Real Estate Investment Trust rose after FRML received 3,944,778 units as payment of management fees. No units are held directly. Total interest rises from 974,908,641 units (45.92%) to 978,853,419 units (46.02%).",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
+    "holder_type": "insider",
+    "title": "Lim Liang Eng's deemed interest in Moneymax Financial Services Ltd rises after S$41,000 share purchase",
+    "body": "Lim Liang Eng's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 100,000 shares at S$0.41 per share, for a total of S$41,000. The direct holding is unchanged at 14,822,221 shares. Total interest rises from 753,237,242 shares (59.12%) to 753,337,242 shares (59.13%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Total of 3,944,778 Units were issued to FRML (as Manager of First REIT), a subsidiary of OUE, as payment of FRML’s management fee on 5 November 2026. As a result, FRML has a direct interest in 247,384,374 Units (the \"FRML Units\"). Clifford Development Pte. Ltd. (“CDPL”), a subsidiary of OUE, has a direct interest in 53,471,217 Units (the \"CDPL Units\"). OLH Healthcare Investments Pte. Ltd. (\"OHIPL\"), an indirect wholly-owned subsidiary of OUE Healthcare Limited, which in turn, is an indirect subsidiary of OUE, has a direct interest in in 677,997,828 Units (the \"OHIPL Units\"). Accordingly, OUE has a deemed interest in (i) the FRML Units in which FRML has a direct interest in, (ii) the CDPL Units in which CDPL has a direct interest in and (iii) the OHIPL Units in which OHIPL has a direct interest in, amounting to a total interest of 978,853,419 Units.",
+    "deemed_interest_text": "Mdm. Lim Liang Eng and her associates are entitled to exercise all the votes attached to the voting shares in Money Farm Pte. Ltd. As such, pursuant to Section 4 of the Securities and Futures Act, Mdm. Lim Liang Eng is deemed interested in the shares which Money Farm Pte. Ltd. holds in MoneyMax Financial Services Ltd.",
     "relationship_text": null,
-    "remarks_text": null,
+    "remarks_text": "The shareholding percentage before and after the change in interest are computed based on the total number of issued shares of 1,273,909,411 shares (excluding treasury shares).",
     "filing_type": "form_3_part_ii",
     "notification_type": "change_in_level",
     "circumstance_key": null,
-    "change_reason": "the receipt of Units by FRML as payment of its management fees",
-    "acting_party": "FRML",
-    "company_name": "First Real Estate Investment Trust",
-    "transaction_reference": "552316346151979"
+    "change_reason": "the acquisition of 100,000 ordinary shares by Money Farm Pte. Ltd",
+    "acting_party": "Money Farm Pte. Ltd",
+    "company_name": "Moneymax Financial Services Ltd",
+    "transaction_reference": "754011346052826"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1HKUXGNEHIRMX0VN/910504__First_REIT_Form_6_5%20Nov%202026.pdf",
-    "timestamp": "2026-11-05",
-    "transaction_type": "others",
-    "holder_name": "First REIT Management Limited",
-    "transaction_value": 609881,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4I4TCUOG3BYYZT2M/910705__eFORM1V2_LYS_06Nov26.pdf",
+    "timestamp": "2026-11-04",
+    "transaction_type": "buy",
+    "holder_name": "Lim Yong Sheng",
+    "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 0.0009,
-      "deemed": 0.0,
-      "direct": 0.0009
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 245666252,
-          "percentage": 0.1156
+          "amount": 868950575,
+          "percentage": 0.6821
         },
         "deemed": {
-          "amount": null,
-          "percentage": 0.0
+          "amount": 738515021,
+          "percentage": 0.5797
         },
         "direct": {
-          "amount": 245666252,
-          "percentage": 0.1156
+          "amount": 130435554,
+          "percentage": 0.1024
         }
       },
       "before": {
         "total": {
-          "amount": 243439596,
-          "percentage": 0.1147
+          "amount": 868850575,
+          "percentage": 0.682
+        },
+        "deemed": {
+          "amount": 738415021,
+          "percentage": 0.5796
+        },
+        "direct": {
+          "amount": 130435554,
+          "percentage": 0.1024
+        }
+      }
+    },
+    "symbol": "5WJ.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 100000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Yong Sheng's deemed interest in Moneymax Financial Services Ltd rises after purchase of 100K shares",
+    "body": "Lim Yong Sheng's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 100,000 shares. The direct holding is unchanged at 130,435,554 shares. Total interest rises from 868,850,575 shares (68.20%) to 868,950,575 shares (68.21%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr. Lim Yong Sheng and his associates are entitled to exercise all the votes attached to the voting shares in Money Farm Pte. Ltd. As such, pursuant to Section 4 of the Securities and Futures Act, Mr. Lim Yong Sheng is deemed interested in the shares which Money Farm Pte. Ltd. holds in MoneyMax Financial Services Ltd.",
+    "relationship_text": null,
+    "remarks_text": "The shareholding percentage before and after the change in interest are computed based on the total number of issued shares of 1,273,909,411 shares (excluding treasury shares).",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 100,000 ordinary shares by Money Farm Pte. Ltd",
+    "acting_party": "Money Farm Pte. Ltd",
+    "company_name": "Moneymax Financial Services Ltd",
+    "transaction_reference": "967291346041991"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DDS2LQ8C7GAKVDSM/910703__eFORM1V2_LYG_06Nov26.pdf",
+    "timestamp": "2026-11-04",
+    "transaction_type": "buy",
+    "holder_name": "Lim Yong Guan",
+    "transaction_value": 41000,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 900491813,
+          "percentage": 0.7069
+        },
+        "deemed": {
+          "amount": 749305147,
+          "percentage": 0.5882
+        },
+        "direct": {
+          "amount": 151186666,
+          "percentage": 0.1187
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 900391813,
+          "percentage": 0.7068
+        },
+        "deemed": {
+          "amount": 749205147,
+          "percentage": 0.5881
+        },
+        "direct": {
+          "amount": 151186666,
+          "percentage": 0.1187
+        }
+      }
+    },
+    "symbol": "5WJ.SI",
+    "price_per_share": [
+      {
+        "price": 0.41,
+        "amount": 100000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Yong Guan's deemed interest in Moneymax Financial Services Ltd rises after S$41,000 share purchase",
+    "body": "Lim Yong Guan's deemed interest in Moneymax Financial Services Ltd rose after Money Farm Pte. Ltd bought 100,000 shares at S$0.41 per share, for a total of S$41,000. The direct holding is unchanged at 151,186,666 shares. Total interest rises from 900,391,813 shares (70.68%) to 900,491,813 shares (70.69%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "retail",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr. Lim Yong Guan and his associates are entitled to exercise all the votes attached to the voting shares in Money Farm Pte. Ltd. As such, pursuant to Section 4 of the Securities and Futures Act, Mr. Lim Yong Guan is deemed interested in the shares which Money Farm Pte. Ltd. holds in MoneyMax Financial Services Ltd. Mr. Lim Yong Guan is also deemed interested in the 10,790,126 shares held by his spouse, Mdm. Tan Yang Hong, by virtue of Section 164(15) of the Companies Act, 1967.",
+    "relationship_text": null,
+    "remarks_text": "The shareholding percentage before and after the change in interest are computed based on the total number of issued shares of 1,273,909,411 shares (excluding treasury shares).",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 100,000 ordinary shares in MoneyMax Financial Services Ltd. by Money Farm Pte. Ltd",
+    "acting_party": "Money Farm Pte. Ltd",
+    "company_name": "Moneymax Financial Services Ltd",
+    "transaction_reference": "074840643196034"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/B4KJEYX57NSV144I/910660__eFORM1_ChengWK_061126_Final.pdf",
+    "timestamp": "2026-11-06",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0003,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 488762859,
+          "percentage": 0.6391
+        },
+        "deemed": {
+          "amount": 488548459,
+          "percentage": 0.6388
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 488542859,
+          "percentage": 0.6388
+        },
+        "deemed": {
+          "amount": 488328459,
+          "percentage": 0.6385
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 220000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 220K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 220,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 488,542,859 shares (63.88%) to 488,762,859 shares (63.91%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 220,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 220,000 shares by the holder's spouse",
+    "acting_party": "Chow Helen",
+    "company_name": "Wing Tai Holdings Ltd",
+    "transaction_reference": "233190346341066"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WGUS19GZW7Q5FO50/910658__20261106%20-%20Form%203%20-%20CLIAM.pdf",
+    "timestamp": "2026-11-06",
+    "transaction_type": "others",
+    "holder_name": "CLI Asset Management Pte. Ltd",
+    "transaction_value": 2103041,
+    "share_percentage_transaction": {
+      "total": 0.0014,
+      "deemed": 0.0014,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 121294654,
+          "percentage": 0.0813
+        },
+        "deemed": {
+          "amount": 121294654,
+          "percentage": 0.0813
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 119006501,
+          "percentage": 0.0799
+        },
+        "deemed": {
+          "amount": 119006501,
+          "percentage": 0.0799
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "CY6U.SI",
+    "price_per_share": [
+      {
+        "price": 0.9191,
+        "amount": 2288153
+      }
+    ],
+    "holder_type": "institution",
+    "title": "CLI Asset Management Pte. Ltd's deemed interest in CapitaLand India Trust rises after payment of management fees in 2.3M units",
+    "body": "CLI Asset Management Pte. Ltd's deemed interest in CapitaLand India Trust rose after Clintmpl received 2,288,153 units as payment of management fees, valued at S$0.9191 per unit, or S$2,103,041 in total. No units are held directly. Total interest rises from 119,006,501 units (7.99%) to 121,294,654 units (8.13%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-services",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "CLINTMPL is a wholly owned subsidiary of CLIAM. CLIAM is deemed to be interested in 121,294,654 units held by CLINTMPL.",
+    "relationship_text": null,
+    "remarks_text": "In relation to item 9 of Part II: 1.  The percentage of total number of ordinary voting units held \"Immediately before the transaction\" is computed based on 1,488,952,815 issued units as of 12 August 2026. 2. The percentage of total number of ordinary voting units held \"Immediately after the transaction\" is computed based on 1,491,240,968 issued units as of 6 November 2026. 3. The figures are rounded down to the nearest 0.01%",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issuance of units as payment of 50% of the base fee",
+    "acting_party": "Clintmpl",
+    "company_name": "CapitaLand India Trust",
+    "transaction_reference": "798214346253741"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LSEGPYM826ZQH3PX/910652__20261106%20-%20Form%206%20-%20CLINTMPL.pdf",
+    "timestamp": "2026-11-06",
+    "transaction_type": "others",
+    "holder_name": "CapitaLand India Trust Management Pte. Ltd",
+    "transaction_value": 2103041,
+    "share_percentage_transaction": {
+      "total": 0.0014,
+      "deemed": 0.0,
+      "direct": 0.0014
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 121294654,
+          "percentage": 0.0813
         },
         "deemed": {
           "amount": 0,
           "percentage": 0.0
         },
         "direct": {
-          "amount": 243439596,
-          "percentage": 0.1147
+          "amount": 121294654,
+          "percentage": 0.0813
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 119006501,
+          "percentage": 0.0799
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 119006501,
+          "percentage": 0.0799
         }
       }
     },
-    "symbol": "AW9U.SI",
+    "symbol": "CY6U.SI",
     "price_per_share": [
       {
-        "price": 0.2739,
-        "amount": 2226656
+        "price": 0.9191,
+        "amount": 2288153
       }
     ],
     "holder_type": "insider",
-    "title": "First REIT Management Limited receives 2.2M First Real Estate Investment Trust units as management fees",
-    "body": "First REIT Management Limited received 2,226,656 units of First Real Estate Investment Trust as payment of management fees, valued at S$0.2739 per unit, or S$609,881 in total. Total interest rises from 243,439,596 units (11.47%) to 245,666,252 units (11.56%).",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
+    "title": "CapitaLand India Trust Management Pte. Ltd receives 2.3M CapitaLand India Trust units as management fees",
+    "body": "CapitaLand India Trust Management Pte. Ltd received 2,288,153 units of CapitaLand India Trust as payment of management fees, valued at S$0.9191 per unit, or S$2,103,041 in total. Total interest rises from 119,006,501 units (7.99%) to 121,294,654 units (8.13%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-services",
     "tags": [
       "management-fees"
     ],
     "source_is_manual": false,
-    "deemed_interest_text": "NOT APPLICABLE",
+    "deemed_interest_text": "N.A.",
     "relationship_text": null,
-    "remarks_text": "The percentage of unitholding is calculated based on 2,123,220,314 Units in issue before the change and 2,125,446,970 Units in issue after the change.",
+    "remarks_text": "In relation to item 8 of Part II: 1.  The percentage of total number of ordinary voting units held \"Immediately before the transaction\" is computed based on 1,488,952,815 issued units as of 12 August 2026. 2. The percentage of total number of ordinary voting units held \"Immediately after the transaction\" is computed based on 1,491,240,968 issued units as of 6 November 2026. 3. The figures are rounded down to the nearest 0.01%",
     "filing_type": "form_6",
     "notification_type": null,
     "circumstance_key": "Securities as part of management",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "First Real Estate Investment Trust",
-    "transaction_reference": "007344346153745"
+    "company_name": "CapitaLand India Trust",
+    "transaction_reference": "447144346253641"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1HKUXGNEHIRMX0VN/910504__First_REIT_Form_6_5%20Nov%202026.pdf",
-    "timestamp": "2026-11-05",
-    "transaction_type": "others",
-    "holder_name": "First REIT Management Limited",
-    "transaction_value": 346717,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/L9Z2NP2I83D7N5IO/910648__eFORM3V2_UIBREIT_20261103.pdf",
+    "timestamp": "2026-11-03",
+    "transaction_type": "buy",
+    "holder_name": "Amova Asset Management Co., Ltd",
+    "transaction_value": 3872889,
     "share_percentage_transaction": {
-      "total": 0.0007,
-      "deemed": 0.0,
-      "direct": 0.0007
+      "total": 0.0037,
+      "deemed": 0.0037,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 247384374,
-          "percentage": 0.1163
+          "amount": 98115000,
+          "percentage": 0.0717
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 98115000,
+          "percentage": 0.0717
         },
         "direct": {
-          "amount": 247384374,
-          "percentage": 0.1163
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 245666252,
-          "percentage": 0.1156
+          "amount": 93052400,
+          "percentage": 0.068
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 93052400,
+          "percentage": 0.068
         },
         "direct": {
-          "amount": 245666252,
-          "percentage": 0.1156
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "AW9U.SI",
+    "symbol": "UIBU.SI",
     "price_per_share": [
       {
-        "price": 0.2018,
-        "amount": 1718122
+        "price": 0.765,
+        "amount": 5062600
       }
     ],
-    "holder_type": "insider",
-    "title": "First REIT Management Limited receives 1.7M First Real Estate Investment Trust units as management fees",
-    "body": "First REIT Management Limited received 1,718,122 units of First Real Estate Investment Trust as payment of management fees, valued at S$0.2018 per unit, or S$346,717 in total. Total interest rises from 245,666,252 units (11.56%) to 247,384,374 units (11.63%).",
+    "holder_type": "institution",
+    "title": "Amova Asset Management Co., Ltd's deemed interest in UI Boustead REIT rises after S$3.9M unit purchase",
+    "body": "Amova Asset Management Co., Ltd's deemed interest in UI Boustead REIT rose after a party linked to the holder bought 5,062,600 units in a market transaction at S$0.765 per unit, for a total of S$3,872,889. No units are held directly. Total interest rises from 93,052,400 units (6.80%) to 98,115,000 units (7.17%).",
     "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
+    "sub_sector": "reit-industrial",
+    "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "NOT APPLICABLE",
-    "relationship_text": null,
-    "remarks_text": "The percentage of unitholding is calculated based on 2,125,446,970 Units in issue before the change and 2,127,165,092 Units in issue after the change.",
-    "filing_type": "form_6",
-    "notification_type": null,
-    "circumstance_key": "Securities as part of management",
+    "deemed_interest_text": "Deemed interest in the Listed Issuer are aggregate number of voting units held by portfolios of Amova Co. and its subsidiaries as fund managers.",
+    "relationship_text": "Sumitomo Mitsui Trust Group, Inc. (\"SMTG\") has a controlling interest in Amova Co..",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "First Real Estate Investment Trust",
-    "transaction_reference": "107311643437451"
+    "company_name": "UI Boustead REIT",
+    "transaction_reference": "895633643023403"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/L9Z2NP2I83D7N5IO/910648__eFORM3V2_UIBREIT_20261103.pdf",
+    "timestamp": "2026-11-03",
+    "transaction_type": "buy",
+    "holder_name": "Sumitomo Mitsui Trust Group, Inc",
+    "transaction_value": 3872889,
+    "share_percentage_transaction": {
+      "total": 0.0037,
+      "deemed": 0.0037,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 98115000,
+          "percentage": 0.0717
+        },
+        "deemed": {
+          "amount": 98115000,
+          "percentage": 0.0717
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 93052400,
+          "percentage": 0.068
+        },
+        "deemed": {
+          "amount": 93052400,
+          "percentage": 0.068
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "UIBU.SI",
+    "price_per_share": [
+      {
+        "price": 0.765,
+        "amount": 5062600
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Sumitomo Mitsui Trust Group, Inc's deemed interest in UI Boustead REIT rises after S$3.9M unit purchase",
+    "body": "Sumitomo Mitsui Trust Group, Inc's deemed interest in UI Boustead REIT rose after a party linked to the holder bought 5,062,600 units in a market transaction at S$0.765 per unit, for a total of S$3,872,889. No units are held directly. Total interest rises from 93,052,400 units (6.80%) to 98,115,000 units (7.17%).",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Sumitomo Mitsui Trust Group, Inc. (\"SMTG\") has a controlling interest in Amova Co.. Hence, interest in the Listed Issuer held by portfolios of Amova Co. and its subsidiaries as fund managers are deemed interest of SMTG",
+    "relationship_text": "Sumitomo Mitsui Trust Group, Inc. (\"SMTG\") has a controlling interest in Amova Co..",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UI Boustead REIT",
+    "transaction_reference": "895633643023403"
   }
 ]
