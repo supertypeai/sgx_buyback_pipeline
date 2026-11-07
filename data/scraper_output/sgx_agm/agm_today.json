@@ -1,5 +1,37 @@
 [
   {
+    "symbol": "QNS",
+    "recording_date": "2026-11-06",
+    "agm_date": "2026-11-26",
+    "meeting_type": "AGM",
+    "agm_time": "10:00:00",
+    "agm_place": "Room 3-2, ISCA House, 60 Cecil Street, Singapore 049709",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/50HX6VMPCKXK6XVS/c538209908eee808673f3663a4d8e113381c3c8f64fb68fbf849d82f219343ad",
+    "ref_id": "SG261106MEETWCY0"
+  },
+  {
+    "symbol": "581",
+    "recording_date": "2026-10-22",
+    "agm_date": "2026-11-06",
+    "meeting_type": "AGM",
+    "agm_time": "14:30:00",
+    "agm_place": "Function Room, LR Floor, 380 Jalan Besar, ARC 380, Singapore 209000",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/YROD091GXTWD0YHZ/d43ccb61a0602dba2844c55d6e48c725044dd909eb417efcdc438d8fe6527695",
+    "ref_id": "SG261022MEETMG9D"
+  },
+  {
     "symbol": "KSB",
     "recording_date": "2026-11-06",
     "agm_date": "2026-12-09",
@@ -30,22 +62,6 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/WYWIAGRPK8PKXPY6/270075ff617c1ebc1fc98c513740bf235568ea9f9dd436d9381f98db124ec2e8",
     "ref_id": "SG261105MEETMH7A"
-  },
-  {
-    "symbol": "1J7",
-    "recording_date": "2026-11-04",
-    "agm_date": "2026-11-27",
-    "meeting_type": "AGM",
-    "agm_time": "14:00:00",
-    "agm_place": "Rose Room 1, York Hotel, 21 Mount Elizabeth, Singapore 228516",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/24N9IK3E6UEQYFJ6/4f250ebce1f175fcc6dc25746114ef8292618a8621408f77dbc8a89a8059107f",
-    "ref_id": "SG261104MEET06ZF"
   },
   {
     "symbol": "NTDU",
@@ -94,21 +110,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/8EO74VB16GXTLBHN/4c7fd0e826d1f4f12dea9425ac352c85b962452fe1e9041af19733ed751b3d99",
     "ref_id": "SG261105XMET89XU"
-  },
-  {
-    "symbol": "5CR",
-    "recording_date": "2026-10-20",
-    "agm_date": "2026-11-04",
-    "meeting_type": "EGM",
-    "agm_time": "10:30:00",
-    "agm_place": "Republic of Singapore Yacht Club, 52 West Coast Ferry Road, Singapore 126887",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/PZQ9PO06JZ1GX4GR/a3e40ef83e5db6d681b883ceed90233a8e32c5415d17f38f2c9977da7f9b42a8",
-    "ref_id": "SG261020XMETG9PS"
   }
 ]
