@@ -48,22 +48,6 @@
     "ref_id": "SG261106MEETYIPU"
   },
   {
-    "symbol": "K03",
-    "recording_date": "2026-11-05",
-    "agm_date": "2026-11-24",
-    "meeting_type": "AGM",
-    "agm_time": "11:00:00",
-    "agm_place": "2 MacTaggart Road #04-01, Khong Guan Building, Singapore 368078",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/WYWIAGRPK8PKXPY6/270075ff617c1ebc1fc98c513740bf235568ea9f9dd436d9381f98db124ec2e8",
-    "ref_id": "SG261105MEETMH7A"
-  },
-  {
     "symbol": "NTDU",
     "recording_date": "2026-10-14",
     "agm_date": "2026-11-06",
@@ -94,21 +78,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/RFPHWJMHSTLFXVP9/9e27ec14d9941ef33d40c9fcfa7b6852d6d3df5f6bf03a891dd5afd837d0d15b",
     "ref_id": "SG261106XMETUENN"
-  },
-  {
-    "symbol": "V8Y",
-    "recording_date": "2026-11-05",
-    "agm_date": "2026-11-20",
-    "meeting_type": "EGM",
-    "agm_time": "10:30:00",
-    "agm_place": "133 New Bridge Road, Chinatown Point, #21-06, Singapore 059413.",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/8EO74VB16GXTLBHN/4c7fd0e826d1f4f12dea9425ac352c85b962452fe1e9041af19733ed751b3d99",
-    "ref_id": "SG261105XMET89XU"
   }
 ]
