@@ -1,5 +1,39 @@
 [
   {
+    "symbol": "R14",
+    "reference": "SG261110DVCADSYX",
+    "recording_date": "2026-11-18",
+    "ex_date": "2026-11-17",
+    "dividend_amount": 0.000237,
+    "payment_date": "2026-11-30",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZXH0EYNXC1ETGY4M/3d3a0153bc76331f3e489bbeb90399a56dcb50882daebdc684bd40aa8ccee0df",
+    "timestamp": "2026-11-10 20:18:04",
+    "updated_on": "2026-11-10 23:05:56"
+  },
+  {
+    "symbol": "F9D",
+    "reference": "SG261110DVCA465O",
+    "recording_date": "2026-11-23",
+    "ex_date": "2026-11-20",
+    "dividend_amount": 0.02,
+    "payment_date": "2026-12-01",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Interim",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/UT76GWCCQ32D2FXQ/a61f1ea4582d4cb9af87345fff7c2baa04cdb43ab42963d9878c951ecd0c46e8",
+    "timestamp": "2026-11-10 18:11:57",
+    "updated_on": "2026-11-10 23:06:01"
+  },
+  {
     "symbol": "BUOU",
     "reference": "SG261106DVCAWVIY",
     "recording_date": "2026-11-19",
@@ -14,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/S1NQX3HCSCDC6B31/ced730a6ce46b8570032f094df795ab90fe75eb5977b9d43e4b9976a8811156a",
     "timestamp": "2026-11-06 07:21:34",
-    "updated_on": "2026-11-10 01:25:04"
+    "updated_on": "2026-11-10 23:06:08"
   },
   {
     "symbol": "S08",
@@ -31,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ATUZGYV4Y2YB6MZF/50f155168675b4c3fcab39595c2319194ad9d267d60e1be17bc8dc8e078079f0",
     "timestamp": "2026-11-06 07:00:18",
-    "updated_on": "2026-11-10 01:25:08"
+    "updated_on": "2026-11-10 23:06:12"
   },
   {
     "symbol": "D05",
@@ -48,7 +82,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/NVB0HAOPNFIRLSHV/dea7790af713abfb522e7fc95096eafcb3eb06c5092247eda1159cd6764f5eb4",
     "timestamp": "2026-11-05 06:35:06",
-    "updated_on": "2026-11-10 01:25:15"
+    "updated_on": "2026-11-10 23:06:18"
   },
   {
     "symbol": "C41",
@@ -65,7 +99,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/CPTX87YJ4VH5JZSS/7860514e26ad6bb06cfc3c376e32abea9189cf4e36a3a9a0c027d951848591f1",
     "timestamp": "2026-11-04 17:20:21",
-    "updated_on": "2026-11-10 01:25:21"
+    "updated_on": "2026-11-10 23:06:22"
   },
   {
     "symbol": "AGS",
@@ -82,7 +116,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/WQRM0UEQFATZIVXY/12fd694c6b4c2555775a8c5586c4c228262ff16f01e4cd95f376047e9c6f53b1",
     "timestamp": "2026-11-04 12:06:19",
-    "updated_on": "2026-11-10 01:25:27"
+    "updated_on": "2026-11-10 23:06:25"
   },
   {
     "symbol": "S59",
@@ -99,7 +133,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/LC2PVAHJ7NCVEP6T/e36a5d0452cac170d2e968cc959aaff38f0ae137db8fd453a65b97a31b8b6df8",
     "timestamp": "2026-11-03 19:07:06",
-    "updated_on": "2026-11-10 01:25:35"
+    "updated_on": "2026-11-10 23:06:28"
   },
   {
     "symbol": "42L",
@@ -116,7 +150,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/IT7JNIBKZ89861P9/587810b64d48b36fbb78b6525867acaa699beabf52eac5361b9a600973b90828",
     "timestamp": "2026-10-30 17:24:42",
-    "updated_on": "2026-11-10 01:25:58"
+    "updated_on": "2026-11-10 23:06:38"
   },
   {
     "symbol": "CJLU",
@@ -133,7 +167,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/3DWSXIW7UZ91DSN3/0422f8c496ceb66c2fd372170977be3a925a8a04f70c69452eed19d6966a53b9",
     "timestamp": "2026-10-30 12:02:00",
-    "updated_on": "2026-11-10 01:26:09"
+    "updated_on": "2026-11-10 23:06:44"
   },
   {
     "symbol": "CJLU",
@@ -150,7 +184,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/L1IGMJM76ISAASEA/bcb8ec7abee18b91ad09719a2b4c62e0c23f6376fa4f448c7e1e9d8d89c64dbb",
     "timestamp": "2026-10-29 18:26:23",
-    "updated_on": "2026-11-10 01:26:18"
+    "updated_on": "2026-11-10 23:06:54"
   },
   {
     "symbol": "S68",
@@ -167,7 +201,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/4M3FMZP9XUCJ2LY4/68e0b5d74fbd83fbf7d911d6d58417127a5c402652a0d21b81c5d9080765623d",
     "timestamp": "2026-10-28 17:38:29",
-    "updated_on": "2026-11-10 01:26:28"
+    "updated_on": "2026-11-10 23:07:04"
   },
   {
     "symbol": "ZB9",
@@ -184,14 +218,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZFZOFP3DE038VH9B/ab5a4ca4fcf83f5658bd0a9d712cae4abe96d89e3b0141e6cc91829593b49474",
     "timestamp": "2026-10-28 17:34:52",
-    "updated_on": "2026-11-10 01:26:32"
+    "updated_on": "2026-11-10 23:07:08"
   },
   {
     "symbol": "HLS",
     "reference": "SG261026DVCA4QN1",
     "recording_date": "2026-11-11",
     "ex_date": "2026-11-10",
-    "dividend_amount": 0.00910656,
+    "dividend_amount": 0.009087587999999999,
     "payment_date": "2026-11-24",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Special",
@@ -201,14 +235,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/O21YD8PGYMS00TCB/10a4c61ba56cc65160a44716bec6e12ec8cb0e8d0a9df56e64e890d0bca847b7",
     "timestamp": "2026-10-26 17:32:22",
-    "updated_on": "2026-11-10 01:26:59"
+    "updated_on": "2026-11-10 23:07:31"
   },
   {
     "symbol": "BVA",
     "reference": "SG261006DVCA9H9T",
     "recording_date": "2026-11-24",
     "ex_date": "2026-11-23",
-    "dividend_amount": 0.004731,
+    "dividend_amount": 0.0047295,
     "payment_date": "2026-12-15",
     "payment_type": "Tax Exempted",
     "dividend_type": "Final",
@@ -218,6 +252,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/74SM3JFVQWIG8ZWR/44cdc2fa0c5ce4b07a63627785064b619dac0ecb889240621213272af2534e07",
     "timestamp": "2026-10-06 17:48:35",
-    "updated_on": "2026-11-10 01:27:41"
+    "updated_on": "2026-11-10 23:08:06"
   }
 ]
