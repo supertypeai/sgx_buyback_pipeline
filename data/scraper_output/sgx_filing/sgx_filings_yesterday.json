@@ -1,1 +1,402 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/M9P7K1S8BSP0858L/910829__eFORM6V2_CLASBTMPL.pdf",
+    "timestamp": "2026-11-10",
+    "transaction_type": "others",
+    "holder_name": "CapitaLand Ascott Business Trust Management Pte. Ltd",
+    "transaction_value": 679339,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0,
+      "direct": 0.0002
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1919387,
+          "percentage": 0.0004
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1919387,
+          "percentage": 0.0004
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1100215,
+          "percentage": 0.0002
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1100215,
+          "percentage": 0.0002
+        }
+      }
+    },
+    "symbol": "HMN.SI",
+    "price_per_share": [
+      {
+        "price": 0.8293,
+        "amount": 819172
+      }
+    ],
+    "holder_type": "insider",
+    "title": "CapitaLand Ascott Business Trust Management Pte. Ltd receives 819K CapitaLand Ascott Trust stapled securities as management fees",
+    "body": "CapitaLand Ascott Business Trust Management Pte. Ltd received 819,172 stapled securities of CapitaLand Ascott Trust as payment of management fees, valued at S$0.8293 per stapled security, or S$679,339 in total. Total interest rises from 1,100,215 stapled securities (0.02%) to 1,919,387 stapled securities (0.04%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Not applicable.",
+    "relationship_text": null,
+    "remarks_text": "CLAS is a stapled group comprising CapitaLand Ascott Real Estate Investment Trust (“CapitaLand Ascott REIT”) and CapitaLand Ascott Business Trust (“CapitaLand Ascott BT\"). Each stapled security of CLAS comprises one unit in CapitaLand Ascott REIT and one unit in CapitaLand Ascott BT. The manager of CapitaLand Ascott REIT is CapitaLand Ascott Trust Management Limited and the trustee-manager of CapitaLand Ascott BT is CapitaLand Ascott Business Trust Management Pte. Ltd. (\"CLASBTMPL\"). As each stapled security in CLAS comprises one unit in CapitaLand Ascott REIT and one unit in CapitaLand Ascott BT, this notification is for the stapled securities in relation to Part I paragraph 1. Any reference to units above relates to the stapled securities in CLAS. In relation to item 8 of Transaction A, the percentage of total number of ordinary voting stapled securities in CLAS held \"immediately before the transaction\" is calculated based on 3,856,603,172 stapled securities as at 6 August 2026 (being the last change in the total number of stapled securities in CLAS), and the percentage of total number of ordinary voting stapled securities held \"immediately after the transaction\" is calculated based on 3,862,163,945 stapled securities as at 10 November 2026 following the issuance of stapled securities in respect of Transaction A. The percentages are rounded down to the nearest 0.01%. Please see item 12 in respect of Transaction B below for further details in relation to Transaction A.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": "the issuance of stapled securities in respect of Transaction A",
+    "acting_party": null,
+    "company_name": "CapitaLand Ascott Trust",
+    "transaction_reference": "669340346353346"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/M9P7K1S8BSP0858L/910829__eFORM6V2_CLASBTMPL.pdf",
+    "timestamp": "2026-11-10",
+    "transaction_type": "sell",
+    "holder_name": "CapitaLand Ascott Business Trust Management Pte. Ltd",
+    "transaction_value": 679339,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0,
+      "direct": 0.0002
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1100215,
+          "percentage": 0.0002
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1100215,
+          "percentage": 0.0002
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1919387,
+          "percentage": 0.0004
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1919387,
+          "percentage": 0.0004
+        }
+      }
+    },
+    "symbol": "HMN.SI",
+    "price_per_share": [
+      {
+        "price": 0.8293,
+        "amount": 819172
+      }
+    ],
+    "holder_type": "insider",
+    "title": "CapitaLand Ascott Business Trust Management Pte. Ltd sells S$679K of CapitaLand Ascott Trust stapled securities in off-market deal",
+    "body": "CapitaLand Ascott Business Trust Management Pte. Ltd sold 819,172 stapled securities of CapitaLand Ascott Trust in an off-market transaction at S$0.8293 per stapled security, for a total of S$679,339. Total interest falls from 1,919,387 stapled securities (0.04%) to 1,100,215 stapled securities (0.02%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Not applicable.",
+    "relationship_text": null,
+    "remarks_text": "In relation to item 7 of Transaction A and Transaction B, CLASBTMPL is entitled to receive 819,172 stapled securities in CLAS at an issue price of S$0.8293 per stapled security as partial payment of the base fee and base performance fee for the period from 1 July 2026 to 30 September 2026 (both dates inclusive). CLASBTMPL has sold the 819,172 stapled securities which it is entitled to receive, to Somerset Capital Pte Ltd (\"SCPL\"), a related corporation of CLASBTMPL, and in connection with the sale, CLASBTMPL has directed that such stapled securities be issued directly to SCPL instead of CLASBTMPL. In relation to item 8 of Transaction B, the percentage of total number of ordinary voting stapled securities in CLAS held \"immediately before the transaction\" and \"immediately after the transaction\" is calculated based on 3,862,163,945 stapled securities as at 10 November 2026 following the issuance of stapled securities in respect of Transaction A. The percentages are rounded down to the nearest 0.01%.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities via off-market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "CapitaLand Ascott Trust",
+    "transaction_reference": "452413643039831"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C5P709A8E20QLIW3/910827__eFORM6V2_CLASML.pdf",
+    "timestamp": "2026-11-10",
+    "transaction_type": "others",
+    "holder_name": "CapitaLand Ascott Trust Management Limited",
+    "transaction_value": 3932209,
+    "share_percentage_transaction": {
+      "total": 0.0012,
+      "deemed": 0.0,
+      "direct": 0.0012
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 15242899,
+          "percentage": 0.0039
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 15242899,
+          "percentage": 0.0039
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 10501298,
+          "percentage": 0.0027
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 10501298,
+          "percentage": 0.0027
+        }
+      }
+    },
+    "symbol": "HMN.SI",
+    "price_per_share": [
+      {
+        "price": 0.8293,
+        "amount": 4741601
+      }
+    ],
+    "holder_type": "insider",
+    "title": "CapitaLand Ascott Trust Management Limited receives 4.7M CapitaLand Ascott Trust stapled securities as management fees",
+    "body": "CapitaLand Ascott Trust Management Limited received 4,741,601 stapled securities of CapitaLand Ascott Trust as payment of management fees, valued at S$0.8293 per stapled security, or S$3,932,209 in total. Total interest rises from 10,501,298 stapled securities (0.27%) to 15,242,899 stapled securities (0.39%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Not applicable",
+    "relationship_text": null,
+    "remarks_text": "CLAS is a stapled group comprising CapitaLand Ascott Real Estate Investment Trust (“CapitaLand Ascott REIT”) and CapitaLand Ascott Business Trust (“CapitaLand Ascott BT\"). Each stapled security of CLAS comprises one unit in CapitaLand Ascott REIT and one unit in CapitaLand Ascott BT. The manager of CapitaLand Ascott REIT is CapitaLand Ascott Trust Management Limited (\"CLASML\") and the trustee-manager of CapitaLand Ascott BT is CapitaLand Ascott Business Trust Management Pte. Ltd.. As each stapled security in CLAS comprises one unit in CapitaLand Ascott REIT and one unit in CapitaLand Ascott BT, this notification is for the stapled securities in relation to Part I paragraph 1. Any reference to units above relates to the stapled securities in CLAS. In relation to item 8 of Transaction A, the percentage of total number of ordinary voting stapled securities in CLAS held \"immediately before the transaction\" is calculated based on  3,856,603,172 stapled securities as at 6 August 2026 (being the last change in the total number of stapled securities in CLAS), and the percentage of total number of ordinary voting stapled securities held \"immediately after the transaction\" is calculated based on 3,862,163,945 stapled securities as at 10 November 2026 following the issuance of stapled securities in respect of Transaction A. The percentages are rounded down to the nearest 0.01%. Please see item 12 in respect of Transaction B below for further details in relation to Transaction A.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": "the issuance of stapled securities in respect of Transaction A",
+    "acting_party": null,
+    "company_name": "CapitaLand Ascott Trust",
+    "transaction_reference": "731540346353546"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C5P709A8E20QLIW3/910827__eFORM6V2_CLASML.pdf",
+    "timestamp": "2026-11-10",
+    "transaction_type": "sell",
+    "holder_name": "CapitaLand Ascott Trust Management Limited",
+    "transaction_value": 3932209,
+    "share_percentage_transaction": {
+      "total": 0.0012,
+      "deemed": 0.0,
+      "direct": 0.0012
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 10501298,
+          "percentage": 0.0027
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 10501298,
+          "percentage": 0.0027
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 15242899,
+          "percentage": 0.0039
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 15242899,
+          "percentage": 0.0039
+        }
+      }
+    },
+    "symbol": "HMN.SI",
+    "price_per_share": [
+      {
+        "price": 0.8293,
+        "amount": 4741601
+      }
+    ],
+    "holder_type": "insider",
+    "title": "CapitaLand Ascott Trust Management Limited sells S$3.9M of CapitaLand Ascott Trust stapled securities in off-market deal",
+    "body": "CapitaLand Ascott Trust Management Limited sold 4,741,601 stapled securities of CapitaLand Ascott Trust in an off-market transaction at S$0.8293 per stapled security, for a total of S$3,932,209. Total interest falls from 15,242,899 stapled securities (0.39%) to 10,501,298 stapled securities (0.27%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Not applicable.",
+    "relationship_text": null,
+    "remarks_text": "In relation to item 7 of Transaction A and Transaction B, CLASML is entitled to receive 4,741,601 stapled securities in CLAS at an issue price of S$0.8293 per stapled security as partial payment of the base fee for the period from 1 July 2026 to 30 September 2026 (both dates inclusive). CLASML has sold the 4,741,601 stapled securities which it is entitled to receive, to Somerset Capital Pte Ltd (\"SCPL\"), a related corporation of CLASML, and in connection with the sale, CLASML has directed that such stapled securities be issued directly to SCPL instead of CLASML. In relation to item 8 of Transaction B, the percentages of total number of ordinary voting stapled securities in CLAS held \"immediately before the transaction\" and \"immediately after the transaction\" is calculated based on 3,862,163,945 stapled securities as at 10 November 2026 following the issuance of stapled securities in respect of Transaction A. The percentages are rounded down to the nearest 0.01%.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities via off-market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "CapitaLand Ascott Trust",
+    "transaction_reference": "881613643030421"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7WTT7OAVQA2OCNHM/910814__eFORM1_ChengWK_101126_Final.pdf",
+    "timestamp": "2026-11-10",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 488812859,
+          "percentage": 0.6391
+        },
+        "deemed": {
+          "amount": 488598459,
+          "percentage": 0.6388
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 488762859,
+          "percentage": 0.6391
+        },
+        "deemed": {
+          "amount": 488548459,
+          "percentage": 0.6388
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 50,000 shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 50,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 488,762,859 to 488,812,859 shares, with the stake unchanged at 63.91%.",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 50,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 50,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen",
+    "company_name": "Wing Tai Holdings Ltd",
+    "transaction_reference": "698397346242298"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SAEJKEO7L9UKY5CV/910785__20261011%20RS%20eFORM1V2.pdf",
+    "timestamp": "2026-11-06",
+    "transaction_type": "buy",
+    "holder_name": "Ravinder Sajwan",
+    "transaction_value": 127229,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0,
+      "direct": 0.0002
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 685736454,
+          "percentage": 0.6239
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6215
+        },
+        "direct": {
+          "amount": 2663412,
+          "percentage": 0.0024
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 685486454,
+          "percentage": 0.6237
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6215
+        },
+        "direct": {
+          "amount": 2413412,
+          "percentage": 0.0022
+        }
+      }
+    },
+    "symbol": "ULG.SI",
+    "price_per_share": [
+      {
+        "price": 0.5089,
+        "amount": 250000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Ravinder Sajwan buys S$127K of Ultragreen Ai Ltd shares",
+    "body": "Ravinder Sajwan bought 250,000 shares of Ultragreen Ai Ltd in a market transaction at S$0.5089 per share, for a total of S$127,229. Total interest rises from 685,486,454 shares (62.37%) to 685,736,454 shares (62.39%).",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "The business and affairs of IR Investments LP are managed by a board of managers (the “IR Board of Managers”). IR Holding Company Inc., the general partner of IR Investments LP, has on 15 December 2019 appointed Mr Sajwan as the sole and initial member of the IR Board of Managers. Mr Sajwan is also a Protector of The Saul Trust and a member of Saul Strategic Limited (which holds 100% of Saul Holdings Pte. Ltd.’s ordinary shares). Accordingly, for the purposes of the Securities and Futures Act 2001 of Singapore and the Securities and Futures (Disclosure of Interests) Regulations 2012, Mr Sajwan has a deemed interest in the Shares held by Renew Group Private Limited.",
+    "relationship_text": null,
+    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,099,047,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 6 NOVEMBER 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Ultragreen Ai Ltd",
+    "transaction_reference": "764543643590754"
+  }
+]
