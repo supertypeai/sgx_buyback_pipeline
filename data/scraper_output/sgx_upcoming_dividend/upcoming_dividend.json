@@ -14,7 +14,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/S1NQX3HCSCDC6B31/ced730a6ce46b8570032f094df795ab90fe75eb5977b9d43e4b9976a8811156a",
     "timestamp": "2026-11-06 07:21:34",
-    "updated_on": "2026-11-06 22:58:10"
+    "updated_on": "2026-11-10 01:25:04"
   },
   {
     "symbol": "S08",
@@ -31,7 +31,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ATUZGYV4Y2YB6MZF/50f155168675b4c3fcab39595c2319194ad9d267d60e1be17bc8dc8e078079f0",
     "timestamp": "2026-11-06 07:00:18",
-    "updated_on": "2026-11-06 22:58:15"
+    "updated_on": "2026-11-10 01:25:08"
   },
   {
     "symbol": "D05",
@@ -48,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/NVB0HAOPNFIRLSHV/dea7790af713abfb522e7fc95096eafcb3eb06c5092247eda1159cd6764f5eb4",
     "timestamp": "2026-11-05 06:35:06",
-    "updated_on": "2026-11-06 22:58:21"
+    "updated_on": "2026-11-10 01:25:15"
   },
   {
     "symbol": "C41",
@@ -65,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/CPTX87YJ4VH5JZSS/7860514e26ad6bb06cfc3c376e32abea9189cf4e36a3a9a0c027d951848591f1",
     "timestamp": "2026-11-04 17:20:21",
-    "updated_on": "2026-11-06 22:58:26"
+    "updated_on": "2026-11-10 01:25:21"
   },
   {
     "symbol": "AGS",
@@ -82,7 +82,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/WQRM0UEQFATZIVXY/12fd694c6b4c2555775a8c5586c4c228262ff16f01e4cd95f376047e9c6f53b1",
     "timestamp": "2026-11-04 12:06:19",
-    "updated_on": "2026-11-06 22:58:29"
+    "updated_on": "2026-11-10 01:25:27"
   },
   {
     "symbol": "S59",
@@ -99,24 +99,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/LC2PVAHJ7NCVEP6T/e36a5d0452cac170d2e968cc959aaff38f0ae137db8fd453a65b97a31b8b6df8",
     "timestamp": "2026-11-03 19:07:06",
-    "updated_on": "2026-11-06 22:58:34"
-  },
-  {
-    "symbol": "5OQ",
-    "reference": "SG261030DVCAWJGV",
-    "recording_date": "2026-11-10",
-    "ex_date": "2026-11-06",
-    "dividend_amount": 0.001,
-    "payment_date": "2026-11-18",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Final",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/N88FJEWKJKAEJ53U/367e01bc84078b17ad72d84bdf3f5b2d62ad085ae93d3fa98ab11f9e9e321af1",
-    "timestamp": "2026-10-30 19:04:40",
-    "updated_on": "2026-11-06 22:58:40"
+    "updated_on": "2026-11-10 01:25:35"
   },
   {
     "symbol": "42L",
@@ -133,24 +116,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/IT7JNIBKZ89861P9/587810b64d48b36fbb78b6525867acaa699beabf52eac5361b9a600973b90828",
     "timestamp": "2026-10-30 17:24:42",
-    "updated_on": "2026-11-06 22:58:44"
-  },
-  {
-    "symbol": "N02",
-    "reference": "SG261030DVCAIB0K",
-    "recording_date": "2026-11-10",
-    "ex_date": "2026-11-06",
-    "dividend_amount": 0.03,
-    "payment_date": "2026-11-26",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Final",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RNNAJDFGYNPCMT59/df2aeab7e8db5656e8c0f30cb05ccf7f0c0eee7a9e72933ead2bc02a571c1ad5",
-    "timestamp": "2026-10-30 17:17:58",
-    "updated_on": "2026-11-06 22:58:47"
+    "updated_on": "2026-11-10 01:25:58"
   },
   {
     "symbol": "CJLU",
@@ -167,41 +133,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/3DWSXIW7UZ91DSN3/0422f8c496ceb66c2fd372170977be3a925a8a04f70c69452eed19d6966a53b9",
     "timestamp": "2026-10-30 12:02:00",
-    "updated_on": "2026-11-06 22:58:51"
-  },
-  {
-    "symbol": "N2IU",
-    "reference": "SG261030DVCA09QY",
-    "recording_date": "2026-11-10",
-    "ex_date": "2026-11-06",
-    "dividend_amount": 0.0034,
-    "payment_date": "2026-12-16",
-    "payment_type": "Tax Exempted",
-    "dividend_type": null,
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/TOVE28HMVO88OSB7/81307714e1e8c51ea7039ab68b4fbe6c1129b617b18d172aff0bbb7fd10a0251",
-    "timestamp": "2026-10-30 06:59:41",
-    "updated_on": "2026-11-06 22:58:54"
-  },
-  {
-    "symbol": "BWM",
-    "reference": "SG261029DVCARRR4",
-    "recording_date": "2026-11-10",
-    "ex_date": "2026-11-06",
-    "dividend_amount": 0.0225,
-    "payment_date": "2026-11-17",
-    "payment_type": "Tax Not Applicable",
-    "dividend_type": "Special",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/IAEC5RR7TJ5VDCCZ/7843b97ac73bd47282fa125580786c5f1ea9c8969362b738933299d50e1717a4",
-    "timestamp": "2026-10-29 21:39:32",
-    "updated_on": "2026-11-06 22:58:59"
+    "updated_on": "2026-11-10 01:26:09"
   },
   {
     "symbol": "CJLU",
@@ -218,41 +150,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/L1IGMJM76ISAASEA/bcb8ec7abee18b91ad09719a2b4c62e0c23f6376fa4f448c7e1e9d8d89c64dbb",
     "timestamp": "2026-10-29 18:26:23",
-    "updated_on": "2026-11-06 22:59:03"
-  },
-  {
-    "symbol": "BFT",
-    "reference": "SG261028DVCA55G7",
-    "recording_date": "2026-11-10",
-    "ex_date": "2026-11-06",
-    "dividend_amount": 0.009,
-    "payment_date": "2026-11-24",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Final",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KFEYCG5MDH4CF1YA/7aa63e60568d95bdf43171de999d16747aac69040a460a496d86ddd551027050",
-    "timestamp": "2026-10-29 13:09:41",
-    "updated_on": "2026-11-06 22:59:07"
-  },
-  {
-    "symbol": "BFT",
-    "reference": "SG261028DVCA55G7",
-    "recording_date": "2026-11-10",
-    "ex_date": "2026-11-06",
-    "dividend_amount": 0.009,
-    "payment_date": "2026-11-12",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Final",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/O1175CJFX3BBD5ZF/0a8862c8e8ad6ff6717739c9411eaeeb6fbcae4acc24797637af6cca8951f908",
-    "timestamp": "2026-10-28 17:45:38",
-    "updated_on": "2026-11-06 22:59:12"
+    "updated_on": "2026-11-10 01:26:18"
   },
   {
     "symbol": "S68",
@@ -269,7 +167,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/4M3FMZP9XUCJ2LY4/68e0b5d74fbd83fbf7d911d6d58417127a5c402652a0d21b81c5d9080765623d",
     "timestamp": "2026-10-28 17:38:29",
-    "updated_on": "2026-11-06 22:59:17"
+    "updated_on": "2026-11-10 01:26:28"
   },
   {
     "symbol": "ZB9",
@@ -286,7 +184,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZFZOFP3DE038VH9B/ab5a4ca4fcf83f5658bd0a9d712cae4abe96d89e3b0141e6cc91829593b49474",
     "timestamp": "2026-10-28 17:34:52",
-    "updated_on": "2026-11-06 22:59:20"
+    "updated_on": "2026-11-10 01:26:32"
   },
   {
     "symbol": "HLS",
@@ -303,6 +201,23 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/O21YD8PGYMS00TCB/10a4c61ba56cc65160a44716bec6e12ec8cb0e8d0a9df56e64e890d0bca847b7",
     "timestamp": "2026-10-26 17:32:22",
-    "updated_on": "2026-11-06 22:59:44"
+    "updated_on": "2026-11-10 01:26:59"
+  },
+  {
+    "symbol": "BVA",
+    "reference": "SG261006DVCA9H9T",
+    "recording_date": "2026-11-24",
+    "ex_date": "2026-11-23",
+    "dividend_amount": 0.004731,
+    "payment_date": "2026-12-15",
+    "payment_type": "Tax Exempted",
+    "dividend_type": "Final",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": "The Company shall apply the RM:SGD noon middle rate as disclosed in the Bank Negara Malaysia's website on 24 November 2026 as basis for computing the dividend quantum to be paid in SGD to the Singapore investors whose Top Glove shares are traded on the Singapore Exchange Securities Trading Limited."
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/74SM3JFVQWIG8ZWR/44cdc2fa0c5ce4b07a63627785064b619dac0ecb889240621213272af2534e07",
+    "timestamp": "2026-10-06 17:48:35",
+    "updated_on": "2026-11-10 01:27:41"
   }
 ]
