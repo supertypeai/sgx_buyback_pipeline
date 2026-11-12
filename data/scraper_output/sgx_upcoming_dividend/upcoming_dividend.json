@@ -1,5 +1,56 @@
 [
   {
+    "symbol": "Y8E",
+    "reference": "SG261112DVCAGY9Z",
+    "recording_date": "2026-11-27",
+    "ex_date": "2026-11-26",
+    "dividend_amount": 0.001,
+    "payment_date": "2026-12-08",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Interim",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/D5NXWHCG2GJSZTSZ/d132dda814defa89d5cae5b74ab4f1f5890546419f7c2bc1076a1438deee790c",
+    "timestamp": "2026-11-12 22:58:18",
+    "updated_on": "2026-11-12 23:27:02"
+  },
+  {
+    "symbol": "BEW",
+    "reference": "SG261112DVCAVCL4",
+    "recording_date": "2026-11-26",
+    "ex_date": "2026-11-25",
+    "dividend_amount": 0.02,
+    "payment_date": "2026-12-10",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Special",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RPTMA47R1SI7XJV0/a625f445a071d737b2aa835431ce89b94efc889fc1cad4f7b18c9d5b32852889",
+    "timestamp": "2026-11-12 17:43:34",
+    "updated_on": "2026-11-12 23:27:07"
+  },
+  {
+    "symbol": "BEW",
+    "reference": "SG261112DVCA9OOI",
+    "recording_date": "2026-11-26",
+    "ex_date": "2026-11-25",
+    "dividend_amount": 0.002,
+    "payment_date": "2026-12-10",
+    "payment_type": "Tax Exempted (1-tier)",
+    "dividend_type": "Interim",
+    "event_narrative": {
+      "narrative": null,
+      "information_conditions": null
+    },
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SMS65LTM3TRO2RRM/f86fe56e98bcceb423a861486257b4cb5f2b2f5083b6d15ac33509674c119156",
+    "timestamp": "2026-11-12 17:42:45",
+    "updated_on": "2026-11-12 23:27:11"
+  },
+  {
     "symbol": "S58",
     "reference": "SG261111DVCAIHKZ",
     "recording_date": "2026-11-19",
@@ -14,14 +65,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/92DY4JTNC2VNWNX2/71332c43f21b56c1f536fcad5665fee1335f46ffdf5871c4cf91089c781bd343",
     "timestamp": "2026-11-11 21:27:53",
-    "updated_on": "2026-11-12 00:25:16"
+    "updated_on": "2026-11-12 23:27:19"
   },
   {
     "symbol": "NTDU",
     "reference": "SG261111DVCAZFRO",
     "recording_date": "2026-11-19",
     "ex_date": "2026-11-18",
-    "dividend_amount": 0.00756321,
+    "dividend_amount": 0.00758209,
     "payment_date": "2026-12-18",
     "payment_type": "Tax Exempted",
     "dividend_type": "Interim",
@@ -31,14 +82,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/O35TCI3J6CKEBPM5/07b0cbef048649595759928415c6ac5ded5bb1535d95ea8019128a2f567d8eac",
     "timestamp": "2026-11-11 18:21:21",
-    "updated_on": "2026-11-12 00:25:19"
+    "updated_on": "2026-11-12 23:27:23"
   },
   {
     "symbol": "NTDU",
     "reference": "SG261111DVCATUHV",
     "recording_date": "2026-11-19",
     "ex_date": "2026-11-18",
-    "dividend_amount": 0.02153592,
+    "dividend_amount": 0.021589679999999997,
     "payment_date": "2026-12-18",
     "payment_type": "Tax Exempted",
     "dividend_type": "Interim",
@@ -48,7 +99,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/BSDK4FCBA32N28HY/55805c882a11ca1ac671318ffcff1f80e2fb71f4bd0a98cde47dc7c72dfeff4e",
     "timestamp": "2026-11-11 18:20:05",
-    "updated_on": "2026-11-12 00:25:23"
+    "updated_on": "2026-11-12 23:27:26"
   },
   {
     "symbol": "C6L",
@@ -65,7 +116,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/8BN3MK8YJ078VRLC/e9aaaa63c8c3c6e2cc536937658b1f88549f9a6f27b7bfe7802d2f271e1f4c57",
     "timestamp": "2026-11-11 17:36:19",
-    "updated_on": "2026-11-12 00:25:28"
+    "updated_on": "2026-11-12 23:27:32"
   },
   {
     "symbol": "RE4",
@@ -82,7 +133,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/8OIIMY9K765YKQ71/e0b2105aafe410136707d7db6fb42054643b68651d0db8b19abf1f93a2c54c69",
     "timestamp": "2026-11-11 17:35:03",
-    "updated_on": "2026-11-12 00:25:32"
+    "updated_on": "2026-11-12 23:27:36"
   },
   {
     "symbol": "C6L",
@@ -99,14 +150,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/R5ZX1W04X19XS9ZA/2a98b856b79ca1d200e25cd9e3b0f4e3ee222f6f61affbc7e4c26a78fd2128aa",
     "timestamp": "2026-11-11 17:34:27",
-    "updated_on": "2026-11-12 00:25:36"
+    "updated_on": "2026-11-12 23:27:40"
   },
   {
     "symbol": "BN2",
     "reference": "SG261111DVCAQYJW",
     "recording_date": "2026-11-24",
     "ex_date": "2026-11-23",
-    "dividend_amount": 0.009803999999999998,
+    "dividend_amount": 0.009828,
     "payment_date": "2026-12-04",
     "payment_type": "Tax Not Applicable",
     "dividend_type": "Special",
@@ -116,14 +167,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/PRG5TRIXGU5AL236/58f15d567eb0b83482d7f42385eb2c70a3b998be00ebd2d5ae0a9cedd397e02c",
     "timestamp": "2026-11-11 06:50:56",
-    "updated_on": "2026-11-12 00:25:40"
+    "updated_on": "2026-11-12 23:27:43"
   },
   {
     "symbol": "BN2",
     "reference": "SG261111DVCAF02V",
     "recording_date": "2026-11-24",
     "ex_date": "2026-11-23",
-    "dividend_amount": 0.013072,
+    "dividend_amount": 0.013104000000000001,
     "payment_date": "2026-12-04",
     "payment_type": "Tax Not Applicable",
     "dividend_type": "Interim",
@@ -133,7 +184,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/88H05FYOYG3Z03PB/dd543baef7bbd22bc69b2ae30407362c5e1ff4b0812d838d7593c7859633bd84",
     "timestamp": "2026-11-11 06:48:47",
-    "updated_on": "2026-11-12 00:25:44"
+    "updated_on": "2026-11-12 23:27:46"
   },
   {
     "symbol": "R14",
@@ -150,7 +201,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZXH0EYNXC1ETGY4M/3d3a0153bc76331f3e489bbeb90399a56dcb50882daebdc684bd40aa8ccee0df",
     "timestamp": "2026-11-10 20:18:04",
-    "updated_on": "2026-11-12 00:25:48"
+    "updated_on": "2026-11-12 23:27:50"
   },
   {
     "symbol": "F9D",
@@ -167,7 +218,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/UT76GWCCQ32D2FXQ/a61f1ea4582d4cb9af87345fff7c2baa04cdb43ab42963d9878c951ecd0c46e8",
     "timestamp": "2026-11-10 18:11:57",
-    "updated_on": "2026-11-12 00:25:54"
+    "updated_on": "2026-11-12 23:27:56"
   },
   {
     "symbol": "BUOU",
@@ -184,7 +235,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/S1NQX3HCSCDC6B31/ced730a6ce46b8570032f094df795ab90fe75eb5977b9d43e4b9976a8811156a",
     "timestamp": "2026-11-06 07:21:34",
-    "updated_on": "2026-11-12 00:26:00"
+    "updated_on": "2026-11-12 23:28:02"
   },
   {
     "symbol": "S08",
@@ -201,7 +252,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ATUZGYV4Y2YB6MZF/50f155168675b4c3fcab39595c2319194ad9d267d60e1be17bc8dc8e078079f0",
     "timestamp": "2026-11-06 07:00:18",
-    "updated_on": "2026-11-12 00:26:04"
+    "updated_on": "2026-11-12 23:28:06"
   },
   {
     "symbol": "D05",
@@ -218,7 +269,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/NVB0HAOPNFIRLSHV/dea7790af713abfb522e7fc95096eafcb3eb06c5092247eda1159cd6764f5eb4",
     "timestamp": "2026-11-05 06:35:06",
-    "updated_on": "2026-11-12 00:26:10"
+    "updated_on": "2026-11-12 23:28:12"
   },
   {
     "symbol": "C41",
@@ -235,7 +286,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/CPTX87YJ4VH5JZSS/7860514e26ad6bb06cfc3c376e32abea9189cf4e36a3a9a0c027d951848591f1",
     "timestamp": "2026-11-04 17:20:21",
-    "updated_on": "2026-11-12 00:26:14"
+    "updated_on": "2026-11-12 23:28:15"
   },
   {
     "symbol": "AGS",
@@ -252,7 +303,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/WQRM0UEQFATZIVXY/12fd694c6b4c2555775a8c5586c4c228262ff16f01e4cd95f376047e9c6f53b1",
     "timestamp": "2026-11-04 12:06:19",
-    "updated_on": "2026-11-12 00:26:19"
+    "updated_on": "2026-11-12 23:28:19"
   },
   {
     "symbol": "CJLU",
@@ -269,7 +320,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/3DWSXIW7UZ91DSN3/0422f8c496ceb66c2fd372170977be3a925a8a04f70c69452eed19d6966a53b9",
     "timestamp": "2026-10-30 12:02:00",
-    "updated_on": "2026-11-12 00:26:33"
+    "updated_on": "2026-11-12 23:28:33"
   },
   {
     "symbol": "CJLU",
@@ -286,7 +337,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/L1IGMJM76ISAASEA/bcb8ec7abee18b91ad09719a2b4c62e0c23f6376fa4f448c7e1e9d8d89c64dbb",
     "timestamp": "2026-10-29 18:26:23",
-    "updated_on": "2026-11-12 00:26:42"
+    "updated_on": "2026-11-12 23:28:41"
   },
   {
     "symbol": "S68",
@@ -303,7 +354,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/4M3FMZP9XUCJ2LY4/68e0b5d74fbd83fbf7d911d6d58417127a5c402652a0d21b81c5d9080765623d",
     "timestamp": "2026-10-28 17:38:29",
-    "updated_on": "2026-11-12 00:26:51"
+    "updated_on": "2026-11-12 23:28:51"
   },
   {
     "symbol": "ZB9",
@@ -320,14 +371,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZFZOFP3DE038VH9B/ab5a4ca4fcf83f5658bd0a9d712cae4abe96d89e3b0141e6cc91829593b49474",
     "timestamp": "2026-10-28 17:34:52",
-    "updated_on": "2026-11-12 00:26:54"
+    "updated_on": "2026-11-12 23:28:56"
   },
   {
     "symbol": "BVA",
     "reference": "SG261006DVCA9H9T",
     "recording_date": "2026-11-24",
     "ex_date": "2026-11-23",
-    "dividend_amount": 0.004719,
+    "dividend_amount": 0.0047205,
     "payment_date": "2026-12-15",
     "payment_type": "Tax Exempted",
     "dividend_type": "Final",
@@ -337,7 +388,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/74SM3JFVQWIG8ZWR/44cdc2fa0c5ce4b07a63627785064b619dac0ecb889240621213272af2534e07",
     "timestamp": "2026-10-06 17:48:35",
-    "updated_on": "2026-11-12 00:27:51"
+    "updated_on": "2026-11-12 23:29:55"
   },
   {
     "symbol": "S71",
@@ -354,6 +405,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/KQUYSRU2KC9JK4AC/2c2ffe6702abf27a4828928eb3efde869115d02d9f9013dac67ed9ea24369065",
     "timestamp": "2026-09-28 17:26:13",
-    "updated_on": "2026-11-12 00:28:11"
+    "updated_on": "2026-11-12 23:30:17"
   }
 ]
