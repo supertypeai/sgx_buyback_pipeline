@@ -1,5 +1,21 @@
 [
   {
+    "symbol": "F17",
+    "recording_date": "2026-11-13",
+    "agm_date": "2026-10-22",
+    "meeting_type": "AGM",
+    "agm_time": "14:30:00",
+    "agm_place": "Wallich Ballroom, Level 5, Sofitel Singapore City Centre, 9 Wallich Street, Singapore 078885.",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/PRFNW0PNSE1UA7AW/5919f2677b38d6daa3c438a86adeea9917f901b877a87957551ad3b0c9f94182",
+    "ref_id": "SG261113MEET7ZV6"
+  },
+  {
     "symbol": "BRS",
     "recording_date": "2026-10-27",
     "agm_date": "2026-11-12",
@@ -80,6 +96,22 @@
     "ref_id": "SG261111MEETI57J"
   },
   {
+    "symbol": "1D5",
+    "recording_date": "2026-10-08",
+    "agm_date": "2026-10-29",
+    "meeting_type": "EGM",
+    "agm_time": "11:00:00",
+    "agm_place": "The Hive North Bridge Road, 1 North Bridge Rd, #09-00, Singapore 179094",
+    "agm_place_desc": "Onsite",
+    "summary": null,
+    "tags": null,
+    "sias_questions_pdf": null,
+    "sias_response_pdf": null,
+    "qa": null,
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/0GV1KJ9L0H78078N/ea14843c78a52d226f907c2d9075b1faed7c6652838e492743b76287dc5e5fa6",
+    "ref_id": "SG261007XMETJVPX"
+  },
+  {
     "symbol": "V2Y",
     "recording_date": "2026-11-11",
     "agm_date": "2026-11-27",
@@ -126,21 +158,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/PPEMXFFEB6BHXL9F/2cc19749524d55f1ea64b8705beaf489bc7146b926e87e42f3fe37f79c6ffd55",
     "ref_id": "SG261111XMETFX45"
-  },
-  {
-    "symbol": "BDR",
-    "recording_date": "2026-11-10",
-    "agm_date": "2026-11-27",
-    "meeting_type": "EGM",
-    "agm_time": "09:30:00",
-    "agm_place": "988 Toa Payoh North, #03-02, Singapore 319002",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/DVUF7PKFRV9PKY4T/809cbab5bcde6dc08e35104ef0420872ef67eb74344d53a68ce0d4bd33369406",
-    "ref_id": "SG261110XMETW90V"
   }
 ]
