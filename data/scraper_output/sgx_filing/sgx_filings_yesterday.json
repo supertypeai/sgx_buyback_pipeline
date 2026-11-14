@@ -1,1 +1,338 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/EVNH58UDTCIGKGKG/911508__Form1-Moon-20261114.pdf",
+    "timestamp": "2026-11-13",
+    "transaction_type": "sell",
+    "holder_name": "Yuen Kuan Moon",
+    "transaction_value": 8148000,
+    "share_percentage_transaction": {
+      "total": 0.00012,
+      "deemed": 0.0,
+      "direct": 0.00012
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 11875466,
+          "percentage": 0.00073
+        },
+        "deemed": {
+          "amount": 4137497,
+          "percentage": 0.00025
+        },
+        "direct": {
+          "amount": 7737969,
+          "percentage": 0.00048
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 13875466,
+          "percentage": 0.00085
+        },
+        "deemed": {
+          "amount": 4137497,
+          "percentage": 0.00025
+        },
+        "direct": {
+          "amount": 9737969,
+          "percentage": 0.0006
+        }
+      }
+    },
+    "symbol": "Z74.SI",
+    "price_per_share": [
+      {
+        "price": 4.074,
+        "amount": 2000000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Yuen Kuan Moon sells S$8.1M of Singapore Telecommunications Ltd shares",
+    "body": "Yuen Kuan Moon sold 2,000,000 shares of Singapore Telecommunications Ltd in a market transaction at S$4.074 per share, for a total of S$8,148,000. Total interest falls from 13,875,466 shares (0.08%) to 11,875,466 shares (0.07%).",
+    "sector": "infrastructures",
+    "sub_sector": "telecommunication",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "In respect of the 7,737,969 ordinary shares in which Mr Yuen has a direct interest, 1,610 ordinary shares are held in the Central Provide Fund Board, 2,350,000 ordinary shares are held in the name of United Overseas Bank Nominess (Private) Limited and 3,980,000 ordinary shares are held in the name of DBS Nominees (Private) Limited.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Singapore Telecommunications Ltd",
+    "transaction_reference": "575947349994814"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LJQLD2WW331GMDY3/911457__FLCAM%20-%20Form%206.pdf",
+    "timestamp": "2026-11-13",
+    "transaction_type": "others",
+    "holder_name": "Frasers Logistics & Commercial Asset Management Pte. Ltd",
+    "transaction_value": 12717896,
+    "share_percentage_transaction": {
+      "total": 0.00366,
+      "deemed": 0.00068,
+      "direct": 0.00298
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 34299510,
+          "percentage": 0.00898
+        },
+        "deemed": {
+          "amount": 2584239,
+          "percentage": 0.00068
+        },
+        "direct": {
+          "amount": 31715271,
+          "percentage": 0.0083
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 20246590,
+          "percentage": 0.00532
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 20246590,
+          "percentage": 0.00532
+        }
+      }
+    },
+    "symbol": "BUOU.SI",
+    "price_per_share": [
+      {
+        "price": 0.905,
+        "amount": 14052920
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Frasers Logistics & Commercial Asset Management Pte. Ltd receives 14.1M Frasers Logistics & Commercial Trust units as management fees",
+    "body": "Frasers Logistics & Commercial Asset Management Pte. Ltd received 14,052,920 units of Frasers Logistics & Commercial Trust as payment of management fees, valued at S$0.905 per unit, or S$12,717,896 in total. The direct interest moved from 20,246,590 to 31,715,271 units and the deemed interest from 0 to 2,584,239 units. Total interest rises from 20,246,590 units (0.53%) to 34,299,510 units (0.90%).",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "2,584,239 Units have been announced to be payable to FLT Australia Management Pty Ltd, a wholly-owned subsidiary of FLCAM (\"FLT Australia Management\"), as payment of management fees in respect of the HAUT (as defined herein). Accordingly, FLCAM has an interest in the Units that are payable to FLT Australia Management. Both FLCAM and FLT Australia Management have nominated Frasers Property Industrial Trust Holdings II Pte. Ltd. (\"FPITH II\")  to receive the aggregate of 14,052,920 Units payable to them.",
+    "relationship_text": null,
+    "remarks_text": "FLCT is a real estate investment trust. Frasers Commercial Trust (“FCOT”) and FLCT Singapore 1 Trust (“FS1T”) are wholly-owned sub-trusts of FLCT. The manager of FLCT, FCOT and FS1T is FLCAM (the “REIT Manager”).  FLCT also wholly-owns a head Australian trust known as “FLT Australia Trust” (the “HAUT”). The investment manager of the HAUT is FLT Australia Management, a wholly-owned subsidiary of FLCAM. The REIT Manager has announced the issuance of an aggregate of 14,052,920 new Units on 13 November 2026 for the payment of management fees and HAUT management fees by way of issue of new Units. The 14,052,920 new Units comprise: (1)  11,468,681 Units payable to FLCAM as payment of 75% of the base management fees and performance management fees in respect of FLCT, FCOT and FS1T; and (2)  2,584,239 Units payable to FLT Australia Management as payment of 75% of the base management fees and performance management fees in respect of the HAUT. Each of FLCAM and FLT Australia Management have nominated FPITH II to receive the aggregate of 14,052,920 Units issued as payment of management fees and HAUT management fees. The percentage of unitholding \"immediately before the transaction\" is computed based on 3,808,609,150 Units in issue on 13 November 2026. The percentage of unitholding \"immediately after the transaction\" is computed based on 3,822,662,070 Units in issue after the issue of the aforesaid 14,052,920 Units on 13 November 2026.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Frasers Logistics & Commercial Trust",
+    "transaction_reference": "078144642752597"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LJQLD2WW331GMDY3/911457__FLCAM%20-%20Form%206.pdf",
+    "timestamp": "2026-11-13",
+    "transaction_type": "others",
+    "holder_name": "Frasers Logistics & Commercial Asset Management Pte. Ltd",
+    "transaction_value": 12717896,
+    "share_percentage_transaction": {
+      "total": 0.00368,
+      "deemed": 0.00068,
+      "direct": 0.003
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 20246590,
+          "percentage": 0.0053
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 20246590,
+          "percentage": 0.0053
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 34299510,
+          "percentage": 0.00898
+        },
+        "deemed": {
+          "amount": 2584239,
+          "percentage": 0.00068
+        },
+        "direct": {
+          "amount": 31715271,
+          "percentage": 0.0083
+        }
+      }
+    },
+    "symbol": "BUOU.SI",
+    "price_per_share": [
+      {
+        "price": 0.905,
+        "amount": 14052920
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Frasers Logistics & Commercial Asset Management Pte. Ltd passes on 14.1M Frasers Logistics & Commercial Trust units received as management fees",
+    "body": "Frasers Logistics & Commercial Asset Management Pte. Ltd passed on 14,052,920 units of Frasers Logistics & Commercial Trust received as management fees, valued at S$0.905 per unit, or S$12,717,896 in total. The direct interest moved from 31,715,271 to 20,246,590 units and the deemed interest from 2,584,239 to 0 units. Total interest falls from 34,299,510 units (0.90%) to 20,246,590 units (0.53%).",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "FLT Australia Management is a wholly-owned subsidiary of FLCAM. Accordingly, FLCAM has an interest in the Units that are payable to FLT Australia Management.",
+    "relationship_text": null,
+    "remarks_text": "The REIT Manager has announced the issuance of an aggregate of 14,052,920 new Units on 13 November 2026 for the payment of management fees and HAUT management fees by way of issue of new Units. The 14,052,920 new Units comprise: (1)  11,468,681 Units payable to FLCAM as payment of 75% of the base management fees and performance management fees in respect of FLCT, FCOT and FS1T; and (2)  2,584,239 Units payable to FLT Australia Management as payment of 75% of the base management fees and performance management fees in respect of the HAUT. Each of FLCAM and FLT Australia Management has nominated FPITH II to receive the aggregate of 14,052,920 Units issued as payment of management fees and HAUT management fees. The percentage of unitholding both \"immediately before the transaction\" and \"immediately after the transaction\" is computed based on 3,822,662,070 Units in issue after the issue of the aforesaid 14,052,920 Units on 13 November 2026.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the nomination of another party to receive Units payable as management fees",
+    "acting_party": null,
+    "company_name": "Frasers Logistics & Commercial Trust",
+    "transaction_reference": "990917246435791"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DQ7MARBX14N9ARSL/911416__MPACTM_Form%206_13%20Nov2026.pdf",
+    "timestamp": "2026-11-13",
+    "transaction_type": "others",
+    "holder_name": "MPACT Management Ltd",
+    "transaction_value": 4386116,
+    "share_percentage_transaction": {
+      "total": 0.0007,
+      "deemed": 0.0,
+      "direct": 0.0007
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 167780190,
+          "percentage": 0.0317
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 167780190,
+          "percentage": 0.0317
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 164153502,
+          "percentage": 0.031
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 164153502,
+          "percentage": 0.031
+        }
+      }
+    },
+    "symbol": "N2IU.SI",
+    "price_per_share": [
+      {
+        "price": 1.2094,
+        "amount": 3626688
+      }
+    ],
+    "holder_type": "insider",
+    "title": "MPACT Management Ltd receives 3.6M Mapletree Pan Asia Commercial Trust units as management fees",
+    "body": "MPACT Management Ltd received 3,626,688 units of Mapletree Pan Asia Commercial Trust as payment of management fees, valued at S$1.2094 per unit, or S$4,386,116 in total. Total interest rises from 164,153,502 units (3.10%) to 167,780,190 units (3.17%).",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "N.A.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of unitholdings before and after the transaction is calculated based on 5,291,444,691 units issued.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Corporate action by Listed Issuer",
+    "change_reason": "the issuance of new units as payment of 40% of the base fee component of the management fee",
+    "acting_party": null,
+    "company_name": "Mapletree Pan Asia Commercial Trust",
+    "transaction_reference": "363852643943715"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/Z6QRE41F9NW7ZIV2/911401__eFORM1_ChengWK_131126_Final.pdf",
+    "timestamp": "2026-11-13",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0002,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 489042859,
+          "percentage": 0.6394
+        },
+        "deemed": {
+          "amount": 488828459,
+          "percentage": 0.6391
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 488902859,
+          "percentage": 0.6392
+        },
+        "deemed": {
+          "amount": 488688459,
+          "percentage": 0.6389
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 140000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 140K shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 140,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 488,902,859 shares (63.92%) to 489,042,859 shares (63.94%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 140,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 140,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen",
+    "company_name": "Wing Tai Holdings Ltd",
+    "transaction_reference": "493790346342315"
+  }
+]
