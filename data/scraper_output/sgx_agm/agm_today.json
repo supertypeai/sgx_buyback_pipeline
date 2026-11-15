@@ -16,54 +16,6 @@
     "ref_id": "SG261113MEET7ZV6"
   },
   {
-    "symbol": "BRS",
-    "recording_date": "2026-10-27",
-    "agm_date": "2026-11-12",
-    "meeting_type": "AGM",
-    "agm_time": "10:00:00",
-    "agm_place": "Seletar Country Club Seletar Ballroom, 101 Seletar Club Road, Singapore 798273",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/7A7BVU8ACPD55LZC/42bb0ed5befeb40beeca12d1a186fdbd2596890e4de24420d088431b71603e3c",
-    "ref_id": "SG261027MEETHQ60"
-  },
-  {
-    "symbol": "UUYB",
-    "recording_date": "2026-11-12",
-    "agm_date": "2026-11-12",
-    "meeting_type": "AGM",
-    "agm_time": "10:00:00",
-    "agm_place": "Yarra Falls, 452 Johnston Street, Abbotsford, VIC 3067 Australia",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/1ZU5OKK6J6ZZKJOJ/4cb7747c4975e966f813f3c794c5831b90833be1e37bd042379dc3170d0e3974",
-    "ref_id": "SG261112MEET3Q77"
-  },
-  {
-    "symbol": "WNH",
-    "recording_date": "2026-11-12",
-    "agm_date": "2026-11-27",
-    "meeting_type": "AGM",
-    "agm_time": "10:00:00",
-    "agm_place": "Lifelong Learning Institute, 11 Eunos Road 8, Singapore 408601 (R1 Arena, Level 4, Lobby A)",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/DG7KJTH3GIO2QPVB/8f471f84345d600e91c79245c65e786bcdbd5ef28493e37814a4e9c06f70b2b4",
-    "ref_id": "SG261112MEETII6X"
-  },
-  {
     "symbol": "T14",
     "recording_date": "2026-11-13",
     "agm_date": "2026-12-30",
@@ -78,21 +30,5 @@
     "qa": null,
     "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/17RMKQDATOTJG3Z4/1469d9fc78c6b4fbaaa0a959a261f8ead9205a6f3e6703e9f30ab7fae748e7d4",
     "ref_id": "SG261113XMETUM56"
-  },
-  {
-    "symbol": "1D5",
-    "recording_date": "2026-10-08",
-    "agm_date": "2026-10-29",
-    "meeting_type": "EGM",
-    "agm_time": "11:00:00",
-    "agm_place": "The Hive North Bridge Road, 1 North Bridge Rd, #09-00, Singapore 179094",
-    "agm_place_desc": "Onsite",
-    "summary": null,
-    "tags": null,
-    "sias_questions_pdf": null,
-    "sias_response_pdf": null,
-    "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/0GV1KJ9L0H78078N/ea14843c78a52d226f907c2d9075b1faed7c6652838e492743b76287dc5e5fa6",
-    "ref_id": "SG261007XMETJVPX"
   }
 ]
