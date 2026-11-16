@@ -1,1 +1,767 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C6ZM3UIXPM8CJNIV/911576__Form%203-PPL.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Parkway Pantai Limited",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 214806301,
+          "percentage": 0.3291
+        },
+        "deemed": {
+          "amount": 214806301,
+          "percentage": 0.3291
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214773268,
+          "percentage": 0.329
+        },
+        "deemed": {
+          "amount": 214773268,
+          "percentage": 0.329
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "Parkway Pantai Limited's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
+    "body": "Parkway Pantai Limited's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,773,268 units (32.90%) to 214,806,301 units (32.91%).",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Parkway Pantai Limited's (\"PPL\") deemed interest in PLife REIT arises through its wholly-owned subsidiaries:- (i) Parkway Investments Pte Ltd (\"PIPL\") and Parkway Trust Management Limited (\"PTML\"), wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), which is in turn wholly-owned by PPL; and (ii) PIPL and PTML are registered holders of 213,257,000 and 1,549,301 of PLife REIT units respectively.",
+    "relationship_text": "PHL is a wholly-owned subsidiary of PPL.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issue of 33,033 new units as part payment of the base fee component of the management fee",
+    "acting_party": "Parkway Trust Management Limited",
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "297973460374233"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C6ZM3UIXPM8CJNIV/911576__Form%203-PPL.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Parkway Holdings Limited",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 214806301,
+          "percentage": 0.3291
+        },
+        "deemed": {
+          "amount": 214806301,
+          "percentage": 0.3291
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214773268,
+          "percentage": 0.329
+        },
+        "deemed": {
+          "amount": 214773268,
+          "percentage": 0.329
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Parkway Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
+    "body": "Parkway Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,773,268 units (32.90%) to 214,806,301 units (32.91%).",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Parkway Holdings Limited's (\"PHL\") deemed interest in PLife REIT arises through its wholly-owned subsidiaries:- (i) Parkway Investments Pte Ltd (\"PIPL\") and Parkway Trust Management Limited (\"PTML\"); and (ii) PIPL and PTML are registered holders of 213,257,000 and 1,549,301 of PLife REIT units respectively.",
+    "relationship_text": "PHL is a wholly-owned subsidiary of PPL.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issuance of new units as part payment of the base fee component of the management fee due to the manager",
+    "acting_party": "Parkway Trust Management Limited",
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "297973460374233"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C6ZM3UIXPM8CJNIV/911576__Form%203-PPL.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Parkway Investments Pte. Ltd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 213257000,
+          "percentage": 0.3267
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 213257000,
+          "percentage": 0.3267
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 213257000,
+          "percentage": 0.3267
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 213257000,
+          "percentage": 0.3267
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "Parkway Investments Pte. Ltd reports change in interest in Parkway Life Real Estate Investment Trust",
+    "body": "Parkway Investments Pte. Ltd reported a change in interest in Parkway Life Real Estate Investment Trust. The filing attributes the change to the issue of new units as part payment of the base fee component of the management fee. The number of units held is unchanged at 213,257,000.",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Not Applicable",
+    "relationship_text": "PIPL is a wholly-owned subsidiary of PHL, which is in turn wholly-owned by PPL.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issue of new units as part payment of the base fee component of the management fee",
+    "acting_party": null,
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "297973460374233"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/AW0MLIORTWHVRYKB/911574__Form%203-Mitsui.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Mitsui & Co., Ltd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Mitsui & Co., Ltd reports change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees",
+    "body": "Mitsui & Co., Ltd reported a change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mitsui & Co., Ltd.'s (\"Mitsui\") deemed interest in PLife REIT arises through its wholly-owned subsidiary, MBK Healthcare Management Pte Ltd (\"MHM\"). MHM holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"). Accordingly, Mitsui has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
+    "relationship_text": "MHM is a wholly-owned subsidiary of Mitsui.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issue of new units as part payment of the management fee",
+    "acting_party": null,
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "605030643717263"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/AW0MLIORTWHVRYKB/911574__Form%203-Mitsui.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "MBK Healthcare Management Pte. Ltd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "MBK Healthcare Management Pte. Ltd's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
+    "body": "MBK Healthcare Management Pte. Ltd's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "MHM holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"). Accordingly, MHM has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
+    "relationship_text": "MHM is a wholly-owned subsidiary of Mitsui & Co., Ltd.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issue of 33,033 new units as part payment of the base fee component of the management fee",
+    "acting_party": "Parkway Trust Management Limited",
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "605030643717263"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1J8BRWN1E17SEC2Y/911571__Form%201-ChokYH.pdf",
+    "timestamp": "2026-11-12",
+    "transaction_type": "sell",
+    "holder_name": "Chok Yean Hung",
+    "transaction_value": 507360,
+    "share_percentage_transaction": {
+      "total": 0.00022,
+      "deemed": 0.0,
+      "direct": 0.00022
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1008000,
+          "percentage": 0.00316
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1008000,
+          "percentage": 0.00316
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1078044,
+          "percentage": 0.00338
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1078044,
+          "percentage": 0.00338
+        }
+      }
+    },
+    "symbol": "AWX.SI",
+    "price_per_share": [
+      {
+        "price": 7.2435,
+        "amount": 70044
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Chok Yean Hung sells S$507K of AEM Holdings Ltd shares",
+    "body": "Chok Yean Hung sold 70,044 shares of AEM Holdings Ltd in a market transaction at S$7.2435 per share, for a total of S$507,360. Total interest falls from 1,078,044 shares (0.34%) to 1,008,000 shares (0.32%).",
+    "sector": "technology",
+    "sub_sector": "semiconductors-equipment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The shareholding percentages are calculated based on 319,041,936 issued shares, excluding 3,267,383 treasury shares.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "AEM Holdings Ltd",
+    "transaction_reference": "000091346441607"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1J8BRWN1E17SEC2Y/911571__Form%201-ChokYH.pdf",
+    "timestamp": "2026-11-13",
+    "transaction_type": "sell",
+    "holder_name": "Chok Yean Hung",
+    "transaction_value": 1671778,
+    "share_percentage_transaction": {
+      "total": 0.00072,
+      "deemed": 0.0,
+      "direct": 0.00072
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 778000,
+          "percentage": 0.00244
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 778000,
+          "percentage": 0.00244
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1008000,
+          "percentage": 0.00316
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1008000,
+          "percentage": 0.00316
+        }
+      }
+    },
+    "symbol": "AWX.SI",
+    "price_per_share": [
+      {
+        "price": 7.2686,
+        "amount": 230000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Chok Yean Hung sells S$1.7M of AEM Holdings Ltd shares",
+    "body": "Chok Yean Hung sold 230,000 shares of AEM Holdings Ltd in a market transaction at S$7.2686 per share, for a total of S$1,671,778. Total interest falls from 1,008,000 shares (0.32%) to 778,000 shares (0.24%).",
+    "sector": "technology",
+    "sub_sector": "semiconductors-equipment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The shareholding percentages are calculated based on 319,041,936 issued shares, excluding 3,267,383 treasury shares.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "AEM Holdings Ltd",
+    "transaction_reference": "205214643110781"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZKSQG6P7X9JT285U/911569__Form%203-Khazanah.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Khazanah Nasional Berhad",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "Khazanah Nasional Berhad's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
+    "body": "Khazanah Nasional Berhad's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Khazanah Nasional Berhad's (\"Khazanah\") deemed interest in PLife REIT arises through its wholly-owned subsidiary, Pulau Memutik Ventures Sdn Bhd (\"PMVSB\"). PMVSB holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"). Accordingly, Khazanah has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
+    "relationship_text": "PMVSB is a wholly-owned subsidiary of Khazanah.",
+    "remarks_text": "B Substantial Shareholder/Unitholder Name of Substantial Shareholder/Unitholder: 1. Pulau Memutik Ventures Sdn Bhd 2. Is Substantial Shareholder/Unitholder a fund manager or a person whose interest in the securities of the Listed Issuer are held solely through fund manager(s)? Yes No Notification in respect of: 3. Becoming a Substantial Shareholder/Unitholder Change in the percentage level of interest while still remaining a Substantial Shareholder/Unitholder Ceasing to be a Substantial Shareholder/Unitholder Date of acquisition of or change in interest: 16-Nov-2026 Date on which Substantial Shareholder/Unitholder became aware of the acquisition of, or the change in, interest            ( if different from item 4 above, please specify the date ): 5. 16-Nov-2026 6. Explanation ( if the date of becoming aware is different from the date of acquisition of, or the change in, interest ): Quantum of total voting shares/units ( including voting shares/units underlying rights/options/warrants/convertible debentures {conversion price known} ) held by Substantial Shareholder/Unitholder before and after the transaction: Immediately before the transaction Direct Interest Deemed Interest Total 0 214,992,483 214,992,483 No. of voting shares/units held and/or underlying the rights/options/warrants/convertible debentures: 0 32.94 32.94 As a percentage of total no. of voting shares/units : Immediately after the transaction Direct Interest Deemed Interest Total 0 215,025,516 215,025,516 No. of voting shares/units held and/or underlying the rights/options/warrants/ convertible debentures : 0 32.94 32.94 As a percentage of total no. of voting shares/units : Circumstances giving rise to deemed interests ( if the interest is such ): [You may attach a chart in item 10 to illustrate how the Substantial Shareholder/Unitholder's deemed interest arises] Pulau Memutik Ventures Sdn Bhd (\"PMVSB\") holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"), which is in turn wholly-owned Integrated Healthcare Holdings Limited (\"IHHL\"). Accordingly, PMVSB has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML. Relationship between the Substantial Shareholders/Unitholders giving notice in this form: [You may attach a chart in item 10 to show the relationship between the Substantial Shareholders/Unitholders] PMVSB is a wholly-owned subsidiary of Khazanah. Attachments ( if any ): 10. (The total file size for all attachment(s) should not exceed 1MB.) 11. If this is a  replacement  of an earlier notification, please provide: SGXNet announcement reference of the  first  notification which was announced on SGXNet ( the \"Initial Announcement\" ): (a) Date of the Initial Announcement: (b) (c) 15-digit transaction reference number of the relevant transaction in the Form 3 which was attached in the Initial Announcement: Remarks ( if any ): 12.",
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issue of 33,033 new units as part payment of the base fee component of the management fee",
+    "acting_party": "Parkway Trust Management Limited",
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "104130643710503"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZKSQG6P7X9JT285U/911569__Form%203-Khazanah.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Pulau Memutik Ventures Sdn Bhd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "Pulau Memutik Ventures Sdn Bhd reports change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees",
+    "body": "Pulau Memutik Ventures Sdn Bhd reported a change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Pulau Memutik Ventures Sdn Bhd (\"PMVSB\") holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"), which is in turn wholly-owned Integrated Healthcare Holdings Limited (\"IHHL\"). Accordingly, PMVSB has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
+    "relationship_text": "PMVSB is a wholly-owned subsidiary of Khazanah.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issue of new units as part payment of the base fee component of the management fee",
+    "acting_party": null,
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "104130643710503"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4CGT9FMIE76IVSZJ/911567__Form%203-IHH.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "IHH Healthcare Berhad",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "IHH Healthcare Berhad's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
+    "body": "IHH Healthcare Berhad's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Parkway Life Real Estate Investment Trust (\"PLife REIT\") issued 33,033 new units on 16 November 2026, being part payment of base fee component of the management fee due to Parkway Trust Management Limited, the manager of PLife REIT, for the period from 01 July 2026 to 30 September 2026. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
+    "relationship_text": "IHHL is a wholly-owned subsidiary of IHH.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "part payment of base fee component of the management fee due to Parkway Trust Management Limited",
+    "acting_party": "Parkway Trust Management Limited",
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "778130643712923"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4CGT9FMIE76IVSZJ/911567__Form%203-IHH.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Integrated Healthcare Holdings Limited",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 215025516,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 214806301,
+          "percentage": 0.3291
+        },
+        "direct": {
+          "amount": 219215,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 214992483,
+          "percentage": 0.3294
+        },
+        "deemed": {
+          "amount": 214773268,
+          "percentage": 0.3291
+        },
+        "direct": {
+          "amount": 219215,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "Integrated Healthcare Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
+    "body": "Integrated Healthcare Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. The direct holding is unchanged at 219,215 units. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Parkway Life Real Estate Investment Trust (\"PLife REIT\") issued 33,033 new units on 16 November 2026, being part payment of base fee component of the management fee due to Parkway Trust Management Limited, the manager of PLife REIT, for the period from 01 July 2026 to 30 September 2026. Integrated Healthcare Holdings Limited (\"IHHL\")'s direct interest in PLife REIT comprises 219,215 of PLife REIT units held through nominee company, Raffles Nominees (Pte) Limited, and its deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i)  Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (ii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL. Accordingly, IHHL has a deemed interest in units, direct and deemed, held by PIPL and PTML.",
+    "relationship_text": "IHHL is a wholly-owned subsidiary of IHH.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": null,
+    "change_reason": "the issue of 33,033 new units as part payment of the management fee",
+    "acting_party": "Parkway Trust Management Limited",
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "778130643712923"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KRAZS2CUJM8ARNIM/911563__Form%206-PTML.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "others",
+    "holder_name": "Parkway Trust Management Limited",
+    "transaction_value": 136128,
+    "share_percentage_transaction": {
+      "total": 5e-05,
+      "deemed": 0.0,
+      "direct": 5e-05
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1549301,
+          "percentage": 0.00237
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1549301,
+          "percentage": 0.00237
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1516268,
+          "percentage": 0.00232
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1516268,
+          "percentage": 0.00232
+        }
+      }
+    },
+    "symbol": "C2PU.SI",
+    "price_per_share": [
+      {
+        "price": 4.121,
+        "amount": 33033
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Parkway Trust Management Limited receives 33,033 Parkway Life Real Estate Investment Trust units as management fees",
+    "body": "Parkway Trust Management Limited received 33,033 units of Parkway Life Real Estate Investment Trust as payment of management fees, valued at S$4.121 per unit, or S$136,128 in total. Total interest rises from 1,516,268 units (0.23%) to 1,549,301 units (0.24%).",
+    "sector": "reit",
+    "sub_sector": "reit-healthcare",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "NA",
+    "relationship_text": null,
+    "remarks_text": "NA",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Parkway Life Real Estate Investment Trust",
+    "transaction_reference": "807950643744775"
+  }
+]
