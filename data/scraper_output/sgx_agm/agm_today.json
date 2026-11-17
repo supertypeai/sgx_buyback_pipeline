@@ -1,34 +1,34 @@
 [
   {
-    "symbol": "F17",
-    "recording_date": "2026-11-13",
-    "agm_date": "2026-10-22",
+    "symbol": "52WB",
+    "recording_date": "2026-11-17",
+    "agm_date": "2026-12-14",
     "meeting_type": "AGM",
-    "agm_time": "14:30:00",
-    "agm_place": "Wallich Ballroom, Level 5, Sofitel Singapore City Centre, 9 Wallich Street, Singapore 078885.",
+    "agm_time": "10:30:00",
+    "agm_place": "Grab's Global Headquarters located at 3 Media Close, Level 2, Singapore 138498",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/PRFNW0PNSE1UA7AW/5919f2677b38d6daa3c438a86adeea9917f901b877a87957551ad3b0c9f94182",
-    "ref_id": "SG261113MEET7ZV6"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/93DNDODIWNWQFE5A/1bb4419308d2254ca1051b8be5b916c699000b4d662bb594a336b4e830aa89ea",
+    "ref_id": "SG261117MEETEL5K"
   },
   {
-    "symbol": "T14",
-    "recording_date": "2026-11-13",
-    "agm_date": "2026-12-30",
-    "meeting_type": "EGM",
-    "agm_time": "14:00:00",
-    "agm_place": "An EGM of the Company will be held at the meeting room of Da Ren Tang Mansion, No. 17,Tianjin, the  PRC 300193 (concurrently, via video conferencing at 171 Chin Swee Road, CES Centre, #02-07/08, Singapore 169877 for holders of the S-Shares in Singapore) on Wednesday, 30 December 2026 at 2:00 p.m.",
+    "symbol": "S68",
+    "recording_date": "2026-11-17",
+    "agm_date": "2026-10-23",
+    "meeting_type": "AGM",
+    "agm_time": "10:30:00",
+    "agm_place": "Marina Bay Sands Expo and Convention Centre, Level 3, Jasmine Ballroom, 10 Bayfront Avenue, Singapore 018956",
     "agm_place_desc": "Onsite",
     "summary": null,
     "tags": null,
     "sias_questions_pdf": null,
     "sias_response_pdf": null,
     "qa": null,
-    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/17RMKQDATOTJG3Z4/1469d9fc78c6b4fbaaa0a959a261f8ead9205a6f3e6703e9f30ab7fae748e7d4",
-    "ref_id": "SG261113XMETUM56"
+    "source_link": "https://links.sgx.com/1.0.0/corporate-announcements/27D5CA6B0QDEBYW0/7bec9553d24e26a35f11d891c0939468add356cc9d64443e7b4cf64e4206be13",
+    "ref_id": "SG261117MEETC8LP"
   }
 ]
