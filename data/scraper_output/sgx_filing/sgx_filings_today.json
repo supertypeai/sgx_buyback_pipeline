@@ -1,767 +1,1194 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C6ZM3UIXPM8CJNIV/911576__Form%203-PPL.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/L23AA5KZQ1OYGAYR/911705__eFORM1V2-Han%20Seng%20Juan.pdf",
     "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "Parkway Pantai Limited",
-    "transaction_value": null,
+    "transaction_type": "buy",
+    "holder_name": "Han Seng Juan",
+    "transaction_value": 242000,
     "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0001,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 214806301,
-          "percentage": 0.3291
-        },
-        "deemed": {
-          "amount": 214806301,
-          "percentage": 0.3291
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 214773268,
-          "percentage": 0.329
-        },
-        "deemed": {
-          "amount": 214773268,
-          "percentage": 0.329
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Parkway Pantai Limited's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
-    "body": "Parkway Pantai Limited's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,773,268 units (32.90%) to 214,806,301 units (32.91%).",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Parkway Pantai Limited's (\"PPL\") deemed interest in PLife REIT arises through its wholly-owned subsidiaries:- (i) Parkway Investments Pte Ltd (\"PIPL\") and Parkway Trust Management Limited (\"PTML\"), wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), which is in turn wholly-owned by PPL; and (ii) PIPL and PTML are registered holders of 213,257,000 and 1,549,301 of PLife REIT units respectively.",
-    "relationship_text": "PHL is a wholly-owned subsidiary of PPL.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issue of 33,033 new units as part payment of the base fee component of the management fee",
-    "acting_party": "Parkway Trust Management Limited",
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "297973460374233"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C6ZM3UIXPM8CJNIV/911576__Form%203-PPL.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "Parkway Holdings Limited",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0001,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 214806301,
-          "percentage": 0.3291
-        },
-        "deemed": {
-          "amount": 214806301,
-          "percentage": 0.3291
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 214773268,
-          "percentage": 0.329
-        },
-        "deemed": {
-          "amount": 214773268,
-          "percentage": 0.329
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "insider",
-    "title": "Parkway Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
-    "body": "Parkway Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,773,268 units (32.90%) to 214,806,301 units (32.91%).",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Parkway Holdings Limited's (\"PHL\") deemed interest in PLife REIT arises through its wholly-owned subsidiaries:- (i) Parkway Investments Pte Ltd (\"PIPL\") and Parkway Trust Management Limited (\"PTML\"); and (ii) PIPL and PTML are registered holders of 213,257,000 and 1,549,301 of PLife REIT units respectively.",
-    "relationship_text": "PHL is a wholly-owned subsidiary of PPL.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issuance of new units as part payment of the base fee component of the management fee due to the manager",
-    "acting_party": "Parkway Trust Management Limited",
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "297973460374233"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C6ZM3UIXPM8CJNIV/911576__Form%203-PPL.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "Parkway Investments Pte. Ltd",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0,
+      "total": 0.00024,
       "deemed": 0.0,
-      "direct": 0.0
+      "direct": 0.00024
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 213257000,
-          "percentage": 0.3267
+          "amount": 374652326,
+          "percentage": 0.4456
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 243814026,
+          "percentage": 0.28999
         },
         "direct": {
-          "amount": 213257000,
-          "percentage": 0.3267
+          "amount": 130838300,
+          "percentage": 0.15561
         }
       },
       "before": {
         "total": {
-          "amount": 213257000,
-          "percentage": 0.3267
+          "amount": 374452326,
+          "percentage": 0.44536
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 243814026,
+          "percentage": 0.28999
         },
         "direct": {
-          "amount": 213257000,
-          "percentage": 0.3267
+          "amount": 130638300,
+          "percentage": 0.15537
         }
       }
     },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Parkway Investments Pte. Ltd reports change in interest in Parkway Life Real Estate Investment Trust",
-    "body": "Parkway Investments Pte. Ltd reported a change in interest in Parkway Life Real Estate Investment Trust. The filing attributes the change to the issue of new units as part payment of the base fee component of the management fee. The number of units held is unchanged at 213,257,000.",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "Not Applicable",
-    "relationship_text": "PIPL is a wholly-owned subsidiary of PHL, which is in turn wholly-owned by PPL.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issue of new units as part payment of the base fee component of the management fee",
-    "acting_party": null,
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "297973460374233"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/AW0MLIORTWHVRYKB/911574__Form%203-Mitsui.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "Mitsui & Co., Ltd",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "insider",
-    "title": "Mitsui & Co., Ltd reports change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees",
-    "body": "Mitsui & Co., Ltd reported a change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Mitsui & Co., Ltd.'s (\"Mitsui\") deemed interest in PLife REIT arises through its wholly-owned subsidiary, MBK Healthcare Management Pte Ltd (\"MHM\"). MHM holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"). Accordingly, Mitsui has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
-    "relationship_text": "MHM is a wholly-owned subsidiary of Mitsui.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issue of new units as part payment of the management fee",
-    "acting_party": null,
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "605030643717263"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/AW0MLIORTWHVRYKB/911574__Form%203-Mitsui.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "MBK Healthcare Management Pte. Ltd",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "MBK Healthcare Management Pte. Ltd's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
-    "body": "MBK Healthcare Management Pte. Ltd's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "MHM holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"). Accordingly, MHM has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
-    "relationship_text": "MHM is a wholly-owned subsidiary of Mitsui & Co., Ltd.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issue of 33,033 new units as part payment of the base fee component of the management fee",
-    "acting_party": "Parkway Trust Management Limited",
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "605030643717263"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1J8BRWN1E17SEC2Y/911571__Form%201-ChokYH.pdf",
-    "timestamp": "2026-11-12",
-    "transaction_type": "sell",
-    "holder_name": "Chok Yean Hung",
-    "transaction_value": 507360,
-    "share_percentage_transaction": {
-      "total": 0.00022,
-      "deemed": 0.0,
-      "direct": 0.00022
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 1008000,
-          "percentage": 0.00316
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 1008000,
-          "percentage": 0.00316
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 1078044,
-          "percentage": 0.00338
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 1078044,
-          "percentage": 0.00338
-        }
-      }
-    },
-    "symbol": "AWX.SI",
+    "symbol": "OU8.SI",
     "price_per_share": [
       {
-        "price": 7.2435,
-        "amount": 70044
+        "price": 1.21,
+        "amount": 200000
       }
     ],
     "holder_type": "insider",
-    "title": "Chok Yean Hung sells S$507K of AEM Holdings Ltd shares",
-    "body": "Chok Yean Hung sold 70,044 shares of AEM Holdings Ltd in a market transaction at S$7.2435 per share, for a total of S$507,360. Total interest falls from 1,078,044 shares (0.34%) to 1,008,000 shares (0.32%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
+    "title": "Han Seng Juan buys S$242K of Centurion Corp Ltd shares",
+    "body": "Han Seng Juan bought 200,000 shares of Centurion Corp Ltd in a market transaction at S$1.21 per share, for a total of S$242,000. Total interest rises from 374,452,326 shares (44.54%) to 374,652,326 shares (44.56%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": null,
+    "deemed_interest_text": "(1) Mr Han Seng Juan (\"Mr Han\") holds a 50% shareholding interest in Centurion Global Ltd (“Centurion Global”).       Centurion Properties Pte. Ltd. (“Centurion Properties”) is a wholly-owned subsidiary of Centurion Global. Mr Han is, therefore, deemed to have an interest in 225,756,126 shares held by Centurion Properties in the       Company. (2) Mr Han is also deemed to have an interest in 7,947,500 shares held by his spouse, Kang Lee Cheng Susanna,       which are registered in the name of DB Nominees (Singapore) Pte Ltd. (3) Mr Han is the beneficial owner of 10,110,400 shares held by Sunsprings Holdings Ltd and is deemed to have an       interest in these shares, which are registered in the name of Citibank Nominees Singapore Pte Ltd.",
     "relationship_text": null,
-    "remarks_text": "The shareholding percentages are calculated based on 319,041,936 issued shares, excluding 3,267,383 treasury shares.",
+    "remarks_text": "(1)  Of the 130,838,300 shares held by Mr Han, 25,064,000 shares are registered in the name of Citibank Nominees        Singapore Pte Ltd, 11,283,300 shares are registered in the name of UOB Kay Hian Pte Ltd, 402,300 shares are        registered in the name of Oversea-Chinese Bank Nominees Pte Ltd, 6,827,500 shares are registered in the name        of Maybank Securities Pte. Ltd., 7,978,700 shares are registered in the name of CGS International Securities        Singapore Pte Ltd, 25,000,000 shares are registered in the name of DBS Nominees (Private) Limited, 15,000,000        shares are registered in the name of United Overseas Bank Nominees (Private) Limited and 39,282,500 shares        are registered in his own name. (2) The percentage of shareholding immediately before and after the transaction is calculated based on the       Company's number of issued ordinary shares (excluding treasury shares) of 840,778,624 shares as at 17       November 2026.",
     "filing_type": "form_1",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "AEM Holdings Ltd",
-    "transaction_reference": "000091346441607"
+    "company_name": "Centurion Corp Ltd",
+    "transaction_reference": "044292346441859"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1J8BRWN1E17SEC2Y/911571__Form%201-ChokYH.pdf",
-    "timestamp": "2026-11-13",
-    "transaction_type": "sell",
-    "holder_name": "Chok Yean Hung",
-    "transaction_value": 1671778,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/9NBKR6QMU48Y48Y5/911701__Form%201%20-%20Oh%20Kuang%20Eng.pdf",
+    "timestamp": "2026-11-16",
+    "transaction_type": "buy",
+    "holder_name": "Oh Kuang Eng",
+    "transaction_value": 123076,
     "share_percentage_transaction": {
-      "total": 0.00072,
-      "deemed": 0.0,
-      "direct": 0.00072
+      "total": 0.0009,
+      "deemed": 0.0005,
+      "direct": 0.0004
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 778000,
-          "percentage": 0.00244
+          "amount": 370700500,
+          "percentage": 0.7489
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 362250500,
+          "percentage": 0.7318
         },
         "direct": {
-          "amount": 778000,
-          "percentage": 0.00244
+          "amount": 8450000,
+          "percentage": 0.0171
         }
       },
       "before": {
         "total": {
-          "amount": 1008000,
-          "percentage": 0.00316
+          "amount": 370340500,
+          "percentage": 0.748
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 361990500,
+          "percentage": 0.7313
         },
         "direct": {
-          "amount": 1008000,
-          "percentage": 0.00316
+          "amount": 8350000,
+          "percentage": 0.0167
         }
       }
     },
-    "symbol": "AWX.SI",
+    "symbol": "MIM.SI",
     "price_per_share": [
       {
-        "price": 7.2686,
-        "amount": 230000
+        "price": 1.2308,
+        "amount": 100000
       }
     ],
     "holder_type": "insider",
-    "title": "Chok Yean Hung sells S$1.7M of AEM Holdings Ltd shares",
-    "body": "Chok Yean Hung sold 230,000 shares of AEM Holdings Ltd in a market transaction at S$7.2686 per share, for a total of S$1,671,778. Total interest falls from 1,008,000 shares (0.32%) to 778,000 shares (0.24%).",
+    "title": "Oh Kuang Eng buys S$123K of Mi Material Holding Limited shares",
+    "body": "Oh Kuang Eng bought 100,000 shares of Mi Material Holding Limited in a market transaction at S$1.2308 per share, for a total of S$123,076. The direct interest moved from 8,350,000 to 8,450,000 shares and the deemed interest from 361,990,500 to 362,250,500 shares. Total interest rises from 370,340,500 shares (74.80%) to 370,700,500 shares (74.89%).",
     "sector": "technology",
     "sub_sector": "semiconductors-equipment",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": null,
+    "deemed_interest_text": "Mr. Oh Kuang Eng (\"Mr. Oh\") holds approximately 45.4% direct interest in the issued and paid up share capital of Mi Technovation Berhad (\"MiTB\"). MiTB holds 360,500,000 ordinary shares in the issued share capital of the Company. In addition, Ms. Yong Shiao Voon (\"Ms. Yong\"), an associate of Mr. Oh, holds 1,750,500 ordinary shares in the issued share capital of the Company. Accordingly, for the purpose of the Securities and Futures Act 2001 and the Securities and Futures (Disclosure of Interests) Regulation 2012, Mr. Oh has a deemed interest in the 362,250,500 ordinary shares held by MiTB and Ms. Yong.",
     "relationship_text": null,
-    "remarks_text": "The shareholding percentages are calculated based on 319,041,936 issued shares, excluding 3,267,383 treasury shares.",
+    "remarks_text": "The percentage of shareholdings set out above immediately before and after the transaction are calculated based on the issued share capital of the Company of 495,000,000 ordinary shares as at 16 November 2026.",
     "filing_type": "form_1",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "AEM Holdings Ltd",
-    "transaction_reference": "205214643110781"
+    "company_name": "Mi Material Holding Limited",
+    "transaction_reference": "763192346441281"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZKSQG6P7X9JT285U/911569__Form%203-Khazanah.pdf",
-    "timestamp": "2026-11-16",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SRIGLX3MPUQUNGGV/911660__Form%206_ERM_MFU_17Nov26_final.pdf",
+    "timestamp": "2026-11-17",
     "transaction_type": "others",
-    "holder_name": "Khazanah Nasional Berhad",
-    "transaction_value": null,
+    "holder_name": "ESR-REIT Management (S) Limited",
+    "transaction_value": 2974245,
     "share_percentage_transaction": {
-      "total": 0.0,
+      "total": 0.00165,
       "deemed": 0.0,
-      "direct": 0.0
+      "direct": 0.00165
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 215025516,
-          "percentage": 0.3294
+          "amount": 25953555,
+          "percentage": 0.03199
         },
         "deemed": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "direct": {
           "amount": 0,
           "percentage": 0.0
+        },
+        "direct": {
+          "amount": 25953555,
+          "percentage": 0.03199
         }
       },
       "before": {
         "total": {
-          "amount": 214992483,
-          "percentage": 0.3294
+          "amount": 24565213,
+          "percentage": 0.03034
         },
         "deemed": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "direct": {
           "amount": 0,
           "percentage": 0.0
+        },
+        "direct": {
+          "amount": 24565213,
+          "percentage": 0.03034
         }
       }
     },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Khazanah Nasional Berhad's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
-    "body": "Khazanah Nasional Berhad's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Khazanah Nasional Berhad's (\"Khazanah\") deemed interest in PLife REIT arises through its wholly-owned subsidiary, Pulau Memutik Ventures Sdn Bhd (\"PMVSB\"). PMVSB holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"). Accordingly, Khazanah has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
-    "relationship_text": "PMVSB is a wholly-owned subsidiary of Khazanah.",
-    "remarks_text": "B Substantial Shareholder/Unitholder Name of Substantial Shareholder/Unitholder: 1. Pulau Memutik Ventures Sdn Bhd 2. Is Substantial Shareholder/Unitholder a fund manager or a person whose interest in the securities of the Listed Issuer are held solely through fund manager(s)? Yes No Notification in respect of: 3. Becoming a Substantial Shareholder/Unitholder Change in the percentage level of interest while still remaining a Substantial Shareholder/Unitholder Ceasing to be a Substantial Shareholder/Unitholder Date of acquisition of or change in interest: 16-Nov-2026 Date on which Substantial Shareholder/Unitholder became aware of the acquisition of, or the change in, interest            ( if different from item 4 above, please specify the date ): 5. 16-Nov-2026 6. Explanation ( if the date of becoming aware is different from the date of acquisition of, or the change in, interest ): Quantum of total voting shares/units ( including voting shares/units underlying rights/options/warrants/convertible debentures {conversion price known} ) held by Substantial Shareholder/Unitholder before and after the transaction: Immediately before the transaction Direct Interest Deemed Interest Total 0 214,992,483 214,992,483 No. of voting shares/units held and/or underlying the rights/options/warrants/convertible debentures: 0 32.94 32.94 As a percentage of total no. of voting shares/units : Immediately after the transaction Direct Interest Deemed Interest Total 0 215,025,516 215,025,516 No. of voting shares/units held and/or underlying the rights/options/warrants/ convertible debentures : 0 32.94 32.94 As a percentage of total no. of voting shares/units : Circumstances giving rise to deemed interests ( if the interest is such ): [You may attach a chart in item 10 to illustrate how the Substantial Shareholder/Unitholder's deemed interest arises] Pulau Memutik Ventures Sdn Bhd (\"PMVSB\") holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"), which is in turn wholly-owned Integrated Healthcare Holdings Limited (\"IHHL\"). Accordingly, PMVSB has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML. Relationship between the Substantial Shareholders/Unitholders giving notice in this form: [You may attach a chart in item 10 to show the relationship between the Substantial Shareholders/Unitholders] PMVSB is a wholly-owned subsidiary of Khazanah. Attachments ( if any ): 10. (The total file size for all attachment(s) should not exceed 1MB.) 11. If this is a  replacement  of an earlier notification, please provide: SGXNet announcement reference of the  first  notification which was announced on SGXNet ( the \"Initial Announcement\" ): (a) Date of the Initial Announcement: (b) (c) 15-digit transaction reference number of the relevant transaction in the Form 3 which was attached in the Initial Announcement: Remarks ( if any ): 12.",
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issue of 33,033 new units as part payment of the base fee component of the management fee",
-    "acting_party": "Parkway Trust Management Limited",
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "104130643710503"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZKSQG6P7X9JT285U/911569__Form%203-Khazanah.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "Pulau Memutik Ventures Sdn Bhd",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Pulau Memutik Ventures Sdn Bhd reports change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees",
-    "body": "Pulau Memutik Ventures Sdn Bhd reported a change in deemed interest in Parkway Life Real Estate Investment Trust in payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Pulau Memutik Ventures Sdn Bhd (\"PMVSB\") holds more than 20% of the total issued share capital of IHH Healthcare Berhad (\"IHH\"), which is in turn wholly-owned Integrated Healthcare Holdings Limited (\"IHHL\"). Accordingly, PMVSB has a deemed interest in PLife REIT units held by IHH. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
-    "relationship_text": "PMVSB is a wholly-owned subsidiary of Khazanah.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issue of new units as part payment of the base fee component of the management fee",
-    "acting_party": null,
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "104130643710503"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4CGT9FMIE76IVSZJ/911567__Form%203-IHH.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "IHH Healthcare Berhad",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "insider",
-    "title": "IHH Healthcare Berhad's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
-    "body": "IHH Healthcare Berhad's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. No units are held directly. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Parkway Life Real Estate Investment Trust (\"PLife REIT\") issued 33,033 new units on 16 November 2026, being part payment of base fee component of the management fee due to Parkway Trust Management Limited, the manager of PLife REIT, for the period from 01 July 2026 to 30 September 2026. IHH Healthcare Berhad's (\"IHH\") deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i) Integrated Healthcare Holdings Limited (\"IHHL\"), held through nominee company, Raffles Nominees (Pte) Limited - 219,215 of PLife REIT units; (ii) Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (iii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL, which is in turn wholly-owned by IHH. Accordingly, IHH has a deemed interest in units, direct and deemed, held by IHHL, PIPL and PTML.",
-    "relationship_text": "IHHL is a wholly-owned subsidiary of IHH.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "part payment of base fee component of the management fee due to Parkway Trust Management Limited",
-    "acting_party": "Parkway Trust Management Limited",
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "778130643712923"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4CGT9FMIE76IVSZJ/911567__Form%203-IHH.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "Integrated Healthcare Holdings Limited",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0,
-      "deemed": 0.0,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 215025516,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 214806301,
-          "percentage": 0.3291
-        },
-        "direct": {
-          "amount": 219215,
-          "percentage": 0.0003
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 214992483,
-          "percentage": 0.3294
-        },
-        "deemed": {
-          "amount": 214773268,
-          "percentage": 0.3291
-        },
-        "direct": {
-          "amount": 219215,
-          "percentage": 0.0003
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
-    "price_per_share": [],
-    "holder_type": "institution",
-    "title": "Integrated Healthcare Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rises after payment of management fees in units",
-    "body": "Integrated Healthcare Holdings Limited's deemed interest in Parkway Life Real Estate Investment Trust rose after Parkway Trust Management Limited received units as payment of management fees. The direct holding is unchanged at 219,215 units. Total interest rises from 214,992,483 to 215,025,516 units, with the stake unchanged at 32.94%.",
-    "sector": "reit",
-    "sub_sector": "reit-healthcare",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Parkway Life Real Estate Investment Trust (\"PLife REIT\") issued 33,033 new units on 16 November 2026, being part payment of base fee component of the management fee due to Parkway Trust Management Limited, the manager of PLife REIT, for the period from 01 July 2026 to 30 September 2026. Integrated Healthcare Holdings Limited (\"IHHL\")'s direct interest in PLife REIT comprises 219,215 of PLife REIT units held through nominee company, Raffles Nominees (Pte) Limited, and its deemed interest in PLife REIT is held through the following wholly-owned subsidiaries:- (i)  Parkway Investments Pte Ltd (\"PIPL\") - 213,257,000 of PLife REIT units; and (ii) Parkway Trust Management Limited (\"PTML\") – 1,549,301 of PLife REIT units. Both PIPL and PTML are wholly-owned subsidiaries of Parkway Holdings Limited (\"PHL\"), a wholly-owned subsidiary of Parkway Pantai Limited (“PPL”). PPL is a wholly-owned subsidiary of IHHL. Accordingly, IHHL has a deemed interest in units, direct and deemed, held by PIPL and PTML.",
-    "relationship_text": "IHHL is a wholly-owned subsidiary of IHH.",
-    "remarks_text": null,
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the issue of 33,033 new units as part payment of the management fee",
-    "acting_party": "Parkway Trust Management Limited",
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "778130643712923"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KRAZS2CUJM8ARNIM/911563__Form%206-PTML.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "others",
-    "holder_name": "Parkway Trust Management Limited",
-    "transaction_value": 136128,
-    "share_percentage_transaction": {
-      "total": 5e-05,
-      "deemed": 0.0,
-      "direct": 5e-05
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 1549301,
-          "percentage": 0.00237
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 1549301,
-          "percentage": 0.00237
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 1516268,
-          "percentage": 0.00232
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 1516268,
-          "percentage": 0.00232
-        }
-      }
-    },
-    "symbol": "C2PU.SI",
+    "symbol": "9A4U.SI",
     "price_per_share": [
       {
-        "price": 4.121,
-        "amount": 33033
+        "price": 2.1423,
+        "amount": 1388342
       }
     ],
     "holder_type": "insider",
-    "title": "Parkway Trust Management Limited receives 33,033 Parkway Life Real Estate Investment Trust units as management fees",
-    "body": "Parkway Trust Management Limited received 33,033 units of Parkway Life Real Estate Investment Trust as payment of management fees, valued at S$4.121 per unit, or S$136,128 in total. Total interest rises from 1,516,268 units (0.23%) to 1,549,301 units (0.24%).",
+    "title": "ESR-REIT Management (S) Limited receives 1.4M ESR-REIT units as management fees",
+    "body": "ESR-REIT Management (S) Limited received 1,388,342 units of ESR-REIT as payment of management fees, valued at S$2.1423 per unit, or S$2,974,245 in total. Total interest rises from 24,565,213 units (3.03%) to 25,953,555 units (3.20%).",
     "sector": "reit",
-    "sub_sector": "reit-healthcare",
+    "sub_sector": "reit-industrial",
     "tags": [
       "management-fees"
     ],
     "source_is_manual": false,
-    "deemed_interest_text": "NA",
+    "deemed_interest_text": null,
     "relationship_text": null,
-    "remarks_text": "NA",
+    "remarks_text": null,
     "filing_type": "form_6",
     "notification_type": null,
-    "circumstance_key": "Securities as part of management",
+    "circumstance_key": null,
+    "change_reason": "the issue of new units as partial payment for its base fees",
+    "acting_party": null,
+    "company_name": "ESR-REIT",
+    "transaction_reference": "016942346252051"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SRIGLX3MPUQUNGGV/911660__Form%206_ERM_MFU_17Nov26_final.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "ESR-REIT Management (S) Limited",
+    "transaction_value": 2974245,
+    "share_percentage_transaction": {
+      "total": 0.00171,
+      "deemed": 0.0,
+      "direct": 0.00171
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 24565213,
+          "percentage": 0.03028
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 24565213,
+          "percentage": 0.03028
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 25953555,
+          "percentage": 0.03199
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 25953555,
+          "percentage": 0.03199
+        }
+      }
+    },
+    "symbol": "9A4U.SI",
+    "price_per_share": [
+      {
+        "price": 2.1423,
+        "amount": 1388342
+      }
+    ],
+    "holder_type": "insider",
+    "title": "ESR-REIT Management (S) Limited sells S$3.0M of ESR-REIT units received as management fees",
+    "body": "ESR-REIT Management (S) Limited sold 1,388,342 units of ESR-REIT received as management fees at S$2.1423 per unit, for a total of S$2,974,245. Total interest falls from 25,953,555 units (3.20%) to 24,565,213 units (3.03%).",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "ESR-REIT Management (S) Limited has sold 1,388,342 units that it is entitled to receive as partial payment of its management fee to ESR Unit Holding Pte. Ltd., a wholly-owned subsidiary of ESR Group Limited and has in connection with the sale, directed that such units be issued in favour of ESR Unit Holding Pte. Ltd. instead of ESR- REIT Management (S) Limited.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities via off-market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "Parkway Life Real Estate Investment Trust",
-    "transaction_reference": "807950643744775"
+    "company_name": "ESR-REIT",
+    "transaction_reference": "416912643220511"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/EIR1BB6619H5UO6L/911655__Form_3_BlackRock-13.11.2026_final.pdf",
+    "timestamp": "2026-11-13",
+    "transaction_type": "others",
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0045,
+      "deemed": 0.0045,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 14648983,
+          "percentage": 0.051
+        },
+        "deemed": {
+          "amount": 14648983,
+          "percentage": 0.051
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 13343668,
+          "percentage": 0.0465
+        },
+        "deemed": {
+          "amount": 13343668,
+          "percentage": 0.0465
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "V03.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 1305315
+      }
+    ],
+    "holder_type": "institution",
+    "title": "BlackRock, Inc becomes substantial shareholder of Venture Corp Ltd with 5.10% stake",
+    "body": "BlackRock, Inc reported a change in deemed interest in Venture Corp Ltd. The filing attributes the change to an increase in shares held as collateral. The transaction involved 1,305,315 shares. No shares are held directly. Total interest rises from 13,343,668 shares (4.65%) to 14,648,983 shares (5.10%). With this, the holder becomes a substantial shareholder of Venture Corp Ltd.",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "BlackRock, Inc. holds a deemed interest  through various BlackRock, Inc. subsidiaries as set out below. 1.Aperio Group, LLC 2.BlackRock Financial Management, Inc. 3.BlackRock Investment Management (Australia) Limited 4.BlackRock (Luxembourg) S.A. 5.BlackRock (Netherlands) B.V. 6.BlackRock Fund Managers Ltd 7.BlackRock Life Limited 8.BlackRock Asset Management Canada Limited 9.BlackRock Asset Management Deutschland AG 10.BlackRock Asset Management Ireland Limited 11.BlackRock Asset Management North Asia Limited 12.BlackRock Asset Management Schweiz AG 13.BlackRock Fund Advisors 14.BlackRock Institutional Trust Company, N.A. 15.BlackRock Investment Management (UK) Ltd",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "becoming",
+    "circumstance_key": null,
+    "change_reason": "an increase in shares held as collateral",
+    "acting_party": null,
+    "company_name": "Venture Corp Ltd",
+    "transaction_reference": "558119145554795"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/25V4MJ0N9BE5ZROS/911624__eFORM1V2-16112026-Dr%20Ng.pdf",
+    "timestamp": "2026-11-12",
+    "transaction_type": "others",
+    "holder_name": "Dr Ng Chin Siau",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0095,
+      "deemed": 0.0095,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 528797889,
+          "percentage": 0.5485
+        },
+        "deemed": {
+          "amount": 528768989,
+          "percentage": 0.5485
+        },
+        "direct": {
+          "amount": 28900,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 528797889,
+          "percentage": 0.558
+        },
+        "deemed": {
+          "amount": 528768989,
+          "percentage": 0.558
+        },
+        "direct": {
+          "amount": 28900,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "QC7.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 16375714
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Dr Ng Chin Siau's stake in Q & M Dental Group (Singapore) Ltd falls to 54.85% from 55.80% after corporate action",
+    "body": "Dr Ng Chin Siau's stake in Q & M Dental Group (Singapore) Ltd moved from 55.80% to 54.85% following a corporate action by the company. The filing attributes the change to the issue and allotment of new shares to Keera Capital pursuant to completion of the Thailand Acquisition. The transaction involved 16,375,714 shares. The number of shares held is unchanged at 528,797,889.",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "By virtue of Section 4 of the Securities and Futures Act 2001 of Singapore, Dr Ng Chin Siau is deemed to be interested in the 528,647,789 ordinary shares held by QMH. Dr Ng Chin Siau is deemed to have an interest in his spouse's, Foo Siew Jiuan, 121,200 ordinary shares.",
+    "relationship_text": null,
+    "remarks_text": "The change in interest arises from the issue and allotment of 16,375,714 new shares in Q & M to Keera Capital Ltd pursuant to the completion of the Thailand Acquisition, as announced by Q & M on 13 November 2026. The percentage shareholding before the change in interest is calculated based on Q & M's issued share capital of 947,620,661 ordinary shares (excluding treasury shares), as announced in Q & M‘s Share Buy-back Announcement dated 21 October 2026. The percentage shareholding after the change in interest is calculated based on Q & M's enlarged issued share capital of 963,996,375 ordinary shares (excluding treasury shares).",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Corporate action by Listed Issuer",
+    "change_reason": "the issue and allotment of new shares to Keera Capital pursuant to completion of the Thailand Acquisition",
+    "acting_party": null,
+    "company_name": "Q & M Dental Group (Singapore) Ltd",
+    "transaction_reference": "678791745842903"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/0K4FZWDU12UGI72A/911622__eFORM3V2-16112026-QMH.pdf",
+    "timestamp": "2026-11-12",
+    "transaction_type": "others",
+    "holder_name": "Quan Min Holdings Pte. Ltd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0095,
+      "deemed": 0.0,
+      "direct": 0.0095
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 528647789,
+          "percentage": 0.5484
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 528647789,
+          "percentage": 0.5484
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 528647789,
+          "percentage": 0.5579
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 528647789,
+          "percentage": 0.5579
+        }
+      }
+    },
+    "symbol": "QC7.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 16375714
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Quan Min Holdings Pte. Ltd's stake in Q & M Dental Group (Singapore) Ltd falls to 54.84% from 55.79% after corporate action",
+    "body": "Quan Min Holdings Pte. Ltd's stake in Q & M Dental Group (Singapore) Ltd moved from 55.79% to 54.84% following a corporate action by the company. The filing attributes the change to the issue and allotment of new shares to Keera Capital Ltd. The transaction involved 16,375,714 shares. The number of shares held is unchanged at 528,647,789.",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "N.A.",
+    "relationship_text": null,
+    "remarks_text": "The change in interest arises from the issue and allotment of 16,375,714 new shares in Q & M to Keera Capital Ltd pursuant to the completion of the Thailand Acquisition, as announced by Q & M on 13 November 2026. The percentage shareholding before the change in interest is calculated based on Q & M's issued share capital of 947,620,661 ordinary shares (excluding treasury shares), as announced in Q & M's Share Buy-back Announcement dated 21 October 2026. The percentage shareholding after the change in interest is calculated based on Q & M's enlarged issued share capital of 963,996,375 ordinary shares (excluding treasury shares).",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Corporate action by Listed Issuer",
+    "change_reason": "the issue and allotment of new shares to Keera Capital Ltd",
+    "acting_party": null,
+    "company_name": "Q & M Dental Group (Singapore) Ltd",
+    "transaction_reference": "006611745852970"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/97QKXBJAGFIRYYHO/911599__eFORM1V2-Han%20Seng%20Juan.pdf",
+    "timestamp": "2026-11-12",
+    "transaction_type": "buy",
+    "holder_name": "Han Seng Juan",
+    "transaction_value": 337999,
+    "share_percentage_transaction": {
+      "total": 0.00032,
+      "deemed": 0.0,
+      "direct": 0.00032
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 374452326,
+          "percentage": 0.44536
+        },
+        "deemed": {
+          "amount": 243814026,
+          "percentage": 0.28999
+        },
+        "direct": {
+          "amount": 130638300,
+          "percentage": 0.15537
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 374177326,
+          "percentage": 0.44504
+        },
+        "deemed": {
+          "amount": 243814026,
+          "percentage": 0.28999
+        },
+        "direct": {
+          "amount": 130363300,
+          "percentage": 0.15505
+        }
+      }
+    },
+    "symbol": "OU8.SI",
+    "price_per_share": [
+      {
+        "price": 1.22909,
+        "amount": 275000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Han Seng Juan buys S$338K of Centurion Corp Ltd shares",
+    "body": "Han Seng Juan bought 275,000 shares of Centurion Corp Ltd in a market transaction at S$1.2291 per share, for a total of S$337,999. Total interest rises from 374,177,326 shares (44.50%) to 374,452,326 shares (44.54%).",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "(1) Mr Han Seng Juan (\"Mr Han\") holds a 50% shareholding interest in Centurion Global Ltd (“Centurion Global”).       Centurion Properties Pte. Ltd. (“Centurion Properties”) is a wholly-owned subsidiary of Centurion Global. Mr Han is, therefore, deemed to have an interest in 225,756,126 shares held by Centurion Properties in the       Company. (2) Mr Han is also deemed to have an interest in 7,947,500 shares held by his spouse, Kang Lee Cheng Susanna,       which are registered in the name of DB Nominees (Singapore) Pte Ltd. (3) Mr Han is the beneficial owner of 10,110,400 shares held by Sunsprings Holdings Ltd and is deemed to have an       interest in these shares, which are registered in the name of Citibank Nominees Singapore Pte Ltd.",
+    "relationship_text": null,
+    "remarks_text": "(1)  Of the 130,638,300 shares held by Mr Han, 25,064,000 shares are registered in the name of Citibank Nominees        Singapore Pte Ltd, 11,283,300 shares are registered in the name of UOB Kay Hian Pte Ltd, 402,300 shares are        registered in the name of Oversea-Chinese Bank Nominees Pte Ltd, 6,627,500 shares are registered in the name        of Maybank Securities Pte. Ltd., 7,978,700 shares are registered in the name of CGS International Securities        Singapore Pte Ltd, 25,000,000 shares are registered in the name of DBS Nominees (Private) Limited, 15,000,000        shares are registered in the name of United Overseas Bank Nominees (Private) Limited and 39,282,500 shares        are registered in his own name. (2) The percentage of shareholding immediately before and after the transaction is calculated based on the       Company's number of issued ordinary shares (excluding treasury shares) of 840,778,624 shares as at 16       November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Corp Ltd",
+    "transaction_reference": "014844643190864"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "Pandanus Associates Inc",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0026,
+      "deemed": 0.0026,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "deemed": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "deemed": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Pandanus Associates Inc's deemed interest in Centurion Accommodation REIT falls after S$4.4M unit sale",
+    "body": "Pandanus Associates Inc's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 4,166,300 units in a market transaction at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 148,532,300 units (8.60%) to 144,366,000 units (8.34%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Pandanus Associates Inc. is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT through its interest in the voting shares of Pandanus Partners L.P., pursuant to Section 4(5) of the SFA.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "Pandanus Partners L.P.",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0026,
+      "deemed": 0.0026,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "deemed": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "deemed": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Pandanus Partners L.P.'s deemed interest in Centurion Accommodation REIT falls after S$4.4M unit sale",
+    "body": "Pandanus Partners L.P.'s deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 4,166,300 units in a market transaction at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 148,532,300 units (8.60%) to 144,366,000 units (8.34%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Pandanus Partners L.P. is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT through its interest in the voting shares of FIL Limited, pursuant to Section 4(5) of the SFA.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "FIL Limited",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0026,
+      "deemed": 0.0026,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "deemed": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "deemed": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Limited's deemed interest in Centurion Accommodation REIT falls after S$4.4M unit sale",
+    "body": "FIL Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 4,166,300 units in a market transaction at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 148,532,300 units (8.60%) to 144,366,000 units (8.34%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Limited interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by one or more of FIL Limited's direct and indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "FIL Financial Services Holdings Limited",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0026,
+      "deemed": 0.0026,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "deemed": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "deemed": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Financial Services Holdings Limited's deemed interest in Centurion Accommodation REIT falls after S$4.4M unit sale",
+    "body": "FIL Financial Services Holdings Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 4,166,300 units in a market transaction at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 148,532,300 units (8.60%) to 144,366,000 units (8.34%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Financial Services Holdings Limited’s interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests. FIL Financial Services Holdings Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT  because such shares are held by funds and/or accounts managed by one or more of FIL Financial Services Holdings’ indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "FIL Financial Services Holdings 2 Limited",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0026,
+      "deemed": 0.0026,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "deemed": {
+          "amount": 144366000,
+          "percentage": 0.0834
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "deemed": {
+          "amount": 148532300,
+          "percentage": 0.086
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Financial Services Holdings 2 Limited's deemed interest in Centurion Accommodation REIT falls after S$4.4M unit sale",
+    "body": "FIL Financial Services Holdings 2 Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 4,166,300 units in a market transaction at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 148,532,300 units (8.60%) to 144,366,000 units (8.34%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Financial Services Holdings 2 Limited’s interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests. FIL Financial Services Holdings 2 Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT  because such shares are held by funds and/or accounts managed by one or more of FIL Financial Services Holdings 2’s direct or indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "FIL Asia Holdings Pte Limited",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0026,
+      "deemed": 0.0026,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 142338100,
+          "percentage": 0.0822
+        },
+        "deemed": {
+          "amount": 142338100,
+          "percentage": 0.0822
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 146504400,
+          "percentage": 0.0848
+        },
+        "deemed": {
+          "amount": 146504400,
+          "percentage": 0.0848
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Asia Holdings Pte Limited's deemed interest in Centurion Accommodation REIT falls after S$4.4M unit sale",
+    "body": "FIL Asia Holdings Pte Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 4,166,300 units in a market transaction at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 146,504,400 units (8.48%) to 142,338,100 units (8.22%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Asia Holdings Pte Limited's interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Asia Holdings Pte Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by one or more of FIL Asia Holdings Pte Limited’s direct or indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "FIL Investment Management (Hong Kong) Limited",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0021,
+      "deemed": 0.0021,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 92592200,
+          "percentage": 0.0535
+        },
+        "deemed": {
+          "amount": 92592200,
+          "percentage": 0.0535
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 96051500,
+          "percentage": 0.0556
+        },
+        "deemed": {
+          "amount": 96051500,
+          "percentage": 0.0556
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Investment Management (Hong Kong) Limited's deemed interest in Centurion Accommodation REIT falls after unit sale",
+    "body": "FIL Investment Management (Hong Kong) Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold units in a market transaction. The holders giving notice together sold 4,166,300 units at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 96,051,500 units (5.56%) to 92,592,200 units (5.35%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Investment Management (Hong Kong) Limited's interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Investment Management (Hong Kong) Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by FIL Investment Management (Hong Kong) Limited, which is the fund manager.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "FIL Holdings (Luxembourg) S.a r.l.",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0017,
+      "deemed": 0.0017,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 111636100,
+          "percentage": 0.0645
+        },
+        "deemed": {
+          "amount": 111636100,
+          "percentage": 0.0645
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 114450200,
+          "percentage": 0.0662
+        },
+        "deemed": {
+          "amount": 114450200,
+          "percentage": 0.0662
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Holdings (Luxembourg) S.a r.l.'s deemed interest in Centurion Accommodation REIT falls after unit sale",
+    "body": "FIL Holdings (Luxembourg) S.a r.l.'s deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold units in a market transaction. The holders giving notice together sold 4,166,300 units at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 114,450,200 units (6.62%) to 111,636,100 units (6.45%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Holdings (Luxembourg) S.a r.l.'s interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Holdings (Luxembourg) S.a r.l. is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by one or more of FIL Holdings (Luxembourg) S.a r.l.’s direct  subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "FIL Investment Management (Singapore) Limited",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0014,
+      "deemed": 0.0014,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 101687900,
+          "percentage": 0.0587
+        },
+        "deemed": {
+          "amount": 101687900,
+          "percentage": 0.0587
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 103781600,
+          "percentage": 0.0601
+        },
+        "deemed": {
+          "amount": 103781600,
+          "percentage": 0.0601
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Investment Management (Singapore) Limited's deemed interest in Centurion Accommodation REIT falls after unit sale",
+    "body": "FIL Investment Management (Singapore) Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold units in a market transaction. The holders giving notice together sold 4,166,300 units at S$1.0508 per unit, for a total of S$4,377,765. No units are held directly. Total interest falls from 103,781,600 units (6.01%) to 101,687,900 units (5.87%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Investment Management (Singapore) Limited's interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Investment Management (Singapore) Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by FIL Investment Management (Singapore) Limited, which is the fund manager.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VLM38M1AGEG3RC0Y/911596__eFORM3V2_final.pdf",
+    "timestamp": "2026-11-11",
+    "transaction_type": "sell",
+    "holder_name": "Fidelity Funds",
+    "transaction_value": 4377765,
+    "share_percentage_transaction": {
+      "total": 0.0017,
+      "deemed": 0.0,
+      "direct": 0.0017
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 103072500,
+          "percentage": 0.0595
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 103072500,
+          "percentage": 0.0595
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 105774900,
+          "percentage": 0.0612
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 105774900,
+          "percentage": 0.0612
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.0508,
+        "amount": 4166300
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Fidelity Funds sells units of Centurion Accommodation REIT",
+    "body": "Fidelity Funds sold units of Centurion Accommodation REIT in a market transaction. The holders giving notice together sold 4,166,300 units at S$1.0508 per unit, for a total of S$4,377,765. Total interest falls from 105,774,900 units (6.12%) to 103,072,500 units (5.95%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "N/A",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "649833643814243"
   }
 ]
