@@ -1,10 +1,10 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C0GEONFGXHXG9M9V/911922__20261119Form1_GSC.pdf",
-    "timestamp": "2026-11-19",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/0ZXKCA6727IBQ3US/912047__eForm3_18Nov2026_BlackRock.pdf",
+    "timestamp": "2026-11-18",
     "transaction_type": "sell",
-    "holder_name": "Dato' Seri Gooi Soon Chai",
-    "transaction_value": null,
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": 444707,
     "share_percentage_transaction": {
       "total": 0.0001,
       "deemed": 0.0001,
@@ -13,394 +13,328 @@
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 102011091,
-          "percentage": 0.2154
+          "amount": 349618804,
+          "percentage": 0.0699
         },
         "deemed": {
-          "amount": 93694068,
-          "percentage": 0.1978
+          "amount": 349618804,
+          "percentage": 0.0699
         },
         "direct": {
-          "amount": 8317023,
-          "percentage": 0.0176
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 102026091,
-          "percentage": 0.2155
+          "amount": 349822304,
+          "percentage": 0.07
         },
         "deemed": {
-          "amount": 93709068,
-          "percentage": 0.1979
+          "amount": 349822304,
+          "percentage": 0.07
         },
         "direct": {
-          "amount": 8317023,
-          "percentage": 0.0176
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "E28.SI",
+    "symbol": "A17U.SI",
     "price_per_share": [
       {
-        "price": null,
-        "amount": 15000
+        "price": 2.1853,
+        "amount": 203500
       }
     ],
-    "holder_type": "insider",
-    "title": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd falls after sale of 15,000 shares",
-    "body": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd fell after the holder's family sold 15,000 shares. The direct holding is unchanged at 8,317,023 shares. Total interest falls from 102,026,091 shares (21.55%) to 102,011,091 shares (21.54%).",
-    "sector": "technology",
-    "sub_sector": "communication-instruments",
+    "holder_type": "institution",
+    "title": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT falls after S$445K share sale",
+    "body": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT fell after a party linked to the holder sold 203,500 shares in a market transaction at S$2.1853 per share, for a total of S$444,707. No shares are held directly. Total interest falls from 349,822,304 shares (7.00%) to 349,618,804 shares (6.99%).",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Dato' Seri Gooi Soon Chai is deemed to have an interest in the 4,030,047 shares held by his family, 12,392,882 shares held by Prime Logic (M) Sdn. Bhd., 20,829,500 shares held by Sinn Hin Company Sdn. Bhd., 41,954,194 shares held by Precico Holdings Sdn. Bhd., and 14,487,445 shares held by Cayman Resources Sdn. Bhd. by virtue of Section 4 of the Securities and Futures Act (Chapter 289) and Section 7 of the Companies Act (Chapter 50).",
+    "deemed_interest_text": "BlackRock, Inc. holds a deemed interest  through various BlackRock, Inc. subsidiaries as set out below. 1.Aperio Group, LLC 2.BlackRock Advisors, LLC 3.BlackRock Financial Management, Inc. 4.BlackRock France SAS 5.BlackRock Investment Management, LLC 6.BlackRock Investment Management (Australia) Limited 7.BlackRock (Luxembourg) S.A. 8.BlackRock (Netherlands) B.V. 9.BlackRock Fund Managers Ltd 10.BlackRock Life Limited 11.BlackRock Asset Management Canada Limited 12.BlackRock Asset Management Ireland Limited 13.BlackRock Asset Management North Asia Limited 14.BlackRock Asset Management Schweiz AG 15.BlackRock (Singapore) Limited 16.BlackRock Advisors (UK) Limited 17.BlackRock Fund Advisors 18.BlackRock Investment Management (Taiwan) Limited 19.BlackRock Institutional Trust Company, N.A. 20.BlackRock Japan Co Ltd 21.BlackRock Investment Management (UK) Ltd 22.iShares (DE) I Investmentaktiengesellschaft mit Teilgesellschaftsvermögen",
     "relationship_text": null,
-    "remarks_text": "The percentage of issued share capital for immediately before the transaction is calculated based on 473,560,000 shares (excluding treasury shares). The percentage of issued share capital for immediately after the transaction is calculated based on 473,570,000 shares (excluding treasury shares).",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the disposal of shares by his family via market transaction",
-    "acting_party": "the holder's family",
-    "company_name": "Frencken Group Ltd",
-    "transaction_reference": "932498742942949"
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "CapitaLand Ascendas REIT",
+    "transaction_reference": "255414046656952"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/QIZV5NORK2YOKWPT/911920__Form%201_WeeEeCheong_18Nov26.pdf",
-    "timestamp": "2026-11-18",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/F4GTD6VLF828BNMJ/912045__KIP%20Inc%20-%20eFORM3V2%202011%202026.pdf",
+    "timestamp": "2026-11-17",
     "transaction_type": "buy",
-    "holder_name": "Wee Ee Cheong",
-    "transaction_value": 7227990,
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 149190,
     "share_percentage_transaction": {
-      "total": 0.00012,
-      "deemed": 0.0,
-      "direct": 0.00012
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 180020416,
-          "percentage": 0.10933
+          "amount": 166987961,
+          "percentage": 0.1697
         },
         "deemed": {
-          "amount": 173701487,
-          "percentage": 0.10549
+          "amount": 166987961,
+          "percentage": 0.1697
         },
         "direct": {
-          "amount": 6318929,
-          "percentage": 0.00384
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 179820416,
-          "percentage": 0.10921
+          "amount": 166937961,
+          "percentage": 0.1696
         },
         "deemed": {
-          "amount": 173701487,
-          "percentage": 0.10549
+          "amount": 166937961,
+          "percentage": 0.1696
         },
         "direct": {
-          "amount": 6118929,
-          "percentage": 0.00372
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "U11.SI",
+    "symbol": "U10.SI",
     "price_per_share": [
       {
-        "price": 36.13995,
-        "amount": 200000
+        "price": 2.9838,
+        "amount": 50000
       }
     ],
-    "holder_type": "insider",
-    "title": "Wee Ee Cheong buys S$7.2M of United Overseas Bank Ltd shares",
-    "body": "Wee Ee Cheong bought 200,000 shares of United Overseas Bank Ltd in a market transaction at S$36.1399 per share, for a total of S$7,227,990. Total interest rises from 179,820,416 shares (10.92%) to 180,020,416 shares (10.93%).",
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$149K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 50,000 shares in a market transaction at S$2.9838 per share, for a total of S$149,190. No shares are held directly. Total interest rises from 166,937,961 shares (16.96%) to 166,987,961 shares (16.97%).",
     "sector": "financial-services",
-    "sub_sector": "banks-credit-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "166,987,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "837854643311095"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/F4GTD6VLF828BNMJ/912045__KIP%20Inc%20-%20eFORM3V2%202011%202026.pdf",
+    "timestamp": "2026-11-18",
+    "transaction_type": "buy",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 161111,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 167041961,
+          "percentage": 0.1697
+        },
+        "deemed": {
+          "amount": 167041961,
+          "percentage": 0.1697
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 166987961,
+          "percentage": 0.1697
+        },
+        "deemed": {
+          "amount": 166987961,
+          "percentage": 0.1697
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.98354,
+        "amount": 54000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$161K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 54,000 shares in a market transaction at S$2.9835 per share, for a total of S$161,111. No shares are held directly. Total interest rises from 166,987,961 to 167,041,961 shares, with the stake unchanged at 16.97%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "167,041,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "533943464163611"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/F4GTD6VLF828BNMJ/912045__KIP%20Inc%20-%20eFORM3V2%202011%202026.pdf",
+    "timestamp": "2026-11-19",
+    "transaction_type": "buy",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 206500,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 167111961,
+          "percentage": 0.1698
+        },
+        "deemed": {
+          "amount": 167111961,
+          "percentage": 0.1698
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 167041961,
+          "percentage": 0.1697
+        },
+        "deemed": {
+          "amount": 167041961,
+          "percentage": 0.1697
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.95001,
+        "amount": 70000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$206K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 70,000 shares in a market transaction at S$2.95 per share, for a total of S$206,500. No shares are held directly. Total interest rises from 167,041,961 shares (16.97%) to 167,111,961 shares (16.98%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "167,111,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "482453464228022"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/EM3T2C69ZQAW142U/912043__UIP%20Holdings%20-%20eFORM3V2%202011%202026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 149190,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187606346,
+          "percentage": 0.1906
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187606346,
+          "percentage": 0.1906
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187556346,
+          "percentage": 0.1906
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187556346,
+          "percentage": 0.1906
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.9838,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$149K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 50,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.9838 per share, for a total of S$149,190. Total interest rises from 187,556,346 to 187,606,346 shares, with the stake unchanged at 19.06%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
     "tags": [],
     "source_is_manual": false,
     "deemed_interest_text": null,
     "relationship_text": null,
-    "remarks_text": "The number of voting shares held as a percentage of total number of voting shares immediately before the transaction is computed based on 1,646,609,591 issued shares (excluding Treasury shares) as at 18 November 2026. The number of voting shares held as a percentage of total number of voting shares immediately after the transaction is computed based on 1,646,575,591 issued shares (excluding Treasury shares) as at 18 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "United Overseas Bank Ltd",
-    "transaction_reference": "254544643499164"
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "654854643312015"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KU6IRF8EWO3UR8VU/911911__2026-021_Form%201_Bianca%20Cheo%20Hui%20Hsin.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/EM3T2C69ZQAW142U/912043__UIP%20Holdings%20-%20eFORM3V2%202011%202026.pdf",
     "timestamp": "2026-11-18",
     "transaction_type": "buy",
-    "holder_name": "Bianca Cheo Hui Hsin",
-    "transaction_value": 300000,
-    "share_percentage_transaction": {
-      "total": 0.0006,
-      "deemed": 0.0006,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 730426718,
-          "percentage": 0.4867
-        },
-        "deemed": {
-          "amount": 727966618,
-          "percentage": 0.485
-        },
-        "direct": {
-          "amount": 2460100,
-          "percentage": 0.0017
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 729426718,
-          "percentage": 0.4861
-        },
-        "deemed": {
-          "amount": 726966618,
-          "percentage": 0.4844
-        },
-        "direct": {
-          "amount": 2460100,
-          "percentage": 0.0017
-        }
-      }
-    },
-    "symbol": "MV4.SI",
-    "price_per_share": [
-      {
-        "price": 0.3,
-        "amount": 1000000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Bianca Cheo Hui Hsin's deemed interest in Mewah International Inc rises after S$300K off-market purchase",
-    "body": "Bianca Cheo Hui Hsin's deemed interest in Mewah International Inc rose after T.C. Stone Limited bought 1,000,000 shares in an off-market transaction at S$0.3 per share, for a total of S$300,000. The direct holding is unchanged at 2,460,100 shares. Total interest rises from 729,426,718 shares (48.61%) to 730,426,718 shares (48.67%).",
-    "sector": "consumer-defensive",
-    "sub_sector": "food-beverage-production",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The shares were acquired by T.C. Stone Limited. Bianca Cheo Hui Hsin is deemed interested in the shares of the Company through JTC TRUST COMPANY (CI) LIMITED ('Trustee'), which she is one of the beneficiaries. The Trustee owns 100% of the shares in J.J. Mibisa Holding (BVI) Inc., which in turn owns 100% of the shares in T.C. Stone Limited.",
-    "relationship_text": null,
-    "remarks_text": null,
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via off-market transaction",
-    "change_reason": null,
-    "acting_party": "T.C. Stone Limited",
-    "company_name": "Mewah International Inc",
-    "transaction_reference": "167893346442383"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/JTFPZXBA4E5EVSBJ/911907__2026-021_Form%201_Michelle%20Cheo%20Hui%20Ning.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "buy",
-    "holder_name": "Michelle Cheo Hui Ning",
-    "transaction_value": 300000,
-    "share_percentage_transaction": {
-      "total": 0.0007,
-      "deemed": 0.0007,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 728704218,
-          "percentage": 0.4856
-        },
-        "deemed": {
-          "amount": 726540618,
-          "percentage": 0.4841
-        },
-        "direct": {
-          "amount": 2163600,
-          "percentage": 0.0015
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 727704218,
-          "percentage": 0.4849
-        },
-        "deemed": {
-          "amount": 725540618,
-          "percentage": 0.4834
-        },
-        "direct": {
-          "amount": 2163600,
-          "percentage": 0.0015
-        }
-      }
-    },
-    "symbol": "MV4.SI",
-    "price_per_share": [
-      {
-        "price": 0.3,
-        "amount": 1000000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Michelle Cheo Hui Ning's deemed interest in Mewah International Inc rises after S$300K off-market purchase",
-    "body": "Michelle Cheo Hui Ning's deemed interest in Mewah International Inc rose after T.C. Stone Limited bought 1,000,000 shares in an off-market transaction at S$0.3 per share, for a total of S$300,000. The direct holding is unchanged at 2,163,600 shares. Total interest rises from 727,704,218 shares (48.49%) to 728,704,218 shares (48.56%).",
-    "sector": "consumer-defensive",
-    "sub_sector": "food-beverage-production",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The shares were acquired by T.C. Stone Limited. Michelle Cheo Hui Ning is deemed interested in the shares of the Company through JTC TRUST COMPANY (CI) LIMITED (\"Trustee\"), which she is one of the beneficiaries. The Trustee owns 100% of the shares in J.J. Mibisa Holding (BVI) Inc., which in turn owns 100% of the shares in T.C. Stone Limited.",
-    "relationship_text": null,
-    "remarks_text": null,
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via off-market transaction",
-    "change_reason": null,
-    "acting_party": "T.C. Stone Limited",
-    "company_name": "Mewah International Inc",
-    "transaction_reference": "713893346442097"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S63CVD7CYUWMSGJT/911902__2026-021_Form%201_Cheo%20Tong%20Choon.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "buy",
-    "holder_name": "Cheo Tong Choon @ Lee Tong Choon",
-    "transaction_value": 300000,
-    "share_percentage_transaction": {
-      "total": 0.0007,
-      "deemed": 0.0007,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 748322118,
-          "percentage": 0.4987
-        },
-        "deemed": {
-          "amount": 748322118,
-          "percentage": 0.4987
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 747322118,
-          "percentage": 0.498
-        },
-        "deemed": {
-          "amount": 747322118,
-          "percentage": 0.498
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "MV4.SI",
-    "price_per_share": [
-      {
-        "price": 0.3,
-        "amount": 1000000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Cheo Tong Choon @ Lee Tong Choon's deemed interest in Mewah International Inc rises after S$300K off-market purchase",
-    "body": "Cheo Tong Choon @ Lee Tong Choon's deemed interest in Mewah International Inc rose after T.C. Stone Limited bought 1,000,000 shares in an off-market transaction at S$0.3 per share, for a total of S$300,000. No shares are held directly. Total interest rises from 747,322,118 shares (49.80%) to 748,322,118 shares (49.87%).",
-    "sector": "consumer-defensive",
-    "sub_sector": "food-beverage-production",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The shares were acquired by T.C. Stone Limited. Cheo Tong Choon @ Lee Tong Choon (\"Dr. Cheo\") is deemed interested in the shares of the Company through JTC TRUST COMPANY (CI) LIMITED (\"Trustee\"). The Trustee is accustomed to act in accordance with directions, instructions or wishes of Dr. Cheo. The Trustee owns 100% of shares in J.J.Mibisa Holding (BVI) Inc., which in turn owns 100% of the shares in T.C. Stone Limited.",
-    "relationship_text": null,
-    "remarks_text": null,
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via off-market transaction",
-    "change_reason": null,
-    "acting_party": "T.C. Stone Limited",
-    "company_name": "Mewah International Inc",
-    "transaction_reference": "801793346442772"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/NGOOAYUKETS63DZQ/911899__eFORM1V2-Han%20Seng%20Juan-19Nov2026.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "buy",
-    "holder_name": "Han Seng Juan",
-    "transaction_value": 104455,
-    "share_percentage_transaction": {
-      "total": 0.00014,
-      "deemed": 2e-05,
-      "direct": 0.00012
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 374790526,
-          "percentage": 0.4458
-        },
-        "deemed": {
-          "amount": 243814026,
-          "percentage": 0.29001
-        },
-        "direct": {
-          "amount": 130976500,
-          "percentage": 0.15579
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 374702326,
-          "percentage": 0.44566
-        },
-        "deemed": {
-          "amount": 243814026,
-          "percentage": 0.28999
-        },
-        "direct": {
-          "amount": 130888300,
-          "percentage": 0.15567
-        }
-      }
-    },
-    "symbol": "OU8.SI",
-    "price_per_share": [
-      {
-        "price": 1.1843,
-        "amount": 88200
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Han Seng Juan buys S$104K of Centurion Corp Ltd shares",
-    "body": "Han Seng Juan bought 88,200 shares of Centurion Corp Ltd in a market transaction at S$1.1843 per share, for a total of S$104,455. Total interest rises from 374,702,326 shares (44.57%) to 374,790,526 shares (44.58%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "hotels-resorts-leisure",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "(1) Mr Han Seng Juan (\"Mr Han\") holds a 50% shareholding interest in Centurion Global Ltd (“Centurion Global”).       Centurion Properties Pte. Ltd. (“Centurion Properties”) is a wholly-owned subsidiary of Centurion Global. Mr Han is, therefore, deemed to have an interest in 225,756,126 shares held by Centurion Properties in the       Company. (2) Mr Han is also deemed to have an interest in 7,947,500 shares held by his spouse, Kang Lee Cheng Susanna,       which are registered in the name of DB Nominees (Singapore) Pte Ltd. (3) Mr Han is the beneficial owner of 10,110,400 shares held by Sunsprings Holdings Ltd and is deemed to have an       interest in these shares, which are registered in the name of Citibank Nominees Singapore Pte Ltd.",
-    "relationship_text": null,
-    "remarks_text": "(1)  Of the 130,976,500 shares held by Mr Han, 25,064,000 shares are registered in the name of Citibank Nominees        Singapore Pte Ltd, 11,283,300 shares are registered in the name of UOB Kay Hian Pte Ltd, 402,300 shares are        registered in the name of Oversea-Chinese Bank Nominees Pte Ltd, 6,965,700 shares are registered in the name        of Maybank Securities Pte. Ltd., 7,978,700 shares are registered in the name of CGS International Securities        Singapore Pte Ltd, 25,000,000 shares are registered in the name of DBS Nominees (Private) Limited, 15,000,000        shares are registered in the name of United Overseas Bank Nominees (Private) Limited and 39,282,500 shares        are registered in his own name. (2) The percentage of shareholding immediately before the transaction is calculated based on the       Company's number of issued ordinary shares (excluding treasury shares) of 840,778,624 shares as at 17       November 2026. (3) The percentage of shareholding immediately after the transaction is calculated based on the       Company's number of issued ordinary shares (excluding treasury shares) of 840,703,624 shares as at 18       November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Centurion Corp Ltd",
-    "transaction_reference": "686844643492894"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/JVMS2ODQCAO38453/911875__20261119%20RS%20eFORM1V2.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "buy",
-    "holder_name": "Ravinder Sajwan",
-    "transaction_value": 54404,
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 161111,
     "share_percentage_transaction": {
       "total": 0.0001,
       "deemed": 0.0,
@@ -408,6 +342,350 @@
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 187660346,
+          "percentage": 0.1907
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187660346,
+          "percentage": 0.1907
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187606346,
+          "percentage": 0.1906
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187606346,
+          "percentage": 0.1906
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.98354,
+        "amount": 54000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$161K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 54,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.9835 per share, for a total of S$161,111. Total interest rises from 187,606,346 shares (19.06%) to 187,660,346 shares (19.07%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "270943464177811"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/EM3T2C69ZQAW142U/912043__UIP%20Holdings%20-%20eFORM3V2%202011%202026.pdf",
+    "timestamp": "2026-11-19",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 206500,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187730346,
+          "percentage": 0.1907
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187730346,
+          "percentage": 0.1907
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187660346,
+          "percentage": 0.1907
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187660346,
+          "percentage": 0.1907
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.95001,
+        "amount": 70000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$206K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 70,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.95 per share, for a total of S$206,500. Total interest rises from 187,660,346 to 187,730,346 shares, with the stake unchanged at 19.07%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "803353464290822"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/H9ALPKJUWWYNWDV8/912041__WEC%20-%20eFORM1V2%202011%202026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 298380,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 354594307,
+          "percentage": 0.3603
+        },
+        "deemed": {
+          "amount": 354594307,
+          "percentage": 0.3603
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 354494307,
+          "percentage": 0.3602
+        },
+        "deemed": {
+          "amount": 354494307,
+          "percentage": 0.3602
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.9838,
+        "amount": 100000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$298K share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 100,000 shares in a market transaction at S$2.9838 per share, for a total of S$298,380. No shares are held directly. Total interest rises from 354,494,307 shares (36.02%) to 354,594,307 shares (36.03%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr Wee Ee Chao is deemed to be interested in 354,594,307 shares held through: 187,606,346 shares - in name of U.I.P. Holdings Limited; and 166,987,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "373844643390724"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/H9ALPKJUWWYNWDV8/912041__WEC%20-%20eFORM1V2%202011%202026.pdf",
+    "timestamp": "2026-11-18",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 322222,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 354702307,
+          "percentage": 0.3604
+        },
+        "deemed": {
+          "amount": 354702307,
+          "percentage": 0.3604
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 354594307,
+          "percentage": 0.3603
+        },
+        "deemed": {
+          "amount": 354594307,
+          "percentage": 0.3603
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.98354,
+        "amount": 108000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$322K share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 108,000 shares in a market transaction at S$2.9835 per share, for a total of S$322,222. No shares are held directly. Total interest rises from 354,594,307 shares (36.03%) to 354,702,307 shares (36.04%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr Wee Ee Chao is deemed to be interested in 354,702,307 shares held through: 187,660,346 shares - in name of U.I.P. Holdings Limited; and 167,041,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "042943464151611"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/H9ALPKJUWWYNWDV8/912041__WEC%20-%20eFORM1V2%202011%202026.pdf",
+    "timestamp": "2026-11-19",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 413001,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 354842307,
+          "percentage": 0.3605
+        },
+        "deemed": {
+          "amount": 354842307,
+          "percentage": 0.3605
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 354702307,
+          "percentage": 0.3604
+        },
+        "deemed": {
+          "amount": 354702307,
+          "percentage": 0.3604
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.95001,
+        "amount": 140000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$413K share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 140,000 shares in a market transaction at S$2.95 per share, for a total of S$413,001. No shares are held directly. Total interest rises from 354,702,307 shares (36.04%) to 354,842,307 shares (36.05%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr Wee Ee Chao is deemed to be interested in 354,842,307 shares held through: 187,730,346 shares - in name of U.I.P. Holdings Limited; and 167,111,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "121453464217822"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/TM5QUUQH8647TD8I/912007__20261120%20RS%20eFORM1V2%20-%20Final.pdf",
+    "timestamp": "2026-11-19",
+    "transaction_type": "buy",
+    "holder_name": "Ravinder Sajwan",
+    "transaction_value": 67716,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 686139154,
+          "percentage": 0.6245
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6217
+        },
+        "direct": {
+          "amount": 3066112,
+          "percentage": 0.0028
+        }
+      },
+      "before": {
         "total": {
           "amount": 685995054,
           "percentage": 0.6244
@@ -420,187 +698,501 @@
           "amount": 2922012,
           "percentage": 0.0027
         }
-      },
-      "before": {
-        "total": {
-          "amount": 685878554,
-          "percentage": 0.6243
-        },
-        "deemed": {
-          "amount": 683073042,
-          "percentage": 0.6217
-        },
-        "direct": {
-          "amount": 2805512,
-          "percentage": 0.0026
-        }
       }
     },
     "symbol": "ULG.SI",
     "price_per_share": [
       {
-        "price": 0.467,
-        "amount": 116500
+        "price": 0.47,
+        "amount": 144100
       }
     ],
     "holder_type": "insider",
-    "title": "Ravinder Sajwan buys S$54,404 of Ultragreen Ai Ltd shares",
-    "body": "Ravinder Sajwan bought 116,500 shares of Ultragreen Ai Ltd in a market transaction at S$0.467 per share, for a total of S$54,404. Total interest rises from 685,878,554 shares (62.43%) to 685,995,054 shares (62.44%).",
+    "title": "Ravinder Sajwan buys S$67,716 of Ultragreen Ai Ltd shares",
+    "body": "Ravinder Sajwan bought 144,100 shares of Ultragreen Ai Ltd in a market transaction at S$0.47 per share, for a total of S$67,716. Total interest rises from 685,995,054 shares (62.44%) to 686,139,154 shares (62.45%).",
     "sector": "healthcare",
     "sub_sector": "healthcare-facilities-services",
     "tags": [],
     "source_is_manual": false,
     "deemed_interest_text": "The business and affairs of IR Investments LP are managed by a board of managers (the “IR Board of Managers”). IR Holding Company Inc., the general partner of IR Investments LP, has on 15 December 2019 appointed Mr Sajwan as the sole and initial member of the IR Board of Managers. Mr Sajwan is also a Protector of The Saul Trust and a member of Saul Strategic Limited (which holds 100% of Saul Holdings Pte. Ltd.’s ordinary shares). Accordingly, for the purposes of the Securities and Futures Act 2001 of Singapore and the Securities and Futures (Disclosure of Interests) Regulations 2012, Mr Sajwan has a deemed interest in the Shares held by Renew Group Private Limited.",
     "relationship_text": null,
-    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,098,647,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 18 NOVEMBER 2026.",
+    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,098,647,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 19 NOVEMBER 2026.",
     "filing_type": "form_1",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
     "company_name": "Ultragreen Ai Ltd",
-    "transaction_reference": "058544643493164"
+    "transaction_reference": "713544643598734"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HXA3A227HB2MBAH0/911845__Form%203%20-%20Mi%20Technovation%20Berhad.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "others",
-    "holder_name": "Mi Technovation Berhad",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0101,
-      "deemed": 0.0,
-      "direct": 0.0101
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 366000000,
-          "percentage": 0.7394
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 366000000,
-          "percentage": 0.7394
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 361000000,
-          "percentage": 0.7293
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 361000000,
-          "percentage": 0.7293
-        }
-      }
-    },
-    "symbol": "MIM.SI",
-    "price_per_share": [
-      {
-        "price": null,
-        "amount": 5000000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Mi Technovation Berhad's stake in Mi Material Holding Limited rises to 73.94% from 72.93% after share transfer",
-    "body": "Mi Technovation Berhad's stake in Mi Material Holding Limited moved from 72.93% to 73.94% following a transfer of shares. The transaction involved 5,000,000 shares. Total interest rises from 361,000,000 shares (72.93%) to 366,000,000 shares (73.94%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
-    "tags": [
-      "transfer"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": null,
-    "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings set out above immediately before and after the transaction are calculated based on the issued share capital of the Company of 495,000,000 ordinary shares as at 18 November 2026",
-    "filing_type": "form_3_part_ii",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the transfer of shares back following completion of the share price stabilisation activities",
-    "acting_party": null,
-    "company_name": "Mi Material Holding Limited",
-    "transaction_reference": "507313346453222"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/K086PQZFCVWXVPK3/911843__Form%201%20-%20Oh%20Kuang%20Eng.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
     "timestamp": "2026-11-17",
-    "transaction_type": "buy",
-    "holder_name": "Oh Kuang Eng",
-    "transaction_value": null,
+    "transaction_type": "sell",
+    "holder_name": "Pandanus Associates Inc",
+    "transaction_value": 876612,
     "share_percentage_transaction": {
-      "total": 0.0009,
-      "deemed": 0.0009,
+      "total": 0.0005,
+      "deemed": 0.0005,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 371115000,
-          "percentage": 0.7498
+          "amount": 140424200,
+          "percentage": 0.0811
         },
         "deemed": {
-          "amount": 362665000,
-          "percentage": 0.7327
+          "amount": 140424200,
+          "percentage": 0.0811
         },
         "direct": {
-          "amount": 8450000,
-          "percentage": 0.0171
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 370700500,
-          "percentage": 0.7489
+          "amount": 141255900,
+          "percentage": 0.0816
         },
         "deemed": {
-          "amount": 362250500,
-          "percentage": 0.7318
+          "amount": 141255900,
+          "percentage": 0.0816
         },
         "direct": {
-          "amount": 8450000,
-          "percentage": 0.0171
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "MIM.SI",
+    "symbol": "8C8U.SI",
     "price_per_share": [
       {
-        "price": null,
-        "amount": 414500
+        "price": 1.054,
+        "amount": 831700
       }
     ],
-    "holder_type": "insider",
-    "title": "Oh Kuang Eng's deemed interest in Mi Material Holding Limited rises after purchase of 414K shares",
-    "body": "Oh Kuang Eng's deemed interest in Mi Material Holding Limited rose after a party linked to the holder bought 414,500 shares in a market transaction. The direct holding is unchanged at 8,450,000 shares. Total interest rises from 370,700,500 shares (74.89%) to 371,115,000 shares (74.98%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
+    "holder_type": "institution",
+    "title": "Pandanus Associates Inc's deemed interest in Centurion Accommodation REIT falls after S$877K unit sale",
+    "body": "Pandanus Associates Inc's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 831,700 units in a market transaction at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 141,255,900 units (8.16%) to 140,424,200 units (8.11%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Mr. Oh Kuang Eng (\"Mr. Oh\") holds approximately 45.4% direct interest in the issued and paid up share capital of Mi Technovation Berhad (\"MiTB\"). MiTB holds 360,830,000 ordinary shares in the issued share capital of the Company. In addition, Ms. Yong Shiao Voon (\"Ms. Yong\"), an associate of Mr. Oh, holds 1,835,000 ordinary shares in the issued share capital of the Company. Accordingly, for the purpose of the Securities and Futures Act 2001 and the Securities and Futures (Disclosure of Interests) Regulation 2012, Mr. Oh has a deemed interest in the 362,665,000 ordinary shares held by MiTB and Ms. Yong.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings set out above immediately before and after the transaction are calculated based on the issued share capital of the Company of 495,000,000 ordinary shares as at 17 November 2026.",
-    "filing_type": "form_1",
+    "deemed_interest_text": "Pandanus Associates Inc. is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT through its interest in the voting shares of Pandanus Partners L.P., pursuant to Section 4(5) of the SFA.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "Mi Material Holding Limited",
-    "transaction_reference": "763192346441281"
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/K086PQZFCVWXVPK3/911843__Form%201%20-%20Oh%20Kuang%20Eng.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "buy",
-    "holder_name": "Oh Kuang Eng",
-    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "Pandanus Partners L.P.",
+    "transaction_value": 876612,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "deemed": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "deemed": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.054,
+        "amount": 831700
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Pandanus Partners L.P.'s deemed interest in Centurion Accommodation REIT falls after S$877K unit sale",
+    "body": "Pandanus Partners L.P.'s deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 831,700 units in a market transaction at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 141,255,900 units (8.16%) to 140,424,200 units (8.11%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Pandanus Partners L.P. is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT through its interest in the voting shares of FIL Limited, pursuant to Section 4(5) of the SFA.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "FIL Limited",
+    "transaction_value": 876612,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "deemed": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "deemed": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.054,
+        "amount": 831700
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Limited's deemed interest in Centurion Accommodation REIT falls after S$877K unit sale",
+    "body": "FIL Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 831,700 units in a market transaction at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 141,255,900 units (8.16%) to 140,424,200 units (8.11%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Limited interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by one or more of FIL Limited's direct and indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "FIL Financial Services Holdings Limited",
+    "transaction_value": 876612,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "deemed": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "deemed": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.054,
+        "amount": 831700
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Financial Services Holdings Limited's deemed interest in Centurion Accommodation REIT falls after S$877K unit sale",
+    "body": "FIL Financial Services Holdings Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 831,700 units in a market transaction at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 141,255,900 units (8.16%) to 140,424,200 units (8.11%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Financial Services Holdings Limited’s interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests. FIL Financial Services Holdings Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT  because such shares are held by funds and/or accounts managed by one or more of FIL Financial Services Holdings’ indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "FIL Financial Services Holdings 2 Limited",
+    "transaction_value": 876612,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "deemed": {
+          "amount": 140424200,
+          "percentage": 0.0811
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "deemed": {
+          "amount": 141255900,
+          "percentage": 0.0816
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.054,
+        "amount": 831700
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Financial Services Holdings 2 Limited's deemed interest in Centurion Accommodation REIT falls after S$877K unit sale",
+    "body": "FIL Financial Services Holdings 2 Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 831,700 units in a market transaction at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 141,255,900 units (8.16%) to 140,424,200 units (8.11%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Financial Services Holdings 2 Limited’s interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests. FIL Financial Services Holdings 2 Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT  because such shares are held by funds and/or accounts managed by one or more of FIL Financial Services Holdings 2’s direct or indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "FIL Asia Holdings Pte Limited",
+    "transaction_value": 876612,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 138355200,
+          "percentage": 0.0799
+        },
+        "deemed": {
+          "amount": 138355200,
+          "percentage": 0.0799
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 139186900,
+          "percentage": 0.0804
+        },
+        "deemed": {
+          "amount": 139186900,
+          "percentage": 0.0804
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.054,
+        "amount": 831700
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Asia Holdings Pte Limited's deemed interest in Centurion Accommodation REIT falls after S$877K unit sale",
+    "body": "FIL Asia Holdings Pte Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold 831,700 units in a market transaction at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 139,186,900 units (8.04%) to 138,355,200 units (7.99%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Asia Holdings Pte Limited's interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Asia Holdings Pte Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by one or more of FIL Asia Holdings Pte Limited’s direct or indirect subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "FIL Investment Management (Hong Kong) Limited",
+    "transaction_value": 876612,
+    "share_percentage_transaction": {
+      "total": 0.0004,
+      "deemed": 0.0004,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 89294200,
+          "percentage": 0.0516
+        },
+        "deemed": {
+          "amount": 89294200,
+          "percentage": 0.0516
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 89966700,
+          "percentage": 0.052
+        },
+        "deemed": {
+          "amount": 89966700,
+          "percentage": 0.052
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.054,
+        "amount": 831700
+      }
+    ],
+    "holder_type": "institution",
+    "title": "FIL Investment Management (Hong Kong) Limited's deemed interest in Centurion Accommodation REIT falls after unit sale",
+    "body": "FIL Investment Management (Hong Kong) Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold units in a market transaction. The holders giving notice together sold 831,700 units at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 89,966,700 units (5.20%) to 89,294,200 units (5.16%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "FIL Investment Management (Hong Kong) Limited's interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Investment Management (Hong Kong) Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by FIL Investment Management (Hong Kong) Limited, which is the fund manager.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "FIL Holdings (Luxembourg) S.a r.l.",
+    "transaction_value": 876612,
     "share_percentage_transaction": {
       "total": 0.0003,
       "deemed": 0.0003,
@@ -609,515 +1201,188 @@
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 371285500,
-          "percentage": 0.7501
+          "amount": 108724200,
+          "percentage": 0.0628
         },
         "deemed": {
-          "amount": 362835500,
-          "percentage": 0.733
+          "amount": 108724200,
+          "percentage": 0.0628
         },
         "direct": {
-          "amount": 8450000,
-          "percentage": 0.0171
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 371115000,
-          "percentage": 0.7498
+          "amount": 109316100,
+          "percentage": 0.0631
         },
         "deemed": {
-          "amount": 362665000,
-          "percentage": 0.7327
+          "amount": 109316100,
+          "percentage": 0.0631
         },
         "direct": {
-          "amount": 8450000,
-          "percentage": 0.0171
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "MIM.SI",
+    "symbol": "8C8U.SI",
     "price_per_share": [
       {
-        "price": null,
-        "amount": 170000
+        "price": 1.054,
+        "amount": 831700
       }
     ],
-    "holder_type": "insider",
-    "title": "Oh Kuang Eng's deemed interest in Mi Material Holding Limited rises after purchase of 170K shares",
-    "body": "Oh Kuang Eng's deemed interest in Mi Material Holding Limited rose after a party linked to the holder bought 170,000 shares in a market transaction. The direct holding is unchanged at 8,450,000 shares. Total interest rises from 371,115,000 shares (74.98%) to 371,285,500 shares (75.01%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
+    "holder_type": "institution",
+    "title": "FIL Holdings (Luxembourg) S.a r.l.'s deemed interest in Centurion Accommodation REIT falls after unit sale",
+    "body": "FIL Holdings (Luxembourg) S.a r.l.'s deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold units in a market transaction. The holders giving notice together sold 831,700 units at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 109,316,100 units (6.31%) to 108,724,200 units (6.28%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Mr. Oh Kuang Eng (\"Mr. Oh\") holds approximately 45.4% direct interest in the issued and paid up share capital of Mi Technovation Berhad (\"MiTB\"). MiTB holds 361,000,000 ordinary shares in the issued share capital of the Company. In addition, Ms. Yong Shiao Voon (\"Ms. Yong\"), an associate of Mr. Oh, holds 1,835,000 ordinary shares in the issued share capital of the Company. Accordingly, for the purpose of the Securities and Futures Act 2001 and the Securities and Futures (Disclosure of Interests) Regulation 2012, Mr. Oh has a deemed interest in the 362,835,500 ordinary shares held by MiTB and Ms. Yong.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings set out above immediately before and after the transaction are calculated based on the issued share capital of the Company of 495,000,000 ordinary shares as at 18 November 2026.",
-    "filing_type": "form_1",
+    "deemed_interest_text": "FIL Holdings (Luxembourg) S.a r.l.'s interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Holdings (Luxembourg) S.a r.l. is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by one or more of FIL Holdings (Luxembourg) S.a r.l.’s direct  subsidiaries, which are fund managers.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "Mi Material Holding Limited",
-    "transaction_reference": "921114643334931"
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/K086PQZFCVWXVPK3/911843__Form%201%20-%20Oh%20Kuang%20Eng.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "others",
-    "holder_name": "Oh Kuang Eng",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0101,
-      "deemed": 0.0101,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 376285000,
-          "percentage": 0.7602
-        },
-        "deemed": {
-          "amount": 367835000,
-          "percentage": 0.7431
-        },
-        "direct": {
-          "amount": 8450000,
-          "percentage": 0.0171
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 371285500,
-          "percentage": 0.7501
-        },
-        "deemed": {
-          "amount": 362835500,
-          "percentage": 0.733
-        },
-        "direct": {
-          "amount": 8450000,
-          "percentage": 0.0171
-        }
-      }
-    },
-    "symbol": "MIM.SI",
-    "price_per_share": [
-      {
-        "price": null,
-        "amount": 5000000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Oh Kuang Eng's deemed interest in Mi Material Holding Limited rises to 74.31% from 73.30% after share transfer",
-    "body": "Oh Kuang Eng's deemed interest in Mi Material Holding Limited moved from 73.30% to 74.31% following a transfer of shares. The transaction involved 5,000,000 shares. The direct holding is unchanged at 8,450,000 shares. Total interest rises from 371,285,500 shares (75.01%) to 376,285,000 shares (76.02%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
-    "tags": [
-      "transfer"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "Mr. Oh Kuang Eng (\"Mr. Oh\") holds approximately 45.4% direct interest in the issued and paid up share capital of Mi Technovation Berhad (\"MiTB\"). MiTB holds 366,000,000 ordinary shares in the issued share capital of the Company. In addition, Ms. Yong Shiao Voon (\"Ms. Yong\"), an associate of Mr. Oh, holds 1,835,000 ordinary shares in the issued share capital of the Company. Accordingly, for the purpose of the Securities and Futures Act 2001 and the Securities and Futures (Disclosure of Interests) Regulation 2012, Mr. Oh has a deemed interest in the 367,835,000 ordinary shares held by MiTB and Ms. Yong.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings set out above immediately before and after the transaction are calculated based on the issued share capital of the Company of 495,000,000 ordinary shares as at 18 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the transfer of 5,000,000 ordinary shares held pursuant to the stabilisation arrangement back to Mi Technovation Berhad",
-    "acting_party": null,
-    "company_name": "Mi Material Holding Limited",
-    "transaction_reference": "156224643330552"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S91NPBOSXMGRH79D/911824__eFORM1V2_Tai%20Mern%20Tze_F.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "buy",
-    "holder_name": "Tai Mern Tze",
-    "transaction_value": 3500,
-    "share_percentage_transaction": {
-      "total": 1e-05,
-      "deemed": 0.0,
-      "direct": 1e-05
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 30000,
-          "percentage": 2e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 30000,
-          "percentage": 2e-05
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 20000,
-          "percentage": 1e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 20000,
-          "percentage": 1e-05
-        }
-      }
-    },
-    "symbol": "RE4.SI",
-    "price_per_share": [
-      {
-        "price": 0.35,
-        "amount": 10000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Tai Mern Tze buys S$3,500 of Geo Energy Resources Ltd shares",
-    "body": "Tai Mern Tze bought 10,000 shares of Geo Energy Resources Ltd in a market transaction at S$0.35 per share, for a total of S$3,500. Total interest rises from 20,000 to 30,000 shares, with the stake unchanged at less than 0.01%.",
-    "sector": "energy",
-    "sub_sector": "oil-gas-coal",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N.A.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of total number of voting shares immediately after the transaction is calculated based on the total issued share capital of 1,769,268,726 shares (excluding 12,304,867 treasury shares) in the capital of the Listed Issuer as at 16 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Geo Energy Resources Ltd",
-    "transaction_reference": "502392346442529"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S91NPBOSXMGRH79D/911824__eFORM1V2_Tai%20Mern%20Tze_F.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "sell",
-    "holder_name": "Tai Mern Tze",
-    "transaction_value": 4200,
-    "share_percentage_transaction": {
-      "total": 1e-05,
-      "deemed": 0.0,
-      "direct": 1e-05
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 20000,
-          "percentage": 1e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 20000,
-          "percentage": 1e-05
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 30000,
-          "percentage": 2e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 30000,
-          "percentage": 2e-05
-        }
-      }
-    },
-    "symbol": "RE4.SI",
-    "price_per_share": [
-      {
-        "price": 0.42,
-        "amount": 10000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Tai Mern Tze sells S$4,200 of Geo Energy Resources Ltd shares",
-    "body": "Tai Mern Tze sold 10,000 shares of Geo Energy Resources Ltd in a market transaction at S$0.42 per share, for a total of S$4,200. Total interest falls from 30,000 to 20,000 shares, with the stake unchanged at less than 0.01%.",
-    "sector": "energy",
-    "sub_sector": "oil-gas-coal",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N.A.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of total number of voting shares immediately after the transaction is calculated based on the total issued share capital of 1,769,268,726 shares (excluding 12,304,867 treasury shares) in the capital of the Listed Issuer as at 18 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Geo Energy Resources Ltd",
-    "transaction_reference": "009514643324941"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/S91NPBOSXMGRH79D/911824__eFORM1V2_Tai%20Mern%20Tze_F.pdf",
-    "timestamp": "2026-11-18",
-    "transaction_type": "buy",
-    "holder_name": "Tai Mern Tze",
-    "transaction_value": 4250,
-    "share_percentage_transaction": {
-      "total": 1e-05,
-      "deemed": 0.0,
-      "direct": 1e-05
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 30000,
-          "percentage": 2e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 30000,
-          "percentage": 2e-05
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 20000,
-          "percentage": 1e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 20000,
-          "percentage": 1e-05
-        }
-      }
-    },
-    "symbol": "RE4.SI",
-    "price_per_share": [
-      {
-        "price": 0.425,
-        "amount": 10000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Tai Mern Tze buys S$4,250 of Geo Energy Resources Ltd shares",
-    "body": "Tai Mern Tze bought 10,000 shares of Geo Energy Resources Ltd in a market transaction at S$0.425 per share, for a total of S$4,250. Total interest rises from 20,000 to 30,000 shares, with the stake unchanged at less than 0.01%.",
-    "sector": "energy",
-    "sub_sector": "oil-gas-coal",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N.A.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of total number of voting shares immediately after the transaction is calculated based on the total issued share capital of 1,769,268,726 shares (excluding 12,304,867 treasury shares) in the capital of the Listed Issuer as at 18 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Geo Energy Resources Ltd",
-    "transaction_reference": "418024643336632"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FKVCK925YM3CQ9QT/911822__eFORM1V2%20-%20SLC%20-%20Form%201-for%20%20release%20on%2018%20Nov%202026.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "buy",
-    "holder_name": "Ow Chio Kiat",
-    "transaction_value": 449388,
-    "share_percentage_transaction": {
-      "total": 0.00064,
-      "deemed": 0.0,
-      "direct": 0.00064
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 701729442,
-          "percentage": 0.47013
-        },
-        "deemed": {
-          "amount": 55632753,
-          "percentage": 0.03727
-        },
-        "direct": {
-          "amount": 646096689,
-          "percentage": 0.43286
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 700771442,
-          "percentage": 0.46949
-        },
-        "deemed": {
-          "amount": 55632753,
-          "percentage": 0.03727
-        },
-        "direct": {
-          "amount": 645138689,
-          "percentage": 0.43222
-        }
-      }
-    },
-    "symbol": "H07.SI",
-    "price_per_share": [
-      {
-        "price": 0.46909,
-        "amount": 958000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Ow Chio Kiat buys S$449K of Stamford Land Corp Ltd shares",
-    "body": "Ow Chio Kiat bought 958,000 shares of Stamford Land Corp Ltd in a market transaction at S$0.4691 per share, for a total of S$449,388. Total interest rises from 700,771,442 shares (46.95%) to 701,729,442 shares (47.01%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "hotels-resorts-leisure",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The filer is deemed interested in 55,632,753 Ordinary Shares.",
-    "relationship_text": null,
-    "remarks_text": "The shareholding percentages shown immediately before and after the transaction are computed based on 1,492,624,425 issued shares excluding treasury shares in the Company as at 28 September 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Stamford Land Corp Ltd",
-    "transaction_reference": "490544643299584"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FKVCK925YM3CQ9QT/911822__eFORM1V2%20-%20SLC%20-%20Form%201-for%20%20release%20on%2018%20Nov%202026.pdf",
-    "timestamp": "2026-11-16",
-    "transaction_type": "sell",
-    "holder_name": "Ow Chio Kiat",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.00013,
-      "deemed": 0.00013,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 701529442,
-          "percentage": 0.47
-        },
-        "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
-        },
-        "direct": {
-          "amount": 646096689,
-          "percentage": 0.43286
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 701729442,
-          "percentage": 0.47013
-        },
-        "deemed": {
-          "amount": 55632753,
-          "percentage": 0.03727
-        },
-        "direct": {
-          "amount": 646096689,
-          "percentage": 0.43286
-        }
-      }
-    },
-    "symbol": "H07.SI",
-    "price_per_share": [],
-    "holder_type": "insider",
-    "title": "Ow Chio Kiat's deemed interest in Stamford Land Corp Ltd falls after share sale",
-    "body": "Ow Chio Kiat's deemed interest in Stamford Land Corp Ltd fell after a party linked to the holder sold shares in a market transaction. The direct holding is unchanged at 646,096,689 shares. Total interest falls from 701,729,442 shares (47.01%) to 701,529,442 shares (47.00%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "hotels-resorts-leisure",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The filer is deemed interested in 55,432,753 Ordinary Shares.",
-    "relationship_text": null,
-    "remarks_text": "The shareholding percentages shown immediately before and after the transaction are computed based on 1,492,624,425 issued shares excluding treasury shares in the Company as at 28 September 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Stamford Land Corp Ltd",
-    "transaction_reference": "882623464158811"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FKVCK925YM3CQ9QT/911822__eFORM1V2%20-%20SLC%20-%20Form%201-for%20%20release%20on%2018%20Nov%202026.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
     "timestamp": "2026-11-17",
-    "transaction_type": "buy",
-    "holder_name": "Ow Chio Kiat",
-    "transaction_value": 397056,
+    "transaction_type": "sell",
+    "holder_name": "FIL Investment Management (Singapore) Limited",
+    "transaction_value": 876612,
     "share_percentage_transaction": {
-      "total": 0.00057,
-      "deemed": 0.0,
-      "direct": 0.00057
+      "total": 0.0003,
+      "deemed": 0.0003,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 702374242,
-          "percentage": 0.47057
+          "amount": 99207500,
+          "percentage": 0.0573
         },
         "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
+          "amount": 99207500,
+          "percentage": 0.0573
         },
         "direct": {
-          "amount": 646941489,
-          "percentage": 0.43343
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 701529442,
-          "percentage": 0.47
+          "amount": 99689800,
+          "percentage": 0.0576
         },
         "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
+          "amount": 99689800,
+          "percentage": 0.0576
         },
         "direct": {
-          "amount": 646096689,
-          "percentage": 0.43286
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "H07.SI",
+    "symbol": "8C8U.SI",
     "price_per_share": [
       {
-        "price": 0.47,
-        "amount": 844800
+        "price": 1.054,
+        "amount": 831700
       }
     ],
-    "holder_type": "insider",
-    "title": "Ow Chio Kiat buys S$397K of Stamford Land Corp Ltd shares",
-    "body": "Ow Chio Kiat bought 844,800 shares of Stamford Land Corp Ltd in a market transaction at S$0.47 per share, for a total of S$397,056. Total interest rises from 701,529,442 shares (47.00%) to 702,374,242 shares (47.06%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "hotels-resorts-leisure",
+    "holder_type": "institution",
+    "title": "FIL Investment Management (Singapore) Limited's deemed interest in Centurion Accommodation REIT falls after unit sale",
+    "body": "FIL Investment Management (Singapore) Limited's deemed interest in Centurion Accommodation REIT fell after a party linked to the holder sold units in a market transaction. The holders giving notice together sold 831,700 units at S$1.054 per unit, for a total of S$876,612. No units are held directly. Total interest falls from 99,689,800 units (5.76%) to 99,207,500 units (5.73%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "The filer is deemed interested in 55,432,753 Ordinary Shares.",
-    "relationship_text": null,
-    "remarks_text": "The shareholding percentages shown immediately before and after the transaction are computed based on 1,492,624,425 issued shares excluding treasury shares in the Company as at 28 September 2026.",
-    "filing_type": "form_1",
+    "deemed_interest_text": "FIL Investment Management (Singapore) Limited's interests in the shares of CENTURION ACCOMMODATION REIT are currently entirely comprised as deemed interests.  FIL Investment Management (Singapore) Limited is deemed to have interests in the shares of CENTURION ACCOMMODATION REIT because such shares are held by funds and/or accounts managed by FIL Investment Management (Singapore) Limited, which is the fund manager.",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "Stamford Land Corp Ltd",
-    "transaction_reference": "660333464249422"
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/41YQUOIT4ER3U4TW/911945__eFORM3V2-final%2019Nov2026.pdf",
+    "timestamp": "2026-11-17",
+    "transaction_type": "sell",
+    "holder_name": "Fidelity Funds",
+    "transaction_value": 876612,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0,
+      "direct": 0.0003
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 100240700,
+          "percentage": 0.0579
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 100240700,
+          "percentage": 0.0579
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 100814400,
+          "percentage": 0.0582
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 100814400,
+          "percentage": 0.0582
+        }
+      }
+    },
+    "symbol": "8C8U.SI",
+    "price_per_share": [
+      {
+        "price": 1.054,
+        "amount": 831700
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Fidelity Funds sells units of Centurion Accommodation REIT",
+    "body": "Fidelity Funds sold units of Centurion Accommodation REIT in a market transaction. The holders giving notice together sold 831,700 units at S$1.054 per unit, for a total of S$876,612. Total interest falls from 100,814,400 units (5.82%) to 100,240,700 units (5.79%).",
+    "sector": "reit",
+    "sub_sector": "reit-hospitality",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "N/A",
+    "relationship_text": "Fidelity Funds is interested in the shares of CENTURION ACCOMMODATION REIT in its capacity as beneficial owner.FIL Investment Management (Hong Kong) Limited, FIL Investment Management (Singapore) Limited and FIL Holdings (Luxembourg) S.a r.l. are deemed interested in the shares in its capacity as investment advisor of various funds and accounts.  FIL Investment Management (Hong Kong) Limited and FIL Investment Management (Singapore) Limited are wholly-owned subsidiaries of FIL Asia Holdings Pte Limited. FIL Holdings (Luxembourg) S.a r.l. is a wholly-owned subsidiary of FIL Limited. FIL Asia Holdings Pte Limited is a wholly-owned subsidiary of FIL Financial Services Holdings 2 Limited. FIL Financial Services Holdings 2 Limited is deemed interested in the direct and/or deemed interests of its direct and indirect subsidiaries. FIL Financial Services Holdings 2 Limited is 93.62% owned by FIL Financial Services Holdings Limited, a direct subsidiary of FIL Limited, and 6.38% directly owned by FIL Limited. FIL Limited and FIL Financial Services Holdings Limited are privately owned companies incorporated under the laws of Bermuda. Pandanus Partners L.P. is deemed interested in the shares held by FIL Limited. Pandanus Associates Inc. is deemed interested in the shares held by Pandanus Partners L.P.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Centurion Accommodation REIT",
+    "transaction_reference": "009334643427883"
   }
 ]
