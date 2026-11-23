@@ -1,1 +1,1041 @@
-[]
+[
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/GS6R47E03Z7AN5HJ/912292__eForm3_19Nov2026_BlackRock.pdf",
+    "timestamp": "2026-11-19",
+    "transaction_type": "buy",
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": 209188,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 349736651,
+          "percentage": 0.07
+        },
+        "deemed": {
+          "amount": 349736651,
+          "percentage": 0.07
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 349640251,
+          "percentage": 0.0699
+        },
+        "deemed": {
+          "amount": 349640251,
+          "percentage": 0.0699
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "A17U.SI",
+    "price_per_share": [
+      {
+        "price": 2.17,
+        "amount": 96400
+      }
+    ],
+    "holder_type": "institution",
+    "title": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT rises after S$209K share purchase",
+    "body": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT rose after a party linked to the holder bought 96,400 shares in a market transaction at S$2.17 per share, for a total of S$209,188. No shares are held directly. Total interest rises from 349,640,251 shares (6.99%) to 349,736,651 shares (7.00%).",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "BlackRock, Inc. holds a deemed interest  through various BlackRock, Inc. subsidiaries as set out below. 1.Aperio Group, LLC 2.BlackRock Advisors, LLC 3.BlackRock Financial Management, Inc. 4.BlackRock France SAS 5.BlackRock Investment Management, LLC 6.BlackRock Investment Management (Australia) Limited 7.BlackRock (Luxembourg) S.A. 8.BlackRock (Netherlands) B.V. 9.BlackRock Fund Managers Ltd 10.BlackRock Life Limited 11.BlackRock Asset Management Canada Limited 12.BlackRock Asset Management Ireland Limited 13.BlackRock Asset Management North Asia Limited 14.BlackRock Asset Management Schweiz AG 15.BlackRock (Singapore) Limited 16.BlackRock Advisors (UK) Limited 17.BlackRock Fund Advisors 18.BlackRock Investment Management (Taiwan) Limited 19.BlackRock Institutional Trust Company, N.A. 20.BlackRock Japan Co Ltd 21.BlackRock Investment Management (UK) Ltd 22.iShares (DE) I Investmentaktiengesellschaft mit Teilgesellschaftsvermögen",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "CapitaLand Ascendas REIT",
+    "transaction_reference": "255414046656952"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/31V31EKJ8MYYU35K/912256__eFORM6V2_CICTML.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "CapitaLand Integrated Commercial Trust Management Limited",
+    "transaction_value": 8145722,
+    "share_percentage_transaction": {
+      "total": 0.0004,
+      "deemed": 0.0,
+      "direct": 0.0004
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 94794357,
+          "percentage": 0.0118
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 94794357,
+          "percentage": 0.0118
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 91177251,
+          "percentage": 0.0114
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 91177251,
+          "percentage": 0.0114
+        }
+      }
+    },
+    "symbol": "C38U.SI",
+    "price_per_share": [
+      {
+        "price": 2.252,
+        "amount": 3617106
+      }
+    ],
+    "holder_type": "insider",
+    "title": "CapitaLand Integrated Commercial Trust Management Limited receives 3.6M CapitaLand Integrated Commercial Trust units as management fees",
+    "body": "CapitaLand Integrated Commercial Trust Management Limited received 3,617,106 units of CapitaLand Integrated Commercial Trust as payment of management fees, valued at S$2.252 per unit, or S$8,145,722 in total. Total interest rises from 91,177,251 units (1.14%) to 94,794,357 units (1.18%).",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Not applicable.",
+    "relationship_text": null,
+    "remarks_text": "Notes to this Part II - Transaction Details (1) In relation to Table 1 of item 8 of Transaction A, the percentage of total number of units held \"Immediately before the transaction\" is based on 7,974,048,554 units in CapitaLand Integrated Commercial Trust (\"CICT\", and units in CICT, \"Units\") as at 11 September 2026 (being the last change in the total number of Units), and the percentage of total number of units held \"Immediately after the transaction\" is based on 7,977,665,660 Units as at 23 November 2026 following the issuance of Units in respect of Transaction A. (2) The percentages are rounded down to the nearest 0.01%. (3) Please refer to item 12 in respect of Transaction B below for further details in relation to Transaction A.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities as part of management",
+    "change_reason": "the issuance of Units in respect of Transaction A",
+    "acting_party": null,
+    "company_name": "CapitaLand Integrated Commercial Trust",
+    "transaction_reference": "327345346453866"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/31V31EKJ8MYYU35K/912256__eFORM6V2_CICTML.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "CapitaLand Integrated Commercial Trust Management Limited",
+    "transaction_value": 8145722,
+    "share_percentage_transaction": {
+      "total": 0.0004,
+      "deemed": 0.0,
+      "direct": 0.0004
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 91177251,
+          "percentage": 0.0114
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 91177251,
+          "percentage": 0.0114
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 94794357,
+          "percentage": 0.0118
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 94794357,
+          "percentage": 0.0118
+        }
+      }
+    },
+    "symbol": "C38U.SI",
+    "price_per_share": [
+      {
+        "price": 2.252,
+        "amount": 3617106
+      }
+    ],
+    "holder_type": "insider",
+    "title": "CapitaLand Integrated Commercial Trust Management Limited sells S$8.1M of CapitaLand Integrated Commercial Trust units received as management fees",
+    "body": "CapitaLand Integrated Commercial Trust Management Limited sold 3,617,106 units of CapitaLand Integrated Commercial Trust received as management fees at S$2.252 per unit, for a total of S$8,145,722. Total interest falls from 94,794,357 units (1.18%) to 91,177,251 units (1.14%).",
+    "sector": "reit",
+    "sub_sector": "reit-diversified",
+    "tags": [
+      "management-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Not applicable.",
+    "relationship_text": null,
+    "remarks_text": "Notes to this Part II - Transaction Details (1) In relation to Table 1 of item 8 of Transaction B, the percentage of total number of units held \"immediately before the transaction\" and \"Immediately after the transaction\" is based on 7,977,665,660 Units as at 23 November 2026 following the issuance of Units in respect of Transaction A. The percentage are rounded down to the nearest 0.01%. (2) In relation to item 7 of Transactions A and B, CICTML is entitled to receive 3,617,106 Units at an issue price of $2.2520 per Unit as payment of 50.0% of the base component of the management fee for the period from 1 July 2026 to 30 September 2026 (both dates inclusive) in relation to the management of investments (including properties) that are held by CICT and/or its subsidiaries. (3) CICTML has sold the 3,617,106 Units which it is entitled to receive, to Premier Healthcare Services International Pte Ltd (\"Premier\"), a related corporation of CICTML, and in connection with the sale, CICTML has directed that such Units be issued directly to Premier instead of CICTML.",
+    "filing_type": "form_6",
+    "notification_type": null,
+    "circumstance_key": "Securities via off-market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "CapitaLand Integrated Commercial Trust",
+    "transaction_reference": "251414643530281"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/F5U42LENVULHHAE2/912250__eFORM3V2%20-%20HYE.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Hung Yung Enterprise Sdn Bhd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 97410111,
+          "percentage": 0.24285
+        },
+        "deemed": {
+          "amount": 91011015,
+          "percentage": 0.2269
+        },
+        "direct": {
+          "amount": 6399096,
+          "percentage": 0.01595
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 97210111,
+          "percentage": 0.24235
+        },
+        "deemed": {
+          "amount": 90811015,
+          "percentage": 0.2264
+        },
+        "direct": {
+          "amount": 6399096,
+          "percentage": 0.01595
+        }
+      }
+    },
+    "symbol": "1MZ.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Hung Yung Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rises after share purchase",
+    "body": "Hung Yung Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought shares in a market transaction. The direct holding is unchanged at 6,399,096 shares. Total interest rises from 97,210,111 shares (24.23%) to 97,410,111 shares (24.29%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Hung Yung Enterprise Sdn Bhd is deemed to have an interest in the shares held by Tan Sri Datuk Tiong Su Kouk, Puan Sri Datin Wong Bak Hee, UOB Kay Hian Pte Ltd, S.K. Tiong Enterprise Sdn Bhd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises of: (a) S.K. Tiong Enterprise Sdn Bhd - 11,486,856 shares (b) Tan Sri Datuk Tiong Su Kouk - 69,285,684  shares (c) Phillip Securities Pte Ltd - 500 shares (d) UOB Kay Hian Pte Ltd - 8,859,423 shares (e) Puan Sri Datin Wong Bak Hee - 1,378,552 shares",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "718318346451419"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XF5LEREDJ5CKYJMB/912248__eFORM3V2%20-%20SKT.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "S.K. Tiong Enterprise Sdn Bhd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 97410111,
+          "percentage": 0.24285
+        },
+        "deemed": {
+          "amount": 85923255,
+          "percentage": 0.21421
+        },
+        "direct": {
+          "amount": 11486856,
+          "percentage": 0.02864
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 97210111,
+          "percentage": 0.24235
+        },
+        "deemed": {
+          "amount": 85723255,
+          "percentage": 0.21371
+        },
+        "direct": {
+          "amount": 11486856,
+          "percentage": 0.02864
+        }
+      }
+    },
+    "symbol": "1MZ.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "S.K. Tiong Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rises after share purchase",
+    "body": "S.K. Tiong Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought shares in a market transaction. The direct holding is unchanged at 11,486,856 shares. Total interest rises from 97,210,111 shares (24.23%) to 97,410,111 shares (24.29%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "S.K. Tiong Enterprise Sdn Bhd is deemed to have an interest in the shares held by Tan Sri Datuk Tiong Su Kouk, Puan Sri Datin Wong Bak Hee, Hung Yung Enterprise Sdn Bhd, UOB Kay Hian Pte Ltd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises: (a) Hung Yung Enterprise Sdn Bhd - 6,399,096 shares (b) Tan Sri Datuk Tiong Su Kouk - 69,285,684 shares (c) Phillip Securities Pte Ltd - 500 shares (d) UOB Kay Hian Pte Ltd - 8,859,423 shares (e) Puan Sri Datin Wong Bak Hee - 1,378,552 shares",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "342218346452933"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VY14O8MCZ8TSA4RL/912246__eFORM3V2%20-%20PSW.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Puan Sri Datin Wong Bak Hee",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.00049,
+      "deemed": 0.00049,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 97410111,
+          "percentage": 0.24285
+        },
+        "deemed": {
+          "amount": 96031559,
+          "percentage": 0.23941
+        },
+        "direct": {
+          "amount": 1378552,
+          "percentage": 0.00344
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 97210111,
+          "percentage": 0.24236
+        },
+        "deemed": {
+          "amount": 95831559,
+          "percentage": 0.23892
+        },
+        "direct": {
+          "amount": 1378552,
+          "percentage": 0.00344
+        }
+      }
+    },
+    "symbol": "1MZ.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Puan Sri Datin Wong Bak Hee's deemed interest in Nam Cheong Ltd rises after share purchase",
+    "body": "Puan Sri Datin Wong Bak Hee's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought shares in a market transaction. The direct holding is unchanged at 1,378,552 shares. Total interest rises from 97,210,111 shares (24.24%) to 97,410,111 shares (24.29%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Puan Sri Datin Wong Bak Hee is deemed to have an interest in the shares held by her husband, Tan Sri Datuk Tiong Su Kouk, S.K. Tiong Enterprise Sdn Bhd, Hung Yung Enterprise Sdn Bhd, UOB Kay Hian Pte Ltd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises: (a) S.K. Tiong Enterprise Sdn Bhd - 11,486,856 shares (b) Hung Yung Enterprise Sdn Bhd - 6,399,096 shares (c) Tan Sri Datuk Tiong Su Kouk - 69,285,684 shares (d) Phillip Securities Pte Ltd - 500 shares (e) UOB Kay Hian Pte Ltd - 8,859,423 shares",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "695318346451750"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/Q6ZHXW04DMICYVRN/912244__eFORM1V2%20-%20TST.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Tan Sri Datuk Tiong Su Kouk",
+    "transaction_value": 136500,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 97410111,
+          "percentage": 0.24285
+        },
+        "deemed": {
+          "amount": 28124427,
+          "percentage": 0.07012
+        },
+        "direct": {
+          "amount": 69285684,
+          "percentage": 0.17273
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 97210111,
+          "percentage": 0.24235
+        },
+        "deemed": {
+          "amount": 27924427,
+          "percentage": 0.06962
+        },
+        "direct": {
+          "amount": 69285684,
+          "percentage": 0.17273
+        }
+      }
+    },
+    "symbol": "1MZ.SI",
+    "price_per_share": [
+      {
+        "price": 0.6825,
+        "amount": 200000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Tan Sri Datuk Tiong Su Kouk's deemed interest in Nam Cheong Ltd rises after S$136K share purchase",
+    "body": "Tan Sri Datuk Tiong Su Kouk's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought 200,000 shares in a market transaction at S$0.6825 per share, for a total of S$136,500. The direct holding is unchanged at 69,285,684 shares. Total interest rises from 97,210,111 shares (24.23%) to 97,410,111 shares (24.29%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Tan Sri Datuk Tiong Su Kouk is deemed to have an interest in the shares held by his wife, Puan Sri Datin Wong Bak Hee, S.K. Tiong Enterprise Sdn Bhd, Hung Yung Enterprise Sdn Bhd, UOB Kay Hian Pte Ltd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises:- (a) Puan Sri Datin Wong Bak Hee - 1,378,552 shares (b) S.K. Tiong Enterprise Sdn Bhd - 11,486,856 shares (c) Hung Yung Enterprise Sdn Bhd - 6,399,096 shares (d) UOB Kay Hian Pte Ltd - 8,859,423 shares (e) Phillip Securities Pte Ltd - 500 shares",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "654398346441249"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/8RRBW775QJSL1HIJ/912241__eFORM1_ChengWK_231126_Final.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "buy",
+    "holder_name": "Cheng Wai Keung",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 489092859,
+          "percentage": 0.6395
+        },
+        "deemed": {
+          "amount": 488878459,
+          "percentage": 0.6392
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 489042859,
+          "percentage": 0.6394
+        },
+        "deemed": {
+          "amount": 488828459,
+          "percentage": 0.6391
+        },
+        "direct": {
+          "amount": 214400,
+          "percentage": 0.0003
+        }
+      }
+    },
+    "symbol": "W05.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 50000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 50,000 shares",
+    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 50,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 489,042,859 shares (63.94%) to 489,092,859 shares (63.95%).",
+    "sector": "properties-real-estate",
+    "sub_sector": "real-estate-development",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 50,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 50,000 WTH shares by the holder's spouse",
+    "acting_party": "Chow Helen",
+    "company_name": "Wing Tai Holdings Ltd",
+    "transaction_reference": "652790346342301"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WZOG9CATLXVRR7TR/912237__20261120Form1_GSC.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Dato' Seri Gooi Soon Chai",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 102012091,
+          "percentage": 0.2154
+        },
+        "deemed": {
+          "amount": 93695068,
+          "percentage": 0.1978
+        },
+        "direct": {
+          "amount": 8317023,
+          "percentage": 0.0176
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 102011091,
+          "percentage": 0.2154
+        },
+        "deemed": {
+          "amount": 93694068,
+          "percentage": 0.1978
+        },
+        "direct": {
+          "amount": 8317023,
+          "percentage": 0.0176
+        }
+      }
+    },
+    "symbol": "E28.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 1000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd rises after purchase of 1,000 shares",
+    "body": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd rose after the holder's family bought 1,000 shares. The direct holding is unchanged at 8,317,023 shares. Total interest rises from 102,011,091 to 102,012,091 shares, with the stake unchanged at 21.54%.",
+    "sector": "technology",
+    "sub_sector": "communication-instruments",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Dato' Seri Gooi Soon Chai is deemed to have an interest in the 4,031,047 shares held by his family, 12,392,882 shares held by Prime Logic (M) Sdn. Bhd., 20,829,500 shares held by Sinn Hin Company Sdn. Bhd., 41,954,194 shares held by Precico Holdings Sdn. Bhd., and 14,487,445 shares held by Cayman Resources Sdn. Bhd. by virtue of Section 4 of the Securities and Futures Act (Chapter 289) and Section 7 of the Companies Act (Chapter 50).",
+    "relationship_text": null,
+    "remarks_text": "The percentage of issued share capital is calculated based on 473,570,000 shares (excluding treasury shares).",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 1,000 shares by his family via market transaction",
+    "acting_party": "the holder's family",
+    "company_name": "Frencken Group Ltd",
+    "transaction_reference": "932498742942949"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/T8U84IZXI7T0OUNK/912220__eFORM3V2-Pang%20Yoke%20Chun-20261123.pdf",
+    "timestamp": "2026-11-19",
+    "transaction_type": "buy",
+    "holder_name": "Pang Yoke Chun",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.00113,
+      "deemed": 0.00113,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 84717485,
+          "percentage": 0.18406
+        },
+        "deemed": {
+          "amount": 78604396,
+          "percentage": 0.17078
+        },
+        "direct": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 84194285,
+          "percentage": 0.18293
+        },
+        "deemed": {
+          "amount": 78081196,
+          "percentage": 0.16965
+        },
+        "direct": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        }
+      }
+    },
+    "symbol": "500.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 523200
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rises after purchase of 523K shares",
+    "body": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rose after Lim Boon Hock Bernard bought 523,200 shares in a market transaction. The direct holding is unchanged at 6,113,089 shares. Total interest rises from 84,194,285 shares (18.29%) to 84,717,485 shares (18.41%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mdm. Pang Yoke Chun is deemed to have an interest in 78,604,396 shares held by her husband, Mr. Lim Boon Hock Bernard.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 23 November 2026. Substantial Shareholder finds reporting every change in interest convenient and less prone to omissions.  This voluntary disclosure has been made even though the change in interest in shares did not cross a percentage level.",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": "Lim Boon Hock Bernard",
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "826315346454110"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/T8U84IZXI7T0OUNK/912220__eFORM3V2-Pang%20Yoke%20Chun-20261123.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Pang Yoke Chun",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.00046,
+      "deemed": 0.00046,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 84927585,
+          "percentage": 0.18452
+        },
+        "deemed": {
+          "amount": 78814496,
+          "percentage": 0.17124
+        },
+        "direct": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 84717485,
+          "percentage": 0.18406
+        },
+        "deemed": {
+          "amount": 78604396,
+          "percentage": 0.17078
+        },
+        "direct": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        }
+      }
+    },
+    "symbol": "500.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 210100
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rises after purchase of 210K shares",
+    "body": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rose after Lim Boon Hock Bernard bought 210,100 shares in a market transaction. The direct holding is unchanged at 6,113,089 shares. Total interest rises from 84,717,485 shares (18.41%) to 84,927,585 shares (18.45%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mdm. Pang Yoke Chun is deemed to have an interest in 78,814,496 shares held by her husband, Mr. Lim Boon Hock Bernard.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 23 November 2026. Substantial Shareholder finds reporting every change in interest convenient and less prone to omissions.  This voluntary disclosure has been made even though the change in interest in shares did not cross a percentage level.",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": "Lim Boon Hock Bernard",
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "634314643542971"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/R934OT2GDS32SYOV/912218__eFORM1V2-Bernard%20Lim-20261123.pdf",
+    "timestamp": "2026-11-19",
+    "transaction_type": "buy",
+    "holder_name": "Lim Boon Hock Bernard",
+    "transaction_value": 256158,
+    "share_percentage_transaction": {
+      "total": 0.00113,
+      "deemed": 0.0,
+      "direct": 0.00113
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 84717485,
+          "percentage": 0.18406
+        },
+        "deemed": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        },
+        "direct": {
+          "amount": 78604396,
+          "percentage": 0.17078
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 84194285,
+          "percentage": 0.18293
+        },
+        "deemed": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        },
+        "direct": {
+          "amount": 78081196,
+          "percentage": 0.16965
+        }
+      }
+    },
+    "symbol": "500.SI",
+    "price_per_share": [
+      {
+        "price": 0.4896,
+        "amount": 523200
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Boon Hock Bernard buys S$256K of Tai Sin Electric Ltd shares",
+    "body": "Lim Boon Hock Bernard bought 523,200 shares of Tai Sin Electric Ltd in a market transaction at S$0.4896 per share, for a total of S$256,158. Total interest rises from 84,194,285 shares (18.29%) to 84,717,485 shares (18.41%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr. Lim Boon Hock Bernard is deemed to have an interest in 6,113,089 shares held by his wife, Mdm. Pang Yoke Chun.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "312295346444403"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/R934OT2GDS32SYOV/912218__eFORM1V2-Bernard%20Lim-20261123.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Lim Boon Hock Bernard",
+    "transaction_value": 102648,
+    "share_percentage_transaction": {
+      "total": 0.00046,
+      "deemed": 0.0,
+      "direct": 0.00046
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 84927585,
+          "percentage": 0.18452
+        },
+        "deemed": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        },
+        "direct": {
+          "amount": 78814496,
+          "percentage": 0.17124
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 84717485,
+          "percentage": 0.18406
+        },
+        "deemed": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        },
+        "direct": {
+          "amount": 78604396,
+          "percentage": 0.17078
+        }
+      }
+    },
+    "symbol": "500.SI",
+    "price_per_share": [
+      {
+        "price": 0.48857,
+        "amount": 210100
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Boon Hock Bernard buys S$103K of Tai Sin Electric Ltd shares",
+    "body": "Lim Boon Hock Bernard bought 210,100 shares of Tai Sin Electric Ltd in a market transaction at S$0.4886 per share, for a total of S$102,648. Total interest rises from 84,717,485 shares (18.41%) to 84,927,585 shares (18.45%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr. Lim Boon Hock Bernard is deemed to have an interest in 6,113,089 shares held by his wife, Mdm. Pang Yoke Chun.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "549214643546791"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/XJSOJTEW67NXD5PW/912215__20261123%20RS%20eFORM1V2%20-%20Final.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Ravinder Sajwan",
+    "transaction_value": 72609,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 686295954,
+          "percentage": 0.6246
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6217
+        },
+        "direct": {
+          "amount": 3222912,
+          "percentage": 0.0029
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 686139154,
+          "percentage": 0.6245
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6217
+        },
+        "direct": {
+          "amount": 3066112,
+          "percentage": 0.0028
+        }
+      }
+    },
+    "symbol": "ULG.SI",
+    "price_per_share": [
+      {
+        "price": 0.4631,
+        "amount": 156800
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Ravinder Sajwan buys S$72,609 of Ultragreen Ai Ltd shares",
+    "body": "Ravinder Sajwan bought 156,800 shares of Ultragreen Ai Ltd in a market transaction at S$0.4631 per share, for a total of S$72,609. Total interest rises from 686,139,154 shares (62.45%) to 686,295,954 shares (62.46%).",
+    "sector": "healthcare",
+    "sub_sector": "healthcare-facilities-services",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "The business and affairs of IR Investments LP are managed by a board of managers (the “IR Board of Managers”). IR Holding Company Inc., the general partner of IR Investments LP, has on 15 December 2019 appointed Mr Sajwan as the sole and initial member of the IR Board of Managers. Mr Sajwan is also a Protector of The Saul Trust and a member of Saul Strategic Limited (which holds 100% of Saul Holdings Pte. Ltd.’s ordinary shares). Accordingly, for the purposes of the Securities and Futures Act 2001 of Singapore and the Securities and Futures (Disclosure of Interests) Regulations 2012, Mr Sajwan has a deemed interest in the Shares held by Renew Group Private Limited.",
+    "relationship_text": null,
+    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,098,647,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 20 NOVEMBER 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Ultragreen Ai Ltd",
+    "transaction_reference": "223644643897514"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/30YH9SEYQ58678TQ/912177__eFORM3-BMPL.pdf",
+    "timestamp": "2026-10-22",
+    "transaction_type": "others",
+    "holder_name": "Bibace Management Pte Ltd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.3305,
+      "deemed": 0.3305,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 286519882,
+          "percentage": 0.3305
+        },
+        "deemed": {
+          "amount": 286519882,
+          "percentage": 0.3305
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "B58.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "Bibace Management Pte Ltd becomes substantial shareholder of Banyan Tree Holdings Ltd with 33.05% stake",
+    "body": "Bibace Management Pte Ltd's deemed interest in Banyan Tree Holdings Ltd moved from 0.00% to 33.05% following a transfer of shares. No shares are held directly. Total interest rises from 0 shares (0.00%) to 286,519,882 shares (33.05%). With this, the holder becomes a substantial shareholder of Banyan Tree Holdings Ltd.",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
+    "tags": [
+      "transfer"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Bibace Investments Ltd(\"BI\") is an existing substantial shareholder of Banyan Tree Holdings Limited (BTH\") through BTH shares held by its nominee, HSBC (Singapore) Nominees Pte Ltd. Bibace Management Pte Ltd (\"BMPL”), acting as trustee of The Bibace Trust after the transfer, has a deemed interest in the 286,519,882 BTH shares in which BI has an interest.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "becoming",
+    "circumstance_key": null,
+    "change_reason": "the transfer of all voting shares in Bibace Investments Ltd to Bibace Management Pte Ltd",
+    "acting_party": null,
+    "company_name": "Banyan Tree Holdings Ltd",
+    "transaction_reference": "098517346454190"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KPQ3075OFX76Q5NX/912175__eFORM3-BMCL.pdf",
+    "timestamp": "2026-10-22",
+    "transaction_type": "others",
+    "holder_name": "Bibace Management Company Limited",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.3305,
+      "deemed": 0.3305,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 286519882,
+          "percentage": 0.3305
+        },
+        "deemed": {
+          "amount": 286519882,
+          "percentage": 0.3305
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "B58.SI",
+    "price_per_share": [],
+    "holder_type": "institution",
+    "title": "Bibace Management Company Limited ceases to be substantial shareholder of Banyan Tree Holdings Ltd",
+    "body": "Bibace Management Company Limited's deemed interest in Banyan Tree Holdings Ltd moved from 33.05% to 0.00% following a transfer of shares. No shares are held directly. Total interest falls from 286,519,882 shares (33.05%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Banyan Tree Holdings Ltd.",
+    "sector": "consumer-cyclicals",
+    "sub_sector": "hotels-resorts-leisure",
+    "tags": [
+      "transfer"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Bibace Investments Ltd(\"BI\") is an existing substantial shareholder of Banyan Tree Holdings Limited (BTH\") through BTH shares held by its nominees, HSBC (Singapore) Nominees Pte Ltd. Bibace Management Company Limited (\"BMCL”), which was trustee of The Bibace Trust before the transfer, had a deemed interest in the 286,519,882 BTH shares in which BI has an interest.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "ceasing",
+    "circumstance_key": null,
+    "change_reason": "the transfer of all voting shares owned by BMCL in BI to BMPL",
+    "acting_party": null,
+    "company_name": "Banyan Tree Holdings Ltd",
+    "transaction_reference": "560417346454871"
+  }
+]
