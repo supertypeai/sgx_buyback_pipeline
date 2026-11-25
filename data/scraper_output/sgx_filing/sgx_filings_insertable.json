@@ -1,215 +1,229 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZYRE8Y3CMP7A1A2S/912445__eFORM1V2-SL-%20For%20release%20on%2024%20Nov%202026.pdf",
-    "timestamp": "2026-11-20",
-    "transaction_type": "buy",
-    "holder_name": "Ow Chio Kiat",
-    "transaction_value": 505438,
-    "share_percentage_transaction": {
-      "total": 0.00072,
-      "deemed": 0.0,
-      "direct": 0.00072
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 705515242,
-          "percentage": 0.47267
-        },
-        "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
-        },
-        "direct": {
-          "amount": 650082489,
-          "percentage": 0.43553
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 704439842,
-          "percentage": 0.47195
-        },
-        "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
-        },
-        "direct": {
-          "amount": 649007089,
-          "percentage": 0.43481
-        }
-      }
-    },
-    "symbol": "H07.SI",
-    "price_per_share": [
-      {
-        "price": 0.47,
-        "amount": 1075400
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Ow Chio Kiat buys S$505K of Stamford Land Corp Ltd shares",
-    "body": "Ow Chio Kiat bought 1,075,400 shares of Stamford Land Corp Ltd in a market transaction at S$0.47 per share, for a total of S$505,438. Total interest rises from 704,439,842 shares (47.20%) to 705,515,242 shares (47.27%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "hotels-resorts-leisure",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The filer is deemed interested in 55,432,753 Ordinary Shares.",
-    "relationship_text": null,
-    "remarks_text": "The shareholding percentages shown immediately before and after the transaction are computed based on 1,492,624,425 issued shares excluding treasury shares in the Company as at 28 September 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Stamford Land Corp Ltd",
-    "transaction_reference": "551244643993734"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZYRE8Y3CMP7A1A2S/912445__eFORM1V2-SL-%20For%20release%20on%2024%20Nov%202026.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/UBHWW8E9KLK2F7PK/912605__eFORM3%20-%20OCBC%20Valuetronics%20-%20Final.pdf",
     "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "Ow Chio Kiat",
-    "transaction_value": 424504,
+    "transaction_type": "sell",
+    "holder_name": "Oversea-Chinese Banking Corporation Limited",
+    "transaction_value": 571742,
     "share_percentage_transaction": {
-      "total": 0.0006,
-      "deemed": 0.0,
-      "direct": 0.0006
+      "total": 0.0016,
+      "deemed": 0.0016,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 706418442,
-          "percentage": 0.47327
+          "amount": 19986200,
+          "percentage": 0.049
         },
         "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
+          "amount": 19986200,
+          "percentage": 0.049
         },
         "direct": {
-          "amount": 650985689,
-          "percentage": 0.43613
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 705515242,
-          "percentage": 0.47267
+          "amount": 20648200,
+          "percentage": 0.0506
         },
         "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
+          "amount": 20648200,
+          "percentage": 0.0506
         },
         "direct": {
-          "amount": 650082489,
-          "percentage": 0.43553
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "H07.SI",
+    "symbol": "BN2.SI",
     "price_per_share": [
       {
-        "price": 0.47,
-        "amount": 903200
+        "price": 0.8637,
+        "amount": 662000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "Oversea-Chinese Banking Corporation Limited ceases to be substantial shareholder of Valuetronics Holdings Ltd",
+    "body": "Oversea-Chinese Banking Corporation Limited's deemed interest in Valuetronics Holdings Ltd fell after a party linked to the holder sold 662,000 shares in a market transaction at S$0.8637 per share, for a total of S$571,742. No shares are held directly. Total interest falls from 20,648,200 shares (5.06%) to 19,986,200 shares (4.90%). With this, the holder ceases to be a substantial shareholder of Valuetronics Holdings Ltd.",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Lion Global Investors Limited (\"LGI\") has deemed interest in 19,986,200 (4.90%) ordinary shares of Valuetronics Holdings Limited.  (\"Valuetronics\") by virtue of the following: 1. Unit Trust Fund managed by LGI. 2. Segregated Mandate Portfolio managed by LGI LGI is a wholly owned subsidiary of Great Eastern Holdings Limited and Orient Holdings Pte Ltd. Orient Holdings Pte Ltd in turn is a wholly owned subsidiary of Oversea-Chinese Banking Corporation Limited. Great Eastern Holdings Limited in turn is a subsidiary of Oversea-Chinese Banking Corporation Limited.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of interest disclosure before and after the transaction are calculated based on 407,948,837 (as at 23 November 2026) issued ordinary shares (excluding treasury shares) in the capital of Valuetronics Holdings Limited.",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "ceasing",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Valuetronics Holdings Ltd",
+    "transaction_reference": "585553642014635"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RJV8UNHBBR58RONW/912594__eFORM1_2.pdf",
+    "timestamp": "2026-05-12",
+    "transaction_type": "buy",
+    "holder_name": "Chang Pui Yook",
+    "transaction_value": 45700,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 11400,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 11400,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1400,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1400,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "BEC.SI",
+    "price_per_share": [
+      {
+        "price": 4.57,
+        "amount": 10000
       }
     ],
     "holder_type": "insider",
-    "title": "Ow Chio Kiat buys S$425K of Stamford Land Corp Ltd shares",
-    "body": "Ow Chio Kiat bought 903,200 shares of Stamford Land Corp Ltd in a market transaction at S$0.47 per share, for a total of S$424,504. Total interest rises from 705,515,242 shares (47.27%) to 706,418,442 shares (47.33%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "hotels-resorts-leisure",
+    "title": "Chang Pui Yook buys S$45,700 of BRC Asia Ltd shares",
+    "body": "Chang Pui Yook bought 10,000 shares of BRC Asia Ltd in a market transaction at S$4.57 per share, for a total of S$45,700. Total interest rises from 1,400 to 11,400 shares, with the stake unchanged.",
+    "sector": "basic-materials",
+    "sub_sector": "metals-mining",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "The filer is deemed interested in 55,432,753 Ordinary Shares.",
+    "deemed_interest_text": "NA",
     "relationship_text": null,
-    "remarks_text": "The shareholding percentages shown immediately before and after the transaction are computed based on 1,492,624,425 issued shares excluding treasury shares in the Company as at 28 September 2026.",
+    "remarks_text": "The shareholding percentages before and after the change are calculated based on the total number of voting issued shares (excluding treasury shares) of 274,350,089 as at the date of this transaction. The notification was made after the prescribed timeframe due to my inadvertent oversight in my capacity as a shareholder and a Director of the Company. I inadvertently failed to notify the Company of my acquisitions of 1,400 shares on 3 December 2025 and 10,000 shares on 12 May 2026. As these acquisitions did not result in my interest crossing the 5% threshold requiring disclosure as a substantial shareholder, the omission was not identified at the time. Upon discovering the oversight during a review of my shareholding records, and noting that the Company's shares were trading at approximately S$4.09 per share, I promptly submitted the requisite Forms 1 to the Company on 24 November 2026. The acquisitions were effected outside the Company's closed trading periods and not while I was in possession of any material undisclosed price-sensitive information in my capacity as a Director.",
     "filing_type": "form_1",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "Stamford Land Corp Ltd",
-    "transaction_reference": "691293464170211"
+    "company_name": "BRC Asia Ltd",
+    "transaction_reference": "025099346444851"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ZYRE8Y3CMP7A1A2S/912445__eFORM1V2-SL-%20For%20release%20on%2024%20Nov%202026.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/E52ADTPARATZEXA0/912590__eFORM1_1.pdf",
+    "timestamp": "2025-12-03",
+    "transaction_type": "buy",
+    "holder_name": "Chang Pui Yook",
+    "transaction_value": 5586,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1400,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1400,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "BEC.SI",
+    "price_per_share": [
+      {
+        "price": 3.99,
+        "amount": 1400
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Chang Pui Yook buys S$5,586 of BRC Asia Ltd shares",
+    "body": "Chang Pui Yook bought 1,400 shares of BRC Asia Ltd in a market transaction at S$3.99 per share, for a total of S$5,586. Total interest rises from 0 to 1,400 shares, with the stake unchanged.",
+    "sector": "basic-materials",
+    "sub_sector": "metals-mining",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "NA",
+    "relationship_text": null,
+    "remarks_text": "The shareholding percentages before and after the change are calculated based on the total number of voting issued shares (excluding treasury shares) of 274,350,089 as at the date of this transaction. The notification was made after the prescribed timeframe due to my inadvertent oversight in my capacity as a shareholder and a Director of the Company. I inadvertently failed to notify the Company of my acquisitions of 1,400 shares on 3 December 2025 and 10,000 shares on 12 May 2026. As these acquisitions did not result in my interest crossing the 5% threshold requiring disclosure as a substantial shareholder, the omission was not identified at the time. Upon discovering the oversight during a review of my shareholding records, and noting that the Company's shares were trading at approximately S$4.09 per share, I promptly submitted the requisite Forms 1 to the Company on 24 November 2026. The acquisitions were effected outside the Company's closed trading periods and not while I was in possession of any material undisclosed price-sensitive information in my capacity as a Director.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "BRC Asia Ltd",
+    "transaction_reference": "025099346444851"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/P2Q101O1NG5BFHEY/912581__Form%203%20-%20Ong%20Ling%20Ling.pdf",
     "timestamp": "2026-11-24",
     "transaction_type": "buy",
-    "holder_name": "Ow Chio Kiat",
-    "transaction_value": 568385,
+    "holder_name": "Ong Ling Ling",
+    "transaction_value": 31144,
     "share_percentage_transaction": {
-      "total": 0.00082,
+      "total": 0.00011,
       "deemed": 0.0,
-      "direct": 0.00082
+      "direct": 0.00011
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 707635542,
-          "percentage": 0.47409
+          "amount": 237646398,
+          "percentage": 0.287
         },
         "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
+          "amount": 237288838,
+          "percentage": 0.28657
         },
         "direct": {
-          "amount": 652202789,
-          "percentage": 0.43695
+          "amount": 357560,
+          "percentage": 0.00043
         }
       },
       "before": {
-        "total": {
-          "amount": 706418442,
-          "percentage": 0.47327
-        },
-        "deemed": {
-          "amount": 55432753,
-          "percentage": 0.03714
-        },
-        "direct": {
-          "amount": 650985689,
-          "percentage": 0.43613
-        }
-      }
-    },
-    "symbol": "H07.SI",
-    "price_per_share": [
-      {
-        "price": 0.467,
-        "amount": 1217100
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Ow Chio Kiat buys S$568K of Stamford Land Corp Ltd shares",
-    "body": "Ow Chio Kiat bought 1,217,100 shares of Stamford Land Corp Ltd in a market transaction at S$0.467 per share, for a total of S$568,385. Total interest rises from 706,418,442 shares (47.33%) to 707,635,542 shares (47.41%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "hotels-resorts-leisure",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The filer is deemed interested in 55,432,753 Ordinary Shares.",
-    "relationship_text": null,
-    "remarks_text": "The shareholding percentages shown immediately before and after the transaction are computed based on 1,492,624,425 issued shares excluding treasury shares in the Company as at 28 September 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Stamford Land Corp Ltd",
-    "transaction_reference": "223293464281122"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/X1T0KO6N07RRON0Z/912442__Form%203%20-%20Ong%20Ling%20Ling.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "Ong Ling Ling",
-    "transaction_value": 63851,
-    "share_percentage_transaction": {
-      "total": 0.00023,
-      "deemed": 0.0,
-      "direct": 0.00023
-    },
-    "interest_breakdown": {
-      "after": {
         "total": {
           "amount": 237554798,
           "percentage": 0.28689
@@ -222,32 +236,18 @@
           "amount": 265960,
           "percentage": 0.00032
         }
-      },
-      "before": {
-        "total": {
-          "amount": 237364198,
-          "percentage": 0.28666
-        },
-        "deemed": {
-          "amount": 237288838,
-          "percentage": 0.28657
-        },
-        "direct": {
-          "amount": 75360,
-          "percentage": 9e-05
-        }
       }
     },
     "symbol": "M01.SI",
     "price_per_share": [
       {
-        "price": 0.335,
-        "amount": 190600
+        "price": 0.34,
+        "amount": 91600
       }
     ],
     "holder_type": "insider",
-    "title": "Ong Ling Ling buys S$63,851 of Metro Holdings Ltd shares",
-    "body": "Ong Ling Ling bought 190,600 shares of Metro Holdings Ltd in a market transaction at S$0.335 per share, for a total of S$63,851. Total interest rises from 237,364,198 shares (28.67%) to 237,554,798 shares (28.69%).",
+    "title": "Ong Ling Ling buys S$31,144 of Metro Holdings Ltd shares",
+    "body": "Ong Ling Ling bought 91,600 shares of Metro Holdings Ltd in a market transaction at S$0.34 per share, for a total of S$31,144. Total interest rises from 237,554,798 shares (28.69%) to 237,646,398 shares (28.70%).",
     "sector": "consumer-cyclicals",
     "sub_sector": "retail",
     "tags": [],
@@ -261,13 +261,1294 @@
     "change_reason": null,
     "acting_party": null,
     "company_name": "Metro Holdings Ltd",
-    "transaction_reference": "169712346453958"
+    "transaction_reference": "639655643017915"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7BGVH74HAVUZCF3Z/912407__eFORM1_ChengWK_241126_Final.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1LORGAHJU3K3XLSP/912573__Form%201_Yeoh%20Oon%20Jin.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Yeoh Oon Jin",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 8249,
+          "percentage": 1e-05
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 8249,
+          "percentage": 1e-05
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 7248,
+          "percentage": 1e-05
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 7248,
+          "percentage": 1e-05
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Yeoh Oon Jin receives 1,001 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Yeoh Oon Jin received 1,001 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. Total interest rises from 7,248 to 8,249 shares, with the stake unchanged at less than 0.01%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares pursuant to the SGX Restricted Share Plan as part of the Director's fee in lieu of cash for FY2027",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "901594645042172"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DSNOAQEFIS2X0MBQ/912569__KIP%20Inc%20-%20eFORM3V2%202511%202026.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 642741,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0002,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 167337961,
+          "percentage": 0.17
+        },
+        "deemed": {
+          "amount": 167337961,
+          "percentage": 0.17
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 167111961,
+          "percentage": 0.1698
+        },
+        "deemed": {
+          "amount": 167111961,
+          "percentage": 0.1698
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.84399,
+        "amount": 226000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$643K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 226,000 shares in a market transaction at S$2.844 per share, for a total of S$642,741. No shares are held directly. Total interest rises from 167,111,961 shares (16.98%) to 167,337,961 shares (17.00%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "167,337,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "307554643813245"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DSNOAQEFIS2X0MBQ/912569__KIP%20Inc%20-%20eFORM3V2%202511%202026.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "buy",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 42300,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 167352961,
+          "percentage": 0.17
+        },
+        "deemed": {
+          "amount": 167352961,
+          "percentage": 0.17
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 167337961,
+          "percentage": 0.17
+        },
+        "deemed": {
+          "amount": 167337961,
+          "percentage": 0.17
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.82,
+        "amount": 15000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$42,300 share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 15,000 shares in a market transaction at S$2.82 per share, for a total of S$42,300. No shares are held directly. Total interest rises from 167,337,961 to 167,352,961 shares, with the stake unchanged at 17.00%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "167,352,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "173514643930021"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DSNOAQEFIS2X0MBQ/912569__KIP%20Inc%20-%20eFORM3V2%202511%202026.pdf",
     "timestamp": "2026-11-24",
     "transaction_type": "buy",
-    "holder_name": "Cheng Wai Keung",
+    "holder_name": "K.I.P. Inc",
+    "transaction_value": 403879,
+    "share_percentage_transaction": {
+      "total": 0.0002,
+      "deemed": 0.0002,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 167502961,
+          "percentage": 0.1702
+        },
+        "deemed": {
+          "amount": 167502961,
+          "percentage": 0.1702
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 167352961,
+          "percentage": 0.17
+        },
+        "deemed": {
+          "amount": 167352961,
+          "percentage": 0.17
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.69253,
+        "amount": 150000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$404K share purchase",
+    "body": "K.I.P. Inc's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 150,000 shares in a market transaction at S$2.6925 per share, for a total of S$403,879. No shares are held directly. Total interest rises from 167,352,961 shares (17.00%) to 167,502,961 shares (17.02%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "167,502,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "833524643930202"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/OT01SZKBY1CELZ0C/912567__Form%201_Susan%20Soh.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Soh Shin Yann Susan",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 1001,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1001,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Soh Shin Yann Susan receives 1,001 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Soh Shin Yann Susan received 1,001 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. Total interest rises from 0 to 1,001 shares, with the stake unchanged.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares under the SGX Restricted Share Plan as part of the Director's fee in lieu of cash",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "682594645042887"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HS95HLCCTEJ5AYR1/912565__WEC%20-%20eFORM1V2%202511%202026.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 1285483,
+    "share_percentage_transaction": {
+      "total": 0.0005,
+      "deemed": 0.0005,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 355294307,
+          "percentage": 0.361
+        },
+        "deemed": {
+          "amount": 355294307,
+          "percentage": 0.361
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 354842307,
+          "percentage": 0.3605
+        },
+        "deemed": {
+          "amount": 354842307,
+          "percentage": 0.3605
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.84399,
+        "amount": 452000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$1.3M share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 452,000 shares in a market transaction at S$2.844 per share, for a total of S$1,285,483. No shares are held directly. Total interest rises from 354,842,307 shares (36.05%) to 355,294,307 shares (36.10%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr Wee Ee Chao is deemed to be interested in 355,294,307 shares held through: 187,956,346 shares - in name of U.I.P. Holdings Limited; and 167,337,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "597544643895644"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HS95HLCCTEJ5AYR1/912565__WEC%20-%20eFORM1V2%202511%202026.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 84600,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 355324307,
+          "percentage": 0.361
+        },
+        "deemed": {
+          "amount": 355324307,
+          "percentage": 0.361
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 355294307,
+          "percentage": 0.361
+        },
+        "deemed": {
+          "amount": 355294307,
+          "percentage": 0.361
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.82,
+        "amount": 30000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$84,600 share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 30,000 shares in a market transaction at S$2.82 per share, for a total of S$84,600. No shares are held directly. Total interest rises from 355,294,307 to 355,324,307 shares, with the stake unchanged at 36.10%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr Wee Ee Chao is deemed to be interested in 355,324,307 shares held through: 187,971,346 shares - in name of U.I.P. Holdings Limited; and 167,352,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "337514643933181"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HS95HLCCTEJ5AYR1/912565__WEC%20-%20eFORM1V2%202511%202026.pdf",
+    "timestamp": "2026-11-24",
+    "transaction_type": "buy",
+    "holder_name": "Wee Ee Chao",
+    "transaction_value": 807759,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0003,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 355624307,
+          "percentage": 0.3613
+        },
+        "deemed": {
+          "amount": 355624307,
+          "percentage": 0.3613
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 355324307,
+          "percentage": 0.361
+        },
+        "deemed": {
+          "amount": 355324307,
+          "percentage": 0.361
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.69253,
+        "amount": 300000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rises after S$808K share purchase",
+    "body": "Wee Ee Chao's deemed interest in UOB-Kay Hian Holdings Ltd rose after a party linked to the holder bought 300,000 shares in a market transaction at S$2.6925 per share, for a total of S$807,759. No shares are held directly. Total interest rises from 355,324,307 shares (36.10%) to 355,624,307 shares (36.13%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr Wee Ee Chao is deemed to be interested in 355,624,307 shares held through: 188,121,346 shares - in name of U.I.P. Holdings Limited; and 167,502,961 shares - in name of UOB Kay Hian Private Limited - K.I.P. Inc",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "325524643934602"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/31LUCAZ779OAIO41/912561__UIP%20Holdings%20-%20eFORM3V2%202511%202026.pdf",
+    "timestamp": "2026-11-20",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 642741,
+    "share_percentage_transaction": {
+      "total": 0.0003,
+      "deemed": 0.0,
+      "direct": 0.0003
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187956346,
+          "percentage": 0.191
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187956346,
+          "percentage": 0.191
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187730346,
+          "percentage": 0.1907
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187730346,
+          "percentage": 0.1907
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.84399,
+        "amount": 226000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$643K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 226,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.844 per share, for a total of S$642,741. Total interest rises from 187,730,346 shares (19.07%) to 187,956,346 shares (19.10%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "377554643814465"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/31LUCAZ779OAIO41/912561__UIP%20Holdings%20-%20eFORM3V2%202511%202026.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 42300,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 187971346,
+          "percentage": 0.191
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187971346,
+          "percentage": 0.191
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187956346,
+          "percentage": 0.191
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187956346,
+          "percentage": 0.191
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.82,
+        "amount": 15000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$42,300 of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 15,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.82 per share, for a total of S$42,300. Total interest rises from 187,956,346 to 187,971,346 shares, with the stake unchanged at 19.10%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "704414643938391"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/31LUCAZ779OAIO41/912561__UIP%20Holdings%20-%20eFORM3V2%202511%202026.pdf",
+    "timestamp": "2026-11-24",
+    "transaction_type": "buy",
+    "holder_name": "U.I.P. Holdings Limited",
+    "transaction_value": 403879,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 188121346,
+          "percentage": 0.1911
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 188121346,
+          "percentage": 0.1911
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 187971346,
+          "percentage": 0.191
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 187971346,
+          "percentage": 0.191
+        }
+      }
+    },
+    "symbol": "U10.SI",
+    "price_per_share": [
+      {
+        "price": 2.69253,
+        "amount": 150000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "U.I.P. Holdings Limited buys S$404K of UOB-Kay Hian Holdings Ltd shares",
+    "body": "U.I.P. Holdings Limited bought 150,000 shares of UOB-Kay Hian Holdings Ltd in a market transaction at S$2.6925 per share, for a total of S$403,879. Total interest rises from 187,971,346 shares (19.10%) to 188,121,346 shares (19.11%).",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "UOB-Kay Hian Holdings Ltd",
+    "transaction_reference": "614424643938582"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3KR7WHZR0XFD80FJ/912558__Form%201_Stuart%20Lewis.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Stuart Wilson Lewis",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 2202,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 2202,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1201,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1201,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Stuart Wilson Lewis receives 1,001 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Stuart Wilson Lewis received 1,001 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. Total interest rises from 1,201 to 2,202 shares, with the stake unchanged.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares under the SGX Restricted Share Plan as part of the Director's fee in lieu of cash",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "507694645042792"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LKBE2YV9KLD750CZ/912556__Form%201_Samuel%20Tsien.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Tsien Samuel Nag",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 6102,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 6102,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 5101,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 5101,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Tsien Samuel Nag receives 1,001 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Tsien Samuel Nag received 1,001 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. Total interest rises from 5,101 to 6,102 shares, with the stake unchanged.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares under the SGX Restricted Share Plan as part of the Director's fee in lieu of cash",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "206594645042495"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/UGW8912RZEPCVGQ1/912554__Form%201_Datuk%20Maimoonah%20Hussain.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Datuk Maimoonah Hussain",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 2202,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 2202,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 1201,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 1201,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Datuk Maimoonah Hussain receives 1,001 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Datuk Maimoonah Hussain received 1,001 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. Total interest rises from 1,201 to 2,202 shares, with the stake unchanged.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares pursuant to the SGX Restricted Share Plan as part of the Director's fee in lieu of cash for FY2027",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "507694645042792"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/11H297UUBXP7GPBW/912552__Form%201_Lin%20Huey%20Ru.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Lin Huey Ru",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 3974,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 3974,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 2973,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 2973,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lin Huey Ru receives 1,001 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Lin Huey Ru received 1,001 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. Total interest rises from 2,973 to 3,974 shares, with the stake unchanged.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares under the SGX Restricted Share Plan as part of the Director's fee in lieu of cash for FY2027",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "507694645042792"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3715QG6YJCLUJO4F/912547__Form%201_Lim%20Chin%20Hu.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Lim Chin Hu",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 52084,
+          "percentage": 5e-05
+        },
+        "deemed": {
+          "amount": 52084,
+          "percentage": 5e-05
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 51083,
+          "percentage": 5e-05
+        },
+        "deemed": {
+          "amount": 51083,
+          "percentage": 5e-05
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Chin Hu's deemed interest in Singapore Exchange Ltd rises after payment of director's fees in 1,001 shares",
+    "body": "Lim Chin Hu's deemed interest in Singapore Exchange Ltd rose after a party linked to the holder received 1,001 shares as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. No shares are held directly. Total interest rises from 51,083 to 52,084 shares, with the stake unchanged at 0.01%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "52,084 shares held through Citibank Nominees Singapore Pte. Ltd.",
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares pursuant to the SGX Restricted Share Plan as part of the Director's fee in lieu of cash for FY2027",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "453394645042704"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5SIAENN7QCX81L5F/912542__Form%201_Koh%20Boon%20Hwee.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Koh Boon Hwee",
+    "transaction_value": 230704,
+    "share_percentage_transaction": {
+      "total": 1e-05,
+      "deemed": 0.0,
+      "direct": 1e-05
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 72509,
+          "percentage": 7e-05
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 72509,
+          "percentage": 7e-05
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 60617,
+          "percentage": 6e-05
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 60617,
+          "percentage": 6e-05
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 11892
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Koh Boon Hwee receives 11,892 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Koh Boon Hwee received 11,892 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$230,704 in total. Total interest rises from 60,617 to 72,509 shares, with the stake unchanged at 0.01%.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares under the SGX Restricted Share Plan as part of the Director's fee in lieu of cash",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "040794645042314"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RPAMV2QOVGHJJGZA/912540__Form%201_Julie%20Gao.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Gao Zhun Julie",
+    "transaction_value": 19419,
+    "share_percentage_transaction": {
+      "total": 0.0,
+      "deemed": 0.0,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 3974,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 3974,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 2973,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 2973,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "S68.SI",
+    "price_per_share": [
+      {
+        "price": 19.4,
+        "amount": 1001
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Gao Zhun Julie receives 1,001 Singapore Exchange Ltd shares as part of director's fees",
+    "body": "Gao Zhun Julie received 1,001 shares of Singapore Exchange Ltd as part of director's fees, valued at S$19.4 per share, or S$19,419 in total. Total interest rises from 2,973 to 3,974 shares, with the stake unchanged.",
+    "sector": "financial-services",
+    "sub_sector": "asset-management-investment",
+    "tags": [
+      "award",
+      "director-fees"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": null,
+    "relationship_text": null,
+    "remarks_text": "The percentage is computed based on 1,069,538,584 issued and paid-up shares (excluding treasury shares) in SGX on 23 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the grant of shares under the SGX Restricted Share Plan as part of the Director's fee in lieu of cash",
+    "acting_party": null,
+    "company_name": "Singapore Exchange Ltd",
+    "transaction_reference": "682594645042887"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HU102GNJ7KYIG461/912522__eFORM3V2-Pang%20Yoke%20Chun-20261125.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "buy",
+    "holder_name": "Pang Yoke Chun",
+    "transaction_value": 47541,
+    "share_percentage_transaction": {
+      "total": 0.00021,
+      "deemed": 0.00021,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 85027285,
+          "percentage": 0.18473
+        },
+        "deemed": {
+          "amount": 78914196,
+          "percentage": 0.17145
+        },
+        "direct": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 84927585,
+          "percentage": 0.18452
+        },
+        "deemed": {
+          "amount": 78814496,
+          "percentage": 0.17124
+        },
+        "direct": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        }
+      }
+    },
+    "symbol": "500.SI",
+    "price_per_share": [
+      {
+        "price": 0.47685,
+        "amount": 99700
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rises after S$47,541 share purchase",
+    "body": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rose after Lim Boon Hock Bernard bought 99,700 shares in a market transaction at S$0.4768 per share, for a total of S$47,541. The direct holding is unchanged at 6,113,089 shares. Total interest rises from 84,927,585 shares (18.45%) to 85,027,285 shares (18.47%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mdm. Pang Yoke Chun is deemed to have an interest in 78,914,196 shares held by her husband, Mr. Lim Boon Hock Bernard.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 25 November 2026. Substantial Shareholder finds reporting every change in interest convenient and less prone to omissions.  This voluntary disclosure has been made even though the change in interest in shares did not cross a percentage level.",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": "Lim Boon Hock Bernard",
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "570514643934791"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HU102GNJ7KYIG461/912522__eFORM3V2-Pang%20Yoke%20Chun-20261125.pdf",
+    "timestamp": "2026-11-24",
+    "transaction_type": "buy",
+    "holder_name": "Pang Yoke Chun",
     "transaction_value": null,
     "share_percentage_transaction": {
       "total": 0.0001,
@@ -277,196 +1558,130 @@
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 489192859,
-          "percentage": 0.6396
+          "amount": 85072285,
+          "percentage": 0.18483
         },
         "deemed": {
-          "amount": 488978459,
-          "percentage": 0.6393
+          "amount": 78959196,
+          "percentage": 0.17155
         },
         "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
+          "amount": 6113089,
+          "percentage": 0.01328
         }
       },
       "before": {
         "total": {
-          "amount": 489092859,
-          "percentage": 0.6395
+          "amount": 85027285,
+          "percentage": 0.18473
         },
         "deemed": {
-          "amount": 488878459,
-          "percentage": 0.6392
+          "amount": 78914196,
+          "percentage": 0.17145
         },
         "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
+          "amount": 6113089,
+          "percentage": 0.01328
         }
       }
     },
-    "symbol": "W05.SI",
+    "symbol": "500.SI",
     "price_per_share": [
       {
         "price": null,
-        "amount": 100000
+        "amount": 45000
       }
     ],
     "holder_type": "insider",
-    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 100K shares",
-    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 100,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 489,092,859 shares (63.95%) to 489,192,859 shares (63.96%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-development",
+    "title": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rises after purchase of 45,000 shares",
+    "body": "Pang Yoke Chun's deemed interest in Tai Sin Electric Ltd rose after a party linked to the holder bought 45,000 shares in a market transaction. The direct holding is unchanged at 6,113,089 shares. Total interest rises from 85,027,285 shares (18.47%) to 85,072,285 shares (18.48%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 100,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "deemed_interest_text": "Mdm. Pang Yoke Chun is deemed to have an interest in 78,959,196 shares held by her husband, Mr. Lim Boon Hock Bernard.",
     "relationship_text": null,
-    "remarks_text": null,
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the acquisition of 100,000 shares by the holder's spouse",
-    "acting_party": "Chow Helen",
-    "company_name": "Wing Tai Holdings Ltd",
-    "transaction_reference": "381790346342305"
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 25 November 2026. Substantial Shareholder finds reporting every change in interest convenient and less prone to omissions.  This voluntary disclosure has been made even though the change in interest in shares did not cross a percentage level.",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "651514643935911"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/GL7MV977B1FH70UT/912402__Form%201%20-%20Stanley%20Loh.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/0CXVIOEGVORWVYIZ/912520__eFORM1V2-Bernard%20Lim-20261125.pdf",
     "timestamp": "2026-11-23",
     "transaction_type": "buy",
-    "holder_name": "Loh Meng Chong, Stanley",
-    "transaction_value": 31000,
+    "holder_name": "Lim Boon Hock Bernard",
+    "transaction_value": 47541,
     "share_percentage_transaction": {
-      "total": 2e-05,
+      "total": 0.00021,
       "deemed": 0.0,
-      "direct": 2e-05
+      "direct": 0.00021
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 1207500,
-          "percentage": 0.00128
+          "amount": 85027285,
+          "percentage": 0.18473
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 6113089,
+          "percentage": 0.01328
         },
         "direct": {
-          "amount": 1207500,
-          "percentage": 0.00128
+          "amount": 78914196,
+          "percentage": 0.17145
         }
       },
       "before": {
         "total": {
-          "amount": 1187500,
-          "percentage": 0.00126
+          "amount": 84927585,
+          "percentage": 0.18452
         },
         "deemed": {
-          "amount": 0,
-          "percentage": 0.0
+          "amount": 6113089,
+          "percentage": 0.01328
         },
         "direct": {
-          "amount": 1187500,
-          "percentage": 0.00126
+          "amount": 78814496,
+          "percentage": 0.17124
         }
       }
     },
-    "symbol": "558.SI",
+    "symbol": "500.SI",
     "price_per_share": [
       {
-        "price": 1.55,
-        "amount": 20000
+        "price": 0.47685,
+        "amount": 99700
       }
     ],
     "holder_type": "insider",
-    "title": "Loh Meng Chong, Stanley buys S$31,000 of UMS Integration Ltd shares",
-    "body": "Loh Meng Chong, Stanley bought 20,000 shares of UMS Integration Ltd in a market transaction at S$1.55 per share, for a total of S$31,000. Total interest rises from 1,187,500 to 1,207,500 shares, with the stake unchanged at 0.13%.",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
+    "title": "Lim Boon Hock Bernard buys S$47,541 of Tai Sin Electric Ltd shares",
+    "body": "Lim Boon Hock Bernard bought 99,700 shares of Tai Sin Electric Ltd in a market transaction at S$0.4768 per share, for a total of S$47,541. Total interest rises from 84,927,585 shares (18.45%) to 85,027,285 shares (18.47%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Not applicable.",
+    "deemed_interest_text": "Mr. Lim Boon Hock Bernard is deemed to have an interest in 6,113,089 shares held by his wife, Mdm. Pang Yoke Chun.",
     "relationship_text": null,
-    "remarks_text": "The percentage of total number of ordinary shares (excluding treasury shares) is based on 941,108,956 shares in issue.",
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 25 November 2026.",
     "filing_type": "form_1",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "UMS Integration Ltd",
-    "transaction_reference": "403940643697604"
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "161514643930371"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/J0CCRD7RUDS1MAGM/912400__Form%201%20-%20Andy%20Luong.pdf",
-    "timestamp": "2026-11-20",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/0CXVIOEGVORWVYIZ/912520__eFORM1V2-Bernard%20Lim-20261125.pdf",
+    "timestamp": "2026-11-24",
     "transaction_type": "buy",
-    "holder_name": "Luong Andy",
-    "transaction_value": 478363,
-    "share_percentage_transaction": {
-      "total": 0.0003,
-      "deemed": 0.0003,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 125003857,
-          "percentage": 0.1328
-        },
-        "deemed": {
-          "amount": 125003857,
-          "percentage": 0.1328
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 124703857,
-          "percentage": 0.1325
-        },
-        "deemed": {
-          "amount": 124703857,
-          "percentage": 0.1325
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "558.SI",
-    "price_per_share": [
-      {
-        "price": 1.5945,
-        "amount": 300000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Luong Andy's deemed interest in UMS Integration Ltd rises after S$478K share purchase",
-    "body": "Luong Andy's deemed interest in UMS Integration Ltd rose after a party linked to the holder bought 300,000 shares in a market transaction at S$1.5945 per share, for a total of S$478,363. No shares are held directly. Total interest rises from 124,703,857 shares (13.25%) to 125,003,857 shares (13.28%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "Mr. Luong Andy is deemed to be interested in: a) 22,211,422 shares registered in the name of UBS AG Singapore; b) 58,162,535 shares registered in the name of 71 Trust LLC (held through UBS AG Singapore); c) 19,004,900 shares registered in the name of SY Private Trust LLC (held through UBS AG Singapore); and d) 13,125,000 shares registered in the name of CGS International Securities Singapore Pte Ltd e) 12,500,000 shares registered in the name of CGS International Nominees Malaysia (Asing) Sdn Bhd",
-    "relationship_text": null,
-    "remarks_text": "The percentage of total number of ordinary shares (excluding treasury shares) is based on 941,108,956 shares in issue.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "UMS Integration Ltd",
-    "transaction_reference": "403940643697604"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/3AFR83JQRPBPF4VT/912381__20261124%20RS%20eFORM1V2%20-%20Final.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "Ravinder Sajwan",
-    "transaction_value": 49082,
+    "holder_name": "Lim Boon Hock Bernard",
+    "transaction_value": 21825,
     "share_percentage_transaction": {
       "total": 0.0001,
       "deemed": 0.0,
@@ -474,6 +1689,86 @@
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 85072285,
+          "percentage": 0.18483
+        },
+        "deemed": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        },
+        "direct": {
+          "amount": 78959196,
+          "percentage": 0.17155
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 85027285,
+          "percentage": 0.18473
+        },
+        "deemed": {
+          "amount": 6113089,
+          "percentage": 0.01328
+        },
+        "direct": {
+          "amount": 78914196,
+          "percentage": 0.17145
+        }
+      }
+    },
+    "symbol": "500.SI",
+    "price_per_share": [
+      {
+        "price": 0.485,
+        "amount": 45000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Lim Boon Hock Bernard buys S$21,825 of Tai Sin Electric Ltd shares",
+    "body": "Lim Boon Hock Bernard bought 45,000 shares of Tai Sin Electric Ltd in a market transaction at S$0.485 per share, for a total of S$21,825. Total interest rises from 85,027,285 shares (18.47%) to 85,072,285 shares (18.48%).",
+    "sector": "industrials",
+    "sub_sector": "industrial-machinery-parts",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Mr. Lim Boon Hock Bernard is deemed to have an interest in 6,113,089 shares held by his wife, Mdm. Pang Yoke Chun.",
+    "relationship_text": null,
+    "remarks_text": "The percentage of shareholding immediately before and after the transaction is calculated based on the Company's number of issued ordinary shares (excluding treasury shares) of 460,261,841 shares as at 25 November 2026.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Tai Sin Electric Ltd",
+    "transaction_reference": "662514643932161"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SQQECYZ7DES0267O/912517__20261125%20RS%20eFORM1V2%20-Final.pdf",
+    "timestamp": "2026-11-24",
+    "transaction_type": "buy",
+    "holder_name": "Ravinder Sajwan",
+    "transaction_value": 49000,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0,
+      "direct": 0.0001
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 686504654,
+          "percentage": 0.6248
+        },
+        "deemed": {
+          "amount": 683073042,
+          "percentage": 0.6217
+        },
+        "direct": {
+          "amount": 3431612,
+          "percentage": 0.0031
+        }
+      },
+      "before": {
         "total": {
           "amount": 686402054,
           "percentage": 0.6247
@@ -486,243 +1781,699 @@
           "amount": 3329012,
           "percentage": 0.003
         }
-      },
-      "before": {
-        "total": {
-          "amount": 686295954,
-          "percentage": 0.6246
-        },
-        "deemed": {
-          "amount": 683073042,
-          "percentage": 0.6217
-        },
-        "direct": {
-          "amount": 3222912,
-          "percentage": 0.0029
-        }
       }
     },
     "symbol": "ULG.SI",
     "price_per_share": [
       {
-        "price": 0.4626,
-        "amount": 106100
+        "price": 0.4776,
+        "amount": 102600
       }
     ],
     "holder_type": "insider",
-    "title": "Ravinder Sajwan buys S$49,082 of Ultragreen Ai Ltd shares",
-    "body": "Ravinder Sajwan bought 106,100 shares of Ultragreen Ai Ltd in a market transaction at S$0.4626 per share, for a total of S$49,082. Total interest rises from 686,295,954 shares (62.46%) to 686,402,054 shares (62.47%).",
+    "title": "Ravinder Sajwan buys S$49,000 of Ultragreen Ai Ltd shares",
+    "body": "Ravinder Sajwan bought 102,600 shares of Ultragreen Ai Ltd in a market transaction at S$0.4776 per share, for a total of S$49,000. Total interest rises from 686,402,054 shares (62.47%) to 686,504,654 shares (62.48%).",
     "sector": "healthcare",
     "sub_sector": "healthcare-facilities-services",
     "tags": [],
     "source_is_manual": false,
     "deemed_interest_text": "The business and affairs of IR Investments LP are managed by a board of managers (the “IR Board of Managers”). IR Holding Company Inc., the general partner of IR Investments LP, has on 15 December 2019 appointed Mr Sajwan as the sole and initial member of the IR Board of Managers. Mr Sajwan is also a Protector of The Saul Trust and a member of Saul Strategic Limited (which holds 100% of Saul Holdings Pte. Ltd.’s ordinary shares). Accordingly, for the purposes of the Securities and Futures Act 2001 of Singapore and the Securities and Futures (Disclosure of Interests) Regulations 2012, Mr Sajwan has a deemed interest in the Shares held by Renew Group Private Limited.",
     "relationship_text": null,
-    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,098,647,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 23 NOVEMBER 2026.",
+    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,098,647,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 24 NOVEMBER 2026.",
     "filing_type": "form_1",
     "notification_type": null,
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
     "company_name": "Ultragreen Ai Ltd",
-    "transaction_reference": "976544643992764"
+    "transaction_reference": "033545643094314"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/BP5C2G41XHTCSV1U/912344__eFORM1V2-CSH.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/4WP7F25J8EPIW227/912515__eForm%203%20V2%20LC%20Capital%20Final_24%20Nov%2026.pdf",
     "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "Chua Siew Hwi (Cai Xiuhui)",
-    "transaction_value": 2,
+    "transaction_type": "sell",
+    "holder_name": "LC Capital Management Pte. Ltd",
+    "transaction_value": 1581628,
     "share_percentage_transaction": {
-      "total": 2e-05,
-      "deemed": 0.0,
-      "direct": 2e-05
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 8000,
-          "percentage": 6e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 8000,
-          "percentage": 6e-05
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 5000,
-          "percentage": 4e-05
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 5000,
-          "percentage": 4e-05
-        }
-      }
-    },
-    "symbol": "5DD.SI",
-    "price_per_share": [
-      {
-        "price": 0.0007,
-        "amount": 3000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Chua Siew Hwi (Cai Xiuhui) buys S$2 of Micro-Mechanics (Holdings) Ltd shares",
-    "body": "Chua Siew Hwi (Cai Xiuhui) bought 3,000 shares of Micro-Mechanics (Holdings) Ltd in a market transaction at S$0.0007 per share, for a total of S$2. Total interest rises from 5,000 shares (less than 0.01%) to 8,000 shares (0.01%).",
-    "sector": "technology",
-    "sub_sector": "semiconductors-equipment",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "Not applicable",
-    "relationship_text": null,
-    "remarks_text": null,
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Micro-Mechanics (Holdings) Ltd",
-    "transaction_reference": "610741643594604"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/TFY27W3BAO2HKC82/912341__eFORM1V2-23112026-Dr%20Ng.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "Dr Ng Chin Siau",
-    "transaction_value": 82816,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0002,
+      "total": 0.0027,
+      "deemed": 0.0027,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 528995189,
-          "percentage": 0.5487
+          "amount": 45501900,
+          "percentage": 0.1173
         },
         "deemed": {
-          "amount": 528966289,
-          "percentage": 0.5487
+          "amount": 45501900,
+          "percentage": 0.1173
         },
         "direct": {
-          "amount": 28900,
+          "amount": 0,
           "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 528797889,
-          "percentage": 0.5485
+          "amount": 46546900,
+          "percentage": 0.12
         },
         "deemed": {
-          "amount": 528768989,
-          "percentage": 0.5485
+          "amount": 46546900,
+          "percentage": 0.12
         },
         "direct": {
-          "amount": 28900,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "QC7.SI",
-    "price_per_share": [
-      {
-        "price": 0.4198,
-        "amount": 197300
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rises after S$82,816 share purchase",
-    "body": "Dr Ng Chin Siau's deemed interest in Q & M Dental Group (Singapore) Ltd rose after Quan Min Holdings Pte. Ltd bought 197,300 shares at S$0.4198 per share, for a total of S$82,816. The direct holding is unchanged at 28,900 shares. Total interest rises from 528,797,889 shares (54.85%) to 528,995,189 shares (54.87%).",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "By virtue of Section 4 of the Securities and Futures Act 2001 of Singapore, Dr Ng Chin Siau is deemed to be interested in the 528,845,089 ordinary shares held by Quan Min Holdings Pte. Ltd. Dr. Ng Chin Siau is deemed to have an interest in his spouse's, Foo Siew Jiuan, 121,200 ordinary shares.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings before and after the change in interests is calculated based on the Company's issued share capital of 963,996,375 ordinary shares (excluding treasury shares).",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": null,
-    "change_reason": "the acquisition of 197,300 ordinary shares by Quan Min Holdings Pte. Ltd",
-    "acting_party": "Quan Min Holdings Pte. Ltd",
-    "company_name": "Q & M Dental Group (Singapore) Ltd",
-    "transaction_reference": "678791745842903"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/28NVW8C8T4YO7EDU/912339__eFORM3V2-23112026-QMH.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "Quan Min Holdings Pte. Ltd",
-    "transaction_value": 82816,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0,
-      "direct": 0.0002
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 528845089,
-          "percentage": 0.5486
-        },
-        "deemed": {
           "amount": 0,
           "percentage": 0.0
-        },
-        "direct": {
-          "amount": 528845089,
-          "percentage": 0.5486
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 528647789,
-          "percentage": 0.5484
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 528647789,
-          "percentage": 0.5484
         }
       }
     },
-    "symbol": "QC7.SI",
+    "symbol": "PCT.SI",
     "price_per_share": [
       {
-        "price": 0.4198,
-        "amount": 197300
+        "price": 1.5135,
+        "amount": 1045000
       }
     ],
-    "holder_type": "insider",
-    "title": "Quan Min Holdings Pte. Ltd buys S$82,816 of Q & M Dental Group (Singapore) Ltd shares",
-    "body": "Quan Min Holdings Pte. Ltd bought 197,300 shares of Q & M Dental Group (Singapore) Ltd in a market transaction at S$0.4198 per share, for a total of S$82,816. Total interest rises from 528,647,789 shares (54.84%) to 528,845,089 shares (54.86%).",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
+    "holder_type": "institution",
+    "title": "LC Capital Management Pte. Ltd's deemed interest in PC Partner Group Ltd falls after S$1.6M share sale",
+    "body": "LC Capital Management Pte. Ltd's deemed interest in PC Partner Group Ltd fell after a party linked to the holder sold 1,045,000 shares in a market transaction at S$1.5135 per share, for a total of S$1,581,628. No shares are held directly. Total interest falls from 46,546,900 shares (12.00%) to 45,501,900 shares (11.73%).",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "N.A.",
+    "deemed_interest_text": "The Substantial Shareholder is a fund manager and has no direct interest in the shares. Its deemed interest arises from (a) shares held by sub-funds of a Variable Capital Company over which the Substantial Shareholder, in its capacity as fund manager, exercises investment discretion and control; and (b) shares held in clients' discretionary managed accounts with third-party custodians, in respect of which the Substantial Shareholder was granted discretionary investment management authority, and accordingly has authority to dispose of, and to control the disposal of, and to exercise the voting rights attaching to, those shares. Accordingly, the Substantial Shareholder is deemed to have an interest in the aggregate holdings of all sub- funds and managed accounts under its discretionary management.",
     "relationship_text": null,
-    "remarks_text": "Quan Min Holdings Pte. Ltd. acquired 197,300 ordinary shares in the capital of Q & M Dental Group (Singapore) Limited on 23 November 2026 for a total consideration of S$82,816.68 (excluding brokerage & stamp duties). The percentage of shareholdings before and after the change in interests is calculated based on the Company's issued share capital of 963,996,375 ordinary shares (excluding treasury shares).",
+    "remarks_text": null,
     "filing_type": "form_3_part_ii",
     "notification_type": "change_in_level",
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "Q & M Dental Group (Singapore) Ltd",
-    "transaction_reference": "006611745852970"
+    "company_name": "PC Partner Group Ltd",
+    "transaction_reference": "490513146151074"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/VEI3F0L2WE41AWRU/912483__2a.%20Form%201%20-%20Low%20See%20Ching.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Low See Ching",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.729,
+      "deemed": 0.9834,
+      "direct": 0.2544
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 423388189,
+          "percentage": 0.9834
+        },
+        "deemed": {
+          "amount": 423388189,
+          "percentage": 0.9834
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 109547280,
+          "percentage": 0.2544
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 109547280,
+          "percentage": 0.2544
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Low See Ching's stake in Hafary Holdings Ltd rises to 98.34% from 25.44% under takeover offer",
+    "body": "Low See Ching's stake in Hafary Holdings Ltd moved from 25.44% to 98.34% under a takeover offer. The direct interest moved from 109,547,280 to 0 shares and the deemed interest from 0 to 423,388,189 shares. Total interest rises from 109,547,280 shares (25.44%) to 423,388,189 shares (98.34%).",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Immediately before the transaction: Low See Ching (\"LSC\") has a direct interest in 109,547,280 issued and paid-up ordinary shares (\"Shares\") in the capital of Hafary Holdings Limited (the \"Company\"). Immediately after the transaction: (1) As stated in the offer document dated 19 October 2026 (\"Offer Document\") issued by United Overseas Bank Limited (\"UOB\"), for and on behalf of 23 Capital Pte. Ltd. (the \"Offeror\"), in relation to the voluntary conditional cash offer (the \"Offer\") for all the Shares other than Shares held, directly or indirectly, by the Offeror as at the date of the Offer, LSC has provided an irrevocable undertaking in favour of the Offeror pursuant to which LSC has agreed, inter alia, to accept the Offer in respect of all the Shares held by him. On 23 November 2026, all of the Shares held by LSC were transferred to the Offeror. (2) LSC is deemed to have an interest in the Shares held by the Offeror, as he has a controlling interest in the Offeror. As stated in the level of acceptances announcement dated 23 November 2026 issued by UOB, for and on behalf of the Offeror, as at 6.00 p.m. (Singapore time) on 23 November 2026, the total number of (a) Shares owned, controlled or agreed to be acquired by the Offeror and persons acting or deemed to be acting in concert with it and (b) valid acceptances of the Offer, amount to an aggregate of 423,388,189 Shares. The above shareholding percentages before and after the transaction are calculated based on 430,550,000 Shares and rounded to two (2) decimal places.",
+    "relationship_text": null,
+    "remarks_text": "As stated in the Offer Document, LSC has provided an irrevocable undertaking in favour of the Offeror pursuant to which he has agreed, inter alia: (a) to accept, or procure the acceptance of, the Offer in respect of all his Shares; (b) to waive his rights to receive any cash settlement or payment for his acceptance of the Offer within the time period prescribed under Rule 30 of the Singapore Code on Take-overs and Mergers; and (c) that the total cash consideration payable by the Offeror for such acceptances by him will be regarded as interest- free shareholder loans extended by him to the Offeror.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": "the acceptance of the Offer and transfer of all Shares held to the Offeror",
+    "acting_party": null,
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "186493346442293"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/O591NYH7686DSRWB/912481__1a.%20Form%201%20-%20Low%20Kok%20Ann.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "Low Kok Ann",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.8978,
+      "deemed": 0.9834,
+      "direct": 0.0856
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 423388189,
+          "percentage": 0.9834
+        },
+        "deemed": {
+          "amount": 423388189,
+          "percentage": 0.9834
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 36847403,
+          "percentage": 0.0856
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 36847403,
+          "percentage": 0.0856
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Low Kok Ann's stake in Hafary Holdings Ltd rises to 98.34% from 8.56% under takeover offer",
+    "body": "Low Kok Ann's stake in Hafary Holdings Ltd moved from 8.56% to 98.34% under a takeover offer. The direct interest moved from 36,847,403 to 0 shares and the deemed interest from 0 to 423,388,189 shares. Total interest rises from 36,847,403 shares (8.56%) to 423,388,189 shares (98.34%).",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Immediately before the transaction: Low Kok Ann (\"LKA\") has a direct interest in 36,847,403 issued and paid-up ordinary shares (\"Shares\") in the capital of Hafary Holdings Limited (the \"Company\"). Immediately after the transaction: (1) As stated in the offer document dated 19 October 2026 (\"Offer Document\") issued by United Overseas Bank Limited (\"UOB\"), for and on behalf of 23 Capital Pte. Ltd. (the \"Offeror\"), in relation to the voluntary conditional cash offer (the \"Offer\") for all the Shares other than Shares held, directly or indirectly, by the Offeror as at the date of the Offer, LKA has provided an irrevocable undertaking in favour of the Offeror pursuant to which LKA has agreed, inter alia, to accept the Offer in respect of all the Shares held by him. On 23 November 2026, all of the Shares held by LKA were transferred to the Offeror. (2) LKA is deemed to have an interest in the Shares held by the Offeror, as he is entitled to exercise or control the exercise of not less than 20% of the votes attached to the voting shares of the Offeror. As stated in the level of acceptances announcement dated 23 November 2026 issued by UOB, for and on behalf of the Offeror, as at 6.00 p.m. (Singapore time) on 23 November 2026, the total number of (a) Shares owned, controlled or agreed to be acquired by the Offeror and persons acting or deemed to be acting in concert with it and (b) valid acceptances of the Offer, amount to an aggregate of 423,388,189 Shares. The above shareholding percentages before and after the transaction are calculated based on 430,550,000 Shares and rounded to two (2) decimal places.",
+    "relationship_text": null,
+    "remarks_text": "As stated in the Offer Document, LKA has provided an irrevocable undertaking in favour of the Offeror pursuant to which he has agreed, inter alia: (a) to accept, or procure the acceptance of, the Offer in respect of all his Shares; (b) to waive his rights to receive any cash settlement or payment for his acceptance of the Offer within the time period prescribed under Rule 30 of the Singapore Code on Take-overs and Mergers; and (c) that the total cash consideration payable by the Offeror for such acceptances by him will be regarded as interest- free shareholder loans extended by him to the Offeror.",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": "the acceptance of the Offer and transfer of all his Shares to the Offeror",
+    "acting_party": null,
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "181595346443718"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/N9AEZV2I7CCK0TYF/912479__3a.%20Form%203%20-%20Audrey%20Low.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "Low Bee Lan, Audrey",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0514,
+      "deemed": 0.0,
+      "direct": 0.0514
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 22133857,
+          "percentage": 0.0514
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 22133857,
+          "percentage": 0.0514
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 22133857
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Low Bee Lan, Audrey ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "Low Bee Lan, Audrey disposed of 22,133,857 shares of Hafary Holdings Ltd by accepting a takeover offer. Total interest falls from 22,133,857 shares (5.14%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Immediately before the transaction: Low Bee Lan, Audrey (\"LBL\") has a direct interest in 22,133,857 issued and paid-up ordinary shares (\"Shares\") in the capital of Hafary Holdings Limited (the \"Company\"). Immediately after the transaction: As stated in the offer document dated 19 October 2026 (\"Offer Document\") issued by United Overseas Bank Limited, for and on behalf of 23 Capital Pte. Ltd. (the \"Offeror\"), in relation to the voluntary conditional cash offer (the \"Offer\") for all the Shares other than Shares held, directly or indirectly, by the Offeror as at the date of the Offer, LBL has provided an irrevocable undertaking in favour of the Offeror pursuant to which LBL has agreed, inter alia, to accept the Offer in respect of all the Shares held by her. On 23 November 2026, all of the Shares held by LBL were transferred to the Offeror. The above shareholding percentages before and after the transaction are calculated based on 430,550,000 Shares and rounded to two (2) decimal places.",
+    "relationship_text": null,
+    "remarks_text": "As stated in the Offer Document, LBL has provided an irrevocable undertaking in favour of the Offeror pursuant to which she has agreed, inter alia: (a) to accept, or procure the acceptance of, the Offer in respect of all her Shares; (b) to waive her rights to receive any cash settlement or payment for her acceptance of the Offer within the time period prescribed under Rule 30 of the Singapore Code on Take-overs and Mergers; and (c) that the total cash consideration payable by the Offeror for such acceptances by her will be regarded as interest-free shareholder loans extended by her to the Offeror.",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "ceasing",
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": "the transfer of all her Shares to the Offeror following her acceptance of the Offer",
+    "acting_party": null,
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "733915346453853"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FBJ304XX9GDYO9MK/912477__4a.%20eFORM3V2%20-%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "Hap Seng Investment Holdings Pte. Ltd",
+    "transaction_value": 140025600,
+    "share_percentage_transaction": {
+      "total": 0.5082,
+      "deemed": 0.0,
+      "direct": 0.5082
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": 0.6395,
+        "amount": 218970000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Hap Seng Investment Holdings Pte. Ltd ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "Hap Seng Investment Holdings Pte. Ltd disposed of shares of Hafary Holdings Ltd by accepting a takeover offer. The holders giving notice together disposed of 218,970,000 shares at S$0.6395 per share, for a total of S$140,025,600. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "N/A",
+    "relationship_text": "N/A",
+    "remarks_text": "On 28 September 2026, United Overseas Bank Limited had, for and on behalf of 23 Capital Pte Ltd [the “Offeror”], announced a voluntary conditional take-over offer, in accordance with Rule 15 of the Singapore Code on Take-Overs and Mergers, for all the issued and paid-up ordinary shares in the capital of Hafary shares (excluding treasury shares) other than Hafary shares held directly or indirectly by the Offeror [the “Offer Shares”] for a cash offer price of Singapore Dollar 0.64 per Hafary share [the “Offer”]. HSIH, a wholly-owned subsidiary of Hap Seng Consolidated Berhad, accepted the Offer on 28 October 2026 in respect of all its 218,790,000 Hafary Shares, representing 50.82% of the shareholding in Hafary. On 12 November 2026, the Offeror announced that the Offer has become unconditional with which HSIH is expected to receive the cash consideration of SGD140,025,600 within seven business days thereof. The disposal was completed on 23 November 2026 with the receipt of full cash consideration. Accordingly, HSIH ceased to be the holding company of Hafary.",
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "981234643816823"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FBJ304XX9GDYO9MK/912477__4a.%20eFORM3V2%20-%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "Hap Seng Consolidated Berhad",
+    "transaction_value": 140025600,
+    "share_percentage_transaction": {
+      "total": 0.5082,
+      "deemed": 0.5082,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "deemed": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": 0.6395,
+        "amount": 218970000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Hap Seng Consolidated Berhad ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "Hap Seng Consolidated Berhad's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd disposed of shares by accepting a takeover offer. The holders giving notice together disposed of 218,970,000 shares at S$0.6395 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "HSCB, which is the holding company of HSIH, is deemed to have an interest in Hafary shares in which HSIH has an interest. HSCB ceased to be deemed substantial shareholder of Hafary upon the cessation of HSIH as substantial shareholder of Hafary.",
+    "relationship_text": "HSCB is the holding company of the HSIH.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": null,
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "981234643816823"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FBJ304XX9GDYO9MK/912477__4a.%20eFORM3V2%20-%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "Gek Poh (Holdings) Sdn Bhd",
+    "transaction_value": 140025600,
+    "share_percentage_transaction": {
+      "total": 0.5082,
+      "deemed": 0.5082,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "deemed": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": 0.6395,
+        "amount": 218970000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Gek Poh (Holdings) Sdn Bhd ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "Gek Poh (Holdings) Sdn Bhd's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd disposed of shares by accepting a takeover offer. The holders giving notice together disposed of 218,970,000 shares at S$0.6395 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "HSCB, which is the holding company of HSIH, is deemed to have an interest in Hafary shares in which the HSIH has an interest. Gek Poh is the holding company of HSCB. Accordingly, Gek Poh has a deemed interest in the Hafary shares in which the HSIH has an interest. Gek Poh ceased to be deemed substantial shareholder of Hafary upon the cessation of HSIH as substantial shareholder of Hafary.",
+    "relationship_text": "Gek Poh is the holding company of HSCB which is in turn the ultimate holding company of HSIH.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": null,
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "981234643816823"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FBJ304XX9GDYO9MK/912477__4a.%20eFORM3V2%20-%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "Tan Sri Datuk Seri Panglima Lau Cho Kun @ Lau Yu Chak",
+    "transaction_value": 140025600,
+    "share_percentage_transaction": {
+      "total": 0.5082,
+      "deemed": 0.5082,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "deemed": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": 0.6395,
+        "amount": 218970000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Tan Sri Datuk Seri Panglima Lau Cho Kun @ Lau Yu Chak ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "Tan Sri Datuk Seri Panglima Lau Cho Kun @ Lau Yu Chak's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd disposed of shares by accepting a takeover offer. The holders giving notice together disposed of 218,970,000 shares at S$0.6395 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Gek Poh, the holding company of HSCB which is in turn the holding company of HSIH, is deemed to have an interest in Hafary shares in which HSIH has an interest. Tan Sri Datuk Seri Panglima Lau Cho Kun @ Lau Yu Chak is a substantial shareholder of Gek Poh. Accordingly, Tan Sri Datuk Seri Panglima Lau Cho Kun @ Lau Yu Chak has a deemed interest in Hafary shares in which HSIH has an interest. Tan Sri Datuk Seri Panglima Lau Cho Kun @ Lau Yu Chak ceased to be deemed substantial shareholder of Hafary upon the cessation of HSIH as substantial shareholder of Hafary.",
+    "relationship_text": "Tan Sri Datuk Seri Panglima Lau Cho Kun @ Lau Yu Chak is a substantial shareholder of Gek Poh. Gek Poh is the holding company of HSCB which is in turn the holding company of HSIH.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": null,
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "981234643816823"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FBJ304XX9GDYO9MK/912477__4a.%20eFORM3V2%20-%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "Magic Principle Assets Limited",
+    "transaction_value": 140025600,
+    "share_percentage_transaction": {
+      "total": 0.5082,
+      "deemed": 0.5082,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "deemed": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": 0.6395,
+        "amount": 218970000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Magic Principle Assets Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "Magic Principle Assets Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd disposed of shares by accepting a takeover offer. The holders giving notice together disposed of 218,970,000 shares at S$0.6395 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Gek Poh, the holding company of HSCB which is in turn the holding company of HSIH, is deemed to have an interest in Hafary shares in which HSIH has an interest. Magic Principle Assets Limited holds more than 20% of the issued and paid-up share capital of Gek Poh. Accordingly, Magic Principle Assets Limited has a deemed interest in Hafary shares in which HSIH has an interest. Magic Principle Assets Limited ceased to be deemed substantial shareholder of Hafary upon the cessation of HSIH as substantial shareholder of Hafary.",
+    "relationship_text": "Magic Principle Assets Limited holds more than 20% of the ssued and paid-up share capital of Gek Poh. Gek Poh is the holding company of HSCB which is in turn the holding company of HSIH.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": null,
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "981234643816823"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FBJ304XX9GDYO9MK/912477__4a.%20eFORM3V2%20-%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "HSBC International Trustee Limited",
+    "transaction_value": 140025600,
+    "share_percentage_transaction": {
+      "total": 0.5082,
+      "deemed": 0.5082,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "deemed": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": 0.6395,
+        "amount": 218970000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "HSBC International Trustee Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "HSBC International Trustee Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd disposed of shares by accepting a takeover offer. The holders giving notice together disposed of 218,970,000 shares at S$0.6395 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [
+      "takeover"
+    ],
+    "source_is_manual": false,
+    "deemed_interest_text": "Magic Principle Assets Limited holds more than 20% of the issued and paid-up share capital of Gek Poh, which is the holding company of HSCB, which is in turn the holding company of HSIH, is deemed to have an interest in Hafary shares in which HSIH has an interest. HSBC International Trustee Limited, as trustee, holds the entire issued share capital of Magic Principle Assets Limited. Accordingly, HSBC International Trustee Limited has a deemed interest in Hafary shares in which HSIH has an interest. HSBC International Trustee Limited ceased to be deemed substantial shareholder of Hafary upon the cessation of HSIH as substantial shareholder of Hafary.",
+    "relationship_text": "HSBC International Trustee Limited, as trustee, holds the entire issued share capital of Magic Principle Assets Limited. Magic Principle Assets Limited holds more than 20% of the issued and paid-up share capital of Gek Poh. Gek Poh is the holding company of HSCB which is in turn the holding company of HSIH.",
+    "remarks_text": null,
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": "Acceptance of take-over offer",
+    "change_reason": null,
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "981234643816823"
   }
 ]
