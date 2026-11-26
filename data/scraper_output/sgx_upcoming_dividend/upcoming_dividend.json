@@ -14,7 +14,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/QNCRNBTTURR9LXEE/c0ed425e689c6c2b5bf0c6a030caf888691c308c1e6219e20d8ea8a718bc710d",
     "timestamp": "2026-11-17 17:25:44",
-    "updated_on": "2026-11-25 02:10:27"
+    "updated_on": "2026-11-26 01:44:21"
   },
   {
     "symbol": "5ML",
@@ -31,7 +31,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/BEUU992VO0ODOR7N/082996eaa73d3025d7147d65451104a9e7745be3ac12bbbd0c9cb7903bc348fa",
     "timestamp": "2026-11-13 17:45:25",
-    "updated_on": "2026-11-25 02:10:39"
+    "updated_on": "2026-11-26 01:44:45"
   },
   {
     "symbol": "Z74",
@@ -48,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/9SXCFIVWI9WD209O/0bdb99d8c0c434101a3959e596b5fa1f2a135375de99d33bf2b4121ce72002f9",
     "timestamp": "2026-11-13 07:31:43",
-    "updated_on": "2026-11-25 02:10:49"
+    "updated_on": "2026-11-26 01:44:57"
   },
   {
     "symbol": "Y8E",
@@ -65,41 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/D5NXWHCG2GJSZTSZ/d132dda814defa89d5cae5b74ab4f1f5890546419f7c2bc1076a1438deee790c",
     "timestamp": "2026-11-12 22:58:18",
-    "updated_on": "2026-11-25 02:10:55"
-  },
-  {
-    "symbol": "BEW",
-    "reference": "SG261112DVCAVCL4",
-    "recording_date": "2026-11-26",
-    "ex_date": "2026-11-25",
-    "dividend_amount": 0.02,
-    "payment_date": "2026-12-10",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Special",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/RPTMA47R1SI7XJV0/a625f445a071d737b2aa835431ce89b94efc889fc1cad4f7b18c9d5b32852889",
-    "timestamp": "2026-11-12 17:43:34",
-    "updated_on": "2026-11-25 02:10:59"
-  },
-  {
-    "symbol": "BEW",
-    "reference": "SG261112DVCA9OOI",
-    "recording_date": "2026-11-26",
-    "ex_date": "2026-11-25",
-    "dividend_amount": 0.002,
-    "payment_date": "2026-12-10",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Interim",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SMS65LTM3TRO2RRM/f86fe56e98bcceb423a861486257b4cb5f2b2f5083b6d15ac33509674c119156",
-    "timestamp": "2026-11-12 17:42:45",
-    "updated_on": "2026-11-25 02:11:02"
+    "updated_on": "2026-11-26 01:45:02"
   },
   {
     "symbol": "G92",
@@ -116,41 +82,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/USFT5RHCWGNB8ZLN/ddd35ef147e8e897bc14d814af2587fd779610d77b76b5912da707bd94a5ea0d",
     "timestamp": "2026-11-12 12:43:51",
-    "updated_on": "2026-11-25 02:11:08"
-  },
-  {
-    "symbol": "C6L",
-    "reference": "SG261111DVCAIXRX",
-    "recording_date": "2026-11-26",
-    "ex_date": "2026-11-25",
-    "dividend_amount": 0.05,
-    "payment_date": "2026-12-11",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Special",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/8BN3MK8YJ078VRLC/e9aaaa63c8c3c6e2cc536937658b1f88549f9a6f27b7bfe7802d2f271e1f4c57",
-    "timestamp": "2026-11-11 17:36:19",
-    "updated_on": "2026-11-25 02:11:20"
-  },
-  {
-    "symbol": "C6L",
-    "reference": "SG261111DVCA41E8",
-    "recording_date": "2026-11-26",
-    "ex_date": "2026-11-25",
-    "dividend_amount": 0.02,
-    "payment_date": "2026-12-11",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Interim",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/R5ZX1W04X19XS9ZA/2a98b856b79ca1d200e25cd9e3b0f4e3ee222f6f61affbc7e4c26a78fd2128aa",
-    "timestamp": "2026-11-11 17:34:27",
-    "updated_on": "2026-11-25 02:11:25"
+    "updated_on": "2026-11-26 01:45:11"
   },
   {
     "symbol": "558",
@@ -167,7 +99,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/CNN7VASWHY10CFJT/d782271fc49adab96904de60cef5e079c225b37302e8cc6f4748299606cf497a",
     "timestamp": "2026-11-10 18:24:39",
-    "updated_on": "2026-11-25 02:11:36"
+    "updated_on": "2026-11-26 01:45:35"
   },
   {
     "symbol": "5OI",
@@ -184,23 +116,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/YI31MEB5WJLP1CH4/9194527621b989fb51a19839d3674b4b64847eecd6b8ca532a3f10d7f81939a9",
     "timestamp": "2026-10-28 19:19:04",
-    "updated_on": "2026-11-25 02:12:16"
-  },
-  {
-    "symbol": "S71",
-    "reference": "SG260928DVCAYHX9",
-    "recording_date": "2026-11-26",
-    "ex_date": "2026-11-25",
-    "dividend_amount": 0.003,
-    "payment_date": "2026-12-11",
-    "payment_type": "Tax Exempted (1-tier)",
-    "dividend_type": "Final",
-    "event_narrative": {
-      "narrative": null,
-      "information_conditions": null
-    },
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/KQUYSRU2KC9JK4AC/2c2ffe6702abf27a4828928eb3efde869115d02d9f9013dac67ed9ea24369065",
-    "timestamp": "2026-09-28 17:26:13",
-    "updated_on": "2026-11-25 02:13:40"
+    "updated_on": "2026-11-26 01:46:23"
   }
 ]
