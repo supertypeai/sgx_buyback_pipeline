@@ -1,153 +1,31 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1BLETLD1QVCGV8MT/912773__Form%206-DHAMA.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ECV2E2AU98TIXPDR/912914__Form%203%20-%20Ong%20Ling%20Ling.pdf",
     "timestamp": "2026-11-26",
-    "transaction_type": "others",
-    "holder_name": "Daiwa House Asset Management Asia Pte. Ltd",
-    "transaction_value": 191159,
-    "share_percentage_transaction": {
-      "total": 0.0006,
-      "deemed": 0.0,
-      "direct": 0.0006
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 68968021,
-          "percentage": 0.0982
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 68968021,
-          "percentage": 0.0982
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 68494503,
-          "percentage": 0.0976
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 68494503,
-          "percentage": 0.0976
-        }
-      }
-    },
-    "symbol": "DHLU.SI",
-    "price_per_share": [
-      {
-        "price": 0.4037,
-        "amount": 473518
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Daiwa House Asset Management Asia Pte. Ltd receives 474K Daiwa House Logistics Trust units as management fees",
-    "body": "Daiwa House Asset Management Asia Pte. Ltd received 473,518 units of Daiwa House Logistics Trust as payment of management fees, valued at S$0.4037 per unit, or S$191,159 in total. Total interest rises from 68,494,503 units (9.76%) to 68,968,021 units (9.82%).",
-    "sector": "reit",
-    "sub_sector": "reit-industrial",
-    "tags": [
-      "management-fees"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "N.A.",
-    "relationship_text": null,
-    "remarks_text": "Pursuant to the the trust deed constituting DHLT dated 2 November 2021 (the \"Trust Deed\"), DHLT has today issued 473,518 new Units (the \"New Units\") to DHAMA at the issue price of S$0.4037 per Unit as payment of base fees for the period from 1 July 2026 to 30 September 2026 (the \"Payment Period\"). The total number of Units in issue following the issuance of the New Units to DHAMA would be 702,060,754. In relation to Table 1 of item 8 of Part II, the percentage of total number of Units held \"Immediately before the transaction\" is based on 701,587,236  Units as at 26 November 2026 immediately prior to the issuance of the New Units to DHAMA and the percentage of total number of Units held \"Immediately after the transaction\" is based on 702,060,754 Units as at 26 November 2026 immediately after the issuance of the New Units to DHAMA.",
-    "filing_type": "form_6",
-    "notification_type": null,
-    "circumstance_key": "Securities as part of management",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Daiwa House Logistics Trust",
-    "transaction_reference": "468655643045175"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/6DRFM08CB3LVYP83/912760__eFORM3V2%2026%20Nov%20Dr%20Shi.pdf",
-    "timestamp": "2026-11-25",
-    "transaction_type": "others",
-    "holder_name": "Dr Shi Xu",
-    "transaction_value": null,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.00017,
-      "direct": 3e-05
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 337050426,
-          "percentage": 0.52001
-        },
-        "deemed": {
-          "amount": 292592853,
-          "percentage": 0.45142
-        },
-        "direct": {
-          "amount": 44457573,
-          "percentage": 0.06859
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 337050426,
-          "percentage": 0.51981
-        },
-        "deemed": {
-          "amount": 292592853,
-          "percentage": 0.45125
-        },
-        "direct": {
-          "amount": 44457573,
-          "percentage": 0.06856
-        }
-      }
-    },
-    "symbol": "MZH.SI",
-    "price_per_share": [
-      {
-        "price": null,
-        "amount": 246800
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Dr Shi Xu's stake in Nanofilm Technologies International Ltd rises to 52.00% from 51.98% after share buyback",
-    "body": "Dr Shi Xu's stake in Nanofilm Technologies International Ltd moved from 51.98% to 52.00% after the company bought back shares. The transaction involved 246,800 shares. The number of shares held is unchanged at 337,050,426.",
-    "sector": "technology",
-    "sub_sector": "hardware-electronics",
-    "tags": [
-      "share-buyback"
-    ],
-    "source_is_manual": false,
-    "deemed_interest_text": "(1) Dr Shi Xu is the sole shareholder of Pearl Yard Holdings Inc. (\"Pearl Yard\"). Accordingly, for the purposes of Section 4 of the Securities and Futures Act 2001 of Singapore (\"SFA\"), Dr Shi Xu is deemed to have an interest in 253,709,960 Shares held by Pearl Yard. (2) Dr Shi Xu holds 50% of the total issued shares in Neufront Investment Pte. Ltd. (\"Neufront\"). Accordingly, for the purposes of Section 4 of the SFA, Dr Shi Xu is deemed to have an interest in the 500,000 Shares held by Neufront. (3) In addition, for the purposes of Section 133(4) of the SFA, Dr Shi Xu is deemed to have an interest in 38,882,893 Shares in which his spouse, Mdm Jin Xiao Qun, has an interest, comprising (i) direct interests in 10,190,375 Shares, (ii) deemed interests in 28,192,518 Shares held by Harrymore International Limited and (iii) deemed interests in 500,000 Shares held by Neufront. However, to avoid double counting, the deemed interest of Dr Shi Xu disclosed in this Form 3 does not take into account the deemed interest which Mdm Jin has in the 500,000 Shares held by Neufront.",
-    "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings immediately before the transaction are calculated based on the Company's total issued shares of 648,406,488 (excluding treasury shares) as at 25 November 2026. The percentage of shareholdings immediately after the transaction are calculated based on the Company's total issued shares of 648,159,688 (excluding treasury shares) as at 25 November 2026. In this Notice, figures are rounded to the nearest 0.001%.",
-    "filing_type": "form_3_part_ii",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the Company's share buy-back of 246,800 shares by way of market acquisition",
-    "acting_party": null,
-    "company_name": "Nanofilm Technologies International Ltd",
-    "transaction_reference": "511011346552450"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/1DB34LZOFNSVW10H/912754__Form%203%20-%20Ong%20Ling%20Ling.pdf",
-    "timestamp": "2026-11-25",
     "transaction_type": "buy",
     "holder_name": "Ong Ling Ling",
-    "transaction_value": 138619,
+    "transaction_value": 301918,
     "share_percentage_transaction": {
-      "total": 0.00048,
+      "total": 0.00102,
       "deemed": 0.0,
-      "direct": 0.00048
+      "direct": 0.00102
     },
     "interest_breakdown": {
       "after": {
+        "total": {
+          "amount": 238884198,
+          "percentage": 0.2885
+        },
+        "deemed": {
+          "amount": 237288838,
+          "percentage": 0.28657
+        },
+        "direct": {
+          "amount": 1595360,
+          "percentage": 0.00193
+        }
+      },
+      "before": {
         "total": {
           "amount": 238039198,
           "percentage": 0.28748
@@ -160,32 +38,18 @@
           "amount": 750360,
           "percentage": 0.00091
         }
-      },
-      "before": {
-        "total": {
-          "amount": 237646398,
-          "percentage": 0.287
-        },
-        "deemed": {
-          "amount": 237288838,
-          "percentage": 0.28657
-        },
-        "direct": {
-          "amount": 357560,
-          "percentage": 0.00043
-        }
       }
     },
     "symbol": "M01.SI",
     "price_per_share": [
       {
-        "price": 0.3529,
-        "amount": 392800
+        "price": 0.3573,
+        "amount": 845000
       }
     ],
     "holder_type": "insider",
-    "title": "Ong Ling Ling buys S$139K of Metro Holdings Ltd shares",
-    "body": "Ong Ling Ling bought 392,800 shares of Metro Holdings Ltd in a market transaction at S$0.3529 per share, for a total of S$138,619. Total interest rises from 237,646,398 shares (28.70%) to 238,039,198 shares (28.75%).",
+    "title": "Ong Ling Ling buys S$302K of Metro Holdings Ltd shares",
+    "body": "Ong Ling Ling bought 845,000 shares of Metro Holdings Ltd in a market transaction at S$0.3573 per share, for a total of S$301,918. Total interest rises from 238,039,198 shares (28.75%) to 238,884,198 shares (28.85%).",
     "sector": "consumer-cyclicals",
     "sub_sector": "retail",
     "tags": [],
@@ -199,160 +63,162 @@
     "change_reason": null,
     "acting_party": null,
     "company_name": "Metro Holdings Ltd",
-    "transaction_reference": "722510346553095"
+    "transaction_reference": "805411346553353"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/WMCWXVHJ6IV8K5YZ/912744__eFORM1_ChengWK_261126_Final.pdf",
-    "timestamp": "2026-11-26",
-    "transaction_type": "buy",
-    "holder_name": "Cheng Wai Keung",
-    "transaction_value": null,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/NYQD6DK1I9CI797I/912878__eForm3_25Nov2026_BlackRock.pdf",
+    "timestamp": "2026-11-25",
+    "transaction_type": "sell",
+    "holder_name": "BlackRock, Inc",
+    "transaction_value": 2176949,
     "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0001,
+      "total": 0.0002,
+      "deemed": 0.0002,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 489237859,
-          "percentage": 0.6397
+          "amount": 348819151,
+          "percentage": 0.0698
         },
         "deemed": {
-          "amount": 489023459,
-          "percentage": 0.6394
+          "amount": 348819151,
+          "percentage": 0.0698
         },
         "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
+          "amount": 0,
+          "percentage": 0.0
         }
       },
       "before": {
         "total": {
-          "amount": 489192859,
-          "percentage": 0.6396
+          "amount": 349862351,
+          "percentage": 0.07
         },
         "deemed": {
-          "amount": 488978459,
-          "percentage": 0.6393
+          "amount": 349862351,
+          "percentage": 0.07
         },
         "direct": {
-          "amount": 214400,
-          "percentage": 0.0003
+          "amount": 0,
+          "percentage": 0.0
         }
       }
     },
-    "symbol": "W05.SI",
+    "symbol": "A17U.SI",
+    "price_per_share": [
+      {
+        "price": 2.0868,
+        "amount": 1043200
+      }
+    ],
+    "holder_type": "institution",
+    "title": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT falls after S$2.2M share sale",
+    "body": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT fell after a party linked to the holder sold 1,043,200 shares in a market transaction at S$2.0868 per share, for a total of S$2,176,949. No shares are held directly. Total interest falls from 349,862,351 shares (7.00%) to 348,819,151 shares (6.98%).",
+    "sector": "reit",
+    "sub_sector": "reit-industrial",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "BlackRock, Inc. holds a deemed interest  through various BlackRock, Inc. subsidiaries as set out below. 1.Aperio Group, LLC 2.BlackRock Advisors, LLC 3.BlackRock Financial Management, Inc. 4.BlackRock France SAS 5.BlackRock Investment Management, LLC 6.BlackRock Investment Management (Australia) Limited 7.BlackRock (Luxembourg) S.A. 8.BlackRock (Netherlands) B.V. 9.BlackRock Fund Managers Ltd 10.BlackRock Life Limited 11.BlackRock Asset Management Canada Limited 12.BlackRock Asset Management Ireland Limited 13.BlackRock Asset Management North Asia Limited 14.BlackRock Asset Management Schweiz AG 15.BlackRock (Singapore) Limited 16.BlackRock Advisors (UK) Limited 17.BlackRock Fund Advisors 18.BlackRock Investment Management (Taiwan) Limited 19.BlackRock International Limited 20.BlackRock Institutional Trust Company, N.A. 21.BlackRock Japan Co Ltd 22.BlackRock Investment Management (UK) Ltd 23.iShares (DE) I Investmentaktiengesellschaft mit Teilgesellschaftsvermögen",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "CapitaLand Ascendas REIT",
+    "transaction_reference": "255414046656952"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SHIIYAM94HPZ0ZS0/912875__eFORM3V2%20Mdm%20Jin.pdf",
+    "timestamp": "2026-11-26",
+    "transaction_type": "others",
+    "holder_name": "Jin Xiao Qun",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 2e-05,
+      "deemed": 1e-05,
+      "direct": 1e-05
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 38882893,
+          "percentage": 0.06001
+        },
+        "deemed": {
+          "amount": 28692518,
+          "percentage": 0.04428
+        },
+        "direct": {
+          "amount": 10190375,
+          "percentage": 0.01573
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 38882893,
+          "percentage": 0.05999
+        },
+        "deemed": {
+          "amount": 28692518,
+          "percentage": 0.04427
+        },
+        "direct": {
+          "amount": 10190375,
+          "percentage": 0.01572
+        }
+      }
+    },
+    "symbol": "MZH.SI",
     "price_per_share": [
       {
         "price": null,
-        "amount": 45000
+        "amount": 200000
       }
     ],
     "holder_type": "insider",
-    "title": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rises after purchase of 45,000 shares",
-    "body": "Cheng Wai Keung's deemed interest in Wing Tai Holdings Ltd rose after Chow Helen bought 45,000 shares. The direct holding is unchanged at 214,400 shares. Total interest rises from 489,192,859 shares (63.96%) to 489,237,859 shares (63.97%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-development",
-    "tags": [],
+    "title": "Jin Xiao Qun reports change in interest in Nanofilm Technologies International Ltd after share buyback",
+    "body": "Jin Xiao Qun reported a change in interest in Nanofilm Technologies International Ltd after the company bought back shares. The transaction involved 200,000 shares. The number of shares held is unchanged at 38,882,893.",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
+    "tags": [
+      "share-buyback"
+    ],
     "source_is_manual": false,
-    "deemed_interest_text": "The increase in deemed interest arises via acquisition of 45,000 WTH shares by Ms Chow Helen, spouse of Mr Cheng Wai Keung.",
+    "deemed_interest_text": "(1) Mdm Jin Xiao Qun holds more than 20% of the shares of Harrymore International Limited (\"Harrymore\"). Accordingly, for the purposes of Section 4 of the Securities and Futures Act 2001 of Singapore (\"SFA\"), Mdm Jin Xiao Qun is treated as having an interest in the 28,192,518 Shares held by Harrymore. (2) Mdm Jin Xiao Qun holds 50% of the total issued shares in Neufront Investment Private Limited (\"Neufront\"). Accordingly, for the purposes of Section 4 of the SFA, Mdm Jin Xiao Qun is deemed to have an interest in the 500,000 Shares held by Neufront.",
     "relationship_text": null,
-    "remarks_text": null,
-    "filing_type": "form_1",
-    "notification_type": null,
+    "remarks_text": "The percentage of shareholdings immediately before the transaction are calculated based on the Company's total issued shares of 648,159,688 (excluding treasury shares) as at 26 November 2026. The percentage of shareholdings immediately after the transaction are calculated based on the Company's total issued shares of 647,959,688 (excluding treasury shares) as at 26 November 2026. In this Notice, figures are rounded to the nearest 0.001%.",
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
     "circumstance_key": null,
-    "change_reason": "the acquisition of 45,000 shares by the holder's spouse",
-    "acting_party": "Chow Helen",
-    "company_name": "Wing Tai Holdings Ltd",
-    "transaction_reference": "590643643792154"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/C6O9DS91HSI67ROL/912718__20261126%20RS%20eFORM1V2%20-%20Final.pdf",
-    "timestamp": "2026-11-25",
-    "transaction_type": "buy",
-    "holder_name": "Ravinder Sajwan",
-    "transaction_value": 31678,
-    "share_percentage_transaction": {
-      "total": 0.0001,
-      "deemed": 0.0,
-      "direct": 0.0001
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 686571654,
-          "percentage": 0.6249
-        },
-        "deemed": {
-          "amount": 683073042,
-          "percentage": 0.6217
-        },
-        "direct": {
-          "amount": 3498612,
-          "percentage": 0.0032
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 686504654,
-          "percentage": 0.6248
-        },
-        "deemed": {
-          "amount": 683073042,
-          "percentage": 0.6217
-        },
-        "direct": {
-          "amount": 3431612,
-          "percentage": 0.0031
-        }
-      }
-    },
-    "symbol": "ULG.SI",
-    "price_per_share": [
-      {
-        "price": 0.4728,
-        "amount": 67000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Ravinder Sajwan buys S$31,678 of Ultragreen Ai Ltd shares",
-    "body": "Ravinder Sajwan bought 67,000 shares of Ultragreen Ai Ltd in a market transaction at S$0.4728 per share, for a total of S$31,678. Total interest rises from 686,504,654 shares (62.48%) to 686,571,654 shares (62.49%).",
-    "sector": "healthcare",
-    "sub_sector": "healthcare-facilities-services",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "The business and affairs of IR Investments LP are managed by a board of managers (the “IR Board of Managers”). IR Holding Company Inc., the general partner of IR Investments LP, has on 15 December 2019 appointed Mr Sajwan as the sole and initial member of the IR Board of Managers. Mr Sajwan is also a Protector of The Saul Trust and a member of Saul Strategic Limited (which holds 100% of Saul Holdings Pte. Ltd.’s ordinary shares). Accordingly, for the purposes of the Securities and Futures Act 2001 of Singapore and the Securities and Futures (Disclosure of Interests) Regulations 2012, Mr Sajwan has a deemed interest in the Shares held by Renew Group Private Limited.",
-    "relationship_text": null,
-    "remarks_text": "THE PERCENTAGE IN SHAREHOLDING IS CALCULATED BASED ON THE ISSUED SHARE CAPITAL OF 1,098,647,200  SHARES, EXCLUDING TREASURY SHARES, AS AT 25 NOVEMBER 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
+    "change_reason": "the Company's share buy back of 200,000 shares by way of market acquisition",
     "acting_party": null,
-    "company_name": "Ultragreen Ai Ltd",
-    "transaction_reference": "102545643195844"
+    "company_name": "Nanofilm Technologies International Ltd",
+    "transaction_reference": "588912346552355"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HUQCQJATO683CUOS/912695__eFORM1V2%20-%20Mdm%20Michelle%20Liem%2025%20November%202026.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
     "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "Michelle Liem Mei Fung",
-    "transaction_value": 381368,
+    "transaction_type": "sell",
+    "holder_name": "HSBC International Trustee Limited",
+    "transaction_value": 140025600,
     "share_percentage_transaction": {
-      "total": 0.00115,
-      "deemed": 0.00115,
+      "total": 0.5082,
+      "deemed": 0.5082,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 769356129,
-          "percentage": 0.60598
+          "amount": 0,
+          "percentage": 0.0
         },
         "deemed": {
-          "amount": 769356129,
-          "percentage": 0.60598
+          "amount": 0,
+          "percentage": 0.0
         },
         "direct": {
           "amount": 0,
@@ -361,12 +227,12 @@
       },
       "before": {
         "total": {
-          "amount": 767889329,
-          "percentage": 0.60483
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "deemed": {
-          "amount": 767889329,
-          "percentage": 0.60483
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "direct": {
           "amount": 0,
@@ -374,183 +240,51 @@
         }
       }
     },
-    "symbol": "T24.SI",
+    "symbol": "5VS.SI",
     "price_per_share": [
       {
-        "price": 0.26,
-        "amount": 1466800
+        "price": 0.64,
+        "amount": 218790000
       }
     ],
-    "holder_type": "insider",
-    "title": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rises after S$381K share purchase",
-    "body": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 1,466,800 shares in a market transaction at S$0.26 per share, for a total of S$381,368. No shares are held directly. Total interest rises from 767,889,329 shares (60.48%) to 769,356,129 shares (60.60%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-diversified",
+    "holder_type": "institution",
+    "title": "HSBC International Trustee Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "HSBC International Trustee Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Mdm Michelle Liem Mei Fung is deemed interested in the abovementioned shares held by Nuri Holdings (S) Pte Ltd and Greenpark Investments Pte Ltd by virtue of Section 4 of the Securities and Futures Act 2001.",
-    "relationship_text": null,
-    "remarks_text": "The percentage before and after the change is calculated based on 1,269,601,474 issued shares (excluding treasury shares) in Tuan Sing Holdings Limited as at 25 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Tuan Sing Holdings Ltd",
-    "transaction_reference": "338245643095684"
+    "deemed_interest_text": "N/A - This is a cessation of interests.",
+    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HKIT ceased to hold any interest in Hafary Holdings.",
+    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": null,
+    "change_reason": "the sale of HSIH's entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "902234643933683"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HUQCQJATO683CUOS/912695__eFORM1V2%20-%20Mdm%20Michelle%20Liem%2025%20November%202026.pdf",
-    "timestamp": "2026-11-24",
-    "transaction_type": "buy",
-    "holder_name": "Michelle Liem Mei Fung",
-    "transaction_value": 68750,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0002,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 769606129,
-          "percentage": 0.60618
-        },
-        "deemed": {
-          "amount": 769606129,
-          "percentage": 0.60618
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 769356129,
-          "percentage": 0.60598
-        },
-        "deemed": {
-          "amount": 769356129,
-          "percentage": 0.60598
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "T24.SI",
-    "price_per_share": [
-      {
-        "price": 0.275,
-        "amount": 250000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rises after S$68,750 share purchase",
-    "body": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 250,000 shares in a market transaction at S$0.275 per share, for a total of S$68,750. No shares are held directly. Total interest rises from 769,356,129 shares (60.60%) to 769,606,129 shares (60.62%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-diversified",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "Mdm Michelle Liem Mei Fung is deemed interested in the abovementioned shares held by Nuri Holdings (S) Pte Ltd and Greenpark Investments Pte Ltd by virtue of Section 4 of the Securities and Futures Act 2001.",
-    "relationship_text": null,
-    "remarks_text": "The percentage before and after the change is calculated based on 1,269,601,474 issued shares (excluding treasury shares) in Tuan Sing Holdings Limited as at 25 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Tuan Sing Holdings Ltd",
-    "transaction_reference": "420303465113711"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/HUQCQJATO683CUOS/912695__eFORM1V2%20-%20Mdm%20Michelle%20Liem%2025%20November%202026.pdf",
-    "timestamp": "2026-11-25",
-    "transaction_type": "buy",
-    "holder_name": "Michelle Liem Mei Fung",
-    "transaction_value": 82500,
-    "share_percentage_transaction": {
-      "total": 0.00024,
-      "deemed": 0.00024,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 769906129,
-          "percentage": 0.60642
-        },
-        "deemed": {
-          "amount": 769906129,
-          "percentage": 0.60642
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 769606129,
-          "percentage": 0.60618
-        },
-        "deemed": {
-          "amount": 769606129,
-          "percentage": 0.60618
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "T24.SI",
-    "price_per_share": [
-      {
-        "price": 0.275,
-        "amount": 300000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rises after S$82,500 share purchase",
-    "body": "Michelle Liem Mei Fung's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 300,000 shares in a market transaction at S$0.275 per share, for a total of S$82,500. No shares are held directly. Total interest rises from 769,606,129 shares (60.62%) to 769,906,129 shares (60.64%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-diversified",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "Mdm Michelle Liem Mei Fung is deemed interested in the abovementioned shares held by Nuri Holdings (S) Pte Ltd and Greenpark Investments Pte Ltd by virtue of Section 4 of the Securities and Futures Act 2001.",
-    "relationship_text": null,
-    "remarks_text": "The percentage before and after the change is calculated based on 1,269,601,474 issued shares (excluding treasury shares) in Tuan Sing Holdings Limited as at 25 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Tuan Sing Holdings Ltd",
-    "transaction_reference": "003225643035552"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FU73JHVE3A56DT1T/912693__eFORM1V2%20-%20Mr%20William%20Liem%2025%20November%202026.pdf",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
     "timestamp": "2026-11-23",
-    "transaction_type": "buy",
-    "holder_name": "William Nursalim Alias William Liem",
-    "transaction_value": 381368,
+    "transaction_type": "sell",
+    "holder_name": "HSBC International Trustee (Holdings) Pte. Limited",
+    "transaction_value": 140025600,
     "share_percentage_transaction": {
-      "total": 0.00115,
-      "deemed": 0.00115,
+      "total": 0.5082,
+      "deemed": 0.5082,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 769356129,
-          "percentage": 0.60598
+          "amount": 0,
+          "percentage": 0.0
         },
         "deemed": {
-          "amount": 769356129,
-          "percentage": 0.60598
+          "amount": 0,
+          "percentage": 0.0
         },
         "direct": {
           "amount": 0,
@@ -559,12 +293,12 @@
       },
       "before": {
         "total": {
-          "amount": 767889329,
-          "percentage": 0.60483
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "deemed": {
-          "amount": 767889329,
-          "percentage": 0.60483
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "direct": {
           "amount": 0,
@@ -572,51 +306,51 @@
         }
       }
     },
-    "symbol": "T24.SI",
+    "symbol": "5VS.SI",
     "price_per_share": [
       {
-        "price": 0.26,
-        "amount": 1466800
+        "price": 0.64,
+        "amount": 218790000
       }
     ],
-    "holder_type": "insider",
-    "title": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rises after S$381K share purchase",
-    "body": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 1,466,800 shares in a market transaction at S$0.26 per share, for a total of S$381,368. No shares are held directly. Total interest rises from 767,889,329 shares (60.48%) to 769,356,129 shares (60.60%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-diversified",
+    "holder_type": "institution",
+    "title": "HSBC International Trustee (Holdings) Pte. Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "HSBC International Trustee (Holdings) Pte. Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Mr William Nursalim alias William Liem is deemed interested in the abovementioned shares held by Nuri Holdings (S) Pte Ltd and Greenpark Investments Pte Ltd by virtue of Section 4 of the Securities and Futures Act 2001.",
-    "relationship_text": null,
-    "remarks_text": "The percentage before and after the change is calculated based on 1,269,601,474 issued shares (excluding treasury shares) in Tuan Sing Holdings Limited as at 25 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Tuan Sing Holdings Ltd",
-    "transaction_reference": "245245643098754"
+    "deemed_interest_text": "N/A - This is a cessation of interests.",
+    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HTHL ceased to hold any interest in Hafary Holdings.",
+    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": null,
+    "change_reason": "the sale of HSIH's entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "902234643933683"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FU73JHVE3A56DT1T/912693__eFORM1V2%20-%20Mr%20William%20Liem%2025%20November%202026.pdf",
-    "timestamp": "2026-11-24",
-    "transaction_type": "buy",
-    "holder_name": "William Nursalim Alias William Liem",
-    "transaction_value": 68750,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "The Hongkong and Shanghai Banking Corporation Limited",
+    "transaction_value": 140025600,
     "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0002,
+      "total": 0.5082,
+      "deemed": 0.5082,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 769606129,
-          "percentage": 0.60618
+          "amount": 0,
+          "percentage": 0.0
         },
         "deemed": {
-          "amount": 769606129,
-          "percentage": 0.60618
+          "amount": 0,
+          "percentage": 0.0
         },
         "direct": {
           "amount": 0,
@@ -625,12 +359,12 @@
       },
       "before": {
         "total": {
-          "amount": 769356129,
-          "percentage": 0.60598
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "deemed": {
-          "amount": 769356129,
-          "percentage": 0.60598
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "direct": {
           "amount": 0,
@@ -638,51 +372,51 @@
         }
       }
     },
-    "symbol": "T24.SI",
+    "symbol": "5VS.SI",
     "price_per_share": [
       {
-        "price": 0.275,
-        "amount": 250000
+        "price": 0.64,
+        "amount": 218790000
       }
     ],
-    "holder_type": "insider",
-    "title": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rises after S$68,750 share purchase",
-    "body": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 250,000 shares in a market transaction at S$0.275 per share, for a total of S$68,750. No shares are held directly. Total interest rises from 769,356,129 shares (60.60%) to 769,606,129 shares (60.62%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-diversified",
+    "holder_type": "institution",
+    "title": "The Hongkong and Shanghai Banking Corporation Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "The Hongkong and Shanghai Banking Corporation Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Mr William Nursalim alias William Liem is deemed interested in the abovementioned shares held by Nuri Holdings (S) Pte Ltd and Greenpark Investments Pte Ltd by virtue of Section 4 of the Securities and Futures Act 2001.",
-    "relationship_text": null,
-    "remarks_text": "The percentage before and after the change is calculated based on 1,269,601,474 issued shares (excluding treasury shares) in Tuan Sing Holdings Limited as at 25 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Tuan Sing Holdings Ltd",
-    "transaction_reference": "547203465199311"
+    "deemed_interest_text": "N/A - This is a cessation of interests.",
+    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HBAP ceased to hold any interest in Hafary Holdings.",
+    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": null,
+    "change_reason": "the sale of its entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "902234643933683"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FU73JHVE3A56DT1T/912693__eFORM1V2%20-%20Mr%20William%20Liem%2025%20November%202026.pdf",
-    "timestamp": "2026-11-25",
-    "transaction_type": "buy",
-    "holder_name": "William Nursalim Alias William Liem",
-    "transaction_value": 82500,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "HSBC Asia Holdings Limited",
+    "transaction_value": 140025600,
     "share_percentage_transaction": {
-      "total": 0.00024,
-      "deemed": 0.00024,
+      "total": 0.5082,
+      "deemed": 0.5082,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 769906129,
-          "percentage": 0.60642
+          "amount": 0,
+          "percentage": 0.0
         },
         "deemed": {
-          "amount": 769906129,
-          "percentage": 0.60642
+          "amount": 0,
+          "percentage": 0.0
         },
         "direct": {
           "amount": 0,
@@ -691,12 +425,12 @@
       },
       "before": {
         "total": {
-          "amount": 769606129,
-          "percentage": 0.60618
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "deemed": {
-          "amount": 769606129,
-          "percentage": 0.60618
+          "amount": 218790000,
+          "percentage": 0.5082
         },
         "direct": {
           "amount": 0,
@@ -704,29 +438,95 @@
         }
       }
     },
-    "symbol": "T24.SI",
+    "symbol": "5VS.SI",
     "price_per_share": [
       {
-        "price": 0.275,
-        "amount": 300000
+        "price": 0.64,
+        "amount": 218790000
       }
     ],
-    "holder_type": "insider",
-    "title": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rises after S$82,500 share purchase",
-    "body": "William Nursalim Alias William Liem's deemed interest in Tuan Sing Holdings Ltd rose after a party linked to the holder bought 300,000 shares in a market transaction at S$0.275 per share, for a total of S$82,500. No shares are held directly. Total interest rises from 769,606,129 shares (60.62%) to 769,906,129 shares (60.64%).",
-    "sector": "properties-real-estate",
-    "sub_sector": "real-estate-diversified",
+    "holder_type": "institution",
+    "title": "HSBC Asia Holdings Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "HSBC Asia Holdings Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "Mr William Nursalim alias William Liem is deemed interested in the abovementioned shares held by Nuri Holdings (S) Pte Ltd and Greenpark Investments Pte Ltd by virtue of Section 4 of the Securities and Futures Act 2001.",
-    "relationship_text": null,
-    "remarks_text": "The percentage before and after the change is calculated based on 1,269,601,474 issued shares (excluding treasury shares) in Tuan Sing Holdings Limited as at 25 November 2026.",
-    "filing_type": "form_1",
-    "notification_type": null,
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Tuan Sing Holdings Ltd",
-    "transaction_reference": "469325643032292"
+    "deemed_interest_text": "N/A - This is a cessation of interests.",
+    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HAHO ceased to hold any interest in Hafary Holdings.",
+    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": null,
+    "change_reason": "HSIH's sale of its entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "902234643933683"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "sell",
+    "holder_name": "HSBC Holdings plc",
+    "transaction_value": 140025600,
+    "share_percentage_transaction": {
+      "total": 0.5082,
+      "deemed": 0.5082,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "deemed": {
+          "amount": 0,
+          "percentage": 0.0
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "deemed": {
+          "amount": 218790000,
+          "percentage": 0.5082
+        },
+        "direct": {
+          "amount": 0,
+          "percentage": 0.0
+        }
+      }
+    },
+    "symbol": "5VS.SI",
+    "price_per_share": [
+      {
+        "price": 0.64,
+        "amount": 218790000
+      }
+    ],
+    "holder_type": "institution",
+    "title": "HSBC Holdings plc ceases to be substantial shareholder of Hafary Holdings Ltd",
+    "body": "HSBC Holdings plc's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
+    "sector": "industrials",
+    "sub_sector": "engineering-construction-building-products",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "N/A - This is a cessation of interests.",
+    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HGHQ ceased to hold any interest in Hafary Holdings.",
+    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
+    "filing_type": "form_3_part_iii_iv",
+    "notification_type": "ceasing",
+    "circumstance_key": null,
+    "change_reason": "the sale of its entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
+    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
+    "company_name": "Hafary Holdings Ltd",
+    "transaction_reference": "902234643933683"
   }
 ]
