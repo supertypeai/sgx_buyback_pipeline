@@ -4,7 +4,7 @@
     "reference": "SG261126DVCAT4CU",
     "recording_date": "2026-12-09",
     "ex_date": "2026-12-08",
-    "dividend_amount": 0.027379512269999996,
+    "dividend_amount": 0.027338374799999995,
     "payment_date": "2027-02-10",
     "payment_type": "Tax Not Applicable",
     "dividend_type": "Final",
@@ -14,14 +14,14 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/V83L2G9J7SCPLY5U/e673f16a6556da7a3af60716c5a3fcf72b9699ba4906ae7820c2a7f7ef9da3ba",
     "timestamp": "2026-11-26 18:29:41",
-    "updated_on": "2026-11-27 01:38:25"
+    "updated_on": "2026-11-28 01:18:38"
   },
   {
     "symbol": "NPW",
     "reference": "SG261126DVCA2DEA",
     "recording_date": "2026-12-14",
     "ex_date": "2026-12-11",
-    "dividend_amount": 0.015665,
+    "dividend_amount": 0.015655,
     "payment_date": "2026-12-28",
     "payment_type": "Tax Exempted (1-tier)",
     "dividend_type": "Interim",
@@ -31,7 +31,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/YLOZ73VH8N99036I/1bb282e4dacd3e46630641407a39e3bdcb578e74d80f107ceefea4e155972757",
     "timestamp": "2026-11-26 17:38:26",
-    "updated_on": "2026-11-27 01:38:30"
+    "updated_on": "2026-11-28 01:18:42"
   },
   {
     "symbol": "G20",
@@ -48,7 +48,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/E7AXL5SV70KTJ3R5/de5b5cf15d023bba47d1f405a094ad175595ebd918763f00f7bab24024d8fe6e",
     "timestamp": "2026-11-26 17:31:03",
-    "updated_on": "2026-11-27 01:38:35"
+    "updated_on": "2026-11-28 01:18:47"
   },
   {
     "symbol": "ER0",
@@ -65,7 +65,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/QNCRNBTTURR9LXEE/c0ed425e689c6c2b5bf0c6a030caf888691c308c1e6219e20d8ea8a718bc710d",
     "timestamp": "2026-11-17 17:25:44",
-    "updated_on": "2026-11-27 01:38:52"
+    "updated_on": "2026-11-28 01:19:04"
   },
   {
     "symbol": "5ML",
@@ -82,7 +82,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/BEUU992VO0ODOR7N/082996eaa73d3025d7147d65451104a9e7745be3ac12bbbd0c9cb7903bc348fa",
     "timestamp": "2026-11-13 17:45:25",
-    "updated_on": "2026-11-27 01:39:03"
+    "updated_on": "2026-11-28 01:19:15"
   },
   {
     "symbol": "Z74",
@@ -99,7 +99,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/9SXCFIVWI9WD209O/0bdb99d8c0c434101a3959e596b5fa1f2a135375de99d33bf2b4121ce72002f9",
     "timestamp": "2026-11-13 07:31:43",
-    "updated_on": "2026-11-27 01:39:15"
+    "updated_on": "2026-11-28 01:19:27"
   },
   {
     "symbol": "G92",
@@ -116,7 +116,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/USFT5RHCWGNB8ZLN/ddd35ef147e8e897bc14d814af2587fd779610d77b76b5912da707bd94a5ea0d",
     "timestamp": "2026-11-12 12:43:51",
-    "updated_on": "2026-11-27 01:39:28"
+    "updated_on": "2026-11-28 01:19:39"
   },
   {
     "symbol": "558",
@@ -133,7 +133,7 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/CNN7VASWHY10CFJT/d782271fc49adab96904de60cef5e079c225b37302e8cc6f4748299606cf497a",
     "timestamp": "2026-11-10 18:24:39",
-    "updated_on": "2026-11-27 01:39:51"
+    "updated_on": "2026-11-28 01:20:01"
   },
   {
     "symbol": "5OI",
@@ -150,6 +150,6 @@
     },
     "source": "https://links.sgx.com/1.0.0/corporate-announcements/YI31MEB5WJLP1CH4/9194527621b989fb51a19839d3674b4b64847eecd6b8ca532a3f10d7f81939a9",
     "timestamp": "2026-10-28 19:19:04",
-    "updated_on": "2026-11-27 01:40:48"
+    "updated_on": "2026-11-28 01:20:43"
   }
 ]
