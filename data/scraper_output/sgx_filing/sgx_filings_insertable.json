@@ -1,90 +1,24 @@
 [
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/ECV2E2AU98TIXPDR/912914__Form%203%20-%20Ong%20Ling%20Ling.pdf",
-    "timestamp": "2026-11-26",
-    "transaction_type": "buy",
-    "holder_name": "Ong Ling Ling",
-    "transaction_value": 301918,
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/FF559ZHPCSEPAF0X/912987__Venture%20Corporation%20Limited_Form%203.pdf",
+    "timestamp": "2026-11-23",
+    "transaction_type": "others",
+    "holder_name": "The Vanguard Group, Inc",
+    "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 0.00102,
-      "deemed": 0.0,
-      "direct": 0.00102
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 238884198,
-          "percentage": 0.2885
-        },
-        "deemed": {
-          "amount": 237288838,
-          "percentage": 0.28657
-        },
-        "direct": {
-          "amount": 1595360,
-          "percentage": 0.00193
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 238039198,
-          "percentage": 0.28748
-        },
-        "deemed": {
-          "amount": 237288838,
-          "percentage": 0.28657
-        },
-        "direct": {
-          "amount": 750360,
-          "percentage": 0.00091
-        }
-      }
-    },
-    "symbol": "M01.SI",
-    "price_per_share": [
-      {
-        "price": 0.3573,
-        "amount": 845000
-      }
-    ],
-    "holder_type": "insider",
-    "title": "Ong Ling Ling buys S$302K of Metro Holdings Ltd shares",
-    "body": "Ong Ling Ling bought 845,000 shares of Metro Holdings Ltd in a market transaction at S$0.3573 per share, for a total of S$301,918. Total interest rises from 238,039,198 shares (28.75%) to 238,884,198 shares (28.85%).",
-    "sector": "consumer-cyclicals",
-    "sub_sector": "retail",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": null,
-    "relationship_text": null,
-    "remarks_text": "In this notification, the shareholding percentage immediately before and after change is based on 828,035,874 issued shares (excluding treasury shares).",
-    "filing_type": "form_3_part_ii",
-    "notification_type": "change_in_level",
-    "circumstance_key": "Securities via market transaction",
-    "change_reason": null,
-    "acting_party": null,
-    "company_name": "Metro Holdings Ltd",
-    "transaction_reference": "805411346553353"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/NYQD6DK1I9CI797I/912878__eForm3_25Nov2026_BlackRock.pdf",
-    "timestamp": "2026-11-25",
-    "transaction_type": "sell",
-    "holder_name": "BlackRock, Inc",
-    "transaction_value": 2176949,
-    "share_percentage_transaction": {
-      "total": 0.0002,
-      "deemed": 0.0002,
+      "total": 0.00816,
+      "deemed": 0.00816,
       "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 348819151,
-          "percentage": 0.0698
+          "amount": 14633683,
+          "percentage": 0.05101
         },
         "deemed": {
-          "amount": 348819151,
-          "percentage": 0.0698
+          "amount": 14633683,
+          "percentage": 0.05101
         },
         "direct": {
           "amount": 0,
@@ -93,12 +27,12 @@
       },
       "before": {
         "total": {
-          "amount": 349862351,
-          "percentage": 0.07
+          "amount": 12293583,
+          "percentage": 0.04285
         },
         "deemed": {
-          "amount": 349862351,
-          "percentage": 0.07
+          "amount": 12293583,
+          "percentage": 0.04285
         },
         "direct": {
           "amount": 0,
@@ -106,21 +40,148 @@
         }
       }
     },
-    "symbol": "A17U.SI",
+    "symbol": "V03.SI",
     "price_per_share": [
       {
-        "price": 2.0868,
-        "amount": 1043200
+        "price": null,
+        "amount": 2340100
       }
     ],
     "holder_type": "institution",
-    "title": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT falls after S$2.2M share sale",
-    "body": "BlackRock, Inc's deemed interest in CapitaLand Ascendas REIT fell after a party linked to the holder sold 1,043,200 shares in a market transaction at S$2.0868 per share, for a total of S$2,176,949. No shares are held directly. Total interest falls from 349,862,351 shares (7.00%) to 348,819,151 shares (6.98%).",
-    "sector": "reit",
-    "sub_sector": "reit-industrial",
+    "title": "The Vanguard Group, Inc becomes substantial shareholder of Venture Corp Ltd with 5.10% stake",
+    "body": "The Vanguard Group, Inc reported a change in deemed interest in Venture Corp Ltd. The filing attributes the change to a change in investment management arrangements. The transaction involved 2,340,100 shares. No shares are held directly. Total interest rises from 12,293,583 shares (4.29%) to 14,633,683 shares (5.10%). With this, the holder becomes a substantial shareholder of Venture Corp Ltd.",
+    "sector": "technology",
+    "sub_sector": "hardware-electronics",
     "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "BlackRock, Inc. holds a deemed interest  through various BlackRock, Inc. subsidiaries as set out below. 1.Aperio Group, LLC 2.BlackRock Advisors, LLC 3.BlackRock Financial Management, Inc. 4.BlackRock France SAS 5.BlackRock Investment Management, LLC 6.BlackRock Investment Management (Australia) Limited 7.BlackRock (Luxembourg) S.A. 8.BlackRock (Netherlands) B.V. 9.BlackRock Fund Managers Ltd 10.BlackRock Life Limited 11.BlackRock Asset Management Canada Limited 12.BlackRock Asset Management Ireland Limited 13.BlackRock Asset Management North Asia Limited 14.BlackRock Asset Management Schweiz AG 15.BlackRock (Singapore) Limited 16.BlackRock Advisors (UK) Limited 17.BlackRock Fund Advisors 18.BlackRock Investment Management (Taiwan) Limited 19.BlackRock International Limited 20.BlackRock Institutional Trust Company, N.A. 21.BlackRock Japan Co Ltd 22.BlackRock Investment Management (UK) Ltd 23.iShares (DE) I Investmentaktiengesellschaft mit Teilgesellschaftsvermögen",
+    "deemed_interest_text": "The Substantial Shareholder is deemed to have an interest in the shares by virtue of its investment management arrangements.",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "becoming",
+    "circumstance_key": null,
+    "change_reason": "a change in investment management arrangements",
+    "acting_party": null,
+    "company_name": "Venture Corp Ltd",
+    "transaction_reference": "157313346558551"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/W42C7QKOY5Z6WPZV/912985__20261128Form1_GSC.pdf",
+    "timestamp": "2026-11-26",
+    "transaction_type": "buy",
+    "holder_name": "Dato' Seri Gooi Soon Chai",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.0001,
+      "deemed": 0.0001,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 102014091,
+          "percentage": 0.2155
+        },
+        "deemed": {
+          "amount": 93697068,
+          "percentage": 0.1979
+        },
+        "direct": {
+          "amount": 8317023,
+          "percentage": 0.0176
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 102012091,
+          "percentage": 0.2154
+        },
+        "deemed": {
+          "amount": 93695068,
+          "percentage": 0.1978
+        },
+        "direct": {
+          "amount": 8317023,
+          "percentage": 0.0176
+        }
+      }
+    },
+    "symbol": "E28.SI",
+    "price_per_share": [
+      {
+        "price": null,
+        "amount": 2000
+      }
+    ],
+    "holder_type": "insider",
+    "title": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd rises after purchase of 2,000 shares",
+    "body": "Dato' Seri Gooi Soon Chai's deemed interest in Frencken Group Ltd rose after the holder's family bought 2,000 shares. The direct holding is unchanged at 8,317,023 shares. Total interest rises from 102,012,091 shares (21.54%) to 102,014,091 shares (21.55%).",
+    "sector": "technology",
+    "sub_sector": "communication-instruments",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Dato' Seri Gooi Soon Chai is deemed to have an interest in the 4,033,047 shares held by his family, 12,392,882 shares held by Prime Logic (M) Sdn. Bhd., 20,829,500 shares held by Sinn Hin Company Sdn. Bhd., 41,954,194 shares held by Precico Holdings Sdn. Bhd., and 14,487,445 shares held by Cayman Resources Sdn. Bhd. by virtue of Section 4 of the Securities and Futures Act (Chapter 289) and Section 7 of the Companies Act (Chapter 50).",
+    "relationship_text": null,
+    "remarks_text": "The percentage of issued share capital is calculated based on 473,570,000 shares (excluding treasury shares).",
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": null,
+    "change_reason": "the acquisition of 2,000 shares by his family via market transaction",
+    "acting_party": "the holder's family",
+    "company_name": "Frencken Group Ltd",
+    "transaction_reference": "135393346541112"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/5U9LTHT7FM7DPZV4/912940__eFORM3V2%20-%20HYE.pdf",
+    "timestamp": "2026-11-25",
+    "transaction_type": "buy",
+    "holder_name": "Hung Yung Enterprise Sdn Bhd",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.00022,
+      "deemed": 0.00022,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 97500111,
+          "percentage": 0.24307
+        },
+        "deemed": {
+          "amount": 91101015,
+          "percentage": 0.22712
+        },
+        "direct": {
+          "amount": 6399096,
+          "percentage": 0.01595
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 97410111,
+          "percentage": 0.24285
+        },
+        "deemed": {
+          "amount": 91011015,
+          "percentage": 0.2269
+        },
+        "direct": {
+          "amount": 6399096,
+          "percentage": 0.01595
+        }
+      }
+    },
+    "symbol": "1MZ.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Hung Yung Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rises after share purchase",
+    "body": "Hung Yung Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought shares in a market transaction. The direct holding is unchanged at 6,399,096 shares. Total interest rises from 97,410,111 shares (24.29%) to 97,500,111 shares (24.31%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Hung Yung Enterprise Sdn Bhd is deemed to have an interest in the shares held by Tan Sri Datuk Tiong Su Kouk, Puan Sri Datin Wong Bak Hee, UOB Kay Hian Pte Ltd, S.K. Tiong Enterprise Sdn Bhd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises of: (a) S.K. Tiong Enterprise Sdn Bhd - 11,486,856 shares (b) Tan Sri Datuk Tiong Su Kouk - 69,285,684  shares (c) Phillip Securities Pte Ltd - 500 shares (d) UOB Kay Hian Pte Ltd - 8,949,423 shares (e) Puan Sri Datin Wong Bak Hee - 1,378,552 shares",
     "relationship_text": null,
     "remarks_text": null,
     "filing_type": "form_3_part_ii",
@@ -128,405 +189,195 @@
     "circumstance_key": "Securities via market transaction",
     "change_reason": null,
     "acting_party": null,
-    "company_name": "CapitaLand Ascendas REIT",
-    "transaction_reference": "255414046656952"
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "145912346552736"
   },
   {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/SHIIYAM94HPZ0ZS0/912875__eFORM3V2%20Mdm%20Jin.pdf",
-    "timestamp": "2026-11-26",
-    "transaction_type": "others",
-    "holder_name": "Jin Xiao Qun",
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/DJHPC7RNBNGZ9VTG/912936__eFORM3V2%20-%20SKT.pdf",
+    "timestamp": "2026-11-25",
+    "transaction_type": "buy",
+    "holder_name": "S.K. Tiong Enterprise Sdn Bhd",
     "transaction_value": null,
     "share_percentage_transaction": {
-      "total": 2e-05,
-      "deemed": 1e-05,
-      "direct": 1e-05
+      "total": 0.00023,
+      "deemed": 0.00023,
+      "direct": 0.0
     },
     "interest_breakdown": {
       "after": {
         "total": {
-          "amount": 38882893,
-          "percentage": 0.06001
+          "amount": 97500111,
+          "percentage": 0.24308
         },
         "deemed": {
-          "amount": 28692518,
-          "percentage": 0.04428
+          "amount": 86013255,
+          "percentage": 0.21444
         },
         "direct": {
-          "amount": 10190375,
-          "percentage": 0.01573
+          "amount": 11486856,
+          "percentage": 0.02864
         }
       },
       "before": {
         "total": {
-          "amount": 38882893,
-          "percentage": 0.05999
+          "amount": 97410111,
+          "percentage": 0.24285
         },
         "deemed": {
-          "amount": 28692518,
-          "percentage": 0.04427
+          "amount": 85923255,
+          "percentage": 0.21421
         },
         "direct": {
-          "amount": 10190375,
-          "percentage": 0.01572
+          "amount": 11486856,
+          "percentage": 0.02864
         }
       }
     },
-    "symbol": "MZH.SI",
+    "symbol": "1MZ.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "S.K. Tiong Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rises after share purchase",
+    "body": "S.K. Tiong Enterprise Sdn Bhd's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought shares in a market transaction. The direct holding is unchanged at 11,486,856 shares. Total interest rises from 97,410,111 shares (24.29%) to 97,500,111 shares (24.31%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "S.K. Tiong Enterprise Sdn Bhd is deemed to have an interest in the shares held by Tan Sri Datuk Tiong Su Kouk, Puan Sri Datin Wong Bak Hee, Hung Yung Enterprise Sdn Bhd, UOB Kay Hian Pte Ltd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises: (a) Hung Yung Enterprise Sdn Bhd - 6,399,096 shares (b) Tan Sri Datuk Tiong Su Kouk - 69,285,684 shares (c) Phillip Securities Pte Ltd - 500 shares (d) UOB Kay Hian Pte Ltd - 8,949,423 shares (e) Puan Sri Datin Wong Bak Hee - 1,378,552 shares",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "467012346553059"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/7ETF40QAIQ7914I1/912934__eFORM3V2%20-%20PSW.pdf",
+    "timestamp": "2026-11-25",
+    "transaction_type": "buy",
+    "holder_name": "Puan Sri Datin Wong Bak Hee",
+    "transaction_value": null,
+    "share_percentage_transaction": {
+      "total": 0.00023,
+      "deemed": 0.00023,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 97500111,
+          "percentage": 0.24308
+        },
+        "deemed": {
+          "amount": 96121559,
+          "percentage": 0.23964
+        },
+        "direct": {
+          "amount": 1378552,
+          "percentage": 0.00344
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 97410111,
+          "percentage": 0.24285
+        },
+        "deemed": {
+          "amount": 96031559,
+          "percentage": 0.23941
+        },
+        "direct": {
+          "amount": 1378552,
+          "percentage": 0.00344
+        }
+      }
+    },
+    "symbol": "1MZ.SI",
+    "price_per_share": [],
+    "holder_type": "insider",
+    "title": "Puan Sri Datin Wong Bak Hee's deemed interest in Nam Cheong Ltd rises after share purchase",
+    "body": "Puan Sri Datin Wong Bak Hee's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought shares in a market transaction. The direct holding is unchanged at 1,378,552 shares. Total interest rises from 97,410,111 shares (24.29%) to 97,500,111 shares (24.31%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
+    "source_is_manual": false,
+    "deemed_interest_text": "Puan Sri Datin Wong Bak Hee is deemed to have an interest in the shares held by her husband, Tan Sri Datuk Tiong Su Kouk, S.K. Tiong Enterprise Sdn Bhd, Hung Yung Enterprise Sdn Bhd, UOB Kay Hian Pte Ltd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises: (a) S.K. Tiong Enterprise Sdn Bhd - 11,486,856 shares (b) Hung Yung Enterprise Sdn Bhd - 6,399,096 shares (c) Tan Sri Datuk Tiong Su Kouk - 69,285,684 shares (d) Phillip Securities Pte Ltd - 500 shares (e) UOB Kay Hian Pte Ltd - 8,949,423 shares",
+    "relationship_text": null,
+    "remarks_text": null,
+    "filing_type": "form_3_part_ii",
+    "notification_type": "change_in_level",
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
+    "acting_party": null,
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "003912346552904"
+  },
+  {
+    "source": "https://links.sgx.com/1.0.0/corporate-announcements/J18Z1JJGQNGQ703R/912932__eFORM1V2%20-%20TST.pdf",
+    "timestamp": "2026-11-25",
+    "transaction_type": "buy",
+    "holder_name": "Tan Sri Datuk Tiong Su Kouk",
+    "transaction_value": 60100,
+    "share_percentage_transaction": {
+      "total": 0.00022,
+      "deemed": 0.00022,
+      "direct": 0.0
+    },
+    "interest_breakdown": {
+      "after": {
+        "total": {
+          "amount": 97500111,
+          "percentage": 0.24307
+        },
+        "deemed": {
+          "amount": 28214427,
+          "percentage": 0.07034
+        },
+        "direct": {
+          "amount": 69285684,
+          "percentage": 0.17273
+        }
+      },
+      "before": {
+        "total": {
+          "amount": 97410111,
+          "percentage": 0.24285
+        },
+        "deemed": {
+          "amount": 28124427,
+          "percentage": 0.07012
+        },
+        "direct": {
+          "amount": 69285684,
+          "percentage": 0.17273
+        }
+      }
+    },
+    "symbol": "1MZ.SI",
     "price_per_share": [
       {
-        "price": null,
-        "amount": 200000
+        "price": 0.66778,
+        "amount": 90000
       }
     ],
     "holder_type": "insider",
-    "title": "Jin Xiao Qun reports change in interest in Nanofilm Technologies International Ltd after share buyback",
-    "body": "Jin Xiao Qun reported a change in interest in Nanofilm Technologies International Ltd after the company bought back shares. The transaction involved 200,000 shares. The number of shares held is unchanged at 38,882,893.",
-    "sector": "technology",
-    "sub_sector": "hardware-electronics",
-    "tags": [
-      "share-buyback"
-    ],
+    "title": "Tan Sri Datuk Tiong Su Kouk's deemed interest in Nam Cheong Ltd rises after S$60,100 share purchase",
+    "body": "Tan Sri Datuk Tiong Su Kouk's deemed interest in Nam Cheong Ltd rose after a party linked to the holder bought 90,000 shares in a market transaction at S$0.6678 per share, for a total of S$60,100. The direct holding is unchanged at 69,285,684 shares. Total interest rises from 97,410,111 shares (24.29%) to 97,500,111 shares (24.31%).",
+    "sector": "industrials",
+    "sub_sector": "aerospace-defense",
+    "tags": [],
     "source_is_manual": false,
-    "deemed_interest_text": "(1) Mdm Jin Xiao Qun holds more than 20% of the shares of Harrymore International Limited (\"Harrymore\"). Accordingly, for the purposes of Section 4 of the Securities and Futures Act 2001 of Singapore (\"SFA\"), Mdm Jin Xiao Qun is treated as having an interest in the 28,192,518 Shares held by Harrymore. (2) Mdm Jin Xiao Qun holds 50% of the total issued shares in Neufront Investment Private Limited (\"Neufront\"). Accordingly, for the purposes of Section 4 of the SFA, Mdm Jin Xiao Qun is deemed to have an interest in the 500,000 Shares held by Neufront.",
+    "deemed_interest_text": "Tan Sri Datuk Tiong Su Kouk is deemed to have an interest in the shares held by his wife, Puan Sri Datin Wong Bak Hee, S.K. Tiong Enterprise Sdn Bhd, Hung Yung Enterprise Sdn Bhd, UOB Kay Hian Pte Ltd and Phillip Securities Pte Ltd by virtue of Section 4 and 133 of the Securities and Futures Act 2001. Deemed interest comprises:- (a) Puan Sri Datin Wong Bak Hee - 1,378,552 shares (b) S.K. Tiong Enterprise Sdn Bhd - 11,486,856 shares (c) Hung Yung Enterprise Sdn Bhd - 6,399,096 shares (d) UOB Kay Hian Pte Ltd - 8,949,423 shares (e) Phillip Securities Pte Ltd - 500 shares",
     "relationship_text": null,
-    "remarks_text": "The percentage of shareholdings immediately before the transaction are calculated based on the Company's total issued shares of 648,159,688 (excluding treasury shares) as at 26 November 2026. The percentage of shareholdings immediately after the transaction are calculated based on the Company's total issued shares of 647,959,688 (excluding treasury shares) as at 26 November 2026. In this Notice, figures are rounded to the nearest 0.001%.",
-    "filing_type": "form_3_part_ii",
-    "notification_type": "change_in_level",
-    "circumstance_key": null,
-    "change_reason": "the Company's share buy back of 200,000 shares by way of market acquisition",
+    "remarks_text": null,
+    "filing_type": "form_1",
+    "notification_type": null,
+    "circumstance_key": "Securities via market transaction",
+    "change_reason": null,
     "acting_party": null,
-    "company_name": "Nanofilm Technologies International Ltd",
-    "transaction_reference": "588912346552355"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "sell",
-    "holder_name": "HSBC International Trustee Limited",
-    "transaction_value": 140025600,
-    "share_percentage_transaction": {
-      "total": 0.5082,
-      "deemed": 0.5082,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "deemed": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "5VS.SI",
-    "price_per_share": [
-      {
-        "price": 0.64,
-        "amount": 218790000
-      }
-    ],
-    "holder_type": "institution",
-    "title": "HSBC International Trustee Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
-    "body": "HSBC International Trustee Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
-    "sector": "industrials",
-    "sub_sector": "engineering-construction-building-products",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N/A - This is a cessation of interests.",
-    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HKIT ceased to hold any interest in Hafary Holdings.",
-    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "ceasing",
-    "circumstance_key": null,
-    "change_reason": "the sale of HSIH's entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
-    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
-    "company_name": "Hafary Holdings Ltd",
-    "transaction_reference": "902234643933683"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "sell",
-    "holder_name": "HSBC International Trustee (Holdings) Pte. Limited",
-    "transaction_value": 140025600,
-    "share_percentage_transaction": {
-      "total": 0.5082,
-      "deemed": 0.5082,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "deemed": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "5VS.SI",
-    "price_per_share": [
-      {
-        "price": 0.64,
-        "amount": 218790000
-      }
-    ],
-    "holder_type": "institution",
-    "title": "HSBC International Trustee (Holdings) Pte. Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
-    "body": "HSBC International Trustee (Holdings) Pte. Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
-    "sector": "industrials",
-    "sub_sector": "engineering-construction-building-products",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N/A - This is a cessation of interests.",
-    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HTHL ceased to hold any interest in Hafary Holdings.",
-    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "ceasing",
-    "circumstance_key": null,
-    "change_reason": "the sale of HSIH's entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
-    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
-    "company_name": "Hafary Holdings Ltd",
-    "transaction_reference": "902234643933683"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "sell",
-    "holder_name": "The Hongkong and Shanghai Banking Corporation Limited",
-    "transaction_value": 140025600,
-    "share_percentage_transaction": {
-      "total": 0.5082,
-      "deemed": 0.5082,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "deemed": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "5VS.SI",
-    "price_per_share": [
-      {
-        "price": 0.64,
-        "amount": 218790000
-      }
-    ],
-    "holder_type": "institution",
-    "title": "The Hongkong and Shanghai Banking Corporation Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
-    "body": "The Hongkong and Shanghai Banking Corporation Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
-    "sector": "industrials",
-    "sub_sector": "engineering-construction-building-products",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N/A - This is a cessation of interests.",
-    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HBAP ceased to hold any interest in Hafary Holdings.",
-    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "ceasing",
-    "circumstance_key": null,
-    "change_reason": "the sale of its entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
-    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
-    "company_name": "Hafary Holdings Ltd",
-    "transaction_reference": "902234643933683"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "sell",
-    "holder_name": "HSBC Asia Holdings Limited",
-    "transaction_value": 140025600,
-    "share_percentage_transaction": {
-      "total": 0.5082,
-      "deemed": 0.5082,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "deemed": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "5VS.SI",
-    "price_per_share": [
-      {
-        "price": 0.64,
-        "amount": 218790000
-      }
-    ],
-    "holder_type": "institution",
-    "title": "HSBC Asia Holdings Limited ceases to be substantial shareholder of Hafary Holdings Ltd",
-    "body": "HSBC Asia Holdings Limited's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
-    "sector": "industrials",
-    "sub_sector": "engineering-construction-building-products",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N/A - This is a cessation of interests.",
-    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HAHO ceased to hold any interest in Hafary Holdings.",
-    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "ceasing",
-    "circumstance_key": null,
-    "change_reason": "HSIH's sale of its entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
-    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
-    "company_name": "Hafary Holdings Ltd",
-    "transaction_reference": "902234643933683"
-  },
-  {
-    "source": "https://links.sgx.com/1.0.0/corporate-announcements/LS4NK0NJ6LR6QMXE/912782__Form3_HSBC_HafaryHoldings_PD%2023%20Nov%202026%20FINAL.pdf",
-    "timestamp": "2026-11-23",
-    "transaction_type": "sell",
-    "holder_name": "HSBC Holdings plc",
-    "transaction_value": 140025600,
-    "share_percentage_transaction": {
-      "total": 0.5082,
-      "deemed": 0.5082,
-      "direct": 0.0
-    },
-    "interest_breakdown": {
-      "after": {
-        "total": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "deemed": {
-          "amount": 0,
-          "percentage": 0.0
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      },
-      "before": {
-        "total": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "deemed": {
-          "amount": 218790000,
-          "percentage": 0.5082
-        },
-        "direct": {
-          "amount": 0,
-          "percentage": 0.0
-        }
-      }
-    },
-    "symbol": "5VS.SI",
-    "price_per_share": [
-      {
-        "price": 0.64,
-        "amount": 218790000
-      }
-    ],
-    "holder_type": "institution",
-    "title": "HSBC Holdings plc ceases to be substantial shareholder of Hafary Holdings Ltd",
-    "body": "HSBC Holdings plc's deemed interest in Hafary Holdings Ltd fell after Hap Seng Investment Holdings Pte. Ltd sold 218,790,000 shares at S$0.64 per share, for a total of S$140,025,600. No shares are held directly. Total interest falls from 218,790,000 shares (50.82%) to 0 shares (0.00%). With this, the holder ceases to be a substantial shareholder of Hafary Holdings Ltd.",
-    "sector": "industrials",
-    "sub_sector": "engineering-construction-building-products",
-    "tags": [],
-    "source_is_manual": false,
-    "deemed_interest_text": "N/A - This is a cessation of interests.",
-    "relationship_text": "Hap Seng Investment Holdings Pte. Ltd. (“HSIH”) which directly holds the listed company is wholly owned by Hap Seng Consolidated Berhad (“HSCB”). Gek Poh (Holdings) Sdn. Bhd. owns 54.63% of HSCB, and Magic Principle Assets Limited owns 44% of Gek Poh (Holdings) Sdn. Bhd. HSBC International Trustee Limited (\"HKIT\") acts as a trustee for Magic Principle Assets Limited. HKIT is wholly owned by HSBC International Trustee (Holdings) Pte. Limited (\"HTHL\"), which is, in turn, wholly owned by The Hongkong and Shanghai Banking Corporation Limited (\"HBAP\"). HBAP is wholly owned by HSBC Asia Holdings Limited (\"HAHO\"), which is, in turn, wholly owned by HSBC Holdings plc (\"HGHQ\"). On 23 November 2026, HSIH completed the sale of its entire shareholding in Hafary Holdings Limited (“Hafary Holdings”) to 23 Capital Pte. Ltd. Following completion of the transaction, HGHQ ceased to hold any interest in Hafary Holdings.",
-    "remarks_text": "The shareholding percentages in this form are computed based on a total of 430,550,000 issued ordinary shares (excluding treasury shares) of Hafary Holdings Limited.",
-    "filing_type": "form_3_part_iii_iv",
-    "notification_type": "ceasing",
-    "circumstance_key": null,
-    "change_reason": "the sale of its entire shareholding in Hafary Holdings to 23 Capital Pte. Ltd",
-    "acting_party": "Hap Seng Investment Holdings Pte. Ltd",
-    "company_name": "Hafary Holdings Ltd",
-    "transaction_reference": "902234643933683"
+    "company_name": "Nam Cheong Ltd",
+    "transaction_reference": "187892346542348"
   }
 ]
